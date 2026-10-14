@@ -1,17 +1,17 @@
 {
- "generated": "2026-10-14T14:48:32.117Z",
- "watchlistUpdatedAt": "2026-10-14T09:00:00Z",
+ "generated": "2026-10-14T14:51:53.259Z",
+ "watchlistUpdatedAt": "2026-10-14T15:30:00Z",
  "stats": {
-  "feeds": 48,
+  "feeds": 56,
   "ok": 48,
-  "items": 107,
+  "items": 105,
   "duplicatesMerged": 0,
   "lengthsKnown": 2,
-  "lengthLookups": 105,
-  "lengthFailures": 105,
+  "lengthLookups": 100,
+  "lengthFailures": 100,
   "lengthVia": "video pages",
   "lengthFailReasons": {
-   "no length on page": 105
+   "no length on page": 100
   }
  },
  "feeds": [
@@ -471,19 +471,6 @@
    "url": "https://www.youtube.com/feeds/videos.xml?playlist_id=UULF6t1O76G0jYXOAoYCm153dA"
   },
   {
-   "id": "yt-crazy-bro",
-   "name": "Crazy bro",
-   "type": "youtube",
-   "status": "ok",
-   "count": 5,
-   "resolved": {
-    "channelId": "UCvB7APb_Ng4KjcqBv7MTUmg",
-    "title": "CrazyBro Reactions",
-    "via": "name search"
-   },
-   "url": "https://www.youtube.com/feeds/videos.xml?playlist_id=UULFvB7APb_Ng4KjcqBv7MTUmg"
-  },
-  {
    "id": "yt-the-hustle",
    "name": "The Hustle",
    "type": "youtube",
@@ -497,17 +484,17 @@
    "url": "https://www.youtube.com/feeds/videos.xml?playlist_id=UULFkWVA1_vkY9GLyuLAre97AQ"
   },
   {
-   "id": "yt-history-moshe",
-   "name": "History Moshe",
+   "id": "yt-history-marche",
+   "name": "History Marche",
    "type": "youtube",
    "status": "ok",
    "count": 1,
    "resolved": {
-    "channelId": "UCHDwF_skC5EqALTM5Uba4eA",
-    "title": "Jewish History Soundbites",
+    "channelId": "UC8MX9ECowgDMTOnFTE8EUJw",
+    "title": "HistoryMarche",
     "via": "name search"
    },
-   "url": "https://www.youtube.com/feeds/videos.xml?playlist_id=UULFHDwF_skC5EqALTM5Uba4eA"
+   "url": "https://www.youtube.com/feeds/videos.xml?playlist_id=UULF8MX9ECowgDMTOnFTE8EUJw"
   },
   {
    "id": "yt-radicalsoda",
@@ -638,6 +625,86 @@
     "via": "name search"
    },
    "url": "https://www.youtube.com/feeds/videos.xml?playlist_id=UULFnkp4xDOwqqJD7sSM3xdUiQ"
+  },
+  {
+   "id": "rd-productmanagement",
+   "name": "r/productmanagement",
+   "type": "reddit",
+   "status": "ok",
+   "count": 3,
+   "url": "https://www.reddit.com/r/productmanagement/top/.rss?t=day"
+  },
+  {
+   "id": "rd-tech",
+   "name": "r/tech",
+   "type": "reddit",
+   "status": "error",
+   "count": 0,
+   "error": "not a feed (got HTML or text)",
+   "http": 429
+  },
+  {
+   "id": "rd-gaming",
+   "name": "r/gaming",
+   "type": "reddit",
+   "status": "error",
+   "count": 0,
+   "error": "not a feed (got HTML or text)",
+   "http": 429
+  },
+  {
+   "id": "rd-ukpolitics",
+   "name": "r/ukpolitics",
+   "type": "reddit",
+   "status": "error",
+   "count": 0,
+   "error": "not a feed (got HTML or text)",
+   "http": 429
+  },
+  {
+   "id": "rd-xbox",
+   "name": "r/xbox",
+   "type": "reddit",
+   "status": "error",
+   "count": 0,
+   "error": "not a feed (got HTML or text)",
+   "http": 429
+  },
+  {
+   "id": "rd-slaythespire",
+   "name": "r/slaythespire",
+   "type": "reddit",
+   "status": "error",
+   "count": 0,
+   "error": "not a feed (got HTML or text)",
+   "http": 429
+  },
+  {
+   "id": "rd-geopolitics",
+   "name": "r/geopolitics",
+   "type": "reddit",
+   "status": "error",
+   "count": 0,
+   "error": "not a feed (got HTML or text)",
+   "http": 429
+  },
+  {
+   "id": "rd-germany",
+   "name": "r/germany",
+   "type": "reddit",
+   "status": "error",
+   "count": 0,
+   "error": "not a feed (got HTML or text)",
+   "http": 429
+  },
+  {
+   "id": "rd-unitedkingdom",
+   "name": "r/unitedkingdom",
+   "type": "reddit",
+   "status": "error",
+   "count": 0,
+   "error": "not a feed (got HTML or text)",
+   "http": 429
   }
  ],
  "items": [
@@ -753,21 +820,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Reaction On Why Everyone Is Obsessed With Royal Enfield | रॉयल एनफील्ड | Pakistani Reaction🔥",
-   "url": "https://www.youtube.com/watch?v=x3sBp4DGixM",
-   "source": "Crazy bro",
-   "feedId": "yt-crazy-bro",
-   "type": "video",
-   "tags": [],
-   "published": "2026-10-14T12:00:04.000Z",
-   "summary": "Pakistani Reaction On Why Everyone Is Obsessed With Basic Indian Royal Enfield | CrazyBro Reactions! Hey Guys, इस वीडियो में CrazyBro Reactions \"भारतीय रॉयल एनफील्ड की वैश्विक सफलता और जापान, साउथ कोरिया में धमाल\" पर प्रतिक्रिया दे रहा है. This video covers the amazing global…",
-   "thumb": "https://i1.ytimg.com/vi/x3sBp4DGixM/hqdefault.jpg",
-   "id": "3490a599e2ca",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "'Why did she wobble so much?' | PMQs analysed",
    "url": "https://www.youtube.com/watch?v=P4VVx_Nomgc",
    "source": "LBC",
@@ -798,6 +850,22 @@
    "summary": "First PMQs since the return from recess, and Kemi Badenoch is still chasing Andy Burnham's shadow at Prime Minister's Questions. Like PoliticsJOE? We need your support: https://www.patreon.com/PoliticsJOE",
    "thumb": "https://i1.ytimg.com/vi/Tqb6hp0dOVc/hqdefault.jpg",
    "id": "aed06c62eda5",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Got moved to a new team, inherited a lousy product",
+   "url": "https://www.reddit.com/r/ProductManagement/comments/1x5oa3l/got_moved_to_a_new_team_inherited_a_lousy_product/",
+   "source": "r/productmanagement",
+   "feedId": "rd-productmanagement",
+   "type": "post",
+   "tags": [
+    "product"
+   ],
+   "published": "2026-10-14T11:03:03.000Z",
+   "summary": "A PM in my company recently left, and I got moved to take over their portfolio. Part of the projects handed over included this major feature that they’re already well into the development cycle. Here’s the problem: it is a customer facing feature which solves a lot of internal…",
+   "id": "7e0eb0b93559",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -840,21 +908,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Reaction On Latest Motorcycle Launch Events | India VS Pakistan | Pakistani Reaction 🔥",
-   "url": "https://www.youtube.com/watch?v=jQlJ4YJZy7Y",
-   "source": "Crazy bro",
-   "feedId": "yt-crazy-bro",
-   "type": "video",
-   "tags": [],
-   "published": "2026-10-14T10:00:28.000Z",
-   "summary": "Pakistani React On New Bikes Launched Event In India VS Pakistan | CrazyBro Reactions! Hey Guys, in this video CrazyBro Reactions is reacting to new bike launch events in India and Pakistan. Explore the latest motorcycle launches, stylish designs, new features, and exciting…",
-   "thumb": "https://i3.ytimg.com/vi/jQlJ4YJZy7Y/hqdefault.jpg",
-   "id": "7ab219e8f008",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Four in five new jobs taken by foreigners in last decade",
    "url": "https://www.youtube.com/watch?v=38pIbAvt1xg",
    "source": "LBC",
@@ -887,21 +940,6 @@
    "summary": "Es ist vier Jahre her und geschah wenige Monate nach dem Beginn des Krieges in der Ukraine: Im September 2022 wurde ein Anschlag auf die Nord-Stream-Pipelines vor der dänischen Insel Bornholm verübt. In Hamburg beginnt heute der Prozess gegen den mutmaßlichen Haupt-Täter:…",
    "thumb": "https://i2.ytimg.com/vi/ISwQqaiuiiE/hqdefault.jpg",
    "id": "bff7619cb832",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Reaction On Private Zoo Tour Pakistan VS India | प्राइवेट चिड़ियाघर | Pakistani Reaction🔥",
-   "url": "https://www.youtube.com/watch?v=49UwKwUmu0c",
-   "source": "Crazy bro",
-   "feedId": "yt-crazy-bro",
-   "type": "video",
-   "tags": [],
-   "published": "2026-10-14T08:00:19.000Z",
-   "summary": "Pakistani Reaction On Biggest Private Zoo Tour Comparison Pakistan VS India | CrazyBro Reactions! Hey Guys, इस वीडियो में CrazyBro Reactions \"पाकिस्तान और भारत के सबसे बड़े प्राइवेट चिड़ियाघर टूर की तुलना\" पर प्रतिक्रिया दे रहा है. This video covers the amazing comparison of…",
-   "thumb": "https://i1.ytimg.com/vi/49UwKwUmu0c/hqdefault.jpg",
-   "id": "67bda6a937eb",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -961,6 +999,22 @@
    "why": "0"
   },
   {
+   "title": "Does anyone here enjoy their job or product management?",
+   "url": "https://www.reddit.com/r/ProductManagement/comments/1x5cnv9/does_anyone_here_enjoy_their_job_or_product/",
+   "source": "r/productmanagement",
+   "feedId": "rd-productmanagement",
+   "type": "post",
+   "tags": [
+    "product"
+   ],
+   "published": "2026-10-13T23:57:21.000Z",
+   "summary": "This sub can get pretty negative and pessimistic. I know that people mostly post their negative experiences online, so i'm hoping to see some positive experiences. Maybe share your #1 tip for job enjoyment as well. submitted by /u/I_like_it_yo [link] [comments]",
+   "id": "568ae534211b",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
    "title": "He fired her",
    "url": "https://www.youtube.com/watch?v=1dXPXFilZD8",
    "source": "Luke Beasley",
@@ -974,6 +1028,22 @@
    "summary": "Luke discusses Trump's latest comments on Kimberly Guilfoyle. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
    "thumb": "https://i2.ytimg.com/vi/1dXPXFilZD8/hqdefault.jpg",
    "id": "5c7ae947597d",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "The problem with 2026 product management...",
+   "url": "https://www.reddit.com/r/ProductManagement/comments/1x55w7g/the_problem_with_2026_product_management/",
+   "source": "r/productmanagement",
+   "feedId": "rd-productmanagement",
+   "type": "post",
+   "tags": [
+    "product"
+   ],
+   "published": "2026-10-13T19:15:38.000Z",
+   "summary": "Everyone in the company wants to be a product manager except the product manager. The product manager probably would want to be the product manager without everyone wanting to be the product manager. Being a yes person is the easiest path to keep a career even as you watch your…",
+   "id": "834626be4fef",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1030,21 +1100,6 @@
    "why": "0"
   },
   {
-   "title": "Reaction On Kuch Nahi Bana by Usama | दिल छू लेने वाला रैप | Pakistani Reaction 🔥",
-   "url": "https://www.youtube.com/watch?v=09zfgiWwQ8Q",
-   "source": "Crazy bro",
-   "feedId": "yt-crazy-bro",
-   "type": "video",
-   "tags": [],
-   "published": "2026-10-13T16:00:01.000Z",
-   "summary": "Pakistani Reaction On Kuch Nahi Bana by Usama | CrazyBro Reactions! Hey Guys, in this video CrazyBro Reactions is reacting to “Kuch Nahi Bana” by Usama, a heart-touching Urdu rap song. This track brings emotional Urdu lyrics, a powerful musical vibe, and feelings that many…",
-   "thumb": "https://i1.ytimg.com/vi/09zfgiWwQ8Q/hqdefault.jpg",
-   "id": "79e6db941e3d",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "Is This The Worst White House Press Briefing Ever?",
    "url": "https://www.youtube.com/watch?v=zqnsDxJhrfs",
    "source": "PoliticsJOE",
@@ -1074,21 +1129,6 @@
    "summary": "Andy Burnham gave his first general recap in the Commons yesterday, and used it to make the case for closer alignment with the EU. From reduced trade barriers to closer energy cooperation and greater collaboration on immigration, he argues that a potential deal could add more…",
    "thumb": "https://i3.ytimg.com/vi/Zz0hDD87Nsw/hqdefault.jpg",
    "id": "1294f04ae845",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Reaction On Eden Gardens Durga Puja Opening | दुर्गा पूजा | Pakistani Reaction 🔥",
-   "url": "https://www.youtube.com/watch?v=ZDSc-MchuGc",
-   "source": "Crazy bro",
-   "feedId": "yt-crazy-bro",
-   "type": "video",
-   "tags": [],
-   "published": "2026-10-13T15:00:21.000Z",
-   "summary": "Pakistani Reaction On Eden Gardens Durga Puja Opening | CrazyBro Reactions! Hey Guys, in this video CrazyBro Reactions is reacting to the Eden Gardens Durga Puja Opening in Kolkata. Watch our reaction to this special celebration, where the spirit of Durga Puja, Bengali culture…",
-   "thumb": "https://i3.ytimg.com/vi/ZDSc-MchuGc/hqdefault.jpg",
-   "id": "61cddbb0294f",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1456,23 +1496,6 @@
    "why": "0"
   },
   {
-   "title": "From Europe Tours to Israel Tours: Transitions in Jewish History",
-   "url": "https://www.youtube.com/watch?v=GZ5X-Q478ls",
-   "source": "History Moshe",
-   "feedId": "yt-history-moshe",
-   "type": "video",
-   "tags": [
-    "education"
-   ],
-   "published": "2026-10-10T18:42:26.000Z",
-   "summary": "Source: https://www.podbean.com/eau/pb-rkeay-1b7f13a Followig a busy Sukkos season with loads of Jewish history tours around Israel, this episode delves into the themes of these unique Jewish history walking tours. These tours explore the modern history of those who migrated to…",
-   "thumb": "https://i4.ytimg.com/vi/GZ5X-Q478ls/hqdefault.jpg",
-   "id": "5eb2943d3e34",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "OHIO TRUMP RALLY",
    "url": "https://www.youtube.com/watch?v=z5cAiwQULKI",
    "source": "The Good Liars",
@@ -1504,6 +1527,24 @@
    "summary": "2026 has plenty of great new singleplayer games for PC, PS5, Xbox Series X/S, and Nintendo Switch 2. Subscribe for more: https://www.youtube.com/gameranxTV?sub_confirmation=1 0:00 Intro 0:33 NIOH 3 2:07 Castlevania: Belmont's Curse 3:23 Pragmata 5:04 Saros 5:54 Dragon's Dogma…",
    "thumb": "https://i3.ytimg.com/vi/Rbh6pULYRy4/hqdefault.jpg",
    "id": "9648b51a4c82",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "They Brought Mistresses. He Brought an Army - Turin 1706",
+   "url": "https://www.youtube.com/watch?v=CBIGgKGmQdk",
+   "source": "History Marche",
+   "feedId": "yt-history-marche",
+   "type": "video",
+   "tags": [
+    "education",
+    "history"
+   ],
+   "published": "2026-10-10T17:01:19.000Z",
+   "summary": "🚩 Head to https://betterhelp.com/historymarche to get 10% off your first month with our paid partner, BetterHelp. 🚩 Therapy can be a meaningful space to reflect, grow, and create positive change in your life. 🚩 War of the Spanish Succession Playlist:…",
+   "thumb": "https://i4.ytimg.com/vi/CBIGgKGmQdk/hqdefault.jpg",
+   "id": "ba4ba7fc2631",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2555,5 +2596,5 @@
    "why": "0"
   }
  ],
- "contentHash": "d1c9ca3df868"
+ "contentHash": "fa3bfd211e81"
 }
