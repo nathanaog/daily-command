@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-14T14:06:54.964Z",
+ "generated": "2026-10-14T14:48:32.117Z",
  "watchlistUpdatedAt": "2026-10-14T09:00:00Z",
  "stats": {
   "feeds": 48,
@@ -7,7 +7,7 @@
   "items": 107,
   "duplicatesMerged": 0,
   "lengthsKnown": 2,
-  "lengthLookups": 106,
+  "lengthLookups": 105,
   "lengthFailures": 105,
   "lengthVia": "video pages",
   "lengthFailReasons": {
@@ -642,6 +642,24 @@
  ],
  "items": [
   {
+   "title": "'Trump will be embarrassed': Is it already over for Katie Zacharia?",
+   "url": "https://www.youtube.com/watch?v=Z_XQ8S1sHYc",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-14T14:30:08.000Z",
+   "summary": "Simon Marks, James O'Brien, and Lewis Goodall react to Katie Zacharia's debut as US press secretary. 0:00 | James O'Brien and Simon Marks give their verdict 9:53 | Lewis Goodall compares Zacharia to her predecessor Listen to the full show on the all-new LBC App:…",
+   "thumb": "https://i3.ytimg.com/vi/Z_XQ8S1sHYc/hqdefault.jpg",
+   "id": "2460c217dc03",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
    "title": "ARD-Korrespondent in Rom: „Krebsdiagnose von Papst Leo XIV. kam völlig überraschend“",
    "url": "https://www.youtube.com/watch?v=GVJrI4BxehM",
    "source": "Tagesschau",
@@ -661,7 +679,7 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Einigung in der Koalition: So soll die Zuckersteuer aussehen",
+   "title": "Zuckersteuer beschlossen: Diese Getränke werden ab Juli teurer",
    "url": "https://www.youtube.com/watch?v=67XyXFqOYXo",
    "source": "Tagesschau",
    "feedId": "yt-tagesschau",
@@ -889,24 +907,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Where does Trump's deal with Putin leave Ukraine?",
-   "url": "https://www.youtube.com/watch?v=f73FukEehLo",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-14T06:00:28.000Z",
-   "summary": "Winter is approaching in Ukraine - and with Russia attacking energy infrastructure, it could be a freezing one for many civilians. Andrew Marr speaks to journalist Luke Harding (00:19), defence expert John Foreman (03:56) and Conservative MP Alicia Kearns (07:39) - to get their…",
-   "thumb": "https://i3.ytimg.com/vi/f73FukEehLo/hqdefault.jpg",
-   "id": "6333a5ab1ea9",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "OMG: Fox Airs TRUMP TAKEDOWN as He F***S UP Big Time!",
    "url": "https://www.youtube.com/watch?v=JqXAF-_6RWc",
    "source": "Luke Beasley",
@@ -938,9 +938,9 @@
    "summary": "Luke discusses Trump's rally in Ohio. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley Instagram -…",
    "thumb": "https://i2.ytimg.com/vi/a28qvwrwooU/hqdefault.jpg",
    "id": "dc3350746e04",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
+   "why": "0"
   },
   {
    "title": "SHOCK iPhone Footage EXPOSES PAXTON, Talarico SECURITY CAMERA Proves It!",
@@ -2555,5 +2555,5 @@
    "why": "0"
   }
  ],
- "contentHash": "b4e82ed6b4f1"
+ "contentHash": "d1c9ca3df868"
 }
