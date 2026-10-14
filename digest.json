@@ -1,245 +1,1425 @@
 {
- "generated": "2026-10-13T04:00:00Z",
- "sample": true,
- "note": "SAMPLE DATA. The GitHub Action replaces this file with items from your feeds.json watchlist on its first run.",
- "items": [
+ "generated": "2026-10-14T13:55:24.661Z",
+ "watchlistUpdatedAt": "2026-10-14T09:00:00Z",
+ "stats": {
+  "feeds": 48,
+  "ok": 45,
+  "items": 45,
+  "duplicatesMerged": 0,
+  "lengthsKnown": 1,
+  "lengthLookups": 45,
+  "lengthFailures": 44
+ },
+ "feeds": [
   {
-   "id": "s01",
-   "title": "How cloud chambers make particle tracks visible",
-   "url": "https://example.com/sample/cloud-chambers",
-   "source": "Sample science blog",
-   "category": "Science",
-   "published": "2026-10-12T18:20:00Z",
-   "type": "article",
-   "score": 3,
-   "matched": [
-    "physics"
-   ],
-   "summary": "A walk-through of building a dry-ice cloud chamber and what the different track shapes tell you.",
-   "tags": [
-    "education"
-   ],
-   "why": "physics +1"
+   "id": "yt-map-men",
+   "name": "Map Men",
+   "type": "youtube",
+   "status": "ok",
+   "count": 0,
+   "resolved": {
+    "channelId": "UCbbQalJ4OaC0oQ0AqRaOJ9g",
+    "title": "Map Men",
+    "via": "name search"
+   },
+   "url": "https://www.youtube.com/feeds/videos.xml?playlist_id=UULFbbQalJ4OaC0oQ0AqRaOJ9g"
   },
   {
-   "id": "s02",
-   "title": "Ocean heat content: what the latest measurements show",
-   "url": "https://example.com/sample/ocean-heat",
-   "source": "Sample climate site",
-   "category": "Science",
-   "published": "2026-10-12T09:05:00Z",
-   "type": "article",
-   "score": 2,
-   "matched": [
-    "climate"
-   ],
-   "summary": "Why sea temperature at depth is a steadier signal than surface air temperature.",
-   "tags": [
-    "education"
-   ],
-   "why": "climate +1"
+   "id": "yt-jubilee",
+   "name": "Jubilee",
+   "type": "youtube",
+   "status": "ok",
+   "count": 1,
+   "resolved": {
+    "channelId": "UCJjSDX-jUChzOEyok9XYRJQ",
+    "title": "Jubilee",
+    "via": "name search"
+   },
+   "url": "https://www.youtube.com/feeds/videos.xml?playlist_id=UULFJjSDX-jUChzOEyok9XYRJQ"
   },
   {
-   "id": "s03",
-   "title": "The surprisingly complex physics of a dripping tap",
-   "url": "https://example.com/sample/dripping-tap",
-   "source": "Sample physics channel",
-   "category": "YouTube",
-   "published": "2026-10-12T16:00:00Z",
-   "type": "video",
-   "duration": "14:32",
-   "score": 3,
-   "matched": [
-    "physics",
-    "explainer"
-   ],
-   "summary": "High-speed footage and a simple model of droplet pinch-off.",
-   "tags": [
-    "education",
-    "comedy"
-   ],
-   "why": "physics +1 + explainer +1",
-   "durationSec": 872
+   "id": "yt-lbc",
+   "name": "LBC",
+   "type": "youtube",
+   "status": "ok",
+   "count": 5,
+   "resolved": {
+    "channelId": "UCb1Ti1WKPauPpXkYKVHNpsw",
+    "title": "LBC",
+    "via": "name search"
+   },
+   "url": "https://www.youtube.com/feeds/videos.xml?playlist_id=UULFb1Ti1WKPauPpXkYKVHNpsw"
   },
   {
-   "id": "s04",
-   "title": "Animating abstract ideas: a behind-the-scenes look",
-   "url": "https://example.com/sample/animating-ideas",
-   "source": "Sample explainer channel",
-   "category": "YouTube",
-   "published": "2026-10-11T20:30:00Z",
-   "type": "video",
-   "duration": "22:05",
-   "score": 2,
-   "matched": [
-    "explainer"
-   ],
-   "summary": "How a small team storyboards, scripts and animates a 10-minute science video.",
-   "tags": [
-    "education",
-    "comedy",
-    "listen"
-   ],
-   "why": "explainer +1",
-   "durationSec": 1325
+   "id": "yt-chris-spargo",
+   "name": "Chris Spargo",
+   "type": "youtube",
+   "status": "ok",
+   "count": 1,
+   "resolved": {
+    "channelId": "UCTzkxNEnbdvbBlgYl_W9daw",
+    "title": "Chris Spargo",
+    "via": "name search"
+   },
+   "url": "https://www.youtube.com/feeds/videos.xml?playlist_id=UULFTzkxNEnbdvbBlgYl_W9daw"
   },
   {
-   "id": "s05",
-   "title": "Five questions to ask before writing a roadmap (podcast)",
-   "url": "https://example.com/sample/roadmap-questions",
-   "source": "Sample PM newsletter",
-   "category": "Product",
-   "published": "2026-10-12T07:45:00Z",
-   "type": "video",
-   "score": 2,
-   "matched": [
-    "roadmap"
-   ],
-   "summary": "Outcome-first framing, and how to say no without a 40-row spreadsheet.",
-   "tags": [
-    "product",
-    "business",
-    "listen"
-   ],
-   "why": "roadmap +1",
-   "durationSec": 2460,
-   "duration": "41:00"
+   "id": "yt-flashgitz",
+   "name": "Flashgitz",
+   "type": "youtube",
+   "status": "ok",
+   "count": 0,
+   "resolved": {
+    "channelId": "UCNnKprAG-MWLsk-GsbsC2BA",
+    "title": "Flashgitz",
+    "via": "name search"
+   },
+   "url": "https://www.youtube.com/feeds/videos.xml?playlist_id=UULFNnKprAG-MWLsk-GsbsC2BA"
   },
   {
-   "id": "s06",
-   "title": "Discovery interviews that don't lead the witness",
-   "url": "https://example.com/sample/discovery-interviews",
-   "source": "Sample product blog",
-   "category": "Product",
-   "published": "2026-10-11T12:00:00Z",
-   "type": "article",
-   "score": 1,
-   "matched": [],
-   "summary": "Open questions, past behaviour over hypotheticals, and when to stay silent.",
-   "tags": [
-    "product",
-    "business"
-   ],
-   "why": "0"
+   "id": "yt-the-good-liars",
+   "name": "The Good Liars",
+   "type": "youtube",
+   "status": "ok",
+   "count": 1,
+   "resolved": {
+    "channelId": "UCUNOwz9KTDIhhTTN3_ptUDA",
+    "title": "The Good Liars",
+    "via": "name search"
+   },
+   "url": "https://www.youtube.com/feeds/videos.xml?playlist_id=UULFUNOwz9KTDIhhTTN3_ptUDA"
   },
   {
-   "id": "s07",
-   "title": "Metrics trees in practice",
-   "url": "https://example.com/sample/metrics-trees",
-   "source": "Sample PM newsletter",
-   "category": "Product",
-   "published": "2026-10-12T13:10:00Z",
-   "type": "article",
-   "score": 1,
-   "matched": [],
-   "summary": "Connecting a north-star metric to the inputs a team can actually move.",
-   "tags": [
-    "product",
-    "business"
-   ],
-   "why": "0"
+   "id": "yt-easy-german",
+   "name": "Easy German",
+   "type": "youtube",
+   "status": "ok",
+   "count": 1,
+   "resolved": {
+    "channelId": "UCbxb2fqe9oNgglAoYqsYOtQ",
+    "title": "Easy German",
+    "via": "name search"
+   },
+   "url": "https://www.youtube.com/feeds/videos.xml?playlist_id=UULFbxb2fqe9oNgglAoYqsYOtQ"
   },
   {
-   "id": "s08",
-   "title": "Berlin: new cycle lanes planned for the inner ring",
-   "url": "https://example.com/sample/berlin-cycle-lanes",
-   "source": "Sample news topic",
-   "category": "Germany",
-   "published": "2026-10-12T15:30:00Z",
-   "type": "article",
-   "score": 2,
-   "matched": [
-    "Berlin"
-   ],
-   "summary": "A summary of the proposal and the consultation timeline.",
-   "tags": [
-    "news"
-   ],
-   "why": "Berlin +1"
+   "id": "yt-pleasant-green",
+   "name": "Pleasant Green",
+   "type": "youtube",
+   "status": "ok",
+   "count": 0,
+   "resolved": {
+    "channelId": "UCAPrhJwVweWZA8GEPoClSdw",
+    "title": "Pleasant Green",
+    "via": "name search"
+   },
+   "url": "https://www.youtube.com/feeds/videos.xml?playlist_id=UULFAPrhJwVweWZA8GEPoClSdw"
   },
   {
-   "id": "s09",
-   "title": "Deutsch im Alltag: zehn Redewendungen mit 'Bahnhof'",
-   "url": "https://example.com/sample/redewendungen",
-   "source": "Sample German-learning blog",
-   "category": "German",
-   "published": "2026-10-12T06:00:00Z",
-   "type": "article",
-   "score": 1,
-   "matched": [],
-   "summary": "Kurze Erklärungen und Beispielsätze für B1–B2.",
-   "tags": [
-    "german"
-   ],
-   "why": "0"
+   "id": "yt-patrick-boyle",
+   "name": "Patrick Boyle",
+   "type": "youtube",
+   "status": "ok",
+   "count": 0,
+   "resolved": {
+    "channelId": "UCASM0cgfkJxQ1ICmRilfHLw",
+    "title": "Patrick Boyle",
+    "via": "name search"
+   },
+   "url": "https://www.youtube.com/feeds/videos.xml?playlist_id=UULFASM0cgfkJxQ1ICmRilfHLw"
   },
   {
-   "id": "s10",
-   "title": "What's the best home lab experiment you've done?",
-   "url": "https://example.com/sample/reddit-home-lab",
-   "source": "Sample subreddit",
-   "category": "Reddit",
-   "published": "2026-10-12T21:40:00Z",
-   "type": "post",
-   "score": 1,
-   "matched": [],
-   "summary": "A thread of kitchen-table experiments, from density towers to DIY spectroscopes.",
-   "tags": [
-    "politics"
-   ],
-   "why": "0"
+   "id": "yt-last-week-tonight",
+   "name": "Last Week Tonight",
+   "type": "youtube",
+   "status": "ok",
+   "count": 2,
+   "resolved": {
+    "channelId": "UC3XTzVzaHQEd30rQbuvCtTQ",
+    "title": "LastWeekTonight",
+    "via": "name search"
+   },
+   "url": "https://www.youtube.com/feeds/videos.xml?playlist_id=UULF3XTzVzaHQEd30rQbuvCtTQ"
   },
   {
-   "id": "s11",
-   "title": "Weekly thread: share your science communication project",
-   "url": "https://example.com/sample/reddit-scicomm",
-   "source": "Sample subreddit",
-   "category": "Reddit",
-   "published": "2026-10-12T10:00:00Z",
-   "type": "post",
-   "score": 1,
-   "matched": [],
-   "summary": "Feedback swaps for channels, podcasts and blogs.",
-   "tags": [
-    "politics"
-   ],
-   "why": "0"
+   "id": "yt-billy-on-the-street",
+   "name": "Billy on the Street",
+   "type": "youtube",
+   "status": "ok",
+   "count": 0,
+   "resolved": {
+    "channelId": "UCc81WI54KgJoei06f_3mWgQ",
+    "title": "billyonthestreettv",
+    "via": "name search"
+   },
+   "url": "https://www.youtube.com/feeds/videos.xml?playlist_id=UULFc81WI54KgJoei06f_3mWgQ"
   },
   {
-   "id": "s12",
-   "title": "Telescope time: how observing proposals are judged",
-   "url": "https://example.com/sample/telescope-time",
-   "source": "Sample science blog",
-   "category": "Science",
-   "published": "2026-10-11T08:00:00Z",
-   "type": "article",
-   "score": 0,
-   "matched": [],
-   "summary": "Oversubscription rates and what reviewers look for.",
-   "tags": [
-    "education"
-   ],
-   "why": "0"
+   "id": "yt-politicsjoe",
+   "name": "PoliticsJOE",
+   "type": "youtube",
+   "status": "ok",
+   "count": 4,
+   "resolved": {
+    "channelId": "UCyzkxMLeZDcd_Qhzh6uMgbg",
+    "title": "PoliticsJOE",
+    "via": "name search"
+   },
+   "url": "https://www.youtube.com/feeds/videos.xml?playlist_id=UULFyzkxMLeZDcd_Qhzh6uMgbg"
   },
   {
-   "id": "s13",
-   "title": "Old item outside the 48-hour window (hidden)",
-   "url": "https://example.com/sample/old",
-   "source": "Sample science blog",
-   "category": "Science",
-   "published": "2026-10-09T08:00:00Z",
-   "type": "article",
-   "score": 5,
-   "matched": [
-    "physics"
-   ],
-   "summary": "Shouldn't appear: published more than 48 h before this digest was generated.",
-   "tags": [
-    "education"
-   ],
-   "why": "physics +1"
+   "id": "yt-half-as-interesting",
+   "name": "Half as Interesting",
+   "type": "youtube",
+   "status": "ok",
+   "count": 0,
+   "resolved": {
+    "channelId": "UCuCkxoKLYO_EQ2GeFtbM_bw",
+    "title": "Half as Interesting",
+    "via": "name search"
+   },
+   "url": "https://www.youtube.com/feeds/videos.xml?playlist_id=UULFuCkxoKLYO_EQ2GeFtbM_bw"
+  },
+  {
+   "id": "yt-coldfusion",
+   "name": "ColdFusion",
+   "type": "youtube",
+   "status": "ok",
+   "count": 0,
+   "resolved": {
+    "channelId": "UC4QZ_LsYcvcq7qOsOhpAX4A",
+    "title": "ColdFusion",
+    "via": "name search"
+   },
+   "url": "https://www.youtube.com/feeds/videos.xml?playlist_id=UULF4QZ_LsYcvcq7qOsOhpAX4A"
+  },
+  {
+   "id": "yt-levi-hildebrand",
+   "name": "Levi Hildebrand",
+   "type": "youtube",
+   "status": "ok",
+   "count": 0,
+   "resolved": {
+    "channelId": "UC-OJ-24roEfQ_-PCnLJSckg",
+    "title": "Levi Hildebrand",
+    "via": "name search"
+   },
+   "url": "https://www.youtube.com/feeds/videos.xml?playlist_id=UULF-OJ-24roEfQ_-PCnLJSckg"
+  },
+  {
+   "id": "yt-tldr-news",
+   "name": "TLDR News",
+   "type": "youtube",
+   "status": "ok",
+   "count": 1,
+   "resolved": {
+    "channelId": "UCSMqateX8OA2s1wsOR2EgJA",
+    "title": "TLDR News",
+    "via": "name search"
+   },
+   "url": "https://www.youtube.com/feeds/videos.xml?playlist_id=UULFSMqateX8OA2s1wsOR2EgJA"
+  },
+  {
+   "id": "yt-simplicissimus",
+   "name": "Simplicissimus",
+   "type": "youtube",
+   "status": "ok",
+   "count": 1,
+   "resolved": {
+    "channelId": "UCKGMHVipEvuZudhHD05FOYA",
+    "title": "Simplicissimus",
+    "via": "name search"
+   },
+   "url": "https://www.youtube.com/feeds/videos.xml?playlist_id=UULFKGMHVipEvuZudhHD05FOYA"
+  },
+  {
+   "id": "yt-aberrant-preach",
+   "name": "Aberrant preach",
+   "type": "youtube",
+   "status": "ok",
+   "count": 1,
+   "resolved": {
+    "channelId": "UCaiVt4r6YLPzJVgr7pOmD6w",
+    "title": "Aba N Preach",
+    "via": "name search"
+   },
+   "url": "https://www.youtube.com/feeds/videos.xml?playlist_id=UULFaiVt4r6YLPzJVgr7pOmD6w"
+  },
+  {
+   "id": "yt-channel-5-with-andrew-callaghan",
+   "name": "Channel 5 with Andrew Callaghan",
+   "type": "youtube",
+   "status": "ok",
+   "count": 0,
+   "resolved": {
+    "channelId": "UC-AQKm7HUNMmxjdS371MSwg",
+    "title": "Channel 5 with Andrew Callaghan",
+    "via": "name search"
+   },
+   "url": "https://www.youtube.com/feeds/videos.xml?playlist_id=UULF-AQKm7HUNMmxjdS371MSwg"
+  },
+  {
+   "id": "yt-prozd",
+   "name": "ProZD",
+   "type": "youtube",
+   "status": "ok",
+   "count": 0,
+   "resolved": {
+    "channelId": "UC6MFZAOHXlKK1FI7V0XQVeA",
+    "title": "ProZD",
+    "via": "name search"
+   },
+   "url": "https://www.youtube.com/feeds/videos.xml?playlist_id=UULF6MFZAOHXlKK1FI7V0XQVeA"
+  },
+  {
+   "id": "yt-luke-beasley",
+   "name": "Luke Beasley",
+   "type": "youtube",
+   "status": "ok",
+   "count": 5,
+   "resolved": {
+    "channelId": "UCM05jgFNwoeXvWfO9GuExzA",
+    "title": "Luke Beasley",
+    "via": "name search"
+   },
+   "url": "https://www.youtube.com/feeds/videos.xml?playlist_id=UULFM05jgFNwoeXvWfO9GuExzA"
+  },
+  {
+   "id": "yt-finlay-christie",
+   "name": "Finlay Christie",
+   "type": "youtube",
+   "status": "ok",
+   "count": 0,
+   "resolved": {
+    "channelId": "UCPap5skbnRGd6k90OZFmS7A",
+    "title": "Finlay Christie",
+    "via": "name search"
+   },
+   "url": "https://www.youtube.com/feeds/videos.xml?playlist_id=UULFPap5skbnRGd6k90OZFmS7A"
+  },
+  {
+   "id": "yt-bald-and-bankrupt",
+   "name": "Bald and Bankrupt",
+   "type": "youtube",
+   "status": "ok",
+   "count": 0,
+   "resolved": {
+    "channelId": "UCxDZs_ltFFvn0FDHT6kmoXA",
+    "title": "bald and bankrupt",
+    "via": "name search"
+   },
+   "url": "https://www.youtube.com/feeds/videos.xml?playlist_id=UULFxDZs_ltFFvn0FDHT6kmoXA"
+  },
+  {
+   "id": "yt-tagesschau",
+   "name": "Tagesschau",
+   "type": "youtube",
+   "status": "ok",
+   "count": 5,
+   "resolved": {
+    "channelId": "UC5NOEUbkLheQcaaRldYW5GA",
+    "title": "tagesschau",
+    "via": "name search"
+   },
+   "url": "https://www.youtube.com/feeds/videos.xml?playlist_id=UULF5NOEUbkLheQcaaRldYW5GA"
+  },
+  {
+   "id": "yt-the-nk-guys",
+   "name": "The NK guys",
+   "type": "youtube",
+   "status": "ok",
+   "count": 0,
+   "resolved": {
+    "channelId": "UCTi5i5m-Xm-o7sALcVKiKjg",
+    "title": "The NK Guys",
+    "via": "name search"
+   },
+   "url": "https://www.youtube.com/feeds/videos.xml?playlist_id=UULFTi5i5m-Xm-o7sALcVKiKjg"
+  },
+  {
+   "id": "yt-gameranx",
+   "name": "GameRanx",
+   "type": "youtube",
+   "status": "ok",
+   "count": 3,
+   "resolved": {
+    "channelId": "UCNvzD7Z-g64bPXxGzaQaa4g",
+    "title": "gameranx",
+    "via": "name search"
+   },
+   "url": "https://www.youtube.com/feeds/videos.xml?playlist_id=UULFNvzD7Z-g64bPXxGzaQaa4g"
+  },
+  {
+   "id": "yt-modern-day-debate",
+   "name": "Modern-Day Debate",
+   "type": "youtube",
+   "status": "ok",
+   "count": 1,
+   "resolved": {
+    "channelId": "UC_cd4oF2phaIBD3WsU3f7Xg",
+    "title": "Modern-Day Debate",
+    "via": "name search"
+   },
+   "url": "https://www.youtube.com/feeds/videos.xml?playlist_id=UULF_cd4oF2phaIBD3WsU3f7Xg"
+  },
+  {
+   "id": "yt-dropout",
+   "name": "Dropout",
+   "type": "youtube",
+   "status": "ok",
+   "count": 1,
+   "resolved": {
+    "channelId": "UCPDXXXJj9nax0fr0Wfc048g",
+    "title": "Dropout",
+    "via": "name search"
+   },
+   "url": "https://www.youtube.com/feeds/videos.xml?playlist_id=UULFPDXXXJj9nax0fr0Wfc048g"
+  },
+  {
+   "id": "yt-the-onion",
+   "name": "The Onion",
+   "type": "youtube",
+   "status": "ok",
+   "count": 1,
+   "resolved": {
+    "channelId": "UCfAOh2t5DpxVrgS9NQKjC7A",
+    "title": "The Onion",
+    "via": "name search"
+   },
+   "url": "https://www.youtube.com/feeds/videos.xml?playlist_id=UULFfAOh2t5DpxVrgS9NQKjC7A"
+  },
+  {
+   "id": "yt-the-economist",
+   "name": "The Economist",
+   "type": "youtube",
+   "status": "ok",
+   "count": 0,
+   "resolved": {
+    "channelId": "UC0p5jTq6Xx_DosDFxVXnWaQ",
+    "title": "The Economist",
+    "via": "name search"
+   },
+   "url": "https://www.youtube.com/feeds/videos.xml?playlist_id=UULF0p5jTq6Xx_DosDFxVXnWaQ"
+  },
+  {
+   "id": "yt-shark-tank-global",
+   "name": "Shark Tank Global",
+   "type": "youtube",
+   "status": "ok",
+   "count": 2,
+   "resolved": {
+    "channelId": "UCREgA-BmOocJ9Is_bZV6aJQ",
+    "title": "Shark Tank Global",
+    "via": "name search"
+   },
+   "url": "https://www.youtube.com/feeds/videos.xml?playlist_id=UULFREgA-BmOocJ9Is_bZV6aJQ"
+  },
+  {
+   "id": "yt-kill-tony",
+   "name": "Kill Tony",
+   "type": "youtube",
+   "status": "ok",
+   "count": 2,
+   "resolved": {
+    "channelId": "UCwzCMiicL-hBUzyjWiJaseg",
+    "title": "Kill Tony",
+    "via": "name search"
+   },
+   "url": "https://www.youtube.com/feeds/videos.xml?playlist_id=UULFwzCMiicL-hBUzyjWiJaseg"
+  },
+  {
+   "id": "yt-coffeezilla",
+   "name": "Coffeezilla",
+   "type": "youtube",
+   "status": "ok",
+   "count": 1,
+   "resolved": {
+    "channelId": "UCFQMnBA3CS502aghlcr0_aw",
+    "title": "Coffeezilla",
+    "via": "name search"
+   },
+   "url": "https://www.youtube.com/feeds/videos.xml?playlist_id=UULFFQMnBA3CS502aghlcr0_aw"
+  },
+  {
+   "id": "yt-tom-scott",
+   "name": "Tom Scott",
+   "type": "youtube",
+   "status": "ok",
+   "count": 1,
+   "resolved": {
+    "channelId": "UCBa659QWEk1AI4Tg--mrJ2A",
+    "title": "Tom Scott",
+    "via": "name search"
+   },
+   "url": "https://www.youtube.com/feeds/videos.xml?playlist_id=UULFBa659QWEk1AI4Tg--mrJ2A"
+  },
+  {
+   "id": "yt-lenny-s-podcast",
+   "name": "Lenny's Podcast",
+   "type": "youtube",
+   "status": "ok",
+   "count": 0,
+   "resolved": {
+    "channelId": "UC6t1O76G0jYXOAoYCm153dA",
+    "title": "Lenny's Podcast",
+    "via": "name search"
+   },
+   "url": "https://www.youtube.com/feeds/videos.xml?playlist_id=UULF6t1O76G0jYXOAoYCm153dA"
+  },
+  {
+   "id": "yt-crazy-bro",
+   "name": "Crazy bro",
+   "type": "youtube",
+   "status": "ok",
+   "count": 5,
+   "resolved": {
+    "channelId": "UCvB7APb_Ng4KjcqBv7MTUmg",
+    "title": "CrazyBro Reactions",
+    "via": "name search"
+   },
+   "url": "https://www.youtube.com/feeds/videos.xml?playlist_id=UULFvB7APb_Ng4KjcqBv7MTUmg"
+  },
+  {
+   "id": "yt-the-hustle",
+   "name": "The Hustle",
+   "type": "youtube",
+   "status": "ok",
+   "count": 0,
+   "resolved": {
+    "channelId": "UCkWVA1_vkY9GLyuLAre97AQ",
+    "title": "The Hustle ",
+    "via": "name search"
+   },
+   "url": "https://www.youtube.com/feeds/videos.xml?playlist_id=UULFkWVA1_vkY9GLyuLAre97AQ"
+  },
+  {
+   "id": "yt-history-moshe",
+   "name": "History Moshe",
+   "type": "youtube",
+   "status": "ok",
+   "count": 0,
+   "resolved": {
+    "channelId": "UCHDwF_skC5EqALTM5Uba4eA",
+    "title": "Jewish History Soundbites",
+    "via": "name search"
+   },
+   "url": "https://www.youtube.com/feeds/videos.xml?playlist_id=UULFHDwF_skC5EqALTM5Uba4eA"
+  },
+  {
+   "id": "yt-radicalsoda",
+   "name": "RadicalSoda",
+   "type": "youtube",
+   "status": "ok",
+   "count": 0,
+   "resolved": {
+    "channelId": "UCK045mDx8Pf9DpPG-kX8YUg",
+    "title": "RadicalSoda",
+    "via": "name search"
+   },
+   "url": "https://www.youtube.com/feeds/videos.xml?playlist_id=UULFK045mDx8Pf9DpPG-kX8YUg"
+  },
+  {
+   "id": "yt-how-money-works",
+   "name": "How Money Works",
+   "type": "youtube",
+   "status": "ok",
+   "count": 0,
+   "resolved": {
+    "channelId": "UCkCGANrihzExmu9QiqZpPlQ",
+    "title": "How Money Works",
+    "via": "name search"
+   },
+   "url": "https://www.youtube.com/feeds/videos.xml?playlist_id=UULFkCGANrihzExmu9QiqZpPlQ"
+  },
+  {
+   "id": "yt-joel-haver",
+   "name": "Joel Haver",
+   "type": "youtube",
+   "status": "unresolved",
+   "count": 0,
+   "error": "search HTTP 0",
+   "http": 0
+  },
+  {
+   "id": "yt-bluejay",
+   "name": "Bluejay",
+   "type": "youtube",
+   "status": "ok",
+   "count": 0,
+   "resolved": {
+    "channelId": "UCvQ4C0f9_OWRf1uyobwqOwA",
+    "title": "BlueJay",
+    "via": "name search"
+   },
+   "url": "https://www.youtube.com/feeds/videos.xml?playlist_id=UULFvQ4C0f9_OWRf1uyobwqOwA"
+  },
+  {
+   "id": "yt-oversimplified",
+   "name": "OverSimplified",
+   "type": "youtube",
+   "status": "ok",
+   "count": 0,
+   "resolved": {
+    "channelId": "UCNIuvl7V8zACPpTmmNIqP2A",
+    "title": "OverSimplified",
+    "via": "name search"
+   },
+   "url": "https://www.youtube.com/feeds/videos.xml?playlist_id=UULFNIuvl7V8zACPpTmmNIqP2A"
+  },
+  {
+   "id": "yt-ordinary-things",
+   "name": "Ordinary Things",
+   "type": "youtube",
+   "status": "ok",
+   "count": 0,
+   "resolved": {
+    "channelId": "UCxLYtICsUCWdr1YPrj5DtwA",
+    "title": "Ordinary Things",
+    "via": "name search"
+   },
+   "url": "https://www.youtube.com/feeds/videos.xml?playlist_id=UULFxLYtICsUCWdr1YPrj5DtwA"
+  },
+  {
+   "id": "yt-bacon",
+   "name": "Bacon_",
+   "type": "youtube",
+   "status": "unresolved",
+   "count": 0,
+   "error": "search HTTP 0",
+   "http": 0
+  },
+  {
+   "id": "yt-economics-explained",
+   "name": "Economics Explained",
+   "type": "youtube",
+   "status": "ok",
+   "count": 0,
+   "resolved": {
+    "channelId": "UCZ4AMrDcNrfy3X6nsU8-rPg",
+    "title": "Economics Explained",
+    "via": "name search"
+   },
+   "url": "https://www.youtube.com/feeds/videos.xml?playlist_id=UULFZ4AMrDcNrfy3X6nsU8-rPg"
+  },
+  {
+   "id": "yt-j-j-mccullough",
+   "name": "J.J. McCullough",
+   "type": "youtube",
+   "status": "unresolved",
+   "count": 0,
+   "error": "search HTTP 0",
+   "http": 0
+  },
+  {
+   "id": "yt-adam-neely",
+   "name": "Adam Neely",
+   "type": "youtube",
+   "status": "ok",
+   "count": 0,
+   "resolved": {
+    "channelId": "UCnkp4xDOwqqJD7sSM3xdUiQ",
+    "title": "Adam Neely",
+    "via": "name search"
+   },
+   "url": "https://www.youtube.com/feeds/videos.xml?playlist_id=UULFnkp4xDOwqqJD7sSM3xdUiQ"
   }
  ],
- "feeds": [],
- "stats": null
+ "items": [
+  {
+   "title": "Einigung in der Koalition: So soll die Zuckersteuer aussehen",
+   "url": "https://www.youtube.com/watch?v=67XyXFqOYXo",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-14T13:32:35.000Z",
+   "summary": "Der Streit in der schwarz-roten Koalition über die Steuer auf zuckergesüßte Getränke ist beigelegt. Das Kabinett hat einen Regelungsvorschlag beschlossen. Was geplant ist und was die Regierung damit erreichen will. Mehr Informationen zu diesem Thema:…",
+   "thumb": "https://i3.ytimg.com/vi/67XyXFqOYXo/hqdefault.jpg",
+   "id": "32ae462b48cc",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Auktion in New York: Nano-Tyrannus könnte bis zu 9 Millionen Dollar bringen",
+   "url": "https://www.youtube.com/watch?v=FblECUMXSu0",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-14T13:25:36.000Z",
+   "summary": "Wenige Monate nach dem Rekordverkauf eines T-Rex-Skeletts steht in New York ein weiterer Dinosaurier auf dem Auktionsprogramm. Das knapp zwei Meter hohe und sechs Meter lange Skelett von Nanotyrannus „Jodi“ soll am 27. Oktober in New York versteigert werden, teilte das…",
+   "thumb": "https://i3.ytimg.com/vi/FblECUMXSu0/hqdefault.jpg",
+   "id": "501789708076",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Simon Marks reacts to 'staggering' AI video of Trump wrestling tiger",
+   "url": "https://www.youtube.com/watch?v=pnQ783a3BaI",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-14T13:12:31.000Z",
+   "summary": "Simon Marks and Lewis Goodall react to the bizarre AI video that Donald Trump posted following the death of a British man who entered a tiger enclosure in Yorkshire. William Chapman, 23, died after entering a tiger enclosure at Yorkshire Wildlife Park near Doncaster shortly…",
+   "thumb": "https://i1.ytimg.com/vi/pnQ783a3BaI/hqdefault.jpg",
+   "id": "4940b5596dbf",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "NEW PRESSER DISASTER as SHOCK LEAK on Leavitt Replacement SPELLS DOOM!",
+   "url": "https://www.youtube.com/watch?v=RaC-DIKWIJ8",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-14T13:00:32.000Z",
+   "summary": "Luke discusses Trump's new press secretary, Katie Zacharia, making her debut. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
+   "thumb": "https://i3.ytimg.com/vi/RaC-DIKWIJ8/hqdefault.jpg",
+   "id": "d4f3844fe262",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Reaction On Why Everyone Is Obsessed With Royal Enfield | रॉयल एनफील्ड | Pakistani Reaction🔥",
+   "url": "https://www.youtube.com/watch?v=x3sBp4DGixM",
+   "source": "Crazy bro",
+   "feedId": "yt-crazy-bro",
+   "type": "video",
+   "tags": [],
+   "published": "2026-10-14T12:00:04.000Z",
+   "summary": "Pakistani Reaction On Why Everyone Is Obsessed With Basic Indian Royal Enfield | CrazyBro Reactions! Hey Guys, इस वीडियो में CrazyBro Reactions \"भारतीय रॉयल एनफील्ड की वैश्विक सफलता और जापान, साउथ कोरिया में धमाल\" पर प्रतिक्रिया दे रहा है. This video covers the amazing global…",
+   "thumb": "https://i1.ytimg.com/vi/x3sBp4DGixM/hqdefault.jpg",
+   "id": "3490a599e2ca",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "'Why did she wobble so much?' | PMQs analysed",
+   "url": "https://www.youtube.com/watch?v=P4VVx_Nomgc",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-14T11:43:20.000Z",
+   "summary": "LBC's political correspondent Bethany Dawson joins James O'Brien to analyse this week's PMQs. 'An interesting performance...' 'Frankly not her best' 'Why did she wobble so much?' 'A game of two halves' 'She moved back to petulant mode' 'A taste of her own medicine' 'He had his…",
+   "thumb": "https://i1.ytimg.com/vi/P4VVx_Nomgc/hqdefault.jpg",
+   "id": "64f22bb689fa",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "HIGHLIGHTS: Andy Burnham Wipes The Floor with Kemi Badenoch at PMQs",
+   "url": "https://www.youtube.com/watch?v=Tqb6hp0dOVc",
+   "source": "PoliticsJOE",
+   "feedId": "yt-politicsjoe",
+   "type": "video",
+   "tags": [
+    "comedy"
+   ],
+   "published": "2026-10-14T11:38:49.000Z",
+   "summary": "First PMQs since the return from recess, and Kemi Badenoch is still chasing Andy Burnham's shadow at Prime Minister's Questions. Like PoliticsJOE? We need your support: https://www.patreon.com/PoliticsJOE",
+   "thumb": "https://i1.ytimg.com/vi/Tqb6hp0dOVc/hqdefault.jpg",
+   "id": "aed06c62eda5",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Trump shares AI video of himself wrestling tiger that killed British man",
+   "url": "https://www.youtube.com/watch?v=VpJgmIltTqw",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-14T10:45:23.000Z",
+   "summary": "James O'Brien reacts as Donald Trump shares a bizarre AI video of him playing with a tiger after a British man was mauled to death over the weekend. William Chapman, 23, died after entering a tiger enclosure at Yorkshire Wildlife Park near Doncaster shortly after 1.30pm on…",
+   "thumb": "https://i3.ytimg.com/vi/VpJgmIltTqw/hqdefault.jpg",
+   "id": "14d9bd319a5a",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Steigender Bedarf: Regierung will Pflege reformieren",
+   "url": "https://www.youtube.com/watch?v=zF_PmA4jbBs",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-14T10:08:02.000Z",
+   "summary": "\"Hier waren wir auf dem Dach des Empire State Buildings in New York\", erzählt Jutta Umsonst und vergrößert das Foto auf ihrem Tablet. Es zeigt ihren Mann Ulf und sie, Arm in Arm vor Hochhauskulisse und blauem Himmel. Das Bild entstand im Urlaub im vergangenen Jahr. Seitdem hat…",
+   "thumb": "https://i3.ytimg.com/vi/zF_PmA4jbBs/hqdefault.jpg",
+   "id": "416472c1b3b6",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Reaction On Latest Motorcycle Launch Events | India VS Pakistan | Pakistani Reaction 🔥",
+   "url": "https://www.youtube.com/watch?v=jQlJ4YJZy7Y",
+   "source": "Crazy bro",
+   "feedId": "yt-crazy-bro",
+   "type": "video",
+   "tags": [],
+   "published": "2026-10-14T10:00:28.000Z",
+   "summary": "Pakistani React On New Bikes Launched Event In India VS Pakistan | CrazyBro Reactions! Hey Guys, in this video CrazyBro Reactions is reacting to new bike launch events in India and Pakistan. Explore the latest motorcycle launches, stylish designs, new features, and exciting…",
+   "thumb": "https://i3.ytimg.com/vi/jQlJ4YJZy7Y/hqdefault.jpg",
+   "id": "7ab219e8f008",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Four in five new jobs taken by foreigners in last decade",
+   "url": "https://www.youtube.com/watch?v=38pIbAvt1xg",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-14T09:51:25.000Z",
+   "summary": "Four in five jobs created over the past decade have been taken by foreigners, according to a think-tank. According to the Centre for Social Justice, of the 3.7million new roles recorded under the PAYE system since 2014, just 734,000 were taken by UK nationals. During that…",
+   "thumb": "https://i4.ytimg.com/vi/38pIbAvt1xg/hqdefault.jpg",
+   "id": "b94ffa447b18",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "\"Frage, ob das als Kriegsverbrechen gewertet wird\": ARD-Experte zu Nord-Stream-Prozess",
+   "url": "https://www.youtube.com/watch?v=ISwQqaiuiiE",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-14T09:48:27.000Z",
+   "summary": "Es ist vier Jahre her und geschah wenige Monate nach dem Beginn des Krieges in der Ukraine: Im September 2022 wurde ein Anschlag auf die Nord-Stream-Pipelines vor der dänischen Insel Bornholm verübt. In Hamburg beginnt heute der Prozess gegen den mutmaßlichen Haupt-Täter:…",
+   "thumb": "https://i2.ytimg.com/vi/ISwQqaiuiiE/hqdefault.jpg",
+   "id": "bff7619cb832",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Prozess zu Nord-Stream-Anschlag beginnt: ARD-Reporter berichtet aus Gericht",
+   "url": "https://www.youtube.com/watch?v=McuLtWDrVI0",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-14T09:25:30.000Z",
+   "summary": "Das Interesse am Beginn des Prozesses um die Anschläge auf die Nord-Stream-Pipelines in der Ostsee ist groß. Vor den Sicherheitsschleusen im Gerichtsgebäude in Hamburg herrschte ein großer Andrang von Journalistinnen und Journalisten. Internationale TV-Teams drehten vor dem…",
+   "thumb": "https://i2.ytimg.com/vi/McuLtWDrVI0/hqdefault.jpg",
+   "id": "7fcb6b138676",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Reaction On Private Zoo Tour Pakistan VS India | प्राइवेट चिड़ियाघर | Pakistani Reaction🔥",
+   "url": "https://www.youtube.com/watch?v=49UwKwUmu0c",
+   "source": "Crazy bro",
+   "feedId": "yt-crazy-bro",
+   "type": "video",
+   "tags": [],
+   "published": "2026-10-14T08:00:19.000Z",
+   "summary": "Pakistani Reaction On Biggest Private Zoo Tour Comparison Pakistan VS India | CrazyBro Reactions! Hey Guys, इस वीडियो में CrazyBro Reactions \"पाकिस्तान और भारत के सबसे बड़े प्राइवेट चिड़ियाघर टूर की तुलना\" पर प्रतिक्रिया दे रहा है. This video covers the amazing comparison of…",
+   "thumb": "https://i1.ytimg.com/vi/49UwKwUmu0c/hqdefault.jpg",
+   "id": "67bda6a937eb",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Where does Trump's deal with Putin leave Ukraine?",
+   "url": "https://www.youtube.com/watch?v=f73FukEehLo",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-14T06:00:28.000Z",
+   "summary": "Winter is approaching in Ukraine - and with Russia attacking energy infrastructure, it could be a freezing one for many civilians. Andrew Marr speaks to journalist Luke Harding (00:19), defence expert John Foreman (03:56) and Conservative MP Alicia Kearns (07:39) - to get their…",
+   "thumb": "https://i3.ytimg.com/vi/f73FukEehLo/hqdefault.jpg",
+   "id": "6333a5ab1ea9",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "OMG: Fox Airs TRUMP TAKEDOWN as He F***S UP Big Time!",
+   "url": "https://www.youtube.com/watch?v=JqXAF-_6RWc",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-14T04:30:03.000Z",
+   "summary": "Luke discusses Fox News' recent conversation about the Russia/Ukraine war. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
+   "thumb": "https://i3.ytimg.com/vi/JqXAF-_6RWc/hqdefault.jpg",
+   "id": "687d5586e06b",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "CHAOS: What Just HAPPENED at THIS TRUMP RALLY, IT’S INSANE!",
+   "url": "https://www.youtube.com/watch?v=a28qvwrwooU",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-14T02:30:04.000Z",
+   "summary": "Luke discusses Trump's rally in Ohio. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley Instagram -…",
+   "thumb": "https://i2.ytimg.com/vi/a28qvwrwooU/hqdefault.jpg",
+   "id": "dc3350746e04",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "SHOCK iPhone Footage EXPOSES PAXTON, Talarico SECURITY CAMERA Proves It!",
+   "url": "https://www.youtube.com/watch?v=40Z-grgtHIo",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-14T00:30:01.000Z",
+   "summary": "Luke discusses new video that has been released of Ken Paxton in Dubai with fugitives. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
+   "thumb": "https://i1.ytimg.com/vi/40Z-grgtHIo/hqdefault.jpg",
+   "id": "d43bd1132786",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "He fired her",
+   "url": "https://www.youtube.com/watch?v=1dXPXFilZD8",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-13T22:30:16.000Z",
+   "summary": "Luke discusses Trump's latest comments on Kimberly Guilfoyle. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
+   "thumb": "https://i2.ytimg.com/vi/1dXPXFilZD8/hqdefault.jpg",
+   "id": "5c7ae947597d",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "10 Recent COOP Games You Shouldn't MISS",
+   "url": "https://www.youtube.com/watch?v=EqKv9v2_h1U",
+   "source": "GameRanx",
+   "feedId": "yt-gameranx",
+   "type": "video",
+   "tags": [
+    "gaming"
+   ],
+   "published": "2026-10-13T18:26:55.000Z",
+   "summary": "Looking for a new game to play with friends? We've got you covered with these new co op games. Subscribe for more: https://www.youtube.com/gameranxTV?sub_confirmation=1 0:00 Intro 0:50 The Big Walk 3:23 Space Marine 2 5:29 Orbitals 7:47 Elden Ring: Nightreign 10:23 Lego Batman:…",
+   "thumb": "https://i2.ytimg.com/vi/EqKv9v2_h1U/hqdefault.jpg",
+   "id": "970368052442",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "MP3 Trailer [New Dropout Series]",
+   "url": "https://www.youtube.com/watch?v=Q9Uvlu_mDAU",
+   "source": "Dropout",
+   "feedId": "yt-dropout",
+   "type": "video",
+   "tags": [
+    "comedy"
+   ],
+   "published": "2026-10-13T17:30:28.000Z",
+   "summary": "Welcome to the world of MP3 - where every episode brings new outrageous music videos, ridiculous hosts, and surprise guests. Premieres November 4th only on Dropout. Welcome to the Dropout channel! You can support us by signing up for Dropout.tv, our subscription video platform…",
+   "thumb": "https://i2.ytimg.com/vi/Q9Uvlu_mDAU/hqdefault.jpg",
+   "id": "c5bb691b7732",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Will Trump Running For Midterm President Help Down-Ballot Republicans?",
+   "url": "https://www.youtube.com/watch?v=68KAR5Mra7U",
+   "source": "The Onion",
+   "feedId": "yt-the-onion",
+   "type": "video",
+   "tags": [
+    "comedy"
+   ],
+   "published": "2026-10-13T17:00:31.000Z",
+   "summary": "In The Know panelists debate whether Trump's decision to run for Midterm President will help or hurt republican candidates in this year's elections. Become an Onion member while it's still optional: https://membership.theonion.com/?campaign=701a500001geULHAA2 Powered by Forge…",
+   "thumb": "https://i3.ytimg.com/vi/68KAR5Mra7U/hqdefault.jpg",
+   "id": "6ada446ffe03",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Reaction On Kuch Nahi Bana by Usama | दिल छू लेने वाला रैप | Pakistani Reaction 🔥",
+   "url": "https://www.youtube.com/watch?v=09zfgiWwQ8Q",
+   "source": "Crazy bro",
+   "feedId": "yt-crazy-bro",
+   "type": "video",
+   "tags": [],
+   "published": "2026-10-13T16:00:01.000Z",
+   "summary": "Pakistani Reaction On Kuch Nahi Bana by Usama | CrazyBro Reactions! Hey Guys, in this video CrazyBro Reactions is reacting to “Kuch Nahi Bana” by Usama, a heart-touching Urdu rap song. This track brings emotional Urdu lyrics, a powerful musical vibe, and feelings that many…",
+   "thumb": "https://i1.ytimg.com/vi/09zfgiWwQ8Q/hqdefault.jpg",
+   "id": "79e6db941e3d",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Is This The Worst White House Press Briefing Ever?",
+   "url": "https://www.youtube.com/watch?v=zqnsDxJhrfs",
+   "source": "PoliticsJOE",
+   "feedId": "yt-politicsjoe",
+   "type": "video",
+   "tags": [
+    "comedy"
+   ],
+   "published": "2026-10-13T15:43:57.000Z",
+   "summary": "As Karoline Leavitt hangs up her MAGA card, new White House Press Secretary Katie Zachariah stepped into her shoes at the famous lectern to give her first briefing as Donald Trump's new Press Sec. It went about as well as you could imagine. Like PoliticsJOE? We need your…",
+   "thumb": "https://i3.ytimg.com/vi/zqnsDxJhrfs/hqdefault.jpg",
+   "id": "ba93d4c286f0",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Is Andy Burnham about to reverse Brexit?",
+   "url": "https://www.youtube.com/watch?v=Zz0hDD87Nsw",
+   "source": "PoliticsJOE",
+   "feedId": "yt-politicsjoe",
+   "type": "video",
+   "tags": [
+    "comedy"
+   ],
+   "published": "2026-10-13T15:19:30.000Z",
+   "summary": "Andy Burnham gave his first general recap in the Commons yesterday, and used it to make the case for closer alignment with the EU. From reduced trade barriers to closer energy cooperation and greater collaboration on immigration, he argues that a potential deal could add more…",
+   "thumb": "https://i3.ytimg.com/vi/Zz0hDD87Nsw/hqdefault.jpg",
+   "id": "1294f04ae845",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Reaction On Eden Gardens Durga Puja Opening | दुर्गा पूजा | Pakistani Reaction 🔥",
+   "url": "https://www.youtube.com/watch?v=ZDSc-MchuGc",
+   "source": "Crazy bro",
+   "feedId": "yt-crazy-bro",
+   "type": "video",
+   "tags": [],
+   "published": "2026-10-13T15:00:21.000Z",
+   "summary": "Pakistani Reaction On Eden Gardens Durga Puja Opening | CrazyBro Reactions! Hey Guys, in this video CrazyBro Reactions is reacting to the Eden Gardens Durga Puja Opening in Kolkata. Watch our reaction to this special celebration, where the spirit of Durga Puja, Bengali culture…",
+   "thumb": "https://i3.ytimg.com/vi/ZDSc-MchuGc/hqdefault.jpg",
+   "id": "61cddbb0294f",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Could Another Brexit Debate End Farage?",
+   "url": "https://www.youtube.com/watch?v=ZeyP_CHjEZw",
+   "source": "TLDR News",
+   "feedId": "yt-tldr-news",
+   "type": "video",
+   "tags": [
+    "news",
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-13T09:00:14.000Z",
+   "summary": "Go to https://hensonshaving.com/TLDR and enter \"TLDR\" at checkout to get 100 free blades with your purchase. Nigel Farage said Andy Burnham’s comments about potentially rejoining the EU had given him “the biggest boost in [his] career\". We look at why — even if it seems…",
+   "thumb": "https://i3.ytimg.com/vi/ZeyP_CHjEZw/hqdefault.jpg",
+   "id": "b9534585cb6d",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "KT #789 - TIM BUTTERLY +KIRK FOX",
+   "url": "https://www.youtube.com/watch?v=ntTShp2YNlo",
+   "source": "Kill Tony",
+   "feedId": "yt-kill-tony",
+   "type": "video",
+   "tags": [
+    "comedy",
+    "standup",
+    "listen"
+   ],
+   "published": "2026-10-13T01:00:06.000Z",
+   "summary": "Tim Butterly, Kirk Fox, Pat O'Neill, Dedrick Flynn, Martin Phillips, D Madness, Michael A. Gonzales, Jon Deas, Matthew Muehling, Grooveline Horns, Joe White, Troy Conrad, Monica Colt, Steve Glass, Tony Hinchcliffe, Brian Redban - RECORDED– 10/05/2026 For advertising inquiries,…",
+   "thumb": "https://i3.ytimg.com/vi/ntTShp2YNlo/hqdefault.jpg",
+   "id": "addc529e979e",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "SYRACUSE TRUMP RALLY",
+   "url": "https://www.youtube.com/watch?v=VYUmHZiyImo",
+   "source": "The Good Liars",
+   "feedId": "yt-the-good-liars",
+   "type": "video",
+   "tags": [
+    "comedy",
+    "politics",
+    "debates"
+   ],
+   "published": "2026-10-12T19:00:06.000Z",
+   "summary": "Jason visits Syracuse, New York for a Trump Rally. Go Orange! Join this channel to get access to perks: https://www.youtube.com/channel/UCUNOwz9KTDIhhTTN3_ptUDA/join https://linktr.ee/thegoodliars",
+   "thumb": "https://i3.ytimg.com/vi/VYUmHZiyImo/hqdefault.jpg",
+   "id": "59db79882315",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "I Investigated $100 Billion in Healthcare Fraud",
+   "url": "https://www.youtube.com/watch?v=9eWJISlh0fw",
+   "source": "Coffeezilla",
+   "feedId": "yt-coffeezilla",
+   "type": "video",
+   "tags": [
+    "finance"
+   ],
+   "published": "2026-10-12T17:47:01.000Z",
+   "summary": "LIMITED TIME MERCH!! https://coffeezilla.shop/ (PRE-ORDER ENDS NOVEMBER 6TH) Support Investigative Journalism: ► Patreon: https://patreon.com/coffeezilla Credits: HUNTERBROOK ENSIGN STORY: https://hntrbrk.com/investigations/ensign 3D Artist: Ed Leszczynski @LeszczynskiEd Video…",
+   "thumb": "https://i2.ytimg.com/vi/9eWJISlh0fw/hqdefault.jpg",
+   "id": "cc3a132b02be",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Valor Mortis - Before You Buy",
+   "url": "https://www.youtube.com/watch?v=jdlfOEA1xfg",
+   "source": "GameRanx",
+   "feedId": "yt-gameranx",
+   "type": "video",
+   "tags": [
+    "gaming"
+   ],
+   "published": "2026-10-12T17:08:28.000Z",
+   "summary": "Valor Mortis (PC, PS5, Xbox Series X/S) is a new game from the makers of Ghostrunner. How is it? Let’s talk. Subscribe for more: https://www.youtube.com/gameranxTV?sub_confirmation=1",
+   "thumb": "https://i3.ytimg.com/vi/jdlfOEA1xfg/hqdefault.jpg",
+   "id": "997f2060a7e3",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Is Zack Polanski in trouble? | Green Party by-election loss",
+   "url": "https://www.youtube.com/watch?v=LcxrnfDHyzA",
+   "source": "PoliticsJOE",
+   "feedId": "yt-politicsjoe",
+   "type": "video",
+   "tags": [
+    "comedy"
+   ],
+   "published": "2026-10-12T16:55:11.000Z",
+   "summary": "Zack Polanski did not win the Holborn and St Pancras by-election. But is there a world where he could have? Ava and Seán breakdown the result, what it means for the Greens, and why it went Labour's way. And to what extent was the Zionism is Racism motion a factor? Like…",
+   "thumb": "https://i1.ytimg.com/vi/LcxrnfDHyzA/hqdefault.jpg",
+   "id": "4ca2173a140f",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "This $10 Wax Keeps Glasses From Slipping Down Your Nose | Shark Tank US | Shark Tank Global",
+   "url": "https://www.youtube.com/watch?v=XJzBvdRjMMM",
+   "source": "Shark Tank Global",
+   "feedId": "yt-shark-tank-global",
+   "type": "video",
+   "tags": [
+    "trash",
+    "business"
+   ],
+   "published": "2026-10-12T16:00:03.000Z",
+   "summary": "Don and Lydia enter the Tank seeking $80,000 for 20% of their company, Nerdwax, an all-natural beeswax formula designed to keep glasses from slipping down your nose. From Season 7 Episode 3 Watch Shark Tank US Now: http://AAN.SonyPictures.com/SharkTankUSHulu Watch Shark Tank…",
+   "thumb": "https://i1.ytimg.com/vi/XJzBvdRjMMM/hqdefault.jpg",
+   "id": "c314c5e78799",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Why robots still can't pick strawberries",
+   "url": "https://www.youtube.com/watch?v=TumxO2glmPQ",
+   "source": "Tom Scott",
+   "feedId": "yt-tom-scott",
+   "type": "video",
+   "tags": [
+    "education"
+   ],
+   "published": "2026-10-12T15:00:21.000Z",
+   "summary": "At Wilkin & Sons in Tiptree, a city boy gets impressed by agriculture, and meets some robots that work better than others. | AD: 💼 Find a fulfilling career that also helps the world: https://80000hours.org/tom | 🗺️ England series map: https://www.tomscott.com/england/ 🟥 MORE…",
+   "thumb": "https://i1.ytimg.com/vi/TumxO2glmPQ/hqdefault.jpg",
+   "id": "da63d329ef7b",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Dating Shows Exist To Advertise S*x Work",
+   "url": "https://www.youtube.com/watch?v=oOAps5_hVUM",
+   "source": "Aberrant preach",
+   "feedId": "yt-aberrant-preach",
+   "type": "video",
+   "tags": [
+    "trash"
+   ],
+   "published": "2026-10-12T14:21:25.000Z",
+   "summary": "Jubilee copycats are now simply getting a bunch of OF girls and making them say the wildest things in these blind date type videos. That didn't seem enough and now they're getting fake goth OF girls... ———————————— Spotify: https://open.spotify.com/artist/6QJIJ6AugqPEFASp1V6zgH…",
+   "thumb": "https://i4.ytimg.com/vi/oOAps5_hVUM/hqdefault.jpg",
+   "id": "fd7a02863650",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Generic Drugs: Last Week Tonight with John Oliver (HBO)",
+   "url": "https://www.youtube.com/watch?v=TM1EbMKhT4Y",
+   "source": "Last Week Tonight",
+   "feedId": "yt-last-week-tonight",
+   "type": "video",
+   "tags": [
+    "comedy",
+    "politics"
+   ],
+   "published": "2026-10-12T06:30:32.000Z",
+   "summary": "John Oliver does a deep dive on generic drugs, why they’re so important, why they can be so vulnerable to shortages and quality issues, and why Kevin Bacon can’t solve everything all on his own. Subscribe to the #lastweektonight YouTube channel for more almost news as it almost…",
+   "thumb": "https://i1.ytimg.com/vi/TM1EbMKhT4Y/hqdefault.jpg",
+   "id": "49b7190d4eac",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "KT: Behind the Tape (Ep: 788 Wheeler Walker + Sam Tripoli)",
+   "url": "https://www.youtube.com/watch?v=aoogiviEa1A",
+   "source": "Kill Tony",
+   "feedId": "yt-kill-tony",
+   "type": "video",
+   "tags": [
+    "comedy",
+    "standup",
+    "listen"
+   ],
+   "published": "2026-10-12T05:54:09.000Z",
+   "summary": "An exclusive, behind the scenes look from KT Episode 788 KT guest Wheeler Walker + Sam Tripoli Wheeler Walker Jr, Sam Tripoli, Pat O'Neill, Dedrick Flynn, Martin Phillips, D Madness, Michael A. Gonzales, Jon Deas, Matthew Muehling, Grooveline Horns, Joe White, Troy Conrad,…",
+   "thumb": "https://i2.ytimg.com/vi/aoogiviEa1A/hqdefault.jpg",
+   "id": "72b24489802d",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "S13 E26: Kimberly Guilfoyle & Generic Drugs: 10/11/26: Last Week Tonight with John Oliver",
+   "url": "https://www.youtube.com/watch?v=d_DnFsuIWtA",
+   "source": "Last Week Tonight",
+   "feedId": "yt-last-week-tonight",
+   "type": "video",
+   "tags": [
+    "comedy",
+    "politics"
+   ],
+   "published": "2026-10-12T03:00:00.000Z",
+   "summary": "John Oliver discusses the latest scandal in the Trump Administration surrounding Kimberly Guilfoyle’s credit card bill, then he covers the issues with generic drugs, the risks and benefits they can pose to consumers, and why he’s using our studio for his side job during the…",
+   "thumb": "https://i1.ytimg.com/vi/d_DnFsuIWtA/hqdefault.jpg",
+   "id": "1b1cd87cb39d",
+   "score": 0,
+   "matched": [],
+   "why": "0",
+   "durationSec": 2345,
+   "duration": "39:05"
+  },
+  {
+   "title": "Trinitarian Vs Unitarian | GodLogic Apologetics Vs Metaphysics Mike",
+   "url": "https://www.youtube.com/watch?v=CeZdxJveXBE",
+   "source": "Modern-Day Debate",
+   "feedId": "yt-modern-day-debate",
+   "type": "video",
+   "tags": [
+    "debates",
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-11T18:00:33.000Z",
+   "summary": "GodLogic Apologetics Vs Dr. Javad Hashmi will be in Orlando, FL on October 24/25th! LET’S GOOOOO! https://events.eventnoire.com/e/debatecon-9-by-modern-day-debate-2 LINKS TO GUESTS: @GodLogicApologetics @metaphysicsmike OUR INSIDER'S EMAIL LIST FOR DEBATECON DISCOUNTS:…",
+   "thumb": "https://i4.ytimg.com/vi/CeZdxJveXBE/hqdefault.jpg",
+   "id": "cfdad425315c",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Why You Always Have NOTHING TO PLAY",
+   "url": "https://www.youtube.com/watch?v=zb4DMOU8jV4",
+   "source": "GameRanx",
+   "feedId": "yt-gameranx",
+   "type": "video",
+   "tags": [
+    "gaming"
+   ],
+   "published": "2026-10-11T17:21:57.000Z",
+   "summary": "Do you ever feel like you have nothing to play, or maybe even too much to play? There’s a reason for that. Let’s talk about it. Subscribe for more: https://www.youtube.com/gameranxTV?sub_confirmation=1",
+   "thumb": "https://i3.ytimg.com/vi/zb4DMOU8jV4/hqdefault.jpg",
+   "id": "cf2b581b2afd",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "When You Are Afraid to Make Mistakes in German",
+   "url": "https://www.youtube.com/watch?v=RbtIMGCizu0",
+   "source": "Easy German",
+   "feedId": "yt-easy-german",
+   "type": "video",
+   "tags": [
+    "german",
+    "listen"
+   ],
+   "published": "2026-10-11T17:00:32.000Z",
+   "summary": "🏫 Thanks to our partner GLS Sprachenzentrum! Use code EASYGERMAN to save the registration fee when you enroll to a German course. More info: https://www.easygerman.org/gls (Ad) --- LEARN MORE GERMAN WITH US: 💡 JOIN OUR COMMUNITY: https://easygerman.link/membership_eg681 🎧…",
+   "thumb": "https://i3.ytimg.com/vi/RbtIMGCizu0/hqdefault.jpg",
+   "id": "9a6eb2dba49b",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "1 Progressive vs 20 MAGA (ft. David Mauricio) | Surrounded",
+   "url": "https://www.youtube.com/watch?v=sYZs9vqUfA8",
+   "source": "Jubilee",
+   "feedId": "yt-jubilee",
+   "type": "video",
+   "tags": [
+    "politics",
+    "debates"
+   ],
+   "published": "2026-10-11T16:00:20.000Z",
+   "summary": "Build credit fast and get your first month for just a dollar at https://getkikoff.com/SURROUNDED today. Thanks to Kikoff for sponsoring us! Hey you 👈 Wanna be in a Jubilee video? https://bit.ly/be-in-a-video LET’S BE FRIENDS Instagram: https://www.instagram.com/jubileemedia/…",
+   "thumb": "https://i4.ytimg.com/vi/sYZs9vqUfA8/hqdefault.jpg",
+   "id": "050260482934",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "$100K for a Mask That Helps You Wake Up Better | Shark Tank US | Shark Tank Global",
+   "url": "https://www.youtube.com/watch?v=336QSdJq9y8",
+   "source": "Shark Tank Global",
+   "feedId": "yt-shark-tank-global",
+   "type": "video",
+   "tags": [
+    "trash",
+    "business"
+   ],
+   "published": "2026-10-11T15:59:46.000Z",
+   "summary": "Neil Joglekar and Justin Lee enter the Tank asking for $100,000 for 10% of Napwell, a high-tech napping mask designed to help users wake up feeling refreshed. From Season 6, Episode 15 Watch Shark Tank US Now: http://AAN.SonyPictures.com/SharkTankUSHulu Watch Shark Tank…",
+   "thumb": "https://i4.ytimg.com/vi/336QSdJq9y8/hqdefault.jpg",
+   "id": "5af5d8cca77a",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "This NHS hospital is weirder than I thought",
+   "url": "https://www.youtube.com/watch?v=U0Q4G8cUKMo",
+   "source": "Chris Spargo",
+   "feedId": "yt-chris-spargo",
+   "type": "video",
+   "tags": [
+    "british",
+    "education"
+   ],
+   "published": "2026-10-11T15:00:27.000Z",
+   "summary": "Click here to check out Huel: http://uk.huel.com/CHRIS10 and use code CHRIS10 to get £10 off your first order over £60. Minimum spend required. Offer valid for 30 days. New customers only. #ad You can donate monthly to the Children's Cancer Centre project if you're interested:…",
+   "thumb": "https://i2.ytimg.com/vi/U0Q4G8cUKMo/hqdefault.jpg",
+   "id": "9042639ff221",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Der Absturz von Nike",
+   "url": "https://www.youtube.com/watch?v=O3EQVMJDn1s",
+   "source": "Simplicissimus",
+   "feedId": "yt-simplicissimus",
+   "type": "video",
+   "tags": [
+    "german",
+    "education"
+   ],
+   "published": "2026-10-11T14:00:38.000Z",
+   "summary": "Hol dir jetzt 20 € Willkommensbonus bei Revolut! Einfach die kostenlose App herunterladen, Konto eröffnen und mit der virtuellen Karte sofort loslegen: https://simpli.deals/revolut106 (Werbung) Bei KoRo findet ihr neben einer großen Auswahl an hochwertigen Lebensmitteln jetzt…",
+   "thumb": "https://i4.ytimg.com/vi/O3EQVMJDn1s/hqdefault.jpg",
+   "id": "7cb4cbde21fb",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  }
+ ],
+ "contentHash": "924d2741377d"
 }
