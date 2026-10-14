@@ -114,6 +114,13 @@ test('all-day event never overrides but is listed', () => {
   const r = Engine.resolve(at('2026-10-13 10:00'), s);
   assert.strictEqual(r.current.title, 'Deep work'); assert.deepStrictEqual(r.allDay, ['Partner birthday']);
 });
+test('"free"/info events (Google: transparent, working location) never override, shown as context', () => {
+  const s = baseState({ events: [ev('w', 'Working from home', '2026-10-13 09:00', '2026-10-13 17:00', { info: true }),
+                                 ev('f', 'Gym (free)', '2026-10-13 10:00', '2026-10-13 10:30', { info: true })] });
+  const r = Engine.resolve(at('2026-10-13 10:10'), s);
+  assert.strictEqual(r.current.title, 'Deep work'); assert.deepStrictEqual(r.allDay, ['Working from home', 'Gym (free)']);
+  assert.strictEqual(r.next.title, 'Admin', 'info events are not Next either');
+});
 test('upcoming event becomes Next if it starts before the next block', () => {
   const r = Engine.resolve(at('2026-10-13 10:00'), baseState({ events: [ev('e', 'Dentist', '2026-10-13 10:45', '2026-10-13 11:15')] }));
   assert.strictEqual(r.next.title, 'Dentist'); assert.strictEqual(r.next.type, 'event');

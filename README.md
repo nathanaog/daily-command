@@ -2,7 +2,7 @@
 
 A personal "what should I be doing right now?" app. Static site, installable PWA, works offline. No backend, no paid services. Your data stays in your browser (localStorage) with JSON export/import.
 
-**Status: Stage 3 (core loop, morning sequence, your own feeds).** Stages 4–5 (Google Calendar/Gmail/Drive sync; leisure, German, life admin) are added to the same files.
+**Status: Stage 4 (core loop, morning sequence, your own feeds, Google + sync).** Stage 5 (leisure, German, life admin) is added to the same files.
 
 ## Files
 
@@ -16,7 +16,8 @@ A personal "what should I be doing right now?" app. Static site, installable PWA
 | `feeds.resolved.json`, `video-meta.json` | Caches maintained by the workflow: YouTube name and handle lookups, and video lengths for the Listen queue. |
 | `.github/workflows/digest.yml` | Every 3 hours: tests, builds the digest, commits it if it changed, then deploys the site. |
 | `scripts/` | The digest builder: `digest-lib.mjs` (logic) and `build-digest.mjs` (runner). |
-| `tests/` | `engine.test.cjs` (36 Now/Next edge cases), `digest.test.mjs` (24 builder tests on recorded feed samples) and `e2e-build.mjs` (a full builder run over your real watchlist with a simulated network). Run all with `npm test`. |
+| `tests/` | `engine.test.cjs` (37 Now/Next edge cases), `sync.test.cjs` (16 phone ↔ desktop merge cases), `digest.test.mjs` (24 builder tests on recorded feed samples) and `e2e-build.mjs` (a full builder run over your real watchlist with a simulated network). Run all with `npm test`. |
+| `config.json` | *Optional.* `{"googleClientId": "…apps.googleusercontent.com"}`, so every device picks up your Google client ID automatically. Client IDs are public by design. |
 | `package.json`, `package-lock.json` | One dependency (`fast-xml-parser`), used only by the workflow and not by the app. |
 
 ## Set it up on GitHub (one-off, about 10 minutes)
@@ -72,7 +73,38 @@ Feeds tagged **listen**, such as podcasts and talking-head channels, form a **Li
   - Reason for the defaults: speech competes with reading and writing (the "irrelevant speech effect"). Change them freely.
 - **Full queue:** the Inbox tab lists everything, with the total listening time added up.
 
-**Video lengths:** YouTube's feeds don't include lengths, and YouTube usually blocks GitHub's servers from reading video pages. For reliable lengths, add a free **YouTube Data API key** as a repo secret named `YT_API_KEY` (**Settings → Secrets and variables → Actions → New repository secret**). It comes from the same Google Cloud project as Stage 4's sign-in. It uses about 3 units per run out of a free 10,000 a day. Without a key, the workflow still tries the video pages, and the digest's stats say why any lookup failed. Items without a length are picked in queue order. Until phone–desktop sync (Stage 4), marking something done on one device doesn't hide it on the other.
+**Video lengths:** YouTube's feeds don't include lengths, and YouTube usually blocks GitHub's servers from reading video pages. For reliable lengths, add a free **YouTube Data API key** as a repo secret named `YT_API_KEY` (**Settings → Secrets and variables → Actions → New repository secret**). It comes from the same Google Cloud project as Stage 4's sign-in. It uses about 3 units per run out of a free 10,000 a day. Without a key, the workflow still tries the video pages, and the digest's stats say why any lookup failed. Items without a length are picked in queue order. With sync on, marking something done on one device hides it on the other after the next sync.
+
+## Stage 4 — Google sign-in, Calendar, Gmail, reminders, sync
+
+All of this runs in your browser against your own Google Cloud project, with no server involved. Each feature asks only for its own permission:
+
+| Feature | Permission | What it can do |
+|---|---|---|
+| Calendar | `calendar.events.readonly`, `calendar.calendarlist.readonly` | Read your events. Timed events take over the Now card; all-day events and events marked **free** (and working-location entries) show as context only. Declined and cancelled events are ignored. |
+| Reminders & alarms | `calendar.app.created` | Creates **one** calendar called "Daily Command" and only touches that one. Reminders, an alarm when a focus session ends, and optional alarms at each block change are events there, so your phone's calendar app rings **even when this app is closed**. |
+| Gmail | `gmail.metadata` | Unread count plus sender and subject of the latest unread mail. Never message bodies. |
+| Sync | `drive.appdata` | A hidden app folder in your Drive. It can't see your other files. |
+| YouTube Listen playlist (optional, off by default) | `youtube` | Keeps a private "Daily Command – Listen" playlist filled with the top of your Listen queue. You press play once on your phone. |
+
+### Setup (one-off, about 15 minutes, free)
+
+1. **Create a project:** go to [console.cloud.google.com](https://console.cloud.google.com), open the project picker and choose **New project**.
+2. **Enable the APIs:** in **APIs & Services → Library**, enable the **Google Calendar API**, **Gmail API**, **Google Drive API** and **YouTube Data API v3**. The YouTube one is only needed for the playlist and video lengths.
+3. **Set up sign-in:** in **Google Auth Platform** (formerly "OAuth consent screen"), choose **Get started**.
+   - Enter an app name and your email, and pick **External**.
+   - Under **Audience → Test users**, add your own Gmail address.
+   - Leave it in **Testing**.
+4. **Create the client:** go to **Clients → Create client → Web application**. Under **Authorised JavaScript origins**, add `https://nathanaog.github.io`, with no path. No redirect URIs are needed.
+5. **Connect the app:** in the app, open **More → Google account**, paste the **Client ID**, save, then tap **Connect Google**. Google warns that the app is unverified; it's yours, so choose **Continue** and tick the permissions you want. Tip: put the client ID in `config.json` in the repo and every device has it.
+6. **Video lengths (optional):** go to **Credentials → Create API key**, restrict it to the YouTube Data API v3, and add it as the repo secret `YT_API_KEY`.
+
+### What to expect
+
+- **Tokens last an hour.** A browser-only app gets no long-lived login. After an hour the header shows **↻ Google**, and one tap reconnects, usually without asking anything. Calendar and Gmail stay visible from the last fetch, with "updated … ago". The same applies offline.
+- **Testing mode means roughly weekly re-approval.** Google expires approvals for apps in Testing after about 7 days, so about once a week the refresh shows the consent screen again. Publishing the app would avoid that, but it needs Google's verification for Gmail access.
+- **Sync merges instead of overwriting.** Phone and desktop changes are combined item by item. When the same field changed on both, the most recent save wins. A device's first sync takes the settings already in Drive, so a fresh desktop doesn't overwrite your phone's settings. Sync runs a few seconds after a change and when you open the app, while you're signed in.
+- **Samsung alerts:** make sure the "Daily Command" calendar is visible with notifications on. Then set **Settings → Apps → Calendar** (and Google Calendar, if installed) **→ Battery → Unrestricted**, and check that Calendar isn't listed under **Settings → Battery → Background usage limits**. Otherwise alerts can arrive late.
 
 ## Install on Android
 
@@ -103,7 +135,7 @@ Weather and the digest are cached separately from your data, so they aren't expo
 
 ## Honest limits
 
-- **Nothing can wake a closed web app.** Pomodoro chimes and notifications only fire while the app is open or briefly backgrounded. The timer is timestamp-based, so it's always correct when you return. Reliable alarms come in Stage 4 via Google Calendar events, which Android fires natively.
+- **Nothing can wake a closed web app.** The app's own chimes and notifications only fire while it's open or briefly backgrounded. For alarms that ring when it's closed, use the Stage 4 reminders (focus-end and block alarms), which are Google Calendar events your phone fires natively.
 - **The morning sequence can't open itself** at 07:30. It starts the first time *you* open the app that morning.
 - **Voice capture** uses Chrome's speech recognition. It sends audio to Google and needs a connection.
 - **Data is per browser** until Drive sync (Stage 4). Use **More → Data → Export** as a backup.

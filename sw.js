@@ -9,10 +9,10 @@
  *    app keeps its own "last known" copies in localStorage.
  * Bump VERSION whenever you change this file or the shell list.
  */
-const VERSION = 'dc-v1.3.3';
+const VERSION = 'dc-v1.4.0';
 const SHELL = ['./', './index.html', './manifest.json',
   './icons/icon-192.png', './icons/icon-512.png', './icons/maskable-512.png'];
-const DATA = /\/(digest|feeds)\.json$|\/briefing\.(md|json)$/;
+const DATA = /\/(digest|feeds|config)\.json$|\/briefing\.(md|json)$/;
 
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(VERSION).then(c => c.addAll(SHELL)));

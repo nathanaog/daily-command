@@ -52,7 +52,8 @@ button,input,select,textarea{font:inherit;color:inherit}
 /* ---------- top bar: date/time + mode chips ---------- */
 .top{position:sticky;top:0;z-index:5;background:var(--bg);
   padding:10px 16px 8px;border-bottom:1px solid var(--border)}
-.top-row{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+.top-row{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.top-row .clock{white-space:nowrap}
 .clock{font-size:1.05rem;font-weight:600}
 .mode-note{font-size:.8rem;color:var(--muted)}
 .modes{display:flex;gap:6px;margin-top:8px;overflow-x:auto;scrollbar-width:none}
@@ -128,6 +129,7 @@ ul.list .grow{flex:1;min-width:0;padding:8px 2px;cursor:pointer;word-break:break
 .slot .n{width:28px;height:28px;border-radius:50%;display:grid;place-items:center;background:var(--surface);font-weight:700;font-size:.85rem}
 .row{display:flex;gap:8px;align-items:center}
 .row>input,.row>select{flex:1}
+.row>input[type=checkbox]{flex:0 0 22px}          /* checkboxes keep their size inside flex rows */
 input[type=text],input[type=time],input[type=number],input[type=date],select,textarea{
   min-height:48px;padding:10px 12px;border-radius:12px;border:1px solid var(--border);background:var(--surface2);width:100%}
 textarea{min-height:110px;resize:vertical}
@@ -183,6 +185,8 @@ ul.dg a:hover{text-decoration:underline}
 a.btn{text-decoration:none;color:inherit} a.btn.primary{color:#10151a}
 ul.list a{color:var(--text);text-decoration:none} ul.list a:hover{text-decoration:underline}
 .card.listen{border-left:4px solid var(--mode-c,var(--accent))}
+.gchip{font-size:.75rem;padding:4px 10px;border-radius:999px;border:1px solid var(--border);background:transparent;color:var(--muted);white-space:nowrap;min-height:28px}
+.gchip.ok{color:var(--accent)} button.gchip{cursor:pointer} .gchip.warn{color:var(--warn);border-color:var(--warn)}
 .card.listen .math{margin-top:6px}
 
 /* ---------- floating capture button + bottom nav ---------- */
@@ -232,6 +236,7 @@ dialog::backdrop{background:rgba(0,0,0,.5)}
 <header class="top">
   <div class="top-row">
     <div class="clock num" id="clock">—</div>
+    <span id="gchip"></span>
     <div class="mode-note" id="modeNote">auto</div>
   </div>
   <div class="modes" id="modes" role="group" aria-label="Mode"></div>
@@ -284,7 +289,8 @@ dialog::backdrop{background:rgba(0,0,0,.5)}
      1. A timed calendar event in progress overrides everything.
         Overlapping events: the one that started most recently wins
         (it's the more specific interruption); ties -> the one ending first.
-        All-day events never override; they're shown as context.
+        All-day events never override; they're shown as context. Neither do
+        "info" events (Google Calendar events marked Free, working-location).
      2. Otherwise the current routine block. Blocks whose end <= start
         wrap past midnight, so at 00:15 Monday we still check Sunday's
         (weekend) template. Overlapping blocks: later start wins.
@@ -346,7 +352,7 @@ const Engine = (() => {
 
   /** Timed events in progress at `t`, best candidate first. */
   function activeEvents(evs, t) {
-    return evs.filter(e => !e.allDay && e.s <= t && t < e.e)
+    return evs.filter(e => !e.allDay && !e.info && e.s <= t && t < e.e)
       .sort((a, b) => (b.s - a.s) || (a.e - b.e));
   }
 
@@ -400,8 +406,9 @@ const Engine = (() => {
       return item;
     }
     // free gap: bounded by the latest thing that ended and the earliest thing that starts
-    const ends = [...inst.map(b => b.end), ...evs.filter(e => !e.allDay).map(e => e.e)].filter(x => x <= t);
-    const starts = [...inst.map(b => b.start), ...evs.filter(e => !e.allDay).map(e => e.s)].filter(x => x > t);
+    const timed = evs.filter(e => !e.allDay && !e.info);
+    const ends = [...inst.map(b => b.end), ...timed.map(e => e.e)].filter(x => x <= t);
+    const starts = [...inst.map(b => b.start), ...timed.map(e => e.s)].filter(x => x > t);
     return { type: 'gap', id: 'gap', title: 'Free time', kind: 'gap', mode,
       start: ends.length ? new Date(Math.max(...ends)) : null,
       end: starts.length ? new Date(Math.min(...starts)) : null };
@@ -411,7 +418,7 @@ const Engine = (() => {
   function boundaries(t, inst, evs, horizonH = 40) {
     const lim = t.getTime() + horizonH * 60 * MIN, set = new Set();
     for (const b of inst) [b.start, b.end].forEach(x => { const v = x.getTime(); if (v > t && v <= lim) set.add(v); });
-    for (const e of evs) if (!e.allDay) [e.s, e.e].forEach(x => { const v = x.getTime(); if (v > t && v <= lim) set.add(v); });
+    for (const e of evs) if (!e.allDay && !e.info) [e.s, e.e].forEach(x => { const v = x.getTime(); if (v > t && v <= lim) set.add(v); });
     return [...set].sort((a, b) => a - b).map(v => new Date(v));
   }
 
@@ -448,7 +455,7 @@ const Engine = (() => {
     let current = resolveAt(t, state, inst, evs);
     const ag = agenda(t, state, 6);
     const ld = logicalDay(t, (state.settings || {}).dayCutoff ?? 4);
-    const allDay = evs.filter(e => e.allDay && e.s <= atDay(ld, 1) && e.e > ld).map(e => e.title);
+    const allDay = evs.filter(e => (e.allDay && e.s <= atDay(ld, 1) && e.e > ld) || (e.info && e.s <= t && t < e.e)).map(e => e.title);
     const autoMode = current.mode;
     const ov = state.modeOverride;
     const overrideOn = !!(ov && MODES.includes(ov.mode) && t < new Date(ov.until));
@@ -470,6 +477,101 @@ const Engine = (() => {
 })();
 // ==ENGINE END==
 </script>
+
+<script>
+/* =====================================================================
+   PART 1b — SYNC MERGE ENGINE (pure; tested in tests/sync.test.cjs)
+   Phone and desktop each keep a full copy of your data. When they sync
+   through Google Drive we do a THREE-WAY MERGE:
+     base   = what both sides last agreed on (stored locally after each sync)
+     local  = this device now
+     remote = what's in Drive now
+   For every field: if only one side changed it since `base`, that change
+   wins. If both changed it differently, the side saved most recently wins.
+   - Lists of things with an `id` (tasks, inbox, events, pomodoro log…) are
+     merged item by item, so adding a task on the phone and another on the
+     desktop keeps both. Deleting on one side deletes, unless the other side
+     edited that item meanwhile (an edit beats a delete).
+   - Plain objects (settings, top3 by day…) are merged key by key.
+   - Everything else (numbers, strings, lists of ids) is one value.
+   First sync on a device (no base yet): lists are unioned, objects merged,
+   and for single values the copy in Drive wins — so a fresh desktop picks
+   up your phone's settings instead of overwriting them with defaults.
+   ===================================================================== */
+// ==SYNC START==
+const Sync = (() => {
+  const LOCAL_ONLY = new Set(['ui', 'savedAt', 'syncedAt', 'deviceId']);   // never synced
+  const same = (a, b) => JSON.stringify(a) === JSON.stringify(b);
+  const isObj = x => x && typeof x === 'object' && !Array.isArray(x);
+  const isIdList = x => Array.isArray(x) && x.length > 0 && x.every(i => isObj(i) && i.id != null);
+  const idListLike = (...xs) => xs.some(isIdList) && xs.every(x => x === undefined || (Array.isArray(x) && x.every(i => isObj(i) && i.id != null)));
+
+  /** One value. `first` = no base (first sync). `preferLocal` breaks true conflicts. */
+  function scalar(base, local, remote, ctx) {
+    if (same(local, remote)) return local;
+    if (ctx.first) return remote === undefined ? local : remote;
+    if (same(local, base)) return remote;          // only remote changed
+    if (same(remote, base)) return local;          // only local changed
+    ctx.conflicts++;
+    return ctx.preferLocal ? local : remote;       // both changed: newest save wins
+  }
+
+  function list(base = [], local = [], remote = [], ctx) {
+    const B = new Map(base.map(i => [i.id, i])), L = new Map(local.map(i => [i.id, i])), R = new Map(remote.map(i => [i.id, i]));
+    const ids = [...new Set([...local.map(i => i.id), ...remote.map(i => i.id)])];  // local order first, then remote-only
+    const out = [];
+    for (const id of ids) {
+      const b = B.get(id), l = L.get(id), r = R.get(id);
+      if (l && r) { out.push(merge(b, l, r, ctx)); continue; }
+      const only = l || r, other = l ? 'remote' : 'local';
+      if (ctx.first || !b) { out.push(only); continue; }              // new on one side → keep
+      // existed at base, now missing on one side = deleted there; keep only if this side edited it since
+      if (!same(only, b)) { ctx.conflicts++; out.push(only); }       // edit beats delete
+      // else: unchanged here, deleted on the other side → drop
+      void other;
+    }
+    return out;
+  }
+
+  function object(base, local, remote, ctx) {
+    base = isObj(base) ? base : undefined;
+    const keys = [...new Set([...Object.keys(local || {}), ...Object.keys(remote || {})])];
+    const out = {};
+    for (const k of keys) {
+      if (ctx.depth === 0 && LOCAL_ONLY.has(k)) { if (local && k in local) out[k] = local[k]; continue; }
+      const b = base ? base[k] : undefined, l = local ? local[k] : undefined, r = remote ? remote[k] : undefined;
+      const inL = !!local && k in local, inR = !!remote && k in remote, inB = !!base && k in base;
+      if (inL && inR) { ctx.depth++; out[k] = merge(b, l, r, ctx); ctx.depth--; continue; }
+      const v = inL ? l : r;
+      if (ctx.first || !inB) { out[k] = v; continue; }               // added on one side
+      if (!same(v, b)) { ctx.conflicts++; out[k] = v; }               // removed on one side, edited on the other → keep
+      // else removed on one side and unchanged on the other → drop
+    }
+    return out;
+  }
+
+  function merge(base, local, remote, ctx) {
+    if (idListLike(base, local, remote)) return list(base, local, remote, ctx);
+    if (isObj(local) && isObj(remote)) return object(base, local, remote, ctx);
+    return scalar(base, local, remote, ctx);
+  }
+
+  /** Public: merge whole app states. Returns {state, conflicts, changedLocal, changedRemote}. */
+  function mergeStates(base, local, remote) {
+    if (!remote) return { state: local, conflicts: 0, changedLocal: false, changedRemote: true };
+    const ctx = { first: !base, preferLocal: (local.savedAt || '') >= (remote.savedAt || ''), conflicts: 0, depth: 0 };
+    const state = merge(base || undefined, local, remote, ctx);
+    const strip = s => { const o = { ...s }; LOCAL_ONLY.forEach(k => delete o[k]); return o; };
+    return { state, conflicts: ctx.conflicts, changedLocal: !same(strip(state), strip(local)), changedRemote: !same(strip(state), strip(remote)) };
+  }
+  /** What gets uploaded / stored as the base (device-only fields removed). */
+  function shareable(s) { const o = { ...s }; LOCAL_ONLY.forEach(k => delete o[k]); return o; }
+
+  return { mergeStates, shareable, LOCAL_ONLY };
+})();
+// ==SYNC END==
+</script>
+
 
 <script>
 /* =====================================================================
@@ -531,7 +633,10 @@ function defaultState() {
       ghRepo: '', ghBranch: 'main',
       // Listen while working (PART 4d)
       audioPlan: { deep: 'focus', admin: 'talk', lunch: 'talk' },   // per block kind: talk / focus / off
-      focusAudio: null },      // {label, url} e.g. an instrumental YouTube playlist
+      focusAudio: null,        // {label, url} e.g. an instrumental YouTube playlist
+      // Stage 4 — Google (PART 4e). clientId can also come from config.json in the repo.
+      google: { clientId: '', on: { calendar: true, reminders: true, gmail: true, sync: true, youtube: false },
+        calOff: [], appCalId: null, focusAlarm: true, blockAlarms: false, ytPlaylistId: null, ytCount: 8 } },
     routine: defaultRoutine(),
     events: [],            // {id,title,start,end,allDay,location,source:'manual'|'google'}
     projects: [
@@ -541,6 +646,7 @@ function defaultState() {
       { id: 'p-admin', name: 'Admin', nextId: null },
     ],
     tasks: [],             // {id,title,projectId,done,doneAt,created}
+    reminders: [],         // {id (Google event id), title, at, kind:'manual'|'focus'|'block', ref} — Stage 4
     top3: {},              // {"YYYY-MM-DD": [taskId, taskId, taskId]}
     skips: {},             // {"YYYY-MM-DD": [taskId]}  "not now" for today
     inbox: [],             // {id,text,created}
@@ -578,13 +684,16 @@ function migrate(d) {
   out.settings = { ...def.settings, ...(d.settings || {}) };
   out.ui = { ...def.ui, ...(d.ui || {}) };
   out.pomo = { ...def.pomo, ...(d.pomo || {}) };
+  const dg = (d.settings || {}).google || {};
+  out.settings.google = { ...def.settings.google, ...dg, on: { ...def.settings.google.on, ...(dg.on || {}) } };
   if (!out.routine || !Array.isArray(out.routine.weekday)) out.routine = def.routine;
   return out;
 }
-function save() {
+function save(opts = {}) {
   S.savedAt = new Date().toISOString();
   try { localStorage.setItem(STORE_KEY, JSON.stringify(S)); }
   catch (e) { toast('Could not save — storage full?'); }
+  if (!opts.fromSync && window.dcAfterSave) window.dcAfterSave();   // Stage 4: schedule a Drive sync
 }
 </script>
 
@@ -1066,16 +1175,17 @@ function renderMorning() {
   let body = '';
   if (step === 1) {
     const hour = now.getHours(), hi = hour < 12 ? 'Good morning' : hour < 18 ? 'Good afternoon' : 'Good evening';
-    const evs = S.events.filter(e => Engine.dateKey(new Date(e.start)) === Engine.dateKey(now) || (e.allDay && new Date(e.start) <= now && new Date(e.end) > now))
+    const evs = allEvents().filter(e => Engine.dateKey(new Date(e.start)) === Engine.dateKey(now) || (e.allDay && new Date(e.start) <= now && new Date(e.end) > now))
       .sort((a, b) => new Date(a.start) - new Date(b.start));
-    const plan = Engine.agenda(now, S, 10).filter(a => Engine.dateKey(a.at) === Engine.dateKey(now));
+    const plan = Engine.agenda(now, engineState(), 10).filter(a => Engine.dateKey(a.at) === Engine.dateKey(now));
     body = `<div class="hello">${hi}${S.settings.name ? ', ' + esc(S.settings.name) : ''}.</div>
       <div class="muted">${now.toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long' })}</div>
       ${Briefing.html()}
       <div class="card">${Weather.html()}</div>
-      <h2>Calendar</h2><div class="card">${evs.length ? `<ul class="list">${evs.map(e => `<li><span class="num muted" style="width:96px">${e.allDay ? 'all day' : fmtT(new Date(e.start)) + '–' + fmtT(new Date(e.end))}</span><span class="grow">${esc(e.title)}${e.location ? ` <span class="small muted">· ${esc(e.location)}</span>` : ''}</span></li>`).join('')}</ul>`
+      <h2>Calendar</h2><div class="card">${evs.length ? `<ul class="list">${evs.map(e => `<li><span class="num muted" style="width:96px">${e.allDay ? 'all day' : fmtT(new Date(e.start)) + '–' + fmtT(new Date(e.end))}</span><span class="grow">${e.color ? `<span style="display:inline-block;width:8px;height:8px;border-radius:2px;background:${esc(e.color)};margin-right:6px"></span>` : ''}${esc(e.title)}${e.info ? ' <span class="tag">free</span>' : ''}${e.location ? ` <span class="small muted">· ${esc(e.location)}</span>` : ''}</span></li>`).join('')}</ul>`
         : '<div class="empty">No events today.</div>'}
-        <p class="small muted">Manual events for now — Google Calendar connects in Stage 4.</p></div>
+        ${calNoteHtml()}</div>
+      ${Google.on('gmail') && C.gmail ? `<h2>Gmail</h2><div class="card">${mailHtml(true)}</div>` : ''}
       <h2>The plan</h2><div class="card"><ul class="list">${[R.current, ...plan].filter(x => x && x.type !== 'gap').map(a => `<li><span class="num muted" style="width:96px">${a.at ? fmtT(a.at) : 'now'}</span><span class="grow">${esc(a.title)}${a.type === 'event' ? ' <span class="tag">event</span>' : ''}</span></li>`).join('')}</ul></div>`;
   } else if (step === 2) {
     body = `<div class="hello">Today’s top 3</div><p class="muted">If only three things happen today, which ones?</p>${top3Html(false)}
@@ -1085,7 +1195,7 @@ function renderMorning() {
     body = `<div class="hello">Digest</div><p class="muted">${S.settings.digestMin} minutes, then it stops.</p>${digestHtml('morning')}`;
   } else {
     // step 4: ready
-    const R0 = Engine.resolve(now, S);
+    const R0 = Engine.resolve(now, engineState());
     const pick = R0.current.pick || Engine.pickTask(S, today());
     const nextWork = Engine.blockInstances(S.routine, now).find(b => Engine.WORK_KINDS.has(b.kind) && b.end > now && Engine.dateKey(b.start) === Engine.dateKey(now));
     const st = Digest.stats();
@@ -1123,7 +1233,7 @@ const ACT2 = {
   startWork() {
     const now = new Date();
     S.morning[today()].doneAt = Date.now(); S.active = null;
-    const R0 = Engine.resolve(now, S);
+    const R0 = Engine.resolve(now, engineState());
     if (!Engine.WORK_KINDS.has(R0.current.kind)) {
       // Not in a work block yet: manual Work mode until the next work block begins (auto takes over from
       // there), capped at 2 h so a weekend "start work" doesn't stick all day.
@@ -1131,10 +1241,12 @@ const ACT2 = {
       const until = nb && nb.start - now <= 2 * 3600e3 ? nb.start : new Date(now.getTime() + 2 * 3600e3);
       S.modeOverride = { mode: 'work', until: until.toISOString() };
     }
-    const R1 = Engine.resolve(now, S);
+    const R1 = Engine.resolve(now, engineState());
     if (R1.current.type === 'block' && Engine.WORK_KINDS.has(R1.current.kind)) setActive(R1.current);
     Pomo.start('work', R1.current.pick?.task.id || null);
     save(); closeMorning(); go('now'); askNotifOnce();
+    FocusAlarm.set();                                   // phone alarm at the end of this focus (Stage 4)
+    if (gset().blockAlarms && Google.ready('reminders')) setBlockAlarms();
   },
   // digest
   digestOpen(el) { Digest.mark(el.dataset.id); setTimeout(render, 400); },     // let the link open first
@@ -1595,6 +1707,7 @@ function listenCardHtml() {
     ${p.why ? `<div class="math">${esc(p.why)}</div>` : ''}
     <div class="actions"><a class="btn sm primary" ${playAttrs(it.url)} data-act="listenPlay" data-key="${esc(it.key)}">▶ Play${isAndroid() ? ' in YouTube' : ''}</a>
       <button class="btn sm" data-act="listenSkip" data-key="${esc(it.key)}">Skip</button><button class="btn sm ghost" data-act="go" data-view="inbox">Queue</button></div>
+    ${Google.on('youtube') && YTList.url() ? `<div class="actions"><a class="btn sm" ${playAttrs(YTList.url())}>▶ Play the whole Listen playlist</a></div>` : ''}
     ${isAndroid() ? '' : '<div class="small muted" style="margin-top:6px">Listening on your phone? Open the app there — it shows the same queue.</div>'}</div>`;
 }
 
@@ -1646,6 +1759,431 @@ const ACT4 = {
 
 <script>
 /* =====================================================================
+   PART 4e — STAGE 4: GOOGLE (sign-in, Calendar, Gmail, reminders,
+   Drive sync, optional YouTube Listen playlist)
+
+   HOW SIGN-IN WORKS (no server):
+   Google Identity Services gives the browser a short-lived access token
+   (1 hour). There is no refresh token in a browser-only app, so when the
+   hour is up the header shows "↻ Google"; one tap gets a
+   new token (usually without asking again). Everything fetched is cached
+   with a "last updated" time, so offline or signed-out you still see the
+   last known calendar and inbox.
+
+   PERMISSIONS (each one only if that feature is switched on):
+     calendar  → calendar.events.readonly + calendar.calendarlist.readonly  (read your calendars)
+     reminders → calendar.app.created  (the app makes ONE calendar called "Daily Command"
+                 and can only touch that one — it never edits your real calendars)
+     gmail     → gmail.metadata  (labels and headers: unread count, sender, subject — never bodies)
+     sync      → drive.appdata  (a hidden app folder in your Drive; can't see your files)
+     youtube   → youtube  (optional: keep a private "Daily Command – Listen" playlist)
+   ===================================================================== */
+const G_SCOPES = {
+  calendar: ['https://www.googleapis.com/auth/calendar.events.readonly', 'https://www.googleapis.com/auth/calendar.calendarlist.readonly'],
+  reminders: ['https://www.googleapis.com/auth/calendar.app.created'],
+  gmail: ['https://www.googleapis.com/auth/gmail.metadata'],
+  sync: ['https://www.googleapis.com/auth/drive.appdata'],
+  youtube: ['https://www.googleapis.com/auth/youtube'],
+};
+const G_LABEL = { calendar: 'Calendar', reminders: 'Reminders & alarms', gmail: 'Gmail', sync: 'Sync phone ↔ desktop', youtube: 'YouTube Listen playlist' };
+const GAPI = { cal: 'https://www.googleapis.com/calendar/v3', gmail: 'https://gmail.googleapis.com/gmail/v1/users/me', drive: 'https://www.googleapis.com/drive/v3', upload: 'https://www.googleapis.com/upload/drive/v3', yt: 'https://www.googleapis.com/youtube/v3' };
+const gset = () => S.settings.google;
+const gstat = (f, v) => { C.gstat = { ...(C.gstat || {}), [f]: { ...((C.gstat || {})[f] || {}), ...v } }; saveCache(); };
+
+/* ---------------- sign-in ---------------- */
+let gisPromise = null;
+function loadGis() {
+  if (window.google?.accounts?.oauth2) return Promise.resolve();
+  if (gisPromise) return gisPromise;
+  gisPromise = new Promise((res, rej) => {
+    const s = document.createElement('script');
+    s.src = 'https://accounts.google.com/gsi/client'; s.async = true;
+    s.onload = () => (window.google?.accounts?.oauth2 ? res() : rej(new Error('Google sign-in script incomplete')));
+    s.onerror = () => { gisPromise = null; rej(new Error('Couldn’t load Google sign-in (offline?)')); };
+    document.head.appendChild(s);
+  });
+  return gisPromise;
+}
+const Google = {
+  busy: false, lastRefresh: 0,
+  clientId() { return (gset().clientId || C.config?.googleClientId || '').trim(); },
+  /** Current token if it has more than a minute left. */
+  token() { const t = secret().gToken; return t && t.access_token && t.expires_at > Date.now() + 60000 ? t : null; },
+  everSignedIn() { return !!secret().gToken?.scope; },
+  granted(f) { const sc = (secret().gToken?.scope || '').split(' '); return G_SCOPES[f].every(x => sc.includes(x)); },
+  on(f) { return !!gset().on[f]; },
+  ready(f) { return this.on(f) && this.granted(f) && !!this.token(); },
+  wantedScopes() { return Object.keys(G_SCOPES).filter(f => this.on(f)).flatMap(f => G_SCOPES[f]); },
+  missing() { return Object.keys(G_SCOPES).filter(f => this.on(f) && !this.granted(f)); },
+  /** MUST be called straight from a tap (browsers block the sign-in popup otherwise). */
+  connect() {
+    const id = this.clientId();
+    if (!id) { toast('Add your Google client ID first (More → Google account).'); return; }
+    if (!navigator.onLine) { toast('You’re offline — connect when you’re back online.'); return; }
+    if (!window.google?.accounts?.oauth2) { loadGis().catch(e => toast(e.message)); toast('Loading Google sign-in… tap again in a moment.'); return; }
+    const client = google.accounts.oauth2.initTokenClient({
+      client_id: id, scope: this.wantedScopes().join(' '), include_granted_scopes: true,
+      callback: r => {
+        if (r.error) return toast('Google: ' + (r.error_description || r.error));
+        setSecret({ gToken: { access_token: r.access_token, expires_at: Date.now() + (Number(r.expires_in) || 3600) * 1000, scope: r.scope || '' } });
+        const miss = this.missing();
+        if (miss.length) toast('Not allowed: ' + miss.map(f => G_LABEL[f]).join(', ') + '. Turn it off or connect again to allow.');
+        else toast('Google connected.');
+        this.refreshAll(true);
+      },
+      error_callback: e => toast(e?.type === 'popup_closed' ? 'Sign-in window closed.' : 'Google sign-in failed: ' + (e?.message || e?.type || 'unknown')),
+    });
+    client.requestAccessToken({ prompt: '' });
+  },
+  signOut() {
+    const t = secret().gToken?.access_token;
+    try { if (t && window.google?.accounts?.oauth2) google.accounts.oauth2.revoke(t, () => {}); } catch (e) {}
+    setSecret({ gToken: null });
+    delete C.gcal; delete C.gmail; delete C.gstat; saveCache();
+    try { localStorage.removeItem(SYNC_BASE_KEY); } catch (e) {}
+    toast('Signed out of Google. Cached calendar and mail cleared.'); render();
+  },
+  expire() { const t = secret().gToken; if (t) setSecret({ gToken: { ...t, expires_at: 0 } }); },
+  /** fetch() wrapper: adds the token, parses JSON, maps 401 → "needs refresh". */
+  async api(url, { method = 'GET', body, raw, contentType } = {}) {
+    const t = this.token();
+    if (!t) throw Object.assign(new Error('Google needs a refresh'), { needAuth: true });
+    const headers = { Authorization: `Bearer ${t.access_token}` };
+    let payload;
+    if (body !== undefined) { headers['Content-Type'] = 'application/json'; payload = JSON.stringify(body); }
+    else if (raw !== undefined) { headers['Content-Type'] = contentType; payload = raw; }
+    const r = await fetch(url, { method, headers, body: payload });
+    if (r.status === 401) { this.expire(); throw Object.assign(new Error('Google needs a refresh'), { needAuth: true }); }
+    if (r.status === 204) return null;
+    const text = await r.text();
+    let data = null; try { data = text ? JSON.parse(text) : null; } catch (e) { data = text; }
+    if (!r.ok) throw Object.assign(new Error(data?.error?.message || `HTTP ${r.status}`), { status: r.status });
+    return data;
+  },
+  /** Fetch everything that's switched on. Quiet if offline or the token has expired. */
+  async refreshAll(force = false) {
+    if (this.busy || !navigator.onLine || !this.token()) return render();
+    if (!force && Date.now() - this.lastRefresh < 4 * 60000) return;
+    this.busy = true; this.lastRefresh = Date.now();
+    const run = async (f, fn) => {
+      if (!this.ready(f)) return;
+      try { await fn(); gstat(f, { at: Date.now(), error: '' }); }
+      catch (e) { gstat(f, { error: e.needAuth ? 'needs refresh' : e.message }); }
+    };
+    await Promise.all([run('calendar', () => Cal.refresh()), run('gmail', () => Mail.refresh())]);
+    await run('sync', () => DriveSync.sync());
+    await run('reminders', () => Remind.cleanup());
+    await run('youtube', () => YTList.sync());
+    this.busy = false; render();
+  },
+};
+
+/* ---------------- Calendar (read) ---------------- */
+const localMidnight = ymd => { const [y, m, d] = ymd.split('-').map(Number); return new Date(y, m - 1, d); };
+const Cal = {
+  async refresh() {
+    const list = await Google.api(`${GAPI.cal}/users/me/calendarList?minAccessRole=reader&fields=items(id,summary,summaryOverride,primary,backgroundColor,selected)`);
+    const cals = (list.items || []).filter(c => c.id !== gset().appCalId)
+      .map(c => ({ id: c.id, summary: c.summaryOverride || c.summary || c.id, primary: !!c.primary, color: c.backgroundColor || '', shown: c.selected !== false || !!c.primary }));
+    const now = new Date(), tMin = Engine.atDay(now, -1).toISOString(), tMax = Engine.atDay(now, 8).toISOString();
+    const fields = 'items(id,summary,location,start,end,status,transparency,eventType,attendees(self,responseStatus),htmlLink)';
+    const use = cals.filter(c => c.shown);
+    const results = await Promise.all(use.map(c => Google.api(`${GAPI.cal}/calendars/${encodeURIComponent(c.id)}/events?singleEvents=true&orderBy=startTime&maxResults=250&timeMin=${encodeURIComponent(tMin)}&timeMax=${encodeURIComponent(tMax)}&fields=${encodeURIComponent(fields)}`)
+      .then(r => (r.items || []).map(e => this.map(e, c)).filter(Boolean))));
+    C.gcal = { fetchedAt: Date.now(), calendars: cals, events: results.flat() };
+    saveCache();
+  },
+  /** Google event → the engine's event shape. Cancelled and declined events are dropped. */
+  map(e, cal) {
+    if (e.status === 'cancelled') return null;
+    if ((e.attendees || []).some(a => a.self && a.responseStatus === 'declined')) return null;
+    const allDay = !!e.start?.date;
+    const start = allDay ? localMidnight(e.start.date) : new Date(e.start?.dateTime);
+    const end = allDay ? localMidnight(e.end?.date || e.start.date) : new Date(e.end?.dateTime || e.start?.dateTime);
+    if (isNaN(start) || isNaN(end)) return null;
+    return { id: `${cal.id}|${e.id}`, calId: cal.id, title: e.summary || '(busy)', start: start.toISOString(), end: end.toISOString(), allDay,
+      info: e.transparency === 'transparent' || e.eventType === 'workingLocation',   // shown, never takes over the Now card
+      location: e.location || '', source: 'google', calendar: cal.summary, color: cal.color, link: e.htmlLink || '' };
+  },
+};
+/** Manual events + Google events from calendars you haven't hidden in the app. */
+function allEvents() {
+  const off = new Set(gset().calOff || []);
+  return [...S.events, ...((C.gcal?.events) || []).filter(e => !off.has(e.calId))];
+}
+const engineState = () => ({ ...S, events: allEvents() });
+
+/* ---------------- Gmail (unread count + latest subjects) ---------------- */
+const cleanFrom = f => (String(f || '').match(/^\s*"?([^"<]+?)"?\s*</) || [, String(f || '').replace(/<.*>/, '')])[1].trim() || f;
+const Mail = {
+  async refresh() {
+    // gmail.metadata can't use search queries, so unread mail is found by label (INBOX + UNREAD)
+    const [inbox, list, profile] = await Promise.all([
+      Google.api(`${GAPI.gmail}/labels/INBOX`),
+      Google.api(`${GAPI.gmail}/messages?labelIds=INBOX&labelIds=UNREAD&maxResults=5`),
+      Google.api(`${GAPI.gmail}/profile`),
+    ]);
+    const msgs = await Promise.all((list.messages || []).map(m =>
+      Google.api(`${GAPI.gmail}/messages/${m.id}?format=metadata&metadataHeaders=Subject&metadataHeaders=From&fields=id,threadId,internalDate,payload/headers`)));
+    const hdr = (m, n) => (m.payload?.headers || []).find(h => h.name.toLowerCase() === n)?.value || '';
+    C.gmail = { fetchedAt: Date.now(), email: profile.emailAddress || '', unread: inbox.messagesUnread ?? 0,
+      latest: msgs.map(m => ({ id: m.id, thread: m.threadId, at: Number(m.internalDate) || 0, subject: hdr(m, 'subject') || '(no subject)', from: cleanFrom(hdr(m, 'from')) })) };
+    saveCache();
+  },
+};
+function mailHtml(compact = false) {
+  const g = C.gmail;
+  if (!g) return Google.everSignedIn() ? '<div class="empty">No mail fetched yet.</div>' : '';
+  const stale = !navigator.onLine || !Google.token();
+  return `<div class="row" style="justify-content:space-between"><b class="num" style="font-size:1.3rem">${g.unread} unread</b>
+      <a class="btn sm" href="https://mail.google.com/mail/u/0/#inbox" target="_blank" rel="noopener">Open Gmail</a></div>
+    ${g.latest.length ? `<ul class="list">${g.latest.slice(0, compact ? 3 : 5).map(m => `<li><a class="grow" href="https://mail.google.com/mail/u/0/#inbox/${esc(m.thread)}" target="_blank" rel="noopener">
+      <b>${esc(m.from)}</b> <span class="small muted">${m.at ? ago(m.at) : ''}</span><br><span class="small">${esc(m.subject)}</span></a></li>`).join('')}</ul>` : '<div class="empty">Inbox zero.</div>'}
+    <div class="small muted">${stale ? '⚠ ' : ''}Updated ${ago(g.fetchedAt)}${stale && navigator.onLine ? ' · <a href="#" data-act="gConnect" style="color:inherit">refresh</a>' : ''}</div>`;
+}
+
+/** Line under the calendar list in the morning: where events come from and how fresh they are. */
+function calNoteHtml() {
+  if (!Google.everSignedIn() || !Google.on('calendar')) return '<p class="small muted">Manual events only — connect Google (More → Google account) to see your calendar here.</p>';
+  if (!C.gcal) return `<p class="small muted">Google Calendar not fetched yet.${Google.token() ? '' : ' <a href="#" data-act="gConnect" style="color:inherit">Refresh Google</a>'}</p>`;
+  const stale = !navigator.onLine || !Google.token();
+  return `<p class="small muted">${stale ? '⚠ ' : ''}Google Calendar updated ${ago(C.gcal.fetchedAt)}${!navigator.onLine ? ' (offline)' : !Google.token() ? ' · <a href="#" data-act="gConnect" style="color:inherit">refresh</a>' : ''}.</p>`;
+}
+
+/* ---------------- Reminders: events in the app's own "Daily Command" calendar ----------------
+   Google Calendar (and Samsung Calendar, which shows Google calendars) notifies you at the event
+   time even when this app is closed — the only reliable alarm a web app can set without a server. */
+const Remind = {
+  async ensureCal() {
+    if (gset().appCalId) return gset().appCalId;
+    const c = await Google.api(`${GAPI.cal}/calendars`, { method: 'POST',
+      body: { summary: 'Daily Command', description: 'Reminders and alarms from your Daily Command app.', timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone } });
+    gset().appCalId = c.id; save(); return c.id;
+  },
+  url: id => `${GAPI.cal}/calendars/${encodeURIComponent(id)}/events`,
+  async create({ title, at, minutes = 5, kind = 'manual', ref = '' }) {
+    const body = { summary: title, description: 'Created by Daily Command.',
+      start: { dateTime: new Date(at).toISOString() }, end: { dateTime: new Date(+new Date(at) + minutes * 60000).toISOString() },
+      reminders: { useDefault: false, overrides: [{ method: 'popup', minutes: 0 }] },
+      extendedProperties: { private: { dc: '1', kind, ref: String(ref || '') } } };
+    let cal = await this.ensureCal(), ev;
+    try { ev = await Google.api(this.url(cal), { method: 'POST', body }); }
+    catch (e) {
+      if (e.status !== 404) throw e;                      // calendar was deleted in Google: make a new one
+      gset().appCalId = null; cal = await this.ensureCal(); ev = await Google.api(this.url(cal), { method: 'POST', body });
+    }
+    S.reminders.push({ id: ev.id, title, at: new Date(at).toISOString(), kind, ref: String(ref || '') }); save();
+    return ev.id;
+  },
+  async remove(id) {
+    const cal = gset().appCalId;
+    if (cal) { try { await Google.api(`${this.url(cal)}/${encodeURIComponent(id)}`, { method: 'DELETE' }); } catch (e) { if (![404, 410].includes(e.status)) throw e; } }
+    S.reminders = S.reminders.filter(r => r.id !== id); save();
+  },
+  /** Tidy up: focus/block alarms older than a day, manual reminders older than a week. */
+  async cleanup() {
+    const now = Date.now();
+    const old = S.reminders.filter(r => now - new Date(r.at) > (r.kind === 'manual' ? 7 : 1) * 864e5);
+    for (const r of old.slice(0, 20)) await this.remove(r.id);
+  },
+  upcoming() { return S.reminders.filter(r => new Date(r.at) > Date.now() - 5 * 60000).sort((a, b) => new Date(a.at) - new Date(b.at)); },
+};
+/** Phone alarm when a focus session ends (so it rings even if the app is closed). */
+const FocusAlarm = {
+  enabled() { return Google.on('reminders') && gset().focusAlarm; },
+  async set() {
+    if (!this.enabled() || S.pomo.phase !== 'work') return;
+    if (!Google.ready('reminders')) {
+      if (Google.everSignedIn()) toast('Phone alarm not set — Google needs a refresh.', 'Refresh', () => Google.connect());
+      return;
+    }
+    await this.clear();
+    try {
+      const id = await Remind.create({ title: '⏱ Focus session done — take a break', at: S.pomo.endsAt, minutes: 1, kind: 'focus' });
+      S.pomo.alarmId = id; save();
+    } catch (e) { toast('Couldn’t set the phone alarm: ' + e.message); }
+  },
+  async clear(id = S.pomo.alarmId) {
+    if (S.pomo.alarmId === id) S.pomo.alarmId = null;
+    if (!id) return;
+    save();
+    try { await Remind.remove(id); } catch (e) {}
+  },
+};
+/** Optional: a phone alarm at the start of each remaining routine block today. */
+async function setBlockAlarms() {
+  if (!Google.ready('reminders')) return toast('Connect Google (with reminders) first.');
+  const now = new Date(), day = today();
+  for (const r of S.reminders.filter(r => r.kind === 'block' && r.ref === day)) await Remind.remove(r.id);
+  const blocks = Engine.blockInstances(S.routine, now).filter(b => b.start > now && b.day === Engine.dateKey(now));
+  for (const b of blocks) await Remind.create({ title: `▶ ${b.name}`, at: b.start, minutes: 1, kind: 'block', ref: day });
+  toast(`${blocks.length} block alarm${blocks.length === 1 ? '' : 's'} set for today.`); render();
+}
+
+/* ---------------- Drive sync (appDataFolder) ---------------- */
+const SYNC_BASE_KEY = 'dailycommand.syncbase';
+const DriveSync = {
+  FILE: 'daily-command-state.json', busy: false, timer: null, again: false,
+  base() { try { return JSON.parse(localStorage.getItem(SYNC_BASE_KEY)); } catch (e) { return null; } },
+  setBase(s) { try { localStorage.setItem(SYNC_BASE_KEY, JSON.stringify(s)); } catch (e) {} },
+  async find() {
+    const q = encodeURIComponent(`name='${this.FILE}'`);
+    const r = await Google.api(`${GAPI.drive}/files?spaces=appDataFolder&q=${q}&fields=files(id,version,modifiedTime)`);
+    return (r.files || [])[0] || null;
+  },
+  async upload(id, obj) {
+    const body = JSON.stringify(obj);
+    if (id) return Google.api(`${GAPI.upload}/files/${id}?uploadType=media&fields=id,version`, { method: 'PATCH', raw: body, contentType: 'application/json' });
+    const b = 'dc' + Date.now().toString(36);
+    const raw = `--${b}\r\nContent-Type: application/json; charset=UTF-8\r\n\r\n${JSON.stringify({ name: this.FILE, parents: ['appDataFolder'] })}\r\n--${b}\r\nContent-Type: application/json\r\n\r\n${body}\r\n--${b}--`;
+    return Google.api(`${GAPI.upload}/files?uploadType=multipart&fields=id,version`, { method: 'POST', raw, contentType: `multipart/related; boundary=${b}` });
+  },
+  /** Pull → three-way merge (PART 1b) → apply locally → push if Drive is behind. Retries if Drive changed mid-way. */
+  async sync() {
+    if (this.busy) { this.again = true; return; }
+    this.busy = true;
+    try {
+      for (let attempt = 0; attempt < 3; attempt++) {
+        const f = await this.find();
+        const remote = f ? await Google.api(`${GAPI.drive}/files/${f.id}?alt=media`) : null;
+        const res = Sync.mergeStates(this.base(), S, remote && typeof remote === 'object' ? remote : null);
+        if (res.changedRemote) {
+          const now = f ? await this.find() : null;
+          if (f && now && now.version !== f.version) continue;   // the other device just synced: merge again
+          await this.upload(f?.id, { ...Sync.shareable(res.state), savedAt: new Date().toISOString() });
+        }
+        if (res.changedLocal) {
+          const ui = S.ui;
+          S = migrate({ ...res.state, ui, savedAt: S.savedAt });
+          save({ fromSync: true }); applyTheme();
+        }
+        this.setBase(Sync.shareable(S));
+        gstat('sync', { conflicts: res.conflicts, pulled: res.changedLocal, pushed: res.changedRemote });
+        break;
+      }
+    } finally {
+      this.busy = false;
+      if (this.again) { this.again = false; this.schedule(1500); }
+    }
+  },
+  /** Called after every local save: sync a few seconds later (batched). */
+  schedule(ms = 8000) {
+    if (!Google.ready('sync')) return;
+    clearTimeout(this.timer);
+    this.timer = setTimeout(() => this.sync().then(() => render()).catch(e => { gstat('sync', { error: e.needAuth ? 'needs refresh' : e.message }); render(); }), ms);
+  },
+};
+window.dcAfterSave = () => DriveSync.schedule();
+
+/* ---------------- Optional: YouTube "Daily Command – Listen" playlist ----------------
+   Keeps a private playlist holding the top of your Listen queue (default 8). On your phone you
+   press play on the playlist once and YouTube runs through it in the background (Premium).
+   Quota: adding or removing an item costs 50 of the free 10,000 daily units. */
+const ytId = url => (String(url).match(/[?&]v=([\w-]{11})/) || [])[1] || null;
+const YTList = {
+  async sync() {
+    let pid = gset().ytPlaylistId;
+    if (!pid) {
+      const p = await Google.api(`${GAPI.yt}/playlists?part=snippet,status`, { method: 'POST',
+        body: { snippet: { title: 'Daily Command – Listen', description: 'Kept topped up by your Daily Command app.' }, status: { privacyStatus: 'private' } } });
+      pid = gset().ytPlaylistId = p.id; save();
+    }
+    let items;
+    try { items = await Google.api(`${GAPI.yt}/playlistItems?part=snippet&maxResults=50&playlistId=${encodeURIComponent(pid)}`); }
+    catch (e) { if (e.status === 404) { gset().ytPlaylistId = null; save(); return this.sync(); } throw e; }
+    const want = Listen.queue().map(x => ytId(x.url)).filter(Boolean).slice(0, gset().ytCount || 8);
+    const have = (items.items || []).map(i => ({ item: i.id, vid: i.snippet?.resourceId?.videoId }));
+    let removed = 0, added = 0;
+    for (const h of have) if (!want.includes(h.vid)) { await Google.api(`${GAPI.yt}/playlistItems?id=${encodeURIComponent(h.item)}`, { method: 'DELETE' }); removed++; }
+    for (const v of want) if (!have.some(h => h.vid === v)) {
+      await Google.api(`${GAPI.yt}/playlistItems?part=snippet`, { method: 'POST', body: { snippet: { playlistId: pid, resourceId: { kind: 'youtube#video', videoId: v } } } }); added++;
+    }
+    gstat('youtube', { count: want.length, added, removed });
+  },
+  url() { return gset().ytPlaylistId ? `https://www.youtube.com/playlist?list=${gset().ytPlaylistId}` : null; },
+};
+
+/* ---------------- UI pieces ---------------- */
+/** Small status chip in the header. */
+function gChipHtml() {
+  if (!Google.clientId() || !Google.everSignedIn()) return '';
+  const last = Math.max(C.gcal?.fetchedAt || 0, C.gmail?.fetchedAt || 0, C.gstat?.sync?.at || 0);
+  if (!navigator.onLine) return `<span class="gchip">offline${last ? ' · ' + ago(last) : ''}</span>`;
+  if (!Google.token()) return `<button class="gchip warn" data-act="gConnect" title="Google sign-in expired — tap to refresh" aria-label="Refresh Google">↻ Google</button>`;
+  if (Google.missing().length) return `<button class="gchip warn" data-act="gConnect" title="Allow the Google features you switched on">↻ Allow</button>`;
+  return `<span class="gchip ok">${Google.busy ? 'syncing…' : '☁ ' + (last ? ago(last) : 'connected')}</span>`;
+}
+function googleSectionHtml() {
+  const gs = gset(), cid = Google.clientId(), st = C.gstat || {};
+  const fromConfig = !gs.clientId && C.config?.googleClientId;
+  let h = `<p class="small muted">Connect your own Google Cloud project (Help → Stage 4 setup, ~15 min, free). Nothing goes through any server but Google’s.</p>
+    <label class="f">OAuth client ID ${fromConfig ? '<span class="tag">from config.json</span>' : ''}</label>
+    <input type="text" id="gClientId" value="${esc(cid)}" placeholder="1234…apps.googleusercontent.com" autocomplete="off">
+    <div class="actions"><button class="btn sm" data-act="gSaveClient">Save client ID</button></div>
+    <label class="f">Features</label>
+    ${Object.keys(G_SCOPES).map(f => {
+      const s = st[f] || {}, granted = Google.granted(f);
+      const line = !Google.on(f) ? 'off' : !Google.everSignedIn() ? 'connect to use' : !granted ? '<span class="warnchip">needs permission — tap Connect</span>'
+        : s.error ? `<span class="warnchip">⚠ ${esc(s.error)}</span>` : s.at ? '✓ updated ' + ago(s.at) : 'waiting for first refresh';
+      return `<label class="row" style="min-height:48px;align-items:flex-start;padding-top:6px"><input type="checkbox" data-act="gFeature" data-f="${f}" ${Google.on(f) ? 'checked' : ''} style="width:22px;height:22px;margin-top:2px">
+        <span style="flex:1">${G_LABEL[f]}<br><span class="small muted">${line}</span></span></label>`;
+    }).join('')}
+    <div class="actions"><button class="btn primary" data-act="gConnect">${Google.everSignedIn() ? (Google.token() ? 'Refresh now' : 'Reconnect') : 'Connect Google'}</button>
+      ${Google.everSignedIn() ? '<button class="btn" data-act="gSyncNow">Sync now</button><button class="btn ghost danger" data-act="gSignOut">Sign out</button>' : ''}</div>`;
+  if (C.gmail?.email) h += `<p class="small muted">Signed in as ${esc(C.gmail.email)}.</p>`;
+  if (st.sync?.at) h += `<p class="small muted">Last sync ${ago(st.sync.at)}${st.sync.pulled ? ' · pulled changes' : ''}${st.sync.pushed ? ' · pushed changes' : ''}${st.sync.conflicts ? ` · ${st.sync.conflicts} clash${st.sync.conflicts > 1 ? 'es' : ''} (newest save won)` : ''}.</p>`;
+  if (C.gcal?.calendars?.length) {
+    const off = new Set(gs.calOff || []);
+    h += `<label class="f">Calendars shown in the app</label><ul class="list">${C.gcal.calendars.map(c => `<li><label class="row grow" style="min-height:44px">
+      <input type="checkbox" data-act="gCalToggle" data-id="${esc(c.id)}" ${off.has(c.id) ? '' : 'checked'} style="width:22px;height:22px">
+      <span style="width:12px;height:12px;border-radius:3px;background:${esc(c.color || 'var(--muted)')}"></span> ${esc(c.summary)}${c.primary ? ' <span class="tag">primary</span>' : ''}${c.shown ? '' : ' <span class="tag">hidden in Google</span>'}</label></li>`).join('')}</ul>
+      <p class="small muted">Calendars you’ve hidden in Google Calendar aren’t fetched. Events marked “free” show as context but don’t take over the Now card.</p>`;
+  }
+  return h;
+}
+function remindersHtml() {
+  const up = Remind.upcoming(), gs = gset(), ok = Google.on('reminders');
+  return `<p class="small muted">Reminders are events in a separate “Daily Command” calendar in your Google account, so your phone’s calendar app alerts you even when this app is closed.</p>
+    ${up.length ? `<ul class="list">${up.map(r => `<li><span class="num muted" style="width:96px">${whenLabel(new Date(r.at))}</span><span class="grow">${esc(r.title)} <span class="tag">${r.kind}</span></span>
+      <button class="icon" data-act="remindDelete" data-id="${esc(r.id)}" aria-label="Delete reminder">✕</button></li>`).join('')}</ul>` : '<div class="empty">No upcoming reminders.</div>'}
+    <div class="actions"><button class="btn" data-act="remindAdd" ${ok ? '' : 'disabled'}>+ Reminder</button><button class="btn ghost" data-act="blockAlarms" ${ok ? '' : 'disabled'}>Alarms for today’s blocks</button></div>
+    <label class="row" style="min-height:44px"><input type="checkbox" data-act="gToggle" data-k="focusAlarm" ${gs.focusAlarm ? 'checked' : ''} style="width:22px;height:22px"> Phone alarm when a focus session ends</label>
+    <label class="row" style="min-height:44px"><input type="checkbox" data-act="gToggle" data-k="blockAlarms" ${gs.blockAlarms ? 'checked' : ''} style="width:22px;height:22px"> Set block alarms automatically when I press “Start work”</label>
+    ${ok ? '' : '<p class="small warnchip">Turn on “Reminders & alarms” under Google account.</p>'}`;
+}
+
+const ACT5 = {
+  gConnect(el, e) { e?.preventDefault(); Google.connect(); },
+  gSaveClient() {
+    const v = $('#gClientId').value.trim();
+    if (v && !/\.apps\.googleusercontent\.com$/.test(v)) return toast('That doesn’t look like a client ID (…apps.googleusercontent.com).');
+    gset().clientId = v; save(); if (v) loadGis().catch(() => {}); toast('Client ID saved.'); render();
+  },
+  gFeature(el) { gset().on = { ...gset().on, [el.dataset.f]: el.checked }; save(); render(); if (el.checked && Google.everSignedIn() && !Google.granted(el.dataset.f)) toast('Tap Connect to allow ' + G_LABEL[el.dataset.f] + '.'); },
+  gToggle(el) { gset()[el.dataset.k] = el.checked; save(); render(); },
+  gCalToggle(el) { const off = new Set(gset().calOff || []); el.checked ? off.delete(el.dataset.id) : off.add(el.dataset.id); gset().calOff = [...off]; save(); render(); },
+  async gSyncNow() {
+    if (!Google.ready('sync')) return Google.token() ? toast('Turn on sync and allow it first.') : Google.connect();
+    try { toast('Syncing…'); await DriveSync.sync(); toast('Synced.'); } catch (e) { toast('Sync failed: ' + e.message); }
+    render();
+  },
+  gSignOut() { if (confirm('Sign out of Google on this device? Your app data stays here.')) Google.signOut(); },
+  async remindAdd() {
+    const d = new Date(Date.now() + 3600e3);
+    const v = await formSheet('New reminder', [{ name: 'title', label: 'Remind me to…' },
+      { name: 'at', label: 'When', type: 'datetime-local', value: `${Engine.dateKey(d)}T${fmtT(d)}` }], { okLabel: 'Set reminder' });
+    if (!v?.title || !v.at) return;
+    try { await Remind.create({ title: '⏰ ' + v.title, at: new Date(v.at), kind: 'manual' }); toast('Reminder set — your phone will alert you.'); }
+    catch (e) { toast(e.needAuth ? 'Google needs a refresh first.' : 'Couldn’t set it: ' + e.message); }
+    render();
+  },
+  async remindDelete(el) { try { await Remind.remove(el.dataset.id); } catch (e) { toast(e.message); } render(); },
+  blockAlarms() { setBlockAlarms(); },
+};
+</script>
+
+<script>
+/* =====================================================================
    PART 5 — RENDERING
    Each view is a function that returns HTML. Clicks are handled by one
    delegated listener reading data-act attributes (PART 6).
@@ -1679,6 +2217,7 @@ function renderHeader() {
     ? `manual until ${fmtT(new Date(S.modeOverride.until))} · <a href="#" data-act="clearMode" style="color:inherit">auto</a>`
     : 'auto by time';
   document.documentElement.style.setProperty('--mode-c', modeColor(R.mode));
+  $('#gchip').innerHTML = gChipHtml();
   const n = S.inbox.length, b = $('#inboxBadge');
   b.textContent = n; b.classList.toggle('hidden', !n);
 }
@@ -1782,11 +2321,13 @@ function modeSections(mode) {
   if (mode === 'work') {
     parts.push(sec('now-top3', 'Today’s top 3', top3, true));
     parts.push(sec('now-next', 'Next action per project', nextActionsHtml(), false));
+    if (Google.on('gmail') && C.gmail) parts.push(sec('now-mail', 'Gmail', mailHtml(true), false, `<span class="tag num">${C.gmail.unread} unread</span>`));
     parts.push(sec('now-focus', 'Focus today', `<div class="kpi"><div><b class="num">${minsToday}</b>minutes</div><div><b class="num">${todaysSessions().length}</b>sessions</div></div>`, false, `<span class="tag num">${minsToday}m</span>`));
   } else if (mode === 'life') {
     parts.push(sec('now-weather', 'Weather', Weather.html(), false, `<span class="tag">${Weather.short() || '—'}</span>`));
     parts.push(sec('now-top3', 'Today’s top 3', top3, false));
     parts.push(sec('now-inbox', `Inbox`, inboxHtml(true), S.inbox.length > 0, `<span class="tag">${S.inbox.length}</span>`));
+    if (Google.on('gmail') && C.gmail) parts.push(sec('now-mail', 'Gmail', mailHtml(true), false, `<span class="tag num">${C.gmail.unread} unread</span>`));
   } else if (mode === 'leisure') {
     parts.push(sec('now-watch', 'Watch-later shelf', watchHtml(), true, `<span class="tag">${S.watch.length}</span>`));
     parts.push(digestCard());
@@ -1966,7 +2507,9 @@ function renderMore() {
   const st = S.settings;
   const evs = S.events.filter(e => new Date(e.end) > Engine.atDay(new Date(), -1)).sort((a, b) => new Date(a.start) - new Date(b.start));
   let h = '';
-  h += sec('more-events', 'Events (manual for now)', `<p class="muted small">Calendar events override the routine. Until Google Calendar is connected (Stage 4), add them here.</p>
+  h += sec('more-google', 'Google account', googleSectionHtml(), !Google.everSignedIn(), `<span class="tag">${Google.everSignedIn() ? (Google.token() ? 'connected' : 'tap to refresh') : 'not connected'}</span>`);
+  h += sec('more-remind', 'Reminders & alarms', remindersHtml(), false, `<span class="tag">${Remind.upcoming().length}</span>`);
+  h += sec('more-events', 'Manual events', `<p class="muted small">Calendar events override the routine. Google Calendar events appear automatically once connected; add one-offs here.</p>
     <ul class="list">${evs.map(e => `<li><span class="grow" data-act="editEvent" data-id="${e.id}">${esc(e.title)}<br><span class="small muted">${e.allDay ? 'All day ' + new Date(e.start).toLocaleDateString('en-GB') : whenLabel(new Date(e.start)) + '–' + fmtT(new Date(e.end))}</span></span></li>`).join('') || '<li class="empty">No upcoming events.</li>'}</ul>
     <div class="actions"><button class="btn" data-act="addEvent">+ Event</button></div>`, true);
 
@@ -2016,7 +2559,7 @@ function renderMore() {
     <button class="btn ghost danger" data-act="resetAll">Erase all</button></div>`);
 
   h += sec('more-help', 'Help & limits', helpHtml());
-  h += `<p class="muted small" style="text-align:center;margin-top:20px">Daily Command · Stage 3 · <span id="swState">offline cache: checking…</span></p>`;
+  h += `<p class="muted small" style="text-align:center;margin-top:20px">Daily Command · Stage 4 · <span id="swState">offline cache: checking…</span></p>`;
   $('#view-more').innerHTML = h;
   updateSwState();
 }
@@ -2060,6 +2603,21 @@ function helpHtml() {
   <h3>Listening while working</h3>
   <p>Feeds tagged <b>listen</b> (podcasts, talking-head channels) form a Listen queue. In a block, the Now screen shows one pick that fits the time left — with the comparison written out — and <b>Play</b> opens it in the YouTube app on Android. With YouTube Premium it keeps playing with the screen off. Per block kind you can choose talk, focus audio (e.g. an instrumental playlist) or off: More → Listening while working. The default is talk for Admin and Lunch, focus audio for Deep work, because speech competes with reading and writing.</p>
   <p>Video lengths: YouTube usually blocks GitHub’s servers from video pages, so for reliable lengths add a free YouTube Data API key as the repo secret <code>YT_API_KEY</code> (Settings → Secrets and variables → Actions). Without one, items may show no length and the pick falls back to queue order. Until phone–desktop sync (Stage 4), marking something done on one device doesn’t hide it on the other.</p>
+  <h3>Stage 4 setup — Google (one-off, ~15 min, free)</h3>
+  <ol>
+    <li>Go to <b>console.cloud.google.com</b> → project picker → <b>New project</b> (e.g. “Daily Command”).</li>
+    <li><b>APIs &amp; Services → Library</b>: enable <b>Google Calendar API</b>, <b>Gmail API</b>, <b>Google Drive API</b> (and <b>YouTube Data API v3</b> for the Listen playlist / video lengths).</li>
+    <li><b>Google Auth Platform</b> (was “OAuth consent screen”) → Get started: app name, your email, audience <b>External</b>. Under <b>Audience → Test users</b>, add your own Gmail address. Leave it in <b>Testing</b>.</li>
+    <li><b>Clients → Create client → Web application</b>. Under <b>Authorised JavaScript origins</b> add <code>https://nathanaog.github.io</code> (no path, no trailing slash). No redirect URIs needed.</li>
+    <li>Copy the <b>Client ID</b> (ends in <code>.apps.googleusercontent.com</code>) into More → Google account → Save, then <b>Connect Google</b>. Google will warn the app is unverified — it’s yours, so choose <b>Continue</b> and tick the permissions you want.</li>
+    <li><i>Optional, for video lengths:</i> Credentials → <b>Create API key</b> → restrict it to YouTube Data API v3 → add it in GitHub as the repo secret <code>YT_API_KEY</code>.</li>
+  </ol>
+  <h3>Google: what to expect</h3>
+  <ul><li class="limit"><b>Tokens last an hour.</b> A browser-only app gets no long-lived login, so after an hour the header shows “↻ Google”. One tap usually reconnects without asking anything. Calendar and Gmail stay visible from the last fetch meanwhile (with “updated … ago”).</li>
+  <li class="limit"><b>Testing mode ≈ weekly re-approval.</b> While your Google project is in Testing, Google expires approvals after about 7 days, so roughly once a week the refresh will show the consent screen again. Publishing the app would avoid that but needs Google’s verification for Gmail access — not worth it for a personal app.</li>
+  <li class="limit"><b>Reminders ring through your calendar app.</b> They’re events in a separate “Daily Command” calendar. Make sure that calendar is visible and has notifications on in Google Calendar (or Samsung Calendar). <b>Samsung battery tip:</b> Settings → Apps → Calendar (and Google Calendar if installed) → Battery → <b>Unrestricted</b>; and Settings → Battery → Background usage limits → make sure Calendar isn’t in “Sleeping apps”. Otherwise Samsung can delay the alerts.</li>
+  <li class="limit"><b>Sync merges, it doesn’t just overwrite.</b> Changes on phone and desktop are combined item by item; if the same thing was changed on both, the most recent save wins. Sync runs a few seconds after a change and when you open the app — but only while you’re signed in, so after an hour away it waits for your tap.</li>
+  <li class="limit"><b>Gmail shows headers only</b> (sender, subject, unread count) — the app never reads message bodies.</li></ul>
   <h3>Morning briefing slot (optional, later)</h3>
   <p>If the repo ever contains <code>briefing.json</code> (<code>{"generated", "title", "markdown"}</code>) or <code>briefing.md</code> — e.g. written by an AI step you add to the workflow (a commented example is in <code>digest.yml</code>) — it appears at the top of the morning sequence while it’s under 24 h old.</p>
   <h3>Feeds: what’s reliable and what isn’t</h3>
@@ -2071,7 +2629,7 @@ function helpHtml() {
 
 /* ---------------- render dispatcher ---------------- */
 function render(full = true) {
-  R = Engine.resolve(new Date(), S);
+  R = Engine.resolve(new Date(), engineState());
   renderHeader();
   if (currentView === 'now') renderNow();
   if (morningOpen()) renderMorning();
@@ -2110,7 +2668,7 @@ const ACT = {
   // ---- Now card ----
   startActive() { setActive(R.current); render(); },
   finishActive() { S.active = null; save(); toast('Nice. Check the Now card for what’s next.'); render(); },
-  startFocus() { setActive(R.current); Pomo.start('work', R.current.pick?.task.id); askNotifOnce(); render(); },
+  startFocus() { setActive(R.current); Pomo.start('work', R.current.pick?.task.id); askNotifOnce(); render(); FocusAlarm.set(); },
   taskSkip(el) { (S.skips[R.current.day || today()] ||= []).push(el.dataset.id); save(); render(); },
   nudgeStart() { const t = R.current.type === 'gap' ? R.next : R.current; S.active = null; if (t) setActive(t); render(); },
   nudgeSnooze() { S.active.snoozeUntil = new Date(Date.now() + 10 * 60000).toISOString(); save(); render(); },
@@ -2126,11 +2684,16 @@ const ACT = {
   async editTask(el) {
     const t = taskById(el.dataset.id); if (!t) return;
     const v = await formSheet('Edit task', [{ name: 'title', label: 'Task', value: t.title },
-      { name: 'projectId', label: 'Project', type: 'select', value: t.projectId, options: S.projects.map(p => ({ value: p.id, label: p.name })) }], { deletable: true });
+      { name: 'projectId', label: 'Project', type: 'select', value: t.projectId, options: S.projects.map(p => ({ value: p.id, label: p.name })) },
+      ...(Google.on('reminders') && Google.everSignedIn() ? [{ name: 'remind', label: 'Remind me at (optional — your phone will alert you)', type: 'datetime-local', value: '' }] : [])], { deletable: true });
     if (!v) return;
     if (v.__delete) { S.tasks = S.tasks.filter(x => x.id !== t.id); S.projects.forEach(p => { if (p.nextId === t.id) p.nextId = null; }); }
     else Object.assign(t, { title: v.title || t.title, projectId: v.projectId });
     save(); render();
+    if (v.remind) {
+      try { await Remind.create({ title: '⏰ ' + t.title, at: new Date(v.remind), kind: 'manual', ref: t.id }); toast('Reminder set.'); render(); }
+      catch (e) { toast(e.needAuth ? 'Google needs a refresh — tap the chip at the top, then try again.' : 'Couldn’t set reminder: ' + e.message); }
+    }
   },
   toggleTop3(el) {
     const ids = (S.top3[today()] ||= []), id = el.dataset.id, i = ids.indexOf(id);
@@ -2183,11 +2746,11 @@ const ACT = {
   watchDelete(el) { S.watch = S.watch.filter(i => i.id !== el.dataset.id); save(); render(); },
 
   // ---- pomodoro ----
-  pomoStart() { if (!S.active) setActive(R.current); Pomo.start('work', S.pomo.taskId || R.current.pick?.task.id); askNotifOnce(); render(); },
+  pomoStart() { if (!S.active) setActive(R.current); Pomo.start('work', S.pomo.taskId || R.current.pick?.task.id); askNotifOnce(); render(); FocusAlarm.set(); },
   pomoBreak() { Pomo.start('break'); render(); },
-  pomoPause() { Pomo.pause(); render(); },
-  pomoResume() { Pomo.resume(); render(); },
-  pomoStop() { Pomo.stop(); render(); },
+  pomoPause() { Pomo.pause(); render(); FocusAlarm.clear(); },            // paused → the alarm time is wrong, remove it
+  pomoResume() { Pomo.resume(); render(); FocusAlarm.set(); },
+  pomoStop() { const id = S.pomo.alarmId; Pomo.stop(); render(); FocusAlarm.clear(id); },
   async pomoPickTask() {
     const id = await choose('Attach a task', S.tasks.filter(t => !t.done).map(t => ({ value: t.id, label: t.title, tag: projById(t.projectId)?.name })));
     if (id) { S.pomo.taskId = id; save(); render(); }
@@ -2226,7 +2789,7 @@ const ACT = {
   resetAll() { if (confirm('Erase ALL data in this browser? Export first if unsure.')) { localStorage.removeItem(STORE_KEY); S = defaultState(); S.settings.welcomed = true; save(); render(); } },
 };
 
-Object.assign(ACT, ACT2, ACT3, ACT4);   // + listen while working   // Stage 2 (morning, digest, weather) and Stage 3 (lenses, watchlist) actions
+Object.assign(ACT, ACT2, ACT3, ACT4, ACT5);   // + Google (Stage 4)   // + listen while working   // Stage 2 (morning, digest, weather) and Stage 3 (lenses, watchlist) actions
 
 function setActive(item) {
   if (!item || !item.end) { S.active = null; return save(); }
@@ -2485,6 +3048,14 @@ go(['now', 'tasks', 'focus', 'inbox', 'more'].includes(startView) ? startView : 
 if (!S.settings.welcomed) openWelcome();
 else maybeAutoMorning();                       // first open of the day → guided morning
 Weather.refresh(); Digest.refresh();            // background refresh; cached copies show meanwhile
+// Stage 4: optional config.json (holds the Google client ID so every device has it), then Google
+fetch('config.json', { cache: 'no-store' }).then(r => (r.ok ? r.json() : null)).then(cfg => {
+  if (cfg && !cfg.offline) { C.config = cfg; saveCache(); }
+}).catch(() => {}).finally(() => {
+  if (Google.clientId() && navigator.onLine) loadGis().catch(() => {});   // preload so Connect works on the first tap
+  Google.refreshAll(true);
+});
+setInterval(() => { if (!document.hidden) Google.refreshAll(); }, 5 * 60000);
 Watchlist.refresh(); Briefing.refresh();
 if (new URLSearchParams(location.search).get('capture')) setTimeout(openCapture, 100);   // home-screen shortcut
 
@@ -2516,9 +3087,10 @@ setInterval(() => {
 document.addEventListener('visibilitychange', () => {
   if (document.hidden) return;
   Pomo.tick(); render(); maybeAutoMorning();     // phone left open overnight → next morning still triggers
+  Google.refreshAll();                           // quiet if the token has expired or we're offline
   Weather.refresh(); if (!C.digest || Date.now() - C.digest.fetchedAt > 30 * 60000) { Digest.refresh(); Watchlist.refresh(); Briefing.refresh(); }
 });
-addEventListener('online', () => { Weather.refresh(true); Digest.refresh(); });
+addEventListener('online', () => { Weather.refresh(true); Digest.refresh(); if (Google.clientId()) loadGis().catch(() => {}); Google.refreshAll(true); });
 addEventListener('offline', () => render());
 addEventListener('storage', e => { if (e.key === STORE_KEY) { S = load(); render(); } }); // another tab changed data
 
