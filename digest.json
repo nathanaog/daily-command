@@ -1,17 +1,17 @@
 {
- "generated": "2026-10-14T15:29:16.950Z",
+ "generated": "2026-10-14T15:56:35.806Z",
  "watchlistUpdatedAt": "2026-10-14T15:30:00Z",
  "stats": {
   "feeds": 56,
-  "ok": 50,
-  "items": 115,
+  "ok": 51,
+  "items": 119,
   "duplicatesMerged": 0,
   "lengthsKnown": 2,
-  "lengthLookups": 100,
-  "lengthFailures": 100,
+  "lengthLookups": 99,
+  "lengthFailures": 99,
   "lengthVia": "video pages",
   "lengthFailReasons": {
-   "no length on page": 100
+   "no length on page": 99
   }
  },
  "feeds": [
@@ -176,7 +176,7 @@
    "name": "Half as Interesting",
    "type": "youtube",
    "status": "ok",
-   "count": 2,
+   "count": 1,
    "resolved": {
     "channelId": "UCuCkxoKLYO_EQ2GeFtbM_bw",
     "title": "Half as Interesting",
@@ -657,9 +657,10 @@
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
+   "lastOk": "2026-10-14T15:29:16.950Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-xbox",
@@ -668,7 +669,7 @@
    "status": "cached",
    "count": 5,
    "lastOk": null,
-   "note": "rate-limited (429)"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-slaythespire",
@@ -677,25 +678,26 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "waiting",
-   "count": 0,
-   "lastOk": null,
-   "note": "not its turn this run"
+   "status": "ok",
+   "count": 5,
+   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
   },
   {
    "id": "rd-germany",
    "name": "r/germany",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-unitedkingdom",
@@ -704,12 +706,49 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   }
  ],
  "items": [
   {
-   "title": "Why South Korea Is Giving All Its Citizens Limitless AI",
+   "title": "tagesschau in Einfacher Sprache 19:00 Uhr, 14.10.2026",
+   "url": "https://www.youtube.com/watch?v=-sA_qnpbD48",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-14T15:43:48.000Z",
+   "summary": "tagesschau in Einfacher Sprache 19:00 Uhr Anschlag auf Pipelines: Mann ist vor Gericht, Papst Leo: Lungenkrebs, Regierung: Steuer für Zucker in Getränken, Fußball: Deutsche Frauen gewinnen gegen Japan, Das Wetter https://www.tagesschau.de",
+   "thumb": "https://i2.ytimg.com/vi/-sA_qnpbD48/hqdefault.jpg",
+   "id": "09c31042797a",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "'Civilian blood is on their hands' | Ukraine's access to Starlink is restricted",
+   "url": "https://www.youtube.com/watch?v=N703aLPXvlM",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-14T15:30:15.000Z",
+   "summary": "Shelagh Fogarty is joined by Sergeant Ashton-Cirillo as the Ukrainian military's access to the America's Starlink satellite internet is suddenly restricted. 0:00 | Ukrainian sergeant reports from the Eastern Front 8:35 | Is the US at war with Europe? 10:30 | The UK must ‘lock…",
+   "thumb": "https://i3.ytimg.com/vi/N703aLPXvlM/hqdefault.jpg",
+   "id": "caa7316aa7fa",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "What Happens When AI Is Free ... South Korea Tried It",
    "url": "https://www.youtube.com/watch?v=ZRNQ1QgbDj4",
    "source": "Economics Explained",
    "feedId": "yt-economics-explained",
@@ -722,6 +761,40 @@
    "summary": "Read Shopify's latest data on the rising global impact of entrepreneurship: https://www.shopify.com/entrepreneur 📫 10,859+ read our free newsletter that has weekly original stories Sign up: → https://economics-explained-tv-program.beehiiv.com/ This video was made possible by…",
    "thumb": "https://i3.ytimg.com/vi/ZRNQ1QgbDj4/hqdefault.jpg",
    "id": "23fb10aa8d43",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "US inflation hotter than expected as Iran war stokes fuel costs",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1x5sxcl/us_inflation_hotter_than_expected_as_iran_war/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-14T14:37:17.000Z",
+   "summary": "submitted by /u/TimesandSundayTimes [link] [comments]",
+   "id": "f36410b61ec5",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "What Do Brazil’s Elections Mean for its Foreign Policy?",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1x5st3s/what_do_brazils_elections_mean_for_its_foreign/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-14T14:32:23.000Z",
+   "summary": "submitted by /u/RUSIOfficial [link] [comments]",
+   "id": "81d71c38f1f5",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -745,6 +818,23 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
+   "title": "US and Europe preparing peace plan to improve post-war state of Ukraine and Russia | US envoys inform Ukraine the Diesel Deal is an attempt to bring Russia to the table | Washington Post",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1x5sh6m/us_and_europe_preparing_peace_plan_to_improve/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-14T14:19:10.000Z",
+   "summary": "submitted by /u/barath_s [link] [comments]",
+   "id": "847e9d20029f",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
    "title": "ARD-Korrespondent in Rom: „Krebsdiagnose von Papst Leo XIV. kam völlig überraschend“",
    "url": "https://www.youtube.com/watch?v=GVJrI4BxehM",
    "source": "Tagesschau",
@@ -759,6 +849,23 @@
    "summary": "Am Dienstag hatte Papst Leo XIV. sich operieren lassen. Nun steht fest: Das Oberhaupt der Katholischen Kirche hat Lungenkrebs. Was bedeutet die Diagnose und wie geht es weiter? Mehr Informationen zu diesem Thema:…",
    "thumb": "https://i4.ytimg.com/vi/GVJrI4BxehM/hqdefault.jpg",
    "id": "1f3b096b7255",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Russia’s ‘spying’ arrest of journalist heightens tensions with Japan",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1x5rgvp/russias_spying_arrest_of_journalist_heightens/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-14T13:38:25.000Z",
+   "summary": "submitted by /u/TimesandSundayTimes [link] [comments]",
+   "id": "e5fbfa11c349",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -971,6 +1078,23 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
+   "title": "Ukraine says it received no intelligence about strikes 2 nights in a row",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1x5ol1i/ukraine_says_it_received_no_intelligence_about/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-14T11:20:24.000Z",
+   "summary": "submitted by /u/softwaredoug [link] [comments]",
+   "id": "ac819eda1999",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
    "title": "Got moved to a new team, inherited a lousy product",
    "url": "https://www.reddit.com/r/ProductManagement/comments/1x5oa3l/got_moved_to_a_new_team_inherited_a_lousy_product/",
    "source": "r/productmanagement",
@@ -1057,24 +1181,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Four in five new jobs taken by foreigners in last decade",
-   "url": "https://www.youtube.com/watch?v=38pIbAvt1xg",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-14T09:51:25.000Z",
-   "summary": "Four in five jobs created over the past decade have been taken by foreigners, according to a think-tank. According to the Centre for Social Justice, of the 3.7million new roles recorded under the PAYE system since 2014, just 734,000 were taken by UK nationals. During that…",
-   "thumb": "https://i4.ytimg.com/vi/38pIbAvt1xg/hqdefault.jpg",
-   "id": "b94ffa447b18",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Palantir is worming its way into the British state – it’s time to curb this controversial US company’s influence",
    "url": "https://www.reddit.com/r/ukpolitics/comments/1x5n2qa/palantir_is_worming_its_way_into_the_british/",
    "source": "r/ukpolitics",
@@ -1087,25 +1193,6 @@
    "published": "2026-10-14T09:50:36.000Z",
    "summary": "submitted by /u/Exostrike [link] [comments]",
    "id": "b5071c2d487f",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "\"Frage, ob das als Kriegsverbrechen gewertet wird\": ARD-Experte zu Nord-Stream-Prozess",
-   "url": "https://www.youtube.com/watch?v=ISwQqaiuiiE",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-14T09:48:27.000Z",
-   "summary": "Es ist vier Jahre her und geschah wenige Monate nach dem Beginn des Krieges in der Ukraine: Im September 2022 wurde ein Anschlag auf die Nord-Stream-Pipelines vor der dänischen Insel Bornholm verübt. In Hamburg beginnt heute der Prozess gegen den mutmaßlichen Haupt-Täter:…",
-   "thumb": "https://i2.ytimg.com/vi/ISwQqaiuiiE/hqdefault.jpg",
-   "id": "bff7619cb832",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -2741,25 +2828,7 @@
    "score": 0,
    "matched": [],
    "why": "0"
-  },
-  {
-   "title": "What is the World's Biggest Hole Humans Have Ever Dug?",
-   "url": "https://www.youtube.com/watch?v=x_SgL10cYgQ",
-   "source": "Half as Interesting",
-   "feedId": "yt-half-as-interesting",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "education"
-   ],
-   "published": "2026-09-30T15:51:38.000Z",
-   "summary": "To explore Climatize, visit http://climatize.earth/hai. And if you sign up, use INTERESTING and finish your profile to receive the $50 investment credit. Follow Sam from Half as Interesting on Instagram: http://Instagram.com/Sam.From.Wendover Follow Half as Interesting on…",
-   "thumb": "https://i1.ytimg.com/vi/x_SgL10cYgQ/hqdefault.jpg",
-   "id": "edd79cc3b5ff",
-   "score": 0,
-   "matched": [],
-   "why": "0"
   }
  ],
- "contentHash": "2e1ea90c5d06"
+ "contentHash": "2d484cc07311"
 }
