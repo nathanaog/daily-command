@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-14T14:54:35.432Z",
+ "generated": "2026-10-14T15:01:52.966Z",
  "watchlistUpdatedAt": "2026-10-14T15:30:00Z",
  "stats": {
   "feeds": 56,
@@ -638,10 +638,9 @@
    "id": "rd-tech",
    "name": "r/tech",
    "type": "reddit",
-   "status": "error",
+   "status": "empty",
    "count": 0,
-   "error": "rate-limited by Reddit (sent a web page, not a feed)",
-   "http": 429
+   "url": "https://www.reddit.com/r/tech/top/.rss?t=day"
   },
   {
    "id": "rd-gaming",
@@ -649,61 +648,64 @@
    "type": "reddit",
    "status": "error",
    "count": 0,
-   "error": "rate-limited by Reddit (sent a web page, not a feed)",
+   "lastOk": null,
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
    "http": 429
   },
   {
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
-   "error": "rate-limited by Reddit (sent a web page, not a feed)",
-   "http": 429
+   "lastOk": null,
+   "note": "not its turn this run"
   },
   {
    "id": "rd-xbox",
    "name": "r/xbox",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/xbox/top/.rss?t=day"
+   "lastOk": null,
+   "note": "not its turn this run"
   },
   {
    "id": "rd-slaythespire",
    "name": "r/slaythespire",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
-   "error": "rate-limited by Reddit (sent a web page, not a feed)",
-   "http": 429
+   "lastOk": null,
+   "note": "not its turn this run"
   },
   {
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
-   "error": "rate-limited by Reddit (sent a web page, not a feed)",
-   "http": 429
+   "lastOk": null,
+   "note": "not its turn this run"
   },
   {
    "id": "rd-germany",
    "name": "r/germany",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
-   "error": "rate-limited by Reddit (sent a web page, not a feed)",
-   "http": 429
+   "lastOk": null,
+   "note": "not its turn this run"
   },
   {
    "id": "rd-unitedkingdom",
    "name": "r/unitedkingdom",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
-   "error": "rate-limited by Reddit (sent a web page, not a feed)",
-   "http": 429
+   "lastOk": null,
+   "note": "not its turn this run"
   }
  ],
  "items": [
@@ -2675,5 +2677,5 @@
    "why": "0"
   }
  ],
- "contentHash": "d13e51cc7518"
+ "contentHash": "138625f9268b"
 }

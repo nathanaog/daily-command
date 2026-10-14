@@ -292,5 +292,18 @@
     "title": "HistoryMarche",
     "via": "name search",
     "at": "2026-10-14T14:51:54.979Z"
+  },
+  "__reddit": {
+    "rd-productmanagement": {
+      "lastTry": "2026-10-14T15:01:52.966Z",
+      "lastOk": "2026-10-14T15:01:52.966Z"
+    },
+    "rd-tech": {
+      "lastTry": "2026-10-14T15:01:52.966Z",
+      "lastOk": "2026-10-14T15:01:52.966Z"
+    },
+    "rd-gaming": {
+      "lastTry": "2026-10-14T15:01:52.966Z"
+    }
   }
 }
