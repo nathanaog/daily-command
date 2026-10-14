@@ -1,10 +1,10 @@
 {
- "generated": "2026-10-14T20:35:20.025Z",
+ "generated": "2026-10-14T20:55:56.930Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
   "ok": 52,
-  "items": 120,
+  "items": 119,
   "duplicatesMerged": 0,
   "lengthsKnown": 2,
   "lengthLookups": 98,
@@ -630,28 +630,28 @@
    "id": "rd-productmanagement",
    "name": "r/productmanagement",
    "type": "reddit",
-   "status": "cached",
-   "count": 4,
-   "lastOk": "2026-10-14T18:59:55.235Z",
-   "note": "not its turn this run"
+   "status": "ok",
+   "count": 3,
+   "url": "https://www.reddit.com/r/productmanagement/top/.rss?t=day"
   },
   {
    "id": "rd-tech",
    "name": "r/tech",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 1,
-   "lastOk": "2026-10-14T18:59:55.235Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/tech/top/.rss?t=day"
   },
   {
    "id": "rd-gaming",
    "name": "r/gaming",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-ukpolitics",
@@ -684,20 +684,19 @@
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
+   "lastOk": "2026-10-14T20:35:20.025Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-germany",
    "name": "r/germany",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-unitedkingdom",
@@ -706,10 +705,47 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   }
  ],
  "items": [
+  {
+   "title": "Nord-Stream-Sprengung: Der Prozess und seine politische Sprengkraft | tagesthemen-Interview",
+   "url": "https://www.youtube.com/watch?v=uiUqCz3MRLw",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-14T20:53:10.000Z",
+   "summary": "Vor gut vier Jahren wurde die Nord-Stream-Pipeline gesprengt. Nun wird der Sabotage-Angriff vom hanseatischen Oberlandesgericht aufgearbeitet. Angeklagt ist ein ehemaliger ukrainischer Offizier, der Drahtzieher des Anschlags gewesen sein soll. War der Anschlag auf die…",
+   "thumb": "https://i2.ytimg.com/vi/uiUqCz3MRLw/hqdefault.jpg",
+   "id": "dda7f2a119e0",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "OH SH*T: Piers Morgan SNAPS AT TRUMP with BOMBSHELL Zelenskyy Interview!",
+   "url": "https://www.youtube.com/watch?v=P4ghGYilXiU",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-14T20:40:16.000Z",
+   "summary": "Luke discusses Zelenskyy's appearance on Piers Morgan's show. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
+   "thumb": "https://i1.ytimg.com/vi/P4ghGYilXiU/hqdefault.jpg",
+   "id": "6e3a54c5bd4c",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
   {
    "title": "Jewish Greens to sue the party over Zionism policy",
    "url": "https://www.reddit.com/r/ukpolitics/comments/1x60odd/jewish_greens_to_sue_the_party_over_zionism_policy/",
@@ -1183,25 +1219,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Zuckersteuer beschlossen: Diese Getränke werden ab Juli teurer",
-   "url": "https://www.youtube.com/watch?v=67XyXFqOYXo",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-14T13:32:35.000Z",
-   "summary": "Der Streit in der schwarz-roten Koalition über die Steuer auf zuckergesüßte Getränke ist beigelegt. Das Kabinett hat einen Regelungsvorschlag beschlossen. Was geplant ist und was die Regierung damit erreichen will. Mehr Informationen zu diesem Thema:…",
-   "thumb": "https://i3.ytimg.com/vi/67XyXFqOYXo/hqdefault.jpg",
-   "id": "32ae462b48cc",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Simon Marks reacts to 'staggering' AI video of Trump wrestling tiger",
    "url": "https://www.youtube.com/watch?v=pnQ783a3BaI",
    "source": "LBC",
@@ -1434,40 +1451,6 @@
    "published": "2026-10-13T23:57:21.000Z",
    "summary": "This sub can get pretty negative and pessimistic. I know that people mostly post their negative experiences online, so i'm hoping to see some positive experiences. Maybe share your #1 tip for job enjoyment as well. submitted by /u/I_like_it_yo [link] [comments]",
    "id": "568ae534211b",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "He fired her",
-   "url": "https://www.youtube.com/watch?v=1dXPXFilZD8",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-13T22:30:16.000Z",
-   "summary": "Luke discusses Trump's latest comments on Kimberly Guilfoyle. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
-   "thumb": "https://i2.ytimg.com/vi/1dXPXFilZD8/hqdefault.jpg",
-   "id": "5c7ae947597d",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "The problem with 2026 product management...",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1x55w7g/the_problem_with_2026_product_management/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-10-13T19:15:38.000Z",
-   "summary": "Everyone in the company wants to be a product manager except the product manager. The product manager probably would want to be the product manager without everyone wanting to be the product manager. Being a yes person is the easiest path to keep a career even as you watch your…",
-   "id": "834626be4fef",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2843,5 +2826,5 @@
    "why": "0"
   }
  ],
- "contentHash": "2ef3b59346e9"
+ "contentHash": "704d2b606e55"
 }
