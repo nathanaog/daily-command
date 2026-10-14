@@ -272,7 +272,7 @@ export async function addLengths(items, { fetchText, meta = {}, concurrency = 6,
 
 /* ---------------- the whole run ---------------- */
 export async function buildDigest(doc, { fetchText, now = new Date(), cache = {}, videoMeta = {}, concurrency = 6, ytApiKey = '',
-  redditGapMs = 4000, sleep = ms => new Promise(r => setTimeout(r, ms)) }) {
+  redditGapMs = 4000, sleep = ms => new Promise(r => setTimeout(r, ms)), previousItems = [] }) {
   // Serialise Reddit: each request waits for the previous one, then `redditGapMs` (default 4 s).
   let chain = Promise.resolve(), first = true;
   const redditGate = job => {
@@ -287,6 +287,22 @@ export async function buildDigest(doc, { fetchText, now = new Date(), cache = {}
   const feeds = (doc.feeds || []).filter(f => f && f.name && !f.paused);
   const report = [];
 
+  /* Reddit ROTATION. Reddit only lets cloud servers (like GitHub's) make a few requests per run,
+     so each run fetches up to `redditPerRun` subreddits (default 3) — the ones refreshed longest
+     ago first — and stops as soon as Reddit rate-limits. The rest keep their posts from earlier
+     runs (status "cached"). 9 subreddits ÷ 3 per run = every sub refreshed every 3 runs ≈ 9 h. */
+  const rstate = { ...(cache.__reddit || {}) };                          // {feedId: {lastTry, lastOk}}
+  const perRun = defaults.redditPerRun ?? 3;
+  const rOrder = feeds.filter(f => f.type === 'reddit').sort((a, b) => (rstate[a.id]?.lastTry || '').localeCompare(rstate[b.id]?.lastTry || ''));
+  const rFetch = new Set(rOrder.slice(0, perRun).map(f => f.id));
+  let redditLimited = false;
+  const carryOver = (f, rep, why) => {
+    const maxAge = (f.maxAgeHours || defaults.maxAgeHours) * 3600e3;
+    const old = previousItems.filter(i => i.feedId === f.id && (!i.published || now - new Date(i.published) <= maxAge)).map(i => ({ ...i, canon: canonicalUrl(i.url) }));
+    Object.assign(rep, { status: old.length ? 'cached' : 'waiting', count: old.length, lastOk: rstate[f.id]?.lastOk || null, note: why });
+    return old;
+  };
+
   const perFeed = await pool(feeds, concurrency, async f => {
     const rep = { id: f.id, name: f.name, type: f.type, status: 'ok', count: 0 };
     report.push(rep);
@@ -296,15 +312,33 @@ export async function buildDigest(doc, { fetchText, now = new Date(), cache = {}
     if (plan.resolved) { rep.resolved = { channelId: plan.resolved.channelId, title: plan.resolved.title, via: plan.resolved.via }; resolvedOut[plan.cacheKey] = plan.resolved; }
 
     let parsed = null, lastErr = '', lastHttp;
+    if (f.type === 'reddit' && !rFetch.has(f.id)) return carryOver(f, rep, 'not its turn this run');
     // Reddit rate-limits bursts, so its requests go through a one-at-a-time gate with a pause between them.
-    const get = f.type === 'reddit' ? url => redditGate(() => fetchText(url)) : fetchText;
+    const get = f.type === 'reddit'
+      ? url => redditGate(() => (redditLimited ? { status: -1, skipped: true } : fetchText(url)))
+      : fetchText;
+    if (f.type === 'reddit') rstate[f.id] = { ...(rstate[f.id] || {}), lastTry: now.toISOString() };
     for (const url of plan.urls) {                         // try primary, then fallback URL
       const res = await get(url);
-      if (res.status !== 200) { lastHttp = res.status; lastErr = res.error || httpReason(res.status, f.type); continue; }
+      if (res.skipped) return carryOver(f, rep, 'Reddit rate-limited earlier in this run');
+      if (res.status !== 200) {
+        lastHttp = res.status; lastErr = res.error || httpReason(res.status, f.type);
+        if (f.type === 'reddit' && res.status === 429) { redditLimited = true; break; }
+        continue;
+      }
       try { parsed = parseFeed(res.text); rep.url = url; break; }
-      catch (e) { lastErr = f.type === 'reddit' ? redditHtmlReason(res.text) : e.message; }
+      catch (e) {
+        lastErr = f.type === 'reddit' ? redditHtmlReason(res.text) : e.message;
+        if (f.type === 'reddit' && /rate-limit|web page/.test(lastErr)) { redditLimited = true; break; }  // don't spend a 2nd request
+      }
+    }
+    if (!parsed && f.type === 'reddit') {
+      const old = carryOver(f, rep, lastErr);
+      if (!old.length) Object.assign(rep, { status: 'error', error: lastErr, http: lastHttp });
+      return old;
     }
     if (!parsed) { Object.assign(rep, { status: 'error', error: lastErr, http: lastHttp }); return []; }
+    if (f.type === 'reddit') rstate[f.id].lastOk = now.toISOString();
 
     const maxAge = (f.maxAgeHours || (f.type === 'youtube' ? defaults.maxAgeHoursVideo : defaults.maxAgeHours)) * 3600e3;
     const fresh = parsed.entries
@@ -348,7 +382,8 @@ export async function buildDigest(doc, { fetchText, now = new Date(), cache = {}
   const lengths = await addLengths(kept, { fetchText, meta: { ...videoMeta }, concurrency, apiKey: ytApiKey });
 
   report.sort((a, b) => feeds.findIndex(f => f.id === a.id) - feeds.findIndex(f => f.id === b.id));
-  const ok = report.filter(r => r.status === 'ok').length;
+  if (rOrder.length) resolvedOut.__reddit = rstate;
+  const ok = report.filter(r => r.status === 'ok' || r.status === 'cached').length;
   const digest = {
     generated: now.toISOString(),
     watchlistUpdatedAt: doc.updatedAt || null,

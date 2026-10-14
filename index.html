@@ -1223,6 +1223,8 @@ const Watchlist = {
     return Object.entries(count).sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
   },
   health(id) { return (C.digest?.data.feeds || []).find(f => f.id === id) || null; },
+  /** ok / cached / waiting are fine; unresolved / error / empty need a look. */
+  isProblem(id) { const h = this.health(id); return !!h && !['ok', 'cached', 'waiting'].includes(h.status); },
   json() { return JSON.stringify(S.watchlist, null, 2) + '\n'; },
 };
 
@@ -1286,7 +1288,7 @@ function watchlistHtml() {
     <div class="actions"><button class="btn sm" data-act="wlReload">Retry</button><label class="btn sm">Import feeds.json<input type="file" accept=".json,application/json" id="feedsFile" hidden></label></div>`;
   const feeds = W.feeds || [];
   const checks = feeds.filter(f => f.check).length;
-  const probs = feeds.filter(f => { const hh = Watchlist.health(f.id); return hh && hh.status !== 'ok'; }).length;
+  const probs = feeds.filter(f => Watchlist.isProblem(f.id)).length;
   const d = C.digest?.data;
   let h = freshPromptHtml();
   h += `<div class="kpi"><div><b class="num">${feeds.length}</b>feeds</div><div><b class="num">${checks}</b>to check</div><div><b class="num">${probs}</b>problems</div></div>
@@ -1300,12 +1302,14 @@ function watchlistHtml() {
     <button class="chip ${wlFilter === '__check' ? 'on' : ''}" data-act="wlFilter" data-tag="__check">To check ${checks}</button>
     <button class="chip ${wlFilter === '__prob' ? 'on' : ''}" data-act="wlFilter" data-tag="__prob">Problems ${probs}</button>
     ${tags.map(([t, n]) => `<button class="chip ${wlFilter === t ? 'on' : ''}" data-act="wlFilter" data-tag="${esc(t)}">${esc(t)} ${n}</button>`).join('')}</div>`;
-  const shown = feeds.filter(f => !wlFilter || (wlFilter === '__check' ? f.check : wlFilter === '__prob' ? (Watchlist.health(f.id)?.status || 'ok') !== 'ok' : (f.tags || []).includes(wlFilter)))
+  const shown = feeds.filter(f => !wlFilter || (wlFilter === '__check' ? f.check : wlFilter === '__prob' ? Watchlist.isProblem(f.id) : (f.tags || []).includes(wlFilter)))
     .sort((a, b) => a.name.localeCompare(b.name));
   h += `<ul class="list">${shown.map(f => {
     const hh = Watchlist.health(f.id);
     const st = !hh ? '<span class="muted">not fetched yet</span>'
       : hh.status === 'ok' ? `✓ ${hh.count} recent${hh.resolved && hh.resolved.via === 'name search' ? ` · found “${esc(hh.resolved.title)}”` : ''}`
+      : hh.status === 'cached' ? `↻ ${hh.count} from an earlier run${hh.lastOk ? ' (' + ago(new Date(hh.lastOk).getTime()) + ')' : ''} · Reddit is fetched a few subreddits per run`
+      : hh.status === 'waiting' ? '<span class="muted">… waiting its turn — Reddit is fetched a few subreddits per run</span>'
       : hh.status === 'unresolved' ? `<span class="warnchip">? ${esc(hh.error || 'not found')} — add its @handle or link</span>`
       : `<span class="warnchip">⚠ ${esc(hh.error || hh.status)}</span>`;
     return `<li><span class="tag" style="width:30px;text-align:center">${FEED_ICON[f.type] || '•'}</span><span class="grow" data-act="feedEdit" data-id="${esc(f.id)}">
@@ -1986,7 +1990,7 @@ function renderMore() {
     <div class="actions"><button class="btn" data-act="notifPerm">${'Notification' in window && Notification.permission === 'granted' ? 'Notifications on ✓' : 'Enable notifications'}</button><button class="btn ghost" data-act="welcome">Show welcome</button></div>`);
 
   // Watchlist & lenses (Stage 3)
-  const wlProbs = (S.watchlist?.feeds || []).filter(f => f.check || (Watchlist.health(f.id) && Watchlist.health(f.id).status !== 'ok')).length;
+  const wlProbs = (S.watchlist?.feeds || []).filter(f => f.check || Watchlist.isProblem(f.id)).length;
   h += sec('more-watch', 'Watchlist & lenses', watchlistHtml(), false,
     `<span class="tag">${S.watchlist ? S.watchlist.feeds.length + ' feeds' : '—'}${S.watchlistDirty ? ' · unpublished' : wlProbs ? ' · ' + wlProbs + ' to look at' : ''}</span>`);
 

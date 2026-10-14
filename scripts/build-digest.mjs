@@ -21,7 +21,8 @@ const videoMeta = await readJson('video-meta.json', {});
 
 // Optional: a free YouTube Data API key (repo secret YT_API_KEY) makes video lengths reliable.
 const ytApiKey = process.env.YT_API_KEY || '';
-const { digest, resolved, videoMeta: newMeta } = await buildDigest(doc, { fetchText: makeFetchText(), cache, videoMeta, ytApiKey });
+const previousItems = previous.sample ? [] : (previous.items || []);   // lets Reddit subs not fetched this run keep their posts
+const { digest, resolved, videoMeta: newMeta } = await buildDigest(doc, { fetchText: makeFetchText(), cache, videoMeta, ytApiKey, previousItems });
 
 // Never replace a good digest with an empty one because of a network blip.
 if (!digest.items.length && previous.items?.length && !previous.sample) {

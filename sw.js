@@ -9,7 +9,7 @@
  *    app keeps its own "last known" copies in localStorage.
  * Bump VERSION whenever you change this file or the shell list.
  */
-const VERSION = 'dc-v1.3.2';
+const VERSION = 'dc-v1.3.3';
 const SHELL = ['./', './index.html', './manifest.json',
   './icons/icon-192.png', './icons/icon-512.png', './icons/maskable-512.png'];
 const DATA = /\/(digest|feeds)\.json$|\/briefing\.(md|json)$/;

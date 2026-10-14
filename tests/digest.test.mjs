@@ -219,12 +219,33 @@ await test('Reddit: one request at a time with a gap; rate-limit page explained'
     return url.includes('/r/blocked/') ? { status: 200, text: '<html><title>whoa there, pardner!</title></html>' } : { status: 200, text: fx('reddit.xml') };
   };
   const subs = ['a', 'b', 'c', 'blocked'].map(x => ({ id: 'rd-' + x, name: 'r/' + x, type: 'reddit', tags: [] }));
-  const r = await buildDigest({ feeds: subs }, { fetchText, now: NOW, sleep: async ms => { sleeps.push(ms); }, redditGapMs: 4000 });
+  const r = await buildDigest({ defaults: { redditPerRun: 10 }, feeds: subs }, { fetchText, now: NOW, sleep: async ms => { sleeps.push(ms); }, redditGapMs: 4000 });
   assert.equal(maxInFlight, 1, 'never two Reddit requests at once');
   assert.ok(sleeps.length >= 3 && sleeps.every(ms => ms === 4000), 'pauses between requests');
   assert.equal(r.digest.feeds.filter(f => f.status === 'ok').length, 3);
   assert.match(r.digest.feeds.find(f => f.id === 'rd-blocked').error, /rate-limited by Reddit/);
   assert.equal(redditHtmlReason('Your request has been blocked by network security.'), 'blocked by Reddit — common for cloud servers');
+});
+await test('Reddit rotation: 3 per run (oldest first), stop on rate-limit, others keep earlier posts', async () => {
+  const subs = ['a', 'b', 'c', 'd', 'e'].map(x => ({ id: 'rd-' + x, name: 'r/' + x, type: 'reddit', tags: ['t'] }));
+  const calls = [];
+  const okNet = async url => { calls.push(url); return { status: 200, text: fx('reddit.xml').replace(/abc123|def456/g, m => m + url.split('/r/')[1].split('/')[0]) }; };
+  const run1 = await buildDigest({ feeds: subs }, { fetchText: okNet, now: NOW, sleep: async () => {} });
+  const st1 = Object.fromEntries(run1.digest.feeds.map(f => [f.id, f.status]));
+  assert.deepEqual(st1, { 'rd-a': 'ok', 'rd-b': 'ok', 'rd-c': 'ok', 'rd-d': 'waiting', 'rd-e': 'waiting' });
+  assert.equal(calls.length, 3, 'only 3 Reddit requests');
+  // run 2, an hour later: d and e (never tried) plus a (oldest of the tied a–c) are this run's 3; e hits the limit; b, c carried over
+  calls.length = 0;
+  const limited = async url => { calls.push(url); return url.includes('/r/e/') ? { status: 200, text: '<html>whoa there, pardner!</html>' } : okNet(url); };
+  const run2 = await buildDigest({ feeds: subs }, { fetchText: limited, now: new Date(NOW.getTime() + 3600e3), sleep: async () => {},
+    cache: run1.resolved, previousItems: run1.digest.items });
+  const f2 = Object.fromEntries(run2.digest.feeds.map(f => [f.id, f]));
+  assert.equal(f2['rd-d'].status, 'ok'); assert.equal(f2['rd-e'].status, 'error');
+  assert.match(f2['rd-e'].error, /rate-limited/);
+  assert.equal(f2['rd-a'].status, 'ok'); assert.equal(f2['rd-b'].status, 'cached'); assert.equal(f2['rd-b'].count, 2);
+  assert.ok(!calls.some(u => u.includes('old.reddit.com/r/e')), 'no second request after a rate-limit page');
+  assert.equal(run2.digest.items.filter(i => i.feedId === 'rd-b').length, 2, 'carried-over posts are in the digest');
+  assert.equal(run2.digest.stats.ok, 4, 'ok counts fetched (a, d) + cached (b, c)');
 });
 await test('unresolvable YouTube name is reported, not fatal', async () => {
   const net = fakeNet([['results?search_query', { status: 200, text: '<html>no results</html>' }]]);
