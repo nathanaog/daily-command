@@ -185,6 +185,8 @@ ul.dg a:hover{text-decoration:underline}
 a.btn{text-decoration:none;color:inherit} a.btn.primary{color:#10151a}
 ul.list a{color:var(--text);text-decoration:none} ul.list a:hover{text-decoration:underline}
 .card.listen{border-left:4px solid var(--mode-c,var(--accent))}
+.ytbox{position:relative;width:100%;aspect-ratio:16/9;background:#000;border-radius:14px;overflow:hidden;margin-bottom:10px}
+.ytbox iframe,.ytbox #ytFrame{position:absolute;inset:0;width:100%;height:100%;border:0}
 .gchip{font-size:.75rem;padding:4px 10px;border-radius:999px;border:1px solid var(--border);background:transparent;color:var(--muted);white-space:nowrap;min-height:28px}
 .gchip.ok{color:var(--accent)} button.gchip{cursor:pointer} .gchip.warn{color:var(--warn);border-color:var(--warn)}
 .card.listen .math{margin-top:6px}
@@ -272,6 +274,8 @@ dialog::backdrop{background:rgba(0,0,0,.5)}
 
 <!-- Stage 2: the guided morning sequence (and stand-alone digest sessions) -->
 <section class="overlay hidden" id="morning" aria-label="Morning sequence" role="dialog" aria-modal="true"></section>
+<!-- Stage 4.5: in-app YouTube player -->
+<section class="overlay hidden" id="player" aria-label="Video player" role="dialog" aria-modal="true" style="z-index:16"></section>
 
 <!-- One reusable dialog; its contents are rendered per use -->
 <dialog id="dlg"><div class="sheet" id="dlgBody"></div></dialog>
@@ -572,6 +576,85 @@ const Sync = (() => {
 // ==SYNC END==
 </script>
 
+<script>
+/* =====================================================================
+   PART 1c — LENS ENGINE (pure; tested in tests/lens.test.cjs)
+   Tags live in GROUPS:
+     topic    — what it's about (politics, gaming, trash…). Any tag not
+                listed in another group counts as a topic.
+     genre    — what kind of thing (debates, standup, documentary, lo-fi…)
+     activity — what you'd use it for (focus, chill, workout…)
+   plus HOW you'd consume it, worked out automatically per item:
+     watch  — YouTube videos
+     listen — Spotify episodes, and videos from feeds marked "fine to just listen to"
+     read   — articles, news, Reddit
+   A LENS picks items. Within a group it's "any of these"; across groups
+   it's "and". So {topic:[politics], genre:[debates], how:[watch]} means
+   "a politics debate I can watch" — never a listen-only podcast.
+   Older lenses that are a plain list of tags keep their old meaning
+   ("any of these tags").
+   ===================================================================== */
+// ==LENS START==
+const Lens = (() => {
+  const GROUPS = ['topic', 'genre', 'activity'];
+  const HOW = ['watch', 'listen', 'read'];
+  const lc = s => String(s).toLowerCase();
+
+  /** Which group a tag belongs to (topic unless listed elsewhere). `listen` is a hint, not a category. */
+  function groupOf(tag, groups = {}) {
+    const t = lc(tag);
+    if (t === 'listen') return 'hint';
+    for (const g of ['genre', 'activity']) if ((groups[g] || []).map(lc).includes(t)) return g;
+    return 'topic';
+  }
+  /** How an item can be consumed. */
+  function howOf(item) {
+    const type = item.type || 'article';
+    const tags = (item.tags || []).map(lc);
+    if (type === 'episode') return ['listen'];
+    if (type === 'video') return tags.includes('listen') ? ['watch', 'listen'] : ['watch'];
+    return ['read'];                                              // article, news, post
+  }
+  /** Normalise any lens shape to {any, topic, genre, activity, how}. A plain array = legacy "any of". */
+  function normalize(lens) {
+    const empty = { any: [], topic: [], genre: [], activity: [], how: [] };
+    if (!lens) return empty;
+    if (Array.isArray(lens)) return { ...empty, any: lens.map(lc) };
+    const out = { ...empty };
+    for (const k of Object.keys(empty)) out[k] = (lens[k] || []).map(lc);
+    return out;
+  }
+  const isEmpty = l => Object.values(normalize(l)).every(a => !a.length);
+  /** Does an item fit a lens? `extraHow` = an extra Watch/Listen/Read filter (e.g. chips in the digest). */
+  function matches(item, lens, groups = {}, extraHow = []) {
+    const L = normalize(lens), tags = (item.tags || []).map(lc), how = howOf(item);
+    if (L.any.length && !tags.some(t => L.any.includes(t))) return false;
+    for (const g of GROUPS) {
+      if (!L[g].length) continue;
+      if (!tags.some(t => L[g].includes(t))) return false;
+    }
+    if (L.how.length && !how.some(h => L.how.includes(h))) return false;
+    if (extraHow.length && !how.some(h => extraHow.includes(h))) return false;
+    return true;
+  }
+  /** Human summary of a lens, e.g. "politics · debates · watch". */
+  function describe(lens) {
+    const L = normalize(lens);
+    return [L.any.join(' or '), ...GROUPS.map(g => L[g].join(' or ')), L.how.join('/')].filter(Boolean).join(' · ') || 'everything';
+  }
+  /** Tags of a group actually used by feeds, for chips/suggestions. */
+  function tagsByGroup(feeds = [], groups = {}) {
+    const out = { topic: new Set(), genre: new Set(), activity: new Set() };
+    for (const f of feeds) for (const t of f.tags || []) { const g = groupOf(t, groups); if (out[g]) out[g].add(lc(t)); }
+    for (const g of ['genre', 'activity']) (groups[g] || []).forEach(t => out[g].add(lc(t)));   // listed but unused = suggestions
+    return Object.fromEntries(Object.entries(out).map(([k, v]) => [k, [...v].sort()]));
+  }
+  return { GROUPS, HOW, groupOf, howOf, normalize, matches, describe, tagsByGroup, isEmpty };
+})();
+// ==LENS END==
+</script>
+
+
 
 <script>
 /* =====================================================================
@@ -636,7 +719,9 @@ function defaultState() {
       focusAudio: null,        // {label, url} e.g. an instrumental YouTube playlist
       // Stage 4 — Google (PART 4e). clientId can also come from config.json in the repo.
       google: { clientId: '', on: { calendar: true, reminders: true, gmail: true, sync: true, youtube: false },
-        calOff: [], appCalId: null, focusAlarm: true, blockAlarms: false, ytPlaylistId: null, ytCount: 8 } },
+        calOff: [], appCalId: null, focusAlarm: true, blockAlarms: false, ytPlaylistId: null, ytCount: 8 },
+      // Stage 4.5 — Spotify (PART 4g). clientId can also come from config.json.
+      spotify: { clientId: '', showTags: {}, hiddenShows: [], extraShows: [], playlistTags: {} } },
     routine: defaultRoutine(),
     events: [],            // {id,title,start,end,allDay,location,source:'manual'|'google'}
     projects: [
@@ -686,6 +771,7 @@ function migrate(d) {
   out.pomo = { ...def.pomo, ...(d.pomo || {}) };
   const dg = (d.settings || {}).google || {};
   out.settings.google = { ...def.settings.google, ...dg, on: { ...def.settings.google.on, ...(dg.on || {}) } };
+  out.settings.spotify = { ...def.settings.spotify, ...((d.settings || {}).spotify || {}) };
   if (!out.routine || !Array.isArray(out.routine.weekday)) out.routine = def.routine;
   return out;
 }
@@ -980,7 +1066,7 @@ function wxChart(hrs) {
    LENSES (from your watchlist) pick which tags you want right now, e.g. "Laugh" = comedy +
    standup + cartoon. A reading SESSION freezes the list when it starts (top N by score,
    keyword matches first), so new items can't trickle in mid-read: finite by design. */
-const TYPE_LABEL = { video: 'Videos', post: 'Reddit', news: 'News', article: 'Articles' };
+const HOW_LABEL = { watch: '▶ Watch', listen: '🎧 Listen', read: '📰 Read' };   // the "How" chips (PART 1c)
 const ALL = '__all';
 const Digest = {
   loading: false, error: '',
@@ -998,7 +1084,11 @@ const Digest = {
     if (S.digestSession?.day === today()) this.ensureSession(false);   // fill a session that started before data arrived
     rerenderAll();
   },
-  byId(id) { return (C.digest?.data.items || []).find(i => i.id === id); },
+  /** digest.json items + new Spotify podcast episodes (Stage 4.5), all in one list. */
+  allItems() { return [...(C.digest?.data.items || []), ...spotifyItems()]; },
+  byId(id) { return this.allItems().find(i => i.id === id); },
+  groups() { return (S.watchlist && S.watchlist.tagGroups) || {}; },
+  lensDef(lens) { return !lens || lens === ALL ? null : this.lenses()[lens] || null; },
   /** Tags of an item (older/sample digests only have a single "category"). */
   tagsOf: it => (it.tags && it.tags.length ? it.tags : it.category ? [String(it.category).toLowerCase()] : ['other']),
   lenses() { return (S.watchlist && S.watchlist.lenses) || {}; },
@@ -1011,14 +1101,14 @@ const Digest = {
   },
   /** Candidate items: recent (relative to when the digest was built), unread, in the lens + types. */
   candidates(lens = ALL, types = null, cap = true) {
-    const d = C.digest?.data; if (!d) return [];
-    // News/posts go stale in hours; videos from weekly channels stay relevant for days (read marks stop repeats)
-    const gen = new Date(d.generated || Date.now()).getTime();
-    const maxAge = it => (it.type === 'video' ? (S.settings.digestVideoDays || 14) * 864e5 : S.settings.digestHours * 3600e3);
-    const lt = this.lensTags(lens);
-    const list = d.items.filter(it => !S.digestRead[it.id] && (!it.published || gen - new Date(it.published) <= maxAge(it))
-        && (!lt || this.tagsOf(it).some(t => lt.includes(t.toLowerCase())))
-        && (!types || !types.length || types.includes(it.type || 'article')))
+    const d = C.digest?.data; if (!d && !spotifyItems().length) return [];
+    // News/posts go stale in hours; videos and podcast episodes stay relevant for days (read marks stop repeats)
+    const gen = new Date(d?.generated || Date.now()).getTime();
+    const maxAge = it => (it.type === 'video' || it.type === 'episode' ? (S.settings.digestVideoDays || 14) * 864e5 : S.settings.digestHours * 3600e3);
+    const def = this.lensDef(lens), groups = this.groups();
+    const how = (types || []).filter(t => Lens.HOW.includes(t));      // older sessions stored source types; ignore those
+    const list = this.allItems().filter(it => !S.digestRead[it.id] && (!it.published || Math.max(gen, Date.now() - 864e5) - new Date(it.published) <= maxAge(it))
+        && Lens.matches({ ...it, tags: this.tagsOf(it) }, def, groups, how))
       .sort((a, b) => ((b.matched || []).length - (a.matched || []).length) || ((b.score || 0) - (a.score || 0)) || (new Date(b.published) - new Date(a.published)));
     return cap ? list.slice(0, S.settings.digestMax) : list;
   },
@@ -1064,7 +1154,7 @@ function lensBar(ses) {
   const types = ses.types || [];
   // one swipeable row (like the mode chips) so the list itself stays above the fold on a phone
   return `<div class="modes" style="margin:0 0 6px;padding-bottom:2px">${[ALL, ...lenses].map(chip).join('')}</div>
-    <div class="modes" style="margin:0 0 10px">${Object.entries(TYPE_LABEL).map(([t, l]) => `<button class="chip ${types.includes(t) ? 'on' : ''}" data-act="digestType" data-type="${t}" style="min-height:32px;font-size:.8rem">${l}</button>`).join('')}</div>`;
+    <div class="modes" style="margin:0 0 10px">${Object.entries(HOW_LABEL).map(([t, l]) => `<button class="chip ${types.includes(t) ? 'on' : ''}" data-act="digestType" data-type="${t}" style="min-height:32px;font-size:.8rem">${l}</button>`).join('')}</div>`;
 }
 
 /** The digest reading UI (used in the morning flow and in stand-alone sessions). */
@@ -1102,10 +1192,11 @@ function digestHtml(context = 'morning') {
   // progress (with the counting shown)
   const done = items.length - unread.length;
   h += `<div class="small muted num">${done} of ${items.length} done · ${unread.length} to go</div><div class="bar"><i style="width:${(done / items.length * 100).toFixed(1)}%"></i></div>`;
-  // group by the first of the item's tags that's in this lens (or its first tag for "Everything")
-  const lt = Digest.lensTags(ses.lens), groups = {};
+  // group under a heading: the item's first tag that the lens asked for, else its first topic tag
+  const L = Lens.normalize(Digest.lensDef(ses.lens)), pref = [...L.any, ...L.topic, ...L.genre], groups = {};
   for (const it of unread) {
-    const tags = Digest.tagsOf(it), g = (lt ? lt.find(t => tags.map(x => x.toLowerCase()).includes(t)) : tags[0]) || tags[0];
+    const tags = Digest.tagsOf(it).map(t => t.toLowerCase()).filter(t => t !== 'listen');
+    const g = pref.find(t => tags.includes(t)) || tags.find(t => Lens.groupOf(t, Digest.groups()) === 'topic') || tags[0] || 'other';
     (groups[g] ||= []).push(it);
   }
   for (const [tag, list] of Object.entries(groups)) {
@@ -1117,6 +1208,7 @@ function digestHtml(context = 'morning') {
           <div class="small muted">${esc(it.source || '')}${it.alsoIn ? ' +' + it.alsoIn.length : ''}${age ? ' · ' + age : ''}${it.duration ? ' · ' + esc(it.duration) : ''}${it.score ? ` · <span title="${esc(it.why || '')}">score ${it.score}</span>` : ''}</div>
           ${(it.matched || []).map(k => `<span class="kw">${esc(k)}</span>`).join('')}
           ${it.summary ? `<div class="sum">${esc(it.summary)}</div>` : ''}</div>
+        ${it.type === 'video' ? `<button class="icon" data-act="watchHere" data-id="${esc(it.id)}" title="Watch here" aria-label="Watch here">▶</button>` : ''}
         <button class="icon" data-act="digestSave" data-id="${esc(it.id)}" title="Save for later" aria-label="Save for later"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M6 3h12v18l-6-4-6 4z"/></svg></button>
         <button class="icon" data-act="digestRead" data-id="${esc(it.id)}" title="Mark read" aria-label="Mark read">✓</button></li>`;
     }
@@ -1436,8 +1528,9 @@ function watchlistHtml() {
   // lenses
   const lenses = Object.entries(W.lenses || {});
   h += `<h3 style="margin-top:18px">Lenses</h3><p class="small muted">A lens is a mix of tags for a mood. Pick one at the top of the digest.</p>
-    <ul class="list">${lenses.map(([n, t]) => `<li><span class="grow" data-act="lensEdit" data-lens="${esc(n)}"><b>${esc(n)}</b><br><span class="small muted">${t.map(esc).join(', ')}</span></span><span class="tag num">${Digest.unreadCount(n)} new</span></li>`).join('')}</ul>
+    <ul class="list">${lenses.map(([n, t]) => `<li><span class="grow" data-act="lensEdit" data-lens="${esc(n)}"><b>${esc(n)}</b><br><span class="small muted">${esc(Lens.describe(t))}</span></span><span class="tag num">${Digest.unreadCount(n)} new</span></li>`).join('')}</ul>
     <div class="actions"><button class="btn sm" data-act="lensAdd">+ Lens</button></div>
+    ${tagGroupsHtml()}
     <label class="f">Morning sequence uses</label>${lensSelect('morningLens', S.settings.morningLens)}
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:0 10px">${['work', 'life', 'leisure', 'winddown'].map(m => `<label class="f">${MODE_LABEL[m]} uses${lensSelect('lens.' + m, (S.settings.lensByMode || {})[m])}</label>`).join('')}</div>`;
 
@@ -1462,21 +1555,22 @@ function lensSelect(key, val) {
 const parseTags = s => [...new Set(String(s || '').split(',').map(t => t.trim().toLowerCase()).filter(Boolean))];
 
 async function editFeed(f) {
-  const isNew = !f, tagHint = Watchlist.tags().map(([t]) => t).join(', ');
+  const isNew = !f, tagHint = tagHintText();
   const src = f ? (f.type === 'youtube' ? (f.handle || f.channelId || f.url || '') : f.type === 'reddit' ? (f.sub || f.name) : f.type === 'googlenews' ? (f.query || '') : (f.url || '')) : '';
   const v = await formSheet(isNew ? 'Add a feed' : 'Edit feed', [
     { name: 'type', label: 'Type', type: 'select', value: f?.type || 'youtube', options: Object.entries(FEED_TYPES).map(([value, label]) => ({ value, label })) },
     { name: 'name', label: 'Name', value: f?.name || '' },
     { name: 'src', label: 'YouTube: @handle, link or leave blank to search by name · Subreddit: r/name · News: search words · RSS: feed URL', value: src },
-    { name: 'tags', label: 'Tags (comma-separated)', value: (f?.tags || []).join(', ') },
+    { name: 'tags', label: 'Tags (comma-separated) — topics, genres, activities', value: (f?.tags || []).filter(t => t !== 'listen').join(', ') },
+    { name: 'listenOk', label: 'How', type: 'checkbox', value: (f?.tags || []).includes('listen'), hint: 'Fine to just listen to (talk-heavy) — goes in the Listen queue' },
     { name: 'boost', label: 'Score boost for this feed (−3 … +3)', type: 'number', value: f?.boost || 0, min: -3, max: 3 },
     { name: 'paused', label: 'Paused', type: 'checkbox', value: f?.paused, hint: 'Pause (keep it, don’t fetch)' },
-  ], { deletable: !isNew, okLabel: isNew ? 'Add' : 'Save', note: tagHint ? `Your tags: ${esc(tagHint)}` : '' });
+  ], { deletable: !isNew, okLabel: isNew ? 'Add' : 'Save', note: tagHint });
   if (!v) return;
   const W = S.watchlist;
   if (v.__delete) { W.feeds = W.feeds.filter(x => x.id !== f.id); Watchlist.touch(); return render(); }
   if (!v.name && !v.src) return toast('Give it a name (or a handle/URL).');
-  const nf = { ...(f || {}), type: v.type, name: v.name || v.src, tags: parseTags(v.tags), boost: Number(v.boost) || 0 };
+  const nf = { ...(f || {}), type: v.type, name: v.name || v.src, tags: [...parseTags(v.tags).filter(t => t !== 'listen'), ...(v.listenOk ? ['listen'] : [])], boost: Number(v.boost) || 0 };
   delete nf.handle; delete nf.channelId; delete nf.url; delete nf.sub; delete nf.query;
   const s = v.src.trim();
   if (v.type === 'youtube' && s) { if (/UC[\w-]{22}/.test(s)) nf.channelId = s.match(/UC[\w-]{22}/)[0]; else if (/^@|youtube\.com\/@/.test(s)) nf.handle = '@' + s.replace(/.*youtube\.com\/@/, '').replace(/^@/, '').split(/[/?#]/)[0]; else nf.url = s; }
@@ -1497,15 +1591,44 @@ async function editFeed(f) {
   Watchlist.touch(); render();
   toast(isNew ? `Added ${nf.name}. Publish to include it in the digest.` : 'Saved.');
 }
+/** "Topics: … · Genres: … · Activities: …" — shown under tag fields so you can see what exists. */
+function tagHintText() {
+  const t = Lens.tagsByGroup(S.watchlist?.feeds || [], S.watchlist?.tagGroups || {});
+  return [['Topics', t.topic], ['Genres', t.genre], ['Activities', t.activity]].filter(([, l]) => l.length).map(([n, l]) => `<b>${n}:</b> ${esc(l.join(', '))}`).join('<br>');
+}
+/** Lens editor: within a field = any of these; across fields = and. */
 async function editLens(name) {
-  const W = S.watchlist, cur = name ? W.lenses[name] : [];
-  const v = await formSheet(name ? 'Edit lens' : 'New lens', [{ name: 'name', label: 'Name', value: name || '' }, { name: 'tags', label: 'Tags (comma-separated)', value: (cur || []).join(', ') }],
-    { deletable: !!name, note: `Your tags: ${esc(Watchlist.tags().map(([t]) => t).join(', '))}` });
+  const W = S.watchlist, L = Lens.normalize(name ? W.lenses[name] : null);
+  const v = await formSheet(name ? 'Edit lens' : 'New lens', [
+    { name: 'name', label: 'Name', value: name || '' },
+    { name: 'topic', label: 'Topics (any of)', value: L.topic.join(', ') },
+    { name: 'genre', label: 'Genres (any of)', value: L.genre.join(', ') },
+    { name: 'activity', label: 'Activities (any of)', value: L.activity.join(', ') },
+    { name: 'any', label: 'Or simply: any of these tags (older lenses)', value: L.any.join(', ') },
+    { name: 'watch', label: 'How', type: 'checkbox', value: L.how.includes('watch'), hint: '▶ Watch (videos)' },
+    { name: 'listen', label: '', type: 'checkbox', value: L.how.includes('listen'), hint: '🎧 Listen (podcasts + listen-friendly videos)' },
+    { name: 'read', label: '', type: 'checkbox', value: L.how.includes('read'), hint: '📰 Read (articles, news, Reddit)' },
+  ], { deletable: !!name, note: `Fields left empty don’t filter. Across fields it’s “and”: Topics politics + Genres debates + Watch = politics debates you can watch.<br>${tagHintText()}` });
   if (!v) return;
   const lenses = { ...(W.lenses || {}) };
   if (name) delete lenses[name];
-  if (!v.__delete) { if (!v.name) return toast('A lens needs a name.'); lenses[v.name] = parseTags(v.tags); }
+  if (!v.__delete) {
+    if (!v.name) return toast('A lens needs a name.');
+    const lens = { topic: parseTags(v.topic), genre: parseTags(v.genre), activity: parseTags(v.activity), any: parseTags(v.any), how: Lens.HOW.filter(h => v[h]) };
+    Object.keys(lens).forEach(k => { if (!lens[k].length) delete lens[k]; });
+    lenses[v.name] = lens;
+  }
   W.lenses = lenses; Watchlist.touch(); render();
+}
+/** Which tags are genres or activities (everything else is a topic). */
+function tagGroupsHtml() {
+  const g = S.watchlist?.tagGroups || {}, t = Lens.tagsByGroup(S.watchlist?.feeds || [], g);
+  return `<h3 style="margin-top:18px">Tag groups</h3>
+    <p class="small muted">Tags are topics unless listed here. Lenses can then combine groups: a topic <i>and</i> a genre <i>and</i> how you want it.</p>
+    <div class="small"><b>Topics:</b> ${esc(t.topic.join(', ') || '—')}</div>
+    <label class="f">Genres / formats (e.g. debates, standup, documentary, lo-fi, jazz)</label><input type="text" id="tgGenre" value="${esc((g.genre || []).join(', '))}">
+    <label class="f">Activities (e.g. focus, chill, workout, commute)</label><input type="text" id="tgActivity" value="${esc((g.activity || []).join(', '))}">
+    <div class="actions"><button class="btn sm" data-act="tagGroupsSave">Save tag groups</button></div>`;
 }
 
 /* ---------------- Morning briefing slot (optional; wire up later) ----------------
@@ -1561,6 +1684,10 @@ const ACT3 = {
   feedAdd() { if (!S.watchlist) return toast('Watchlist not loaded yet.'); if (!morningOpen() && currentView !== 'more') { S.ui.open['more-watch'] = true; go('more'); } editFeed(null); },
   feedEdit(el) { editFeed(S.watchlist.feeds.find(f => f.id === el.dataset.id)); },
   freshSnooze() { S.freshSnoozeUntil = new Date(Date.now() + 14 * 864e5).toISOString(); save(); render(); },
+  tagGroupsSave() {
+    S.watchlist.tagGroups = { genre: parseTags($('#tgGenre').value), activity: parseTags($('#tgActivity').value) };
+    Watchlist.touch(); render(); toast('Tag groups saved.');
+  },
   wlFilter(el) { wlFilter = el.dataset.tag; render(); },
   wlReload() { Watchlist.refresh(); },
   wlDownload() {
@@ -1617,6 +1744,8 @@ function ytOpenUrl(url) {
   if (!isAndroid()) return url;
   try {
     const u = new URL(url);
+    if (u.hostname === 'open.spotify.com')            // Spotify links open the Spotify app
+      return `intent://open.spotify.com${u.pathname}${u.search}#Intent;scheme=https;package=com.spotify.music;S.browser_fallback_url=${encodeURIComponent(url)};end`;
     const yt = /(^|\.)youtube\.com$/.test(u.hostname) || u.hostname === 'youtu.be';
     if (!yt) return url;
     const path = u.hostname === 'youtu.be' ? `www.youtube.com/watch?v=${u.pathname.slice(1)}` : `www.youtube.com${u.pathname}${u.search}`;
@@ -1634,10 +1763,15 @@ const Listen = {
     const shelf = S.watch.filter(w => (w.tags || []).includes('listen') && w.url)
       .map(w => ({ key: 'w:' + w.id, shelfId: w.id, digestId: w.digestId, title: w.title, url: w.url, source: w.source, durationSec: w.durationSec, from: 'shelf' }));
     const onShelf = new Set(shelf.map(x => x.digestId).filter(Boolean));
-    const dig = (C.digest?.data.items || []).filter(it => Digest.tagsOf(it).includes('listen') && !S.digestRead[it.id] && !onShelf.has(it.id))
+    // Anything you can listen to (Lens.howOf): listen-friendly YouTube videos + Spotify podcast episodes
+    const canListen = Digest.allItems().filter(it => Lens.howOf({ ...it, tags: Digest.tagsOf(it) }).includes('listen') && !S.digestRead[it.id] && !onShelf.has(it.id))
       .sort((a, b) => ((b.score || 0) - (a.score || 0)) || (new Date(b.published) - new Date(a.published)))
-      .map(it => ({ key: 'd:' + it.id, digestId: it.id, title: it.title, url: it.url, source: it.source, durationSec: it.durationSec, from: 'digest' }));
-    return [...shelf, ...dig].filter(x => !skipped.has(x.key));
+      .map(it => ({ key: 'd:' + it.id, digestId: it.id, title: it.title, url: it.url, source: it.source, durationSec: it.durationSec,
+        from: it.type === 'episode' ? 'spotify' : 'digest', uri: it.uri }));
+    // alternate Spotify and YouTube so neither crowds the other out
+    const sp = canListen.filter(x => x.from === 'spotify'), yt = canListen.filter(x => x.from !== 'spotify'), mixed = [];
+    for (let i = 0; i < Math.max(sp.length, yt.length); i++) { if (yt[i]) mixed.push(yt[i]); if (sp[i]) mixed.push(sp[i]); }
+    return [...shelf, ...mixed].filter(x => !skipped.has(x.key));
   },
   /** Best pick for `secLeft` seconds, in this order:
         1. the first (by priority) that fits AND fills at least half the time left
@@ -1683,15 +1817,23 @@ function listenCardHtml() {
   if (L && (plan === 'talk' || L.focus)) {
     const ends = L.durationSec ? L.startedAt + L.durationSec * 1000 : null;
     const finished = ends && now > ends;
-    return `<div class="card listen"><div class="row" style="justify-content:space-between"><span class="small muted">🎧 ${finished ? 'Probably finished' : 'Playing on YouTube'}</span>
+    return `<div class="card listen"><div class="row" style="justify-content:space-between"><span class="small muted">🎧 ${finished ? 'Probably finished' : L.spotify ? 'Playing on Spotify' : L.focus ? 'Focus audio on' : 'Playing on YouTube'}</span>
         ${ends ? `<span class="small muted num">${finished ? 'ended ~' + fmtT(new Date(ends)) : 'ends ~' + fmtT(new Date(ends))}</span>` : ''}</div>
-      <div style="font-weight:600;margin:4px 0">${esc(L.title)}</div>
+      <div style="font-weight:600;margin:4px 0">${esc(L.title)}</div>${L.spotify || L.focus ? nowPlayingHtml(true) : ''}
       <div class="actions">${L.focus ? '<button class="btn sm" data-act="listenStop">Stop</button>' : `<button class="btn sm primary" data-act="listenDone" data-key="${esc(L.key)}">✓ Done${finished ? ' — next' : ''}</button><button class="btn sm" data-act="listenStop">Stop</button>`}</div></div>`;
   }
   if (plan === 'focus') {
     const fa = S.settings.focusAudio;
+    const tagged = !fa?.url && Spotify.connected() ? Spotify.playlistsTagged('focus') : [];
+    if (tagged.length) {
+      const pl = tagged[(S.ui.focusPl || 0) % tagged.length];
+      return `<div class="card listen"><div class="row" style="justify-content:space-between"><span class="small muted">🎧 Focus audio · Spotify</span>${nowPlayingHtml()}</div>
+        <div style="font-weight:600;margin:4px 0">${esc(pl.name)}</div><div class="small muted">${tagged.length} playlist${tagged.length > 1 ? 's' : ''} tagged “focus”</div>
+        <div class="actions"><button class="btn sm primary" data-act="spFocusPlay" data-id="${esc(pl.id)}">▶ Play ${isAndroid() ? '' : 'on phone'}</button>
+        ${tagged.length > 1 ? '<button class="btn sm" data-act="spFocusNext">Another</button>' : ''}<button class="btn sm ghost" data-act="audioPlanQuick" data-kind="${c.kind}" data-plan="talk">Talk instead</button></div></div>`;
+    }
     if (!fa?.url) return `<div class="card listen"><div class="small muted">🎧 Focus audio for ${esc(KIND_LABEL[c.kind] || 'this block')}</div>
-      <div class="small">Instrumental or ambient works best while reading and writing. Set a link once (e.g. a YouTube playlist).</div>
+      <div class="small">Instrumental or ambient works best while reading and writing. Set a link once (a YouTube or Spotify playlist), or tag Spotify playlists “focus”.</div>
       <div class="actions"><button class="btn sm" data-act="focusAudioSet">Set focus audio</button><button class="btn sm ghost" data-act="audioPlanQuick" data-kind="${c.kind}" data-plan="talk">Use the talk queue instead</button></div></div>`;
     return `<div class="card listen"><div class="small muted">🎧 Focus audio</div><div style="font-weight:600;margin:4px 0">${esc(fa.label || 'Focus audio')}</div>
       <div class="actions"><a class="btn sm primary" ${playAttrs(fa.url)} data-act="focusPlay">▶ Play</a><button class="btn sm ghost" data-act="audioPlanQuick" data-kind="${c.kind}" data-plan="talk">Talk instead</button></div></div>`;
@@ -1705,18 +1847,28 @@ function listenCardHtml() {
     <div style="font-weight:600;margin:4px 0">${esc(it.title)}</div>
     <div class="small muted">${esc(it.source || '')}${it.durationSec ? ' · ' + mmss(it.durationSec) : ''}</div>
     ${p.why ? `<div class="math">${esc(p.why)}</div>` : ''}
-    <div class="actions"><a class="btn sm primary" ${playAttrs(it.url)} data-act="listenPlay" data-key="${esc(it.key)}">▶ Play${isAndroid() ? ' in YouTube' : ''}</a>
+    ${nowPlayingHtml(true)}
+    <div class="actions">${it.from === 'spotify' && it.uri
+      ? `<button class="btn sm primary" data-act="spPlay" data-key="${esc(it.key)}">▶ Play ${isAndroid() ? 'in Spotify' : 'on phone'}</button>`
+      : `<a class="btn sm primary" ${playAttrs(it.url)} data-act="listenPlay" data-key="${esc(it.key)}">▶ Play${isAndroid() ? ' in YouTube' : ''}</a>`}
       <button class="btn sm" data-act="listenSkip" data-key="${esc(it.key)}">Skip</button><button class="btn sm ghost" data-act="go" data-view="inbox">Queue</button></div>
     ${Google.on('youtube') && YTList.url() ? `<div class="actions"><a class="btn sm" ${playAttrs(YTList.url())}>▶ Play the whole Listen playlist</a></div>` : ''}
     ${isAndroid() ? '' : '<div class="small muted" style="margin-top:6px">Listening on your phone? Open the app there — it shows the same queue.</div>'}</div>`;
 }
 
+/** "♫ Playing on Spotify: …" (from Spotify's now-playing). */
+function nowPlayingHtml(block = false) {
+  const n = C.spotify?.now;
+  if (!n || !n.playing || Date.now() - n.at > 10 * 60000) return '';
+  const t = `♫ ${esc(n.title)}${n.by ? ' · ' + esc(n.by) : ''}`;
+  return block ? `<div class="small muted" style="margin-top:4px">${t}</div>` : `<span class="small muted" style="max-width:55%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${t}</span>`;
+}
 /** Full queue list (Inbox tab). */
 function listenQueueHtml() {
   const q = Listen.queue();
   if (!q.length) return '<div class="empty">Nothing to listen to yet. Feeds tagged “listen” fill this up after each digest build.</div>';
   const total = q.filter(x => x.durationSec).reduce((a, x) => a + x.durationSec, 0), known = q.filter(x => x.durationSec).length;
-  return `<ul class="list">${q.slice(0, 25).map(x => `<li><span class="grow"><a ${playAttrs(x.url)} data-act="listenPlay" data-key="${esc(x.key)}">${esc(x.title)}</a>
+  return `<ul class="list">${q.slice(0, 25).map(x => `<li><span class="grow">${x.from === 'spotify' && x.uri ? `<a href="#" data-act="spPlay" data-key="${esc(x.key)}">🎙 ${esc(x.title)}</a>` : `<a ${playAttrs(x.url)} data-act="listenPlay" data-key="${esc(x.key)}">${esc(x.title)}</a>`}
       <br><span class="small muted">${esc(x.source || '')}${x.durationSec ? ' · ' + mmss(x.durationSec) : ''}${x.from === 'shelf' ? ' · shelf' : ''}</span></span>
       <button class="icon" data-act="listenDone" data-key="${esc(x.key)}" title="Done" aria-label="Done">✓</button></li>`).join('')}</ul>
     ${known ? `<div class="math">${known} with known length: ${q.filter(x => x.durationSec).slice(0, 8).map(x => Math.round(x.durationSec / 60)).join(' + ')}${known > 8 ? ' + …' : ''} ≈ ${Math.round(total / 60)} min of listening</div>` : ''}`;
@@ -2184,6 +2336,387 @@ const ACT5 = {
 
 <script>
 /* =====================================================================
+   PART 4f — WATCH NEXT + IN-APP PLAYER (Stage 4.5)
+   "Watch next" is the video twin of "Listen next": one pick from your
+   lens that fits the time left, with two ways to play:
+     ▶ Watch here — YouTube's own player inside this app. When the video
+       ends you land back here ("Done / Watch another"), not on YouTube's
+       recommendations, so one video stays one video. Ad-free if you're
+       signed into YouTube in this browser (Premium). Channels that block
+       embedding fall back to the YouTube app.
+     Open in YouTube — the full app, as before.
+   ===================================================================== */
+/** Pick from a queue for `secLeft` seconds: fits AND fills ≥ half → fits → unknown length → shortest. */
+function pickFit(q, secLeft, label) {
+  if (!q.length) return null;
+  if (secLeft == null) return { item: q[0], why: '' };
+  secLeft = Math.round(secLeft / 60) * 60;
+  const left = `${label} ends ${fmtT(new Date(Date.now() + secLeft * 1000))} → ${secLeft / 60} min left`;
+  const fits = q.filter(x => x.durationSec && x.durationSec <= secLeft);
+  const good = fits.find(x => x.durationSec >= secLeft / 2), fit = good || fits[0];
+  if (fit) return { item: fit, why: `${left} · ${mmss(fit.durationSec)} ≤ ${mmss(secLeft)} ✓ fits, fills ${mmss(fit.durationSec)} ÷ ${mmss(secLeft)} = ${Math.round(fit.durationSec / secLeft * 100)}%${good ? '' : ' (nothing longer fits)'}` };
+  const unknown = q.find(x => !x.durationSec);
+  if (unknown) return { item: unknown, why: `${left} · nothing with a known length fits; this one’s length is unknown` };
+  const shortest = [...q].sort((a, b) => a.durationSec - b.durationSec)[0];
+  return { item: shortest, why: `${left} · shortest is ${mmss(shortest.durationSec)} = ${Math.ceil((shortest.durationSec - secLeft) / 60)} min over` };
+}
+
+const Watch = {
+  /** The lens for Watch next: your last choice on this device, else the lens for the current mode. */
+  lens() { const l = S.ui.watchLens; return l && (l === ALL || Digest.lenses()[l]) ? l : Digest.defaultLens('standalone'); },
+  /** Videos you can watch: saved-to-shelf videos first, then the digest by score — all within the lens. */
+  queue(lens = this.lens()) {
+    const def = Digest.lensDef(lens), groups = Digest.groups();
+    const skipped = new Set((S.watchSkip || {})[today()] || []);
+    const shelf = S.watch.filter(w => ytId(w.url) && (!def || Lens.matches({ type: 'video', tags: w.tags || [] }, def, groups, ['watch'])))
+      .map(w => ({ key: 'w:' + w.id, shelfId: w.id, digestId: w.digestId, title: w.title, url: w.url, source: w.source, durationSec: w.durationSec, from: 'shelf' }));
+    const onShelf = new Set(shelf.map(x => x.digestId).filter(Boolean));
+    const vids = Digest.allItems().filter(it => it.type === 'video' && !S.digestRead[it.id] && !onShelf.has(it.id)
+        && Lens.matches({ ...it, tags: Digest.tagsOf(it) }, def, groups, ['watch']))
+      .sort((a, b) => ((b.score || 0) - (a.score || 0)) || (new Date(b.published) - new Date(a.published)))
+      .map(it => ({ key: 'd:' + it.id, digestId: it.id, title: it.title, url: it.url, source: it.source, durationSec: it.durationSec, from: 'digest' }));
+    return [...shelf, ...vids].filter(x => !skipped.has(x.key));
+  },
+  find(key) { return this.queue(ALL).find(x => x.key === key) || Listen.find(key) || null; },
+  done(key) { Listen.done(key); },
+};
+
+/** Watch next card (Leisure mode, under the Now card). */
+function watchCardHtml() {
+  const c = R.current, lens = Watch.lens(), q = Watch.queue(lens);
+  const secLeft = c.end && c.type !== 'gap' ? Math.max(0, (c.end - Date.now()) / 1000) : null;
+  const p = pickFit(q, secLeft, c.title);
+  const lensPick = `<select data-act-change="watchLens" aria-label="Lens" style="min-height:36px;padding:4px 8px;width:auto;font-size:.85rem">
+    <option value="${ALL}" ${lens === ALL ? 'selected' : ''}>Everything</option>${Object.keys(Digest.lenses()).map(l => `<option ${l === lens ? 'selected' : ''}>${esc(l)}</option>`).join('')}</select>`;
+  if (!p) return `<div class="card listen"><div class="row" style="justify-content:space-between"><span class="small muted">▶ Watch next</span>${lensPick}</div>
+    <div class="empty">Nothing to watch in this lens right now${lens !== ALL ? ' — try another' : ''}.</div></div>`;
+  const it = p.item;
+  return `<div class="card listen"><div class="row" style="justify-content:space-between"><span class="small muted">▶ Watch next${it.from === 'shelf' ? ' · from your shelf' : ''}</span>${lensPick}</div>
+    <div style="font-weight:600;margin:4px 0">${esc(it.title)}</div>
+    <div class="small muted">${esc(it.source || '')}${it.durationSec ? ' · ' + mmss(it.durationSec) : ''} · ${q.length} in this lens</div>
+    ${p.why ? `<div class="math">${esc(p.why)}</div>` : ''}
+    <div class="actions"><button class="btn sm primary" data-act="watchHere" data-key="${esc(it.key)}">▶ Watch here</button>
+      <a class="btn sm" ${playAttrs(it.url)} data-act="watchApp" data-key="${esc(it.key)}">Open in YouTube</a>
+      <button class="btn sm ghost" data-act="watchSkip" data-key="${esc(it.key)}">Skip</button></div></div>`;
+}
+
+/* ---------------- the in-app player ---------------- */
+let ytApiPromise = null;
+function loadYTApi() {
+  if (window.YT?.Player) return Promise.resolve();
+  if (ytApiPromise) return ytApiPromise;
+  ytApiPromise = new Promise((res, rej) => {
+    const prev = window.onYouTubeIframeAPIReady;
+    window.onYouTubeIframeAPIReady = () => { prev?.(); res(); };
+    const s = document.createElement('script');
+    s.src = 'https://www.youtube.com/iframe_api'; s.async = true;
+    s.onerror = () => { ytApiPromise = null; rej(new Error('Couldn’t load the YouTube player (offline?)')); };
+    document.head.appendChild(s);
+  });
+  return ytApiPromise;
+}
+const Player = {
+  item: null, yt: null, state: 'idle',
+  async open(item) {
+    this.close(true);
+    this.item = item; this.state = 'loading';
+    const el = $('#player'); el.classList.remove('hidden'); document.body.style.overflow = 'hidden';
+    this.paint();
+    try { await loadYTApi(); }
+    catch (e) { this.state = 'error'; this.err = e.message; return this.paint(); }
+    if (this.item !== item) return;                         // closed meanwhile
+    this.yt = new YT.Player('ytFrame', {
+      videoId: ytId(item.url), width: '100%', height: '100%',
+      playerVars: { autoplay: 1, rel: 0, playsinline: 1, modestbranding: 1 },
+      events: {
+        onReady: () => { this.state = 'playing'; this.paint(false); },
+        onStateChange: e => { if (e.data === 0) this.ended(); },          // 0 = ended
+        onError: e => { this.state = 'error'; this.err = [101, 150].includes(e.data) ? 'This channel only allows playing on YouTube.' : 'This video isn’t available.'; this.paint(); },
+      },
+    });
+  },
+  ended() { this.state = 'ended'; Watch.done(this.item.key); save(); this.paint(); },
+  close(silent) {
+    try { this.yt?.destroy?.(); } catch (e) {}
+    this.yt = null; this.item = null; this.state = 'idle';
+    $('#player').classList.add('hidden'); $('#player').innerHTML = ''; document.body.style.overflow = '';
+    if (!silent) render();
+  },
+  /** Draw the overlay. The iframe box is kept when only the status changes (repaint=false). */
+  paint(full = true) {
+    const it = this.item; if (!it) return;
+    const el = $('#player');
+    const status = this.state === 'loading' ? '<div class="empty">Loading the player…</div>'
+      : this.state === 'error' ? `<div class="banner warn">${esc(this.err)} <a class="btn sm" ${playAttrs(it.url)} data-act="watchApp" data-key="${esc(it.key)}">Open in YouTube</a></div>`
+      : this.state === 'ended' ? `<div class="caught" style="padding:14px 0"><div class="hello">Finished ✓</div><p class="muted">Marked as watched. One video stays one video.</p></div>` : '';
+    const next = this.state === 'ended' ? pickFit(Watch.queue(), null, '')?.item : null;
+    const foot = `<div class="actions">${this.state === 'ended'
+        ? `${next ? `<button class="btn primary" data-act="watchHere" data-key="${esc(next.key)}">▶ Watch another: ${esc(next.title.slice(0, 40))}${next.title.length > 40 ? '…' : ''}</button>` : ''}<button class="btn" data-act="playerClose">Back to Now</button>`
+        : `<button class="btn" data-act="playerDone">✓ Done</button><button class="btn ghost" data-act="playerClose">Close</button>`}</div>`;
+    if (full || !$('#ytBox')) {
+      el.innerHTML = `<div class="ov-head"><div><b style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${esc(it.title)}</b>
+          <button class="icon" data-act="playerClose" aria-label="Close player">✕</button></div></div>
+        <div class="ov-body" style="padding-bottom:30px">
+          <div id="ytBox" class="ytbox ${this.state === 'ended' || this.state === 'error' ? 'hidden' : ''}"><div id="ytFrame"></div></div>
+          <div id="ytStatus">${status}</div><div class="small muted" style="margin:6px 0">${esc(it.source || '')}${it.durationSec ? ' · ' + mmss(it.durationSec) : ''}</div>
+          <div id="ytFoot">${foot}</div></div>`;
+    } else {
+      $('#ytStatus').innerHTML = status; $('#ytFoot').innerHTML = foot;
+      $('#ytBox').classList.toggle('hidden', this.state === 'ended' || this.state === 'error');
+    }
+  },
+};
+
+const ACT6 = {
+  watchHere(el) {
+    const key = el.dataset.key || ('d:' + el.dataset.id);
+    const it = Watch.find(key) || (el.dataset.id && (() => { const d = Digest.byId(el.dataset.id); return d && { key, digestId: d.id, title: d.title, url: d.url, source: d.source, durationSec: d.durationSec }; })());
+    if (!it) return;
+    if (!navigator.onLine) return toast('You’re offline — the player needs a connection.');
+    if (morningOpen()) closeMorning();
+    Player.open(it);
+  },
+  watchApp(el) { const k = el.dataset.key; setTimeout(() => { if (k) { Watch.done(k); render(); } }, 400); },
+  watchSkip(el) { (S.watchSkip ||= {}); (S.watchSkip[today()] ||= []).push(el.dataset.key); save(); render(); },
+  playerDone() { if (Player.item) Watch.done(Player.item.key); Player.close(); },
+  playerClose() { Player.close(); },
+};
+</script>
+
+<script>
+/* =====================================================================
+   PART 4g — SPOTIFY (Stage 4.5)
+   Sign-in: Authorization Code with PKCE, done entirely in the browser —
+   Spotify allows this without a server. You get a refresh token, so the
+   login lasts until Spotify's 6-month limit (from first sign-in), after
+   which you sign in again once. Tokens stay on this device (not synced).
+   What it does:
+     • New episodes from podcasts you follow → the Listen queue and the
+       digest's 🎧 Listen chip, with exact lengths (so "fits the 38 min
+       left" works). Played-to-the-end episodes are skipped.
+     • Your playlists, which you can tag with genres/activities. A playlist
+       tagged "focus" becomes the focus audio for Deep work blocks.
+     • Play: starts it on your phone's Spotify through Spotify Connect —
+       from the desktop, or on the phone without leaving this app. If no
+       Spotify device is awake, it opens the Spotify app instead.
+   Limits: Spotify's developer mode needs the app owner on Premium; its
+   genre/recommendation browsing isn't available to personal apps, so
+   genres come from your own tags.
+   ===================================================================== */
+const SP_SCOPES = ['user-read-playback-state', 'user-modify-playback-state', 'user-read-currently-playing',
+  'playlist-read-private', 'playlist-read-collaborative', 'user-library-read', 'user-read-playback-position'];
+const SP_ACCOUNTS = 'https://accounts.spotify.com', SP_API = 'https://api.spotify.com/v1';
+const spset = () => S.settings.spotify;
+const b64url = buf => btoa(String.fromCharCode(...new Uint8Array(buf))).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+const randomStr = n => b64url(crypto.getRandomValues(new Uint8Array(n)));
+
+const Spotify = {
+  busy: false,
+  clientId() { return (spset().clientId || C.config?.spotifyClientId || '').trim(); },
+  redirectUri() { return location.origin + location.pathname.replace(/index\.html$/, ''); },
+  connected() { return !!secret().spToken?.refresh_token; },
+  token() { const t = secret().spToken; return t && t.access_token && t.expires_at > Date.now() + 60000 ? t : null; },
+  /** When Spotify will ask you to sign in again (6 months after the first sign-in). */
+  reauthBy() { const a = secret().spToken?.authAt; return a ? new Date(a + 182 * 864e5) : null; },
+  async connect() {
+    const id = this.clientId();
+    if (!id) return toast('Add your Spotify client ID first (More → Spotify).');
+    if (!navigator.onLine) return toast('You’re offline — connect when you’re back online.');
+    const verifier = randomStr(48), state = randomStr(12);
+    const challenge = b64url(await crypto.subtle.digest('SHA-256', new TextEncoder().encode(verifier)));
+    setSecret({ spPkce: { verifier, state, at: Date.now(), view: currentView } });   // remember where to come back to
+    const q = new URLSearchParams({ client_id: id, response_type: 'code', redirect_uri: this.redirectUri(), code_challenge_method: 'S256', code_challenge: challenge, scope: SP_SCOPES.join(' '), state });
+    location.href = `${SP_ACCOUNTS}/authorize?${q}`;
+  },
+  /** Called at boot: finishes the sign-in when Spotify sends you back with ?code=… */
+  async handleRedirect() {
+    const q = new URLSearchParams(location.search);
+    if (!q.has('code') && !q.has('error')) return false;
+    const clean = () => history.replaceState(null, '', this.redirectUri() + location.hash);
+    const pk = secret().spPkce;
+    if (q.get('error')) { clean(); toast('Spotify: ' + q.get('error')); return true; }
+    if (!pk || q.get('state') !== pk.state) { clean(); toast('Spotify sign-in didn’t match — please try again.'); return true; }
+    try {
+      const r = await fetch(`${SP_ACCOUNTS}/api/token`, { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams({ grant_type: 'authorization_code', code: q.get('code'), redirect_uri: this.redirectUri(), client_id: this.clientId(), code_verifier: pk.verifier }) });
+      const j = await r.json();
+      if (!r.ok) throw new Error(j.error_description || j.error || 'HTTP ' + r.status);
+      this.store(j, Date.now());
+      setSecret({ spPkce: null });
+      clean(); toast('Spotify connected.');
+      if (pk.view === 'more') {                                                         // back where you started
+        S.ui.open['more-spotify'] = true; go('more');
+        setTimeout(() => document.querySelector('[data-sec=more-spotify]')?.scrollIntoView({ block: 'start' }), 60);
+      }
+      // In an installed app on Android the sign-in may finish in a browser tab; the app picks the login up from shared storage.
+      if (!matchMedia('(display-mode: standalone)').matches && document.referrer.includes('spotify.com')) setTimeout(() => toast('Spotify connected — you can close this tab and go back to the app.'), 1500);
+      this.refresh(true);
+    } catch (e) { clean(); toast('Spotify sign-in failed: ' + e.message); }
+    return true;
+  },
+  store(j, authAt) {
+    const old = secret().spToken || {};
+    setSecret({ spToken: { access_token: j.access_token, expires_at: Date.now() + (j.expires_in || 3600) * 1000,
+      refresh_token: j.refresh_token || old.refresh_token, scope: j.scope || old.scope || '', authAt: authAt || old.authAt || Date.now() } });
+  },
+  async ensureToken() {
+    if (this.token()) return;
+    const t = secret().spToken;
+    if (!t?.refresh_token) throw Object.assign(new Error('Spotify not connected'), { needAuth: true });
+    const r = await fetch(`${SP_ACCOUNTS}/api/token`, { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams({ grant_type: 'refresh_token', refresh_token: t.refresh_token, client_id: this.clientId() }) });
+    const j = await r.json().catch(() => ({}));
+    if (!r.ok) {
+      if (j.error === 'invalid_grant') { setSecret({ spToken: null }); toast('Spotify needs you to sign in again (its 6-month limit).', 'Connect', () => this.connect()); }
+      throw Object.assign(new Error(j.error_description || j.error || 'refresh failed'), { needAuth: j.error === 'invalid_grant' });
+    }
+    this.store(j);
+  },
+  async api(path, { method = 'GET', body } = {}, retry = true) {
+    await this.ensureToken();
+    const r = await fetch(SP_API + path, { method, headers: { Authorization: `Bearer ${secret().spToken.access_token}`, ...(body ? { 'Content-Type': 'application/json' } : {}) }, body: body ? JSON.stringify(body) : undefined });
+    if (r.status === 401 && retry) { const t = secret().spToken; setSecret({ spToken: { ...t, expires_at: 0 } }); return this.api(path, { method, body }, false); }
+    if (r.status === 204 || r.status === 202) return null;
+    const j = await r.json().catch(() => null);
+    if (!r.ok) throw Object.assign(new Error(j?.error?.message || `HTTP ${r.status}`), { status: r.status, reason: j?.error?.reason });
+    return j;
+  },
+  /** Followed podcasts → recent episodes; playlists; what's playing. */
+  async refresh(force = false) {
+    if (this.busy || !this.connected() || !navigator.onLine) return;
+    if (!force && C.spotify && Date.now() - C.spotify.fetchedAt < 20 * 60000) return this.nowPlaying();
+    this.busy = true;
+    const out = { fetchedAt: Date.now(), shows: [], episodes: [], playlists: [], error: '' };
+    try {
+      try {
+        const saved = await this.api('/me/shows?limit=50');
+        out.shows = (saved?.items || []).map(i => i.show).filter(Boolean).map(s => ({ id: s.id, name: s.name }));
+      } catch (e) { out.error = 'Followed podcasts: ' + e.message; }
+      for (const id of spset().extraShows || []) if (!out.shows.some(s => s.id === id)) {
+        try { const s = await this.api(`/shows/${id}?market=from_token`); out.shows.push({ id: s.id, name: s.name, extra: true }); } catch (e) {}
+      }
+      const hidden = new Set(spset().hiddenShows || []);
+      for (const sh of out.shows.filter(s => !hidden.has(s.id)).slice(0, 20)) {
+        try {
+          const eps = await this.api(`/shows/${sh.id}/episodes?limit=5&market=from_token`);
+          for (const ep of (eps?.items || []).filter(Boolean)) {
+            const published = ep.release_date ? new Date(ep.release_date.length === 10 ? ep.release_date + 'T06:00:00Z' : ep.release_date).toISOString() : null;
+            if (published && Date.now() - new Date(published) > 21 * 864e5) continue;
+            out.episodes.push({ id: 'sp:' + ep.id, type: 'episode', title: ep.name, url: ep.external_urls?.spotify || `https://open.spotify.com/episode/${ep.id}`,
+              uri: ep.uri, source: sh.name, showId: sh.id, published, durationSec: Math.round((ep.duration_ms || 0) / 1000) || undefined,
+              duration: ep.duration_ms ? mmss(Math.round(ep.duration_ms / 1000)) : undefined, summary: String(ep.description || '').slice(0, 240),
+              tags: (spset().showTags || {})[sh.id] || ['podcast'], played: !!ep.resume_point?.fully_played, score: 1 });
+          }
+        } catch (e) { out.error = out.error || `${sh.name}: ${e.message}`; }
+      }
+      const pl = await this.api('/me/playlists?limit=50');
+      out.playlists = (pl?.items || []).filter(Boolean).map(p => ({ id: p.id, name: p.name, uri: p.uri, url: p.external_urls?.spotify, count: p.items?.total ?? p.tracks?.total ?? null }));
+    } catch (e) { out.error = e.needAuth ? 'needs sign-in' : e.message; }
+    C.spotify = { ...(C.spotify || {}), ...out }; saveCache();
+    this.busy = false;
+    await this.nowPlaying(); render();
+  },
+  async nowPlaying() {
+    if (!this.connected() || !navigator.onLine) return;
+    try {
+      const j = await this.api('/me/player/currently-playing?additional_types=episode');
+      const it = j?.item;
+      C.spotify = { ...(C.spotify || {}), now: it ? { title: it.name, by: (it.artists || []).map(a => a.name).join(', ') || it.show?.name || '', playing: !!j.is_playing, at: Date.now() } : null };
+      saveCache();
+    } catch (e) {}
+  },
+  /** Start something on a Spotify device. Prefers a phone; returns the device name, or null if none is awake. */
+  async play(uri) {
+    const d = await this.api('/me/player/devices');
+    const devs = d?.devices || [];
+    const pick = devs.find(x => x.type === 'Smartphone' && x.is_active) || devs.find(x => x.type === 'Smartphone') || devs.find(x => x.is_active) || devs[0];
+    if (!pick) return null;
+    const body = /^spotify:(episode|track):/.test(uri) ? { uris: [uri] } : { context_uri: uri };
+    await this.api(`/me/player/play?device_id=${encodeURIComponent(pick.id)}`, { method: 'PUT', body });
+    return pick.name;
+  },
+  playlistsTagged(tag) { const tags = spset().playlistTags || {}; return (C.spotify?.playlists || []).filter(p => (tags[p.id] || []).includes(tag)); },
+};
+/** Spotify episodes in digest-item form (used by the digest and the Listen queue). */
+function spotifyItems() { return (C.spotify?.episodes || []).filter(e => !e.played && !(spset().hiddenShows || []).includes(e.showId)); }
+
+/** Play something: Spotify Connect first (stays in this app), else open the Spotify app. */
+async function spPlayUri(uri, url, title) {
+  if (Spotify.connected() && navigator.onLine) {
+    try {
+      const dev = await Spotify.play(uri);
+      if (dev) { toast(`▶ Playing on ${dev}`); setTimeout(() => Spotify.nowPlaying().then(render), 1500); render(); return; }
+      toast('No Spotify device awake — opening Spotify…');
+    } catch (e) { if (e.reason === 'PREMIUM_REQUIRED') toast('Remote play needs Spotify Premium — opening Spotify instead.'); else toast('Spotify: ' + e.message + ' — opening the app instead.'); }
+  }
+  const a = Object.assign(document.createElement('a'), { href: ytOpenUrl(url) }); if (!a.href.startsWith('intent:')) a.target = '_blank';
+  document.body.appendChild(a); a.click(); a.remove();
+}
+
+function spotifySectionHtml() {
+  const sp = spset(), cid = Spotify.clientId(), c = C.spotify || {};
+  const fromConfig = !sp.clientId && C.config?.spotifyClientId;
+  let h = `<p class="small muted">Podcasts you follow go into your Listen queue with exact lengths; tagged playlists become focus audio; Play starts it on your phone. Setup: Help → Spotify (5 min).</p>
+    <label class="f">Spotify client ID ${fromConfig ? '<span class="tag">from config.json</span>' : ''}</label>
+    <input type="text" id="spClientId" value="${esc(cid)}" placeholder="32-character client ID" autocomplete="off">
+    <div class="actions"><button class="btn sm" data-act="spSaveClient">Save client ID</button>
+      <button class="btn sm primary" data-act="spConnect">${Spotify.connected() ? 'Reconnect' : 'Connect Spotify'}</button>
+      ${Spotify.connected() ? '<button class="btn sm" data-act="spRefresh">Refresh</button><button class="btn sm ghost danger" data-act="spDisconnect">Disconnect</button>' : ''}</div>
+    <p class="small muted">Redirect URI to register in the Spotify dashboard: <code>${esc(Spotify.redirectUri())}</code></p>`;
+  if (Spotify.connected()) {
+    const by = Spotify.reauthBy();
+    h += `<p class="small muted">Connected${c.fetchedAt ? ` · updated ${ago(c.fetchedAt)}` : ''}${by ? ` · Spotify will ask you to sign in again around ${by.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })}` : ''}.</p>`;
+    if (c.error) h += `<p class="small warnchip">⚠ ${esc(c.error)}</p>`;
+    const hidden = new Set(sp.hiddenShows || []);
+    h += `<label class="f">Podcasts (${(c.shows || []).length})</label><ul class="list">${(c.shows || []).map(s => {
+      const n = (c.episodes || []).filter(e => e.showId === s.id && !e.played).length;
+      return `<li><span class="grow" data-act="spShowEdit" data-id="${esc(s.id)}">${esc(s.name)}${hidden.has(s.id) ? ' <span class="tag">hidden</span>' : ''}<br><span class="small">${((sp.showTags || {})[s.id] || ['podcast']).map(t => `<span class="kw">${esc(t)}</span>`).join('')}</span></span><span class="tag">${n} new</span></li>`;
+    }).join('') || '<li class="empty">No followed podcasts found.</li>'}</ul>
+    <div class="actions"><button class="btn sm" data-act="spAddShow">+ Add a podcast by link</button></div>
+    <label class="f">Playlists (${(c.playlists || []).length}) — tag them, e.g. “focus, lo-fi”</label><ul class="list">${(c.playlists || []).map(p => `<li>
+      <span class="grow" data-act="spPlTags" data-id="${esc(p.id)}">${esc(p.name)}${p.count != null ? ` <span class="small muted">· ${p.count}</span>` : ''}<br><span class="small">${((sp.playlistTags || {})[p.id] || []).map(t => `<span class="kw">${esc(t)}</span>`).join('') || '<span class="muted">tap to tag</span>'}</span></span>
+      <button class="icon" data-act="spPlayPl" data-id="${esc(p.id)}" aria-label="Play">▶</button></li>`).join('') || '<li class="empty">No playlists.</li>'}</ul>`;
+  }
+  return h;
+}
+
+const ACT7 = {
+  spSaveClient() { const v = $('#spClientId').value.trim(); if (v && !/^[0-9a-f]{32}$/i.test(v)) return toast('A Spotify client ID is 32 letters/digits.'); spset().clientId = v; save(); toast('Saved.'); render(); },
+  spConnect() { Spotify.connect(); },
+  spRefresh() { Spotify.refresh(true); toast('Refreshing Spotify…'); },
+  spDisconnect() { if (!confirm('Disconnect Spotify on this device?')) return; setSecret({ spToken: null }); delete C.spotify; saveCache(); render(); },
+  async spShowEdit(el) {
+    const id = el.dataset.id, name = (C.spotify?.shows || []).find(s => s.id === id)?.name || 'Podcast';
+    const v = await formSheet(name, [{ name: 'tags', label: 'Tags (topics, genres, activities)', value: ((spset().showTags || {})[id] || ['podcast']).join(', ') },
+      { name: 'hide', label: '', type: 'checkbox', value: (spset().hiddenShows || []).includes(id), hint: 'Hide this podcast from the Listen queue' }], { note: tagHintText() });
+    if (!v) return;
+    spset().showTags = { ...(spset().showTags || {}), [id]: parseTags(v.tags).length ? parseTags(v.tags) : ['podcast'] };
+    const h = new Set(spset().hiddenShows || []); v.hide ? h.add(id) : h.delete(id); spset().hiddenShows = [...h];
+    (C.spotify?.episodes || []).forEach(e => { if (e.showId === id) e.tags = spset().showTags[id]; }); saveCache();
+    save(); render();
+  },
+  async spAddShow() {
+    const v = await formSheet('Add a podcast', [{ name: 'link', label: 'Spotify podcast link (Share → Copy link)' }]);
+    const m = v?.link?.match(/show[/:]([A-Za-z0-9]{22})/); if (!v) return;
+    if (!m) return toast('That isn’t a Spotify podcast (show) link.');
+    spset().extraShows = [...new Set([...(spset().extraShows || []), m[1]])]; save(); Spotify.refresh(true);
+  },
+  async spPlTags(el) {
+    const id = el.dataset.id, p = (C.spotify?.playlists || []).find(x => x.id === id);
+    const v = await formSheet(p?.name || 'Playlist', [{ name: 'tags', label: 'Tags — e.g. focus, lo-fi · chill, jazz · workout', value: ((spset().playlistTags || {})[id] || []).join(', ') }],
+      { note: 'Tag a playlist “focus” and Deep work blocks will offer it as focus audio.<br>' + tagHintText() });
+    if (!v) return;
+    spset().playlistTags = { ...(spset().playlistTags || {}), [id]: parseTags(v.tags) }; save(); render();
+  },
+  spPlayPl(el) { const p = (C.spotify?.playlists || []).find(x => x.id === el.dataset.id); if (p) spPlayUri(p.uri, p.url, p.name); },
+  spPlay(el) { const it = Listen.find(el.dataset.key); if (!it) return; S.listening = { key: it.key, title: it.title, durationSec: it.durationSec || null, startedAt: Date.now(), spotify: true }; save(); spPlayUri(it.uri, it.url, it.title); },
+  spFocusPlay(el) { const p = (C.spotify?.playlists || []).find(x => x.id === el.dataset.id); if (p) { spPlayUri(p.uri, p.url, p.name); S.listening = { key: 'focus', focus: true, title: p.name, startedAt: Date.now() }; save(); render(); } },
+  spFocusNext() { S.ui.focusPl = (S.ui.focusPl || 0) + 1; render(); },
+};
+</script>
+
+<script>
+/* =====================================================================
    PART 5 — RENDERING
    Each view is a function that returns HTML. Clicks are handled by one
    delegated listener reading data-act attributes (PART 6).
@@ -2329,6 +2862,7 @@ function modeSections(mode) {
     parts.push(sec('now-inbox', `Inbox`, inboxHtml(true), S.inbox.length > 0, `<span class="tag">${S.inbox.length}</span>`));
     if (Google.on('gmail') && C.gmail) parts.push(sec('now-mail', 'Gmail', mailHtml(true), false, `<span class="tag num">${C.gmail.unread} unread</span>`));
   } else if (mode === 'leisure') {
+    parts.push(watchCardHtml());                    // ▶ Watch next (PART 4f)
     parts.push(sec('now-watch', 'Watch-later shelf', watchHtml(), true, `<span class="tag">${S.watch.length}</span>`));
     parts.push(digestCard());
     parts.push(freshPromptHtml());
@@ -2509,6 +3043,7 @@ function renderMore() {
   let h = '';
   h += sec('more-google', 'Google account', googleSectionHtml(), !Google.everSignedIn(), `<span class="tag">${Google.everSignedIn() ? (Google.token() ? 'connected' : 'tap to refresh') : 'not connected'}</span>`);
   h += sec('more-remind', 'Reminders & alarms', remindersHtml(), false, `<span class="tag">${Remind.upcoming().length}</span>`);
+  h += sec('more-spotify', 'Spotify', spotifySectionHtml(), false, `<span class="tag">${Spotify.connected() ? 'connected' : 'not connected'}</span>`);
   h += sec('more-events', 'Manual events', `<p class="muted small">Calendar events override the routine. Google Calendar events appear automatically once connected; add one-offs here.</p>
     <ul class="list">${evs.map(e => `<li><span class="grow" data-act="editEvent" data-id="${e.id}">${esc(e.title)}<br><span class="small muted">${e.allDay ? 'All day ' + new Date(e.start).toLocaleDateString('en-GB') : whenLabel(new Date(e.start)) + '–' + fmtT(new Date(e.end))}</span></span></li>`).join('') || '<li class="empty">No upcoming events.</li>'}</ul>
     <div class="actions"><button class="btn" data-act="addEvent">+ Event</button></div>`, true);
@@ -2559,7 +3094,7 @@ function renderMore() {
     <button class="btn ghost danger" data-act="resetAll">Erase all</button></div>`);
 
   h += sec('more-help', 'Help & limits', helpHtml());
-  h += `<p class="muted small" style="text-align:center;margin-top:20px">Daily Command · Stage 4 · <span id="swState">offline cache: checking…</span></p>`;
+  h += `<p class="muted small" style="text-align:center;margin-top:20px">Daily Command · Stage 4.5 · <span id="swState">offline cache: checking…</span></p>`;
   $('#view-more').innerHTML = h;
   updateSwState();
 }
@@ -2618,6 +3153,20 @@ function helpHtml() {
   <li class="limit"><b>Reminders ring through your calendar app.</b> They’re events in a separate “Daily Command” calendar. Make sure that calendar is visible and has notifications on in Google Calendar (or Samsung Calendar). <b>Samsung battery tip:</b> Settings → Apps → Calendar (and Google Calendar if installed) → Battery → <b>Unrestricted</b>; and Settings → Battery → Background usage limits → make sure Calendar isn’t in “Sleeping apps”. Otherwise Samsung can delay the alerts.</li>
   <li class="limit"><b>Sync merges, it doesn’t just overwrite.</b> Changes on phone and desktop are combined item by item; if the same thing was changed on both, the most recent save wins. Sync runs a few seconds after a change and when you open the app — but only while you’re signed in, so after an hour away it waits for your tap.</li>
   <li class="limit"><b>Gmail shows headers only</b> (sender, subject, unread count) — the app never reads message bodies.</li></ul>
+  <h3>Topics, genres, activities — and how</h3>
+  <p>Tags come in groups: <b>topics</b> (what it’s about), <b>genres</b> (what kind of thing — debates, standup, documentary, lo-fi…) and <b>activities</b> (focus, chill…). Set which tags are genres/activities under More → Watchlist → Tag groups. A lens combines them: inside a field it’s “any of”, across fields it’s “and”. The digest’s <b>▶ Watch / 🎧 Listen / 📰 Read</b> chips filter by how you’ll consume it: videos are Watch (and Listen if the feed is marked “fine to just listen to”), Spotify podcasts are Listen only, articles/news/Reddit are Read.</p>
+  <h3>Watch next &amp; watching here</h3>
+  <p>In Leisure mode a <b>Watch next</b> card picks one video from your chosen lens that fits the time left. <b>▶ Watch here</b> plays it inside the app; when it ends you’re back here, not in YouTube’s recommendations. It’s ad-free if you’re signed into YouTube in this browser. Some channels block playing outside YouTube — then use <b>Open in YouTube</b>. The in-app player stops if you switch apps or lock the phone (use the YouTube app for background listening).</p>
+  <h3>Spotify setup (one-off, ~5 min; needs Premium)</h3>
+  <ol>
+    <li>Go to <b>developer.spotify.com/dashboard</b> → <b>Create app</b>. Any name/description.</li>
+    <li><b>Redirect URI:</b> <code>${esc(Spotify.redirectUri())}</code> — exactly that, with the trailing slash. Tick <b>Web API</b>. Save.</li>
+    <li>In the app’s settings copy the <b>Client ID</b> (you don’t need the secret). Under <b>User Management</b> make sure your own Spotify account is listed.</li>
+    <li>Paste the Client ID in More → Spotify (or send it to be added to <code>config.json</code>), then <b>Connect Spotify</b>. Do this once on each device.</li>
+  </ol>
+  <ul><li class="limit"><b>Spotify’s rules for personal apps (2026):</b> the app owner needs Premium; up to 5 users; you’ll be asked to sign in again about every 6 months. Spotify doesn’t let personal apps browse genres or recommendations, so genres come from your own tags.</li>
+  <li class="limit"><b>Play on your phone</b> uses Spotify Connect: it works when Spotify on your phone is awake (open it once). Otherwise the app opens Spotify for you to press play.</li>
+  <li class="limit"><b>In an installed app on Android</b>, Spotify’s sign-in can finish in a browser tab — just close the tab and return; the app picks the login up.</li></ul>
   <h3>Morning briefing slot (optional, later)</h3>
   <p>If the repo ever contains <code>briefing.json</code> (<code>{"generated", "title", "markdown"}</code>) or <code>briefing.md</code> — e.g. written by an AI step you add to the workflow (a commented example is in <code>digest.yml</code>) — it appears at the top of the morning sequence while it’s under 24 h old.</p>
   <h3>Feeds: what’s reliable and what isn’t</h3>
@@ -2789,7 +3338,7 @@ const ACT = {
   resetAll() { if (confirm('Erase ALL data in this browser? Export first if unsure.')) { localStorage.removeItem(STORE_KEY); S = defaultState(); S.settings.welcomed = true; save(); render(); } },
 };
 
-Object.assign(ACT, ACT2, ACT3, ACT4, ACT5);   // + Google (Stage 4)   // + listen while working   // Stage 2 (morning, digest, weather) and Stage 3 (lenses, watchlist) actions
+Object.assign(ACT, ACT2, ACT3, ACT4, ACT5, ACT6, ACT7);   // + Watch next & player, Spotify (Stage 4.5)   // + Google (Stage 4)   // + listen while working   // Stage 2 (morning, digest, weather) and Stage 3 (lenses, watchlist) actions
 
 function setActive(item) {
   if (!item || !item.end) { S.active = null; return save(); }
@@ -2826,6 +3375,7 @@ document.addEventListener('change', e => {
   const el = e.target;
   if (el.id === 'importFile') return importFile(el.files[0]);
   if (el.id === 'feedsFile') return importFeeds(el.files[0]);
+  if (el.dataset?.actChange === 'watchLens') { S.ui.watchLens = el.value; save(); return render(); }
   const k = el.dataset?.setting; if (!k) return;
   if (k.startsWith('lens.')) { S.settings.lensByMode = { ...S.settings.lensByMode, [k.slice(5)]: el.value }; save(); return render(); }
   let v = el.type === 'checkbox' ? el.checked : el.type === 'number' ? Number(el.value) : el.value;
@@ -3045,6 +3595,7 @@ matchMedia('(prefers-color-scheme: light)').addEventListener?.('change', applyTh
 Pomo.tick();                                   // catch up on anything that ended while closed
 const startView = (location.hash || '#now').slice(1);
 go(['now', 'tasks', 'focus', 'inbox', 'more'].includes(startView) ? startView : 'now');
+Spotify.handleRedirect();                       // finishes a Spotify sign-in if we were just sent back (?code=…)
 if (!S.settings.welcomed) openWelcome();
 else maybeAutoMorning();                       // first open of the day → guided morning
 Weather.refresh(); Digest.refresh();            // background refresh; cached copies show meanwhile
@@ -3056,6 +3607,9 @@ fetch('config.json', { cache: 'no-store' }).then(r => (r.ok ? r.json() : null)).
   Google.refreshAll(true);
 });
 setInterval(() => { if (!document.hidden) Google.refreshAll(); }, 5 * 60000);
+// Spotify: full refresh every 20 min, what's-playing every minute while the Now screen is showing
+setTimeout(() => Spotify.refresh(), 1500);
+setInterval(() => { if (document.hidden || !Spotify.connected()) return; if (currentView === 'now') Spotify.nowPlaying().then(() => render(true)); Spotify.refresh(); }, 60000);
 Watchlist.refresh(); Briefing.refresh();
 if (new URLSearchParams(location.search).get('capture')) setTimeout(openCapture, 100);   // home-screen shortcut
 
@@ -3092,7 +3646,10 @@ document.addEventListener('visibilitychange', () => {
 });
 addEventListener('online', () => { Weather.refresh(true); Digest.refresh(); if (Google.clientId()) loadGis().catch(() => {}); Google.refreshAll(true); });
 addEventListener('offline', () => render());
-addEventListener('storage', e => { if (e.key === STORE_KEY) { S = load(); render(); } }); // another tab changed data
+addEventListener('storage', e => {
+  if (e.key === STORE_KEY) { S = load(); render(); }            // another tab changed data
+  if (e.key === SECRET_KEY) { render(); Spotify.refresh(true); }  // e.g. Spotify sign-in finished in a browser tab
+});
 
 // Service worker = offline + installable. Shows a toast when a new version is ready.
 async function updateSwState() {

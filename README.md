@@ -2,7 +2,7 @@
 
 A personal "what should I be doing right now?" app. Static site, installable PWA, works offline. No backend, no paid services. Your data stays in your browser (localStorage) with JSON export/import.
 
-**Status: Stage 4 (core loop, morning sequence, your own feeds, Google + sync).** Stage 5 (leisure, German, life admin) is added to the same files.
+**Status: Stage 4.5 (core loop, morning sequence, your own feeds, Google + sync, tag groups, Watch next, Spotify).** Stage 5 (leisure, German, life admin) is added to the same files.
 
 ## Files
 
@@ -16,8 +16,8 @@ A personal "what should I be doing right now?" app. Static site, installable PWA
 | `feeds.resolved.json`, `video-meta.json` | Caches maintained by the workflow: YouTube name and handle lookups, and video lengths for the Listen queue. |
 | `.github/workflows/digest.yml` | Every 3 hours: tests, builds the digest, commits it if it changed, then deploys the site. |
 | `scripts/` | The digest builder: `digest-lib.mjs` (logic) and `build-digest.mjs` (runner). |
-| `tests/` | `engine.test.cjs` (37 Now/Next edge cases), `sync.test.cjs` (16 phone ↔ desktop merge cases), `digest.test.mjs` (24 builder tests on recorded feed samples) and `e2e-build.mjs` (a full builder run over your real watchlist with a simulated network). Run all with `npm test`. |
-| `config.json` | *Optional.* `{"googleClientId": "…apps.googleusercontent.com"}`, so every device picks up your Google client ID automatically. Client IDs are public by design. |
+| `tests/` | `engine.test.cjs` (37 Now/Next edge cases), `sync.test.cjs` (16 phone ↔ desktop merge cases), `lens.test.cjs` (9 tag-group/lens cases), `digest.test.mjs` (24 builder tests on recorded feed samples) and `e2e-build.mjs` (a full builder run over your real watchlist with a simulated network). Run all with `npm test`. |
+| `config.json` | *Optional.* `{"googleClientId": "…", "spotifyClientId": "…"}`, so every device picks up your client IDs automatically. Client IDs are public by design. |
 | `package.json`, `package-lock.json` | One dependency (`fast-xml-parser`), used only by the workflow and not by the app. |
 
 ## Set it up on GitHub (one-off, about 10 minutes)
@@ -105,6 +105,49 @@ All of this runs in your browser against your own Google Cloud project, with no 
 - **Testing mode means roughly weekly re-approval.** Google expires approvals for apps in Testing after about 7 days, so about once a week the refresh shows the consent screen again. Publishing the app would avoid that, but it needs Google's verification for Gmail access.
 - **Sync merges instead of overwriting.** Phone and desktop changes are combined item by item. When the same field changed on both, the most recent save wins. A device's first sync takes the settings already in Drive, so a fresh desktop doesn't overwrite your phone's settings. Sync runs a few seconds after a change and when you open the app, while you're signed in.
 - **Samsung alerts:** make sure the "Daily Command" calendar is visible with notifications on. Then set **Settings → Apps → Calendar** (and Google Calendar, if installed) **→ Battery → Unrestricted**, and check that Calendar isn't listed under **Settings → Battery → Background usage limits**. Otherwise alerts can arrive late.
+
+## Stage 4.5 — Tag groups, Watch next, Spotify
+
+### Topics, genres, activities, and how
+
+- **Tag groups:** tags now come in groups.
+  - **Topic:** what it's about, e.g. politics, gaming or trash. Any tag not listed elsewhere counts as a topic.
+  - **Genre / format:** what kind of thing it is, e.g. debates, standup, documentary, lo-fi.
+  - **Activity:** what you'd use it for, e.g. focus, chill, workout.
+  - Set which tags are genres or activities under **More → Watchlist → Tag groups**.
+- **How:** the app works out per item how you'd consume it, so you never tag this.
+  - **Watch:** YouTube videos.
+  - **Listen:** Spotify episodes, plus videos from feeds marked *fine to just listen to*.
+  - **Read:** articles, news, Reddit.
+- **Lenses** combine the groups: within a field it's "any of these", across fields it's "and". For example, *Watch a debate* = topics politics/news × genre debates × Watch, so it never picks a listen-only podcast. Older lenses that are a plain tag list keep working as "any of these tags".
+- **Digest chips:** the digest's **▶ Watch / 🎧 Listen / 📰 Read** chips replace the old Videos/Reddit/News/Articles ones.
+
+### Watch next and watching here
+
+- **Watch next card:** in Leisure mode, it picks one video from a lens you choose (remembered per device) that fits the time left, and shows the maths.
+- **▶ Watch here:** plays it in YouTube's own player inside the app.
+  - When it ends you're back in the app ("Finished ✓ · Watch another / Back to Now"), not in YouTube's recommendations.
+  - It's ad-free if you're signed into YouTube in that browser.
+  - Channels that block playing outside YouTube show a clear message and an **Open in YouTube** button.
+  - The in-app player stops when you switch apps or lock the phone. Use the YouTube app for background listening.
+  - Every digest video also gets a ▶ button.
+
+### Spotify (needs Premium)
+
+- **How you stay signed in:** login uses Spotify's browser-only method (PKCE), so it stays signed in until Spotify's **6-month** limit, and the app shows the date. It's signed in once per device.
+- **Podcasts you follow** add their recent unplayed episodes to the **Listen queue** and the digest's 🎧 chip, with exact lengths. The Listen queue alternates YouTube and Spotify. Tag podcasts, hide them, or add one by link.
+- **Playlists** can be tagged, e.g. "focus, lo-fi". A playlist tagged **focus** becomes the focus audio for Deep work blocks, with **Another** to rotate between them.
+- **Play** uses **Spotify Connect** to start it on your phone, from the desktop or on the phone without leaving this app. If no Spotify device is awake, it opens the Spotify app. The Listen card shows what's playing.
+- **Setup:**
+  1. Go to [developer.spotify.com/dashboard](https://developer.spotify.com/dashboard) and choose **Create app**.
+  2. Set the **Redirect URI** to `https://nathanaog.github.io/daily-command/` exactly, including the trailing slash, and tick **Web API**.
+  3. Copy the **Client ID**; you don't need the secret.
+  4. Under **User Management**, make sure your own account is listed.
+  5. Paste the Client ID in **More → Spotify**, or add it to `config.json`, then tap **Connect Spotify**.
+- **Limits:**
+  - Spotify's 2026 rules for personal apps: the owner needs Premium, there's a 5-user cap, and you sign in again roughly every 6 months.
+  - Spotify doesn't let personal apps browse genres or recommendations, so genres come from your own tags.
+  - In an installed app on Android, the sign-in may finish in a browser tab. Close it and return; the app picks the login up.
 
 ## Install on Android
 

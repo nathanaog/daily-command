@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-14T15:30:00Z",
+  "updatedAt": "2026-10-14T17:00:00Z",
   "note": "Your watchlist. Edit it in the app (More → Watchlist), then Publish or download it into the repo. The GitHub Action reads it every 3 hours. YouTube: give a name, an @handle or a channel link — the Action finds the feed and shows what it resolved to.",
   "defaults": {
     "perFeed": 5,
@@ -51,7 +51,19 @@
     ],
     "Listen": [
       "listen"
-    ]
+    ],
+    "Watch a debate": {
+      "topic": [
+        "politics",
+        "news"
+      ],
+      "genre": [
+        "debates"
+      ],
+      "how": [
+        "watch"
+      ]
+    }
   },
   "feeds": [
     {
@@ -705,5 +717,23 @@
       ],
       "added": "2026-10-14"
     }
-  ]
+  ],
+  "tagGroups": {
+    "genre": [
+      "debates",
+      "standup",
+      "cartoon",
+      "documentary",
+      "sketch",
+      "commentary",
+      "interview",
+      "explainer"
+    ],
+    "activity": [
+      "chill",
+      "focus",
+      "workout",
+      "commute"
+    ]
+  }
 }
