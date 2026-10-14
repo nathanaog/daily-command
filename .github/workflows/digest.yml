@@ -1,0 +1,95 @@
+# Daily Command — build the digest and publish the site.
+#
+# Runs:  every 3 hours (schedule), when you press "Run workflow" (or the app's
+#        "Refresh digest now"), and on every push to main (e.g. you published
+#        a new feeds.json from the app, or uploaded a new index.html).
+# Does:  1. runs the tests  2. builds digest.json from feeds.json
+#        3. commits digest.json + feeds.resolved.json if anything changed
+#        4. deploys the site to GitHub Pages
+#
+# One-time setup (see README → "Stage 3 setup"):
+#   Settings → Pages → Build and deployment → Source: "GitHub Actions"
+#   Settings → Actions → General → Workflow permissions: "Read and write"
+
+name: Digest + deploy
+
+on:
+  schedule:
+    - cron: '17 */3 * * *'     # every 3 h at :17 UTC (GitHub may delay scheduled runs at busy times)
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write              # commit digest.json
+  pages: write                 # deploy to Pages
+  id-token: write
+
+concurrency:                   # never run two at once (avoids commit races)
+  group: digest-and-pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Tests (Now/Next engine + digest builder)
+        run: npm test
+
+      - name: Build digest.json from feeds.json
+        id: digest
+        run: node scripts/build-digest.mjs
+
+      # ------------------------------------------------------------------
+      # OPTIONAL — AI morning briefing (slot left for later; off by default)
+      # Write briefing.json ({ "generated": ISO, "title": "...", "markdown": "..." })
+      # from digest.json using any model you like, e.g. with an API key stored
+      # under Settings → Secrets → Actions. The app shows it at the top of the
+      # morning sequence when it exists and is < 24 h old. Example shape:
+      #
+      # - name: Morning briefing
+      #   if: github.event.schedule == '17 3 * * *' || github.event_name == 'workflow_dispatch'
+      #   env:
+      #     API_KEY: ${{ secrets.BRIEFING_API_KEY }}
+      #   run: node scripts/briefing.mjs          # you write this; reads digest.json, writes briefing.json
+      # ------------------------------------------------------------------
+
+      - name: Commit digest if it changed
+        if: steps.digest.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add digest.json feeds.resolved.json video-meta.json
+          git add briefing.json 2>/dev/null || true
+          git commit -m "digest: ${{ steps.digest.outputs.summary }}"
+          git pull --rebase --autostash
+          git push
+
+      - name: Collect the site files
+        run: |
+          mkdir _site
+          cp -r index.html manifest.json sw.js icons digest.json feeds.json feeds.resolved.json _site/
+          for f in briefing.json briefing.md; do [ -f "$f" ] && cp "$f" _site/ || true; done
+
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,632 @@
+{
+  "version": 1,
+  "updatedAt": "2026-10-14T09:00:00Z",
+  "note": "Your watchlist. Edit it in the app (More → Watchlist), then Publish or download it into the repo. The GitHub Action reads it every 3 hours. YouTube: give a name, an @handle or a channel link — the Action finds the feed and shows what it resolved to.",
+  "defaults": {
+    "perFeed": 5,
+    "maxAgeHours": 72,
+    "newsLang": "en-GB",
+    "hideShorts": true
+  },
+  "keywords": {},
+  "lenses": {
+    "Morning": [
+      "news",
+      "education",
+      "german",
+      "product",
+      "finance"
+    ],
+    "Laugh": [
+      "comedy",
+      "standup",
+      "cartoon",
+      "entertainment"
+    ],
+    "Politics & debate": [
+      "politics",
+      "debates",
+      "news"
+    ],
+    "Learn": [
+      "education",
+      "finance",
+      "tech",
+      "business",
+      "product",
+      "history"
+    ],
+    "German": [
+      "german"
+    ],
+    "Wind down": [
+      "chill",
+      "travel",
+      "culture",
+      "music",
+      "trash"
+    ],
+    "Gaming": [
+      "gaming"
+    ],
+    "Listen": [
+      "listen"
+    ]
+  },
+  "feeds": [
+    {
+      "id": "yt-map-men",
+      "name": "Map Men",
+      "type": "youtube",
+      "handle": null,
+      "url": null,
+      "tags": [
+        "education",
+        "british",
+        "comedy"
+      ],
+      "added": "2026-10-13"
+    },
+    {
+      "id": "yt-jubilee",
+      "name": "Jubilee",
+      "type": "youtube",
+      "handle": null,
+      "url": null,
+      "tags": [
+        "politics",
+        "debates"
+      ],
+      "added": "2026-10-13"
+    },
+    {
+      "id": "yt-lbc",
+      "name": "LBC",
+      "type": "youtube",
+      "handle": null,
+      "url": null,
+      "tags": [
+        "politics",
+        "listen"
+      ],
+      "added": "2026-10-13"
+    },
+    {
+      "id": "yt-chris-spargo",
+      "name": "Chris Spargo",
+      "type": "youtube",
+      "handle": null,
+      "url": null,
+      "tags": [
+        "british",
+        "education"
+      ],
+      "added": "2026-10-13",
+      "check": "Not sure which channel this is"
+    },
+    {
+      "id": "yt-flashgitz",
+      "name": "Flashgitz",
+      "type": "youtube",
+      "handle": null,
+      "url": null,
+      "tags": [
+        "comedy",
+        "cartoon"
+      ],
+      "added": "2026-10-13"
+    },
+    {
+      "id": "yt-the-good-liars",
+      "name": "The Good Liars",
+      "type": "youtube",
+      "handle": null,
+      "url": null,
+      "tags": [
+        "comedy",
+        "politics",
+        "debates"
+      ],
+      "added": "2026-10-13"
+    },
+    {
+      "id": "yt-easy-german",
+      "name": "Easy German",
+      "type": "youtube",
+      "handle": null,
+      "url": null,
+      "tags": [
+        "german",
+        "listen"
+      ],
+      "added": "2026-10-13"
+    },
+    {
+      "id": "yt-pleasant-green",
+      "name": "Pleasant Green",
+      "type": "youtube",
+      "handle": null,
+      "url": null,
+      "tags": [
+        "comedy",
+        "entertainment"
+      ],
+      "added": "2026-10-13"
+    },
+    {
+      "id": "yt-patrick-boyle",
+      "name": "Patrick Boyle",
+      "type": "youtube",
+      "handle": null,
+      "url": null,
+      "tags": [
+        "finance",
+        "education",
+        "listen"
+      ],
+      "added": "2026-10-13"
+    },
+    {
+      "id": "yt-last-week-tonight",
+      "name": "Last Week Tonight",
+      "type": "youtube",
+      "handle": null,
+      "url": null,
+      "tags": [
+        "comedy",
+        "politics"
+      ],
+      "added": "2026-10-13"
+    },
+    {
+      "id": "yt-billy-on-the-street",
+      "name": "Billy on the Street",
+      "type": "youtube",
+      "handle": null,
+      "url": null,
+      "tags": [
+        "comedy"
+      ],
+      "added": "2026-10-13"
+    },
+    {
+      "id": "yt-politicsjoe",
+      "name": "PoliticsJOE",
+      "type": "youtube",
+      "handle": null,
+      "url": null,
+      "tags": [
+        "comedy"
+      ],
+      "added": "2026-10-13"
+    },
+    {
+      "id": "yt-half-as-interesting",
+      "name": "Half as Interesting",
+      "type": "youtube",
+      "handle": null,
+      "url": null,
+      "tags": [
+        "comedy",
+        "education"
+      ],
+      "added": "2026-10-13"
+    },
+    {
+      "id": "yt-coldfusion",
+      "name": "ColdFusion",
+      "type": "youtube",
+      "handle": null,
+      "url": null,
+      "tags": [
+        "finance",
+        "tech",
+        "listen"
+      ],
+      "added": "2026-10-13"
+    },
+    {
+      "id": "yt-levi-hildebrand",
+      "name": "Levi Hildebrand",
+      "type": "youtube",
+      "handle": null,
+      "url": null,
+      "tags": [
+        "comedy",
+        "business"
+      ],
+      "added": "2026-10-13",
+      "check": "Heard as 'Levy Hilda Brad Brand'"
+    },
+    {
+      "id": "yt-tldr-news",
+      "name": "TLDR News",
+      "type": "youtube",
+      "handle": null,
+      "url": null,
+      "tags": [
+        "news",
+        "politics",
+        "listen"
+      ],
+      "added": "2026-10-13"
+    },
+    {
+      "id": "yt-simplicissimus",
+      "name": "Simplicissimus",
+      "type": "youtube",
+      "handle": null,
+      "url": null,
+      "tags": [
+        "german",
+        "education"
+      ],
+      "added": "2026-10-13"
+    },
+    {
+      "id": "yt-aberrant-preach",
+      "name": "Aberrant preach",
+      "type": "youtube",
+      "handle": null,
+      "url": null,
+      "tags": [
+        "trash"
+      ],
+      "added": "2026-10-13",
+      "check": "Not sure which channel this is (voice transcription)"
+    },
+    {
+      "id": "yt-channel-5-with-andrew-callaghan",
+      "name": "Channel 5 with Andrew Callaghan",
+      "type": "youtube",
+      "handle": null,
+      "url": null,
+      "tags": [
+        "education",
+        "politics"
+      ],
+      "added": "2026-10-13",
+      "check": "Assumed you meant Andrew Callaghan's Channel 5, not the TV channel"
+    },
+    {
+      "id": "yt-prozd",
+      "name": "ProZD",
+      "type": "youtube",
+      "handle": null,
+      "url": null,
+      "tags": [
+        "comedy",
+        "gaming"
+      ],
+      "added": "2026-10-13"
+    },
+    {
+      "id": "yt-luke-beasley",
+      "name": "Luke Beasley",
+      "type": "youtube",
+      "handle": null,
+      "url": null,
+      "tags": [
+        "politics",
+        "listen"
+      ],
+      "added": "2026-10-13"
+    },
+    {
+      "id": "yt-finlay-christie",
+      "name": "Finlay Christie",
+      "type": "youtube",
+      "handle": null,
+      "url": null,
+      "tags": [
+        "comedy"
+      ],
+      "added": "2026-10-13"
+    },
+    {
+      "id": "yt-bald-and-bankrupt",
+      "name": "Bald and Bankrupt",
+      "type": "youtube",
+      "handle": null,
+      "url": null,
+      "tags": [
+        "travel",
+        "chill"
+      ],
+      "added": "2026-10-13"
+    },
+    {
+      "id": "yt-tagesschau",
+      "name": "Tagesschau",
+      "type": "youtube",
+      "handle": null,
+      "url": null,
+      "tags": [
+        "german",
+        "news",
+        "listen"
+      ],
+      "added": "2026-10-13"
+    },
+    {
+      "id": "yt-the-nk-guys",
+      "name": "The NK guys",
+      "type": "youtube",
+      "handle": null,
+      "url": null,
+      "tags": [
+        "culture"
+      ],
+      "added": "2026-10-13",
+      "check": "Not sure which channel this is"
+    },
+    {
+      "id": "yt-gameranx",
+      "name": "GameRanx",
+      "type": "youtube",
+      "handle": null,
+      "url": null,
+      "tags": [
+        "gaming"
+      ],
+      "added": "2026-10-13"
+    },
+    {
+      "id": "yt-modern-day-debate",
+      "name": "Modern-Day Debate",
+      "type": "youtube",
+      "handle": null,
+      "url": null,
+      "tags": [
+        "debates",
+        "politics",
+        "listen"
+      ],
+      "added": "2026-10-13"
+    },
+    {
+      "id": "yt-dropout",
+      "name": "Dropout",
+      "type": "youtube",
+      "handle": null,
+      "url": null,
+      "tags": [
+        "comedy"
+      ],
+      "added": "2026-10-13"
+    },
+    {
+      "id": "yt-the-onion",
+      "name": "The Onion",
+      "type": "youtube",
+      "handle": null,
+      "url": null,
+      "tags": [
+        "comedy"
+      ],
+      "added": "2026-10-13"
+    },
+    {
+      "id": "yt-the-economist",
+      "name": "The Economist",
+      "type": "youtube",
+      "handle": null,
+      "url": null,
+      "tags": [
+        "finance",
+        "business"
+      ],
+      "added": "2026-10-13"
+    },
+    {
+      "id": "yt-shark-tank-global",
+      "name": "Shark Tank Global",
+      "type": "youtube",
+      "handle": null,
+      "url": null,
+      "tags": [
+        "trash",
+        "business"
+      ],
+      "added": "2026-10-13"
+    },
+    {
+      "id": "yt-kill-tony",
+      "name": "Kill Tony",
+      "type": "youtube",
+      "handle": null,
+      "url": null,
+      "tags": [
+        "comedy",
+        "standup",
+        "listen"
+      ],
+      "added": "2026-10-13"
+    },
+    {
+      "id": "yt-coffeezilla",
+      "name": "Coffeezilla",
+      "type": "youtube",
+      "handle": null,
+      "url": null,
+      "tags": [
+        "finance"
+      ],
+      "added": "2026-10-13"
+    },
+    {
+      "id": "yt-tom-scott",
+      "name": "Tom Scott",
+      "type": "youtube",
+      "handle": null,
+      "url": null,
+      "tags": [
+        "education"
+      ],
+      "added": "2026-10-13"
+    },
+    {
+      "id": "yt-lenny-s-podcast",
+      "name": "Lenny's Podcast",
+      "type": "youtube",
+      "handle": null,
+      "url": null,
+      "tags": [
+        "product",
+        "business",
+        "listen"
+      ],
+      "added": "2026-10-13"
+    },
+    {
+      "id": "yt-crazy-bro",
+      "name": "Crazy bro",
+      "type": "youtube",
+      "handle": null,
+      "url": null,
+      "tags": [],
+      "added": "2026-10-13",
+      "check": "Heard 'Crazy, bro. Super driven, driven' — couldn't tell the channel name or its tags"
+    },
+    {
+      "id": "yt-the-hustle",
+      "name": "The Hustle",
+      "type": "youtube",
+      "handle": null,
+      "url": null,
+      "tags": [
+        "business"
+      ],
+      "added": "2026-10-13"
+    },
+    {
+      "id": "yt-history-moshe",
+      "name": "History Moshe",
+      "type": "youtube",
+      "handle": null,
+      "url": null,
+      "tags": [
+        "education"
+      ],
+      "added": "2026-10-13",
+      "check": "Heard 'History, Moshe' — not sure of the channel"
+    },
+    {
+      "id": "yt-radicalsoda",
+      "name": "RadicalSoda",
+      "type": "youtube",
+      "handle": null,
+      "url": null,
+      "tags": [
+        "gaming"
+      ],
+      "added": "2026-10-13"
+    },
+    {
+      "id": "yt-how-money-works",
+      "name": "How Money Works",
+      "type": "youtube",
+      "handle": null,
+      "url": null,
+      "tags": [
+        "finance",
+        "business",
+        "listen"
+      ],
+      "added": "2026-10-13"
+    },
+    {
+      "id": "yt-joel-haver",
+      "name": "Joel Haver",
+      "type": "youtube",
+      "handle": null,
+      "url": null,
+      "tags": [
+        "entertainment"
+      ],
+      "added": "2026-10-13"
+    },
+    {
+      "id": "yt-bluejay",
+      "name": "Bluejay",
+      "type": "youtube",
+      "handle": null,
+      "url": null,
+      "tags": [
+        "education"
+      ],
+      "added": "2026-10-13",
+      "check": "Heard 'Blue Jay' — please confirm"
+    },
+    {
+      "id": "yt-oversimplified",
+      "name": "OverSimplified",
+      "type": "youtube",
+      "handle": null,
+      "url": null,
+      "tags": [
+        "education"
+      ],
+      "added": "2026-10-13"
+    },
+    {
+      "id": "yt-ordinary-things",
+      "name": "Ordinary Things",
+      "type": "youtube",
+      "handle": null,
+      "url": null,
+      "tags": [
+        "education"
+      ],
+      "added": "2026-10-13"
+    },
+    {
+      "id": "yt-bacon",
+      "name": "Bacon_",
+      "type": "youtube",
+      "handle": null,
+      "url": null,
+      "tags": [
+        "gaming"
+      ],
+      "added": "2026-10-13",
+      "check": "Heard 'Bacon underscore Gaming' — assumed channel 'Bacon_' tagged gaming"
+    },
+    {
+      "id": "yt-economics-explained",
+      "name": "Economics Explained",
+      "type": "youtube",
+      "handle": null,
+      "url": null,
+      "tags": [
+        "finance",
+        "listen"
+      ],
+      "added": "2026-10-13"
+    },
+    {
+      "id": "yt-j-j-mccullough",
+      "name": "J.J. McCullough",
+      "type": "youtube",
+      "handle": null,
+      "url": null,
+      "tags": [
+        "politics",
+        "culture",
+        "entertainment"
+      ],
+      "added": "2026-10-13"
+    },
+    {
+      "id": "yt-adam-neely",
+      "name": "Adam Neely",
+      "type": "youtube",
+      "handle": null,
+      "url": null,
+      "tags": [
+        "music"
+      ],
+      "added": "2026-10-13"
+    }
+  ]
+}

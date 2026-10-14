@@ -1,0 +1,245 @@
+{
+ "generated": "2026-10-13T04:00:00Z",
+ "sample": true,
+ "note": "SAMPLE DATA. The GitHub Action replaces this file with items from your feeds.json watchlist on its first run.",
+ "items": [
+  {
+   "id": "s01",
+   "title": "How cloud chambers make particle tracks visible",
+   "url": "https://example.com/sample/cloud-chambers",
+   "source": "Sample science blog",
+   "category": "Science",
+   "published": "2026-10-12T18:20:00Z",
+   "type": "article",
+   "score": 3,
+   "matched": [
+    "physics"
+   ],
+   "summary": "A walk-through of building a dry-ice cloud chamber and what the different track shapes tell you.",
+   "tags": [
+    "education"
+   ],
+   "why": "physics +1"
+  },
+  {
+   "id": "s02",
+   "title": "Ocean heat content: what the latest measurements show",
+   "url": "https://example.com/sample/ocean-heat",
+   "source": "Sample climate site",
+   "category": "Science",
+   "published": "2026-10-12T09:05:00Z",
+   "type": "article",
+   "score": 2,
+   "matched": [
+    "climate"
+   ],
+   "summary": "Why sea temperature at depth is a steadier signal than surface air temperature.",
+   "tags": [
+    "education"
+   ],
+   "why": "climate +1"
+  },
+  {
+   "id": "s03",
+   "title": "The surprisingly complex physics of a dripping tap",
+   "url": "https://example.com/sample/dripping-tap",
+   "source": "Sample physics channel",
+   "category": "YouTube",
+   "published": "2026-10-12T16:00:00Z",
+   "type": "video",
+   "duration": "14:32",
+   "score": 3,
+   "matched": [
+    "physics",
+    "explainer"
+   ],
+   "summary": "High-speed footage and a simple model of droplet pinch-off.",
+   "tags": [
+    "education",
+    "comedy"
+   ],
+   "why": "physics +1 + explainer +1",
+   "durationSec": 872
+  },
+  {
+   "id": "s04",
+   "title": "Animating abstract ideas: a behind-the-scenes look",
+   "url": "https://example.com/sample/animating-ideas",
+   "source": "Sample explainer channel",
+   "category": "YouTube",
+   "published": "2026-10-11T20:30:00Z",
+   "type": "video",
+   "duration": "22:05",
+   "score": 2,
+   "matched": [
+    "explainer"
+   ],
+   "summary": "How a small team storyboards, scripts and animates a 10-minute science video.",
+   "tags": [
+    "education",
+    "comedy",
+    "listen"
+   ],
+   "why": "explainer +1",
+   "durationSec": 1325
+  },
+  {
+   "id": "s05",
+   "title": "Five questions to ask before writing a roadmap (podcast)",
+   "url": "https://example.com/sample/roadmap-questions",
+   "source": "Sample PM newsletter",
+   "category": "Product",
+   "published": "2026-10-12T07:45:00Z",
+   "type": "video",
+   "score": 2,
+   "matched": [
+    "roadmap"
+   ],
+   "summary": "Outcome-first framing, and how to say no without a 40-row spreadsheet.",
+   "tags": [
+    "product",
+    "business",
+    "listen"
+   ],
+   "why": "roadmap +1",
+   "durationSec": 2460,
+   "duration": "41:00"
+  },
+  {
+   "id": "s06",
+   "title": "Discovery interviews that don't lead the witness",
+   "url": "https://example.com/sample/discovery-interviews",
+   "source": "Sample product blog",
+   "category": "Product",
+   "published": "2026-10-11T12:00:00Z",
+   "type": "article",
+   "score": 1,
+   "matched": [],
+   "summary": "Open questions, past behaviour over hypotheticals, and when to stay silent.",
+   "tags": [
+    "product",
+    "business"
+   ],
+   "why": "0"
+  },
+  {
+   "id": "s07",
+   "title": "Metrics trees in practice",
+   "url": "https://example.com/sample/metrics-trees",
+   "source": "Sample PM newsletter",
+   "category": "Product",
+   "published": "2026-10-12T13:10:00Z",
+   "type": "article",
+   "score": 1,
+   "matched": [],
+   "summary": "Connecting a north-star metric to the inputs a team can actually move.",
+   "tags": [
+    "product",
+    "business"
+   ],
+   "why": "0"
+  },
+  {
+   "id": "s08",
+   "title": "Berlin: new cycle lanes planned for the inner ring",
+   "url": "https://example.com/sample/berlin-cycle-lanes",
+   "source": "Sample news topic",
+   "category": "Germany",
+   "published": "2026-10-12T15:30:00Z",
+   "type": "article",
+   "score": 2,
+   "matched": [
+    "Berlin"
+   ],
+   "summary": "A summary of the proposal and the consultation timeline.",
+   "tags": [
+    "news"
+   ],
+   "why": "Berlin +1"
+  },
+  {
+   "id": "s09",
+   "title": "Deutsch im Alltag: zehn Redewendungen mit 'Bahnhof'",
+   "url": "https://example.com/sample/redewendungen",
+   "source": "Sample German-learning blog",
+   "category": "German",
+   "published": "2026-10-12T06:00:00Z",
+   "type": "article",
+   "score": 1,
+   "matched": [],
+   "summary": "Kurze Erklärungen und Beispielsätze für B1–B2.",
+   "tags": [
+    "german"
+   ],
+   "why": "0"
+  },
+  {
+   "id": "s10",
+   "title": "What's the best home lab experiment you've done?",
+   "url": "https://example.com/sample/reddit-home-lab",
+   "source": "Sample subreddit",
+   "category": "Reddit",
+   "published": "2026-10-12T21:40:00Z",
+   "type": "post",
+   "score": 1,
+   "matched": [],
+   "summary": "A thread of kitchen-table experiments, from density towers to DIY spectroscopes.",
+   "tags": [
+    "politics"
+   ],
+   "why": "0"
+  },
+  {
+   "id": "s11",
+   "title": "Weekly thread: share your science communication project",
+   "url": "https://example.com/sample/reddit-scicomm",
+   "source": "Sample subreddit",
+   "category": "Reddit",
+   "published": "2026-10-12T10:00:00Z",
+   "type": "post",
+   "score": 1,
+   "matched": [],
+   "summary": "Feedback swaps for channels, podcasts and blogs.",
+   "tags": [
+    "politics"
+   ],
+   "why": "0"
+  },
+  {
+   "id": "s12",
+   "title": "Telescope time: how observing proposals are judged",
+   "url": "https://example.com/sample/telescope-time",
+   "source": "Sample science blog",
+   "category": "Science",
+   "published": "2026-10-11T08:00:00Z",
+   "type": "article",
+   "score": 0,
+   "matched": [],
+   "summary": "Oversubscription rates and what reviewers look for.",
+   "tags": [
+    "education"
+   ],
+   "why": "0"
+  },
+  {
+   "id": "s13",
+   "title": "Old item outside the 48-hour window (hidden)",
+   "url": "https://example.com/sample/old",
+   "source": "Sample science blog",
+   "category": "Science",
+   "published": "2026-10-09T08:00:00Z",
+   "type": "article",
+   "score": 5,
+   "matched": [
+    "physics"
+   ],
+   "summary": "Shouldn't appear: published more than 48 h before this digest was generated.",
+   "tags": [
+    "education"
+   ],
+   "why": "physics +1"
+  }
+ ],
+ "feeds": [],
+ "stats": null
+}

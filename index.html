@@ -1,0 +1,2544 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<!-- viewport-fit=cover lets us paint under the Android/iOS system bars; we then pad with safe-area insets -->
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#12161b">
+<meta name="description" content="Daily Command — what should I be doing right now?">
+<title>Daily Command</title>
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<style>
+/* =====================================================================
+   DAILY COMMAND — STYLES
+   Design rules: calm, glanceable, one thumb. The Now card is the hero;
+   everything else is secondary and collapsible. All tap targets >= 44px.
+   Themes are CSS custom properties switched with <html data-theme="...">.
+   ===================================================================== */
+:root{
+  --bg:#12161b; --surface:#1a2027; --surface2:#222a32; --border:#2c353e;
+  --text:#e6ebee; --muted:#93a0aa; --faint:#5f6b75;
+  --accent:#7fc8a9; --accent-ink:#0d1a14; --warn:#e8b86d; --danger:#e07a6f;
+  /* one hue per mode, used to tint the hero card */
+  --m-work:#7aa7e0; --m-life:#7fc8a9; --m-leisure:#e3b26b; --m-winddown:#a99be0;
+  --radius:18px; --gap:14px;
+  --font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color-scheme: dark;
+}
+:root[data-theme="light"]{
+  --bg:#f5f6f3; --surface:#ffffff; --surface2:#eef0ec; --border:#dfe3de;
+  --text:#1c2227; --muted:#5d6872; --faint:#9aa4ac;
+  --accent:#2f8a66; --accent-ink:#ffffff; --warn:#b07a1e; --danger:#b5483c;
+  --m-work:#3c6fb4; --m-life:#2f8a66; --m-leisure:#b07a1e; --m-winddown:#6b5bb5;
+  color-scheme: light;
+}
+:root[data-theme="sepia"]{
+  --bg:#f1e7d3; --surface:#faf3e3; --surface2:#efe3cb; --border:#dccdb0;
+  --text:#3a2f23; --muted:#76664f; --faint:#a8977b;
+  --accent:#8a5a2b; --accent-ink:#fff8ec; --warn:#a0681c; --danger:#a3442f;
+  --m-work:#4f6f8f; --m-life:#5f7d4e; --m-leisure:#a0681c; --m-winddown:#7a5d8a;
+  color-scheme: light;
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);
+  font-size:16px;line-height:1.45;-webkit-tap-highlight-color:transparent}
+body{min-height:100dvh;padding-top:env(safe-area-inset-top)}
+button,input,select,textarea{font:inherit;color:inherit}
+.num{font-variant-numeric:tabular-nums}
+.muted{color:var(--muted)} .small{font-size:.85rem} .hidden{display:none!important}
+
+/* ---------- top bar: date/time + mode chips ---------- */
+.top{position:sticky;top:0;z-index:5;background:var(--bg);
+  padding:10px 16px 8px;border-bottom:1px solid var(--border)}
+.top-row{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+.clock{font-size:1.05rem;font-weight:600}
+.mode-note{font-size:.8rem;color:var(--muted)}
+.modes{display:flex;gap:6px;margin-top:8px;overflow-x:auto;scrollbar-width:none}
+.chip{min-height:36px;padding:6px 12px;border-radius:999px;border:1px solid var(--border);
+  background:transparent;font-size:.88rem;white-space:nowrap;cursor:pointer}
+.chip.on{background:var(--mode-c,var(--accent));border-color:transparent;color:#10151a;font-weight:600}
+
+/* ---------- layout ---------- */
+/* overflow-anchor:none — views are re-rendered wholesale; the browser's scroll
+   anchoring would otherwise scroll a newly inserted nudge out of sight. */
+main{overflow-anchor:none;max-width:680px;margin:0 auto;
+  padding:14px 16px calc(96px + env(safe-area-inset-bottom))}
+.view{display:none} .view.on{display:block}
+h2{font-size:1.1rem;margin:22px 0 10px} h3{font-size:1rem;margin:0}
+
+/* ---------- the hero Now card ---------- */
+.now{position:relative;background:var(--surface);border-radius:24px;padding:22px 18px 16px;
+  border:1px solid var(--border);box-shadow:0 8px 30px rgba(0,0,0,.18);overflow:hidden}
+/* mode stripe across the top of the hero */
+.now::before{content:"";position:absolute;left:0;right:0;top:0;height:6px;background:var(--mode-c,var(--accent))}
+.now .label{display:flex;justify-content:space-between;gap:8px;font-size:.8rem;
+  letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.now .title{font-size:1.65rem;line-height:1.2;font-weight:700;margin:8px 0 2px;word-break:break-word}
+.now .sub{color:var(--muted);font-size:.95rem}
+.now .task{margin-top:14px;padding:12px 14px;border-radius:14px;background:var(--surface2)}
+.now .task .t{font-size:1.2rem;font-weight:600}
+.bar{height:6px;border-radius:6px;background:var(--surface2);margin:14px 0 6px;overflow:hidden}
+.bar>i{display:block;height:100%;background:var(--mode-c,var(--accent));border-radius:6px}
+.timer{font-size:2.6rem;font-weight:700;letter-spacing:.02em;margin:10px 0 0}
+.actions{display:flex;gap:10px;margin-top:14px;flex-wrap:wrap}
+.btn{min-height:48px;padding:10px 18px;border-radius:14px;border:1px solid var(--border);
+  background:var(--surface2);font-weight:600;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:6px}
+.btn.primary{background:var(--mode-c,var(--accent));color:#10151a;border-color:transparent;flex:1 1 auto}
+.btn.ghost{background:transparent}
+.btn.danger{color:var(--danger)}
+.btn.sm{min-height:44px;padding:8px 12px;font-size:.92rem}
+.next{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:14px;
+  padding-top:12px;border-top:1px dashed var(--border);font-size:.95rem}
+.next b{font-weight:600}
+.also{margin-top:8px;font-size:.85rem;color:var(--warn)}
+
+/* overrun nudge banner */
+.nudge{background:color-mix(in srgb,var(--warn) 18%,var(--surface));border:1px solid var(--warn);
+  border-radius:16px;padding:12px 14px;margin-bottom:12px}
+.nudge .actions{margin-top:8px}
+
+/* ---------- secondary, collapsible sections ---------- */
+details.sec{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);margin-top:12px}
+details.sec>summary{list-style:none;min-height:52px;padding:12px 16px;display:flex;align-items:center;
+  justify-content:space-between;cursor:pointer;font-weight:600}
+details.sec>summary::-webkit-details-marker{display:none}
+details.sec>summary::after{content:"›";transform:rotate(90deg);transition:transform .15s;color:var(--muted);font-size:1.3rem}
+details.sec[open]>summary::after{transform:rotate(-90deg)}
+details.sec .body{padding:0 16px 14px}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:14px 16px;margin-top:12px}
+
+/* ---------- lists ---------- */
+ul.list{list-style:none;margin:0;padding:0}
+ul.list li{display:flex;align-items:center;gap:6px;min-height:48px;border-bottom:1px solid var(--border)}
+ul.list li:last-child{border-bottom:0}
+ul.list .grow{flex:1;min-width:0;padding:8px 2px;cursor:pointer;word-break:break-word}
+.icon{width:44px;height:44px;flex:0 0 44px;border-radius:12px;border:0;background:transparent;
+  display:grid;place-items:center;cursor:pointer;font-size:1.1rem;color:var(--muted)}
+.icon.on{color:var(--warn)} .icon.next.on{color:var(--accent)}
+.chk{width:26px;height:26px;border-radius:50%;border:2px solid var(--faint);display:inline-block}
+.done .chk{background:var(--accent);border-color:var(--accent)}
+.done .grow{color:var(--faint);text-decoration:line-through}
+.tag{font-size:.72rem;padding:2px 8px;border-radius:999px;background:var(--surface2);color:var(--muted);white-space:nowrap}
+.warnchip{color:var(--warn)}
+.slot{display:flex;align-items:center;gap:10px;min-height:52px;padding:6px 10px;border-radius:14px;
+  border:1px dashed var(--border);margin-bottom:8px;cursor:pointer}
+.slot.filled{border-style:solid;background:var(--surface2)}
+.slot .n{width:28px;height:28px;border-radius:50%;display:grid;place-items:center;background:var(--surface);font-weight:700;font-size:.85rem}
+.row{display:flex;gap:8px;align-items:center}
+.row>input,.row>select{flex:1}
+input[type=text],input[type=time],input[type=number],input[type=date],select,textarea{
+  min-height:48px;padding:10px 12px;border-radius:12px;border:1px solid var(--border);background:var(--surface2);width:100%}
+textarea{min-height:110px;resize:vertical}
+label.f{display:block;margin:10px 0 4px;font-size:.85rem;color:var(--muted)}
+.seg{display:flex;background:var(--surface2);border-radius:12px;padding:3px;gap:3px}
+.seg button{flex:1;min-height:42px;border:0;border-radius:10px;background:transparent;cursor:pointer}
+.seg button.on{background:var(--surface);font-weight:600;box-shadow:0 1px 3px rgba(0,0,0,.15)}
+.kpi{display:flex;gap:10px;flex-wrap:wrap}
+.kpi div{flex:1 1 90px;background:var(--surface2);border-radius:14px;padding:10px 12px}
+.kpi b{display:block;font-size:1.35rem}
+.math{font-size:.82rem;color:var(--muted);background:var(--surface2);border-radius:10px;padding:8px 10px;margin-top:8px;
+  font-family:ui-monospace,SFMono-Regular,Menlo,monospace;overflow-x:auto;white-space:pre-wrap}
+.empty{color:var(--muted);padding:10px 0;font-size:.92rem}
+
+/* pomodoro ring */
+.ring{display:grid;place-items:center;margin:8px auto 0;width:220px;height:220px;position:relative}
+.ring svg{position:absolute;inset:0}
+.ring .in{text-align:center}
+.ring .in .timer{margin:0}
+
+/* ---------- Stage 2: full-screen morning flow ---------- */
+.overlay{position:fixed;inset:0;z-index:15;background:var(--bg);overflow-y:auto;overscroll-behavior:contain;
+  padding-top:env(safe-area-inset-top)}
+.ov-head{position:sticky;top:0;z-index:2;background:var(--bg);border-bottom:1px solid var(--border)}
+.ov-head>div{max-width:680px;margin:0 auto;padding:10px 16px;display:flex;align-items:center;gap:12px}
+.dots{display:flex;gap:6px;flex:1} .dots i{height:6px;flex:1;border-radius:3px;background:var(--surface2)}
+.dots i.on{background:var(--accent)}
+.ov-body{max-width:680px;margin:0 auto;padding:16px 16px calc(110px + env(safe-area-inset-bottom))}
+.ov-foot{position:fixed;left:0;right:0;bottom:0;z-index:3;background:var(--bg);border-top:1px solid var(--border);
+  padding:10px 16px calc(10px + env(safe-area-inset-bottom))}
+.ov-foot>div{max-width:680px;margin:0 auto;display:flex;gap:10px}
+.hello{font-size:1.7rem;font-weight:700;margin:4px 0 2px;line-height:1.2}
+/* weather */
+.wx-now{display:flex;gap:14px;align-items:center}
+.wx-ic{font-size:2.6rem;line-height:1}
+.wx-t{font-size:2rem;font-weight:700}
+/* digest */
+.dgclock{font-weight:700;font-size:1.05rem}
+.dgclock.over{color:var(--warn)}
+ul.dg li{align-items:flex-start;padding:8px 0}
+ul.dg a{color:var(--text);font-weight:600;text-decoration:none}
+ul.dg a:hover{text-decoration:underline}
+.sum{font-size:.88rem;color:var(--muted);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;margin-top:2px}
+.kw{display:inline-block;font-size:.72rem;padding:1px 8px;border-radius:999px;margin:3px 4px 0 0;
+  background:color-mix(in srgb,var(--accent) 24%,transparent)}
+.catname{font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:16px 0 2px}
+.banner{padding:8px 12px;border-radius:12px;background:var(--surface2);font-size:.85rem;color:var(--muted);margin-bottom:10px}
+.banner.warn{background:color-mix(in srgb,var(--warn) 18%,var(--surface));color:var(--text);border:1px solid var(--warn)}
+.caught{text-align:center;padding:28px 8px}
+.caught .big{width:88px;height:88px;border-radius:50%;background:var(--accent);color:var(--accent-ink);
+  display:grid;place-items:center;font-size:2.8rem;margin:0 auto 14px}
+
+a.btn{text-decoration:none;color:inherit} a.btn.primary{color:#10151a}
+ul.list a{color:var(--text);text-decoration:none} ul.list a:hover{text-decoration:underline}
+.card.listen{border-left:4px solid var(--mode-c,var(--accent))}
+.card.listen .math{margin-top:6px}
+
+/* ---------- floating capture button + bottom nav ---------- */
+.fab{position:fixed;right:18px;bottom:calc(82px + env(safe-area-inset-bottom));z-index:6;
+  width:58px;height:58px;border-radius:18px;border:0;background:var(--accent);color:var(--accent-ink);
+  font-size:2rem;line-height:1;box-shadow:0 8px 20px rgba(0,0,0,.3);cursor:pointer}
+nav.bottom{position:fixed;left:0;right:0;bottom:0;z-index:6;display:flex;justify-content:space-around;
+  background:var(--surface);border-top:1px solid var(--border);padding-bottom:env(safe-area-inset-bottom)}
+nav.bottom button{flex:1;min-height:62px;border:0;background:transparent;display:flex;flex-direction:column;
+  align-items:center;justify-content:center;gap:2px;font-size:.72rem;color:var(--muted);cursor:pointer;position:relative}
+nav.bottom button svg{width:24px;height:24px}
+nav.bottom button.on{color:var(--text);font-weight:600}
+nav.bottom button.on::before{content:"";position:absolute;top:0;left:30%;right:30%;height:3px;border-radius:0 0 3px 3px;background:var(--accent)}
+.badge{position:absolute;top:8px;left:55%;min-width:18px;height:18px;padding:0 5px;border-radius:9px;
+  background:var(--warn);color:#111;font-size:.68rem;font-weight:700;display:grid;place-items:center}
+
+/* Desktop: nav becomes a left rail, content stays a calm single column */
+@media (min-width:900px){
+  nav.bottom{top:0;right:auto;width:96px;flex-direction:column;justify-content:flex-start;padding-top:80px;border-top:0;border-right:1px solid var(--border)}
+  nav.bottom button{flex:0 0 76px}
+  .modes{flex-wrap:wrap}                        /* plenty of room: lens chips wrap instead of scrolling */
+  nav.bottom button.on::before{top:20%;bottom:20%;left:0;right:auto;width:3px;height:auto}
+  body{padding-left:96px}                       /* room for the rail; main stays centred via margin:auto */
+  .top{padding-inline:max(16px,calc((100% - 648px) / 2))}
+  main{padding-bottom:60px}
+  .fab{bottom:28px;right:28px}
+}
+
+/* ---------- dialogs as bottom sheets ---------- */
+dialog{border:0;padding:0;background:transparent;max-width:100vw;width:100%;margin:auto auto 0;color:var(--text)}
+dialog::backdrop{background:rgba(0,0,0,.5)}
+.sheet{background:var(--surface);border-radius:24px 24px 0 0;padding:18px 18px calc(18px + env(safe-area-inset-bottom));
+  max-height:88dvh;overflow:auto;max-width:680px;margin:0 auto}
+@media (min-width:700px){dialog{margin:auto} .sheet{border-radius:24px}}
+.sheet h3{font-size:1.15rem;margin-bottom:6px}
+.sheet .actions{position:sticky;bottom:0;background:var(--surface);padding-top:10px}
+.toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(150px + env(safe-area-inset-bottom));z-index:20;
+  background:var(--text);color:var(--bg);padding:10px 16px;border-radius:12px;font-size:.92rem;display:flex;gap:12px;align-items:center;max-width:90vw}
+.toast button{background:transparent;border:0;color:inherit;font-weight:700;min-height:36px;cursor:pointer}
+.help p,.help li{font-size:.95rem} .help code{background:var(--surface2);padding:1px 5px;border-radius:5px}
+.limit{border-left:3px solid var(--warn);padding-left:10px}
+</style>
+</head>
+<body>
+
+<!-- ============================ TOP BAR ============================ -->
+<header class="top">
+  <div class="top-row">
+    <div class="clock num" id="clock">—</div>
+    <div class="mode-note" id="modeNote">auto</div>
+  </div>
+  <div class="modes" id="modes" role="group" aria-label="Mode"></div>
+</header>
+
+<main>
+  <!-- NOW: the hero card + mode-dependent secondary sections -->
+  <section class="view on" id="view-now" aria-label="Now"></section>
+  <!-- TASKS: today's top 3 + projects with a "next action" each -->
+  <section class="view" id="view-tasks" aria-label="Tasks"></section>
+  <!-- FOCUS: pomodoro, session log, weekly chart -->
+  <section class="view" id="view-focus" aria-label="Focus"></section>
+  <!-- INBOX: quick-capture items waiting to be sorted -->
+  <section class="view" id="view-inbox" aria-label="Inbox"></section>
+  <!-- MORE: events, routine editor, settings, data, help -->
+  <section class="view" id="view-more" aria-label="More"></section>
+</main>
+
+<button class="fab" data-act="capture" aria-label="Quick capture">+</button>
+
+<nav class="bottom" id="nav">
+  <button data-view="now" class="on" aria-label="Now">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Now</button>
+  <button data-view="tasks" aria-label="Tasks">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6h11M9 12h11M9 18h11"/><path d="M4 6l1 1 2-2M4 12l1 1 2-2M4 18l1 1 2-2"/></svg>Tasks</button>
+  <button data-view="focus" aria-label="Focus">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="13" r="8"/><path d="M12 9v4M9 2h6"/></svg>Focus</button>
+  <button data-view="inbox" aria-label="Inbox">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 13l3-8h12l3 8v6H3z"/><path d="M3 13h5l1 3h6l1-3h5"/></svg>Inbox<span class="badge hidden" id="inboxBadge">0</span></button>
+  <button data-view="more" aria-label="More">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="5" cy="12" r="1.5"/><circle cx="12" cy="12" r="1.5"/><circle cx="19" cy="12" r="1.5"/></svg>More</button>
+</nav>
+
+<!-- Stage 2: the guided morning sequence (and stand-alone digest sessions) -->
+<section class="overlay hidden" id="morning" aria-label="Morning sequence" role="dialog" aria-modal="true"></section>
+
+<!-- One reusable dialog; its contents are rendered per use -->
+<dialog id="dlg"><div class="sheet" id="dlgBody"></div></dialog>
+<div class="toast hidden" id="toast"></div>
+
+<script>
+/* =====================================================================
+   PART 1 — THE NOW/NEXT ENGINE
+   Pure functions only: (time, state) -> what to do now / next.
+   No DOM, no storage, no network — so it works offline by construction
+   and can be unit-tested in Node (see tests/engine.test.cjs, which
+   extracts everything between the ENGINE START/END markers).
+
+   Rules, in priority order:
+     1. A timed calendar event in progress overrides everything.
+        Overlapping events: the one that started most recently wins
+        (it's the more specific interruption); ties -> the one ending first.
+        All-day events never override; they're shown as context.
+     2. Otherwise the current routine block. Blocks whose end <= start
+        wrap past midnight, so at 00:15 Monday we still check Sunday's
+        (weekend) template. Overlapping blocks: later start wins.
+     3. Inside a work block (deep/admin), show the top task:
+        today's top 3 -> a project's next action -> oldest open task.
+   "Next" is found by stepping through every boundary (event/block
+   start or end) and returning the first moment the answer changes,
+   skipping free gaps. This handles every overlap shape uniformly.
+   ===================================================================== */
+// ==ENGINE START==
+const Engine = (() => {
+  const MIN = 60 * 1000;
+  const WORK_KINDS = new Set(['deep', 'admin']);
+  const MODES = ['work', 'life', 'leisure', 'winddown'];
+
+  const pad = n => String(n).padStart(2, '0');
+  /** Local calendar date as "YYYY-MM-DD" (never UTC, so no off-by-one at night). */
+  const dateKey = d => `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
+  /** "07:30" -> 450 minutes since midnight; NaN if malformed. */
+  function parseHM(s) {
+    const m = /^(\d{1,2}):(\d{2})$/.exec(String(s || '').trim());
+    if (!m) return NaN;
+    const h = +m[1], mi = +m[2];
+    return (h > 23 || mi > 59) ? NaN : h * 60 + mi;
+  }
+  /** A Date at local midnight + offsetDays, + minutes. Built from local
+      components so DST changes are handled by the JS Date itself. */
+  const atDay = (base, offsetDays, minutes = 0) =>
+    new Date(base.getFullYear(), base.getMonth(), base.getDate() + offsetDays, Math.floor(minutes / 60), minutes % 60);
+  const isWeekend = d => d.getDay() === 0 || d.getDay() === 6;
+
+  /** The "logical day": before the cutoff hour (default 04:00) you're still in yesterday.
+      Used for top 3, wrap-up and "done today" so 00:30 still counts as last night. */
+  const logicalDay = (now, cutoffHour = 4) => atDay(now, now.getHours() < cutoffHour ? -1 : 0);
+
+  /** Expand the weekday/weekend templates into concrete, dated block instances
+      for yesterday..+2 days (yesterday is needed for blocks that wrap midnight). */
+  function blockInstances(routine, now) {
+    const out = [];
+    for (const off of [-1, 0, 1, 2]) {
+      const day = atDay(now, off);
+      const tpl = (isWeekend(day) ? routine.weekend : routine.weekday) || [];
+      for (const b of tpl) {
+        const s = parseHM(b.start), e = parseHM(b.end);
+        if (isNaN(s) || isNaN(e) || s === e) continue;          // ignore broken / zero-length blocks
+        const start = atDay(now, off, s);
+        const end = e > s ? atDay(now, off, e) : atDay(now, off + 1, e); // wraps past midnight
+        out.push({ ...b, start, end, day: dateKey(day), key: `${dateKey(day)}|${b.id}` });
+      }
+    }
+    return out.sort((a, b) => a.start - b.start);
+  }
+
+  /** Normalise events: Date objects; drop invalid; zero/negative length -> ignored. */
+  function normEvents(events) {
+    return (events || []).map(e => ({ ...e, s: new Date(e.start), e: new Date(e.end) }))
+      .filter(e => !isNaN(e.s) && !isNaN(e.e) && (e.allDay || e.e > e.s));
+  }
+
+  /** Timed events in progress at `t`, best candidate first. */
+  function activeEvents(evs, t) {
+    return evs.filter(e => !e.allDay && e.s <= t && t < e.e)
+      .sort((a, b) => (b.s - a.s) || (a.e - b.e));
+  }
+
+  /** Choose the task to show inside a work block. */
+  function pickTask(state, dKey) {
+    const tasks = state.tasks || [];
+    const byId = id => tasks.find(t => t.id === id);
+    const skipped = new Set((state.skips || {})[dKey] || []);
+    const cands = [];
+    for (const id of (state.top3 || {})[dKey] || []) {
+      const t = byId(id); if (t && !t.done) cands.push({ task: t, source: 'top3' });
+    }
+    for (const p of state.projects || []) {
+      const t = byId(p.nextId); if (t && !t.done) cands.push({ task: t, source: 'next', project: p });
+    }
+    const open = tasks.filter(t => !t.done).sort((a, b) => (a.created || 0) - (b.created || 0));
+    for (const t of open) cands.push({ task: t, source: 'oldest' });
+    // de-duplicate, then honour "skip for today" — unless everything was skipped
+    const seen = new Set(), uniq = cands.filter(c => !seen.has(c.task.id) && seen.add(c.task.id));
+    const notSkipped = uniq.filter(c => !skipped.has(c.task.id));
+    return (notSkipped[0] || uniq[0] || null);
+  }
+
+  /** Auto mode for a free gap: inherit the block that just ended (<3h ago),
+      otherwise fall back to the hour of day. */
+  function gapMode(t, inst) {
+    const prev = inst.filter(b => b.end <= t).sort((a, b) => b.end - a.end)[0];
+    if (prev && t - prev.end <= 3 * 60 * MIN) return prev.mode;
+    const h = t.getHours();
+    if (h < 5 || h >= 22) return 'winddown';
+    if (h < 9) return 'life';
+    if (h < 17 && !isWeekend(t)) return 'work';
+    return h < 19 ? 'life' : 'leisure';
+  }
+
+  /** What is "now" at time t (no Next computation — avoids recursion). */
+  function resolveAt(t, state, inst, evs) {
+    const block = inst.filter(b => b.start <= t && t < b.end).sort((a, b) => b.start - a.start)[0] || null;
+    const mode = block ? block.mode : gapMode(t, inst);
+    const act = activeEvents(evs, t);
+    if (act.length) {
+      const ev = act[0];
+      return { type: 'event', id: 'ev:' + ev.id, title: ev.title, location: ev.location || '',
+        start: ev.s, end: ev.e, mode, kind: 'event', underlying: block,
+        also: act.slice(1).map(e => e.title) };
+    }
+    if (block) {
+      const item = { type: 'block', id: block.key, key: block.key, blockId: block.id, title: block.name,
+        start: block.start, end: block.end, mode: block.mode, kind: block.kind, day: block.day };
+      if (WORK_KINDS.has(block.kind)) item.pick = pickTask(state, block.day);
+      return item;
+    }
+    // free gap: bounded by the latest thing that ended and the earliest thing that starts
+    const ends = [...inst.map(b => b.end), ...evs.filter(e => !e.allDay).map(e => e.e)].filter(x => x <= t);
+    const starts = [...inst.map(b => b.start), ...evs.filter(e => !e.allDay).map(e => e.s)].filter(x => x > t);
+    return { type: 'gap', id: 'gap', title: 'Free time', kind: 'gap', mode,
+      start: ends.length ? new Date(Math.max(...ends)) : null,
+      end: starts.length ? new Date(Math.min(...starts)) : null };
+  }
+
+  /** Every moment within the horizon where the answer might change. */
+  function boundaries(t, inst, evs, horizonH = 40) {
+    const lim = t.getTime() + horizonH * 60 * MIN, set = new Set();
+    for (const b of inst) [b.start, b.end].forEach(x => { const v = x.getTime(); if (v > t && v <= lim) set.add(v); });
+    for (const e of evs) if (!e.allDay) [e.s, e.e].forEach(x => { const v = x.getTime(); if (v > t && v <= lim) set.add(v); });
+    return [...set].sort((a, b) => a - b).map(v => new Date(v));
+  }
+
+  /** Upcoming distinct items (skipping gaps). Next = agenda(...)[0]. */
+  function agenda(t, state, max = 6, horizonH = 40) {
+    const inst = blockInstances(state.routine, t), evs = normEvents(state.events);
+    const out = []; let lastId = resolveAt(t, state, inst, evs).id;
+    for (const b of boundaries(t, inst, evs, horizonH)) {
+      const it = resolveAt(b, state, inst, evs);
+      if (it.id !== lastId && it.type !== 'gap') {
+        // "resume": we return to a block that had already started (e.g. after a meeting)
+        out.push({ ...it, at: b, resume: it.type === 'block' && it.start < b });
+        if (out.length >= max) break;
+      }
+      lastId = it.id;
+    }
+    return out;
+  }
+
+  /** Overrun nudge: you pressed Start on something, its planned end passed
+      `overrunMin` ago, and the schedule has moved on. */
+  function overrun(t, state, current, overrunMin = 20) {
+    const a = state.active;
+    if (!a || !a.plannedEnd) return null;
+    if (current && current.id === a.id) return null;               // still the same thing: no nudge
+    if (a.snoozeUntil && t < new Date(a.snoozeUntil)) return null;
+    const over = (t - new Date(a.plannedEnd)) / MIN;
+    return over >= overrunMin ? { active: a, minutesOver: Math.floor(over) } : null;
+  }
+
+  /** Main entry point used by the UI. */
+  function resolve(t, state) {
+    const inst = blockInstances(state.routine, t), evs = normEvents(state.events);
+    let current = resolveAt(t, state, inst, evs);
+    const ag = agenda(t, state, 6);
+    const ld = logicalDay(t, (state.settings || {}).dayCutoff ?? 4);
+    const allDay = evs.filter(e => e.allDay && e.s <= atDay(ld, 1) && e.e > ld).map(e => e.title);
+    const autoMode = current.mode;
+    const ov = state.modeOverride;
+    const overrideOn = !!(ov && MODES.includes(ov.mode) && t < new Date(ov.until));
+    // Rule 3b: if you've manually switched to Work (e.g. "Start work" at 08:40, before
+    // the first work block), show your top task even though the routine says otherwise.
+    // Calendar events still win — you can't do deep work in a meeting.
+    if (overrideOn && ov.mode === 'work' && current.type !== 'event' && !current.pick) {
+      current = { ...current, pick: pickTask(state, current.day || dateKey(ld)), forcedWork: true };
+    }
+    return {
+      now: t, current, next: ag[0] || null, agenda: ag, allDay,
+      autoMode, mode: overrideOn ? ov.mode : autoMode, overrideOn,
+      overrun: overrun(t, state, current, (state.settings || {}).overrunMin ?? 20),
+      logicalDay: dateKey(ld),
+    };
+  }
+
+  return { resolve, agenda, overrun, pickTask, blockInstances, logicalDay, dateKey, parseHM, atDay, isWeekend, MODES, WORK_KINDS };
+})();
+// ==ENGINE END==
+</script>
+
+<script>
+/* =====================================================================
+   PART 2 — STATE & PERSISTENCE
+   Everything lives in one JSON object in localStorage (small, sync,
+   survives offline). Export/import is the same JSON. Later stages sync
+   this same object to Google Drive's appDataFolder.
+   ===================================================================== */
+const STORE_KEY = 'dailycommand.v1';
+const uid = () => Date.now().toString(36) + Math.random().toString(36).slice(2, 7);
+
+/** Default routine. Blocks: kind = what it is, mode = which dashboard it implies. */
+function defaultRoutine() {
+  const b = (name, start, end, kind, mode) => ({ id: uid(), name, start, end, kind, mode });
+  return {
+    weekday: [
+      b('Wake up', '07:30', '07:45', 'wake', 'life'),
+      b('Morning sequence', '07:45', '09:00', 'morning', 'life'),
+      b('Deep work', '09:00', '11:30', 'deep', 'work'),
+      b('Admin', '11:30', '12:30', 'admin', 'work'),
+      b('Lunch', '12:30', '13:15', 'lunch', 'life'),
+      b('Deep work', '13:15', '15:30', 'deep', 'work'),
+      b('German', '15:30', '16:00', 'german', 'life'),
+      b('Admin & shallow work', '16:00', '17:30', 'admin', 'work'),
+      b('Life', '17:30', '19:00', 'life', 'life'),
+      b('Leisure', '19:00', '22:00', 'leisure', 'leisure'),
+      b('Wind-down', '22:00', '23:00', 'winddown', 'winddown'),
+    ],
+    weekend: [
+      b('Wake up', '08:30', '08:45', 'wake', 'life'),
+      b('Morning sequence', '08:45', '10:00', 'morning', 'life'),
+      b('Life & errands', '10:00', '13:00', 'life', 'life'),
+      b('Lunch', '13:00', '14:00', 'lunch', 'life'),
+      b('Leisure', '14:00', '18:00', 'leisure', 'leisure'),
+      b('German', '18:00', '18:30', 'german', 'life'),
+      b('Leisure', '18:30', '23:00', 'leisure', 'leisure'),
+      b('Wind-down', '23:00', '00:30', 'winddown', 'winddown'),   // wraps past midnight
+    ],
+  };
+}
+
+function defaultState() {
+  return {
+    v: 1,
+    settings: { theme: 'auto', pomoWork: 25, pomoBreak: 5, pomoLong: 15, longEvery: 4, autoBreak: true,
+      overrunMin: 20, dayCutoff: 4, speechLang: 'en-GB', sound: true, welcomed: false, name: '',
+      // Stage 2 — morning sequence, weather, digest
+      morningAuto: true,       // open the morning flow at the first open of the day…
+      morningLatest: '12:00',  // …but only if that first open is before this time
+      digestMin: 15,           // time-box for reading the digest
+      digestMax: 30,           // max items per digest session (finite by design)
+      digestHours: 48,         // ignore items older than this (relative to when digest.json was built)
+      location: null,          // {name, lat, lon} for Open-Meteo
+      // Stage 3 — lenses, fresh-content reminder, optional GitHub publishing
+      morningLens: 'Morning',  // lens used by the morning sequence's digest
+      lensByMode: { work: 'Learn', life: 'Morning', leisure: 'Laugh', winddown: 'Wind down' },
+      freshDays: 30,           // remind me to add new feeds after N days (0 = off)
+      ghRepo: '', ghBranch: 'main',
+      // Listen while working (PART 4d)
+      audioPlan: { deep: 'focus', admin: 'talk', lunch: 'talk' },   // per block kind: talk / focus / off
+      focusAudio: null },      // {label, url} e.g. an instrumental YouTube playlist
+    routine: defaultRoutine(),
+    events: [],            // {id,title,start,end,allDay,location,source:'manual'|'google'}
+    projects: [
+      { id: 'p-yt', name: 'YouTube channel', nextId: null },
+      { id: 'p-wed', name: 'Wedding', nextId: null },
+      { id: 'p-pm', name: 'PM learning', nextId: null },
+      { id: 'p-admin', name: 'Admin', nextId: null },
+    ],
+    tasks: [],             // {id,title,projectId,done,doneAt,created}
+    top3: {},              // {"YYYY-MM-DD": [taskId, taskId, taskId]}
+    skips: {},             // {"YYYY-MM-DD": [taskId]}  "not now" for today
+    inbox: [],             // {id,text,created}
+    watch: [],             // watch-later / Leisure queue {id,title,url,source,category,type,duration,created}
+    morning: {},           // {"YYYY-MM-DD": {startedAt, step, doneAt, skipped}}
+    digestRead: {},        // {itemId: timestamp} — read or saved digest items
+    digestSession: null,   // {day, lens, types, ids:[...], startedAt, endsAt, built} — the frozen, finite list being read
+    watchlist: null,       // working copy of feeds.json (feeds, tags, lenses, keywords)
+    watchlistDirty: false, // edited here but not yet published to the repo
+    watchlistBase: null,   // repo's updatedAt when local edits began (conflict check)
+    freshSnoozeUntil: null,// "add something fresh" snoozed until
+    listening: null,       // {key, title, durationSec, startedAt} — what you last pressed Play on
+    listenSkip: {},        // {"YYYY-MM-DD": [queue keys]} skipped for today
+    pomoLog: [],           // {id,start,end,min,taskId,taskTitle,partial}
+    pomo: { phase: 'idle', count: 0 },
+    wrapups: {},           // {"YYYY-MM-DD": {done:[ids], rolled:[ids], at}}
+    active: null,          // {id,title,plannedEnd,startedAt,snoozeUntil}
+    modeOverride: null,    // {mode, until}
+    ui: { open: {} },      // remembered open/closed sections
+  };
+}
+
+let S = load();
+function load() {
+  try {
+    const raw = localStorage.getItem(STORE_KEY);
+    if (!raw) return defaultState();
+    return migrate(JSON.parse(raw));
+  } catch (e) { console.warn('Load failed, starting fresh', e); return defaultState(); }
+}
+/** Fill in anything missing from older versions / partial imports. */
+function migrate(d) {
+  const def = defaultState();
+  const out = { ...def, ...d };
+  out.settings = { ...def.settings, ...(d.settings || {}) };
+  out.ui = { ...def.ui, ...(d.ui || {}) };
+  out.pomo = { ...def.pomo, ...(d.pomo || {}) };
+  if (!out.routine || !Array.isArray(out.routine.weekday)) out.routine = def.routine;
+  return out;
+}
+function save() {
+  S.savedAt = new Date().toISOString();
+  try { localStorage.setItem(STORE_KEY, JSON.stringify(S)); }
+  catch (e) { toast('Could not save — storage full?'); }
+}
+</script>
+
+<script>
+/* =====================================================================
+   PART 3 — SMALL HELPERS (formatting, escaping, toast, dialogs)
+   ===================================================================== */
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const fmtT = d => d ? d.toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' }) : '';
+function fmtDur(ms) {
+  const m = Math.max(0, Math.round(ms / 60000)), h = Math.floor(m / 60);
+  return h ? `${h}h ${String(m % 60).padStart(2, '0')}m` : `${m}m`;
+}
+const fmtClock = ms => { const s = Math.max(0, Math.ceil(ms / 1000)); return `${String(Math.floor(s / 60)).padStart(2, '0')}:${String(s % 60).padStart(2, '0')}`; };
+/** "tomorrow 07:30", "Sat 10:00" or "11:30" relative to now. */
+function whenLabel(d, now = new Date()) {
+  const dk = Engine.dateKey;
+  if (dk(d) === dk(now)) return fmtT(d);
+  if (dk(d) === dk(Engine.atDay(now, 1))) return 'tomorrow ' + fmtT(d);
+  return d.toLocaleDateString('en-GB', { weekday: 'short' }) + ' ' + fmtT(d);
+}
+const today = () => Engine.dateKey(Engine.logicalDay(new Date(), S.settings.dayCutoff));
+const tomorrow = () => Engine.dateKey(Engine.atDay(Engine.logicalDay(new Date(), S.settings.dayCutoff), 1));
+const taskById = id => S.tasks.find(t => t.id === id);
+const projById = id => S.projects.find(p => p.id === id);
+const MODE_LABEL = { work: 'Work', life: 'Life', leisure: 'Leisure', winddown: 'Wind-down' };
+const KIND_LABEL = { wake: 'Wake', morning: 'Morning', deep: 'Deep work', admin: 'Admin', german: 'German',
+  lunch: 'Lunch', life: 'Life', leisure: 'Leisure', winddown: 'Wind-down', other: 'Other' };
+
+let toastTimer;
+function toast(msg, actionLabel, action) {
+  const el = $('#toast');
+  el.innerHTML = `<span>${esc(msg)}</span>` + (actionLabel ? `<button id="toastBtn">${esc(actionLabel)}</button>` : '');
+  el.classList.remove('hidden');
+  if (actionLabel) $('#toastBtn').onclick = () => { el.classList.add('hidden'); action(); };
+  clearTimeout(toastTimer); toastTimer = setTimeout(() => el.classList.add('hidden'), actionLabel ? 8000 : 3000);
+}
+
+/** Generic form sheet. fields: [{name,label,type,value,options}] -> Promise<values|null>.
+    Returns {__delete:true} if the optional delete button is used. */
+function formSheet(title, fields, { okLabel = 'Save', deletable = false, note = '' } = {}) {
+  return new Promise(resolve => {
+    const dlg = $('#dlg');
+    const inp = f => {
+      const id = 'f_' + f.name, v = f.value ?? '';
+      if (f.type === 'select') return `<select id="${id}">${f.options.map(o => `<option value="${esc(o.value)}" ${o.value === v ? 'selected' : ''}>${esc(o.label)}</option>`).join('')}</select>`;
+      if (f.type === 'checkbox') return `<label class="row" style="min-height:44px"><input type="checkbox" id="${id}" ${v ? 'checked' : ''} style="width:22px;height:22px"> ${esc(f.hint || '')}</label>`;
+      if (f.type === 'textarea') return `<textarea id="${id}">${esc(v)}</textarea>`;
+      return `<input type="${f.type || 'text'}" id="${id}" value="${esc(v)}" ${f.min != null ? `min="${f.min}"` : ''} ${f.max != null ? `max="${f.max}"` : ''}>`;
+    };
+    $('#dlgBody').innerHTML = `<h3>${esc(title)}</h3>${note ? `<p class="muted small">${note}</p>` : ''}
+      ${fields.map(f => `<label class="f" for="f_${f.name}">${esc(f.label)}</label>${inp(f)}`).join('')}
+      <div class="actions">
+        ${deletable ? '<button class="btn danger" data-r="del">Delete</button>' : ''}
+        <button class="btn ghost" data-r="cancel">Cancel</button>
+        <button class="btn primary" data-r="ok">${esc(okLabel)}</button></div>`;
+    const done = val => { dlg.close(); resolve(val); };
+    $('#dlgBody').onclick = e => {
+      const r = e.target.closest('[data-r]')?.dataset.r; if (!r) return;
+      if (r === 'cancel') return done(null);
+      if (r === 'del') return done({ __delete: true });
+      const out = {};
+      for (const f of fields) {
+        const el = document.getElementById('f_' + f.name);
+        out[f.name] = f.type === 'checkbox' ? el.checked : f.type === 'number' ? Number(el.value) : el.value.trim();
+      }
+      done(out);
+    };
+    dlg.onclose = () => resolve(null);
+    dlg.showModal();
+    const first = $('#dlgBody input[type=text], #dlgBody textarea'); if (first) setTimeout(() => first.focus(), 50);
+  });
+}
+
+/** Pick one option from a list -> Promise<value|null> */
+function choose(title, options) {
+  return new Promise(resolve => {
+    const dlg = $('#dlg');
+    $('#dlgBody').innerHTML = `<h3>${esc(title)}</h3><ul class="list">${options.length ? options.map((o, i) =>
+      `<li><div class="grow" data-i="${i}">${esc(o.label)} ${o.tag ? `<span class="tag">${esc(o.tag)}</span>` : ''}</div></li>`).join('')
+      : '<li class="empty">Nothing to choose from yet.</li>'}</ul>
+      <div class="actions"><button class="btn ghost" data-r="cancel" style="flex:1">Cancel</button></div>`;
+    $('#dlgBody').onclick = e => {
+      const i = e.target.closest('[data-i]')?.dataset.i;
+      if (i != null) { dlg.close(); resolve(options[+i].value); }
+      else if (e.target.closest('[data-r]')) { dlg.close(); resolve(null); }
+    };
+    dlg.onclose = () => resolve(null);
+    dlg.showModal();
+  });
+}
+
+/** Little chime + vibration for timer ends (only while the page is alive). */
+function chime() {
+  try { navigator.vibrate?.([200, 100, 200]); } catch (e) {}
+  if (!S.settings.sound) return;
+  try {
+    const ctx = new (window.AudioContext || window.webkitAudioContext)();
+    [660, 880].forEach((f, i) => {
+      const o = ctx.createOscillator(), g = ctx.createGain();
+      o.frequency.value = f; o.connect(g); g.connect(ctx.destination);
+      const t0 = ctx.currentTime + i * 0.22;
+      g.gain.setValueAtTime(0.0001, t0); g.gain.exponentialRampToValueAtTime(0.25, t0 + 0.02);
+      g.gain.exponentialRampToValueAtTime(0.0001, t0 + 0.2); o.start(t0); o.stop(t0 + 0.22);
+    });
+  } catch (e) {}
+}
+/** System notification if permitted (via the service worker so it works on Android). */
+async function notify(title, body) {
+  chime();
+  if (!('Notification' in window) || Notification.permission !== 'granted') return toast(title);
+  try {
+    const reg = await navigator.serviceWorker?.getRegistration();
+    if (reg) reg.showNotification(title, { body, tag: 'daily-command', icon: 'icons/icon-192.png', badge: 'icons/icon-192.png' });
+    else new Notification(title, { body });
+  } catch (e) { toast(title); }
+}
+</script>
+
+<script>
+/* =====================================================================
+   PART 4 — POMODORO
+   Timestamp-based (endsAt), so it survives reloads, tab switches and
+   the phone sleeping: on return we "catch up" any phases that ended.
+   ===================================================================== */
+const Pomo = {
+  minutesFor(phase) { return phase === 'work' ? S.settings.pomoWork : phase === 'long' ? S.settings.pomoLong : S.settings.pomoBreak; },
+  start(phase = 'work', taskId = null, from = Date.now()) {
+    const mins = this.minutesFor(phase);
+    S.pomo = { ...S.pomo, phase, taskId: taskId ?? S.pomo.taskId ?? null, startedAt: from, endsAt: from + mins * 60000, planned: mins, paused: false };
+    save();
+  },
+  pause() { if (S.pomo.phase === 'idle' || S.pomo.paused) return; S.pomo.paused = true; S.pomo.remaining = S.pomo.endsAt - Date.now(); save(); },
+  resume() { if (!S.pomo.paused) return; S.pomo.endsAt = Date.now() + S.pomo.remaining; S.pomo.paused = false; save(); },
+  /** Stop early. A work session of >= 5 min is logged as partial (honest log). */
+  stop() {
+    const p = S.pomo;
+    if (p.phase === 'work') {
+      const end = p.paused ? p.endsAt - p.remaining : Date.now();
+      const min = Math.round((end - p.startedAt) / 60000);
+      if (min >= 5) this.log(p.startedAt, end, min, true);
+    }
+    S.pomo = { phase: 'idle', count: p.count || 0, taskId: p.taskId }; save();
+  },
+  log(start, end, min, partial) {
+    const t = taskById(S.pomo.taskId);
+    S.pomoLog.push({ id: uid(), start, end, min, taskId: t?.id || null, taskTitle: t?.title || '', partial });
+  },
+  /** Called every second while visible and on load. Handles multiple elapsed phases. */
+  tick() {
+    let changed = false, guard = 0;
+    while (S.pomo.phase !== 'idle' && !S.pomo.paused && Date.now() >= S.pomo.endsAt && guard++ < 5) {
+      const p = S.pomo; changed = true;
+      if (p.phase === 'work') {
+        this.log(p.startedAt, p.endsAt, p.planned, false);
+        S.pomo.count = (p.count || 0) + 1;
+        const longNext = S.pomo.count % S.settings.longEvery === 0;
+        notify('Focus session done', longNext ? 'Long break — stand up, move.' : 'Short break.');
+        if (S.settings.autoBreak) this.start(longNext ? 'long' : 'break', p.taskId, p.endsAt);  // break starts when work ended
+        else S.pomo = { phase: 'idle', count: S.pomo.count, taskId: p.taskId };
+      } else {
+        notify('Break over', 'Back to it — check the Now card.');
+        S.pomo = { phase: 'idle', count: p.count, taskId: p.taskId };
+      }
+    }
+    if (changed) save();
+    return changed;
+  },
+  remaining() { const p = S.pomo; return p.paused ? p.remaining : p.endsAt - Date.now(); },
+};
+</script>
+
+<script>
+/* =====================================================================
+   PART 4b — STAGE 2: WEATHER, DIGEST, MORNING SEQUENCE
+   Network data (weather, digest) lives in a separate cache key, not in
+   your exported/synced data: it's re-fetchable, so it shouldn't bloat
+   backups. Every cached copy carries fetchedAt so the UI can say
+   "updated 2 h ago" when you're offline.
+   ===================================================================== */
+const CACHE_KEY = 'dailycommand.cache';
+let C = (() => { try { return JSON.parse(localStorage.getItem(CACHE_KEY)) || {}; } catch (e) { return {}; } })();
+const saveCache = () => { try { localStorage.setItem(CACHE_KEY, JSON.stringify(C)); } catch (e) {} };
+function ago(ts) {
+  const m = Math.round((Date.now() - ts) / 60000);
+  return m < 1 ? 'just now' : m < 60 ? `${m} min ago` : m < 1440 ? `${Math.round(m / 60)} h ago` : `${Math.round(m / 1440)} d ago`;
+}
+const morningOpen = () => !$('#morning').classList.contains('hidden');
+/** Re-render whatever is visible (main view + morning overlay). */
+function rerenderAll() { render(); }
+
+/* ---------------- WEATHER (Open-Meteo: free, no key, CORS-enabled) ---------------- */
+// WMO weather codes -> [icon, label]
+const WMO = { 0: ['☀️', 'Clear'], 1: ['🌤️', 'Mainly clear'], 2: ['⛅', 'Partly cloudy'], 3: ['☁️', 'Overcast'],
+  45: ['🌫️', 'Fog'], 48: ['🌫️', 'Rime fog'], 51: ['🌦️', 'Light drizzle'], 53: ['🌦️', 'Drizzle'], 55: ['🌧️', 'Heavy drizzle'],
+  56: ['🌧️', 'Freezing drizzle'], 57: ['🌧️', 'Freezing drizzle'], 61: ['🌦️', 'Light rain'], 63: ['🌧️', 'Rain'], 65: ['🌧️', 'Heavy rain'],
+  66: ['🌧️', 'Freezing rain'], 67: ['🌧️', 'Freezing rain'], 71: ['🌨️', 'Light snow'], 73: ['🌨️', 'Snow'], 75: ['❄️', 'Heavy snow'],
+  77: ['🌨️', 'Snow grains'], 80: ['🌦️', 'Showers'], 81: ['🌧️', 'Showers'], 82: ['⛈️', 'Violent showers'], 85: ['🌨️', 'Snow showers'],
+  86: ['🌨️', 'Snow showers'], 95: ['⛈️', 'Thunderstorm'], 96: ['⛈️', 'Thunder & hail'], 99: ['⛈️', 'Thunder & hail'] };
+const wmo = c => WMO[c] || ['🌡️', '—'];
+
+const Weather = {
+  loading: false, error: '',
+  url: loc => 'https://api.open-meteo.com/v1/forecast?latitude=' + loc.lat + '&longitude=' + loc.lon +
+    '&current=temperature_2m,apparent_temperature,weather_code,wind_speed_10m' +
+    '&hourly=temperature_2m,precipitation_probability,weather_code' +
+    '&daily=temperature_2m_max,temperature_2m_min,precipitation_probability_max,sunrise,sunset,weather_code' +
+    '&timezone=auto&forecast_days=2',
+  /** Fetch unless we have a copy < 30 min old for this location (force = always try). */
+  async refresh(force = false) {
+    const loc = S.settings.location; if (!loc || this.loading) return;
+    const key = `${loc.lat},${loc.lon}`, c = C.weather;
+    if (!force && c && c.loc === key && Date.now() - c.fetchedAt < 30 * 60000) return;
+    if (!navigator.onLine) { this.error = 'offline'; return rerenderAll(); }
+    this.loading = true;
+    try {
+      const r = await fetch(this.url(loc));
+      if (!r.ok) throw new Error('HTTP ' + r.status);
+      C.weather = { fetchedAt: Date.now(), loc: key, data: await r.json() }; saveCache(); this.error = '';
+    } catch (e) { this.error = navigator.onLine ? 'couldn’t load (' + e.message + ')' : 'offline'; }
+    this.loading = false; rerenderAll();
+  },
+  /** Next 12 hours from the hourly arrays. */
+  hours(d) {
+    const now = Date.now(), T = d.hourly.time;
+    let i0 = T.findIndex(t => new Date(t).getTime() > now - 3600e3); if (i0 < 0) i0 = 0;
+    return T.slice(i0, i0 + 12).map((t, k) => ({ t: new Date(t), temp: d.hourly.temperature_2m[i0 + k], rain: d.hourly.precipitation_probability[i0 + k] ?? 0 }))
+      .filter(h => h.temp != null);
+  },
+  /** One-line summary for section headers: "⛅ 12°" */
+  short() { const c = C.weather; if (!c) return ''; const cur = c.data.current; return `${wmo(cur.weather_code)[0]} ${Math.round(cur.temperature_2m)}°`; },
+  html() {
+    const loc = S.settings.location;
+    if (!loc) return `<div class="empty">Set a location to see today’s weather.</div>
+      <div class="actions"><button class="btn sm" data-act="locGeo">📍 Use my location</button><button class="btn sm" data-act="locSearch">Search a city</button></div>`;
+    const c = C.weather;
+    if (!c) return `<div class="empty">${this.loading ? 'Loading weather…' : this.error ? 'Weather ' + esc(this.error) + '.' : 'No weather yet.'}</div>
+      ${this.loading ? '' : '<div class="actions"><button class="btn sm" data-act="weatherRefresh">Retry</button></div>'}`;
+    const d = c.data, cur = d.current, dy = d.daily, [ic, lab] = wmo(cur.weather_code);
+    const hrs = this.hours(d);
+    const peak = hrs.reduce((a, h) => (h.rain > a.rain ? h : a), hrs[0] || { rain: 0, t: new Date() });
+    const stale = Date.now() - c.fetchedAt > 3 * 3600e3;
+    return `<div class="wx-now"><span class="wx-ic" aria-hidden="true">${ic}</span>
+        <div><span class="wx-t num">${Math.round(cur.temperature_2m)}°</span> <span class="muted">feels ${Math.round(cur.apparent_temperature)}°</span>
+        <div>${esc(lab)} · ${esc(loc.name)}</div></div></div>
+      <div class="kpi" style="margin-top:10px">
+        <div><b class="num">${Math.round(dy.temperature_2m_max[0])}° / ${Math.round(dy.temperature_2m_min[0])}°</b>high / low</div>
+        <div><b class="num">${dy.precipitation_probability_max[0] ?? 0}%</b>max rain chance</div>
+        <div><b class="num">${fmtT(new Date(dy.sunrise[0]))}–${fmtT(new Date(dy.sunset[0]))}</b>daylight</div></div>
+      ${hrs.length ? wxChart(hrs) : ''}
+      ${hrs.length ? `<div class="math">rain chance, next ${hrs.length} h: max(${hrs.map(h => h.rain).join(', ')}) = ${peak.rain}% at ${fmtT(peak.t)}${peak.rain >= 50 ? ' → take an umbrella' : ''}</div>` : ''}
+      <div class="small muted" style="margin-top:8px">${this.error === 'offline' || !navigator.onLine ? '⚠ Offline — showing last known. ' : ''}${stale ? '⚠ ' : ''}Updated ${ago(c.fetchedAt)}
+        · <a href="#" data-act="weatherRefresh" style="color:inherit">refresh</a></div>`;
+  },
+};
+/** Small SVG: temperature line over rain-chance bars, next 12 hours. */
+function wxChart(hrs) {
+  const W = 340, H = 140, top = 20, tempH = 56, rainTop = 92, rainH = 28, n = hrs.length, step = (W - 8) / n;
+  const ts = hrs.map(h => h.temp), lo = Math.min(...ts) - 1, hi = Math.max(...ts) + 1;
+  const x = i => 4 + step * i + step / 2, y = t => top + tempH * (1 - (t - lo) / (hi - lo));
+  let s = `<svg viewBox="0 0 ${W} ${H}" width="100%" role="img" aria-label="Temperature and rain chance, next hours" style="margin-top:8px">`;
+  hrs.forEach((h, i) => {
+    const bh = rainH * h.rain / 100;
+    s += `<rect x="${x(i) - step * .3}" y="${rainTop + rainH - bh}" width="${step * .6}" height="${Math.max(bh, 1)}" rx="3" fill="var(--m-work)" opacity="${h.rain >= 50 ? .9 : .45}"><title>${fmtT(h.t)}: ${h.rain}% rain</title></rect>`;
+    if (h.rain >= 30) s += `<text x="${x(i)}" y="${rainTop + rainH - bh - 3}" text-anchor="middle" font-size="9" fill="var(--muted)">${h.rain}%</text>`;
+  });
+  s += `<polyline fill="none" stroke="var(--warn)" stroke-width="2.5" stroke-linejoin="round" points="${hrs.map((h, i) => `${x(i)},${y(h.temp)}`).join(' ')}"/>`;
+  hrs.forEach((h, i) => {
+    s += `<circle cx="${x(i)}" cy="${y(h.temp)}" r="2.6" fill="var(--warn)"><title>${fmtT(h.t)}: ${h.temp}°</title></circle>`;
+    if (i % 3 === 0) {
+      s += `<text x="${x(i)}" y="${y(h.temp) - 7}" text-anchor="middle" font-size="11" fill="var(--text)">${Math.round(h.temp)}°</text>`;
+      s += `<text x="${x(i)}" y="${H - 2}" text-anchor="middle" font-size="10" fill="var(--muted)">${String(h.t.getHours()).padStart(2, '0')}h</text>`;
+    }
+  });
+  return s + `<line x1="0" x2="${W}" y1="${rainTop + rainH}" y2="${rainTop + rainH}" stroke="var(--border)"/></svg>`;
+}
+
+/* ---------------- DIGEST (reads digest.json from this same site) ----------------
+   digest.json is written every 3 h by the GitHub Action (scripts/build-digest.mjs):
+   { generated, watchlistUpdatedAt, stats, feeds:[{id,name,type,status,count,error,http,resolved}],
+     items:[{ id, title, url, source, feedId, type:'video'|'post'|'news'|'article', tags:[…],
+              published, summary, score, matched:[keywords], why:"physics +2 + fresh +1 = 3", alsoIn? }] }
+   LENSES (from your watchlist) pick which tags you want right now, e.g. "Laugh" = comedy +
+   standup + cartoon. A reading SESSION freezes the list when it starts (top N by score,
+   keyword matches first), so new items can't trickle in mid-read: finite by design. */
+const TYPE_LABEL = { video: 'Videos', post: 'Reddit', news: 'News', article: 'Articles' };
+const ALL = '__all';
+const Digest = {
+  loading: false, error: '',
+  async refresh() {
+    if (this.loading) return; this.loading = true;
+    try {
+      const r = await fetch('digest.json', { cache: 'no-store' });
+      if (!r.ok) throw new Error(r.status === 404 ? 'no digest.json on the site yet' : 'HTTP ' + r.status);
+      const data = await r.json();
+      if (data.offline) throw new Error('offline');            // service worker had no cached copy
+      if (!Array.isArray(data.items)) throw new Error('digest.json has no items list');
+      C.digest = { fetchedAt: Date.now(), data }; saveCache(); this.error = '';
+    } catch (e) { this.error = !navigator.onLine || e.message === 'offline' ? 'offline' : e.message; }
+    this.loading = false;
+    if (S.digestSession?.day === today()) this.ensureSession(false);   // fill a session that started before data arrived
+    rerenderAll();
+  },
+  byId(id) { return (C.digest?.data.items || []).find(i => i.id === id); },
+  /** Tags of an item (older/sample digests only have a single "category"). */
+  tagsOf: it => (it.tags && it.tags.length ? it.tags : it.category ? [String(it.category).toLowerCase()] : ['other']),
+  lenses() { return (S.watchlist && S.watchlist.lenses) || {}; },
+  /** Tags in a lens; null = everything. */
+  lensTags(lens) { if (!lens || lens === ALL) return null; const t = this.lenses()[lens]; return t ? t.map(x => x.toLowerCase()) : null; },
+  /** Default lens: the morning sequence has its own; otherwise it follows the current mode. */
+  defaultLens(context) {
+    const st = S.settings, want = context === 'morning' ? st.morningLens : (st.lensByMode || {})[R?.mode];
+    return want && this.lenses()[want] ? want : ALL;
+  },
+  /** Candidate items: recent (relative to when the digest was built), unread, in the lens + types. */
+  candidates(lens = ALL, types = null, cap = true) {
+    const d = C.digest?.data; if (!d) return [];
+    const gen = new Date(d.generated || Date.now()).getTime(), maxAge = S.settings.digestHours * 3600e3;
+    const lt = this.lensTags(lens);
+    const list = d.items.filter(it => !S.digestRead[it.id] && (!it.published || gen - new Date(it.published) <= maxAge)
+        && (!lt || this.tagsOf(it).some(t => lt.includes(t.toLowerCase())))
+        && (!types || !types.length || types.includes(it.type || 'article')))
+      .sort((a, b) => ((b.matched || []).length - (a.matched || []).length) || ((b.score || 0) - (a.score || 0)) || (new Date(b.published) - new Date(a.published)));
+    return cap ? list.slice(0, S.settings.digestMax) : list;
+  },
+  /** Keep today's session, or start a fresh one (optionally with a new lens / types). */
+  ensureSession(forceNew, opts = {}) {
+    const td = today(), ses = S.digestSession;
+    if (!forceNew && ses && ses.day === td) {
+      if (!ses.built && C.digest) { ses.ids = this.candidates(ses.lens, ses.types).map(i => i.id); ses.built = true; save(); }  // data arrived late
+      return ses;
+    }
+    const lens = opts.lens ?? ses?.lens ?? this.defaultLens(opts.context);
+    const types = opts.types ?? null;
+    S.digestSession = { day: td, lens, types, ids: this.candidates(lens, types).map(i => i.id), built: !!C.digest,
+      startedAt: opts.keepClock ? ses?.startedAt : null, endsAt: opts.keepClock ? ses?.endsAt : null };
+    save(); return S.digestSession;
+  },
+  /** Switch lens/types mid-session: same time-box, new frozen list. */
+  switchTo(lens, types) { this.ensureSession(true, { lens, types, keepClock: true }); },
+  /** The countdown starts the first time a non-empty list is shown. */
+  startClock() {
+    const ses = this.ensureSession(false);
+    if (!ses.ids.some(id => !S.digestRead[id])) return;          // nothing to read → no countdown
+    if (!ses.endsAt) { ses.startedAt = Date.now(); ses.endsAt = Date.now() + S.settings.digestMin * 60000; save(); }
+  },
+  unreadCount(lens = ALL) { return this.candidates(lens, null, false).length; },
+  sessionUnread() { const ses = S.digestSession; return ses && ses.day === today() ? ses.ids.filter(id => !S.digestRead[id] && this.byId(id)).length : 0; },
+  mark(id) { S.digestRead[id] = Date.now(); this.prune(); save(); },
+  /** Forget read-marks older than 30 days so storage stays small. */
+  prune() { const cut = Date.now() - 30 * 864e5; for (const [k, v] of Object.entries(S.digestRead)) if (v < cut) delete S.digestRead[k]; },
+  stats() {
+    const ses = S.digestSession, ids = ses?.ids || [];
+    const saved = ids.filter(id => S.watch.some(w => w.digestId === id)).length;
+    return { total: ids.length, saved, read: ids.filter(id => S.digestRead[id]).length - saved };
+  },
+};
+const lensName = l => (!l || l === ALL ? 'Everything' : l);
+const cap1 = s => s.charAt(0).toUpperCase() + s.slice(1);
+
+/** Lens chips (with unread counts) + type chips. */
+function lensBar(ses) {
+  const lenses = Object.keys(Digest.lenses());
+  const chip = (l) => { const n = Digest.unreadCount(l); return `<button class="chip ${ses.lens === l ? 'on' : ''}" data-act="digestLens" data-lens="${esc(l)}" ${!n && ses.lens !== l ? 'style="opacity:.5"' : ''}>${esc(lensName(l))} <span class="num">${n}</span></button>`; };
+  const types = ses.types || [];
+  // one swipeable row (like the mode chips) so the list itself stays above the fold on a phone
+  return `<div class="modes" style="margin:0 0 6px;padding-bottom:2px">${[ALL, ...lenses].map(chip).join('')}</div>
+    <div class="modes" style="margin:0 0 10px">${Object.entries(TYPE_LABEL).map(([t, l]) => `<button class="chip ${types.includes(t) ? 'on' : ''}" data-act="digestType" data-type="${t}" style="min-height:32px;font-size:.8rem">${l}</button>`).join('')}</div>`;
+}
+
+/** The digest reading UI (used in the morning flow and in stand-alone sessions). */
+function digestHtml(context = 'morning') {
+  const d = C.digest?.data, ses = Digest.ensureSession(false, { context });
+  let h = '';
+  if (d?.sample) h += `<div class="banner">Sample digest — your real feeds replace this after the GitHub Action’s first run (see Help → Stage 3 setup).</div>`;
+  if (Digest.error && C.digest) h += `<div class="banner">${Digest.error === 'offline' ? '⚠ Offline' : '⚠ ' + esc(Digest.error)} — showing the copy from ${ago(C.digest.fetchedAt)}.</div>`;
+  if (d && S.watchlist?.updatedAt && d.watchlistUpdatedAt && new Date(S.watchlist.updatedAt) > new Date(d.watchlistUpdatedAt))
+    h += `<div class="banner">Your newest watchlist edits aren’t in this digest yet — it rebuilds a few minutes after you publish.</div>`;
+  if (!d) {
+    return h + `<div class="empty">${Digest.loading ? 'Loading digest…' : Digest.error === 'offline' ? 'Offline and no saved digest yet.' : 'No digest available' + (Digest.error ? ': ' + esc(Digest.error) : '') + '.'}</div>
+      ${Digest.loading ? '' : '<div class="actions"><button class="btn sm" data-act="digestRetry">Retry</button></div>'}`;
+  }
+  // Freshness, always visible: the service worker may serve a cached digest.json offline without an error.
+  h += `<div class="small muted" style="margin-bottom:8px">${!navigator.onLine ? '⚠ Offline · ' : ''}Digest built ${ago(new Date(d.generated).getTime())}${!navigator.onLine ? ' (last known copy)' : ''}${d.stats ? ` · ${d.stats.ok}/${d.stats.feeds} feeds OK` : ''}</div>`;
+  h += lensBar(ses);
+  const items = ses.ids.map(id => Digest.byId(id)).filter(Boolean);
+  const unread = items.filter(i => !S.digestRead[i.id]);
+  const st = Digest.stats();
+  // ---- caught up: the whole point of the digest ----
+  if (!unread.length) {
+    const took = ses.startedAt ? Math.max(1, Math.round((Math.min(Date.now(), ses.endsAt || Date.now()) - ses.startedAt) / 60000)) : 0;
+    const others = Object.keys(Digest.lenses()).filter(l => l !== ses.lens).map(l => [l, Digest.unreadCount(l)]).filter(([, n]) => n);
+    return h + `<div class="caught"><div class="big">✓</div><div class="hello">You’re caught up${ses.lens !== ALL ? ' on ' + esc(lensName(ses.lens)) : ''}</div>
+      <p class="muted">${items.length ? `${items.length} items: ${st.read} read + ${st.saved} saved for later${took ? ` · ${took} min` : ''}` : 'Nothing new here since last time.'}</p>
+      <p class="small muted">There’s no more. That’s by design.${others.length ? `<br>Elsewhere: ${others.map(([l, n]) => `${esc(l)} ${n}`).join(' · ')}` : ''}</p>
+      ${freshPromptHtml(true)}
+      ${context === 'standalone' ? '<div class="actions" style="justify-content:center"><button class="btn primary" data-act="closeMorning">Close</button></div>' : ''}</div>`;
+  }
+  // ---- time's up: stop, without guilt ----
+  const timeUp = ses.endsAt && Date.now() >= ses.endsAt;
+  if (timeUp) h += `<div class="banner warn"><b>Time’s up.</b> ${unread.length} left — they’ll keep, or let them go.
+    <div class="actions"><button class="btn sm" data-act="digestExtend">+5 min</button><button class="btn sm primary" data-act="digestDone">${context === 'morning' ? 'Done — next step' : 'Done'}</button></div></div>`;
+  // progress (with the counting shown)
+  const done = items.length - unread.length;
+  h += `<div class="small muted num">${done} of ${items.length} done · ${unread.length} to go</div><div class="bar"><i style="width:${(done / items.length * 100).toFixed(1)}%"></i></div>`;
+  // group by the first of the item's tags that's in this lens (or its first tag for "Everything")
+  const lt = Digest.lensTags(ses.lens), groups = {};
+  for (const it of unread) {
+    const tags = Digest.tagsOf(it), g = (lt ? lt.find(t => tags.map(x => x.toLowerCase()).includes(t)) : tags[0]) || tags[0];
+    (groups[g] ||= []).push(it);
+  }
+  for (const [tag, list] of Object.entries(groups)) {
+    h += `<div class="catname">${esc(cap1(tag))} <span class="tag">${list.length}</span></div><ul class="list dg">`;
+    for (const it of list) {
+      const age = it.published ? ago(new Date(it.published).getTime()) : '';
+      h += `<li><div class="grow" style="cursor:default">
+          <a href="${esc(it.url)}" target="_blank" rel="noopener" data-act="digestOpen" data-id="${esc(it.id)}">${it.type === 'video' ? '▶ ' : ''}${esc(it.title)}</a>
+          <div class="small muted">${esc(it.source || '')}${it.alsoIn ? ' +' + it.alsoIn.length : ''}${age ? ' · ' + age : ''}${it.duration ? ' · ' + esc(it.duration) : ''}${it.score ? ` · <span title="${esc(it.why || '')}">score ${it.score}</span>` : ''}</div>
+          ${(it.matched || []).map(k => `<span class="kw">${esc(k)}</span>`).join('')}
+          ${it.summary ? `<div class="sum">${esc(it.summary)}</div>` : ''}</div>
+        <button class="icon" data-act="digestSave" data-id="${esc(it.id)}" title="Save for later" aria-label="Save for later"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M6 3h12v18l-6-4-6 4z"/></svg></button>
+        <button class="icon" data-act="digestRead" data-id="${esc(it.id)}" title="Mark read" aria-label="Mark read">✓</button></li>`;
+    }
+    h += `</ul>`;
+  }
+  h += `<div class="actions"><button class="btn ghost sm" data-act="digestAllRead">Mark all ${unread.length} read</button></div>`;
+  return h;
+}
+
+/* ---------------- MORNING SEQUENCE (4 steps) ----------------
+   1 Today (weather + calendar + plan) · 2 Top 3 · 3 Digest (time-boxed) · 4 Start work */
+let overlayMode = 'morning';   // 'morning' | 'digest' (stand-alone digest session)
+const STEPS = ['Today', 'Top 3', 'Digest', 'Go'];
+
+function openMorning() {
+  const td = today();
+  S.morning[td] ||= { startedAt: Date.now(), step: 1 };
+  save();
+  overlayMode = 'morning';
+  $('#morning').classList.remove('hidden'); document.body.style.overflow = 'hidden';
+  Weather.refresh(); Digest.refresh();
+  render(); $('#morning').scrollTo({ top: 0 });
+}
+function openDigest() {
+  overlayMode = 'digest';
+  const ses = Digest.ensureSession(false, { context: 'standalone' });
+  // a finished/expired session from earlier today: start a new one with the lens for the current mode
+  if (ses.endsAt && (Date.now() >= ses.endsAt || !ses.ids.some(id => !S.digestRead[id]))) Digest.ensureSession(true, { lens: Digest.defaultLens('standalone') });
+  Digest.startClock();
+  $('#morning').classList.remove('hidden'); document.body.style.overflow = 'hidden';
+  Digest.refresh(); render();
+}
+function closeMorning() { $('#morning').classList.add('hidden'); document.body.style.overflow = ''; render(); }
+/** Called at boot and when the app comes back to the foreground. */
+function maybeAutoMorning() {
+  const st = S.settings, now = new Date(), td = today();
+  if (!st.welcomed || !st.morningAuto || S.morning[td] || morningOpen()) return;
+  if (now.getHours() < st.dayCutoff) return;                           // 01:30 is still "last night"
+  const latest = Engine.parseHM(st.morningLatest);
+  if (!isNaN(latest) && now.getHours() * 60 + now.getMinutes() >= latest) return;   // first open was after lunch: don't ambush
+  openMorning();
+}
+const morningDone = () => !!S.morning[today()]?.doneAt;
+
+function renderMorning() {
+  const el = $('#morning'); if (!morningOpen()) return;
+  const now = new Date();
+  // stand-alone digest: just the timer + list
+  if (overlayMode === 'digest') {
+    const ses = S.digestSession;
+    el.innerHTML = `<div class="ov-head"><div><b style="flex:1">Digest</b>${dgClock(ses)}<button class="icon" data-act="closeMorning" aria-label="Close">✕</button></div></div>
+      <div class="ov-body">${digestHtml('standalone')}</div>`;
+    return;
+  }
+  const m = S.morning[today()] || { step: 1 }, step = m.step || 1;
+  let body = '';
+  if (step === 1) {
+    const hour = now.getHours(), hi = hour < 12 ? 'Good morning' : hour < 18 ? 'Good afternoon' : 'Good evening';
+    const evs = S.events.filter(e => Engine.dateKey(new Date(e.start)) === Engine.dateKey(now) || (e.allDay && new Date(e.start) <= now && new Date(e.end) > now))
+      .sort((a, b) => new Date(a.start) - new Date(b.start));
+    const plan = Engine.agenda(now, S, 10).filter(a => Engine.dateKey(a.at) === Engine.dateKey(now));
+    body = `<div class="hello">${hi}${S.settings.name ? ', ' + esc(S.settings.name) : ''}.</div>
+      <div class="muted">${now.toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long' })}</div>
+      ${Briefing.html()}
+      <div class="card">${Weather.html()}</div>
+      <h2>Calendar</h2><div class="card">${evs.length ? `<ul class="list">${evs.map(e => `<li><span class="num muted" style="width:96px">${e.allDay ? 'all day' : fmtT(new Date(e.start)) + '–' + fmtT(new Date(e.end))}</span><span class="grow">${esc(e.title)}${e.location ? ` <span class="small muted">· ${esc(e.location)}</span>` : ''}</span></li>`).join('')}</ul>`
+        : '<div class="empty">No events today.</div>'}
+        <p class="small muted">Manual events for now — Google Calendar connects in Stage 4.</p></div>
+      <h2>The plan</h2><div class="card"><ul class="list">${[R.current, ...plan].filter(x => x && x.type !== 'gap').map(a => `<li><span class="num muted" style="width:96px">${a.at ? fmtT(a.at) : 'now'}</span><span class="grow">${esc(a.title)}${a.type === 'event' ? ' <span class="tag">event</span>' : ''}</span></li>`).join('')}</ul></div>`;
+  } else if (step === 2) {
+    body = `<div class="hello">Today’s top 3</div><p class="muted">If only three things happen today, which ones?</p>${top3Html(false)}
+      <p class="small muted">Tap an empty slot to pick from your tasks. Add new tasks in the Tasks tab or with + later.</p>`;
+  } else if (step === 3) {
+    Digest.ensureSession(false, { context: 'morning' }); Digest.startClock();
+    body = `<div class="hello">Digest</div><p class="muted">${S.settings.digestMin} minutes, then it stops.</p>${digestHtml('morning')}`;
+  } else {
+    // step 4: ready
+    const R0 = Engine.resolve(now, S);
+    const pick = R0.current.pick || Engine.pickTask(S, today());
+    const nextWork = Engine.blockInstances(S.routine, now).find(b => Engine.WORK_KINDS.has(b.kind) && b.end > now && Engine.dateKey(b.start) === Engine.dateKey(now));
+    const st = Digest.stats();
+    body = `<div class="hello">Ready.</div>
+      <div class="card"><div class="small muted">First up</div><div style="font-size:1.25rem;font-weight:600">${pick ? esc(pick.task.title) : 'No task picked'}</div>
+      <div class="muted small">${nextWork ? (nextWork.start <= now ? `${esc(nextWork.name)} is on now` : `${esc(nextWork.name)} starts ${fmtT(nextWork.start)} (in ${fmtDur(nextWork.start - now)}) — starting now switches you to Work mode early`) : 'No work block today — this starts a focus session anyway'}</div></div>
+      <div class="kpi" style="margin-top:12px"><div><b class="num">${top3Ids().length}/3</b>top 3 set</div><div><b class="num">${st.read + st.saved}/${st.total}</b>digest done</div><div><b class="num">${S.watch.length}</b>on the shelf</div></div>
+      <div class="actions" style="margin-top:22px"><button class="btn primary" data-act="startWork" style="min-height:64px;font-size:1.15rem">▶ Start work · ${S.settings.pomoWork}-min focus</button></div>
+      <div class="actions"><button class="btn ghost" data-act="morningFinish" style="flex:1">Not working today — just close</button></div>`;
+  }
+  const ses = S.digestSession;
+  el.innerHTML = `<div class="ov-head"><div><div class="dots" aria-label="Step ${step} of 4">${STEPS.map((_, i) => `<i class="${i < step ? 'on' : ''}"></i>`).join('')}</div>
+      ${step === 3 ? dgClock(ses) : `<span class="small muted">${STEPS[step - 1]}</span>`}
+      <button class="icon" data-act="morningSkip" aria-label="Close morning sequence">✕</button></div></div>
+    <div class="ov-body">${body}</div>
+    ${step < 4 ? `<div class="ov-foot"><div>${step > 1 ? '<button class="btn" data-act="morningBack">Back</button>' : ''}
+      <button class="btn primary" data-act="morningNext" style="flex:1">${step === 3 ? (Digest.sessionUnread() ? 'Skip the rest' : 'Next') : 'Next'}</button></div></div>` : ''}`;
+}
+/** "12:41" countdown chip for the digest header. */
+function dgClock(ses) {
+  if (!ses?.endsAt) return '';
+  const left = ses.endsAt - Date.now();
+  return `<span class="dgclock num ${left <= 0 ? 'over' : ''}" id="dgClock">${left > 0 ? fmtClock(left) : '0:00'}</span>`;
+}
+
+/* ---------------- Stage 2 actions (merged into ACT below) ---------------- */
+const ACT2 = {
+  morning() { if (R.current.type === 'block') setActive(R.current); openMorning(); },
+  morningNext() { const m = S.morning[today()]; m.step = Math.min(4, (m.step || 1) + 1); save(); render(); $('#morning').scrollTo({ top: 0 }); },
+  morningBack() { const m = S.morning[today()]; m.step = Math.max(1, (m.step || 1) - 1); save(); render(); $('#morning').scrollTo({ top: 0 }); },
+  morningSkip() { const m = S.morning[today()]; if (m && !m.doneAt) m.skipped = true; save(); closeMorning(); },
+  morningFinish() { S.morning[today()].doneAt = Date.now(); S.active = null; save(); closeMorning(); go('now'); },
+  closeMorning() { closeMorning(); },
+  /** "Start work": finish the morning, switch to Work, start the first Pomodoro. */
+  startWork() {
+    const now = new Date();
+    S.morning[today()].doneAt = Date.now(); S.active = null;
+    const R0 = Engine.resolve(now, S);
+    if (!Engine.WORK_KINDS.has(R0.current.kind)) {
+      // Not in a work block yet: manual Work mode until the next work block begins (auto takes over from
+      // there), capped at 2 h so a weekend "start work" doesn't stick all day.
+      const nb = Engine.blockInstances(S.routine, now).find(b => Engine.WORK_KINDS.has(b.kind) && b.start > now);
+      const until = nb && nb.start - now <= 2 * 3600e3 ? nb.start : new Date(now.getTime() + 2 * 3600e3);
+      S.modeOverride = { mode: 'work', until: until.toISOString() };
+    }
+    const R1 = Engine.resolve(now, S);
+    if (R1.current.type === 'block' && Engine.WORK_KINDS.has(R1.current.kind)) setActive(R1.current);
+    Pomo.start('work', R1.current.pick?.task.id || null);
+    save(); closeMorning(); go('now'); askNotifOnce();
+  },
+  // digest
+  digestOpen(el) { Digest.mark(el.dataset.id); setTimeout(render, 400); },     // let the link open first
+  digestRead(el) { Digest.mark(el.dataset.id); render(); },
+  digestSave(el) {
+    const it = Digest.byId(el.dataset.id); if (!it) return;
+    if (!S.watch.some(w => w.digestId === it.id))
+      S.watch.push({ id: uid(), digestId: it.id, title: it.title, url: it.url, source: it.source, category: it.category, type: it.type, duration: it.duration,
+        durationSec: it.durationSec, tags: Digest.tagsOf(it), created: Date.now() });
+    Digest.mark(it.id); toast('Saved to the watch-later shelf'); render();
+  },
+  digestAllRead() { S.digestSession.ids.forEach(id => { if (!S.digestRead[id]) S.digestRead[id] = Date.now(); }); save(); render(); },
+  digestExtend() { S.digestSession.endsAt = Date.now() + 5 * 60000; S.digestSession.extra = (S.digestSession.extra || 0) + 5; save(); render(); },
+  digestDone() { if (overlayMode === 'morning') ACT2.morningNext(); else closeMorning(); },
+  digestRetry() { Digest.refresh(); },
+  digestStart() { openDigest(); },
+  // weather & location
+  weatherRefresh(el, e) { e?.preventDefault(); Weather.refresh(true); },
+  locGeo() {
+    if (!navigator.geolocation) return toast('Location isn’t available here — search a city instead.');
+    toast('Getting your location…');
+    navigator.geolocation.getCurrentPosition(pos => {
+      S.settings.location = { name: 'My location', lat: +pos.coords.latitude.toFixed(3), lon: +pos.coords.longitude.toFixed(3) };
+      save(); Weather.refresh(true);
+    }, err => toast('Location failed: ' + err.message), { timeout: 15000, maximumAge: 3600e3 });
+  },
+  async locSearch() {
+    const v = await formSheet('Weather location', [{ name: 'q', label: 'City or postcode', value: '' }], { okLabel: 'Search' });
+    if (!v?.q) return;
+    try {
+      const r = await fetch('https://geocoding-api.open-meteo.com/v1/search?count=6&language=en&name=' + encodeURIComponent(v.q));
+      const res = (await r.json()).results || [];
+      const pick = await choose('Which one?', res.map(x => ({ value: x, label: [x.name, x.admin1, x.country].filter(Boolean).join(', ') })));
+      if (!pick) return;
+      S.settings.location = { name: pick.name, lat: pick.latitude, lon: pick.longitude };
+      save(); Weather.refresh(true);
+    } catch (e) { toast(navigator.onLine ? 'Search failed: ' + e.message : 'You’re offline — try again later.'); }
+  },
+  watchDone(el) { S.watch = S.watch.filter(i => i.id !== el.dataset.id); save(); render(); },
+};
+</script>
+
+<script>
+/* =====================================================================
+   PART 4c — STAGE 3: WATCHLIST, FEED HEALTH, PUBLISHING, FRESH-CONTENT
+   PROMPT, MORNING-BRIEFING SLOT
+
+   Where the watchlist lives:
+     • feeds.json in your GitHub repo is what the Action reads.
+     • S.watchlist is the app's working copy (part of your data/backups).
+     • Edit here → "Publish" writes feeds.json to GitHub with your token
+       (or "Download" and upload it yourself) → the push triggers the Action
+       → a fresh digest.json a few minutes later.
+   ===================================================================== */
+const SECRET_KEY = 'dailycommand.secret';   // GitHub token: kept OUT of exports and sync on purpose
+const secret = () => { try { return JSON.parse(localStorage.getItem(SECRET_KEY)) || {}; } catch (e) { return {}; } };
+const setSecret = o => { try { localStorage.setItem(SECRET_KEY, JSON.stringify({ ...secret(), ...o })); } catch (e) {} };
+const slug = s => String(s).toLowerCase().normalize('NFKD').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+const FEED_TYPES = { youtube: 'YouTube channel', reddit: 'Subreddit', googlenews: 'Google News search', rss: 'RSS / blog URL' };
+const FEED_ICON = { youtube: '▶', reddit: 'r/', googlenews: 'N', rss: '✎' };
+
+const Watchlist = {
+  remote: null, error: '',
+  /** Load feeds.json from the site; adopt it unless we have unpublished local edits. */
+  async refresh() {
+    try {
+      const r = await fetch('feeds.json', { cache: 'no-store' });
+      if (!r.ok) throw new Error('HTTP ' + r.status);
+      const doc = await r.json(); if (doc.offline || !Array.isArray(doc.feeds)) throw new Error('offline');
+      this.remote = doc; this.error = '';
+      const local = S.watchlist;
+      if (!local) { S.watchlist = doc; S.watchlistDirty = false; save(); }
+      else if (!S.watchlistDirty && new Date(doc.updatedAt || 0) > new Date(local.updatedAt || 0)) { S.watchlist = doc; save(); }
+    } catch (e) { this.error = e.message; }
+    rerenderAll();
+  },
+  /** Remote changed after our local edits started (e.g. edited on the other device). */
+  conflict() { return S.watchlistDirty && this.remote && new Date(this.remote.updatedAt || 0) > new Date(S.watchlistBase || 0); },
+  touch() {
+    if (!S.watchlistDirty) S.watchlistBase = S.watchlist.updatedAt || null;
+    S.watchlist.updatedAt = new Date().toISOString(); S.watchlistDirty = true; save();
+  },
+  tags() {
+    const count = {};
+    (S.watchlist?.feeds || []).forEach(f => (f.tags || []).forEach(t => { count[t] = (count[t] || 0) + 1; }));
+    return Object.entries(count).sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
+  },
+  health(id) { return (C.digest?.data.feeds || []).find(f => f.id === id) || null; },
+  json() { return JSON.stringify(S.watchlist, null, 2) + '\n'; },
+};
+
+/* ---------------- GitHub (optional): publish feeds.json, trigger a rebuild ----------------
+   Uses a fine-grained personal access token limited to ONE repository with
+   "Contents: Read and write" (+ "Actions: Read and write" for "Refresh now").
+   The token is stored only in this browser and never exported or synced. */
+const GH = {
+  ready() { return !!(S.settings.ghRepo && secret().ghToken); },
+  async call(path, opts = {}) {
+    const r = await fetch(`https://api.github.com/repos/${S.settings.ghRepo}${path}`, { ...opts,
+      headers: { Authorization: `Bearer ${secret().ghToken}`, Accept: 'application/vnd.github+json', 'X-GitHub-Api-Version': '2022-11-28', ...(opts.body ? { 'Content-Type': 'application/json' } : {}) } });
+    if (!r.ok && r.status !== 404) {
+      let msg = ''; try { msg = (await r.json()).message; } catch (e) {}
+      throw new Error(r.status === 401 ? 'token rejected (401) — check or renew it' : r.status === 403 ? 'not allowed (403) — the token needs Contents: read & write on this repo' : `${r.status} ${msg}`);
+    }
+    return r;
+  },
+  async publishFeeds() {
+    const branch = S.settings.ghBranch || 'main';
+    const cur = await this.call(`/contents/feeds.json?ref=${encodeURIComponent(branch)}`);
+    const sha = cur.status === 404 ? undefined : (await cur.json()).sha;
+    const bytes = new TextEncoder().encode(Watchlist.json());
+    let bin = ''; bytes.forEach(b => { bin += String.fromCharCode(b); });
+    await this.call('/contents/feeds.json', { method: 'PUT', body: JSON.stringify({ message: 'watchlist: update from the app', content: btoa(bin), sha, branch }) });
+  },
+  async refreshDigest() {
+    const r = await this.call('/actions/workflows/digest.yml/dispatches', { method: 'POST', body: JSON.stringify({ ref: S.settings.ghBranch || 'main' }) });
+    if (r.status === 404) throw new Error('workflow not found — is .github/workflows/digest.yml in the repo?');
+  },
+};
+
+/* ---------------- "Add something fresh" prompt ----------------
+   If the newest feed in your watchlist was added more than N days ago (default 30),
+   gently suggest adding something new. Snooze-able. The subtraction is shown. */
+function freshDue() {
+  const days = S.settings.freshDays, feeds = S.watchlist?.feeds || [];
+  if (!days || !feeds.length) return null;
+  if (S.freshSnoozeUntil && Date.now() < new Date(S.freshSnoozeUntil)) return null;
+  const dated = feeds.filter(f => /^\d{4}-\d{2}-\d{2}/.test(f.added || '')).sort((a, b) => b.added.localeCompare(a.added));
+  if (!dated.length) return null;
+  const last = dated[0], [y, m, d] = last.added.slice(0, 10).split('-').map(Number);
+  const lastDay = new Date(y, m - 1, d), td = new Date(today());
+  const age = Math.round((td - lastDay) / 864e5);               // whole days, DST-safe via rounding
+  return age >= days ? { age, days, last, lastDay, td } : null;
+}
+function freshPromptHtml(compact = false) {
+  const f = freshDue(); if (!f) return '';
+  const fmt = d => d.toLocaleDateString('en-GB', { day: 'numeric', month: 'short' });
+  return `<div class="card" style="text-align:left${compact ? ';margin-top:18px' : ''}"><h3>Time for something new?</h3>
+    <p class="small muted">Nothing’s been added to your watchlist for ${f.age} days (last: ${esc(f.last.name)}). A new channel, subreddit or news topic keeps the digest from going stale.</p>
+    <div class="math">${fmt(f.td)} − ${fmt(f.lastDay)} = ${f.age} days ≥ ${f.days}-day reminder</div>
+    <div class="actions"><button class="btn sm primary" data-act="feedAdd">+ Add a feed</button><button class="btn sm" data-act="freshSnooze">Snooze 2 weeks</button></div></div>`;
+}
+
+/* ---------------- Watchlist editor (More → Watchlist & lenses) ---------------- */
+let wlFilter = '';
+function watchlistHtml() {
+  const W = S.watchlist;
+  if (!W) return `<div class="empty">${Watchlist.error ? 'Couldn’t load feeds.json (' + esc(Watchlist.error) + ').' : 'Loading feeds.json…'}</div>
+    <div class="actions"><button class="btn sm" data-act="wlReload">Retry</button><label class="btn sm">Import feeds.json<input type="file" accept=".json,application/json" id="feedsFile" hidden></label></div>`;
+  const feeds = W.feeds || [];
+  const checks = feeds.filter(f => f.check).length;
+  const probs = feeds.filter(f => { const hh = Watchlist.health(f.id); return hh && hh.status !== 'ok'; }).length;
+  const d = C.digest?.data;
+  let h = freshPromptHtml();
+  h += `<div class="kpi"><div><b class="num">${feeds.length}</b>feeds</div><div><b class="num">${checks}</b>to check</div><div><b class="num">${probs}</b>problems</div></div>
+    <p class="small muted">${d && !d.sample ? `Last digest ${ago(new Date(d.generated).getTime())}: ${d.stats?.ok ?? '?'}/${d.stats?.feeds ?? '?'} feeds OK.` : 'Feed health appears after the GitHub Action’s first run.'}</p>`;
+  if (S.watchlistDirty) h += `<div class="banner warn"><b>Unpublished changes.</b> The digest uses the repo’s feeds.json, so publish (or download and upload) your edits.
+      ${Watchlist.conflict() ? '<br>⚠ feeds.json in the repo also changed since you started editing — publishing will overwrite it.' : ''}
+      <div class="actions">${GH.ready() ? '<button class="btn sm primary" data-act="wlPublish">Publish to GitHub</button>' : ''}<button class="btn sm" data-act="wlDownload">Download feeds.json</button><button class="btn sm ghost" data-act="wlDiscard">Discard edits</button></div></div>`;
+  // tag filter
+  const tags = Watchlist.tags();
+  h += `<div class="modes" style="flex-wrap:wrap;margin:8px 0"><button class="chip ${!wlFilter ? 'on' : ''}" data-act="wlFilter" data-tag="">All ${feeds.length}</button>
+    <button class="chip ${wlFilter === '__check' ? 'on' : ''}" data-act="wlFilter" data-tag="__check">To check ${checks}</button>
+    <button class="chip ${wlFilter === '__prob' ? 'on' : ''}" data-act="wlFilter" data-tag="__prob">Problems ${probs}</button>
+    ${tags.map(([t, n]) => `<button class="chip ${wlFilter === t ? 'on' : ''}" data-act="wlFilter" data-tag="${esc(t)}">${esc(t)} ${n}</button>`).join('')}</div>`;
+  const shown = feeds.filter(f => !wlFilter || (wlFilter === '__check' ? f.check : wlFilter === '__prob' ? (Watchlist.health(f.id)?.status || 'ok') !== 'ok' : (f.tags || []).includes(wlFilter)))
+    .sort((a, b) => a.name.localeCompare(b.name));
+  h += `<ul class="list">${shown.map(f => {
+    const hh = Watchlist.health(f.id);
+    const st = !hh ? '<span class="muted">not fetched yet</span>'
+      : hh.status === 'ok' ? `✓ ${hh.count} recent${hh.resolved && hh.resolved.via === 'name search' ? ` · found “${esc(hh.resolved.title)}”` : ''}`
+      : hh.status === 'unresolved' ? `<span class="warnchip">? ${esc(hh.error || 'not found')} — add its @handle or link</span>`
+      : `<span class="warnchip">⚠ ${esc(hh.error || hh.status)}</span>`;
+    return `<li><span class="tag" style="width:30px;text-align:center">${FEED_ICON[f.type] || '•'}</span><span class="grow" data-act="feedEdit" data-id="${esc(f.id)}">
+      <b>${esc(f.name)}</b>${f.paused ? ' <span class="tag">paused</span>' : ''}<br>
+      <span class="small">${(f.tags || []).map(t => `<span class="kw">${esc(t)}</span>`).join('') || '<span class="muted">no tags</span>'}</span>
+      <br><span class="small muted">${st}</span>${f.check ? `<br><span class="small warnchip">Check: ${esc(f.check)}</span>` : ''}</span></li>`;
+  }).join('') || '<li class="empty">Nothing here.</li>'}</ul>
+  <div class="actions"><button class="btn primary" data-act="feedAdd">+ Add feed</button>
+    <button class="btn sm" data-act="wlDownload">Download feeds.json</button>
+    <label class="btn sm">Import<input type="file" accept=".json,application/json" id="feedsFile" hidden></label></div>`;
+
+  // lenses
+  const lenses = Object.entries(W.lenses || {});
+  h += `<h3 style="margin-top:18px">Lenses</h3><p class="small muted">A lens is a mix of tags for a mood. Pick one at the top of the digest.</p>
+    <ul class="list">${lenses.map(([n, t]) => `<li><span class="grow" data-act="lensEdit" data-lens="${esc(n)}"><b>${esc(n)}</b><br><span class="small muted">${t.map(esc).join(', ')}</span></span><span class="tag num">${Digest.unreadCount(n)} new</span></li>`).join('')}</ul>
+    <div class="actions"><button class="btn sm" data-act="lensAdd">+ Lens</button></div>
+    <label class="f">Morning sequence uses</label>${lensSelect('morningLens', S.settings.morningLens)}
+    <div class="row">${['work', 'life', 'leisure', 'winddown'].map(m => `<label class="f" style="flex:1">${MODE_LABEL[m]}${lensSelect('lens.' + m, (S.settings.lensByMode || {})[m])}</label>`).join('')}</div>`;
+
+  // keywords
+  const kw = Object.entries(W.keywords || {}).map(([k, v]) => `${k} = ${v}`).join('\n');
+  h += `<h3 style="margin-top:18px">Keyword boosts</h3><p class="small muted">One per line, “word = weight”. Matches float to the top; the digest shows the sum (e.g. “physics +2 + fresh +1 = 3”).</p>
+    <textarea id="kwText" style="min-height:90px">${esc(kw)}</textarea><div class="actions"><button class="btn sm" data-act="kwSave">Save keywords</button></div>`;
+
+  // reminder + GitHub
+  h += `<div class="row" style="margin-top:14px"><label class="f" style="flex:1">Remind me to add something new after (days, 0 = off)<input type="number" min="0" max="365" value="${S.settings.freshDays}" data-setting="freshDays"></label></div>
+    <h3 style="margin-top:18px">Publish to GitHub (optional)</h3>
+    <p class="small muted">Lets “Publish” save feeds.json straight to your repo and “Refresh now” rebuild the digest. Needs a fine-grained token for this one repo (Help → Stage 3 setup). Stored only in this browser, never exported.</p>
+    <label class="f">Repository (owner/name)</label><input type="text" placeholder="yourname/daily-command" value="${esc(S.settings.ghRepo || '')}" data-setting="ghRepo">
+    <div class="row"><label class="f" style="flex:1">Branch<input type="text" value="${esc(S.settings.ghBranch || 'main')}" data-setting="ghBranch"></label>
+    <label class="f" style="flex:2">Token<input type="password" id="ghToken" placeholder="${secret().ghToken ? '•••••••• saved' : 'github_pat_…'}" autocomplete="off"></label></div>
+    <div class="actions"><button class="btn sm" data-act="ghSaveToken">Save token</button>${GH.ready() ? '<button class="btn sm" data-act="ghRefresh">Refresh digest now</button><button class="btn sm ghost danger" data-act="ghForget">Forget token</button>' : ''}</div>`;
+  return h;
+}
+function lensSelect(key, val) {
+  return `<select data-setting="${key}"><option value="${ALL}">Everything</option>${Object.keys(S.watchlist?.lenses || {}).map(l => `<option ${l === val ? 'selected' : ''}>${esc(l)}</option>`).join('')}</select>`;
+}
+const parseTags = s => [...new Set(String(s || '').split(',').map(t => t.trim().toLowerCase()).filter(Boolean))];
+
+async function editFeed(f) {
+  const isNew = !f, tagHint = Watchlist.tags().map(([t]) => t).join(', ');
+  const src = f ? (f.type === 'youtube' ? (f.handle || f.channelId || f.url || '') : f.type === 'reddit' ? (f.sub || f.name) : f.type === 'googlenews' ? (f.query || '') : (f.url || '')) : '';
+  const v = await formSheet(isNew ? 'Add a feed' : 'Edit feed', [
+    { name: 'type', label: 'Type', type: 'select', value: f?.type || 'youtube', options: Object.entries(FEED_TYPES).map(([value, label]) => ({ value, label })) },
+    { name: 'name', label: 'Name', value: f?.name || '' },
+    { name: 'src', label: 'YouTube: @handle, link or leave blank to search by name · Subreddit: r/name · News: search words · RSS: feed URL', value: src },
+    { name: 'tags', label: 'Tags (comma-separated)', value: (f?.tags || []).join(', ') },
+    { name: 'boost', label: 'Score boost for this feed (−3 … +3)', type: 'number', value: f?.boost || 0, min: -3, max: 3 },
+    { name: 'paused', label: 'Paused', type: 'checkbox', value: f?.paused, hint: 'Pause (keep it, don’t fetch)' },
+  ], { deletable: !isNew, okLabel: isNew ? 'Add' : 'Save', note: tagHint ? `Your tags: ${esc(tagHint)}` : '' });
+  if (!v) return;
+  const W = S.watchlist;
+  if (v.__delete) { W.feeds = W.feeds.filter(x => x.id !== f.id); Watchlist.touch(); return render(); }
+  if (!v.name && !v.src) return toast('Give it a name (or a handle/URL).');
+  const nf = { ...(f || {}), type: v.type, name: v.name || v.src, tags: parseTags(v.tags), boost: Number(v.boost) || 0 };
+  delete nf.handle; delete nf.channelId; delete nf.url; delete nf.sub; delete nf.query;
+  const s = v.src.trim();
+  if (v.type === 'youtube' && s) { if (/UC[\w-]{22}/.test(s)) nf.channelId = s.match(/UC[\w-]{22}/)[0]; else if (/^@|youtube\.com\/@/.test(s)) nf.handle = '@' + s.replace(/.*youtube\.com\/@/, '').replace(/^@/, '').split(/[/?#]/)[0]; else nf.url = s; }
+  if (v.type === 'reddit') nf.sub = (s || v.name).replace(/^.*?\/?r\//i, '').replace(/\/.*$/, '');
+  if (v.type === 'googlenews') nf.query = s || v.name;
+  if (v.type === 'rss') { if (!/^https?:\/\//.test(s)) return toast('RSS needs a full feed URL (https://…).'); nf.url = s; }
+  if (v.paused) nf.paused = true; else delete nf.paused;
+  if (!nf.boost) delete nf.boost;
+  if (isNew) {
+    nf.id = (v.type === 'youtube' ? 'yt' : v.type === 'reddit' ? 'rd' : v.type === 'googlenews' ? 'gn' : 'rss') + '-' + slug(nf.name);
+    while (W.feeds.some(x => x.id === nf.id)) nf.id += '-2';
+    nf.added = Engine.dateKey(new Date());                      // feeds the "add something fresh" reminder
+    W.feeds.push(nf);
+  } else {
+    delete nf.check;                                            // you've looked at it — no longer "to check"
+    W.feeds = W.feeds.map(x => (x.id === f.id ? nf : x));
+  }
+  Watchlist.touch(); render();
+  toast(isNew ? `Added ${nf.name}. Publish to include it in the digest.` : 'Saved.');
+}
+async function editLens(name) {
+  const W = S.watchlist, cur = name ? W.lenses[name] : [];
+  const v = await formSheet(name ? 'Edit lens' : 'New lens', [{ name: 'name', label: 'Name', value: name || '' }, { name: 'tags', label: 'Tags (comma-separated)', value: (cur || []).join(', ') }],
+    { deletable: !!name, note: `Your tags: ${esc(Watchlist.tags().map(([t]) => t).join(', '))}` });
+  if (!v) return;
+  const lenses = { ...(W.lenses || {}) };
+  if (name) delete lenses[name];
+  if (!v.__delete) { if (!v.name) return toast('A lens needs a name.'); lenses[v.name] = parseTags(v.tags); }
+  W.lenses = lenses; Watchlist.touch(); render();
+}
+
+/* ---------------- Morning briefing slot (optional; wire up later) ----------------
+   If the repo contains briefing.json ({generated, title, markdown}) or briefing.md,
+   e.g. written by an AI step in the workflow, it appears at the top of the morning
+   sequence while it's less than 24 h old. Nothing shows if neither file exists. */
+const Briefing = {
+  lastTry: 0,
+  async refresh() {
+    // optional file: check at most every 30 min (a missing file is a normal 404, not an error)
+    if (Date.now() - this.lastTry < 30 * 60000) return; this.lastTry = Date.now();
+    let b = null;
+    try {
+      const r = await fetch('briefing.json', { cache: 'no-store' });
+      if (r.ok) { const j = await r.json(); if (!j.offline && (j.markdown || j.text)) b = { generated: j.generated, title: j.title || 'Morning briefing', md: j.markdown || j.text }; }
+      if (!b) {
+        const m = await fetch('briefing.md', { cache: 'no-store' });
+        if (m.ok && !(m.headers.get('content-type') || '').includes('json')) b = { generated: m.headers.get('last-modified'), title: 'Morning briefing', md: await m.text() };
+      }
+    } catch (e) {}
+    if (b) { C.briefing = { fetchedAt: Date.now(), ...b }; saveCache(); }
+    rerenderAll();
+  },
+  html() {
+    const b = C.briefing; if (!b) return '';
+    const gen = b.generated ? new Date(b.generated).getTime() : b.fetchedAt;
+    if (Date.now() - gen > 24 * 3600e3) return '';
+    return `<div class="card"><div class="row" style="justify-content:space-between"><h3>${esc(b.title)}</h3><span class="small muted">${ago(gen)}</span></div><div class="help">${miniMarkdown(b.md)}</div></div>`;
+  },
+};
+/** Tiny, safe Markdown: headings, bullets, bold, italics, http(s) links. Escapes everything first. */
+function miniMarkdown(md) {
+  const inline = s => esc(s).replace(/\*\*(.+?)\*\*/g, '<b>$1</b>').replace(/(^|[^*])\*([^*]+)\*/g, '$1<i>$2</i>')
+    .replace(/\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>');
+  let out = '', inList = false;
+  for (const line of String(md).split(/\r?\n/)) {
+    const li = line.match(/^\s*[-*]\s+(.*)/), hd = line.match(/^(#{1,3})\s+(.*)/);
+    if (li) { if (!inList) { out += '<ul>'; inList = true; } out += `<li>${inline(li[1])}</li>`; continue; }
+    if (inList) { out += '</ul>'; inList = false; }
+    if (hd) out += `<h3>${inline(hd[2])}</h3>`; else if (line.trim()) out += `<p>${inline(line)}</p>`;
+  }
+  return out + (inList ? '</ul>' : '');
+}
+
+/* ---------------- Stage 3 actions ---------------- */
+const ACT3 = {
+  digestLens(el) { Digest.switchTo(el.dataset.lens, S.digestSession?.types || null); render(); },
+  digestType(el) {
+    const t = el.dataset.type, cur = new Set(S.digestSession?.types || []);
+    cur.has(t) ? cur.delete(t) : cur.add(t);
+    Digest.switchTo(S.digestSession?.lens ?? ALL, [...cur]); render();
+  },
+  feedAdd() { if (!S.watchlist) return toast('Watchlist not loaded yet.'); if (!morningOpen() && currentView !== 'more') { S.ui.open['more-watch'] = true; go('more'); } editFeed(null); },
+  feedEdit(el) { editFeed(S.watchlist.feeds.find(f => f.id === el.dataset.id)); },
+  freshSnooze() { S.freshSnoozeUntil = new Date(Date.now() + 14 * 864e5).toISOString(); save(); render(); },
+  wlFilter(el) { wlFilter = el.dataset.tag; render(); },
+  wlReload() { Watchlist.refresh(); },
+  wlDownload() {
+    const a = Object.assign(document.createElement('a'), { href: URL.createObjectURL(new Blob([Watchlist.json()], { type: 'application/json' })), download: 'feeds.json' });
+    a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 2000);
+    toast('Downloaded. Upload it to the repo (replace feeds.json) to publish.');
+  },
+  wlDiscard() {
+    if (!Watchlist.remote) return toast('Can’t reach feeds.json right now.');
+    if (!confirm('Discard your watchlist edits and go back to the repo’s feeds.json?')) return;
+    S.watchlist = Watchlist.remote; S.watchlistDirty = false; save(); render();
+  },
+  async wlPublish() {
+    try { toast('Publishing…'); await GH.publishFeeds(); S.watchlistDirty = false; save(); render(); toast('Published. The digest rebuilds in a few minutes.'); }
+    catch (e) { toast('Publish failed: ' + e.message); }
+  },
+  lensEdit(el) { editLens(el.dataset.lens); },
+  lensAdd() { editLens(null); },
+  kwSave() {
+    const kw = {};
+    for (const line of $('#kwText').value.split('\n')) {
+      const m = line.match(/^\s*(.+?)\s*(?:=\s*(-?\d+(?:\.\d+)?))?\s*$/); if (!m || !m[1]) continue;
+      kw[m[1]] = m[2] != null ? Number(m[2]) : 1;
+    }
+    S.watchlist.keywords = kw; Watchlist.touch(); render(); toast('Keywords saved (applied at the next digest build).');
+  },
+  ghSaveToken() { const t = $('#ghToken').value.trim(); if (!t) return toast('Paste a token first.'); setSecret({ ghToken: t }); render(); toast('Token saved in this browser.'); },
+  ghForget() { setSecret({ ghToken: '' }); render(); },
+  async ghRefresh() { try { await GH.refreshDigest(); toast('Rebuild started — new digest in ~2–5 min.'); } catch (e) { toast('Refresh failed: ' + e.message); } },
+};
+</script>
+
+<script>
+/* =====================================================================
+   PART 4d — LISTEN WHILE WORKING
+   A queue of audio-friendly videos (feeds tagged "listen", plus anything
+   tagged "listen" that you saved to the shelf). During a block, the Now
+   screen shows ONE pick that fits the time left in the block, with the
+   maths, and a Play button that opens it in the YouTube app on Android
+   (background play with YouTube Premium). Per block kind you choose:
+     talk  → the Listen queue (default for Admin and Lunch)
+     focus → your "focus audio" link, e.g. an instrumental playlist (default for Deep work)
+     off   → nothing
+   Why the split: speech competes with reading/writing for the same mental
+   channel (the "irrelevant speech effect"), so talk suits shallow work better
+   than deep work. It's only a default — change it per block kind in More.
+   ===================================================================== */
+const AUDIO_PLAN_DEFAULT = { deep: 'focus', admin: 'talk', lunch: 'talk' };
+const isAndroid = () => /Android/i.test(navigator.userAgent);
+
+/** YouTube links open in the YouTube app on Android (needed for background play);
+    everything else, and every link on desktop, opens normally. */
+function ytOpenUrl(url) {
+  if (!isAndroid()) return url;
+  try {
+    const u = new URL(url);
+    const yt = /(^|\.)youtube\.com$/.test(u.hostname) || u.hostname === 'youtu.be';
+    if (!yt) return url;
+    const path = u.hostname === 'youtu.be' ? `www.youtube.com/watch?v=${u.pathname.slice(1)}` : `www.youtube.com${u.pathname}${u.search}`;
+    return `intent://${path}#Intent;scheme=https;package=com.google.android.youtube;S.browser_fallback_url=${encodeURIComponent(url)};end`;
+  } catch (e) { return url; }
+}
+const playAttrs = url => { const h = ytOpenUrl(url); return `href="${esc(h)}"${h.startsWith('intent:') ? '' : ' target="_blank" rel="noopener"'}`; };
+const mmss = sec => { const t = Math.round(sec); return `${Math.floor(t / 60)}:${String(t % 60).padStart(2, '0')}`; };   // never "37:60"
+
+const Listen = {
+  plan(kind) { return { ...AUDIO_PLAN_DEFAULT, ...(S.settings.audioPlan || {}) }[kind] || 'off'; },
+  /** All listenable items, in priority order: saved-to-shelf first (oldest first), then the digest by score. */
+  queue() {
+    const skipped = new Set((S.listenSkip || {})[today()] || []);
+    const shelf = S.watch.filter(w => (w.tags || []).includes('listen') && w.url)
+      .map(w => ({ key: 'w:' + w.id, shelfId: w.id, digestId: w.digestId, title: w.title, url: w.url, source: w.source, durationSec: w.durationSec, from: 'shelf' }));
+    const onShelf = new Set(shelf.map(x => x.digestId).filter(Boolean));
+    const dig = (C.digest?.data.items || []).filter(it => Digest.tagsOf(it).includes('listen') && !S.digestRead[it.id] && !onShelf.has(it.id))
+      .sort((a, b) => ((b.score || 0) - (a.score || 0)) || (new Date(b.published) - new Date(a.published)))
+      .map(it => ({ key: 'd:' + it.id, digestId: it.id, title: it.title, url: it.url, source: it.source, durationSec: it.durationSec, from: 'digest' }));
+    return [...shelf, ...dig].filter(x => !skipped.has(x.key));
+  },
+  /** Best pick for `secLeft` seconds, in this order:
+        1. the first (by priority) that fits AND fills at least half the time left
+        2. else the first that fits
+        3. else one with unknown length, else the shortest (and say how much it runs over).
+      Returns {item, why} where `why` is the comparison written out. */
+  pick(secLeft, label) {
+    const q = this.queue(); if (!q.length) return null;
+    if (secLeft == null) return { item: q[0], why: '' };
+    secLeft = Math.round(secLeft / 60) * 60;                      // whole minutes, as shown
+    const left = `${label} ends ${fmtT(new Date(Date.now() + secLeft * 1000))} → ${secLeft / 60} min left`;
+    const fits = q.filter(x => x.durationSec && x.durationSec <= secLeft);
+    const good = fits.find(x => x.durationSec >= secLeft / 2);
+    const fit = good || fits[0];
+    if (fit) {
+      const pct = Math.round(fit.durationSec / secLeft * 100);
+      return { item: fit, why: `${left} · ${mmss(fit.durationSec)} ≤ ${mmss(secLeft)} ✓ fits, fills ${mmss(fit.durationSec)} ÷ ${mmss(secLeft)} = ${pct}%${good ? '' : ' (nothing longer fits)'}` };
+    }
+    const unknown = q.find(x => !x.durationSec);
+    if (unknown) return { item: unknown, why: `${left} · nothing with a known length fits; this one’s length is unknown` };
+    const shortest = [...q].sort((a, b) => a.durationSec - b.durationSec)[0];
+    return { item: shortest, why: `${left} · shortest is ${mmss(shortest.durationSec)} = ${Math.ceil((shortest.durationSec - secLeft) / 60)} min over` };
+  },
+  find(key) { return this.queue().find(x => x.key === key) || null; },
+  /** Mark finished: read in the digest, and removed from the shelf if it came from there. */
+  done(key) {
+    const [kind, id] = [key.slice(0, 1), key.slice(2)];
+    if (kind === 'w') { const w = S.watch.find(x => x.id === id); if (w?.digestId) S.digestRead[w.digestId] = Date.now(); S.watch = S.watch.filter(x => x.id !== id); }
+    else S.digestRead[id] = Date.now();
+    if (S.listening?.key === key) S.listening = null;
+    save();
+  },
+};
+
+/** The card under the Now hero. Returns '' when the current block's plan is "off". */
+function listenCardHtml() {
+  const c = R.current;
+  if (c.type !== 'block') return '';               // not during calendar events or free gaps
+  const plan = Listen.plan(c.kind);
+  const now = Date.now();
+  const L = S.listening;
+  // something is already playing (started from this device)
+  if (L && (plan === 'talk' || L.focus)) {
+    const ends = L.durationSec ? L.startedAt + L.durationSec * 1000 : null;
+    const finished = ends && now > ends;
+    return `<div class="card listen"><div class="row" style="justify-content:space-between"><span class="small muted">🎧 ${finished ? 'Probably finished' : 'Playing on YouTube'}</span>
+        ${ends ? `<span class="small muted num">${finished ? 'ended ~' + fmtT(new Date(ends)) : 'ends ~' + fmtT(new Date(ends))}</span>` : ''}</div>
+      <div style="font-weight:600;margin:4px 0">${esc(L.title)}</div>
+      <div class="actions">${L.focus ? '<button class="btn sm" data-act="listenStop">Stop</button>' : `<button class="btn sm primary" data-act="listenDone" data-key="${esc(L.key)}">✓ Done${finished ? ' — next' : ''}</button><button class="btn sm" data-act="listenStop">Stop</button>`}</div></div>`;
+  }
+  if (plan === 'focus') {
+    const fa = S.settings.focusAudio;
+    if (!fa?.url) return `<div class="card listen"><div class="small muted">🎧 Focus audio for ${esc(KIND_LABEL[c.kind] || 'this block')}</div>
+      <div class="small">Instrumental or ambient works best while reading and writing. Set a link once (e.g. a YouTube playlist).</div>
+      <div class="actions"><button class="btn sm" data-act="focusAudioSet">Set focus audio</button><button class="btn sm ghost" data-act="audioPlanQuick" data-kind="${c.kind}" data-plan="talk">Use the talk queue instead</button></div></div>`;
+    return `<div class="card listen"><div class="small muted">🎧 Focus audio</div><div style="font-weight:600;margin:4px 0">${esc(fa.label || 'Focus audio')}</div>
+      <div class="actions"><a class="btn sm primary" ${playAttrs(fa.url)} data-act="focusPlay">▶ Play</a><button class="btn sm ghost" data-act="audioPlanQuick" data-kind="${c.kind}" data-plan="talk">Talk instead</button></div></div>`;
+  }
+  if (plan !== 'talk') return '';
+  const secLeft = c.end ? Math.max(0, (c.end - now) / 1000) : null;
+  const p = Listen.pick(secLeft, c.title);
+  if (!p) return `<div class="card listen"><div class="small muted">🎧 Listen queue empty</div><div class="small">Tag feeds “listen” in More → Watchlist, or save listen-tagged videos to the shelf.</div></div>`;
+  const it = p.item, n = Listen.queue().length;
+  return `<div class="card listen"><div class="row" style="justify-content:space-between"><span class="small muted">🎧 Listen next${it.from === 'shelf' ? ' · from your shelf' : ''}</span><span class="tag">${n} in queue</span></div>
+    <div style="font-weight:600;margin:4px 0">${esc(it.title)}</div>
+    <div class="small muted">${esc(it.source || '')}${it.durationSec ? ' · ' + mmss(it.durationSec) : ''}</div>
+    ${p.why ? `<div class="math">${esc(p.why)}</div>` : ''}
+    <div class="actions"><a class="btn sm primary" ${playAttrs(it.url)} data-act="listenPlay" data-key="${esc(it.key)}">▶ Play${isAndroid() ? ' in YouTube' : ''}</a>
+      <button class="btn sm" data-act="listenSkip" data-key="${esc(it.key)}">Skip</button><button class="btn sm ghost" data-act="go" data-view="inbox">Queue</button></div>
+    ${isAndroid() ? '' : '<div class="small muted" style="margin-top:6px">Listening on your phone? Open the app there — it shows the same queue.</div>'}</div>`;
+}
+
+/** Full queue list (Inbox tab). */
+function listenQueueHtml() {
+  const q = Listen.queue();
+  if (!q.length) return '<div class="empty">Nothing to listen to yet. Feeds tagged “listen” fill this up after each digest build.</div>';
+  const total = q.filter(x => x.durationSec).reduce((a, x) => a + x.durationSec, 0), known = q.filter(x => x.durationSec).length;
+  return `<ul class="list">${q.slice(0, 25).map(x => `<li><span class="grow"><a ${playAttrs(x.url)} data-act="listenPlay" data-key="${esc(x.key)}">${esc(x.title)}</a>
+      <br><span class="small muted">${esc(x.source || '')}${x.durationSec ? ' · ' + mmss(x.durationSec) : ''}${x.from === 'shelf' ? ' · shelf' : ''}</span></span>
+      <button class="icon" data-act="listenDone" data-key="${esc(x.key)}" title="Done" aria-label="Done">✓</button></li>`).join('')}</ul>
+    ${known ? `<div class="math">${known} with known length: ${q.filter(x => x.durationSec).slice(0, 8).map(x => Math.round(x.durationSec / 60)).join(' + ')}${known > 8 ? ' + …' : ''} ≈ ${Math.round(total / 60)} min of listening</div>` : ''}`;
+}
+
+/** Settings section (More). */
+function audioSettingsHtml() {
+  const kinds = Object.keys(KIND_LABEL).filter(k => !['wake', 'winddown'].includes(k));
+  const fa = S.settings.focusAudio || {};
+  return `<p class="small muted">What the Now screen suggests in each kind of block. Talk = your Listen queue; Focus = your focus-audio link.</p>
+    ${kinds.map(k => `<div class="row" style="min-height:48px"><span style="flex:1">${KIND_LABEL[k]}</span>
+      <div class="seg" style="flex:2">${['talk', 'focus', 'off'].map(p => `<button class="${Listen.plan(k) === p ? 'on' : ''}" data-act="audioPlanSet" data-kind="${k}" data-plan="${p}">${p[0].toUpperCase() + p.slice(1)}</button>`).join('')}</div></div>`).join('')}
+    <label class="f">Focus audio</label><div class="row"><span class="grow">${fa.url ? `${esc(fa.label || fa.url)}` : '<span class="muted">Not set</span>'}</span><button class="btn sm" data-act="focusAudioSet">${fa.url ? 'Change' : 'Set'}</button></div>
+    <p class="small muted">Tag which feeds are good to listen to with the tag <b>listen</b> (More → Watchlist & lenses). ${isAndroid() ? 'Play opens the YouTube app — with Premium it keeps playing with the screen off.' : 'On Android, Play opens the YouTube app (background play needs YouTube Premium).'}</p>`;
+}
+
+const ACT4 = {
+  listenPlay(el) {
+    const it = Listen.find(el.dataset.key); if (!it) return;
+    S.listening = { key: it.key, title: it.title, durationSec: it.durationSec || null, startedAt: Date.now() };
+    save(); setTimeout(render, 300);                 // let the link open first
+  },
+  listenDone(el) { Listen.done(el.dataset.key); render(); },
+  listenStop() { S.listening = null; save(); render(); },
+  listenSkip(el) { (S.listenSkip ||= {}); (S.listenSkip[today()] ||= []).push(el.dataset.key); save(); render(); },
+  focusPlay() { const fa = S.settings.focusAudio; S.listening = { key: 'focus', focus: true, title: fa.label || 'Focus audio', durationSec: null, startedAt: Date.now() }; save(); setTimeout(render, 300); },
+  async focusAudioSet() {
+    const fa = S.settings.focusAudio || {};
+    const v = await formSheet('Focus audio', [{ name: 'label', label: 'Name', value: fa.label || '' }, { name: 'url', label: 'Link (YouTube video or playlist, or any audio page)', value: fa.url || '' }],
+      { note: 'Instrumental, lo-fi, ambient or classical — anything without talking.', deletable: !!fa.url });
+    if (!v) return;
+    if (v.__delete) S.settings.focusAudio = null;
+    else { if (!/^https?:\/\//.test(v.url)) return toast('Paste a full link (https://…).'); S.settings.focusAudio = { label: v.label, url: v.url }; }
+    save(); render();
+  },
+  audioPlanSet(el) { S.settings.audioPlan = { ...AUDIO_PLAN_DEFAULT, ...(S.settings.audioPlan || {}), [el.dataset.kind]: el.dataset.plan }; save(); render(); },
+  audioPlanQuick(el) { ACT4.audioPlanSet(el); toast(`${KIND_LABEL[el.dataset.kind]} blocks now use ${el.dataset.plan}. Change in More → Listening while working.`); },
+};
+</script>
+
+<script>
+/* =====================================================================
+   PART 5 — RENDERING
+   Each view is a function that returns HTML. Clicks are handled by one
+   delegated listener reading data-act attributes (PART 6).
+   ===================================================================== */
+let R = null;                 // latest engine result
+let currentView = 'now';
+let focusWeekOffset = 0;      // weekly chart navigation
+let routineTab = Engine.isWeekend(new Date()) ? 'weekend' : 'weekday';
+
+function applyTheme() {
+  let t = S.settings.theme;
+  if (t === 'auto') t = matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+  document.documentElement.dataset.theme = t;
+  document.querySelector('meta[name=theme-color]').content = getComputedStyle(document.documentElement).getPropertyValue('--bg').trim();
+}
+const modeColor = m => `var(--m-${m})`;
+
+/** A collapsible secondary section that remembers whether it was open. */
+function sec(id, title, body, defOpen = false, right = '') {
+  const open = S.ui.open[id] ?? defOpen;
+  return `<details class="sec" data-sec="${id}" ${open ? 'open' : ''}><summary><span>${title}</span>${right}</summary><div class="body">${body}</div></details>`;
+}
+
+/* ---------------- header: clock + mode chips ---------------- */
+function renderHeader() {
+  const now = new Date();
+  $('#clock').textContent = now.toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short' }) + ' · ' + fmtT(now);
+  $('#modes').innerHTML = Engine.MODES.map(m =>
+    `<button class="chip ${R.mode === m ? 'on' : ''}" style="--mode-c:${modeColor(m)}" data-act="setMode" data-mode="${m}">${MODE_LABEL[m]}</button>`).join('');
+  $('#modeNote').innerHTML = R.overrideOn
+    ? `manual until ${fmtT(new Date(S.modeOverride.until))} · <a href="#" data-act="clearMode" style="color:inherit">auto</a>`
+    : 'auto by time';
+  document.documentElement.style.setProperty('--mode-c', modeColor(R.mode));
+  const n = S.inbox.length, b = $('#inboxBadge');
+  b.textContent = n; b.classList.toggle('hidden', !n);
+}
+
+/* ---------------- NOW view ---------------- */
+function renderNow() {
+  const now = new Date(), c = R.current, p = S.pomo;
+  let h = '';
+
+  // Overrun nudge — "Next: X. Start?"
+  if (R.overrun) {
+    const target = c.type === 'gap' ? R.next : c;
+    h += `<div class="nudge" role="alert"><b>${R.overrun.minutesOver} min over “${esc(R.overrun.active.title)}”.</b>
+      <div>Next: <b>${esc(target?.title || 'free time')}</b>. Start?</div>
+      <div class="actions"><button class="btn sm primary" data-act="nudgeStart">Start ${esc(target?.title || '')}</button>
+      <button class="btn sm" data-act="nudgeSnooze">+10 min</button><button class="btn sm ghost" data-act="nudgeDismiss">Dismiss</button></div></div>`;
+  }
+
+  // ---- hero card ----
+  const label = c.type === 'event' ? 'Calendar' : c.type === 'gap' ? 'Free' : (KIND_LABEL[c.kind] || 'Block');
+  const range = c.start && c.end ? `${fmtT(c.start)}–${fmtT(c.end)}` : c.end ? `until ${fmtT(c.end)}` : '';
+  h += `<article class="now" style="--mode-c:${modeColor(R.mode)}" aria-live="polite">
+    <div class="label"><span>Now · ${esc(label)}</span><span class="num">${range}</span></div>
+    <div class="title">${esc(c.title)}</div>`;
+  if (c.type === 'event') {
+    h += `<div class="sub">${c.location ? esc(c.location) + ' · ' : ''}${c.underlying ? 'then back to ' + esc(c.underlying.name) : ''}</div>`;
+    if (c.also.length) h += `<div class="also">Also now: ${c.also.map(esc).join(', ')}</div>`;
+  }
+  if (c.type === 'gap') h += `<div class="sub">${c.end ? 'Nothing scheduled until ' + whenLabel(c.end) : 'Nothing scheduled'}</div>`;
+  if (R.allDay.length) h += `<div class="sub">📅 ${R.allDay.map(esc).join(' · ')}</div>`;
+
+  // time-left bar
+  if (c.start && c.end) {
+    const pct = Math.min(100, Math.max(0, (now - c.start) / (c.end - c.start) * 100));
+    h += `<div class="bar"><i style="width:${pct.toFixed(1)}%"></i></div><div class="sub num">${fmtDur(c.end - now)} left</div>`;
+  }
+
+  // the task inside a work block
+  if (c.pick) {
+    const t = c.pick.task, src = (c.forcedWork ? 'Work mode (manual) · ' : '') + (c.pick.source === 'top3' ? 'Top 3' : c.pick.source === 'next' ? 'Next action' : 'Oldest open task');
+    const proj = projById(t.projectId);
+    h += `<div class="task"><div class="small muted">${src}${proj ? ' · ' + esc(proj.name) : ''}</div><div class="t">${esc(t.title)}</div></div>`;
+  } else if (Engine.WORK_KINDS.has(c.kind)) {
+    h += `<div class="task"><div class="t">No task picked</div><div class="small muted">Choose today's top 3 so this card knows what to show.</div></div>`;
+  }
+
+  // running pomodoro is shown right in the hero
+  if (p.phase !== 'idle') {
+    h += `<div class="timer num" id="heroTimer">${fmtClock(Pomo.remaining())}</div>
+      <div class="sub">${p.phase === 'work' ? 'Focus' : 'Break'}${p.paused ? ' · paused' : ''}</div>`;
+  }
+
+  // primary actions depend on the kind of "now"
+  h += `<div class="actions">`;
+  const isActive = S.active && S.active.id === c.id;
+  if (p.phase !== 'idle') {
+    h += p.paused ? `<button class="btn primary" data-act="pomoResume">Resume</button>` : `<button class="btn primary" data-act="pomoPause">Pause</button>`;
+    h += `<button class="btn" data-act="pomoStop">Stop</button>`;
+    if (c.pick) h += `<button class="btn" data-act="taskDone" data-id="${c.pick.task.id}">✓ Done</button>`;
+  } else if (c.pick) {
+    h += `<button class="btn primary" data-act="startFocus">▶ Start focus · ${S.settings.pomoWork}m</button>
+      <button class="btn" data-act="taskDone" data-id="${c.pick.task.id}">✓ Done</button>
+      <button class="btn ghost" data-act="taskSkip" data-id="${c.pick.task.id}">Not now</button>`;
+  } else if (Engine.WORK_KINDS.has(c.kind)) {
+    h += `<button class="btn primary" data-act="go" data-view="tasks">Pick top 3</button>`;
+  } else if ((c.kind === 'morning' || c.kind === 'wake') && !morningDone()) {
+    h += `<button class="btn primary" data-act="morning">☀ Start morning sequence</button>`;
+  } else if (c.kind === 'winddown') {
+    h += `<button class="btn primary" data-act="wrapup">Start 2-min wrap-up</button>`;
+  } else if (c.type === 'gap') {
+    h += `<button class="btn primary" data-act="capture">Capture a thought</button>`;
+  } else if (isActive) {
+    h += `<button class="btn primary" data-act="finishActive">Finish ${esc(c.title)}</button>`;
+  } else {
+    h += `<button class="btn primary" data-act="startActive">Start ${esc(c.title)}</button>`;
+  }
+  h += `</div>`;
+
+  // Next
+  if (R.next) {
+    const n = R.next;
+    h += `<div class="next"><span class="muted">NEXT</span><span style="flex:1"><b>${esc(n.title)}</b>${n.resume ? ' <span class="muted small">(resume)</span>' : ''}</span>
+      <span class="num muted">${whenLabel(n.at)} · in ${fmtDur(n.at - now)}</span></div>`;
+  }
+  h += `</article>`;
+  h += listenCardHtml();                          // 🎧 listen while working (PART 4d)
+
+  // ---- secondary sections: content changes with the mode ----
+  h += modeSections(R.mode);
+  $('#view-now').innerHTML = h;
+}
+
+/** Which secondary cards to show, per mode. Keep it short — the hero is the point. */
+function modeSections(mode) {
+  const parts = [];
+  const top3 = top3Html(true);
+  const comingUp = R.agenda.length ? `<ul class="list">${R.agenda.map(a =>
+    `<li><span class="num muted" style="width:96px">${whenLabel(a.at)}</span><span class="grow">${esc(a.title)}${a.type === 'event' ? ' <span class="tag">event</span>' : ''}</span></li>`).join('')}</ul>`
+    : '<div class="empty">Nothing else scheduled.</div>';
+  const minsToday = focusMinutes(today());
+  if (mode === 'work') {
+    parts.push(sec('now-top3', 'Today’s top 3', top3, true));
+    parts.push(sec('now-next', 'Next action per project', nextActionsHtml(), false));
+    parts.push(sec('now-focus', 'Focus today', `<div class="kpi"><div><b class="num">${minsToday}</b>minutes</div><div><b class="num">${todaysSessions().length}</b>sessions</div></div>`, false, `<span class="tag num">${minsToday}m</span>`));
+  } else if (mode === 'life') {
+    parts.push(sec('now-weather', 'Weather', Weather.html(), false, `<span class="tag">${Weather.short() || '—'}</span>`));
+    parts.push(sec('now-top3', 'Today’s top 3', top3, false));
+    parts.push(sec('now-inbox', `Inbox`, inboxHtml(true), S.inbox.length > 0, `<span class="tag">${S.inbox.length}</span>`));
+  } else if (mode === 'leisure') {
+    parts.push(sec('now-watch', 'Watch-later shelf', watchHtml(), true, `<span class="tag">${S.watch.length}</span>`));
+    parts.push(digestCard());
+    parts.push(freshPromptHtml());
+  } else if (mode === 'winddown') {
+    const w = S.wrapups[today()];
+    parts.push(`<div class="card"><h3>Evening wrap-up</h3><p class="muted small">${w ? 'Done at ' + fmtT(new Date(w.at)) + '. You can run it again.' : 'Two minutes: what got done, what rolls over, tomorrow’s top 3.'}</p>
+      <div class="actions"><button class="btn primary" data-act="wrapup">${w ? 'Redo wrap-up' : 'Start wrap-up'}</button></div></div>`);
+    parts.push(sec('now-tom', 'Tomorrow’s top 3', listTop3(tomorrow()), true));
+    parts.push(freshPromptHtml());
+  }
+  parts.push(sec('now-agenda', 'Coming up', comingUp, false));
+  return parts.join('');
+}
+
+/* ---------------- shared bits for tasks ---------------- */
+function top3Ids(dk = today()) { return (S.top3[dk] || []).filter(id => taskById(id)); }
+function top3Html(compact = false) {
+  const ids = top3Ids();
+  let h = '';
+  for (let i = 0; i < 3; i++) {
+    const t = taskById(ids[i]);
+    h += t ? `<div class="slot filled ${t.done ? 'done' : ''}"><span class="n">${i + 1}</span>
+        <button class="icon" data-act="toggleDone" data-id="${t.id}" aria-label="Toggle done"><span class="chk"></span></button>
+        <span class="grow" data-act="editTask" data-id="${t.id}">${esc(t.title)} <span class="tag">${esc(projById(t.projectId)?.name || '')}</span></span>
+        <button class="icon" data-act="top3Remove" data-id="${t.id}" aria-label="Remove from top 3">✕</button></div>`
+      : `<div class="slot" data-act="top3Pick"><span class="n">${i + 1}</span><span class="muted">Pick a task…</span></div>`;
+  }
+  if (!compact && !ids.length) {
+    const y = Engine.dateKey(Engine.atDay(new Date(today()), -1));
+    const carry = top3Ids(y).filter(id => !taskById(id).done);
+    if (carry.length) h += `<button class="btn sm" data-act="carryYesterday">Carry over ${carry.length} from yesterday</button>`;
+  }
+  return h;
+}
+function listTop3(dk) {
+  const ids = top3Ids(dk);
+  return ids.length ? `<ol>${ids.map(id => `<li>${esc(taskById(id).title)}</li>`).join('')}</ol>` : '<div class="empty">Not picked yet.</div>';
+}
+function nextActionsHtml() {
+  return `<ul class="list">${S.projects.map(p => {
+    const t = taskById(p.nextId);
+    return `<li><span class="grow"><b>${esc(p.name)}</b><br><span class="${t && !t.done ? '' : 'muted'}">${t && !t.done ? esc(t.title) : 'No next action set'}</span></span></li>`;
+  }).join('')}</ul>`;
+}
+function inboxHtml(compact = false) {
+  if (!S.inbox.length) return '<div class="empty">Inbox zero. Capture with the + button.</div>';
+  return `<ul class="list">${S.inbox.map(i => `<li><span class="grow">${esc(i.text)}<br><span class="small muted">${new Date(i.created).toLocaleString('en-GB', { weekday: 'short', hour: '2-digit', minute: '2-digit' })}</span></span>
+    <button class="icon" data-act="inboxToTask" data-id="${i.id}" title="Make it a task" aria-label="Make task">✓</button>
+    <button class="icon" data-act="inboxToWatch" data-id="${i.id}" title="Watch/read later" aria-label="Later">⏵</button>
+    <button class="icon" data-act="inboxDelete" data-id="${i.id}" title="Delete" aria-label="Delete">✕</button></li>`).join('')}</ul>`;
+}
+function watchHtml() {
+  if (!S.watch.length) return '<div class="empty">Empty. Tap the bookmark in the digest, or ⏵ on an inbox item, to save something here.</div>';
+  return `<ul class="list">${[...S.watch].reverse().map(w => `<li><span class="grow">${w.url ? `<a href="${esc(w.url)}" target="_blank" rel="noopener">${w.type === 'video' ? '▶ ' : ''}${esc(w.title)}</a>` : esc(w.title)}
+      <br><span class="small muted">${[w.source, w.category, w.duration].filter(Boolean).map(esc).join(' · ') || 'from inbox'}</span></span>
+    <button class="icon" data-act="watchDone" data-id="${w.id}" title="Watched / done" aria-label="Done">✓</button></li>`).join('')}</ul>`;
+}
+/** Card offering a time-boxed digest session. */
+function digestCard() {
+  const lens = Digest.defaultLens('standalone'), n = Digest.unreadCount(lens);
+  return `<div class="card"><div class="row" style="justify-content:space-between"><h3>Digest · ${esc(lensName(lens))}</h3><span class="tag">${C.digest ? n + ' new' : '—'}</span></div>
+    <p class="small muted">${C.digest ? `Updated ${ago(C.digest.fetchedAt)}. ` : ''}A ${S.settings.digestMin}-minute read that ends with “You’re caught up”.</p>
+    <div class="actions"><button class="btn" data-act="digestStart">Read digest · ${S.settings.digestMin} min</button></div></div>`;
+}
+
+/* ---------------- TASKS view ---------------- */
+let showDone = false;
+function renderTasks() {
+  let h = `<h2>Today’s top 3 <span class="muted small">${new Date(today()).toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'short' })}</span></h2>${top3Html()}`;
+  h += `<h2>Projects</h2><p class="muted small">★ = in today’s top 3 · ➜ = this project’s next action (shown on the Now card when nothing is in the top 3).</p>`;
+  for (const p of S.projects) {
+    const tasks = S.tasks.filter(t => t.projectId === p.id && (showDone || !t.done));
+    const ids = top3Ids();
+    h += `<div class="card"><div class="row" style="justify-content:space-between"><h3 data-act="editProject" data-id="${p.id}" style="cursor:pointer">${esc(p.name)}</h3>
+      <span class="tag">${S.tasks.filter(t => t.projectId === p.id && !t.done).length} open</span></div>
+      <ul class="list">${tasks.map(t => `<li class="${t.done ? 'done' : ''}">
+        <button class="icon" data-act="toggleDone" data-id="${t.id}" aria-label="Toggle done"><span class="chk"></span></button>
+        <span class="grow" data-act="editTask" data-id="${t.id}">${esc(t.title)}</span>
+        <button class="icon ${ids.includes(t.id) ? 'on' : ''}" data-act="toggleTop3" data-id="${t.id}" aria-label="Top 3">★</button>
+        <button class="icon next ${p.nextId === t.id ? 'on' : ''}" data-act="setNext" data-id="${t.id}" aria-label="Next action">➜</button></li>`).join('') || '<li class="empty">No open tasks.</li>'}</ul>
+      <form class="row" data-form="addTask" data-proj="${p.id}" style="margin-top:8px"><input type="text" placeholder="Add a task…" aria-label="New task in ${esc(p.name)}"><button class="btn sm">Add</button></form></div>`;
+  }
+  h += `<div class="actions"><button class="btn" data-act="addProject">+ Project</button>
+    <button class="btn ghost" data-act="toggleShowDone">${showDone ? 'Hide' : 'Show'} done</button></div>`;
+  $('#view-tasks').innerHTML = h;
+}
+
+/* ---------------- FOCUS view ---------------- */
+const focusMinutes = dk => S.pomoLog.filter(l => Engine.dateKey(new Date(l.start)) === dk).reduce((a, l) => a + l.min, 0);
+const todaysSessions = () => S.pomoLog.filter(l => Engine.dateKey(new Date(l.start)) === today());
+
+function weekData(offset = 0) {
+  // Monday of the selected week
+  const now = new Date(); const dow = (now.getDay() + 6) % 7;
+  const mon = Engine.atDay(now, -dow + offset * 7);
+  return [...Array(7)].map((_, i) => {
+    const d = Engine.atDay(mon, i), dk = Engine.dateKey(d);
+    const logs = S.pomoLog.filter(l => Engine.dateKey(new Date(l.start)) === dk);
+    return { d, dk, min: logs.reduce((a, l) => a + l.min, 0), n: logs.length };
+  });
+}
+/** Hand-rolled SVG bar chart (no libraries → works offline). */
+function weekChart(data) {
+  const W = 340, H = 170, top = 22, bottom = 26, bw = 30, gap = (W - 7 * bw) / 8;
+  const max = Math.max(60, ...data.map(d => d.min));
+  const tk = Engine.dateKey(new Date());
+  let s = `<svg viewBox="0 0 ${W} ${H}" width="100%" role="img" aria-label="Focus minutes per day this week">`;
+  s += `<line x1="0" x2="${W}" y1="${H - bottom}" y2="${H - bottom}" stroke="var(--border)"/>`;
+  data.forEach((d, i) => {
+    const x = gap + i * (bw + gap), h = (H - top - bottom) * d.min / max, y = H - bottom - h;
+    const isT = d.dk === tk;
+    s += `<rect x="${x}" y="${y}" width="${bw}" height="${Math.max(h, d.min ? 2 : 0)}" rx="6" fill="${isT ? 'var(--accent)' : 'var(--m-work)'}" opacity="${isT ? 1 : .75}"><title>${d.min} min, ${d.n} sessions</title></rect>`;
+    if (d.min) s += `<text x="${x + bw / 2}" y="${y - 6}" text-anchor="middle" font-size="11" fill="var(--muted)">${d.min}</text>`;
+    s += `<text x="${x + bw / 2}" y="${H - 8}" text-anchor="middle" font-size="11" fill="${isT ? 'var(--text)' : 'var(--muted)'}" font-weight="${isT ? 700 : 400}">${d.d.toLocaleDateString('en-GB', { weekday: 'narrow' })}</text>`;
+  });
+  return s + '</svg>';
+}
+function renderFocus() {
+  const p = S.pomo, st = S.settings;
+  const total = p.phase === 'idle' ? st.pomoWork * 60000 : p.planned * 60000;
+  const rem = p.phase === 'idle' ? total : Pomo.remaining();
+  const frac = Math.max(0, Math.min(1, 1 - rem / total)), C = 2 * Math.PI * 100;
+  const t = taskById(p.taskId) || R.current.pick?.task;
+  let h = `<h2>Focus</h2><div class="card" style="text-align:center">
+    <div class="ring"><svg viewBox="0 0 220 220"><circle cx="110" cy="110" r="100" fill="none" stroke="var(--surface2)" stroke-width="12"/>
+      <circle id="ringArc" cx="110" cy="110" r="100" fill="none" stroke="${p.phase === 'work' || p.phase === 'idle' ? 'var(--m-work)' : 'var(--m-life)'}" stroke-width="12" stroke-linecap="round"
+      stroke-dasharray="${C}" stroke-dashoffset="${C * (1 - frac)}" transform="rotate(-90 110 110)"/></svg>
+      <div class="in"><div class="timer num" id="focusTimer">${fmtClock(rem)}</div><div class="muted small">${p.phase === 'idle' ? 'Ready' : p.phase === 'work' ? 'Focus' : p.phase === 'long' ? 'Long break' : 'Break'}${p.paused ? ' · paused' : ''}</div></div></div>
+    <div class="muted" style="margin-top:6px">${t ? 'On: <b>' + esc(t.title) + '</b>' : 'No task attached'} <button class="btn sm ghost" data-act="pomoPickTask">change</button></div>
+    <div class="actions" style="justify-content:center">`;
+  if (p.phase === 'idle') h += `<button class="btn primary" data-act="pomoStart">▶ Start ${st.pomoWork}m</button><button class="btn" data-act="pomoBreak">Break ${st.pomoBreak}m</button>`;
+  else h += (p.paused ? `<button class="btn primary" data-act="pomoResume">Resume</button>` : `<button class="btn primary" data-act="pomoPause">Pause</button>`) + `<button class="btn" data-act="pomoStop">Stop</button>`;
+  h += `</div><p class="small muted">Session ${((p.count || 0) % st.longEvery) + 1} of ${st.longEvery} before a long break</p></div>`;
+
+  // Settings for lengths (inline, adjustable)
+  h += sec('focus-set', 'Timer lengths', `<div class="row"><label class="f" style="flex:1">Work (min)<input type="number" min="5" max="120" value="${st.pomoWork}" data-setting="pomoWork"></label>
+    <label class="f" style="flex:1">Break<input type="number" min="1" max="30" value="${st.pomoBreak}" data-setting="pomoBreak"></label></div>
+    <div class="row"><label class="f" style="flex:1">Long break<input type="number" min="5" max="60" value="${st.pomoLong}" data-setting="pomoLong"></label>
+    <label class="f" style="flex:1">Long every N<input type="number" min="2" max="8" value="${st.longEvery}" data-setting="longEvery"></label></div>
+    <label class="row" style="min-height:44px"><input type="checkbox" data-setting="autoBreak" ${st.autoBreak ? 'checked' : ''} style="width:22px;height:22px"> Start breaks automatically</label>`);
+
+  // Weekly chart + the maths behind the totals
+  const wk = weekData(focusWeekOffset), sum = wk.reduce((a, d) => a + d.min, 0), n = wk.reduce((a, d) => a + d.n, 0);
+  const daysWith = wk.filter(d => d.min).length;
+  h += `<h2>Week ${focusWeekOffset ? `(${focusWeekOffset > 0 ? '+' : ''}${focusWeekOffset})` : ''}</h2><div class="card">
+    <div class="row" style="justify-content:space-between"><button class="btn sm ghost" data-act="weekPrev">‹ Prev</button>
+    <span class="muted small">${wk[0].d.toLocaleDateString('en-GB', { day: 'numeric', month: 'short' })} – ${wk[6].d.toLocaleDateString('en-GB', { day: 'numeric', month: 'short' })}</span>
+    <button class="btn sm ghost" data-act="weekNext" ${focusWeekOffset >= 0 ? 'disabled' : ''}>Next ›</button></div>
+    ${weekChart(wk)}
+    <div class="kpi"><div><b class="num">${fmtDur(sum * 60000)}</b>focused</div><div><b class="num">${n}</b>sessions</div><div><b class="num">${daysWith ? Math.round(sum / daysWith) : 0}m</b>per active day</div></div>
+    <div class="math">${wk.map(d => d.min).join(' + ')} = ${sum} min = ${Math.floor(sum / 60)} h ${sum % 60} m
+avg per active day = ${sum} ÷ ${daysWith || 1} = ${daysWith ? (sum / daysWith).toFixed(1) : 0} min${n ? `\navg session = ${sum} ÷ ${n} = ${(sum / n).toFixed(1)} min` : ''}</div></div>`;
+
+  // Session log (latest first, last 7 days)
+  const cutoff = Date.now() - 7 * 864e5;
+  const recent = S.pomoLog.filter(l => l.start > cutoff).sort((a, b) => b.start - a.start);
+  h += sec('focus-log', 'Session log (7 days)', recent.length ? `<ul class="list">${recent.map(l => `<li><span class="num muted" style="width:110px">${new Date(l.start).toLocaleDateString('en-GB', { weekday: 'short' })} ${fmtT(new Date(l.start))}</span>
+    <span class="grow">${esc(l.taskTitle || '—')}${l.partial ? ' <span class="tag">partial</span>' : ''}</span><span class="num">${l.min}m</span>
+    <button class="icon" data-act="logDelete" data-id="${l.id}" aria-label="Delete entry">✕</button></li>`).join('')}</ul>` : '<div class="empty">No sessions yet.</div>');
+  $('#view-focus').innerHTML = h;
+}
+
+/* ---------------- INBOX view ---------------- */
+function renderInbox() {
+  $('#view-inbox').innerHTML = `<h2>Inbox <span class="muted small">${S.inbox.length} to sort</span></h2>
+    <p class="muted small">Capture now, decide later. Sorted during the evening wrap-up: ✓ task · ⏵ watch/read later · ✕ delete.</p>
+    <div class="card">${inboxHtml()}</div>
+    <div class="actions"><button class="btn primary" data-act="capture">+ Capture</button><button class="btn" data-act="wrapup">Evening wrap-up</button></div>
+    <h2>🎧 Listen queue</h2><div class="card">${listenQueueHtml()}</div>
+    <h2>Watch-later shelf</h2><div class="card">${watchHtml()}</div>
+    ${digestCard()}`;
+}
+
+/* ---------------- MORE view: events, routine, settings, data, help ---------------- */
+function renderMore() {
+  const st = S.settings;
+  const evs = S.events.filter(e => new Date(e.end) > Engine.atDay(new Date(), -1)).sort((a, b) => new Date(a.start) - new Date(b.start));
+  let h = '';
+  h += sec('more-events', 'Events (manual for now)', `<p class="muted small">Calendar events override the routine. Until Google Calendar is connected (Stage 4), add them here.</p>
+    <ul class="list">${evs.map(e => `<li><span class="grow" data-act="editEvent" data-id="${e.id}">${esc(e.title)}<br><span class="small muted">${e.allDay ? 'All day ' + new Date(e.start).toLocaleDateString('en-GB') : whenLabel(new Date(e.start)) + '–' + fmtT(new Date(e.end))}</span></span></li>`).join('') || '<li class="empty">No upcoming events.</li>'}</ul>
+    <div class="actions"><button class="btn" data-act="addEvent">+ Event</button></div>`, true);
+
+  // Routine editor
+  const blocks = [...S.routine[routineTab]].sort((a, b) => Engine.parseHM(a.start) - Engine.parseHM(b.start));
+  const overlaps = findOverlaps(blocks);
+  h += sec('more-routine', 'Routine', `<div class="seg" role="tablist"><button class="${routineTab === 'weekday' ? 'on' : ''}" data-act="routineTab" data-tab="weekday">Weekdays</button><button class="${routineTab === 'weekend' ? 'on' : ''}" data-act="routineTab" data-tab="weekend">Weekend</button></div>
+    <ul class="list" style="margin-top:8px">${blocks.map(b => `<li><span class="num" style="width:104px">${b.start}–${b.end}</span>
+      <span class="grow" data-act="editBlock" data-id="${b.id}">${esc(b.name)} <span class="tag" style="color:${modeColor(b.mode)}">${MODE_LABEL[b.mode]}</span>
+      ${Engine.parseHM(b.end) <= Engine.parseHM(b.start) ? '<span class="tag">past midnight</span>' : ''}
+      ${overlaps.has(b.id) ? '<span class="tag warnchip">overlaps</span>' : ''}</span></li>`).join('')}</ul>
+    ${overlaps.size ? '<p class="small warnchip">Overlapping blocks: the one that starts later wins while they overlap.</p>' : ''}
+    <div class="actions"><button class="btn" data-act="addBlock">+ Block</button><button class="btn ghost" data-act="copyRoutine">Copy to ${routineTab === 'weekday' ? 'weekend' : 'weekdays'}</button><button class="btn ghost danger" data-act="resetRoutine">Reset</button></div>`);
+
+  // Settings
+  h += sec('more-settings', 'Settings', `<label class="f">Theme</label><div class="seg">${['auto', 'dark', 'light', 'sepia'].map(t => `<button class="${st.theme === t ? 'on' : ''}" data-act="theme" data-theme="${t}">${t[0].toUpperCase() + t.slice(1)}</button>`).join('')}</div>
+    <div class="row"><label class="f" style="flex:1">Overrun nudge after (min)<input type="number" min="5" max="90" value="${st.overrunMin}" data-setting="overrunMin"></label>
+    <label class="f" style="flex:1">Day ends at (hour)<input type="number" min="0" max="8" value="${st.dayCutoff}" data-setting="dayCutoff"></label></div>
+    <label class="f">Voice capture language</label><select data-setting="speechLang">${[['en-GB', 'English (UK)'], ['en-US', 'English (US)'], ['de-DE', 'Deutsch']].map(([v, l]) => `<option value="${v}" ${st.speechLang === v ? 'selected' : ''}>${l}</option>`).join('')}</select>
+    <label class="row" style="min-height:44px;margin-top:8px"><input type="checkbox" data-setting="sound" ${st.sound ? 'checked' : ''} style="width:22px;height:22px"> Chime when timers end</label>
+    <div class="actions"><button class="btn" data-act="notifPerm">${'Notification' in window && Notification.permission === 'granted' ? 'Notifications on ✓' : 'Enable notifications'}</button><button class="btn ghost" data-act="welcome">Show welcome</button></div>`);
+
+  // Watchlist & lenses (Stage 3)
+  const wlProbs = (S.watchlist?.feeds || []).filter(f => f.check || (Watchlist.health(f.id) && Watchlist.health(f.id).status !== 'ok')).length;
+  h += sec('more-watch', 'Watchlist & lenses', watchlistHtml(), false,
+    `<span class="tag">${S.watchlist ? S.watchlist.feeds.length + ' feeds' : '—'}${S.watchlistDirty ? ' · unpublished' : wlProbs ? ' · ' + wlProbs + ' to look at' : ''}</span>`);
+
+  // Listening while working
+  h += sec('more-audio', 'Listening while working', audioSettingsHtml());
+
+  // Morning sequence & weather
+  const loc = st.location;
+  h += sec('more-morning', 'Morning sequence & weather', `<label class="row" style="min-height:44px"><input type="checkbox" data-setting="morningAuto" ${st.morningAuto ? 'checked' : ''} style="width:22px;height:22px"> Open it at the first open of the day</label>
+    <div class="row"><label class="f" style="flex:1">…if that’s before<input type="time" value="${st.morningLatest}" data-setting="morningLatest"></label>
+    <label class="f" style="flex:1">Digest length (min)<input type="number" min="3" max="60" value="${st.digestMin}" data-setting="digestMin"></label></div>
+    <div class="row"><label class="f" style="flex:1">Max digest items<input type="number" min="5" max="100" value="${st.digestMax}" data-setting="digestMax"></label>
+    <label class="f" style="flex:1">Ignore items older than (h)<input type="number" min="6" max="168" value="${st.digestHours}" data-setting="digestHours"></label></div>
+    <label class="f">Your first name (for the greeting)</label><input type="text" value="${esc(st.name)}" data-setting="name">
+    <label class="f">Weather location</label><div class="row"><span class="grow">${loc ? `${esc(loc.name)} <span class="small muted">(${loc.lat}, ${loc.lon})</span>` : '<span class="muted">Not set</span>'}</span></div>
+    <div class="actions"><button class="btn sm" data-act="locGeo">📍 Use my location</button><button class="btn sm" data-act="locSearch">Search a city</button></div>
+    <div class="actions"><button class="btn" data-act="morning">☀ Run morning sequence now</button><button class="btn" data-act="digestStart">Read digest</button></div>`);
+
+  // Data
+  h += sec('more-data', 'Data — export / import', `<p class="muted small">Everything is stored only in this browser (localStorage). Export regularly; import replaces current data.${S.savedAt ? ' Last saved ' + new Date(S.savedAt).toLocaleString('en-GB') + '.' : ''}</p>
+    <div class="actions"><button class="btn" data-act="export">Export JSON</button><label class="btn">Import JSON<input type="file" accept="application/json,.json" id="importFile" hidden></label>
+    <button class="btn ghost danger" data-act="resetAll">Erase all</button></div>`);
+
+  h += sec('more-help', 'Help & limits', helpHtml());
+  h += `<p class="muted small" style="text-align:center;margin-top:20px">Daily Command · Stage 3 · <span id="swState">offline cache: checking…</span></p>`;
+  $('#view-more').innerHTML = h;
+  updateSwState();
+}
+function findOverlaps(blocks) {
+  // turn each block into [s,e) minute ranges on a 0..2880 line (wrapping ones extend past 1440)
+  const r = blocks.map(b => { const s = Engine.parseHM(b.start); let e = Engine.parseHM(b.end); if (e <= s) e += 1440; return { id: b.id, s, e }; });
+  const out = new Set();
+  for (let i = 0; i < r.length; i++) for (let j = i + 1; j < r.length; j++) {
+    const a = r[i], b = r[j];
+    const ov = (x, y) => x.s < y.e && y.s < x.e;
+    if (ov(a, b) || ov(a, { s: b.s + 1440, e: b.e + 1440 }) || ov({ s: a.s + 1440, e: a.e + 1440 }, b)) { out.add(a.id); out.add(b.id); }
+  }
+  return out;
+}
+function helpHtml() {
+  return `<div class="help">
+  <h3>Install on Android</h3><p>Open the site in Chrome → ⋮ menu → <b>Add to home screen</b> / <b>Install app</b>. It then opens full-screen and works offline. Long-press the icon for a “Capture” shortcut.</p>
+  <h3>How the Now card decides</h3><ol><li>A calendar event happening now wins (overlaps: the most recently started one).</li><li>Otherwise your routine block (edit under More → Routine).</li><li>In Deep work / Admin blocks it shows a task: top 3 → project next action → oldest open task.</li></ol>
+  <p>Press <b>Start</b> on the card to mark what you’re doing. If you’re still on it ${S.settings.overrunMin} min after it should have ended, you get “Next: X. Start?”.</p>
+  <h3>Morning sequence</h3><p>The first time you open the app each day (before ${esc(S.settings.morningLatest)}), it walks you through: today’s weather and calendar → your top 3 → a ${S.settings.digestMin}-minute digest → <b>Start work</b>, which switches to Work mode and starts the first focus session. Skip it any time with ✕; run it again from the Now card or More.</p>
+  <h3>Digest & lenses</h3><p>A fixed list (max ${S.settings.digestMax} items, keyword matches first) with a countdown. Pick a <b>lens</b> at the top (Laugh, Politics & debate, Gaming…) to see only those tags, and optionally just Videos / Reddit / News / Articles. Switching lens keeps the same time-box. The bookmark saves to the watch-later shelf, ✓ marks read, tapping a title opens it. When the list is empty you’re caught up — nothing more loads. Hover or long-press “score” to see how it was added up.</p>
+  <h3>Weather</h3><p>From Open-Meteo (free, no account). Set your location under More → Morning sequence & weather. “Use my location” asks once for GPS; or search a city. Offline you’ll see the last forecast and when it was fetched.</p>
+  <h3>What isn’t possible / reliable</h3>
+  <ul><li class="limit"><b>Timers when the app is closed.</b> A web page can’t wake itself up. Pomodoro end chimes and notifications fire only while the app is open or recently backgrounded; Android may freeze it sooner. The timer itself is timestamp-based, so it’s always correct when you come back. Reliable alarms come in Stage 4 via Google Calendar events.</li>
+  <li class="limit"><b>The morning sequence can’t open itself.</b> It starts the first time <i>you</i> open the app in the morning; a web app can’t launch on its own at 07:30.</li>
+  <li class="limit"><b>Voice capture</b> uses Chrome’s speech recognition, which sends audio to Google and needs a connection. Offline, type instead.</li>
+  <li class="limit"><b>Your data lives in one browser.</b> Phone and desktop don’t share it until Drive sync (Stage 4). Use Export as a backup.</li></ul>
+  <h3>Stage 3 setup — your own feeds (one-off, ~10 min)</h3>
+  <ol>
+    <li><b>Repo:</b> on github.com create a repository (e.g. <code>daily-command</code>) and upload every file from the zip, keeping the folders (<code>.github/workflows</code>, <code>scripts</code>, <code>tests</code>, <code>icons</code>). Hidden folders: if the web uploader skips <code>.github</code>, create the file via <b>Add file → Create new file</b> and type <code>.github/workflows/digest.yml</code> as the name, then paste its contents.</li>
+    <li><b>Pages:</b> Settings → Pages → Build and deployment → Source: <b>GitHub Actions</b>.</li>
+    <li><b>Actions:</b> Settings → Actions → General → allow actions, and under Workflow permissions choose <b>Read and write</b>.</li>
+    <li><b>First run:</b> Actions tab → “Digest + deploy” → <b>Run workflow</b>. After ~2 minutes your site is live at <code>https://&lt;you&gt;.github.io/&lt;repo&gt;/</code> with a real digest. It then runs every 3 hours by itself.</li>
+    <li><b>Check the watchlist:</b> More → Watchlist & lenses shows each feed’s health. YouTube names are found by search — check “found …” is the right channel; if not, edit the feed and paste its <code>@handle</code> or channel link.</li>
+  </ol>
+  <h3>Editing the watchlist</h3>
+  <p>More → Watchlist & lenses: add feeds (YouTube channel, subreddit, Google News search, any RSS URL), give them tags, build lenses from tags, set keyword boosts. Edits are local until you <b>publish</b>:</p>
+  <ul><li><b>Easiest:</b> “Download feeds.json”, then in the repo open feeds.json → ✎ edit → paste, or upload it (replace). The push rebuilds the digest.</li>
+  <li><b>One tap (optional):</b> create a <b>fine-grained personal access token</b> (GitHub → Settings → Developer settings → Fine-grained tokens) with access to <i>only this repository</i>, permissions <b>Contents: Read and write</b> and <b>Actions: Read and write</b>. Paste it under “Publish to GitHub”. It’s stored only in this browser and never exported — but anyone using this browser profile could read it, so keep the scope that narrow, and set an expiry.</li></ul>
+  <p>Every ${S.settings.freshDays || 30} days without a new feed, you’ll get a gentle “Time for something new?” card (change or switch off in the watchlist section).</p>
+  <h3>Listening while working</h3>
+  <p>Feeds tagged <b>listen</b> (podcasts, talking-head channels) form a Listen queue. In a block, the Now screen shows one pick that fits the time left — with the comparison written out — and <b>Play</b> opens it in the YouTube app on Android. With YouTube Premium it keeps playing with the screen off. Per block kind you can choose talk, focus audio (e.g. an instrumental playlist) or off: More → Listening while working. The default is talk for Admin and Lunch, focus audio for Deep work, because speech competes with reading and writing.</p>
+  <p>Video lengths come from each video’s page (looked up once by the GitHub Action). If YouTube changes that page, items show no length and the pick falls back to queue order. Until phone–desktop sync (Stage 4), marking something done on one device doesn’t hide it on the other.</p>
+  <h3>Morning briefing slot (optional, later)</h3>
+  <p>If the repo ever contains <code>briefing.json</code> (<code>{"generated", "title", "markdown"}</code>) or <code>briefing.md</code> — e.g. written by an AI step you add to the workflow (a commented example is in <code>digest.yml</code>) — it appears at the top of the morning sequence while it’s under 24 h old.</p>
+  <h3>Feeds: what’s reliable and what isn’t</h3>
+  <ul><li class="limit"><b>Reddit often blocks cloud servers.</b> GitHub’s machines frequently get “403 blocked” from Reddit, even for public RSS. The builder tries reddit.com then old.reddit.com and reports the result per subreddit; if they’re blocked there’s no free, reliable workaround from GitHub.</li>
+  <li class="limit"><b>YouTube by name is a guess.</b> Name search picks the top channel result, which can be wrong; the health line shows what it found. Pin it with an @handle. Shorts are skipped using an unofficial YouTube playlist trick that falls back to the normal feed (with Shorts) if it stops working.</li>
+  <li class="limit"><b>Some sites block scraping</b> or have no feed. They show as ⚠ with the HTTP code. Google News searches are a good substitute for news sites without RSS.</li>
+  <li class="limit"><b>“Every 3 hours” is approximate.</b> GitHub may delay scheduled runs at busy times. In a <b>public</b> repo, scheduled runs pause after 60 days with no repository activity; re-enable them in the Actions tab (publishing a watchlist edit counts as activity).</li></ul></div>`;
+}
+
+/* ---------------- render dispatcher ---------------- */
+function render(full = true) {
+  R = Engine.resolve(new Date(), S);
+  renderHeader();
+  if (currentView === 'now') renderNow();
+  if (morningOpen()) renderMorning();
+  if (!full) return;
+  ({ tasks: renderTasks, focus: renderFocus, inbox: renderInbox, more: renderMore })[currentView]?.();
+}
+function go(view) {
+  currentView = view;
+  document.querySelectorAll('.view').forEach(v => v.classList.toggle('on', v.id === 'view-' + view));
+  document.querySelectorAll('nav.bottom button').forEach(b => b.classList.toggle('on', b.dataset.view === view));
+  render(); scrollTo({ top: 0 });
+  if (location.hash !== '#' + view) history.replaceState(null, '', '#' + view);
+}
+</script>
+
+<script>
+/* =====================================================================
+   PART 6 — ACTIONS (one delegated click handler)
+   ===================================================================== */
+const ACT = {
+  go: el => go(el.dataset.view),
+
+  // ---- modes ----
+  setMode(el) {
+    const m = el.dataset.mode;
+    if (m === R.autoMode) { S.modeOverride = null; }
+    else {
+      // manual override lasts until the end of the current block/event (or 2h in a gap)
+      const until = R.current.end && R.current.type !== 'gap' ? R.current.end : new Date(Date.now() + 2 * 3600e3);
+      S.modeOverride = { mode: m, until: until.toISOString() };
+    }
+    save(); render();
+  },
+  clearMode(el, e) { e.preventDefault(); S.modeOverride = null; save(); render(); },
+
+  // ---- Now card ----
+  startActive() { setActive(R.current); render(); },
+  finishActive() { S.active = null; save(); toast('Nice. Check the Now card for what’s next.'); render(); },
+  startFocus() { setActive(R.current); Pomo.start('work', R.current.pick?.task.id); askNotifOnce(); render(); },
+  taskSkip(el) { (S.skips[R.current.day || today()] ||= []).push(el.dataset.id); save(); render(); },
+  nudgeStart() { const t = R.current.type === 'gap' ? R.next : R.current; S.active = null; if (t) setActive(t); render(); },
+  nudgeSnooze() { S.active.snoozeUntil = new Date(Date.now() + 10 * 60000).toISOString(); save(); render(); },
+  nudgeDismiss() { S.active = null; save(); render(); },
+
+  // ---- tasks ----
+  toggleDone(el) {
+    const t = taskById(el.dataset.id); if (!t) return;
+    t.done = !t.done; t.doneAt = t.done ? Date.now() : null; save(); render();
+    if (t.done) toast('Done: ' + t.title, 'Undo', () => { t.done = false; t.doneAt = null; save(); render(); });
+  },
+  taskDone(el) { ACT.toggleDone(el); },
+  async editTask(el) {
+    const t = taskById(el.dataset.id); if (!t) return;
+    const v = await formSheet('Edit task', [{ name: 'title', label: 'Task', value: t.title },
+      { name: 'projectId', label: 'Project', type: 'select', value: t.projectId, options: S.projects.map(p => ({ value: p.id, label: p.name })) }], { deletable: true });
+    if (!v) return;
+    if (v.__delete) { S.tasks = S.tasks.filter(x => x.id !== t.id); S.projects.forEach(p => { if (p.nextId === t.id) p.nextId = null; }); }
+    else Object.assign(t, { title: v.title || t.title, projectId: v.projectId });
+    save(); render();
+  },
+  toggleTop3(el) {
+    const ids = (S.top3[today()] ||= []), id = el.dataset.id, i = ids.indexOf(id);
+    if (i >= 0) ids.splice(i, 1);
+    else if (top3Ids().length >= 3) return toast('Top 3 is full — remove one first.');
+    else ids.push(id);
+    S.top3[today()] = ids.filter(taskById); save(); render();
+  },
+  top3Remove(el) { S.top3[today()] = top3Ids().filter(id => id !== el.dataset.id); save(); render(); },
+  async top3Pick() {
+    const chosen = top3Ids();
+    const id = await choose('Pick for today', S.tasks.filter(t => !t.done && !chosen.includes(t.id))
+      .map(t => ({ value: t.id, label: t.title, tag: projById(t.projectId)?.name })));
+    if (!id) return; S.top3[today()] = [...chosen, id].slice(0, 3); save(); render();
+  },
+  carryYesterday() {
+    const y = Engine.dateKey(Engine.atDay(new Date(today()), -1));
+    S.top3[today()] = top3Ids(y).filter(id => !taskById(id).done).slice(0, 3); save(); render();
+  },
+  setNext(el) { const t = taskById(el.dataset.id), p = projById(t.projectId); p.nextId = p.nextId === t.id ? null : t.id; save(); render(); },
+  async addProject() { const v = await formSheet('New project', [{ name: 'name', label: 'Name' }]); if (v?.name) { S.projects.push({ id: uid(), name: v.name, nextId: null }); save(); render(); } },
+  async editProject(el) {
+    const p = projById(el.dataset.id);
+    const v = await formSheet('Project', [{ name: 'name', label: 'Name', value: p.name }], { deletable: true });
+    if (!v) return;
+    if (v.__delete) {
+      if (S.tasks.some(t => t.projectId === p.id && !t.done)) return toast('Move or finish its open tasks first.');
+      S.projects = S.projects.filter(x => x.id !== p.id);
+    } else p.name = v.name || p.name;
+    save(); render();
+  },
+  toggleShowDone() { showDone = !showDone; render(); },
+
+  // ---- capture & inbox ----
+  capture: () => openCapture(),
+  async inboxToTask(el) {
+    const item = S.inbox.find(i => i.id === el.dataset.id);
+    const pid = await choose('Which project?', S.projects.map(p => ({ value: p.id, label: p.name })));
+    if (!pid) return;
+    S.tasks.push({ id: uid(), title: item.text, projectId: pid, done: false, created: Date.now() });
+    S.inbox = S.inbox.filter(i => i !== item); save(); render(); if ($('#dlg').open) renderWrap();
+  },
+  inboxToWatch(el) {
+    const item = S.inbox.find(i => i.id === el.dataset.id);
+    const url = (item.text.match(/https?:\/\/\S+/) || [])[0] || '';
+    S.watch.push({ id: uid(), title: item.text.replace(url, '').trim() || url, url, created: Date.now() });
+    S.inbox = S.inbox.filter(i => i !== item); save(); render(); if ($('#dlg').open) renderWrap();
+  },
+  inboxDelete(el) { S.inbox = S.inbox.filter(i => i.id !== el.dataset.id); save(); render(); if ($('#dlg').open) renderWrap(); },
+  watchDelete(el) { S.watch = S.watch.filter(i => i.id !== el.dataset.id); save(); render(); },
+
+  // ---- pomodoro ----
+  pomoStart() { if (!S.active) setActive(R.current); Pomo.start('work', S.pomo.taskId || R.current.pick?.task.id); askNotifOnce(); render(); },
+  pomoBreak() { Pomo.start('break'); render(); },
+  pomoPause() { Pomo.pause(); render(); },
+  pomoResume() { Pomo.resume(); render(); },
+  pomoStop() { Pomo.stop(); render(); },
+  async pomoPickTask() {
+    const id = await choose('Attach a task', S.tasks.filter(t => !t.done).map(t => ({ value: t.id, label: t.title, tag: projById(t.projectId)?.name })));
+    if (id) { S.pomo.taskId = id; save(); render(); }
+  },
+  weekPrev() { focusWeekOffset--; render(); },
+  weekNext() { if (focusWeekOffset < 0) focusWeekOffset++; render(); },
+  logDelete(el) { S.pomoLog = S.pomoLog.filter(l => l.id !== el.dataset.id); save(); render(); },
+
+  // ---- wrap-up ----
+  wrapup: () => openWrap(),
+
+  // ---- events ----
+  addEvent: () => editEvent(null),
+  editEvent: el => editEvent(S.events.find(e => e.id === el.dataset.id)),
+
+  // ---- routine ----
+  routineTab(el) { routineTab = el.dataset.tab; render(); },
+  editBlock: el => editBlock(S.routine[routineTab].find(b => b.id === el.dataset.id)),
+  addBlock: () => editBlock(null),
+  copyRoutine() {
+    const to = routineTab === 'weekday' ? 'weekend' : 'weekday';
+    if (!confirm(`Replace the ${to} routine with a copy of this one?`)) return;
+    S.routine[to] = S.routine[routineTab].map(b => ({ ...b, id: uid() })); save(); toast('Copied.');
+  },
+  resetRoutine() { if (confirm('Reset both routines to the defaults?')) { S.routine = defaultRoutine(); save(); render(); } },
+
+  // ---- settings & data ----
+  theme(el) { S.settings.theme = el.dataset.theme; save(); applyTheme(); render(); },
+  async notifPerm() { if ('Notification' in window) { await Notification.requestPermission(); render(); } else toast('Notifications not supported here.'); },
+  welcome: () => openWelcome(),
+  export() {
+    const blob = new Blob([JSON.stringify(S, null, 2)], { type: 'application/json' });
+    const a = Object.assign(document.createElement('a'), { href: URL.createObjectURL(blob), download: `daily-command-${today()}.json` });
+    a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 2000);
+  },
+  resetAll() { if (confirm('Erase ALL data in this browser? Export first if unsure.')) { localStorage.removeItem(STORE_KEY); S = defaultState(); S.settings.welcomed = true; save(); render(); } },
+};
+
+Object.assign(ACT, ACT2, ACT3, ACT4);   // + listen while working   // Stage 2 (morning, digest, weather) and Stage 3 (lenses, watchlist) actions
+
+function setActive(item) {
+  if (!item || !item.end) { S.active = null; return save(); }
+  S.active = { id: item.id, title: item.title, plannedEnd: item.end.toISOString(), startedAt: new Date().toISOString() };
+  save();
+}
+let askedNotif = false;
+function askNotifOnce() {
+  if (askedNotif || !('Notification' in window) || Notification.permission !== 'default') return;
+  askedNotif = true;
+  toast('Get a notification when focus ends?', 'Allow', () => Notification.requestPermission());
+}
+
+document.addEventListener('click', e => {
+  const nav = e.target.closest('nav.bottom button'); if (nav) return go(nav.dataset.view);
+  const el = e.target.closest('[data-act]'); if (!el) return;
+  const fn = ACT[el.dataset.act]; if (fn) fn(el, e);
+});
+// remember open/closed state of collapsible sections
+document.addEventListener('toggle', e => {
+  const d = e.target; if (d.matches?.('details[data-sec]')) { S.ui.open[d.dataset.sec] = d.open; save(); }
+}, true);
+// inline "add task" forms
+document.addEventListener('submit', e => {
+  const f = e.target.closest('[data-form=addTask]'); if (!f) return;
+  e.preventDefault();
+  const inp = f.querySelector('input'), title = inp.value.trim(); if (!title) return;
+  S.tasks.push({ id: uid(), title, projectId: f.dataset.proj, done: false, created: Date.now() });
+  save(); render();
+  setTimeout(() => document.querySelector(`[data-form=addTask][data-proj="${f.dataset.proj}"] input`)?.focus(), 0);
+});
+// settings inputs (data-setting="key")
+document.addEventListener('change', e => {
+  const el = e.target;
+  if (el.id === 'importFile') return importFile(el.files[0]);
+  if (el.id === 'feedsFile') return importFeeds(el.files[0]);
+  const k = el.dataset?.setting; if (!k) return;
+  if (k.startsWith('lens.')) { S.settings.lensByMode = { ...S.settings.lensByMode, [k.slice(5)]: el.value }; save(); return render(); }
+  let v = el.type === 'checkbox' ? el.checked : el.type === 'number' ? Number(el.value) : el.value;
+  if (el.type === 'number') { const mn = +el.min, mx = +el.max; v = Math.min(mx, Math.max(mn, v || mn)); }
+  S.settings[k] = v; save(); render();
+});
+
+/** Import a feeds.json (e.g. edited on a computer) as the working watchlist. */
+async function importFeeds(file) {
+  if (!file) return;
+  try {
+    const d = JSON.parse(await file.text());
+    if (!Array.isArray(d.feeds)) throw new Error('no "feeds" list');
+    S.watchlist = d; Watchlist.touch(); render(); toast(`Imported ${d.feeds.length} feeds. Publish to use them.`);
+  } catch (e) { toast('Import failed: ' + e.message); }
+}
+async function importFile(file) {
+  if (!file) return;
+  try {
+    const d = JSON.parse(await file.text());
+    if (!d || typeof d !== 'object' || !d.routine || !Array.isArray(d.tasks)) throw new Error('Not a Daily Command export');
+    if (!confirm('Replace current data with this file?')) return;
+    S = migrate(d); save(); applyTheme(); render(); toast('Imported.');
+  } catch (err) { toast('Import failed: ' + err.message); }
+}
+
+/* ---------------- editors ---------------- */
+async function editEvent(ev) {
+  const now = new Date(), d = ev ? new Date(ev.start) : now;
+  const hm = x => fmtT(x);
+  const v = await formSheet(ev ? 'Edit event' : 'New event', [
+    { name: 'title', label: 'Title', value: ev?.title || '' },
+    { name: 'date', label: 'Date', type: 'date', value: Engine.dateKey(d) },
+    { name: 'start', label: 'Start', type: 'time', value: ev ? hm(new Date(ev.start)) : hm(new Date(Math.ceil(now / 9e5) * 9e5)) },
+    { name: 'end', label: 'End (earlier than start = next day)', type: 'time', value: ev ? hm(new Date(ev.end)) : hm(new Date(Math.ceil(now / 9e5) * 9e5 + 36e5)) },
+    { name: 'allDay', label: 'All day', type: 'checkbox', value: ev?.allDay, hint: 'All-day (shown, never overrides)' },
+    { name: 'location', label: 'Location (optional)', value: ev?.location || '' },
+  ], { deletable: !!ev });
+  if (!v) return;
+  if (v.__delete) { S.events = S.events.filter(e => e.id !== ev.id); save(); return render(); }
+  if (!v.title) return toast('Give it a title.');
+  const [y, m, dd] = v.date.split('-').map(Number);
+  const sMin = Engine.parseHM(v.start), eMin = Engine.parseHM(v.end);
+  const base = new Date(y, m - 1, dd);
+  const start = v.allDay ? base : Engine.atDay(base, 0, sMin);
+  const end = v.allDay ? Engine.atDay(base, 1) : Engine.atDay(base, eMin > sMin ? 0 : 1, eMin);
+  const out = { id: ev?.id || uid(), title: v.title, start: start.toISOString(), end: end.toISOString(), allDay: !!v.allDay, location: v.location, source: 'manual' };
+  S.events = S.events.filter(e => e.id !== out.id).concat(out);
+  save(); render();
+}
+async function editBlock(b) {
+  const v = await formSheet(b ? 'Edit block' : 'New block', [
+    { name: 'name', label: 'Name', value: b?.name || '' },
+    { name: 'start', label: 'Start', type: 'time', value: b?.start || '09:00' },
+    { name: 'end', label: 'End (earlier than start = past midnight)', type: 'time', value: b?.end || '10:00' },
+    { name: 'kind', label: 'Kind', type: 'select', value: b?.kind || 'deep', options: Object.entries(KIND_LABEL).map(([value, label]) => ({ value, label })) },
+    { name: 'mode', label: 'Mode', type: 'select', value: b?.mode || 'work', options: Engine.MODES.map(m => ({ value: m, label: MODE_LABEL[m] })) },
+  ], { deletable: !!b, note: routineTab === 'weekday' ? 'Applies Monday–Friday.' : 'Applies Saturday & Sunday.' });
+  if (!v) return;
+  const list = S.routine[routineTab];
+  if (v.__delete) S.routine[routineTab] = list.filter(x => x.id !== b.id);
+  else {
+    if (isNaN(Engine.parseHM(v.start)) || isNaN(Engine.parseHM(v.end)) || v.start === v.end) return toast('Start and end must be valid and different.');
+    const nb = { id: b?.id || uid(), name: v.name || KIND_LABEL[v.kind], start: v.start, end: v.end, kind: v.kind, mode: v.mode };
+    S.routine[routineTab] = b ? list.map(x => x.id === b.id ? nb : x) : list.concat(nb);
+  }
+  save(); render();
+}
+</script>
+
+<script>
+/* =====================================================================
+   PART 7 — QUICK CAPTURE (text + optional voice)
+   ===================================================================== */
+function openCapture() {
+  const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+  $('#dlgBody').innerHTML = `<h3>Capture</h3><p class="muted small">Get it out of your head. Sort it tonight.</p>
+    <textarea id="capText" placeholder="Idea, task, link, thing to watch…"></textarea>
+    ${SR ? `<button class="btn" id="micBtn" style="width:100%;margin-top:8px">🎤 Speak (${S.settings.speechLang})</button>` : '<p class="small muted">Voice input isn’t available in this browser.</p>'}
+    <div class="actions"><button class="btn ghost" id="capCancel">Cancel</button><button class="btn primary" id="capSave">Save to inbox</button></div>`;
+  const dlg = $('#dlg'); dlg.onclose = null; $('#dlgBody').onclick = null;
+  let rec = null;
+  const stopRec = () => { try { rec?.stop(); } catch (e) {} rec = null; };
+  $('#capCancel').onclick = () => { stopRec(); dlg.close(); };
+  $('#capSave').onclick = () => {
+    stopRec();
+    const text = $('#capText').value.trim();
+    if (text) { S.inbox.push({ id: uid(), text, created: Date.now() }); save(); toast('Captured.'); render(); }
+    dlg.close();
+  };
+  if (SR) $('#micBtn').onclick = () => {
+    if (rec) return stopRec();
+    rec = new SR(); rec.lang = S.settings.speechLang; rec.interimResults = true; rec.continuous = false;
+    const before = $('#capText').value;
+    rec.onresult = ev => { $('#capText').value = (before ? before + ' ' : '') + [...ev.results].map(r => r[0].transcript).join(''); };
+    rec.onerror = ev => toast(ev.error === 'network' ? 'Voice needs a connection.' : 'Voice error: ' + ev.error);
+    rec.onend = () => { rec = null; const b = $('#micBtn'); if (b) b.textContent = `🎤 Speak (${S.settings.speechLang})`; };
+    rec.start(); $('#micBtn').textContent = '■ Listening… tap to stop';
+  };
+  dlg.showModal(); setTimeout(() => $('#capText').focus(), 50);
+}
+
+/* =====================================================================
+   PART 8 — EVENING WRAP-UP (3 steps, ~2 minutes, gentle countdown)
+   1. What got done  2. What rolls over (+ sort the inbox)  3. Tomorrow's top 3
+   ===================================================================== */
+let wrap = null;   // {step, endsAt, roll:Set, tom:[ids]}
+function openWrap() {
+  const open = top3Ids().filter(id => !taskById(id).done);
+  wrap = { step: 1, endsAt: Date.now() + 120000, roll: new Set(open), tom: [] };
+  const dlg = $('#dlg'); dlg.onclose = () => { wrap = null; }; $('#dlgBody').onclick = wrapClick;
+  renderWrap(); dlg.showModal();
+}
+function renderWrap() {
+  if (!wrap) return;
+  const td = today(), doneToday = S.tasks.filter(t => t.done && t.doneAt && Engine.dateKey(Engine.logicalDay(new Date(t.doneAt), S.settings.dayCutoff)) === td);
+  const mins = focusMinutes(td), n = todaysSessions().length;
+  let h = `<div class="row" style="justify-content:space-between"><h3>Wrap-up · ${wrap.step}/3</h3><span class="num muted" id="wrapClock">${fmtClock(wrap.endsAt - Date.now())}</span></div>`;
+  if (wrap.step === 1) {
+    h += `<p class="muted">What got done today</p><ul class="list">${doneToday.map(t => `<li class="done"><span class="icon"><span class="chk"></span></span><span class="grow">${esc(t.title)}</span></li>`).join('') || '<li class="empty">Nothing ticked off — that’s data, not a verdict.</li>'}</ul>`;
+    const open = top3Ids().filter(id => !taskById(id).done);
+    if (open.length) h += `<p class="muted small" style="margin-top:12px">Top 3 still open — tick if actually done:</p><ul class="list">${open.map(id => `<li><button class="icon" data-w="tick" data-id="${id}"><span class="chk"></span></button><span class="grow">${esc(taskById(id).title)}</span></li>`).join('')}</ul>`;
+    h += `<div class="math">focus today: ${n} sessions, ${todaysSessions().map(l => l.min).join(' + ') || '0'} = ${mins} min</div>`;
+  } else if (wrap.step === 2) {
+    const open = top3Ids().filter(id => !taskById(id).done);
+    h += `<p class="muted">Rolls over to tomorrow</p><ul class="list">${open.map(id => `<li><button class="icon" data-w="roll" data-id="${id}" aria-label="toggle roll over">${wrap.roll.has(id) ? '↻' : '·'}</button><span class="grow ${wrap.roll.has(id) ? '' : 'muted'}">${esc(taskById(id).title)}</span><span class="tag">${wrap.roll.has(id) ? 'rolls over' : 'drop'}</span></li>`).join('') || '<li class="empty">Top 3 all done (or not set).</li>'}</ul>
+      <p class="muted" style="margin-top:14px">Sort the inbox (${S.inbox.length})</p>${inboxHtml()}`;
+  } else {
+    if (!wrap.tom.length) wrap.tom = [...wrap.roll].slice(0, 3);
+    h += `<p class="muted">Tomorrow’s top 3</p>`;
+    for (let i = 0; i < 3; i++) {
+      const t = taskById(wrap.tom[i]);
+      h += t ? `<div class="slot filled"><span class="n">${i + 1}</span><span class="grow">${esc(t.title)}</span><button class="icon" data-w="tomRemove" data-id="${t.id}">✕</button></div>`
+        : `<div class="slot" data-w="tomPick"><span class="n">${i + 1}</span><span class="muted">Pick…</span></div>`;
+    }
+    h += `<form class="row" id="wrapNew"><input type="text" placeholder="…or type a new task"><button class="btn sm">Add</button></form>`;
+  }
+  h += `<div class="actions">${wrap.step > 1 ? '<button class="btn ghost" data-w="back">Back</button>' : '<button class="btn ghost" data-w="close">Later</button>'}
+    <button class="btn primary" data-w="${wrap.step < 3 ? 'next' : 'finish'}">${wrap.step < 3 ? 'Next' : 'Done — good night'}</button></div>`;
+  $('#dlgBody').innerHTML = h;
+  const f = $('#wrapNew');
+  if (f) f.onsubmit = e => {
+    e.preventDefault(); const title = f.querySelector('input').value.trim(); if (!title) return;
+    if (wrap.tom.length >= 3) return toast('Three is the limit.');
+    const pid = S.projects.find(p => p.id === 'p-admin')?.id || S.projects[0]?.id;
+    const t = { id: uid(), title, projectId: pid, done: false, created: Date.now() };
+    S.tasks.push(t); wrap.tom.push(t.id); save(); renderWrap();
+  };
+}
+async function wrapClick(e) {
+  const b = e.target.closest('[data-w]');
+  if (!b) { const a = e.target.closest('[data-act]'); if (a && ACT[a.dataset.act]) ACT[a.dataset.act](a, e); return; }
+  const w = b.dataset.w, id = b.dataset.id;
+  if (w === 'tick') { const t = taskById(id); t.done = true; t.doneAt = Date.now(); wrap.roll.delete(id); save(); }
+  if (w === 'roll') wrap.roll.has(id) ? wrap.roll.delete(id) : wrap.roll.add(id);
+  if (w === 'next') wrap.step++;
+  if (w === 'back') wrap.step--;
+  if (w === 'tomRemove') wrap.tom = wrap.tom.filter(x => x !== id);
+  if (w === 'tomPick') {
+    const pick = await choose('Tomorrow', S.tasks.filter(t => !t.done && !wrap.tom.includes(t.id)).map(t => ({ value: t.id, label: t.title, tag: projById(t.projectId)?.name })));
+    $('#dlg').onclose = () => { wrap = null; }; $('#dlgBody').onclick = wrapClick;
+    if (!$('#dlg').open) $('#dlg').showModal();
+    if (pick) wrap.tom.push(pick);
+  }
+  if (w === 'close') { $('#dlg').close(); return; }
+  if (w === 'finish') {
+    S.top3[tomorrow()] = wrap.tom.slice(0, 3);
+    S.wrapups[today()] = { done: S.tasks.filter(t => t.done && t.doneAt && Engine.dateKey(Engine.logicalDay(new Date(t.doneAt), S.settings.dayCutoff)) === today()).map(t => t.id), rolled: [...wrap.roll], at: new Date().toISOString() };
+    save(); $('#dlg').close(); toast('Wrapped up. Tomorrow is set.'); render(); return;
+  }
+  renderWrap();
+}
+
+/* =====================================================================
+   PART 9 — FIRST-RUN WELCOME
+   ===================================================================== */
+function openWelcome() {
+  const wk = S.routine.weekday.find(b => b.kind === 'wake');
+  $('#dlgBody').innerHTML = `<h3>Welcome to Daily Command</h3>
+    <p>Open it, see what you’re meant to be doing, do it, come back.</p>
+    <ol class="small"><li><b>Now card</b> — one thing to do right now, and what’s next.</li>
+    <li><b>+ button</b> — capture any thought in two seconds; sort it tonight.</li>
+    <li><b>Wind-down</b> — a 2-minute wrap-up sets tomorrow’s top 3.</li></ol>
+    <label class="f">Your first name (optional)</label><input type="text" id="wName" value="${esc(S.settings.name)}">
+    <label class="f">Weekday wake-up time</label><input type="time" id="wWake" value="${wk?.start || '07:30'}">
+    <label class="f">Theme</label><div class="seg">${['auto', 'dark', 'light', 'sepia'].map(t => `<button data-t="${t}" class="${S.settings.theme === t ? 'on' : ''}">${t}</button>`).join('')}</div>
+    <p class="muted small">Everything stays in this browser. Add events and edit your routine under More.</p>
+    <div class="actions"><button class="btn primary" id="wGo">Let’s go</button></div>`;
+  const dlg = $('#dlg'); dlg.onclose = null;
+  $('#dlgBody').onclick = e => {
+    const t = e.target.closest('[data-t]');
+    if (t) { S.settings.theme = t.dataset.t; applyTheme(); document.querySelectorAll('#dlgBody [data-t]').forEach(b => b.classList.toggle('on', b === t)); }
+    if (e.target.id === 'wGo') {
+      // shift the wake block (15 min) and start the morning sequence right after it
+      const v = $('#wWake').value, m = Engine.parseHM(v);
+      if (!isNaN(m) && wk) {
+        const hm = x => `${String(Math.floor(x / 60) % 24).padStart(2, '0')}:${String(x % 60).padStart(2, '0')}`;
+        wk.start = hm(m); wk.end = hm(m + 15);
+        const morning = S.routine.weekday.find(b => b.kind === 'morning');
+        if (morning) morning.start = wk.end;
+      }
+      S.settings.name = $('#wName').value.trim();
+      S.settings.welcomed = true; save(); dlg.close(); render(); maybeAutoMorning();
+    }
+  };
+  dlg.showModal();
+}
+</script>
+
+<script>
+/* =====================================================================
+   PART 10 — BOOT, TICKING, SERVICE WORKER
+   ===================================================================== */
+if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+applyTheme();
+matchMedia('(prefers-color-scheme: light)').addEventListener?.('change', applyTheme);
+Pomo.tick();                                   // catch up on anything that ended while closed
+const startView = (location.hash || '#now').slice(1);
+go(['now', 'tasks', 'focus', 'inbox', 'more'].includes(startView) ? startView : 'now');
+if (!S.settings.welcomed) openWelcome();
+else maybeAutoMorning();                       // first open of the day → guided morning
+Weather.refresh(); Digest.refresh();            // background refresh; cached copies show meanwhile
+Watchlist.refresh(); Briefing.refresh();
+if (new URLSearchParams(location.search).get('capture')) setTimeout(openCapture, 100);   // home-screen shortcut
+
+// 1s tick: only touches timer text; every 20s a light re-render of header + Now card.
+let lastFull = 0;
+setInterval(() => {
+  if (document.hidden) return;
+  if (Pomo.tick()) render();
+  const rem = Pomo.remaining();
+  const ht = $('#heroTimer'); if (ht && S.pomo.phase !== 'idle') ht.textContent = fmtClock(rem);
+  const ft = $('#focusTimer'); if (ft && S.pomo.phase !== 'idle') {
+    ft.textContent = fmtClock(rem);
+    const arc = $('#ringArc'), C = 2 * Math.PI * 100; if (arc) arc.setAttribute('stroke-dashoffset', C * (rem / (S.pomo.planned * 60000)));
+  }
+  const dc = $('#dgClock'), ses = S.digestSession;
+  if (dc && ses?.endsAt) {
+    const left = ses.endsAt - Date.now();
+    dc.textContent = left > 0 ? fmtClock(left) : '0:00';
+    if (left <= 0 && !dc.classList.contains('over')) render();   // show the "Time's up" banner once
+  }
+  const wc = $('#wrapClock'); if (wc && wrap) wc.textContent = Date.now() < wrap.endsAt ? fmtClock(wrap.endsAt - Date.now()) : 'time’s up — finish when ready';
+  if (Date.now() - lastFull > 20000) {
+    lastFull = Date.now();
+    // don't re-render under the user's fingers while they're typing or a sheet is open
+    const typing = document.activeElement?.matches('input,textarea,select');
+    if (!typing && !$('#dlg').open && !morningOpen()) render(currentView === 'now');
+  }
+}, 1000);
+document.addEventListener('visibilitychange', () => {
+  if (document.hidden) return;
+  Pomo.tick(); render(); maybeAutoMorning();     // phone left open overnight → next morning still triggers
+  Weather.refresh(); if (!C.digest || Date.now() - C.digest.fetchedAt > 30 * 60000) { Digest.refresh(); Watchlist.refresh(); Briefing.refresh(); }
+});
+addEventListener('online', () => { Weather.refresh(true); Digest.refresh(); });
+addEventListener('offline', () => render());
+addEventListener('storage', e => { if (e.key === STORE_KEY) { S = load(); render(); } }); // another tab changed data
+
+// Service worker = offline + installable. Shows a toast when a new version is ready.
+async function updateSwState() {
+  const el = $('#swState'); if (!el) return;
+  if (!('serviceWorker' in navigator)) { el.textContent = 'offline cache unsupported'; return; }
+  const reg = await navigator.serviceWorker.getRegistration();
+  el.textContent = reg?.active ? 'offline ready ✓' : 'offline cache installing…';
+}
+if ('serviceWorker' in navigator && location.protocol !== 'file:') {
+  navigator.serviceWorker.register('sw.js').then(reg => {
+    reg.addEventListener('updatefound', () => {
+      const nw = reg.installing;
+      nw?.addEventListener('statechange', () => {
+        if (nw.state === 'installed' && navigator.serviceWorker.controller)
+          toast('New version ready', 'Reload', () => nw.postMessage('skipWaiting'));
+      });
+    });
+  }).catch(err => console.warn('SW registration failed', err));
+  // Reload only when an *update* takes over. On the very first visit the new worker
+  // also "takes control" (clients.claim) — reloading then would be a pointless jolt.
+  const hadController = !!navigator.serviceWorker.controller;
+  let reloading = false;
+  navigator.serviceWorker.addEventListener('controllerchange', () => {
+    if (hadController && !reloading) { reloading = true; location.reload(); }
+  });
+}
+</script>
+</body>
+</html>
