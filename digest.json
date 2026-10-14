@@ -1,6 +1,6 @@
 {
- "generated": "2026-10-14T18:59:55.235Z",
- "watchlistUpdatedAt": "2026-10-14T15:30:00Z",
+ "generated": "2026-10-14T20:07:39.650Z",
+ "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
   "ok": 52,
@@ -630,37 +630,36 @@
    "id": "rd-productmanagement",
    "name": "r/productmanagement",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 4,
-   "url": "https://www.reddit.com/r/productmanagement/top/.rss?t=day"
+   "lastOk": "2026-10-14T18:59:55.235Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-tech",
    "name": "r/tech",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 1,
-   "url": "https://www.reddit.com/r/tech/top/.rss?t=day"
+   "lastOk": "2026-10-14T18:59:55.235Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-gaming",
    "name": "r/gaming",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-10-14T15:29:16.950Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
   },
   {
    "id": "rd-xbox",
@@ -669,7 +668,7 @@
    "status": "cached",
    "count": 5,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "rate-limited (429)"
   },
   {
    "id": "rd-slaythespire",
@@ -678,7 +677,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-geopolitics",
@@ -710,6 +709,23 @@
  ],
  "items": [
   {
+   "title": "Jewish Greens to sue the party over Zionism policy",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1x60odd/jewish_greens_to_sue_the_party_over_zionism_policy/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-14T19:29:30.000Z",
+   "summary": "submitted by /u/Kataera [link] [comments]",
+   "id": "52b310bdb199",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
    "title": "tagesschau 20:00 Uhr, 14.10.2026",
    "url": "https://www.youtube.com/watch?v=z-BYS3Pm5ug",
    "source": "Tagesschau",
@@ -721,7 +737,7 @@
     "listen"
    ],
    "published": "2026-10-14T18:41:34.000Z",
-   "summary": "tagesschau 20:00 Uhr Prozessbeginn gegen mutmaßlichen Drahtzieher wegen Nord-Stream-Sprengung, Ukrainischer Präsident Selenskyj beklagt fehlende Warnung vor russischen Angriffen, Regierungserklärung von Bundeskanzler Merz zu Ukraine-Hilfe, Beschluss von AfD und BSW in…",
+   "summary": "Die 20-Uhr-Ausgabe der tagesschau im Livestream und früher auf Abruf: https://ardmediathek.de/tagesschau und https://tagesschau.de Themen der tagesschau-Sendung: 00:00 Guten Abend 00:21 Prozessbeginn gegen mutmaßlichen Drahtzieher der Nord-Stream-Sprengung 02:47 Selenskyj…",
    "thumb": "https://i3.ytimg.com/vi/z-BYS3Pm5ug/hqdefault.jpg",
    "id": "1835ec48fbc3",
    "score": 1,
@@ -759,6 +775,23 @@
    "summary": "Girl's grandmother passes down a valuable Rolleiflex camera of which she decided to have it cleaned. Only for the store to give a completely different camera than the one she handed in. Is this negligence or straight up thievery? ———————————— Spotify:…",
    "thumb": "https://i1.ytimg.com/vi/hAJzIdIMASU/hqdefault.jpg",
    "id": "4765fda6c46c",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Airport drop-off charges to be reviewed after sharp increase",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1x5yiot/airport_dropoff_charges_to_be_reviewed_after/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-14T18:08:43.000Z",
+   "summary": "submitted by /u/Desperate-Drawer-572 [link] [comments]",
+   "id": "32ef31b6dfc0",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -811,6 +844,23 @@
    "summary": "Nothing can stop the party for Brooke & Haley, not even getting flushed back to the 14th century. To watch more episode of Toonout and other animated series, sign up for Dropout: https://www.dropout.tv/plans Welcome to the Dropout channel! You can support us by signing up for…",
    "thumb": "https://i3.ytimg.com/vi/JU9i8-q7ZOk/hqdefault.jpg",
    "id": "7a3b5bbc7339",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Westminster Voting Intention: LAB: 30% (=) RFM: 22% (=) CON: 21% (=) LDM: 10% (=) GRN: 8% (-1) RES: 6% (+3) SNP: 2% (=) Via Trajectory Partnership, 5-14 Oct. Changes w/ 7-16 Sep.",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1x5wr9o/westminster_voting_intention_lab_30_rfm_22_con_21/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-14T17:02:52.000Z",
+   "summary": "submitted by /u/SignificantLegs [link] [comments]",
+   "id": "f4736963db47",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -904,6 +954,23 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
+   "title": "Man planned to set up militant pro- Palestinian group to 'attack police and British Army'",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1x5uuzl/man_planned_to_set_up_militant_pro_palestinian/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-14T15:52:01.000Z",
+   "summary": "submitted by /u/ThatZephyrGuy [link] [comments]",
+   "id": "e98cf764f9d2",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
    "title": "tagesschau in Einfacher Sprache 19:00 Uhr, 14.10.2026",
    "url": "https://www.youtube.com/watch?v=-sA_qnpbD48",
    "source": "Tagesschau",
@@ -936,6 +1003,23 @@
    "summary": "Shelagh Fogarty is joined by Sergeant Ashton-Cirillo as the Ukrainian military's access to the America's Starlink satellite internet is suddenly restricted. 0:00 | Ukrainian sergeant reports from the Eastern Front 8:35 | Is the US at war with Europe? 10:30 | The UK must ‘lock…",
    "thumb": "https://i3.ytimg.com/vi/N703aLPXvlM/hqdefault.jpg",
    "id": "caa7316aa7fa",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Suicide rates highest ever among middle-aged men",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1x5tzfv/suicide_rates_highest_ever_among_middleaged_men/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-14T15:18:22.000Z",
+   "summary": "submitted by /u/winkwinknudge_nudge [link] [comments]",
+   "id": "45e01f381f6c",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1167,23 +1251,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Burnham rules out deal with Green Party over ‘Zionism is racism’ motion",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1x5pu7i/burnham_rules_out_deal_with_green_party_over/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-14T12:24:57.000Z",
-   "summary": "submitted by /u/politics_uk [link] [comments]",
-   "id": "7bad794bfaf9",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "METRO 2039 | Pre-Order Now! Trailer [Official 4K]",
    "url": "https://www.reddit.com/r/xbox/comments/1x5ppny/metro_2039_preorder_now_trailer_official_4k/",
    "source": "r/xbox",
@@ -1230,23 +1297,6 @@
    "summary": "First PMQs since the return from recess, and Kemi Badenoch is still chasing Andy Burnham's shadow at Prime Minister's Questions. Like PoliticsJOE? We need your support: https://www.patreon.com/PoliticsJOE",
    "thumb": "https://i1.ytimg.com/vi/Tqb6hp0dOVc/hqdefault.jpg",
    "id": "aed06c62eda5",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Nigel Farage says charities that help asylum seekers reach UK should be prosecuted",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1x5ow3t/nigel_farage_says_charities_that_help_asylum/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-14T11:37:03.000Z",
-   "summary": "submitted by /u/Dismal_Uses [link] [comments]",
-   "id": "d63ad69bfb8c",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1312,57 +1362,6 @@
    "published": "2026-10-14T10:45:21.000Z",
    "summary": "submitted by /u/AsPeHeat [link] [comments]",
    "id": "5abc0e96c877",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "BBC asks judge to force Trump to sit for deposition in $10bn defamation lawsuit",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1x5nhvs/bbc_asks_judge_to_force_trump_to_sit_for/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-14T10:16:28.000Z",
-   "summary": "submitted by /u/zeros3ss [link] [comments]",
-   "id": "aa0b6fe79d2e",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Palantir is worming its way into the British state – it’s time to curb this controversial US company’s influence",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1x5n2qa/palantir_is_worming_its_way_into_the_british/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-14T09:50:36.000Z",
-   "summary": "submitted by /u/Exostrike [link] [comments]",
-   "id": "b5071c2d487f",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Badenoch brands Farage idea to 'trade' Chagos Islands with Trump 'humiliating'",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1x5mf2i/badenoch_brands_farage_idea_to_trade_chagos/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-14T09:07:46.000Z",
-   "summary": "submitted by /u/ClumperFaz [link] [comments]",
-   "id": "e2afb09ab562",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -2842,5 +2841,5 @@
    "why": "0"
   }
  ],
- "contentHash": "900c16691b76"
+ "contentHash": "84781453772d"
 }
