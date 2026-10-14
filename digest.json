@@ -1,10 +1,10 @@
 {
- "generated": "2026-10-14T14:51:53.259Z",
+ "generated": "2026-10-14T14:54:35.432Z",
  "watchlistUpdatedAt": "2026-10-14T15:30:00Z",
  "stats": {
   "feeds": 56,
-  "ok": 48,
-  "items": 105,
+  "ok": 49,
+  "items": 110,
   "duplicatesMerged": 0,
   "lengthsKnown": 2,
   "lengthLookups": 100,
@@ -640,7 +640,7 @@
    "type": "reddit",
    "status": "error",
    "count": 0,
-   "error": "not a feed (got HTML or text)",
+   "error": "rate-limited by Reddit (sent a web page, not a feed)",
    "http": 429
   },
   {
@@ -649,7 +649,7 @@
    "type": "reddit",
    "status": "error",
    "count": 0,
-   "error": "not a feed (got HTML or text)",
+   "error": "rate-limited by Reddit (sent a web page, not a feed)",
    "http": 429
   },
   {
@@ -658,17 +658,16 @@
    "type": "reddit",
    "status": "error",
    "count": 0,
-   "error": "not a feed (got HTML or text)",
+   "error": "rate-limited by Reddit (sent a web page, not a feed)",
    "http": 429
   },
   {
    "id": "rd-xbox",
    "name": "r/xbox",
    "type": "reddit",
-   "status": "error",
-   "count": 0,
-   "error": "not a feed (got HTML or text)",
-   "http": 429
+   "status": "ok",
+   "count": 5,
+   "url": "https://www.reddit.com/r/xbox/top/.rss?t=day"
   },
   {
    "id": "rd-slaythespire",
@@ -676,7 +675,7 @@
    "type": "reddit",
    "status": "error",
    "count": 0,
-   "error": "not a feed (got HTML or text)",
+   "error": "rate-limited by Reddit (sent a web page, not a feed)",
    "http": 429
   },
   {
@@ -685,7 +684,7 @@
    "type": "reddit",
    "status": "error",
    "count": 0,
-   "error": "not a feed (got HTML or text)",
+   "error": "rate-limited by Reddit (sent a web page, not a feed)",
    "http": 429
   },
   {
@@ -694,7 +693,7 @@
    "type": "reddit",
    "status": "error",
    "count": 0,
-   "error": "not a feed (got HTML or text)",
+   "error": "rate-limited by Reddit (sent a web page, not a feed)",
    "http": 429
   },
   {
@@ -703,7 +702,7 @@
    "type": "reddit",
    "status": "error",
    "count": 0,
-   "error": "not a feed (got HTML or text)",
+   "error": "rate-limited by Reddit (sent a web page, not a feed)",
    "http": 429
   }
  ],
@@ -820,6 +819,54 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
+   "title": "The physical edition from Xbox Series X of Clive Barker's Hellraiser: Revival, contains the whole game in the disc.",
+   "url": "https://www.reddit.com/r/xbox/comments/1x5qdtq/the_physical_edition_from_xbox_series_x_of_clive/",
+   "source": "r/xbox",
+   "feedId": "rd-xbox",
+   "type": "post",
+   "tags": [
+    "gaming"
+   ],
+   "published": "2026-10-14T12:50:46.000Z",
+   "summary": "Today the website Does It Play has published the review from the video game, confirming that the Xbox Series X edition has the whole game in the Blu-ray:…",
+   "id": "8f69712b434a",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "The Making of Grand Theft Auto VI ~ Bloomberg",
+   "url": "https://www.reddit.com/r/xbox/comments/1x5pvkm/the_making_of_grand_theft_auto_vi_bloomberg/",
+   "source": "r/xbox",
+   "feedId": "rd-xbox",
+   "type": "post",
+   "tags": [
+    "gaming"
+   ],
+   "published": "2026-10-14T12:26:49.000Z",
+   "summary": "Gifted article link courtesy of Jason Scherier - https://bsky.app/profile/jasonschreier.bsky.social/post/3mxtc3nk5fk2g submitted by /u/imitzFinn [link] [comments]",
+   "id": "aecb73658493",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "METRO 2039 | Pre-Order Now! Trailer [Official 4K]",
+   "url": "https://www.reddit.com/r/xbox/comments/1x5ppny/metro_2039_preorder_now_trailer_official_4k/",
+   "source": "r/xbox",
+   "feedId": "rd-xbox",
+   "type": "post",
+   "tags": [
+    "gaming"
+   ],
+   "published": "2026-10-14T12:18:54.000Z",
+   "summary": ">Pre-orders for METRO 2039 are now open, and we are revealing the editions that will be available on launch day, come February 4th 2027! >We know many of you can’t wait to get your hands on the next METRO, and are in desperate need of a wearable Spartan Helmet replica to add to…",
+   "id": "7e819034bb8c",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
    "title": "'Why did she wobble so much?' | PMQs analysed",
    "url": "https://www.youtube.com/watch?v=P4VVx_Nomgc",
    "source": "LBC",
@@ -855,6 +902,22 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
+   "title": "Ubisoft is planning to shut down Trials studio RedLynx and lay off 70 Ubisoft Singapore staff",
+   "url": "https://www.reddit.com/r/xbox/comments/1x5ombv/ubisoft_is_planning_to_shut_down_trials_studio/",
+   "source": "r/xbox",
+   "feedId": "rd-xbox",
+   "type": "post",
+   "tags": [
+    "gaming"
+   ],
+   "published": "2026-10-14T11:22:22.000Z",
+   "summary": "submitted by /u/Dorian182 [link] [comments]",
+   "id": "e64318dba821",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
    "title": "Got moved to a new team, inherited a lousy product",
    "url": "https://www.reddit.com/r/ProductManagement/comments/1x5oa3l/got_moved_to_a_new_team_inherited_a_lousy_product/",
    "source": "r/productmanagement",
@@ -884,6 +947,22 @@
    "summary": "James O'Brien reacts as Donald Trump shares a bizarre AI video of him playing with a tiger after a British man was mauled to death over the weekend. William Chapman, 23, died after entering a tiger enclosure at Yorkshire Wildlife Park near Doncaster shortly after 1.30pm on…",
    "thumb": "https://i3.ytimg.com/vi/VpJgmIltTqw/hqdefault.jpg",
    "id": "14d9bd319a5a",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Indiana Jones and The Great Circle’s iconic hat mechanic almost didn’t make the cut as devs struggled to “leverage” Indy’s fedora “in the gameplay”",
+   "url": "https://www.reddit.com/r/xbox/comments/1x5nz3d/indiana_jones_and_the_great_circles_iconic_hat/",
+   "source": "r/xbox",
+   "feedId": "rd-xbox",
+   "type": "post",
+   "tags": [
+    "gaming"
+   ],
+   "published": "2026-10-14T10:45:21.000Z",
+   "summary": "submitted by /u/AsPeHeat [link] [comments]",
+   "id": "5abc0e96c877",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -2596,5 +2675,5 @@
    "why": "0"
   }
  ],
- "contentHash": "fa3bfd211e81"
+ "contentHash": "d13e51cc7518"
 }
