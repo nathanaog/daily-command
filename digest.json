@@ -1,17 +1,17 @@
 {
- "generated": "2026-10-14T15:56:35.806Z",
+ "generated": "2026-10-14T18:59:55.235Z",
  "watchlistUpdatedAt": "2026-10-14T15:30:00Z",
  "stats": {
   "feeds": 56,
-  "ok": 51,
-  "items": 119,
+  "ok": 52,
+  "items": 120,
   "duplicatesMerged": 0,
   "lengthsKnown": 2,
-  "lengthLookups": 99,
-  "lengthFailures": 99,
+  "lengthLookups": 98,
+  "lengthFailures": 98,
   "lengthVia": "video pages",
   "lengthFailReasons": {
-   "no length on page": 99
+   "no length on page": 98
   }
  },
  "feeds": [
@@ -98,7 +98,7 @@
    "name": "Easy German",
    "type": "youtube",
    "status": "ok",
-   "count": 4,
+   "count": 3,
    "resolved": {
     "channelId": "UCbxb2fqe9oNgglAoYqsYOtQ",
     "title": "Easy German",
@@ -176,7 +176,7 @@
    "name": "Half as Interesting",
    "type": "youtube",
    "status": "ok",
-   "count": 1,
+   "count": 2,
    "resolved": {
     "channelId": "UCuCkxoKLYO_EQ2GeFtbM_bw",
     "title": "Half as Interesting",
@@ -358,7 +358,7 @@
    "name": "Modern-Day Debate",
    "type": "youtube",
    "status": "ok",
-   "count": 3,
+   "count": 2,
    "resolved": {
     "channelId": "UC_cd4oF2phaIBD3WsU3f7Xg",
     "title": "Modern-Day Debate",
@@ -630,28 +630,28 @@
    "id": "rd-productmanagement",
    "name": "r/productmanagement",
    "type": "reddit",
-   "status": "cached",
-   "count": 3,
-   "lastOk": "2026-10-14T15:01:52.966Z",
-   "note": "not its turn this run"
+   "status": "ok",
+   "count": 4,
+   "url": "https://www.reddit.com/r/productmanagement/top/.rss?t=day"
   },
   {
    "id": "rd-tech",
    "name": "r/tech",
    "type": "reddit",
-   "status": "waiting",
-   "count": 0,
-   "lastOk": "2026-10-14T15:01:52.966Z",
-   "note": "not its turn this run"
+   "status": "ok",
+   "count": 1,
+   "url": "https://www.reddit.com/r/tech/top/.rss?t=day"
   },
   {
    "id": "rd-gaming",
    "name": "r/gaming",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-ukpolitics",
@@ -684,20 +684,19 @@
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
+   "lastOk": "2026-10-14T15:56:35.806Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-germany",
    "name": "r/germany",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-unitedkingdom",
@@ -706,10 +705,204 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   }
  ],
  "items": [
+  {
+   "title": "tagesschau 20:00 Uhr, 14.10.2026",
+   "url": "https://www.youtube.com/watch?v=z-BYS3Pm5ug",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-14T18:41:34.000Z",
+   "summary": "tagesschau 20:00 Uhr Prozessbeginn gegen mutmaßlichen Drahtzieher wegen Nord-Stream-Sprengung, Ukrainischer Präsident Selenskyj beklagt fehlende Warnung vor russischen Angriffen, Regierungserklärung von Bundeskanzler Merz zu Ukraine-Hilfe, Beschluss von AfD und BSW in…",
+   "thumb": "https://i3.ytimg.com/vi/z-BYS3Pm5ug/hqdefault.jpg",
+   "id": "1835ec48fbc3",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Trump has posted footage from the tiger enclosure | James O’Brien - The Whole Show",
+   "url": "https://www.youtube.com/watch?v=ArX3ngD9Dx4",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-14T18:30:35.000Z",
+   "summary": "This is a catch-up version of James O'Brien's live, daily show on LBC Radio from the 14th of October 2026. 00:00 - Why are you concerned about Donald Trump? 36:07 - U.S. Roundup - Simon Marks, LBC's Washington Correspondent 52:46 - How do you cope with the temporary nature of…",
+   "thumb": "https://i2.ytimg.com/vi/ArX3ngD9Dx4/hqdefault.jpg",
+   "id": "4753bc2a0675",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Scam Repair Shop Caught On Camera. Came Up With DUMBEST Lies",
+   "url": "https://www.youtube.com/watch?v=hAJzIdIMASU",
+   "source": "Aberrant preach",
+   "feedId": "yt-aberrant-preach",
+   "type": "video",
+   "tags": [
+    "trash"
+   ],
+   "published": "2026-10-14T18:30:02.000Z",
+   "summary": "Girl's grandmother passes down a valuable Rolleiflex camera of which she decided to have it cleaned. Only for the store to give a completely different camera than the one she handed in. Is this negligence or straight up thievery? ———————————— Spotify:…",
+   "thumb": "https://i1.ytimg.com/vi/hAJzIdIMASU/hqdefault.jpg",
+   "id": "4765fda6c46c",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "New GTA 6 Features CONFIRMED by Rockstar",
+   "url": "https://www.youtube.com/watch?v=-YzzZu_ptKo",
+   "source": "GameRanx",
+   "feedId": "yt-gameranx",
+   "type": "video",
+   "tags": [
+    "gaming"
+   ],
+   "published": "2026-10-14T17:54:46.000Z",
+   "summary": "We've got new information thanks to Rockstar Games revealing Grand Theft Auto 6 to select press. Subscribe for more: https://www.youtube.com/gameranxTV?sub_confirmation=1 ~~SOURCES~~ game informer cover story (subscription locked) -…",
+   "thumb": "https://i2.ytimg.com/vi/-YzzZu_ptKo/hqdefault.jpg",
+   "id": "3afc7a9d32ff",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "The Logistics of IMAX",
+   "url": "https://www.youtube.com/watch?v=auScRXZwHhk",
+   "source": "Half as Interesting",
+   "feedId": "yt-half-as-interesting",
+   "type": "video",
+   "tags": [
+    "comedy",
+    "education"
+   ],
+   "published": "2026-10-14T17:49:58.000Z",
+   "summary": "Get Nebula using my link for 50% off an annual subscription: https://go.nebula.tv/hai Follow Sam from Half as Interesting on Instagram: http://Instagram.com/Sam.From.Wendover Follow Half as Interesting on Twitter: http://twitter.com/halfinteresting Discuss this video on Reddit:…",
+   "thumb": "https://i2.ytimg.com/vi/auScRXZwHhk/hqdefault.jpg",
+   "id": "c10e962d54a1",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Hot Peasant Summer | Toonout [Animated Shorts]",
+   "url": "https://www.youtube.com/watch?v=JU9i8-q7ZOk",
+   "source": "Dropout",
+   "feedId": "yt-dropout",
+   "type": "video",
+   "tags": [
+    "comedy"
+   ],
+   "published": "2026-10-14T17:30:35.000Z",
+   "summary": "Nothing can stop the party for Brooke & Haley, not even getting flushed back to the 14th century. To watch more episode of Toonout and other animated series, sign up for Dropout: https://www.dropout.tv/plans Welcome to the Dropout channel! You can support us by signing up for…",
+   "thumb": "https://i3.ytimg.com/vi/JU9i8-q7ZOk/hqdefault.jpg",
+   "id": "7a3b5bbc7339",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Will AI put millions out of work? | The Economist",
+   "url": "https://www.youtube.com/watch?v=J-sMqnzHwI0",
+   "source": "The Economist",
+   "feedId": "yt-the-economist",
+   "type": "video",
+   "tags": [
+    "finance",
+    "business"
+   ],
+   "published": "2026-10-14T17:00:04.000Z",
+   "summary": "Will AI put millions of people out of work? Andrew Ng, CEO and founder of LearnVector, argues the fears are overblown. He tells Alex Hern, The Economist’s AI writer, that AI automates only part of most jobs, that its progress will be slowed by physical bottlenecks like building…",
+   "thumb": "https://i3.ytimg.com/vi/J-sMqnzHwI0/hqdefault.jpg",
+   "id": "f3ee429739b4",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Would you make payroll optional or part of the core product?",
+   "url": "https://www.reddit.com/r/ProductManagement/comments/1x5wj9p/would_you_make_payroll_optional_or_part_of_the/",
+   "source": "r/productmanagement",
+   "feedId": "rd-productmanagement",
+   "type": "post",
+   "tags": [
+    "product"
+   ],
+   "published": "2026-10-14T16:54:37.000Z",
+   "summary": "If you're adding embedded payroll to an existing platform, making it optional seems like the safer choice but then you're maintaining two different experiences for customers who use payroll and those who don't I want to see whether anyone has dealt with this when expanding a…",
+   "id": "fb88ad1364db",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Haben US-Geheimdienste die Warnungen vor Raketenangriffen auf die Ukraine eingestellt?",
+   "url": "https://www.youtube.com/watch?v=OGTRD1VfUgk",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-14T16:37:29.000Z",
+   "summary": "Russland hat die Ukraine in der Nacht mit neuen massiven Angriffen überzogen. Ziel von Dutzenden ballistischen Raketen und Drohnen waren laut Präsident Selenskyj wieder die Energieversorgung und kritische Infrastruktur. Mindestens sieben Menschen starben. Selenskyj warf den…",
+   "thumb": "https://i4.ytimg.com/vi/OGTRD1VfUgk/hqdefault.jpg",
+   "id": "022e1ebf33da",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "The New Fascists | How Power Works with Naomi Klein and Astra Taylor",
+   "url": "https://www.youtube.com/watch?v=CAqqLKiJbmo",
+   "source": "PoliticsJOE",
+   "feedId": "yt-politicsjoe",
+   "type": "video",
+   "tags": [
+    "comedy"
+   ],
+   "published": "2026-10-14T16:22:26.000Z",
+   "summary": "Naomi Klein and Astra Taylor are fighting for the living world. Their new book charts an alliance between Silicon Valley billionaires, Donald Trump, and the far right, who they suggest are working against humanity in the name of profit and power. For Klein and Taylor, fascism…",
+   "thumb": "https://i4.ytimg.com/vi/CAqqLKiJbmo/hqdefault.jpg",
+   "id": "b769a4b2313c",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "David Breaks Down His Debates with Conservatives | Surrounded Follow-Up",
+   "url": "https://www.youtube.com/watch?v=O71_BzlwX9w",
+   "source": "Jubilee",
+   "feedId": "yt-jubilee",
+   "type": "video",
+   "tags": [
+    "politics",
+    "debates"
+   ],
+   "published": "2026-10-14T16:00:05.000Z",
+   "summary": "Hey you 👈 Wanna be in a Jubilee video? https://bit.ly/be-in-a-video LET’S BE FRIENDS Instagram: https://www.instagram.com/jubileemedia/ TikTok: https://www.tiktok.com/@jubilee?lang=en Website: https://www.jubileemedia.com OUR LOVE + DATING CHANNEL 🍑 YouTube:…",
+   "thumb": "https://i4.ytimg.com/vi/O71_BzlwX9w/hqdefault.jpg",
+   "id": "5d370527966c",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
   {
    "title": "tagesschau in Einfacher Sprache 19:00 Uhr, 14.10.2026",
    "url": "https://www.youtube.com/watch?v=-sA_qnpbD48",
@@ -835,6 +1028,22 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
+   "title": "Superwood has arrived – wood up to ten times stronger than steel and six times lighter",
+   "url": "https://www.reddit.com/r/tech/comments/1x5s9rm/superwood_has_arrived_wood_up_to_ten_times/",
+   "source": "r/tech",
+   "feedId": "rd-tech",
+   "type": "post",
+   "tags": [
+    "tech"
+   ],
+   "published": "2026-10-14T14:11:00.000Z",
+   "summary": "submitted by /u/AdSpecialist6598 [link] [comments]",
+   "id": "e3024a086814",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
    "title": "ARD-Korrespondent in Rom: „Krebsdiagnose von Papst Leo XIV. kam völlig überraschend“",
    "url": "https://www.youtube.com/watch?v=GVJrI4BxehM",
    "source": "Tagesschau",
@@ -885,25 +1094,6 @@
    "summary": "Der Streit in der schwarz-roten Koalition über die Steuer auf zuckergesüßte Getränke ist beigelegt. Das Kabinett hat einen Regelungsvorschlag beschlossen. Was geplant ist und was die Regierung damit erreichen will. Mehr Informationen zu diesem Thema:…",
    "thumb": "https://i3.ytimg.com/vi/67XyXFqOYXo/hqdefault.jpg",
    "id": "32ae462b48cc",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Auktion in New York: Nano-Tyrannus könnte bis zu 9 Millionen Dollar bringen",
-   "url": "https://www.youtube.com/watch?v=FblECUMXSu0",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-14T13:25:36.000Z",
-   "summary": "Wenige Monate nach dem Rekordverkauf eines T-Rex-Skeletts steht in New York ein weiterer Dinosaurier auf dem Auktionsprogramm. Das knapp zwei Meter hohe und sechs Meter lange Skelett von Nanotyrannus „Jodi“ soll am 27. Oktober in New York versteigert werden, teilte das…",
-   "thumb": "https://i3.ytimg.com/vi/FblECUMXSu0/hqdefault.jpg",
-   "id": "501789708076",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1111,24 +1301,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Trump shares AI video of himself wrestling tiger that killed British man",
-   "url": "https://www.youtube.com/watch?v=VpJgmIltTqw",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-14T10:45:23.000Z",
-   "summary": "James O'Brien reacts as Donald Trump shares a bizarre AI video of him playing with a tiger after a British man was mauled to death over the weekend. William Chapman, 23, died after entering a tiger enclosure at Yorkshire Wildlife Park near Doncaster shortly after 1.30pm on…",
-   "thumb": "https://i3.ytimg.com/vi/VpJgmIltTqw/hqdefault.jpg",
-   "id": "14d9bd319a5a",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Indiana Jones and The Great Circle’s iconic hat mechanic almost didn’t make the cut as devs struggled to “leverage” Indy’s fedora “in the gameplay”",
    "url": "https://www.reddit.com/r/xbox/comments/1x5nz3d/indiana_jones_and_the_great_circles_iconic_hat/",
    "source": "r/xbox",
@@ -1157,25 +1329,6 @@
    "published": "2026-10-14T10:16:28.000Z",
    "summary": "submitted by /u/zeros3ss [link] [comments]",
    "id": "aa0b6fe79d2e",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Steigender Bedarf: Regierung will Pflege reformieren",
-   "url": "https://www.youtube.com/watch?v=zF_PmA4jbBs",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-14T10:08:02.000Z",
-   "summary": "\"Hier waren wir auf dem Dach des Empire State Buildings in New York\", erzählt Jutta Umsonst und vergrößert das Foto auf ihrem Tablet. Es zeigt ihren Mann Ulf und sie, Arm in Arm vor Hochhauskulisse und blauem Himmel. Das Bild entstand im Urlaub im vergangenen Jahr. Seitdem hat…",
-   "thumb": "https://i3.ytimg.com/vi/zF_PmA4jbBs/hqdefault.jpg",
-   "id": "416472c1b3b6",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1228,9 +1381,9 @@
    "summary": "Luke discusses Fox News' recent conversation about the Russia/Ukraine war. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
    "thumb": "https://i3.ytimg.com/vi/JqXAF-_6RWc/hqdefault.jpg",
    "id": "687d5586e06b",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
+   "why": "0"
   },
   {
    "title": "CHAOS: What Just HAPPENED at THIS TRUMP RALLY, IT’S INSANE!",
@@ -1874,23 +2027,6 @@
    "why": "0"
   },
   {
-   "title": "GTA 6 LEAK DEBUNKED, PS5 PRO SKYROCKETS & MORE",
-   "url": "https://www.youtube.com/watch?v=uV26izBiLF8",
-   "source": "GameRanx",
-   "feedId": "yt-gameranx",
-   "type": "video",
-   "tags": [
-    "gaming"
-   ],
-   "published": "2026-10-09T20:01:21.000Z",
-   "summary": "Use our code GAMERANX or click this link https://displate.com/l/gameranx for the following promotions: 1 Displate -22% 2 Displates -27% 3+ Displates -33 % Not valid on Limited Edition and Shards Limited Drop. Thank you to Displate for sponsoring today’s video! ~~SOURCES~~ GTA6…",
-   "thumb": "https://i2.ytimg.com/vi/uV26izBiLF8/hqdefault.jpg",
-   "id": "ae7b3ebaf32f",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "Will it take a disaster to force AI regulation? | The Economist",
    "url": "https://www.youtube.com/watch?v=B8oXVMYXlfM",
    "source": "The Economist",
@@ -2144,7 +2280,7 @@
    "why": "0"
   },
   {
-   "title": "What Really Happened to McDonald's Ball Pits?",
+   "title": "McDonalds' Self-Inflicted Downfall",
    "url": "https://www.youtube.com/watch?v=3k6ndVuKFSA",
    "source": "The Hustle",
    "feedId": "yt-the-hustle",
@@ -2233,23 +2369,6 @@
    "why": "0"
   },
   {
-   "title": "Mom Tries To Shame Her Husband & It Backfires Beautifully",
-   "url": "https://www.youtube.com/watch?v=NRrkJ0D8loQ",
-   "source": "Aberrant preach",
-   "feedId": "yt-aberrant-preach",
-   "type": "video",
-   "tags": [
-    "trash"
-   ],
-   "published": "2026-10-07T13:20:33.000Z",
-   "summary": "Woman on Tiktok got into a huge fight with her husband when he placed a note inside his son's launch box with a message where he drew a cube. This apparently didn't sit so well with the mom... ———————————— Spotify: https://open.spotify.com/artist/6QJIJ6AugqPEFASp1V6zgH…",
-   "thumb": "https://i3.ytimg.com/vi/NRrkJ0D8loQ/hqdefault.jpg",
-   "id": "9a0540af89a9",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "KT #788 - WHEELER WALKER JR + SAM TRIPOLI",
    "url": "https://www.youtube.com/watch?v=jw1l2PKuckA",
    "source": "Kill Tony",
@@ -2318,23 +2437,6 @@
    "summary": "Thanks to Monarch for partnering with me! Start your free trial and get 50% off your first year of total money clarity using my link https://monarchmoney.yt.link/b7EOLJZ or code economics50 for 50% Off Monarch Core tier. 📫 10,532+ read our free newsletter that has weekly…",
    "thumb": "https://i3.ytimg.com/vi/b64TPQDSpYQ/hqdefault.jpg",
    "id": "fa8ecda6a805",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Has Andy Burnham Squashed the Green Party? | Zack Polanski and Russell Warfield interview",
-   "url": "https://www.youtube.com/watch?v=8uLaadrAliQ",
-   "source": "PoliticsJOE",
-   "feedId": "yt-politicsjoe",
-   "type": "video",
-   "tags": [
-    "comedy"
-   ],
-   "published": "2026-10-05T12:00:16.000Z",
-   "summary": "Could Zack Polanski's leadership represent something much bigger than a change of direction for the Green Party? Ava was joined live by Green Party leader Zack Polanski and author Russell Warfield on the launch of Russell's book \"The Green Socialist: Zack Polanski and the…",
-   "thumb": "https://i1.ytimg.com/vi/8uLaadrAliQ/hqdefault.jpg",
-   "id": "b859a059cf22",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2703,24 +2805,6 @@
    "why": "0"
   },
   {
-   "title": "Kevin Rudd on the real risk of China and America’s AI race | The Economist",
-   "url": "https://www.youtube.com/watch?v=a4wrmRXyxlE",
-   "source": "The Economist",
-   "feedId": "yt-the-economist",
-   "type": "video",
-   "tags": [
-    "finance",
-    "business"
-   ],
-   "published": "2026-10-01T14:00:24.000Z",
-   "summary": "America and China are locked in a race for AI dominance. As the warnings about an AI catastrophe get louder, whether the two countries can work together is becoming an increasingly pressing issue. Few people are better placed to discuss this subject than Kevin Rudd. Australia’s…",
-   "thumb": "https://i2.ytimg.com/vi/a4wrmRXyxlE/hqdefault.jpg",
-   "id": "aa03a17492e0",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "I Investigated What Remains Of Yugoslavia",
    "url": "https://www.youtube.com/watch?v=ktb5PTSVSNg",
    "source": "Bald and Bankrupt",
@@ -2756,79 +2840,7 @@
    "score": 0,
    "matched": [],
    "why": "0"
-  },
-  {
-   "title": "NotSoErudite Vs Rachel Wilson: Is Feminism Causing The Population Collapse?",
-   "url": "https://www.youtube.com/watch?v=Jc7XWx6Ugv4",
-   "source": "Modern-Day Debate",
-   "feedId": "yt-modern-day-debate",
-   "type": "video",
-   "tags": [
-    "debates",
-    "politics",
-    "listen"
-   ],
-   "published": "2026-09-30T18:00:38.000Z",
-   "summary": "DEBATECON 9 will be in Orlando, FL on October 24/25th! LET’S GOOOOO! https://events.eventnoire.com/e/debatecon-9-by-modern-day-debate-2 OUR INSIDER'S EMAIL LIST FOR DEBATECON DISCOUNTS: https://forms.gle/rK5aqPAzAZXiDpDz9 *If you want a discount on DEBATECON 9 tickets and are…",
-   "thumb": "https://i3.ytimg.com/vi/Jc7XWx6Ugv4/hqdefault.jpg",
-   "id": "398b035431bc",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Winky's Speakeasy | Toonout [Animated Shorts]",
-   "url": "https://www.youtube.com/watch?v=d9hqqqeEht4",
-   "source": "Dropout",
-   "feedId": "yt-dropout",
-   "type": "video",
-   "tags": [
-    "comedy"
-   ],
-   "published": "2026-09-30T17:30:36.000Z",
-   "summary": "Booze, banter and boings. Welcome to the saloon for washed-up cartoons. To watch more episode of Toonout and other animated series, sign up for Dropout: https://www.dropout.tv/plans Welcome to the Dropout channel! You can support us by signing up for Dropout.tv, our…",
-   "thumb": "https://i1.ytimg.com/vi/d9hqqqeEht4/hqdefault.jpg",
-   "id": "a748146a8efd",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "A Day in Paris in Slow German",
-   "url": "https://www.youtube.com/watch?v=Tu3IHEb3bko",
-   "source": "Easy German",
-   "feedId": "yt-easy-german",
-   "type": "video",
-   "tags": [
-    "german",
-    "listen"
-   ],
-   "published": "2026-09-30T17:00:26.000Z",
-   "summary": "🌏 Verbessere deinen Online-Schutz mit einer All-in-One-App für digitale Sicherheit! Sicher dir dein exklusives NordVPN-Angebot + 4 Extra-Monate: https://nordvpn.com/easygerman (Werbung) --- LEARN MORE GERMAN WITH US: 💡 JOIN OUR COMMUNITY:…",
-   "thumb": "https://i1.ytimg.com/vi/Tu3IHEb3bko/hqdefault.jpg",
-   "id": "288ee47dc539",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Did He Win These Viral Debates?",
-   "url": "https://www.youtube.com/watch?v=2FpMxybx37k",
-   "source": "Jubilee",
-   "feedId": "yt-jubilee",
-   "type": "video",
-   "tags": [
-    "politics",
-    "debates"
-   ],
-   "published": "2026-09-30T16:00:28.000Z",
-   "summary": "Hey you 👈 Wanna be in a Jubilee video? https://bit.ly/be-in-a-video LET’S BE FRIENDS Instagram: https://www.instagram.com/jubileemedia/ TikTok: https://www.tiktok.com/@jubilee?lang=en Website: https://www.jubileemedia.com OUR LOVE + DATING CHANNEL 🍑 YouTube:…",
-   "thumb": "https://i3.ytimg.com/vi/2FpMxybx37k/hqdefault.jpg",
-   "id": "424cdd4256ee",
-   "score": 0,
-   "matched": [],
-   "why": "0"
   }
  ],
- "contentHash": "2d484cc07311"
+ "contentHash": "900c16691b76"
 }
