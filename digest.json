@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-14T21:25:02.064Z",
+ "generated": "2026-10-14T21:50:14.996Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
@@ -630,9 +630,10 @@
    "id": "rd-productmanagement",
    "name": "r/productmanagement",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 3,
-   "url": "https://www.reddit.com/r/productmanagement/top/.rss?t=day"
+   "lastOk": "2026-10-14T21:25:02.064Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-tech",
@@ -641,7 +642,7 @@
    "status": "cached",
    "count": 1,
    "lastOk": "2026-10-14T20:55:56.930Z",
-   "note": "rate-limited (429)"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-gaming",
@@ -650,16 +651,15 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-10-14T20:58:08.084Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
   },
   {
    "id": "rd-xbox",
@@ -668,7 +668,7 @@
    "status": "cached",
    "count": 5,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "rate-limited (429)"
   },
   {
    "id": "rd-slaythespire",
@@ -677,7 +677,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-geopolitics",
@@ -708,6 +708,25 @@
   }
  ],
  "items": [
+  {
+   "title": "tagesthemen 22:15 Uhr, 14.10.2026",
+   "url": "https://www.youtube.com/watch?v=Zw2VinDbUI8",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-14T21:24:31.000Z",
+   "summary": "tagesthemen 22:15 Uhr Koalition einigt sich auf eine Zuckersteuer, Prozessauftakt um Anschlag auf Nord-Stream-Pipeline, Ukrainischer Präsident Selenskyj klagt über fehlende Warnungen vor russischen Angriffen, Sachsen-Anhalt: AfD und BSW wollen Ukraine-Hilfe beenden,…",
+   "thumb": "https://i3.ytimg.com/vi/Zw2VinDbUI8/hqdefault.jpg",
+   "id": "841d5bad2c2d",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
   {
    "title": "Nord-Stream-Sprengung: Der Prozess und seine politische Sprengkraft | tagesthemen-Interview",
    "url": "https://www.youtube.com/watch?v=uiUqCz3MRLw",
@@ -741,6 +760,23 @@
    "summary": "Luke discusses Zelenskyy's appearance on Piers Morgan's show. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
    "thumb": "https://i1.ytimg.com/vi/P4ghGYilXiU/hqdefault.jpg",
    "id": "6e3a54c5bd4c",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "'Truly Sickening': Reform UK Councillors and Candidates Accused Of 'Extreme Racism'",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1x61nik/truly_sickening_reform_uk_councillors_and/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-14T20:07:46.000Z",
+   "summary": "submitted by /u/Other-Bother-6762 [link] [comments]",
+   "id": "531bcb780ab6",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -902,23 +938,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Inside Reform: Councillors' extreme and racist views on camera",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1x5y0q8/inside_reform_councillors_extreme_and_racist/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-14T17:50:28.000Z",
-   "summary": "submitted by /u/Outside-Address173 [link] [comments]",
-   "id": "444f045425c4",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "The Logistics of IMAX",
    "url": "https://www.youtube.com/watch?v=auScRXZwHhk",
    "source": "Half as Interesting",
@@ -971,6 +990,23 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
+   "title": "The UK energy secretary is flirting with a bad idea for bills – the ‘rising block tariff’",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1x5x9zb/the_uk_energy_secretary_is_flirting_with_a_bad/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-14T17:22:15.000Z",
+   "summary": "submitted by /u/Kagedeah [link] [comments]",
+   "id": "9643775f462e",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
    "title": "Zelensky says he feels betrayed over Trump-Russia deal",
    "url": "https://www.reddit.com/r/geopolitics/comments/1x5wruo/zelensky_says_he_feels_betrayed_over_trumprussia/",
    "source": "r/geopolitics",
@@ -1005,7 +1041,7 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Will AI put millions out of work? | The Economist",
+   "title": "AI won’t steal your job: Andrew Ng interview | The Economist",
    "url": "https://www.youtube.com/watch?v=J-sMqnzHwI0",
    "source": "The Economist",
    "feedId": "yt-the-economist",
@@ -1088,23 +1124,6 @@
    "summary": "Hey you 👈 Wanna be in a Jubilee video? https://bit.ly/be-in-a-video LET’S BE FRIENDS Instagram: https://www.instagram.com/jubileemedia/ TikTok: https://www.tiktok.com/@jubilee?lang=en Website: https://www.jubileemedia.com OUR LOVE + DATING CHANNEL 🍑 YouTube:…",
    "thumb": "https://i4.ytimg.com/vi/O71_BzlwX9w/hqdefault.jpg",
    "id": "5d370527966c",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Man planned to set up militant pro- Palestinian group to 'attack police and British Army'",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1x5uuzl/man_planned_to_set_up_militant_pro_palestinian/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-14T15:52:01.000Z",
-   "summary": "submitted by /u/ThatZephyrGuy [link] [comments]",
-   "id": "e98cf764f9d2",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1194,25 +1213,6 @@
    "published": "2026-10-14T14:11:00.000Z",
    "summary": "submitted by /u/AdSpecialist6598 [link] [comments]",
    "id": "e3024a086814",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "ARD-Korrespondent in Rom: „Krebsdiagnose von Papst Leo XIV. kam völlig überraschend“",
-   "url": "https://www.youtube.com/watch?v=GVJrI4BxehM",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-14T13:57:26.000Z",
-   "summary": "Am Dienstag hatte Papst Leo XIV. sich operieren lassen. Nun steht fest: Das Oberhaupt der Katholischen Kirche hat Lungenkrebs. Was bedeutet die Diagnose und wie geht es weiter? Mehr Informationen zu diesem Thema:…",
-   "thumb": "https://i4.ytimg.com/vi/GVJrI4BxehM/hqdefault.jpg",
-   "id": "1f3b096b7255",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -2827,5 +2827,5 @@
    "why": "0"
   }
  ],
- "contentHash": "6b16a2ed372a"
+ "contentHash": "74d80c1b5578"
 }
