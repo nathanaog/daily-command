@@ -1323,7 +1323,7 @@ function watchlistHtml() {
     <ul class="list">${lenses.map(([n, t]) => `<li><span class="grow" data-act="lensEdit" data-lens="${esc(n)}"><b>${esc(n)}</b><br><span class="small muted">${t.map(esc).join(', ')}</span></span><span class="tag num">${Digest.unreadCount(n)} new</span></li>`).join('')}</ul>
     <div class="actions"><button class="btn sm" data-act="lensAdd">+ Lens</button></div>
     <label class="f">Morning sequence uses</label>${lensSelect('morningLens', S.settings.morningLens)}
-    <div class="row">${['work', 'life', 'leisure', 'winddown'].map(m => `<label class="f" style="flex:1">${MODE_LABEL[m]}${lensSelect('lens.' + m, (S.settings.lensByMode || {})[m])}</label>`).join('')}</div>`;
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:0 10px">${['work', 'life', 'leisure', 'winddown'].map(m => `<label class="f">${MODE_LABEL[m]} uses${lensSelect('lens.' + m, (S.settings.lensByMode || {})[m])}</label>`).join('')}</div>`;
 
   // keywords
   const kw = Object.entries(W.keywords || {}).map(([k, v]) => `${k} = ${v}`).join('\n');
