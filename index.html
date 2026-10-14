@@ -2094,6 +2094,54 @@ function mailHtml(compact = false) {
     <div class="small muted">${stale ? '⚠ ' : ''}Updated ${ago(g.fetchedAt)}${stale && navigator.onLine ? ' · <a href="#" data-act="gConnect" style="color:inherit">refresh</a>' : ''}</div>`;
 }
 
+/* ---------------- Day calendar cards (Today during the day, Tomorrow in the evening) ----------------
+   Calendar days here are real midnights (00:00–24:00), anchored on the app's logical day, so at
+   00:20 during wind-down "today" is still yesterday's date and "tomorrow" is the coming one. */
+function eventsOnDay(ymd) {
+  const s = localMidnight(ymd), e = Engine.atDay(s, 1);
+  return allEvents().map(x => ({ ...x, s: new Date(x.start), e: new Date(x.end) }))
+    .filter(x => x.s < e && x.e > s)                               // overlaps the day (multi-day/overnight included)
+    .sort((a, b) => (b.allDay - a.allDay) || (a.s - b.s));
+}
+const calDot = c => c ? `<span style="display:inline-block;width:8px;height:8px;border-radius:2px;background:${esc(c)};margin-right:6px"></span>` : '';
+function evLi(x, cls = '', label = '') {
+  return `<li class="${cls}"><span class="num muted small" style="min-width:92px;white-space:nowrap">${x.allDay ? 'all day' : fmtT(x.s) + '–' + fmtT(x.e)}</span>
+    <span class="grow">${calDot(x.color)}${esc(x.title)}${label}${x.info && !x.allDay ? ' <span class="tag">free</span>' : ''}${x.location ? ` <span class="small muted">· ${esc(x.location)}</span>` : ''}</span>
+    ${x.link ? `<a class="icon" href="${esc(x.link)}" target="_blank" rel="noopener" aria-label="Open in Google Calendar">↗</a>` : ''}</li>`;
+}
+/** Today: whole day as a list — finished events dimmed, the current one marked "now". */
+function todayCalHtml(now = new Date()) {
+  const evs = eventsOnDay(today());
+  if (!evs.length) return `<div class="empty">Nothing in the calendar today.</div>${calNoteHtml()}`;
+  return `<ul class="list">${evs.map(x => x.allDay ? evLi(x)
+      : x.e <= now ? evLi(x, 'done')
+      : x.s <= now ? evLi(x, '', ` <span class="tag" style="background:var(--accent);color:var(--bg)">now · ${fmtDur(x.e - now)} left</span>`)
+      : evLi(x, '', ` <span class="small muted">in ${fmtDur(x.s - now)}</span>`)).join('')}</ul>${calNoteHtml()}`;
+}
+function todayCalBadge(now = new Date()) {
+  const left = eventsOnDay(today()).filter(x => !x.allDay && !x.info && x.e > now).length;
+  return `<span class="tag num">${left} left</span>`;
+}
+/** Tomorrow: all-day items (e.g. working location) + the first few timed events, with the maths for the morning. */
+function tomorrowCalHtml(max = 4) {
+  const evs = eventsOnDay(tomorrow()), allDay = evs.filter(x => x.allDay), timed = evs.filter(x => !x.allDay);
+  const busy = timed.filter(x => !x.info);
+  let h = allDay.length ? `<div class="row" style="flex-wrap:wrap;gap:6px;margin-bottom:6px">${allDay.map(x => `<span class="tag">${calDot(x.color)}${esc(x.title)}</span>`).join('')}</div>` : '';
+  if (!timed.length) return h + `<div class="empty">No timed events tomorrow — a clear morning.</div>${calNoteHtml()}`;
+  h += `<ul class="list">${timed.slice(0, max).map(x => evLi(x)).join('')}</ul>`;
+  if (timed.length > max) h += `<p class="small muted">+ ${timed.length - max} more · last ends ${fmtT(timed.reduce((m, x) => x.e > m ? x.e : m, timed[0].e))}</p>`;
+  if (busy.length) {
+    const mins = busy.reduce((n, x) => n + Math.round((x.e - x.s) / 60000), 0);
+    h += `<div class="math">first: ${fmtT(busy[0].s)} · meetings: ${busy.map(x => Math.round((x.e - x.s) / 60000)).join(' + ')} = ${mins} min (${fmtDur(mins * 60000)})</div>`;
+  }
+  return h + calNoteHtml();
+}
+function tomorrowCalBadge() {
+  const first = eventsOnDay(tomorrow()).find(x => !x.allDay && !x.info);
+  return `<span class="tag num">${first ? 'first ' + fmtT(first.s) : 'clear'}</span>`;
+}
+const tomorrowTitle = () => 'Tomorrow · ' + localMidnight(tomorrow()).toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short' });
+
 /** Line under the calendar list in the morning: where events come from and how fresh they are. */
 function calNoteHtml() {
   if (!Google.everSignedIn() || !Google.on('calendar')) return '<p class="small muted">Manual events only — connect Google (More → Google account) to see your calendar here.</p>';
@@ -2851,18 +2899,25 @@ function modeSections(mode) {
     `<li><span class="num muted" style="width:96px">${whenLabel(a.at)}</span><span class="grow">${esc(a.title)}${a.type === 'event' ? ' <span class="tag">event</span>' : ''}</span></li>`).join('')}</ul>`
     : '<div class="empty">Nothing else scheduled.</div>';
   const minsToday = focusMinutes(today());
+  // Calendar: "Today" in work/life; "Tomorrow" in leisure/wind-down, and in any mode from 17:00.
+  const evening = new Date().getHours() >= 17 || new Date().getHours() < 4;
+  const todayCal = sec('now-cal', 'Today’s calendar', todayCalHtml(), true, todayCalBadge());
+  const tomCal = sec('now-tomcal', tomorrowTitle(), tomorrowCalHtml(), true, tomorrowCalBadge());
   if (mode === 'work') {
     parts.push(sec('now-top3', 'Today’s top 3', top3, true));
+    parts.push(todayCal); if (evening) parts.push(tomCal);
     parts.push(sec('now-next', 'Next action per project', nextActionsHtml(), false));
     if (Google.on('gmail') && C.gmail) parts.push(sec('now-mail', 'Gmail', mailHtml(true), false, `<span class="tag num">${C.gmail.unread} unread</span>`));
     parts.push(sec('now-focus', 'Focus today', `<div class="kpi"><div><b class="num">${minsToday}</b>minutes</div><div><b class="num">${todaysSessions().length}</b>sessions</div></div>`, false, `<span class="tag num">${minsToday}m</span>`));
   } else if (mode === 'life') {
     parts.push(sec('now-weather', 'Weather', Weather.html(), false, `<span class="tag">${Weather.short() || '—'}</span>`));
+    parts.push(todayCal); if (evening) parts.push(tomCal);
     parts.push(sec('now-top3', 'Today’s top 3', top3, false));
     parts.push(sec('now-inbox', `Inbox`, inboxHtml(true), S.inbox.length > 0, `<span class="tag">${S.inbox.length}</span>`));
     if (Google.on('gmail') && C.gmail) parts.push(sec('now-mail', 'Gmail', mailHtml(true), false, `<span class="tag num">${C.gmail.unread} unread</span>`));
   } else if (mode === 'leisure') {
     parts.push(watchCardHtml());                    // ▶ Watch next (PART 4f)
+    parts.push(evening ? tomCal : todayCal);
     parts.push(sec('now-watch', 'Watch-later shelf', watchHtml(), true, `<span class="tag">${S.watch.length}</span>`));
     parts.push(digestCard());
     parts.push(freshPromptHtml());
@@ -2870,6 +2925,7 @@ function modeSections(mode) {
     const w = S.wrapups[today()];
     parts.push(`<div class="card"><h3>Evening wrap-up</h3><p class="muted small">${w ? 'Done at ' + fmtT(new Date(w.at)) + '. You can run it again.' : 'Two minutes: what got done, what rolls over, tomorrow’s top 3.'}</p>
       <div class="actions"><button class="btn primary" data-act="wrapup">${w ? 'Redo wrap-up' : 'Start wrap-up'}</button></div></div>`);
+    parts.push(tomCal);
     parts.push(sec('now-tom', 'Tomorrow’s top 3', listTop3(tomorrow()), true));
     parts.push(freshPromptHtml());
   }
@@ -3540,6 +3596,7 @@ function renderWrap() {
       <p class="muted" style="margin-top:14px">Sort the inbox (${S.inbox.length})</p>${inboxHtml()}`;
   } else {
     if (!wrap.tom.length) wrap.tom = [...wrap.roll].slice(0, 3);
+    h += `<details class="sec" ${eventsOnDay(tomorrow()).length ? 'open' : ''}><summary><span>${tomorrowTitle()}</span>${tomorrowCalBadge()}</summary><div class="body">${tomorrowCalHtml(3)}</div></details>`;
     h += `<p class="muted">Tomorrow’s top 3</p>`;
     for (let i = 0; i < 3; i++) {
       const t = taskById(wrap.tom[i]);
