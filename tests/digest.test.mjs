@@ -6,7 +6,7 @@
  */
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
-import { parseFeed, channelFromPage, channelFromSearch, canonicalUrl, titleKey, scoreItem, normaliseKeywords, buildDigest, stripHtml, parseIsoDuration, lengthFromWatchPage, fmtLength } from '../scripts/digest-lib.mjs';
+import { parseFeed, channelFromPage, channelFromSearch, canonicalUrl, titleKey, scoreItem, normaliseKeywords, buildDigest, stripHtml, parseIsoDuration, lengthFromWatchPage, fmtLength, whyNoLength, addLengths } from '../scripts/digest-lib.mjs';
 
 const fx = n => readFileSync(new URL(`./fixtures/${n}`, import.meta.url), 'utf8');
 const NOW = new Date('2026-10-13T06:00:00Z');
@@ -139,10 +139,17 @@ await test('full run: resolves, fetches, reports health per feed', async () => {
   assert.ok(net.calls.some(u => u.includes('old.reddit.com')), 'tried old.reddit fallback');
   assert.equal(st.gn.status, 'ok');
 });
-await test('age + per-feed limits: newest 2 per feed, nothing older than 72 h', () => {
+await test('age windows: videos up to 14 days, articles/news up to 72 h; newest 2 per feed', () => {
   const fromName = first.digest.items.filter(i => i.feedId === 'yt-name');
   assert.equal(fromName.length, 2);
-  assert.ok(first.digest.items.every(i => !i.published || NOW - new Date(i.published) <= 72 * 3600e3));
+  const age = i => NOW - new Date(i.published);
+  assert.ok(first.digest.items.every(i => !i.published || age(i) <= (i.type === 'video' ? 336 : 72) * 3600e3));
+  assert.ok(!first.digest.items.some(i => i.title === 'Telescope old post'), 'article >72 h dropped');
+});
+await test('a weekly channel (latest upload 4 days ago) still appears', async () => {
+  const net = fakeNet([['channel_id=UCweekly', { status: 200, text: fx('youtube.xml').replace(/2026-10-1[23]T\d\d/g, '2026-10-09T10') }]]);
+  const r = await buildDigest({ defaults: { hideShorts: false }, feeds: [{ id: 'w', name: 'Weekly', type: 'youtube', channelId: 'UCweeklyChannel000000001', tags: [] }] }, { fetchText: net.fetchText, now: NOW });
+  assert.equal(r.digest.feeds[0].count, 3);
 });
 await test('dedupe: same link in two feeds merged, tags unioned, "alsoIn" kept', () => {
   const merged = first.digest.items.filter(i => i.title.startsWith('Cloud chambers'));
@@ -183,6 +190,24 @@ await test('lengths: looked up once, cached by id, failures not cached', async (
   assert.ok(!watched.some(u => u.includes('AAAAAAAAAA1') || u.includes('AAAAAAAAAA2')), 'cached ids not fetched again');
   assert.ok(watched.length >= 1, 'failed ids retried');
   assert.equal(again.digest.stats.lengthsKnown, 2);
+});
+await test('lengths via the YouTube Data API: 50 ids per call, key used, durations parsed', async () => {
+  const items = Array.from({ length: 60 }, (_, k) => ({ type: 'video', url: `https://www.youtube.com/watch?v=${String(k).padStart(11, 'x')}` }));
+  const calls = [];
+  const fetchText = async url => {
+    calls.push(url);
+    const ids = new URL(url).searchParams.get('id').split(',');
+    return { status: 200, text: JSON.stringify({ items: ids.filter((_, i) => i % 10).map(id => ({ id, contentDetails: { duration: 'PT12M30S' } })) }) };
+  };
+  const r = await addLengths(items, { fetchText, apiKey: 'K' });
+  assert.equal(calls.length, 2, '60 ids → 2 requests'); assert.ok(calls[0].includes('key=K'));
+  assert.equal(items[1].durationSec, 750); assert.equal(items[1].duration, '12:30');
+  assert.equal(r.failed, 6); assert.equal(r.via, 'YouTube Data API');
+});
+await test('failed page lookups say why (bot check, consent, HTTP)', () => {
+  assert.equal(whyNoLength({ status: 200, text: 'Sign in to confirm you’re not a bot' }), 'bot check (YouTube blocks cloud servers)');
+  assert.equal(whyNoLength({ status: 200, text: '<form action="https://consent.youtube.com/save">' }), 'consent page');
+  assert.equal(whyNoLength({ status: 429, text: '' }), 'HTTP 429');
 });
 await test('unresolvable YouTube name is reported, not fatal', async () => {
   const net = fakeNet([['results?search_query', { status: 200, text: '<html>no results</html>' }]]);

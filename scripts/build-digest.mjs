@@ -19,7 +19,9 @@ const cache = await readJson('feeds.resolved.json', {});
 const previous = await readJson('digest.json', {});
 const videoMeta = await readJson('video-meta.json', {});
 
-const { digest, resolved, videoMeta: newMeta } = await buildDigest(doc, { fetchText: makeFetchText(), cache, videoMeta });
+// Optional: a free YouTube Data API key (repo secret YT_API_KEY) makes video lengths reliable.
+const ytApiKey = process.env.YT_API_KEY || '';
+const { digest, resolved, videoMeta: newMeta } = await buildDigest(doc, { fetchText: makeFetchText(), cache, videoMeta, ytApiKey });
 
 // Never replace a good digest with an empty one because of a network blip.
 if (!digest.items.length && previous.items?.length && !previous.sample) {
@@ -34,4 +36,6 @@ const changed = digest.contentHash !== previous.contentHash || JSON.stringify(re
 const summary = `${digest.stats.items} items from ${digest.stats.ok}/${digest.stats.feeds} feeds, ${digest.stats.lengthsKnown} video lengths`;
 console.log(summary + (changed ? '' : ' (no change)'));
 for (const f of digest.feeds) if (f.status !== 'ok') console.log(`  ⚠ ${f.name}: ${f.status} — ${f.error || ''}`);
+const lr = digest.stats.lengthFailReasons || {};
+if (Object.keys(lr).length) console.log(`  Video lengths via ${digest.stats.lengthVia}: ${digest.stats.lengthFailures} failed — ${Object.entries(lr).map(([k, n]) => `${k} ×${n}`).join(', ')}`);
 if (process.env.GITHUB_OUTPUT) await appendFile(process.env.GITHUB_OUTPUT, `changed=${changed}\nsummary=${summary}\n`);

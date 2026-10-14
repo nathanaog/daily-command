@@ -33,9 +33,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v6
         with:
           node-version: 22
           cache: npm
@@ -47,6 +47,10 @@ jobs:
 
       - name: Build digest.json from feeds.json
         id: digest
+        env:
+          # Optional, free: a YouTube Data API key makes video lengths reliable
+          # (Settings → Secrets and variables → Actions → New secret "YT_API_KEY").
+          YT_API_KEY: ${{ secrets.YT_API_KEY }}
         run: node scripts/build-digest.mjs
 
       # ------------------------------------------------------------------
@@ -80,7 +84,7 @@ jobs:
           cp -r index.html manifest.json sw.js icons digest.json feeds.json feeds.resolved.json _site/
           for f in briefing.json briefing.md; do [ -f "$f" ] && cp "$f" _site/ || true; done
 
-      - uses: actions/upload-pages-artifact@v4
+      - uses: actions/upload-pages-artifact@v5
         with:
           path: _site
 
@@ -92,4 +96,4 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5

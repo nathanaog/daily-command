@@ -229,28 +229,51 @@ export function fmtLength(sec) {
   const h = Math.floor(sec / 3600), m = Math.floor((sec % 3600) / 60), s = sec % 60, p = n => String(n).padStart(2, '0');
   return h ? `${h}:${p(m)}:${p(s)}` : `${m}:${p(s)}`;
 }
-/** Fill durationSec/duration on video items, fetching only ids not already cached. */
-export async function addLengths(items, { fetchText, meta = {}, concurrency = 6, maxLookups = 300 }) {
+/** Why a watch-page lookup gave no length (shown in the digest stats so problems are visible). */
+export function whyNoLength(r) {
+  if (r.status !== 200) return r.status ? `HTTP ${r.status}` : (r.error || 'no response');
+  if (/consent\.youtube\.com|before you continue to youtube/i.test(r.text)) return 'consent page';
+  if (/confirm you.{0,3}re not a bot|unusual traffic/i.test(r.text)) return 'bot check (YouTube blocks cloud servers)';
+  return 'no length on page';
+}
+/** Fill durationSec/duration on video items, fetching only ids not already cached.
+    With a YouTube Data API key (free; repo secret YT_API_KEY) it uses the official videos.list
+    endpoint — 50 ids per request, 1 quota unit each, of a free 10,000/day. Otherwise it reads
+    each video's page, which YouTube often blocks from cloud servers. */
+export async function addLengths(items, { fetchText, meta = {}, concurrency = 6, maxLookups = 300, apiKey = '' }) {
   const out = {};
   const vids = items.map(it => [it, (it.url.match(/[?&]v=([\w-]{11})/) || [])[1]]).filter(([it, id]) => it.type === 'video' && id);
   const todo = [...new Set(vids.map(([, id]) => id).filter(id => !(id in meta)))].slice(0, maxLookups);
-  let looked = 0, failed = 0;
-  await pool(todo, concurrency, async id => {
-    const r = await fetchText(`https://www.youtube.com/watch?v=${id}`, { browser: true });
-    looked++;
-    const sec = r.status === 200 ? lengthFromWatchPage(r.text) : null;
-    if (sec) meta[id] = sec; else failed++;        // failures aren't cached → retried next run
-  });
+  let looked = 0, failed = 0; const reasons = {};
+  const fail = why => { failed++; reasons[why] = (reasons[why] || 0) + 1; };
+  if (apiKey) {
+    for (let i = 0; i < todo.length; i += 50) {
+      const ids = todo.slice(i, i + 50);
+      const r = await fetchText(`https://www.googleapis.com/youtube/v3/videos?part=contentDetails&maxResults=50&id=${ids.join(',')}&key=${encodeURIComponent(apiKey)}`);
+      looked += ids.length;
+      let got = {};
+      try { if (r.status === 200) for (const v of JSON.parse(r.text).items || []) { const n = parseIsoDuration(v.contentDetails?.duration); if (n > 0) got[v.id] = n; } } catch (e) {}
+      for (const id of ids) got[id] ? (meta[id] = got[id]) : fail(r.status === 200 ? 'not returned by API (live/private?)' : `API HTTP ${r.status}`);
+    }
+  } else {
+    await pool(todo, concurrency, async id => {
+      const r = await fetchText(`https://www.youtube.com/watch?v=${id}`, { browser: true });
+      looked++;
+      const sec = r.status === 200 ? lengthFromWatchPage(r.text) : null;
+      if (sec) meta[id] = sec; else fail(whyNoLength(r));   // failures aren't cached → retried next run
+    });
+  }
   for (const [it, id] of vids) {
     const sec = meta[id];
     if (sec) { it.durationSec = sec; it.duration = fmtLength(sec); out[id] = sec; }
   }
-  return { meta: out, looked, failed };            // only ids still in the digest → cache stays small
+  return { meta: out, looked, failed, reasons, via: apiKey ? 'YouTube Data API' : 'video pages' };   // only ids still in the digest → cache stays small
 }
 
 /* ---------------- the whole run ---------------- */
-export async function buildDigest(doc, { fetchText, now = new Date(), cache = {}, videoMeta = {}, concurrency = 6 }) {
-  const defaults = { perFeed: 5, maxAgeHours: 72, newsLang: 'en-GB', hideShorts: true, maxItems: 400, ...(doc.defaults || {}) };
+export async function buildDigest(doc, { fetchText, now = new Date(), cache = {}, videoMeta = {}, concurrency = 6, ytApiKey = '' }) {
+  // Age windows: news/Reddit go stale fast (72 h); YouTube channels often post weekly, so videos get 14 days.
+  const defaults = { perFeed: 5, maxAgeHours: 72, maxAgeHoursVideo: 336, newsLang: 'en-GB', hideShorts: true, maxItems: 400, ...(doc.defaults || {}) };
   const keywords = normaliseKeywords(doc.keywords);
   const resolvedOut = { ...cache };
   const feeds = (doc.feeds || []).filter(f => f && f.name && !f.paused);
@@ -273,7 +296,7 @@ export async function buildDigest(doc, { fetchText, now = new Date(), cache = {}
     }
     if (!parsed) { Object.assign(rep, { status: 'error', error: lastErr, http: lastHttp }); return []; }
 
-    const maxAge = (f.maxAgeHours || defaults.maxAgeHours) * 3600e3;
+    const maxAge = (f.maxAgeHours || (f.type === 'youtube' ? defaults.maxAgeHoursVideo : defaults.maxAgeHours)) * 3600e3;
     const fresh = parsed.entries
       .filter(e => e.title && e.url)
       .map(e => ({ ...e, publishedD: e.published ? new Date(e.published) : null }))
@@ -312,7 +335,7 @@ export async function buildDigest(doc, { fetchText, now = new Date(), cache = {}
   items.forEach(it => { delete it.canon; if (!it.thumb) delete it.thumb; });
   items.sort((a, b) => (b.score - a.score) || (new Date(b.published || 0) - new Date(a.published || 0)));
   const kept = items.slice(0, defaults.maxItems);
-  const lengths = await addLengths(kept, { fetchText, meta: { ...videoMeta }, concurrency });
+  const lengths = await addLengths(kept, { fetchText, meta: { ...videoMeta }, concurrency, apiKey: ytApiKey });
 
   report.sort((a, b) => feeds.findIndex(f => f.id === a.id) - feeds.findIndex(f => f.id === b.id));
   const ok = report.filter(r => r.status === 'ok').length;
@@ -320,7 +343,8 @@ export async function buildDigest(doc, { fetchText, now = new Date(), cache = {}
     generated: now.toISOString(),
     watchlistUpdatedAt: doc.updatedAt || null,
     stats: { feeds: report.length, ok, items: kept.length, duplicatesMerged: perFeed.flat().length - items.length,
-      lengthsKnown: kept.filter(i => i.durationSec).length, lengthLookups: lengths.looked, lengthFailures: lengths.failed },
+      lengthsKnown: kept.filter(i => i.durationSec).length, lengthLookups: lengths.looked, lengthFailures: lengths.failed,
+      lengthVia: lengths.via, lengthFailReasons: lengths.reasons },
     feeds: report,
     items: kept,
   };

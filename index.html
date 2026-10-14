@@ -521,7 +521,8 @@ function defaultState() {
       morningLatest: '12:00',  // …but only if that first open is before this time
       digestMin: 15,           // time-box for reading the digest
       digestMax: 30,           // max items per digest session (finite by design)
-      digestHours: 48,         // ignore items older than this (relative to when digest.json was built)
+      digestHours: 48,         // ignore news/posts older than this (relative to when digest.json was built)
+      digestVideoDays: 14,     // …and videos older than this many days
       location: null,          // {name, lat, lon} for Open-Meteo
       // Stage 3 — lenses, fresh-content reminder, optional GitHub publishing
       morningLens: 'Morning',  // lens used by the morning sequence's digest
@@ -902,9 +903,11 @@ const Digest = {
   /** Candidate items: recent (relative to when the digest was built), unread, in the lens + types. */
   candidates(lens = ALL, types = null, cap = true) {
     const d = C.digest?.data; if (!d) return [];
-    const gen = new Date(d.generated || Date.now()).getTime(), maxAge = S.settings.digestHours * 3600e3;
+    // News/posts go stale in hours; videos from weekly channels stay relevant for days (read marks stop repeats)
+    const gen = new Date(d.generated || Date.now()).getTime();
+    const maxAge = it => (it.type === 'video' ? (S.settings.digestVideoDays || 14) * 864e5 : S.settings.digestHours * 3600e3);
     const lt = this.lensTags(lens);
-    const list = d.items.filter(it => !S.digestRead[it.id] && (!it.published || gen - new Date(it.published) <= maxAge)
+    const list = d.items.filter(it => !S.digestRead[it.id] && (!it.published || gen - new Date(it.published) <= maxAge(it))
         && (!lt || this.tagsOf(it).some(t => lt.includes(t.toLowerCase())))
         && (!types || !types.length || types.includes(it.type || 'article')))
       .sort((a, b) => ((b.matched || []).length - (a.matched || []).length) || ((b.score || 0) - (a.score || 0)) || (new Date(b.published) - new Date(a.published)));
@@ -1996,7 +1999,8 @@ function renderMore() {
     <div class="row"><label class="f" style="flex:1">…if that’s before<input type="time" value="${st.morningLatest}" data-setting="morningLatest"></label>
     <label class="f" style="flex:1">Digest length (min)<input type="number" min="3" max="60" value="${st.digestMin}" data-setting="digestMin"></label></div>
     <div class="row"><label class="f" style="flex:1">Max digest items<input type="number" min="5" max="100" value="${st.digestMax}" data-setting="digestMax"></label>
-    <label class="f" style="flex:1">Ignore items older than (h)<input type="number" min="6" max="168" value="${st.digestHours}" data-setting="digestHours"></label></div>
+    <label class="f" style="flex:1">Hide news older than (h)<input type="number" min="6" max="168" value="${st.digestHours}" data-setting="digestHours"></label>
+    <label class="f" style="flex:1">Hide videos older than (days)<input type="number" min="1" max="30" value="${st.digestVideoDays}" data-setting="digestVideoDays"></label></div>
     <label class="f">Your first name (for the greeting)</label><input type="text" value="${esc(st.name)}" data-setting="name">
     <label class="f">Weather location</label><div class="row"><span class="grow">${loc ? `${esc(loc.name)} <span class="small muted">(${loc.lat}, ${loc.lon})</span>` : '<span class="muted">Not set</span>'}</span></div>
     <div class="actions"><button class="btn sm" data-act="locGeo">📍 Use my location</button><button class="btn sm" data-act="locSearch">Search a city</button></div>
@@ -2051,7 +2055,7 @@ function helpHtml() {
   <p>Every ${S.settings.freshDays || 30} days without a new feed, you’ll get a gentle “Time for something new?” card (change or switch off in the watchlist section).</p>
   <h3>Listening while working</h3>
   <p>Feeds tagged <b>listen</b> (podcasts, talking-head channels) form a Listen queue. In a block, the Now screen shows one pick that fits the time left — with the comparison written out — and <b>Play</b> opens it in the YouTube app on Android. With YouTube Premium it keeps playing with the screen off. Per block kind you can choose talk, focus audio (e.g. an instrumental playlist) or off: More → Listening while working. The default is talk for Admin and Lunch, focus audio for Deep work, because speech competes with reading and writing.</p>
-  <p>Video lengths come from each video’s page (looked up once by the GitHub Action). If YouTube changes that page, items show no length and the pick falls back to queue order. Until phone–desktop sync (Stage 4), marking something done on one device doesn’t hide it on the other.</p>
+  <p>Video lengths: YouTube usually blocks GitHub’s servers from video pages, so for reliable lengths add a free YouTube Data API key as the repo secret <code>YT_API_KEY</code> (Settings → Secrets and variables → Actions). Without one, items may show no length and the pick falls back to queue order. Until phone–desktop sync (Stage 4), marking something done on one device doesn’t hide it on the other.</p>
   <h3>Morning briefing slot (optional, later)</h3>
   <p>If the repo ever contains <code>briefing.json</code> (<code>{"generated", "title", "markdown"}</code>) or <code>briefing.md</code> — e.g. written by an AI step you add to the workflow (a commented example is in <code>digest.yml</code>) — it appears at the top of the morning sequence while it’s under 24 h old.</p>
   <h3>Feeds: what’s reliable and what isn’t</h3>

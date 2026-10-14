@@ -16,7 +16,7 @@ A personal "what should I be doing right now?" app. Static site, installable PWA
 | `feeds.resolved.json`, `video-meta.json` | Caches maintained by the workflow: YouTube name and handle lookups, and video lengths for the Listen queue. |
 | `.github/workflows/digest.yml` | Every 3 hours: tests, builds the digest, commits it if it changed, then deploys the site. |
 | `scripts/` | The digest builder: `digest-lib.mjs` (logic) and `build-digest.mjs` (runner). |
-| `tests/` | `engine.test.cjs` (36 Now/Next edge cases), `digest.test.mjs` (21 builder tests on recorded feed samples) and `e2e-build.mjs` (a full builder run over your real watchlist with a simulated network). Run all with `npm test`. |
+| `tests/` | `engine.test.cjs` (36 Now/Next edge cases), `digest.test.mjs` (24 builder tests on recorded feed samples) and `e2e-build.mjs` (a full builder run over your real watchlist with a simulated network). Run all with `npm test`. |
 | `package.json`, `package-lock.json` | One dependency (`fast-xml-parser`), used only by the workflow and not by the app. |
 
 ## Set it up on GitHub (one-off, about 10 minutes)
@@ -72,7 +72,7 @@ Feeds tagged **listen**, such as podcasts and talking-head channels, form a **Li
   - Reason for the defaults: speech competes with reading and writing (the "irrelevant speech effect"). Change them freely.
 - **Full queue:** the Inbox tab lists everything, with the total listening time added up.
 
-**Video lengths:** the workflow reads each new video's page once to get its length. This is unofficial; if YouTube changes the page, items show no length and the pick falls back to queue order. Until phone–desktop sync (Stage 4), marking something done on one device doesn't hide it on the other.
+**Video lengths:** YouTube's feeds don't include lengths, and YouTube usually blocks GitHub's servers from reading video pages. For reliable lengths, add a free **YouTube Data API key** as a repo secret named `YT_API_KEY` (**Settings → Secrets and variables → Actions → New repository secret**). It comes from the same Google Cloud project as Stage 4's sign-in. It uses about 3 units per run out of a free 10,000 a day. Without a key, the workflow still tries the video pages, and the digest's stats say why any lookup failed. Items without a length are picked in queue order. Until phone–desktop sync (Stage 4), marking something done on one device doesn't hide it on the other.
 
 ## Install on Android
 
