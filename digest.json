@@ -1,17 +1,17 @@
 {
- "generated": "2026-10-14T20:55:56.930Z",
+ "generated": "2026-10-14T20:58:08.084Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
   "ok": 52,
   "items": 119,
   "duplicatesMerged": 0,
-  "lengthsKnown": 2,
+  "lengthsKnown": 3,
   "lengthLookups": 98,
-  "lengthFailures": 98,
+  "lengthFailures": 97,
   "lengthVia": "video pages",
   "lengthFailReasons": {
-   "no length on page": 98
+   "no length on page": 97
   }
  },
  "feeds": [
@@ -630,37 +630,36 @@
    "id": "rd-productmanagement",
    "name": "r/productmanagement",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 3,
-   "url": "https://www.reddit.com/r/productmanagement/top/.rss?t=day"
+   "lastOk": "2026-10-14T20:55:56.930Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-tech",
    "name": "r/tech",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 1,
-   "url": "https://www.reddit.com/r/tech/top/.rss?t=day"
+   "lastOk": "2026-10-14T20:55:56.930Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-gaming",
    "name": "r/gaming",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-10-14T20:07:39.650Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
   },
   {
    "id": "rd-xbox",
@@ -669,7 +668,7 @@
    "status": "cached",
    "count": 5,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "rate-limited (429)"
   },
   {
    "id": "rd-slaythespire",
@@ -678,7 +677,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-geopolitics",
@@ -898,6 +897,23 @@
    "summary": "We've got new information thanks to Rockstar Games revealing Grand Theft Auto 6 to select press. Subscribe for more: https://www.youtube.com/gameranxTV?sub_confirmation=1 ~~SOURCES~~ game informer cover story (subscription locked) -…",
    "thumb": "https://i2.ytimg.com/vi/-YzzZu_ptKo/hqdefault.jpg",
    "id": "3afc7a9d32ff",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Inside Reform: Councillors' extreme and racist views on camera",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1x5y0q8/inside_reform_councillors_extreme_and_racist/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-14T17:50:28.000Z",
+   "summary": "submitted by /u/Outside-Address173 [link] [comments]",
+   "id": "444f045425c4",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1126,23 +1142,6 @@
    "summary": "Shelagh Fogarty is joined by Sergeant Ashton-Cirillo as the Ukrainian military's access to the America's Starlink satellite internet is suddenly restricted. 0:00 | Ukrainian sergeant reports from the Eastern Front 8:35 | Is the US at war with Europe? 10:30 | The UK must ‘lock…",
    "thumb": "https://i3.ytimg.com/vi/N703aLPXvlM/hqdefault.jpg",
    "id": "caa7316aa7fa",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Suicide rates highest ever among middle-aged men",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1x5tzfv/suicide_rates_highest_ever_among_middleaged_men/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-14T15:18:22.000Z",
-   "summary": "submitted by /u/winkwinknudge_nudge [link] [comments]",
-   "id": "45e01f381f6c",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1521,7 +1520,9 @@
    "id": "ba93d4c286f0",
    "score": 0,
    "matched": [],
-   "why": "0"
+   "why": "0",
+   "durationSec": 868,
+   "duration": "14:28"
   },
   {
    "title": "Is Andy Burnham about to reverse Brexit?",
@@ -2826,5 +2827,5 @@
    "why": "0"
   }
  ],
- "contentHash": "704d2b606e55"
+ "contentHash": "832f24fb21ef"
 }
