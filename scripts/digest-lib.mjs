@@ -271,7 +271,15 @@ export async function addLengths(items, { fetchText, meta = {}, concurrency = 6,
 }
 
 /* ---------------- the whole run ---------------- */
-export async function buildDigest(doc, { fetchText, now = new Date(), cache = {}, videoMeta = {}, concurrency = 6, ytApiKey = '' }) {
+export async function buildDigest(doc, { fetchText, now = new Date(), cache = {}, videoMeta = {}, concurrency = 6, ytApiKey = '',
+  redditGapMs = 4000, sleep = ms => new Promise(r => setTimeout(r, ms)) }) {
+  // Serialise Reddit: each request waits for the previous one, then `redditGapMs` (default 4 s).
+  let chain = Promise.resolve(), first = true;
+  const redditGate = job => {
+    const run = chain.then(async () => { if (!first) await sleep(redditGapMs); first = false; return job(); });
+    chain = run.catch(() => {});
+    return run;
+  };
   // Age windows: news/Reddit go stale fast (72 h); YouTube channels often post weekly, so videos get 14 days.
   const defaults = { perFeed: 5, maxAgeHours: 72, maxAgeHoursVideo: 336, newsLang: 'en-GB', hideShorts: true, maxItems: 400, ...(doc.defaults || {}) };
   const keywords = normaliseKeywords(doc.keywords);
@@ -288,11 +296,13 @@ export async function buildDigest(doc, { fetchText, now = new Date(), cache = {}
     if (plan.resolved) { rep.resolved = { channelId: plan.resolved.channelId, title: plan.resolved.title, via: plan.resolved.via }; resolvedOut[plan.cacheKey] = plan.resolved; }
 
     let parsed = null, lastErr = '', lastHttp;
+    // Reddit rate-limits bursts, so its requests go through a one-at-a-time gate with a pause between them.
+    const get = f.type === 'reddit' ? url => redditGate(() => fetchText(url)) : fetchText;
     for (const url of plan.urls) {                         // try primary, then fallback URL
-      const res = await fetchText(url);
+      const res = await get(url);
       if (res.status !== 200) { lastHttp = res.status; lastErr = res.error || httpReason(res.status, f.type); continue; }
       try { parsed = parseFeed(res.text); rep.url = url; break; }
-      catch (e) { lastErr = e.message; }
+      catch (e) { lastErr = f.type === 'reddit' ? redditHtmlReason(res.text) : e.message; }
     }
     if (!parsed) { Object.assign(rep, { status: 'error', error: lastErr, http: lastHttp }); return []; }
 
@@ -353,6 +363,12 @@ export async function buildDigest(doc, { fetchText, now = new Date(), cache = {}
   return { digest, resolved: resolvedOut, videoMeta: lengths.meta };
 }
 
+/** What Reddit's HTML (instead of a feed) means, so the health line is specific. */
+export function redditHtmlReason(html) {
+  if (/whoa there|too many requests|rate.?limit/i.test(html)) return 'rate-limited by Reddit (sent a web page, not a feed)';
+  if (/network (security|policy)|blocked/i.test(html)) return 'blocked by Reddit — common for cloud servers';
+  return 'Reddit sent a web page instead of a feed (probably rate-limiting)';
+}
 function httpReason(status, type) {
   if (status === 403 && type === 'reddit') return 'blocked by Reddit (403) — common for cloud servers';
   if (status === 403) return 'blocked (403)';

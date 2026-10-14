@@ -6,7 +6,7 @@
  */
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
-import { parseFeed, channelFromPage, channelFromSearch, canonicalUrl, titleKey, scoreItem, normaliseKeywords, buildDigest, stripHtml, parseIsoDuration, lengthFromWatchPage, fmtLength, whyNoLength, addLengths } from '../scripts/digest-lib.mjs';
+import { parseFeed, channelFromPage, channelFromSearch, canonicalUrl, titleKey, scoreItem, normaliseKeywords, buildDigest, stripHtml, parseIsoDuration, lengthFromWatchPage, fmtLength, whyNoLength, addLengths, redditHtmlReason } from '../scripts/digest-lib.mjs';
 
 const fx = n => readFileSync(new URL(`./fixtures/${n}`, import.meta.url), 'utf8');
 const NOW = new Date('2026-10-13T06:00:00Z');
@@ -128,7 +128,7 @@ const routes = [
 let first;
 await test('full run: resolves, fetches, reports health per feed', async () => {
   const net = fakeNet(routes);
-  first = await buildDigest(DOC, { fetchText: net.fetchText, now: NOW });
+  first = await buildDigest(DOC, { fetchText: net.fetchText, now: NOW, sleep: async () => {} });
   const st = Object.fromEntries(first.digest.feeds.map(f => [f.id, f]));
   assert.equal(first.digest.feeds.length, 7, 'paused feed skipped');
   assert.equal(st['yt-name'].resolved.via, 'name search'); assert.equal(st['yt-name'].resolved.title, 'Map "Fixture" Men');
@@ -173,7 +173,7 @@ await test('scoring: keyword + feed boost + freshness, sorted by score', () => {
 });
 await test('second run uses the resolution cache (no YouTube search) and the same content hash', async () => {
   const net = fakeNet(routes);
-  const again = await buildDigest(DOC, { fetchText: net.fetchText, now: new Date(NOW.getTime() + 60e3), cache: first.resolved });
+  const again = await buildDigest(DOC, { fetchText: net.fetchText, now: new Date(NOW.getTime() + 60e3), cache: first.resolved, sleep: async () => {} });
   assert.ok(!net.calls.some(u => u.includes('results?search_query')));
   assert.ok(!net.calls.some(u => u.includes('youtube.com/@')));
   assert.equal(again.digest.contentHash, first.digest.contentHash);
@@ -185,7 +185,7 @@ await test('lengths: looked up once, cached by id, failures not cached', async (
   assert.ok(!first.digest.items.find(i => i.url.endsWith('BBBBBBBBBB1')).durationSec, 'failed lookup → no length');
   assert.deepEqual(first.videoMeta, { AAAAAAAAAA1: 1872, AAAAAAAAAA2: 545 });
   const net = fakeNet(routes);
-  const again = await buildDigest(DOC, { fetchText: net.fetchText, now: NOW, cache: first.resolved, videoMeta: first.videoMeta });
+  const again = await buildDigest(DOC, { fetchText: net.fetchText, now: NOW, cache: first.resolved, videoMeta: first.videoMeta, sleep: async () => {} });
   const watched = net.calls.filter(u => u.includes('watch?v='));
   assert.ok(!watched.some(u => u.includes('AAAAAAAAAA1') || u.includes('AAAAAAAAAA2')), 'cached ids not fetched again');
   assert.ok(watched.length >= 1, 'failed ids retried');
@@ -208,6 +208,23 @@ await test('failed page lookups say why (bot check, consent, HTTP)', () => {
   assert.equal(whyNoLength({ status: 200, text: 'Sign in to confirm you’re not a bot' }), 'bot check (YouTube blocks cloud servers)');
   assert.equal(whyNoLength({ status: 200, text: '<form action="https://consent.youtube.com/save">' }), 'consent page');
   assert.equal(whyNoLength({ status: 429, text: '' }), 'HTTP 429');
+});
+await test('Reddit: one request at a time with a gap; rate-limit page explained', async () => {
+  const log = [], sleeps = [];
+  let inFlight = 0, maxInFlight = 0;
+  const fetchText = async url => {
+    inFlight++; maxInFlight = Math.max(maxInFlight, inFlight); log.push(url);
+    await new Promise(r => setTimeout(r, 5));
+    inFlight--;
+    return url.includes('/r/blocked/') ? { status: 200, text: '<html><title>whoa there, pardner!</title></html>' } : { status: 200, text: fx('reddit.xml') };
+  };
+  const subs = ['a', 'b', 'c', 'blocked'].map(x => ({ id: 'rd-' + x, name: 'r/' + x, type: 'reddit', tags: [] }));
+  const r = await buildDigest({ feeds: subs }, { fetchText, now: NOW, sleep: async ms => { sleeps.push(ms); }, redditGapMs: 4000 });
+  assert.equal(maxInFlight, 1, 'never two Reddit requests at once');
+  assert.ok(sleeps.length >= 3 && sleeps.every(ms => ms === 4000), 'pauses between requests');
+  assert.equal(r.digest.feeds.filter(f => f.status === 'ok').length, 3);
+  assert.match(r.digest.feeds.find(f => f.id === 'rd-blocked').error, /rate-limited by Reddit/);
+  assert.equal(redditHtmlReason('Your request has been blocked by network security.'), 'blocked by Reddit — common for cloud servers');
 });
 await test('unresolvable YouTube name is reported, not fatal', async () => {
   const net = fakeNet([['results?search_query', { status: 200, text: '<html>no results</html>' }]]);
