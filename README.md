@@ -1,8 +1,10 @@
-# Daily Command
+# The Natto App
+
+*(Repo and URL keep the old name `daily-command`, so installs, Google and Spotify sign-in keep working.)*
 
 A personal "what should I be doing right now?" app. Static site, installable PWA, works offline. No backend, no paid services. Your data stays in your browser (localStorage) with JSON export/import.
 
-**Status: Stage 4.5 (core loop, morning sequence, your own feeds, Google + sync, tag groups, Watch next, Spotify).** Stage 5 (leisure, German, life admin) is added to the same files.
+**Status: Stage 5 in progress: habits done.** Earlier stages: core loop, morning sequence, your own feeds, Google + sync, tag groups, Watch next, Spotify. Still to come in Stage 5: the "I have 30 minutes" picker, German daily, renewals, birthdays, Vietnam countdown and quick-launch.
 
 ## Files
 
@@ -16,7 +18,7 @@ A personal "what should I be doing right now?" app. Static site, installable PWA
 | `feeds.resolved.json`, `video-meta.json` | Caches maintained by the workflow: YouTube name and handle lookups, and video lengths for the Listen queue. |
 | `.github/workflows/digest.yml` | Every 3 hours: tests, builds the digest, commits it if it changed, then deploys the site. |
 | `scripts/` | The digest builder: `digest-lib.mjs` (logic) and `build-digest.mjs` (runner). |
-| `tests/` | `engine.test.cjs` (37 Now/Next edge cases), `sync.test.cjs` (16 phone ↔ desktop merge cases), `lens.test.cjs` (9 tag-group/lens cases), `digest.test.mjs` (24 builder tests on recorded feed samples) and `e2e-build.mjs` (a full builder run over your real watchlist with a simulated network). Run all with `npm test`. |
+| `tests/` | `engine.test.cjs` (37 Now/Next edge cases), `sync.test.cjs` (16 phone ↔ desktop merge cases), `lens.test.cjs` (9 tag-group/lens cases), `habit.test.cjs` (31 habit cases), `digest.test.mjs` (24 builder tests on recorded feed samples) and `e2e-build.mjs` (a full builder run over your real watchlist with a simulated network). Run all with `npm test`. |
 | `config.json` | *Optional.* `{"googleClientId": "…", "spotifyClientId": "…"}`, so every device picks up your client IDs automatically. Client IDs are public by design. |
 | `package.json`, `package-lock.json` | One dependency (`fast-xml-parser`), used only by the workflow and not by the app. |
 
@@ -188,3 +190,19 @@ Weather and the digest are cached separately from your data, so they aren't expo
 - **Some sites block scraping or have no feed.** They show ⚠ with the HTTP code. A Google News search is a good substitute for news sites without RSS.
 - **"Every 3 hours" is approximate.** GitHub may delay scheduled runs at busy times.
 - **Public repos pause after 60 days.** Scheduled runs stop after 60 days with no repository activity. Re-enable them in the Actions tab; publishing a watchlist edit counts as activity.
+
+## Stage 5 — Habits
+
+Habits stay out of the way. A habit only appears when it's due, and only in the mode you chose for it.
+
+| Kind | Example | When it nudges |
+|---|---|---|
+| **Every few days** | Charge headphones | When it's been long enough. It nudges a day early for longer gaps, so things never run flat. With **Learn the rhythm** on, it uses the median of your last 5 gaps instead of the number you set. The maths is shown, e.g. `15 Oct − 10 Oct = 5 days · usually every 6 (median of 6, 5, 7)`. |
+| **Times a week** | Gym 3× | A Mon–Sun tally with dots, e.g. `1 of 3 this week · 2 more in 4 days`. There's no daily streak to break. |
+| **Fixed days & time** | A class Tue/Thu 19:00 | It shows as an event: on the Now card, in Today/Tomorrow and in "Coming up". From an hour before it shows "19:00 · leave 18:45"; afterwards it asks "did you go?". Optionally it sets a **phone alarm** at leave time (an event in the app's own Google calendar, refreshed for the next 7 days). |
+
+- **Now:** a single strip under the Now card, showing at most 2 habits (tap "+N more"). **✓** ticks it; **⏾** hides it until tomorrow. When nothing is due, nothing shows.
+- **Adding:** go to **Tasks → Habits → + Add a habit** and pick a template (headphones, watch, gym, German, class, plants) or a custom one. Days accept "Tue, Thu", "weekdays" or German ("Di, Do").
+- **Removing:** tap a habit to edit it. **Pause** keeps its history; **Delete** removes it, with Undo.
+- **Wrap-up:** step 1 shows "Habits this week" with the tallies.
+- **Sync:** ticks are stored per day, so ticking on your phone and desktop merges cleanly.

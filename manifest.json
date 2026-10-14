@@ -1,6 +1,6 @@
 {
-  "name": "Daily Command",
-  "short_name": "Command",
+  "name": "The Natto App",
+  "short_name": "Natto",
   "description": "What should I be doing right now?",
   "start_url": "./",
   "scope": "./",

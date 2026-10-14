@@ -1,4 +1,4 @@
-/* Daily Command — service worker
+/* The Natto App — service worker
  * Job: make the app open instantly and work offline.
  *  - App shell (index.html, manifest, icons): stale-while-revalidate.
  *    You get the cached copy immediately; a fresh copy is fetched in the
@@ -9,7 +9,7 @@
  *    app keeps its own "last known" copies in localStorage.
  * Bump VERSION whenever you change this file or the shell list.
  */
-const VERSION = 'dc-v1.5.4';
+const VERSION = 'dc-v1.6.0';
 const SHELL = ['./', './index.html', './manifest.json',
   './icons/icon-192.png', './icons/icon-512.png', './icons/maskable-512.png'];
 const DATA = /\/(digest|feeds|config)\.json$|\/briefing\.(md|json)$/;

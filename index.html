@@ -5,8 +5,8 @@
 <!-- viewport-fit=cover lets us paint under the Android/iOS system bars; we then pad with safe-area insets -->
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#12161b">
-<meta name="description" content="Daily Command — what should I be doing right now?">
-<title>Daily Command</title>
+<meta name="description" content="The Natto App — what should I be doing right now?">
+<title>The Natto App</title>
 <link rel="manifest" href="manifest.json">
 <link rel="icon" href="icons/icon-192.png">
 <link rel="apple-touch-icon" href="icons/icon-192.png">
@@ -187,6 +187,10 @@ ul.list a{color:var(--text);text-decoration:none} ul.list a:hover{text-decoratio
 .card.listen{border-left:4px solid var(--mode-c,var(--accent))}
 .ytbox{position:relative;width:100%;aspect-ratio:16/9;background:#000;border-radius:14px;overflow:hidden;margin-bottom:10px}
 .ytbox iframe,.ytbox #ytFrame{position:absolute;inset:0;width:100%;height:100%;border:0}
+.hstrip{margin:10px 0 4px}.hrow{display:flex;align-items:center;gap:10px;padding:8px 12px;border:1px solid var(--border);border-radius:14px;margin-bottom:6px;background:var(--surface)}
+.hrow.hot{border-color:var(--accent)}.hicon{font-size:1.15rem;width:26px;text-align:center;flex:0 0 26px}
+.hdots{display:inline-flex;gap:3px;flex:0 0 auto}.hdots i{width:7px;height:7px;border-radius:50%;background:var(--surface2);border:1px solid var(--border)}.hdots i.on{background:var(--accent);border-color:var(--accent)}
+.linkish{background:none;border:0;padding:4px 2px;cursor:pointer;min-height:32px}
 .gchip{font-size:.75rem;padding:4px 10px;border-radius:999px;border:1px solid var(--border);background:transparent;color:var(--muted);white-space:nowrap;min-height:28px}
 .gchip.ok{color:var(--accent)} button.gchip{cursor:pointer} .gchip.warn{color:var(--warn);border-color:var(--warn)}
 .card.listen .math{margin-top:6px}
@@ -652,6 +656,123 @@ const Lens = (() => {
   return { GROUPS, HOW, groupOf, howOf, normalize, matches, describe, tagsByGroup, isEmpty };
 })();
 // ==LENS END==
+
+/* =====================================================================
+   PART 1d — HABIT ENGINE (pure; tested by tests/habit.test.cjs)
+   Three kinds, each nudged differently:
+     interval  "every ~N days"  (charge headphones) — due when it's been long enough;
+               optionally learns N from the gaps between your actual ticks.
+     weekly    "N times a week" (gym 3×) — a Mon–Sun tally, never a breakable daily streak.
+     schedule  fixed days + time (a class Tue/Thu 19:00) — also becomes a calendar
+               event in the app, so it shows on the Now card and can ring your phone.
+   Ticks live in log[habitId]["YYYY-MM-DD"] = timestamp: an object, so two devices
+   ticking on different days merge cleanly in sync.
+   ===================================================================== */
+// ==HABIT START==
+const Habit = (() => {
+  const DAY = 864e5;
+  const toUTC = k => { const [y, m, d] = k.split('-').map(Number); return Date.UTC(y, m - 1, d); };
+  const keyOf = t => new Date(t).toISOString().slice(0, 10);
+  const addDays = (k, n) => keyOf(toUTC(k) + n * DAY);
+  const diffDays = (a, b) => Math.round((toUTC(b) - toUTC(a)) / DAY);        // b − a
+  const weekday = k => new Date(toUTC(k)).getUTCDay();                       // 0 = Sun
+  const monday = k => addDays(k, -((weekday(k) + 6) % 7));
+  const median = xs => { const s = [...xs].sort((a, b) => a - b), m = s.length >> 1; return s.length % 2 ? s[m] : Math.round((s[m - 1] + s[m]) / 2); };
+  const fmt = k => new Date(toUTC(k)).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', timeZone: 'UTC' });
+  const DAYNAMES = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat'];
+  const DE = { so: 0, mo: 1, di: 2, mi: 3, do: 4, fr: 5, sa: 6, sonntag: 0, montag: 1, dienstag: 2, mittwoch: 3, donnerstag: 4, freitag: 5, samstag: 6 };
+
+  /** "Tue, Thu" / "tu th" / "Di Do" / "weekdays" → [2,4] (0 = Sun). */
+  function parseDays(s) {
+    const t = String(s || '').toLowerCase();
+    if (/weekdays?|werktag/.test(t)) return [1, 2, 3, 4, 5];
+    if (/weekends?|wochenende/.test(t)) return [0, 6];
+    if (/every ?day|daily|täglich/.test(t)) return [0, 1, 2, 3, 4, 5, 6];
+    const out = new Set();
+    for (const w of t.split(/[^a-zäöü]+/).filter(Boolean)) {
+      const i = DAYNAMES.findIndex(d => w.startsWith(d.slice(0, 2)) && d.startsWith(w.slice(0, 3)));
+      if (i >= 0) out.add(i); else if (w in DE) out.add(DE[w]);                 // German: exact ("Di", "Dienstag") so "someday" ≠ Sonntag
+    }
+    return [...out].sort();
+  }
+  const daysLabel = ds => ds.length === 7 ? 'every day' : ds.join() === '1,2,3,4,5' ? 'weekdays' : ds.join() === '0,6' ? 'weekends'
+    : ds.map(d => DAYNAMES[d][0].toUpperCase() + DAYNAMES[d].slice(1)).join(', ');
+  const doneKeys = (log, id) => Object.keys((log || {})[id] || {}).sort();
+
+  /** How often an interval habit really happens: median of the last ≤5 gaps (needs 2+). */
+  function usualEvery(h, keys) {
+    const every = Math.max(1, +h.every || 7);
+    if (h.learn === false || keys.length < 3) return { every, learned: false, gaps: [] };
+    const recent = keys.slice(-6), gaps = recent.slice(1).map((k, i) => diffDays(recent[i], k)).filter(g => g > 0);
+    if (gaps.length < 2) return { every, learned: false, gaps };
+    return { every: Math.min(60, Math.max(1, median(gaps))), learned: true, gaps };
+  }
+
+  /** Status of one habit on day `day` ("YYYY-MM-DD", the app's logical day) at minute-of-day `min`.
+      → {due, doneToday, urgency 0..2, text, math, week:[7 bools Mon..Sun], count, target} */
+  function status(h, log, day, min = 720) {
+    const keys = doneKeys(log, h.id), doneToday = keys.includes(day);
+    const mon = monday(day), week = [0, 1, 2, 3, 4, 5, 6].map(i => keys.includes(addDays(mon, i)));
+    const base = { id: h.id, doneToday, week, due: false, urgency: 0, text: '', math: '' };
+    if (h.paused) return { ...base, text: 'paused' };
+
+    if (h.kind === 'interval') {
+      const last = keys.filter(k => k <= day).pop();
+      const u = usualEvery(h, keys);
+      const dueAt = Math.max(1, u.every >= 4 ? u.every - 1 : u.every);    // a day early for longer gaps, so it never runs flat
+      if (!last) return { ...base, due: true, urgency: 1, text: 'not done yet', math: '' };
+      const since = diffDays(last, day);
+      const usual = u.learned ? `usually every ${u.every} (median of ${u.gaps.join(', ')})` : `every ${u.every} days`;
+      const math = `${fmt(day)} − ${fmt(last)} = ${since} day${since === 1 ? '' : 's'} · ${usual}${dueAt < u.every ? ` → nudge from day ${dueAt}` : ''}`;
+      const text = doneToday ? 'done today' : since === 0 ? 'done today' : `last ${since} day${since === 1 ? '' : 's'} ago`;
+      return { ...base, due: !doneToday && since >= dueAt, urgency: since >= u.every ? 2 : since >= dueAt ? 1 : 0, text, math, every: u.every, since };
+    }
+
+    if (h.kind === 'weekly') {
+      const target = Math.min(7, Math.max(1, +h.target || 3));
+      const count = week.filter(Boolean).length, left = 7 - ((weekday(day) + 6) % 7);   // days left incl. today
+      const need = Math.max(0, target - count);
+      const math = `${count} of ${target} this week${need ? ` · ${need} more in ${left} day${left === 1 ? '' : 's'}` : ' ✓'}`;
+      const urgency = need === 0 ? 0 : need >= left ? 2 : need / left >= 0.5 ? 1 : 0.5;
+      return { ...base, due: !doneToday && need > 0, urgency, text: math, math, count, target };
+    }
+
+    if (h.kind === 'schedule') {
+      const days = h.days || [], todayIs = days.includes(weekday(day));
+      const [hh, mm] = String(h.time || '19:00').split(':').map(Number), start = hh * 60 + (mm || 0);
+      const lead = Math.max(0, +h.lead || 0), showFrom = start - lead - 60;
+      const ds = days.length ? daysLabel(days) : 'no days set';
+      const count = days.filter(d => week[(d + 6) % 7]).length, planned = days.filter(d => (d + 6) % 7 <= (weekday(day) + 6) % 7).length;
+      const math = `${count} of ${days.length} this week (${ds} ${h.time || '19:00'})`;
+      if (!todayIs) return { ...base, text: ds + ' ' + (h.time || ''), math, count, target: days.length };
+      const t = String(h.time || '19:00'), leave = lead ? `${String(Math.floor((start - lead) / 60)).padStart(2, '0')}:${String((start - lead) % 60).padStart(2, '0')}` : '';
+      const text = min < start ? `${t}${leave ? ' · leave ' + leave : ''}` : 'did you go?';
+      // time-bound beats an overdue chore: 2 in the hour before leaving, 3 from leave time on
+      return { ...base, due: !doneToday && min >= showFrom, urgency: min >= start - lead ? 3 : 2, text, math, count, target: days.length, planned };
+    }
+    return base;
+  }
+
+  /** Which habits to show now: due, matching the current mode (or "any"), not snoozed today. Most urgent first. */
+  function nudges(habits, log, day, min, mode, snoozed = {}) {
+    return (habits || []).filter(h => !h.paused && (!h.when || h.when === 'any' || h.when === mode) && snoozed[h.id] !== day)
+      .map(h => ({ h, s: status(h, log, day, min) })).filter(x => x.s.due)
+      .sort((a, b) => (b.s.urgency - a.s.urgency) || ((b.h.kind === 'schedule') - (a.h.kind === 'schedule')));   // ties: time-bound first
+  }
+
+  /** Occurrences of schedule habits as calendar-like events between two day keys (inclusive). */
+  function occurrences(habits, fromDay, toDay) {
+    const out = [];
+    for (const h of habits || []) {
+      if (h.kind !== 'schedule' || h.paused || !(h.days || []).length) continue;
+      for (let k = fromDay; k <= toDay; k = addDays(k, 1)) if (h.days.includes(weekday(k))) out.push({ h, day: k, time: h.time || '19:00', dur: +h.dur || 60 });
+    }
+    return out;
+  }
+
+  return { status, nudges, occurrences, parseDays, daysLabel, usualEvery, addDays, diffDays, monday, weekday };
+})();
+// ==HABIT END==
 </script>
 
 
@@ -731,6 +852,8 @@ function defaultState() {
       { id: 'p-admin', name: 'Admin', nextId: null },
     ],
     tasks: [],             // {id,title,projectId,done,doneAt,created}
+    habits: [],            // Stage 5: {id,name,icon,kind:'interval'|'weekly'|'schedule',every,learn,target,days,time,dur,lead,alarm,when,paused,created}
+    habitLog: {},          // {habitId: {"YYYY-MM-DD": timestamp}} — an object so phone + desktop ticks merge
     reminders: [],         // {id (Google event id), title, at, kind:'manual'|'focus'|'block', ref} — Stage 4
     top3: {},              // {"YYYY-MM-DD": [taskId, taskId, taskId]}
     skips: {},             // {"YYYY-MM-DD": [taskId]}  "not now" for today
@@ -849,7 +972,7 @@ function formSheet(title, fields, { okLabel = 'Save', deletable = false, note = 
       }
       done(out);
     };
-    dlg.onclose = () => resolve(null);
+    dlg.onclose = () => { if (!dlg.open) resolve(null); };   // ignore a late "close" from the previous sheet (we may already be reopened)
     dlg.showModal();
     const first = $('#dlgBody input[type=text], #dlgBody textarea'); if (first) setTimeout(() => first.focus(), 50);
   });
@@ -868,7 +991,7 @@ function choose(title, options) {
       if (i != null) { dlg.close(); resolve(options[+i].value); }
       else if (e.target.closest('[data-r]')) { dlg.close(); resolve(null); }
     };
-    dlg.onclose = () => resolve(null);
+    dlg.onclose = () => { if (!dlg.open) resolve(null); };   // ignore a late "close" from the previous sheet (we may already be reopened)
     dlg.showModal();
   });
 }
@@ -1924,11 +2047,11 @@ const ACT4 = {
 
    PERMISSIONS (each one only if that feature is switched on):
      calendar  → calendar.events.readonly + calendar.calendarlist.readonly  (read your calendars)
-     reminders → calendar.app.created  (the app makes ONE calendar called "Daily Command"
+     reminders → calendar.app.created  (the app makes ONE calendar called "The Natto App"
                  and can only touch that one — it never edits your real calendars)
      gmail     → gmail.metadata  (labels and headers: unread count, sender, subject — never bodies)
      sync      → drive.appdata  (a hidden app folder in your Drive; can't see your files)
-     youtube   → youtube  (optional: keep a private "Daily Command – Listen" playlist)
+     youtube   → youtube  (optional: keep a private "Natto – Listen" playlist)
    ===================================================================== */
 const G_SCOPES = {
   calendar: ['https://www.googleapis.com/auth/calendar.events.readonly', 'https://www.googleapis.com/auth/calendar.calendarlist.readonly'],
@@ -2025,6 +2148,7 @@ const Google = {
     await Promise.all([run('calendar', () => Cal.refresh()), run('gmail', () => Mail.refresh())]);
     await run('sync', () => DriveSync.sync());
     await run('reminders', () => Remind.cleanup());
+    await run('reminders', () => HabitAlarms.sync());
     await run('youtube', () => YTList.sync());
     this.busy = false; render();
   },
@@ -2061,7 +2185,7 @@ const Cal = {
 /** Manual events + Google events from calendars you haven't hidden in the app. */
 function allEvents() {
   const off = new Set(gset().calOff || []);
-  return [...S.events, ...((C.gcal?.events) || []).filter(e => !off.has(e.calId))];
+  return [...S.events, ...((C.gcal?.events) || []).filter(e => !off.has(e.calId)), ...habitEvents()];
 }
 const engineState = () => ({ ...S, events: allEvents() });
 
@@ -2147,19 +2271,19 @@ function calNoteHtml() {
   return `<p class="small muted">${stale ? '⚠ ' : ''}Google Calendar updated ${ago(C.gcal.fetchedAt)}${!navigator.onLine ? ' (offline)' : !Google.token() ? ' · <a href="#" data-act="gConnect" style="color:inherit">refresh</a>' : ''}.</p>`;
 }
 
-/* ---------------- Reminders: events in the app's own "Daily Command" calendar ----------------
+/* ---------------- Reminders: events in the app's own "The Natto App" calendar ----------------
    Google Calendar (and Samsung Calendar, which shows Google calendars) notifies you at the event
    time even when this app is closed — the only reliable alarm a web app can set without a server. */
 const Remind = {
   async ensureCal() {
     if (gset().appCalId) return gset().appCalId;
     const c = await Google.api(`${GAPI.cal}/calendars`, { method: 'POST',
-      body: { summary: 'Daily Command', description: 'Reminders and alarms from your Daily Command app.', timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone } });
+      body: { summary: 'The Natto App', description: 'Reminders and alarms from The Natto App.', timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone } });
     gset().appCalId = c.id; save(); return c.id;
   },
   url: id => `${GAPI.cal}/calendars/${encodeURIComponent(id)}/events`,
   async create({ title, at, minutes = 5, kind = 'manual', ref = '' }) {
-    const body = { summary: title, description: 'Created by Daily Command.',
+    const body = { summary: title, description: 'Created by The Natto App.',
       start: { dateTime: new Date(at).toISOString() }, end: { dateTime: new Date(+new Date(at) + minutes * 60000).toISOString() },
       reminders: { useDefault: false, overrides: [{ method: 'popup', minutes: 0 }] },
       extendedProperties: { private: { dc: '1', kind, ref: String(ref || '') } } };
@@ -2272,7 +2396,7 @@ const DriveSync = {
 };
 window.dcAfterSave = () => DriveSync.schedule();
 
-/* ---------------- Optional: YouTube "Daily Command – Listen" playlist ----------------
+/* ---------------- Optional: YouTube "Natto – Listen" playlist ----------------
    Keeps a private playlist holding the top of your Listen queue (default 8). On your phone you
    press play on the playlist once and YouTube runs through it in the background (Premium).
    Quota: adding or removing an item costs 50 of the free 10,000 daily units. */
@@ -2282,7 +2406,7 @@ const YTList = {
     let pid = gset().ytPlaylistId;
     if (!pid) {
       const p = await Google.api(`${GAPI.yt}/playlists?part=snippet,status`, { method: 'POST',
-        body: { snippet: { title: 'Daily Command – Listen', description: 'Kept topped up by your Daily Command app.' }, status: { privacyStatus: 'private' } } });
+        body: { snippet: { title: 'Natto – Listen', description: 'Kept topped up by The Natto App.' }, status: { privacyStatus: 'private' } } });
       pid = gset().ytPlaylistId = p.id; save();
     }
     let items;
@@ -2340,7 +2464,7 @@ function googleSectionHtml() {
 }
 function remindersHtml() {
   const up = Remind.upcoming(), gs = gset(), ok = Google.on('reminders');
-  return `<p class="small muted">Reminders are events in a separate “Daily Command” calendar in your Google account, so your phone’s calendar app alerts you even when this app is closed.</p>
+  return `<p class="small muted">Reminders are events in a separate “The Natto App” calendar in your Google account, so your phone’s calendar app alerts you even when this app is closed.</p>
     ${up.length ? `<ul class="list">${up.map(r => `<li><span class="num muted" style="width:96px">${whenLabel(new Date(r.at))}</span><span class="grow">${esc(r.title)} <span class="tag">${r.kind}</span></span>
       <button class="icon" data-act="remindDelete" data-id="${esc(r.id)}" aria-label="Delete reminder">✕</button></li>`).join('')}</ul>` : '<div class="empty">No upcoming reminders.</div>'}
     <div class="actions"><button class="btn" data-act="remindAdd" ${ok ? '' : 'disabled'}>+ Reminder</button><button class="btn ghost" data-act="blockAlarms" ${ok ? '' : 'disabled'}>Alarms for today’s blocks</button></div>
@@ -2762,6 +2886,159 @@ const ACT7 = {
 
 <script>
 /* =====================================================================
+   PART 4h — HABITS (Stage 5). Engine: PART 1d.
+   Design rules: nothing shows unless it's due *now* in *this* mode; one tap to tick;
+   at most two in the Now strip; adding = pick a template; removing = pause or delete (undo).
+   ===================================================================== */
+const HABIT_TEMPLATES = [
+  { icon: '🔋', name: 'Charge headphones', kind: 'interval', every: 5, learn: true, when: 'winddown' },
+  { icon: '⌚', name: 'Charge watch', kind: 'interval', every: 3, learn: true, when: 'winddown' },
+  { icon: '🏋️', name: 'Gym', kind: 'weekly', target: 3, when: 'life' },
+  { icon: '🇩🇪', name: 'German practice', kind: 'weekly', target: 5, when: 'leisure' },
+  { icon: '🧘', name: 'Class', kind: 'schedule', days: [2, 4], time: '19:00', dur: 60, lead: 25, alarm: true, when: 'any' },
+  { icon: '🌱', name: 'Water plants', kind: 'interval', every: 4, learn: false, when: 'life' },
+];
+const HABIT_WHEN = [{ value: 'any', label: 'Any time' }, { value: 'work', label: 'Work' }, { value: 'life', label: 'Life' }, { value: 'leisure', label: 'Leisure' }, { value: 'winddown', label: 'Wind-down' }];
+const HABIT_KIND_LABEL = { interval: 'every few days', weekly: 'times a week', schedule: 'fixed days & time' };
+const minuteNow = (d = new Date()) => d.getHours() * 60 + d.getMinutes();
+const habitStatus = h => Habit.status(h, S.habitLog, today(), minuteNow());
+const habitById = id => S.habits.find(h => h.id === id);
+const dots = week => `<span class="hdots" aria-label="this week">${week.map(b => `<i class="${b ? 'on' : ''}"></i>`).join('')}</span>`;
+
+/** The quiet strip under the Now card. Empty → renders nothing at all. */
+function habitStripHtml(mode) {
+  const list = Habit.nudges(S.habits, S.habitLog, today(), minuteNow(), mode, S.ui.habitSnooze || {});
+  if (!list.length) return '';
+  const show = S.ui.habitMore ? list : list.slice(0, 2);
+  return `<div class="hstrip">${show.map(({ h, s }) => `<div class="hrow ${s.urgency >= 2 ? 'hot' : ''}">
+      <span class="hicon">${esc(h.icon || '•')}</span>
+      <span class="grow"><b>${esc(h.name)}</b> <span class="small muted">${esc(s.text)}</span></span>
+      <button class="icon" data-act="habitSnooze" data-id="${h.id}" aria-label="Not today" title="Not today">⏾</button>
+      <button class="btn sm" data-act="habitTick" data-id="${h.id}" aria-label="Done">✓</button></div>`).join('')}
+    ${list.length > 2 ? `<button class="linkish small muted" data-act="habitMore">${S.ui.habitMore ? 'show less' : `+${list.length - 2} more`}</button>` : ''}</div>`;
+}
+
+/** One-time-ish nudge to set habits up (the "remind me" ask). Snoozes for a week. */
+function habitSetupPromptHtml() {
+  if (S.habits.length || (S.ui.habitPromptUntil || '') > today()) return '';
+  return `<div class="card" style="border-left:4px solid var(--accent)"><h3>Habits</h3>
+    <p class="muted small">Want gentle nudges for things like charging your headphones or going to a class? Pick one or two — they only appear when due.</p>
+    <div class="actions"><button class="btn primary" data-act="habitAdd">Set up habits</button><button class="btn ghost" data-act="habitPromptLater">Not now</button></div></div>`;
+}
+
+/** Tasks tab section: every habit with its tally, tick, and edit. */
+function habitsManageHtml() {
+  if (!S.habits.length) return `<div class="empty">No habits yet.</div><div class="actions"><button class="btn primary" data-act="habitAdd">+ Add a habit</button></div>`;
+  return `<ul class="list">${S.habits.map(h => { const s = habitStatus(h); return `<li class="${h.paused ? 'muted' : ''}">
+      <span class="hicon">${esc(h.icon || '•')}</span>
+      <span class="grow" data-act="habitEdit" data-id="${h.id}" style="cursor:pointer"><b>${esc(h.name)}</b>${h.paused ? ' <span class="tag">paused</span>' : ''}<br>
+        <span class="small muted">${esc(s.math || s.text)}</span></span>
+      ${h.kind === 'interval' ? '' : dots(s.week)}
+      <button class="icon ${s.doneToday ? 'on' : ''}" data-act="habitTick" data-id="${h.id}" aria-label="${s.doneToday ? 'Undo today' : 'Done today'}"><span class="chk"></span></button></li>`; }).join('')}</ul>
+    <div class="actions"><button class="btn" data-act="habitAdd">+ Add a habit</button></div>
+    <p class="small muted">Tap a habit to edit, pause or delete it. Ticking again undoes today.</p>`;
+}
+
+/** Wrap-up step 1: one quiet line per habit with a weekly picture. */
+function habitWrapHtml() {
+  const hs = S.habits.filter(h => !h.paused); if (!hs.length) return '';
+  return `<p class="muted small" style="margin-top:12px">Habits this week</p><ul class="list">${hs.map(h => { const s = habitStatus(h);
+    return `<li><span class="hicon">${esc(h.icon || '•')}</span><span class="grow">${esc(h.name)} <span class="small muted">${esc(h.kind === 'interval' ? s.text : s.math.split(' (')[0])}</span></span>${h.kind === 'interval' ? '' : dots(s.week)}</li>`; }).join('')}</ul>`;
+}
+
+/** Schedule habits as events, so a class shows on the Now card, Today/Tomorrow calendars and "Coming up". */
+function habitEvents() {
+  const from = Habit.addDays(today(), -1), to = Habit.addDays(today(), 8);
+  return Habit.occurrences(S.habits, from, to).map(o => {
+    const [hh, mm] = o.time.split(':').map(Number), s = localMidnight(o.day); s.setHours(hh, mm || 0, 0, 0);
+    return { id: `habit|${o.h.id}|${o.day}`, title: `${o.h.icon || ''} ${o.h.name}`.trim(), start: s.toISOString(), end: new Date(+s + o.dur * 60000).toISOString(),
+      allDay: false, source: 'habit', location: o.h.lead ? `leave ${fmtT(new Date(+s - o.h.lead * 60000))}` : '' };
+  });
+}
+
+/** Phone alarms for schedule habits (Google reminders): keeps the next 7 days in the app's calendar. */
+const HabitAlarms = {
+  async sync() {
+    if (!Google.ready('reminders')) return;
+    const want = new Map();
+    for (const o of Habit.occurrences(S.habits.filter(h => h.alarm), today(), Habit.addDays(today(), 6))) {
+      const [hh, mm] = o.time.split(':').map(Number), at = localMidnight(o.day); at.setHours(hh, mm || 0, 0, 0);
+      const ring = new Date(+at - (+o.h.lead || 0) * 60000);
+      if (ring <= new Date()) continue;
+      want.set(`${o.h.id}|${o.day}|${o.time}|${o.h.lead || 0}`, { title: `${o.h.icon || ''} ${o.h.name}${o.h.lead ? ' — leave now' : ''}`.trim(), at: ring });
+    }
+    for (const r of S.reminders.filter(r => r.kind === 'habit' && new Date(r.at) > new Date() && !want.has(r.ref))) await Remind.remove(r.id);
+    let made = 0;
+    for (const [ref, v] of want) {
+      if (made >= 14) break;
+      if (S.reminders.some(r => r.kind === 'habit' && r.ref === ref)) continue;
+      await Remind.create({ title: v.title, at: v.at, minutes: 5, kind: 'habit', ref }); made++;
+    }
+  },
+};
+
+async function editHabit(h) {
+  const isNew = !h.id, k = h.kind;
+  const fields = [
+    { name: 'icon', label: 'Icon (an emoji)', value: h.icon || '' },
+    { name: 'name', label: 'Name', value: h.name || '' },
+    ...(k === 'interval' ? [{ name: 'every', label: 'Roughly every … days', type: 'number', min: 1, max: 60, value: h.every || 5 },
+      { name: 'learn', label: 'Learn the rhythm', type: 'checkbox', value: h.learn !== false, hint: 'Adjust to when I actually do it' }] : []),
+    ...(k === 'weekly' ? [{ name: 'target', label: 'Times per week', type: 'number', min: 1, max: 7, value: h.target || 3 }] : []),
+    ...(k === 'schedule' ? [{ name: 'days', label: 'Days (e.g. Tue, Thu · weekdays)', value: Habit.daysLabel(h.days || []) },
+      { name: 'time', label: 'Starts at', type: 'time', value: h.time || '19:00' },
+      { name: 'dur', label: 'Length (minutes)', type: 'number', min: 5, max: 600, value: h.dur || 60 },
+      { name: 'lead', label: 'Leave / get ready … minutes before', type: 'number', min: 0, max: 180, value: h.lead ?? 25 },
+      { name: 'alarm', label: 'Phone alarm', type: 'checkbox', value: h.alarm !== false, hint: 'Ring at “leave” time (needs Google reminders)' }] : []),
+    { name: 'when', label: 'Nudge me during', type: 'select', options: HABIT_WHEN, value: h.when || 'any' },
+    ...(isNew ? [] : [{ name: 'paused', label: 'Pause', type: 'checkbox', value: !!h.paused, hint: 'Hide it for now, keep the history' }]),
+  ];
+  const v = await formSheet(isNew ? `New habit · ${HABIT_KIND_LABEL[k]}` : h.name, fields, { deletable: !isNew, okLabel: isNew ? 'Add' : 'Save' });
+  if (!v) return;
+  if (v.__delete) {
+    const before = JSON.stringify({ habits: S.habits, habitLog: S.habitLog });
+    S.habits = S.habits.filter(x => x.id !== h.id); delete S.habitLog[h.id]; save(); render();
+    return toast(`Deleted “${h.name}”.`, 'Undo', () => { Object.assign(S, JSON.parse(before)); save(); render(); });
+  }
+  const out = { ...h, icon: v.icon, name: v.name || h.name || 'Habit', when: v.when };
+  if (k === 'interval') Object.assign(out, { every: Math.max(1, v.every || 5), learn: v.learn });
+  if (k === 'weekly') out.target = Math.min(7, Math.max(1, v.target || 3));
+  if (k === 'schedule') {
+    const days = Habit.parseDays(v.days);
+    if (!days.length) return toast('Couldn’t read the days — try “Tue, Thu” or “weekdays”.');
+    Object.assign(out, { days, time: v.time || '19:00', dur: v.dur || 60, lead: v.lead || 0, alarm: v.alarm });
+  }
+  if (!isNew) out.paused = v.paused;
+  if (isNew) { out.id = uid(); out.created = Date.now(); S.habits.push(out); }
+  else S.habits[S.habits.findIndex(x => x.id === h.id)] = out;
+  save(); render();
+  if (k === 'schedule' && out.alarm) HabitAlarms.sync().catch(() => {});
+  toast(isNew ? `Added “${out.name}”. It shows up only when it’s due.` : 'Saved.');
+}
+
+const ACT8 = {
+  habitTick(el) {
+    const id = el.dataset.id, d = today(), L = (S.habitLog[id] ||= {});
+    if (L[d]) delete L[d]; else L[d] = Date.now();
+    if (!Object.keys(L).length) delete S.habitLog[id];
+    save(); render();
+    if ($('#dlg').open && wrap) renderWrap();
+  },
+  habitSnooze(el) { (S.ui.habitSnooze ||= {})[el.dataset.id] = today(); save(); render(); toast('Hidden until tomorrow.'); },
+  habitMore() { S.ui.habitMore = !S.ui.habitMore; save(); render(); },
+  habitPromptLater() { S.ui.habitPromptUntil = Habit.addDays(today(), 7); save(); render(); toast('I’ll ask again in a week. Habits live on the Tasks tab.'); },
+  async habitAdd() {
+    const pick = await choose('Add a habit', [...HABIT_TEMPLATES.map((t, i) => ({ value: 't' + i, label: `${t.icon} ${t.name}`, tag: t.kind === 'interval' ? `every ~${t.every} days` : t.kind === 'weekly' ? `${t.target}× a week` : `${Habit.daysLabel(t.days)} ${t.time}` })),
+      { value: 'interval', label: '✏️ Custom — every few days', tag: 'e.g. charge, clean' },
+      { value: 'weekly', label: '✏️ Custom — times a week', tag: 'e.g. run 2×' },
+      { value: 'schedule', label: '✏️ Custom — fixed days & time', tag: 'e.g. a class' }]);
+    if (!pick) return;
+    await editHabit(pick[0] === 't' ? { ...HABIT_TEMPLATES[+pick.slice(1)] } : { kind: pick, icon: '', name: '' });
+  },
+  habitEdit(el) { const h = habitById(el.dataset.id); if (h) editHabit(h); },
+};
+
+/* =====================================================================
    PART 5 — RENDERING
    Each view is a function that returns HTML. Clicks are handled by one
    delegated listener reading data-act attributes (PART 6).
@@ -2890,7 +3167,8 @@ function renderNow() {
 
 /** Which secondary cards to show, per mode. Keep it short — the hero is the point. */
 function modeSections(mode) {
-  const parts = [];
+  const parts = [habitStripHtml(mode)];
+  if (mode === 'life' || mode === 'winddown') parts.push(habitSetupPromptHtml());
   const top3 = top3Html(true);
   const comingUp = R.agenda.length ? `<ul class="list">${R.agenda.map(a =>
     `<li><span class="num muted" style="width:96px">${whenLabel(a.at)}</span><span class="grow">${esc(a.title)}${a.type === 'event' ? ' <span class="tag">event</span>' : ''}</span></li>`).join('')}</ul>`
@@ -2985,6 +3263,7 @@ function digestCard() {
 let showDone = false;
 function renderTasks() {
   let h = `<h2>Today’s top 3 <span class="muted small">${new Date(today()).toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'short' })}</span></h2>${top3Html()}`;
+  h += sec('tasks-habits', 'Habits', habitsManageHtml(), !S.habits.length, `<span class="tag">${S.habits.filter(x => !x.paused).length}</span>`);
   h += `<h2>Projects</h2><p class="muted small">★ = in today’s top 3 · ➜ = this project’s next action (shown on the Now card when nothing is in the top 3).</p>`;
   for (const p of S.projects) {
     const tasks = S.tasks.filter(t => t.projectId === p.id && (showDone || !t.done));
@@ -3148,7 +3427,7 @@ function renderMore() {
     <button class="btn ghost danger" data-act="resetAll">Erase all</button></div>`);
 
   h += sec('more-help', 'Help & limits', helpHtml());
-  h += `<p class="muted small" style="text-align:center;margin-top:20px">Daily Command · Stage 4.5 · <span id="swState">offline cache: checking…</span></p>`;
+  h += `<p class="muted small" style="text-align:center;margin-top:20px">The Natto App · Stage 5 · <span id="swState">offline cache: checking…</span></p>`;
   $('#view-more').innerHTML = h;
   updateSwState();
 }
@@ -3194,7 +3473,7 @@ function helpHtml() {
   <p>Video lengths: YouTube usually blocks GitHub’s servers from video pages, so for reliable lengths add a free YouTube Data API key as the repo secret <code>YT_API_KEY</code> (Settings → Secrets and variables → Actions). Without one, items may show no length and the pick falls back to queue order. Until phone–desktop sync (Stage 4), marking something done on one device doesn’t hide it on the other.</p>
   <h3>Stage 4 setup — Google (one-off, ~15 min, free)</h3>
   <ol>
-    <li>Go to <b>console.cloud.google.com</b> → project picker → <b>New project</b> (e.g. “Daily Command”).</li>
+    <li>Go to <b>console.cloud.google.com</b> → project picker → <b>New project</b> (e.g. “The Natto App”).</li>
     <li><b>APIs &amp; Services → Library</b>: enable <b>Google Calendar API</b>, <b>Gmail API</b>, <b>Google Drive API</b> (and <b>YouTube Data API v3</b> for the Listen playlist / video lengths).</li>
     <li><b>Google Auth Platform</b> (was “OAuth consent screen”) → Get started: app name, your email, audience <b>External</b>. Under <b>Audience → Test users</b>, add your own Gmail address. Leave it in <b>Testing</b>.</li>
     <li><b>Clients → Create client → Web application</b>. Under <b>Authorised JavaScript origins</b> add <code>https://nathanaog.github.io</code> (no path, no trailing slash). No redirect URIs needed.</li>
@@ -3204,7 +3483,7 @@ function helpHtml() {
   <h3>Google: what to expect</h3>
   <ul><li class="limit"><b>Tokens last an hour.</b> A browser-only app gets no long-lived login, so after an hour the header shows “↻ Google”. One tap usually reconnects without asking anything. Calendar and Gmail stay visible from the last fetch meanwhile (with “updated … ago”).</li>
   <li class="limit"><b>Testing mode ≈ weekly re-approval.</b> While your Google project is in Testing, Google expires approvals after about 7 days, so roughly once a week the refresh will show the consent screen again. Publishing the app would avoid that but needs Google’s verification for Gmail access — not worth it for a personal app.</li>
-  <li class="limit"><b>Reminders ring through your calendar app.</b> They’re events in a separate “Daily Command” calendar. Make sure that calendar is visible and has notifications on in Google Calendar (or Samsung Calendar). <b>Samsung battery tip:</b> Settings → Apps → Calendar (and Google Calendar if installed) → Battery → <b>Unrestricted</b>; and Settings → Battery → Background usage limits → make sure Calendar isn’t in “Sleeping apps”. Otherwise Samsung can delay the alerts.</li>
+  <li class="limit"><b>Reminders ring through your calendar app.</b> They’re events in a separate “The Natto App” calendar. Make sure that calendar is visible and has notifications on in Google Calendar (or Samsung Calendar). <b>Samsung battery tip:</b> Settings → Apps → Calendar (and Google Calendar if installed) → Battery → <b>Unrestricted</b>; and Settings → Battery → Background usage limits → make sure Calendar isn’t in “Sleeping apps”. Otherwise Samsung can delay the alerts.</li>
   <li class="limit"><b>Sync merges, it doesn’t just overwrite.</b> Changes on phone and desktop are combined item by item; if the same thing was changed on both, the most recent save wins. Sync runs a few seconds after a change and when you open the app — but only while you’re signed in, so after an hour away it waits for your tap.</li>
   <li class="limit"><b>Gmail shows headers only</b> (sender, subject, unread count) — the app never reads message bodies.</li></ul>
   <h3>Topics, genres, activities — and how</h3>
@@ -3415,7 +3694,7 @@ const ACT = {
   resetAll() { if (confirm('Erase ALL data in this browser? Export first if unsure.')) { localStorage.removeItem(STORE_KEY); S = defaultState(); S.settings.welcomed = true; save(); render(); } },
 };
 
-Object.assign(ACT, ACT2, ACT3, ACT4, ACT5, ACT6, ACT7);   // + Watch next & player, Spotify (Stage 4.5)   // + Google (Stage 4)   // + listen while working   // Stage 2 (morning, digest, weather) and Stage 3 (lenses, watchlist) actions
+Object.assign(ACT, ACT2, ACT3, ACT4, ACT5, ACT6, ACT7, ACT8);   // + Watch next & player, Spotify (Stage 4.5)   // + Google (Stage 4)   // + listen while working   // Stage 2 (morning, digest, weather) and Stage 3 (lenses, watchlist) actions
 
 function setActive(item) {
   if (!item || !item.end) { S.active = null; return save(); }
@@ -3473,7 +3752,7 @@ async function importFile(file) {
   if (!file) return;
   try {
     const d = JSON.parse(await file.text());
-    if (!d || typeof d !== 'object' || !d.routine || !Array.isArray(d.tasks)) throw new Error('Not a Daily Command export');
+    if (!d || typeof d !== 'object' || !d.routine || !Array.isArray(d.tasks)) throw new Error('Not a Natto App export');
     if (!confirm('Replace current data with this file?')) return;
     S = migrate(d); save(); applyTheme(); render(); toast('Imported.');
   } catch (err) { toast('Import failed: ' + err.message); }
@@ -3586,6 +3865,7 @@ function renderWrap() {
     h += `<p class="muted">What got done today</p><ul class="list">${doneToday.map(t => `<li class="done"><span class="icon"><span class="chk"></span></span><span class="grow">${esc(t.title)}</span></li>`).join('') || '<li class="empty">Nothing ticked off — that’s data, not a verdict.</li>'}</ul>`;
     const open = top3Ids().filter(id => !taskById(id).done);
     if (open.length) h += `<p class="muted small" style="margin-top:12px">Top 3 still open — tick if actually done:</p><ul class="list">${open.map(id => `<li><button class="icon" data-w="tick" data-id="${id}"><span class="chk"></span></button><span class="grow">${esc(taskById(id).title)}</span></li>`).join('')}</ul>`;
+    h += habitWrapHtml();
     h += `<div class="math">focus today: ${n} sessions, ${todaysSessions().map(l => l.min).join(' + ') || '0'} = ${mins} min</div>`;
   } else if (wrap.step === 2) {
     const open = top3Ids().filter(id => !taskById(id).done);
@@ -3643,7 +3923,7 @@ async function wrapClick(e) {
    ===================================================================== */
 function openWelcome() {
   const wk = S.routine.weekday.find(b => b.kind === 'wake');
-  $('#dlgBody').innerHTML = `<h3>Welcome to Daily Command</h3>
+  $('#dlgBody').innerHTML = `<h3>Welcome to The Natto App</h3>
     <p>Open it, see what you’re meant to be doing, do it, come back.</p>
     <ol class="small"><li><b>Now card</b> — one thing to do right now, and what’s next.</li>
     <li><b>+ button</b> — capture any thought in two seconds; sort it tonight.</li>
