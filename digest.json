@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-14T20:07:39.650Z",
+ "generated": "2026-10-14T20:35:20.025Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
@@ -657,9 +657,10 @@
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
+   "lastOk": "2026-10-14T20:07:39.650Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-xbox",
@@ -668,7 +669,7 @@
    "status": "cached",
    "count": 5,
    "lastOk": null,
-   "note": "rate-limited (429)"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-slaythespire",
@@ -677,25 +678,26 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-10-14T15:56:35.806Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
   },
   {
    "id": "rd-germany",
    "name": "r/germany",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-unitedkingdom",
@@ -704,7 +706,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   }
  ],
  "items": [
@@ -721,6 +723,23 @@
    "published": "2026-10-14T19:29:30.000Z",
    "summary": "submitted by /u/Kataera [link] [comments]",
    "id": "52b310bdb199",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Two ships sink near Hormuz after being hit by projectiles amid surge in attacks",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1x5zoej/two_ships_sink_near_hormuz_after_being_hit_by/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-14T18:52:12.000Z",
+   "summary": "submitted by /u/Profound-Bleakness05 [link] [comments]",
+   "id": "87850ea0d84c",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -797,6 +816,40 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
+   "title": "China’s Next Frontier: How Beijing Is Challenging Washington in Outer Space",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1x5y76u/chinas_next_frontier_how_beijing_is_challenging/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-14T17:57:08.000Z",
+   "summary": "submitted by /u/ForeignAffairsMag [link] [comments]",
+   "id": "05893afbb663",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Ukraine Can Turn Imminent Peril to Its Advantage: How a True “Energy Cease-Fire” Can Curb Putin",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1x5y6fj/ukraine_can_turn_imminent_peril_to_its_advantage/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-14T17:56:20.000Z",
+   "summary": "submitted by /u/ForeignAffairsMag [link] [comments]",
+   "id": "9a5a28abfa48",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
    "title": "New GTA 6 Features CONFIRMED by Rockstar",
    "url": "https://www.youtube.com/watch?v=-YzzZu_ptKo",
    "source": "GameRanx",
@@ -832,6 +885,23 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
+   "title": "Saudi Arabia Is Running Out of Options",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1x5xo8i/saudi_arabia_is_running_out_of_options/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-14T17:37:30.000Z",
+   "summary": "submitted by /u/theatlantic [link] [comments]",
+   "id": "42baa32689b5",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
    "title": "Hot Peasant Summer | Toonout [Animated Shorts]",
    "url": "https://www.youtube.com/watch?v=JU9i8-q7ZOk",
    "source": "Dropout",
@@ -844,6 +914,23 @@
    "summary": "Nothing can stop the party for Brooke & Haley, not even getting flushed back to the 14th century. To watch more episode of Toonout and other animated series, sign up for Dropout: https://www.dropout.tv/plans Welcome to the Dropout channel! You can support us by signing up for…",
    "thumb": "https://i3.ytimg.com/vi/JU9i8-q7ZOk/hqdefault.jpg",
    "id": "7a3b5bbc7339",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Zelensky says he feels betrayed over Trump-Russia deal",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1x5wruo/zelensky_says_he_feels_betrayed_over_trumprussia/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-14T17:03:29.000Z",
+   "summary": "submitted by /u/KI_official [link] [comments]",
+   "id": "3d3eb126cd8c",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1043,40 +1130,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "US inflation hotter than expected as Iran war stokes fuel costs",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1x5sxcl/us_inflation_hotter_than_expected_as_iran_war/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-14T14:37:17.000Z",
-   "summary": "submitted by /u/TimesandSundayTimes [link] [comments]",
-   "id": "f36410b61ec5",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "What Do Brazil’s Elections Mean for its Foreign Policy?",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1x5st3s/what_do_brazils_elections_mean_for_its_foreign/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-14T14:32:23.000Z",
-   "summary": "submitted by /u/RUSIOfficial [link] [comments]",
-   "id": "81d71c38f1f5",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "'Trump will be embarrassed': Is it already over for Katie Zacharia?",
    "url": "https://www.youtube.com/watch?v=Z_XQ8S1sHYc",
    "source": "LBC",
@@ -1090,23 +1143,6 @@
    "summary": "Simon Marks, James O'Brien, and Lewis Goodall react to Katie Zacharia's debut as US press secretary. 0:00 | James O'Brien and Simon Marks give their verdict 9:53 | Lewis Goodall compares Zacharia to her predecessor Listen to the full show on the all-new LBC App:…",
    "thumb": "https://i3.ytimg.com/vi/Z_XQ8S1sHYc/hqdefault.jpg",
    "id": "2460c217dc03",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "US and Europe preparing peace plan to improve post-war state of Ukraine and Russia | US envoys inform Ukraine the Diesel Deal is an attempt to bring Russia to the table | Washington Post",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1x5sh6m/us_and_europe_preparing_peace_plan_to_improve/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-14T14:19:10.000Z",
-   "summary": "submitted by /u/barath_s [link] [comments]",
-   "id": "847e9d20029f",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1142,23 +1178,6 @@
    "summary": "Am Dienstag hatte Papst Leo XIV. sich operieren lassen. Nun steht fest: Das Oberhaupt der Katholischen Kirche hat Lungenkrebs. Was bedeutet die Diagnose und wie geht es weiter? Mehr Informationen zu diesem Thema:…",
    "thumb": "https://i4.ytimg.com/vi/GVJrI4BxehM/hqdefault.jpg",
    "id": "1f3b096b7255",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Russia’s ‘spying’ arrest of journalist heightens tensions with Japan",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1x5rgvp/russias_spying_arrest_of_journalist_heightens/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-14T13:38:25.000Z",
-   "summary": "submitted by /u/TimesandSundayTimes [link] [comments]",
-   "id": "e5fbfa11c349",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1313,23 +1332,6 @@
    "published": "2026-10-14T11:22:22.000Z",
    "summary": "submitted by /u/Dorian182 [link] [comments]",
    "id": "e64318dba821",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Ukraine says it received no intelligence about strikes 2 nights in a row",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1x5ol1i/ukraine_says_it_received_no_intelligence_about/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-14T11:20:24.000Z",
-   "summary": "submitted by /u/softwaredoug [link] [comments]",
-   "id": "ac819eda1999",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -2841,5 +2843,5 @@
    "why": "0"
   }
  ],
- "contentHash": "84781453772d"
+ "contentHash": "2ef3b59346e9"
 }
