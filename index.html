@@ -2937,7 +2937,8 @@ function renderTasks() {
     const tasks = S.tasks.filter(t => t.projectId === p.id && (showDone || !t.done));
     const ids = top3Ids();
     h += `<div class="card"><div class="row" style="justify-content:space-between"><h3 data-act="editProject" data-id="${p.id}" style="cursor:pointer">${esc(p.name)}</h3>
-      <span class="tag">${S.tasks.filter(t => t.projectId === p.id && !t.done).length} open</span></div>
+      <div class="row" style="gap:6px"><span class="tag">${S.tasks.filter(t => t.projectId === p.id && !t.done).length} open</span>
+      <button class="icon" data-act="removeProject" data-id="${p.id}" aria-label="Remove project ${esc(p.name)}" title="Remove project">✕</button></div></div>
       <ul class="list">${tasks.map(t => `<li class="${t.done ? 'done' : ''}">
         <button class="icon" data-act="toggleDone" data-id="${t.id}" aria-label="Toggle done"><span class="chk"></span></button>
         <span class="grow" data-act="editTask" data-id="${t.id}">${esc(t.title)}</span>
@@ -3268,11 +3269,34 @@ const ACT = {
     const p = projById(el.dataset.id);
     const v = await formSheet('Project', [{ name: 'name', label: 'Name', value: p.name }], { deletable: true });
     if (!v) return;
-    if (v.__delete) {
-      if (S.tasks.some(t => t.projectId === p.id && !t.done)) return toast('Move or finish its open tasks first.');
-      S.projects = S.projects.filter(x => x.id !== p.id);
-    } else p.name = v.name || p.name;
+    if (v.__delete) return ACT.removeProject(el);
+    p.name = v.name || p.name;
     save(); render();
+  },
+  /** Remove a project, with a confirmation. If it still has tasks you choose:
+   *  move them to another project, or delete them along with it. Top-3 slots and
+   *  "next action" links to deleted tasks are cleaned up. Undo via the toast. */
+  async removeProject(el) {
+    const p = projById(el.dataset.id); if (!p) return;
+    const mine = S.tasks.filter(t => t.projectId === p.id), open = mine.filter(t => !t.done).length;
+    const others = S.projects.filter(x => x.id !== p.id);
+    if (!others.length) return toast('Keep at least one project — rename this one instead.');
+    const opts = mine.length
+      ? [...others.map(o => ({ value: 'move:' + o.id, label: `Remove, move ${mine.length} task${mine.length > 1 ? 's' : ''} to “${o.name}”` })),
+         { value: 'delete', label: `Remove and delete its ${mine.length} task${mine.length > 1 ? 's' : ''} (${open} open)` }]
+      : [{ value: 'delete', label: `Yes, remove “${p.name}”` }];
+    const pick = await choose(`Remove “${p.name}”?`, opts);
+    if (!pick) return;
+    const before = JSON.stringify({ projects: S.projects, tasks: S.tasks, top3: S.top3 });
+    if (pick.startsWith('move:')) { const to = pick.slice(5); mine.forEach(t => { t.projectId = to; }); }
+    else {
+      const gone = new Set(mine.map(t => t.id));
+      S.tasks = S.tasks.filter(t => !gone.has(t.id));
+      for (const k in S.top3) S.top3[k] = S.top3[k].filter(id => !gone.has(id));
+    }
+    S.projects = others;
+    save(); render();
+    toast(`Removed “${p.name}”.`, 'Undo', () => { Object.assign(S, JSON.parse(before)); save(); render(); });
   },
   toggleShowDone() { showDone = !showDone; render(); },
 
@@ -3281,17 +3305,17 @@ const ACT = {
   async inboxToTask(el) {
     const item = S.inbox.find(i => i.id === el.dataset.id);
     const pid = await choose('Which project?', S.projects.map(p => ({ value: p.id, label: p.name })));
-    if (!pid) return;
+    if (!pid) return resumeWrap();          // cancelled: bring the wrap-up back if we came from it
     S.tasks.push({ id: uid(), title: item.text, projectId: pid, done: false, created: Date.now() });
-    S.inbox = S.inbox.filter(i => i !== item); save(); render(); if ($('#dlg').open) renderWrap();
+    S.inbox = S.inbox.filter(i => i !== item); save(); render(); resumeWrap();
   },
   inboxToWatch(el) {
     const item = S.inbox.find(i => i.id === el.dataset.id);
     const url = (item.text.match(/https?:\/\/\S+/) || [])[0] || '';
     S.watch.push({ id: uid(), title: item.text.replace(url, '').trim() || url, url, created: Date.now() });
-    S.inbox = S.inbox.filter(i => i !== item); save(); render(); if ($('#dlg').open) renderWrap();
+    S.inbox = S.inbox.filter(i => i !== item); save(); render(); resumeWrap();
   },
-  inboxDelete(el) { S.inbox = S.inbox.filter(i => i.id !== el.dataset.id); save(); render(); if ($('#dlg').open) renderWrap(); },
+  inboxDelete(el) { S.inbox = S.inbox.filter(i => i.id !== el.dataset.id); save(); render(); resumeWrap(); },
   watchDelete(el) { S.watch = S.watch.filter(i => i.id !== el.dataset.id); save(); render(); },
 
   // ---- pomodoro ----
@@ -3486,8 +3510,19 @@ let wrap = null;   // {step, endsAt, roll:Set, tom:[ids]}
 function openWrap() {
   const open = top3Ids().filter(id => !taskById(id).done);
   wrap = { step: 1, endsAt: Date.now() + 120000, roll: new Set(open), tom: [] };
-  const dlg = $('#dlg'); dlg.onclose = () => { wrap = null; }; $('#dlgBody').onclick = wrapClick;
-  renderWrap(); dlg.showModal();
+  resumeWrap();
+}
+/** (Re)attach the wrap-up to the shared dialog. Pickers (choose/ask) borrow the
+ *  same <dialog> and close it; its "close" event arrives a tick later — after we
+ *  have already reopened it — so only forget the wrap-up if the dialog is really
+ *  closed by then. (Bug fix: picking a task for tomorrow used to freeze the wrap-up.) */
+function resumeWrap() {
+  if (!wrap) return;
+  const dlg = $('#dlg');
+  dlg.onclose = () => { if (!dlg.open) wrap = null; };
+  $('#dlgBody').onclick = wrapClick;
+  if (!dlg.open) dlg.showModal();
+  renderWrap();
 }
 function renderWrap() {
   if (!wrap) return;
@@ -3536,9 +3571,9 @@ async function wrapClick(e) {
   if (w === 'tomRemove') wrap.tom = wrap.tom.filter(x => x !== id);
   if (w === 'tomPick') {
     const pick = await choose('Tomorrow', S.tasks.filter(t => !t.done && !wrap.tom.includes(t.id)).map(t => ({ value: t.id, label: t.title, tag: projById(t.projectId)?.name })));
-    $('#dlg').onclose = () => { wrap = null; }; $('#dlgBody').onclick = wrapClick;
-    if (!$('#dlg').open) $('#dlg').showModal();
+    if (!wrap) return;
     if (pick) wrap.tom.push(pick);
+    return resumeWrap();
   }
   if (w === 'close') { $('#dlg').close(); return; }
   if (w === 'finish') {
