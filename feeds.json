@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-14T09:00:00Z",
+  "updatedAt": "2026-10-14T15:30:00Z",
   "note": "Your watchlist. Edit it in the app (More → Watchlist), then Publish or download it into the repo. The GitHub Action reads it every 3 hours. YouTube: give a name, an @handle or a channel link — the Action finds the feed and shows what it resolved to.",
   "defaults": {
     "perFeed": 5,
@@ -101,8 +101,7 @@
         "british",
         "education"
       ],
-      "added": "2026-10-13",
-      "check": "Not sure which channel this is"
+      "added": "2026-10-13"
     },
     {
       "id": "yt-flashgitz",
@@ -235,8 +234,7 @@
         "comedy",
         "business"
       ],
-      "added": "2026-10-13",
-      "check": "Heard as 'Levy Hilda Brad Brand'"
+      "added": "2026-10-13"
     },
     {
       "id": "yt-tldr-news",
@@ -272,8 +270,7 @@
       "tags": [
         "trash"
       ],
-      "added": "2026-10-13",
-      "check": "Not sure which channel this is (voice transcription)"
+      "added": "2026-10-13"
     },
     {
       "id": "yt-channel-5-with-andrew-callaghan",
@@ -285,8 +282,7 @@
         "education",
         "politics"
       ],
-      "added": "2026-10-13",
-      "check": "Assumed you meant Andrew Callaghan's Channel 5, not the TV channel"
+      "added": "2026-10-13"
     },
     {
       "id": "yt-prozd",
@@ -357,8 +353,7 @@
       "tags": [
         "culture"
       ],
-      "added": "2026-10-13",
-      "check": "Not sure which channel this is"
+      "added": "2026-10-13"
     },
     {
       "id": "yt-gameranx",
@@ -479,16 +474,6 @@
       "added": "2026-10-13"
     },
     {
-      "id": "yt-crazy-bro",
-      "name": "Crazy bro",
-      "type": "youtube",
-      "handle": null,
-      "url": null,
-      "tags": [],
-      "added": "2026-10-13",
-      "check": "Heard 'Crazy, bro. Super driven, driven' — couldn't tell the channel name or its tags"
-    },
-    {
       "id": "yt-the-hustle",
       "name": "The Hustle",
       "type": "youtube",
@@ -500,16 +485,16 @@
       "added": "2026-10-13"
     },
     {
-      "id": "yt-history-moshe",
-      "name": "History Moshe",
+      "id": "yt-history-marche",
+      "name": "History Marche",
       "type": "youtube",
       "handle": null,
       "url": null,
       "tags": [
-        "education"
+        "education",
+        "history"
       ],
-      "added": "2026-10-13",
-      "check": "Heard 'History, Moshe' — not sure of the channel"
+      "added": "2026-10-14"
     },
     {
       "id": "yt-radicalsoda",
@@ -555,8 +540,7 @@
       "tags": [
         "education"
       ],
-      "added": "2026-10-13",
-      "check": "Heard 'Blue Jay' — please confirm"
+      "added": "2026-10-13"
     },
     {
       "id": "yt-oversimplified",
@@ -589,8 +573,7 @@
       "tags": [
         "gaming"
       ],
-      "added": "2026-10-13",
-      "check": "Heard 'Bacon underscore Gaming' — assumed channel 'Bacon_' tagged gaming"
+      "added": "2026-10-13"
     },
     {
       "id": "yt-economics-explained",
@@ -627,6 +610,100 @@
         "music"
       ],
       "added": "2026-10-13"
+    },
+    {
+      "id": "rd-productmanagement",
+      "name": "r/productmanagement",
+      "type": "reddit",
+      "sub": "productmanagement",
+      "tags": [
+        "product"
+      ],
+      "added": "2026-10-14"
+    },
+    {
+      "id": "rd-tech",
+      "name": "r/tech",
+      "type": "reddit",
+      "sub": "tech",
+      "tags": [
+        "tech"
+      ],
+      "added": "2026-10-14"
+    },
+    {
+      "id": "rd-gaming",
+      "name": "r/gaming",
+      "type": "reddit",
+      "sub": "gaming",
+      "tags": [
+        "gaming"
+      ],
+      "added": "2026-10-14"
+    },
+    {
+      "id": "rd-ukpolitics",
+      "name": "r/ukpolitics",
+      "type": "reddit",
+      "sub": "ukpolitics",
+      "tags": [
+        "politics",
+        "british"
+      ],
+      "added": "2026-10-14"
+    },
+    {
+      "id": "rd-xbox",
+      "name": "r/xbox",
+      "type": "reddit",
+      "sub": "xbox",
+      "tags": [
+        "gaming"
+      ],
+      "added": "2026-10-14"
+    },
+    {
+      "id": "rd-slaythespire",
+      "name": "r/slaythespire",
+      "type": "reddit",
+      "sub": "slaythespire",
+      "tags": [
+        "gaming"
+      ],
+      "added": "2026-10-14"
+    },
+    {
+      "id": "rd-geopolitics",
+      "name": "r/geopolitics",
+      "type": "reddit",
+      "sub": "geopolitics",
+      "tags": [
+        "politics",
+        "news"
+      ],
+      "added": "2026-10-14"
+    },
+    {
+      "id": "rd-germany",
+      "name": "r/germany",
+      "type": "reddit",
+      "sub": "germany",
+      "tags": [
+        "germany",
+        "news"
+      ],
+      "added": "2026-10-14"
+    },
+    {
+      "id": "rd-unitedkingdom",
+      "name": "r/unitedkingdom",
+      "type": "reddit",
+      "sub": "unitedkingdom",
+      "tags": [
+        "british",
+        "news"
+      ],
+      "added": "2026-10-14"
     }
   ]
 }
