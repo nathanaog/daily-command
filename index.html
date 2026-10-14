@@ -2122,19 +2122,16 @@ function todayCalBadge(now = new Date()) {
   const left = eventsOnDay(today()).filter(x => !x.allDay && !x.info && x.e > now).length;
   return `<span class="tag num">${left} left</span>`;
 }
-/** Tomorrow: all-day items (e.g. working location) + the first few timed events, with the maths for the morning. */
-function tomorrowCalHtml(max = 4) {
-  const evs = eventsOnDay(tomorrow()), allDay = evs.filter(x => x.allDay), timed = evs.filter(x => !x.allDay);
-  const busy = timed.filter(x => !x.info);
-  let h = allDay.length ? `<div class="row" style="flex-wrap:wrap;gap:6px;margin-bottom:6px">${allDay.map(x => `<span class="tag">${calDot(x.color)}${esc(x.title)}</span>`).join('')}</div>` : '';
-  if (!timed.length) return h + `<div class="empty">No timed events tomorrow — a clear morning.</div>${calNoteHtml()}`;
-  h += `<ul class="list">${timed.slice(0, max).map(x => evLi(x)).join('')}</ul>`;
-  if (timed.length > max) h += `<p class="small muted">+ ${timed.length - max} more · last ends ${fmtT(timed.reduce((m, x) => x.e > m ? x.e : m, timed[0].e))}</p>`;
-  if (busy.length) {
-    const mins = busy.reduce((n, x) => n + Math.round((x.e - x.s) / 60000), 0);
-    h += `<div class="math">first: ${fmtT(busy[0].s)} · meetings: ${busy.map(x => Math.round((x.e - x.s) / 60000)).join(' + ')} = ${mins} min (${fmtDur(mins * 60000)})</div>`;
-  }
-  return h + calNoteHtml();
+/** Tomorrow: just the first few real meetings — start time + duration. All-day items
+ *  (working location etc.) and events marked "free" are left out. */
+const durLabel = x => fmtDur(x.e - x.s).replace(/ 00m$/, '');
+function tomorrowCalHtml(max = 3) {
+  const busy = eventsOnDay(tomorrow()).filter(x => !x.allDay && !x.info);
+  if (!busy.length) return `<div class="empty">No meetings tomorrow — a clear day.</div>${calNoteHtml()}`;
+  return `<ul class="list">${busy.slice(0, max).map(x => `<li><span class="num" style="min-width:56px">${fmtT(x.s)}</span>
+      <span class="grow">${calDot(x.color)}${esc(x.title)}</span><span class="tag num">${durLabel(x)}</span>
+      ${x.link ? `<a class="icon" href="${esc(x.link)}" target="_blank" rel="noopener" aria-label="Open in Google Calendar">↗</a>` : ''}</li>`).join('')}</ul>
+    ${busy.length > max ? `<p class="small muted">+ ${busy.length - max} more later</p>` : ''}${calNoteHtml()}`;
 }
 function tomorrowCalBadge() {
   const first = eventsOnDay(tomorrow()).find(x => !x.allDay && !x.info);
@@ -3596,7 +3593,7 @@ function renderWrap() {
       <p class="muted" style="margin-top:14px">Sort the inbox (${S.inbox.length})</p>${inboxHtml()}`;
   } else {
     if (!wrap.tom.length) wrap.tom = [...wrap.roll].slice(0, 3);
-    h += `<details class="sec" ${eventsOnDay(tomorrow()).length ? 'open' : ''}><summary><span>${tomorrowTitle()}</span>${tomorrowCalBadge()}</summary><div class="body">${tomorrowCalHtml(3)}</div></details>`;
+    h += `<details class="sec" ${eventsOnDay(tomorrow()).length ? 'open' : ''}><summary><span>${tomorrowTitle()}</span>${tomorrowCalBadge()}</summary><div class="body">${tomorrowCalHtml()}</div></details>`;
     h += `<p class="muted">Tomorrow’s top 3</p>`;
     for (let i = 0; i < 3; i++) {
       const t = taskById(wrap.tom[i]);
