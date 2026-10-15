@@ -187,6 +187,9 @@ ul.list a{color:var(--text);text-decoration:none} ul.list a:hover{text-decoratio
 .card.listen{border-left:4px solid var(--mode-c,var(--accent))}
 .ytbox{position:relative;width:100%;aspect-ratio:16/9;background:#000;border-radius:14px;overflow:hidden;margin-bottom:10px}
 .ytbox iframe,.ytbox #ytFrame{position:absolute;inset:0;width:100%;height:100%;border:0}
+.qaprev{margin-top:10px;padding:10px 12px;border:1px solid var(--accent);border-radius:14px;background:var(--surface2)}
+.week{display:flex;flex-direction:column;gap:8px}.wday{padding:8px 10px;border-radius:12px;background:var(--surface2)}.wday.wkend{border-left:3px solid var(--accent)}
+.wlist{list-style:none;margin:4px 0 0;padding:0}.wlist li{padding:2px 0}.tag.free{background:transparent;border:1px solid var(--accent);color:var(--accent)}
 .hstrip{margin:10px 0 4px}.hrow{display:flex;align-items:center;gap:10px;padding:8px 12px;border:1px solid var(--border);border-radius:14px;margin-bottom:6px;background:var(--surface)}
 .hrow.hot{border-color:var(--accent)}.hicon{font-size:1.15rem;width:26px;text-align:center;flex:0 0 26px}
 .hdots{display:inline-flex;gap:3px;flex:0 0 auto}.hdots i{width:7px;height:7px;border-radius:50%;background:var(--surface2);border:1px solid var(--border)}.hdots i.on{background:var(--accent);border-color:var(--accent)}
@@ -773,6 +776,93 @@ const Habit = (() => {
   return { status, nudges, occurrences, parseDays, daysLabel, usualEvery, addDays, diffDays, monday, weekday };
 })();
 // ==HABIT END==
+
+/* =====================================================================
+   PART 1e — QUICK-ADD PARSER (pure; tests/quickadd.test.cjs)
+   "Drinks with Tom Sat 7pm" → {title:"Drinks with Tom", start: Sat 19:00, end: 20:00}.
+   Understands: today/tonight/tomorrow (+ heute/morgen), weekdays (EN/DE, "next fri"),
+   dates (24/10, 24.10., 24 Oct, Oct 24th), times (7pm, 19:00, 7.30, noon, "at 7"),
+   ranges (7-9pm, 19:00–21:30), durations ("for 2h", "for 90 min"), parts of day
+   (morning, lunch, afternoon, evening, dinner) and "all day". A date without a time
+   (or anything called a birthday) becomes an all-day event. Nothing found → null.
+   ===================================================================== */
+// ==QUICKADD START==
+const QuickAdd = (() => {
+  const WD = { sun: 0, sunday: 0, mon: 1, monday: 1, tue: 2, tues: 2, tuesday: 2, wed: 3, wednesday: 3, thu: 4, thur: 4, thurs: 4, thursday: 4, fri: 5, friday: 5, sat: 6, saturday: 6,
+    sonntag: 0, montag: 1, dienstag: 2, mittwoch: 3, donnerstag: 4, freitag: 5, samstag: 6, so: 0, mo: 1, di: 2, mi: 3, do: 4, fr: 5, sa: 6 };
+  const MON = { jan: 0, feb: 1, mar: 2, apr: 3, may: 4, jun: 5, jul: 6, aug: 7, sep: 8, sept: 8, oct: 9, nov: 10, dec: 11, mär: 2, mai: 4, okt: 9, dez: 11 };
+  const PART = { morning: [9, 0], breakfast: [9, 0], brunch: [11, 0], noon: [12, 0], midday: [12, 0], lunch: [12, 30], afternoon: [15, 0], evening: [19, 0], dinner: [19, 30], tonight: [19, 0], abends: [19, 0], mittags: [12, 0] };
+  const at = (base, d, h = 0, m = 0) => { const x = new Date(base); x.setHours(0, 0, 0, 0); x.setDate(x.getDate() + d); x.setHours(h, m, 0, 0); return x; };
+  const to24 = (h, m, ap) => { h = +h; m = +(m || 0); if (ap) { ap = ap.toLowerCase(); if (ap.startsWith('p') && h < 12) h += 12; if (ap.startsWith('a') && h === 12) h = 0; } return [h, m]; };
+
+  function parse(input, now = new Date()) {
+    let t = ' ' + String(input || '').replace(/\s+/g, ' ').trim() + ' ';
+    const cut = re => { const m = t.match(re); if (m) t = t.replace(m[0], ' '); return m; };
+    let day = null, time = null, endTime = null, durMin = null, allDay = false, m;
+
+    if (cut(/\s(all[- ]day|ganztägig)\s/i)) allDay = true;
+    // duration: "for 2h", "for 90 min", "for 1.5 hours"
+    if ((m = cut(/\s(?:for|für)\s(\d+(?:[.,]\d+)?)\s?(h|hrs?|hours?|std|stunden?|m|mins?|minutes?|minuten)\s/i)))
+      durMin = Math.round(parseFloat(m[1].replace(',', '.')) * (/^h|^s/i.test(m[2]) ? 60 : 1));
+    // time range: "7-9pm", "7pm-9pm", "19:00–21:30", "from 7 to 9pm"
+    if ((m = cut(/\s(?:from\s|von\s)?(\d{1,2})(?:[:.](\d{2}))?\s?(am|pm)?\s?(?:-|–|to|bis)\s?(\d{1,2})(?:[:.](\d{2}))?\s?(am|pm|uhr)?\s/i))) {
+      const ap2 = /am|pm/i.test(m[6] || '') ? m[6] : null, ap1 = m[3] || ap2;
+      time = to24(m[1], m[2], ap1); endTime = to24(m[4], m[5], ap2);
+      if (!ap1 && !ap2 && time[0] < 8) { time[0] += 12; endTime[0] += 12; }            // "7-9" with nothing else = evening
+      if (endTime[0] * 60 + endTime[1] <= time[0] * 60 + time[1] && endTime[0] < 12) endTime[0] += 12;
+    }
+    // single time: "7pm", "7:30 pm", "19:00", "19.30", "19 uhr", "at 7"
+    if (!time && (m = cut(/\s(?:at\s|um\s|@)?(\d{1,2})(?:[:.](\d{2}))?\s?(am|pm|uhr)\s/i))) time = to24(m[1], m[2], /uhr/i.test(m[3]) ? null : m[3]);
+    if (!time && (m = cut(/\s(?:at\s|um\s|@)?(\d{1,2})[:.](\d{2})\s/i))) time = to24(m[1], m[2]);
+    if (!time && (m = cut(/\s(?:at|um|@)\s?(\d{1,2})\s/i))) { time = to24(m[1], 0); if (time[0] < 8) time[0] += 12; }   // "at 7" → 19:00
+    // relative days
+    if ((m = cut(/\s(today|heute)\s/i))) day = 0;
+    else if ((m = cut(/\s(day after tomorrow|übermorgen)\s/i))) day = 2;
+    else if ((m = cut(/\s(tomorrow|tmrw|tmr|morgen)\s/i))) day = 1;
+    else if ((m = cut(/\s(tonight|heute abend)\s/i))) { day = 0; time = time || PART.tonight; }
+    // weekday: "sat", "next friday", "on thursday", "this weekend"
+    if (day == null && (m = cut(/\s(?:on\s|am\s)?(next\s|nächsten?\s|this\s)?(sunday|monday|tuesday|wednesday|thursday|friday|saturday|sonntag|montag|dienstag|mittwoch|donnerstag|freitag|samstag|sun|mon|tues?|wed|thur?s?|fri|sat)\s/i))) {
+      const want = WD[m[2].toLowerCase()];
+      let d = (want - now.getDay() + 7) % 7;
+      if (m[1] && /next|nächst/i.test(m[1]) && d === 0) d = 7;
+      day = d;
+    }
+    if (day == null && (m = cut(/\s(?:this\s)?weekend\s/i))) day = (6 - now.getDay() + 7) % 7;
+    // dates: 24/10, 24.10., 24.10.2026, 24 Oct, 24th October, Oct 24
+    const dateFrom = (dd, mm, yy) => {
+      let y = yy ? (+yy < 100 ? 2000 + +yy : +yy) : now.getFullYear();
+      let x = new Date(y, mm, +dd);
+      if (!yy && x < at(now, 0)) x = new Date(y + 1, mm, +dd);                          // already passed → next year
+      return Math.round((at(x, 0) - at(now, 0)) / 864e5);
+    };
+    if (day == null && (m = cut(/\s(?:on\s|am\s)?(\d{1,2})[./](\d{1,2})(?:[./](\d{2,4}))?\.?\s/))) day = dateFrom(m[1], +m[2] - 1, m[3]);
+    if (day == null && (m = cut(/\s(?:on\s|am\s)?(\d{1,2})(?:st|nd|rd|th|\.)?\s(jan|feb|mar|mär|apr|may|mai|jun|jul|aug|sept?|oct|okt|nov|dec|dez)[a-zä]*\.?\s/i))) day = dateFrom(m[1], MON[m[2].toLowerCase()]);
+    if (day == null && (m = cut(/\s(?:on\s)?(jan|feb|mar|apr|may|jun|jul|aug|sept?|oct|nov|dec)[a-z]*\.?\s(\d{1,2})(?:st|nd|rd|th)?\s/i))) day = dateFrom(m[2], MON[m[1].toLowerCase()]);
+    // part of day words, only if no explicit time ("lunch with Sam" keeps "lunch" in the title)
+    let partWord = null;
+    if (!time && (m = t.match(/\s(morning|breakfast|brunch|noon|midday|lunch|afternoon|evening|dinner|abends|mittags)\s/i))) { time = PART[m[1].toLowerCase()]; partWord = m[1]; }
+
+    if (day == null && !time && !allDay) return null;
+    if (day == null) {                                                                  // only a time: today if still ahead, else tomorrow
+      day = time && at(now, 0, time[0], time[1]) <= now ? 1 : 0;
+    }
+    let title = t.replace(/\s(on|at|um|am|from|von|this|next)\s*$/i, ' ').replace(/^\s*(on|at|um|am)\s/i, ' ')
+      .replace(/\s(on|at|um|from|von)(?=\s(on|at|um|from|von)?\s*$)/gi, ' ').replace(/\s+/g, ' ').trim();
+    title = title.replace(/\s(on|at|um)$/i, '').trim();
+    if (!title) title = partWord ? partWord[0].toUpperCase() + partWord.slice(1) : 'Event';
+    title = title[0].toUpperCase() + title.slice(1);
+    if (/birthday|geburtstag|bday/i.test(title) && !time) allDay = true;
+    if (!time && !allDay) allDay = true;                                                // a date with no time = all day
+
+    if (allDay) { const s = at(now, day); return { title, start: s, end: at(now, day + 1), allDay: true }; }
+    const start = at(now, day, time[0], time[1]);
+    let end = endTime ? at(now, day, endTime[0], endTime[1]) : new Date(+start + (durMin || (/drinks|dinner|party|bbq|film|movie|kino|concert|konzert/i.test(title) ? 120 : 60)) * 60000);
+    if (end <= start) end = new Date(+end + 864e5);
+    return { title, start, end, allDay: false };
+  }
+  return { parse };
+})();
+// ==QUICKADD END==
 </script>
 
 
@@ -839,7 +929,7 @@ function defaultState() {
       audioPlan: { deep: 'focus', admin: 'talk', lunch: 'talk' },   // per block kind: talk / focus / off
       focusAudio: null,        // {label, url} e.g. an instrumental YouTube playlist
       // Stage 4 — Google (PART 4e). clientId can also come from config.json in the repo.
-      google: { clientId: '', on: { calendar: true, reminders: true, gmail: true, sync: true, youtube: false },
+      google: { clientId: '', on: { calendar: true, calwrite: true, reminders: true, gmail: true, sync: true, youtube: false },
         calOff: [], appCalId: null, focusAlarm: true, blockAlarms: false, ytPlaylistId: null, ytCount: 8 },
       // Stage 4.5 — Spotify (PART 4g). clientId can also come from config.json.
       spotify: { clientId: '', showTags: {}, hiddenShows: [], extraShows: [], playlistTags: {} } },
@@ -2077,8 +2167,9 @@ const G_SCOPES = {
   gmail: ['https://www.googleapis.com/auth/gmail.metadata'],
   sync: ['https://www.googleapis.com/auth/drive.appdata'],
   youtube: ['https://www.googleapis.com/auth/youtube'],
+  calwrite: ['https://www.googleapis.com/auth/calendar.events'],   // quick-add: create events in your main calendar
 };
-const G_LABEL = { calendar: 'Calendar', reminders: 'Reminders & alarms', gmail: 'Gmail', sync: 'Sync phone ↔ desktop', youtube: 'YouTube Listen playlist' };
+const G_LABEL = { calwrite: 'Quick-add events to your calendar', calendar: 'Calendar', reminders: 'Reminders & alarms', gmail: 'Gmail', sync: 'Sync phone ↔ desktop', youtube: 'YouTube Listen playlist' };
 const GAPI = { cal: 'https://www.googleapis.com/calendar/v3', gmail: 'https://gmail.googleapis.com/gmail/v1/users/me', drive: 'https://www.googleapis.com/drive/v3', upload: 'https://www.googleapis.com/upload/drive/v3', yt: 'https://www.googleapis.com/youtube/v3' };
 const gset = () => S.settings.google;
 const gstat = (f, v) => { C.gstat = { ...(C.gstat || {}), [f]: { ...((C.gstat || {})[f] || {}), ...v } }; saveCache(); };
@@ -3056,6 +3147,105 @@ const ACT8 = {
   habitEdit(el) { const h = habitById(el.dataset.id); if (h) editHabit(h); },
 };
 
+/* =====================================================================
+   PART 4i — QUICK CALENDAR ADD + WEEK AHEAD
+   Type "Drinks with Tom Sat 7pm" into Capture → it shows what it understood → one tap adds it.
+   With Google connected (calwrite) it goes straight into your main calendar (undo-able).
+   Without Google: on Android it opens your calendar app's "new event" screen pre-filled
+   (one more tap: Save); elsewhere a pre-filled Google Calendar page.
+   ===================================================================== */
+const qaWhen = r => {
+  const d = r.start.toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short' });
+  return r.allDay ? `${d} · all day` : `${d} · ${fmtT(r.start)}–${fmtT(r.end)}`;
+};
+const QuickCal = {
+  canWrite() { return Google.ready('calwrite'); },
+  /** Android calendar "insert" intent — opens Samsung/Google Calendar pre-filled, no sign-in needed. */
+  intentUrl(r) {
+    const e = s => encodeURIComponent(s);
+    return `intent:#Intent;action=android.intent.action.INSERT;type=vnd.android.cursor.item/event;S.title=${e(r.title)};l.beginTime=${+r.start};l.endTime=${+r.end};B.allDay=${r.allDay};end`;
+  },
+  webUrl(r) {
+    const z = d => d.toISOString().replace(/[-:]|\.\d{3}/g, ''), ymd = d => Engine.dateKey(d).replace(/-/g, '');
+    const dates = r.allDay ? `${ymd(r.start)}/${ymd(r.end)}` : `${z(r.start)}/${z(r.end)}`;
+    return `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(r.title)}&dates=${dates}`;
+  },
+  async add(r) {
+    if (!this.canWrite()) {
+      if (Google.everSignedIn() && Google.on('calwrite') && !Google.token()) toast('Google needs a refresh — opening your calendar app instead.');
+      location.href = isAndroid() ? this.intentUrl(r) : this.webUrl(r);
+      return 'handoff';
+    }
+    const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
+    const body = r.allDay ? { summary: r.title, start: { date: Engine.dateKey(r.start) }, end: { date: Engine.dateKey(r.end) } }
+      : { summary: r.title, start: { dateTime: r.start.toISOString(), timeZone: tz }, end: { dateTime: r.end.toISOString(), timeZone: tz } };
+    const ev = await Google.api(`${GAPI.cal}/calendars/primary/events`, { method: 'POST', body });
+    // show it immediately, before the next calendar refresh
+    if (C.gcal) {
+      const primary = (C.gcal.calendars || []).find(c => c.primary) || { id: 'primary', summary: 'Calendar' };
+      const m = Cal.map(ev, primary); if (m) { C.gcal.events.push(m); saveCache(); }
+    }
+    return ev;
+  },
+  async remove(ev) {
+    await Google.api(`${GAPI.cal}/calendars/primary/events/${encodeURIComponent(ev.id)}`, { method: 'DELETE' });
+    if (C.gcal) { C.gcal.events = C.gcal.events.filter(e => !e.id.endsWith('|' + ev.id)); saveCache(); }
+  },
+};
+/** Edit what the parser understood before adding. */
+async function qaEdit(r) {
+  const v = await formSheet('Calendar event', [
+    { name: 'title', label: 'What', value: r.title },
+    { name: 'date', label: 'Day', type: 'date', value: Engine.dateKey(r.start) },
+    { name: 'allDay', label: 'All day', type: 'checkbox', value: r.allDay, hint: 'No times' },
+    { name: 'start', label: 'Starts', type: 'time', value: r.allDay ? '19:00' : fmtT(r.start) },
+    { name: 'end', label: 'Ends', type: 'time', value: r.allDay ? '20:00' : fmtT(r.end) },
+  ], { okLabel: 'Add to calendar' });
+  if (!v) return null;
+  const base = localMidnight(v.date || Engine.dateKey(r.start));
+  if (v.allDay) return { title: v.title || r.title, start: base, end: Engine.atDay(base, 1), allDay: true };
+  const [sh, sm] = (v.start || '19:00').split(':').map(Number), [eh, em] = (v.end || '20:00').split(':').map(Number);
+  const start = new Date(base); start.setHours(sh, sm, 0, 0);
+  let end = new Date(base); end.setHours(eh, em, 0, 0); if (end <= start) end = new Date(+end + 864e5);
+  return { title: v.title || r.title, start, end, allDay: false };
+}
+async function qaCommit(r) {
+  try {
+    const ev = await QuickCal.add(r);
+    if (ev === 'handoff') return;
+    render();
+    toast(`Added: ${r.title} · ${qaWhen(r)}`, 'Undo', async () => { try { await QuickCal.remove(ev); render(); toast('Removed.'); } catch (e) { toast('Couldn’t undo: ' + e.message); } });
+  } catch (e) { toast('Couldn’t add it: ' + e.message); }
+}
+
+/* ---- Week ahead: who you're seeing, birthdays, free evenings ---- */
+const isBirthday = e => /#contacts@|birthday|geburtstag|bday/i.test((e.calId || '') + ' ' + e.title);
+/** Is 18:00–23:00 on this day free of real (busy, timed) events? */
+function eveningFree(ymd) {
+  const s = localMidnight(ymd); s.setHours(18, 0, 0, 0); const e = new Date(s); e.setHours(23, 0, 0, 0);
+  return !eventsOnDay(ymd).some(x => !x.allDay && !x.info && x.s < e && x.e > s);
+}
+function weekAheadHtml(fromDay, n) {
+  let h = '<div class="week">';
+  for (let i = 0; i < n; i++) {
+    const k = Habit.addDays(fromDay, i), evs = eventsOnDay(k).filter(x => !(x.info && !x.allDay) && !(x.allDay && x.info && !isBirthday(x)));
+    const d = localMidnight(k), weekend = [0, 6].includes(d.getDay()), free = eveningFree(k);
+    const label = i === 0 && k === today() ? 'Today' : k === tomorrow() ? 'Tomorrow' : d.toLocaleDateString('en-GB', { weekday: 'long' });
+    h += `<div class="wday ${weekend ? 'wkend' : ''}"><div class="row" style="justify-content:space-between"><b>${label} <span class="small muted">${d.getDate()} ${d.toLocaleDateString('en-GB', { month: 'short' })}</span></b>
+        ${free ? '<span class="tag free">evening free</span>' : ''}</div>
+      ${evs.length ? `<ul class="wlist">${evs.map(x => `<li>${isBirthday(x) ? '🎂' : x.allDay ? '<span class="small muted">all day</span>' : `<span class="num small muted">${fmtT(x.s)}</span>`} ${esc(x.title)}</li>`).join('')}</ul>` : '<div class="small muted">Nothing planned</div>'}</div>`;
+  }
+  return h + `</div><div class="actions"><button class="btn sm" data-act="capture">+ Add something</button></div>${calNoteHtml()}`;
+}
+/** Fri 12:00 → Sun: the coming/current weekend (Fri evening, Sat, Sun). */
+function weekendHtml() {
+  const d = localMidnight(today()), wd = d.getDay();
+  const fri = Habit.addDays(today(), wd === 0 ? -2 : wd === 6 ? -1 : 5 - wd);
+  const from = [5, 6, 0].includes(wd) ? today() : fri, n = Habit.diffDays(from, Habit.addDays(fri, 2)) + 1;
+  return weekAheadHtml(from, n);
+}
+const showWeekend = () => { const n = new Date(), wd = n.getDay(); return wd === 6 || wd === 0 || (wd === 5) || (wd === 4 && n.getHours() >= 12); };
+
 /* ---------------- Storage diagnostics + daily snapshots (More → Data) ---------------- */
 let storagePersisted = null;
 if (navigator.storage?.persist) navigator.storage.persisted().then(p => p || navigator.storage.persist()).then(v => { storagePersisted = v; }).catch(() => {});
@@ -3236,8 +3426,10 @@ function modeSections(mode) {
     parts.push(sec('now-top3', 'Today’s top 3', top3, false));
     parts.push(sec('now-inbox', `Inbox`, inboxHtml(true), S.inbox.length > 0, `<span class="tag">${S.inbox.length}</span>`));
     if (Google.on('gmail') && C.gmail) parts.push(sec('now-mail', 'Gmail', mailHtml(true), false, `<span class="tag num">${C.gmail.unread} unread</span>`));
+    parts.push(showWeekend() ? sec('now-weekend', 'This weekend', weekendHtml(), true) : sec('now-week', 'Week ahead', weekAheadHtml(today(), 7), false));
   } else if (mode === 'leisure') {
     parts.push(watchCardHtml());                    // ▶ Watch next (PART 4f)
+    if (showWeekend()) parts.push(sec('now-weekend', 'This weekend', weekendHtml(), false));
     parts.push(evening ? tomCal : todayCal);
     parts.push(sec('now-watch', 'Watch-later shelf', watchHtml(), true, `<span class="tag">${S.watch.length}</span>`));
     parts.push(digestCard());
@@ -3857,7 +4049,8 @@ async function editBlock(b) {
 function openCapture() {
   const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
   $('#dlgBody').innerHTML = `<h3>Capture</h3><p class="muted small">Get it out of your head. Sort it tonight.</p>
-    <textarea id="capText" placeholder="Idea, task, link, thing to watch…"></textarea>
+    <textarea id="capText" placeholder="Idea, task, link… or an event: “Drinks with Tom Sat 7pm”"></textarea>
+    <div id="qaPrev" class="qaprev hidden"></div>
     ${SR ? `<button class="btn" id="micBtn" style="width:100%;margin-top:8px">🎤 Speak (${S.settings.speechLang})</button>` : '<p class="small muted">Voice input isn’t available in this browser.</p>'}
     <div class="actions"><button class="btn ghost" id="capCancel">Cancel</button><button class="btn primary" id="capSave">Save to inbox</button></div>`;
   const dlg = $('#dlg'); dlg.onclose = null; $('#dlgBody').onclick = null;
@@ -3870,11 +4063,26 @@ function openCapture() {
     if (text) { S.inbox.push({ id: uid(), text, created: Date.now() }); save(); toast('Captured.'); render(); }
     dlg.close();
   };
+  // Quick calendar add: if the text has a day/time, show what we understood + a one-tap "Add to calendar"
+  let qa = null;
+  const qaUpdate = () => {
+    qa = QuickAdd.parse($('#capText').value);
+    const el = $('#qaPrev'); if (!el) return;
+    el.classList.toggle('hidden', !qa);
+    if (qa) el.innerHTML = `<div class="small muted">📅 Looks like an event</div><b>${esc(qa.title)}</b> <span class="small">${qaWhen(qa)}</span>
+      <div class="actions" style="margin-top:8px"><button class="btn primary sm" id="qaAdd">Add to calendar</button><button class="btn sm ghost" id="qaEdit">Adjust…</button></div>
+      <div class="small muted">${QuickCal.canWrite() ? 'Goes straight into your Google Calendar.' : isAndroid() ? 'Opens your calendar app pre-filled. Tap Save there.' : 'Opens Google Calendar pre-filled.'}</div>`;
+  };
+  $('#capText').oninput = qaUpdate;
+  $('#dlgBody').onclick = async e => {             // one handler, replaced on every open (no stacking)
+    if (e.target.id === 'qaAdd' && qa) { stopRec(); dlg.close(); await qaCommit(qa); }
+    if (e.target.id === 'qaEdit' && qa) { stopRec(); const r = await qaEdit(qa); if (r) await qaCommit(r); }
+  };
   if (SR) $('#micBtn').onclick = () => {
     if (rec) return stopRec();
     rec = new SR(); rec.lang = S.settings.speechLang; rec.interimResults = true; rec.continuous = false;
     const before = $('#capText').value;
-    rec.onresult = ev => { $('#capText').value = (before ? before + ' ' : '') + [...ev.results].map(r => r[0].transcript).join(''); };
+    rec.onresult = ev => { $('#capText').value = (before ? before + ' ' : '') + [...ev.results].map(r => r[0].transcript).join(''); qaUpdate(); };
     rec.onerror = ev => toast(ev.error === 'network' ? 'Voice needs a connection.' : 'Voice error: ' + ev.error);
     rec.onend = () => { rec = null; const b = $('#micBtn'); if (b) b.textContent = `🎤 Speak (${S.settings.speechLang})`; };
     rec.start(); $('#micBtn').textContent = '■ Listening… tap to stop';
