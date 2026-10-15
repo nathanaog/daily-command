@@ -4,7 +4,7 @@
 
 A personal "what should I be doing right now?" app. Static site, installable PWA, works offline. No backend, no paid services. Your data stays in your browser (localStorage) with JSON export/import.
 
-**Status: Stage 5 in progress: habits done.** Earlier stages: core loop, morning sequence, your own feeds, Google + sync, tag groups, Watch next, Spotify. Still to come in Stage 5: the "I have 30 minutes" picker, German daily, renewals, birthdays, Vietnam countdown and quick-launch.
+**Status: Stage 5 in progress.** Done so far: habits, quick calendar add, the week-ahead view, "What now?", German 5-min and the PM recap. Earlier stages: core loop, morning sequence, your own feeds, Google + sync, tag groups, Watch next, Spotify. Still to come in Stage 5: the "I have 30 minutes" picker, German daily, renewals, birthdays, Vietnam countdown and quick-launch.
 
 ## Files
 
@@ -18,7 +18,7 @@ A personal "what should I be doing right now?" app. Static site, installable PWA
 | `feeds.resolved.json`, `video-meta.json` | Caches maintained by the workflow: YouTube name and handle lookups, and video lengths for the Listen queue. |
 | `.github/workflows/digest.yml` | Every 3 hours: tests, builds the digest, commits it if it changed, then deploys the site. |
 | `scripts/` | The digest builder: `digest-lib.mjs` (logic) and `build-digest.mjs` (runner). |
-| `tests/` | `engine.test.cjs` (37 Now/Next edge cases), `sync.test.cjs` (16 phone ↔ desktop merge cases), `lens.test.cjs` (9 tag-group/lens cases), `habit.test.cjs` (31 habit cases), `digest.test.mjs` (24 builder tests on recorded feed samples) and `e2e-build.mjs` (a full builder run over your real watchlist with a simulated network). Run all with `npm test`. |
+| `tests/` | `engine.test.cjs` (37 Now/Next edge cases), `sync.test.cjs` (16 phone ↔ desktop merge cases), `lens.test.cjs` (9 tag-group/lens cases), `habit.test.cjs` (31 habit cases), `quickadd.test.cjs` (20 quick-add phrasings), `digest.test.mjs` (24 builder tests on recorded feed samples) and `e2e-build.mjs` (a full builder run over your real watchlist with a simulated network). Run all with `npm test`. |
 | `config.json` | *Optional.* `{"googleClientId": "…", "spotifyClientId": "…"}`, so every device picks up your client IDs automatically. Client IDs are public by design. |
 | `package.json`, `package-lock.json` | One dependency (`fast-xml-parser`), used only by the workflow and not by the app. |
 
@@ -206,3 +206,15 @@ Habits stay out of the way. A habit only appears when it's due, and only in the 
 - **Removing:** tap a habit to edit it. **Pause** keeps its history; **Delete** removes it, with Undo.
 - **Wrap-up:** step 1 shows "Habits this week" with the tallies.
 - **Sync:** ticks are stored per day, so ticking on your phone and desktop merges cleanly.
+
+## Stage 5 — Quick calendar add, week ahead, "What now?", German 5-min, PM recap
+
+- **Quick calendar add:** tap **+** and type or say something like "Drinks with Tom Sat 7pm".
+  - The app shows what it understood, e.g. *Sat, 17 Oct · 19:00–21:00*. Tap **Add to calendar**, or **Adjust…** to change it first.
+  - It understands today/tomorrow/tonight, weekday names (including "next fri"), dates (24/10, 24 Oct), times (7pm, 19:00, "at 7"), ranges (7–9pm), "for 2h", lunch, dinner and other parts of the day, and German ("morgen 20:15", "am Samstag um 19").
+  - A day without a time, or anything called a birthday, becomes an all-day event.
+  - Where it goes: with Google connected (permission *Quick-add events*, `calendar.events`), straight into your main calendar, with Undo. Without Google on Android, it opens your calendar app's new-event screen already filled in; you tap Save there.
+- **This weekend / Week ahead:** in Life and Leisure. Each day shows what's on, birthdays (🎂, from your Google contacts' birthday calendar) and an **evening free** tag when 18:00–23:00 has nothing busy. It opens as **This weekend** from Thursday afternoon to Sunday.
+- **What now?:** in Life and Leisure. Pick 15/30/60 min and your energy, and it suggests one thing with the reason, e.g. `21:00 ≤ 30:00 ✓ fits · from your shelf`. It chooses from shelf and digest videos, the Listen queue, due habits, German, today's top 3, the digest and the inbox. Low energy leans to watching and listening; high energy leans to tasks and German. **Something else** shows the next option.
+- **German 5-min:** one prompt a day (speaking or writing, A2–B1, with an English hint), a 5-minute timer and **Done**, which also ticks a habit named German or Deutsch. It appears in the routine's German block, or from What now. Add links to your trainer files with **+ trainer link**.
+- **PM daily recap:** on workdays, the wrap-up asks for one thing you learned at work. Find past entries in **More → PM learnings**, and **Export** them as dated Markdown for your PM second brain.

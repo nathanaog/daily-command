@@ -187,6 +187,8 @@ ul.list a{color:var(--text);text-decoration:none} ul.list a:hover{text-decoratio
 .card.listen{border-left:4px solid var(--mode-c,var(--accent))}
 .ytbox{position:relative;width:100%;aspect-ratio:16/9;background:#000;border-radius:14px;overflow:hidden;margin-bottom:10px}
 .ytbox iframe,.ytbox #ytFrame{position:absolute;inset:0;width:100%;height:100%;border:0}
+.wn .chip{min-height:36px}.wnpick{margin-top:8px;padding:10px 12px;border-radius:14px;background:var(--surface2)}
+.card.german{border-left:4px solid var(--accent)}
 .qaprev{margin-top:10px;padding:10px 12px;border:1px solid var(--accent);border-radius:14px;background:var(--surface2)}
 .week{display:flex;flex-direction:column;gap:8px}.wday{padding:8px 10px;border-radius:12px;background:var(--surface2)}.wday.wkend{border-left:3px solid var(--accent)}
 .wlist{list-style:none;margin:4px 0 0;padding:0}.wlist li{padding:2px 0}.tag.free{background:transparent;border:1px solid var(--accent);color:var(--accent)}
@@ -944,7 +946,9 @@ function defaultState() {
     tasks: [],             // {id,title,projectId,done,doneAt,created}
     createdAt: new Date().toISOString(),   // when this browser's data started — shown in More → Data (diagnostics)
     habits: [],            // Stage 5: {id,name,icon,kind:'interval'|'weekly'|'schedule',every,learn,target,days,time,dur,lead,alarm,when,paused,created}
-    habitLog: {},          // {habitId: {"YYYY-MM-DD": timestamp}} — an object so phone + desktop ticks merge
+    habitLog: {},
+    german: {},            // {"YYYY-MM-DD": timestamp} — German 5-min done
+    pmlog: {},             // {"YYYY-MM-DD": {text, at}} — PM daily recap          // {habitId: {"YYYY-MM-DD": timestamp}} — an object so phone + desktop ticks merge
     reminders: [],         // {id (Google event id), title, at, kind:'manual'|'focus'|'block', ref} — Stage 4
     top3: {},              // {"YYYY-MM-DD": [taskId, taskId, taskId]}
     skips: {},             // {"YYYY-MM-DD": [taskId]}  "not now" for today
@@ -3246,6 +3250,155 @@ function weekendHtml() {
 }
 const showWeekend = () => { const n = new Date(), wd = n.getDay(); return wd === 6 || wd === 0 || (wd === 5) || (wd === 4 && n.getHours() >= 12); };
 
+/* =====================================================================
+   PART 4j — "WHAT NOW?", GERMAN 5-MIN CARD, PM DAILY RECAP (Stage 5)
+   What now: you say how long (15/30/60) and how much energy (low/ok/high);
+   it picks ONE thing from what the app already knows — watch-later & digest videos
+   that fit, the Listen queue, a due habit, German, today's top 3, the inbox —
+   with the reason shown. "Something else" moves to the next best.
+   ===================================================================== */
+const ENERGY = { low: '🪫 Low', ok: '🙂 OK', high: '⚡ High' };
+const germanDoneToday = () => !!(S.german || {})[today()];
+function whatNowCandidates(min, energy) {
+  const out = [], sec = min * 60, E = (l, o, h) => ({ low: l, ok: o, high: h })[energy];
+  const add = (c, score) => out.push({ ...c, score });
+  // 1. German (5–10 min, needs some energy)
+  if (!germanDoneToday()) add({ key: 'german', icon: '🇩🇪', title: 'German · 5-minute prompt', why: `5 min ≤ ${min} min · not done today`, go: 'wnGerman' }, E(0.5, 3, 3.5));
+  // 2. A video that fits the time (shelf first, then digest)
+  const vids = Watch.queue(ALL), fitV = vids.find(v => v.durationSec && v.durationSec <= sec && v.durationSec >= sec / 3) || vids.find(v => v.durationSec && v.durationSec <= sec);
+  if (fitV) add({ key: 'v:' + fitV.key, icon: '▶', title: fitV.title, why: `${mmss(fitV.durationSec)} ≤ ${mmss(sec)} ✓ fits${fitV.from === 'shelf' ? ' · from your shelf' : ''}`, go: 'watchHere', data: fitV.key }, E(3, 2, 1) + (fitV.from === 'shelf' ? 0.5 : 0));
+  // 3. Something to listen to (low energy, e.g. a walk or chores)
+  const lq = Listen.queue(), fitL = lq.find(x => x.durationSec && x.durationSec <= sec) || (min >= 30 ? lq[0] : null);
+  if (fitL) add({ key: 'l:' + fitL.key, icon: '🎧', title: fitL.title, why: fitL.durationSec ? `${mmss(fitL.durationSec)} ≤ ${mmss(sec)} ✓ fits · good for a walk or chores` : 'good for a walk or chores', href: fitL.url }, E(2.5, 2, 1));
+  // 4. Due habits (any mode) — quick wins
+  for (const { h, s } of Habit.nudges(S.habits, S.habitLog, today(), minuteNow(), 'any', {}).slice(0, 2))
+    add({ key: 'h:' + h.id, icon: h.icon || '✓', title: h.name, why: s.text, go: 'habitTick', data: h.id, done: true }, E(1.5, 2.5, 2.5) + s.urgency * 0.5);
+  // 5. Today's top 3 (needs focus; 15+ min)
+  const open = top3Ids().map(taskById).filter(t => t && !t.done);
+  if (open.length && min >= 15) add({ key: 't:' + open[0].id, icon: '☐', title: open[0].title, why: `top 3 · ${min} min of focus`, go: 'wnFocus', data: open[0].id }, E(0, 2, 4));
+  // 6. The digest (skim, low effort)
+  const unread = Digest.allItems().filter(it => !S.digestRead[it.id]).length;
+  if (unread && min >= 10) add({ key: 'digest', icon: '📰', title: `Skim the digest · ${unread} new`, why: `${S.settings.digestMin} min time-box`, go: 'digestStart' }, E(2, 1.5, 0.5));
+  // 7. Sort the inbox
+  if (S.inbox.length >= 3) add({ key: 'inbox', icon: '📥', title: `Sort the inbox · ${S.inbox.length}`, why: '~1 min per item', go: 'wnInbox' }, E(1, 2, 1.5));
+  const skip = new Set((S.ui.wnSkip || {})[today()] || []);
+  return out.filter(c => !skip.has(c.key)).sort((a, b) => b.score - a.score);
+}
+function whatNowHtml() {
+  const w = S.ui.wn || {};
+  const chips = (k, opts) => `<div class="modes" style="margin:6px 0">${opts.map(([v, l]) => `<button class="chip ${w[k] == v ? 'on' : ''}" data-act="wnSet" data-k="${k}" data-v="${v}">${l}</button>`).join('')}</div>`;
+  let h = `<div class="card wn"><div class="row" style="justify-content:space-between"><h3>🎲 What now?</h3>${w.min ? '<button class="linkish small muted" data-act="wnReset">reset</button>' : ''}</div>
+    ${chips('min', [[15, '15 min'], [30, '30 min'], [60, '1 hour']])}${chips('energy', Object.entries(ENERGY))}`;
+  if (w.min && w.energy) {
+    const list = whatNowCandidates(+w.min, w.energy), c = list[(w.i || 0) % Math.max(1, list.length)];
+    if (!c) h += '<div class="empty">Nothing queued that fits — maybe just rest. 🙂</div>';
+    else h += `<div class="wnpick"><div class="small muted">${list.length > 1 ? `${((w.i || 0) % list.length) + 1} of ${list.length}` : 'Only option'}</div>
+        <b>${esc(c.icon)} ${esc(c.title)}</b><div class="small muted">${esc(c.why)}</div>
+        <div class="actions">${c.href ? `<a class="btn primary" ${playAttrs(c.href)}>Go</a>` : `<button class="btn primary" data-act="${c.go}" data-id="${esc(c.data || '')}" data-key="${esc(c.data || '')}">${c.done ? 'Done ✓' : 'Go'}</button>`}
+        ${list.length > 1 ? '<button class="btn ghost" data-act="wnNext">Something else</button>' : ''}</div></div>`;
+  }
+  return h + '</div>';
+}
+
+/* ---- German 5-minute card ---- */
+const GERMAN_PROMPTS = [
+  ['speak', 'Beschreib deinen heutigen Tag in fünf Sätzen.', 'Describe your day in five sentences (Perfekt!).'],
+  ['speak', 'Was hast du am Wochenende vor? Nenne drei Pläne.', 'Weekend plans — use "werden" or Präsens + Zeitangabe.'],
+  ['write', 'Schreib eine kurze Nachricht: Du kommst 20 Minuten zu spät.', 'Text a friend you’re running 20 min late — give a reason with "weil".'],
+  ['speak', 'Erkläre, was ein Produktmanager macht — einfach, für ein Kind.', 'Explain your job simply.'],
+  ['write', 'Beschreib dein Lieblingsessen und wie man es kocht.', 'Favourite dish + recipe — imperative or "man".'],
+  ['speak', 'Vergleiche Berlin mit deiner Heimatstadt. Drei Unterschiede.', 'Comparatives: größer, teurer, ruhiger als…'],
+  ['write', 'Schreib eine E-Mail an den Vermieter: Die Heizung ist kaputt.', 'Formal "Sie", polite request with "könnten Sie…".'],
+  ['speak', 'Was würdest du machen, wenn du eine Woche frei hättest?', 'Konjunktiv II: würde / hätte / wäre.'],
+  ['speak', 'Erzähl von deiner letzten Reise. Was war gut, was nicht?', 'Perfekt vs. Präteritum (war/hatte).'],
+  ['write', 'Fünf Sätze mit Wechselpräpositionen: in, an, auf, über, unter.', 'Wo? (Dativ) vs. Wohin? (Akkusativ).'],
+  ['speak', 'Beschreib dein Zimmer, ohne "es gibt" zu benutzen.', 'Use stehen/liegen/hängen + Dativ.'],
+  ['write', 'Schreib drei Sätze mit "obwohl" und drei mit "trotzdem".', 'Verb at the end vs. position 2.'],
+  ['speak', 'Was magst du an Deutschland, was vermisst du von zu Hause?', 'Use "mir gefällt…", "ich vermisse…".'],
+  ['speak', 'Plane die Vietnamreise laut: Wohin, wann, mit wem?', 'Future + Zeitangaben: im Januar, nächste Woche…'],
+  ['write', 'Beschreib ein Video, das du gerade gesehen hast.', 'Relativsätze: das Video, das ich…'],
+  ['speak', 'Gib einem Freund drei Tipps fürs Deutschlernen.', 'Imperativ (du-Form) + "solltest".'],
+  ['write', 'Schreib eine Absage für eine Einladung — höflich.', '"Leider kann ich nicht, weil…" + Alternative.'],
+  ['speak', 'Was hast du heute gegessen? Mit Artikeln!', 'Akkusativ: einen Apfel, eine Suppe, ein Brot.'],
+  ['speak', 'Beschreib deine Morgenroutine mit trennbaren Verben.', 'aufstehen, anziehen, losgehen…'],
+  ['write', 'Fünf Fragen an einen neuen Kollegen.', 'W-Fragen + Ja/Nein-Fragen, Verb-Position.'],
+  ['speak', 'Erzähl einen Witz oder eine lustige Geschichte.', 'Präteritum der Erzählung: ging, sagte, kam.'],
+  ['write', 'Was sind deine Ziele für nächsten Monat? Drei Sätze mit "um … zu".', 'Purpose clauses.'],
+  ['speak', 'Diskutiere: Homeoffice — Vorteile und Nachteile.', 'Einerseits… andererseits…'],
+  ['write', 'Beschreib das Wetter heute und was du deshalb machst.', 'deshalb/deswegen → verb in position 2.'],
+];
+function germanPrompt() {
+  const g = S.ui.german || {}, base = [...today()].reduce((a, c) => a + c.charCodeAt(0), 0);
+  return GERMAN_PROMPTS[(base + (g.shift || 0)) % GERMAN_PROMPTS.length];
+}
+function germanCardHtml() {
+  const g = S.ui.german || {}, [kind, de, en] = germanPrompt(), done = germanDoneToday();
+  const left = g.endsAt ? Math.max(0, g.endsAt - Date.now()) : null;
+  const links = (S.settings.germanLinks || []);
+  return `<div class="card german"><div class="row" style="justify-content:space-between"><h3>🇩🇪 German · 5 minutes</h3>${done ? '<span class="tag">done today ✓</span>' : `<span class="tag">${kind === 'speak' ? '🗣 speak' : '✍️ write'}</span>`}</div>
+    <p style="font-size:1.1rem;margin:6px 0"><b>${esc(de)}</b></p><p class="small muted">${esc(en)}</p>
+    <div class="row" style="gap:10px;margin-top:8px"><span class="num" id="germanClock" style="font-size:1.4rem">${left != null ? fmtClock(left) : '05:00'}</span>
+      ${left == null ? '<button class="btn sm" data-act="germanStart">▶ Start</button>' : ''}
+      <button class="btn sm primary" data-act="germanDone">${done ? 'Again ✓' : 'Done ✓'}</button>
+      <button class="linkish small muted" data-act="germanShift">another prompt</button></div>
+    ${kind === 'speak' && (window.SpeechRecognition || window.webkitSpeechRecognition) ? '<p class="small muted">Tip: tap + and 🎤 Speak (set the language to de-DE in Settings) to see what you said.</p>' : ''}
+    <div class="row" style="flex-wrap:wrap;gap:6px;margin-top:8px">${links.map((l, i) => `<a class="chip" href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.name)}</a>`).join('')}
+      <button class="linkish small muted" data-act="germanLinkAdd">+ trainer link</button></div></div>`;
+}
+const showGerman = () => S.ui.germanOpen === today() || (R?.current?.kind === 'german' && !germanDoneToday());
+
+/* ---- PM daily recap (wrap-up step 1 on workdays; More → PM learnings) ---- */
+const isWorkday = () => { const d = localMidnight(today()).getDay(); return d >= 1 && d <= 5; };
+function pmRecapHtml() {
+  const v = (S.pmlog || {})[today()]?.text || '';
+  return `<p class="muted small" style="margin-top:12px">💼 One thing you learned at work today <span class="small">(optional, ~30 s)</span></p>
+    <textarea id="pmText" rows="2" placeholder="e.g. Framing the trade-off as cost of delay got the decision made">${esc(v)}</textarea>`;
+}
+function savePmRecap() {
+  const el = $('#pmText'); if (!el) return;
+  const text = el.value.trim(); S.pmlog ||= {};
+  const had = S.pmlog[today()]?.text || '';
+  if (text) S.pmlog[today()] = { text, at: new Date().toISOString() }; else delete S.pmlog[today()];
+  if (text !== had) save();
+}
+function pmLogHtml() {
+  const days = Object.keys(S.pmlog || {}).sort().reverse();
+  if (!days.length) return '<div class="empty">Nothing yet — the evening wrap-up asks on workdays.</div>';
+  return `<ul class="list">${days.slice(0, 10).map(d => `<li><span class="num small muted" style="min-width:64px">${localMidnight(d).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' })}</span><span class="grow">${esc(S.pmlog[d].text)}</span></li>`).join('')}</ul>
+    <div class="actions"><button class="btn" data-act="pmExport">Export for your second brain (.md)</button></div>
+    <p class="small muted">${days.length} entries. The export is Markdown, one dated bullet per day — paste into your PM project or notes.</p>`;
+}
+
+const ACT10 = {
+  wnSet(el) { S.ui.wn = { ...(S.ui.wn || {}), [el.dataset.k]: el.dataset.v, i: 0 }; save(); render(); },
+  wnReset() { S.ui.wn = {}; save(); render(); },
+  wnNext() { S.ui.wn.i = (S.ui.wn.i || 0) + 1; save(); render(); },
+  wnGerman() { S.ui.germanOpen = today(); save(); render(); setTimeout(() => $('.card.german')?.scrollIntoView({ behavior: 'smooth', block: 'center' }), 50); },
+  wnFocus(el) { const ids = top3Ids(); if (!ids.includes(el.dataset.id)) return; if (!S.active) setActive(R.current); Pomo.start('work', el.dataset.id); askNotifOnce(); go('focus'); FocusAlarm.set(); },
+  wnInbox() { go('inbox'); },
+  germanStart() { S.ui.german = { ...(S.ui.german || {}), endsAt: Date.now() + 5 * 60000 }; save(); render(); },
+  germanShift() { S.ui.german = { ...(S.ui.german || {}), shift: ((S.ui.german || {}).shift || 0) + 1 }; save(); render(); },
+  germanDone() {
+    (S.german ||= {})[today()] = Date.now();
+    const gh = S.habits.find(h => /german|deutsch/i.test(h.name));        // counts towards your German habit
+    if (gh && !(S.habitLog[gh.id] || {})[today()]) (S.habitLog[gh.id] ||= {})[today()] = Date.now();
+    S.ui.german = { shift: (S.ui.german || {}).shift || 0 }; delete S.ui.germanOpen;
+    save(); render(); toast(gh ? `Gut gemacht! Counted towards “${gh.name}”.` : 'Gut gemacht! 🇩🇪');
+  },
+  async germanLinkAdd() {
+    const v = await formSheet('Trainer link', [{ name: 'name', label: 'Name', value: 'Grammatik-Trainer' }, { name: 'url', label: 'Link (https://…)', value: '' }],
+      { note: 'Your trainer HTML files work as links once they’re online — e.g. upload them to this repo’s <b>german/</b> folder and use https://nathanaog.github.io/daily-command/german/…' });
+    if (!v?.url) return;
+    (S.settings.germanLinks ||= []).push({ name: v.name || 'Trainer', url: v.url }); save(); render();
+  },
+  pmExport() {
+    const days = Object.keys(S.pmlog || {}).sort();
+    const md = `# PM learnings\n\n${days.map(d => `- **${d}** — ${S.pmlog[d].text}`).join('\n')}\n`;
+    const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([md], { type: 'text/markdown' }));
+    a.download = `pm-learnings-${today()}.md`; a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+  },
+};
+
 /* ---------------- Storage diagnostics + daily snapshots (More → Data) ---------------- */
 let storagePersisted = null;
 if (navigator.storage?.persist) navigator.storage.persisted().then(p => p || navigator.storage.persist()).then(v => { storagePersisted = v; }).catch(() => {});
@@ -3404,6 +3557,8 @@ function renderNow() {
 /** Which secondary cards to show, per mode. Keep it short — the hero is the point. */
 function modeSections(mode) {
   const parts = [habitStripHtml(mode)];
+  if (showGerman()) parts.push(germanCardHtml());
+  if (mode === 'leisure' || mode === 'life') parts.push(whatNowHtml());
   if (mode === 'life' || mode === 'winddown') parts.push(habitSetupPromptHtml());
   const top3 = top3Html(true);
   const comingUp = R.agenda.length ? `<ul class="list">${R.agenda.map(a =>
@@ -3660,6 +3815,7 @@ function renderMore() {
     <div class="actions"><button class="btn" data-act="morning">☀ Run morning sequence now</button><button class="btn" data-act="digestStart">Read digest</button></div>`);
 
   // Data
+  h += sec('more-pm', 'PM learnings', pmLogHtml(), false, `<span class="tag">${Object.keys(S.pmlog || {}).length}</span>`);
   h += sec('more-data', 'Data — export / import', `<p class="muted small">Everything is stored only in this browser (localStorage). Export regularly; import replaces current data.${S.savedAt ? ' Last saved ' + new Date(S.savedAt).toLocaleString('en-GB') + '.' : ''}</p>
     ${storageDiagHtml()}
     <div class="actions"><button class="btn" data-act="export">Export JSON</button><label class="btn">Import JSON<input type="file" accept="application/json,.json" id="importFile" hidden></label>
@@ -3934,7 +4090,7 @@ const ACT = {
   resetAll() { if (confirm('Erase ALL data in this browser? Export first if unsure.')) { localStorage.removeItem(STORE_KEY); S = defaultState(); S.settings.welcomed = true; save(); render(); } },
 };
 
-Object.assign(ACT, ACT2, ACT3, ACT4, ACT5, ACT6, ACT7, ACT8, ACT9);   // + Watch next & player, Spotify (Stage 4.5)   // + Google (Stage 4)   // + listen while working   // Stage 2 (morning, digest, weather) and Stage 3 (lenses, watchlist) actions
+Object.assign(ACT, ACT2, ACT3, ACT4, ACT5, ACT6, ACT7, ACT8, ACT9, ACT10);   // + Watch next & player, Spotify (Stage 4.5)   // + Google (Stage 4)   // + listen while working   // Stage 2 (morning, digest, weather) and Stage 3 (lenses, watchlist) actions
 
 function setActive(item) {
   if (!item || !item.end) { S.active = null; return save(); }
@@ -4122,6 +4278,7 @@ function renderWrap() {
     const open = top3Ids().filter(id => !taskById(id).done);
     if (open.length) h += `<p class="muted small" style="margin-top:12px">Top 3 still open — tick if actually done:</p><ul class="list">${open.map(id => `<li><button class="icon" data-w="tick" data-id="${id}"><span class="chk"></span></button><span class="grow">${esc(taskById(id).title)}</span></li>`).join('')}</ul>`;
     h += habitWrapHtml();
+    if (isWorkday()) h += pmRecapHtml();
     h += `<div class="math">focus today: ${n} sessions, ${todaysSessions().map(l => l.min).join(' + ') || '0'} = ${mins} min</div>`;
   } else if (wrap.step === 2) {
     const open = top3Ids().filter(id => !taskById(id).done);
@@ -4156,6 +4313,7 @@ async function wrapClick(e) {
   const w = b.dataset.w, id = b.dataset.id;
   if (w === 'tick') { const t = taskById(id); t.done = true; t.doneAt = Date.now(); wrap.roll.delete(id); save(); }
   if (w === 'roll') wrap.roll.has(id) ? wrap.roll.delete(id) : wrap.roll.add(id);
+  if (w === 'next' || w === 'finish' || w === 'close') savePmRecap();   // keep the PM note whichever way you leave step 1
   if (w === 'next') wrap.step++;
   if (w === 'back') wrap.step--;
   if (w === 'tomRemove') wrap.tom = wrap.tom.filter(x => x !== id);
@@ -4255,6 +4413,7 @@ setInterval(() => {
     dc.textContent = left > 0 ? fmtClock(left) : '0:00';
     if (left <= 0 && !dc.classList.contains('over')) render();   // show the "Time's up" banner once
   }
+  const gc = $('#germanClock'), ge = (S.ui.german || {}).endsAt; if (gc && ge) gc.textContent = Date.now() < ge ? fmtClock(ge - Date.now()) : 'time! ✓';
   const wc = $('#wrapClock'); if (wc && wrap) wc.textContent = Date.now() < wrap.endsAt ? fmtClock(wrap.endsAt - Date.now()) : 'time’s up — finish when ready';
   if (Date.now() - lastFull > 20000) {
     lastFull = Date.now();
