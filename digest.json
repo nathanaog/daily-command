@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-15T15:33:32.303Z",
+ "generated": "2026-10-15T15:41:07.908Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
@@ -630,10 +630,9 @@
    "id": "rd-productmanagement",
    "name": "r/productmanagement",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 3,
-   "lastOk": "2026-10-15T13:48:07.625Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/productmanagement/top/.rss?t=day"
   },
   {
    "id": "rd-tech",
@@ -642,7 +641,7 @@
    "status": "cached",
    "count": 1,
    "lastOk": "2026-10-14T20:55:56.930Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)"
   },
   {
    "id": "rd-gaming",
@@ -651,7 +650,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-ukpolitics",
@@ -684,9 +683,10 @@
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
+   "lastOk": "2026-10-15T15:33:32.303Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-germany",
@@ -695,7 +695,7 @@
    "status": "cached",
    "count": 5,
    "lastOk": "2026-10-15T00:59:57.533Z",
-   "note": "rate-limited (429)"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-unitedkingdom",
@@ -704,10 +704,29 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   }
  ],
  "items": [
+  {
+   "title": "tagesschau in Einfacher Sprache 19:00 Uhr, 15.10.2026",
+   "url": "https://www.youtube.com/watch?v=zvgpl35Cuh4",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-15T15:38:21.000Z",
+   "summary": "tagesschau in Einfacher Sprache 19:00 Uhr Bundestag: Neue Regeln für Notaufnahmen, EU: Beratungen über Haushalt, Alkohol ist an Bahnhöfen verboten, Heftige Proteste in Albanien, Das Wetter https://www.tagesschau.de",
+   "thumb": "https://i3.ytimg.com/vi/zvgpl35Cuh4/hqdefault.jpg",
+   "id": "63e987e32544",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
   {
    "title": "Bill Gates’ Daughter Accused of Fraud",
    "url": "https://www.youtube.com/watch?v=P8CVqDKeOKk",
@@ -1112,25 +1131,6 @@
    "published": "2026-10-15T10:41:09.000Z",
    "summary": "submitted by /u/4K_Odd_Park [link] [comments]",
    "id": "335777fc8837",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Notfallreform: „Ein Versuch, aber kein Durchbruch“",
-   "url": "https://www.youtube.com/watch?v=aIsztUEQliI",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-15T10:33:14.000Z",
-   "summary": "Die medizinische Notfallversorgung in Deutschland soll neu aufgestellt werden. Der Bundestag hat den Plänen der Regierung zugestimmt, wonach die Versorgung der Patienten besser gesteuert und zugleich Notaufnahmen und Rettungsdienste entlastet werden sollen. Demnach sollen die…",
-   "thumb": "https://i2.ytimg.com/vi/aIsztUEQliI/hqdefault.jpg",
-   "id": "c49de7ac1854",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -2892,5 +2892,5 @@
    "why": "0"
   }
  ],
- "contentHash": "50006f494e83"
+ "contentHash": "f46fc21ccf78"
 }
