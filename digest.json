@@ -1,13 +1,13 @@
 {
- "generated": "2026-10-15T07:06:33.013Z",
+ "generated": "2026-10-15T09:51:43.849Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
   "ok": 53,
-  "items": 124,
+  "items": 125,
   "duplicatesMerged": 0,
   "lengthsKnown": 2,
-  "lengthLookups": 100,
+  "lengthLookups": 98,
   "lengthFailures": 98,
   "lengthVia": "video pages",
   "lengthFailReasons": {
@@ -630,10 +630,9 @@
    "id": "rd-productmanagement",
    "name": "r/productmanagement",
    "type": "reddit",
-   "status": "cached",
-   "count": 3,
-   "lastOk": "2026-10-15T03:52:45.840Z",
-   "note": "not its turn this run"
+   "status": "ok",
+   "count": 4,
+   "url": "https://www.reddit.com/r/productmanagement/top/.rss?t=day"
   },
   {
    "id": "rd-tech",
@@ -642,7 +641,7 @@
    "status": "cached",
    "count": 1,
    "lastOk": "2026-10-14T20:55:56.930Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)"
   },
   {
    "id": "rd-gaming",
@@ -651,7 +650,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-ukpolitics",
@@ -684,9 +683,10 @@
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
+   "lastOk": "2026-10-15T07:06:33.013Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-germany",
@@ -695,7 +695,7 @@
    "status": "cached",
    "count": 5,
    "lastOk": "2026-10-15T00:59:57.533Z",
-   "note": "rate-limited (429)"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-unitedkingdom",
@@ -704,10 +704,121 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   }
  ],
  "items": [
+  {
+   "title": "Can Burnham Actually Ditch First-Past-the-Post?",
+   "url": "https://www.youtube.com/watch?v=QmGYruZYHCc",
+   "source": "TLDR News",
+   "feedId": "yt-tldr-news",
+   "type": "video",
+   "tags": [
+    "news",
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-15T09:30:07.000Z",
+   "summary": "Go to https://hensonshaving.com/TLDR and enter \"TLDR\" at checkout to get 100 free blades with your purchase. In this video we explore Burnham's promise to implement a more representative electoral system in the UK but will he actually succeed where countless other governments…",
+   "thumb": "https://i2.ytimg.com/vi/QmGYruZYHCc/hqdefault.jpg",
+   "id": "c979ca4f9006",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Bundestag hat die Reform der Notfallmedizin beschlossen",
+   "url": "https://www.youtube.com/watch?v=6RLRbjDUkRA",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-15T09:16:37.000Z",
+   "summary": "Die Notfallversorgung in Deutschland soll künftig über eine zentrale Ersteinschätzung besser und schneller werden. Der Bundestag votierte am Donnerstag mit den Stimmen von Union, SPD und Grünen für eine entsprechende Reform. Ziel ist es angesichts überlasteter Rettungsdienste…",
+   "thumb": "https://i3.ytimg.com/vi/6RLRbjDUkRA/hqdefault.jpg",
+   "id": "3cf70829341d",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Weekly rant thread",
+   "url": "https://www.reddit.com/r/ProductManagement/comments/1x6gndv/weekly_rant_thread/",
+   "source": "r/productmanagement",
+   "feedId": "rd-productmanagement",
+   "type": "post",
+   "tags": [
+    "product"
+   ],
+   "published": "2026-10-15T09:00:27.000Z",
+   "summary": "Share your frustrations and get support/feedback. You are not alone! submitted by /u/AutoModerator [link] [comments]",
+   "id": "1046b1d47eec",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Könnte die KI die Menschheit auslöschen? Richard David Precht im Gespräch | maischberger",
+   "url": "https://www.youtube.com/watch?v=08sCKR6akKE",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-15T08:08:22.000Z",
+   "summary": "💻 maischberger in der ARD-Mediathek: https://www.ardmediathek.de/video/maischberger/maischberger-am-14-10-2026/wdr/Y3JpZDovL3dkci5kZS9CZWl0cmFnLXNvcGhvcmEtZWUxMmM2NzktNDNkZi00M2QxLTkxYmEtNmJhOTg4YzQ3ZTE1 🎧 maischberger als Podcast:…",
+   "thumb": "https://i1.ytimg.com/vi/08sCKR6akKE/hqdefault.jpg",
+   "id": "f23b87dc04c5",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Tim Klüssendorf und Thorsten Frei über den Koalitionsstreit & den Umgang mit der AfD | maischberger",
+   "url": "https://www.youtube.com/watch?v=qVC_91WCKKE",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-15T07:59:25.000Z",
+   "summary": "💻 maischberger in der ARD-Mediathek: https://www.ardmediathek.de/video/maischberger/maischberger-am-14-10-2026/wdr/Y3JpZDovL3dkci5kZS9CZWl0cmFnLXNvcGhvcmEtZWUxMmM2NzktNDNkZi00M2QxLTkxYmEtNmJhOTg4YzQ3ZTE1 🎧 maischberger als Podcast:…",
+   "thumb": "https://i2.ytimg.com/vi/qVC_91WCKKE/hqdefault.jpg",
+   "id": "4c8539b6bf1a",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Istanbuler Ex-Bürgermeister İmamoğlu sagt erstmals aus",
+   "url": "https://www.youtube.com/watch?v=EMC7RrYhOWo",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-15T07:31:13.000Z",
+   "summary": "Seit mehr als anderthalb Jahren sitzt İmamoğlu in Untersuchungshaft. Seit März läuft nun der Mammutprozess gegen 400 Angeklagte der Stadtverwaltung Istanbuls - und damit auch gegen ihn. Imamoğlu hat nach mehr als anderthalb Jahren U-Haft erstmals vor Gericht ausgesagt. Parallel…",
+   "thumb": "https://i2.ytimg.com/vi/EMC7RrYhOWo/hqdefault.jpg",
+   "id": "4cce2bf959df",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
   {
    "title": "Alkoholverbot an allen Bahnhöfen / Zuckersteuer kommt wohl doch / Brennende Akkus | „15 Minuten“",
    "url": "https://www.youtube.com/watch?v=wY5NQ0T7VDE",
@@ -723,25 +834,6 @@
    "summary": "Unsere Infos heute: (00:00:38) Alkoholverbot an allen Bahnhöfen Seit heute gilt an allen 5.400 Bahnhöfen in Deutschland ein Konsumverbot von Alkohol. Das Trinken von Bier, Wein oder Spirituosen ist in Bahnhofsgebäuden und an Gleisen damit untersagt, während der Verkauf sowie…",
    "thumb": "https://i4.ytimg.com/vi/wY5NQ0T7VDE/hqdefault.jpg",
    "id": "e40e3ac21ff9",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Andy Burnham: Brexit-Wende und EU-Comeback für Großbritannien? I 11KM - der tagesschau-Podcast",
-   "url": "https://www.youtube.com/watch?v=c7P2tq-2qSI",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-15T04:18:11.000Z",
-   "summary": "Kehrt Großbritannien zurück in die EU? Andy Burnham überrascht mit seiner Brexit-Kritik. Mit Franziska Hoppen, Korrespondentin im ARD-Studio London, sprechen wir in dieser Folge über die jüngsten Äußerungen des neuen britischen Premiers. Keine drei Monate im Amt setzt Burnham…",
-   "thumb": "https://i4.ytimg.com/vi/c7P2tq-2qSI/hqdefault.jpg",
-   "id": "f993b7bf11ea",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -987,62 +1079,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "tagesthemen 22:15 Uhr, 14.10.2026",
-   "url": "https://www.youtube.com/watch?v=Zw2VinDbUI8",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-14T21:24:31.000Z",
-   "summary": "tagesthemen 22:15 Uhr Koalition einigt sich auf eine Zuckersteuer, Prozessauftakt um Anschlag auf Nord-Stream-Pipeline, Ukrainischer Präsident Selenskyj klagt über fehlende Warnungen vor russischen Angriffen, Sachsen-Anhalt: AfD und BSW wollen Ukraine-Hilfe beenden,…",
-   "thumb": "https://i3.ytimg.com/vi/Zw2VinDbUI8/hqdefault.jpg",
-   "id": "841d5bad2c2d",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Nord-Stream-Sprengung: Der Prozess und seine politische Sprengkraft | tagesthemen-Interview",
-   "url": "https://www.youtube.com/watch?v=uiUqCz3MRLw",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-14T20:53:10.000Z",
-   "summary": "Vor gut vier Jahren wurde die Nord-Stream-Pipeline gesprengt. Nun wird der Sabotage-Angriff vom hanseatischen Oberlandesgericht aufgearbeitet. Angeklagt ist ein ehemaliger ukrainischer Offizier, der Drahtzieher des Anschlags gewesen sein soll. War der Anschlag auf die…",
-   "thumb": "https://i2.ytimg.com/vi/uiUqCz3MRLw/hqdefault.jpg",
-   "id": "dda7f2a119e0",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "OH SH*T: Piers Morgan SNAPS AT TRUMP with BOMBSHELL Zelenskyy Interview!",
-   "url": "https://www.youtube.com/watch?v=P4ghGYilXiU",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-14T20:40:16.000Z",
-   "summary": "Luke discusses Zelenskyy's appearance on Piers Morgan's show. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
-   "thumb": "https://i1.ytimg.com/vi/P4ghGYilXiU/hqdefault.jpg",
-   "id": "6e3a54c5bd4c",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Germany Fire Tragedy Leaves 3 Indian Nationals Dead, 5 Injured In Bochum; Police Suspect Arson",
    "url": "https://www.reddit.com/r/germany/comments/1x62efv/germany_fire_tragedy_leaves_3_indian_nationals/",
    "source": "r/germany",
@@ -1089,22 +1125,6 @@
    "published": "2026-10-14T19:29:30.000Z",
    "summary": "submitted by /u/Kataera [link] [comments]",
    "id": "52b310bdb199",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Would you make payroll optional or part of the core product?",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1x5wj9p/would_you_make_payroll_optional_or_part_of_the/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-10-14T16:54:37.000Z",
-   "summary": "If you're adding embedded payroll to an existing platform, making it optional seems like the safer choice but then you're maintaining two different experiences for customers who use payroll and those who don't I want to see whether anyone has dealt with this when expanding a…",
-   "id": "fb88ad1364db",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1206,20 +1226,19 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "tagesschau 20:00 Uhr, 14.10.2026",
-   "url": "https://www.youtube.com/watch?v=z-BYS3Pm5ug",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
+   "title": "OH SH*T: Piers Morgan SNAPS AT TRUMP with BOMBSHELL Zelenskyy Interview!",
+   "url": "https://www.youtube.com/watch?v=P4ghGYilXiU",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
    "type": "video",
    "tags": [
-    "german",
-    "news",
+    "politics",
     "listen"
    ],
-   "published": "2026-10-14T18:41:34.000Z",
-   "summary": "Die 20-Uhr-Ausgabe der tagesschau im Livestream und früher auf Abruf: https://ardmediathek.de/tagesschau und https://tagesschau.de Themen der tagesschau-Sendung: 00:00 Guten Abend 00:21 Prozessbeginn gegen mutmaßlichen Drahtzieher der Nord-Stream-Sprengung 02:47 Selenskyj…",
-   "thumb": "https://i3.ytimg.com/vi/z-BYS3Pm5ug/hqdefault.jpg",
-   "id": "1835ec48fbc3",
+   "published": "2026-10-14T20:40:16.000Z",
+   "summary": "Luke discusses Zelenskyy's appearance on Piers Morgan's show. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
+   "thumb": "https://i1.ytimg.com/vi/P4ghGYilXiU/hqdefault.jpg",
+   "id": "6e3a54c5bd4c",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1359,6 +1378,22 @@
    "summary": "Will AI put millions of people out of work? Andrew Ng, CEO and founder of LearnVector, argues the fears are overblown. He tells Alex Hern, The Economist’s AI writer, that AI automates only part of most jobs, that its progress will be slowed by physical bottlenecks like building…",
    "thumb": "https://i3.ytimg.com/vi/J-sMqnzHwI0/hqdefault.jpg",
    "id": "f3ee429739b4",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Would you make payroll optional or part of the core product?",
+   "url": "https://www.reddit.com/r/ProductManagement/comments/1x5wj9p/would_you_make_payroll_optional_or_part_of_the/",
+   "source": "r/productmanagement",
+   "feedId": "rd-productmanagement",
+   "type": "post",
+   "tags": [
+    "product"
+   ],
+   "published": "2026-10-14T16:54:37.000Z",
+   "summary": "If you're adding embedded payroll to an existing platform, making it optional seems like the safer choice but then you're maintaining two different experiences for customers who use payroll and those who don't I want to see whether anyone has dealt with this when expanding a…",
+   "id": "fb88ad1364db",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2889,26 +2924,7 @@
    "score": 0,
    "matched": [],
    "why": "0"
-  },
-  {
-   "title": "Burnham’s Surprisingly Radical Plan for Government Explained",
-   "url": "https://www.youtube.com/watch?v=arKoJHKTuRI",
-   "source": "TLDR News",
-   "feedId": "yt-tldr-news",
-   "type": "video",
-   "tags": [
-    "news",
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-01T08:30:01.000Z",
-   "summary": "Take back your privacy - start using Proton Mail for free: http://proton.me/tldr In this video, we’re going to discuss Burnham’s speech at the Labour Party Conference, the changes he’s outlined, and the new direction the government is moving in. 📰 Too Long:…",
-   "thumb": "https://i2.ytimg.com/vi/arKoJHKTuRI/hqdefault.jpg",
-   "id": "b5c0e31cac56",
-   "score": 0,
-   "matched": [],
-   "why": "0"
   }
  ],
- "contentHash": "45d73224b18d"
+ "contentHash": "e951cf4ae10f"
 }
