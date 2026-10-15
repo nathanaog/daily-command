@@ -1,17 +1,17 @@
 {
- "generated": "2026-10-15T09:51:43.849Z",
+ "generated": "2026-10-15T13:05:38.011Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
   "ok": 53,
-  "items": 125,
+  "items": 124,
   "duplicatesMerged": 0,
   "lengthsKnown": 2,
-  "lengthLookups": 98,
-  "lengthFailures": 98,
+  "lengthLookups": 97,
+  "lengthFailures": 97,
   "lengthVia": "video pages",
   "lengthFailReasons": {
-   "no length on page": 98
+   "no length on page": 97
   }
  },
  "feeds": [
@@ -306,7 +306,7 @@
    "name": "Bald and Bankrupt",
    "type": "youtube",
    "status": "ok",
-   "count": 1,
+   "count": 0,
    "resolved": {
     "channelId": "UCxDZs_ltFFvn0FDHT6kmoXA",
     "title": "bald and bankrupt",
@@ -630,9 +630,10 @@
    "id": "rd-productmanagement",
    "name": "r/productmanagement",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 4,
-   "url": "https://www.reddit.com/r/productmanagement/top/.rss?t=day"
+   "lastOk": "2026-10-15T09:51:43.849Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-tech",
@@ -641,7 +642,7 @@
    "status": "cached",
    "count": 1,
    "lastOk": "2026-10-14T20:55:56.930Z",
-   "note": "rate-limited (429)"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-gaming",
@@ -650,16 +651,15 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-10-15T06:48:50.333Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
   },
   {
    "id": "rd-xbox",
@@ -668,7 +668,7 @@
    "status": "cached",
    "count": 5,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "rate-limited (429)"
   },
   {
    "id": "rd-slaythespire",
@@ -677,7 +677,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-geopolitics",
@@ -709,6 +709,239 @@
  ],
  "items": [
   {
+   "title": "OSSOFF, NO. Don’t Do This To Us!",
+   "url": "https://www.youtube.com/watch?v=M1wLovfr4XM",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-15T13:00:34.000Z",
+   "summary": "Luke discusses Jon Ossoff's latest debate with Mike Collins. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
+   "thumb": "https://i2.ytimg.com/vi/M1wLovfr4XM/hqdefault.jpg",
+   "id": "3d2dbd1e9420",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Alkoholverbot am Bahnhof: Bringt es wirklich mehr Sicherheit?",
+   "url": "https://www.youtube.com/watch?v=hwga4KbxIQQ",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-15T12:47:10.000Z",
+   "summary": "An sämtlichen Bahnhöfen der Deutschen Bahn gilt ab heute ein Alkoholverbot. In einer entsprechenden Mitteilung verwies die DB auf ihr Hausrecht. Entsprechende Aushänge seien in den Vitrinen der Bahnhöfe oder online zu finden. Die Gastronomie in den Bahnhöfen bleibt von dem…",
+   "thumb": "https://i1.ytimg.com/vi/hwga4KbxIQQ/hqdefault.jpg",
+   "id": "dff46cfcfa14",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Trump’s press secretary lies about passing the bar exam",
+   "url": "https://www.youtube.com/watch?v=whc5-YixefQ",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-15T12:45:07.000Z",
+   "summary": "Simon Marks and James O'Brien discuss the latest development in Trump's press secretary saga as it emerges Katie Zacharia did not pass the bar exam... despite claiming to be a lawyer. Hazy with the details, Zacharia previously responded to a question asking about the state she…",
+   "thumb": "https://i4.ytimg.com/vi/whc5-YixefQ/hqdefault.jpg",
+   "id": "437f677a806a",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "‘Trump’s literally laughing at the death of a mentally ill man!’",
+   "url": "https://www.youtube.com/watch?v=Rk4FI7Qh0ss",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-15T11:45:35.000Z",
+   "summary": "Ben Kentish and Jennifer Ewing, spokesperson for Republicans Overseas UK, debate the bizarre AI video Donald Trump posted of himself fighting a tiger after a mentally ill British man was mauled to death. William Chapman, 23, died after entering a tiger enclosure at Yorkshire…",
+   "thumb": "https://i3.ytimg.com/vi/Rk4FI7Qh0ss/hqdefault.jpg",
+   "id": "9337824ac6ff",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Osnabrück: Reifenwechseln, Winterchecks und Marderbisse | tagesthemen mittendrin",
+   "url": "https://www.youtube.com/watch?v=evLPyKpBNec",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-15T11:25:17.000Z",
+   "summary": "Vor Beginn des Winters ist Hochsaison in den Werkstätten für Autos. Wir haben uns das einmal angeschaut. Mehr tagesthemen mittendrin Reportagen hier: https://www.tagesschau.de/inland/mittendrin Alle aktuellen Informationen, weitere Nachrichten und tagesschau24 im Livestream:…",
+   "thumb": "https://i2.ytimg.com/vi/evLPyKpBNec/hqdefault.jpg",
+   "id": "a96c124f7a01",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Jack Elsom: NEW: Labour has vowed to end council power-sharing arrangements with the Greens if their local groups fail to condemn the “Zionism is racism” motion. After Burnham’s comments at PMQs yesterday, Labour is now scrambling to put it into practice.",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1x6izty/jack_elsom_new_labour_has_vowed_to_end_council/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-15T11:20:08.000Z",
+   "summary": "NEW: Labour has vowed to end council power-sharing arrangements with the Greens if their local groups fail to condemn the \"Zionism is racism\" motion. After Burnham's comments at PMQs yesterday, Labour is now scrambling to put it into practice. Party chair Bridget Phillipson:…",
+   "id": "62d224e9c7ac",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Reform politicians caught on camera demanding King Charles is beheaded, making incest jokes about female colleagues and labelling black kids 'animals'",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1x6ikkb/reform_politicians_caught_on_camera_demanding/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-15T10:56:29.000Z",
+   "summary": "submitted by /u/dailymail [link] [comments]",
+   "id": "40b3057cb2aa",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Zelenskyy: Trump has chosen Russia over Ukraine",
+   "url": "https://www.youtube.com/watch?v=n1SoRw0BFvI",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-15T10:43:59.000Z",
+   "summary": "James O'Brien reacts as the US considers unfreezing Russian assets to restart peace talks with Ukraine. James is also joined by the FT's Ukraine correspondent Christopher Miller to discuss the Starlink restrictions that blindsided Ukraine. Listen to the full show on the all-new…",
+   "thumb": "https://i3.ytimg.com/vi/n1SoRw0BFvI/hqdefault.jpg",
+   "id": "609cb08d3de2",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Robert Jenrick: Five years ago today, Sir David Amess was murdered by an Islamist extremist. He was a brilliant parliamentarian who diligently served his constituents in Southend. David’s family are still awaiting answers about what went wrong. They deserve so much better.",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1x6ibb5/robert_jenrick_five_years_ago_today_sir_david/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-15T10:41:09.000Z",
+   "summary": "submitted by /u/4K_Odd_Park [link] [comments]",
+   "id": "335777fc8837",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Notfallreform: „Ein Versuch, aber kein Durchbruch“",
+   "url": "https://www.youtube.com/watch?v=aIsztUEQliI",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-15T10:33:14.000Z",
+   "summary": "Die medizinische Notfallversorgung in Deutschland soll neu aufgestellt werden. Der Bundestag hat den Plänen der Regierung zugestimmt, wonach die Versorgung der Patienten besser gesteuert und zugleich Notaufnahmen und Rettungsdienste entlastet werden sollen. Demnach sollen die…",
+   "thumb": "https://i2.ytimg.com/vi/aIsztUEQliI/hqdefault.jpg",
+   "id": "c49de7ac1854",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Brexiters can’t cope with the fact that Putin was cheering them on",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1x6hzvg/brexiters_cant_cope_with_the_fact_that_putin_was/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-15T10:22:24.000Z",
+   "summary": "submitted by /u/RareEarthPetal [link] [comments]",
+   "id": "63951c7685b5",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Regierung Albanien: Studenten fordern Reformen",
+   "url": "https://www.youtube.com/watch?v=tkrNRV4gwB8",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-15T09:52:04.000Z",
+   "summary": "Der Unmut gegen die Regierung in Albanien wächst. Nachdem im Mai bei der sogenannten \"Flamingo-Revolution\" immer wieder Menschen für den Naturschutz auf die Straße gingen, schließen sich nun auch Studentengruppen an. Hunderte von ihnen demonstrierten gestern und vorgestern vor…",
+   "thumb": "https://i1.ytimg.com/vi/tkrNRV4gwB8/hqdefault.jpg",
+   "id": "72aedc7f07c5",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Burnham rules out coalition with Greens after 'Zionism is racism' motion",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1x6h9ru/burnham_rules_out_coalition_with_greens_after/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-15T09:39:02.000Z",
+   "summary": "submitted by /u/Adj-Noun-Numbers [link] [comments]",
+   "id": "e9ca19c3145a",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
    "title": "Can Burnham Actually Ditch First-Past-the-Post?",
    "url": "https://www.youtube.com/watch?v=QmGYruZYHCc",
    "source": "TLDR News",
@@ -728,7 +961,7 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Bundestag hat die Reform der Notfallmedizin beschlossen",
+   "title": "Reform der Notfallversorgung: Was sich im Notfall für Patienten ändert",
    "url": "https://www.youtube.com/watch?v=6RLRbjDUkRA",
    "source": "Tagesschau",
    "feedId": "yt-tagesschau",
@@ -758,82 +991,6 @@
    "published": "2026-10-15T09:00:27.000Z",
    "summary": "Share your frustrations and get support/feedback. You are not alone! submitted by /u/AutoModerator [link] [comments]",
    "id": "1046b1d47eec",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Könnte die KI die Menschheit auslöschen? Richard David Precht im Gespräch | maischberger",
-   "url": "https://www.youtube.com/watch?v=08sCKR6akKE",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-15T08:08:22.000Z",
-   "summary": "💻 maischberger in der ARD-Mediathek: https://www.ardmediathek.de/video/maischberger/maischberger-am-14-10-2026/wdr/Y3JpZDovL3dkci5kZS9CZWl0cmFnLXNvcGhvcmEtZWUxMmM2NzktNDNkZi00M2QxLTkxYmEtNmJhOTg4YzQ3ZTE1 🎧 maischberger als Podcast:…",
-   "thumb": "https://i1.ytimg.com/vi/08sCKR6akKE/hqdefault.jpg",
-   "id": "f23b87dc04c5",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Tim Klüssendorf und Thorsten Frei über den Koalitionsstreit & den Umgang mit der AfD | maischberger",
-   "url": "https://www.youtube.com/watch?v=qVC_91WCKKE",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-15T07:59:25.000Z",
-   "summary": "💻 maischberger in der ARD-Mediathek: https://www.ardmediathek.de/video/maischberger/maischberger-am-14-10-2026/wdr/Y3JpZDovL3dkci5kZS9CZWl0cmFnLXNvcGhvcmEtZWUxMmM2NzktNDNkZi00M2QxLTkxYmEtNmJhOTg4YzQ3ZTE1 🎧 maischberger als Podcast:…",
-   "thumb": "https://i2.ytimg.com/vi/qVC_91WCKKE/hqdefault.jpg",
-   "id": "4c8539b6bf1a",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Istanbuler Ex-Bürgermeister İmamoğlu sagt erstmals aus",
-   "url": "https://www.youtube.com/watch?v=EMC7RrYhOWo",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-15T07:31:13.000Z",
-   "summary": "Seit mehr als anderthalb Jahren sitzt İmamoğlu in Untersuchungshaft. Seit März läuft nun der Mammutprozess gegen 400 Angeklagte der Stadtverwaltung Istanbuls - und damit auch gegen ihn. Imamoğlu hat nach mehr als anderthalb Jahren U-Haft erstmals vor Gericht ausgesagt. Parallel…",
-   "thumb": "https://i2.ytimg.com/vi/EMC7RrYhOWo/hqdefault.jpg",
-   "id": "4cce2bf959df",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Alkoholverbot an allen Bahnhöfen / Zuckersteuer kommt wohl doch / Brennende Akkus | „15 Minuten“",
-   "url": "https://www.youtube.com/watch?v=wY5NQ0T7VDE",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-15T04:26:43.000Z",
-   "summary": "Unsere Infos heute: (00:00:38) Alkoholverbot an allen Bahnhöfen Seit heute gilt an allen 5.400 Bahnhöfen in Deutschland ein Konsumverbot von Alkohol. Das Trinken von Bier, Wein oder Spirituosen ist in Bahnhofsgebäuden und an Gleisen damit untersagt, während der Verkauf sowie…",
-   "thumb": "https://i4.ytimg.com/vi/wY5NQ0T7VDE/hqdefault.jpg",
-   "id": "e40e3ac21ff9",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -924,24 +1081,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "They DUG UP Her SECRET, WATCH HER FACE!",
-   "url": "https://www.youtube.com/watch?v=wtNc0gVr2dw",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-15T00:40:05.000Z",
-   "summary": "Luke discusses new revelations that have come out about Katie Zacharia's professional background. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X)…",
-   "thumb": "https://i4.ytimg.com/vi/wtNc0gVr2dw/hqdefault.jpg",
-   "id": "f453b71ff8a4",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Ukrainian on trial in Germany over 'war crime' bombing of Nord Stream pipeline",
    "url": "https://www.reddit.com/r/geopolitics/comments/1x66u8e/ukrainian_on_trial_in_germany_over_war_crime/",
    "source": "r/geopolitics",
@@ -1010,58 +1149,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Town Hall Crowd HUMILIATES MAGA Congressman, He RAGE QUITS!",
-   "url": "https://www.youtube.com/watch?v=BVq3y_ueiB0",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-14T22:40:33.000Z",
-   "summary": "Luke discusses Rep Andy Harris in a recent disaster town hall. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
-   "thumb": "https://i3.ytimg.com/vi/BVq3y_ueiB0/hqdefault.jpg",
-   "id": "e38d35d64366",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "UK threatens visa bans for Eritrea over migrant return policy",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1x6487n/uk_threatens_visa_bans_for_eritrea_over_migrant/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-14T21:52:43.000Z",
-   "summary": "submitted by /u/HBucket [link] [comments]",
-   "id": "4fb823d8a433",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Reform UK councillors and candidates filmed making racist and extreme comments",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1x63t1y/reform_uk_councillors_and_candidates_filmed/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-14T21:35:01.000Z",
-   "summary": "submitted by /u/Bascule2000 [link] [comments]",
-   "id": "66df30c7668d",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Frankfurt photos",
    "url": "https://www.reddit.com/r/germany/comments/1x63kbw/frankfurt_photos/",
    "source": "r/germany",
@@ -1091,40 +1178,6 @@
    "published": "2026-10-14T20:37:37.000Z",
    "summary": "submitted by /u/CalligrapherNo9154 [link] [comments]",
    "id": "7f23123234cc",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "'Truly Sickening': Reform UK Councillors and Candidates Accused Of 'Extreme Racism'",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1x61nik/truly_sickening_reform_uk_councillors_and/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-14T20:07:46.000Z",
-   "summary": "submitted by /u/Other-Bother-6762 [link] [comments]",
-   "id": "531bcb780ab6",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Jewish Greens to sue the party over Zionism policy",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1x60odd/jewish_greens_to_sue_the_party_over_zionism_policy/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-14T19:29:30.000Z",
-   "summary": "submitted by /u/Kataera [link] [comments]",
-   "id": "52b310bdb199",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1226,6 +1279,42 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
+   "title": "They DUG UP Her SECRET, WATCH HER FACE!",
+   "url": "https://www.youtube.com/watch?v=wtNc0gVr2dw",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-15T00:40:05.000Z",
+   "summary": "Luke discusses new revelations that have come out about Katie Zacharia's professional background. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X)…",
+   "thumb": "https://i4.ytimg.com/vi/wtNc0gVr2dw/hqdefault.jpg",
+   "id": "f453b71ff8a4",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Town Hall Crowd HUMILIATES MAGA Congressman, He RAGE QUITS!",
+   "url": "https://www.youtube.com/watch?v=BVq3y_ueiB0",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-14T22:40:33.000Z",
+   "summary": "Luke discusses Rep Andy Harris in a recent disaster town hall. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
+   "thumb": "https://i3.ytimg.com/vi/BVq3y_ueiB0/hqdefault.jpg",
+   "id": "e38d35d64366",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
    "title": "OH SH*T: Piers Morgan SNAPS AT TRUMP with BOMBSHELL Zelenskyy Interview!",
    "url": "https://www.youtube.com/watch?v=P4ghGYilXiU",
    "source": "Luke Beasley",
@@ -1274,23 +1363,6 @@
    "summary": "Girl's grandmother passes down a valuable Rolleiflex camera of which she decided to have it cleaned. Only for the store to give a completely different camera than the one she handed in. Is this negligence or straight up thievery? ———————————— Spotify:…",
    "thumb": "https://i1.ytimg.com/vi/hAJzIdIMASU/hqdefault.jpg",
    "id": "4765fda6c46c",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Airport drop-off charges to be reviewed after sharp increase",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1x5yiot/airport_dropoff_charges_to_be_reviewed_after/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-14T18:08:43.000Z",
-   "summary": "submitted by /u/Desperate-Drawer-572 [link] [comments]",
-   "id": "32ef31b6dfc0",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1465,78 +1537,6 @@
    "summary": "Read Shopify's latest data on the rising global impact of entrepreneurship: https://www.shopify.com/entrepreneur 📫 10,859+ read our free newsletter that has weekly original stories Sign up: → https://economics-explained-tv-program.beehiiv.com/ This video was made possible by…",
    "thumb": "https://i3.ytimg.com/vi/ZRNQ1QgbDj4/hqdefault.jpg",
    "id": "23fb10aa8d43",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "'Trump will be embarrassed': Is it already over for Katie Zacharia?",
-   "url": "https://www.youtube.com/watch?v=Z_XQ8S1sHYc",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-14T14:30:08.000Z",
-   "summary": "Simon Marks, James O'Brien, and Lewis Goodall react to Katie Zacharia's debut as US press secretary. 0:00 | James O'Brien and Simon Marks give their verdict 9:53 | Lewis Goodall compares Zacharia to her predecessor Listen to the full show on the all-new LBC App:…",
-   "thumb": "https://i3.ytimg.com/vi/Z_XQ8S1sHYc/hqdefault.jpg",
-   "id": "2460c217dc03",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Simon Marks reacts to 'staggering' AI video of Trump wrestling tiger",
-   "url": "https://www.youtube.com/watch?v=pnQ783a3BaI",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-14T13:12:31.000Z",
-   "summary": "Simon Marks and Lewis Goodall react to the bizarre AI video that Donald Trump posted following the death of a British man who entered a tiger enclosure in Yorkshire. William Chapman, 23, died after entering a tiger enclosure at Yorkshire Wildlife Park near Doncaster shortly…",
-   "thumb": "https://i1.ytimg.com/vi/pnQ783a3BaI/hqdefault.jpg",
-   "id": "4940b5596dbf",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "NEW PRESSER DISASTER as SHOCK LEAK on Leavitt Replacement SPELLS DOOM!",
-   "url": "https://www.youtube.com/watch?v=RaC-DIKWIJ8",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-14T13:00:32.000Z",
-   "summary": "Luke discusses Trump's new press secretary, Katie Zacharia, making her debut. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
-   "thumb": "https://i3.ytimg.com/vi/RaC-DIKWIJ8/hqdefault.jpg",
-   "id": "d4f3844fe262",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "'Why did she wobble so much?' | PMQs analysed",
-   "url": "https://www.youtube.com/watch?v=P4VVx_Nomgc",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-14T11:43:20.000Z",
-   "summary": "LBC's political correspondent Bethany Dawson joins James O'Brien to analyse this week's PMQs. 'An interesting performance...' 'Frankly not her best' 'Why did she wobble so much?' 'A game of two halves' 'She moved back to petulant mode' 'A taste of her own medicine' 'He had his…",
-   "thumb": "https://i1.ytimg.com/vi/P4VVx_Nomgc/hqdefault.jpg",
-   "id": "64f22bb689fa",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2906,25 +2906,7 @@
    "score": 0,
    "matched": [],
    "why": "0"
-  },
-  {
-   "title": "I Investigated What Remains Of Yugoslavia",
-   "url": "https://www.youtube.com/watch?v=ktb5PTSVSNg",
-   "source": "Bald and Bankrupt",
-   "feedId": "yt-bald-and-bankrupt",
-   "type": "video",
-   "tags": [
-    "travel",
-    "chill"
-   ],
-   "published": "2026-10-01T11:59:53.000Z",
-   "summary": "Stay connected online wherever you are - Use the Promo Code BABXN to get 20% OFF Nomad eSIMs! Get Nomad here - https://bit.ly/3RObMkS Yugoslavia, the country that was so peaceful that British pensioners would holiday there in the summers, but then exploded suddenly into a war…",
-   "thumb": "https://i4.ytimg.com/vi/ktb5PTSVSNg/hqdefault.jpg",
-   "id": "c4b272439e96",
-   "score": 0,
-   "matched": [],
-   "why": "0"
   }
  ],
- "contentHash": "e951cf4ae10f"
+ "contentHash": "dce1e175e227"
 }
