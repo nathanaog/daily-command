@@ -1,17 +1,17 @@
 {
- "generated": "2026-10-15T13:48:07.625Z",
+ "generated": "2026-10-15T14:09:06.993Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
   "ok": 53,
-  "items": 123,
+  "items": 121,
   "duplicatesMerged": 0,
   "lengthsKnown": 2,
-  "lengthLookups": 97,
-  "lengthFailures": 97,
+  "lengthLookups": 95,
+  "lengthFailures": 95,
   "lengthVia": "video pages",
   "lengthFailReasons": {
-   "no length on page": 97
+   "no length on page": 95
   }
  },
  "feeds": [
@@ -228,7 +228,7 @@
    "name": "Simplicissimus",
    "type": "youtube",
    "status": "ok",
-   "count": 2,
+   "count": 1,
    "resolved": {
     "channelId": "UCKGMHVipEvuZudhHD05FOYA",
     "title": "Simplicissimus",
@@ -592,7 +592,7 @@
    "name": "Economics Explained",
    "type": "youtube",
    "status": "ok",
-   "count": 3,
+   "count": 2,
    "resolved": {
     "channelId": "UCZ4AMrDcNrfy3X6nsU8-rPg",
     "title": "Economics Explained",
@@ -630,9 +630,10 @@
    "id": "rd-productmanagement",
    "name": "r/productmanagement",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 3,
-   "url": "https://www.reddit.com/r/productmanagement/top/.rss?t=day"
+   "lastOk": "2026-10-15T13:48:07.625Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-tech",
@@ -641,7 +642,7 @@
    "status": "cached",
    "count": 1,
    "lastOk": "2026-10-14T20:55:56.930Z",
-   "note": "rate-limited (429)"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-gaming",
@@ -650,16 +651,15 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-10-15T13:05:38.011Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
   },
   {
    "id": "rd-xbox",
@@ -668,7 +668,7 @@
    "status": "cached",
    "count": 5,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "rate-limited (429)"
   },
   {
    "id": "rd-slaythespire",
@@ -677,7 +677,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-geopolitics",
@@ -708,6 +708,25 @@
   }
  ],
  "items": [
+  {
+   "title": "Banken haften bei Betrug: EU-Richtlinie schützt Kunden vor Phishing-Angriffen",
+   "url": "https://www.youtube.com/watch?v=DYlwETMltj4",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-15T13:54:16.000Z",
+   "summary": "Banken müssen Opfern von Kontobetrug das Geld zunächst sofort erstatten, selbst wenn sie ihnen grobe Fahrlässigkeit vorwerfen. Das stellte der Gerichtshof der Europäischen Union (EuGH) in einem Urteil klar. Der Zahlungsdienstleister könne danach die Verluste von Kundinnen und…",
+   "thumb": "https://i1.ytimg.com/vi/DYlwETMltj4/hqdefault.jpg",
+   "id": "43e0e7f32408",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
   {
    "title": "Is Donald Trump betraying Ukraine?",
    "url": "https://www.youtube.com/watch?v=3G3HMQck0MY",
@@ -764,7 +783,7 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Trump’s press secretary lies about passing the bar exam",
+   "title": "‘She sat the exam… and failed’: Trump press secretary caught in lie",
    "url": "https://www.youtube.com/watch?v=whc5-YixefQ",
    "source": "LBC",
    "feedId": "yt-lbc",
@@ -828,6 +847,23 @@
    "published": "2026-10-15T12:30:08.000Z",
    "summary": "submitted by /u/diwalibonus [link] [comments]",
    "id": "26e86611165c",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Immigration and Asylum Bill: Article 8 reform",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1x6kali/immigration_and_asylum_bill_article_8_reform/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-15T12:27:36.000Z",
+   "summary": "submitted by /u/Particular-Doctor888 [link] [comments]",
+   "id": "bee925d9dd69",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -938,6 +974,23 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
+   "title": "Former DUP leader Jeffrey Donaldson sentenced to 15 years for child sexual offences",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1x6ig7m/former_dup_leader_jeffrey_donaldson_sentenced_to/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-15T10:49:17.000Z",
+   "summary": "submitted by /u/whencanistop [link] [comments]",
+   "id": "0836e8d21e9a",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
    "title": "Zelenskyy: Trump has chosen Russia over Ukraine",
    "url": "https://www.youtube.com/watch?v=n1SoRw0BFvI",
    "source": "LBC",
@@ -992,23 +1045,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Brexiters can’t cope with the fact that Putin was cheering them on",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1x6hzvg/brexiters_cant_cope_with_the_fact_that_putin_was/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-15T10:22:24.000Z",
-   "summary": "submitted by /u/RareEarthPetal [link] [comments]",
-   "id": "63951c7685b5",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Regierung Albanien: Studenten fordern Reformen",
    "url": "https://www.youtube.com/watch?v=tkrNRV4gwB8",
    "source": "Tagesschau",
@@ -1028,23 +1064,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Burnham rules out coalition with Greens after 'Zionism is racism' motion",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1x6h9ru/burnham_rules_out_coalition_with_greens_after/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-15T09:39:02.000Z",
-   "summary": "submitted by /u/Adj-Noun-Numbers [link] [comments]",
-   "id": "e9ca19c3145a",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Can Burnham Actually Ditch First-Past-the-Post?",
    "url": "https://www.youtube.com/watch?v=QmGYruZYHCc",
    "source": "TLDR News",
@@ -1059,25 +1078,6 @@
    "summary": "Go to https://hensonshaving.com/TLDR and enter \"TLDR\" at checkout to get 100 free blades with your purchase. In this video we explore Burnham's promise to implement a more representative electoral system in the UK but will he actually succeed where countless other governments…",
    "thumb": "https://i2.ytimg.com/vi/QmGYruZYHCc/hqdefault.jpg",
    "id": "c979ca4f9006",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Reform der Notfallversorgung: Was sich im Notfall für Patienten ändert",
-   "url": "https://www.youtube.com/watch?v=6RLRbjDUkRA",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-15T09:16:37.000Z",
-   "summary": "Die Notfallversorgung in Deutschland soll künftig über eine zentrale Ersteinschätzung besser und schneller werden. Der Bundestag votierte am Donnerstag mit den Stimmen von Union, SPD und Grünen für eine entsprechende Reform. Ziel ist es angesichts überlasteter Rettungsdienste…",
-   "thumb": "https://i3.ytimg.com/vi/6RLRbjDUkRA/hqdefault.jpg",
-   "id": "3cf70829341d",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -2854,43 +2854,7 @@
    "score": 0,
    "matched": [],
    "why": "0"
-  },
-  {
-   "title": "Der unmögliche Ausbruch aus Auschwitz",
-   "url": "https://www.youtube.com/watch?v=gyEb8ErG5x8",
-   "source": "Simplicissimus",
-   "feedId": "yt-simplicissimus",
-   "type": "video",
-   "tags": [
-    "german",
-    "education"
-   ],
-   "published": "2026-10-01T14:00:37.000Z",
-   "summary": "Mit carVertical deckst du die wahre Historie von Gebrauchtwagen auf. Von echten Kilometerständen bis hin zu versteckten Unfallschäden und Diebstahleinträgen. Mit dem Code SIMPLI kannst du dir 20% Rabatt unter https://simpli.deals/carVertical sichern. (Werbung) Incogni hilft dir…",
-   "thumb": "https://i4.ytimg.com/vi/gyEb8ErG5x8/hqdefault.jpg",
-   "id": "c321778b3528",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Australia May Have Just Solved The Housing Crisis",
-   "url": "https://www.youtube.com/watch?v=QtZfbWOkoIY",
-   "source": "Economics Explained",
-   "feedId": "yt-economics-explained",
-   "type": "video",
-   "tags": [
-    "finance",
-    "listen"
-   ],
-   "published": "2026-10-01T14:00:26.000Z",
-   "summary": "#ad Visit today's sponsor https://strawberry.me/EconomicsExplained and claim 50% off your first coaching session! 📫 10,495+ read our free newsletter that has weekly original stories Sign up: → https://economics-explained-tv-program.beehiiv.com/ This video was made possible by…",
-   "thumb": "https://i2.ytimg.com/vi/QtZfbWOkoIY/hqdefault.jpg",
-   "id": "60edf7297e51",
-   "score": 0,
-   "matched": [],
-   "why": "0"
   }
  ],
- "contentHash": "d39882cb6ef4"
+ "contentHash": "f5253b13539f"
 }
