@@ -852,6 +852,7 @@ function defaultState() {
       { id: 'p-admin', name: 'Admin', nextId: null },
     ],
     tasks: [],             // {id,title,projectId,done,doneAt,created}
+    createdAt: new Date().toISOString(),   // when this browser's data started — shown in More → Data (diagnostics)
     habits: [],            // Stage 5: {id,name,icon,kind:'interval'|'weekly'|'schedule',every,learn,target,days,time,dur,lead,alarm,when,paused,created}
     habitLog: {},          // {habitId: {"YYYY-MM-DD": timestamp}} — an object so phone + desktop ticks merge
     reminders: [],         // {id (Google event id), title, at, kind:'manual'|'focus'|'block', ref} — Stage 4
@@ -895,10 +896,27 @@ function migrate(d) {
   const dg = (d.settings || {}).google || {};
   out.settings.google = { ...def.settings.google, ...dg, on: { ...def.settings.google.on, ...(dg.on || {}) } };
   out.settings.spotify = { ...def.settings.spotify, ...((d.settings || {}).spotify || {}) };
+  out.createdAt = d.createdAt || (d.savedAt ? '' : def.createdAt);   // '' = data from before this field existed
   if (!out.routine || !Array.isArray(out.routine.weekday)) out.routine = def.routine;
   return out;
 }
+/* Safety net: before each save, the previous copy is kept as that day's snapshot (last 7 days,
+   empty states never overwrite a real one). Restore from More → Data. Doesn't survive "clear site
+   data" or a different browser — Drive sync is the off-device copy. */
+const SNAP_KEY = 'dailycommand.snapshots';
+function snapshotPrevious() {
+  try {
+    const prev = localStorage.getItem(STORE_KEY); if (!prev) return;
+    const d = JSON.parse(prev), day = (d.savedAt || '').slice(0, 10);
+    if (!day || !((d.tasks || []).length || (d.habits || []).length || (d.inbox || []).length)) return;
+    const snaps = JSON.parse(localStorage.getItem(SNAP_KEY) || '{}');
+    snaps[day] = prev;
+    const keys = Object.keys(snaps).sort(); while (keys.length > 7) delete snaps[keys.shift()];
+    localStorage.setItem(SNAP_KEY, JSON.stringify(snaps));
+  } catch (e) { /* snapshots are best-effort */ }
+}
 function save(opts = {}) {
+  snapshotPrevious();
   S.savedAt = new Date().toISOString();
   try { localStorage.setItem(STORE_KEY, JSON.stringify(S)); }
   catch (e) { toast('Could not save — storage full?'); }
@@ -3038,6 +3056,34 @@ const ACT8 = {
   habitEdit(el) { const h = habitById(el.dataset.id); if (h) editHabit(h); },
 };
 
+/* ---------------- Storage diagnostics + daily snapshots (More → Data) ---------------- */
+let storagePersisted = null;
+if (navigator.storage?.persist) navigator.storage.persisted().then(p => p || navigator.storage.persist()).then(v => { storagePersisted = v; }).catch(() => {});
+function storageDiagHtml() {
+  const ua = navigator.userAgent, browser = /SamsungBrowser/.test(ua) ? 'Samsung Internet' : /EdgA?\//.test(ua) ? 'Edge' : /Firefox/.test(ua) ? 'Firefox' : /Chrome/.test(ua) ? 'Chrome' : 'other browser';
+  const where = matchMedia('(display-mode: standalone)').matches ? 'installed app' : 'browser tab';
+  const started = S.createdAt ? new Date(S.createdAt).toLocaleString('en-GB', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' }) : 'before 15 Oct';
+  return `<div class="math">${browser} · ${where} · storage ${storagePersisted === true ? 'protected ✓' : storagePersisted === false ? 'not protected (browser may clear it if space runs low)' : 'checking…'}
+data here started: ${started} · ${S.tasks.length} tasks · ${S.habits.length} habits · ${S.inbox.length} inbox</div>
+    <p class="small muted">Each browser keeps its <b>own</b> copy: Chrome and Samsung Internet don't share data. If things look empty, check you opened the app from the same browser you used before.</p>`;
+}
+function snapshotsHtml() {
+  let snaps = {}; try { snaps = JSON.parse(localStorage.getItem(SNAP_KEY) || '{}'); } catch (e) {}
+  const days = Object.keys(snaps).sort().reverse(); if (!days.length) return '';
+  return `<p class="muted small" style="margin-top:12px">Daily snapshots (this browser, last 7 days)</p><ul class="list">${days.map(d => { let n = '?'; try { const x = JSON.parse(snaps[d]); n = `${(x.tasks || []).length} tasks · ${(x.habits || []).length} habits`; } catch (e) {}
+    return `<li><span class="grow">${new Date(d + 'T12:00').toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short' })} <span class="small muted">${n}</span></span><button class="btn sm" data-act="snapRestore" data-day="${d}">Restore</button></li>`; }).join('')}</ul>`;
+}
+const ACT9 = {
+  snapRestore(el) {
+    let snaps = {}; try { snaps = JSON.parse(localStorage.getItem(SNAP_KEY) || '{}'); } catch (e) {}
+    const raw = snaps[el.dataset.day]; if (!raw) return;
+    if (!confirm('Replace current data with the snapshot from ' + el.dataset.day + '? (Your current data becomes today’s snapshot first.)')) return;
+    const before = JSON.stringify(S);
+    S = migrate(JSON.parse(raw)); save(); applyTheme(); render();
+    toast('Restored.', 'Undo', () => { S = migrate(JSON.parse(before)); save(); applyTheme(); render(); });
+  },
+};
+
 /* =====================================================================
    PART 5 — RENDERING
    Each view is a function that returns HTML. Clicks are handled by one
@@ -3423,8 +3469,10 @@ function renderMore() {
 
   // Data
   h += sec('more-data', 'Data — export / import', `<p class="muted small">Everything is stored only in this browser (localStorage). Export regularly; import replaces current data.${S.savedAt ? ' Last saved ' + new Date(S.savedAt).toLocaleString('en-GB') + '.' : ''}</p>
+    ${storageDiagHtml()}
     <div class="actions"><button class="btn" data-act="export">Export JSON</button><label class="btn">Import JSON<input type="file" accept="application/json,.json" id="importFile" hidden></label>
-    <button class="btn ghost danger" data-act="resetAll">Erase all</button></div>`);
+    <button class="btn ghost danger" data-act="resetAll">Erase all</button></div>
+    ${snapshotsHtml()}`);
 
   h += sec('more-help', 'Help & limits', helpHtml());
   h += `<p class="muted small" style="text-align:center;margin-top:20px">The Natto App · Stage 5 · <span id="swState">offline cache: checking…</span></p>`;
@@ -3694,7 +3742,7 @@ const ACT = {
   resetAll() { if (confirm('Erase ALL data in this browser? Export first if unsure.')) { localStorage.removeItem(STORE_KEY); S = defaultState(); S.settings.welcomed = true; save(); render(); } },
 };
 
-Object.assign(ACT, ACT2, ACT3, ACT4, ACT5, ACT6, ACT7, ACT8);   // + Watch next & player, Spotify (Stage 4.5)   // + Google (Stage 4)   // + listen while working   // Stage 2 (morning, digest, weather) and Stage 3 (lenses, watchlist) actions
+Object.assign(ACT, ACT2, ACT3, ACT4, ACT5, ACT6, ACT7, ACT8, ACT9);   // + Watch next & player, Spotify (Stage 4.5)   // + Google (Stage 4)   // + listen while working   // Stage 2 (morning, digest, weather) and Stage 3 (lenses, watchlist) actions
 
 function setActive(item) {
   if (!item || !item.end) { S.active = null; return save(); }
