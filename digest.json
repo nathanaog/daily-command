@@ -1,17 +1,17 @@
 {
- "generated": "2026-10-15T15:53:29.890Z",
+ "generated": "2026-10-15T19:00:23.715Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
   "ok": 53,
-  "items": 123,
+  "items": 122,
   "duplicatesMerged": 0,
   "lengthsKnown": 3,
-  "lengthLookups": 97,
-  "lengthFailures": 96,
+  "lengthLookups": 95,
+  "lengthFailures": 95,
   "lengthVia": "video pages",
   "lengthFailReasons": {
-   "no length on page": 96
+   "no length on page": 95
   }
  },
  "feeds": [
@@ -189,7 +189,7 @@
    "name": "ColdFusion",
    "type": "youtube",
    "status": "ok",
-   "count": 3,
+   "count": 2,
    "resolved": {
     "channelId": "UC4QZ_LsYcvcq7qOsOhpAX4A",
     "title": "ColdFusion",
@@ -358,7 +358,7 @@
    "name": "Modern-Day Debate",
    "type": "youtube",
    "status": "ok",
-   "count": 2,
+   "count": 3,
    "resolved": {
     "channelId": "UC_cd4oF2phaIBD3WsU3f7Xg",
     "title": "Modern-Day Debate",
@@ -475,7 +475,7 @@
    "name": "The Hustle",
    "type": "youtube",
    "status": "ok",
-   "count": 2,
+   "count": 1,
    "resolved": {
     "channelId": "UCkWVA1_vkY9GLyuLAre97AQ",
     "title": "The Hustle ",
@@ -657,9 +657,10 @@
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
+   "lastOk": "2026-10-15T15:53:29.890Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-xbox",
@@ -668,7 +669,7 @@
    "status": "cached",
    "count": 5,
    "lastOk": null,
-   "note": "rate-limited (429)"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-slaythespire",
@@ -677,16 +678,15 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-10-15T15:33:32.303Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
   },
   {
    "id": "rd-germany",
@@ -695,7 +695,7 @@
    "status": "cached",
    "count": 5,
    "lastOk": "2026-10-15T00:59:57.533Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)"
   },
   {
    "id": "rd-unitedkingdom",
@@ -704,10 +704,295 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   }
  ],
  "items": [
+  {
+   "title": "Trump's niece issues 'alarming' warning over the President's behaviour",
+   "url": "https://www.youtube.com/watch?v=O7mZvO_fpIM",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-15T18:45:10.000Z",
+   "summary": "Donald Trump's niece Mary Trump joins Andrew Marr for a stark assessment of her uncle's presidency, his relationship with Vladimir Putin and the growing pressure on him ahead of the US midterm elections. She also discusses Trump's response to calls for the release of the…",
+   "thumb": "https://i4.ytimg.com/vi/O7mZvO_fpIM/hqdefault.jpg",
+   "id": "8e8022698ca9",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "How to Talk About International Law So the Public Will Listen",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1x6tkw3/how_to_talk_about_international_law_so_the_public/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-15T18:30:54.000Z",
+   "summary": "submitted by /u/carnegieendowment [link] [comments]",
+   "id": "8409ea30fa00",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "tagesschau 20:00 Uhr, 15.10.2026",
+   "url": "https://www.youtube.com/watch?v=xz1fAyYYohU",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-15T18:28:11.000Z",
+   "summary": "tagesschau 20:00 Uhr Bundestag beschließt Reform der Notfallmedizin, Mammografie-Screening künftig bereits ab 45 Jahren, EU-Spitzen verhandeln über Haushalt der Europäischen Union, Beschluss Bundesverfassungsgericht: Wirtschaftsministerin Reiche muss Instagram-Post über…",
+   "thumb": "https://i1.ytimg.com/vi/xz1fAyYYohU/hqdefault.jpg",
+   "id": "5ab9989e0dca",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "So denkt Dr. Pop über KI-generierte Musik | tagesthemen-Interview",
+   "url": "https://www.youtube.com/watch?v=iQtLG40Cp5w",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-15T18:02:41.000Z",
+   "summary": "Nach Spotify und Apple Music hat sich nun auch YouTube dazu entschlossen, KI-generierte Songs als solche zu kennzeichnen. Denn auch YouTube wird tagtäglich mit Songs geflutet, die mittels künstlicher Intelligenz erzeugt wurden. Und es wird immer schwerer zu unterscheiden, ob…",
+   "thumb": "https://i2.ytimg.com/vi/iQtLG40Cp5w/hqdefault.jpg",
+   "id": "36f4826f95c4",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Rachel Wilson Vs NotSoErudite: Do \"Women Jobs\" Actually Build the Economy?",
+   "url": "https://www.youtube.com/watch?v=cKNlJbX3v_8",
+   "source": "Modern-Day Debate",
+   "feedId": "yt-modern-day-debate",
+   "type": "video",
+   "tags": [
+    "debates",
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-15T18:00:17.000Z",
+   "summary": "DEBATECON 9 will be in Orlando, FL on October 24/25th! LET’S GOOOOO! https://events.eventnoire.com/e/debatecon-9-by-modern-day-debate-2 OUR INSIDER'S EMAIL LIST FOR DEBATECON DISCOUNTS: https://forms.gle/rK5aqPAzAZXiDpDz9 *If you want a discount on DEBATECON 9 tickets and are…",
+   "thumb": "https://i4.ytimg.com/vi/cKNlJbX3v_8/hqdefault.jpg",
+   "id": "0beedb5ca115",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Trump’s Democracy-for-Diesel Deal Shames Us All",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1x6squ4/trumps_democracyfordiesel_deal_shames_us_all/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-15T17:59:43.000Z",
+   "summary": "submitted by /u/nytopinion [link] [comments]",
+   "id": "580011045b2f",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "UN panel member admits he, colleagues accused Israel of ‘genocide’ without verifying facts independently",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1x6skrm/un_panel_member_admits_he_colleagues_accused/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-15T17:53:02.000Z",
+   "summary": "submitted by /u/Human_Concern263 [link] [comments]",
+   "id": "9eb98dd206fc",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Reform supporter defends party after ‘racist’ remarks captured on film",
+   "url": "https://www.youtube.com/watch?v=hexdwUA2Q64",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-15T17:45:18.000Z",
+   "summary": "Shelagh Fogarty reacts to the footage of Reform councillors making racist and sexist comments, but Reform supporter Claire reckons the comments may have been 'a silly joke'. The ITV documentary, Undercover: A Year In Reform, was filmed over a year and includes footage of senior…",
+   "thumb": "https://i1.ytimg.com/vi/hexdwUA2Q64/hqdefault.jpg",
+   "id": "efed0f83cfef",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Authorities Investigate Collision Between Trains From Chicago Traveling 80 MPH, DC Traveling 75 MPH",
+   "url": "https://www.youtube.com/watch?v=AKuUG7luvQc",
+   "source": "The Onion",
+   "feedId": "yt-the-onion",
+   "type": "video",
+   "tags": [
+    "comedy"
+   ],
+   "published": "2026-10-15T17:40:43.000Z",
+   "summary": "Railway investigators believe they have narrowed down the time of the crash to A) 8:54 p.m., B) 5:32 p.m., C) 7:01 p.m., or D) None of the above. Become an Onion member while it's still optional: https://membership.theonion.com/?campaign=701a500001geULHAA2",
+   "thumb": "https://i2.ytimg.com/vi/AKuUG7luvQc/hqdefault.jpg",
+   "id": "66e0fe0b981c",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Phantom Blade Zero: 10 Things You NEED TO KNOW",
+   "url": "https://www.youtube.com/watch?v=nyiOS88mPyo",
+   "source": "GameRanx",
+   "feedId": "yt-gameranx",
+   "type": "video",
+   "tags": [
+    "gaming"
+   ],
+   "published": "2026-10-15T17:36:36.000Z",
+   "summary": "Phantom Blade Zero is quickly approaching and there is stuff you need to know going in. Subscribe for more: https://www.youtube.com/gameranxTV?sub_confirmation=1 0:00 Intro 0:23 Number 10 2:29 Number 9 4:48 Number 8 6:33 Number 7 8:02 Number 6 9:05 Number 5 10:57 Number 4 12:39…",
+   "thumb": "https://i3.ytimg.com/vi/nyiOS88mPyo/hqdefault.jpg",
+   "id": "ee29828fa1df",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "The Middle East’s Quiet Liberal Revolution",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1x6rd1t/the_middle_easts_quiet_liberal_revolution/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-15T17:07:07.000Z",
+   "summary": "submitted by /u/ForeignAffairsMag [link] [comments]",
+   "id": "80ffa30a290f",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "A Democratic Reckoning in India: The Battle on the Streets Over the Foundations of the State",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1x6rc9g/a_democratic_reckoning_in_india_the_battle_on_the/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-15T17:06:16.000Z",
+   "summary": "submitted by /u/ForeignAffairsMag [link] [comments]",
+   "id": "9f6efa8adda5",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Germany is “wrong” to finance Ukraine war: Alice Weidel interview | The Economist",
+   "url": "https://www.youtube.com/watch?v=5sorengsI0I",
+   "source": "The Economist",
+   "feedId": "yt-the-economist",
+   "type": "video",
+   "tags": [
+    "finance",
+    "business"
+   ],
+   "published": "2026-10-15T17:00:25.000Z",
+   "summary": "Germany should stop financing an “already lost war” in Ukraine, says Alice Weidel. The co-leader of the populist-right Alternative for Germany, speaks to Zanny Minton Beddoes, The Economist’s editor-in-chief. Weidel argues that peace requires taking Russia’s security interests…",
+   "thumb": "https://i2.ytimg.com/vi/5sorengsI0I/hqdefault.jpg",
+   "id": "7313af3ed534",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Is Reform a serious party or a home for 'degenerates'? | Jon Sopel",
+   "url": "https://www.youtube.com/watch?v=adpyi44HeY8",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-15T16:45:23.000Z",
+   "summary": "Shelagh Fogarty and Jon Sopel discuss the latest Reform racism scandal as councillors were caught on film making racist comments and saying the King should be beheaded for being 'a Muslim'. The ITV documentary, Undercover: A Year In Reform, was filmed over a year and includes…",
+   "thumb": "https://i2.ytimg.com/vi/adpyi44HeY8/hqdefault.jpg",
+   "id": "6c8e55ca2a53",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Tote nach Überschwemmungen in Istanbul",
+   "url": "https://www.youtube.com/watch?v=9-NHP8bn9FE",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-15T16:41:18.000Z",
+   "summary": "Straßen stehen unter Wasser, Fahrzeuge bleiben stecken: Bei heftigen Regenfällen sind in Istanbul mehrere Menschen gestorben. Während Behörden weiterhin im Großeinsatz sind, droht bereits neuer Starkregen. Mehr zum Thema:…",
+   "thumb": "https://i2.ytimg.com/vi/9-NHP8bn9FE/hqdefault.jpg",
+   "id": "1781aed73dbc",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Mindy Kaling Calls Polygons Ingenious | Shark Tank US | Shark Tank Global",
+   "url": "https://www.youtube.com/watch?v=xm1ShtnwIgU",
+   "source": "Shark Tank Global",
+   "feedId": "yt-shark-tank-global",
+   "type": "video",
+   "tags": [
+    "trash",
+    "business"
+   ],
+   "published": "2026-10-15T16:00:01.000Z",
+   "summary": "Rahul Agarwal enters the tank seeking $350K for a 7% stake in his company, Polygons. From Season 18 Episode 4 Watch Shark Tank US Now: http://AAN.SonyPictures.com/SharkTankUSHulu Subscribe to the Shark Tank Global channel: https://bit.ly/SharkTankGlobal Follow Us On Social:…",
+   "thumb": "https://i1.ytimg.com/vi/xm1ShtnwIgU/hqdefault.jpg",
+   "id": "224a00c7e477",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
   {
    "title": "Going Deep on the Zionism is Racism Motion with NoJusticeMTG",
    "url": "https://www.youtube.com/watch?v=44Nbl9_bedA",
@@ -736,7 +1021,7 @@
     "listen"
    ],
    "published": "2026-10-15T15:45:26.000Z",
-   "summary": "Donald Trump has announced that the decision to livestream the execution of Nidal Hasan, the former soldier who killed 13 people at a Texas base in revenge for Middle East wars, will be scrapped. In a statement on Truth Social, the US President said that while livestreaming the…",
+   "summary": "[DESCRIPTION] Listen to the full show on the all-new LBC App: https://app.af.lbc.co.uk/btnc/thenewlbcapp #TypeInPresenterName #TypeInTopic #LBC LBC is the home of live debate around news and current affairs in the UK. Join in the conversation and listen at…",
    "thumb": "https://i4.ytimg.com/vi/oaFivgXBKIw/hqdefault.jpg",
    "id": "120330934635",
    "score": 1,
@@ -763,7 +1048,7 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Bill Gates’ Daughter Accused of Fraud",
+   "title": "Bill Gates’ Daughter is in Trouble",
    "url": "https://www.youtube.com/watch?v=P8CVqDKeOKk",
    "source": "ColdFusion",
    "feedId": "yt-coldfusion",
@@ -854,60 +1139,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Banken haften bei Betrug: EU-Richtlinie schützt Kunden vor Phishing-Angriffen",
-   "url": "https://www.youtube.com/watch?v=DYlwETMltj4",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-15T13:54:16.000Z",
-   "summary": "Banken müssen Opfern von Kontobetrug das Geld zunächst sofort erstatten, selbst wenn sie ihnen grobe Fahrlässigkeit vorwerfen. Das stellte der Gerichtshof der Europäischen Union (EuGH) in einem Urteil klar. Der Zahlungsdienstleister könne danach die Verluste von Kundinnen und…",
-   "thumb": "https://i1.ytimg.com/vi/DYlwETMltj4/hqdefault.jpg",
-   "id": "43e0e7f32408",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Is Donald Trump betraying Ukraine?",
-   "url": "https://www.youtube.com/watch?v=3G3HMQck0MY",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-15T13:45:29.000Z",
-   "summary": "Kyiv has resumed strikes against Russian energy infrastructure after President Zelenskyy accused Donald Trump of betraying Ukraine by slowing down the speeds of a crucial internet system used to protect the war-torn nation. Shelagh Fogarty is joined by John Foreman, Former UK…",
-   "thumb": "https://i4.ytimg.com/vi/3G3HMQck0MY/hqdefault.jpg",
-   "id": "f4771da374a4",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Russia’s daring hybrid acts pose Article 5 dilemma for NATO, ex-US ambassador says",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1x6m01e/russias_daring_hybrid_acts_pose_article_5_dilemma/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-15T13:42:55.000Z",
-   "summary": "Vladimir Putin is becoming “more creative” in the way he launches so-called ‘hybrid attacks’, the former envoy to NATO warned. In terms of the alliance’s Article 5 mutual defense clause, Ambassador Smith said the bloc potentially faces a dilemma. She pointed out that Vladimir…",
-   "id": "3adaa284de5d",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "OSSOFF, NO. Don’t Do This To Us!",
    "url": "https://www.youtube.com/watch?v=M1wLovfr4XM",
    "source": "Luke Beasley",
@@ -926,94 +1157,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Alkoholverbot am Bahnhof: Bringt es wirklich mehr Sicherheit?",
-   "url": "https://www.youtube.com/watch?v=hwga4KbxIQQ",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-15T12:47:10.000Z",
-   "summary": "An sämtlichen Bahnhöfen der Deutschen Bahn gilt ab heute ein Alkoholverbot. In einer entsprechenden Mitteilung verwies die DB auf ihr Hausrecht. Entsprechende Aushänge seien in den Vitrinen der Bahnhöfe oder online zu finden. Die Gastronomie in den Bahnhöfen bleibt von dem…",
-   "thumb": "https://i1.ytimg.com/vi/hwga4KbxIQQ/hqdefault.jpg",
-   "id": "dff46cfcfa14",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "‘She sat the exam… and failed’: Trump press secretary caught in lie",
-   "url": "https://www.youtube.com/watch?v=whc5-YixefQ",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-15T12:45:07.000Z",
-   "summary": "Simon Marks and James O'Brien discuss the latest development in Trump's press secretary saga as it emerges Katie Zacharia did not pass the bar exam... despite claiming to be a lawyer. Hazy with the details, Zacharia previously responded to a question asking about the state she…",
-   "thumb": "https://i4.ytimg.com/vi/whc5-YixefQ/hqdefault.jpg",
-   "id": "437f677a806a",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Amid Ukraine uproar, Musk says decisions to restrict Starshield up to president",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1x6kfi8/amid_ukraine_uproar_musk_says_decisions_to/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-15T12:34:13.000Z",
-   "summary": "submitted by /u/One-Emu-1103 [link] [comments]",
-   "id": "34dda99eae12",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Houthis make ‘major leap’ building advanced missiles with greater Middle East range",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1x6kdvr/houthis_make_major_leap_building_advanced/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-15T12:32:03.000Z",
-   "summary": "submitted by /u/TheNational_News [link] [comments]",
-   "id": "95af144f386d",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Storm signals | The real question is not whether India can outlast Trump. It is whether India can build a lasting partnership with an America that may have become permanently Trumpian",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1x6kcg8/storm_signals_the_real_question_is_not_whether/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-15T12:30:08.000Z",
-   "summary": "submitted by /u/diwalibonus [link] [comments]",
-   "id": "26e86611165c",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Immigration and Asylum Bill: Article 8 reform",
    "url": "https://www.reddit.com/r/ukpolitics/comments/1x6kali/immigration_and_asylum_bill_article_8_reform/",
    "source": "r/ukpolitics",
@@ -1026,60 +1169,6 @@
    "published": "2026-10-15T12:27:36.000Z",
    "summary": "submitted by /u/Particular-Doctor888 [link] [comments]",
    "id": "bee925d9dd69",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "US floats unfreezing some Russian assets to restart Ukraine peace talks",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1x6k1n7/us_floats_unfreezing_some_russian_assets_to/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-15T12:15:12.000Z",
-   "summary": "submitted by /u/ImperiumRome [link] [comments]",
-   "id": "95010c0d5e66",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "‘Trump’s literally laughing at the death of a mentally ill man!’",
-   "url": "https://www.youtube.com/watch?v=Rk4FI7Qh0ss",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-15T11:45:35.000Z",
-   "summary": "Ben Kentish and Jennifer Ewing, spokesperson for Republicans Overseas UK, debate the bizarre AI video Donald Trump posted of himself fighting a tiger after a mentally ill British man was mauled to death. William Chapman, 23, died after entering a tiger enclosure at Yorkshire…",
-   "thumb": "https://i3.ytimg.com/vi/Rk4FI7Qh0ss/hqdefault.jpg",
-   "id": "9337824ac6ff",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Osnabrück: Reifenwechseln, Winterchecks und Marderbisse | tagesthemen mittendrin",
-   "url": "https://www.youtube.com/watch?v=evLPyKpBNec",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-15T11:25:17.000Z",
-   "summary": "Vor Beginn des Winters ist Hochsaison in den Werkstätten für Autos. Wir haben uns das einmal angeschaut. Mehr tagesthemen mittendrin Reportagen hier: https://www.tagesschau.de/inland/mittendrin Alle aktuellen Informationen, weitere Nachrichten und tagesschau24 im Livestream:…",
-   "thumb": "https://i2.ytimg.com/vi/evLPyKpBNec/hqdefault.jpg",
-   "id": "a96c124f7a01",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1841,7 +1930,7 @@
    "why": "0"
   },
   {
-   "title": "Dating Shows Exist To Advertise S*x Work",
+   "title": "Dating Shows = S*x Work",
    "url": "https://www.youtube.com/watch?v=oOAps5_hVUM",
    "source": "Aberrant preach",
    "feedId": "yt-aberrant-preach",
@@ -1953,7 +2042,7 @@
    "why": "0"
   },
   {
-   "title": "When You Are Afraid to Make Mistakes in German",
+   "title": "We Asked Native Speakers About Their Experience with German Learners",
    "url": "https://www.youtube.com/watch?v=RbtIMGCizu0",
    "source": "Easy German",
    "feedId": "yt-easy-german",
@@ -2076,23 +2165,6 @@
    "summary": "The Good Liars visit Dayton, Ohio for a Trump Rally https://www.youtube.com/channel/UCUNOwz9KTDIhhTTN3_ptUDA/join https://linktr.ee/thegoodliars",
    "thumb": "https://i3.ytimg.com/vi/z5cAiwQULKI/hqdefault.jpg",
    "id": "f52c86bfea5e",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Top 25 NEW Single Player Games of 2026",
-   "url": "https://www.youtube.com/watch?v=Rbh6pULYRy4",
-   "source": "GameRanx",
-   "feedId": "yt-gameranx",
-   "type": "video",
-   "tags": [
-    "gaming"
-   ],
-   "published": "2026-10-10T17:13:16.000Z",
-   "summary": "2026 has plenty of great new singleplayer games for PC, PS5, Xbox Series X/S, and Nintendo Switch 2. Subscribe for more: https://www.youtube.com/gameranxTV?sub_confirmation=1 0:00 Intro 0:33 NIOH 3 2:07 Castlevania: Belmont's Curse 3:23 Pragmata 5:04 Saros 5:54 Dragon's Dogma…",
-   "thumb": "https://i3.ytimg.com/vi/Rbh6pULYRy4/hqdefault.jpg",
-   "id": "9648b51a4c82",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2364,24 +2436,6 @@
    "summary": "America is reviewing where it keeps its forces, at a delicate moment for NATO. Shashank Joshi, host of Inside Defence, sits down with Sir Richard Knighton, Britain’s Chief of the Defence Staff, in Washington to ask what Europe can bank on from America if war breaks out in the…",
    "thumb": "https://i1.ytimg.com/vi/htFXw5Dw3Qk/hqdefault.jpg",
    "id": "0190af130b16",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Steven Bartlett Grills Entrepreneurs Behind Nutcase! ft. Ninja | Shark Tank US | Shark Tank Global",
-   "url": "https://www.youtube.com/watch?v=X3IZwbLBvWQ",
-   "source": "Shark Tank Global",
-   "feedId": "yt-shark-tank-global",
-   "type": "video",
-   "tags": [
-    "trash",
-    "business"
-   ],
-   "published": "2026-10-08T16:00:39.000Z",
-   "summary": "Tyler \"Ninja\" Blevins and Jo Weinand enter the Tank seeking $250K for a 5% stake for Nutcase, their dairy-free alternative milk. From Season 18 Episode 3 Watch Shark Tank US Now: http://AAN.SonyPictures.com/SharkTankUSHulu Watch Shark Tank Australia Now:…",
-   "thumb": "https://i1.ytimg.com/vi/X3IZwbLBvWQ/hqdefault.jpg",
-   "id": "1c651682ad6b",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2805,24 +2859,6 @@
    "why": "0"
   },
   {
-   "title": "“Russia and Ukraine are inventing the future of war”: former Google CEO Eric Schmidt | The Economist",
-   "url": "https://www.youtube.com/watch?v=KgJI4Wxqqik",
-   "source": "The Economist",
-   "feedId": "yt-the-economist",
-   "type": "video",
-   "tags": [
-    "finance",
-    "business"
-   ],
-   "published": "2026-10-02T16:00:39.000Z",
-   "summary": "Eric Schmidt, having spent a decade as the CEO and chairman of Google, is widely regarded as one of the fathers of modern Silicon Valley. He’s long been called upon for his national-security nous, too. Today, he combines both areas of expertise in his defence-tech work. He…",
-   "thumb": "https://i4.ytimg.com/vi/KgJI4Wxqqik/hqdefault.jpg",
-   "id": "2d79b1f0f8c4",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "Women Debate Their Hottest Takes | Hot Takes",
    "url": "https://www.youtube.com/watch?v=U93zyGKhy6E",
    "source": "Jubilee",
@@ -2839,60 +2875,7 @@
    "score": 0,
    "matched": [],
    "why": "0"
-  },
-  {
-   "title": "Why Hotels Do Things Guests Hate, Explained by Ex-Four Seasons Concierge",
-   "url": "https://www.youtube.com/watch?v=G8rflzju9_4",
-   "source": "The Hustle",
-   "feedId": "yt-the-hustle",
-   "type": "video",
-   "tags": [
-    "business"
-   ],
-   "published": "2026-10-01T19:00:14.000Z",
-   "summary": "Every hotel complaint you've ever posted online has a business reason behind it. *Analyze any market like an expert:* https://clickhubspot.com/xx94 Former Four Seasons hotel concierge Sarah Dandashy has spent 15+ years inside luxury hotels, and in this video she reads real…",
-   "thumb": "https://i4.ytimg.com/vi/G8rflzju9_4/hqdefault.jpg",
-   "id": "8bc9c6c2143f",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "The AI Industry is a Complete Mess",
-   "url": "https://www.youtube.com/watch?v=e2zjpCqTmyo",
-   "source": "ColdFusion",
-   "feedId": "yt-coldfusion",
-   "type": "video",
-   "tags": [
-    "finance",
-    "tech",
-    "listen"
-   ],
-   "published": "2026-10-01T18:23:02.000Z",
-   "summary": "Get 22% off on PLAUD products by using code: COLDFUSION22. Website: https://bit.ly/4yTHCg0 Amazon: https://amzn.to/4h9qpcy The capabilities of AI may be improving, but the AI industry is getting messier by the day. Anthropic and especially OpenAI find themselves in a unenviable…",
-   "thumb": "https://i2.ytimg.com/vi/e2zjpCqTmyo/hqdefault.jpg",
-   "id": "a0ed377d7cd9",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Chump To Receive No Compensation For Rescuing Children From Fire",
-   "url": "https://www.youtube.com/watch?v=YIAPrjs1TwA",
-   "source": "The Onion",
-   "feedId": "yt-the-onion",
-   "type": "video",
-   "tags": [
-    "comedy"
-   ],
-   "published": "2026-10-01T17:00:09.000Z",
-   "summary": "Become an Onion member while it's still optional: https://membership.theonion.com/?campaign=701a500001geULHAA2",
-   "thumb": "https://i2.ytimg.com/vi/YIAPrjs1TwA/hqdefault.jpg",
-   "id": "3299bc82b747",
-   "score": 0,
-   "matched": [],
-   "why": "0"
   }
  ],
- "contentHash": "56db25be999d"
+ "contentHash": "5960b27795b4"
 }
