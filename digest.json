@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-15T13:05:38.011Z",
+ "generated": "2026-10-15T13:44:38.315Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
@@ -657,9 +657,10 @@
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
+   "lastOk": "2026-10-15T13:05:38.011Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-xbox",
@@ -668,7 +669,7 @@
    "status": "cached",
    "count": 5,
    "lastOk": null,
-   "note": "rate-limited (429)"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-slaythespire",
@@ -677,16 +678,15 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-10-15T07:06:33.013Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
   },
   {
    "id": "rd-germany",
@@ -695,7 +695,7 @@
    "status": "cached",
    "count": 5,
    "lastOk": "2026-10-15T00:59:57.533Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)"
   },
   {
    "id": "rd-unitedkingdom",
@@ -704,7 +704,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   }
  ],
  "items": [
@@ -764,6 +764,74 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
+   "title": "Amid Ukraine uproar, Musk says decisions to restrict Starshield up to president",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1x6kfi8/amid_ukraine_uproar_musk_says_decisions_to/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-15T12:34:13.000Z",
+   "summary": "submitted by /u/One-Emu-1103 [link] [comments]",
+   "id": "34dda99eae12",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Houthis make ‘major leap’ building advanced missiles with greater Middle East range",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1x6kdvr/houthis_make_major_leap_building_advanced/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-15T12:32:03.000Z",
+   "summary": "submitted by /u/TheNational_News [link] [comments]",
+   "id": "95af144f386d",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Storm signals | The real question is not whether India can outlast Trump. It is whether India can build a lasting partnership with an America that may have become permanently Trumpian",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1x6kcg8/storm_signals_the_real_question_is_not_whether/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-15T12:30:08.000Z",
+   "summary": "submitted by /u/diwalibonus [link] [comments]",
+   "id": "26e86611165c",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "US floats unfreezing some Russian assets to restart Ukraine peace talks",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1x6k1n7/us_floats_unfreezing_some_russian_assets_to/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-15T12:15:12.000Z",
+   "summary": "submitted by /u/ImperiumRome [link] [comments]",
+   "id": "95010c0d5e66",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
    "title": "‘Trump’s literally laughing at the death of a mentally ill man!’",
    "url": "https://www.youtube.com/watch?v=Rk4FI7Qh0ss",
    "source": "LBC",
@@ -777,6 +845,23 @@
    "summary": "Ben Kentish and Jennifer Ewing, spokesperson for Republicans Overseas UK, debate the bizarre AI video Donald Trump posted of himself fighting a tiger after a mentally ill British man was mauled to death. William Chapman, 23, died after entering a tiger enclosure at Yorkshire…",
    "thumb": "https://i3.ytimg.com/vi/Rk4FI7Qh0ss/hqdefault.jpg",
    "id": "9337824ac6ff",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Trump lines up ‘mother of all bombs’ to strike Iran",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1x6jcjt/trump_lines_up_mother_of_all_bombs_to_strike_iran/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-15T11:39:28.000Z",
+   "summary": "submitted by /u/TheTelegraph [link] [comments]",
+   "id": "240bed8ff4d6",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1014,40 +1099,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Elon Musk has just shown why Trump and the US are now the enemy within",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1x69duy/elon_musk_has_just_shown_why_trump_and_the_us_are/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-15T01:54:37.000Z",
-   "summary": "submitted by /u/One-Emu-1103 [link] [comments]",
-   "id": "81e8754ebe61",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Mounting concern in Australia over UK ability to deliver SSN-AUKUS",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1x6919q/mounting_concern_in_australia_over_uk_ability_to/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-15T01:36:52.000Z",
-   "summary": "SS: While visiting UK officials..assured Australian audiences that the SSN-AUKUS program is on track, a common-sense, empirical examination of Royal Navy operational deployment data reveals it to be running perilously close to complete shutdown. Operating on the absolute…",
-   "id": "709a2fb83a3b",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "How PMs work? What's your day look like",
    "url": "https://www.reddit.com/r/ProductManagement/comments/1x68lat/how_pms_work_whats_your_day_look_like/",
    "source": "r/productmanagement",
@@ -1059,40 +1110,6 @@
    "published": "2026-10-15T01:14:31.000Z",
    "summary": "I worked as a BA for 10+ years and still feel it's not my cup of tea. Jumping from meeting to meeting just to discuss the same requirements again and again, try convince different stakeholders and then explain it to Dev and QA. Firefighting almost everyday. Maybe I worked with…",
    "id": "a6e559cba022",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "India to gain? Trump’s Russian diesel deal offers New Delhi leverage",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1x67ymx/india_to_gain_trumps_russian_diesel_deal_offers/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-15T00:43:10.000Z",
-   "summary": "submitted by /u/Bulky_Traffic2229 [link] [comments]",
-   "id": "594da75fe5bc",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Ukrainian on trial in Germany over 'war crime' bombing of Nord Stream pipeline",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1x66u8e/ukrainian_on_trial_in_germany_over_war_crime/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-14T23:49:56.000Z",
-   "summary": "SS: The trial has begun of a Ukrainian man accused of..blow up an undersea pipeline carrying Russian gas to Germany..Considered one of the biggest acts of sabotage.. Prosecutors say the plot was designed to permanently cut off Russian gas supplies.. ..President Volodymyr…",
-   "id": "b9f1fa0841cf",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1363,23 +1380,6 @@
    "summary": "Girl's grandmother passes down a valuable Rolleiflex camera of which she decided to have it cleaned. Only for the store to give a completely different camera than the one she handed in. Is this negligence or straight up thievery? ———————————— Spotify:…",
    "thumb": "https://i1.ytimg.com/vi/hAJzIdIMASU/hqdefault.jpg",
    "id": "4765fda6c46c",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "China’s Next Frontier: How Beijing Is Challenging Washington in Outer Space",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1x5y76u/chinas_next_frontier_how_beijing_is_challenging/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-14T17:57:08.000Z",
-   "summary": "submitted by /u/ForeignAffairsMag [link] [comments]",
-   "id": "05893afbb663",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2908,5 +2908,5 @@
    "why": "0"
   }
  ],
- "contentHash": "dce1e175e227"
+ "contentHash": "e192dbaf5b2e"
 }
