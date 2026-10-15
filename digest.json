@@ -1,10 +1,10 @@
 {
- "generated": "2026-10-15T13:44:38.315Z",
+ "generated": "2026-10-15T13:48:07.625Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
   "ok": 53,
-  "items": 124,
+  "items": 123,
   "duplicatesMerged": 0,
   "lengthsKnown": 2,
   "lengthLookups": 97,
@@ -630,10 +630,9 @@
    "id": "rd-productmanagement",
    "name": "r/productmanagement",
    "type": "reddit",
-   "status": "cached",
-   "count": 4,
-   "lastOk": "2026-10-15T09:51:43.849Z",
-   "note": "not its turn this run"
+   "status": "ok",
+   "count": 3,
+   "url": "https://www.reddit.com/r/productmanagement/top/.rss?t=day"
   },
   {
    "id": "rd-tech",
@@ -642,7 +641,7 @@
    "status": "cached",
    "count": 1,
    "lastOk": "2026-10-14T20:55:56.930Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)"
   },
   {
    "id": "rd-gaming",
@@ -651,7 +650,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-ukpolitics",
@@ -684,9 +683,10 @@
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
+   "lastOk": "2026-10-15T13:44:38.315Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-germany",
@@ -695,7 +695,7 @@
    "status": "cached",
    "count": 5,
    "lastOk": "2026-10-15T00:59:57.533Z",
-   "note": "rate-limited (429)"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-unitedkingdom",
@@ -704,10 +704,28 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   }
  ],
  "items": [
+  {
+   "title": "Is Donald Trump betraying Ukraine?",
+   "url": "https://www.youtube.com/watch?v=3G3HMQck0MY",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-15T13:45:29.000Z",
+   "summary": "Kyiv has resumed strikes against Russian energy infrastructure after President Zelenskyy accused Donald Trump of betraying Ukraine by slowing down the speeds of a crucial internet system used to protect the war-torn nation. Shelagh Fogarty is joined by John Foreman, Former UK…",
+   "thumb": "https://i4.ytimg.com/vi/3G3HMQck0MY/hqdefault.jpg",
+   "id": "f4771da374a4",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
   {
    "title": "OSSOFF, NO. Don’t Do This To Us!",
    "url": "https://www.youtube.com/watch?v=M1wLovfr4XM",
@@ -1099,22 +1117,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "How PMs work? What's your day look like",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1x68lat/how_pms_work_whats_your_day_look_like/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-10-15T01:14:31.000Z",
-   "summary": "I worked as a BA for 10+ years and still feel it's not my cup of tea. Jumping from meeting to meeting just to discuss the same requirements again and again, try convince different stakeholders and then explain it to Dev and QA. Firefighting almost everyday. Maybe I worked with…",
-   "id": "a6e559cba022",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Ps portal iphone hotspot",
    "url": "https://www.reddit.com/r/germany/comments/1x66n0s/ps_portal_iphone_hotspot/",
    "source": "r/germany",
@@ -1294,6 +1296,22 @@
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "How PMs work? What's your day look like",
+   "url": "https://www.reddit.com/r/ProductManagement/comments/1x68lat/how_pms_work_whats_your_day_look_like/",
+   "source": "r/productmanagement",
+   "feedId": "rd-productmanagement",
+   "type": "post",
+   "tags": [
+    "product"
+   ],
+   "published": "2026-10-15T01:14:31.000Z",
+   "summary": "I worked as a BA for 10+ years and still feel it's not my cup of tea. Jumping from meeting to meeting just to discuss the same requirements again and again, try convince different stakeholders and then explain it to Dev and QA. Firefighting almost everyday. Maybe I worked with…",
+   "id": "a6e559cba022",
+   "score": 0,
+   "matched": [],
+   "why": "0"
   },
   {
    "title": "They DUG UP Her SECRET, WATCH HER FACE!",
@@ -1506,24 +1524,6 @@
    "why": "0"
   },
   {
-   "title": "'Civilian blood is on their hands' | Ukraine's access to Starlink is restricted",
-   "url": "https://www.youtube.com/watch?v=N703aLPXvlM",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-14T15:30:15.000Z",
-   "summary": "Shelagh Fogarty is joined by Sergeant Ashton-Cirillo as the Ukrainian military's access to the America's Starlink satellite internet is suddenly restricted. 0:00 | Ukrainian sergeant reports from the Eastern Front 8:35 | Is the US at war with Europe? 10:30 | The UK must ‘lock…",
-   "thumb": "https://i3.ytimg.com/vi/N703aLPXvlM/hqdefault.jpg",
-   "id": "caa7316aa7fa",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "What Happens When AI Is Free ... South Korea Tried It",
    "url": "https://www.youtube.com/watch?v=ZRNQ1QgbDj4",
    "source": "Economics Explained",
@@ -1554,22 +1554,6 @@
    "summary": "First PMQs since the return from recess, and Kemi Badenoch is still chasing Andy Burnham's shadow at Prime Minister's Questions. Like PoliticsJOE? We need your support: https://www.patreon.com/PoliticsJOE",
    "thumb": "https://i1.ytimg.com/vi/Tqb6hp0dOVc/hqdefault.jpg",
    "id": "aed06c62eda5",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Got moved to a new team, inherited a lousy product",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1x5oa3l/got_moved_to_a_new_team_inherited_a_lousy_product/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-10-14T11:03:03.000Z",
-   "summary": "A PM in my company recently left, and I got moved to take over their portfolio. Part of the projects handed over included this major feature that they’re already well into the development cycle. Here’s the problem: it is a customer facing feature which solves a lot of internal…",
-   "id": "7e0eb0b93559",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2908,5 +2892,5 @@
    "why": "0"
   }
  ],
- "contentHash": "e192dbaf5b2e"
+ "contentHash": "d39882cb6ef4"
 }
