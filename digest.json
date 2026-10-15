@@ -1,10 +1,10 @@
 {
- "generated": "2026-10-15T19:00:23.715Z",
+ "generated": "2026-10-15T21:49:52.028Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
   "ok": 53,
-  "items": 122,
+  "items": 123,
   "duplicatesMerged": 0,
   "lengthsKnown": 3,
   "lengthLookups": 95,
@@ -630,28 +630,28 @@
    "id": "rd-productmanagement",
    "name": "r/productmanagement",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 3,
-   "lastOk": "2026-10-15T15:41:07.908Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/productmanagement/top/.rss?t=day"
   },
   {
    "id": "rd-tech",
    "name": "r/tech",
    "type": "reddit",
-   "status": "cached",
-   "count": 1,
-   "lastOk": "2026-10-14T20:55:56.930Z",
-   "note": "not its turn this run"
+   "status": "ok",
+   "count": 2,
+   "url": "https://www.reddit.com/r/tech/top/.rss?t=day"
   },
   {
    "id": "rd-gaming",
    "name": "r/gaming",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-ukpolitics",
@@ -684,9 +684,10 @@
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
+   "lastOk": "2026-10-15T19:00:23.715Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-germany",
@@ -695,7 +696,7 @@
    "status": "cached",
    "count": 5,
    "lastOk": "2026-10-15T00:59:57.533Z",
-   "note": "rate-limited (429)"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-unitedkingdom",
@@ -704,10 +705,102 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   }
  ],
  "items": [
+  {
+   "title": "OMG: Scott Jennings HUMILIATED on CNN, LAUGHED AT To His Face!",
+   "url": "https://www.youtube.com/watch?v=18Rp2BJzKmI",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-15T21:40:38.000Z",
+   "summary": "Luke discusses Scott Jennings' take on James Talarico's CNN town hall. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
+   "thumb": "https://i2.ytimg.com/vi/18Rp2BJzKmI/hqdefault.jpg",
+   "id": "36be30302bd5",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "tagesthemen 22:15 Uhr, 15.10.2026",
+   "url": "https://www.youtube.com/watch?v=vHPnR5kf4BY",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-15T21:19:32.000Z",
+   "summary": "tagesthemen 22:15 Uhr Regierungschefs beraten über künftigen EU-Haushalt, Bundestag beschließt Reform der Notfallmedizin, Neues Medikament bei Bauchspeicheldrüsenkrebs, Alkoholkontrolle am Kieler Hauptbahnhof nach Alkoholverbot an deutschen Bahnhöfen, Videoplattform YouTube…",
+   "thumb": "https://i3.ytimg.com/vi/vHPnR5kf4BY/hqdefault.jpg",
+   "id": "20ba16a3ce96",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Want to know what Putin wants? Watch Donald Trump| James O’Brien - The Whole Show",
+   "url": "https://www.youtube.com/watch?v=ZKS4iY3ARas",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-15T21:00:33.000Z",
+   "summary": "This is a catch-up version of James O'Brien's live, daily show on LBC Radio from the 15th of October 2026. 00:00 - Zelenskyy: it's \"painful\" that Trump has chosen Russia over Ukraine - what should Andy Burnham do next? 38:32 – US floats unfreezing Russian assets to restart…",
+   "thumb": "https://i3.ytimg.com/vi/ZKS4iY3ARas/hqdefault.jpg",
+   "id": "1812d96ce9d6",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "ALASKA TRUMP RALLY",
+   "url": "https://www.youtube.com/watch?v=XQQwiRoerh0",
+   "source": "The Good Liars",
+   "feedId": "yt-the-good-liars",
+   "type": "video",
+   "tags": [
+    "comedy",
+    "politics",
+    "debates"
+   ],
+   "published": "2026-10-15T20:45:06.000Z",
+   "summary": "The Good Liars go to Alaska to talk with rally attendees. Special thanks to Dancing Bear Alaska for arranging a spectacular flight to see Mt. Denali. It was AWESOME LINK: https://www.instagram.com/dancingbearalaska/ BOOKING: www.dancingbearalaska.net…",
+   "thumb": "https://i1.ytimg.com/vi/XQQwiRoerh0/hqdefault.jpg",
+   "id": "de58ec93e785",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Musk blames Trump for 'sabotaging' Ukraine’s Starlink",
+   "url": "https://www.youtube.com/watch?v=6KpQFDrb9YQ",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-15T20:03:47.000Z",
+   "summary": "Volodymyr Zelenskyy has lashed out at Donald Trump, accusing the US President of betraying Ukraine by slowing down the speeds of a crucial internet system used to protect the war-torn nation from Russian assault. Elon Musk's Starlink technology has been used by Ukraine for its…",
+   "thumb": "https://i3.ytimg.com/vi/6KpQFDrb9YQ/hqdefault.jpg",
+   "id": "6ffbe7faaa8c",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
   {
    "title": "Trump's niece issues 'alarming' warning over the President's behaviour",
    "url": "https://www.youtube.com/watch?v=O7mZvO_fpIM",
@@ -755,7 +848,7 @@
     "listen"
    ],
    "published": "2026-10-15T18:28:11.000Z",
-   "summary": "tagesschau 20:00 Uhr Bundestag beschließt Reform der Notfallmedizin, Mammografie-Screening künftig bereits ab 45 Jahren, EU-Spitzen verhandeln über Haushalt der Europäischen Union, Beschluss Bundesverfassungsgericht: Wirtschaftsministerin Reiche muss Instagram-Post über…",
+   "summary": "Die 20-Uhr-Ausgabe der tagesschau im Livestream und früher auf Abruf findet ihr auch hier: https://ardmediathek.de/tagesschau und https://tagesschau.de Themen der tagesschau-Sendung: 00:00 Guten Abend 00:22 Bundestag beschließt Reform der Notfallmedizin 02:50…",
    "thumb": "https://i1.ytimg.com/vi/xz1fAyYYohU/hqdefault.jpg",
    "id": "5ab9989e0dca",
    "score": 1,
@@ -1011,19 +1104,17 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Trump scraps livestream plan for firing squad execution",
-   "url": "https://www.youtube.com/watch?v=oaFivgXBKIw",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
+   "title": "Narrow niche vs. broad market for a v1: how would you decide?",
+   "url": "https://www.reddit.com/r/ProductManagement/comments/1x6p0pa/narrow_niche_vs_broad_market_for_a_v1_how_would/",
+   "source": "r/productmanagement",
+   "feedId": "rd-productmanagement",
+   "type": "post",
    "tags": [
-    "politics",
-    "listen"
+    "product"
    ],
-   "published": "2026-10-15T15:45:26.000Z",
-   "summary": "[DESCRIPTION] Listen to the full show on the all-new LBC App: https://app.af.lbc.co.uk/btnc/thenewlbcapp #TypeInPresenterName #TypeInTopic #LBC LBC is the home of live debate around news and current affairs in the UK. Join in the conversation and listen at…",
-   "thumb": "https://i4.ytimg.com/vi/oaFivgXBKIw/hqdefault.jpg",
-   "id": "120330934635",
+   "published": "2026-10-15T15:39:10.000Z",
+   "summary": "Context: a small student team, 2 weeks left on a competition deadline, and a working AI speaking-practice app for one niche: people who understand English but freeze when they speak (starting with Algerian students preparing for visa or job interviews). The debate in our team…",
+   "id": "ef9cbf30a154",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1102,38 +1193,17 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "James O'Brien reacts to Reform's latest racism scandal",
-   "url": "https://www.youtube.com/watch?v=GwMmMbbrK-s",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
+   "title": "Researchers turn mushrooms into living memory chips for sustainable computing",
+   "url": "https://www.reddit.com/r/tech/comments/1x6ldb1/researchers_turn_mushrooms_into_living_memory/",
+   "source": "r/tech",
+   "feedId": "rd-tech",
+   "type": "post",
    "tags": [
-    "politics",
-    "listen"
+    "tech"
    ],
-   "published": "2026-10-15T14:45:36.000Z",
-   "summary": "James O'Brien and his callers react to the footage of Reform councillors making racist comments and saying the King should be beheaded for being 'a Muslim'. The ITV documentary, Undercover: A Year In Reform, was filmed over a year and includes footage of senior Reform figures…",
-   "thumb": "https://i4.ytimg.com/vi/GwMmMbbrK-s/hqdefault.jpg",
-   "id": "e0fad4a1c2b6",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Widerstand gegen Infantino: Wackelt der FIFA-Präsident?",
-   "url": "https://www.youtube.com/watch?v=J6lBEgozvkg",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-15T14:19:37.000Z",
-   "summary": "Im Hauptquartier des Fußball-Weltverbands in Zürich ist der FIFA-Rat zusammengekommen. Das Treffen steht im Schatten eines Machtkampfs zwischen FIFA-Präsident Infantino und der UEFA. Alle aktuellen Informationen, weitere Nachrichten und tagesschau24 im Livestream:…",
-   "thumb": "https://i3.ytimg.com/vi/J6lBEgozvkg/hqdefault.jpg",
-   "id": "d8abf2b2ea69",
+   "published": "2026-10-15T13:16:32.000Z",
+   "summary": "submitted by /u/AdSpecialist6598 [link] [comments]",
+   "id": "97642c9187aa",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1242,41 +1312,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Can Burnham Actually Ditch First-Past-the-Post?",
-   "url": "https://www.youtube.com/watch?v=QmGYruZYHCc",
-   "source": "TLDR News",
-   "feedId": "yt-tldr-news",
-   "type": "video",
-   "tags": [
-    "news",
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-15T09:30:07.000Z",
-   "summary": "Go to https://hensonshaving.com/TLDR and enter \"TLDR\" at checkout to get 100 free blades with your purchase. In this video we explore Burnham's promise to implement a more representative electoral system in the UK but will he actually succeed where countless other governments…",
-   "thumb": "https://i2.ytimg.com/vi/QmGYruZYHCc/hqdefault.jpg",
-   "id": "c979ca4f9006",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Weekly rant thread",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1x6gndv/weekly_rant_thread/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-10-15T09:00:27.000Z",
-   "summary": "Share your frustrations and get support/feedback. You are not alone! submitted by /u/AutoModerator [link] [comments]",
-   "id": "1046b1d47eec",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Ps portal iphone hotspot",
    "url": "https://www.reddit.com/r/germany/comments/1x66n0s/ps_portal_iphone_hotspot/",
    "source": "r/germany",
@@ -1362,22 +1397,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Superwood has arrived – wood up to ten times stronger than steel and six times lighter",
-   "url": "https://www.reddit.com/r/tech/comments/1x5s9rm/superwood_has_arrived_wood_up_to_ten_times/",
-   "source": "r/tech",
-   "feedId": "rd-tech",
-   "type": "post",
-   "tags": [
-    "tech"
-   ],
-   "published": "2026-10-14T14:11:00.000Z",
-   "summary": "submitted by /u/AdSpecialist6598 [link] [comments]",
-   "id": "e3024a086814",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "The physical edition from Xbox Series X of Clive Barker's Hellraiser: Revival, contains the whole game in the disc.",
    "url": "https://www.reddit.com/r/xbox/comments/1x5qdtq/the_physical_edition_from_xbox_series_x_of_clive/",
    "source": "r/xbox",
@@ -1458,6 +1477,41 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
+   "title": "Can Burnham Actually Ditch First-Past-the-Post?",
+   "url": "https://www.youtube.com/watch?v=QmGYruZYHCc",
+   "source": "TLDR News",
+   "feedId": "yt-tldr-news",
+   "type": "video",
+   "tags": [
+    "news",
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-15T09:30:07.000Z",
+   "summary": "Go to https://hensonshaving.com/TLDR and enter \"TLDR\" at checkout to get 100 free blades with your purchase. In this video we explore Burnham's promise to implement a more representative electoral system in the UK but will he actually succeed where countless other governments…",
+   "thumb": "https://i2.ytimg.com/vi/QmGYruZYHCc/hqdefault.jpg",
+   "id": "c979ca4f9006",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Weekly rant thread",
+   "url": "https://www.reddit.com/r/ProductManagement/comments/1x6gndv/weekly_rant_thread/",
+   "source": "r/productmanagement",
+   "feedId": "rd-productmanagement",
+   "type": "post",
+   "tags": [
+    "product"
+   ],
+   "published": "2026-10-15T09:00:27.000Z",
+   "summary": "Share your frustrations and get support/feedback. You are not alone! submitted by /u/AutoModerator [link] [comments]",
+   "id": "1046b1d47eec",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
    "title": "DRUNK Candidate’s Interview Goes MEGA VIRAL, You MUST SEE THIS!",
    "url": "https://www.youtube.com/watch?v=MHc9rD8ro6E",
    "source": "Luke Beasley",
@@ -1510,6 +1564,22 @@
    "why": "0"
   },
   {
+   "title": "NASA Develops Batteries to Power Humanity’s Return to Moon",
+   "url": "https://www.reddit.com/r/tech/comments/1x67uas/nasa_develops_batteries_to_power_humanitys_return/",
+   "source": "r/tech",
+   "feedId": "rd-tech",
+   "type": "post",
+   "tags": [
+    "tech"
+   ],
+   "published": "2026-10-15T00:37:05.000Z",
+   "summary": "submitted by /u/Dorian182 [link] [comments]",
+   "id": "4cc870470b7f",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
    "title": "Town Hall Crowd HUMILIATES MAGA Congressman, He RAGE QUITS!",
    "url": "https://www.youtube.com/watch?v=BVq3y_ueiB0",
    "source": "Luke Beasley",
@@ -1523,24 +1593,6 @@
    "summary": "Luke discusses Rep Andy Harris in a recent disaster town hall. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
    "thumb": "https://i3.ytimg.com/vi/BVq3y_ueiB0/hqdefault.jpg",
    "id": "e38d35d64366",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "OH SH*T: Piers Morgan SNAPS AT TRUMP with BOMBSHELL Zelenskyy Interview!",
-   "url": "https://www.youtube.com/watch?v=P4ghGYilXiU",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-14T20:40:16.000Z",
-   "summary": "Luke discusses Zelenskyy's appearance on Piers Morgan's show. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
-   "thumb": "https://i1.ytimg.com/vi/P4ghGYilXiU/hqdefault.jpg",
-   "id": "6e3a54c5bd4c",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1628,22 +1680,6 @@
    "summary": "Will AI put millions of people out of work? Andrew Ng, CEO and founder of LearnVector, argues the fears are overblown. He tells Alex Hern, The Economist’s AI writer, that AI automates only part of most jobs, that its progress will be slowed by physical bottlenecks like building…",
    "thumb": "https://i3.ytimg.com/vi/J-sMqnzHwI0/hqdefault.jpg",
    "id": "f3ee429739b4",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Would you make payroll optional or part of the core product?",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1x5wj9p/would_you_make_payroll_optional_or_part_of_the/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-10-14T16:54:37.000Z",
-   "summary": "If you're adding embedded payroll to an existing platform, making it optional seems like the safer choice but then you're maintaining two different experiences for customers who use payroll and those who don't I want to see whether anyone has dealt with this when expanding a…",
-   "id": "fb88ad1364db",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2585,25 +2621,6 @@
    "why": "0"
   },
   {
-   "title": "ALABAMA TRUMP RALLY",
-   "url": "https://www.youtube.com/watch?v=t0Z_AEdIggM",
-   "source": "The Good Liars",
-   "feedId": "yt-the-good-liars",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "politics",
-    "debates"
-   ],
-   "published": "2026-10-05T17:30:09.000Z",
-   "summary": "The Good Liars visit the Trump Rally at The University of South Alabama https://linktr.ee/thegoodliars",
-   "thumb": "https://i1.ytimg.com/vi/t0Z_AEdIggM/hqdefault.jpg",
-   "id": "e704807b7752",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "In this arcade, you drop metal balls on rich people.",
    "url": "https://www.youtube.com/watch?v=drrUvxtT6lU",
    "source": "Tom Scott",
@@ -2877,5 +2894,5 @@
    "why": "0"
   }
  ],
- "contentHash": "5960b27795b4"
+ "contentHash": "22e2e1d0dcc0"
 }
