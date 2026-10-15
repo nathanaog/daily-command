@@ -188,6 +188,7 @@ ul.list a{color:var(--text);text-decoration:none} ul.list a:hover{text-decoratio
 .ytbox{position:relative;width:100%;aspect-ratio:16/9;background:#000;border-radius:14px;overflow:hidden;margin-bottom:10px}
 .ytbox iframe,.ytbox #ytFrame{position:absolute;inset:0;width:100%;height:100%;border:0}
 .wn .chip{min-height:36px}.wnpick{margin-top:8px;padding:10px 12px;border-radius:14px;background:var(--surface2)}
+.card.listen.mini{border-left:4px solid var(--accent)}
 .card.german{border-left:4px solid var(--accent)}
 .qaprev{margin-top:10px;padding:10px 12px;border:1px solid var(--accent);border-radius:14px;background:var(--surface2)}
 .week{display:flex;flex-direction:column;gap:8px}.wday{padding:8px 10px;border-radius:12px;background:var(--surface2)}.wday.wkend{border-left:3px solid var(--accent)}
@@ -2041,6 +2042,37 @@ const Listen = {
   },
 };
 
+/* ---- Mini player: what you're listening to, with Resume / from ~mm:ss / Done → next ----
+   The phone plays it (YouTube or Spotify app, background play with Premium); this card is the remote.
+   Position is an estimate from when you pressed play (minus time you marked as paused). */
+const listenPos = L => Math.max(0, Math.round(((L.pausedAt || Date.now()) - L.startedAt) / 1000));
+const withT = (url, sec) => { try { const u = new URL(url); if (!/youtu/.test(u.hostname)) return url; u.searchParams.set('t', Math.max(0, sec - 10) + 's'); return u.toString(); } catch (e) { return url; } };
+/** One link that plays many YouTube videos in a row (YouTube builds a temporary playlist): no coming back between items. */
+function playAllLink(q) {
+  const vids = q.filter(x => x.from !== 'spotify' && ytId(x.url)).slice(0, 50);
+  if (vids.length < 2) return '';
+  const url = `https://www.youtube.com/watch_videos?video_ids=${vids.map(x => ytId(x.url)).join(',')}`;
+  const sec = vids.reduce((a, x) => a + (x.durationSec || 0), 0);
+  return `<a class="btn sm" ${playAttrs(url)} data-act="listenPlayAll" data-url="${esc(url)}" data-n="${vids.length}" data-sec="${sec}">▶ Play all ${vids.length} in a row</a>`;
+}
+function listenBarHtml() {
+  const L = S.listening; if (!L) return '';
+  const pos = listenPos(L), dur = L.durationSec, finished = dur && pos > dur + 60 && !L.all;
+  const next = Listen.queue().find(x => x.key !== L.key && x.from !== 'spotify');
+  const status = L.pausedAt ? `⏸ paused at ~${mmss(pos)}` : finished ? 'probably finished' : dur ? `~${mmss(Math.min(pos, dur))} of ${mmss(dur)}` : `started ${fmtT(new Date(L.startedAt))}`;
+  const resume = L.spotify && L.uri ? `<button class="btn sm primary" data-act="spResume">▶ Resume</button>`
+    : L.url ? `<a class="btn sm primary" ${playAttrs(L.url)} data-act="listenResume">▶ Resume</a>` : '';
+  const fromT = !L.spotify && !L.all && L.url && pos > 60 && (!dur || pos < dur) ? `<a class="btn sm" ${playAttrs(withT(L.url, pos))} data-act="listenResume" title="if YouTube starts from the beginning">from ~${mmss(Math.max(0, pos - 10))}</a>` : '';
+  return `<div class="card listen mini"><div class="row" style="justify-content:space-between"><span class="small muted">🎧 ${L.spotify ? 'Spotify' : L.focus ? 'Focus audio' : 'YouTube'} · ${status}</span>
+      <button class="icon" data-act="listenStop" aria-label="Stop" title="Clear">✕</button></div>
+    <div style="font-weight:600;margin:4px 0">${esc(L.title)}</div>
+    ${L.spotify || L.focus ? nowPlayingHtml(true) : ''}
+    <div class="actions">${resume}${fromT}
+      ${L.focus || L.all ? '' : `<button class="btn sm ghost" data-act="listenPause">${L.pausedAt ? '▶ Back on' : '⏸ I paused'}</button>`}
+      ${L.focus || L.all ? '' : next ? `<a class="btn sm" ${playAttrs(next.url)} data-act="listenNext" data-key="${esc(next.key)}">✓ Done → next</a>` : `<button class="btn sm" data-act="listenDone" data-key="${esc(L.key)}">✓ Done</button>`}</div>
+    ${next && !L.focus && !L.all ? `<div class="small muted">Next: ${esc(next.title)}${next.durationSec ? ' · ' + mmss(next.durationSec) : ''}</div>` : ''}</div>`;
+}
+
 /** The card under the Now hero. Returns '' when the current block's plan is "off". */
 function listenCardHtml() {
   const c = R.current;
@@ -2123,10 +2155,21 @@ function audioSettingsHtml() {
 const ACT4 = {
   listenPlay(el) {
     const it = Listen.find(el.dataset.key); if (!it) return;
-    S.listening = { key: it.key, title: it.title, durationSec: it.durationSec || null, startedAt: Date.now() };
+    S.listening = { key: it.key, title: it.title, durationSec: it.durationSec || null, startedAt: Date.now(), url: it.url };
     save(); setTimeout(render, 300);                 // let the link open first
   },
-  listenDone(el) { Listen.done(el.dataset.key); render(); },
+  /** Re-open what you were listening to. YouTube/Spotify usually remember the position themselves (signed in). */
+  listenResume() { const L = S.listening; if (!L) return; if (L.pausedAt) { L.startedAt += Date.now() - L.pausedAt; L.pausedAt = null; } save(); setTimeout(render, 300); },
+  /** "I paused it" — freezes the position estimate (e.g. you stopped for a call). */
+  listenPause() { const L = S.listening; if (!L) return; if (L.pausedAt) { L.startedAt += Date.now() - L.pausedAt; L.pausedAt = null; } else L.pausedAt = Date.now(); save(); render(); },
+  listenNext(el) {
+    if (S.listening && S.listening.key !== 'all' && !S.listening.focus) Listen.done(S.listening.key);
+    const it = Listen.find(el.dataset.key);
+    S.listening = it ? { key: it.key, title: it.title, durationSec: it.durationSec || null, startedAt: Date.now(), url: it.url } : null;
+    save(); setTimeout(render, 300);
+  },
+  listenPlayAll(el) { S.listening = { key: 'all', title: `Your Listen queue · ${el.dataset.n} videos`, all: true, startedAt: Date.now(), url: el.dataset.url, durationSec: +el.dataset.sec || null }; save(); setTimeout(render, 300); },
+  listenDone(el) { Listen.done(el.dataset.key); if (S.listening?.key === el.dataset.key) S.listening = null; save(); render(); },
   listenStop() { S.listening = null; save(); render(); },
   listenSkip(el) { (S.listenSkip ||= {}); (S.listenSkip[today()] ||= []).push(el.dataset.key); save(); render(); },
   focusPlay() { const fa = S.settings.focusAudio; S.listening = { key: 'focus', focus: true, title: fa.label || 'Focus audio', durationSec: null, startedAt: Date.now() }; save(); setTimeout(render, 300); },
@@ -2991,7 +3034,8 @@ const ACT7 = {
     spset().playlistTags = { ...(spset().playlistTags || {}), [id]: parseTags(v.tags) }; save(); render();
   },
   spPlayPl(el) { const p = (C.spotify?.playlists || []).find(x => x.id === el.dataset.id); if (p) spPlayUri(p.uri, p.url, p.name); },
-  spPlay(el) { const it = Listen.find(el.dataset.key); if (!it) return; S.listening = { key: it.key, title: it.title, durationSec: it.durationSec || null, startedAt: Date.now(), spotify: true }; save(); spPlayUri(it.uri, it.url, it.title); },
+  spPlay(el) { const it = Listen.find(el.dataset.key); if (!it) return; S.listening = { key: it.key, title: it.title, durationSec: it.durationSec || null, startedAt: Date.now(), spotify: true, uri: it.uri, url: it.url }; save(); spPlayUri(it.uri, it.url, it.title); },
+  spResume() { const L = S.listening; if (!L?.uri) return; if (L.pausedAt) { L.startedAt += Date.now() - L.pausedAt; L.pausedAt = null; } save(); spPlayUri(L.uri, L.url, L.title); render(); },
   spFocusPlay(el) { const p = (C.spotify?.playlists || []).find(x => x.id === el.dataset.id); if (p) { spPlayUri(p.uri, p.url, p.name); S.listening = { key: 'focus', focus: true, title: p.name, startedAt: Date.now() }; save(); render(); } },
   spFocusNext() { S.ui.focusPl = (S.ui.focusPl || 0) + 1; render(); },
 };
@@ -3547,7 +3591,7 @@ function renderNow() {
       <span class="num muted">${whenLabel(n.at)} · in ${fmtDur(n.at - now)}</span></div>`;
   }
   h += `</article>`;
-  h += listenCardHtml();                          // 🎧 listen while working (PART 4d)
+  h += S.listening ? listenBarHtml() : listenCardHtml();   // 🎧 mini player when something's on, else the listen suggestion (PART 4d)
 
   // ---- secondary sections: content changes with the mode ----
   h += modeSections(R.mode);
@@ -3748,7 +3792,7 @@ avg per active day = ${sum} ÷ ${daysWith || 1} = ${daysWith ? (sum / daysWith).
   h += sec('focus-log', 'Session log (7 days)', recent.length ? `<ul class="list">${recent.map(l => `<li><span class="num muted" style="width:110px">${new Date(l.start).toLocaleDateString('en-GB', { weekday: 'short' })} ${fmtT(new Date(l.start))}</span>
     <span class="grow">${esc(l.taskTitle || '—')}${l.partial ? ' <span class="tag">partial</span>' : ''}</span><span class="num">${l.min}m</span>
     <button class="icon" data-act="logDelete" data-id="${l.id}" aria-label="Delete entry">✕</button></li>`).join('')}</ul>` : '<div class="empty">No sessions yet.</div>');
-  $('#view-focus').innerHTML = h;
+  $('#view-focus').innerHTML = h + (S.listening ? listenBarHtml() : '');   // 🎧 the mini player follows you to Focus
 }
 
 /* ---------------- INBOX view ---------------- */
@@ -3757,7 +3801,7 @@ function renderInbox() {
     <p class="muted small">Capture now, decide later. Sorted during the evening wrap-up: ✓ task · ⏵ watch/read later · ✕ delete.</p>
     <div class="card">${inboxHtml()}</div>
     <div class="actions"><button class="btn primary" data-act="capture">+ Capture</button><button class="btn" data-act="wrapup">Evening wrap-up</button></div>
-    <h2>🎧 Listen queue</h2><div class="card">${listenQueueHtml()}</div>
+    ${S.listening ? listenBarHtml() : ''}<h2>🎧 Listen queue</h2><div class="card">${playAllLink(Listen.queue()) ? `<div class="actions" style="margin:0 0 8px">${playAllLink(Listen.queue())}</div>` : ''}${listenQueueHtml()}</div>
     <h2>Watch-later shelf</h2><div class="card">${watchHtml()}</div>
     ${digestCard()}`;
 }
