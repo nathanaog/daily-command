@@ -190,11 +190,12 @@ ul.list a{color:var(--text);text-decoration:none} ul.list a:hover{text-decoratio
 .wn .chip{min-height:36px}.wnpick{margin-top:8px;padding:10px 12px;border-radius:14px;background:var(--surface2)}
 .dock{position:fixed;left:0;right:0;bottom:calc(62px + env(safe-area-inset-bottom));z-index:7;background:var(--surface);border-top:1px solid var(--border);box-shadow:0 -6px 20px rgba(0,0,0,.25)}
 .dock-in{display:flex;gap:10px;padding:8px 10px;max-width:760px;margin:0 auto}.dockvid{width:200px;height:200px;flex:0 0 200px;background:#000;border-radius:10px;overflow:hidden}
-.dockvid iframe,#dockFrame{width:100%;height:100%;display:block}.dockctl{flex:1;min-width:0;display:flex;flex-direction:column;gap:6px}
+.dockvid.sp{background:transparent}.dockvid iframe,#dockFrame{width:100%;height:100%;display:block}.dockctl{flex:1;min-width:0;display:flex;flex-direction:column;gap:6px}
 .docktitle{font-size:.92rem;line-height:1.25;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
 .dockbtns{display:flex;gap:6px;align-items:center;flex-wrap:wrap}.dockbtns .icon{min-width:44px}
 body.docked main, body.docked .view{padding-bottom:240px}body.docked .fab{bottom:calc(300px + env(safe-area-inset-bottom))}
 .qitem{text-align:left;padding:0;font:inherit;color:inherit}
+.updbanner{position:sticky;top:0;z-index:9;width:100%;border:0;padding:12px;background:var(--accent);color:var(--bg);font-weight:600;cursor:pointer}
 .card.listen.mini{border-left:4px solid var(--accent)}
 .card.german{border-left:4px solid var(--accent)}
 .qaprev{margin-top:10px;padding:10px 12px;border:1px solid var(--accent);border-radius:14px;background:var(--surface2)}
@@ -261,6 +262,7 @@ dialog::backdrop{background:rgba(0,0,0,.5)}
   <div class="modes" id="modes" role="group" aria-label="Mode"></div>
 </header>
 
+<button id="updBanner" class="updbanner hidden">✨ New version ready — tap to update</button>
 <main>
   <!-- NOW: the hero card + mode-dependent secondary sections -->
   <section class="view on" id="view-now" aria-label="Now"></section>
@@ -885,6 +887,7 @@ const QuickAdd = (() => {
    survives offline). Export/import is the same JSON. Later stages sync
    this same object to Google Drive's appDataFolder.
    ===================================================================== */
+const APP_BUILD = '1.9.1';   // shown in More; keep in step with VERSION in sw.js
 const STORE_KEY = 'dailycommand.v1';
 const uid = () => Date.now().toString(36) + Math.random().toString(36).slice(2, 7);
 
@@ -2066,10 +2069,10 @@ function playAllLink(q) {
 function listenBarHtml() {
   const L = S.listening; if (!L || Dock.item) return '';     // the dock is the player while it's open
   const pos = L.here ? (L.pos || 0) : listenPos(L), dur = L.durationSec, finished = dur && pos > dur + 60 && !L.all;
-  const next = Listen.queue().find(x => x.key !== L.key && x.from !== 'spotify');
+  const next = Listen.queue().find(x => x.key !== L.key && (playHere() ? dockable(x) : x.from !== 'spotify'));
   const status = L.here ? `stopped at ${mmss(pos)}${dur ? ' of ' + mmss(dur) : ''}` : L.pausedAt ? `⏸ paused at ~${mmss(pos)}` : finished ? 'probably finished' : dur ? `~${mmss(Math.min(pos, dur))} of ${mmss(dur)}` : `started ${fmtT(new Date(L.startedAt))}`;
-  const resume = L.spotify && L.uri ? `<button class="btn sm primary" data-act="spResume">▶ Resume</button>`
-    : L.url && playHere() && ytId(L.url) && !L.all ? `<button class="btn sm primary" data-act="listenHere" data-key="${esc(L.key)}" data-resume="1">▶ Resume${L.pos > 30 ? ' at ' + mmss(L.here ? L.pos : pos) : ''}</button>`
+  const resume = L.url && playHere() && dockable(L) && !L.all ? `<button class="btn sm primary" data-act="listenHere" data-key="${esc(L.key)}" data-resume="1">▶ Resume${L.pos > 30 ? ' at ' + mmss(L.here ? L.pos : pos) : ''}</button>`
+    : L.spotify && L.uri ? `<button class="btn sm primary" data-act="spResume">▶ Resume</button>`
     : L.url ? `<a class="btn sm primary" ${playAttrs(L.url)} data-act="listenResume">▶ Resume</a>` : '';
   const fromT = !L.here && !L.spotify && !L.all && L.url && pos > 60 && (!dur || pos < dur) ? `<a class="btn sm" ${playAttrs(withT(L.url, pos))} data-act="listenResume" title="if YouTube starts from the beginning">from ~${mmss(Math.max(0, pos - 10))}</a>` : '';
   return `<div class="card listen mini"><div class="row" style="justify-content:space-between"><span class="small muted">🎧 ${L.spotify ? 'Spotify' : L.focus ? 'Focus audio' : 'YouTube'} · ${status}</span>
@@ -2079,7 +2082,7 @@ function listenBarHtml() {
     <div class="actions">${resume}${fromT}
       ${L.here && L.url ? `<a class="btn sm ghost" ${playAttrs(withT(L.url, pos + 10))} data-act="listenPlay" data-key="${esc(L.key)}">⤴ YouTube app</a>` : ''}
       ${L.focus || L.all || L.here ? '' : `<button class="btn sm ghost" data-act="listenPause">${L.pausedAt ? '▶ Back on' : '⏸ I paused'}</button>`}
-      ${L.focus || L.all ? '' : next ? (playHere() && ytId(next.url) ? `<button class="btn sm" data-act="listenDoneHere" data-key="${esc(next.key)}">✓ Done → next</button>` : `<a class="btn sm" ${playAttrs(next.url)} data-act="listenNext" data-key="${esc(next.key)}">✓ Done → next</a>`) : `<button class="btn sm" data-act="listenDone" data-key="${esc(L.key)}">✓ Done</button>`}</div>
+      ${L.focus || L.all ? '' : next ? (playHere() && dockable(next) ? `<button class="btn sm" data-act="listenDoneHere" data-key="${esc(next.key)}">✓ Done → next</button>` : `<a class="btn sm" ${playAttrs(next.url)} data-act="listenNext" data-key="${esc(next.key)}">✓ Done → next</a>`) : `<button class="btn sm" data-act="listenDone" data-key="${esc(L.key)}">✓ Done</button>`}</div>
     ${next && !L.focus && !L.all ? `<div class="small muted">Next: ${esc(next.title)}${next.durationSec ? ' · ' + mmss(next.durationSec) : ''}</div>` : ''}</div>`;
 }
 
@@ -2092,23 +2095,48 @@ function listenBarHtml() {
 const playHere = () => (S.settings.listenWhere || 'app') === 'app';
 /** A play control for a Listen item: in-app dock, Spotify Connect, or a YouTube-app link. */
 function listenLink(it, label, cls = '') {
+  if (playHere() && dockable(it)) return `<button class="${cls || 'linkish'}" data-act="listenHere" data-key="${esc(it.key)}">${label}</button>`;
   if (it.from === 'spotify' && it.uri) return `<button class="${cls || 'linkish'}" data-act="spPlay" data-key="${esc(it.key)}">${label}</button>`;
-  if (playHere() && ytId(it.url)) return `<button class="${cls || 'linkish'}" data-act="listenHere" data-key="${esc(it.key)}">${label}</button>`;
   return `<a class="${cls}" ${playAttrs(it.url)} data-act="listenPlay" data-key="${esc(it.key)}">${label}</a>`;
 }
+let spEmbedPromise = null;
+/** Spotify's embeddable player API (plays full podcast episodes; music may be a 30-s preview unless you're logged in to Spotify in this browser). */
+function loadSpotifyEmbedApi() {
+  if (window.__spIFrameAPI) return Promise.resolve(window.__spIFrameAPI);
+  if (spEmbedPromise) return spEmbedPromise;
+  spEmbedPromise = new Promise((res, rej) => {
+    window.onSpotifyIframeApiReady = api => { window.__spIFrameAPI = api; res(api); };
+    const sc = document.createElement('script'); sc.src = 'https://open.spotify.com/embed/iframe-api/v1'; sc.async = true;
+    sc.onerror = () => { spEmbedPromise = null; rej(new Error('Couldn’t load the Spotify player (offline?)')); };
+    document.head.appendChild(sc);
+  });
+  return spEmbedPromise;
+}
+const spUri = it => it.uri || (() => { const m = String(it.url || '').match(/open\.spotify\.com\/(episode|show|playlist|album|track)\/([\w]+)/); return m ? `spotify:${m[1]}:${m[2]}` : ''; })();
+const ytList = url => (String(url).match(/[?&]list=([\w-]+)/) || [])[1] || null;
+/** Can this item play in the dock? (a YouTube video/playlist, or anything Spotify) */
+const dockable = it => !!(it && (ytId(it.url) || ytList(it.url) || spUri(it)));
 const Dock = {
-  item: null, yt: null, wake: null, tick: null, state: 'idle', err: '',
+  item: null, yt: null, sp: null, wake: null, tick: null, state: 'idle', err: '', kind: 'yt', spPos: 0, spDur: 0, ending: false,
   async play(item, startSec = 0) {
     this.close(true);
-    this.item = item; this.state = 'loading'; this.err = '';
-    S.listening = { key: item.key, title: item.title, url: item.url, durationSec: item.durationSec || null, startedAt: Date.now() - startSec * 1000, pos: startSec, here: true };
+    this.item = item; this.state = 'loading'; this.err = ''; this.ending = false;
+    this.kind = spUri(item) && !ytId(item.url) && !ytList(item.url) ? 'sp' : 'yt';
+    S.listening = { key: item.key, title: item.title, url: item.url, uri: item.uri, durationSec: item.durationSec || null, startedAt: Date.now() - startSec * 1000, pos: startSec, here: true, focus: !!item.focus, spotify: this.kind === 'sp' };
     save();
     document.body.classList.add('docked'); $('#dock').classList.remove('hidden'); this.paint();
+    clearInterval(this.tick); let n = 0;
+    this.tick = setInterval(() => { this.status(); if (++n % 15 === 0) this.savePos(); }, 1000);
+    if (this.kind === 'sp') return this.playSpotify(item, startSec);
     try { await loadYTApi(); } catch (e) { this.state = 'error'; this.err = e.message; return this.status(); }
     if (this.item !== item) return;
+    const vid = ytId(item.url), list = ytList(item.url);
+    const pv = { autoplay: 1, rel: 0, playsinline: 1, modestbranding: 1, start: Math.floor(startSec) };
+    if (list && !vid) Object.assign(pv, { listType: 'playlist', list });            // a playlist link (e.g. focus audio)
+    else if (list) pv.list = list;
+    if (item.focus && vid && !list) Object.assign(pv, { loop: 1, playlist: vid });    // single focus video: loop it
     this.yt = new YT.Player('dockFrame', {
-      videoId: ytId(item.url), width: '100%', height: '100%',
-      playerVars: { autoplay: 1, rel: 0, playsinline: 1, modestbranding: 1, start: Math.floor(startSec) },
+      ...(vid ? { videoId: vid } : {}), width: '100%', height: '100%', playerVars: pv,
       events: {
         onReady: e => { try { e.target.playVideo(); } catch (x) {} },
         onStateChange: e => {
@@ -2120,11 +2148,29 @@ const Dock = {
         onError: e => { this.state = 'error'; this.err = [101, 150].includes(e.data) ? 'This channel only allows playing on YouTube.' : 'This video can’t play here.'; this.keepAwake(false); this.status(); },
       },
     });
-    clearInterval(this.tick);
-    let n = 0;
-    this.tick = setInterval(() => { this.status(); if (++n % 15 === 0) this.savePos(); }, 1000);
   },
-  pos() { try { return Math.floor(this.yt?.getCurrentTime?.() || S.listening?.pos || 0); } catch (e) { return S.listening?.pos || 0; } },
+  async playSpotify(item, startSec) {
+    let api; try { api = await loadSpotifyEmbedApi(); } catch (e) { this.state = 'error'; this.err = e.message; return this.status(); }
+    if (this.item !== item) return;
+    api.createController($('#dockFrame'), { uri: spUri(item), width: '100%', height: 200 }, ctl => {
+      if (this.item !== item) { try { ctl.destroy(); } catch (e) {} return; }
+      this.sp = ctl;
+      ctl.addListener('ready', () => { try { if (startSec) ctl.seek(startSec); ctl.play(); } catch (e) {} });
+      ctl.addListener('playback_update', e => {
+        const d = e.data || {}; this.spPos = (d.position || 0) / 1000; this.spDur = (d.duration || 0) / 1000;
+        const was = this.state;
+        this.state = d.isBuffering ? 'buffering' : d.isPaused ? (this.spPos > 0 ? 'paused' : 'ready') : 'playing';
+        if (this.state === 'playing') this.keepAwake(true); else if (was === 'playing') { this.keepAwake(false); this.savePos(); }
+        if (!item.focus && this.spDur > 30 && this.spPos >= this.spDur - 1.5 && !this.ending) { this.ending = true; return this.ended(); }
+        this.status();
+      });
+    });
+  },
+  pos() {
+    if (this.kind === 'sp' && this.sp) return Math.floor(this.spPos || 0);
+    try { return Math.floor(this.yt?.getCurrentTime?.() || S.listening?.pos || 0); } catch (e) { return S.listening?.pos || 0; }
+  },
+  dur() { return this.item?.durationSec || (this.kind === 'sp' ? Math.round(this.spDur) : (this.yt?.getDuration?.() | 0)); },
   savePos() { if (!this.item || !S.listening) return; S.listening.pos = this.pos(); S.listening.startedAt = Date.now() - S.listening.pos * 1000; save(); },
   async keepAwake(on) {
     try {
@@ -2132,40 +2178,53 @@ const Dock = {
       if (!on && this.wake) { await this.wake.release(); this.wake = null; }
     } catch (e) { /* not supported / denied: fine */ }
   },
-  toggle() { if (!this.yt) return; this.state === 'playing' ? this.yt.pauseVideo() : this.yt.playVideo(); },
-  seek(d) { if (!this.yt) return; this.yt.seekTo(Math.max(0, this.pos() + d), true); setTimeout(() => this.status(), 200); },
+  toggle() {
+    if (this.sp) return this.sp.togglePlay();
+    if (!this.yt) return; this.state === 'playing' ? this.yt.pauseVideo() : this.yt.playVideo();
+  },
+  seek(d) {
+    const to = Math.max(0, this.pos() + d);
+    if (this.sp) { this.sp.seek(to); this.spPos = to; } else if (this.yt) this.yt.seekTo(to, true);
+    setTimeout(() => this.status(), 200);
+  },
+  nextItem(curKey) { return Listen.queue().find(x => x.key !== curKey && dockable(x)); },
   ended() {
-    const done = this.item; Listen.done(done.key);
-    const next = Listen.queue().find(x => x.key !== done.key && x.from !== 'spotify' && ytId(x.url));
+    const done = this.item; if (done.focus) return;               // focus audio loops / playlists continue on their own
+    Listen.done(done.key);
+    const next = this.nextItem(done.key);
     if (next && S.settings.listenAutoNext !== false) { toast(`Next: ${next.title}`); return this.play(next); }
     S.listening = null; save(); this.close(); toast('Finished ✓ — queue is empty.');
   },
-  next() { const cur = this.item; if (!cur) return; Listen.done(cur.key); const nx = Listen.queue().find(x => x.key !== cur.key && x.from !== 'spotify' && ytId(x.url)); if (nx) this.play(nx); else { S.listening = null; save(); this.close(); } },
+  next() { const cur = this.item; if (!cur || cur.focus) return; Listen.done(cur.key); const nx = this.nextItem(cur.key); if (nx) this.play(nx); else { S.listening = null; save(); this.close(); } },
   close(silent) {
     if (this.item && !silent) this.savePos();
     clearInterval(this.tick); this.keepAwake(false);
     try { this.yt?.destroy?.(); } catch (e) {}
-    this.yt = null; this.item = null; this.state = 'idle';
+    try { this.sp?.destroy?.(); } catch (e) {}
+    this.yt = null; this.sp = null; this.item = null; this.state = 'idle';
     const el = $('#dock'); el.classList.add('hidden'); el.innerHTML = ''; document.body.classList.remove('docked');
     if (!silent) render();
   },
+  handoffUrl() { const it = this.item; if (!it) return '#'; return this.kind === 'sp' ? ytOpenUrl(it.url || '') : ytOpenUrl(withT(it.url, this.pos() + 10)); },
   paint() {
     const it = this.item;
-    $('#dock').innerHTML = `<div class="dock-in"><div class="dockvid"><div id="dockFrame"></div></div>
+    $('#dock').innerHTML = `<div class="dock-in"><div class="dockvid ${this.kind === 'sp' ? 'sp' : ''}"><div id="dockFrame"></div></div>
       <div class="dockctl"><div class="row" style="justify-content:space-between;gap:6px"><b class="docktitle">${esc(it.title)}</b><button class="icon" data-act="dockClose" aria-label="Close player">✕</button></div>
         <div class="small muted" id="dockStatus">Loading…</div>
         <div class="dockbtns"><button class="icon" data-act="dockSeek" data-d="-15" aria-label="Back 15 seconds">↺15</button>
           <button class="btn sm primary" data-act="dockToggle" id="dockPP" aria-label="Play or pause">Pause</button>
           <button class="icon" data-act="dockSeek" data-d="30" aria-label="Forward 30 seconds">30↻</button></div>
-        <div class="dockbtns"><button class="btn sm" data-act="dockNext">✓ Next</button><a class="btn sm ghost" id="dockOut" data-act="dockHandoff">⤴ YouTube</a></div></div></div>`;
+        <div class="dockbtns">${it.focus ? '' : '<button class="btn sm" data-act="dockNext">✓ Next</button>'}<a class="btn sm ghost" id="dockOut" data-act="dockHandoff">⤴ ${this.kind === 'sp' ? 'Spotify' : 'YouTube'}</a></div></div></div>`;
     this.status();
   },
   status() {
     const st = $('#dockStatus'); if (!st || !this.item) return;
-    const p = this.pos(), d = this.item.durationSec || (this.yt?.getDuration?.() | 0);
-    st.innerHTML = this.state === 'error' ? `⚠ ${esc(this.err)}` : `${this.state === 'paused' ? (document.visibilityState === 'visible' ? '⏸ ' : '⏸ ') : this.state === 'buffering' || this.state === 'loading' ? '… ' : ''}<span class="num">${mmss(p)}${d ? ' / ' + mmss(d) : ''}</span>${this.state === 'playing' && this.wake ? ' · screen stays on' : ''}`;
+    const p = this.pos(), d = this.dur();
+    st.innerHTML = this.state === 'error' ? `⚠ ${esc(this.err)}`
+      : this.state === 'ready' ? 'Tap ▶ to start'
+      : `${this.state === 'paused' ? '⏸ ' : this.state === 'buffering' || this.state === 'loading' ? '… ' : ''}<span class="num">${mmss(p)}${d ? ' / ' + mmss(d) : ''}</span>${this.state === 'playing' && this.wake ? ' · screen stays on' : ''}`;
     const pp = $('#dockPP'); if (pp) pp.textContent = this.state === 'playing' ? 'Pause' : '▶ Play';
-    const out = $('#dockOut'); if (out) { const h = ytOpenUrl(withT(this.item.url, p + 10)); out.setAttribute('href', h); if (!h.startsWith('intent:')) { out.target = '_blank'; out.rel = 'noopener'; } }
+    const out = $('#dockOut'); if (out) { const h = this.handoffUrl(); out.setAttribute('href', h); if (!h.startsWith('intent:')) { out.target = '_blank'; out.rel = 'noopener'; } }
   },
 };
 document.addEventListener('visibilitychange', () => {
@@ -2175,12 +2234,16 @@ document.addEventListener('visibilitychange', () => {
 });
 const ACT11 = {
   listenHere(el) {
-    const it = Listen.find(el.dataset.key) || (S.listening?.key === el.dataset.key ? { key: S.listening.key, title: S.listening.title, url: S.listening.url, durationSec: S.listening.durationSec } : null);
+    const L0 = S.listening;
+    const it = Listen.find(el.dataset.key) || (L0?.key === el.dataset.key ? { key: L0.key, title: L0.title, url: L0.url, uri: L0.uri, durationSec: L0.durationSec, focus: L0.focus, from: L0.spotify ? 'spotify' : '' } : null);
     if (!it) return;
     if (!navigator.onLine) return toast('You’re offline — the player needs a connection.');
     const L = S.listening, start = el.dataset.resume && L ? (L.here ? (L.pos || 0) : Math.max(0, listenPos(L) - 10)) : 0;   // YouTube-app sessions resume at the estimate
     Dock.play(it, start);
   },
+  focusHere() { const fa = S.settings.focusAudio; if (fa?.url) Dock.play({ key: 'focus', focus: true, title: fa.label || 'Focus audio', url: fa.url }); },
+  spFocusHere(el) { const p = (C.spotify?.playlists || []).find(x => x.id === el.dataset.id); if (p) Dock.play({ key: 'focus', focus: true, title: p.name, uri: p.uri, url: p.url }); },
+  checkUpdate() { if (window.dcCheckUpdate) window.dcCheckUpdate(); else toast('Updates are checked when the app is installed from the website.'); },
   dockToggle() { Dock.toggle(); },
   dockSeek(el) { Dock.seek(+el.dataset.d); },
   dockNext() { Dock.next(); },
@@ -2215,14 +2278,14 @@ function listenCardHtml() {
       const pl = tagged[(S.ui.focusPl || 0) % tagged.length];
       return `<div class="card listen"><div class="row" style="justify-content:space-between"><span class="small muted">🎧 Focus audio · Spotify</span>${nowPlayingHtml()}</div>
         <div style="font-weight:600;margin:4px 0">${esc(pl.name)}</div><div class="small muted">${tagged.length} playlist${tagged.length > 1 ? 's' : ''} tagged “focus”</div>
-        <div class="actions"><button class="btn sm primary" data-act="spFocusPlay" data-id="${esc(pl.id)}">▶ Play ${isAndroid() ? '' : 'on phone'}</button>
+        <div class="actions"><button class="btn sm primary" data-act="${playHere() ? 'spFocusHere' : 'spFocusPlay'}" data-id="${esc(pl.id)}">▶ Play ${isAndroid() ? '' : 'on phone'}</button>
         ${tagged.length > 1 ? '<button class="btn sm" data-act="spFocusNext">Another</button>' : ''}<button class="btn sm ghost" data-act="audioPlanQuick" data-kind="${c.kind}" data-plan="talk">Talk instead</button></div></div>`;
     }
     if (!fa?.url) return `<div class="card listen"><div class="small muted">🎧 Focus audio for ${esc(KIND_LABEL[c.kind] || 'this block')}</div>
       <div class="small">Instrumental or ambient works best while reading and writing. Set a link once (a YouTube or Spotify playlist), or tag Spotify playlists “focus”.</div>
       <div class="actions"><button class="btn sm" data-act="focusAudioSet">Set focus audio</button><button class="btn sm ghost" data-act="audioPlanQuick" data-kind="${c.kind}" data-plan="talk">Use the talk queue instead</button></div></div>`;
     return `<div class="card listen"><div class="small muted">🎧 Focus audio</div><div style="font-weight:600;margin:4px 0">${esc(fa.label || 'Focus audio')}</div>
-      <div class="actions"><a class="btn sm primary" ${playAttrs(fa.url)} data-act="focusPlay">▶ Play</a><button class="btn sm ghost" data-act="audioPlanQuick" data-kind="${c.kind}" data-plan="talk">Talk instead</button></div></div>`;
+      <div class="actions">${playHere() && dockable(fa) ? `<button class="btn sm primary" data-act="focusHere">▶ Play</button>` : `<a class="btn sm primary" ${playAttrs(fa.url)} data-act="focusPlay">▶ Play</a>`}<button class="btn sm ghost" data-act="audioPlanQuick" data-kind="${c.kind}" data-plan="talk">Talk instead</button></div></div>`;
   }
   if (plan !== 'talk') return '';
   const secLeft = c.end ? Math.max(0, (c.end - now) / 1000) : null;
@@ -2234,9 +2297,7 @@ function listenCardHtml() {
     <div class="small muted">${esc(it.source || '')}${it.durationSec ? ' · ' + mmss(it.durationSec) : ''}</div>
     ${p.why ? `<div class="math">${esc(p.why)}</div>` : ''}
     ${nowPlayingHtml(true)}
-    <div class="actions">${it.from === 'spotify' && it.uri
-      ? `<button class="btn sm primary" data-act="spPlay" data-key="${esc(it.key)}">▶ Play ${isAndroid() ? 'in Spotify' : 'on phone'}</button>`
-      : listenLink(it, `▶ Play${playHere() ? '' : isAndroid() ? ' in YouTube' : ''}`, 'btn sm primary')}
+    <div class="actions">${listenLink(it, `▶ Play${playHere() ? '' : it.from === 'spotify' ? (isAndroid() ? ' in Spotify' : ' on phone') : isAndroid() ? ' in YouTube' : ''}`, 'btn sm primary')}
       <button class="btn sm" data-act="listenSkip" data-key="${esc(it.key)}">Skip</button><button class="btn sm ghost" data-act="go" data-view="inbox">Queue</button></div>
     ${Google.on('youtube') && YTList.url() ? `<div class="actions"><a class="btn sm" ${playAttrs(YTList.url())}>▶ Play the whole Listen playlist</a></div>` : ''}
     ${isAndroid() ? '' : '<div class="small muted" style="margin-top:6px">Listening on your phone? Open the app there — it shows the same queue.</div>'}</div>`;
@@ -3437,7 +3498,7 @@ function whatNowCandidates(min, energy) {
   if (fitV) add({ key: 'v:' + fitV.key, icon: '▶', title: fitV.title, why: `${mmss(fitV.durationSec)} ≤ ${mmss(sec)} ✓ fits${fitV.from === 'shelf' ? ' · from your shelf' : ''}`, go: 'watchHere', data: fitV.key }, E(3, 2, 1) + (fitV.from === 'shelf' ? 0.5 : 0));
   // 3. Something to listen to (low energy, e.g. a walk or chores)
   const lq = Listen.queue(), fitL = lq.find(x => x.durationSec && x.durationSec <= sec) || (min >= 30 ? lq[0] : null);
-  if (fitL) add({ key: 'l:' + fitL.key, icon: '🎧', title: fitL.title, why: fitL.durationSec ? `${mmss(fitL.durationSec)} ≤ ${mmss(sec)} ✓ fits · good for a walk or chores` : 'good for a walk or chores', ...(playHere() && ytId(fitL.url) && fitL.from !== 'spotify' ? { go: 'listenHere', data: fitL.key } : { href: fitL.url }) }, E(2.5, 2, 1));
+  if (fitL) add({ key: 'l:' + fitL.key, icon: '🎧', title: fitL.title, why: fitL.durationSec ? `${mmss(fitL.durationSec)} ≤ ${mmss(sec)} ✓ fits · good for a walk or chores` : 'good for a walk or chores', ...(playHere() && dockable(fitL) ? { go: 'listenHere', data: fitL.key } : { href: fitL.url }) }, E(2.5, 2, 1));
   // 4. Due habits (any mode) — quick wins
   for (const { h, s } of Habit.nudges(S.habits, S.habitLog, today(), minuteNow(), 'any', {}).slice(0, 2))
     add({ key: 'h:' + h.id, icon: h.icon || '✓', title: h.name, why: s.text, go: 'habitTick', data: h.id, done: true }, E(1.5, 2.5, 2.5) + s.urgency * 0.5);
@@ -3991,7 +4052,7 @@ function renderMore() {
     ${snapshotsHtml()}`);
 
   h += sec('more-help', 'Help & limits', helpHtml());
-  h += `<p class="muted small" style="text-align:center;margin-top:20px">The Natto App · Stage 5 · <span id="swState">offline cache: checking…</span></p>`;
+  h += `<p class="muted small" style="text-align:center;margin-top:20px">The Natto App · build ${APP_BUILD} · <span id="swState">offline cache: checking…</span><br><button class="linkish small muted" data-act="checkUpdate">Check for updates</button></p>`;
   $('#view-more').innerHTML = h;
   updateSwState();
 }
@@ -4611,14 +4672,23 @@ async function updateSwState() {
   el.textContent = reg?.active ? 'offline ready ✓' : 'offline cache installing…';
 }
 if ('serviceWorker' in navigator && location.protocol !== 'file:') {
+  const bootAt = Date.now();
+  /** A new version is downloaded and waiting. Right after opening the app: switch straight away
+      (that's the moment you won't lose anything). Later on: a banner that stays until you tap it. */
+  const offerUpdate = w => {
+    if (!w) return;
+    if (Date.now() - bootAt < 4000 && !Dock.item) return w.postMessage('skipWaiting');
+    const b = $('#updBanner'); if (b) { b.classList.remove('hidden'); b.onclick = () => w.postMessage('skipWaiting'); }
+  };
   navigator.serviceWorker.register('sw.js').then(reg => {
+    offerUpdate(reg.waiting);                                   // downloaded while the app was closed
     reg.addEventListener('updatefound', () => {
       const nw = reg.installing;
-      nw?.addEventListener('statechange', () => {
-        if (nw.state === 'installed' && navigator.serviceWorker.controller)
-          toast('New version ready', 'Reload', () => nw.postMessage('skipWaiting'));
-      });
+      nw?.addEventListener('statechange', () => { if (nw.state === 'installed' && navigator.serviceWorker.controller) offerUpdate(nw); });
     });
+    reg.update().catch(() => {});                              // check now…
+    setInterval(() => reg.update().catch(() => {}), 30 * 60000); // …and every 30 min while open
+    window.dcCheckUpdate = async () => { await reg.update(); if (!reg.waiting && !reg.installing) toast(`You’re on the latest version (${APP_BUILD}).`); };
   }).catch(err => console.warn('SW registration failed', err));
   // Reload only when an *update* takes over. On the very first visit the new worker
   // also "takes control" (clients.claim) — reloading then would be a pointless jolt.
