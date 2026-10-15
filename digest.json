@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-15T00:59:57.533Z",
+ "generated": "2026-10-15T03:52:45.840Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
@@ -675,10 +675,9 @@
    "id": "rd-productmanagement",
    "name": "r/productmanagement",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 3,
-   "lastOk": "2026-10-14T21:25:02.064Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/productmanagement/top/.rss?t=day"
   },
   {
    "id": "rd-tech",
@@ -687,7 +686,7 @@
    "status": "cached",
    "count": 1,
    "lastOk": "2026-10-14T20:55:56.930Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)"
   },
   {
    "id": "rd-gaming",
@@ -696,7 +695,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-ukpolitics",
@@ -729,31 +728,47 @@
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
+   "lastOk": "2026-10-15T00:59:57.533Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-germany",
    "name": "r/germany",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/germany/top/.rss?t=day"
+   "lastOk": "2026-10-15T00:59:57.533Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-unitedkingdom",
    "name": "r/unitedkingdom",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   }
  ],
  "items": [
+  {
+   "title": "How PMs work? What's your day look like",
+   "url": "https://www.reddit.com/r/ProductManagement/comments/1x68lat/how_pms_work_whats_your_day_look_like/",
+   "source": "r/productmanagement",
+   "feedId": "rd-productmanagement",
+   "type": "post",
+   "tags": [
+    "product"
+   ],
+   "published": "2026-10-15T01:14:31.000Z",
+   "summary": "I worked as a BA for 10+ years and still feel it's not my cup of tea. Jumping from meeting to meeting just to discuss the same requirements again and again, try convince different stakeholders and then explain it to Dev and QA. Firefighting almost everyday. Maybe I worked with…",
+   "id": "a6e559cba022",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
   {
    "title": "Ukrainian on trial in Germany over 'war crime' bombing of Nord Stream pipeline",
    "url": "https://www.reddit.com/r/geopolitics/comments/1x66u8e/ukrainian_on_trial_in_germany_over_war_crime/",
@@ -1106,22 +1121,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Got moved to a new team, inherited a lousy product",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1x5oa3l/got_moved_to_a_new_team_inherited_a_lousy_product/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-10-14T11:03:03.000Z",
-   "summary": "A PM in my company recently left, and I got moved to take over their portfolio. Part of the projects handed over included this major feature that they’re already well into the development cycle. Here’s the problem: it is a customer facing feature which solves a lot of internal…",
-   "id": "7e0eb0b93559",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Indiana Jones and The Great Circle’s iconic hat mechanic almost didn’t make the cut as devs struggled to “leverage” Indy’s fedora “in the gameplay”",
    "url": "https://www.reddit.com/r/xbox/comments/1x5nz3d/indiana_jones_and_the_great_circles_iconic_hat/",
    "source": "r/xbox",
@@ -1138,21 +1137,21 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Does anyone here enjoy their job or product management?",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1x5cnv9/does_anyone_here_enjoy_their_job_or_product/",
+   "title": "Got moved to a new team, inherited a lousy product",
+   "url": "https://www.reddit.com/r/ProductManagement/comments/1x5oa3l/got_moved_to_a_new_team_inherited_a_lousy_product/",
    "source": "r/productmanagement",
    "feedId": "rd-productmanagement",
    "type": "post",
    "tags": [
     "product"
    ],
-   "published": "2026-10-13T23:57:21.000Z",
-   "summary": "This sub can get pretty negative and pessimistic. I know that people mostly post their negative experiences online, so i'm hoping to see some positive experiences. Maybe share your #1 tip for job enjoyment as well. submitted by /u/I_like_it_yo [link] [comments]",
-   "id": "568ae534211b",
+   "published": "2026-10-14T11:03:03.000Z",
+   "summary": "A PM in my company recently left, and I got moved to take over their portfolio. Part of the projects handed over included this major feature that they’re already well into the development cycle. Here’s the problem: it is a customer facing feature which solves a lot of internal…",
+   "id": "7e0eb0b93559",
    "score": 0,
    "matched": [],
    "why": "0"
   }
  ],
- "contentHash": "7a706b5f109a"
+ "contentHash": "e23fa4da1588"
 }
