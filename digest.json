@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-15T03:52:45.840Z",
+ "generated": "2026-10-15T06:48:50.333Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
@@ -675,9 +675,10 @@
    "id": "rd-productmanagement",
    "name": "r/productmanagement",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 3,
-   "url": "https://www.reddit.com/r/productmanagement/top/.rss?t=day"
+   "lastOk": "2026-10-15T03:52:45.840Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-tech",
@@ -686,7 +687,7 @@
    "status": "cached",
    "count": 1,
    "lastOk": "2026-10-14T20:55:56.930Z",
-   "note": "rate-limited (429)"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-gaming",
@@ -695,16 +696,15 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-10-14T21:50:14.996Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
   },
   {
    "id": "rd-xbox",
@@ -713,7 +713,7 @@
    "status": "cached",
    "count": 5,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "rate-limited (429)"
   },
   {
    "id": "rd-slaythespire",
@@ -722,7 +722,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-geopolitics",
@@ -838,6 +838,40 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
+   "title": "UK threatens visa bans for Eritrea over migrant return policy",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1x6487n/uk_threatens_visa_bans_for_eritrea_over_migrant/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-14T21:52:43.000Z",
+   "summary": "submitted by /u/HBucket [link] [comments]",
+   "id": "4fb823d8a433",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Reform UK councillors and candidates filmed making racist and extreme comments",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1x63t1y/reform_uk_councillors_and_candidates_filmed/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-14T21:35:01.000Z",
+   "summary": "submitted by /u/Bascule2000 [link] [comments]",
+   "id": "66df30c7668d",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
    "title": "Frankfurt photos",
    "url": "https://www.reddit.com/r/germany/comments/1x63kbw/frankfurt_photos/",
    "source": "r/germany",
@@ -906,23 +940,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Airport drop-off charges to be reviewed after sharp increase",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1x5yiot/airport_dropoff_charges_to_be_reviewed_after/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-14T18:08:43.000Z",
-   "summary": "submitted by /u/Desperate-Drawer-572 [link] [comments]",
-   "id": "32ef31b6dfc0",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "China’s Next Frontier: How Beijing Is Challenging Washington in Outer Space",
    "url": "https://www.reddit.com/r/geopolitics/comments/1x5y76u/chinas_next_frontier_how_beijing_is_challenging/",
    "source": "r/geopolitics",
@@ -974,23 +991,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "The UK energy secretary is flirting with a bad idea for bills – the ‘rising block tariff’",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1x5x9zb/the_uk_energy_secretary_is_flirting_with_a_bad/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-14T17:22:15.000Z",
-   "summary": "submitted by /u/Kagedeah [link] [comments]",
-   "id": "9643775f462e",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Zelensky says he feels betrayed over Trump-Russia deal",
    "url": "https://www.reddit.com/r/geopolitics/comments/1x5wruo/zelensky_says_he_feels_betrayed_over_trumprussia/",
    "source": "r/geopolitics",
@@ -1003,23 +1003,6 @@
    "published": "2026-10-14T17:03:29.000Z",
    "summary": "submitted by /u/KI_official [link] [comments]",
    "id": "3d3eb126cd8c",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Westminster Voting Intention: LAB: 30% (=) RFM: 22% (=) CON: 21% (=) LDM: 10% (=) GRN: 8% (-1) RES: 6% (+3) SNP: 2% (=) Via Trajectory Partnership, 5-14 Oct. Changes w/ 7-16 Sep.",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1x5wr9o/westminster_voting_intention_lab_30_rfm_22_con_21/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-14T17:02:52.000Z",
-   "summary": "submitted by /u/SignificantLegs [link] [comments]",
-   "id": "f4736963db47",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1137,6 +1120,23 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
+   "title": "Airport drop-off charges to be reviewed after sharp increase",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1x5yiot/airport_dropoff_charges_to_be_reviewed_after/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-14T18:08:43.000Z",
+   "summary": "submitted by /u/Desperate-Drawer-572 [link] [comments]",
+   "id": "32ef31b6dfc0",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
    "title": "Got moved to a new team, inherited a lousy product",
    "url": "https://www.reddit.com/r/ProductManagement/comments/1x5oa3l/got_moved_to_a_new_team_inherited_a_lousy_product/",
    "source": "r/productmanagement",
@@ -1153,5 +1153,5 @@
    "why": "0"
   }
  ],
- "contentHash": "e23fa4da1588"
+ "contentHash": "b1b940c38c76"
 }
