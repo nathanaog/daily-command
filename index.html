@@ -188,6 +188,13 @@ ul.list a{color:var(--text);text-decoration:none} ul.list a:hover{text-decoratio
 .ytbox{position:relative;width:100%;aspect-ratio:16/9;background:#000;border-radius:14px;overflow:hidden;margin-bottom:10px}
 .ytbox iframe,.ytbox #ytFrame{position:absolute;inset:0;width:100%;height:100%;border:0}
 .wn .chip{min-height:36px}.wnpick{margin-top:8px;padding:10px 12px;border-radius:14px;background:var(--surface2)}
+.dock{position:fixed;left:0;right:0;bottom:calc(62px + env(safe-area-inset-bottom));z-index:7;background:var(--surface);border-top:1px solid var(--border);box-shadow:0 -6px 20px rgba(0,0,0,.25)}
+.dock-in{display:flex;gap:10px;padding:8px 10px;max-width:760px;margin:0 auto}.dockvid{width:200px;height:200px;flex:0 0 200px;background:#000;border-radius:10px;overflow:hidden}
+.dockvid iframe,#dockFrame{width:100%;height:100%;display:block}.dockctl{flex:1;min-width:0;display:flex;flex-direction:column;gap:6px}
+.docktitle{font-size:.92rem;line-height:1.25;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.dockbtns{display:flex;gap:6px;align-items:center;flex-wrap:wrap}.dockbtns .icon{min-width:44px}
+body.docked main, body.docked .view{padding-bottom:240px}body.docked .fab{bottom:calc(300px + env(safe-area-inset-bottom))}
+.qitem{text-align:left;padding:0;font:inherit;color:inherit}
 .card.listen.mini{border-left:4px solid var(--accent)}
 .card.german{border-left:4px solid var(--accent)}
 .qaprev{margin-top:10px;padding:10px 12px;border:1px solid var(--accent);border-radius:14px;background:var(--surface2)}
@@ -269,6 +276,7 @@ dialog::backdrop{background:rgba(0,0,0,.5)}
 
 <button class="fab" data-act="capture" aria-label="Quick capture">+</button>
 
+<div id="dock" class="dock hidden" aria-label="Player"></div>
 <nav class="bottom" id="nav">
   <button data-view="now" class="on" aria-label="Now">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Now</button>
@@ -2056,22 +2064,133 @@ function playAllLink(q) {
   return `<a class="btn sm" ${playAttrs(url)} data-act="listenPlayAll" data-url="${esc(url)}" data-n="${vids.length}" data-sec="${sec}">▶ Play all ${vids.length} in a row</a>`;
 }
 function listenBarHtml() {
-  const L = S.listening; if (!L) return '';
-  const pos = listenPos(L), dur = L.durationSec, finished = dur && pos > dur + 60 && !L.all;
+  const L = S.listening; if (!L || Dock.item) return '';     // the dock is the player while it's open
+  const pos = L.here ? (L.pos || 0) : listenPos(L), dur = L.durationSec, finished = dur && pos > dur + 60 && !L.all;
   const next = Listen.queue().find(x => x.key !== L.key && x.from !== 'spotify');
-  const status = L.pausedAt ? `⏸ paused at ~${mmss(pos)}` : finished ? 'probably finished' : dur ? `~${mmss(Math.min(pos, dur))} of ${mmss(dur)}` : `started ${fmtT(new Date(L.startedAt))}`;
+  const status = L.here ? `stopped at ${mmss(pos)}${dur ? ' of ' + mmss(dur) : ''}` : L.pausedAt ? `⏸ paused at ~${mmss(pos)}` : finished ? 'probably finished' : dur ? `~${mmss(Math.min(pos, dur))} of ${mmss(dur)}` : `started ${fmtT(new Date(L.startedAt))}`;
   const resume = L.spotify && L.uri ? `<button class="btn sm primary" data-act="spResume">▶ Resume</button>`
+    : L.url && playHere() && ytId(L.url) && !L.all ? `<button class="btn sm primary" data-act="listenHere" data-key="${esc(L.key)}" data-resume="1">▶ Resume${L.pos > 30 ? ' at ' + mmss(L.here ? L.pos : pos) : ''}</button>`
     : L.url ? `<a class="btn sm primary" ${playAttrs(L.url)} data-act="listenResume">▶ Resume</a>` : '';
-  const fromT = !L.spotify && !L.all && L.url && pos > 60 && (!dur || pos < dur) ? `<a class="btn sm" ${playAttrs(withT(L.url, pos))} data-act="listenResume" title="if YouTube starts from the beginning">from ~${mmss(Math.max(0, pos - 10))}</a>` : '';
+  const fromT = !L.here && !L.spotify && !L.all && L.url && pos > 60 && (!dur || pos < dur) ? `<a class="btn sm" ${playAttrs(withT(L.url, pos))} data-act="listenResume" title="if YouTube starts from the beginning">from ~${mmss(Math.max(0, pos - 10))}</a>` : '';
   return `<div class="card listen mini"><div class="row" style="justify-content:space-between"><span class="small muted">🎧 ${L.spotify ? 'Spotify' : L.focus ? 'Focus audio' : 'YouTube'} · ${status}</span>
       <button class="icon" data-act="listenStop" aria-label="Stop" title="Clear">✕</button></div>
     <div style="font-weight:600;margin:4px 0">${esc(L.title)}</div>
     ${L.spotify || L.focus ? nowPlayingHtml(true) : ''}
     <div class="actions">${resume}${fromT}
-      ${L.focus || L.all ? '' : `<button class="btn sm ghost" data-act="listenPause">${L.pausedAt ? '▶ Back on' : '⏸ I paused'}</button>`}
-      ${L.focus || L.all ? '' : next ? `<a class="btn sm" ${playAttrs(next.url)} data-act="listenNext" data-key="${esc(next.key)}">✓ Done → next</a>` : `<button class="btn sm" data-act="listenDone" data-key="${esc(L.key)}">✓ Done</button>`}</div>
+      ${L.here && L.url ? `<a class="btn sm ghost" ${playAttrs(withT(L.url, pos + 10))} data-act="listenPlay" data-key="${esc(L.key)}">⤴ YouTube app</a>` : ''}
+      ${L.focus || L.all || L.here ? '' : `<button class="btn sm ghost" data-act="listenPause">${L.pausedAt ? '▶ Back on' : '⏸ I paused'}</button>`}
+      ${L.focus || L.all ? '' : next ? (playHere() && ytId(next.url) ? `<button class="btn sm" data-act="listenDoneHere" data-key="${esc(next.key)}">✓ Done → next</button>` : `<a class="btn sm" ${playAttrs(next.url)} data-act="listenNext" data-key="${esc(next.key)}">✓ Done → next</a>`) : `<button class="btn sm" data-act="listenDone" data-key="${esc(L.key)}">✓ Done</button>`}</div>
     ${next && !L.focus && !L.all ? `<div class="small muted">Next: ${esc(next.title)}${next.durationSec ? ' · ' + mmss(next.durationSec) : ''}</div>` : ''}</div>`;
 }
+
+/* ---- Docked player: listen INSIDE the app (YouTube IFrame Player, docked above the nav, all tabs) ----
+   Honest limits: a web page's video pauses when the screen turns off or you switch apps (only the
+   YouTube app itself plays in the background with Premium). So while it plays we ask the browser to
+   keep the screen awake, and "⤴ YouTube app" hands over at the exact second when you want to lock
+   the phone. The position is saved, so "Resume" always continues where you were — even tomorrow.
+   YouTube's rules require the player to be at least 200×200 px, so the dock keeps a 200 px video. */
+const playHere = () => (S.settings.listenWhere || 'app') === 'app';
+/** A play control for a Listen item: in-app dock, Spotify Connect, or a YouTube-app link. */
+function listenLink(it, label, cls = '') {
+  if (it.from === 'spotify' && it.uri) return `<button class="${cls || 'linkish'}" data-act="spPlay" data-key="${esc(it.key)}">${label}</button>`;
+  if (playHere() && ytId(it.url)) return `<button class="${cls || 'linkish'}" data-act="listenHere" data-key="${esc(it.key)}">${label}</button>`;
+  return `<a class="${cls}" ${playAttrs(it.url)} data-act="listenPlay" data-key="${esc(it.key)}">${label}</a>`;
+}
+const Dock = {
+  item: null, yt: null, wake: null, tick: null, state: 'idle', err: '',
+  async play(item, startSec = 0) {
+    this.close(true);
+    this.item = item; this.state = 'loading'; this.err = '';
+    S.listening = { key: item.key, title: item.title, url: item.url, durationSec: item.durationSec || null, startedAt: Date.now() - startSec * 1000, pos: startSec, here: true };
+    save();
+    document.body.classList.add('docked'); $('#dock').classList.remove('hidden'); this.paint();
+    try { await loadYTApi(); } catch (e) { this.state = 'error'; this.err = e.message; return this.status(); }
+    if (this.item !== item) return;
+    this.yt = new YT.Player('dockFrame', {
+      videoId: ytId(item.url), width: '100%', height: '100%',
+      playerVars: { autoplay: 1, rel: 0, playsinline: 1, modestbranding: 1, start: Math.floor(startSec) },
+      events: {
+        onReady: e => { try { e.target.playVideo(); } catch (x) {} },
+        onStateChange: e => {
+          this.state = { 0: 'ended', 1: 'playing', 2: 'paused', 3: 'buffering' }[e.data] || this.state;
+          if (e.data === 1) this.keepAwake(true); if (e.data === 2 || e.data === 0) { this.keepAwake(false); this.savePos(); }
+          if (e.data === 0) return this.ended();
+          this.status();
+        },
+        onError: e => { this.state = 'error'; this.err = [101, 150].includes(e.data) ? 'This channel only allows playing on YouTube.' : 'This video can’t play here.'; this.keepAwake(false); this.status(); },
+      },
+    });
+    clearInterval(this.tick);
+    let n = 0;
+    this.tick = setInterval(() => { this.status(); if (++n % 15 === 0) this.savePos(); }, 1000);
+  },
+  pos() { try { return Math.floor(this.yt?.getCurrentTime?.() || S.listening?.pos || 0); } catch (e) { return S.listening?.pos || 0; } },
+  savePos() { if (!this.item || !S.listening) return; S.listening.pos = this.pos(); S.listening.startedAt = Date.now() - S.listening.pos * 1000; save(); },
+  async keepAwake(on) {
+    try {
+      if (on && !this.wake && navigator.wakeLock && document.visibilityState === 'visible') { this.wake = await navigator.wakeLock.request('screen'); this.wake.addEventListener('release', () => { this.wake = null; }); }
+      if (!on && this.wake) { await this.wake.release(); this.wake = null; }
+    } catch (e) { /* not supported / denied: fine */ }
+  },
+  toggle() { if (!this.yt) return; this.state === 'playing' ? this.yt.pauseVideo() : this.yt.playVideo(); },
+  seek(d) { if (!this.yt) return; this.yt.seekTo(Math.max(0, this.pos() + d), true); setTimeout(() => this.status(), 200); },
+  ended() {
+    const done = this.item; Listen.done(done.key);
+    const next = Listen.queue().find(x => x.key !== done.key && x.from !== 'spotify' && ytId(x.url));
+    if (next && S.settings.listenAutoNext !== false) { toast(`Next: ${next.title}`); return this.play(next); }
+    S.listening = null; save(); this.close(); toast('Finished ✓ — queue is empty.');
+  },
+  next() { const cur = this.item; if (!cur) return; Listen.done(cur.key); const nx = Listen.queue().find(x => x.key !== cur.key && x.from !== 'spotify' && ytId(x.url)); if (nx) this.play(nx); else { S.listening = null; save(); this.close(); } },
+  close(silent) {
+    if (this.item && !silent) this.savePos();
+    clearInterval(this.tick); this.keepAwake(false);
+    try { this.yt?.destroy?.(); } catch (e) {}
+    this.yt = null; this.item = null; this.state = 'idle';
+    const el = $('#dock'); el.classList.add('hidden'); el.innerHTML = ''; document.body.classList.remove('docked');
+    if (!silent) render();
+  },
+  paint() {
+    const it = this.item;
+    $('#dock').innerHTML = `<div class="dock-in"><div class="dockvid"><div id="dockFrame"></div></div>
+      <div class="dockctl"><div class="row" style="justify-content:space-between;gap:6px"><b class="docktitle">${esc(it.title)}</b><button class="icon" data-act="dockClose" aria-label="Close player">✕</button></div>
+        <div class="small muted" id="dockStatus">Loading…</div>
+        <div class="dockbtns"><button class="icon" data-act="dockSeek" data-d="-15" aria-label="Back 15 seconds">↺15</button>
+          <button class="btn sm primary" data-act="dockToggle" id="dockPP" aria-label="Play or pause">Pause</button>
+          <button class="icon" data-act="dockSeek" data-d="30" aria-label="Forward 30 seconds">30↻</button></div>
+        <div class="dockbtns"><button class="btn sm" data-act="dockNext">✓ Next</button><a class="btn sm ghost" id="dockOut" data-act="dockHandoff">⤴ YouTube</a></div></div></div>`;
+    this.status();
+  },
+  status() {
+    const st = $('#dockStatus'); if (!st || !this.item) return;
+    const p = this.pos(), d = this.item.durationSec || (this.yt?.getDuration?.() | 0);
+    st.innerHTML = this.state === 'error' ? `⚠ ${esc(this.err)}` : `${this.state === 'paused' ? (document.visibilityState === 'visible' ? '⏸ ' : '⏸ ') : this.state === 'buffering' || this.state === 'loading' ? '… ' : ''}<span class="num">${mmss(p)}${d ? ' / ' + mmss(d) : ''}</span>${this.state === 'playing' && this.wake ? ' · screen stays on' : ''}`;
+    const pp = $('#dockPP'); if (pp) pp.textContent = this.state === 'playing' ? 'Pause' : '▶ Play';
+    const out = $('#dockOut'); if (out) { const h = ytOpenUrl(withT(this.item.url, p + 10)); out.setAttribute('href', h); if (!h.startsWith('intent:')) { out.target = '_blank'; out.rel = 'noopener'; } }
+  },
+};
+document.addEventListener('visibilitychange', () => {
+  if (!Dock.item) return;
+  if (document.visibilityState === 'hidden') Dock.savePos();
+  else { if (Dock.state === 'playing') Dock.keepAwake(true); Dock.status(); }
+});
+const ACT11 = {
+  listenHere(el) {
+    const it = Listen.find(el.dataset.key) || (S.listening?.key === el.dataset.key ? { key: S.listening.key, title: S.listening.title, url: S.listening.url, durationSec: S.listening.durationSec } : null);
+    if (!it) return;
+    if (!navigator.onLine) return toast('You’re offline — the player needs a connection.');
+    const L = S.listening, start = el.dataset.resume && L ? (L.here ? (L.pos || 0) : Math.max(0, listenPos(L) - 10)) : 0;   // YouTube-app sessions resume at the estimate
+    Dock.play(it, start);
+  },
+  dockToggle() { Dock.toggle(); },
+  dockSeek(el) { Dock.seek(+el.dataset.d); },
+  dockNext() { Dock.next(); },
+  dockClose() { Dock.close(); },
+  dockHandoff() {                        // the link opens the YouTube app at the current second; keep tracking as "playing in YouTube"
+    const p = Dock.pos(); try { Dock.yt?.pauseVideo(); } catch (e) {}
+    const L = S.listening; setTimeout(() => { Dock.close(true); if (L) { S.listening = { ...L, here: false, pos: p, startedAt: Date.now() - p * 1000 }; save(); } render(); }, 400);
+  },
+  listenWhere(el) { S.settings.listenWhere = el.dataset.v; save(); render(); },
+};
 
 /** The card under the Now hero. Returns '' when the current block's plan is "off". */
 function listenCardHtml() {
@@ -2117,7 +2236,7 @@ function listenCardHtml() {
     ${nowPlayingHtml(true)}
     <div class="actions">${it.from === 'spotify' && it.uri
       ? `<button class="btn sm primary" data-act="spPlay" data-key="${esc(it.key)}">▶ Play ${isAndroid() ? 'in Spotify' : 'on phone'}</button>`
-      : `<a class="btn sm primary" ${playAttrs(it.url)} data-act="listenPlay" data-key="${esc(it.key)}">▶ Play${isAndroid() ? ' in YouTube' : ''}</a>`}
+      : listenLink(it, `▶ Play${playHere() ? '' : isAndroid() ? ' in YouTube' : ''}`, 'btn sm primary')}
       <button class="btn sm" data-act="listenSkip" data-key="${esc(it.key)}">Skip</button><button class="btn sm ghost" data-act="go" data-view="inbox">Queue</button></div>
     ${Google.on('youtube') && YTList.url() ? `<div class="actions"><a class="btn sm" ${playAttrs(YTList.url())}>▶ Play the whole Listen playlist</a></div>` : ''}
     ${isAndroid() ? '' : '<div class="small muted" style="margin-top:6px">Listening on your phone? Open the app there — it shows the same queue.</div>'}</div>`;
@@ -2135,7 +2254,7 @@ function listenQueueHtml() {
   const q = Listen.queue();
   if (!q.length) return '<div class="empty">Nothing to listen to yet. Feeds tagged “listen” fill this up after each digest build.</div>';
   const total = q.filter(x => x.durationSec).reduce((a, x) => a + x.durationSec, 0), known = q.filter(x => x.durationSec).length;
-  return `<ul class="list">${q.slice(0, 25).map(x => `<li><span class="grow">${x.from === 'spotify' && x.uri ? `<a href="#" data-act="spPlay" data-key="${esc(x.key)}">🎙 ${esc(x.title)}</a>` : `<a ${playAttrs(x.url)} data-act="listenPlay" data-key="${esc(x.key)}">${esc(x.title)}</a>`}
+  return `<ul class="list">${q.slice(0, 25).map(x => `<li><span class="grow">${x.from === 'spotify' && x.uri ? `<a href="#" data-act="spPlay" data-key="${esc(x.key)}">🎙 ${esc(x.title)}</a>` : listenLink(x, esc(x.title), 'linkish qitem')}
       <br><span class="small muted">${esc(x.source || '')}${x.durationSec ? ' · ' + mmss(x.durationSec) : ''}${x.from === 'shelf' ? ' · shelf' : ''}</span></span>
       <button class="icon" data-act="listenDone" data-key="${esc(x.key)}" title="Done" aria-label="Done">✓</button></li>`).join('')}</ul>
     ${known ? `<div class="math">${known} with known length: ${q.filter(x => x.durationSec).slice(0, 8).map(x => Math.round(x.durationSec / 60)).join(' + ')}${known > 8 ? ' + …' : ''} ≈ ${Math.round(total / 60)} min of listening</div>` : ''}`;
@@ -2145,7 +2264,10 @@ function listenQueueHtml() {
 function audioSettingsHtml() {
   const kinds = Object.keys(KIND_LABEL).filter(k => !['wake', 'winddown'].includes(k));
   const fa = S.settings.focusAudio || {};
-  return `<p class="small muted">What the Now screen suggests in each kind of block. Talk = your Listen queue; Focus = your focus-audio link.</p>
+  return `<label class="f">Play talk &amp; podcasts</label><div class="seg"><button class="${playHere() ? 'on' : ''}" data-act="listenWhere" data-v="app">Here in the app</button><button class="${playHere() ? '' : 'on'}" data-act="listenWhere" data-v="youtube">In the YouTube app</button></div>
+    <p class="small muted">${playHere() ? 'Plays in a player docked at the bottom, on every tab; your screen stays on while it plays. Web pages can’t play with the screen off, so use “⤴ YouTube” in the player when you want to lock your phone — it continues at the same second.' : 'Opens the YouTube app (plays with the screen off with Premium). The app keeps a resume card.'}</p>
+    <label class="row" style="min-height:44px"><input type="checkbox" data-setting="listenAutoNext" ${S.settings.listenAutoNext !== false ? 'checked' : ''} style="width:22px;height:22px"> Play the next one automatically</label>
+    <p class="small muted">What the Now screen suggests in each kind of block. Talk = your Listen queue; Focus = your focus-audio link.</p>
     ${kinds.map(k => `<div class="row" style="min-height:48px"><span style="flex:1">${KIND_LABEL[k]}</span>
       <div class="seg" style="flex:2">${['talk', 'focus', 'off'].map(p => `<button class="${Listen.plan(k) === p ? 'on' : ''}" data-act="audioPlanSet" data-kind="${k}" data-plan="${p}">${p[0].toUpperCase() + p.slice(1)}</button>`).join('')}</div></div>`).join('')}
     <label class="f">Focus audio</label><div class="row"><span class="grow">${fa.url ? `${esc(fa.label || fa.url)}` : '<span class="muted">Not set</span>'}</span><button class="btn sm" data-act="focusAudioSet">${fa.url ? 'Change' : 'Set'}</button></div>
@@ -2155,7 +2277,8 @@ function audioSettingsHtml() {
 const ACT4 = {
   listenPlay(el) {
     const it = Listen.find(el.dataset.key); if (!it) return;
-    S.listening = { key: it.key, title: it.title, durationSec: it.durationSec || null, startedAt: Date.now(), url: it.url };
+    const keep = S.listening?.key === it.key ? (S.listening.pos || 0) : 0;   // handing over mid-way (⤴ YouTube app) keeps the position
+    S.listening = { key: it.key, title: it.title, durationSec: it.durationSec || null, startedAt: Date.now() - keep * 1000, url: it.url };
     save(); setTimeout(render, 300);                 // let the link open first
   },
   /** Re-open what you were listening to. YouTube/Spotify usually remember the position themselves (signed in). */
@@ -2168,6 +2291,7 @@ const ACT4 = {
     S.listening = it ? { key: it.key, title: it.title, durationSec: it.durationSec || null, startedAt: Date.now(), url: it.url } : null;
     save(); setTimeout(render, 300);
   },
+  listenDoneHere(el) { if (S.listening && !S.listening.focus && S.listening.key !== 'all') Listen.done(S.listening.key); const it = Listen.find(el.dataset.key); if (it) Dock.play(it); },
   listenPlayAll(el) { S.listening = { key: 'all', title: `Your Listen queue · ${el.dataset.n} videos`, all: true, startedAt: Date.now(), url: el.dataset.url, durationSec: +el.dataset.sec || null }; save(); setTimeout(render, 300); },
   listenDone(el) { Listen.done(el.dataset.key); if (S.listening?.key === el.dataset.key) S.listening = null; save(); render(); },
   listenStop() { S.listening = null; save(); render(); },
@@ -3313,7 +3437,7 @@ function whatNowCandidates(min, energy) {
   if (fitV) add({ key: 'v:' + fitV.key, icon: '▶', title: fitV.title, why: `${mmss(fitV.durationSec)} ≤ ${mmss(sec)} ✓ fits${fitV.from === 'shelf' ? ' · from your shelf' : ''}`, go: 'watchHere', data: fitV.key }, E(3, 2, 1) + (fitV.from === 'shelf' ? 0.5 : 0));
   // 3. Something to listen to (low energy, e.g. a walk or chores)
   const lq = Listen.queue(), fitL = lq.find(x => x.durationSec && x.durationSec <= sec) || (min >= 30 ? lq[0] : null);
-  if (fitL) add({ key: 'l:' + fitL.key, icon: '🎧', title: fitL.title, why: fitL.durationSec ? `${mmss(fitL.durationSec)} ≤ ${mmss(sec)} ✓ fits · good for a walk or chores` : 'good for a walk or chores', href: fitL.url }, E(2.5, 2, 1));
+  if (fitL) add({ key: 'l:' + fitL.key, icon: '🎧', title: fitL.title, why: fitL.durationSec ? `${mmss(fitL.durationSec)} ≤ ${mmss(sec)} ✓ fits · good for a walk or chores` : 'good for a walk or chores', ...(playHere() && ytId(fitL.url) && fitL.from !== 'spotify' ? { go: 'listenHere', data: fitL.key } : { href: fitL.url }) }, E(2.5, 2, 1));
   // 4. Due habits (any mode) — quick wins
   for (const { h, s } of Habit.nudges(S.habits, S.habitLog, today(), minuteNow(), 'any', {}).slice(0, 2))
     add({ key: 'h:' + h.id, icon: h.icon || '✓', title: h.name, why: s.text, go: 'habitTick', data: h.id, done: true }, E(1.5, 2.5, 2.5) + s.urgency * 0.5);
@@ -4134,7 +4258,7 @@ const ACT = {
   resetAll() { if (confirm('Erase ALL data in this browser? Export first if unsure.')) { localStorage.removeItem(STORE_KEY); S = defaultState(); S.settings.welcomed = true; save(); render(); } },
 };
 
-Object.assign(ACT, ACT2, ACT3, ACT4, ACT5, ACT6, ACT7, ACT8, ACT9, ACT10);   // + Watch next & player, Spotify (Stage 4.5)   // + Google (Stage 4)   // + listen while working   // Stage 2 (morning, digest, weather) and Stage 3 (lenses, watchlist) actions
+Object.assign(ACT, ACT2, ACT3, ACT4, ACT5, ACT6, ACT7, ACT8, ACT9, ACT10, ACT11);   // + Watch next & player, Spotify (Stage 4.5)   // + Google (Stage 4)   // + listen while working   // Stage 2 (morning, digest, weather) and Stage 3 (lenses, watchlist) actions
 
 function setActive(item) {
   if (!item || !item.end) { S.active = null; return save(); }
