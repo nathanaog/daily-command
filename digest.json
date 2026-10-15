@@ -1,17 +1,17 @@
 {
- "generated": "2026-10-15T14:09:06.993Z",
+ "generated": "2026-10-15T15:33:32.303Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
   "ok": 53,
-  "items": 121,
+  "items": 123,
   "duplicatesMerged": 0,
   "lengthsKnown": 2,
-  "lengthLookups": 95,
-  "lengthFailures": 95,
+  "lengthLookups": 97,
+  "lengthFailures": 97,
   "lengthVia": "video pages",
   "lengthFailReasons": {
-   "no length on page": 95
+   "no length on page": 97
   }
  },
  "feeds": [
@@ -189,7 +189,7 @@
    "name": "ColdFusion",
    "type": "youtube",
    "status": "ok",
-   "count": 2,
+   "count": 3,
    "resolved": {
     "channelId": "UC4QZ_LsYcvcq7qOsOhpAX4A",
     "title": "ColdFusion",
@@ -332,7 +332,7 @@
    "name": "The NK guys",
    "type": "youtube",
    "status": "ok",
-   "count": 1,
+   "count": 2,
    "resolved": {
     "channelId": "UCTi5i5m-Xm-o7sALcVKiKjg",
     "title": "The NK Guys",
@@ -657,9 +657,10 @@
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
+   "lastOk": "2026-10-15T14:09:06.993Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-xbox",
@@ -668,7 +669,7 @@
    "status": "cached",
    "count": 5,
    "lastOk": null,
-   "note": "rate-limited (429)"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-slaythespire",
@@ -677,16 +678,15 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-10-15T13:44:38.315Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
   },
   {
    "id": "rd-germany",
@@ -695,7 +695,7 @@
    "status": "cached",
    "count": 5,
    "lastOk": "2026-10-15T00:59:57.533Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)"
   },
   {
    "id": "rd-unitedkingdom",
@@ -704,10 +704,101 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   }
  ],
  "items": [
+  {
+   "title": "Bill Gates’ Daughter Accused of Fraud",
+   "url": "https://www.youtube.com/watch?v=P8CVqDKeOKk",
+   "source": "ColdFusion",
+   "feedId": "yt-coldfusion",
+   "type": "video",
+   "tags": [
+    "finance",
+    "tech",
+    "listen"
+   ],
+   "published": "2026-10-15T15:30:15.000Z",
+   "summary": "Go to https://buyraycon.com/coldfusionCLIP to get 25% off! Thanks to Raycon for sponsoring! ColdFusion Podcast: https://www.youtube.com/@ThroughTheWeb Watch or listen to ColdFusion on Spotify: https://open.spotify.com/show/1YEwCKoRz8fEDqheXB6UJ1 ColdFusion Music:…",
+   "thumb": "https://i1.ytimg.com/vi/P8CVqDKeOKk/hqdefault.jpg",
+   "id": "46ccadd9b256",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Why North Korea’s Military Fears American Gun Owners (Compilation)",
+   "url": "https://www.youtube.com/watch?v=Y71UX9PU-QI",
+   "source": "The NK guys",
+   "feedId": "yt-the-nk-guys",
+   "type": "video",
+   "tags": [
+    "culture"
+   ],
+   "published": "2026-10-15T15:00:37.000Z",
+   "summary": "ex-North Korean Air Force Ryu Seong-hyeon & ex-North Korean Secret Police Lee Chul-ho & Kim Jong Un’s elite bodyguards Kang Yoon-chul shocked by American Guns for the First Time 00:00 Shocked North Korean Soldier Reacts to USA \"Top 5 Guns For Home Defense\" 11:54 North Korea's…",
+   "thumb": "https://i2.ytimg.com/vi/Y71UX9PU-QI/hqdefault.jpg",
+   "id": "4c8f3849f76e",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "BuzzBallz are a NIGHTMARE",
+   "url": "https://www.youtube.com/watch?v=kAQh0_Gg7Ac",
+   "source": "Levi Hildebrand",
+   "feedId": "yt-levi-hildebrand",
+   "type": "video",
+   "tags": [
+    "comedy",
+    "business"
+   ],
+   "published": "2026-10-15T15:00:12.000Z",
+   "summary": "Go to https://www.odoo.com/r/08C5 to get started on your free 15 day trial or book a consulting session with an Odoo expert (no credit card required)! Subscribe! https://www.youtube.com/channel/UC-OJ-24roEfQ_-PCnLJSckg?sub_confirmation=1 Join our Patreon:…",
+   "thumb": "https://i4.ytimg.com/vi/kAQh0_Gg7Ac/hqdefault.jpg",
+   "id": "933a29d3fd9c",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "James O'Brien reacts to Reform's latest racism scandal",
+   "url": "https://www.youtube.com/watch?v=GwMmMbbrK-s",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-15T14:45:36.000Z",
+   "summary": "James O'Brien and his callers react to the footage of Reform councillors making racist comments and saying the King should be beheaded for being 'a Muslim'. The ITV documentary, Undercover: A Year In Reform, was filmed over a year and includes footage of senior Reform figures…",
+   "thumb": "https://i4.ytimg.com/vi/GwMmMbbrK-s/hqdefault.jpg",
+   "id": "e0fad4a1c2b6",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Widerstand gegen Infantino: Wackelt der FIFA-Präsident?",
+   "url": "https://www.youtube.com/watch?v=J6lBEgozvkg",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-15T14:19:37.000Z",
+   "summary": "Im Hauptquartier des Fußball-Weltverbands in Zürich ist der FIFA-Rat zusammengekommen. Das Treffen steht im Schatten eines Machtkampfs zwischen FIFA-Präsident Infantino und der UEFA. Alle aktuellen Informationen, weitere Nachrichten und tagesschau24 im Livestream:…",
+   "thumb": "https://i3.ytimg.com/vi/J6lBEgozvkg/hqdefault.jpg",
+   "id": "d8abf2b2ea69",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
   {
    "title": "Banken haften bei Betrug: EU-Richtlinie schützt Kunden vor Phishing-Angriffen",
    "url": "https://www.youtube.com/watch?v=DYlwETMltj4",
@@ -741,6 +832,23 @@
    "summary": "Kyiv has resumed strikes against Russian energy infrastructure after President Zelenskyy accused Donald Trump of betraying Ukraine by slowing down the speeds of a crucial internet system used to protect the war-torn nation. Shelagh Fogarty is joined by John Foreman, Former UK…",
    "thumb": "https://i4.ytimg.com/vi/3G3HMQck0MY/hqdefault.jpg",
    "id": "f4771da374a4",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Russia’s daring hybrid acts pose Article 5 dilemma for NATO, ex-US ambassador says",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1x6m01e/russias_daring_hybrid_acts_pose_article_5_dilemma/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-15T13:42:55.000Z",
+   "summary": "Vladimir Putin is becoming “more creative” in the way he launches so-called ‘hybrid attacks’, the former envoy to NATO warned. In terms of the alliance’s Article 5 mutual defense clause, Ambassador Smith said the bloc potentially faces a dilemma. She pointed out that Vladimir…",
+   "id": "3adaa284de5d",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -904,23 +1012,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Trump lines up ‘mother of all bombs’ to strike Iran",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1x6jcjt/trump_lines_up_mother_of_all_bombs_to_strike_iran/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-15T11:39:28.000Z",
-   "summary": "submitted by /u/TheTelegraph [link] [comments]",
-   "id": "240bed8ff4d6",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Osnabrück: Reifenwechseln, Winterchecks und Marderbisse | tagesthemen mittendrin",
    "url": "https://www.youtube.com/watch?v=evLPyKpBNec",
    "source": "Tagesschau",
@@ -1045,25 +1136,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Regierung Albanien: Studenten fordern Reformen",
-   "url": "https://www.youtube.com/watch?v=tkrNRV4gwB8",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-15T09:52:04.000Z",
-   "summary": "Der Unmut gegen die Regierung in Albanien wächst. Nachdem im Mai bei der sogenannten \"Flamingo-Revolution\" immer wieder Menschen für den Naturschutz auf die Straße gingen, schließen sich nun auch Studentengruppen an. Hunderte von ihnen demonstrierten gestern und vorgestern vor…",
-   "thumb": "https://i1.ytimg.com/vi/tkrNRV4gwB8/hqdefault.jpg",
-   "id": "72aedc7f07c5",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Can Burnham Actually Ditch First-Past-the-Post?",
    "url": "https://www.youtube.com/watch?v=QmGYruZYHCc",
    "source": "TLDR News",
@@ -1094,24 +1166,6 @@
    "published": "2026-10-15T09:00:27.000Z",
    "summary": "Share your frustrations and get support/feedback. You are not alone! submitted by /u/AutoModerator [link] [comments]",
    "id": "1046b1d47eec",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "DRUNK Candidate’s Interview Goes MEGA VIRAL, You MUST SEE THIS!",
-   "url": "https://www.youtube.com/watch?v=MHc9rD8ro6E",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-15T02:40:22.000Z",
-   "summary": "Luke discusses Indiana Democrat Jaime West in a recent wild interview. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
-   "thumb": "https://i2.ytimg.com/vi/MHc9rD8ro6E/hqdefault.jpg",
-   "id": "531a2f9d5674",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1298,6 +1352,24 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
+   "title": "DRUNK Candidate’s Interview Goes MEGA VIRAL, You MUST SEE THIS!",
+   "url": "https://www.youtube.com/watch?v=MHc9rD8ro6E",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-15T02:40:22.000Z",
+   "summary": "Luke discusses Indiana Democrat Jaime West in a recent wild interview. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
+   "thumb": "https://i2.ytimg.com/vi/MHc9rD8ro6E/hqdefault.jpg",
+   "id": "531a2f9d5674",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
    "title": "How PMs work? What's your day look like",
    "url": "https://www.reddit.com/r/ProductManagement/comments/1x68lat/how_pms_work_whats_your_day_look_like/",
    "source": "r/productmanagement",
@@ -1363,24 +1435,6 @@
    "summary": "Luke discusses Zelenskyy's appearance on Piers Morgan's show. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
    "thumb": "https://i1.ytimg.com/vi/P4ghGYilXiU/hqdefault.jpg",
    "id": "6e3a54c5bd4c",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Trump has posted footage from the tiger enclosure | James O’Brien - The Whole Show",
-   "url": "https://www.youtube.com/watch?v=ArX3ngD9Dx4",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-14T18:30:35.000Z",
-   "summary": "This is a catch-up version of James O'Brien's live, daily show on LBC Radio from the 14th of October 2026. 00:00 - Why are you concerned about Donald Trump? 36:07 - U.S. Roundup - Simon Marks, LBC's Washington Correspondent 52:46 - How do you cope with the temporary nature of…",
-   "thumb": "https://i2.ytimg.com/vi/ArX3ngD9Dx4/hqdefault.jpg",
-   "id": "4753bc2a0675",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2836,25 +2890,7 @@
    "score": 0,
    "matched": [],
    "why": "0"
-  },
-  {
-   "title": "Surveillance Tech is a NIGHTMARE",
-   "url": "https://www.youtube.com/watch?v=VdsOHJS-Axw",
-   "source": "Levi Hildebrand",
-   "feedId": "yt-levi-hildebrand",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "business"
-   ],
-   "published": "2026-10-01T15:00:33.000Z",
-   "summary": "🔒 Get 20% off DeleteMe by going to my sponsor link https://joindeleteme.com/LEVI and use code LEVI to protect your privacy! 🙌 Subscribe! https://www.youtube.com/channel/UC-OJ-24roEfQ_-PCnLJSckg?sub_confirmation=1 Join our Patreon: https://www.patreon.com/c/LeviHildebrand For…",
-   "thumb": "https://i3.ytimg.com/vi/VdsOHJS-Axw/hqdefault.jpg",
-   "id": "13bb9546f80e",
-   "score": 0,
-   "matched": [],
-   "why": "0"
   }
  ],
- "contentHash": "f5253b13539f"
+ "contentHash": "50006f494e83"
 }
