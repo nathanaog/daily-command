@@ -1,17 +1,17 @@
 {
- "generated": "2026-10-15T15:41:07.908Z",
+ "generated": "2026-10-15T15:53:29.890Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
   "ok": 53,
   "items": 123,
   "duplicatesMerged": 0,
-  "lengthsKnown": 2,
+  "lengthsKnown": 3,
   "lengthLookups": 97,
-  "lengthFailures": 97,
+  "lengthFailures": 96,
   "lengthVia": "video pages",
   "lengthFailReasons": {
-   "no length on page": 97
+   "no length on page": 96
   }
  },
  "feeds": [
@@ -630,9 +630,10 @@
    "id": "rd-productmanagement",
    "name": "r/productmanagement",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 3,
-   "url": "https://www.reddit.com/r/productmanagement/top/.rss?t=day"
+   "lastOk": "2026-10-15T15:41:07.908Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-tech",
@@ -641,7 +642,7 @@
    "status": "cached",
    "count": 1,
    "lastOk": "2026-10-14T20:55:56.930Z",
-   "note": "rate-limited (429)"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-gaming",
@@ -650,16 +651,15 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-10-15T14:09:06.993Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
   },
   {
    "id": "rd-xbox",
@@ -668,7 +668,7 @@
    "status": "cached",
    "count": 5,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "rate-limited (429)"
   },
   {
    "id": "rd-slaythespire",
@@ -677,7 +677,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-geopolitics",
@@ -708,6 +708,41 @@
   }
  ],
  "items": [
+  {
+   "title": "Going Deep on the Zionism is Racism Motion with NoJusticeMTG",
+   "url": "https://www.youtube.com/watch?v=44Nbl9_bedA",
+   "source": "PoliticsJOE",
+   "feedId": "yt-politicsjoe",
+   "type": "video",
+   "tags": [
+    "comedy"
+   ],
+   "published": "2026-10-15T15:50:28.000Z",
+   "summary": "Helena is a Green Party member and the streamer NoJusticeMTG. As someone who was in the room during the Green Party's Zionism is Racism motion that passed at their annual conference, she came by the PolJOE dungeon to break down the motion for us, and delve deeper into what it…",
+   "thumb": "https://i1.ytimg.com/vi/44Nbl9_bedA/hqdefault.jpg",
+   "id": "a89e5d598313",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Trump scraps livestream plan for firing squad execution",
+   "url": "https://www.youtube.com/watch?v=oaFivgXBKIw",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-15T15:45:26.000Z",
+   "summary": "Donald Trump has announced that the decision to livestream the execution of Nidal Hasan, the former soldier who killed 13 people at a Texas base in revenge for Middle East wars, will be scrapped. In a statement on Truth Social, the US President said that while livestreaming the…",
+   "thumb": "https://i4.ytimg.com/vi/oaFivgXBKIw/hqdefault.jpg",
+   "id": "120330934635",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
   {
    "title": "tagesschau in Einfacher Sprache 19:00 Uhr, 15.10.2026",
    "url": "https://www.youtube.com/watch?v=zvgpl35Cuh4",
@@ -1096,24 +1131,6 @@
    "published": "2026-10-15T10:49:17.000Z",
    "summary": "submitted by /u/whencanistop [link] [comments]",
    "id": "0836e8d21e9a",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Zelenskyy: Trump has chosen Russia over Ukraine",
-   "url": "https://www.youtube.com/watch?v=n1SoRw0BFvI",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-15T10:43:59.000Z",
-   "summary": "James O'Brien reacts as the US considers unfreezing Russian assets to restart peace talks with Ukraine. James is also joined by the FT's Ukraine correspondent Christopher Miller to discuss the Starlink restrictions that blindsided Ukraine. Listen to the full show on the all-new…",
-   "thumb": "https://i3.ytimg.com/vi/n1SoRw0BFvI/hqdefault.jpg",
-   "id": "609cb08d3de2",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1789,23 +1806,6 @@
    "why": "0"
   },
   {
-   "title": "Is Zack Polanski in trouble? | Green Party by-election loss",
-   "url": "https://www.youtube.com/watch?v=LcxrnfDHyzA",
-   "source": "PoliticsJOE",
-   "feedId": "yt-politicsjoe",
-   "type": "video",
-   "tags": [
-    "comedy"
-   ],
-   "published": "2026-10-12T16:55:11.000Z",
-   "summary": "Zack Polanski did not win the Holborn and St Pancras by-election. But is there a world where he could have? Ava and Seán breakdown the result, what it means for the Greens, and why it went Labour's way. And to what extent was the Zionism is Racism motion a factor? Like…",
-   "thumb": "https://i1.ytimg.com/vi/LcxrnfDHyzA/hqdefault.jpg",
-   "id": "4ca2173a140f",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "This $10 Wax Keeps Glasses From Slipping Down Your Nose | Shark Tank US | Shark Tank Global",
    "url": "https://www.youtube.com/watch?v=XJzBvdRjMMM",
    "source": "Shark Tank Global",
@@ -1892,7 +1892,9 @@
    "id": "72b24489802d",
    "score": 0,
    "matched": [],
-   "why": "0"
+   "why": "0",
+   "durationSec": 3057,
+   "duration": "50:57"
   },
   {
    "title": "S13 E26: Kimberly Guilfoyle & Generic Drugs: 10/11/26: Last Week Tonight with John Oliver",
@@ -2892,5 +2894,5 @@
    "why": "0"
   }
  ],
- "contentHash": "f46fc21ccf78"
+ "contentHash": "56db25be999d"
 }
