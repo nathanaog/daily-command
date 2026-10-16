@@ -1,10 +1,10 @@
 {
- "generated": "2026-10-16T13:04:35.374Z",
+ "generated": "2026-10-16T15:51:27.549Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
   "ok": 53,
-  "items": 123,
+  "items": 122,
   "duplicatesMerged": 0,
   "lengthsKnown": 2,
   "lengthLookups": 96,
@@ -630,10 +630,9 @@
    "id": "rd-productmanagement",
    "name": "r/productmanagement",
    "type": "reddit",
-   "status": "cached",
-   "count": 3,
-   "lastOk": "2026-10-16T07:05:45.767Z",
-   "note": "not its turn this run"
+   "status": "ok",
+   "count": 2,
+   "url": "https://www.reddit.com/r/productmanagement/top/.rss?t=day"
   },
   {
    "id": "rd-tech",
@@ -642,7 +641,7 @@
    "status": "cached",
    "count": 2,
    "lastOk": "2026-10-15T21:49:52.028Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)"
   },
   {
    "id": "rd-gaming",
@@ -651,7 +650,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-ukpolitics",
@@ -684,9 +683,10 @@
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
+   "lastOk": "2026-10-16T13:04:35.374Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-germany",
@@ -695,7 +695,7 @@
    "status": "cached",
    "count": 5,
    "lastOk": "2026-10-15T00:59:57.533Z",
-   "note": "rate-limited (429)"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-unitedkingdom",
@@ -704,13 +704,13 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   }
  ],
  "items": [
   {
-   "title": "Althengstett: Wie Mütter den Verlust ihres Kindes verarbeiten | tagesthemen mittendrin",
-   "url": "https://www.youtube.com/watch?v=l_CP6n9ApKU",
+   "title": "tagesschau in Einfacher Sprache 19:00 Uhr, 16.10.2026",
+   "url": "https://www.youtube.com/watch?v=mpya9Z9VRRQ",
    "source": "Tagesschau",
    "feedId": "yt-tagesschau",
    "type": "video",
@@ -719,10 +719,138 @@
     "news",
     "listen"
    ],
-   "published": "2026-10-16T12:32:51.000Z",
-   "summary": "Schwanger sein - was für ein Wunderwerk der Natur. Aber was, wenn Kinder während der Schwangerschaft, bei der Geburt oder kurz danach sterben? Wie Frauen damit umgehen - wir waren in Althengstett bei einer Mutter, die uns davon erzählt, und in einem Rückbildungskurs in…",
-   "thumb": "https://i1.ytimg.com/vi/l_CP6n9ApKU/hqdefault.jpg",
-   "id": "9c38ff6381d3",
+   "published": "2026-10-16T15:45:14.000Z",
+   "summary": "tagesschau in Einfacher Sprache 19:00 Uhr Rente: Staat hilft jungen Menschen beim Sparen, Höhere Steuern: Rauchen wird teurer, USA: Mann erschießt Menschen in Schule, Treffen von der EU: Hilfe für die Ukraine. https://www.tagesschau.de",
+   "thumb": "https://i2.ytimg.com/vi/mpya9Z9VRRQ/hqdefault.jpg",
+   "id": "0658a4932579",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Reform rocked by undercover footage | Lewis Goodall reacts",
+   "url": "https://www.youtube.com/watch?v=xbp_wDu62GQ",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-16T15:40:36.000Z",
+   "summary": "Reform UK is facing several allegations from the ITV documentary, Undercover: A Year in Reform, which was clandestinely filmed by a reporter working in the party's press office. Reform MP Sarah Pochin accused her party's press officers of being 'chauvinistic', and Nigel Farage…",
+   "thumb": "https://i1.ytimg.com/vi/xbp_wDu62GQ/hqdefault.jpg",
+   "id": "8a8098550863",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Ukraine Starlink tampering ‘was likely Trump’",
+   "url": "https://www.youtube.com/watch?v=N7N2vbUH64w",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-16T14:40:50.000Z",
+   "summary": "Wes Streeting has been 'reassured' by US Secretary of War Pete Hegseth that Ukraine's access to Starlink satellites has been restored following restrictions to the service. The UK Defence Secretary said he invoked St Francis of Assisi in his efforts to “bring harmony” between…",
+   "thumb": "https://i3.ytimg.com/vi/N7N2vbUH64w/hqdefault.jpg",
+   "id": "7fed46337eaf",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Nachhaltige KI-Rechenzentren gegen massiv steigenden Verbrauch | KlimaZeit vom 16.10.2026",
+   "url": "https://www.youtube.com/watch?v=2TJnZ1Nj-i4",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-16T14:31:46.000Z",
+   "summary": "KlimaZeit 19:45 Uhr \"KlimaZeit\" bietet wöchentlich Hintergrundberichte, ordnet Ergebnisse der Klimaforschung ein, erklärt in aufwändigen Grafiken und Animationen alles Wissenswerte rund ums Klima, hinterfragt Entscheidungen der Politik und zeigt konstruktive Beispiele für die…",
+   "thumb": "https://i3.ytimg.com/vi/2TJnZ1Nj-i4/hqdefault.jpg",
+   "id": "2b74dc75c87d",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Tabaksteuer steigt: Kosten Zigaretten bald 12 Euro?",
+   "url": "https://www.youtube.com/watch?v=TzdsQQdbmNE",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-16T14:30:02.000Z",
+   "summary": "Der Bundestag hat eine deutliche Erhöhung der Tabaksteuer beschlossen. Die entsprechende Gesetzesänderung wurde am späten Donnerstagabend mit den Stimmen der schwarz-roten Koalition verabschiedet. Durch sie soll der Durchschnittspreis für eine Schachtel mit 20 Zigaretten bis…",
+   "thumb": "https://i1.ytimg.com/vi/TzdsQQdbmNE/hqdefault.jpg",
+   "id": "e28a338fdb39",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "„Frühstartrente“: Wie der Staat jetzt für deine Kinder spart",
+   "url": "https://www.youtube.com/watch?v=pFsAc3xZKEI",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-16T13:13:04.000Z",
+   "summary": "Nach dem Willen der Bundesregierung soll die sogenannte „Frühstartrente“ ein Baustein sein, um die Altersvorsorge zukunftsfähig zu machen. Die Koalitionsfraktionen von Union und SPD haben die Einführung dieses Instruments bereits vereinbart. Der Finanzausschuss beschloss einen…",
+   "thumb": "https://i1.ytimg.com/vi/pFsAc3xZKEI/hqdefault.jpg",
+   "id": "742003bf5f7b",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Raketen-Angriffe: Warum die Ukraine verwundbarer wird",
+   "url": "https://www.youtube.com/watch?v=9sBP3Wm2ZhU",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-16T13:09:01.000Z",
+   "summary": "In der Ukraine scheint für viele klar: Die Starlink-Ausfälle sind kein Zufall, sondern politisch gewollt. Die Unterstützung aus der EU wird immer wichtiger. Mehr zum Thema: https://www.tagesschau.de/ausland/europa/ukraine-starlink-104.html Alle aktuellen Informationen, weitere…",
+   "thumb": "https://i2.ytimg.com/vi/9sBP3Wm2ZhU/hqdefault.jpg",
+   "id": "bc79e9eb34a8",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Company is all-in on LLMs, and now I finally see where the worry is coming from",
+   "url": "https://www.reddit.com/r/ProductManagement/comments/1x7dw6m/company_is_allin_on_llms_and_now_i_finally_see/",
+   "source": "r/productmanagement",
+   "feedId": "rd-productmanagement",
+   "type": "post",
+   "tags": [
+    "product"
+   ],
+   "published": "2026-10-16T11:39:09.000Z",
+   "summary": "Not sure that's the right flair, there wasn't one for existential dread. I recently joined a company that's all in on AI. I didn't know this when interviewing, the impression I got was that they were working with it but it was still very much the human doing the work. I'm 3…",
+   "id": "aaf640851fa4",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -762,25 +890,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Gefährliche Mutprobe: So pushen Algorithmen die „Blackout-Challenge“",
-   "url": "https://www.youtube.com/watch?v=OeOfFVh4qQI",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-16T10:34:02.000Z",
-   "summary": "Kinder und Jugendliche sollen nach dem Willen der Bundesländer besser vor gefährlichen Mutproben im Internet geschützt werden. Die Länderkammer sprach sich am Freitag dafür aus, dazu das Strafrecht zu ändern. Anlass sei die wachsende Zahl gefährlicher Challenges in Sozialen…",
-   "thumb": "https://i4.ytimg.com/vi/OeOfFVh4qQI/hqdefault.jpg",
-   "id": "e9fd122ee3dc",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "EU leaders rally around Zelenskyy as Trump calls Ukrainian strikes on Russia a 'disgrace'",
    "url": "https://www.reddit.com/r/geopolitics/comments/1x7clsj/eu_leaders_rally_around_zelenskyy_as_trump_calls/",
    "source": "r/geopolitics",
@@ -793,44 +902,6 @@
    "published": "2026-10-16T10:26:53.000Z",
    "summary": "European Union leaders rallied around President Volodymyr Zelenskyy at a summit on Friday as U.S. President Donald Trump fired another salvo at Ukraine, calling its strikes on Russian refineries a \"disgrace\". The EU is hosting Zelenskyy in Brussels at one of the most difficult…",
    "id": "7c3f1506a5bf",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "EU-Gipfel in Brüssel: Ukraine-Hilfen und die Winterstrategie",
-   "url": "https://www.youtube.com/watch?v=IC0z6zA6WII",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-16T10:09:44.000Z",
-   "summary": "EU-Spitzenvertreter stärken dem ukrainischen Präsidenten Wolodymyr Selenskyj im Streit um die Waffenruhe im Energiebereich beim Gipfeltreffen in Brüssel den Rücken. Russland habe die von US-Präsident Donald Trump angekündigte Waffenruhe nicht eingehalten, sondern die Lage…",
-   "thumb": "https://i2.ytimg.com/vi/IC0z6zA6WII/hqdefault.jpg",
-   "id": "31b416fc095f",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Klingbeil zur Erhöhung der Tabaksteuer",
-   "url": "https://www.youtube.com/watch?v=6BYTVawesOI",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-16T09:22:09.000Z",
-   "summary": "Zwölf Euro im Durchnitt für eine Packung Zigaretten im Jahr 2030. Das ist eine Folge der gestern vom Bundestag beschlossenen Erhöhung der Tabaksteuer. Man versuche damit auch Löcher im Haushalt zu stopfen, sagt Finanzminister Klingbeil in Bangkok, am Rande der Jahrestagung des…",
-   "thumb": "https://i3.ytimg.com/vi/6BYTVawesOI/hqdefault.jpg",
-   "id": "4a410c2218f1",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -865,25 +936,6 @@
    "published": "2026-10-16T08:26:57.000Z",
    "summary": "submitted by /u/Scary_Staff_2394 [link] [comments]",
    "id": "287298d11de8",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "KI-Musik: Sind die Tage menschlicher Künstler gezählt?",
-   "url": "https://www.youtube.com/watch?v=GGmn0qrZ844",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-16T08:22:24.000Z",
-   "summary": "KI-generierte Songs fluten die Streamingdienste. Immer häufiger stehen dahinter auch durch Künstliche Intelligenz erzeugte Bands, mit eigener Biografie und Avataren. Das Ende der Kreativität - oder eine Chance? Alle aktuellen Informationen, weitere Nachrichten und tagesschau24…",
-   "thumb": "https://i4.ytimg.com/vi/GGmn0qrZ844/hqdefault.jpg",
-   "id": "1986e3d948a0",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1004,24 +1056,6 @@
    "summary": "LBC’s Henry Riley travelled over a thousand miles across Europe to Kapitan Andreevo, Bulgaria. There, he saw a side to Europe’s migration crisis unlike he’d ever seen before. Kapitan Andreevo sees over a million lorries pass through each year (over 2,500 each day), and,…",
    "thumb": "https://i4.ytimg.com/vi/Ocl-mztSGw8/hqdefault.jpg",
    "id": "eea1ed816a90",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "New Katie Zacharia Leak is F***ing BRUTAL!",
-   "url": "https://www.youtube.com/watch?v=Bvr_swp5jl4",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-16T01:30:40.000Z",
-   "summary": "Luke discusses the latest on Katie Zacharia's lawyer controversy. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
-   "thumb": "https://i3.ytimg.com/vi/Bvr_swp5jl4/hqdefault.jpg",
-   "id": "d04644e58796",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1208,6 +1242,24 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
+   "title": "New Katie Zacharia Leak is F***ing BRUTAL!",
+   "url": "https://www.youtube.com/watch?v=Bvr_swp5jl4",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-16T01:30:40.000Z",
+   "summary": "Luke discusses the latest on Katie Zacharia's lawyer controversy. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
+   "thumb": "https://i3.ytimg.com/vi/Bvr_swp5jl4/hqdefault.jpg",
+   "id": "d04644e58796",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
    "title": "Mounting war-time trade between Moscow and Beijing expands in the Arctic",
    "url": "https://www.reddit.com/r/geopolitics/comments/1x71trz/mounting_wartime_trade_between_moscow_and_beijing/",
    "source": "r/geopolitics",
@@ -1292,42 +1344,6 @@
    "summary": "The Good Liars go to Alaska to talk with rally attendees. Special thanks to Dancing Bear Alaska for arranging a spectacular flight to see Mt. Denali. It was AWESOME LINK: https://www.instagram.com/dancingbearalaska/ BOOKING: www.dancingbearalaska.net…",
    "thumb": "https://i1.ytimg.com/vi/XQQwiRoerh0/hqdefault.jpg",
    "id": "de58ec93e785",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Musk blames Trump for 'sabotaging' Ukraine’s Starlink",
-   "url": "https://www.youtube.com/watch?v=6KpQFDrb9YQ",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-15T20:03:47.000Z",
-   "summary": "Volodymyr Zelenskyy has lashed out at Donald Trump, accusing the US President of betraying Ukraine by slowing down the speeds of a crucial internet system used to protect the war-torn nation from Russian assault. Elon Musk's Starlink technology has been used by Ukraine for its…",
-   "thumb": "https://i3.ytimg.com/vi/6KpQFDrb9YQ/hqdefault.jpg",
-   "id": "6ffbe7faaa8c",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Trump's niece issues 'alarming' warning over the President's behaviour",
-   "url": "https://www.youtube.com/watch?v=O7mZvO_fpIM",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-15T18:45:10.000Z",
-   "summary": "Donald Trump's niece Mary Trump joins Andrew Marr for a stark assessment of her uncle's presidency, his relationship with Vladimir Putin and the growing pressure on him ahead of the US midterm elections. She also discusses Trump's response to calls for the release of the…",
-   "thumb": "https://i4.ytimg.com/vi/O7mZvO_fpIM/hqdefault.jpg",
-   "id": "8e8022698ca9",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1439,22 +1455,6 @@
    "why": "0"
   },
   {
-   "title": "Narrow niche vs. broad market for a v1: how would you decide?",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1x6p0pa/narrow_niche_vs_broad_market_for_a_v1_how_would/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-10-15T15:39:10.000Z",
-   "summary": "Context: a small student team, 2 weeks left on a competition deadline, and a working AI speaking-practice app for one niche: people who understand English but freeze when they speak (starting with Algerian students preparing for visa or job interviews). The debate in our team…",
-   "id": "ef9cbf30a154",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "Bill Gates’ Daughter is in Trouble",
    "url": "https://www.youtube.com/watch?v=P8CVqDKeOKk",
    "source": "ColdFusion",
@@ -1541,22 +1541,6 @@
    "summary": "Go to https://hensonshaving.com/TLDR and enter \"TLDR\" at checkout to get 100 free blades with your purchase. In this video we explore Burnham's promise to implement a more representative electoral system in the UK but will he actually succeed where countless other governments…",
    "thumb": "https://i2.ytimg.com/vi/QmGYruZYHCc/hqdefault.jpg",
    "id": "c979ca4f9006",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Weekly rant thread",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1x6gndv/weekly_rant_thread/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-10-15T09:00:27.000Z",
-   "summary": "Share your frustrations and get support/feedback. You are not alone! submitted by /u/AutoModerator [link] [comments]",
-   "id": "1046b1d47eec",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2891,5 +2875,5 @@
    "why": "0"
   }
  ],
- "contentHash": "6e2c12888473"
+ "contentHash": "501edfdd25f2"
 }
