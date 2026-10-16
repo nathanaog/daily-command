@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-16T18:56:35.667Z",
+ "generated": "2026-10-16T21:48:35.456Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
@@ -657,9 +657,10 @@
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
+   "lastOk": "2026-10-16T18:56:35.667Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-xbox",
@@ -668,7 +669,7 @@
    "status": "cached",
    "count": 5,
    "lastOk": null,
-   "note": "rate-limited (429)"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-slaythespire",
@@ -677,16 +678,15 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-10-16T13:04:35.374Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
   },
   {
    "id": "rd-germany",
@@ -695,7 +695,7 @@
    "status": "cached",
    "count": 5,
    "lastOk": "2026-10-15T00:59:57.533Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)"
   },
   {
    "id": "rd-unitedkingdom",
@@ -704,10 +704,170 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   }
  ],
  "items": [
+  {
+   "title": "GRAND ISLAND TRUMP RALLY",
+   "url": "https://www.youtube.com/watch?v=3M8__9WmwVY",
+   "source": "The Good Liars",
+   "feedId": "yt-the-good-liars",
+   "type": "video",
+   "tags": [
+    "comedy",
+    "politics",
+    "debates"
+   ],
+   "published": "2026-10-16T21:19:44.000Z",
+   "summary": "Part two of The Good Liars visit the Grand Island, NE. Join this channel to get access to perks: https://www.youtube.com/channel/UCUNOwz9KTDIhhTTN3_ptUDA/join https://linktr.ee/thegoodliars",
+   "thumb": "https://i4.ytimg.com/vi/3M8__9WmwVY/hqdefault.jpg",
+   "id": "8be46d6b5cd1",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "OMG: Trump HUMILIATES Katie IN PUBLIC AGAIN after FIRING HER!",
+   "url": "https://www.youtube.com/watch?v=7nvHOhUkPb4",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-16T21:15:08.000Z",
+   "summary": "Luke discusses the firing of former press secretary Katie Zacharia. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
+   "thumb": "https://i4.ytimg.com/vi/7nvHOhUkPb4/hqdefault.jpg",
+   "id": "f46fd8032c11",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "tagesthemen 21:45 Uhr, 16.10.2026",
+   "url": "https://www.youtube.com/watch?v=qGQXkT60dLA",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-16T20:56:20.000Z",
+   "summary": "tagesthemen 21:45 Uhr Bundestag stimmt für Anhebung der Tabaksteuer, Deutschlandtag: Junge Union blickt kritisch auf Bundeskanzler Merz, Ukrainischer Präsident Selenskij bittet auf EU-Gipfel um weitere Unterstützung, Bundesrat fordert besseren Schutz Minderjähriger vor…",
+   "thumb": "https://i2.ytimg.com/vi/qGQXkT60dLA/hqdefault.jpg",
+   "id": "62fc4c40483b",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Trump vs Zelenskyy 2.0 | Simon Marks’ American Week",
+   "url": "https://www.youtube.com/watch?v=vh0iOYd8tR4",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-16T20:00:07.000Z",
+   "summary": "Simon Marks returns for his American Week with a look at the President's latest row with Zelenskyy, a new Trump currency... and the quickfire sacking of Katie Zacharia. Listen to the full show on the all-new LBC App: https://app.af.lbc.co.uk/btnc/thenewlbcapp #simonmarks…",
+   "thumb": "https://i3.ytimg.com/vi/vh0iOYd8tR4/hqdefault.jpg",
+   "id": "1a2b4c80319a",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "GTA 6: NEW THINGS FROM LAUNCH TRAILER & MORE",
+   "url": "https://www.youtube.com/watch?v=UTrNTE9VPHM",
+   "source": "GameRanx",
+   "feedId": "yt-gameranx",
+   "type": "video",
+   "tags": [
+    "gaming"
+   ],
+   "published": "2026-10-16T19:58:23.000Z",
+   "summary": "Use code GAMERANXFB50 to get 50% OFF your first Factor box plus free breakfast for 1 year at https://bit.ly/3V2LyN4! Thank you to Factor for sponsoring this video! ~~SOURCES~~ GTA6 stuff: New trailer: https://youtu.be/oFwB6gZLRmc?si=ydfS4dkGzpZZmj-G Portrait changes…",
+   "thumb": "https://i2.ytimg.com/vi/UTrNTE9VPHM/hqdefault.jpg",
+   "id": "7f4e5279cae7",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Toddler Sh0t His Teacher... Meet His Parent",
+   "url": "https://www.youtube.com/watch?v=iBnOJClC2sM",
+   "source": "Aberrant preach",
+   "feedId": "yt-aberrant-preach",
+   "type": "video",
+   "tags": [
+    "trash"
+   ],
+   "published": "2026-10-16T19:55:47.000Z",
+   "summary": "We covered a story of a 6 year old who brought a g*n to school and wounded his teacher Abigail Zwerner. Now we have bodycam of what happened that day ———————————— Spotify: https://open.spotify.com/artist/6QJIJ6AugqPEFASp1V6zgH Merchandise ---…",
+   "thumb": "https://i2.ytimg.com/vi/iBnOJClC2sM/hqdefault.jpg",
+   "id": "5ac978390cd9",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Russia's war reaches Bulgaria's shores, putting Radev's Moscow-friendly stance to the test",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1x7q299/russias_war_reaches_bulgarias_shores_putting/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-16T19:47:52.000Z",
+   "summary": "submitted by /u/KI_official [link] [comments]",
+   "id": "4b1a88f2d9b2",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "“Go to bed with a racist, wake up next to a misogynist” | James O’Brien - The Whole Show",
+   "url": "https://www.youtube.com/watch?v=g8FDTtChr3Y",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-16T19:00:03.000Z",
+   "summary": "This is a catch-up version of James O'Brien's live, daily show on LBC Radio from the 16th of October 2026. Listen to the full show on the all-new LBC App: https://app.af.lbc.co.uk/btnc/thenewlbcapp #jamesobrien #politics #LBC LBC is the home of live debate around news and…",
+   "thumb": "https://i4.ytimg.com/vi/g8FDTtChr3Y/hqdefault.jpg",
+   "id": "bc2b8fea1938",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Five children killed in Sudanese army airstrike on North Kordofan",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1x7o8al/five_children_killed_in_sudanese_army_airstrike/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-16T18:36:34.000Z",
+   "summary": "submitted by /u/DayTrader_Dav [link] [comments]",
+   "id": "c551aeb6b68e",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
   {
    "title": "tagesschau 20:00 Uhr, 16.10.2026",
    "url": "https://www.youtube.com/watch?v=WjWKIn4RrVo",
@@ -720,7 +880,7 @@
     "listen"
    ],
    "published": "2026-10-16T18:30:32.000Z",
-   "summary": "tagesschau 20:00 Uhr Bundestag beschließt sogenannte „Frühstartrente\", Bundestag stimmt für Anhebung der Tabaksteuer, Staats- und Regierungschefs beraten auf EU-Gipfel in Brüssel über Hilfen für die Ukraine, Papst Leo XIV. bittet im Telefonat mit Russlands Präsidenten Putin um…",
+   "summary": "Die 20-Uhr-Ausgabe der tagesschau im Livestream und früher auf Abruf: https://ardmediathek.de/tagesschau und https://tagesschau.de Themen der tagesschau-Sendung: 00:00 Guten Abend 00:21Bundestag beschließt sogenannte „Frühstartrente\" 02:41 Bundestag stimmt für Anhebung der…",
    "thumb": "https://i4.ytimg.com/vi/WjWKIn4RrVo/hqdefault.jpg",
    "id": "61c2bc3d80fb",
    "score": 1,
@@ -740,6 +900,57 @@
    "summary": "Castlevania: Belmont's Curse (PC, PS5, Xbox Series X/S, Switch) marks Konami's return to the classic franchise. How is it? Let's talk. Subscribe for more: https://www.youtube.com/gameranxTV?sub_confirmation=1",
    "thumb": "https://i3.ytimg.com/vi/fVRmZT8Ve7k/hqdefault.jpg",
    "id": "a8870424156b",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "The Axis of Upheaval Goes to War: How Battlefield Cooperation Is Binding Together America’s Adversaries",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1x7ndhs/the_axis_of_upheaval_goes_to_war_how_battlefield/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-16T18:04:30.000Z",
+   "summary": "submitted by /u/ForeignAffairsMag [link] [comments]",
+   "id": "4cfa1ad48df5",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "The Nuclear Deal That Could Save NATO: How Europe Can Take More Responsibility—Without Starting an Arms Race",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1x7ncu5/the_nuclear_deal_that_could_save_nato_how_europe/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-16T18:03:48.000Z",
+   "summary": "submitted by /u/ForeignAffairsMag [link] [comments]",
+   "id": "ea08b5d4573e",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Attack on Starlink terminal: Authorities examine the trail to the Turkish mafia",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1x7lmx7/attack_on_starlink_terminal_authorities_examine/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-16T16:58:12.000Z",
+   "summary": "submitted by /u/austinl98k [link] [comments]",
+   "id": "1e822cf68362",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -926,25 +1137,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Verkäufer sorgen sich: Das ändert sich für Raucher",
-   "url": "https://www.youtube.com/watch?v=TzdsQQdbmNE",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-16T14:30:02.000Z",
-   "summary": "Der Bundestag hat eine deutliche Erhöhung der Tabaksteuer beschlossen. Die entsprechende Gesetzesänderung wurde am späten Donnerstagabend mit den Stimmen der schwarz-roten Koalition verabschiedet. Durch sie soll der Durchschnittspreis für eine Schachtel mit 20 Zigaretten bis…",
-   "thumb": "https://i1.ytimg.com/vi/TzdsQQdbmNE/hqdefault.jpg",
-   "id": "e28a338fdb39",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "@AliKh1886 on Twitter: “A certain Rachel asked Nobel laureate Paul Krugman a question at Oxford last night, casually noting the IMF’s praise for UK deficit and debt reduction and the productivity puzzle being revised away. All during her time as Chancellor, as it happens.”",
    "url": "https://www.reddit.com/r/ukpolitics/comments/1x7fa2p/alikh1886_on_twitter_a_certain_rachel_asked_nobel/",
    "source": "r/ukpolitics",
@@ -1024,92 +1216,6 @@
    "summary": "Tariq Ali is one of Britain's foremost figures on the left of politics, and following a busy recess for Andy Burnham, he came in to the studio to react to the Prime Minister's speech to Labour conference, his first few months in charge, and how Britain should position itself in…",
    "thumb": "https://i3.ytimg.com/vi/rQcHhatDUtA/hqdefault.jpg",
    "id": "5c7b0672bfc5",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Trump says he won't use nuclear weapons or send ground troops to Iran",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1x7ct6d/trump_says_he_wont_use_nuclear_weapons_or_send/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-16T10:39:09.000Z",
-   "summary": "submitted by /u/foodie_2598 [link] [comments]",
-   "id": "a1022e6b19f4",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "EU leaders rally around Zelenskyy as Trump calls Ukrainian strikes on Russia a 'disgrace'",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1x7clsj/eu_leaders_rally_around_zelenskyy_as_trump_calls/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-16T10:26:53.000Z",
-   "summary": "European Union leaders rallied around President Volodymyr Zelenskyy at a summit on Friday as U.S. President Donald Trump fired another salvo at Ukraine, calling its strikes on Russian refineries a \"disgrace\". The EU is hosting Zelenskyy in Brussels at one of the most difficult…",
-   "id": "7c3f1506a5bf",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "'I'm not a big fan of Zelensky,' Trump says as US-Ukraine tensions deepen",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1x7as96/im_not_a_big_fan_of_zelensky_trump_says_as/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-16T08:33:18.000Z",
-   "summary": "submitted by /u/KI_official [link] [comments]",
-   "id": "36688167c29f",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Iran’s precision strikes picked apart Gulf infrastructure, blunting US war plans",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1x7afek/irans_precision_strikes_picked_apart_gulf/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-16T08:09:46.000Z",
-   "summary": "Iran’s missiles and drones have hit Gulf infrastructure sites at least 135 times, causing cascading failures that Gulf states have often concealed. Despite repeated official statements that the damage came from debris, Reuters found the equipment struck was, time and again,…",
-   "id": "c5c8efe53f80",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Labour to end deals with Greens backing ‘Zionism is racism’",
-   "url": "https://www.youtube.com/watch?v=f9FZBJusbSM",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-16T07:19:39.000Z",
-   "summary": "Labour claims it will give the party’s local groups seven days to confirm that they reject the policy, which was recently taken on by members at the Green Party conference. The Green Party shares power with Labour - either directly or alongside other councils - across 19…",
-   "thumb": "https://i3.ytimg.com/vi/f9FZBJusbSM/hqdefault.jpg",
-   "id": "b0780b36cb78",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1312,8 +1418,8 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "The side of the migration crisis you've never seen",
-   "url": "https://www.youtube.com/watch?v=Ocl-mztSGw8",
+   "title": "Labour to end deals with Greens backing ‘Zionism is racism’",
+   "url": "https://www.youtube.com/watch?v=f9FZBJusbSM",
    "source": "LBC",
    "feedId": "yt-lbc",
    "type": "video",
@@ -1321,10 +1427,10 @@
     "politics",
     "listen"
    ],
-   "published": "2026-10-16T06:00:08.000Z",
-   "summary": "LBC’s Henry Riley travelled over a thousand miles across Europe to Kapitan Andreevo, Bulgaria. There, he saw a side to Europe’s migration crisis unlike he’d ever seen before. Kapitan Andreevo sees over a million lorries pass through each year (over 2,500 each day), and,…",
-   "thumb": "https://i4.ytimg.com/vi/Ocl-mztSGw8/hqdefault.jpg",
-   "id": "eea1ed816a90",
+   "published": "2026-10-16T07:19:39.000Z",
+   "summary": "Labour claims it will give the party’s local groups seven days to confirm that they reject the policy, which was recently taken on by members at the Green Party conference. The Green Party shares power with Labour - either directly or alongside other councils - across 19…",
+   "thumb": "https://i3.ytimg.com/vi/f9FZBJusbSM/hqdefault.jpg",
+   "id": "b0780b36cb78",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1348,23 +1454,6 @@
    "why": "0"
   },
   {
-   "title": "Mounting war-time trade between Moscow and Beijing expands in the Arctic",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1x71trz/mounting_wartime_trade_between_moscow_and_beijing/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-16T00:12:25.000Z",
-   "summary": "submitted by /u/Dances_With_Seagulls [link] [comments]",
-   "id": "aab4eb15830c",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "OMG: Scott Jennings HUMILIATED on CNN, LAUGHED AT To His Face!",
    "url": "https://www.youtube.com/watch?v=18Rp2BJzKmI",
    "source": "Luke Beasley",
@@ -1378,24 +1467,6 @@
    "summary": "Luke discusses Scott Jennings' take on James Talarico's CNN town hall. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
    "thumb": "https://i2.ytimg.com/vi/18Rp2BJzKmI/hqdefault.jpg",
    "id": "36be30302bd5",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "'Want to know what Putin wants? Watch Donald Trump' | James O’Brien - The Whole Show",
-   "url": "https://www.youtube.com/watch?v=ZKS4iY3ARas",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-15T21:00:33.000Z",
-   "summary": "This is a catch-up version of James O'Brien's live, daily show on LBC Radio from the 15th of October 2026. 00:00 - Zelenskyy: it's \"painful\" that Trump has chosen Russia over Ukraine - what should Andy Burnham do next? 38:32 – US floats unfreezing Russian assets to restart…",
-   "thumb": "https://i3.ytimg.com/vi/ZKS4iY3ARas/hqdefault.jpg",
-   "id": "1812d96ce9d6",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1630,24 +1701,6 @@
    "summary": "Luke discusses Indiana Democrat Jaime West in a recent wild interview. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
    "thumb": "https://i2.ytimg.com/vi/MHc9rD8ro6E/hqdefault.jpg",
    "id": "531a2f9d5674",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "They DUG UP Her SECRET, WATCH HER FACE!",
-   "url": "https://www.youtube.com/watch?v=wtNc0gVr2dw",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-15T00:40:05.000Z",
-   "summary": "Luke discusses new revelations that have come out about Katie Zacharia's professional background. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X)…",
-   "thumb": "https://i4.ytimg.com/vi/wtNc0gVr2dw/hqdefault.jpg",
-   "id": "f453b71ff8a4",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1963,23 +2016,6 @@
    "summary": "LIMITED TIME MERCH!! https://coffeezilla.shop/ (PRE-ORDER ENDS NOVEMBER 6TH) Support Investigative Journalism: ► Patreon: https://patreon.com/coffeezilla Credits: HUNTERBROOK ENSIGN STORY: https://hntrbrk.com/investigations/ensign 3D Artist: Ed Leszczynski @LeszczynskiEd Video…",
    "thumb": "https://i2.ytimg.com/vi/9eWJISlh0fw/hqdefault.jpg",
    "id": "cc3a132b02be",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Valor Mortis - Before You Buy",
-   "url": "https://www.youtube.com/watch?v=jdlfOEA1xfg",
-   "source": "GameRanx",
-   "feedId": "yt-gameranx",
-   "type": "video",
-   "tags": [
-    "gaming"
-   ],
-   "published": "2026-10-12T17:08:28.000Z",
-   "summary": "Valor Mortis (PC, PS5, Xbox Series X/S) is a new game from the makers of Ghostrunner. How is it? Let’s talk. Subscribe for more: https://www.youtube.com/gameranxTV?sub_confirmation=1",
-   "thumb": "https://i3.ytimg.com/vi/jdlfOEA1xfg/hqdefault.jpg",
-   "id": "997f2060a7e3",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2385,23 +2421,6 @@
    "why": "0"
   },
   {
-   "title": "We Cant Have A Hobby In Peace...",
-   "url": "https://www.youtube.com/watch?v=GOoMBZBah-k",
-   "source": "Aberrant preach",
-   "feedId": "yt-aberrant-preach",
-   "type": "video",
-   "tags": [
-    "trash"
-   ],
-   "published": "2026-10-08T21:09:31.000Z",
-   "summary": "This woman had a lot to say about grown men playing videogames and being into Pokemon. There is a lot of value in video games. ———————————— Spotify: https://open.spotify.com/artist/6QJIJ6AugqPEFASp1V6zgH Merchandise --- https://www.enkreprinte.com/collections/aba-and-preach…",
-   "thumb": "https://i4.ytimg.com/vi/GOoMBZBah-k/hqdefault.jpg",
-   "id": "7840de50788f",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "NEBRASKA TRUMP RALLY",
    "url": "https://www.youtube.com/watch?v=DTyTNVn7usc",
    "source": "The Good Liars",
@@ -2559,25 +2578,6 @@
    "summary": "Welcome to Crowd Control, the improvised stand-up show where the audience is the material. In this clip, comedian Ron Funches relates his late-life autism diagnosis with an audience member's journey of self discovery and learns about the everlasting nightmares of gross anatomy…",
    "thumb": "https://i3.ytimg.com/vi/NvOIzNyFo1o/hqdefault.jpg",
    "id": "049d998810ef",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "MOBILE TRUMP RALLY",
-   "url": "https://www.youtube.com/watch?v=b3--95un_kM",
-   "source": "The Good Liars",
-   "feedId": "yt-the-good-liars",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "politics",
-    "debates"
-   ],
-   "published": "2026-10-07T17:30:11.000Z",
-   "summary": "The Good Liars talk with attendees of the Trump Rally in Mobile, AL - and learn a little bit about AI and \"future war\" along the way. https://www.youtube.com/channel/UCUNOwz9KTDIhhTTN3_ptUDA/join https://linktr.ee/thegoodliars",
-   "thumb": "https://i3.ytimg.com/vi/b3--95un_kM/hqdefault.jpg",
-   "id": "542bd71cdaa5",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2876,5 +2876,5 @@
    "why": "0"
   }
  ],
- "contentHash": "2569c5b7c24a"
+ "contentHash": "d20eba73e6ab"
 }
