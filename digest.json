@@ -1,18 +1,16 @@
 {
- "generated": "2026-10-16T00:59:26.015Z",
+ "generated": "2026-10-16T03:52:20.312Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
-  "ok": 10,
-  "items": 32,
-  "duplicatesMerged": 0,
+  "ok": 6,
+  "items": 24,
+  "duplicatesMerged": 1,
   "lengthsKnown": 0,
-  "lengthLookups": 4,
-  "lengthFailures": 4,
+  "lengthLookups": 0,
+  "lengthFailures": 0,
   "lengthVia": "video pages",
-  "lengthFailReasons": {
-   "no length on page": 4
-  }
+  "lengthFailReasons": {}
  },
  "feeds": [
   {
@@ -187,14 +185,15 @@
    "id": "yt-half-as-interesting",
    "name": "Half as Interesting",
    "type": "youtube",
-   "status": "ok",
-   "count": 2,
+   "status": "error",
+   "count": 0,
    "resolved": {
     "channelId": "UCuCkxoKLYO_EQ2GeFtbM_bw",
     "title": "Half as Interesting",
     "via": "name search"
    },
-   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCuCkxoKLYO_EQ2GeFtbM_bw"
+   "error": "not found (404)",
+   "http": 404
   },
   {
    "id": "yt-coldfusion",
@@ -312,14 +311,15 @@
    "id": "yt-finlay-christie",
    "name": "Finlay Christie",
    "type": "youtube",
-   "status": "ok",
-   "count": 3,
+   "status": "error",
+   "count": 0,
    "resolved": {
     "channelId": "UCPap5skbnRGd6k90OZFmS7A",
     "title": "Finlay Christie",
     "via": "name search"
    },
-   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCPap5skbnRGd6k90OZFmS7A"
+   "error": "not found (404)",
+   "http": 404
   },
   {
    "id": "yt-bald-and-bankrupt",
@@ -500,8 +500,8 @@
     "title": "Lenny's Podcast",
     "via": "name search"
    },
-   "error": "HTTP 500",
-   "http": 500
+   "error": "not found (404)",
+   "http": 404
   },
   {
    "id": "yt-the-hustle",
@@ -591,14 +591,15 @@
    "id": "yt-oversimplified",
    "name": "OverSimplified",
    "type": "youtube",
-   "status": "ok",
+   "status": "error",
    "count": 0,
    "resolved": {
     "channelId": "UCNIuvl7V8zACPpTmmNIqP2A",
     "title": "OverSimplified",
     "via": "name search"
    },
-   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCNIuvl7V8zACPpTmmNIqP2A"
+   "error": "not found (404)",
+   "http": 404
   },
   {
    "id": "yt-ordinary-things",
@@ -632,14 +633,15 @@
    "id": "yt-economics-explained",
    "name": "Economics Explained",
    "type": "youtube",
-   "status": "ok",
-   "count": 2,
+   "status": "error",
+   "count": 0,
    "resolved": {
     "channelId": "UCZ4AMrDcNrfy3X6nsU8-rPg",
     "title": "Economics Explained",
     "via": "name search"
    },
-   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCZ4AMrDcNrfy3X6nsU8-rPg"
+   "error": "not found (404)",
+   "http": 404
   },
   {
    "id": "yt-j-j-mccullough",
@@ -700,9 +702,10 @@
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
+   "lastOk": "2026-10-16T00:59:26.015Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-xbox",
@@ -711,7 +714,7 @@
    "status": "cached",
    "count": 5,
    "lastOk": null,
-   "note": "rate-limited (429)"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-slaythespire",
@@ -720,16 +723,15 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-10-15T19:00:23.715Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
   },
   {
    "id": "rd-germany",
@@ -738,7 +740,7 @@
    "status": "cached",
    "count": 5,
    "lastOk": "2026-10-15T00:59:57.533Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)"
   },
   {
    "id": "rd-unitedkingdom",
@@ -747,10 +749,27 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   }
  ],
  "items": [
+  {
+   "title": "Mounting war-time trade between Moscow and Beijing expands in the Arctic",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1x71trz/mounting_wartime_trade_between_moscow_and_beijing/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-16T00:12:25.000Z",
+   "summary": "submitted by /u/Dances_With_Seagulls [link] [comments]",
+   "id": "aab4eb15830c",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
   {
    "title": "Mother of Henry Nowak killer could be deported",
    "url": "https://www.reddit.com/r/ukpolitics/comments/1x6xjuc/mother_of_henry_nowak_killer_could_be_deported/",
@@ -803,6 +822,23 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
+   "title": "Why the Pentagon Was So Spooked About the B–1 Bombers in England",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1x6v95x/why_the_pentagon_was_so_spooked_about_the_b1/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-15T19:34:03.000Z",
+   "summary": "submitted by /u/carnegieendowment [link] [comments]",
+   "id": "ca7b7c8a76ee",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
    "title": "Mother of Henry Nowak’s killer to be released early",
    "url": "https://www.reddit.com/r/ukpolitics/comments/1x6v3pe/mother_of_henry_nowaks_killer_to_be_released_early/",
    "source": "r/ukpolitics",
@@ -820,6 +856,23 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
+   "title": "How Russia's War Against Ukraine is Spreading to North Africa",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1x6ustc/how_russias_war_against_ukraine_is_spreading_to/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-15T19:16:22.000Z",
+   "summary": "submitted by /u/CEPAORG [link] [comments]",
+   "id": "71f6f9bb2c54",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
    "title": "Britain to send more Storm Shadows to Ukraine",
    "url": "https://www.reddit.com/r/ukpolitics/comments/1x6ua0t/britain_to_send_more_storm_shadows_to_ukraine/",
    "source": "r/ukpolitics",
@@ -827,18 +880,22 @@
    "type": "post",
    "tags": [
     "politics",
-    "british"
+    "british",
+    "news"
    ],
    "published": "2026-10-15T18:56:57.000Z",
    "summary": "submitted by /u/TheTelegraph [link] [comments]",
    "id": "ba965101c26e",
    "score": 1,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
+   "why": "fresh (<12 h) +1 = 1",
+   "alsoIn": [
+    "r/geopolitics"
+   ]
   },
   {
-   "title": "How to Talk About International Law So the Public Will Listen",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1x6tkw3/how_to_talk_about_international_law_so_the_public/",
+   "title": "The Houthis’ Saudi attacks are ‘unprecedented.’ Trump wants to ‘ignore’ until the midterms, but the chaos may force U.S. to respond",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1x6u34k/the_houthis_saudi_attacks_are_unprecedented_trump/",
    "source": "r/geopolitics",
    "feedId": "rd-geopolitics",
    "type": "post",
@@ -846,77 +903,9 @@
     "politics",
     "news"
    ],
-   "published": "2026-10-15T18:30:54.000Z",
-   "summary": "submitted by /u/carnegieendowment [link] [comments]",
-   "id": "8409ea30fa00",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Trump’s Democracy-for-Diesel Deal Shames Us All",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1x6squ4/trumps_democracyfordiesel_deal_shames_us_all/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-15T17:59:43.000Z",
-   "summary": "submitted by /u/nytopinion [link] [comments]",
-   "id": "580011045b2f",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "UN panel member admits he, colleagues accused Israel of ‘genocide’ without verifying facts independently",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1x6skrm/un_panel_member_admits_he_colleagues_accused/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-15T17:53:02.000Z",
-   "summary": "submitted by /u/Human_Concern263 [link] [comments]",
-   "id": "9eb98dd206fc",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "The Middle East’s Quiet Liberal Revolution",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1x6rd1t/the_middle_easts_quiet_liberal_revolution/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-15T17:07:07.000Z",
-   "summary": "submitted by /u/ForeignAffairsMag [link] [comments]",
-   "id": "80ffa30a290f",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "A Democratic Reckoning in India: The Battle on the Streets Over the Foundations of the State",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1x6rc9g/a_democratic_reckoning_in_india_the_battle_on_the/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-15T17:06:16.000Z",
-   "summary": "submitted by /u/ForeignAffairsMag [link] [comments]",
-   "id": "9f6efa8adda5",
+   "published": "2026-10-15T18:49:46.000Z",
+   "summary": "After oil tanker traffic in the Strait of Hormuz rose to post-February highs last month, a new “October window of escalation” is heating up as the Yemeni Houthis dramatically increase their attacks on Saudi Arabia and Iran again takes aim at more tankers and shipping…",
+   "id": "53fb00b1c276",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1165,130 +1154,7 @@
    "score": 0,
    "matched": [],
    "why": "0"
-  },
-  {
-   "title": "The Logistics of IMAX",
-   "url": "https://www.youtube.com/watch?v=auScRXZwHhk",
-   "source": "Half as Interesting",
-   "feedId": "yt-half-as-interesting",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "education"
-   ],
-   "published": "2026-10-14T17:49:58.000Z",
-   "summary": "Get Nebula using my link for 50% off an annual subscription: https://go.nebula.tv/hai Follow Sam from Half as Interesting on Instagram: http://Instagram.com/Sam.From.Wendover Follow Half as Interesting on Twitter: http://twitter.com/halfinteresting Discuss this video on Reddit:…",
-   "thumb": "https://i2.ytimg.com/vi/auScRXZwHhk/hqdefault.jpg",
-   "id": "c10e962d54a1",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "What Happens When AI Is Free ... South Korea Tried It",
-   "url": "https://www.youtube.com/watch?v=ZRNQ1QgbDj4",
-   "source": "Economics Explained",
-   "feedId": "yt-economics-explained",
-   "type": "video",
-   "tags": [
-    "finance",
-    "listen"
-   ],
-   "published": "2026-10-14T14:58:48.000Z",
-   "summary": "Read Shopify's latest data on the rising global impact of entrepreneurship: https://www.shopify.com/entrepreneur 📫 10,859+ read our free newsletter that has weekly original stories Sign up: → https://economics-explained-tv-program.beehiiv.com/ This video was made possible by…",
-   "thumb": "https://i3.ytimg.com/vi/ZRNQ1QgbDj4/hqdefault.jpg",
-   "id": "23fb10aa8d43",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "old bbc documentaries about urban life",
-   "url": "https://www.youtube.com/shorts/6z2C7_gbwkk",
-   "source": "Finlay Christie",
-   "feedId": "yt-finlay-christie",
-   "type": "video",
-   "tags": [
-    "comedy"
-   ],
-   "published": "2026-10-12T15:19:33.000Z",
-   "summary": "Part 2 of my old BBC archive doc series. Go watch the first one on my channel! I love making these. This was expertly shot and co-directed by James Mileham. Ps I'm on a UK and Ireland tour! Get tickets at https://linktr.ee/finlaychristie 13 Oct — Cambridge 14 Oct — Dublin 16…",
-   "thumb": "https://i3.ytimg.com/vi/6z2C7_gbwkk/hqdefault.jpg",
-   "id": "4cc55e456932",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "meaningless slogans in perfume adverts",
-   "url": "https://www.youtube.com/shorts/TIJhInWxjYw",
-   "source": "Finlay Christie",
-   "feedId": "yt-finlay-christie",
-   "type": "video",
-   "tags": [
-    "comedy"
-   ],
-   "published": "2026-10-11T14:47:25.000Z",
-   "summary": "With the inimitable David Thomas @DavidThomasComedy go follow him and check out more of our collabs on his channel. Ps I'm on a UK and Ireland tour! Get tickets at https://linktr.ee/finlaychristie 13 Oct — Cambridge 14 Oct — Dublin 16 Oct — Nottingham 17 Oct — Leicester 18 Oct…",
-   "thumb": "https://i1.ytimg.com/vi/TIJhInWxjYw/hqdefault.jpg",
-   "id": "9be86f08631c",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "The Logistics of NYC Waste Management",
-   "url": "https://www.youtube.com/watch?v=HjeesNAbWqM",
-   "source": "Half as Interesting",
-   "feedId": "yt-half-as-interesting",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "education"
-   ],
-   "published": "2026-10-07T15:40:49.000Z",
-   "summary": "Get Nebula using my link for 50% off an annual subscription: https://go.nebula.tv/hai Follow Sam from Half as Interesting on Instagram: http://Instagram.com/Sam.From.Wendover Follow Half as Interesting on Twitter: http://twitter.com/halfinteresting Discuss this video on Reddit:…",
-   "thumb": "https://i1.ytimg.com/vi/HjeesNAbWqM/hqdefault.jpg",
-   "id": "6a2c569dac30",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "if VICE made a documentary about sober people",
-   "url": "https://www.youtube.com/shorts/o9NcSPhilDc",
-   "source": "Finlay Christie",
-   "feedId": "yt-finlay-christie",
-   "type": "video",
-   "tags": [
-    "comedy"
-   ],
-   "published": "2026-10-07T12:43:53.000Z",
-   "summary": "Feat. the excellent Henry Hayes and Freya Mallard. Go check out their stuff. @henryhayescomedy @freyamallard Thanks to Laundry Riviera for letting us film. Ps I'm on a UK and Ireland tour! Get tickets at https://linktr.ee/finlaychristie 13 Oct — Cambridge 14 Oct — Dublin 16 Oct…",
-   "thumb": "https://i4.ytimg.com/vi/o9NcSPhilDc/hqdefault.jpg",
-   "id": "2ee9334a38fa",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Can $55,000 Solve The Population Crisis?",
-   "url": "https://www.youtube.com/watch?v=b64TPQDSpYQ",
-   "source": "Economics Explained",
-   "feedId": "yt-economics-explained",
-   "type": "video",
-   "tags": [
-    "finance",
-    "listen"
-   ],
-   "published": "2026-10-05T14:00:15.000Z",
-   "summary": "Thanks to Monarch for partnering with me! Start your free trial and get 50% off your first year of total money clarity using my link https://monarchmoney.yt.link/b7EOLJZ or code economics50 for 50% Off Monarch Core tier. 📫 10,532+ read our free newsletter that has weekly…",
-   "thumb": "https://i3.ytimg.com/vi/b64TPQDSpYQ/hqdefault.jpg",
-   "id": "fa8ecda6a805",
-   "score": 0,
-   "matched": [],
-   "why": "0"
   }
  ],
- "contentHash": "40be533e727e"
+ "contentHash": "d26f91c2bff0"
 }
