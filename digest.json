@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-16T07:05:45.767Z",
+ "generated": "2026-10-16T09:51:40.020Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
@@ -7,7 +7,7 @@
   "items": 122,
   "duplicatesMerged": 0,
   "lengthsKnown": 2,
-  "lengthLookups": 98,
+  "lengthLookups": 96,
   "lengthFailures": 96,
   "lengthVia": "video pages",
   "lengthFailReasons": {
@@ -630,9 +630,10 @@
    "id": "rd-productmanagement",
    "name": "r/productmanagement",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 3,
-   "url": "https://www.reddit.com/r/productmanagement/top/.rss?t=day"
+   "lastOk": "2026-10-16T07:05:45.767Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-tech",
@@ -641,7 +642,7 @@
    "status": "cached",
    "count": 2,
    "lastOk": "2026-10-15T21:49:52.028Z",
-   "note": "rate-limited (429)"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-gaming",
@@ -650,16 +651,15 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-10-16T00:59:26.015Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
   },
   {
    "id": "rd-xbox",
@@ -668,7 +668,7 @@
    "status": "cached",
    "count": 5,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "rate-limited (429)"
   },
   {
    "id": "rd-slaythespire",
@@ -677,7 +677,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-geopolitics",
@@ -708,6 +708,149 @@
   }
  ],
  "items": [
+  {
+   "title": "Klingbeil zur Erhöhung der Tabaksteuer",
+   "url": "https://www.youtube.com/watch?v=6BYTVawesOI",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-16T09:22:09.000Z",
+   "summary": "Zwölf Euro im Durchnitt für eine Packung Zigaretten im Jahr 2030. Das ist eine Folge der gestern vom Bundestag beschlossenen Erhöhung der Tabaksteuer. Man versuche damit auch Löcher im Haushalt zu stopfen, sagt Finanzminister Klingbeil in Bangkok, am Rande der Jahrestagung des…",
+   "thumb": "https://i3.ytimg.com/vi/6BYTVawesOI/hqdefault.jpg",
+   "id": "4a410c2218f1",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Porn showing choking or incest to be banned from early November, government says",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1x7aoy4/porn_showing_choking_or_incest_to_be_banned_from/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-16T08:26:57.000Z",
+   "summary": "submitted by /u/Scary_Staff_2394 [link] [comments]",
+   "id": "287298d11de8",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "KI-Musik: Sind die Tage menschlicher Künstler gezählt?",
+   "url": "https://www.youtube.com/watch?v=GGmn0qrZ844",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-16T08:22:24.000Z",
+   "summary": "KI-generierte Songs fluten die Streamingdienste. Immer häufiger stehen dahinter auch durch Künstliche Intelligenz erzeugte Bands, mit eigener Biografie und Avataren. Das Ende der Kreativität - oder eine Chance? Alle aktuellen Informationen, weitere Nachrichten und tagesschau24…",
+   "thumb": "https://i4.ytimg.com/vi/GGmn0qrZ844/hqdefault.jpg",
+   "id": "1986e3d948a0",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Bauchspeicheldrüsenkrebs: Kann dieses Medikament heilen?",
+   "url": "https://www.youtube.com/watch?v=eYZDgjWotLY",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-16T07:44:35.000Z",
+   "summary": "Bauchspeicheldrüsenkrebs ist eine gefürchtete Diagnose – er wird oft spät erkannt und dann sind die Überlebenschancen schlecht. Ein neues Medikament weckt Hoffnung für Menschen mit der Krankheit in einem fortgeschrittenen Stadium. Das Mittel Daraxonrasib verspricht keine…",
+   "thumb": "https://i2.ytimg.com/vi/eYZDgjWotLY/hqdefault.jpg",
+   "id": "16348b1762c4",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Labour to end deals with Greens backing ‘Zionism is racism’",
+   "url": "https://www.youtube.com/watch?v=f9FZBJusbSM",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-16T07:19:39.000Z",
+   "summary": "Labour claims it will give the party’s local groups seven days to confirm that they reject the policy, which was recently taken on by members at the Green Party conference. The Green Party shares power with Labour - either directly or alongside other councils - across 19…",
+   "thumb": "https://i3.ytimg.com/vi/f9FZBJusbSM/hqdefault.jpg",
+   "id": "b0780b36cb78",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Shepshed (Leicestershire) Council By-Election Result: 🌹 LAB: 32.8% (+14.9) ➡️ RFM: 31.3% (-13.6) 🌳 CON: 23.1% (-2.4) ◼️ RES: 6.4% (New) 🔶 LDM: 3.2% (-3.4) 🌍 GRN: 3.2% (-1.9) Labour GAIN from Reform UK. Changes w/ 2025.",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1x79myx/shepshed_leicestershire_council_byelection_result/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-16T07:19:33.000Z",
+   "summary": "submitted by /u/ClumperFaz [link] [comments]",
+   "id": "080d81a55703",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "UK ‘an outlier in Europe’ for letting Farage and other politicians present TV shows",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1x799lr/uk_an_outlier_in_europe_for_letting_farage_and/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-16T06:57:01.000Z",
+   "summary": "submitted by /u/Exostrike [link] [comments]",
+   "id": "9e01328be68d",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "‘Take the f***ing deal’: Farage secretly filmed letting off Reform candidate accused of racist slur against David Lammy",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1x78ruq/take_the_fing_deal_farage_secretly_filmed_letting/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-16T06:26:27.000Z",
+   "summary": "submitted by /u/zeros3ss [link] [comments]",
+   "id": "44855d907a64",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
   {
    "title": "Friday Show and Tell",
    "url": "https://www.reddit.com/r/ProductManagement/comments/1x78cdx/friday_show_and_tell/",
@@ -816,149 +959,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "OMG: Scott Jennings HUMILIATED on CNN, LAUGHED AT To His Face!",
-   "url": "https://www.youtube.com/watch?v=18Rp2BJzKmI",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-15T21:40:38.000Z",
-   "summary": "Luke discusses Scott Jennings' take on James Talarico's CNN town hall. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
-   "thumb": "https://i2.ytimg.com/vi/18Rp2BJzKmI/hqdefault.jpg",
-   "id": "36be30302bd5",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "tagesthemen 22:15 Uhr, 15.10.2026",
-   "url": "https://www.youtube.com/watch?v=vHPnR5kf4BY",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-15T21:19:32.000Z",
-   "summary": "tagesthemen 22:15 Uhr Regierungschefs beraten über künftigen EU-Haushalt, Bundestag beschließt Reform der Notfallmedizin, Neues Medikament bei Bauchspeicheldrüsenkrebs, Alkoholkontrolle am Kieler Hauptbahnhof nach Alkoholverbot an deutschen Bahnhöfen, Videoplattform YouTube…",
-   "thumb": "https://i3.ytimg.com/vi/vHPnR5kf4BY/hqdefault.jpg",
-   "id": "20ba16a3ce96",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Mother of Henry Nowak killer could be deported",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1x6xjuc/mother_of_henry_nowak_killer_could_be_deported/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-15T21:03:18.000Z",
-   "summary": "submitted by /u/Alti-Ok [link] [comments]",
-   "id": "adca6b6672d4",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Want to know what Putin wants? Watch Donald Trump| James O’Brien - The Whole Show",
-   "url": "https://www.youtube.com/watch?v=ZKS4iY3ARas",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-15T21:00:33.000Z",
-   "summary": "This is a catch-up version of James O'Brien's live, daily show on LBC Radio from the 15th of October 2026. 00:00 - Zelenskyy: it's \"painful\" that Trump has chosen Russia over Ukraine - what should Andy Burnham do next? 38:32 – US floats unfreezing Russian assets to restart…",
-   "thumb": "https://i3.ytimg.com/vi/ZKS4iY3ARas/hqdefault.jpg",
-   "id": "1812d96ce9d6",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "France drops opposition to UK being included in ‘Made in Europe’ legislation",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1x6xa76/france_drops_opposition_to_uk_being_included_in/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-15T20:52:49.000Z",
-   "summary": "submitted by /u/LogicalReasoning1 [link] [comments]",
-   "id": "d5aa7eeb906d",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Literally anything can be ‘Islamophobic’ in Green la-la land",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1x6x4ig/literally_anything_can_be_islamophobic_in_green/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-15T20:46:29.000Z",
-   "summary": "submitted by /u/Eastern-Opposite9521 [link] [comments]",
-   "id": "388647d097b6",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "ALASKA TRUMP RALLY",
-   "url": "https://www.youtube.com/watch?v=XQQwiRoerh0",
-   "source": "The Good Liars",
-   "feedId": "yt-the-good-liars",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "politics",
-    "debates"
-   ],
-   "published": "2026-10-15T20:45:06.000Z",
-   "summary": "The Good Liars go to Alaska to talk with rally attendees. Special thanks to Dancing Bear Alaska for arranging a spectacular flight to see Mt. Denali. It was AWESOME LINK: https://www.instagram.com/dancingbearalaska/ BOOKING: www.dancingbearalaska.net…",
-   "thumb": "https://i1.ytimg.com/vi/XQQwiRoerh0/hqdefault.jpg",
-   "id": "de58ec93e785",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Musk blames Trump for 'sabotaging' Ukraine’s Starlink",
-   "url": "https://www.youtube.com/watch?v=6KpQFDrb9YQ",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-15T20:03:47.000Z",
-   "summary": "Volodymyr Zelenskyy has lashed out at Donald Trump, accusing the US President of betraying Ukraine by slowing down the speeds of a crucial internet system used to protect the war-torn nation from Russian assault. Elon Musk's Starlink technology has been used by Ukraine for its…",
-   "thumb": "https://i3.ytimg.com/vi/6KpQFDrb9YQ/hqdefault.jpg",
-   "id": "6ffbe7faaa8c",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Why the Pentagon Was So Spooked About the B–1 Bombers in England",
    "url": "https://www.reddit.com/r/geopolitics/comments/1x6v95x/why_the_pentagon_was_so_spooked_about_the_b1/",
    "source": "r/geopolitics",
@@ -971,23 +971,6 @@
    "published": "2026-10-15T19:34:03.000Z",
    "summary": "submitted by /u/carnegieendowment [link] [comments]",
    "id": "ca7b7c8a76ee",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Mother of Henry Nowak’s killer to be released early",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1x6v3pe/mother_of_henry_nowaks_killer_to_be_released_early/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-15T19:28:08.000Z",
-   "summary": "submitted by /u/Little-Attorney1287 [link] [comments]",
-   "id": "4f8143375d40",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1008,27 +991,6 @@
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Britain to send more Storm Shadows to Ukraine",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1x6ua0t/britain_to_send_more_storm_shadows_to_ukraine/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british",
-    "news"
-   ],
-   "published": "2026-10-15T18:56:57.000Z",
-   "summary": "submitted by /u/TheTelegraph [link] [comments]",
-   "id": "ba965101c26e",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "alsoIn": [
-    "r/geopolitics"
-   ]
   },
   {
    "title": "The Houthis’ Saudi attacks are ‘unprecedented.’ Trump wants to ‘ignore’ until the midterms, but the chaos may force U.S. to respond",
@@ -1229,6 +1191,96 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
+   "title": "OMG: Scott Jennings HUMILIATED on CNN, LAUGHED AT To His Face!",
+   "url": "https://www.youtube.com/watch?v=18Rp2BJzKmI",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-15T21:40:38.000Z",
+   "summary": "Luke discusses Scott Jennings' take on James Talarico's CNN town hall. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
+   "thumb": "https://i2.ytimg.com/vi/18Rp2BJzKmI/hqdefault.jpg",
+   "id": "36be30302bd5",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Mother of Henry Nowak killer could be deported",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1x6xjuc/mother_of_henry_nowak_killer_could_be_deported/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-15T21:03:18.000Z",
+   "summary": "submitted by /u/Alti-Ok [link] [comments]",
+   "id": "adca6b6672d4",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Want to know what Putin wants? Watch Donald Trump| James O’Brien - The Whole Show",
+   "url": "https://www.youtube.com/watch?v=ZKS4iY3ARas",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-15T21:00:33.000Z",
+   "summary": "This is a catch-up version of James O'Brien's live, daily show on LBC Radio from the 15th of October 2026. 00:00 - Zelenskyy: it's \"painful\" that Trump has chosen Russia over Ukraine - what should Andy Burnham do next? 38:32 – US floats unfreezing Russian assets to restart…",
+   "thumb": "https://i3.ytimg.com/vi/ZKS4iY3ARas/hqdefault.jpg",
+   "id": "1812d96ce9d6",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "ALASKA TRUMP RALLY",
+   "url": "https://www.youtube.com/watch?v=XQQwiRoerh0",
+   "source": "The Good Liars",
+   "feedId": "yt-the-good-liars",
+   "type": "video",
+   "tags": [
+    "comedy",
+    "politics",
+    "debates"
+   ],
+   "published": "2026-10-15T20:45:06.000Z",
+   "summary": "The Good Liars go to Alaska to talk with rally attendees. Special thanks to Dancing Bear Alaska for arranging a spectacular flight to see Mt. Denali. It was AWESOME LINK: https://www.instagram.com/dancingbearalaska/ BOOKING: www.dancingbearalaska.net…",
+   "thumb": "https://i1.ytimg.com/vi/XQQwiRoerh0/hqdefault.jpg",
+   "id": "de58ec93e785",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Musk blames Trump for 'sabotaging' Ukraine’s Starlink",
+   "url": "https://www.youtube.com/watch?v=6KpQFDrb9YQ",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-15T20:03:47.000Z",
+   "summary": "Volodymyr Zelenskyy has lashed out at Donald Trump, accusing the US President of betraying Ukraine by slowing down the speeds of a crucial internet system used to protect the war-torn nation from Russian assault. Elon Musk's Starlink technology has been used by Ukraine for its…",
+   "thumb": "https://i3.ytimg.com/vi/6KpQFDrb9YQ/hqdefault.jpg",
+   "id": "6ffbe7faaa8c",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
    "title": "Trump's niece issues 'alarming' warning over the President's behaviour",
    "url": "https://www.youtube.com/watch?v=O7mZvO_fpIM",
    "source": "LBC",
@@ -1242,44 +1294,6 @@
    "summary": "Donald Trump's niece Mary Trump joins Andrew Marr for a stark assessment of her uncle's presidency, his relationship with Vladimir Putin and the growing pressure on him ahead of the US midterm elections. She also discusses Trump's response to calls for the release of the…",
    "thumb": "https://i4.ytimg.com/vi/O7mZvO_fpIM/hqdefault.jpg",
    "id": "8e8022698ca9",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "tagesschau 20:00 Uhr, 15.10.2026",
-   "url": "https://www.youtube.com/watch?v=xz1fAyYYohU",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-15T18:28:11.000Z",
-   "summary": "tagesschau 20:00 Uhr Bundestag beschließt Reform der Notfallmedizin, Mammografie-Screening künftig bereits ab 45 Jahren, EU-Spitzen verhandeln über Haushalt der Europäischen Union, Beschluss Bundesverfassungsgericht: Wirtschaftsministerin Reiche muss Instagram-Post über…",
-   "thumb": "https://i1.ytimg.com/vi/xz1fAyYYohU/hqdefault.jpg",
-   "id": "5ab9989e0dca",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "So denkt Dr. Pop über KI-generierte Musik | tagesthemen-Interview",
-   "url": "https://www.youtube.com/watch?v=iQtLG40Cp5w",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-15T18:02:41.000Z",
-   "summary": "Nach Spotify und Apple Music hat sich nun auch YouTube dazu entschlossen, KI-generierte Songs als solche zu kennzeichnen. Denn auch YouTube wird tagtäglich mit Songs geflutet, die mittels künstlicher Intelligenz erzeugt wurden. Und es wird immer schwerer zu unterscheiden, ob…",
-   "thumb": "https://i2.ytimg.com/vi/iQtLG40Cp5w/hqdefault.jpg",
-   "id": "36f4826f95c4",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1299,24 +1313,6 @@
    "summary": "DEBATECON 9 will be in Orlando, FL on October 24/25th! LET’S GOOOOO! https://events.eventnoire.com/e/debatecon-9-by-modern-day-debate-2 OUR INSIDER'S EMAIL LIST FOR DEBATECON DISCOUNTS: https://forms.gle/rK5aqPAzAZXiDpDz9 *If you want a discount on DEBATECON 9 tickets and are…",
    "thumb": "https://i4.ytimg.com/vi/cKNlJbX3v_8/hqdefault.jpg",
    "id": "0beedb5ca115",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Reform supporter defends party after ‘racist’ remarks captured on film",
-   "url": "https://www.youtube.com/watch?v=hexdwUA2Q64",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-15T17:45:18.000Z",
-   "summary": "Shelagh Fogarty reacts to the footage of Reform councillors making racist and sexist comments, but Reform supporter Claire reckons the comments may have been 'a silly joke'. The ITV documentary, Undercover: A Year In Reform, was filmed over a year and includes footage of senior…",
-   "thumb": "https://i1.ytimg.com/vi/hexdwUA2Q64/hqdefault.jpg",
-   "id": "efed0f83cfef",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2878,5 +2874,5 @@
    "why": "0"
   }
  ],
- "contentHash": "a6f43e1a8153"
+ "contentHash": "ffa08c278129"
 }
