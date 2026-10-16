@@ -1,10 +1,10 @@
 {
- "generated": "2026-10-16T09:51:40.020Z",
+ "generated": "2026-10-16T13:04:35.374Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
   "ok": 53,
-  "items": 122,
+  "items": 123,
   "duplicatesMerged": 0,
   "lengthsKnown": 2,
   "lengthLookups": 96,
@@ -657,9 +657,10 @@
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
+   "lastOk": "2026-10-16T09:51:40.020Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-xbox",
@@ -668,7 +669,7 @@
    "status": "cached",
    "count": 5,
    "lastOk": null,
-   "note": "rate-limited (429)"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-slaythespire",
@@ -677,16 +678,15 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "cached",
-   "count": 4,
-   "lastOk": "2026-10-16T03:52:20.312Z",
-   "note": "not its turn this run"
+   "status": "ok",
+   "count": 5,
+   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
   },
   {
    "id": "rd-germany",
@@ -695,7 +695,7 @@
    "status": "cached",
    "count": 5,
    "lastOk": "2026-10-15T00:59:57.533Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)"
   },
   {
    "id": "rd-unitedkingdom",
@@ -704,10 +704,118 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   }
  ],
  "items": [
+  {
+   "title": "Althengstett: Wie Mütter den Verlust ihres Kindes verarbeiten | tagesthemen mittendrin",
+   "url": "https://www.youtube.com/watch?v=l_CP6n9ApKU",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-16T12:32:51.000Z",
+   "summary": "Schwanger sein - was für ein Wunderwerk der Natur. Aber was, wenn Kinder während der Schwangerschaft, bei der Geburt oder kurz danach sterben? Wie Frauen damit umgehen - wir waren in Althengstett bei einer Mutter, die uns davon erzählt, und in einem Rückbildungskurs in…",
+   "thumb": "https://i1.ytimg.com/vi/l_CP6n9ApKU/hqdefault.jpg",
+   "id": "9c38ff6381d3",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Trump's America has taken control of Britain | Tariq Ali interview",
+   "url": "https://www.youtube.com/watch?v=rQcHhatDUtA",
+   "source": "PoliticsJOE",
+   "feedId": "yt-politicsjoe",
+   "type": "video",
+   "tags": [
+    "comedy"
+   ],
+   "published": "2026-10-16T11:30:31.000Z",
+   "summary": "Tariq Ali is one of Britain's foremost figures on the left of politics, and following a busy recess for Andy Burnham, he came in to the studio to react to the Prime Minister's speech to Labour conference, his first few months in charge, and how Britain should position itself in…",
+   "thumb": "https://i3.ytimg.com/vi/rQcHhatDUtA/hqdefault.jpg",
+   "id": "5c7b0672bfc5",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Trump says he won't use nuclear weapons or send ground troops to Iran",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1x7ct6d/trump_says_he_wont_use_nuclear_weapons_or_send/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-16T10:39:09.000Z",
+   "summary": "submitted by /u/foodie_2598 [link] [comments]",
+   "id": "a1022e6b19f4",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Gefährliche Mutprobe: So pushen Algorithmen die „Blackout-Challenge“",
+   "url": "https://www.youtube.com/watch?v=OeOfFVh4qQI",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-16T10:34:02.000Z",
+   "summary": "Kinder und Jugendliche sollen nach dem Willen der Bundesländer besser vor gefährlichen Mutproben im Internet geschützt werden. Die Länderkammer sprach sich am Freitag dafür aus, dazu das Strafrecht zu ändern. Anlass sei die wachsende Zahl gefährlicher Challenges in Sozialen…",
+   "thumb": "https://i4.ytimg.com/vi/OeOfFVh4qQI/hqdefault.jpg",
+   "id": "e9fd122ee3dc",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "EU leaders rally around Zelenskyy as Trump calls Ukrainian strikes on Russia a 'disgrace'",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1x7clsj/eu_leaders_rally_around_zelenskyy_as_trump_calls/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-16T10:26:53.000Z",
+   "summary": "European Union leaders rallied around President Volodymyr Zelenskyy at a summit on Friday as U.S. President Donald Trump fired another salvo at Ukraine, calling its strikes on Russian refineries a \"disgrace\". The EU is hosting Zelenskyy in Brussels at one of the most difficult…",
+   "id": "7c3f1506a5bf",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "EU-Gipfel in Brüssel: Ukraine-Hilfen und die Winterstrategie",
+   "url": "https://www.youtube.com/watch?v=IC0z6zA6WII",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-16T10:09:44.000Z",
+   "summary": "EU-Spitzenvertreter stärken dem ukrainischen Präsidenten Wolodymyr Selenskyj im Streit um die Waffenruhe im Energiebereich beim Gipfeltreffen in Brüssel den Rücken. Russland habe die von US-Präsident Donald Trump angekündigte Waffenruhe nicht eingehalten, sondern die Lage…",
+   "thumb": "https://i2.ytimg.com/vi/IC0z6zA6WII/hqdefault.jpg",
+   "id": "31b416fc095f",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
   {
    "title": "Klingbeil zur Erhöhung der Tabaksteuer",
    "url": "https://www.youtube.com/watch?v=6BYTVawesOI",
@@ -723,6 +831,23 @@
    "summary": "Zwölf Euro im Durchnitt für eine Packung Zigaretten im Jahr 2030. Das ist eine Folge der gestern vom Bundestag beschlossenen Erhöhung der Tabaksteuer. Man versuche damit auch Löcher im Haushalt zu stopfen, sagt Finanzminister Klingbeil in Bangkok, am Rande der Jahrestagung des…",
    "thumb": "https://i3.ytimg.com/vi/6BYTVawesOI/hqdefault.jpg",
    "id": "4a410c2218f1",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "'I'm not a big fan of Zelensky,' Trump says as US-Ukraine tensions deepen",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1x7as96/im_not_a_big_fan_of_zelensky_trump_says_as/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-16T08:33:18.000Z",
+   "summary": "submitted by /u/KI_official [link] [comments]",
+   "id": "36688167c29f",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -764,20 +889,18 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Bauchspeicheldrüsenkrebs: Kann dieses Medikament heilen?",
-   "url": "https://www.youtube.com/watch?v=eYZDgjWotLY",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
+   "title": "Iran’s precision strikes picked apart Gulf infrastructure, blunting US war plans",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1x7afek/irans_precision_strikes_picked_apart_gulf/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
    "tags": [
-    "german",
-    "news",
-    "listen"
+    "politics",
+    "news"
    ],
-   "published": "2026-10-16T07:44:35.000Z",
-   "summary": "Bauchspeicheldrüsenkrebs ist eine gefürchtete Diagnose – er wird oft spät erkannt und dann sind die Überlebenschancen schlecht. Ein neues Medikament weckt Hoffnung für Menschen mit der Krankheit in einem fortgeschrittenen Stadium. Das Mittel Daraxonrasib verspricht keine…",
-   "thumb": "https://i2.ytimg.com/vi/eYZDgjWotLY/hqdefault.jpg",
-   "id": "16348b1762c4",
+   "published": "2026-10-16T08:09:46.000Z",
+   "summary": "Iran’s missiles and drones have hit Gulf infrastructure sites at least 135 times, causing cascading failures that Gulf states have often concealed. Despite repeated official statements that the damage came from debris, Reuters found the equipment struck was, time and again,…",
+   "id": "c5c8efe53f80",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -886,44 +1009,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Reform der Notaufnahmen / Wechseljahre? / Fleecejacken aus Holz? | \"15 Minuten\"",
-   "url": "https://www.youtube.com/watch?v=ywYck05gGE8",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-16T04:19:48.000Z",
-   "summary": "Unsere Infos heute (00:00:40) Reform der Notaufnahmen Der Bundestag hat die Reform der Notaufnahmen beschlossen. Das soll Notaufnahmen entlasten und Wartezeiten für Patientinnen und Patienten verringern. In dieser Folge erklären wir, dass es zum Beispiel Integrierte…",
-   "thumb": "https://i2.ytimg.com/vi/ywYck05gGE8/hqdefault.jpg",
-   "id": "0e522b8cb1af",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Schülerproteste in Frankreich: Wut trifft auf Krise",
-   "url": "https://www.youtube.com/watch?v=6eFlMdwwkIs",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-16T04:18:44.000Z",
-   "summary": "Seit Mitte September demonstrieren Frankreichs Schülerinnen und Schüler für bessere Bildung. Dabei kommt es auch zu massiver Polizeigewalt. Unterstützt werden die Jugendlichen von ihren Eltern – und vielen Lehrergewerkschaften. Mit Michael Strempel aus dem ARD-Studio Paris…",
-   "thumb": "https://i3.ytimg.com/vi/6eFlMdwwkIs/hqdefault.jpg",
-   "id": "a13dd7abf0f4",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "New Katie Zacharia Leak is F***ing BRUTAL!",
    "url": "https://www.youtube.com/watch?v=Bvr_swp5jl4",
    "source": "Luke Beasley",
@@ -937,74 +1022,6 @@
    "summary": "Luke discusses the latest on Katie Zacharia's lawyer controversy. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
    "thumb": "https://i3.ytimg.com/vi/Bvr_swp5jl4/hqdefault.jpg",
    "id": "d04644e58796",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Mounting war-time trade between Moscow and Beijing expands in the Arctic",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1x71trz/mounting_wartime_trade_between_moscow_and_beijing/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-16T00:12:25.000Z",
-   "summary": "submitted by /u/Dances_With_Seagulls [link] [comments]",
-   "id": "aab4eb15830c",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Why the Pentagon Was So Spooked About the B–1 Bombers in England",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1x6v95x/why_the_pentagon_was_so_spooked_about_the_b1/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-15T19:34:03.000Z",
-   "summary": "submitted by /u/carnegieendowment [link] [comments]",
-   "id": "ca7b7c8a76ee",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "How Russia's War Against Ukraine is Spreading to North Africa",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1x6ustc/how_russias_war_against_ukraine_is_spreading_to/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-15T19:16:22.000Z",
-   "summary": "submitted by /u/CEPAORG [link] [comments]",
-   "id": "71f6f9bb2c54",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "The Houthis’ Saudi attacks are ‘unprecedented.’ Trump wants to ‘ignore’ until the midterms, but the chaos may force U.S. to respond",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1x6u34k/the_houthis_saudi_attacks_are_unprecedented_trump/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-15T18:49:46.000Z",
-   "summary": "After oil tanker traffic in the Strait of Hormuz rose to post-February highs last month, a new “October window of escalation” is heating up as the Yemeni Houthis dramatically increase their attacks on Saudi Arabia and Iran again takes aim at more tankers and shipping…",
-   "id": "53fb00b1c276",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1191,6 +1208,23 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
+   "title": "Mounting war-time trade between Moscow and Beijing expands in the Arctic",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1x71trz/mounting_wartime_trade_between_moscow_and_beijing/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-16T00:12:25.000Z",
+   "summary": "submitted by /u/Dances_With_Seagulls [link] [comments]",
+   "id": "aab4eb15830c",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
    "title": "OMG: Scott Jennings HUMILIATED on CNN, LAUGHED AT To His Face!",
    "url": "https://www.youtube.com/watch?v=18Rp2BJzKmI",
    "source": "Luke Beasley",
@@ -1226,7 +1260,7 @@
    "why": "0"
   },
   {
-   "title": "Want to know what Putin wants? Watch Donald Trump| James O’Brien - The Whole Show",
+   "title": "'Want to know what Putin wants? Watch Donald Trump' | James O’Brien - The Whole Show",
    "url": "https://www.youtube.com/watch?v=ZKS4iY3ARas",
    "source": "LBC",
    "feedId": "yt-lbc",
@@ -1800,23 +1834,6 @@
    "summary": "As Karoline Leavitt hangs up her MAGA card, new White House Press Secretary Katie Zachariah stepped into her shoes at the famous lectern to give her first briefing as Donald Trump's new Press Sec. It went about as well as you could imagine. Like PoliticsJOE? We need your…",
    "thumb": "https://i3.ytimg.com/vi/zqnsDxJhrfs/hqdefault.jpg",
    "id": "ba93d4c286f0",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Is Andy Burnham about to reverse Brexit?",
-   "url": "https://www.youtube.com/watch?v=Zz0hDD87Nsw",
-   "source": "PoliticsJOE",
-   "feedId": "yt-politicsjoe",
-   "type": "video",
-   "tags": [
-    "comedy"
-   ],
-   "published": "2026-10-13T15:19:30.000Z",
-   "summary": "Andy Burnham gave his first general recap in the Commons yesterday, and used it to make the case for closer alignment with the EU. From reduced trade barriers to closer energy cooperation and greater collaboration on immigration, he argues that a potential deal could add more…",
-   "thumb": "https://i3.ytimg.com/vi/Zz0hDD87Nsw/hqdefault.jpg",
-   "id": "1294f04ae845",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2874,5 +2891,5 @@
    "why": "0"
   }
  ],
- "contentHash": "ffa08c278129"
+ "contentHash": "6e2c12888473"
 }
