@@ -1,10 +1,10 @@
 {
- "generated": "2026-10-17T09:47:02.753Z",
+ "generated": "2026-10-17T12:54:45.736Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
-  "ok": 53,
-  "items": 124,
+  "ok": 52,
+  "items": 119,
   "duplicatesMerged": 0,
   "lengthsKnown": 2,
   "lengthLookups": 95,
@@ -630,9 +630,10 @@
    "id": "rd-productmanagement",
    "name": "r/productmanagement",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/productmanagement/top/.rss?t=day"
+   "lastOk": "2026-10-17T09:47:02.753Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-tech",
@@ -641,7 +642,7 @@
    "status": "cached",
    "count": 2,
    "lastOk": "2026-10-15T21:49:52.028Z",
-   "note": "rate-limited (429)"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-gaming",
@@ -650,25 +651,26 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-10-17T03:50:24.480Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
   },
   {
    "id": "rd-xbox",
    "name": "r/xbox",
    "type": "reddit",
-   "status": "cached",
-   "count": 5,
+   "status": "error",
+   "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-slaythespire",
@@ -677,7 +679,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-geopolitics",
@@ -709,6 +711,132 @@
  ],
  "items": [
   {
+   "title": "Simon Marks analyses Trump's 'complete betrayal' of Zelenskyy",
+   "url": "https://www.youtube.com/watch?v=qNRI9dyDQzg",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-17T12:45:29.000Z",
+   "summary": "Simon Marks joins Matt Frei to discuss Trump's 'betrayal' of Zelenskyy as the US President halts sanctions on Russia following his diesel deal with Putin. The President has been met with widespread criticism after making the announcement. A dozen US senators, including six…",
+   "thumb": "https://i2.ytimg.com/vi/qNRI9dyDQzg/hqdefault.jpg",
+   "id": "4226cc5f0e7f",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Reform mayor under police investigation for alleged cyberflashing",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1x890dn/reform_mayor_under_police_investigation_for/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-17T12:27:11.000Z",
+   "summary": "submitted by /u/birdinthebush74 [link] [comments]",
+   "id": "0c5cd32b7c37",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Is Britain ready for war? Former Army chief warns the UK 'must prepare'",
+   "url": "https://www.youtube.com/watch?v=z3v4SjRG9oc",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-17T11:45:17.000Z",
+   "summary": "Is Britain prepared for an increasingly dangerous world and what happens if the UK can no longer rely on the United States? Lieutenant Colonel Stuart Crawford, former British Army officer and defence analyst, warns that while he does not believe the world is on the brink of…",
+   "thumb": "https://i3.ytimg.com/vi/z3v4SjRG9oc/hqdefault.jpg",
+   "id": "c25f5a14a9b1",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "The power of AI is worrying senior Labour figures – as is the fear of ‘falling behind the public’",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1x885jx/the_power_of_ai_is_worrying_senior_labour_figures/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-17T11:41:43.000Z",
+   "summary": "submitted by /u/Eastern-Opposite9521 [link] [comments]",
+   "id": "b43f3ef68dd7",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "The Russian Bot Apocalypse",
+   "url": "https://www.youtube.com/watch?v=JnceIDVMZyQ",
+   "source": "Patrick Boyle",
+   "feedId": "yt-patrick-boyle",
+   "type": "video",
+   "tags": [
+    "finance",
+    "education",
+    "listen"
+   ],
+   "published": "2026-10-17T11:27:44.000Z",
+   "summary": "Go to http://ground.news/pb for a better way to stay informed. Subscribe for 40% off unlimited access to worldwide coverage through my link. In October 2026, Ukrainian drone strikes knocked out three of Yandex’s six major data centers, and a viral chart claimed that Russian…",
+   "thumb": "https://i3.ytimg.com/vi/JnceIDVMZyQ/hqdefault.jpg",
+   "id": "b317aa72b904",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Gute Nachrichten für den Amazonas-Regenwald: Abholzung geht zurück",
+   "url": "https://www.youtube.com/watch?v=ZMSlGri-Yq0",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-17T11:16:37.000Z",
+   "summary": "Die Abholzung im brasilianischen Amazonasgebiet ist auf den niedrigsten Stand seit fast 40 Jahren gesunken. Nach Angaben der Regierung wurden zwischen August 2025 und Juli 2026 gut 3.300 Quadratkilometer gerodet. Das sind fast 42 Prozent weniger als im Vorjahreszeitraum. Die…",
+   "thumb": "https://i3.ytimg.com/vi/ZMSlGri-Yq0/hqdefault.jpg",
+   "id": "134cf5535cae",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Zelenskyy transforms from diplomat to war leader",
+   "url": "https://www.youtube.com/watch?v=GcDsh7_hNgI",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-17T10:35:04.000Z",
+   "summary": "Volodymyr Zelenskyy has hit back at Donald Trump after the US President branded him a \"disgrace\" over energy strikes against Russia. Trump has paused a sweeping new sanctions package targeting the Russian economy just one week after reaching a diesel agreement with Putin. The…",
+   "thumb": "https://i4.ytimg.com/vi/GcDsh7_hNgI/hqdefault.jpg",
+   "id": "36d4164c830d",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
    "title": "Ireland Grinds to a Halt amid Biggest Strike in Nearly 20 years",
    "url": "https://www.youtube.com/watch?v=5GL6eZEOojE",
    "source": "PoliticsJOE",
@@ -726,6 +854,40 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
+   "title": "Inside the 'intense' Brexit dealing as EU and UK close in on under-30s deal",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1x85g2n/inside_the_intense_brexit_dealing_as_eu_and_uk/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-17T08:56:35.000Z",
+   "summary": "submitted by /u/theipaper [link] [comments]",
+   "id": "7c8488d9479c",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Is the Reform project unravelling?",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1x85fee/is_the_reform_project_unravelling/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-17T08:55:23.000Z",
+   "summary": "submitted by /u/politics_uk [link] [comments]",
+   "id": "ee4cea0a9f0b",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
    "title": "Does the “behind the scenes” part of PM work count toward performance, or is it just assumed?",
    "url": "https://www.reddit.com/r/ProductManagement/comments/1x84prz/does_the_behind_the_scenes_part_of_pm_work_count/",
    "source": "r/productmanagement",
@@ -737,6 +899,23 @@
    "published": "2026-10-17T08:09:34.000Z",
    "summary": "I've been thinking about this and kinda frustrated it's not clearly stated.. but product management is naturally a role built on coordination, not just shipping. A huge chunk of the job is unblocking people, chasing alignment, catching things that fall between teams and roles.…",
    "id": "083d78985ad5",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Healey splits from Burnham over Heathrow third runway - Chancellor insists £33bn expansion will boost growth as Prime Minister declines to back project",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1x84kmu/healey_splits_from_burnham_over_heathrow_third/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-17T08:01:00.000Z",
+   "summary": "submitted by /u/blast-processor [link] [comments]",
+   "id": "ee0288e3d821",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -894,40 +1073,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Police assess Palestine Action post by national security adviser's wife",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1x7rhhu/police_assess_palestine_action_post_by_national/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-16T20:44:20.000Z",
-   "summary": "submitted by /u/ITMidget [link] [comments]",
-   "id": "207ebe8dba5f",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Rejoining single market could give UK a £150bn boost, Goldman Sachs claims",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1x7q8ow/rejoining_single_market_could_give_uk_a_150bn/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-16T19:54:46.000Z",
-   "summary": "submitted by /u/TennisMiddle6220 [link] [comments]",
-   "id": "87aedaced2f2",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Russia's war reaches Bulgaria's shores, putting Radev's Moscow-friendly stance to the test",
    "url": "https://www.reddit.com/r/geopolitics/comments/1x7q299/russias_war_reaches_bulgarias_shores_putting/",
    "source": "r/geopolitics",
@@ -940,57 +1085,6 @@
    "published": "2026-10-16T19:47:52.000Z",
    "summary": "submitted by /u/KI_official [link] [comments]",
    "id": "4b1a88f2d9b2",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Met police investigating row over founding of Your Party",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1x7ojmd/met_police_investigating_row_over_founding_of/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-16T18:48:50.000Z",
-   "summary": "submitted by /u/Bounty_drillah [link] [comments]",
-   "id": "f73a1997c54f",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "NHS England tells hospitals to bar trans women from female wards",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1x7nq7s/nhs_england_tells_hospitals_to_bar_trans_women/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-16T18:17:31.000Z",
-   "summary": "submitted by /u/LeadingPiece9608 [link] [comments]",
-   "id": "1047814ccd8f",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Target pensions or welfare, not banks, IMF tells John Healey",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1x7k3rl/target_pensions_or_welfare_not_banks_imf_tells/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-16T16:00:42.000Z",
-   "summary": "submitted by /u/Asleep-Ad1182 [link] [comments]",
-   "id": "4785c9e35ad1",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1097,86 +1191,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "The physical edition from Xbox Series X of Clive Barker's Hellraiser: Revival, contains the whole game in the disc.",
-   "url": "https://www.reddit.com/r/xbox/comments/1x5qdtq/the_physical_edition_from_xbox_series_x_of_clive/",
-   "source": "r/xbox",
-   "feedId": "rd-xbox",
-   "type": "post",
-   "tags": [
-    "gaming"
-   ],
-   "published": "2026-10-14T12:50:46.000Z",
-   "summary": "Today the website Does It Play has published the review from the video game, confirming that the Xbox Series X edition has the whole game in the Blu-ray:…",
-   "id": "8f69712b434a",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "The Making of Grand Theft Auto VI ~ Bloomberg",
-   "url": "https://www.reddit.com/r/xbox/comments/1x5pvkm/the_making_of_grand_theft_auto_vi_bloomberg/",
-   "source": "r/xbox",
-   "feedId": "rd-xbox",
-   "type": "post",
-   "tags": [
-    "gaming"
-   ],
-   "published": "2026-10-14T12:26:49.000Z",
-   "summary": "Gifted article link courtesy of Jason Scherier - https://bsky.app/profile/jasonschreier.bsky.social/post/3mxtc3nk5fk2g submitted by /u/imitzFinn [link] [comments]",
-   "id": "aecb73658493",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "METRO 2039 | Pre-Order Now! Trailer [Official 4K]",
-   "url": "https://www.reddit.com/r/xbox/comments/1x5ppny/metro_2039_preorder_now_trailer_official_4k/",
-   "source": "r/xbox",
-   "feedId": "rd-xbox",
-   "type": "post",
-   "tags": [
-    "gaming"
-   ],
-   "published": "2026-10-14T12:18:54.000Z",
-   "summary": ">Pre-orders for METRO 2039 are now open, and we are revealing the editions that will be available on launch day, come February 4th 2027! >We know many of you can’t wait to get your hands on the next METRO, and are in desperate need of a wearable Spartan Helmet replica to add to…",
-   "id": "7e819034bb8c",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Ubisoft is planning to shut down Trials studio RedLynx and lay off 70 Ubisoft Singapore staff",
-   "url": "https://www.reddit.com/r/xbox/comments/1x5ombv/ubisoft_is_planning_to_shut_down_trials_studio/",
-   "source": "r/xbox",
-   "feedId": "rd-xbox",
-   "type": "post",
-   "tags": [
-    "gaming"
-   ],
-   "published": "2026-10-14T11:22:22.000Z",
-   "summary": "submitted by /u/Dorian182 [link] [comments]",
-   "id": "e64318dba821",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Indiana Jones and The Great Circle’s iconic hat mechanic almost didn’t make the cut as devs struggled to “leverage” Indy’s fedora “in the gameplay”",
-   "url": "https://www.reddit.com/r/xbox/comments/1x5nz3d/indiana_jones_and_the_great_circles_iconic_hat/",
-   "source": "r/xbox",
-   "feedId": "rd-xbox",
-   "type": "post",
-   "tags": [
-    "gaming"
-   ],
-   "published": "2026-10-14T10:45:21.000Z",
-   "summary": "submitted by /u/AsPeHeat [link] [comments]",
-   "id": "5abc0e96c877",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "GRAND ISLAND TRUMP RALLY",
    "url": "https://www.youtube.com/watch?v=3M8__9WmwVY",
    "source": "The Good Liars",
@@ -1233,24 +1247,6 @@
    "why": "0"
   },
   {
-   "title": "Trump vs Zelenskyy 2.0 | Simon Marks’ American Week",
-   "url": "https://www.youtube.com/watch?v=vh0iOYd8tR4",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-16T20:00:07.000Z",
-   "summary": "Simon Marks returns for his American Week with a look at the President's latest row with Zelenskyy, a new Trump currency... and the quickfire sacking of Katie Zacharia. Listen to the full show on the all-new LBC App: https://app.af.lbc.co.uk/btnc/thenewlbcapp #simonmarks…",
-   "thumb": "https://i3.ytimg.com/vi/vh0iOYd8tR4/hqdefault.jpg",
-   "id": "1a2b4c80319a",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "GTA 6: NEW THINGS FROM LAUNCH TRAILER & MORE",
    "url": "https://www.youtube.com/watch?v=UTrNTE9VPHM",
    "source": "GameRanx",
@@ -1285,24 +1281,6 @@
    "why": "0"
   },
   {
-   "title": "“Go to bed with a racist, wake up next to a misogynist” | James O’Brien - The Whole Show",
-   "url": "https://www.youtube.com/watch?v=g8FDTtChr3Y",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-16T19:00:03.000Z",
-   "summary": "This is a catch-up version of James O'Brien's live, daily show on LBC Radio from the 16th of October 2026. Listen to the full show on the all-new LBC App: https://app.af.lbc.co.uk/btnc/thenewlbcapp #jamesobrien #politics #LBC LBC is the home of live debate around news and…",
-   "thumb": "https://i4.ytimg.com/vi/g8FDTtChr3Y/hqdefault.jpg",
-   "id": "bc2b8fea1938",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "Five children killed in Sudanese army airstrike on North Kordofan",
    "url": "https://www.reddit.com/r/geopolitics/comments/1x7o8al/five_children_killed_in_sudanese_army_airstrike/",
    "source": "r/geopolitics",
@@ -1331,7 +1309,7 @@
     "listen"
    ],
    "published": "2026-10-16T18:30:32.000Z",
-   "summary": "Die 20-Uhr-Ausgabe der tagesschau im Livestream und früher auf Abruf: https://ardmediathek.de/tagesschau und https://tagesschau.de Themen der tagesschau-Sendung: 00:00 Guten Abend 00:21Bundestag beschließt sogenannte „Frühstartrente\" 02:41 Bundestag stimmt für Anhebung der…",
+   "summary": "tagesschau 20:00 Uhr Bundestag beschließt sogenannte „Frühstartrente\", Bundestag stimmt für Anhebung der Tabaksteuer, Staats- und Regierungschefs beraten auf EU-Gipfel in Brüssel über Hilfen für die Ukraine, Papst Leo XIV. bittet im Telefonat mit Russlands Präsidenten Putin um…",
    "thumb": "https://i4.ytimg.com/vi/WjWKIn4RrVo/hqdefault.jpg",
    "id": "61c2bc3d80fb",
    "score": 0,
@@ -1460,43 +1438,6 @@
    "summary": "tagesschau in Einfacher Sprache 19:00 Uhr Rente: Staat hilft jungen Menschen beim Sparen, Höhere Steuern: Rauchen wird teurer, USA: Mann erschießt Menschen in Schule, Treffen von der EU: Hilfe für die Ukraine. Die „tagesschau in Einfacher Sprache“ – immer Montag bis Freitag um…",
    "thumb": "https://i2.ytimg.com/vi/mpya9Z9VRRQ/hqdefault.jpg",
    "id": "0658a4932579",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Reform rocked by undercover footage | Lewis Goodall reacts",
-   "url": "https://www.youtube.com/watch?v=xbp_wDu62GQ",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-16T15:40:36.000Z",
-   "summary": "Reform UK is facing several allegations from the ITV documentary, Undercover: A Year in Reform, which was clandestinely filmed by a reporter working in the party's press office. Reform MP Sarah Pochin accused her party's press officers of being 'chauvinistic', and Nigel Farage…",
-   "thumb": "https://i1.ytimg.com/vi/xbp_wDu62GQ/hqdefault.jpg",
-   "id": "8a8098550863",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Nachhaltige KI-Rechenzentren gegen massiv steigenden Verbrauch | KlimaZeit vom 16.10.2026",
-   "url": "https://www.youtube.com/watch?v=2TJnZ1Nj-i4",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-16T14:31:46.000Z",
-   "summary": "KlimaZeit 19:45 Uhr \"KlimaZeit\" bietet wöchentlich Hintergrundberichte, ordnet Ergebnisse der Klimaforschung ein, erklärt in aufwändigen Grafiken und Animationen alles Wissenswerte rund ums Klima, hinterfragt Entscheidungen der Politik und zeigt konstruktive Beispiele für die…",
-   "thumb": "https://i3.ytimg.com/vi/2TJnZ1Nj-i4/hqdefault.jpg",
-   "id": "2b74dc75c87d",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2884,26 +2825,7 @@
    "score": 0,
    "matched": [],
    "why": "0"
-  },
-  {
-   "title": "Turkey's $20 Billion Fund Collapse Explained",
-   "url": "https://www.youtube.com/watch?v=LF8kY5BLe_o",
-   "source": "Patrick Boyle",
-   "feedId": "yt-patrick-boyle",
-   "type": "video",
-   "tags": [
-    "finance",
-    "education",
-    "listen"
-   ],
-   "published": "2026-10-03T11:02:13.000Z",
-   "summary": "Get an exclusive 15% discount on Saily data plans! Use code BOYLE at checkout. Download Saily app or go to https://www.saily.com/boyle In September 2026, Turkey's investment fund industry collapsed, after funds run by Tera and Pusula failed to meet redemptions and regulators…",
-   "thumb": "https://i1.ytimg.com/vi/LF8kY5BLe_o/hqdefault.jpg",
-   "id": "a9c9ee46584f",
-   "score": 0,
-   "matched": [],
-   "why": "0"
   }
  ],
- "contentHash": "0c5d5333f81e"
+ "contentHash": "41bb19e94371"
 }
