@@ -1,17 +1,17 @@
 {
- "generated": "2026-10-17T18:48:32.001Z",
+ "generated": "2026-10-17T21:44:18.819Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
   "ok": 52,
-  "items": 117,
+  "items": 114,
   "duplicatesMerged": 0,
   "lengthsKnown": 2,
-  "lengthLookups": 94,
-  "lengthFailures": 94,
+  "lengthLookups": 93,
+  "lengthFailures": 93,
   "lengthVia": "video pages",
   "lengthFailReasons": {
-   "no length on page": 94
+   "no length on page": 93
   }
  },
  "feeds": [
@@ -423,7 +423,7 @@
    "name": "Kill Tony",
    "type": "youtube",
    "status": "ok",
-   "count": 4,
+   "count": 3,
    "resolved": {
     "channelId": "UCwzCMiicL-hBUzyjWiJaseg",
     "title": "Kill Tony",
@@ -630,9 +630,10 @@
    "id": "rd-productmanagement",
    "name": "r/productmanagement",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 4,
-   "url": "https://www.reddit.com/r/productmanagement/top/.rss?t=day"
+   "lastOk": "2026-10-17T18:48:32.001Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-tech",
@@ -641,7 +642,7 @@
    "status": "cached",
    "count": 2,
    "lastOk": "2026-10-15T21:49:52.028Z",
-   "note": "rate-limited (429)"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-gaming",
@@ -650,25 +651,26 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-10-17T12:54:45.736Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
   },
   {
    "id": "rd-xbox",
    "name": "r/xbox",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-slaythespire",
@@ -677,7 +679,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-geopolitics",
@@ -693,7 +695,7 @@
    "name": "r/germany",
    "type": "reddit",
    "status": "cached",
-   "count": 5,
+   "count": 3,
    "lastOk": "2026-10-15T00:59:57.533Z",
    "note": "not its turn this run"
   },
@@ -709,6 +711,129 @@
  ],
  "items": [
   {
+   "title": "OH SH*T: Chris Cuomo LIGHTS UP Steve Bannon TO HIS FACE!",
+   "url": "https://www.youtube.com/watch?v=I-2cgYvJI70",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-17T21:30:10.000Z",
+   "summary": "Luke discusses Chris Cuomo and Steve Bannon's latest clash. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
+   "thumb": "https://i2.ytimg.com/vi/I-2cgYvJI70/hqdefault.jpg",
+   "id": "f6c7cd3d89e8",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Chancellor should cut benefits instead of taxing banks, says International Monetary Fund",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1x8k3pq/chancellor_should_cut_benefits_instead_of_taxing/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-17T20:17:26.000Z",
+   "summary": "submitted by /u/Desperate-Drawer-572 [link] [comments]",
+   "id": "78224f8a1084",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Bank of England governor walks out of IMF summit in protest against Russia",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1x8j53c/bank_of_england_governor_walks_out_of_imf_summit/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-17T19:37:17.000Z",
+   "summary": "submitted by /u/FeigenbaumC [link] [comments]",
+   "id": "f46e5a0ec4c0",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Watch Lauren Boebert Get HUMILIATED Live On Debate Stage!",
+   "url": "https://www.youtube.com/watch?v=HSVCnKjn5Dg",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-17T19:30:12.000Z",
+   "summary": "Luke discusses the recent Colorado congressional debate. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
+   "thumb": "https://i1.ytimg.com/vi/HSVCnKjn5Dg/hqdefault.jpg",
+   "id": "10af5eaff9c1",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "GRAND ISLAND TRUMP RALLY",
+   "url": "https://www.youtube.com/watch?v=3M8__9WmwVY",
+   "source": "The Good Liars",
+   "feedId": "yt-the-good-liars",
+   "type": "video",
+   "tags": [
+    "comedy",
+    "politics",
+    "debates"
+   ],
+   "published": "2026-10-17T19:30:06.000Z",
+   "summary": "Part two of The Good Liars visit the Grand Island, NE. Join this channel to get access to perks: https://www.youtube.com/channel/UCUNOwz9KTDIhhTTN3_ptUDA/join https://linktr.ee/thegoodliars",
+   "thumb": "https://i4.ytimg.com/vi/3M8__9WmwVY/hqdefault.jpg",
+   "id": "8be46d6b5cd1",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Reform candidate filmed saying asylum seekers should be put in ‘concentration camps’",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1x8itaq/reform_candidate_filmed_saying_asylum_seekers/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-17T19:23:39.000Z",
+   "summary": "submitted by /u/Dismal_Uses [link] [comments]",
+   "id": "a3bca48355a9",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Burnham accused of hypocrisy over Hillsborough Law - Backbench MPs, shadow ministers, and peers exempted from new offence for officials who mislead public",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1x8icjx/burnham_accused_of_hypocrisy_over_hillsborough/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-17T19:04:23.000Z",
+   "summary": "submitted by /u/blast-processor [link] [comments]",
+   "id": "9f39ad0174a9",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
    "title": "tagesschau 20:00 Uhr, 17.10.2026",
    "url": "https://www.youtube.com/watch?v=BUfNTS-QoXU",
    "source": "Tagesschau",
@@ -720,9 +845,26 @@
     "listen"
    ],
    "published": "2026-10-17T18:33:40.000Z",
-   "summary": "tagesschau 20:00 Uhr Sondierungsgespräche der Dreier-Koalition in Berlin erfolgreich beendet, Kanzler Merz bei Deutschlandtag der Jungen Union in Bonn, Ausschreitungen bei Protesten in Frankreich, US-Präsident Trump stoppt vom Kongress beschlossenes Sanktionspaket gegen…",
+   "summary": "Die 20-Uhr-Ausgabe der tagesschau im Livestream und auf Abruf findet ihr auch hier: https://ardmediathek.de/tagesschau und https://tagesschau.de Themen der tagesschau-Sendung: 00:00 Guten Abend 0:22 Sondierungsgespräche der Dreier-Koalition in Berlin erfolgreich beendet 02:18…",
    "thumb": "https://i3.ytimg.com/vi/BUfNTS-QoXU/hqdefault.jpg",
    "id": "095fdb631799",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "No police action against Sarah Helm over Palestine Action post",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1x8h1sr/no_police_action_against_sarah_helm_over/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-17T18:11:28.000Z",
+   "summary": "submitted by /u/TheColourOfHeartache [link] [comments]",
+   "id": "90eacd7510ed",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -964,23 +1106,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Reform mayor under police investigation for alleged cyberflashing",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1x890dn/reform_mayor_under_police_investigation_for/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-17T12:27:11.000Z",
-   "summary": "submitted by /u/birdinthebush74 [link] [comments]",
-   "id": "0c5cd32b7c37",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Is Britain ready for war? Former Army chief warns the UK 'must prepare'",
    "url": "https://www.youtube.com/watch?v=z3v4SjRG9oc",
    "source": "LBC",
@@ -994,23 +1119,6 @@
    "summary": "Is Britain prepared for an increasingly dangerous world and what happens if the UK can no longer rely on the United States? Lieutenant Colonel Stuart Crawford, former British Army officer and defence analyst, warns that while he does not believe the world is on the brink of…",
    "thumb": "https://i3.ytimg.com/vi/z3v4SjRG9oc/hqdefault.jpg",
    "id": "c25f5a14a9b1",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "The power of AI is worrying senior Labour figures – as is the fear of ‘falling behind the public’",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1x885jx/the_power_of_ai_is_worrying_senior_labour_figures/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-17T11:41:43.000Z",
-   "summary": "submitted by /u/Eastern-Opposite9521 [link] [comments]",
-   "id": "b43f3ef68dd7",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1053,57 +1161,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Ireland Grinds to a Halt amid Biggest Strike in Nearly 20 years",
-   "url": "https://www.youtube.com/watch?v=5GL6eZEOojE",
-   "source": "PoliticsJOE",
-   "feedId": "yt-politicsjoe",
-   "type": "video",
-   "tags": [
-    "comedy"
-   ],
-   "published": "2026-10-17T09:00:03.000Z",
-   "summary": "Public sector workers across Ireland walked out today in the biggest strike Ireland has seen in 17 years, with about 300,000 predicted to be on the picket calling for better pay and conditions as the cost of living crisis continues to bite. We went down to a picket at Dublin's…",
-   "thumb": "https://i2.ytimg.com/vi/5GL6eZEOojE/hqdefault.jpg",
-   "id": "a382d0cf68fe",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Inside the 'intense' Brexit dealing as EU and UK close in on under-30s deal",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1x85g2n/inside_the_intense_brexit_dealing_as_eu_and_uk/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-17T08:56:35.000Z",
-   "summary": "submitted by /u/theipaper [link] [comments]",
-   "id": "7c8488d9479c",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Is the Reform project unravelling?",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1x85fee/is_the_reform_project_unravelling/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-17T08:55:23.000Z",
-   "summary": "submitted by /u/politics_uk [link] [comments]",
-   "id": "ee4cea0a9f0b",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Does the “behind the scenes” part of PM work count toward performance, or is it just assumed?",
    "url": "https://www.reddit.com/r/ProductManagement/comments/1x84prz/does_the_behind_the_scenes_part_of_pm_work_count/",
    "source": "r/productmanagement",
@@ -1115,23 +1172,6 @@
    "published": "2026-10-17T08:09:34.000Z",
    "summary": "I've been thinking about this and kinda frustrated it's not clearly stated.. but product management is naturally a role built on coordination, not just shipping. A huge chunk of the job is unblocking people, chasing alignment, catching things that fall between teams and roles.…",
    "id": "083d78985ad5",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Healey splits from Burnham over Heathrow third runway - Chancellor insists £33bn expansion will boost growth as Prime Minister declines to back project",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1x84kmu/healey_splits_from_burnham_over_heathrow_third/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-17T08:01:00.000Z",
-   "summary": "submitted by /u/blast-processor [link] [comments]",
-   "id": "ee0288e3d821",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1238,38 +1278,21 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Frankfurt photos",
-   "url": "https://www.reddit.com/r/germany/comments/1x63kbw/frankfurt_photos/",
-   "source": "r/germany",
-   "feedId": "rd-germany",
-   "type": "post",
+   "title": "Ireland Grinds to a Halt amid Biggest Strike in Nearly 20 years",
+   "url": "https://www.youtube.com/watch?v=5GL6eZEOojE",
+   "source": "PoliticsJOE",
+   "feedId": "yt-politicsjoe",
+   "type": "video",
    "tags": [
-    "germany",
-    "news"
+    "comedy"
    ],
-   "published": "2026-10-14T21:24:54.000Z",
-   "summary": "I have never been able to afford to go to Germany but always wanted to I am feeling down today and still shaken up after something traumatic happened on the train last night where I’m from. One of my best friends from my church is from Frankfurt and i just love the one photo…",
-   "id": "ed44f55a7ad3",
-   "score": 1,
+   "published": "2026-10-17T09:00:03.000Z",
+   "summary": "Public sector workers across Ireland walked out today in the biggest strike Ireland has seen in 17 years, with about 300,000 predicted to be on the picket calling for better pay and conditions as the cost of living crisis continues to bite. We went down to a picket at Dublin's…",
+   "thumb": "https://i2.ytimg.com/vi/5GL6eZEOojE/hqdefault.jpg",
+   "id": "a382d0cf68fe",
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Germany Fire Tragedy Leaves 3 Indian Nationals Dead, 5 Injured In Bochum; Police Suspect Arson",
-   "url": "https://www.reddit.com/r/germany/comments/1x62efv/germany_fire_tragedy_leaves_3_indian_nationals/",
-   "source": "r/germany",
-   "feedId": "rd-germany",
-   "type": "post",
-   "tags": [
-    "germany",
-    "news"
-   ],
-   "published": "2026-10-14T20:37:37.000Z",
-   "summary": "submitted by /u/CalligrapherNo9154 [link] [comments]",
-   "id": "7f23123234cc",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
+   "why": "0"
   },
   {
    "title": "Non-technical PMs that do work in tech related products, how do you do it?",
@@ -1350,43 +1373,6 @@
    "published": "2026-10-16T22:25:28.000Z",
    "summary": "Hi! I’m a Sr. PM in the SF Bay Area with about 8 years of experience in Product, mostly at smaller companies that ended up getting acquired. I’m currently looking for a new role, and I’m realizing that interviewing is my biggest weakness. I get really nervous and have a hard…",
    "id": "b3c925eb0a18",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "GRAND ISLAND TRUMP RALLY",
-   "url": "https://www.youtube.com/watch?v=3M8__9WmwVY",
-   "source": "The Good Liars",
-   "feedId": "yt-the-good-liars",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "politics",
-    "debates"
-   ],
-   "published": "2026-10-16T21:19:44.000Z",
-   "summary": "Part two of The Good Liars visit the Grand Island, NE. Join this channel to get access to perks: https://www.youtube.com/channel/UCUNOwz9KTDIhhTTN3_ptUDA/join https://linktr.ee/thegoodliars",
-   "thumb": "https://i4.ytimg.com/vi/3M8__9WmwVY/hqdefault.jpg",
-   "id": "8be46d6b5cd1",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "OMG: Trump HUMILIATES Katie IN PUBLIC AGAIN after FIRING HER!",
-   "url": "https://www.youtube.com/watch?v=7nvHOhUkPb4",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-16T21:15:08.000Z",
-   "summary": "Luke discusses the firing of former press secretary Katie Zacharia. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
-   "thumb": "https://i4.ytimg.com/vi/7nvHOhUkPb4/hqdefault.jpg",
-   "id": "f46fd8032c11",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1526,24 +1512,6 @@
    "summary": "Tariq Ali is one of Britain's foremost figures on the left of politics, and following a busy recess for Andy Burnham, he came in to the studio to react to the Prime Minister's speech to Labour conference, his first few months in charge, and how Britain should position itself in…",
    "thumb": "https://i3.ytimg.com/vi/rQcHhatDUtA/hqdefault.jpg",
    "id": "5c7b0672bfc5",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "New Katie Zacharia Leak is F***ing BRUTAL!",
-   "url": "https://www.youtube.com/watch?v=Bvr_swp5jl4",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-16T01:30:40.000Z",
-   "summary": "Luke discusses the latest on Katie Zacharia's lawyer controversy. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
-   "thumb": "https://i3.ytimg.com/vi/Bvr_swp5jl4/hqdefault.jpg",
-   "id": "d04644e58796",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2771,26 +2739,7 @@
    "score": 0,
    "matched": [],
    "why": "0"
-  },
-  {
-   "title": "KT: Behind the Tape (Ep: 787 Harland Williams + Jeremiah Watkins)",
-   "url": "https://www.youtube.com/watch?v=lTv9LaGI9-k",
-   "source": "Kill Tony",
-   "feedId": "yt-kill-tony",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "standup",
-    "listen"
-   ],
-   "published": "2026-10-03T20:57:23.000Z",
-   "summary": "An exclusive, behind the scenes look from KT Episode 787 KT guest Harland Williams + Jeremiah Watkins Harland Williams, Jeremiah Watkins, Pat O'Neill, Dedrick Flynn, Martin Phillips, D Madness, Michael A. Gonzales, Jon Deas, Matthew Muehling, Grooveline Horns, Joe White, Troy…",
-   "thumb": "https://i1.ytimg.com/vi/lTv9LaGI9-k/hqdefault.jpg",
-   "id": "5138d45a3c4c",
-   "score": 0,
-   "matched": [],
-   "why": "0"
   }
  ],
- "contentHash": "5e0ef570a3db"
+ "contentHash": "20a2f695a46b"
 }
