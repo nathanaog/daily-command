@@ -1,10 +1,10 @@
 {
- "generated": "2026-10-17T15:44:39.093Z",
+ "generated": "2026-10-17T18:48:32.001Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
   "ok": 52,
-  "items": 118,
+  "items": 117,
   "duplicatesMerged": 0,
   "lengthsKnown": 2,
   "lengthLookups": 94,
@@ -267,7 +267,7 @@
    "name": "ProZD",
    "type": "youtube",
    "status": "ok",
-   "count": 0,
+   "count": 1,
    "resolved": {
     "channelId": "UC6MFZAOHXlKK1FI7V0XQVeA",
     "title": "ProZD",
@@ -397,7 +397,7 @@
    "name": "The Economist",
    "type": "youtube",
    "status": "ok",
-   "count": 5,
+   "count": 4,
    "resolved": {
     "channelId": "UC0p5jTq6Xx_DosDFxVXnWaQ",
     "title": "The Economist",
@@ -630,10 +630,9 @@
    "id": "rd-productmanagement",
    "name": "r/productmanagement",
    "type": "reddit",
-   "status": "cached",
-   "count": 5,
-   "lastOk": "2026-10-17T09:47:02.753Z",
-   "note": "not its turn this run"
+   "status": "ok",
+   "count": 4,
+   "url": "https://www.reddit.com/r/productmanagement/top/.rss?t=day"
   },
   {
    "id": "rd-tech",
@@ -642,7 +641,7 @@
    "status": "cached",
    "count": 2,
    "lastOk": "2026-10-15T21:49:52.028Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)"
   },
   {
    "id": "rd-gaming",
@@ -651,7 +650,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-ukpolitics",
@@ -684,9 +683,10 @@
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
+   "lastOk": "2026-10-17T15:44:39.093Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-germany",
@@ -695,7 +695,7 @@
    "status": "cached",
    "count": 5,
    "lastOk": "2026-10-15T00:59:57.533Z",
-   "note": "rate-limited (429)"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-unitedkingdom",
@@ -704,10 +704,137 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   }
  ],
  "items": [
+  {
+   "title": "tagesschau 20:00 Uhr, 17.10.2026",
+   "url": "https://www.youtube.com/watch?v=BUfNTS-QoXU",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-17T18:33:40.000Z",
+   "summary": "tagesschau 20:00 Uhr Sondierungsgespräche der Dreier-Koalition in Berlin erfolgreich beendet, Kanzler Merz bei Deutschlandtag der Jungen Union in Bonn, Ausschreitungen bei Protesten in Frankreich, US-Präsident Trump stoppt vom Kongress beschlossenes Sanktionspaket gegen…",
+   "thumb": "https://i3.ytimg.com/vi/BUfNTS-QoXU/hqdefault.jpg",
+   "id": "095fdb631799",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "OH DAMN: Watch Trump INSULTS HIS FANS To Their Face!",
+   "url": "https://www.youtube.com/watch?v=4xX2gSzX8Ms",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-17T17:30:04.000Z",
+   "summary": "Luke discusses Trump's admission at his rally in Tennessee. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
+   "thumb": "https://i1.ytimg.com/vi/4xX2gSzX8Ms/hqdefault.jpg",
+   "id": "b2b6fd42bdf1",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Manga Reviews (i read Mashle)",
+   "url": "https://www.youtube.com/watch?v=8jjK9UIx6dw",
+   "source": "ProZD",
+   "feedId": "yt-prozd",
+   "type": "video",
+   "tags": [
+    "comedy",
+    "gaming"
+   ],
+   "published": "2026-10-17T17:27:44.000Z",
+   "summary": "My Patreon: https://www.patreon.com/ProZD $5 a month gets you all the perks",
+   "thumb": "https://i1.ytimg.com/vi/8jjK9UIx6dw/hqdefault.jpg",
+   "id": "80b095c084a5",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Would you give Putin 30% of Ukraine to avoid World War Three?",
+   "url": "https://www.youtube.com/watch?v=jl7lHh48-cA",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-17T16:29:20.000Z",
+   "summary": "Could Donald Trump's changing approach to Russia and Ukraine threaten the future of NATO? LBC Washington Correspondent Simon Marks joins Vanessa Feltz to examine whether Trump's actions form part of a broader strategy to 'collapse NATO' and question whether the US President…",
+   "thumb": "https://i3.ytimg.com/vi/jl7lHh48-cA/hqdefault.jpg",
+   "id": "31059929ff6e",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "20 Best Recent Games That Are NOW DIRT CHEAP",
+   "url": "https://www.youtube.com/watch?v=6uKYWhFTw10",
+   "source": "GameRanx",
+   "feedId": "yt-gameranx",
+   "type": "video",
+   "tags": [
+    "gaming"
+   ],
+   "published": "2026-10-17T16:24:42.000Z",
+   "summary": "Here are some of the best recent games that you can get at a serious discount. Subscribe for more: https://www.youtube.com/gameranxTV?sub_confirmation=1 0:00 Intro 0:41 Final Fantasy 7 Rebirth 1:35 Doom: The Dark Ages 2:31 Like a Dragon: Pirate Yakuza in Hawaii 3:19 Warhammer…",
+   "thumb": "https://i3.ytimg.com/vi/6uKYWhFTw10/hqdefault.jpg",
+   "id": "b332da5cf489",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Olivenernte im Westjordanland: Bedrohung durch radikale Siedler",
+   "url": "https://www.youtube.com/watch?v=jUph90-zpmE",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-17T16:08:48.000Z",
+   "summary": "Bei Angriffen von radikalen israelischen Siedlern im besetzten Westjordanland hat es Berichten zufolge eine Reihe von Verletzten gegeben. Die Gewalt habe sich vor allem gegen palästinensische Helfer bei der Olivenernte gerichtet. Weitere Informationen:…",
+   "thumb": "https://i3.ytimg.com/vi/jUph90-zpmE/hqdefault.jpg",
+   "id": "f8180e70f452",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Viral Spotlight: Lori Offers $1 Million for Everlywell | Shark Tank US | Shark Tank Global",
+   "url": "https://www.youtube.com/watch?v=nd1nJALU1MU",
+   "source": "Shark Tank Global",
+   "feedId": "yt-shark-tank-global",
+   "type": "video",
+   "tags": [
+    "trash",
+    "business"
+   ],
+   "published": "2026-10-17T16:00:05.000Z",
+   "summary": "Julia Cheek enters the Tank seeking $1 million for 5% of Everlywell, a company making at-home lab testing more accessible and easier to understand. With millions in sales and a growing market, can Julia convince the Sharks to invest in her vision? From Season 9, Episode 12…",
+   "thumb": "https://i3.ytimg.com/vi/nd1nJALU1MU/hqdefault.jpg",
+   "id": "25e00b1783e7",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
   {
    "title": "Best!ality…",
    "url": "https://www.youtube.com/watch?v=8cNlEHU1yWQ",
@@ -908,25 +1035,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Gute Nachrichten für den Amazonas-Regenwald: Abholzung geht zurück",
-   "url": "https://www.youtube.com/watch?v=ZMSlGri-Yq0",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-17T11:16:37.000Z",
-   "summary": "Die Abholzung im brasilianischen Amazonasgebiet ist auf den niedrigsten Stand seit fast 40 Jahren gesunken. Nach Angaben der Regierung wurden zwischen August 2025 und Juli 2026 gut 3.300 Quadratkilometer gerodet. Das sind fast 42 Prozent weniger als im Vorjahreszeitraum. Die…",
-   "thumb": "https://i3.ytimg.com/vi/ZMSlGri-Yq0/hqdefault.jpg",
-   "id": "134cf5535cae",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Zelenskyy transforms from diplomat to war leader",
    "url": "https://www.youtube.com/watch?v=GcDsh7_hNgI",
    "source": "LBC",
@@ -1046,56 +1154,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "A Norwegian, hired by Swedes, backed by Iranians, to murder someone in Huddersfield",
-   "url": "https://www.youtube.com/watch?v=bnVfxNidjPA",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-17T07:00:02.000Z",
-   "summary": "A Norwegian teenage hitman who plotted a contract killing on behalf of an Iran-backed group has been jailed. Johannes Kongsnes Natland, 19, was sentenced at Woolwich Crown Court on Friday to 20 years detention after he was found guilty of conspiracy to commit murder. The…",
-   "thumb": "https://i3.ytimg.com/vi/bnVfxNidjPA/hqdefault.jpg",
-   "id": "135266d01d8f",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Agentic product life cycle tools",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1x82x4q/agentic_product_life_cycle_tools/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-10-17T06:20:29.000Z",
-   "summary": "Hi! I was wondering if anyone uses an off the shelf product to change their process to be more agentic? Management at my company has some notion of making artifacts we create (PRDs for example) a live object from which things further downstream or automatically created - like…",
-   "id": "8a092c48f5ed",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Non-technical PMs that do work in tech related products, how do you do it?",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1x827a0/nontechnical_pms_that_do_work_in_tech_related/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-10-17T05:36:41.000Z",
-   "summary": "So, I am currently working in a startup but my degree is not related. I do not have a business or computer science background. I just kind of fell into this, I didn’t even know it existed if I’m being honest 😅. That being said, I am working on a social media app and I would…",
-   "id": "cffdfbbab4a5",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Trump Signs Order Exempting Russia From Sanctions Law",
    "url": "https://www.reddit.com/r/geopolitics/comments/1x81hhp/trump_signs_order_exempting_russia_from_sanctions/",
    "source": "r/geopolitics",
@@ -1108,38 +1166,6 @@
    "published": "2026-10-17T04:55:45.000Z",
    "summary": "submitted by /u/-18k- [link] [comments]",
    "id": "cdc944564c32",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Domain is king. But which domain is king?",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1x7uar9/domain_is_king_but_which_domain_is_king/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-10-16T22:42:54.000Z",
-   "summary": "If you were able to choose a domain to specialise in, what would it be and why? submitted by /u/Narrow-Election-9504 [link] [comments]",
-   "id": "f15d446d8a55",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Looking for Product Manager mentorship or friendship!",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1x7twn3/looking_for_product_manager_mentorship_or/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-10-16T22:25:28.000Z",
-   "summary": "Hi! I’m a Sr. PM in the SF Bay Area with about 8 years of experience in Product, mostly at smaller companies that ended up getting acquired. I’m currently looking for a new role, and I’m realizing that interviewing is my biggest weakness. I get really nervous and have a hard…",
-   "id": "b3c925eb0a18",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1246,6 +1272,22 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
+   "title": "Non-technical PMs that do work in tech related products, how do you do it?",
+   "url": "https://www.reddit.com/r/ProductManagement/comments/1x827a0/nontechnical_pms_that_do_work_in_tech_related/",
+   "source": "r/productmanagement",
+   "feedId": "rd-productmanagement",
+   "type": "post",
+   "tags": [
+    "product"
+   ],
+   "published": "2026-10-17T05:36:41.000Z",
+   "summary": "So, I am currently working in a startup but my degree is not related. I do not have a business or computer science background. I just kind of fell into this, I didn’t even know it existed if I’m being honest 😅. That being said, I am working on a social media app and I would…",
+   "id": "cffdfbbab4a5",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
    "title": "Trump puts new Russia sanctions that he recently signed into law on hold, citing national interest",
    "url": "https://www.reddit.com/r/geopolitics/comments/1x7zh2p/trump_puts_new_russia_sanctions_that_he_recently/",
    "source": "r/geopolitics",
@@ -1276,6 +1318,38 @@
    "summary": "Luke discusses insider reporting of panic in the White House over Kimberly Guilfoyle's alleged burn book. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below!…",
    "thumb": "https://i4.ytimg.com/vi/sQ3AT3Y1Snc/hqdefault.jpg",
    "id": "615602bdf932",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Domain is king. But which domain is king?",
+   "url": "https://www.reddit.com/r/ProductManagement/comments/1x7uar9/domain_is_king_but_which_domain_is_king/",
+   "source": "r/productmanagement",
+   "feedId": "rd-productmanagement",
+   "type": "post",
+   "tags": [
+    "product"
+   ],
+   "published": "2026-10-16T22:42:54.000Z",
+   "summary": "If you were able to choose a domain to specialise in, what would it be and why? submitted by /u/Narrow-Election-9504 [link] [comments]",
+   "id": "f15d446d8a55",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Looking for Product Manager mentorship or friendship!",
+   "url": "https://www.reddit.com/r/ProductManagement/comments/1x7twn3/looking_for_product_manager_mentorship_or/",
+   "source": "r/productmanagement",
+   "feedId": "rd-productmanagement",
+   "type": "post",
+   "tags": [
+    "product"
+   ],
+   "published": "2026-10-16T22:25:28.000Z",
+   "summary": "Hi! I’m a Sr. PM in the SF Bay Area with about 8 years of experience in Product, mostly at smaller companies that ended up getting acquired. I’m currently looking for a new role, and I’m realizing that interviewing is my biggest weakness. I get really nervous and have a hard…",
+   "id": "b3c925eb0a18",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1313,25 +1387,6 @@
    "summary": "Luke discusses the firing of former press secretary Katie Zacharia. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
    "thumb": "https://i4.ytimg.com/vi/7nvHOhUkPb4/hqdefault.jpg",
    "id": "f46fd8032c11",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "tagesthemen 21:45 Uhr, 16.10.2026",
-   "url": "https://www.youtube.com/watch?v=qGQXkT60dLA",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-16T20:56:20.000Z",
-   "summary": "tagesthemen 21:45 Uhr Bundestag stimmt für Anhebung der Tabaksteuer, Deutschlandtag: Junge Union blickt kritisch auf Bundeskanzler Merz, Ukrainischer Präsident Selenskij bittet auf EU-Gipfel um weitere Unterstützung, Bundesrat fordert besseren Schutz Minderjähriger vor…",
-   "thumb": "https://i2.ytimg.com/vi/qGQXkT60dLA/hqdefault.jpg",
-   "id": "62fc4c40483b",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1489,24 +1544,6 @@
    "summary": "Luke discusses the latest on Katie Zacharia's lawyer controversy. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
    "thumb": "https://i3.ytimg.com/vi/Bvr_swp5jl4/hqdefault.jpg",
    "id": "d04644e58796",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "OMG: Scott Jennings HUMILIATED on CNN, LAUGHED AT To His Face!",
-   "url": "https://www.youtube.com/watch?v=18Rp2BJzKmI",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-15T21:40:38.000Z",
-   "summary": "Luke discusses Scott Jennings' take on James Talarico's CNN town hall. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
-   "thumb": "https://i2.ytimg.com/vi/18Rp2BJzKmI/hqdefault.jpg",
-   "id": "36be30302bd5",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1878,23 +1915,6 @@
    "summary": "First PMQs since the return from recess, and Kemi Badenoch is still chasing Andy Burnham's shadow at Prime Minister's Questions. Like PoliticsJOE? We need your support: https://www.patreon.com/PoliticsJOE",
    "thumb": "https://i1.ytimg.com/vi/Tqb6hp0dOVc/hqdefault.jpg",
    "id": "aed06c62eda5",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "10 Recent COOP Games You Shouldn't MISS",
-   "url": "https://www.youtube.com/watch?v=EqKv9v2_h1U",
-   "source": "GameRanx",
-   "feedId": "yt-gameranx",
-   "type": "video",
-   "tags": [
-    "gaming"
-   ],
-   "published": "2026-10-13T18:26:55.000Z",
-   "summary": "Looking for a new game to play with friends? We've got you covered with these new co op games. Subscribe for more: https://www.youtube.com/gameranxTV?sub_confirmation=1 0:00 Intro 0:50 The Big Walk 3:23 Space Marine 2 5:29 Orbitals 7:47 Elden Ring: Nightreign 10:23 Lego Batman:…",
-   "thumb": "https://i2.ytimg.com/vi/EqKv9v2_h1U/hqdefault.jpg",
-   "id": "970368052442",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2277,24 +2297,6 @@
    "summary": "🚩 Head to https://betterhelp.com/historymarche to get 10% off your first month with our paid partner, BetterHelp. 🚩 Therapy can be a meaningful space to reflect, grow, and create positive change in your life. 🚩 War of the Spanish Succession Playlist:…",
    "thumb": "https://i4.ytimg.com/vi/CBIGgKGmQdk/hqdefault.jpg",
    "id": "ba4ba7fc2631",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Viral Spotlight: All 5 Sharks Want In on Lumio! | Shark Tank US | Shark Tank Global",
-   "url": "https://www.youtube.com/watch?v=3fyUob_M-pQ",
-   "source": "Shark Tank Global",
-   "feedId": "yt-shark-tank-global",
-   "type": "video",
-   "tags": [
-    "trash",
-    "business"
-   ],
-   "published": "2026-10-10T15:59:53.000Z",
-   "summary": "Max Gunawan enters the Tank seeking $250,000 for 8% of Lumio, his elegant portable lighting solution. The product impresses every Shark, leading to five different offers before Max ultimately chooses Robert Herjavec. From Season 6 Episode 15 Watch Shark Tank US Now:…",
-   "thumb": "https://i4.ytimg.com/vi/3fyUob_M-pQ/hqdefault.jpg",
-   "id": "dd66b78123a4",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2788,25 +2790,7 @@
    "score": 0,
    "matched": [],
    "why": "0"
-  },
-  {
-   "title": "How to reform the tax system | The Economist",
-   "url": "https://www.youtube.com/watch?v=e9OAazrjenc",
-   "source": "The Economist",
-   "feedId": "yt-the-economist",
-   "type": "video",
-   "tags": [
-    "finance",
-    "business"
-   ],
-   "published": "2026-10-03T16:00:02.000Z",
-   "summary": "As AI transforms the economy, governments will need new ways to raise money. Should they tax consumption, compute, land or the billionaires getting richer from the technology? Our top editors weigh up the options. #AI #Tax #WealthTax 00:00 What should be taxed in the AI era?…",
-   "thumb": "https://i2.ytimg.com/vi/e9OAazrjenc/hqdefault.jpg",
-   "id": "d2270aa17373",
-   "score": 0,
-   "matched": [],
-   "why": "0"
   }
  ],
- "contentHash": "7a2f006541db"
+ "contentHash": "5e0ef570a3db"
 }
