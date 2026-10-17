@@ -1,17 +1,17 @@
 {
- "generated": "2026-10-17T12:54:45.736Z",
+ "generated": "2026-10-17T15:44:39.093Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
   "ok": 52,
-  "items": 119,
+  "items": 118,
   "duplicatesMerged": 0,
   "lengthsKnown": 2,
-  "lengthLookups": 95,
-  "lengthFailures": 95,
+  "lengthLookups": 94,
+  "lengthFailures": 94,
   "lengthVia": "video pages",
   "lengthFailReasons": {
-   "no length on page": 95
+   "no length on page": 94
   }
  },
  "feeds": [
@@ -332,7 +332,7 @@
    "name": "The NK guys",
    "type": "youtube",
    "status": "ok",
-   "count": 2,
+   "count": 1,
    "resolved": {
     "channelId": "UCTi5i5m-Xm-o7sALcVKiKjg",
     "title": "The NK Guys",
@@ -657,20 +657,19 @@
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
+   "lastOk": "2026-10-17T12:54:45.736Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-xbox",
    "name": "r/xbox",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-slaythespire",
@@ -679,16 +678,15 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-10-17T07:00:10.038Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
   },
   {
    "id": "rd-germany",
@@ -697,7 +695,7 @@
    "status": "cached",
    "count": 5,
    "lastOk": "2026-10-15T00:59:57.533Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)"
   },
   {
    "id": "rd-unitedkingdom",
@@ -706,12 +704,122 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   }
  ],
  "items": [
   {
-   "title": "Simon Marks analyses Trump's 'complete betrayal' of Zelenskyy",
+   "title": "Best!ality…",
+   "url": "https://www.youtube.com/watch?v=8cNlEHU1yWQ",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-17T15:30:18.000Z",
+   "summary": "Luke discusses a wild clip of Tucker Carlson that shocked him. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
+   "thumb": "https://i1.ytimg.com/vi/8cNlEHU1yWQ/hqdefault.jpg",
+   "id": "501d814bf132",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Trump stoppt US-Sanktionen gegen Russland",
+   "url": "https://www.youtube.com/watch?v=I4J6Njq8TRc",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-17T15:21:33.000Z",
+   "summary": "Eine Woche nach dem umstrittenen Diesel-Deal hat US-Präsident Trump nun auch ein umfassendes Sanktionspaket gegen Russland kurz vor dem Inkrafttreten gestoppt. Das nach dem verstorbenen Senator Lindsey Graham benannte Gesetz sah unter anderem Strafzölle gegen Importeure von…",
+   "thumb": "https://i2.ytimg.com/vi/I4J6Njq8TRc/hqdefault.jpg",
+   "id": "ac0545450024",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "LBC callers face off with Reform politician over small boats policy",
+   "url": "https://www.youtube.com/watch?v=eRBykngBDcM",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-17T15:16:21.000Z",
+   "summary": "LBC callers face off with Reform's Laila Cunningham as Reform UK leader Nigel Farage says the risk small boats pose to Britain is 'too high'. Speaking to Nick Ferrari on LBC this morning, Mr Farage explained his party's plans to stop migrants arriving on UK shores. He said that…",
+   "thumb": "https://i2.ytimg.com/vi/eRBykngBDcM/hqdefault.jpg",
+   "id": "3f46faf30f1b",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "UAE agrees with Saudi Arabia to re-enter Yemen conflict amid Houthi gains",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1x8bjpi/uae_agrees_with_saudi_arabia_to_reenter_yemen/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-17T14:25:27.000Z",
+   "summary": "The United Arab Emirates has agreed to re-enter the Yemen conflict by resuming payments to some government forces fighting Iran-aligned Houthis in the south, according to sources in Yemen. In return, Saudi Arabia has agreed to provide air cover for the anti-Houthi force. The…",
+   "id": "e86d8f0ab4eb",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Hohe Lebenshaltungskosten: ARD-Korrespondentin über die Unzufriedenheit in Italien",
+   "url": "https://www.youtube.com/watch?v=tJjQMN7bN-c",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-17T13:24:36.000Z",
+   "summary": "In Italien sind viele Menschen wegen der hohen Lebenshaltungskosten unzufrieden. Die größte Gewerkschaft hat deshalb zu Protestaktionen aufgerufen, unter anderem in Rom. Sie fordert auch ein besseres Schul- und Gesundheitssystem sowie besser bezahlte Jobs. Die Kritik richtet…",
+   "thumb": "https://i1.ytimg.com/vi/tJjQMN7bN-c/hqdefault.jpg",
+   "id": "6a5cf5c5fc94",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Merz auf „Deutschlandtag\" der Jungen Union: Gegenwind der Parteijugend",
+   "url": "https://www.youtube.com/watch?v=Mxbs4Kzq1Fo",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-17T13:00:34.000Z",
+   "summary": "Bundeskanzler Merz hat beim sogenannten \"Deutschlandtag\" der Jungen Union in Bonn gesprochen. Seine Rede war mit Spannung erwartet worden, nachdem im vergangenen Jahr Kanzler und junge Delegierte von CDU und CSU bei dem Treffen heftig um das Thema Rente gestritten hatten. Heute…",
+   "thumb": "https://i2.ytimg.com/vi/Mxbs4Kzq1Fo/hqdefault.jpg",
+   "id": "ddf475ca3a4a",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "'Trump officially adheres himself to Putin' | Simon Marks reacts",
    "url": "https://www.youtube.com/watch?v=qNRI9dyDQzg",
    "source": "LBC",
    "feedId": "yt-lbc",
@@ -921,6 +1029,23 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
+   "title": "IRGC Reports Supertanker Explosion in Strait of Hormuz as Brent Nears $110; Former Minister Survives Apparent Assassination Attempt",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1x84du6/irgc_reports_supertanker_explosion_in_strait_of/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-17T07:49:32.000Z",
+   "summary": "submitted by /u/Beginning-Wish-4273 [link] [comments]",
+   "id": "b1935786ace8",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
    "title": "A Norwegian, hired by Swedes, backed by Iranians, to murder someone in Huddersfield",
    "url": "https://www.youtube.com/watch?v=bnVfxNidjPA",
    "source": "LBC",
@@ -950,24 +1075,6 @@
    "published": "2026-10-17T06:20:29.000Z",
    "summary": "Hi! I was wondering if anyone uses an off the shelf product to change their process to be more agentic? Management at my company has some notion of making artifacts we create (PRDs for example) a live object from which things further downstream or automatically created - like…",
    "id": "8a092c48f5ed",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "LBC callers berate Reform's Laila Cunningham after undercover sting",
-   "url": "https://www.youtube.com/watch?v=Gybv_psu7Bc",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-17T06:00:24.000Z",
-   "summary": "Reform shouldn’t be judged on the actions of ‘a few councillors,’ party member Laila Cunningham has insisted, as she set out to defend her party in the wake of a recent undercover documentary. Taking calls on LBC following the sting, the London Mayoral candidate admitted her…",
-   "thumb": "https://i4.ytimg.com/vi/Gybv_psu7Bc/hqdefault.jpg",
-   "id": "ea28fdd35123",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1006,41 +1113,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Trump puts new Russia sanctions that he recently signed into law on hold, citing national interest",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1x7zh2p/trump_puts_new_russia_sanctions_that_he_recently/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-17T03:01:45.000Z",
-   "summary": "submitted by /u/ImperiumRome [link] [comments]",
-   "id": "6ce3fbc6ec4b",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Watch Trump VISIBLY NERVOUS as Kimberly’s BURN BOOK Breaks!",
-   "url": "https://www.youtube.com/watch?v=sQ3AT3Y1Snc",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-17T01:15:10.000Z",
-   "summary": "Luke discusses insider reporting of panic in the White House over Kimberly Guilfoyle's alleged burn book. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below!…",
-   "thumb": "https://i4.ytimg.com/vi/sQ3AT3Y1Snc/hqdefault.jpg",
-   "id": "615602bdf932",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Domain is king. But which domain is king?",
    "url": "https://www.reddit.com/r/ProductManagement/comments/1x7uar9/domain_is_king_but_which_domain_is_king/",
    "source": "r/productmanagement",
@@ -1068,23 +1140,6 @@
    "published": "2026-10-16T22:25:28.000Z",
    "summary": "Hi! I’m a Sr. PM in the SF Bay Area with about 8 years of experience in Product, mostly at smaller companies that ended up getting acquired. I’m currently looking for a new role, and I’m realizing that interviewing is my biggest weakness. I get really nervous and have a hard…",
    "id": "b3c925eb0a18",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Russia's war reaches Bulgaria's shores, putting Radev's Moscow-friendly stance to the test",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1x7q299/russias_war_reaches_bulgarias_shores_putting/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-16T19:47:52.000Z",
-   "summary": "submitted by /u/KI_official [link] [comments]",
-   "id": "4b1a88f2d9b2",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1191,6 +1246,41 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
+   "title": "Trump puts new Russia sanctions that he recently signed into law on hold, citing national interest",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1x7zh2p/trump_puts_new_russia_sanctions_that_he_recently/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-17T03:01:45.000Z",
+   "summary": "submitted by /u/ImperiumRome [link] [comments]",
+   "id": "6ce3fbc6ec4b",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Watch Trump VISIBLY NERVOUS as Kimberly’s BURN BOOK Breaks!",
+   "url": "https://www.youtube.com/watch?v=sQ3AT3Y1Snc",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-17T01:15:10.000Z",
+   "summary": "Luke discusses insider reporting of panic in the White House over Kimberly Guilfoyle's alleged burn book. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below!…",
+   "thumb": "https://i4.ytimg.com/vi/sQ3AT3Y1Snc/hqdefault.jpg",
+   "id": "615602bdf932",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
    "title": "GRAND ISLAND TRUMP RALLY",
    "url": "https://www.youtube.com/watch?v=3M8__9WmwVY",
    "source": "The Good Liars",
@@ -1281,8 +1371,8 @@
    "why": "0"
   },
   {
-   "title": "Five children killed in Sudanese army airstrike on North Kordofan",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1x7o8al/five_children_killed_in_sudanese_army_airstrike/",
+   "title": "Russia's war reaches Bulgaria's shores, putting Radev's Moscow-friendly stance to the test",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1x7q299/russias_war_reaches_bulgarias_shores_putting/",
    "source": "r/geopolitics",
    "feedId": "rd-geopolitics",
    "type": "post",
@@ -1290,28 +1380,9 @@
     "politics",
     "news"
    ],
-   "published": "2026-10-16T18:36:34.000Z",
-   "summary": "submitted by /u/DayTrader_Dav [link] [comments]",
-   "id": "c551aeb6b68e",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "tagesschau 20:00 Uhr, 16.10.2026",
-   "url": "https://www.youtube.com/watch?v=WjWKIn4RrVo",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-16T18:30:32.000Z",
-   "summary": "tagesschau 20:00 Uhr Bundestag beschließt sogenannte „Frühstartrente\", Bundestag stimmt für Anhebung der Tabaksteuer, Staats- und Regierungschefs beraten auf EU-Gipfel in Brüssel über Hilfen für die Ukraine, Papst Leo XIV. bittet im Telefonat mit Russlands Präsidenten Putin um…",
-   "thumb": "https://i4.ytimg.com/vi/WjWKIn4RrVo/hqdefault.jpg",
-   "id": "61c2bc3d80fb",
+   "published": "2026-10-16T19:47:52.000Z",
+   "summary": "submitted by /u/KI_official [link] [comments]",
+   "id": "4b1a88f2d9b2",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1334,23 +1405,6 @@
    "why": "0"
   },
   {
-   "title": "The Axis of Upheaval Goes to War: How Battlefield Cooperation Is Binding Together America’s Adversaries",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1x7ndhs/the_axis_of_upheaval_goes_to_war_how_battlefield/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-16T18:04:30.000Z",
-   "summary": "submitted by /u/ForeignAffairsMag [link] [comments]",
-   "id": "4cfa1ad48df5",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "Liberals vs Conservatives: Who Lies More in a Debate? | Checkmate",
    "url": "https://www.youtube.com/watch?v=0t1jSu-C9KU",
    "source": "Jubilee",
@@ -1364,25 +1418,6 @@
    "summary": "Earn extra cash in your free time! Head to https://itl.ink/jubileexfreecash for a $10 Sign-up bonus today. Hey you 👈 Wanna be in a Jubilee video? https://bit.ly/be-in-a-video LET’S BE FRIENDS Instagram: https://www.instagram.com/jubileemedia/ TikTok:…",
    "thumb": "https://i1.ytimg.com/vi/0t1jSu-C9KU/hqdefault.jpg",
    "id": "b27f8256542f",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Juso-Chef vs. Finanzexpertin: Ist die Rente noch zu retten?",
-   "url": "https://www.youtube.com/watch?v=Zo0ftSGPa6o",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-16T16:00:28.000Z",
-   "summary": "Zwischen dem Rücktritt von Bärbel Bas und der anstehenden Rentenreform diskutiert Louis Klamroth mit dem Juso-Vorsitzenden Philipp Türmer und der Finanzvorsorge-Expertin Madame Moneypenny in einer neuen Folge Draußenpolitik. Alle aktuellen Informationen, weitere Nachrichten und…",
-   "thumb": "https://i3.ytimg.com/vi/Zo0ftSGPa6o/hqdefault.jpg",
-   "id": "1a536f0ae8e6",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1419,25 +1454,6 @@
    "summary": "The Sharks are ready to dig in! These entrepreneurs bring their best bites into the Tank, hoping to win over the Sharks’ taste buds and land a deal. 00:00 - Atlas Monroe 11:40 - Cousins Maine Lobster 24:06 - Doatnut 33:42 - Wicked Good Cupcakes 43:13 - Finneato Fysh Foods 52:28…",
    "thumb": "https://i4.ytimg.com/vi/sQTnY1DXjO4/hqdefault.jpg",
    "id": "b0004effa6ba",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "tagesschau in Einfacher Sprache 19:00 Uhr, 16.10.2026",
-   "url": "https://www.youtube.com/watch?v=mpya9Z9VRRQ",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-16T15:45:14.000Z",
-   "summary": "tagesschau in Einfacher Sprache 19:00 Uhr Rente: Staat hilft jungen Menschen beim Sparen, Höhere Steuern: Rauchen wird teurer, USA: Mann erschießt Menschen in Schule, Treffen von der EU: Hilfe für die Ukraine. Die „tagesschau in Einfacher Sprache“ – immer Montag bis Freitag um…",
-   "thumb": "https://i2.ytimg.com/vi/mpya9Z9VRRQ/hqdefault.jpg",
-   "id": "0658a4932579",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1670,24 +1686,6 @@
    "summary": "Go to https://www.odoo.com/r/08C5 to get started on your free 15 day trial or book a consulting session with an Odoo expert (no credit card required)! Subscribe! https://www.youtube.com/channel/UC-OJ-24roEfQ_-PCnLJSckg?sub_confirmation=1 Join our Patreon:…",
    "thumb": "https://i4.ytimg.com/vi/kAQh0_Gg7Ac/hqdefault.jpg",
    "id": "933a29d3fd9c",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "OSSOFF, NO. Don’t Do This To Us!",
-   "url": "https://www.youtube.com/watch?v=M1wLovfr4XM",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-15T13:00:34.000Z",
-   "summary": "Luke discusses Jon Ossoff's latest debate with Mike Collins. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
-   "thumb": "https://i2.ytimg.com/vi/M1wLovfr4XM/hqdefault.jpg",
-   "id": "3d2dbd1e9420",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2808,24 +2806,7 @@
    "score": 0,
    "matched": [],
    "why": "0"
-  },
-  {
-   "title": "Why North Korean Tank Commanders love American Food (Marathon)",
-   "url": "https://www.youtube.com/watch?v=YvsQR29Wmx8",
-   "source": "The NK guys",
-   "feedId": "yt-the-nk-guys",
-   "type": "video",
-   "tags": [
-    "culture"
-   ],
-   "published": "2026-10-03T15:00:28.000Z",
-   "summary": "ex-North Korean Tank Commander Kwon Hyo-jin & ex-North Korean Tank Commander Jung Min-Woo share their life stories and enjoy American BBQ and beer in this marathon compilation. 0:00 Try American BBQ 18:50 Kwon Hyo Jin - Life of North Korean 34:08 Jung Min Woo - Life of North…",
-   "thumb": "https://i2.ytimg.com/vi/YvsQR29Wmx8/hqdefault.jpg",
-   "id": "603e34117f9a",
-   "score": 0,
-   "matched": [],
-   "why": "0"
   }
  ],
- "contentHash": "41bb19e94371"
+ "contentHash": "7a2f006541db"
 }
