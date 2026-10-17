@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-17T07:00:10.038Z",
+ "generated": "2026-10-17T09:47:02.753Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
@@ -7,11 +7,11 @@
   "items": 124,
   "duplicatesMerged": 0,
   "lengthsKnown": 2,
-  "lengthLookups": 98,
-  "lengthFailures": 96,
+  "lengthLookups": 95,
+  "lengthFailures": 95,
   "lengthVia": "video pages",
   "lengthFailReasons": {
-   "no length on page": 96
+   "no length on page": 95
   }
  },
  "feeds": [
@@ -215,7 +215,7 @@
    "name": "TLDR News",
    "type": "youtube",
    "status": "ok",
-   "count": 4,
+   "count": 3,
    "resolved": {
     "channelId": "UCSMqateX8OA2s1wsOR2EgJA",
     "title": "TLDR News",
@@ -630,10 +630,9 @@
    "id": "rd-productmanagement",
    "name": "r/productmanagement",
    "type": "reddit",
-   "status": "cached",
-   "count": 4,
-   "lastOk": "2026-10-17T01:01:00.712Z",
-   "note": "not its turn this run"
+   "status": "ok",
+   "count": 5,
+   "url": "https://www.reddit.com/r/productmanagement/top/.rss?t=day"
   },
   {
    "id": "rd-tech",
@@ -642,7 +641,7 @@
    "status": "cached",
    "count": 2,
    "lastOk": "2026-10-15T21:49:52.028Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)"
   },
   {
    "id": "rd-gaming",
@@ -651,7 +650,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-ukpolitics",
@@ -684,9 +683,10 @@
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
+   "lastOk": "2026-10-17T07:00:10.038Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-germany",
@@ -695,7 +695,7 @@
    "status": "cached",
    "count": 5,
    "lastOk": "2026-10-15T00:59:57.533Z",
-   "note": "rate-limited (429)"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-unitedkingdom",
@@ -704,12 +704,79 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   }
  ],
  "items": [
   {
-   "title": "Reform's Laila Cunningham defends party after undercover sting",
+   "title": "Ireland Grinds to a Halt amid Biggest Strike in Nearly 20 years",
+   "url": "https://www.youtube.com/watch?v=5GL6eZEOojE",
+   "source": "PoliticsJOE",
+   "feedId": "yt-politicsjoe",
+   "type": "video",
+   "tags": [
+    "comedy"
+   ],
+   "published": "2026-10-17T09:00:03.000Z",
+   "summary": "Public sector workers across Ireland walked out today in the biggest strike Ireland has seen in 17 years, with about 300,000 predicted to be on the picket calling for better pay and conditions as the cost of living crisis continues to bite. We went down to a picket at Dublin's…",
+   "thumb": "https://i2.ytimg.com/vi/5GL6eZEOojE/hqdefault.jpg",
+   "id": "a382d0cf68fe",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Does the “behind the scenes” part of PM work count toward performance, or is it just assumed?",
+   "url": "https://www.reddit.com/r/ProductManagement/comments/1x84prz/does_the_behind_the_scenes_part_of_pm_work_count/",
+   "source": "r/productmanagement",
+   "feedId": "rd-productmanagement",
+   "type": "post",
+   "tags": [
+    "product"
+   ],
+   "published": "2026-10-17T08:09:34.000Z",
+   "summary": "I've been thinking about this and kinda frustrated it's not clearly stated.. but product management is naturally a role built on coordination, not just shipping. A huge chunk of the job is unblocking people, chasing alignment, catching things that fall between teams and roles.…",
+   "id": "083d78985ad5",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "A Norwegian, hired by Swedes, backed by Iranians, to murder someone in Huddersfield",
+   "url": "https://www.youtube.com/watch?v=bnVfxNidjPA",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-17T07:00:02.000Z",
+   "summary": "A Norwegian teenage hitman who plotted a contract killing on behalf of an Iran-backed group has been jailed. Johannes Kongsnes Natland, 19, was sentenced at Woolwich Crown Court on Friday to 20 years detention after he was found guilty of conspiracy to commit murder. The…",
+   "thumb": "https://i3.ytimg.com/vi/bnVfxNidjPA/hqdefault.jpg",
+   "id": "135266d01d8f",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Agentic product life cycle tools",
+   "url": "https://www.reddit.com/r/ProductManagement/comments/1x82x4q/agentic_product_life_cycle_tools/",
+   "source": "r/productmanagement",
+   "feedId": "rd-productmanagement",
+   "type": "post",
+   "tags": [
+    "product"
+   ],
+   "published": "2026-10-17T06:20:29.000Z",
+   "summary": "Hi! I was wondering if anyone uses an off the shelf product to change their process to be more agentic? Management at my company has some notion of making artifacts we create (PRDs for example) a live object from which things further downstream or automatically created - like…",
+   "id": "8a092c48f5ed",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "LBC callers berate Reform's Laila Cunningham after undercover sting",
    "url": "https://www.youtube.com/watch?v=Gybv_psu7Bc",
    "source": "LBC",
    "feedId": "yt-lbc",
@@ -722,6 +789,22 @@
    "summary": "Reform shouldn’t be judged on the actions of ‘a few councillors,’ party member Laila Cunningham has insisted, as she set out to defend her party in the wake of a recent undercover documentary. Taking calls on LBC following the sting, the London Mayoral candidate admitted her…",
    "thumb": "https://i4.ytimg.com/vi/Gybv_psu7Bc/hqdefault.jpg",
    "id": "ea28fdd35123",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Non-technical PMs that do work in tech related products, how do you do it?",
+   "url": "https://www.reddit.com/r/ProductManagement/comments/1x827a0/nontechnical_pms_that_do_work_in_tech_related/",
+   "source": "r/productmanagement",
+   "feedId": "rd-productmanagement",
+   "type": "post",
+   "tags": [
+    "product"
+   ],
+   "published": "2026-10-17T05:36:41.000Z",
+   "summary": "So, I am currently working in a startup but my degree is not related. I do not have a business or computer science background. I just kind of fell into this, I didn’t even know it existed if I’m being honest 😅. That being said, I am working on a social media app and I would…",
+   "id": "cffdfbbab4a5",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -811,62 +894,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "GRAND ISLAND TRUMP RALLY",
-   "url": "https://www.youtube.com/watch?v=3M8__9WmwVY",
-   "source": "The Good Liars",
-   "feedId": "yt-the-good-liars",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "politics",
-    "debates"
-   ],
-   "published": "2026-10-16T21:19:44.000Z",
-   "summary": "Part two of The Good Liars visit the Grand Island, NE. Join this channel to get access to perks: https://www.youtube.com/channel/UCUNOwz9KTDIhhTTN3_ptUDA/join https://linktr.ee/thegoodliars",
-   "thumb": "https://i4.ytimg.com/vi/3M8__9WmwVY/hqdefault.jpg",
-   "id": "8be46d6b5cd1",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "OMG: Trump HUMILIATES Katie IN PUBLIC AGAIN after FIRING HER!",
-   "url": "https://www.youtube.com/watch?v=7nvHOhUkPb4",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-16T21:15:08.000Z",
-   "summary": "Luke discusses the firing of former press secretary Katie Zacharia. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
-   "thumb": "https://i4.ytimg.com/vi/7nvHOhUkPb4/hqdefault.jpg",
-   "id": "f46fd8032c11",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "tagesthemen 21:45 Uhr, 16.10.2026",
-   "url": "https://www.youtube.com/watch?v=qGQXkT60dLA",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-16T20:56:20.000Z",
-   "summary": "tagesthemen 21:45 Uhr Bundestag stimmt für Anhebung der Tabaksteuer, Deutschlandtag: Junge Union blickt kritisch auf Bundeskanzler Merz, Ukrainischer Präsident Selenskij bittet auf EU-Gipfel um weitere Unterstützung, Bundesrat fordert besseren Schutz Minderjähriger vor…",
-   "thumb": "https://i2.ytimg.com/vi/qGQXkT60dLA/hqdefault.jpg",
-   "id": "62fc4c40483b",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Police assess Palestine Action post by national security adviser's wife",
    "url": "https://www.reddit.com/r/ukpolitics/comments/1x7rhhu/police_assess_palestine_action_post_by_national/",
    "source": "r/ukpolitics",
@@ -879,58 +906,6 @@
    "published": "2026-10-16T20:44:20.000Z",
    "summary": "submitted by /u/ITMidget [link] [comments]",
    "id": "207ebe8dba5f",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Trump vs Zelenskyy 2.0 | Simon Marks’ American Week",
-   "url": "https://www.youtube.com/watch?v=vh0iOYd8tR4",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-16T20:00:07.000Z",
-   "summary": "Simon Marks returns for his American Week with a look at the President's latest row with Zelenskyy, a new Trump currency... and the quickfire sacking of Katie Zacharia. Listen to the full show on the all-new LBC App: https://app.af.lbc.co.uk/btnc/thenewlbcapp #simonmarks…",
-   "thumb": "https://i3.ytimg.com/vi/vh0iOYd8tR4/hqdefault.jpg",
-   "id": "1a2b4c80319a",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "GTA 6: NEW THINGS FROM LAUNCH TRAILER & MORE",
-   "url": "https://www.youtube.com/watch?v=UTrNTE9VPHM",
-   "source": "GameRanx",
-   "feedId": "yt-gameranx",
-   "type": "video",
-   "tags": [
-    "gaming"
-   ],
-   "published": "2026-10-16T19:58:23.000Z",
-   "summary": "Use code GAMERANXFB50 to get 50% OFF your first Factor box plus free breakfast for 1 year at https://bit.ly/3V2LyN4! Thank you to Factor for sponsoring this video! ~~SOURCES~~ GTA6 stuff: New trailer: https://youtu.be/oFwB6gZLRmc?si=ydfS4dkGzpZZmj-G Portrait changes…",
-   "thumb": "https://i2.ytimg.com/vi/UTrNTE9VPHM/hqdefault.jpg",
-   "id": "7f4e5279cae7",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Toddler Sh0t His Teacher... Meet His Parent",
-   "url": "https://www.youtube.com/watch?v=iBnOJClC2sM",
-   "source": "Aberrant preach",
-   "feedId": "yt-aberrant-preach",
-   "type": "video",
-   "tags": [
-    "trash"
-   ],
-   "published": "2026-10-16T19:55:47.000Z",
-   "summary": "We covered a story of a 6 year old who brought a g*n to school and wounded his teacher Abigail Zwerner. Now we have bodycam of what happened that day ———————————— Spotify: https://open.spotify.com/artist/6QJIJ6AugqPEFASp1V6zgH Merchandise ---…",
-   "thumb": "https://i2.ytimg.com/vi/iBnOJClC2sM/hqdefault.jpg",
-   "id": "5ac978390cd9",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1202,6 +1177,114 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
+   "title": "GRAND ISLAND TRUMP RALLY",
+   "url": "https://www.youtube.com/watch?v=3M8__9WmwVY",
+   "source": "The Good Liars",
+   "feedId": "yt-the-good-liars",
+   "type": "video",
+   "tags": [
+    "comedy",
+    "politics",
+    "debates"
+   ],
+   "published": "2026-10-16T21:19:44.000Z",
+   "summary": "Part two of The Good Liars visit the Grand Island, NE. Join this channel to get access to perks: https://www.youtube.com/channel/UCUNOwz9KTDIhhTTN3_ptUDA/join https://linktr.ee/thegoodliars",
+   "thumb": "https://i4.ytimg.com/vi/3M8__9WmwVY/hqdefault.jpg",
+   "id": "8be46d6b5cd1",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "OMG: Trump HUMILIATES Katie IN PUBLIC AGAIN after FIRING HER!",
+   "url": "https://www.youtube.com/watch?v=7nvHOhUkPb4",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-16T21:15:08.000Z",
+   "summary": "Luke discusses the firing of former press secretary Katie Zacharia. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
+   "thumb": "https://i4.ytimg.com/vi/7nvHOhUkPb4/hqdefault.jpg",
+   "id": "f46fd8032c11",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "tagesthemen 21:45 Uhr, 16.10.2026",
+   "url": "https://www.youtube.com/watch?v=qGQXkT60dLA",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-16T20:56:20.000Z",
+   "summary": "tagesthemen 21:45 Uhr Bundestag stimmt für Anhebung der Tabaksteuer, Deutschlandtag: Junge Union blickt kritisch auf Bundeskanzler Merz, Ukrainischer Präsident Selenskij bittet auf EU-Gipfel um weitere Unterstützung, Bundesrat fordert besseren Schutz Minderjähriger vor…",
+   "thumb": "https://i2.ytimg.com/vi/qGQXkT60dLA/hqdefault.jpg",
+   "id": "62fc4c40483b",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Trump vs Zelenskyy 2.0 | Simon Marks’ American Week",
+   "url": "https://www.youtube.com/watch?v=vh0iOYd8tR4",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-16T20:00:07.000Z",
+   "summary": "Simon Marks returns for his American Week with a look at the President's latest row with Zelenskyy, a new Trump currency... and the quickfire sacking of Katie Zacharia. Listen to the full show on the all-new LBC App: https://app.af.lbc.co.uk/btnc/thenewlbcapp #simonmarks…",
+   "thumb": "https://i3.ytimg.com/vi/vh0iOYd8tR4/hqdefault.jpg",
+   "id": "1a2b4c80319a",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "GTA 6: NEW THINGS FROM LAUNCH TRAILER & MORE",
+   "url": "https://www.youtube.com/watch?v=UTrNTE9VPHM",
+   "source": "GameRanx",
+   "feedId": "yt-gameranx",
+   "type": "video",
+   "tags": [
+    "gaming"
+   ],
+   "published": "2026-10-16T19:58:23.000Z",
+   "summary": "Use code GAMERANXFB50 to get 50% OFF your first Factor box plus free breakfast for 1 year at https://bit.ly/3V2LyN4! Thank you to Factor for sponsoring this video! ~~SOURCES~~ GTA6 stuff: New trailer: https://youtu.be/oFwB6gZLRmc?si=ydfS4dkGzpZZmj-G Portrait changes…",
+   "thumb": "https://i2.ytimg.com/vi/UTrNTE9VPHM/hqdefault.jpg",
+   "id": "7f4e5279cae7",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Toddler Sh0t His Teacher... Meet His Parent",
+   "url": "https://www.youtube.com/watch?v=iBnOJClC2sM",
+   "source": "Aberrant preach",
+   "feedId": "yt-aberrant-preach",
+   "type": "video",
+   "tags": [
+    "trash"
+   ],
+   "published": "2026-10-16T19:55:47.000Z",
+   "summary": "We covered a story of a 6 year old who brought a g*n to school and wounded his teacher Abigail Zwerner. Now we have bodycam of what happened that day ———————————— Spotify: https://open.spotify.com/artist/6QJIJ6AugqPEFASp1V6zgH Merchandise ---…",
+   "thumb": "https://i2.ytimg.com/vi/iBnOJClC2sM/hqdefault.jpg",
+   "id": "5ac978390cd9",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
    "title": "“Go to bed with a racist, wake up next to a misogynist” | James O’Brien - The Whole Show",
    "url": "https://www.youtube.com/watch?v=g8FDTtChr3Y",
    "source": "LBC",
@@ -1400,24 +1483,6 @@
    "why": "0"
   },
   {
-   "title": "Defence expert: 'Trump likely sabotaged Starlink'",
-   "url": "https://www.youtube.com/watch?v=N7N2vbUH64w",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-16T14:40:50.000Z",
-   "summary": "Wes Streeting has been 'reassured' by US Secretary of War Pete Hegseth that Ukraine's access to Starlink satellites has been restored following restrictions to the service. The UK Defence Secretary said he invoked St Francis of Assisi in his efforts to “bring harmony” between…",
-   "thumb": "https://i3.ytimg.com/vi/N7N2vbUH64w/hqdefault.jpg",
-   "id": "7fed46337eaf",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "Nachhaltige KI-Rechenzentren gegen massiv steigenden Verbrauch | KlimaZeit vom 16.10.2026",
    "url": "https://www.youtube.com/watch?v=2TJnZ1Nj-i4",
    "source": "Tagesschau",
@@ -1437,22 +1502,6 @@
    "why": "0"
   },
   {
-   "title": "Company is all-in on LLMs, and now I finally see where the worry is coming from",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1x7dw6m/company_is_allin_on_llms_and_now_i_finally_see/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-10-16T11:39:09.000Z",
-   "summary": "Not sure that's the right flair, there wasn't one for existential dread. I recently joined a company that's all in on AI. I didn't know this when interviewing, the impression I got was that they were working with it but it was still very much the human doing the work. I'm 3…",
-   "id": "aaf640851fa4",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "Trump's America has taken control of Britain | Tariq Ali interview",
    "url": "https://www.youtube.com/watch?v=rQcHhatDUtA",
    "source": "PoliticsJOE",
@@ -1465,22 +1514,6 @@
    "summary": "Tariq Ali is one of Britain's foremost figures on the left of politics, and following a busy recess for Andy Burnham, he came in to the studio to react to the Prime Minister's speech to Labour conference, his first few months in charge, and how Britain should position itself in…",
    "thumb": "https://i3.ytimg.com/vi/rQcHhatDUtA/hqdefault.jpg",
    "id": "5c7b0672bfc5",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Friday Show and Tell",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1x78cdx/friday_show_and_tell/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-10-16T06:00:19.000Z",
-   "summary": "There are a lot of people here working on projects of some sort - side projects, startups, podcasts, blogs, etc. If you've got something you'd like to show off or get feedback, this is the place to do it. Standards still need to remain high, so there are a few guidelines: Don't…",
-   "id": "a07772720e04",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1957,23 +1990,6 @@
    "summary": "In The Know panelists debate whether Trump's decision to run for Midterm President will help or hurt republican candidates in this year's elections. Become an Onion member while it's still optional: https://membership.theonion.com/?campaign=701a500001geULHAA2 Powered by Forge…",
    "thumb": "https://i3.ytimg.com/vi/68KAR5Mra7U/hqdefault.jpg",
    "id": "6ada446ffe03",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Is This The Worst White House Press Briefing Ever?",
-   "url": "https://www.youtube.com/watch?v=zqnsDxJhrfs",
-   "source": "PoliticsJOE",
-   "feedId": "yt-politicsjoe",
-   "type": "video",
-   "tags": [
-    "comedy"
-   ],
-   "published": "2026-10-13T15:43:57.000Z",
-   "summary": "As Karoline Leavitt hangs up her MAGA card, new White House Press Secretary Katie Zachariah stepped into her shoes at the famous lectern to give her first briefing as Donald Trump's new Press Sec. It went about as well as you could imagine. Like PoliticsJOE? We need your…",
-   "thumb": "https://i3.ytimg.com/vi/zqnsDxJhrfs/hqdefault.jpg",
-   "id": "ba93d4c286f0",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2887,26 +2903,7 @@
    "score": 0,
    "matched": [],
    "why": "0"
-  },
-  {
-   "title": "Will the UK Rejoin the EU?",
-   "url": "https://www.youtube.com/watch?v=Ke_iFvL0A1c",
-   "source": "TLDR News",
-   "feedId": "yt-tldr-news",
-   "type": "video",
-   "tags": [
-    "news",
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-03T09:00:13.000Z",
-   "summary": "Take back your privacy - start using Proton Mail for free: http://proton.me/tldr It’s been a few days now, but the UK is still responding to the reverberations caused by Andy Burnham’s bombshell conference speech. But in this video, we’re going to focus on one of his speech's…",
-   "thumb": "https://i4.ytimg.com/vi/Ke_iFvL0A1c/hqdefault.jpg",
-   "id": "351eadf4554d",
-   "score": 0,
-   "matched": [],
-   "why": "0"
   }
  ],
- "contentHash": "da63c96f1e09"
+ "contentHash": "0c5d5333f81e"
 }
