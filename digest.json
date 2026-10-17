@@ -1,18 +1,16 @@
 {
- "generated": "2026-10-17T01:01:00.712Z",
+ "generated": "2026-10-17T03:50:24.480Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
-  "ok": 15,
-  "items": 41,
+  "ok": 6,
+  "items": 26,
   "duplicatesMerged": 0,
   "lengthsKnown": 0,
-  "lengthLookups": 9,
-  "lengthFailures": 9,
+  "lengthLookups": 0,
+  "lengthFailures": 0,
   "lengthVia": "video pages",
-  "lengthFailReasons": {
-   "no length on page": 9
-  }
+  "lengthFailReasons": {}
  },
  "feeds": [
   {
@@ -229,14 +227,15 @@
    "id": "yt-tldr-news",
    "name": "TLDR News",
    "type": "youtube",
-   "status": "ok",
-   "count": 4,
+   "status": "error",
+   "count": 0,
    "resolved": {
     "channelId": "UCSMqateX8OA2s1wsOR2EgJA",
     "title": "TLDR News",
     "via": "name search"
    },
-   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCSMqateX8OA2s1wsOR2EgJA"
+   "error": "not found (404)",
+   "http": 404
   },
   {
    "id": "yt-simplicissimus",
@@ -249,8 +248,8 @@
     "title": "Simplicissimus",
     "via": "name search"
    },
-   "error": "HTTP 500",
-   "http": 500
+   "error": "not found (404)",
+   "http": 404
   },
   {
    "id": "yt-aberrant-preach",
@@ -298,14 +297,15 @@
    "id": "yt-luke-beasley",
    "name": "Luke Beasley",
    "type": "youtube",
-   "status": "ok",
-   "count": 5,
+   "status": "error",
+   "count": 0,
    "resolved": {
     "channelId": "UCM05jgFNwoeXvWfO9GuExzA",
     "title": "Luke Beasley",
     "via": "name search"
    },
-   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCM05jgFNwoeXvWfO9GuExzA"
+   "error": "not found (404)",
+   "http": 404
   },
   {
    "id": "yt-finlay-christie",
@@ -423,14 +423,15 @@
    "id": "yt-the-economist",
    "name": "The Economist",
    "type": "youtube",
-   "status": "ok",
-   "count": 5,
+   "status": "error",
+   "count": 0,
    "resolved": {
     "channelId": "UC0p5jTq6Xx_DosDFxVXnWaQ",
     "title": "The Economist",
     "via": "name search"
    },
-   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC0p5jTq6Xx_DosDFxVXnWaQ"
+   "error": "not found (404)",
+   "http": 404
   },
   {
    "id": "yt-shark-tank-global",
@@ -520,14 +521,15 @@
    "id": "yt-history-marche",
    "name": "History Marche",
    "type": "youtube",
-   "status": "ok",
-   "count": 1,
+   "status": "error",
+   "count": 0,
    "resolved": {
     "channelId": "UC8MX9ECowgDMTOnFTE8EUJw",
     "title": "HistoryMarche",
     "via": "name search"
    },
-   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC8MX9ECowgDMTOnFTE8EUJw"
+   "error": "not found (404)",
+   "http": 404
   },
   {
    "id": "yt-radicalsoda",
@@ -547,14 +549,15 @@
    "id": "yt-how-money-works",
    "name": "How Money Works",
    "type": "youtube",
-   "status": "ok",
+   "status": "error",
    "count": 0,
    "resolved": {
     "channelId": "UCkCGANrihzExmu9QiqZpPlQ",
     "title": "How Money Works",
     "via": "name search"
    },
-   "url": "https://www.youtube.com/feeds/videos.xml?playlist_id=UULFkCGANrihzExmu9QiqZpPlQ"
+   "error": "not found (404)",
+   "http": 404
   },
   {
    "id": "yt-joel-haver",
@@ -574,14 +577,15 @@
    "id": "yt-bluejay",
    "name": "Bluejay",
    "type": "youtube",
-   "status": "ok",
+   "status": "error",
    "count": 0,
    "resolved": {
     "channelId": "UCvQ4C0f9_OWRf1uyobwqOwA",
     "title": "BlueJay",
     "via": "name search"
    },
-   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCvQ4C0f9_OWRf1uyobwqOwA"
+   "error": "not found (404)",
+   "http": 404
   },
   {
    "id": "yt-oversimplified",
@@ -601,14 +605,15 @@
    "id": "yt-ordinary-things",
    "name": "Ordinary Things",
    "type": "youtube",
-   "status": "ok",
+   "status": "error",
    "count": 0,
    "resolved": {
     "channelId": "UCxLYtICsUCWdr1YPrj5DtwA",
     "title": "Ordinary Things",
     "via": "name search"
    },
-   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCxLYtICsUCWdr1YPrj5DtwA"
+   "error": "not found (404)",
+   "http": 404
   },
   {
    "id": "yt-bacon",
@@ -642,35 +647,38 @@
    "id": "yt-j-j-mccullough",
    "name": "J.J. McCullough",
    "type": "youtube",
-   "status": "ok",
+   "status": "error",
    "count": 0,
    "resolved": {
     "channelId": "UCyhOl6uRlxryALlT5yifldw",
     "title": "J.J. McCullough",
     "via": "name search"
    },
-   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCyhOl6uRlxryALlT5yifldw"
+   "error": "not found (404)",
+   "http": 404
   },
   {
    "id": "yt-adam-neely",
    "name": "Adam Neely",
    "type": "youtube",
-   "status": "ok",
+   "status": "error",
    "count": 0,
    "resolved": {
     "channelId": "UCnkp4xDOwqqJD7sSM3xdUiQ",
     "title": "Adam Neely",
     "via": "name search"
    },
-   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCnkp4xDOwqqJD7sSM3xdUiQ"
+   "error": "not found (404)",
+   "http": 404
   },
   {
    "id": "rd-productmanagement",
    "name": "r/productmanagement",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 4,
-   "url": "https://www.reddit.com/r/productmanagement/top/.rss?t=day"
+   "lastOk": "2026-10-17T01:01:00.712Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-tech",
@@ -679,7 +687,7 @@
    "status": "cached",
    "count": 2,
    "lastOk": "2026-10-15T21:49:52.028Z",
-   "note": "rate-limited (429)"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-gaming",
@@ -688,16 +696,15 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-10-16T18:56:35.667Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
   },
   {
    "id": "rd-xbox",
@@ -706,7 +713,7 @@
    "status": "cached",
    "count": 5,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "rate-limited (429)"
   },
   {
    "id": "rd-slaythespire",
@@ -715,7 +722,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-geopolitics",
@@ -746,42 +753,6 @@
   }
  ],
  "items": [
-  {
-   "title": "MAGA Star Tries to JUSTIFY Trump's Tariffs😬",
-   "url": "https://www.youtube.com/shorts/54a0OGaWB8M",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-17T00:00:24.000Z",
-   "summary": "",
-   "thumb": "https://i2.ytimg.com/vi/54a0OGaWB8M/hqdefault.jpg",
-   "id": "b95dcfde6564",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "LIVE: Trump Fan LOSES IT at Luke! “YOU’RE A R*TARD!”",
-   "url": "https://www.youtube.com/watch?v=itVXPGT9HUE",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-16T23:50:18.000Z",
-   "summary": "BOOZE & NEWS: Today on the show, Luke reviews a hate video on him. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
-   "thumb": "https://i2.ytimg.com/vi/itVXPGT9HUE/hqdefault.jpg",
-   "id": "4761c2bec721",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
   {
    "title": "Domain is king. But which domain is king?",
    "url": "https://www.reddit.com/r/ProductManagement/comments/1x7uar9/domain_is_king_but_which_domain_is_king/",
@@ -815,37 +786,35 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "OMG: Trump HUMILIATES Katie IN PUBLIC AGAIN after FIRING HER!",
-   "url": "https://www.youtube.com/watch?v=7nvHOhUkPb4",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
+   "title": "Police assess Palestine Action post by national security adviser's wife",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1x7rhhu/police_assess_palestine_action_post_by_national/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
    "tags": [
     "politics",
-    "listen"
+    "british"
    ],
-   "published": "2026-10-16T21:15:08.000Z",
-   "summary": "Luke discusses the firing of former press secretary Katie Zacharia. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
-   "thumb": "https://i4.ytimg.com/vi/7nvHOhUkPb4/hqdefault.jpg",
-   "id": "f46fd8032c11",
+   "published": "2026-10-16T20:44:20.000Z",
+   "summary": "submitted by /u/ITMidget [link] [comments]",
+   "id": "207ebe8dba5f",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "BREAKING: Katie Zacharia Accidentally EXPOSES TRUMP, Then He ASKS HER TO LEAVE!",
-   "url": "https://www.youtube.com/watch?v=zvEfOFWOj_4",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
+   "title": "Rejoining single market could give UK a £150bn boost, Goldman Sachs claims",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1x7q8ow/rejoining_single_market_could_give_uk_a_150bn/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
    "tags": [
     "politics",
-    "listen"
+    "british"
    ],
-   "published": "2026-10-16T19:55:11.000Z",
-   "summary": "Today on the show, Luke discusses Trump preparing to fire Katie Zacharia, Tucker’s bizarre assertion, and more! Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected…",
-   "thumb": "https://i3.ytimg.com/vi/zvEfOFWOj_4/hqdefault.jpg",
-   "id": "18534f3741c4",
+   "published": "2026-10-16T19:54:46.000Z",
+   "summary": "submitted by /u/TennisMiddle6220 [link] [comments]",
+   "id": "87aedaced2f2",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -868,6 +837,23 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
+   "title": "Met police investigating row over founding of Your Party",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1x7ojmd/met_police_investigating_row_over_founding_of/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-16T18:48:50.000Z",
+   "summary": "submitted by /u/Bounty_drillah [link] [comments]",
+   "id": "f73a1997c54f",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
    "title": "Five children killed in Sudanese army airstrike on North Kordofan",
    "url": "https://www.reddit.com/r/geopolitics/comments/1x7o8al/five_children_killed_in_sudanese_army_airstrike/",
    "source": "r/geopolitics",
@@ -880,6 +866,23 @@
    "published": "2026-10-16T18:36:34.000Z",
    "summary": "submitted by /u/DayTrader_Dav [link] [comments]",
    "id": "c551aeb6b68e",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "NHS England tells hospitals to bar trans women from female wards",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1x7nq7s/nhs_england_tells_hospitals_to_bar_trans_women/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-16T18:17:31.000Z",
+   "summary": "submitted by /u/LeadingPiece9608 [link] [comments]",
+   "id": "1047814ccd8f",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -919,24 +922,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Alice Weidel: the AfD is “not an extreme party” | The Economist",
-   "url": "https://www.youtube.com/shorts/PoMuEHVxieA",
-   "source": "The Economist",
-   "feedId": "yt-the-economist",
-   "type": "video",
-   "tags": [
-    "finance",
-    "business"
-   ],
-   "published": "2026-10-16T16:58:53.000Z",
-   "summary": "Some members of Alternative for Germany, which is leading German opinion polls, have been linked neo-Nazi groups. The party’s co-leader, Alice Weidel, told The Economist’s editor-in-chief, Zanny Minton Beddoes, that accusations there are extremists within the AfD are…",
-   "thumb": "https://i1.ytimg.com/vi/PoMuEHVxieA/hqdefault.jpg",
-   "id": "a0c6e04f9f7c",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Attack on Starlink terminal: Authorities examine the trail to the Turkish mafia",
    "url": "https://www.reddit.com/r/geopolitics/comments/1x7lmx7/attack_on_starlink_terminal_authorities_examine/",
    "source": "r/geopolitics",
@@ -954,24 +939,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Trump supporter confronts me over the economy! #maga #trump #politics #biden #debate",
-   "url": "https://www.youtube.com/shorts/I9DXHmHshvc",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-16T16:30:04.000Z",
-   "summary": "",
-   "thumb": "https://i2.ytimg.com/vi/I9DXHmHshvc/hqdefault.jpg",
-   "id": "218308dfd2c2",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Target pensions or welfare, not banks, IMF tells John Healey",
    "url": "https://www.reddit.com/r/ukpolitics/comments/1x7k3rl/target_pensions_or_welfare_not_banks_imf_tells/",
    "source": "r/ukpolitics",
@@ -984,74 +951,6 @@
    "published": "2026-10-16T16:00:42.000Z",
    "summary": "submitted by /u/Asleep-Ad1182 [link] [comments]",
    "id": "4785c9e35ad1",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Army chief says politicians to start 'frank conversation' with public to prepare for war",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1x7j3kd/army_chief_says_politicians_to_start_frank/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-16T15:22:24.000Z",
-   "summary": "submitted by /u/DanceyMan [link] [comments]",
-   "id": "f9a727270211",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "@AliKh1886 on Twitter: “A certain Rachel asked Nobel laureate Paul Krugman a question at Oxford last night, casually noting the IMF’s praise for UK deficit and debt reduction and the productivity puzzle being revised away. All during her time as Chancellor, as it happens.”",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1x7fa2p/alikh1886_on_twitter_a_certain_rachel_asked_nobel/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-16T12:46:19.000Z",
-   "summary": "submitted by /u/JB_UK [link] [comments]",
-   "id": "140d13eb912c",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "British food and drink exports to EU collapse by more than a third since Brexit",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1x7f5p1/british_food_and_drink_exports_to_eu_collapse_by/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-16T12:40:47.000Z",
-   "summary": "submitted by /u/zeros3ss [link] [comments]",
-   "id": "42c3de897ffd",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Birmingham Reform UK councillor 'stripped and isolated' after being sent 'suspected asbestos'",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1x7ev9j/birmingham_reform_uk_councillor_stripped_and/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-16T12:27:13.000Z",
-   "summary": "submitted by /u/Eastern-Opposite9521 [link] [comments]",
-   "id": "1f849359ff4b",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1238,24 +1137,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Alice Weidel on whether Putin is interested in peace | The Economist",
-   "url": "https://www.youtube.com/shorts/hzb8aSMDwag",
-   "source": "The Economist",
-   "feedId": "yt-the-economist",
-   "type": "video",
-   "tags": [
-    "finance",
-    "business"
-   ],
-   "published": "2026-10-16T12:01:19.000Z",
-   "summary": "Is Vladimir Putin interested in peace? Alice Weidel, co-leader of the Alternative for Germany party, believes Germany should end all support for Ukraine. She tells The Economist’s editor-in-chief, Zanny Minton Beddoes that Europe needs to consider Russia’s security concerns.…",
-   "thumb": "https://i1.ytimg.com/vi/hzb8aSMDwag/hqdefault.jpg",
-   "id": "6146f190cada",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "Company is all-in on LLMs, and now I finally see where the worry is coming from",
    "url": "https://www.reddit.com/r/ProductManagement/comments/1x7dw6m/company_is_allin_on_llms_and_now_i_finally_see/",
    "source": "r/productmanagement",
@@ -1288,79 +1169,6 @@
    "why": "0"
   },
   {
-   "title": "Alice Weidel: Refugees should “go back to their country” | The Economist",
-   "url": "https://www.youtube.com/shorts/a5bQgsaao-M",
-   "source": "The Economist",
-   "feedId": "yt-the-economist",
-   "type": "video",
-   "tags": [
-    "finance",
-    "business"
-   ],
-   "published": "2026-10-15T20:00:14.000Z",
-   "summary": "Refugees “have to go back to their country” says Alice Weidel, the co-leader of the Alternative for Germany party. She explains to The Economist’s editor-in-chief, Zanny Minton Beddoes, why she thinks Afghan, Syrian and Ukrainian refugees should leave Germany. #germany…",
-   "thumb": "https://i2.ytimg.com/vi/a5bQgsaao-M/hqdefault.jpg",
-   "id": "f50fd9bd40f0",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Alice Weidel: Europe will have a bond-market crisis | The Economist",
-   "url": "https://www.youtube.com/shorts/3ChIbhEeIBg",
-   "source": "The Economist",
-   "feedId": "yt-the-economist",
-   "type": "video",
-   "tags": [
-    "finance",
-    "business"
-   ],
-   "published": "2026-10-15T17:16:33.000Z",
-   "summary": "Europe is heading for a bond-market crisis, says Alice Weidel, co-leader of the Alternative for Germany party. She tells The Economist’s editor-in-chief, Zanny Minton Beddoes, that high state debt and the rising cost of borrowing will be a disastrous combination for the euro…",
-   "thumb": "https://i4.ytimg.com/vi/3ChIbhEeIBg/hqdefault.jpg",
-   "id": "6c70f71d3040",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Germany is “wrong” to finance Ukraine war: Alice Weidel interview | The Economist",
-   "url": "https://www.youtube.com/watch?v=5sorengsI0I",
-   "source": "The Economist",
-   "feedId": "yt-the-economist",
-   "type": "video",
-   "tags": [
-    "finance",
-    "business"
-   ],
-   "published": "2026-10-15T17:00:25.000Z",
-   "summary": "Germany should stop financing an “already lost war” in Ukraine, says Alice Weidel. The co-leader of the populist-right Alternative for Germany, speaks to Zanny Minton Beddoes, The Economist’s editor-in-chief. Weidel argues that peace requires taking Russia’s security interests…",
-   "thumb": "https://i2.ytimg.com/vi/5sorengsI0I/hqdefault.jpg",
-   "id": "7313af3ed534",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Can Burnham Actually Ditch First-Past-the-Post?",
-   "url": "https://www.youtube.com/watch?v=QmGYruZYHCc",
-   "source": "TLDR News",
-   "feedId": "yt-tldr-news",
-   "type": "video",
-   "tags": [
-    "news",
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-15T09:30:07.000Z",
-   "summary": "Go to https://hensonshaving.com/TLDR and enter \"TLDR\" at checkout to get 100 free blades with your purchase. In this video we explore Burnham's promise to implement a more representative electoral system in the UK but will he actually succeed where countless other governments…",
-   "thumb": "https://i2.ytimg.com/vi/QmGYruZYHCc/hqdefault.jpg",
-   "id": "c979ca4f9006",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "NASA Develops Batteries to Power Humanity’s Return to Moon",
    "url": "https://www.reddit.com/r/tech/comments/1x67uas/nasa_develops_batteries_to_power_humanitys_return/",
    "source": "r/tech",
@@ -1375,82 +1183,7 @@
    "score": 0,
    "matched": [],
    "why": "0"
-  },
-  {
-   "title": "Could Another Brexit Debate End Farage?",
-   "url": "https://www.youtube.com/watch?v=ZeyP_CHjEZw",
-   "source": "TLDR News",
-   "feedId": "yt-tldr-news",
-   "type": "video",
-   "tags": [
-    "news",
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-13T09:00:14.000Z",
-   "summary": "Go to https://hensonshaving.com/TLDR and enter \"TLDR\" at checkout to get 100 free blades with your purchase. Nigel Farage said Andy Burnham’s comments about potentially rejoining the EU had given him “the biggest boost in [his] career\". We look at why — even if it seems…",
-   "thumb": "https://i3.ytimg.com/vi/ZeyP_CHjEZw/hqdefault.jpg",
-   "id": "b9534585cb6d",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "They Brought Mistresses. He Brought an Army - Turin 1706",
-   "url": "https://www.youtube.com/watch?v=CBIGgKGmQdk",
-   "source": "History Marche",
-   "feedId": "yt-history-marche",
-   "type": "video",
-   "tags": [
-    "education",
-    "history"
-   ],
-   "published": "2026-10-10T17:01:19.000Z",
-   "summary": "🚩 Head to https://betterhelp.com/historymarche to get 10% off your first month with our paid partner, BetterHelp. 🚩 Therapy can be a meaningful space to reflect, grow, and create positive change in your life. 🚩 War of the Spanish Succession Playlist:…",
-   "thumb": "https://i4.ytimg.com/vi/CBIGgKGmQdk/hqdefault.jpg",
-   "id": "ba4ba7fc2631",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "The Holborn & St Pancras Election Explained",
-   "url": "https://www.youtube.com/watch?v=i2DqUAaox_8",
-   "source": "TLDR News",
-   "feedId": "yt-tldr-news",
-   "type": "video",
-   "tags": [
-    "news",
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-09T09:55:54.000Z",
-   "summary": "Want to restore the planet’s ecosystems and see your impact in monthly videos? The first 100 people to join Planet Wild with my code NEWS10 will get the first month free on me: https://planetwild.com/r/tldrnews/join/10 If you want to get to know them better first, check out…",
-   "thumb": "https://i2.ytimg.com/vi/i2DqUAaox_8/hqdefault.jpg",
-   "id": "05ef77f1ded9",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Will the UK Rejoin the EU?",
-   "url": "https://www.youtube.com/watch?v=Ke_iFvL0A1c",
-   "source": "TLDR News",
-   "feedId": "yt-tldr-news",
-   "type": "video",
-   "tags": [
-    "news",
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-03T09:00:13.000Z",
-   "summary": "Take back your privacy - start using Proton Mail for free: http://proton.me/tldr It’s been a few days now, but the UK is still responding to the reverberations caused by Andy Burnham’s bombshell conference speech. But in this video, we’re going to focus on one of his speech's…",
-   "thumb": "https://i4.ytimg.com/vi/Ke_iFvL0A1c/hqdefault.jpg",
-   "id": "351eadf4554d",
-   "score": 0,
-   "matched": [],
-   "why": "0"
   }
  ],
- "contentHash": "661b7fb9affb"
+ "contentHash": "9596de4a430c"
 }
