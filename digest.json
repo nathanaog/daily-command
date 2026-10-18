@@ -1,17 +1,17 @@
 {
- "generated": "2026-10-18T12:54:23.185Z",
+ "generated": "2026-10-18T15:44:30.519Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
-  "ok": 51,
-  "items": 108,
+  "ok": 50,
+  "items": 109,
   "duplicatesMerged": 0,
   "lengthsKnown": 2,
-  "lengthLookups": 95,
-  "lengthFailures": 95,
+  "lengthLookups": 97,
+  "lengthFailures": 97,
   "lengthVia": "video pages",
   "lengthFailReasons": {
-   "no length on page": 95
+   "HTTP 429": 97
   }
  },
  "feeds": [
@@ -228,7 +228,7 @@
    "name": "Simplicissimus",
    "type": "youtube",
    "status": "ok",
-   "count": 1,
+   "count": 2,
    "resolved": {
     "channelId": "UCKGMHVipEvuZudhHD05FOYA",
     "title": "Simplicissimus",
@@ -592,7 +592,7 @@
    "name": "Economics Explained",
    "type": "youtube",
    "status": "ok",
-   "count": 2,
+   "count": 3,
    "resolved": {
     "channelId": "UCZ4AMrDcNrfy3X6nsU8-rPg",
     "title": "Economics Explained",
@@ -630,18 +630,19 @@
    "id": "rd-productmanagement",
    "name": "r/productmanagement",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 2,
-   "url": "https://www.reddit.com/r/productmanagement/top/.rss?t=day"
+   "lastOk": "2026-10-18T12:54:23.185Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-tech",
    "name": "r/tech",
    "type": "reddit",
-   "status": "cached",
-   "count": 1,
+   "status": "waiting",
+   "count": 0,
    "lastOk": "2026-10-15T21:49:52.028Z",
-   "note": "rate-limited (429)"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-gaming",
@@ -650,25 +651,26 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-10-18T06:58:58.801Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
   },
   {
    "id": "rd-xbox",
    "name": "r/xbox",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-slaythespire",
@@ -677,7 +679,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-geopolitics",
@@ -709,6 +711,135 @@
  ],
  "items": [
   {
+   "title": "Die Lage in Paris nach den Protesten: Aufräumen und Analyse der Gewalt",
+   "url": "https://www.youtube.com/watch?v=2hdKGZHYLIc",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-18T15:31:52.000Z",
+   "summary": "Nach den landesweiten Protesten hat die französische Regierung Entsetzen geäußert über das Ausmaß an Gewalt. Vor allem in den Großstädten griffen vermummte Randalierer Polizeistationen an, setzten Gebäude in Brand und plünderten Geschäfte. Laut Regierung wurden etwa 1.800…",
+   "thumb": "https://i3.ytimg.com/vi/2hdKGZHYLIc/hqdefault.jpg",
+   "id": "0f7f0b1722c2",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "SHOUTING Erupts as Fox Host EXPOSES MAGA Co-Host Live On TV!",
+   "url": "https://www.youtube.com/watch?v=uwFMZ8IJ82c",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-18T15:30:17.000Z",
+   "summary": "Luke discusses a recent moment from Fox News' The Five. Check out Jessica's book below! https://sites.prh.com/idisagree Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get…",
+   "thumb": "https://i2.ytimg.com/vi/uwFMZ8IJ82c/hqdefault.jpg",
+   "id": "fd6b28f8741b",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Living Paycheck to Paycheck? So Is Everyone Else",
+   "url": "https://www.youtube.com/watch?v=FZWLIOKUcIo",
+   "source": "Economics Explained",
+   "feedId": "yt-economics-explained",
+   "type": "video",
+   "tags": [
+    "finance",
+    "listen"
+   ],
+   "published": "2026-10-18T15:04:58.000Z",
+   "summary": "Ready to be seen? Check that appointment off your to-do list with Zocdoc ✅ : https://zocdoc.com/ee #sponsored 📫 11,231+ read our free newsletter that has weekly original stories Sign up: → https://economics-explained-tv-program.beehiiv.com/ This video was made possible by our…",
+   "thumb": "https://i3.ytimg.com/vi/FZWLIOKUcIo/hqdefault.jpg",
+   "id": "c1b0103afba2",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Wie dieser Junge die USA gehackt hat",
+   "url": "https://www.youtube.com/watch?v=3eJ2KhzWZVM",
+   "source": "Simplicissimus",
+   "feedId": "yt-simplicissimus",
+   "type": "video",
+   "tags": [
+    "german",
+    "education"
+   ],
+   "published": "2026-10-18T14:00:02.000Z",
+   "summary": "Checkt die Musik bei Epidemic Sound aus und sichert euch 50% Rabatt mit dem Code SIMPLI50 auf alle Jahresabos: https://simpli.deals/epidemicsound106 (Werbung) Das ist die Geschichte vom meistgesuchten Hacker der Welt. Dieses Video basiert größtenteils auf dem Buch „Das Phantom…",
+   "thumb": "https://i4.ytimg.com/vi/3eJ2KhzWZVM/hqdefault.jpg",
+   "id": "0b33d61e65f1",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Erneut Sicherheitsvorfall am Flughafen Leipzig/Halle",
+   "url": "https://www.youtube.com/watch?v=2-vFlj9B2j0",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-18T13:34:06.000Z",
+   "summary": "Die Polizei hat wegen eines durchtrennten Zauns das Gelände des Flughafens Leipzig/Halle durchsucht - bislang ohne etwas Verdächtiges gefunden zu haben. Die Ermittler vermuten, dass ein Auto den Zaun durchbrochen hat. Der Flugverkehr ist trotz einer gesperrten Nordpiste nicht…",
+   "thumb": "https://i3.ytimg.com/vi/2-vFlj9B2j0/hqdefault.jpg",
+   "id": "987c95450c47",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "What's next for Ukraine after Trump waives Russian sanctions?",
+   "url": "https://www.youtube.com/watch?v=K35hh1JrtZs",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-18T13:00:43.000Z",
+   "summary": "Donald Trump has paused a sweeping new sanctions package targeting the Russian economy, just a week after reaching a diesel agreement with Putin. The US President told Congress the pause on the legislation passed by both chambers was in the national interest, in an executive…",
+   "thumb": "https://i4.ytimg.com/vi/K35hh1JrtZs/hqdefault.jpg",
+   "id": "6fcba7267a74",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "KT: Behind the Tape (Ep: 789 Tim Butterly + Kirk Fox)",
+   "url": "https://www.youtube.com/watch?v=J97RDpBsDHg",
+   "source": "Kill Tony",
+   "feedId": "yt-kill-tony",
+   "type": "video",
+   "tags": [
+    "comedy",
+    "standup",
+    "listen"
+   ],
+   "published": "2026-10-18T13:00:10.000Z",
+   "summary": "An exclusive, behind the scenes look from KT Episode 789 KT guest Tim Butterly + Kirk Fox Tim Butterly, Kirk Fox, Pat O'Neill, Dedrick Flynn, Martin Phillips, D Madness, Michael A. Gonzales, Jon Deas, Matthew Muehling, Grooveline Horns, Joe White, Troy Conrad, Monica Colt…",
+   "thumb": "https://i3.ytimg.com/vi/J97RDpBsDHg/hqdefault.jpg",
+   "id": "5961f53720ee",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
    "title": "A mind-expanding conversation on how models actually work | Emmanuel Ameisen (Anthropic)",
    "url": "https://www.youtube.com/watch?v=JHo-aiePjoM",
    "source": "Lenny's Podcast",
@@ -728,7 +859,7 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Lewis Goodall vs Matt Goodwin on Reform’s racism scandal",
+   "title": "Reform and Farage accused of ‘attracting the far right’?",
    "url": "https://www.youtube.com/watch?v=bllF-yenTw8",
    "source": "LBC",
    "feedId": "yt-lbc",
@@ -802,25 +933,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "KT: Behind the Tape (Ep: 789 Tim Butterly + Kirk Fox)",
-   "url": "https://www.youtube.com/watch?v=J97RDpBsDHg",
-   "source": "Kill Tony",
-   "feedId": "yt-kill-tony",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "standup",
-    "listen"
-   ],
-   "published": "2026-10-18T09:45:31.000Z",
-   "summary": "An exclusive, behind the scenes look from KT Episode 789 KT guest Tim Butterly + Kirk Fox Tim Butterly, Kirk Fox, Pat O'Neill, Dedrick Flynn, Martin Phillips, D Madness, Michael A. Gonzales, Jon Deas, Matthew Muehling, Grooveline Horns, Joe White, Troy Conrad, Monica Colt…",
-   "thumb": "https://i3.ytimg.com/vi/J97RDpBsDHg/hqdefault.jpg",
-   "id": "5961f53720ee",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Chaos in Frankreich: Rathäuser gestürmt, Straßen verwüstet",
    "url": "https://www.youtube.com/watch?v=-AbQijDQTSE",
    "source": "Tagesschau",
@@ -832,9 +944,60 @@
     "listen"
    ],
    "published": "2026-10-18T09:35:21.000Z",
-   "summary": "An einem landesweiten Protesttag gegen hohe Lebenshaltungskosten ist es in Frankreich zu schweren Ausschreitungen und Plünderungen gekommen. In Limoges setzten Randalierer das historische Rathaus in Brand. 1.200 Menschen wurden festgenommen. Weitere Informationen:…",
+   "summary": "An einem landesweiten Protesttag gegen hohe Lebenshaltungskosten ist es in Frankreich zu schweren Ausschreitungen und Plünderungen gekommen. In Limoges setzten Randalierer:innen das historische Rathaus in Brand. 1.200 Menschen wurden festgenommen. Weitere Informationen:…",
    "thumb": "https://i2.ytimg.com/vi/-AbQijDQTSE/hqdefault.jpg",
    "id": "bf5fdfcb0b56",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "‘Well-known individual’ tries to secure permanent injunction against Guardian and ITN | The Guardian",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1x8y54v/wellknown_individual_tries_to_secure_permanent/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-18T08:36:39.000Z",
+   "summary": "submitted by /u/Penarthlan [link] [comments]",
+   "id": "18094b5b4f7f",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Pro-Palestine activists vandalise homes of defence bosses",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1x8xo5o/propalestine_activists_vandalise_homes_of_defence/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-18T08:06:13.000Z",
+   "summary": "submitted by /u/HibasakiSanjuro [link] [comments]",
+   "id": "fb807fb1e06f",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "UK wants to lead the world on frontier AI safety. It can't decide where to start",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1x8xo3b/uk_wants_to_lead_the_world_on_frontier_ai_safety/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-18T08:06:07.000Z",
+   "summary": "submitted by /u/RareEarthPetal [link] [comments]",
+   "id": "fde0885f90f8",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -852,6 +1015,40 @@
    "published": "2026-10-18T07:36:31.000Z",
    "summary": "submitted by /u/Beginning-Wish-4273 [link] [comments]",
    "id": "7abf7600417e",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Inside Reform: Aspiring Reform MP calls for 'concentration camps' for migrants",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1x8wi35/inside_reform_aspiring_reform_mp_calls_for/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-18T06:55:37.000Z",
+   "summary": "submitted by /u/RareEarthPetal [link] [comments]",
+   "id": "d9e554b30f80",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Heat pumps and insulation would cut UK living costs more than new oilfields, study suggests",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1x8wgfl/heat_pumps_and_insulation_would_cut_uk_living/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-18T06:52:50.000Z",
+   "summary": "submitted by /u/gravy_baron [link] [comments]",
+   "id": "9051aa33b904",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -901,107 +1098,6 @@
    "published": "2026-10-18T06:08:29.000Z",
    "summary": "submitted by /u/NotSoSaneExile [link] [comments]",
    "id": "a9ccb96045b6",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Mother referred to Prevent for ‘over-identifying with Israel’. Holly Passmore says police asked why she was interested in ‘Jewish issues’ and labelled the postgraduate student as ‘vulnerable’",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1x8mn3v/mother_referred_to_prevent_for_overidentifying/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-17T22:08:35.000Z",
-   "summary": "submitted by /u/ITMidget [link] [comments]",
-   "id": "731fdbc022af",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Chancellor should cut benefits instead of taxing banks, says International Monetary Fund",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1x8k3pq/chancellor_should_cut_benefits_instead_of_taxing/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-17T20:17:26.000Z",
-   "summary": "submitted by /u/Desperate-Drawer-572 [link] [comments]",
-   "id": "78224f8a1084",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Bank of England governor walks out of IMF summit in protest against Russia",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1x8j53c/bank_of_england_governor_walks_out_of_imf_summit/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-17T19:37:17.000Z",
-   "summary": "submitted by /u/FeigenbaumC [link] [comments]",
-   "id": "f46e5a0ec4c0",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Reform candidate filmed saying asylum seekers should be put in ‘concentration camps’",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1x8itaq/reform_candidate_filmed_saying_asylum_seekers/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-17T19:23:39.000Z",
-   "summary": "submitted by /u/Dismal_Uses [link] [comments]",
-   "id": "a3bca48355a9",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Burnham accused of hypocrisy over Hillsborough Law - Backbench MPs, shadow ministers, and peers exempted from new offence for officials who mislead public",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1x8icjx/burnham_accused_of_hypocrisy_over_hillsborough/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-17T19:04:23.000Z",
-   "summary": "submitted by /u/blast-processor [link] [comments]",
-   "id": "9f39ad0174a9",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Researchers turn mushrooms into living memory chips for sustainable computing",
-   "url": "https://www.reddit.com/r/tech/comments/1x6ldb1/researchers_turn_mushrooms_into_living_memory/",
-   "source": "r/tech",
-   "feedId": "rd-tech",
-   "type": "post",
-   "tags": [
-    "tech"
-   ],
-   "published": "2026-10-15T13:16:32.000Z",
-   "summary": "submitted by /u/AdSpecialist6598 [link] [comments]",
-   "id": "97642c9187aa",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1099,25 +1195,6 @@
    "why": "0"
   },
   {
-   "title": "tagesschau 20:00 Uhr, 17.10.2026",
-   "url": "https://www.youtube.com/watch?v=BUfNTS-QoXU",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-17T18:33:40.000Z",
-   "summary": "Die 20-Uhr-Ausgabe der tagesschau im Livestream und auf Abruf findet ihr auch hier: https://ardmediathek.de/tagesschau und https://tagesschau.de Themen der tagesschau-Sendung: 00:00 Guten Abend 0:22 Sondierungsgespräche der Dreier-Koalition in Berlin erfolgreich beendet 02:18…",
-   "thumb": "https://i3.ytimg.com/vi/BUfNTS-QoXU/hqdefault.jpg",
-   "id": "095fdb631799",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "OH DAMN: Watch Trump INSULTS HIS FANS To Their Face!",
    "url": "https://www.youtube.com/watch?v=4xX2gSzX8Ms",
    "source": "Luke Beasley",
@@ -1189,25 +1266,6 @@
    "why": "0"
   },
   {
-   "title": "Olivenernte im Westjordanland: Bedrohung durch radikale Siedler",
-   "url": "https://www.youtube.com/watch?v=jUph90-zpmE",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-17T16:08:48.000Z",
-   "summary": "Bei Angriffen von radikalen israelischen Siedlern im besetzten Westjordanland hat es Berichten zufolge eine Reihe von Verletzten gegeben. Die Gewalt habe sich vor allem gegen palästinensische Helfer bei der Olivenernte gerichtet. Weitere Informationen:…",
-   "thumb": "https://i3.ytimg.com/vi/jUph90-zpmE/hqdefault.jpg",
-   "id": "f8180e70f452",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "Viral Spotlight: Lori Offers $1 Million for Everlywell | Shark Tank US | Shark Tank Global",
    "url": "https://www.youtube.com/watch?v=nd1nJALU1MU",
    "source": "Shark Tank Global",
@@ -1221,24 +1279,6 @@
    "summary": "Julia Cheek enters the Tank seeking $1 million for 5% of Everlywell, a company making at-home lab testing more accessible and easier to understand. With millions in sales and a growing market, can Julia convince the Sharks to invest in her vision? From Season 9, Episode 12…",
    "thumb": "https://i3.ytimg.com/vi/nd1nJALU1MU/hqdefault.jpg",
    "id": "25e00b1783e7",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Best!ality…",
-   "url": "https://www.youtube.com/watch?v=8cNlEHU1yWQ",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-17T15:30:18.000Z",
-   "summary": "Luke discusses a wild clip of Tucker Carlson that shocked him. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
-   "thumb": "https://i1.ytimg.com/vi/8cNlEHU1yWQ/hqdefault.jpg",
-   "id": "501d814bf132",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1274,24 +1314,6 @@
    "published": "2026-10-17T14:25:27.000Z",
    "summary": "The United Arab Emirates has agreed to re-enter the Yemen conflict by resuming payments to some government forces fighting Iran-aligned Houthis in the south, according to sources in Yemen. In return, Saudi Arabia has agreed to provide air cover for the anti-Houthi force. The…",
    "id": "e86d8f0ab4eb",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "'Trump officially adheres himself to Putin' | Simon Marks reacts",
-   "url": "https://www.youtube.com/watch?v=qNRI9dyDQzg",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-17T12:45:29.000Z",
-   "summary": "Simon Marks joins Matt Frei to discuss Trump's 'betrayal' of Zelenskyy as the US President halts sanctions on Russia following his diesel deal with Putin. The President has been met with widespread criticism after making the announcement. A dozen US senators, including six…",
-   "thumb": "https://i2.ytimg.com/vi/qNRI9dyDQzg/hqdefault.jpg",
-   "id": "4226cc5f0e7f",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2644,5 +2666,5 @@
    "why": "0"
   }
  ],
- "contentHash": "d238182b193d"
+ "contentHash": "c6aaf5fb93b3"
 }
