@@ -1,17 +1,17 @@
 {
- "generated": "2026-10-18T09:47:10.984Z",
+ "generated": "2026-10-18T12:54:23.185Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
   "ok": 51,
-  "items": 106,
+  "items": 108,
   "duplicatesMerged": 0,
   "lengthsKnown": 2,
   "lengthLookups": 95,
-  "lengthFailures": 93,
+  "lengthFailures": 95,
   "lengthVia": "video pages",
   "lengthFailReasons": {
-   "no length on page": 93
+   "no length on page": 95
   }
  },
  "feeds": [
@@ -423,7 +423,7 @@
    "name": "Kill Tony",
    "type": "youtube",
    "status": "ok",
-   "count": 3,
+   "count": 4,
    "resolved": {
     "channelId": "UCwzCMiicL-hBUzyjWiJaseg",
     "title": "Kill Tony",
@@ -514,7 +514,7 @@
    "name": "How Money Works",
    "type": "youtube",
    "status": "ok",
-   "count": 0,
+   "count": 1,
    "resolved": {
     "channelId": "UCkCGANrihzExmu9QiqZpPlQ",
     "title": "How Money Works",
@@ -630,10 +630,9 @@
    "id": "rd-productmanagement",
    "name": "r/productmanagement",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 2,
-   "lastOk": "2026-10-18T03:50:19.524Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/productmanagement/top/.rss?t=day"
   },
   {
    "id": "rd-tech",
@@ -642,7 +641,7 @@
    "status": "cached",
    "count": 1,
    "lastOk": "2026-10-15T21:49:52.028Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)"
   },
   {
    "id": "rd-gaming",
@@ -651,7 +650,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-ukpolitics",
@@ -684,20 +683,19 @@
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 3,
-   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
+   "lastOk": "2026-10-18T09:47:10.984Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-germany",
    "name": "r/germany",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": "2026-10-15T00:59:57.533Z",
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-unitedkingdom",
@@ -706,10 +704,122 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   }
  ],
  "items": [
+  {
+   "title": "A mind-expanding conversation on how models actually work | Emmanuel Ameisen (Anthropic)",
+   "url": "https://www.youtube.com/watch?v=JHo-aiePjoM",
+   "source": "Lenny's Podcast",
+   "feedId": "yt-lenny-s-podcast",
+   "type": "video",
+   "tags": [
+    "product",
+    "business",
+    "listen"
+   ],
+   "published": "2026-10-18T12:30:11.000Z",
+   "summary": "Emmanuel Ameisen is an interpretability researcher at Anthropic, where he looks inside LLMs like Claude to understand how they think. Before joining Anthropic, he spent years in applied ML at Stripe and Insight, and is the author of Building Machine Learning Powered…",
+   "thumb": "https://i3.ytimg.com/vi/JHo-aiePjoM/hqdefault.jpg",
+   "id": "d05f647549ef",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Lewis Goodall vs Matt Goodwin on Reform’s racism scandal",
+   "url": "https://www.youtube.com/watch?v=bllF-yenTw8",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-18T11:54:44.000Z",
+   "summary": "Lewis Goodall debated Matt Goodwin, a Reform member and GB News presenter on the latest scandal to hit the party. A Reform councillor said he would “quite happily” carry out executions of grooming gang perpetrators in the Rose Garden at Downing Street, while Nigel Farage…",
+   "thumb": "https://i3.ytimg.com/vi/bllF-yenTw8/hqdefault.jpg",
+   "id": "ab01a2c94c6d",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "tHe pOpULaTiOn iS CoLlapSiNg!",
+   "url": "https://www.youtube.com/watch?v=xWLCnTcyYAI",
+   "source": "How Money Works",
+   "feedId": "yt-how-money-works",
+   "type": "video",
+   "tags": [
+    "finance",
+    "business",
+    "listen"
+   ],
+   "published": "2026-10-18T11:24:16.000Z",
+   "summary": "Thanks to Monarch for partnering with me! Start your free trial and get 50% off your first year of total money clarity using my link https://monarchmoney.yt.link/781l1Eu or code hmw50 for 50% Off Monarch Core tier. ---- Sign up for our FREE newsletter! -…",
+   "thumb": "https://i1.ytimg.com/vi/xWLCnTcyYAI/hqdefault.jpg",
+   "id": "35432c4d131e",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "„Deutschlandtag\" der Jungen Union: ARD-Korrespondentin über Rede von Markus Söder",
+   "url": "https://www.youtube.com/watch?v=LTNY5JAcWOo",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-18T11:01:22.000Z",
+   "summary": "Die Junge Union hat ihren sogenannten Deutschlandtag in Bonn fortgesetzt. Zum Abschluss des dreitägigen Treffens wurde CSU-Chef Söder von den jungen Delegierten von CDU und CSU empfangen. Bei seiner Rede ging er hart mit der AfD ins Gericht und forderte zugleich wörtlich eine…",
+   "thumb": "https://i1.ytimg.com/vi/LTNY5JAcWOo/hqdefault.jpg",
+   "id": "fd96e3a1f6ee",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Trump accused of 'sabotaging' Ukraine's drones",
+   "url": "https://www.youtube.com/watch?v=GEIsEXt9AcU",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-18T10:26:32.000Z",
+   "summary": "Volodymyr Zelenskyy has claimed speed limits on Ukrainian Starlink systems are part of a \"planned operation\" aimed at undermining Ukraine's defence capabilities. Lewis Goodall put this latest development in the war to the Health Secretary and former Foreign Secretary, Yvette…",
+   "thumb": "https://i4.ytimg.com/vi/GEIsEXt9AcU/hqdefault.jpg",
+   "id": "719e8724a915",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "KT: Behind the Tape (Ep: 789 Tim Butterly + Kirk Fox)",
+   "url": "https://www.youtube.com/watch?v=J97RDpBsDHg",
+   "source": "Kill Tony",
+   "feedId": "yt-kill-tony",
+   "type": "video",
+   "tags": [
+    "comedy",
+    "standup",
+    "listen"
+   ],
+   "published": "2026-10-18T09:45:31.000Z",
+   "summary": "An exclusive, behind the scenes look from KT Episode 789 KT guest Tim Butterly + Kirk Fox Tim Butterly, Kirk Fox, Pat O'Neill, Dedrick Flynn, Martin Phillips, D Madness, Michael A. Gonzales, Jon Deas, Matthew Muehling, Grooveline Horns, Joe White, Troy Conrad, Monica Colt…",
+   "thumb": "https://i3.ytimg.com/vi/J97RDpBsDHg/hqdefault.jpg",
+   "id": "5961f53720ee",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
   {
    "title": "Chaos in Frankreich: Rathäuser gestürmt, Straßen verwüstet",
    "url": "https://www.youtube.com/watch?v=-AbQijDQTSE",
@@ -747,6 +857,38 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
+   "title": "How to succeed at owning and leading the product at 0-1 stage startup as the only product manager?",
+   "url": "https://www.reddit.com/r/ProductManagement/comments/1x8we02/how_to_succeed_at_owning_and_leading_the_product/",
+   "source": "r/productmanagement",
+   "feedId": "rd-productmanagement",
+   "type": "post",
+   "tags": [
+    "product"
+   ],
+   "published": "2026-10-18T06:48:46.000Z",
+   "summary": "The last product manager was really hands on and there are really high expectations here. How do I place myself for success? It has been 4 days after joining and the expectation is that I will start leading the roadmap and the execution but my confidence shatters everyday…",
+   "id": "8699175687bc",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "How are PMs handling the threat of vibe-coded clones?",
+   "url": "https://www.reddit.com/r/ProductManagement/comments/1x8vu7l/how_are_pms_handling_the_threat_of_vibecoded/",
+   "source": "r/productmanagement",
+   "feedId": "rd-productmanagement",
+   "type": "post",
+   "tags": [
+    "product"
+   ],
+   "published": "2026-10-18T06:14:26.000Z",
+   "summary": "I’m a PM for Machine Learning and Data Analytics in a technical software app that has been around for a while so we are well established. I am one of the few at my company trying to stay ahead of the latest developments and news in AI which makes it harder to convince others…",
+   "id": "3b19085d142d",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
    "title": "Western bans on Israeli settlement goods could cost 4,000 Palestinians their jobs",
    "url": "https://www.reddit.com/r/geopolitics/comments/1x8vqkn/western_bans_on_israeli_settlement_goods_could/",
    "source": "r/geopolitics",
@@ -759,43 +901,6 @@
    "published": "2026-10-18T06:08:29.000Z",
    "summary": "submitted by /u/NotSoSaneExile [link] [comments]",
    "id": "a9ccb96045b6",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "OH DAMN: Trump’s Brain COLLAPSED While On Stage at INSANE RALLY!",
-   "url": "https://www.youtube.com/watch?v=DGovnTONGbY",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-17T23:30:16.000Z",
-   "summary": "Luke discusses some wild moments from Trump's recent rallies. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
-   "thumb": "https://i1.ytimg.com/vi/DGovnTONGbY/hqdefault.jpg",
-   "id": "f3fefb98fdd2",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "tagesthemen 23:30 Uhr, 17.10.2026",
-   "url": "https://www.youtube.com/watch?v=PJcng_jeBjY",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-17T22:26:17.000Z",
-   "summary": "tagesthemen 23:30 Uhr Proteste in Frankreich eskalieren, Rot-Grün-Rot in Berlin einigen sich auf Koalitionsgespräche, Kanzler Merz hält Rede auf dem Deutschlandtag der Jungen Union, US-Präsident Trump setzt Sanktionen gegen Russland aus, Ausstellung \"Zeit und Zeichen\" in…",
-   "thumb": "https://i1.ytimg.com/vi/PJcng_jeBjY/hqdefault.jpg",
-   "id": "31f728974a5b",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -900,6 +1005,43 @@
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "OH DAMN: Trump’s Brain COLLAPSED While On Stage at INSANE RALLY!",
+   "url": "https://www.youtube.com/watch?v=DGovnTONGbY",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-17T23:30:16.000Z",
+   "summary": "Luke discusses some wild moments from Trump's recent rallies. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
+   "thumb": "https://i1.ytimg.com/vi/DGovnTONGbY/hqdefault.jpg",
+   "id": "f3fefb98fdd2",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "tagesthemen 23:30 Uhr, 17.10.2026",
+   "url": "https://www.youtube.com/watch?v=PJcng_jeBjY",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-17T22:26:17.000Z",
+   "summary": "tagesthemen 23:30 Uhr Proteste in Frankreich eskalieren, Rot-Grün-Rot in Berlin einigen sich auf Koalitionsgespräche, Kanzler Merz hält Rede auf dem Deutschlandtag der Jungen Union, US-Präsident Trump setzt Sanktionen gegen Russland aus, Ausstellung \"Zeit und Zeichen\" in…",
+   "thumb": "https://i1.ytimg.com/vi/PJcng_jeBjY/hqdefault.jpg",
+   "id": "31f728974a5b",
+   "score": 0,
+   "matched": [],
+   "why": "0"
   },
   {
    "title": "OH SH*T: Chris Cuomo LIGHTS UP Steve Bannon TO HIS FACE!",
@@ -1102,25 +1244,6 @@
    "why": "0"
   },
   {
-   "title": "Trump stoppt US-Sanktionen gegen Russland",
-   "url": "https://www.youtube.com/watch?v=I4J6Njq8TRc",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-17T15:21:33.000Z",
-   "summary": "Eine Woche nach dem umstrittenen Diesel-Deal hat US-Präsident Trump nun auch ein umfassendes Sanktionspaket gegen Russland kurz vor dem Inkrafttreten gestoppt. Das nach dem verstorbenen Senator Lindsey Graham benannte Gesetz sah unter anderem Strafzölle gegen Importeure von…",
-   "thumb": "https://i2.ytimg.com/vi/I4J6Njq8TRc/hqdefault.jpg",
-   "id": "ac0545450024",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "LBC callers face off with Reform politician over small boats policy",
    "url": "https://www.youtube.com/watch?v=eRBykngBDcM",
    "source": "LBC",
@@ -1174,24 +1297,6 @@
    "why": "0"
   },
   {
-   "title": "Is Britain ready for war? Former Army chief warns the UK 'must prepare'",
-   "url": "https://www.youtube.com/watch?v=z3v4SjRG9oc",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-17T11:45:17.000Z",
-   "summary": "Is Britain prepared for an increasingly dangerous world and what happens if the UK can no longer rely on the United States? Lieutenant Colonel Stuart Crawford, former British Army officer and defence analyst, warns that while he does not believe the world is on the brink of…",
-   "thumb": "https://i3.ytimg.com/vi/z3v4SjRG9oc/hqdefault.jpg",
-   "id": "c25f5a14a9b1",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "The Russian Bot Apocalypse",
    "url": "https://www.youtube.com/watch?v=JnceIDVMZyQ",
    "source": "Patrick Boyle",
@@ -1211,24 +1316,6 @@
    "why": "0"
   },
   {
-   "title": "Zelenskyy transforms from diplomat to war leader",
-   "url": "https://www.youtube.com/watch?v=GcDsh7_hNgI",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-17T10:35:04.000Z",
-   "summary": "Volodymyr Zelenskyy has hit back at Donald Trump after the US President branded him a \"disgrace\" over energy strikes against Russia. Trump has paused a sweeping new sanctions package targeting the Russian economy just one week after reaching a diesel agreement with Putin. The…",
-   "thumb": "https://i4.ytimg.com/vi/GcDsh7_hNgI/hqdefault.jpg",
-   "id": "36d4164c830d",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "Ireland Grinds to a Halt amid Biggest Strike in Nearly 20 years",
    "url": "https://www.youtube.com/watch?v=5GL6eZEOojE",
    "source": "PoliticsJOE",
@@ -1241,38 +1328,6 @@
    "summary": "Public sector workers across Ireland walked out today in the biggest strike Ireland has seen in 17 years, with about 300,000 predicted to be on the picket calling for better pay and conditions as the cost of living crisis continues to bite. We went down to a picket at Dublin's…",
    "thumb": "https://i2.ytimg.com/vi/5GL6eZEOojE/hqdefault.jpg",
    "id": "a382d0cf68fe",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Does the “behind the scenes” part of PM work count toward performance, or is it just assumed?",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1x84prz/does_the_behind_the_scenes_part_of_pm_work_count/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-10-17T08:09:34.000Z",
-   "summary": "I've been thinking about this and kinda frustrated it's not clearly stated.. but product management is naturally a role built on coordination, not just shipping. A huge chunk of the job is unblocking people, chasing alignment, catching things that fall between teams and roles.…",
-   "id": "083d78985ad5",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Non-technical PMs that do work in tech related products, how do you do it?",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1x827a0/nontechnical_pms_that_do_work_in_tech_related/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-10-17T05:36:41.000Z",
-   "summary": "So, I am currently working in a startup but my degree is not related. I do not have a business or computer science background. I just kind of fell into this, I didn’t even know it existed if I’m being honest 😅. That being said, I am working on a social media app and I would…",
-   "id": "cffdfbbab4a5",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2587,26 +2642,7 @@
    "score": 0,
    "matched": [],
    "why": "0"
-  },
-  {
-   "title": "OpenAI’s Head of ChatGPT: We’re entering a new era of AI (again) | Tibo Sottiaux",
-   "url": "https://www.youtube.com/watch?v=MM-C3JqCXBk",
-   "source": "Lenny's Podcast",
-   "feedId": "yt-lenny-s-podcast",
-   "type": "video",
-   "tags": [
-    "product",
-    "business",
-    "listen"
-   ],
-   "published": "2026-10-04T12:30:30.000Z",
-   "summary": "Tibo Sottiaux leads ChatGPT and Codex at OpenAI. Under his stewardship, OpenAI has shipped some of its most consequential consumer launches: Codex, ChatGPT Work, and most recently, the new Dots personal agent platform. He joined me at DevDay, hours after his team launched more…",
-   "thumb": "https://i2.ytimg.com/vi/MM-C3JqCXBk/hqdefault.jpg",
-   "id": "3d9d58f18472",
-   "score": 0,
-   "matched": [],
-   "why": "0"
   }
  ],
- "contentHash": "548905f9db98"
+ "contentHash": "d238182b193d"
 }
