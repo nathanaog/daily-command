@@ -1,18 +1,16 @@
 {
- "generated": "2026-10-18T03:50:19.524Z",
+ "generated": "2026-10-18T06:58:58.801Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
-  "ok": 5,
-  "items": 13,
+  "ok": 4,
+  "items": 12,
   "duplicatesMerged": 0,
   "lengthsKnown": 0,
-  "lengthLookups": 1,
-  "lengthFailures": 1,
+  "lengthLookups": 0,
+  "lengthFailures": 0,
   "lengthVia": "video pages",
-  "lengthFailReasons": {
-   "no length on page": 1
-  }
+  "lengthFailReasons": {}
  },
  "feeds": [
   {
@@ -243,14 +241,15 @@
    "id": "yt-simplicissimus",
    "name": "Simplicissimus",
    "type": "youtube",
-   "status": "ok",
-   "count": 1,
+   "status": "error",
+   "count": 0,
    "resolved": {
     "channelId": "UCKGMHVipEvuZudhHD05FOYA",
     "title": "Simplicissimus",
     "via": "name search"
    },
-   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCKGMHVipEvuZudhHD05FOYA"
+   "error": "not found (404)",
+   "http": 404
   },
   {
    "id": "yt-aberrant-preach",
@@ -676,9 +675,10 @@
    "id": "rd-productmanagement",
    "name": "r/productmanagement",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 2,
-   "url": "https://www.reddit.com/r/productmanagement/top/.rss?t=day"
+   "lastOk": "2026-10-18T03:50:19.524Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-tech",
@@ -687,7 +687,7 @@
    "status": "cached",
    "count": 1,
    "lastOk": "2026-10-15T21:49:52.028Z",
-   "note": "rate-limited (429)"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-gaming",
@@ -696,25 +696,26 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-10-17T21:44:18.819Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
   },
   {
    "id": "rd-xbox",
    "name": "r/xbox",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-slaythespire",
@@ -723,7 +724,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-geopolitics",
@@ -754,6 +755,23 @@
   }
  ],
  "items": [
+  {
+   "title": "Mother referred to Prevent for ‘over-identifying with Israel’. Holly Passmore says police asked why she was interested in ‘Jewish issues’ and labelled the postgraduate student as ‘vulnerable’",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1x8mn3v/mother_referred_to_prevent_for_overidentifying/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-17T22:08:35.000Z",
+   "summary": "submitted by /u/ITMidget [link] [comments]",
+   "id": "731fdbc022af",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
   {
    "title": "Chancellor should cut benefits instead of taxing banks, says International Monetary Fund",
    "url": "https://www.reddit.com/r/ukpolitics/comments/1x8k3pq/chancellor_should_cut_benefits_instead_of_taxing/",
@@ -818,23 +836,6 @@
    "published": "2026-10-17T19:04:23.000Z",
    "summary": "submitted by /u/blast-processor [link] [comments]",
    "id": "9f39ad0174a9",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "No police action against Sarah Helm over Palestine Action post",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1x8h1sr/no_police_action_against_sarah_helm_over/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-17T18:11:28.000Z",
-   "summary": "submitted by /u/TheColourOfHeartache [link] [comments]",
-   "id": "90eacd7510ed",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -954,25 +955,7 @@
    "score": 0,
    "matched": [],
    "why": "0"
-  },
-  {
-   "title": "Der Absturz von Nike",
-   "url": "https://www.youtube.com/watch?v=O3EQVMJDn1s",
-   "source": "Simplicissimus",
-   "feedId": "yt-simplicissimus",
-   "type": "video",
-   "tags": [
-    "german",
-    "education"
-   ],
-   "published": "2026-10-11T14:00:38.000Z",
-   "summary": "Hol dir jetzt 20 € Willkommensbonus bei Revolut! Einfach die kostenlose App herunterladen, Konto eröffnen und mit der virtuellen Karte sofort loslegen: https://simpli.deals/revolut106 (Werbung) Bei KoRo findet ihr neben einer großen Auswahl an hochwertigen Lebensmitteln jetzt…",
-   "thumb": "https://i4.ytimg.com/vi/O3EQVMJDn1s/hqdefault.jpg",
-   "id": "7cb4cbde21fb",
-   "score": 0,
-   "matched": [],
-   "why": "0"
   }
  ],
- "contentHash": "95a18013958a"
+ "contentHash": "a30d2a25cf88"
 }
