@@ -1,17 +1,17 @@
 {
- "generated": "2026-10-18T15:44:30.519Z",
+ "generated": "2026-10-18T18:49:23.635Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
   "ok": 50,
-  "items": 109,
+  "items": 111,
   "duplicatesMerged": 0,
   "lengthsKnown": 2,
   "lengthLookups": 97,
   "lengthFailures": 97,
   "lengthVia": "video pages",
   "lengthFailReasons": {
-   "HTTP 429": 97
+   "no length on page": 97
   }
  },
  "feeds": [
@@ -254,7 +254,7 @@
    "name": "Channel 5 with Andrew Callaghan",
    "type": "youtube",
    "status": "ok",
-   "count": 3,
+   "count": 2,
    "resolved": {
     "channelId": "UC-AQKm7HUNMmxjdS371MSwg",
     "title": "Channel 5 with Andrew Callaghan",
@@ -605,7 +605,7 @@
    "name": "J.J. McCullough",
    "type": "youtube",
    "status": "ok",
-   "count": 0,
+   "count": 1,
    "resolved": {
     "channelId": "UCyhOl6uRlxryALlT5yifldw",
     "title": "J.J. McCullough",
@@ -657,20 +657,19 @@
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
+   "lastOk": "2026-10-18T15:44:30.519Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-xbox",
    "name": "r/xbox",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-slaythespire",
@@ -679,25 +678,26 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "cached",
-   "count": 3,
-   "lastOk": "2026-10-18T09:47:10.984Z",
-   "note": "not its turn this run"
+   "status": "ok",
+   "count": 5,
+   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
   },
   {
    "id": "rd-germany",
    "name": "r/germany",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": "2026-10-15T00:59:57.533Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-unitedkingdom",
@@ -706,10 +706,205 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   }
  ],
  "items": [
+  {
+   "title": "tagesschau 20:00 Uhr, 18.10.2026",
+   "url": "https://www.youtube.com/watch?v=r20GI779Pvg",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-18T18:34:34.000Z",
+   "summary": "tagesschau 20:00 Uhr Entsetzen über Ausschreitungen bei Protesten in Frankreich, Rot-grün-rote Sondierungsgespräche in Berlin: CSU-Chef Söder fordert Brandmauer gegen Links, Erneuter Sicherheitsvorfall am Flughafen Leipzig/Halle, Ukrainisches Militär startet Drohnenangriffe auf…",
+   "thumb": "https://i3.ytimg.com/vi/r20GI779Pvg/hqdefault.jpg",
+   "id": "bef97c38f3dc",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "US threatens Europe over Starlink restrictions",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1x99rlp/us_threatens_europe_over_starlink_restrictions/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-18T18:00:01.000Z",
+   "summary": "European companies face “devastating” retaliation from Washington if Brussels presses ahead with plans to restrict American rivals such as Elon Musk’s SpaceX from parts of the European market, the US ambassador to the EU has warned. Andrew Puzder’s warning comes after the…",
+   "id": "7fcec5969808",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "OH SH*T: Abdul SHUTS DOWN Anti-Muslim Heckler in UNDER 2 MINUTES!",
+   "url": "https://www.youtube.com/watch?v=uS2scQkqmL8",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-18T17:30:17.000Z",
+   "summary": "Luke discusses Abdul El-Sayed's back-and-forth with a voter over religion. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
+   "thumb": "https://i2.ytimg.com/vi/uS2scQkqmL8/hqdefault.jpg",
+   "id": "2d27b6bf18e7",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "How Do Germans Deal with Saying Goodbye?",
+   "url": "https://www.youtube.com/watch?v=6gr5wvJpxCU",
+   "source": "Easy German",
+   "feedId": "yt-easy-german",
+   "type": "video",
+   "tags": [
+    "german",
+    "listen"
+   ],
+   "published": "2026-10-18T17:00:30.000Z",
+   "summary": "Werde Teil unserer tollen Deutschlern-Community und verbessere dein Deutsch mit uns: https://easygerman.link/membership_eg682 --- LEARN MORE GERMAN WITH US: 🎧 LISTEN TO OUR PODCAST: http://www.easygerman.fm 📬 SUBSCRIBE TO OUR NEWSLETTER: https://www.easygerman.org/newsletter…",
+   "thumb": "https://i3.ytimg.com/vi/6gr5wvJpxCU/hqdefault.jpg",
+   "id": "ef9cd66c139d",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "10 GREAT Games We Regret 100%ing & WHY",
+   "url": "https://www.youtube.com/watch?v=QTLwtt4BC_w",
+   "source": "GameRanx",
+   "feedId": "yt-gameranx",
+   "type": "video",
+   "tags": [
+    "gaming"
+   ],
+   "published": "2026-10-18T16:49:36.000Z",
+   "summary": "Sometimes a game just isn’t worth 100%ing. Maybe it’s tedious, designed to mentally break you, or downright broken. Here are the games that ruined it for us. Subscribe for more: https://www.youtube.com/gameranxTV?sub_confirmation=1 0:00 Intro 0:35 Red Dead Redemption 2 3:13…",
+   "thumb": "https://i2.ytimg.com/vi/QTLwtt4BC_w/hqdefault.jpg",
+   "id": "d4458ab26d38",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "President Trump endorses Prime Minister Netanyahu ahead of Israeli elections",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1x96wwu/president_trump_endorses_prime_minister_netanyahu/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-18T16:05:36.000Z",
+   "summary": "submitted by /u/cnn [link] [comments]",
+   "id": "98cb5a1dc719",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Three Scenarios for a Leaderless World",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1x96vyp/three_scenarios_for_a_leaderless_world/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-18T16:04:35.000Z",
+   "summary": "submitted by /u/nytopinion [link] [comments]",
+   "id": "e1a0ad470189",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "James Talarico Debates Texas Voters: Jubilee x CNN Townhall",
+   "url": "https://www.youtube.com/watch?v=VnurpLQd4c0",
+   "source": "Jubilee",
+   "feedId": "yt-jubilee",
+   "type": "video",
+   "tags": [
+    "politics",
+    "debates"
+   ],
+   "published": "2026-10-18T16:00:31.000Z",
+   "summary": "Hey you 👈 Wanna be in a Jubilee video? https://bit.ly/be-in-a-video LET’S BE FRIENDS Instagram: https://www.instagram.com/jubileemedia/ TikTok: https://www.tiktok.com/@jubilee?lang=en Website: https://www.jubileemedia.com OUR LOVE + DATING CHANNEL 🍑 YouTube:…",
+   "thumb": "https://i3.ytimg.com/vi/VnurpLQd4c0/hqdefault.jpg",
+   "id": "7133fd3e05c4",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "This Kid Turned Cardboard Boxes Into a $35K Business Deal | Shark Tank US | Shark Tank Global",
+   "url": "https://www.youtube.com/watch?v=h-hI4op4p6c",
+   "source": "Shark Tank Global",
+   "feedId": "yt-shark-tank-global",
+   "type": "video",
+   "tags": [
+    "trash",
+    "business"
+   ],
+   "published": "2026-10-18T16:00:04.000Z",
+   "summary": "Noah Cahoon and his dad Brian enter the Tank seeking $35,000 for 25% of Paper Box Pilots, a creative toy business that transforms ordinary cardboard boxes into planes, race cars, and more. From Season 6 Episode 4 Watch Shark Tank US Now:…",
+   "thumb": "https://i1.ytimg.com/vi/h-hI4op4p6c/hqdefault.jpg",
+   "id": "98b70d9b05f3",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Iran says it has a 'new operational plan' if the U.S. resumes attacks, as shipping vessels report strikes",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1x96jq6/iran_says_it_has_a_new_operational_plan_if_the_us/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-18T15:51:22.000Z",
+   "summary": "submitted by /u/One-Emu-1103 [link] [comments]",
+   "id": "c78846bd656d",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Canadian political vocabulary iceberg EXPLAINED",
+   "url": "https://www.youtube.com/watch?v=TCsfyIn_6Wc",
+   "source": "J.J. McCullough",
+   "feedId": "yt-j-j-mccullough",
+   "type": "video",
+   "tags": [
+    "politics",
+    "culture",
+    "entertainment"
+   ],
+   "published": "2026-10-18T15:49:51.000Z",
+   "summary": "Dozens of definitions of common words and phrases used in Canadian politics and government, including a lot of terms relating to Quebec lol. The first Iceberg vid: https://www.youtube.com/watch?v=Q9LrjU5n63g SUBSCRIBE: https://www.youtube.com/jjmccullough?sub_confirmation=1…",
+   "thumb": "https://i1.ytimg.com/vi/TCsfyIn_6Wc/hqdefault.jpg",
+   "id": "c85a694a2ec8",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
   {
    "title": "Die Lage in Paris nach den Protesten: Aufräumen und Analyse der Gewalt",
    "url": "https://www.youtube.com/watch?v=2hdKGZHYLIc",
@@ -798,6 +993,23 @@
    "summary": "Die Polizei hat wegen eines durchtrennten Zauns das Gelände des Flughafens Leipzig/Halle durchsucht - bislang ohne etwas Verdächtiges gefunden zu haben. Die Ermittler vermuten, dass ein Auto den Zaun durchbrochen hat. Der Flugverkehr ist trotz einer gesperrten Nordpiste nicht…",
    "thumb": "https://i3.ytimg.com/vi/2-vFlj9B2j0/hqdefault.jpg",
    "id": "987c95450c47",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Vance says in ‘some ways’ US has ‘decisively won’ Iran war",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1x93ahd/vance_says_in_some_ways_us_has_decisively_won/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-18T13:30:44.000Z",
+   "summary": "submitted by /u/marketrent [link] [comments]",
+   "id": "4bb811e25fca",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1003,23 +1215,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Trump Says Iran War Will End ‘Very Quickly’ as Tehran Keeps Diplomacy Open Amid Hormuz Attacks",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1x8x6mh/trump_says_iran_war_will_end_very_quickly_as/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-18T07:36:31.000Z",
-   "summary": "submitted by /u/Beginning-Wish-4273 [link] [comments]",
-   "id": "7abf7600417e",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Inside Reform: Aspiring Reform MP calls for 'concentration camps' for migrants",
    "url": "https://www.reddit.com/r/ukpolitics/comments/1x8wi35/inside_reform_aspiring_reform_mp_calls_for/",
    "source": "r/ukpolitics",
@@ -1086,23 +1281,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Western bans on Israeli settlement goods could cost 4,000 Palestinians their jobs",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1x8vqkn/western_bans_on_israeli_settlement_goods_could/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-18T06:08:29.000Z",
-   "summary": "submitted by /u/NotSoSaneExile [link] [comments]",
-   "id": "a9ccb96045b6",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "OH DAMN: Trump’s Brain COLLAPSED While On Stage at INSANE RALLY!",
    "url": "https://www.youtube.com/watch?v=DGovnTONGbY",
    "source": "Luke Beasley",
@@ -1116,25 +1294,6 @@
    "summary": "Luke discusses some wild moments from Trump's recent rallies. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
    "thumb": "https://i1.ytimg.com/vi/DGovnTONGbY/hqdefault.jpg",
    "id": "f3fefb98fdd2",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "tagesthemen 23:30 Uhr, 17.10.2026",
-   "url": "https://www.youtube.com/watch?v=PJcng_jeBjY",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-17T22:26:17.000Z",
-   "summary": "tagesthemen 23:30 Uhr Proteste in Frankreich eskalieren, Rot-Grün-Rot in Berlin einigen sich auf Koalitionsgespräche, Kanzler Merz hält Rede auf dem Deutschlandtag der Jungen Union, US-Präsident Trump setzt Sanktionen gegen Russland aus, Ausstellung \"Zeit und Zeichen\" in…",
-   "thumb": "https://i1.ytimg.com/vi/PJcng_jeBjY/hqdefault.jpg",
-   "id": "31f728974a5b",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1190,24 +1349,6 @@
    "summary": "Part two of The Good Liars visit the Grand Island, NE. Join this channel to get access to perks: https://www.youtube.com/channel/UCUNOwz9KTDIhhTTN3_ptUDA/join https://linktr.ee/thegoodliars",
    "thumb": "https://i4.ytimg.com/vi/3M8__9WmwVY/hqdefault.jpg",
    "id": "8be46d6b5cd1",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "OH DAMN: Watch Trump INSULTS HIS FANS To Their Face!",
-   "url": "https://www.youtube.com/watch?v=4xX2gSzX8Ms",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-17T17:30:04.000Z",
-   "summary": "Luke discusses Trump's admission at his rally in Tennessee. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
-   "thumb": "https://i1.ytimg.com/vi/4xX2gSzX8Ms/hqdefault.jpg",
-   "id": "b2b6fd42bdf1",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1297,23 +1438,6 @@
    "summary": "LBC callers face off with Reform's Laila Cunningham as Reform UK leader Nigel Farage says the risk small boats pose to Britain is 'too high'. Speaking to Nick Ferrari on LBC this morning, Mr Farage explained his party's plans to stop migrants arriving on UK shores. He said that…",
    "thumb": "https://i2.ytimg.com/vi/eRBykngBDcM/hqdefault.jpg",
    "id": "3f46faf30f1b",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "UAE agrees with Saudi Arabia to re-enter Yemen conflict amid Houthi gains",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1x8bjpi/uae_agrees_with_saudi_arabia_to_reenter_yemen/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-17T14:25:27.000Z",
-   "summary": "The United Arab Emirates has agreed to re-enter the Yemen conflict by resuming payments to some government forces fighting Iran-aligned Houthis in the south, according to sources in Yemen. In return, Saudi Arabia has agreed to provide air cover for the anti-Houthi force. The…",
-   "id": "e86d8f0ab4eb",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1687,23 +1811,6 @@
    "summary": "Girl's grandmother passes down a valuable Rolleiflex camera of which she decided to have it cleaned. Only for the store to give a completely different camera than the one she handed in. Is this negligence or straight up thievery? ———————————— Spotify:…",
    "thumb": "https://i1.ytimg.com/vi/hAJzIdIMASU/hqdefault.jpg",
    "id": "4765fda6c46c",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "New GTA 6 Features CONFIRMED by Rockstar",
-   "url": "https://www.youtube.com/watch?v=-YzzZu_ptKo",
-   "source": "GameRanx",
-   "feedId": "yt-gameranx",
-   "type": "video",
-   "tags": [
-    "gaming"
-   ],
-   "published": "2026-10-14T17:54:46.000Z",
-   "summary": "We've got new information thanks to Rockstar Games revealing Grand Theft Auto 6 to select press. Subscribe for more: https://www.youtube.com/gameranxTV?sub_confirmation=1 ~~SOURCES~~ game informer cover story (subscription locked) -…",
-   "thumb": "https://i2.ytimg.com/vi/-YzzZu_ptKo/hqdefault.jpg",
-   "id": "3afc7a9d32ff",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2099,24 +2206,6 @@
    "summary": "Build credit fast and get your first month for just a dollar at https://getkikoff.com/SURROUNDED today. Thanks to Kikoff for sponsoring us! Hey you 👈 Wanna be in a Jubilee video? https://bit.ly/be-in-a-video LET’S BE FRIENDS Instagram: https://www.instagram.com/jubileemedia/…",
    "thumb": "https://i4.ytimg.com/vi/sYZs9vqUfA8/hqdefault.jpg",
    "id": "050260482934",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "$100K for a Mask That Helps You Wake Up Better | Shark Tank US | Shark Tank Global",
-   "url": "https://www.youtube.com/watch?v=336QSdJq9y8",
-   "source": "Shark Tank Global",
-   "feedId": "yt-shark-tank-global",
-   "type": "video",
-   "tags": [
-    "trash",
-    "business"
-   ],
-   "published": "2026-10-11T15:59:46.000Z",
-   "summary": "Neil Joglekar and Justin Lee enter the Tank asking for $100,000 for 10% of Napwell, a high-tech napping mask designed to help users wake up feeling refreshed. From Season 6, Episode 15 Watch Shark Tank US Now: http://AAN.SonyPictures.com/SharkTankUSHulu Watch Shark Tank…",
-   "thumb": "https://i4.ytimg.com/vi/336QSdJq9y8/hqdefault.jpg",
-   "id": "5af5d8cca77a",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2610,61 +2699,7 @@
    "why": "0",
    "durationSec": 2374,
    "duration": "39:34"
-  },
-  {
-   "title": "A Trip to Germany’s Secret Mega City",
-   "url": "https://www.youtube.com/watch?v=OEKrKnt-dak",
-   "source": "Easy German",
-   "feedId": "yt-easy-german",
-   "type": "video",
-   "tags": [
-    "german",
-    "listen"
-   ],
-   "published": "2026-10-04T17:00:18.000Z",
-   "summary": "👟 Last chance this year: Join the Lingoda Sprint at https://try.lingoda.com/EasyG50 and get 50% cash back while learning German intensively, or up to 100% with the Super Sprint. Get an additional 50 € discount on your first payment with our code EASYG50. Sign up by October 12!…",
-   "thumb": "https://i4.ytimg.com/vi/OEKrKnt-dak/hqdefault.jpg",
-   "id": "f424ce0347a3",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Return of the Hoff Twins",
-   "url": "https://www.youtube.com/watch?v=_ZWA65JAkzA",
-   "source": "Channel 5 with Andrew Callaghan",
-   "feedId": "yt-channel-5-with-andrew-callaghan",
-   "type": "video",
-   "tags": [
-    "education",
-    "politics"
-   ],
-   "published": "2026-10-04T16:01:43.000Z",
-   "summary": "To see our reacquired catalog of All Gas No Brakes content, head to our Patreon at https://www.patreon.com/channel5",
-   "thumb": "https://i4.ytimg.com/vi/_ZWA65JAkzA/hqdefault.jpg",
-   "id": "57ebaef7c899",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Do Republicans Deserve a Second Chance? (ft. Isaiah Martin & Walter Masterson) | The Split",
-   "url": "https://www.youtube.com/watch?v=OrE65ZD6i38",
-   "source": "Jubilee",
-   "feedId": "yt-jubilee",
-   "type": "video",
-   "tags": [
-    "politics",
-    "debates"
-   ],
-   "published": "2026-10-04T16:00:36.000Z",
-   "summary": "Hey you 👈 Wanna be in a Jubilee video? https://bit.ly/be-in-a-video LET’S BE FRIENDS Instagram: https://www.instagram.com/jubileemedia/ TikTok: https://www.tiktok.com/@jubilee?lang=en Website: https://www.jubileemedia.com OUR LOVE + DATING CHANNEL 🍑 YouTube:…",
-   "thumb": "https://i4.ytimg.com/vi/OrE65ZD6i38/hqdefault.jpg",
-   "id": "1313271eb48a",
-   "score": 0,
-   "matched": [],
-   "why": "0"
   }
  ],
- "contentHash": "c6aaf5fb93b3"
+ "contentHash": "d923b636d985"
 }
