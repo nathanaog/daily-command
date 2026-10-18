@@ -1,17 +1,17 @@
 {
- "generated": "2026-10-18T01:01:35.298Z",
+ "generated": "2026-10-18T03:50:19.524Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
-  "ok": 16,
-  "items": 45,
+  "ok": 5,
+  "items": 13,
   "duplicatesMerged": 0,
   "lengthsKnown": 0,
-  "lengthLookups": 18,
-  "lengthFailures": 18,
+  "lengthLookups": 1,
+  "lengthFailures": 1,
   "lengthVia": "video pages",
   "lengthFailReasons": {
-   "no length on page": 18
+   "no length on page": 1
   }
  },
  "feeds": [
@@ -19,14 +19,15 @@
    "id": "yt-map-men",
    "name": "Map Men",
    "type": "youtube",
-   "status": "ok",
+   "status": "error",
    "count": 0,
    "resolved": {
     "channelId": "UCbbQalJ4OaC0oQ0AqRaOJ9g",
     "title": "Map Men",
     "via": "name search"
    },
-   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCbbQalJ4OaC0oQ0AqRaOJ9g"
+   "error": "not found (404)",
+   "http": 404
   },
   {
    "id": "yt-jubilee",
@@ -88,14 +89,15 @@
    "id": "yt-the-good-liars",
    "name": "The Good Liars",
    "type": "youtube",
-   "status": "ok",
-   "count": 5,
+   "status": "error",
+   "count": 0,
    "resolved": {
     "channelId": "UCUNOwz9KTDIhhTTN3_ptUDA",
     "title": "The Good Liars",
     "via": "name search"
    },
-   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCUNOwz9KTDIhhTTN3_ptUDA"
+   "error": "not found (404)",
+   "http": 404
   },
   {
    "id": "yt-easy-german",
@@ -143,14 +145,15 @@
    "id": "yt-last-week-tonight",
    "name": "Last Week Tonight",
    "type": "youtube",
-   "status": "ok",
-   "count": 5,
+   "status": "error",
+   "count": 0,
    "resolved": {
     "channelId": "UC3XTzVzaHQEd30rQbuvCtTQ",
     "title": "LastWeekTonight",
     "via": "name search"
    },
-   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC3XTzVzaHQEd30rQbuvCtTQ"
+   "error": "not found (404)",
+   "http": 404
   },
   {
    "id": "yt-billy-on-the-street",
@@ -240,15 +243,14 @@
    "id": "yt-simplicissimus",
    "name": "Simplicissimus",
    "type": "youtube",
-   "status": "error",
-   "count": 0,
+   "status": "ok",
+   "count": 1,
    "resolved": {
     "channelId": "UCKGMHVipEvuZudhHD05FOYA",
     "title": "Simplicissimus",
     "via": "name search"
    },
-   "error": "not found (404)",
-   "http": 404
+   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCKGMHVipEvuZudhHD05FOYA"
   },
   {
    "id": "yt-aberrant-preach",
@@ -338,14 +340,15 @@
    "id": "yt-tagesschau",
    "name": "Tagesschau",
    "type": "youtube",
-   "status": "ok",
-   "count": 5,
+   "status": "error",
+   "count": 0,
    "resolved": {
     "channelId": "UC5NOEUbkLheQcaaRldYW5GA",
     "title": "tagesschau",
     "via": "name search"
    },
-   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC5NOEUbkLheQcaaRldYW5GA"
+   "error": "not found (404)",
+   "http": 404
   },
   {
    "id": "yt-the-nk-guys",
@@ -435,66 +438,71 @@
    "id": "yt-shark-tank-global",
    "name": "Shark Tank Global",
    "type": "youtube",
-   "status": "ok",
-   "count": 5,
+   "status": "error",
+   "count": 0,
    "resolved": {
     "channelId": "UCREgA-BmOocJ9Is_bZV6aJQ",
     "title": "Shark Tank Global",
     "via": "name search"
    },
-   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCREgA-BmOocJ9Is_bZV6aJQ"
+   "error": "not found (404)",
+   "http": 404
   },
   {
    "id": "yt-kill-tony",
    "name": "Kill Tony",
    "type": "youtube",
-   "status": "ok",
-   "count": 3,
+   "status": "error",
+   "count": 0,
    "resolved": {
     "channelId": "UCwzCMiicL-hBUzyjWiJaseg",
     "title": "Kill Tony",
     "via": "name search"
    },
-   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCwzCMiicL-hBUzyjWiJaseg"
+   "error": "not found (404)",
+   "http": 404
   },
   {
    "id": "yt-coffeezilla",
    "name": "Coffeezilla",
    "type": "youtube",
-   "status": "ok",
-   "count": 1,
+   "status": "error",
+   "count": 0,
    "resolved": {
     "channelId": "UCFQMnBA3CS502aghlcr0_aw",
     "title": "Coffeezilla",
     "via": "name search"
    },
-   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCFQMnBA3CS502aghlcr0_aw"
+   "error": "not found (404)",
+   "http": 404
   },
   {
    "id": "yt-tom-scott",
    "name": "Tom Scott",
    "type": "youtube",
-   "status": "ok",
-   "count": 2,
+   "status": "error",
+   "count": 0,
    "resolved": {
     "channelId": "UCBa659QWEk1AI4Tg--mrJ2A",
     "title": "Tom Scott",
     "via": "name search"
    },
-   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCBa659QWEk1AI4Tg--mrJ2A"
+   "error": "not found (404)",
+   "http": 404
   },
   {
    "id": "yt-lenny-s-podcast",
    "name": "Lenny's Podcast",
    "type": "youtube",
-   "status": "ok",
-   "count": 5,
+   "status": "error",
+   "count": 0,
    "resolved": {
     "channelId": "UC6t1O76G0jYXOAoYCm153dA",
     "title": "Lenny's Podcast",
     "via": "name search"
    },
-   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC6t1O76G0jYXOAoYCm153dA"
+   "error": "not found (404)",
+   "http": 404
   },
   {
    "id": "yt-the-hustle",
@@ -556,40 +564,43 @@
    "id": "yt-joel-haver",
    "name": "Joel Haver",
    "type": "youtube",
-   "status": "ok",
+   "status": "error",
    "count": 0,
    "resolved": {
     "channelId": "UCVIFCOJwv3emlVmBbPCZrvw",
     "title": "Joel Haver",
     "via": "name search"
    },
-   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCVIFCOJwv3emlVmBbPCZrvw"
+   "error": "not found (404)",
+   "http": 404
   },
   {
    "id": "yt-bluejay",
    "name": "Bluejay",
    "type": "youtube",
-   "status": "ok",
+   "status": "error",
    "count": 0,
    "resolved": {
     "channelId": "UCvQ4C0f9_OWRf1uyobwqOwA",
     "title": "BlueJay",
     "via": "name search"
    },
-   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCvQ4C0f9_OWRf1uyobwqOwA"
+   "error": "not found (404)",
+   "http": 404
   },
   {
    "id": "yt-oversimplified",
    "name": "OverSimplified",
    "type": "youtube",
-   "status": "ok",
+   "status": "error",
    "count": 0,
    "resolved": {
     "channelId": "UCNIuvl7V8zACPpTmmNIqP2A",
     "title": "OverSimplified",
     "via": "name search"
    },
-   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCNIuvl7V8zACPpTmmNIqP2A"
+   "error": "not found (404)",
+   "http": 404
   },
   {
    "id": "yt-ordinary-things",
@@ -665,10 +676,9 @@
    "id": "rd-productmanagement",
    "name": "r/productmanagement",
    "type": "reddit",
-   "status": "cached",
-   "count": 4,
-   "lastOk": "2026-10-17T18:48:32.001Z",
-   "note": "not its turn this run"
+   "status": "ok",
+   "count": 2,
+   "url": "https://www.reddit.com/r/productmanagement/top/.rss?t=day"
   },
   {
    "id": "rd-tech",
@@ -677,7 +687,7 @@
    "status": "cached",
    "count": 1,
    "lastOk": "2026-10-15T21:49:52.028Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)"
   },
   {
    "id": "rd-gaming",
@@ -686,7 +696,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-ukpolitics",
@@ -719,20 +729,19 @@
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 4,
-   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
+   "lastOk": "2026-10-18T01:01:35.298Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-germany",
    "name": "r/germany",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": "2026-10-15T00:59:57.533Z",
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-unitedkingdom",
@@ -741,29 +750,10 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   }
  ],
  "items": [
-  {
-   "title": "tagesthemen 23:30 Uhr, 17.10.2026",
-   "url": "https://www.youtube.com/watch?v=PJcng_jeBjY",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-17T22:26:17.000Z",
-   "summary": "tagesthemen 23:30 Uhr Proteste in Frankreich eskalieren, Rot-Grün-Rot in Berlin einigen sich auf Koalitionsgespräche, Kanzler Merz hält Rede auf dem Deutschlandtag der Jungen Union, US-Präsident Trump setzt Sanktionen gegen Russland aus, Ausstellung \"Zeit und Zeichen\" in…",
-   "thumb": "https://i1.ytimg.com/vi/PJcng_jeBjY/hqdefault.jpg",
-   "id": "31f728974a5b",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
   {
    "title": "Chancellor should cut benefits instead of taxing banks, says International Monetary Fund",
    "url": "https://www.reddit.com/r/ukpolitics/comments/1x8k3pq/chancellor_should_cut_benefits_instead_of_taxing/",
@@ -777,25 +767,6 @@
    "published": "2026-10-17T20:17:26.000Z",
    "summary": "submitted by /u/Desperate-Drawer-572 [link] [comments]",
    "id": "78224f8a1084",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Linke, Grüne und SPD sind bei der Regierungsbildung in Berlin vorangekommen. #tagesschau",
-   "url": "https://www.youtube.com/shorts/BWL8IVkswkI",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-17T20:02:13.000Z",
-   "summary": "Alle aktuellen Informationen, weitere Nachrichten und tagesschau24 im Livestream: https://www.tagesschau.de/ Alle Sendungen, Livestreams, Dokumentationen und Reportagen auch in der ARD-Mediathek: https://www.ardmediathek.de/tagesschau #tagesschau #nachrichten",
-   "thumb": "https://i3.ytimg.com/vi/BWL8IVkswkI/hqdefault.jpg",
-   "id": "5bdcea7bd684",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -818,25 +789,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "GRAND ISLAND TRUMP RALLY",
-   "url": "https://www.youtube.com/watch?v=3M8__9WmwVY",
-   "source": "The Good Liars",
-   "feedId": "yt-the-good-liars",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "politics",
-    "debates"
-   ],
-   "published": "2026-10-17T19:30:06.000Z",
-   "summary": "Part two of The Good Liars visit the Grand Island, NE. Join this channel to get access to perks: https://www.youtube.com/channel/UCUNOwz9KTDIhhTTN3_ptUDA/join https://linktr.ee/thegoodliars",
-   "thumb": "https://i4.ytimg.com/vi/3M8__9WmwVY/hqdefault.jpg",
-   "id": "8be46d6b5cd1",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Reform candidate filmed saying asylum seekers should be put in ‘concentration camps’",
    "url": "https://www.reddit.com/r/ukpolitics/comments/1x8itaq/reform_candidate_filmed_saying_asylum_seekers/",
    "source": "r/ukpolitics",
@@ -849,25 +801,6 @@
    "published": "2026-10-17T19:23:39.000Z",
    "summary": "submitted by /u/Dismal_Uses [link] [comments]",
    "id": "a3bca48355a9",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Millionen Menschen rauchen, Milliardeneinnahmen für den Bund. Und es soll noch mehr werden. #news",
-   "url": "https://www.youtube.com/shorts/PCn87sipolg",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-17T19:21:27.000Z",
-   "summary": "Alle aktuellen Informationen, weitere Nachrichten und tagesschau24 im Livestream: https://www.tagesschau.de/ Alle Sendungen, Livestreams, Dokumentationen und Reportagen auch in der ARD-Mediathek: https://www.ardmediathek.de/tagesschau #tagesschau #nachrichten",
-   "thumb": "https://i1.ytimg.com/vi/PCn87sipolg/hqdefault.jpg",
-   "id": "a6d98ffc44b7",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -890,25 +823,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "tagesschau 20:00 Uhr, 17.10.2026",
-   "url": "https://www.youtube.com/watch?v=BUfNTS-QoXU",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-17T18:33:40.000Z",
-   "summary": "Die 20-Uhr-Ausgabe der tagesschau im Livestream und auf Abruf findet ihr auch hier: https://ardmediathek.de/tagesschau und https://tagesschau.de Themen der tagesschau-Sendung: 00:00 Guten Abend 0:22 Sondierungsgespräche der Dreier-Koalition in Berlin erfolgreich beendet 02:18…",
-   "thumb": "https://i3.ytimg.com/vi/BUfNTS-QoXU/hqdefault.jpg",
-   "id": "095fdb631799",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "No police action against Sarah Helm over Palestine Action post",
    "url": "https://www.reddit.com/r/ukpolitics/comments/1x8h1sr/no_police_action_against_sarah_helm_over/",
    "source": "r/ukpolitics",
@@ -921,43 +835,6 @@
    "published": "2026-10-17T18:11:28.000Z",
    "summary": "submitted by /u/TheColourOfHeartache [link] [comments]",
    "id": "90eacd7510ed",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Landesweite Demonstrationen gibt es auch in Italien. #tagesschau #nachrichten #italien #proteste",
-   "url": "https://www.youtube.com/shorts/oODjTLuv6rw",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-17T17:41:41.000Z",
-   "summary": "Alle aktuellen Informationen, weitere Nachrichten und tagesschau24 im Livestream: https://www.tagesschau.de/ Alle Sendungen, Livestreams, Dokumentationen und Reportagen auch in der ARD-Mediathek: https://www.ardmediathek.de/tagesschau #tagesschau #nachrichten",
-   "thumb": "https://i4.ytimg.com/vi/oODjTLuv6rw/hqdefault.jpg",
-   "id": "55e301ff56d9",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Viral Spotlight: Lori Offers $1 Million for Everlywell | Shark Tank US | Shark Tank Global",
-   "url": "https://www.youtube.com/watch?v=nd1nJALU1MU",
-   "source": "Shark Tank Global",
-   "feedId": "yt-shark-tank-global",
-   "type": "video",
-   "tags": [
-    "trash",
-    "business"
-   ],
-   "published": "2026-10-17T16:00:05.000Z",
-   "summary": "Julia Cheek enters the Tank seeking $1 million for 5% of Everlywell, a company making at-home lab testing more accessible and easier to understand. With millions in sales and a growing market, can Julia convince the Sharks to invest in her vision? From Season 9, Episode 12…",
-   "thumb": "https://i3.ytimg.com/vi/nd1nJALU1MU/hqdefault.jpg",
-   "id": "25e00b1783e7",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -980,22 +857,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Does the “behind the scenes” part of PM work count toward performance, or is it just assumed?",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1x84prz/does_the_behind_the_scenes_part_of_pm_work_count/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-10-17T08:09:34.000Z",
-   "summary": "I've been thinking about this and kinda frustrated it's not clearly stated.. but product management is naturally a role built on coordination, not just shipping. A huge chunk of the job is unblocking people, chasing alignment, catching things that fall between teams and roles.…",
-   "id": "083d78985ad5",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Researchers turn mushrooms into living memory chips for sustainable computing",
    "url": "https://www.reddit.com/r/tech/comments/1x6ldb1/researchers_turn_mushrooms_into_living_memory/",
    "source": "r/tech",
@@ -1010,6 +871,22 @@
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Does the “behind the scenes” part of PM work count toward performance, or is it just assumed?",
+   "url": "https://www.reddit.com/r/ProductManagement/comments/1x84prz/does_the_behind_the_scenes_part_of_pm_work_count/",
+   "source": "r/productmanagement",
+   "feedId": "rd-productmanagement",
+   "type": "post",
+   "tags": [
+    "product"
+   ],
+   "published": "2026-10-17T08:09:34.000Z",
+   "summary": "I've been thinking about this and kinda frustrated it's not clearly stated.. but product management is naturally a role built on coordination, not just shipping. A huge chunk of the job is unblocking people, chasing alignment, catching things that fall between teams and roles.…",
+   "id": "083d78985ad5",
+   "score": 0,
+   "matched": [],
+   "why": "0"
   },
   {
    "title": "IRGC Reports Supertanker Explosion in Strait of Hormuz as Brent Nears $110; Former Minister Survives Apparent Assassination Attempt",
@@ -1079,478 +956,23 @@
    "why": "0"
   },
   {
-   "title": "Domain is king. But which domain is king?",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1x7uar9/domain_is_king_but_which_domain_is_king/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-10-16T22:42:54.000Z",
-   "summary": "If you were able to choose a domain to specialise in, what would it be and why? submitted by /u/Narrow-Election-9504 [link] [comments]",
-   "id": "f15d446d8a55",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Looking for Product Manager mentorship or friendship!",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1x7twn3/looking_for_product_manager_mentorship_or/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-10-16T22:25:28.000Z",
-   "summary": "Hi! I’m a Sr. PM in the SF Bay Area with about 8 years of experience in Product, mostly at smaller companies that ended up getting acquired. I’m currently looking for a new role, and I’m realizing that interviewing is my biggest weakness. I get really nervous and have a hard…",
-   "id": "b3c925eb0a18",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "A Shark Tank Mukbang Special | Shark Tank US | Shark Tank Global",
-   "url": "https://www.youtube.com/watch?v=sQTnY1DXjO4",
-   "source": "Shark Tank Global",
-   "feedId": "yt-shark-tank-global",
+   "title": "Der Absturz von Nike",
+   "url": "https://www.youtube.com/watch?v=O3EQVMJDn1s",
+   "source": "Simplicissimus",
+   "feedId": "yt-simplicissimus",
    "type": "video",
    "tags": [
-    "trash",
-    "business"
-   ],
-   "published": "2026-10-16T15:59:52.000Z",
-   "summary": "The Sharks are ready to dig in! These entrepreneurs bring their best bites into the Tank, hoping to win over the Sharks’ taste buds and land a deal. 00:00 - Atlas Monroe 11:40 - Cousins Maine Lobster 24:06 - Doatnut 33:42 - Wicked Good Cupcakes 43:13 - Finneato Fysh Foods 52:28…",
-   "thumb": "https://i4.ytimg.com/vi/sQTnY1DXjO4/hqdefault.jpg",
-   "id": "b0004effa6ba",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Generic Drugs & Overseas Manufacturing #lastweektonight",
-   "url": "https://www.youtube.com/shorts/xJEOHX5GiO4",
-   "source": "Last Week Tonight",
-   "feedId": "yt-last-week-tonight",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "politics"
-   ],
-   "published": "2026-10-16T14:00:29.000Z",
-   "summary": "You know what they say about making sure your generic drugs are manufactured in accordance with safety standards that prevent anyone from needing to get their eyeballs removed! Location, location, location.",
-   "thumb": "https://i1.ytimg.com/vi/xJEOHX5GiO4/hqdefault.jpg",
-   "id": "6023305e73b2",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Every Company Needs A Labs Team",
-   "url": "https://www.youtube.com/shorts/F-9TfjzbL8Q",
-   "source": "Lenny's Podcast",
-   "feedId": "yt-lenny-s-podcast",
-   "type": "video",
-   "tags": [
-    "product",
-    "business",
-    "listen"
-   ],
-   "published": "2026-10-16T01:00:20.000Z",
-   "summary": "Google Labs VP Josh Woodward explains why every company now needs to think and operate like a labs team",
-   "thumb": "https://i3.ytimg.com/vi/F-9TfjzbL8Q/hqdefault.jpg",
-   "id": "0bf76278df0e",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "ALASKA TRUMP RALLY",
-   "url": "https://www.youtube.com/watch?v=XQQwiRoerh0",
-   "source": "The Good Liars",
-   "feedId": "yt-the-good-liars",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "politics",
-    "debates"
-   ],
-   "published": "2026-10-15T20:45:06.000Z",
-   "summary": "The Good Liars go to Alaska to talk with rally attendees. Special thanks to Dancing Bear Alaska for arranging a spectacular flight to see Mt. Denali. It was AWESOME LINK: https://www.instagram.com/dancingbearalaska/ BOOKING: www.dancingbearalaska.net…",
-   "thumb": "https://i1.ytimg.com/vi/XQQwiRoerh0/hqdefault.jpg",
-   "id": "de58ec93e785",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Just another day in the office! #MindyKaling #SharkTank",
-   "url": "https://www.youtube.com/shorts/beUKY6naoG0",
-   "source": "Shark Tank Global",
-   "feedId": "yt-shark-tank-global",
-   "type": "video",
-   "tags": [
-    "trash",
-    "business"
-   ],
-   "published": "2026-10-15T20:00:23.000Z",
-   "summary": "Golden retriever and black cat energy 🫱🏼‍🫲🏻 From Season 18 Watch Shark Tank US Now: http://AAN.SonyPictures.com/SharkTankUSHulu Subscribe to the Shark Tank Global channel: https://bit.ly/SharkTankGlobal Follow Us On Social: Shark Tank Global Facebook:…",
-   "thumb": "https://i3.ytimg.com/vi/beUKY6naoG0/hqdefault.jpg",
-   "id": "748b02ac8b0a",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Mindy Kaling Calls Polygons Ingenious | Shark Tank US | Shark Tank Global",
-   "url": "https://www.youtube.com/watch?v=xm1ShtnwIgU",
-   "source": "Shark Tank Global",
-   "feedId": "yt-shark-tank-global",
-   "type": "video",
-   "tags": [
-    "trash",
-    "business"
-   ],
-   "published": "2026-10-15T16:00:01.000Z",
-   "summary": "Rahul Agarwal enters the tank seeking $350K for a 7% stake in his company, Polygons. From Season 18 Episode 4 Watch Shark Tank US Now: http://AAN.SonyPictures.com/SharkTankUSHulu Subscribe to the Shark Tank Global channel: https://bit.ly/SharkTankGlobal Follow Us On Social:…",
-   "thumb": "https://i1.ytimg.com/vi/xm1ShtnwIgU/hqdefault.jpg",
-   "id": "224a00c7e477",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Generic Drug Shortages #lastweektonight",
-   "url": "https://www.youtube.com/shorts/gr1IAw56Uvk",
-   "source": "Last Week Tonight",
-   "feedId": "yt-last-week-tonight",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "politics"
-   ],
-   "published": "2026-10-15T15:15:58.000Z",
-   "summary": "We’re running out of some life-saving medications. And we shouldn’t have to rely on Kevin Bacon to fix it. Or – sorry – Kyra Sedgwick.",
-   "thumb": "https://i4.ytimg.com/vi/gr1IAw56Uvk/hqdefault.jpg",
-   "id": "4c14c5e0df24",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "How much is MrBeast willing to offer? 👀 #Shorts",
-   "url": "https://www.youtube.com/shorts/IIutbKGmmNQ",
-   "source": "Shark Tank Global",
-   "feedId": "yt-shark-tank-global",
-   "type": "video",
-   "tags": [
-    "trash",
-    "business"
-   ],
-   "published": "2026-10-14T15:59:58.000Z",
-   "summary": "Andrew Brown and Kevin Langdon are seeking $200K for 10% of Ball 2, but will their interactive, AI-powered smart ball impress MrBeast enough to make an offer? From Season 18 Episode 1 Watch Shark Tank US Now: http://AAN.SonyPictures.com/SharkTankUSHulu Watch Shark Tank…",
-   "thumb": "https://i2.ytimg.com/vi/IIutbKGmmNQ/hqdefault.jpg",
-   "id": "a30e295f6035",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Generic Drugs #lastweektonight",
-   "url": "https://www.youtube.com/shorts/kSE6Eng5Qeg",
-   "source": "Last Week Tonight",
-   "feedId": "yt-last-week-tonight",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "politics"
-   ],
-   "published": "2026-10-13T14:00:08.000Z",
-   "summary": "If you’ve never needed to take any generic medications, congratulations! You’re healthy and well-adjusted. Which applies to maybe – maybe – five people reading this. For everyone else, the link to the full segment is in our bio!",
-   "thumb": "https://i4.ytimg.com/vi/kSE6Eng5Qeg/hqdefault.jpg",
-   "id": "6dcfbf4908ec",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "KT #789 - TIM BUTTERLY +KIRK FOX",
-   "url": "https://www.youtube.com/watch?v=ntTShp2YNlo",
-   "source": "Kill Tony",
-   "feedId": "yt-kill-tony",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "standup",
-    "listen"
-   ],
-   "published": "2026-10-13T01:00:06.000Z",
-   "summary": "Tim Butterly, Kirk Fox, Pat O'Neill, Dedrick Flynn, Martin Phillips, D Madness, Michael A. Gonzales, Jon Deas, Matthew Muehling, Grooveline Horns, Joe White, Troy Conrad, Monica Colt, Steve Glass, Tony Hinchcliffe, Brian Redban - RECORDED– 10/05/2026 For advertising inquiries,…",
-   "thumb": "https://i3.ytimg.com/vi/ntTShp2YNlo/hqdefault.jpg",
-   "id": "addc529e979e",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "SYRACUSE TRUMP RALLY",
-   "url": "https://www.youtube.com/watch?v=VYUmHZiyImo",
-   "source": "The Good Liars",
-   "feedId": "yt-the-good-liars",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "politics",
-    "debates"
-   ],
-   "published": "2026-10-12T19:00:06.000Z",
-   "summary": "Jason visits Syracuse, New York for a Trump Rally. Go Orange! Join this channel to get access to perks: https://www.youtube.com/channel/UCUNOwz9KTDIhhTTN3_ptUDA/join https://linktr.ee/thegoodliars",
-   "thumb": "https://i3.ytimg.com/vi/VYUmHZiyImo/hqdefault.jpg",
-   "id": "59db79882315",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "I Investigated $100 Billion in Healthcare Fraud",
-   "url": "https://www.youtube.com/watch?v=9eWJISlh0fw",
-   "source": "Coffeezilla",
-   "feedId": "yt-coffeezilla",
-   "type": "video",
-   "tags": [
-    "finance"
-   ],
-   "published": "2026-10-12T17:47:01.000Z",
-   "summary": "LIMITED TIME MERCH!! https://coffeezilla.shop/ (PRE-ORDER ENDS NOVEMBER 6TH) Support Investigative Journalism: ► Patreon: https://patreon.com/coffeezilla Credits: HUNTERBROOK ENSIGN STORY: https://hntrbrk.com/investigations/ensign 3D Artist: Ed Leszczynski @LeszczynskiEd Video…",
-   "thumb": "https://i2.ytimg.com/vi/9eWJISlh0fw/hqdefault.jpg",
-   "id": "cc3a132b02be",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Why robots still can't pick strawberries",
-   "url": "https://www.youtube.com/watch?v=TumxO2glmPQ",
-   "source": "Tom Scott",
-   "feedId": "yt-tom-scott",
-   "type": "video",
-   "tags": [
+    "german",
     "education"
    ],
-   "published": "2026-10-12T15:00:21.000Z",
-   "summary": "At Wilkin & Sons in Tiptree, a city boy gets impressed by agriculture, and meets some robots that work better than others. | AD: 💼 Find a fulfilling career that also helps the world: https://80000hours.org/tom | 🗺️ England series map: https://www.tomscott.com/england/ 🟥 MORE…",
-   "thumb": "https://i1.ytimg.com/vi/TumxO2glmPQ/hqdefault.jpg",
-   "id": "da63d329ef7b",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Kimberly Guilfoyle #lastweektonight",
-   "url": "https://www.youtube.com/shorts/pmmd1kiKOw0",
-   "source": "Last Week Tonight",
-   "feedId": "yt-last-week-tonight",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "politics"
-   ],
-   "published": "2026-10-12T14:00:30.000Z",
-   "summary": "Things don’t look great for Kimberly Guilfoyle here! But please also spare a flabbergasted thought for Kid Rock and the royal fuck up that was the Osmosis Jones soundtrack.",
-   "thumb": "https://i1.ytimg.com/vi/pmmd1kiKOw0/hqdefault.jpg",
-   "id": "6ed431d17d90",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "The internet is going to agents",
-   "url": "https://www.youtube.com/shorts/aryWqheMmSI",
-   "source": "Lenny's Podcast",
-   "feedId": "yt-lenny-s-podcast",
-   "type": "video",
-   "tags": [
-    "product",
-    "business",
-    "listen"
-   ],
-   "published": "2026-10-12T10:45:24.000Z",
-   "summary": "The majority of actions on the internet will be taken by agents. Tibo Sottiaux, Head of ChatGPT & Codex, on what builders aren't pricing in yet, and what happened to Notion's traffic after they shipped an MCP.",
-   "thumb": "https://i2.ytimg.com/vi/aryWqheMmSI/hqdefault.jpg",
-   "id": "d8a0d7ed0208",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Generic Drugs: Last Week Tonight with John Oliver (HBO)",
-   "url": "https://www.youtube.com/watch?v=TM1EbMKhT4Y",
-   "source": "Last Week Tonight",
-   "feedId": "yt-last-week-tonight",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "politics"
-   ],
-   "published": "2026-10-12T06:30:32.000Z",
-   "summary": "John Oliver does a deep dive on generic drugs, why they’re so important, why they can be so vulnerable to shortages and quality issues, and why Kevin Bacon can’t solve everything all on his own. Subscribe to the #lastweektonight YouTube channel for more almost news as it almost…",
-   "thumb": "https://i1.ytimg.com/vi/TM1EbMKhT4Y/hqdefault.jpg",
-   "id": "49b7190d4eac",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "KT: Behind the Tape (Ep: 788 Wheeler Walker + Sam Tripoli)",
-   "url": "https://www.youtube.com/watch?v=aoogiviEa1A",
-   "source": "Kill Tony",
-   "feedId": "yt-kill-tony",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "standup",
-    "listen"
-   ],
-   "published": "2026-10-12T05:54:09.000Z",
-   "summary": "An exclusive, behind the scenes look from KT Episode 788 KT guest Wheeler Walker + Sam Tripoli Wheeler Walker Jr, Sam Tripoli, Pat O'Neill, Dedrick Flynn, Martin Phillips, D Madness, Michael A. Gonzales, Jon Deas, Matthew Muehling, Grooveline Horns, Joe White, Troy Conrad,…",
-   "thumb": "https://i2.ytimg.com/vi/aoogiviEa1A/hqdefault.jpg",
-   "id": "72b24489802d",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Why every company now needs to think and operate like a lab team | Josh Woodward (VP Google Labs)",
-   "url": "https://www.youtube.com/watch?v=3I6QYkccd3o",
-   "source": "Lenny's Podcast",
-   "feedId": "yt-lenny-s-podcast",
-   "type": "video",
-   "tags": [
-    "product",
-    "business",
-    "listen"
-   ],
-   "published": "2026-10-11T12:30:34.000Z",
-   "summary": "Josh Woodward is the head of Google Labs, the Gemini app, and AI Studio. He has spent over 17 years at Google and oversees its longest-running and largest labs team, whose products include NotebookLM (now Gemini Notebook), Project Genie, and Flow. His job is to find, experiment…",
-   "thumb": "https://i4.ytimg.com/vi/3I6QYkccd3o/hqdefault.jpg",
-   "id": "cf2af74101ea",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Autonomy Only Works If You Own the Mistakes",
-   "url": "https://www.youtube.com/shorts/xDLVZOIUXkQ",
-   "source": "Lenny's Podcast",
-   "feedId": "yt-lenny-s-podcast",
-   "type": "video",
-   "tags": [
-    "product",
-    "business",
-    "listen"
-   ],
-   "published": "2026-10-11T11:41:23.000Z",
-   "summary": "Everyone assumed 17 people reviewed it. He wrote it in 30 minutes and shipped it. Tibo Sottiaux, Head of ChatGPT & Codex, on OpenAI's culture of autonomy and taking production down on his third day.",
-   "thumb": "https://i1.ytimg.com/vi/xDLVZOIUXkQ/hqdefault.jpg",
-   "id": "1f65eb6ef421",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "OHIO TRUMP RALLY",
-   "url": "https://www.youtube.com/watch?v=z5cAiwQULKI",
-   "source": "The Good Liars",
-   "feedId": "yt-the-good-liars",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "politics",
-    "debates"
-   ],
-   "published": "2026-10-10T18:30:36.000Z",
-   "summary": "The Good Liars visit Dayton, Ohio for a Trump Rally https://www.youtube.com/channel/UCUNOwz9KTDIhhTTN3_ptUDA/join https://linktr.ee/thegoodliars",
-   "thumb": "https://i3.ytimg.com/vi/z5cAiwQULKI/hqdefault.jpg",
-   "id": "f52c86bfea5e",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "AEO Won't Get Your Plugin Recommended",
-   "url": "https://www.youtube.com/shorts/p1WnlWlrf3c",
-   "source": "Lenny's Podcast",
-   "feedId": "yt-lenny-s-podcast",
-   "type": "video",
-   "tags": [
-    "product",
-    "business",
-    "listen"
-   ],
-   "published": "2026-10-10T10:29:41.000Z",
-   "summary": "Want ChatGPT to recommend your plugin? Build a good one. Tibo Sottiaux, Head of ChatGPT & Codex, on how retention and quality decide which plugins get surfaced to users and why it's not an AEO game.",
-   "thumb": "https://i1.ytimg.com/vi/p1WnlWlrf3c/hqdefault.jpg",
-   "id": "daad8d81763d",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "NEBRASKA TRUMP RALLY",
-   "url": "https://www.youtube.com/watch?v=DTyTNVn7usc",
-   "source": "The Good Liars",
-   "feedId": "yt-the-good-liars",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "politics",
-    "debates"
-   ],
-   "published": "2026-10-08T18:30:10.000Z",
-   "summary": "Part One of The Good Liars visit to a Trump Rally in Nebraska. Join this channel to get access to perks: https://www.youtube.com/channel/UCUNOwz9KTDIhhTTN3_ptUDA/join https://linktr.ee/thegoodliars",
-   "thumb": "https://i1.ytimg.com/vi/DTyTNVn7usc/hqdefault.jpg",
-   "id": "b1d380b4967e",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "KT #788 - WHEELER WALKER JR + SAM TRIPOLI",
-   "url": "https://www.youtube.com/watch?v=jw1l2PKuckA",
-   "source": "Kill Tony",
-   "feedId": "yt-kill-tony",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "standup",
-    "listen"
-   ],
-   "published": "2026-10-06T01:00:07.000Z",
-   "summary": "Wheeler Walker Jr, Sam Tripoli, Pat O'Neill, Dedrick Flynn, Martin Phillips, D Madness, Michael A. Gonzales, Jon Deas, Matthew Muehling, Grooveline Horns, Joe White, Troy Conrad, Monica Colt, Steve Glass, Tony Hinchcliffe, Brian Redban - RECORDED– 09/28/2026 For advertising…",
-   "thumb": "https://i3.ytimg.com/vi/jw1l2PKuckA/hqdefault.jpg",
-   "id": "fa6312c6fbca",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "In this arcade, you drop metal balls on rich people.",
-   "url": "https://www.youtube.com/watch?v=drrUvxtT6lU",
-   "source": "Tom Scott",
-   "feedId": "yt-tom-scott",
-   "type": "video",
-   "tags": [
-    "education"
-   ],
-   "published": "2026-10-05T15:00:15.000Z",
-   "summary": "The Under the Pier Show is @timhunkin1's collection of weird automata and arcade games, offering something more interesting than tickets and prizes. | ▶️ The next episode's on Nebula right now! https://nebula.tv/videos/tomscott-why-robots-cant-pick-strawberries-yet | 🗺️…",
-   "thumb": "https://i1.ytimg.com/vi/drrUvxtT6lU/hqdefault.jpg",
-   "id": "75589f57682b",
+   "published": "2026-10-11T14:00:38.000Z",
+   "summary": "Hol dir jetzt 20 € Willkommensbonus bei Revolut! Einfach die kostenlose App herunterladen, Konto eröffnen und mit der virtuellen Karte sofort loslegen: https://simpli.deals/revolut106 (Werbung) Bei KoRo findet ihr neben einer großen Auswahl an hochwertigen Lebensmitteln jetzt…",
+   "thumb": "https://i4.ytimg.com/vi/O3EQVMJDn1s/hqdefault.jpg",
+   "id": "7cb4cbde21fb",
    "score": 0,
    "matched": [],
    "why": "0"
   }
  ],
- "contentHash": "54e62575a627"
+ "contentHash": "95a18013958a"
 }
