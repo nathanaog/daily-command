@@ -1,17 +1,17 @@
 {
- "generated": "2026-10-19T01:03:09.666Z",
+ "generated": "2026-10-19T03:55:17.385Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
-  "ok": 5,
-  "items": 20,
+  "ok": 10,
+  "items": 28,
   "duplicatesMerged": 0,
   "lengthsKnown": 0,
-  "lengthLookups": 4,
-  "lengthFailures": 4,
+  "lengthLookups": 11,
+  "lengthFailures": 11,
   "lengthVia": "video pages",
   "lengthFailReasons": {
-   "no length on page": 4
+   "no length on page": 11
   }
  },
  "feeds": [
@@ -145,14 +145,15 @@
    "id": "yt-last-week-tonight",
    "name": "Last Week Tonight",
    "type": "youtube",
-   "status": "ok",
-   "count": 5,
+   "status": "error",
+   "count": 0,
    "resolved": {
     "channelId": "UC3XTzVzaHQEd30rQbuvCtTQ",
     "title": "LastWeekTonight",
     "via": "name search"
    },
-   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC3XTzVzaHQEd30rQbuvCtTQ"
+   "error": "not found (404)",
+   "http": 404
   },
   {
    "id": "yt-billy-on-the-street",
@@ -172,15 +173,14 @@
    "id": "yt-politicsjoe",
    "name": "PoliticsJOE",
    "type": "youtube",
-   "status": "error",
-   "count": 0,
+   "status": "ok",
+   "count": 5,
    "resolved": {
     "channelId": "UCyzkxMLeZDcd_Qhzh6uMgbg",
     "title": "PoliticsJOE",
     "via": "name search"
    },
-   "error": "not found (404)",
-   "http": 404
+   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCyzkxMLeZDcd_Qhzh6uMgbg"
   },
   {
    "id": "yt-half-as-interesting",
@@ -200,15 +200,14 @@
    "id": "yt-coldfusion",
    "name": "ColdFusion",
    "type": "youtube",
-   "status": "error",
-   "count": 0,
+   "status": "ok",
+   "count": 2,
    "resolved": {
     "channelId": "UC4QZ_LsYcvcq7qOsOhpAX4A",
     "title": "ColdFusion",
     "via": "name search"
    },
-   "error": "not found (404)",
-   "http": 404
+   "url": "https://www.youtube.com/feeds/videos.xml?playlist_id=UULF4QZ_LsYcvcq7qOsOhpAX4A"
   },
   {
    "id": "yt-levi-hildebrand",
@@ -221,21 +220,22 @@
     "title": "Levi Hildebrand",
     "via": "name search"
    },
-   "error": "not found (404)",
-   "http": 404
+   "error": "HTTP 500",
+   "http": 500
   },
   {
    "id": "yt-tldr-news",
    "name": "TLDR News",
    "type": "youtube",
-   "status": "ok",
-   "count": 3,
+   "status": "error",
+   "count": 0,
    "resolved": {
     "channelId": "UCSMqateX8OA2s1wsOR2EgJA",
     "title": "TLDR News",
     "via": "name search"
    },
-   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCSMqateX8OA2s1wsOR2EgJA"
+   "error": "not found (404)",
+   "http": 404
   },
   {
    "id": "yt-simplicissimus",
@@ -269,15 +269,14 @@
    "id": "yt-channel-5-with-andrew-callaghan",
    "name": "Channel 5 with Andrew Callaghan",
    "type": "youtube",
-   "status": "error",
-   "count": 0,
+   "status": "ok",
+   "count": 4,
    "resolved": {
     "channelId": "UC-AQKm7HUNMmxjdS371MSwg",
     "title": "Channel 5 with Andrew Callaghan",
     "via": "name search"
    },
-   "error": "not found (404)",
-   "http": 404
+   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC-AQKm7HUNMmxjdS371MSwg"
   },
   {
    "id": "yt-prozd",
@@ -325,15 +324,14 @@
    "id": "yt-bald-and-bankrupt",
    "name": "Bald and Bankrupt",
    "type": "youtube",
-   "status": "error",
+   "status": "ok",
    "count": 0,
    "resolved": {
     "channelId": "UCxDZs_ltFFvn0FDHT6kmoXA",
     "title": "bald and bankrupt",
     "via": "name search"
    },
-   "error": "not found (404)",
-   "http": 404
+   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCxDZs_ltFFvn0FDHT6kmoXA"
   },
   {
    "id": "yt-tagesschau",
@@ -451,29 +449,27 @@
    "id": "yt-kill-tony",
    "name": "Kill Tony",
    "type": "youtube",
-   "status": "error",
-   "count": 0,
+   "status": "ok",
+   "count": 4,
    "resolved": {
     "channelId": "UCwzCMiicL-hBUzyjWiJaseg",
     "title": "Kill Tony",
     "via": "name search"
    },
-   "error": "not found (404)",
-   "http": 404
+   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCwzCMiicL-hBUzyjWiJaseg"
   },
   {
    "id": "yt-coffeezilla",
    "name": "Coffeezilla",
    "type": "youtube",
-   "status": "error",
-   "count": 0,
+   "status": "ok",
+   "count": 1,
    "resolved": {
     "channelId": "UCFQMnBA3CS502aghlcr0_aw",
     "title": "Coffeezilla",
     "via": "name search"
    },
-   "error": "not found (404)",
-   "http": 404
+   "url": "https://www.youtube.com/feeds/videos.xml?playlist_id=UULFFQMnBA3CS502aghlcr0_aw"
   },
   {
    "id": "yt-tom-scott",
@@ -577,15 +573,14 @@
    "id": "yt-bluejay",
    "name": "Bluejay",
    "type": "youtube",
-   "status": "error",
+   "status": "ok",
    "count": 0,
    "resolved": {
     "channelId": "UCvQ4C0f9_OWRf1uyobwqOwA",
     "title": "BlueJay",
     "via": "name search"
    },
-   "error": "not found (404)",
-   "http": 404
+   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCvQ4C0f9_OWRf1uyobwqOwA"
   },
   {
    "id": "yt-oversimplified",
@@ -702,20 +697,19 @@
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
+   "lastOk": "2026-10-19T01:03:09.666Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-xbox",
    "name": "r/xbox",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-slaythespire",
@@ -724,25 +718,26 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-10-18T18:49:23.635Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
   },
   {
    "id": "rd-germany",
    "name": "r/germany",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": "2026-10-15T00:59:57.533Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-unitedkingdom",
@@ -751,10 +746,61 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   }
  ],
  "items": [
+  {
+   "title": "Vietnam signs free trade deal with four European countries",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1x9jzxe/vietnam_signs_free_trade_deal_with_four_european/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-19T01:27:40.000Z",
+   "summary": "submitted by /u/AUnknownGuy [link] [comments]",
+   "id": "0c0c515c0915",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "America Is Now an Ally of Russia",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1x9fujr/america_is_now_an_ally_of_russia/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-18T22:07:36.000Z",
+   "summary": "submitted by /u/theatlantic [link] [comments]",
+   "id": "577cf29415d0",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Rubio says Trump to take up to 60 days to weigh Russia sanctions",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1x9emvw/rubio_says_trump_to_take_up_to_60_days_to_weigh/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-18T21:15:46.000Z",
+   "summary": "submitted by /u/graveyardofgoodsense [link] [comments]",
+   "id": "96f72ba92aa3",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
   {
    "title": "US threatens Europe over Starlink restrictions",
    "url": "https://www.reddit.com/r/geopolitics/comments/1x99rlp/us_threatens_europe_over_starlink_restrictions/",
@@ -790,55 +836,23 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Three Scenarios for a Leaderless World",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1x96vyp/three_scenarios_for_a_leaderless_world/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
+   "title": "KT: Behind the Tape (Ep: 789 Tim Butterly + Kirk Fox)",
+   "url": "https://www.youtube.com/watch?v=J97RDpBsDHg",
+   "source": "Kill Tony",
+   "feedId": "yt-kill-tony",
+   "type": "video",
    "tags": [
-    "politics",
-    "news"
+    "comedy",
+    "standup",
+    "listen"
    ],
-   "published": "2026-10-18T16:04:35.000Z",
-   "summary": "submitted by /u/nytopinion [link] [comments]",
-   "id": "e1a0ad470189",
-   "score": 1,
+   "published": "2026-10-18T13:00:10.000Z",
+   "summary": "An exclusive, behind the scenes look from KT Episode 789 KT guest Tim Butterly + Kirk Fox Tim Butterly, Kirk Fox, Pat O'Neill, Dedrick Flynn, Martin Phillips, D Madness, Michael A. Gonzales, Jon Deas, Matthew Muehling, Grooveline Horns, Joe White, Troy Conrad, Monica Colt…",
+   "thumb": "https://i3.ytimg.com/vi/J97RDpBsDHg/hqdefault.jpg",
+   "id": "5961f53720ee",
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Iran says it has a 'new operational plan' if the U.S. resumes attacks, as shipping vessels report strikes",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1x96jq6/iran_says_it_has_a_new_operational_plan_if_the_us/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-18T15:51:22.000Z",
-   "summary": "submitted by /u/One-Emu-1103 [link] [comments]",
-   "id": "c78846bd656d",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Vance says in ‘some ways’ US has ‘decisively won’ Iran war",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1x93ahd/vance_says_in_some_ways_us_has_decisively_won/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-18T13:30:44.000Z",
-   "summary": "submitted by /u/marketrent [link] [comments]",
-   "id": "4bb811e25fca",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
+   "why": "0"
   },
   {
    "title": "‘Well-known individual’ tries to secure permanent injunction against Guardian and ITN | The Guardian",
@@ -958,152 +972,274 @@
    "why": "0"
   },
   {
-   "title": "Generic Drugs & Overseas Manufacturing #lastweektonight",
-   "url": "https://www.youtube.com/shorts/xJEOHX5GiO4",
-   "source": "Last Week Tonight",
-   "feedId": "yt-last-week-tonight",
+   "title": "Tariq Ali: Nigel Farage and Reform are becoming irrelevant #politics",
+   "url": "https://www.youtube.com/shorts/ctZZjtifUAM",
+   "source": "PoliticsJOE",
+   "feedId": "yt-politicsjoe",
    "type": "video",
    "tags": [
-    "comedy",
-    "politics"
+    "comedy"
    ],
-   "published": "2026-10-16T14:00:29.000Z",
-   "summary": "You know what they say about making sure your generic drugs are manufactured in accordance with safety standards that prevent anyone from needing to get their eyeballs removed! Location, location, location.",
-   "thumb": "https://i1.ytimg.com/vi/xJEOHX5GiO4/hqdefault.jpg",
-   "id": "6023305e73b2",
+   "published": "2026-10-17T11:00:38.000Z",
+   "summary": "Like PoliticsJOE? We need your support: https://www.patreon.com/PoliticsJOE",
+   "thumb": "https://i4.ytimg.com/vi/ctZZjtifUAM/hqdefault.jpg",
+   "id": "b64e6b4291ca",
    "score": 0,
    "matched": [],
    "why": "0"
   },
   {
-   "title": "Generic Drug Shortages #lastweektonight",
-   "url": "https://www.youtube.com/shorts/gr1IAw56Uvk",
-   "source": "Last Week Tonight",
-   "feedId": "yt-last-week-tonight",
+   "title": "Ireland Grinds to a Halt amid Biggest Strike in Nearly 20 years",
+   "url": "https://www.youtube.com/watch?v=5GL6eZEOojE",
+   "source": "PoliticsJOE",
+   "feedId": "yt-politicsjoe",
    "type": "video",
    "tags": [
-    "comedy",
-    "politics"
+    "comedy"
    ],
-   "published": "2026-10-15T15:15:58.000Z",
-   "summary": "We’re running out of some life-saving medications. And we shouldn’t have to rely on Kevin Bacon to fix it. Or – sorry – Kyra Sedgwick.",
-   "thumb": "https://i4.ytimg.com/vi/gr1IAw56Uvk/hqdefault.jpg",
-   "id": "4c14c5e0df24",
+   "published": "2026-10-17T09:00:03.000Z",
+   "summary": "Public sector workers across Ireland walked out today in the biggest strike Ireland has seen in 17 years, with about 300,000 predicted to be on the picket calling for better pay and conditions as the cost of living crisis continues to bite. We went down to a picket at Dublin's…",
+   "thumb": "https://i2.ytimg.com/vi/5GL6eZEOojE/hqdefault.jpg",
+   "id": "a382d0cf68fe",
    "score": 0,
    "matched": [],
    "why": "0"
   },
   {
-   "title": "Can Burnham Actually Ditch First-Past-the-Post?",
-   "url": "https://www.youtube.com/watch?v=QmGYruZYHCc",
-   "source": "TLDR News",
-   "feedId": "yt-tldr-news",
+   "title": "Bashar's Alien Cult",
+   "url": "https://www.youtube.com/watch?v=u1LKaBiD9JY",
+   "source": "Channel 5 with Andrew Callaghan",
+   "feedId": "yt-channel-5-with-andrew-callaghan",
    "type": "video",
    "tags": [
-    "news",
-    "politics",
+    "education",
+    "politics"
+   ],
+   "published": "2026-10-16T16:00:11.000Z",
+   "summary": "To see our unreleased, uncensored All Gas No Brakes catalog, head to https://www.patreon.com/channel5 Also, to see our uncensored, new All Gas No Brakes episode, 'Camp Looksmaxx,' head to https://www.patreon.com/channel5 Subscriptions are $5 a month but power the entire…",
+   "thumb": "https://i2.ytimg.com/vi/u1LKaBiD9JY/hqdefault.jpg",
+   "id": "a4b963100670",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Britain is in a \"coital dog lock\" with Trump's America #politics",
+   "url": "https://www.youtube.com/shorts/p6Z9C5NbjqY",
+   "source": "PoliticsJOE",
+   "feedId": "yt-politicsjoe",
+   "type": "video",
+   "tags": [
+    "comedy"
+   ],
+   "published": "2026-10-16T11:52:48.000Z",
+   "summary": "Like PoliticsJOE? We need your support: https://www.patreon.com/PoliticsJOE",
+   "thumb": "https://i1.ytimg.com/vi/p6Z9C5NbjqY/hqdefault.jpg",
+   "id": "e7d2f4ab0e2d",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Trump's America has taken control of Britain | Tariq Ali interview",
+   "url": "https://www.youtube.com/watch?v=rQcHhatDUtA",
+   "source": "PoliticsJOE",
+   "feedId": "yt-politicsjoe",
+   "type": "video",
+   "tags": [
+    "comedy"
+   ],
+   "published": "2026-10-16T11:30:31.000Z",
+   "summary": "Tariq Ali is one of Britain's foremost figures on the left of politics, and following a busy recess for Andy Burnham, he came in to the studio to react to the Prime Minister's speech to Labour conference, his first few months in charge, and how Britain should position itself in…",
+   "thumb": "https://i3.ytimg.com/vi/rQcHhatDUtA/hqdefault.jpg",
+   "id": "5c7b0672bfc5",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Could the Zionism is Racism vote been handled better?",
+   "url": "https://www.youtube.com/shorts/X0Ya7tfwsQw",
+   "source": "PoliticsJOE",
+   "feedId": "yt-politicsjoe",
+   "type": "video",
+   "tags": [
+    "comedy"
+   ],
+   "published": "2026-10-15T16:30:11.000Z",
+   "summary": "Like PoliticsJOE? We need your support: https://www.patreon.com/PoliticsJOE",
+   "thumb": "https://i1.ytimg.com/vi/X0Ya7tfwsQw/hqdefault.jpg",
+   "id": "984f12c7aa5d",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Bill Gates’ Daughter is in Trouble",
+   "url": "https://www.youtube.com/watch?v=P8CVqDKeOKk",
+   "source": "ColdFusion",
+   "feedId": "yt-coldfusion",
+   "type": "video",
+   "tags": [
+    "finance",
+    "tech",
     "listen"
    ],
-   "published": "2026-10-15T09:30:07.000Z",
-   "summary": "Go to https://hensonshaving.com/TLDR and enter \"TLDR\" at checkout to get 100 free blades with your purchase. In this video we explore Burnham's promise to implement a more representative electoral system in the UK but will he actually succeed where countless other governments…",
-   "thumb": "https://i2.ytimg.com/vi/QmGYruZYHCc/hqdefault.jpg",
-   "id": "c979ca4f9006",
+   "published": "2026-10-15T15:30:15.000Z",
+   "summary": "Go to https://buyraycon.com/coldfusionCLIP to get 25% off! Thanks to Raycon for sponsoring! ColdFusion Podcast: https://www.youtube.com/@ThroughTheWeb Watch or listen to ColdFusion on Spotify: https://open.spotify.com/show/1YEwCKoRz8fEDqheXB6UJ1 ColdFusion Music:…",
+   "thumb": "https://i1.ytimg.com/vi/P8CVqDKeOKk/hqdefault.jpg",
+   "id": "46ccadd9b256",
    "score": 0,
    "matched": [],
    "why": "0"
   },
   {
-   "title": "Generic Drugs #lastweektonight",
-   "url": "https://www.youtube.com/shorts/kSE6Eng5Qeg",
-   "source": "Last Week Tonight",
-   "feedId": "yt-last-week-tonight",
+   "title": "KT #789 - TIM BUTTERLY +KIRK FOX",
+   "url": "https://www.youtube.com/watch?v=ntTShp2YNlo",
+   "source": "Kill Tony",
+   "feedId": "yt-kill-tony",
    "type": "video",
    "tags": [
     "comedy",
-    "politics"
-   ],
-   "published": "2026-10-13T14:00:08.000Z",
-   "summary": "If you’ve never needed to take any generic medications, congratulations! You’re healthy and well-adjusted. Which applies to maybe – maybe – five people reading this. For everyone else, the link to the full segment is in our bio!",
-   "thumb": "https://i4.ytimg.com/vi/kSE6Eng5Qeg/hqdefault.jpg",
-   "id": "6dcfbf4908ec",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Could Another Brexit Debate End Farage?",
-   "url": "https://www.youtube.com/watch?v=ZeyP_CHjEZw",
-   "source": "TLDR News",
-   "feedId": "yt-tldr-news",
-   "type": "video",
-   "tags": [
-    "news",
-    "politics",
+    "standup",
     "listen"
    ],
-   "published": "2026-10-13T09:00:14.000Z",
-   "summary": "Go to https://hensonshaving.com/TLDR and enter \"TLDR\" at checkout to get 100 free blades with your purchase. Nigel Farage said Andy Burnham’s comments about potentially rejoining the EU had given him “the biggest boost in [his] career\". We look at why — even if it seems…",
-   "thumb": "https://i3.ytimg.com/vi/ZeyP_CHjEZw/hqdefault.jpg",
-   "id": "b9534585cb6d",
+   "published": "2026-10-13T01:00:06.000Z",
+   "summary": "Tim Butterly, Kirk Fox, Pat O'Neill, Dedrick Flynn, Martin Phillips, D Madness, Michael A. Gonzales, Jon Deas, Matthew Muehling, Grooveline Horns, Joe White, Troy Conrad, Monica Colt, Steve Glass, Tony Hinchcliffe, Brian Redban - RECORDED– 10/05/2026 For advertising inquiries,…",
+   "thumb": "https://i3.ytimg.com/vi/ntTShp2YNlo/hqdefault.jpg",
+   "id": "addc529e979e",
    "score": 0,
    "matched": [],
    "why": "0"
   },
   {
-   "title": "Kimberly Guilfoyle #lastweektonight",
-   "url": "https://www.youtube.com/shorts/pmmd1kiKOw0",
-   "source": "Last Week Tonight",
-   "feedId": "yt-last-week-tonight",
+   "title": "I Investigated $100 Billion in Healthcare Fraud",
+   "url": "https://www.youtube.com/watch?v=9eWJISlh0fw",
+   "source": "Coffeezilla",
+   "feedId": "yt-coffeezilla",
+   "type": "video",
+   "tags": [
+    "finance"
+   ],
+   "published": "2026-10-12T17:47:01.000Z",
+   "summary": "LIMITED TIME MERCH!! https://coffeezilla.shop/ (PRE-ORDER ENDS NOVEMBER 6TH) Support Investigative Journalism: ► Patreon: https://patreon.com/coffeezilla Credits: HUNTERBROOK ENSIGN STORY: https://hntrbrk.com/investigations/ensign 3D Artist: Ed Leszczynski @LeszczynskiEd Video…",
+   "thumb": "https://i2.ytimg.com/vi/9eWJISlh0fw/hqdefault.jpg",
+   "id": "cc3a132b02be",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "KT: Behind the Tape (Ep: 788 Wheeler Walker + Sam Tripoli)",
+   "url": "https://www.youtube.com/watch?v=aoogiviEa1A",
+   "source": "Kill Tony",
+   "feedId": "yt-kill-tony",
    "type": "video",
    "tags": [
     "comedy",
-    "politics"
-   ],
-   "published": "2026-10-12T14:00:30.000Z",
-   "summary": "Things don’t look great for Kimberly Guilfoyle here! But please also spare a flabbergasted thought for Kid Rock and the royal fuck up that was the Osmosis Jones soundtrack.",
-   "thumb": "https://i1.ytimg.com/vi/pmmd1kiKOw0/hqdefault.jpg",
-   "id": "6ed431d17d90",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Generic Drugs: Last Week Tonight with John Oliver (HBO)",
-   "url": "https://www.youtube.com/watch?v=TM1EbMKhT4Y",
-   "source": "Last Week Tonight",
-   "feedId": "yt-last-week-tonight",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "politics"
-   ],
-   "published": "2026-10-12T06:30:32.000Z",
-   "summary": "John Oliver does a deep dive on generic drugs, why they’re so important, why they can be so vulnerable to shortages and quality issues, and why Kevin Bacon can’t solve everything all on his own. Subscribe to the #lastweektonight YouTube channel for more almost news as it almost…",
-   "thumb": "https://i1.ytimg.com/vi/TM1EbMKhT4Y/hqdefault.jpg",
-   "id": "49b7190d4eac",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "The Holborn & St Pancras Election Explained",
-   "url": "https://www.youtube.com/watch?v=i2DqUAaox_8",
-   "source": "TLDR News",
-   "feedId": "yt-tldr-news",
-   "type": "video",
-   "tags": [
-    "news",
-    "politics",
+    "standup",
     "listen"
    ],
-   "published": "2026-10-09T09:55:54.000Z",
-   "summary": "Want to restore the planet’s ecosystems and see your impact in monthly videos? The first 100 people to join Planet Wild with my code NEWS10 will get the first month free on me: https://planetwild.com/r/tldrnews/join/10 If you want to get to know them better first, check out…",
-   "thumb": "https://i2.ytimg.com/vi/i2DqUAaox_8/hqdefault.jpg",
-   "id": "05ef77f1ded9",
+   "published": "2026-10-12T05:54:09.000Z",
+   "summary": "An exclusive, behind the scenes look from KT Episode 788 KT guest Wheeler Walker + Sam Tripoli Wheeler Walker Jr, Sam Tripoli, Pat O'Neill, Dedrick Flynn, Martin Phillips, D Madness, Michael A. Gonzales, Jon Deas, Matthew Muehling, Grooveline Horns, Joe White, Troy Conrad,…",
+   "thumb": "https://i2.ytimg.com/vi/aoogiviEa1A/hqdefault.jpg",
+   "id": "72b24489802d",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "What’s it really like in Iran?",
+   "url": "https://www.youtube.com/shorts/IYCrPmA6Gow",
+   "source": "Channel 5 with Andrew Callaghan",
+   "feedId": "yt-channel-5-with-andrew-callaghan",
+   "type": "video",
+   "tags": [
+    "education",
+    "politics"
+   ],
+   "published": "2026-10-09T18:50:37.000Z",
+   "summary": "",
+   "thumb": "https://i2.ytimg.com/vi/IYCrPmA6Gow/hqdefault.jpg",
+   "id": "4254721f1e29",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "AI Keeps Pissing Off Mathematicians",
+   "url": "https://www.youtube.com/watch?v=SoLWCYnc-Bs",
+   "source": "ColdFusion",
+   "feedId": "yt-coldfusion",
+   "type": "video",
+   "tags": [
+    "finance",
+    "tech",
+    "listen"
+   ],
+   "published": "2026-10-08T17:05:21.000Z",
+   "summary": "Description: Visit https://brilliant.org/coldfusion to try Brilliant’s tutor for free and get 20% off an annual subscription. Tristan Buckmaster is at the centre of an unlikely controversy involving OpenAI and the pursuit of mathematics. Tristan claims that his chatlogs may…",
+   "thumb": "https://i4.ytimg.com/vi/SoLWCYnc-Bs/hqdefault.jpg",
+   "id": "8d87b874b34c",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Tehran Streets",
+   "url": "https://www.youtube.com/watch?v=hrjzF9r4DpQ",
+   "source": "Channel 5 with Andrew Callaghan",
+   "feedId": "yt-channel-5-with-andrew-callaghan",
+   "type": "video",
+   "tags": [
+    "education",
+    "politics"
+   ],
+   "published": "2026-10-08T15:55:37.000Z",
+   "summary": "Go to https://ground.news/c5 to stay fully informed with all sides of every story. Subscribe for 40% off the Vantage plan through my link. To see our newest video ‘Berlin Streets’, head to our Patreon at https://www.patreon.com/channel5 To listen to 431n, go to…",
+   "thumb": "https://i1.ytimg.com/vi/hrjzF9r4DpQ/hqdefault.jpg",
+   "id": "ec775addea59",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Juggalo Ass Eating Contest",
+   "url": "https://www.youtube.com/shorts/bn0og46W_kE",
+   "source": "Channel 5 with Andrew Callaghan",
+   "feedId": "yt-channel-5-with-andrew-callaghan",
+   "type": "video",
+   "tags": [
+    "education",
+    "politics"
+   ],
+   "published": "2026-10-07T22:01:22.000Z",
+   "summary": "",
+   "thumb": "https://i3.ytimg.com/vi/bn0og46W_kE/hqdefault.jpg",
+   "id": "6072b9a1b203",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "KT #788 - WHEELER WALKER JR + SAM TRIPOLI",
+   "url": "https://www.youtube.com/watch?v=jw1l2PKuckA",
+   "source": "Kill Tony",
+   "feedId": "yt-kill-tony",
+   "type": "video",
+   "tags": [
+    "comedy",
+    "standup",
+    "listen"
+   ],
+   "published": "2026-10-06T01:00:07.000Z",
+   "summary": "Wheeler Walker Jr, Sam Tripoli, Pat O'Neill, Dedrick Flynn, Martin Phillips, D Madness, Michael A. Gonzales, Jon Deas, Matthew Muehling, Grooveline Horns, Joe White, Troy Conrad, Monica Colt, Steve Glass, Tony Hinchcliffe, Brian Redban - RECORDED– 09/28/2026 For advertising…",
+   "thumb": "https://i3.ytimg.com/vi/jw1l2PKuckA/hqdefault.jpg",
+   "id": "fa6312c6fbca",
    "score": 0,
    "matched": [],
    "why": "0"
   }
  ],
- "contentHash": "6cb96329c2b4"
+ "contentHash": "3a10d47c5b54"
 }
