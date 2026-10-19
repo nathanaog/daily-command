@@ -1,17 +1,17 @@
 {
- "generated": "2026-10-19T15:51:25.521Z",
+ "generated": "2026-10-19T19:01:44.141Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
   "ok": 50,
-  "items": 109,
+  "items": 110,
   "duplicatesMerged": 0,
   "lengthsKnown": 1,
-  "lengthLookups": 95,
-  "lengthFailures": 95,
+  "lengthLookups": 96,
+  "lengthFailures": 96,
   "lengthVia": "video pages",
   "lengthFailReasons": {
-   "no length on page": 95
+   "no length on page": 96
   }
  },
  "feeds": [
@@ -176,7 +176,7 @@
    "name": "Half as Interesting",
    "type": "youtube",
    "status": "ok",
-   "count": 2,
+   "count": 3,
    "resolved": {
     "channelId": "UCuCkxoKLYO_EQ2GeFtbM_bw",
     "title": "Half as Interesting",
@@ -630,20 +630,19 @@
    "id": "rd-productmanagement",
    "name": "r/productmanagement",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 3,
-   "url": "https://www.reddit.com/r/productmanagement/top/.rss?t=day"
+   "lastOk": "2026-10-19T15:51:25.521Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-tech",
    "name": "r/tech",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": "2026-10-15T21:49:52.028Z",
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-gaming",
@@ -652,25 +651,26 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-10-19T09:55:21.663Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
   },
   {
    "id": "rd-xbox",
    "name": "r/xbox",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-slaythespire",
@@ -679,7 +679,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-geopolitics",
@@ -710,6 +710,147 @@
   }
  ],
  "items": [
+  {
+   "title": "How Planes Fly Without Air Traffic Control",
+   "url": "https://www.youtube.com/watch?v=ju1OZStv2eI",
+   "source": "Half as Interesting",
+   "feedId": "yt-half-as-interesting",
+   "type": "video",
+   "tags": [
+    "comedy",
+    "education"
+   ],
+   "published": "2026-10-19T18:40:58.000Z",
+   "summary": "Thanks to Storyblocks for sponsoring this video. Get 15% off any annual plan for a limited time, only available through this link: https://www.storyblocks.com/HAI Follow Sam from Half as Interesting on Instagram: http://Instagram.com/Sam.From.Wendover Follow Half as Interesting…",
+   "thumb": "https://i3.ytimg.com/vi/ju1OZStv2eI/hqdefault.jpg",
+   "id": "fdb4fbd01780",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "tagesschau 20:00 Uhr, 19.10.2026",
+   "url": "https://www.youtube.com/watch?v=VAeuTD_wkV4",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-19T18:27:23.000Z",
+   "summary": "tagesschau 20:00 Uhr Französische Regierung räumt nach Ausschreitungen am Rande von friedlichen Protesten Versäumnisse ein, Vorstand von VW plant weltweit Gehälter bis 2030 einzufrieren, Bundesregierung gibt Zusammenarbeit mit Computerchip-Hersteller Nvidia bekannt, Berliner…",
+   "thumb": "https://i3.ytimg.com/vi/VAeuTD_wkV4/hqdefault.jpg",
+   "id": "259cd3f661d0",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Trump urges France to close their borders",
+   "url": "https://www.youtube.com/watch?v=e8h4u51my_g",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-19T18:17:38.000Z",
+   "summary": "Curfews imposed in cities across France as government admits police 'lost control'. Ben Kentish is joined by guests to discuss the meaning behind the chaos sweeping European countries and what the US leader has to say about it all. 03:43 | Freelance Journalist and Political…",
+   "thumb": "https://i2.ytimg.com/vi/e8h4u51my_g/hqdefault.jpg",
+   "id": "1458dc1a71e1",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Home Secretary threatens Eritrea with visa penalties",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xa4hle/home_secretary_threatens_eritrea_with_visa/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-19T18:15:51.000Z",
+   "summary": "submitted by /u/Jessicas_skirt [link] [comments]",
+   "id": "080eb9174f90",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Journalists forced to flee homes after Tommy Robinson shared images of where they lived online, court told",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xa2j7f/journalists_forced_to_flee_homes_after_tommy/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-19T17:04:42.000Z",
+   "summary": "submitted by /u/gravy_baron [link] [comments]",
+   "id": "3c1089207a33",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Why don't Brits protest like the French?",
+   "url": "https://www.youtube.com/watch?v=mR7Ul_wRVik",
+   "source": "PoliticsJOE",
+   "feedId": "yt-politicsjoe",
+   "type": "video",
+   "tags": [
+    "comedy"
+   ],
+   "published": "2026-10-19T16:52:40.000Z",
+   "summary": "In France, protests over education cuts have grown into a movement involving unions, farmers, environmental campaigners and pensioners. Anger over declining public services, stagnant wages, and the cost of living has mobilised people across society. But isn't Britain facing the…",
+   "thumb": "https://i2.ytimg.com/vi/mR7Ul_wRVik/hqdefault.jpg",
+   "id": "7ac1c1729520",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Kai Cenat Allegations...",
+   "url": "https://www.youtube.com/watch?v=NEJsi_LJzEo",
+   "source": "Aberrant preach",
+   "feedId": "yt-aberrant-preach",
+   "type": "video",
+   "tags": [
+    "trash"
+   ],
+   "published": "2026-10-19T16:38:53.000Z",
+   "summary": "KaiCenat is going through some rough claims by Reggie aka Lil Rodney Son over possible innapropriate behavior with RaiKai. ———————————— Spotify: https://open.spotify.com/artist/6QJIJ6AugqPEFASp1V6zgH Merchandise --- https://www.enkreprinte.com/collections/aba-and-preach…",
+   "thumb": "https://i3.ytimg.com/vi/NEJsi_LJzEo/hqdefault.jpg",
+   "id": "c07073215bd4",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "This Couple Invented Underwear for Flatulence | Shark Tank US | Shark Tank Global",
+   "url": "https://www.youtube.com/watch?v=4YE0AiniDA4",
+   "source": "Shark Tank Global",
+   "feedId": "yt-shark-tank-global",
+   "type": "video",
+   "tags": [
+    "trash",
+    "business"
+   ],
+   "published": "2026-10-19T16:19:50.000Z",
+   "summary": "Buck and Arlene Wymer enter the Tank seeking $55,000 for 25% of their company, Under-Tec, which makes Under-Ease, protective underwear designed to trap flatulence odors using activated charcoal filters. Can their unusual invention convince the Sharks that there’s a market for…",
+   "thumb": "https://i1.ytimg.com/vi/4YE0AiniDA4/hqdefault.jpg",
+   "id": "9011ead7df6e",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
   {
    "title": "tagesschau in Einfacher Sprache 19:00 Uhr, 19.10.2026",
    "url": "https://www.youtube.com/watch?v=lxc0eZxHUU0",
@@ -839,7 +980,7 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Tom gets excited about a pendulum.",
+   "title": "Clocks are so more interesting than I thought.",
    "url": "https://www.youtube.com/watch?v=BxXfeotgVVA",
    "source": "Tom Scott",
    "feedId": "yt-tom-scott",
@@ -851,6 +992,23 @@
    "summary": "At the Cumbria Clock Company, I discover that I knew far less about clocks than I thought. | ❓ Lateral, free weekly podcast: https://lateralcast.com/ https://youtube.com/lateralcast/ 🗺️ England series map: https://www.tomscott.com/england/ 🟥 MORE FROM TOM:…",
    "thumb": "https://i3.ytimg.com/vi/BxXfeotgVVA/hqdefault.jpg",
    "id": "636e08097a67",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Labour's pledge to tackle 'headphone dodgers' on buses falls apart as No10 says fellow passengers shouldn't intervene - and minister admits there's no 'special bus police' to issue fines",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1x9z5nh/labours_pledge_to_tackle_headphone_dodgers_on/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-19T14:58:30.000Z",
+   "summary": "submitted by /u/dailymail [link] [comments]",
+   "id": "741d7ba4f091",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -869,6 +1027,23 @@
    "summary": "Simon Marks joins James O'Brien to talk about the moment that could 'cost JD Vance his presidential aspirations'. The US vice president is widely known to be eyeing up the White House, hoping to become Donald Trump's successor. Simon Marks points to a recent 'problematic'…",
    "thumb": "https://i4.ytimg.com/vi/KCaG9Jt8CqM/hqdefault.jpg",
    "id": "8225dd325343",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Revealed: the ‘Palestine poppy’ creator who justified stoning",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1x9y7d0/revealed_the_palestine_poppy_creator_who/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-19T14:21:05.000Z",
+   "summary": "submitted by /u/Kataera [link] [comments]",
+   "id": "411052868fe1",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -911,25 +1086,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Regenmenge von zwei Jahren in 24 Stunden: Die Wassermassen in Spanien",
-   "url": "https://www.youtube.com/watch?v=FBLUH3KtA9c",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-19T13:17:44.000Z",
-   "summary": "Heftige Regenfälle haben in der Mittelmeerregion Spaniens zu schweren Überschwemmungen geführt. Besonders betroffen sind die Provinzen Valencia und Alicante. Straßen, Häuser und ganze Landstriche stehen noch unter Wasser. Die Behörden riefen die zweithöchste Warnstufe aus.…",
-   "thumb": "https://i3.ytimg.com/vi/FBLUH3KtA9c/hqdefault.jpg",
-   "id": "711cbc535256",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "This Trump Official is Going Viral…",
    "url": "https://www.youtube.com/watch?v=_RAUcIBeVqE",
    "source": "Luke Beasley",
@@ -943,6 +1099,23 @@
    "summary": "Luke discusses Trump’s new ambassador for the U.S. State Department’s Anti-Trafficking Office, Barbera Thornhill. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected…",
    "thumb": "https://i4.ytimg.com/vi/_RAUcIBeVqE/hqdefault.jpg",
    "id": "6fd25c3eb0c8",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "The Canary will be closed for the foreseeable future.",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1x9w1id/the_canary_will_be_closed_for_the_foreseeable/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-19T12:50:54.000Z",
+   "summary": "submitted by /u/Penarthlan [link] [comments]",
+   "id": "2a801335c29f",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1049,24 +1222,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "France in crisis: Could the UK see similar riots?",
-   "url": "https://www.youtube.com/watch?v=PiZ2TjiCH4s",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-19T10:14:00.000Z",
-   "summary": "Marseille has imposed a lockdown on public gatherings as France's Prime Minister holds a crisis meeting to try and resolve violent protests across the country. In an address to the nation, the President said France is feeling “anger and shame” after what he called “incredible…",
-   "thumb": "https://i1.ytimg.com/vi/PiZ2TjiCH4s/hqdefault.jpg",
-   "id": "f5c517d6474f",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Is anyone automating their UAT?",
    "url": "https://www.reddit.com/r/ProductManagement/comments/1x9sqpn/is_anyone_automating_their_uat/",
    "source": "r/productmanagement",
@@ -1078,23 +1233,6 @@
    "published": "2026-10-19T09:58:22.000Z",
    "summary": "I’m getting shit for holding up releases and feel like I spend 90% of my time just clicking through changes. Has anyone found any good ways of automating the process either with LLMs or another tool? submitted by /u/zxcv1135 [link] [comments]",
    "id": "0c802977d9d0",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Yorkshire residents living in fear as asylum centre residents arrested for rape and child sex assault",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1x9r6yx/yorkshire_residents_living_in_fear_as_asylum/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-19T08:21:02.000Z",
-   "summary": "submitted by /u/Little-Attorney1287 [link] [comments]",
-   "id": "0b8bed503c76",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1112,74 +1250,6 @@
    "published": "2026-10-19T07:52:59.000Z",
    "summary": "The Wall Street Journal reported Vladimir Putin had reportedly suggested a summit between himself, U.S. President Donald Trump and Chinese President Xi Jinping for a deal to end the Ukraine war. The summit is not confirmed, but if it takes place will not involve Ukrainian…",
    "id": "c8bccdc84f33",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "r/ukpolitics voter intention survey: 🌹LAB 58.7 (+11.9), 🔶LDM 9.1 (-5.5), 🌳CON 8.3 (+3.6), 🟦RES 6.1 (-4.4), ➡️REF 4.7 (-2.1), 🟢GRN 4.2 (-1.5), ❌SPOIL 2.8 (+0.2), 🟨SNP 2.2 (-0.6), OTHERS 3.9 (-0.4), changes w/ Aug 2026, see full text for important details",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1x9qag2/rukpolitics_voter_intention_survey_lab_587_119/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-19T07:23:10.000Z",
-   "summary": "The latest subreddit survey results are now available. Please read this post in full before visiting the dashboard, and before leaving a comment. As ever: Respondents are self-selecting, and pale in comparison to our recorded daily recorded unique visitors (currently averaging…",
-   "id": "f570c5467555",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Burnham launches crackdown against people ‘blasting music’ on public transport",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1x9pzfv/burnham_launches_crackdown_against_people/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-19T07:04:08.000Z",
-   "summary": "submitted by /u/politics_uk [link] [comments]",
-   "id": "c568ce914bbb",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Companies exploiting welfare system by using residents as 'cash cows,' BBC finds",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1x9p0if/companies_exploiting_welfare_system_by_using/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-19T06:02:38.000Z",
-   "summary": "submitted by /u/Glum-Mortgage-5860 [link] [comments]",
-   "id": "b35dad0430c4",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Undercover Inside Reform UK: Full ITV Exposure Documentary",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1x9oziz/undercover_inside_reform_uk_full_itv_exposure/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-19T06:01:03.000Z",
-   "summary": "submitted by /u/Dr_Passmore [link] [comments]",
-   "id": "dd1b2c7864ae",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1938,23 +2008,6 @@
    "why": "0"
   },
   {
-   "title": "The New Fascists | How Power Works with Naomi Klein and Astra Taylor",
-   "url": "https://www.youtube.com/watch?v=CAqqLKiJbmo",
-   "source": "PoliticsJOE",
-   "feedId": "yt-politicsjoe",
-   "type": "video",
-   "tags": [
-    "comedy"
-   ],
-   "published": "2026-10-14T16:22:26.000Z",
-   "summary": "Naomi Klein and Astra Taylor are fighting for the living world. Their new book charts an alliance between Silicon Valley billionaires, Donald Trump, and the far right, who they suggest are working against humanity in the name of profit and power. For Klein and Taylor, fascism…",
-   "thumb": "https://i4.ytimg.com/vi/CAqqLKiJbmo/hqdefault.jpg",
-   "id": "b769a4b2313c",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "David Breaks Down His Debates with Conservatives | Surrounded Follow-Up",
    "url": "https://www.youtube.com/watch?v=O71_BzlwX9w",
    "source": "Jubilee",
@@ -2094,24 +2147,6 @@
    "summary": "LIMITED TIME MERCH!! https://coffeezilla.shop/ (PRE-ORDER ENDS NOVEMBER 6TH) Support Investigative Journalism: ► Patreon: https://patreon.com/coffeezilla Credits: HUNTERBROOK ENSIGN STORY: https://hntrbrk.com/investigations/ensign 3D Artist: Ed Leszczynski @LeszczynskiEd Video…",
    "thumb": "https://i2.ytimg.com/vi/9eWJISlh0fw/hqdefault.jpg",
    "id": "cc3a132b02be",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "This $10 Wax Keeps Glasses From Slipping Down Your Nose | Shark Tank US | Shark Tank Global",
-   "url": "https://www.youtube.com/watch?v=XJzBvdRjMMM",
-   "source": "Shark Tank Global",
-   "feedId": "yt-shark-tank-global",
-   "type": "video",
-   "tags": [
-    "trash",
-    "business"
-   ],
-   "published": "2026-10-12T16:00:03.000Z",
-   "summary": "Don and Lydia enter the Tank seeking $80,000 for 20% of their company, Nerdwax, an all-natural beeswax formula designed to keep glasses from slipping down your nose. From Season 7 Episode 3 Watch Shark Tank US Now: http://AAN.SonyPictures.com/SharkTankUSHulu Watch Shark Tank…",
-   "thumb": "https://i1.ytimg.com/vi/XJzBvdRjMMM/hqdefault.jpg",
-   "id": "c314c5e78799",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2409,23 +2444,6 @@
    "why": "0"
   },
   {
-   "title": "This Is So Creepy",
-   "url": "https://www.youtube.com/watch?v=s9EPzLt0r3g",
-   "source": "Aberrant preach",
-   "feedId": "yt-aberrant-preach",
-   "type": "video",
-   "tags": [
-    "trash"
-   ],
-   "published": "2026-10-09T17:45:43.000Z",
-   "summary": "This series of Tiktoks got us spooked as the same line for line is spoken across all women. This got us reflecting how AI and bots have overtaken the internet. ———————————— Spotify: https://open.spotify.com/artist/6QJIJ6AugqPEFASp1V6zgH Merchandise ---…",
-   "thumb": "https://i4.ytimg.com/vi/s9EPzLt0r3g/hqdefault.jpg",
-   "id": "b08336026987",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "Israeli Experts vs Palestinian Experts | Middle Ground",
    "url": "https://www.youtube.com/watch?v=vjFwzUs_H-I",
    "source": "Jubilee",
@@ -2661,5 +2679,5 @@
    "why": "0"
   }
  ],
- "contentHash": "9574a14add1d"
+ "contentHash": "fa2d2881c468"
 }
