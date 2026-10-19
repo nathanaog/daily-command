@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-19T09:55:21.663Z",
+ "generated": "2026-10-19T13:05:23.484Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
@@ -657,20 +657,19 @@
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
+   "lastOk": "2026-10-19T09:55:21.663Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-xbox",
    "name": "r/xbox",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-slaythespire",
@@ -679,25 +678,26 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-10-19T03:55:17.385Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
   },
   {
    "id": "rd-germany",
    "name": "r/germany",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": "2026-10-15T00:59:57.533Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-unitedkingdom",
@@ -706,10 +706,172 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   }
  ],
  "items": [
+  {
+   "title": "This Trump Official is Going Viral…",
+   "url": "https://www.youtube.com/watch?v=_RAUcIBeVqE",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-19T13:00:21.000Z",
+   "summary": "Luke discusses Trump’s new ambassador for the U.S. State Department’s Anti-Trafficking Office, Barbera Thornhill. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected…",
+   "thumb": "https://i4.ytimg.com/vi/_RAUcIBeVqE/hqdefault.jpg",
+   "id": "6fd25c3eb0c8",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Bodenproben vom Mars: Warum die Idefix-Mission so lange dauert",
+   "url": "https://www.youtube.com/watch?v=17sEkybOHdY",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-19T12:34:37.000Z",
+   "summary": "Heute Abend um Punkt 21:41 Uhr soll die Mission zum Mars beginnen. In Japan startet dann eine riesige Trägerrakete mit einer Sonde an Bord. Diese soll auf dem Marsmond Phobos landen, dort Proben entnehmen und zurück zur Erde bringen. Mit dabei ist der deutsch-französische Rover…",
+   "thumb": "https://i2.ytimg.com/vi/17sEkybOHdY/hqdefault.jpg",
+   "id": "50e6f6bf221c",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "'The Western Spring'? France unrest spills across borders",
+   "url": "https://www.youtube.com/watch?v=DevXveXhUfc",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-19T12:33:19.000Z",
+   "summary": "Emmanuel Macron has pledged to help young people build a “desirable future”, after days of violent protests across France left thousands arrested and hundreds of police officers injured. In an address to the nation, the President said France is feeling “anger and shame” after…",
+   "thumb": "https://i1.ytimg.com/vi/DevXveXhUfc/hqdefault.jpg",
+   "id": "df9046942336",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Ukraine receives partial intelligence on Russian ballistic missile strikes",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1x9u783/ukraine_receives_partial_intelligence_on_russian/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-19T11:21:38.000Z",
+   "summary": "Ukraine received intelligence from western partners about just one of two Russian ballistic missile attacks overnight into Monday, as relations between Kyiv and Washington have sharply deteriorated in recent days. More than 200 drones and several “Banderol” cruise missiles…",
+   "id": "794496c429f7",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "FATF Has Declared War on Fraud. Not All Its Allies Can Afford to Fight",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1x9u4bt/fatf_has_declared_war_on_fraud_not_all_its_allies/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-19T11:17:28.000Z",
+   "summary": "submitted by /u/RUSIOfficial [link] [comments]",
+   "id": "ad2b25861e8b",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Sonderwarnung auf Mallorca: Was bedeutet das für Urlauber?",
+   "url": "https://www.youtube.com/watch?v=MCHKd4L9ENo",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-19T11:16:13.000Z",
+   "summary": "Mallorca bereitet sich auf schwere Regenfälle vor. Wegen des Sturmtiefs „Adam“ herrscht Warnstufe Rot, die Schulen sind geschlossen, viele Flüge bereits ausgefallen. Auf dem spanischen Festland kam es bereits zu Überflutungen. Mehr Informationen:…",
+   "thumb": "https://i2.ytimg.com/vi/MCHKd4L9ENo/hqdefault.jpg",
+   "id": "f5b3e8b996db",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "🇪🇺🇨🇾 Cyprus President Christodoulides: It's time to integrate further and move toward Federal Europe",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1x9t6jp/cyprus_president_christodoulides_its_time_to/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-19T10:24:23.000Z",
+   "summary": "submitted by /u/paneuropeanism_ [link] [comments]",
+   "id": "f1015f5c7836",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "„Deutschlandtag“ der Jungen Union: Söder und Winkel zu Regierungsbildung in Berlin",
+   "url": "https://www.youtube.com/watch?v=B1S28K-AFG8",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-19T10:17:02.000Z",
+   "summary": "Die Junge Union ist in der Partei längst ein Machtfaktor. Entsprechend selbstbewusst präsentierte sich der Nachwuchs beim „Deutschlandtag“ – und Kanzler Merz zeigte sich zugewandt. CSU-Chef Söder schoss in Richtung Berlin. Mehr Informationen:…",
+   "thumb": "https://i3.ytimg.com/vi/B1S28K-AFG8/hqdefault.jpg",
+   "id": "610e81416d50",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "France in crisis: Could the UK see similar riots?",
+   "url": "https://www.youtube.com/watch?v=PiZ2TjiCH4s",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-19T10:14:00.000Z",
+   "summary": "Marseille has imposed a lockdown on public gatherings as France's Prime Minister holds a crisis meeting to try and resolve violent protests across the country. In an address to the nation, the President said France is feeling “anger and shame” after what he called “incredible…",
+   "thumb": "https://i1.ytimg.com/vi/PiZ2TjiCH4s/hqdefault.jpg",
+   "id": "f5c517d6474f",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
   {
    "title": "Syrien: Kurden kämpfen weiter für Rechte",
    "url": "https://www.youtube.com/watch?v=TY3JrgBQ6XE",
@@ -749,44 +911,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "„Frankreich scheint ein echtes Gerechtigkeitsproblem zu haben“ – ARD-Korrespondent über die Lage",
-   "url": "https://www.youtube.com/watch?v=yXTs2kBe_WE",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-19T08:53:34.000Z",
-   "summary": "Mit Schock und Unverständnis haben viele Menschen in Frankreich auf die Gewalt bei den Protesten reagiert. Die politischen Lager kämpfen um die Deutungshoheit– und machen sich gegenseitig für die Eskalation verantwortlich. Mehr Informationen:…",
-   "thumb": "https://i2.ytimg.com/vi/yXTs2kBe_WE/hqdefault.jpg",
-   "id": "8d28b2b9cd5d",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Regierungsbildung in Berlin: Söder (CSU) fordert „Brandmauer gegen links“",
-   "url": "https://www.youtube.com/watch?v=QGcjKOiGV0c",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-19T08:47:20.000Z",
-   "summary": "Die rot-grün-roten Sondierungsgespräche in Berlin waren holprig, aber erfolgreich. Am Montag wollen Grüne und SPD über Koalitionsverhandlungen mit der Linken entscheiden. Doch Kritik und Zweifel sind laut, etwa bei SPD-Fraktionschef Miersch. Alle aktuellen Informationen,…",
-   "thumb": "https://i2.ytimg.com/vi/QGcjKOiGV0c/hqdefault.jpg",
-   "id": "174ec6d348a1",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Yorkshire residents living in fear as asylum centre residents arrested for rape and child sex assault",
    "url": "https://www.reddit.com/r/ukpolitics/comments/1x9r6yx/yorkshire_residents_living_in_fear_as_asylum/",
    "source": "r/ukpolitics",
@@ -804,20 +928,18 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "MOMA-Reporter: Politik-Experiment - Miteinander statt gegeneinander I ARD Morgenmagazin",
-   "url": "https://www.youtube.com/watch?v=olM9aJ6OJqc",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
+   "title": "Putin reportedly suggests summit with Trump and Xi to decide fate of Ukraine",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1x9qqza/putin_reportedly_suggests_summit_with_trump_and/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
    "tags": [
-    "german",
-    "news",
-    "listen"
+    "politics",
+    "news"
    ],
-   "published": "2026-10-19T07:35:36.000Z",
-   "summary": "Können gemeinsame Aktivitäten wie z.B. Sport das Miteinander verändern? Dieser Frage geht zur Zeit die Sporthochschule in Köln nach. Sie casten Protagonisten, die im Vorfeld vier Positionen eingenommen haben, z.B. zu Klimawandel oder Migration. Dann werden 2er-Teams gebildet,…",
-   "thumb": "https://i4.ytimg.com/vi/olM9aJ6OJqc/hqdefault.jpg",
-   "id": "bfc7b7dd0474",
+   "published": "2026-10-19T07:52:59.000Z",
+   "summary": "The Wall Street Journal reported Vladimir Putin had reportedly suggested a summit between himself, U.S. President Donald Trump and Chinese President Xi Jinping for a deal to end the Ukraine war. The summit is not confirmed, but if it takes place will not involve Ukrainian…",
+   "id": "c8bccdc84f33",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -921,77 +1043,9 @@
    "summary": "Luke discusses his debate with Tim Pool and Jack Posobiec at The University of Chicago . Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
    "thumb": "https://i2.ytimg.com/vi/UrkfDsd9m7E/hqdefault.jpg",
    "id": "920543470b1f",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "America Is Now an Ally of Russia",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1x9fujr/america_is_now_an_ally_of_russia/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-18T22:07:36.000Z",
-   "summary": "submitted by /u/theatlantic [link] [comments]",
-   "id": "577cf29415d0",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Rubio says Trump to take up to 60 days to weigh Russia sanctions",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1x9emvw/rubio_says_trump_to_take_up_to_60_days_to_weigh/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-18T21:15:46.000Z",
-   "summary": "submitted by /u/graveyardofgoodsense [link] [comments]",
-   "id": "96f72ba92aa3",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "US threatens Europe over Starlink restrictions",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1x99rlp/us_threatens_europe_over_starlink_restrictions/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-18T18:00:01.000Z",
-   "summary": "European companies face “devastating” retaliation from Washington if Brussels presses ahead with plans to restrict American rivals such as Elon Musk’s SpaceX from parts of the European market, the US ambassador to the EU has warned. Andrew Puzder’s warning comes after the…",
-   "id": "7fcec5969808",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "President Trump endorses Prime Minister Netanyahu ahead of Israeli elections",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1x96wwu/president_trump_endorses_prime_minister_netanyahu/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-18T16:05:36.000Z",
-   "summary": "submitted by /u/cnn [link] [comments]",
-   "id": "98cb5a1dc719",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
+   "why": "0"
   },
   {
    "title": "Chris Cuomo Admits He Was Wrong… You Need to See This",
@@ -1133,24 +1187,6 @@
    "summary": "Dozens of definitions of common words and phrases used in Canadian politics and government, including a lot of terms relating to Quebec lol. The first Iceberg vid: https://www.youtube.com/watch?v=Q9LrjU5n63g SUBSCRIBE: https://www.youtube.com/jjmccullough?sub_confirmation=1…",
    "thumb": "https://i1.ytimg.com/vi/TCsfyIn_6Wc/hqdefault.jpg",
    "id": "c85a694a2ec8",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "SHOUTING Erupts as Fox Host EXPOSES MAGA Co-Host Live On TV!",
-   "url": "https://www.youtube.com/watch?v=uwFMZ8IJ82c",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-18T15:30:17.000Z",
-   "summary": "Luke discusses a recent moment from Fox News' The Five. Check out Jessica's book below! https://sites.prh.com/idisagree Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get…",
-   "thumb": "https://i2.ytimg.com/vi/uwFMZ8IJ82c/hqdefault.jpg",
-   "id": "fd6b28f8741b",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1356,24 +1392,6 @@
    "why": "0"
   },
   {
-   "title": "Would you give Putin 30% of Ukraine to avoid World War Three?",
-   "url": "https://www.youtube.com/watch?v=jl7lHh48-cA",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-17T16:29:20.000Z",
-   "summary": "Could Donald Trump's changing approach to Russia and Ukraine threaten the future of NATO? LBC Washington Correspondent Simon Marks joins Vanessa Feltz to examine whether Trump's actions form part of a broader strategy to 'collapse NATO' and question whether the US President…",
-   "thumb": "https://i3.ytimg.com/vi/jl7lHh48-cA/hqdefault.jpg",
-   "id": "31059929ff6e",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "20 Best Recent Games That Are NOW DIRT CHEAP",
    "url": "https://www.youtube.com/watch?v=6uKYWhFTw10",
    "source": "GameRanx",
@@ -1404,24 +1422,6 @@
    "summary": "Julia Cheek enters the Tank seeking $1 million for 5% of Everlywell, a company making at-home lab testing more accessible and easier to understand. With millions in sales and a growing market, can Julia convince the Sharks to invest in her vision? From Season 9, Episode 12…",
    "thumb": "https://i3.ytimg.com/vi/nd1nJALU1MU/hqdefault.jpg",
    "id": "25e00b1783e7",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "LBC callers face off with Reform politician over small boats policy",
-   "url": "https://www.youtube.com/watch?v=eRBykngBDcM",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-17T15:16:21.000Z",
-   "summary": "LBC callers face off with Reform's Laila Cunningham as Reform UK leader Nigel Farage says the risk small boats pose to Britain is 'too high'. Speaking to Nick Ferrari on LBC this morning, Mr Farage explained his party's plans to stop migrants arriving on UK shores. He said that…",
-   "thumb": "https://i2.ytimg.com/vi/eRBykngBDcM/hqdefault.jpg",
-   "id": "3f46faf30f1b",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2647,5 +2647,5 @@
    "why": "0"
   }
  ],
- "contentHash": "e842a0439bd6"
+ "contentHash": "e48a19dde165"
 }
