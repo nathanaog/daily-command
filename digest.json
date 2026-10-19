@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-19T19:01:44.141Z",
+ "generated": "2026-10-19T21:49:07.957Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
@@ -657,20 +657,19 @@
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
+   "lastOk": "2026-10-19T19:01:44.141Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-xbox",
    "name": "r/xbox",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-slaythespire",
@@ -679,25 +678,26 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-10-19T13:05:23.484Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
   },
   {
    "id": "rd-germany",
    "name": "r/germany",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": "2026-10-15T00:59:57.533Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-unitedkingdom",
@@ -706,10 +706,157 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   }
  ],
  "items": [
+  {
+   "title": "The French Fantasy Is Coming to an End",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xa9dcm/the_french_fantasy_is_coming_to_an_end/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-19T21:16:13.000Z",
+   "summary": "submitted by /u/nytopinion [link] [comments]",
+   "id": "32270db15394",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "tagesthemen 22:15 Uhr, 19.10.2026",
+   "url": "https://www.youtube.com/watch?v=abtNUK5JMCQ",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-19T21:11:15.000Z",
+   "summary": "tagesthemen 22:15 Uhr Diskussion auf Bundesebene über mögliche rot-grün-rote Regierung in Berlin, Frankreichs Regierung räumt Versäumnisse nach Ausschreitungen ein, Auftakt des \"Invest in Germany Summit\" in Berlin, \"Schattenkrieger\" unterstützen die Ukraine im russischen…",
+   "thumb": "https://i2.ytimg.com/vi/abtNUK5JMCQ/hqdefault.jpg",
+   "id": "697898f80045",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Diskussion über Beamte und Lehrer bei Hart aber fair",
+   "url": "https://www.youtube.com/watch?v=Dkxff3lqjdE",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-19T21:06:42.000Z",
+   "summary": "Vergleichsweise hohe Gehälter, saftige Pensionen, private Krankenversicherung, keine Angst vor Job-Verlust - Beamte genießen viele Privilegien. Deutschland leistet sich auch im internationalen Vergleich viele Staatsdiener. Wie zeitgemäß ist das noch? Sollten Beamte auch…",
+   "thumb": "https://i1.ytimg.com/vi/Dkxff3lqjdE/hqdefault.jpg",
+   "id": "5a8d7e419a47",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "\"Dieses Land ist unter Schock\" | tagesthemen-Interview",
+   "url": "https://www.youtube.com/watch?v=8J7ddUmCAeg",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-19T21:05:58.000Z",
+   "summary": "\"Es muss eine Aufarbeitung stattfinden\", sagt die deutsch-französische Politikwissenschaftlerin Claire Desdemay über die Ausschreitungen in Frankreich in den vergangenen Tagen. Im Tagesthemen-Interview mit Jörg Schönenborn beschreibt sie, wie sich die ursprünglichen…",
+   "thumb": "https://i1.ytimg.com/vi/8J7ddUmCAeg/hqdefault.jpg",
+   "id": "d82851eff82c",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Nach Sondierungen in Berlin: Regierung will privatisierte Wohnungen von Konzernen zurückkaufen",
+   "url": "https://www.youtube.com/watch?v=XudganBGKhs",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-19T19:53:38.000Z",
+   "summary": "Die Grünen und die SPD in Berlin wollen mit der Wahlsiegerin Linke gemeinsame Koalitionsverhandlungen aufnehmen. Die Grünen entschieden das auf einem kleinen Parteitag am Abend mit breiter Mehrheit. Bei der SPD gab zuvor der Landesvorstand in einer digitalen Sitzung grünes…",
+   "thumb": "https://i1.ytimg.com/vi/XudganBGKhs/hqdefault.jpg",
+   "id": "173baad9a2c5",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "The French attack France| James O’Brien - The Whole Show",
+   "url": "https://www.youtube.com/watch?v=GTWBJRkqJoQ",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-19T19:30:35.000Z",
+   "summary": "This is a catch-up version of James O'Brien's live, daily show on LBC Radio from the 19th of October 2026. Listen to the full show on the all-new LBC App: https://app.af.lbc.co.uk/btnc/thenewlbcapp #jamesobrien #politics #LBC LBC is the home of live debate around news and…",
+   "thumb": "https://i4.ytimg.com/vi/GTWBJRkqJoQ/hqdefault.jpg",
+   "id": "e99a438c0f70",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "BULLHEAD CITY, AZ TRUMP RALLY",
+   "url": "https://www.youtube.com/watch?v=TTFfXN9jPug",
+   "source": "The Good Liars",
+   "feedId": "yt-the-good-liars",
+   "type": "video",
+   "tags": [
+    "comedy",
+    "politics",
+    "debates"
+   ],
+   "published": "2026-10-19T19:30:10.000Z",
+   "summary": "Jason visits Bullhead City, AZ for a Trump rally. Join this channel to get access to perks: https://www.youtube.com/channel/UCUNOwz9KTDIhhTTN3_ptUDA/join https://linktr.ee/thegoodliars",
+   "thumb": "https://i1.ytimg.com/vi/TTFfXN9jPug/hqdefault.jpg",
+   "id": "ec0e31fcf735",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Attacks On Sudan’s Borderlands: Why Is Al-Burhan Keeping A Blind Spot On Cairo?",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xa6323/attacks_on_sudans_borderlands_why_is_alburhan/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-19T19:13:45.000Z",
+   "summary": "submitted by /u/AshNakon [link] [comments]",
+   "id": "6e583feea039",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
   {
    "title": "How Planes Fly Without Air Traffic Control",
    "url": "https://www.youtube.com/watch?v=ju1OZStv2eI",
@@ -766,6 +913,23 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
+   "title": "Saudi Arabia cancels next week’s ‘Davos in the Desert’ conference after series of Houthi attacks",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xa4idy/saudi_arabia_cancels_next_weeks_davos_in_the/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-19T18:16:37.000Z",
+   "summary": "submitted by /u/cnn [link] [comments]",
+   "id": "b7b661b76ca5",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
    "title": "Home Secretary threatens Eritrea with visa penalties",
    "url": "https://www.reddit.com/r/ukpolitics/comments/1xa4hle/home_secretary_threatens_eritrea_with_visa/",
    "source": "r/ukpolitics",
@@ -778,6 +942,40 @@
    "published": "2026-10-19T18:15:51.000Z",
    "summary": "submitted by /u/Jessicas_skirt [link] [comments]",
    "id": "080eb9174f90",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "The Mecca Pact and the Limits of American Guarantees",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xa2ro0/the_mecca_pact_and_the_limits_of_american/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-19T17:13:28.000Z",
+   "summary": "submitted by /u/carnegieendowment [link] [comments]",
+   "id": "377de70a391b",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Europe’s Credibility Gap: Dependence on America Has Left It With Little to Offer Would-Be Partners",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xa2lpi/europes_credibility_gap_dependence_on_america_has/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-19T17:07:21.000Z",
+   "summary": "submitted by /u/ForeignAffairsMag [link] [comments]",
+   "id": "7f09afe2f3bc",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -852,25 +1050,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "tagesschau in Einfacher Sprache 19:00 Uhr, 19.10.2026",
-   "url": "https://www.youtube.com/watch?v=lxc0eZxHUU0",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-19T15:45:42.000Z",
-   "summary": "tagesschau in Einfacher Sprache 19:00 Uhr Gewalt bei Protesten in Frankreich, Trump setzt Sanktionen gegen Russland aus, Japanische Mission zum Mond vom Mars, Heftiger Sturm in Spanien, Das Wetter https://www.tagesschau.de",
-   "thumb": "https://i1.ytimg.com/vi/lxc0eZxHUU0/hqdefault.jpg",
-   "id": "09a7956fbbad",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Why is Trump breaking norms to endorse Netanyahu?",
    "url": "https://www.youtube.com/watch?v=0OwBvf6Jyk4",
    "source": "LBC",
@@ -884,44 +1063,6 @@
    "summary": "Donald Trump has thrown his support behind Benjamin Netanyahu ahead of Israel’s election later this month, calling the prime minister a “great warrior” and urging voters to return him to office. In a lengthy Truth Social post, the US president said Mr Netanyahu had been a key…",
    "thumb": "https://i1.ytimg.com/vi/0OwBvf6Jyk4/hqdefault.jpg",
    "id": "59aa7b424c84",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Mission zum Mars-Mond Phobos: „Das ist schon besonders“, erklärt ARD-Experte",
-   "url": "https://www.youtube.com/watch?v=H61vPsWh3ik",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-19T15:32:22.000Z",
-   "summary": "Vom japanischen Weltraumbahnhof Tanegashima aus soll heute Abend um 21.41 Uhr MESZ (Ortszeit Dienstag um 04.41 Uhr) eine H3-Trägerrakete ins All starten. Sie hat eine Raumsonde im Gepäck, die voraussichtlich im kommenden Sommer den Mars erreichen wird. Dort soll sie zunächst…",
-   "thumb": "https://i1.ytimg.com/vi/H61vPsWh3ik/hqdefault.jpg",
-   "id": "8b02db812edf",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Dorum: Naturschauspiel an der Nordseeküste | tagesthemen mittendrin",
-   "url": "https://www.youtube.com/watch?v=Q3BmckJ3bq8",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-19T15:15:39.000Z",
-   "summary": "Zugvögel steuern zum Beispiel aus dem hohen Norden Skandinaviens zielsicher die Raststation im niedersächsischen Wattenmeer an. Für tausende Kilometer Flug brauchen die Vögel nicht nur Kraft und Kompass sondern auch Wegzehrung. Und die finden sie an der deutschen Küste…",
-   "thumb": "https://i2.ytimg.com/vi/Q3BmckJ3bq8/hqdefault.jpg",
-   "id": "fc3da7ac56bc",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -961,26 +1102,7 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "BULLHEAD CITY, AZ TRUMP RALLY",
-   "url": "https://www.youtube.com/watch?v=TTFfXN9jPug",
-   "source": "The Good Liars",
-   "feedId": "yt-the-good-liars",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "politics",
-    "debates"
-   ],
-   "published": "2026-10-19T15:02:54.000Z",
-   "summary": "Jason visits Bullhead City, AZ for a Trump rally. Join this channel to get access to perks: https://www.youtube.com/channel/UCUNOwz9KTDIhhTTN3_ptUDA/join https://linktr.ee/thegoodliars",
-   "thumb": "https://i1.ytimg.com/vi/TTFfXN9jPug/hqdefault.jpg",
-   "id": "ec0e31fcf735",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Clocks are so more interesting than I thought.",
+   "title": "Clocks are so much more interesting than I thought.",
    "url": "https://www.youtube.com/watch?v=BxXfeotgVVA",
    "source": "Tom Scott",
    "feedId": "yt-tom-scott",
@@ -1049,25 +1171,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "VW: Weltweit Gehälter einfrieren? Das steckt dahinter",
-   "url": "https://www.youtube.com/watch?v=qQmGk0HW8SA",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-19T14:19:25.000Z",
-   "summary": "Volkswagen verschärft seine Sparmaßnahmen. Übereinstimmenden Berichten zufolge sollen weltweit die Gehälter für mehrere Jahre eingefroren werden. Der Konzern will sich dazu nicht äußern. Mehr Informationen: https://www.tagesschau.de/wirtschaft/unternehmen/vw-1620.html Alle…",
-   "thumb": "https://i2.ytimg.com/vi/qQmGk0HW8SA/hqdefault.jpg",
-   "id": "be6b97d4c12b",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Putin-Trump-Xi summit | Is this only the start of Trump's Russia strategy?",
    "url": "https://www.youtube.com/watch?v=zjvuMaxAddc",
    "source": "LBC",
@@ -1121,41 +1224,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "'The Western Spring'? France unrest spills across borders",
-   "url": "https://www.youtube.com/watch?v=DevXveXhUfc",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-19T12:33:19.000Z",
-   "summary": "Emmanuel Macron has pledged to help young people build a “desirable future”, after days of violent protests across France left thousands arrested and hundreds of police officers injured. In an address to the nation, the President said France is feeling “anger and shame” after…",
-   "thumb": "https://i1.ytimg.com/vi/DevXveXhUfc/hqdefault.jpg",
-   "id": "df9046942336",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Ukraine receives partial intelligence on Russian ballistic missile strikes",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1x9u783/ukraine_receives_partial_intelligence_on_russian/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-19T11:21:38.000Z",
-   "summary": "Ukraine received intelligence from western partners about just one of two Russian ballistic missile attacks overnight into Monday, as relations between Kyiv and Washington have sharply deteriorated in recent days. More than 200 drones and several “Banderol” cruise missiles…",
-   "id": "794496c429f7",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "How common is the \"smile, nod, and jump ship before the wall\" strategy in your orgs?",
    "url": "https://www.reddit.com/r/ProductManagement/comments/1x9u5bg/how_common_is_the_smile_nod_and_jump_ship_before/",
    "source": "r/productmanagement",
@@ -1167,23 +1235,6 @@
    "published": "2026-10-19T11:18:54.000Z",
    "summary": "At my last company, I watched a peer PM coast for nearly two years without shipping anything meaningful. The team spent two years building features only to shelve them without ever touching UAT, then bailed right before reality caught up. Now, I’ve just stepped into a Senior PM…",
    "id": "c48457b61ddd",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "FATF Has Declared War on Fraud. Not All Its Allies Can Afford to Fight",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1x9u4bt/fatf_has_declared_war_on_fraud_not_all_its_allies/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-19T11:17:28.000Z",
-   "summary": "submitted by /u/RUSIOfficial [link] [comments]",
-   "id": "ad2b25861e8b",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1205,23 +1256,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "🇪🇺🇨🇾 Cyprus President Christodoulides: It's time to integrate further and move toward Federal Europe",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1x9t6jp/cyprus_president_christodoulides_its_time_to/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-19T10:24:23.000Z",
-   "summary": "submitted by /u/paneuropeanism_ [link] [comments]",
-   "id": "f1015f5c7836",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Is anyone automating their UAT?",
    "url": "https://www.reddit.com/r/ProductManagement/comments/1x9sqpn/is_anyone_automating_their_uat/",
    "source": "r/productmanagement",
@@ -1233,40 +1267,6 @@
    "published": "2026-10-19T09:58:22.000Z",
    "summary": "I’m getting shit for holding up releases and feel like I spend 90% of my time just clicking through changes. Has anyone found any good ways of automating the process either with LLMs or another tool? submitted by /u/zxcv1135 [link] [comments]",
    "id": "0c802977d9d0",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Putin reportedly suggests summit with Trump and Xi to decide fate of Ukraine",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1x9qqza/putin_reportedly_suggests_summit_with_trump_and/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-19T07:52:59.000Z",
-   "summary": "The Wall Street Journal reported Vladimir Putin had reportedly suggested a summit between himself, U.S. President Donald Trump and Chinese President Xi Jinping for a deal to end the Ukraine war. The summit is not confirmed, but if it takes place will not involve Ukrainian…",
-   "id": "c8bccdc84f33",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Vietnam signs free trade deal with four European countries",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1x9jzxe/vietnam_signs_free_trade_deal_with_four_european/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-19T01:27:40.000Z",
-   "summary": "submitted by /u/AUnknownGuy [link] [comments]",
-   "id": "0c0c515c0915",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -2679,5 +2679,5 @@
    "why": "0"
   }
  ],
- "contentHash": "fa2d2881c468"
+ "contentHash": "09de7369d74a"
 }
