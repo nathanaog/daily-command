@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-20T13:05:04.079Z",
+ "generated": "2026-10-20T15:52:07.658Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
@@ -657,20 +657,19 @@
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
+   "lastOk": "2026-10-20T13:05:04.079Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-xbox",
    "name": "r/xbox",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-slaythespire",
@@ -679,25 +678,26 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-10-20T07:05:22.969Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
   },
   {
    "id": "rd-germany",
    "name": "r/germany",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": "2026-10-15T00:59:57.533Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-unitedkingdom",
@@ -706,10 +706,209 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   }
  ],
  "items": [
+  {
+   "title": "Forget conspiracies, Trump’s tilt to Moscow sits on a colder strategic logic",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xavg6v/forget_conspiracies_trumps_tilt_to_moscow_sits_on/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-20T15:38:40.000Z",
+   "summary": "US President Donald Trump has settled on a carrot-and-stick approach to ending the war in Ukraine. In international diplomacy, that can be a good strategy, but the trouble here is the distribution. Russian President Vladimir Putin has been handed the whole carrot, Ukrainian…",
+   "id": "16f02b95c361",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "65 Jahre Anwerbeabkommen mit der Türkei",
+   "url": "https://www.youtube.com/watch?v=O0Uzo1Ci1-Y",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-20T15:34:30.000Z",
+   "summary": "Von einer Wirtschaftskrise sprach vor 65 Jahren noch niemand. Im Gegenteil: Deutschland boomte, händeringend wurde nach Arbeitskräften gesucht. Die Bundesregierung schloss deshalb ein Anwerbeabkommen mit der Türkei. Vom Start 1961 bis zum Stopp 1973 kamen darüber etwa 870.000…",
+   "thumb": "https://i4.ytimg.com/vi/O0Uzo1Ci1-Y/hqdefault.jpg",
+   "id": "c0aba67b6ee7",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Trump Envoy Tells Nervous Gulf Allies U.S. Can’t Guarantee Security Forever",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xav2cx/trump_envoy_tells_nervous_gulf_allies_us_cant/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-20T15:24:14.000Z",
+   "summary": "Regional security officials received a sobering American message as they gathered in the Qatari capital and braced for a potential new round of escalation between the U.S. and Iran: They need to look out for themselves. Tom Barrack, the U.S. ambassador to Turkey and President…",
+   "id": "92060b4fe7f5",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Netanyahu says Israel is ‘committed’ to eliminating the ‘terrorist regime in Iran’",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xauq16/netanyahu_says_israel_is_committed_to_eliminating/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-20T15:11:05.000Z",
+   "summary": "submitted by /u/One-Emu-1103 [link] [comments]",
+   "id": "a9376eecc5d0",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Warum junge Paare Kinder immer später kriegen – oder keine I akkurat",
+   "url": "https://www.youtube.com/watch?v=GZSOd1sImLo",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-20T15:00:33.000Z",
+   "summary": "#Kinder? Lieber später. Oder gar nicht. Deutsche werden immer später Eltern, gleichzeitig sinkt die Geburtenrate. Warum ist das so? In dieser Folge begleiten wir Sophie und Tony sowie Katja und Tom. Sophie und Tony können sich Kinder vorstellen – doch während Sophie beruflich…",
+   "thumb": "https://i4.ytimg.com/vi/GZSOd1sImLo/hqdefault.jpg",
+   "id": "4b80c0160941",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "‘They could hold all the power’: Midterm elections explained",
+   "url": "https://www.youtube.com/watch?v=ZoqHTMUIObs",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-20T15:00:14.000Z",
+   "summary": "How important are the US midterm elections? Lewis Goodall explains what’s at stake. As the November elections approach, Donald Trump’s approval ratings are still at a low, with only 28% of people thinking he’s an effective president. The Iran war, price of oil and cost of…",
+   "thumb": "https://i3.ytimg.com/vi/ZoqHTMUIObs/hqdefault.jpg",
+   "id": "64eb73321703",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Marco Rubio calls India a 'refining superpower', says it is ready to process more Venezuelan oil",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xau1za/marco_rubio_calls_india_a_refining_superpower/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-20T14:45:31.000Z",
+   "summary": "After spending the better part of Trump's second term imposing tariffs or threatening to impose tariffs due to India's purchase of Russian crude oil, US seems to be backtracking on those threats. The US Secretary of State, Marco Rubio, arrived in India today (his 2nd visit to…",
+   "id": "6371a65a3fcd",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Investitionen in Deutschland: Wie die Bundesregierung um Unternehmen wirbt",
+   "url": "https://www.youtube.com/watch?v=UQkokXtSCn8",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-20T14:25:43.000Z",
+   "summary": "Der erste Investitionsgipfel in Berlin soll mehr Kapital nach Deutschland locken. Kanzler Merz und Wirtschaftsministerin Reiche sprechen bereits von ersten Zusagen: Unternehmen sollen milliardenschwere Investitionen angekündigt haben. Weitere Informationen:…",
+   "thumb": "https://i2.ytimg.com/vi/UQkokXtSCn8/hqdefault.jpg",
+   "id": "87df4e866ce8",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Flugausfall oder Verspätung: Bekommst du dein Geld jetzt einfacher zurück?",
+   "url": "https://www.youtube.com/watch?v=dzw6nQBp_P0",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-20T14:17:00.000Z",
+   "summary": "Wer reist, kennt das Problem nur zu gut: Der Bus, die Bahn oder das Flugzeug verspäten sich oder fallen komplett aus. Nun will die EU, dass es leichter wird, Erstattungen oder Entschädigungen bei Reisemängeln einzufordern. Das Parlament hat über eine entsprechende Neuregelung…",
+   "thumb": "https://i1.ytimg.com/vi/dzw6nQBp_P0/hqdefault.jpg",
+   "id": "e7d7c54d2468",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Simon Marks makes a prediction about Trump's BBC lawsuit",
+   "url": "https://www.youtube.com/watch?v=I-MvOEWKR9U",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-20T14:00:11.000Z",
+   "summary": "Simon Marks joins James O'Brien to react as Trump blames the recent unrest in France on 'migrants and communists'. 0:00 | Trump blames France riots on migrants 3:30 | BBC accuses Trump of 'foot-dragging' Trump, providing no evidence for his warnings, pointed to widespread…",
+   "thumb": "https://i2.ytimg.com/vi/I-MvOEWKR9U/hqdefault.jpg",
+   "id": "4dd1dc179236",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Ukraine: Starlink-Drosselung behindert Kommunikation an der Front",
+   "url": "https://www.youtube.com/watch?v=nogTvwFTXMY",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-20T13:08:55.000Z",
+   "summary": "Das Verhältnis zwischen US-Präsident Trump und seinem ukrainischen Kollegen Selenskyj ist mal wieder auf einem Tiefpunkt. Trump wirft der Ukraine vor, für die Unterstützung durch die USA keine Gegenleistung zu erbringen. Selenskyj wiederum wirft den USA nach Informationen des…",
+   "thumb": "https://i3.ytimg.com/vi/nogTvwFTXMY/hqdefault.jpg",
+   "id": "6dabdc7959b8",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
   {
    "title": "Guilfoyle THREATENS TO EXPOSE IT as She Suffers SHOUTING COLLAPSE!",
    "url": "https://www.youtube.com/watch?v=4mmzOFoNK-s",
@@ -747,44 +946,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Proteste in Italien: Speditionen beteiligen sich",
-   "url": "https://www.youtube.com/watch?v=UMPgccQGhrM",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-20T12:44:39.000Z",
-   "summary": "In Mailand ist es den zweiten Tag in Folge zu gewalttätigen Protesten von Jugendlichen gekommen. Sie plünderten Geschäfte und Supermärkte. Die Polizei setzte Tränengas und Wasserwerfer ein. Mindestens 160 Menschen wurden festgenommen, die meisten von ihnen Minderjährige. Die…",
-   "thumb": "https://i2.ytimg.com/vi/UMPgccQGhrM/hqdefault.jpg",
-   "id": "10f5a7f7513d",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Leipzig: Neue Freundschaften statt Social Media | tagesthemen mittendrin",
-   "url": "https://www.youtube.com/watch?v=YUuRHYKB6tQ",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-20T12:17:57.000Z",
-   "summary": "Jeder Fünfte zwischen 20 und 30 Jahren fühlt sich einsam, Gründe dafür gibt es viele. Damit das nicht so bleibt, gibt es in vielen Städten inzwischen Spaziergänge gegen das Alleinesein - und es scheint zu helfen... Mehr tagesthemen mittendrin Reportagen hier:…",
-   "thumb": "https://i2.ytimg.com/vi/YUuRHYKB6tQ/hqdefault.jpg",
-   "id": "fe9eb89a986a",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Landlord’s £50 rent rise backfires as court cuts rent by £200",
    "url": "https://www.reddit.com/r/ukpolitics/comments/1xaqhiu/landlords_50_rent_rise_backfires_as_court_cuts/",
    "source": "r/ukpolitics",
@@ -802,7 +963,7 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "'I might be sick': Hesgeth accused of diminishing UK's role in Afghanistan",
+   "title": "James O'Brien's 'blood boils' as US diminishes UK's role in Afghanistan",
    "url": "https://www.youtube.com/watch?v=4E3lp9cYTkM",
    "source": "LBC",
    "feedId": "yt-lbc",
@@ -820,20 +981,18 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Japan startet Mission zu Mars-Monden – ARD-Korrespondent beantwortet Fragen",
-   "url": "https://www.youtube.com/watch?v=KqW-_w8QDYs",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
+   "title": "Japan Asks US for SOS to Help Lift China's Rare Earth Export Controls",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xaq4dv/japan_asks_us_for_sos_to_help_lift_chinas_rare/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
    "tags": [
-    "german",
-    "news",
-    "listen"
+    "politics",
+    "news"
    ],
-   "published": "2026-10-20T11:08:42.000Z",
-   "summary": "Eine japanische Raumsonde ist samt dem deutsch-französischen Rover „Idefix“ Richtung Mars aufgebrochen. Eine H3-Rakete hob erfolgreich mit der Sonde von Japans Weltraumbahnhof Tanegashima auf der gleichnamigen Insel im Südwesten des Landes ab. Ziel der Raumfahrtmission ist der…",
-   "thumb": "https://i4.ytimg.com/vi/KqW-_w8QDYs/hqdefault.jpg",
-   "id": "e59931e88d4e",
+   "published": "2026-10-20T11:55:17.000Z",
+   "summary": "submitted by /u/Ben_Hecks [link] [comments]",
+   "id": "1f0ca621570c",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -925,62 +1084,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Nick Ferrari disgusted at US comments on Britain's role in Afghanistan",
-   "url": "https://www.youtube.com/watch?v=4PNyhvoDY6E",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-20T09:56:57.000Z",
-   "summary": "Downing Street has hit back at the US after Pete Hegseth downplayed the UK and Nato's role in the war in Afghanistan. No10 said the US Secretary of State for Defence was \"wrong\" when he said just one or two nations took part in combat operations. It comes after the US vice…",
-   "thumb": "https://i1.ytimg.com/vi/4PNyhvoDY6E/hqdefault.jpg",
-   "id": "f10d57ee7081",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "MOMA-Reporter: Tiere töten, um andere Tiere zu retten | ARD Morgenmagazin",
-   "url": "https://www.youtube.com/watch?v=1rTfR4GaNkM",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-20T08:51:42.000Z",
-   "summary": "Die Uferschnepfe hat es schwer. Der Vogel ist ein sogenannter Wiesenbrüter. Das bedeutet: Die Tiere bauen ihre Nester auf dem Boden - versteckt im Gras. Das ist einer der Gründe dafür, dass die Art vom Aussterben bedroht ist. Um die Uferschnepfe und andere Arten zu retten,…",
-   "thumb": "https://i2.ytimg.com/vi/1rTfR4GaNkM/hqdefault.jpg",
-   "id": "6a85224f7f13",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Eine Erfolgsmeldung und viele Probleme – Investitionen in Deutschland",
-   "url": "https://www.youtube.com/watch?v=VGR5JMq-m64",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-20T08:46:08.000Z",
-   "summary": "Deutschland und der US-Chip-Gigant Nvidia haben eine Zusammenarbeit bei der Entwicklung Künstlicher Intelligenz beschlossen. Die Vereinbarung wurde beim ersten „Invest in Germany“-Gipfel verkündet – und soll die deutsche Wettbewerbsfähigkeit stärken. Merz hatte den zweitägigen…",
-   "thumb": "https://i3.ytimg.com/vi/VGR5JMq-m64/hqdefault.jpg",
-   "id": "57ea03791029",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "How much do you rely on AI during product discovery?",
    "url": "https://www.reddit.com/r/ProductManagement/comments/1xamtdy/how_much_do_you_rely_on_ai_during_product/",
    "source": "r/productmanagement",
@@ -992,23 +1095,6 @@
    "published": "2026-10-20T08:43:27.000Z",
    "summary": "Wanted to hear how others approach this. How often do you use AI for discovery? Do you mostly use it to summarize research or also to simulate user research to some extent? For example, I sometimes ask Chatgpt or Claude to go through recent research papers and help me figure…",
    "id": "8f6897d94f0c",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Hegseth secretly visits Israel, meets Netanyahu amid talk of renewed strikes",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xaj6mf/hegseth_secretly_visits_israel_meets_netanyahu/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-20T04:57:41.000Z",
-   "summary": "submitted by /u/AeroFred [link] [comments]",
-   "id": "ac21014b7b0d",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1048,18 +1134,17 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "TIME: Documents Reveal Mossad Directors Encouraged Nearly $2 Billion in Qatari Payments to Hamas-Controlled Gaza",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xagb6g/time_documents_reveal_mossad_directors_encouraged/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
+   "title": "Wtf is the product unconference?",
+   "url": "https://www.reddit.com/r/ProductManagement/comments/1xaciev/wtf_is_the_product_unconference/",
+   "source": "r/productmanagement",
+   "feedId": "rd-productmanagement",
    "type": "post",
    "tags": [
-    "politics",
-    "news"
+    "product"
    ],
-   "published": "2026-10-20T02:26:37.000Z",
-   "summary": "submitted by /u/stammerton [link] [comments]",
-   "id": "3c9f1434c73e",
+   "published": "2026-10-19T23:28:26.000Z",
+   "summary": "genuinely asking. keep seeing product unconference 2026 everywhere on twitter. is it just a conference with no slides, or is the format actually different from a normal conference? anyone been to one? I think its run by the product folks (ps: they are huge) so help me…",
+   "id": "7a54624db1d0",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1078,76 +1163,9 @@
    "summary": "Luke discusses Matthew McConaughey's recent take on politics. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
    "thumb": "https://i4.ytimg.com/vi/GC8RqTLu8ao/hqdefault.jpg",
    "id": "fa396c949a18",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Wtf is the product unconference?",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1xaciev/wtf_is_the_product_unconference/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-10-19T23:28:26.000Z",
-   "summary": "genuinely asking. keep seeing product unconference 2026 everywhere on twitter. is it just a conference with no slides, or is the format actually different from a normal conference? anyone been to one? I think its run by the product folks (ps: they are huge) so help me…",
-   "id": "7a54624db1d0",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "EU Condemns West Bank Settler Attacks on European Diplomats as Calls for Accountability Grow",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xac7pc/eu_condemns_west_bank_settler_attacks_on_european/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-19T23:14:38.000Z",
-   "summary": "submitted by /u/OpDanger [link] [comments]",
-   "id": "e6ab5ec2a6d8",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "The French Fantasy Is Coming to an End",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xa9dcm/the_french_fantasy_is_coming_to_an_end/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-19T21:16:13.000Z",
-   "summary": "submitted by /u/nytopinion [link] [comments]",
-   "id": "32270db15394",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Attacks On Sudan’s Borderlands: Why Is Al-Burhan Keeping A Blind Spot On Cairo?",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xa6323/attacks_on_sudans_borderlands_why_is_alburhan/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-19T19:13:45.000Z",
-   "summary": "submitted by /u/AshNakon [link] [comments]",
-   "id": "6e583feea039",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
+   "why": "0"
   },
   {
    "title": "KT #790 - YUNG GRAVY + ERIK GRIFFIN",
@@ -1216,24 +1234,6 @@
    "published": "2026-10-19T21:11:44.000Z",
    "summary": "Senior/ Staff PM here. My latest employer has about $750 allocated for my Learning and Development, and I have until December to use it. Can be used on books, online courses, conferences, subscriptions etc. Looking for inspiration and also to get a sense of what sort of…",
    "id": "24532f3e8027",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "'The French attack France' | James O’Brien - The Whole Show",
-   "url": "https://www.youtube.com/watch?v=GTWBJRkqJoQ",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-19T19:30:35.000Z",
-   "summary": "This is a catch-up version of James O'Brien's live, daily show on LBC Radio from the 19th of October 2026. Listen to the full show on the all-new LBC App: https://app.af.lbc.co.uk/btnc/thenewlbcapp #jamesobrien #politics #LBC LBC is the home of live debate around news and…",
-   "thumb": "https://i4.ytimg.com/vi/GTWBJRkqJoQ/hqdefault.jpg",
-   "id": "e99a438c0f70",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1540,7 +1540,7 @@
    "why": "0"
   },
   {
-   "title": "A mind-expanding conversation on how models actually work | Emmanuel Ameisen (Anthropic)",
+   "title": "Inside the black box of AI: How AI models actually think | Emmanuel Ameisen (Anthropic)",
    "url": "https://www.youtube.com/watch?v=JHo-aiePjoM",
    "source": "Lenny's Podcast",
    "feedId": "yt-lenny-s-podcast",
@@ -2711,5 +2711,5 @@
    "why": "0"
   }
  ],
- "contentHash": "1aaf39ebbeaa"
+ "contentHash": "f00873fdac66"
 }
