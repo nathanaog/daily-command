@@ -1,17 +1,17 @@
 {
- "generated": "2026-10-20T15:52:07.658Z",
+ "generated": "2026-10-20T18:59:47.850Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
   "ok": 50,
-  "items": 112,
+  "items": 113,
   "duplicatesMerged": 0,
   "lengthsKnown": 1,
-  "lengthLookups": 96,
-  "lengthFailures": 96,
+  "lengthLookups": 97,
+  "lengthFailures": 97,
   "lengthVia": "video pages",
   "lengthFailReasons": {
-   "no length on page": 96
+   "no length on page": 97
   }
  },
  "feeds": [
@@ -384,7 +384,7 @@
    "name": "The Onion",
    "type": "youtube",
    "status": "ok",
-   "count": 3,
+   "count": 4,
    "resolved": {
     "channelId": "UCfAOh2t5DpxVrgS9NQKjC7A",
     "title": "The Onion",
@@ -630,19 +630,20 @@
    "id": "rd-productmanagement",
    "name": "r/productmanagement",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-10-20T09:51:27.204Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/productmanagement/top/.rss?t=day"
   },
   {
    "id": "rd-tech",
    "name": "r/tech",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": "2026-10-15T21:49:52.028Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-gaming",
@@ -651,7 +652,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-ukpolitics",
@@ -684,20 +685,19 @@
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
+   "lastOk": "2026-10-20T15:52:07.658Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-germany",
    "name": "r/germany",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": "2026-10-15T00:59:57.533Z",
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-unitedkingdom",
@@ -706,10 +706,173 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   }
  ],
  "items": [
+  {
+   "title": "Ian Hislop on 40 years at Private Eye, Trump and Burnham...",
+   "url": "https://www.youtube.com/watch?v=ihB818dXSxM",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-20T18:50:06.000Z",
+   "summary": "Andrew Marr is joined by Editor of Private Eye Magazine Ian Hislop to discuss his 40 year tenure in the position. 00:32 | 'My greatest feats and defeat at Public Eye... and how I nearly bankrupted them!' 04:18 | 'How's the political landscape changed during your editorial…",
+   "thumb": "https://i2.ytimg.com/vi/ihB818dXSxM/hqdefault.jpg",
+   "id": "e86df0164c20",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Lkw-Blockaden in Italien sorgen für leere Regale",
+   "url": "https://www.youtube.com/watch?v=Rt4GoF4JX6w",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-20T18:31:32.000Z",
+   "summary": "In Italien protestieren Lkw-Fahrer seit Tagen und Wochen wegen der hohen Diesel-Preise und blockieren strategisch wichtige Straßenverbindungen. In Süditalien kommt es zu ersten Versorgungsengpässen. Alle aktuellen Informationen, weitere Nachrichten und tagesschau24 im…",
+   "thumb": "https://i3.ytimg.com/vi/Rt4GoF4JX6w/hqdefault.jpg",
+   "id": "d3e8cd8b3123",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "tagesschau 20:00 Uhr, 20.10.2026",
+   "url": "https://www.youtube.com/watch?v=IPROokzwO9w",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-20T18:29:55.000Z",
+   "summary": "Die 20-Uhr-Ausgabe der tagesschau im Livestream und auf Abruf findet ihr auch hier: https://ardmediathek.de/tagesschau und https://tagesschau.de Themen der tagesschau-Sendung: 00:00 Guten Abend 00:21 Kanzler Merz zieht ein positives Fazit des Investorengipfels in Berlin 02:34…",
+   "thumb": "https://i2.ytimg.com/vi/IPROokzwO9w/hqdefault.jpg",
+   "id": "f09564d96211",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Dashcams Are A MUST!",
+   "url": "https://www.youtube.com/watch?v=wZ8-tKX5EHY",
+   "source": "Aberrant preach",
+   "feedId": "yt-aberrant-preach",
+   "type": "video",
+   "tags": [
+    "trash"
+   ],
+   "published": "2026-10-20T18:06:06.000Z",
+   "summary": "Cops thought they could get away with this one but they must have missed the memo that Teslas have dashcams all around. ———————————— Spotify: https://open.spotify.com/artist/6QJIJ6AugqPEFASp1V6zgH Merchandise --- https://www.enkreprinte.com/collections/aba-and-preach INSTAGRAM…",
+   "thumb": "https://i4.ytimg.com/vi/wZ8-tKX5EHY/hqdefault.jpg",
+   "id": "9ba743b148a1",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "25 Games That Would Never Be Made Today",
+   "url": "https://www.youtube.com/watch?v=8E_LPb1zFOs",
+   "source": "GameRanx",
+   "feedId": "yt-gameranx",
+   "type": "video",
+   "tags": [
+    "gaming"
+   ],
+   "published": "2026-10-20T17:46:24.000Z",
+   "summary": "Here are some games that wouldn’t be made today thanks to the changing tides in the video game world. Subscribe for more: https://www.youtube.com/gameranxTV?sub_confirmation=1 0:00 Intro 0:50 Manhunt 2 2:52 Urban Chaos: Riot Response 4:34 Messiah 5:41 Cabela’s Dangerous Hunts…",
+   "thumb": "https://i1.ytimg.com/vi/8E_LPb1zFOs/hqdefault.jpg",
+   "id": "453051adfaa9",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Is Pete Hegseth's Bold Pledge To 'Kill Everyone' By 2028 An Unrealistic Pipe Dream?",
+   "url": "https://www.youtube.com/watch?v=pu3Cr6qjbJI",
+   "source": "The Onion",
+   "feedId": "yt-the-onion",
+   "type": "video",
+   "tags": [
+    "comedy"
+   ],
+   "published": "2026-10-20T17:04:24.000Z",
+   "summary": "United States Defense Secretary Pete Hegseth announced an ambitious new plan to \"kill everyone\" within the next two years. But is this a realistic goal, or just another empty promise to rally support before the midterms? Our In The Know panelists discuss. Become an Onion member…",
+   "thumb": "https://i1.ytimg.com/vi/pu3Cr6qjbJI/hqdefault.jpg",
+   "id": "482656d197e7",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "LBC callers berate Trump administration for insulting British forces",
+   "url": "https://www.youtube.com/watch?v=9dDkbsq44kg",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-20T16:59:13.000Z",
+   "summary": "Ben Kentish and LBC callers react to Pete Hegseth's 'unprecedented' comments about the UK and its allies' role in Afghanistan. 0:00 | Pete Hegseth should 'pipe down and shut up' 6:03 | How the UK government should respond 11:09 | This is a case of 'wrong and right' 14:30 |…",
+   "thumb": "https://i2.ytimg.com/vi/9dDkbsq44kg/hqdefault.jpg",
+   "id": "bf4371444981",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "tagesschau 20:00 Uhr, 29.09.2026",
+   "url": "https://www.youtube.com/watch?v=hd2aeCHKo8I",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-20T16:53:28.000Z",
+   "summary": "tagesschau 20:00 Uhr Regierungskoalition verhandelt vor Einbringung ins Kabinett über Gesetzentwurf zur Pflegereform, Erste große Übung der Heimatschutzdivision im öffentlichen Raum, Region Bremen und Bremerhaven soll bis 2031 zur NATO-Drehscheibe ausgebaut werden,…",
+   "thumb": "https://i1.ytimg.com/vi/hd2aeCHKo8I/hqdefault.jpg",
+   "id": "d9d22310b0b0",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "tagesschau in Einfacher Sprache 19:00 Uhr, 20.10.2026",
+   "url": "https://www.youtube.com/watch?v=MmJ5EkStVnk",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-20T15:53:45.000Z",
+   "summary": "tagesschau in Einfacher Sprache 19:00 Uhr Berlin: Treffen für Investoren, EU: mehr Rechte für Reisende geplant, Vor 65 Jahren: Vertrag mit der Türkei, Einsamkeit: Gemeinsame Spaziergänge helfen, Das Wetter https://www.tagesschau.de",
+   "thumb": "https://i2.ytimg.com/vi/MmJ5EkStVnk/hqdefault.jpg",
+   "id": "a273d5dd0a46",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
   {
    "title": "Forget conspiracies, Trump’s tilt to Moscow sits on a colder strategic logic",
    "url": "https://www.reddit.com/r/geopolitics/comments/1xavg6v/forget_conspiracies_trumps_tilt_to_moscow_sits_on/",
@@ -781,25 +944,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Warum junge Paare Kinder immer später kriegen – oder keine I akkurat",
-   "url": "https://www.youtube.com/watch?v=GZSOd1sImLo",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-20T15:00:33.000Z",
-   "summary": "#Kinder? Lieber später. Oder gar nicht. Deutsche werden immer später Eltern, gleichzeitig sinkt die Geburtenrate. Warum ist das so? In dieser Folge begleiten wir Sophie und Tony sowie Katja und Tom. Sophie und Tony können sich Kinder vorstellen – doch während Sophie beruflich…",
-   "thumb": "https://i4.ytimg.com/vi/GZSOd1sImLo/hqdefault.jpg",
-   "id": "4b80c0160941",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "‘They could hold all the power’: Midterm elections explained",
    "url": "https://www.youtube.com/watch?v=ZoqHTMUIObs",
    "source": "LBC",
@@ -835,44 +979,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Investitionen in Deutschland: Wie die Bundesregierung um Unternehmen wirbt",
-   "url": "https://www.youtube.com/watch?v=UQkokXtSCn8",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-20T14:25:43.000Z",
-   "summary": "Der erste Investitionsgipfel in Berlin soll mehr Kapital nach Deutschland locken. Kanzler Merz und Wirtschaftsministerin Reiche sprechen bereits von ersten Zusagen: Unternehmen sollen milliardenschwere Investitionen angekündigt haben. Weitere Informationen:…",
-   "thumb": "https://i2.ytimg.com/vi/UQkokXtSCn8/hqdefault.jpg",
-   "id": "87df4e866ce8",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Flugausfall oder Verspätung: Bekommst du dein Geld jetzt einfacher zurück?",
-   "url": "https://www.youtube.com/watch?v=dzw6nQBp_P0",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-20T14:17:00.000Z",
-   "summary": "Wer reist, kennt das Problem nur zu gut: Der Bus, die Bahn oder das Flugzeug verspäten sich oder fallen komplett aus. Nun will die EU, dass es leichter wird, Erstattungen oder Entschädigungen bei Reisemängeln einzufordern. Das Parlament hat über eine entsprechende Neuregelung…",
-   "thumb": "https://i1.ytimg.com/vi/dzw6nQBp_P0/hqdefault.jpg",
-   "id": "e7d7c54d2468",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Simon Marks makes a prediction about Trump's BBC lawsuit",
    "url": "https://www.youtube.com/watch?v=I-MvOEWKR9U",
    "source": "LBC",
@@ -886,25 +992,6 @@
    "summary": "Simon Marks joins James O'Brien to react as Trump blames the recent unrest in France on 'migrants and communists'. 0:00 | Trump blames France riots on migrants 3:30 | BBC accuses Trump of 'foot-dragging' Trump, providing no evidence for his warnings, pointed to widespread…",
    "thumb": "https://i2.ytimg.com/vi/I-MvOEWKR9U/hqdefault.jpg",
    "id": "4dd1dc179236",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Ukraine: Starlink-Drosselung behindert Kommunikation an der Front",
-   "url": "https://www.youtube.com/watch?v=nogTvwFTXMY",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-20T13:08:55.000Z",
-   "summary": "Das Verhältnis zwischen US-Präsident Trump und seinem ukrainischen Kollegen Selenskyj ist mal wieder auf einem Tiefpunkt. Trump wirft der Ukraine vor, für die Unterstützung durch die USA keine Gegenleistung zu erbringen. Selenskyj wiederum wirft den USA nach Informationen des…",
-   "thumb": "https://i3.ytimg.com/vi/nogTvwFTXMY/hqdefault.jpg",
-   "id": "6dabdc7959b8",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -946,6 +1033,22 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
+   "title": "AI made everyone on our team faster, but we're not shipping any faster. Anyone else?",
+   "url": "https://www.reddit.com/r/ProductManagement/comments/1xarbw2/ai_made_everyone_on_our_team_faster_but_were_not/",
+   "source": "r/productmanagement",
+   "feedId": "rd-productmanagement",
+   "type": "post",
+   "tags": [
+    "product"
+   ],
+   "published": "2026-10-20T12:52:43.000Z",
+   "summary": "I’m a PM at a transportation company, working with a team of 8 (PMs, engineers, data scientists, and QA). We’ve been using Claude Code and GitHub Copilot for a while now, and there’s definitely been a productivity boost. Engineers are writing code faster, tasks are getting done…",
+   "id": "a1f9d60b674a",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
    "title": "Landlord’s £50 rent rise backfires as court cuts rent by £200",
    "url": "https://www.reddit.com/r/ukpolitics/comments/1xaqhiu/landlords_50_rent_rise_backfires_as_court_cuts/",
    "source": "r/ukpolitics",
@@ -958,24 +1061,6 @@
    "published": "2026-10-20T12:12:26.000Z",
    "summary": "submitted by /u/BenjaminBoots196 [link] [comments]",
    "id": "941bccbd9ecf",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "James O'Brien's 'blood boils' as US diminishes UK's role in Afghanistan",
-   "url": "https://www.youtube.com/watch?v=4E3lp9cYTkM",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-20T12:03:44.000Z",
-   "summary": "James O'Brien reacts as Downing Street condemns US Defense Secretary Pete Hegseth for downplaying the UK's role in Afghanistan. No10 said the US Secretary of State for War was \"wrong\" when he said just one or two nations took part in combat operations. It comes after the US…",
-   "thumb": "https://i1.ytimg.com/vi/4E3lp9cYTkM/hqdefault.jpg",
-   "id": "10d8d545ae4d",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1010,24 +1095,6 @@
    "published": "2026-10-20T11:06:24.000Z",
    "summary": "submitted by /u/LargeCatInASmallBox [link] [comments]",
    "id": "9a6d90ae530c",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "'You're blinded by hatred!': LBC caller goes to bat for Trump",
-   "url": "https://www.youtube.com/watch?v=B89PMZyBbYs",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-20T11:00:12.000Z",
-   "summary": "Putin, Donald Trump and China’s Xi Jinping could hold a three-way meeting on the sidelines of next month's APEC summit in China, the Kremlin said on Monday. In light of the proposal, President Zelenskyy has called it a ‘tragedy’ if the US sides with Russia on the Ukraine war.…",
-   "thumb": "https://i3.ytimg.com/vi/B89PMZyBbYs/hqdefault.jpg",
-   "id": "ffec7ae309e8",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1111,9 +1178,9 @@
    "published": "2026-10-20T04:27:54.000Z",
    "summary": "submitted by /u/tas50 [link] [comments]",
    "id": "c264ce7360c4",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
+   "why": "0"
   },
   {
    "title": "Well, this was f***ing weird",
@@ -1129,25 +1196,9 @@
    "summary": "Luke discusses Melania's new women's health task force. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
    "thumb": "https://i4.ytimg.com/vi/SIhj-rsfKe0/hqdefault.jpg",
    "id": "45c2530c3f77",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Wtf is the product unconference?",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1xaciev/wtf_is_the_product_unconference/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-10-19T23:28:26.000Z",
-   "summary": "genuinely asking. keep seeing product unconference 2026 everywhere on twitter. is it just a conference with no slides, or is the format actually different from a normal conference? anyone been to one? I think its run by the product folks (ps: they are huge) so help me…",
-   "id": "7a54624db1d0",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
+   "why": "0"
   },
   {
    "title": "OMG: Matthew McConaughey’s Political Announcement P*SSED ME OFF!",
@@ -1205,6 +1256,22 @@
    "why": "0"
   },
   {
+   "title": "Wtf is the product unconference?",
+   "url": "https://www.reddit.com/r/ProductManagement/comments/1xaciev/wtf_is_the_product_unconference/",
+   "source": "r/productmanagement",
+   "feedId": "rd-productmanagement",
+   "type": "post",
+   "tags": [
+    "product"
+   ],
+   "published": "2026-10-19T23:28:26.000Z",
+   "summary": "genuinely asking. keep seeing product unconference 2026 everywhere on twitter. is it just a conference with no slides, or is the format actually different from a normal conference? anyone been to one? I think its run by the product folks (ps: they are huge) so help me…",
+   "id": "7a54624db1d0",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
    "title": "WATCH MAN DO THIS RIGHT BEHIND TRUMP AT RALLY!",
    "url": "https://www.youtube.com/watch?v=cEdygJER1uc",
    "source": "Luke Beasley",
@@ -1223,17 +1290,17 @@
    "why": "0"
   },
   {
-   "title": "Where are you spending your L&D budget lately?",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1xa9971/where_are_you_spending_your_ld_budget_lately/",
+   "title": "Don't get along with PMO",
+   "url": "https://www.reddit.com/r/ProductManagement/comments/1xaa8eb/dont_get_along_with_pmo/",
    "source": "r/productmanagement",
    "feedId": "rd-productmanagement",
    "type": "post",
    "tags": [
     "product"
    ],
-   "published": "2026-10-19T21:11:44.000Z",
-   "summary": "Senior/ Staff PM here. My latest employer has about $750 allocated for my Learning and Development, and I have until December to use it. Can be used on books, online courses, conferences, subscriptions etc. Looking for inspiration and also to get a sense of what sort of…",
-   "id": "24532f3e8027",
+   "published": "2026-10-19T21:50:58.000Z",
+   "summary": "Hey guys, I wanted to see how your companies approach PMO <> Prod collaboration? Pre-acquisition we had no PMO, once we got acquired we were all hands on deck merging the applications together and got a few PMO resources to help (big mistake imo) Anyway, powered through, got…",
+   "id": "0e69418d6f61",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1253,22 +1320,6 @@
    "summary": "Jason visits Bullhead City, AZ for a Trump rally. Join this channel to get access to perks: https://www.youtube.com/channel/UCUNOwz9KTDIhhTTN3_ptUDA/join https://linktr.ee/thegoodliars",
    "thumb": "https://i1.ytimg.com/vi/TTFfXN9jPug/hqdefault.jpg",
    "id": "ec0e31fcf735",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "App update pissed off users that don’t pay the bills",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1xa6dyv/app_update_pissed_off_users_that_dont_pay_the/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-10-19T19:24:49.000Z",
-   "summary": "Hi there! Head of Product at a small company. We started as an SEO-driven community review website in a niche leisure vertical. We built a big, loyal user base but had almost no monetisation. Later we added an app, which was basically a copy of the website. Then we added…",
-   "id": "af2ca381174b",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1715,23 +1766,6 @@
    "summary": "We covered a story of a 6 year old who brought a g*n to school and wounded his teacher Abigail Zwerner. Now we have bodycam of what happened that day ———————————— Spotify: https://open.spotify.com/artist/6QJIJ6AugqPEFASp1V6zgH Merchandise ---…",
    "thumb": "https://i2.ytimg.com/vi/iBnOJClC2sM/hqdefault.jpg",
    "id": "5ac978390cd9",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Castlevania: Belmont's Curse - Before You Buy",
-   "url": "https://www.youtube.com/watch?v=fVRmZT8Ve7k",
-   "source": "GameRanx",
-   "feedId": "yt-gameranx",
-   "type": "video",
-   "tags": [
-    "gaming"
-   ],
-   "published": "2026-10-16T18:29:18.000Z",
-   "summary": "Castlevania: Belmont's Curse (PC, PS5, Xbox Series X/S, Switch) marks Konami's return to the classic franchise. How is it? Let's talk. Subscribe for more: https://www.youtube.com/gameranxTV?sub_confirmation=1",
-   "thumb": "https://i3.ytimg.com/vi/fVRmZT8Ve7k/hqdefault.jpg",
-   "id": "a8870424156b",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2460,23 +2494,6 @@
    "why": "0"
   },
   {
-   "title": "Akaash 2.0?",
-   "url": "https://www.youtube.com/watch?v=JFRt8hB-bNE",
-   "source": "Aberrant preach",
-   "feedId": "yt-aberrant-preach",
-   "type": "video",
-   "tags": [
-    "trash"
-   ],
-   "published": "2026-10-09T20:20:36.000Z",
-   "summary": "Marc Lamont Hill was never one to be much in the spotlight but after a podcast episode he did with his wife, the Internet took issue in how little she seemingly thinks of his attractiveness. ———————————— Spotify: https://open.spotify.com/artist/6QJIJ6AugqPEFASp1V6zgH…",
-   "thumb": "https://i3.ytimg.com/vi/JFRt8hB-bNE/hqdefault.jpg",
-   "id": "c11070c24cd3",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "Will it take a disaster to force AI regulation? | The Economist",
    "url": "https://www.youtube.com/watch?v=B8oXVMYXlfM",
    "source": "The Economist",
@@ -2711,5 +2728,5 @@
    "why": "0"
   }
  ],
- "contentHash": "f00873fdac66"
+ "contentHash": "89b8d18972aa"
 }
