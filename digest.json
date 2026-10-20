@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-20T09:51:27.204Z",
+ "generated": "2026-10-20T13:05:04.079Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
@@ -11,7 +11,7 @@
   "lengthFailures": 96,
   "lengthVia": "video pages",
   "lengthFailReasons": {
-   "HTTP 429": 96
+   "no length on page": 96
   }
  },
  "feeds": [
@@ -630,20 +630,19 @@
    "id": "rd-productmanagement",
    "name": "r/productmanagement",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/productmanagement/top/.rss?t=day"
+   "lastOk": "2026-10-20T09:51:27.204Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-tech",
    "name": "r/tech",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": "2026-10-15T21:49:52.028Z",
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-gaming",
@@ -652,25 +651,26 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-10-20T03:52:43.316Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
   },
   {
    "id": "rd-xbox",
    "name": "r/xbox",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-slaythespire",
@@ -679,7 +679,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-geopolitics",
@@ -710,6 +710,238 @@
   }
  ],
  "items": [
+  {
+   "title": "Guilfoyle THREATENS TO EXPOSE IT as She Suffers SHOUTING COLLAPSE!",
+   "url": "https://www.youtube.com/watch?v=4mmzOFoNK-s",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-20T13:00:33.000Z",
+   "summary": "Luke discusses the latest news on Kimberly Guilfoyle. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley Instagram…",
+   "thumb": "https://i1.ytimg.com/vi/4mmzOFoNK-s/hqdefault.jpg",
+   "id": "c7a8cbdf646e",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "British veterans react: U.S. calls NATO ‘a burden’ in Afghanistan",
+   "url": "https://www.youtube.com/watch?v=vRbg1Sp6WeY",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-20T13:00:25.000Z",
+   "summary": "Downing Street has hit back at the US after Pete Hegseth downplayed the UK and Nato's role in the war in Afghanistan. No10 said the US Secretary of State for War was \"wrong\" when he said just one or two nations took part in combat operations. It comes after the US vice…",
+   "thumb": "https://i3.ytimg.com/vi/vRbg1Sp6WeY/hqdefault.jpg",
+   "id": "dae4688c3225",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Proteste in Italien: Speditionen beteiligen sich",
+   "url": "https://www.youtube.com/watch?v=UMPgccQGhrM",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-20T12:44:39.000Z",
+   "summary": "In Mailand ist es den zweiten Tag in Folge zu gewalttätigen Protesten von Jugendlichen gekommen. Sie plünderten Geschäfte und Supermärkte. Die Polizei setzte Tränengas und Wasserwerfer ein. Mindestens 160 Menschen wurden festgenommen, die meisten von ihnen Minderjährige. Die…",
+   "thumb": "https://i2.ytimg.com/vi/UMPgccQGhrM/hqdefault.jpg",
+   "id": "10f5a7f7513d",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Leipzig: Neue Freundschaften statt Social Media | tagesthemen mittendrin",
+   "url": "https://www.youtube.com/watch?v=YUuRHYKB6tQ",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-20T12:17:57.000Z",
+   "summary": "Jeder Fünfte zwischen 20 und 30 Jahren fühlt sich einsam, Gründe dafür gibt es viele. Damit das nicht so bleibt, gibt es in vielen Städten inzwischen Spaziergänge gegen das Alleinesein - und es scheint zu helfen... Mehr tagesthemen mittendrin Reportagen hier:…",
+   "thumb": "https://i2.ytimg.com/vi/YUuRHYKB6tQ/hqdefault.jpg",
+   "id": "fe9eb89a986a",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Landlord’s £50 rent rise backfires as court cuts rent by £200",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xaqhiu/landlords_50_rent_rise_backfires_as_court_cuts/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-20T12:12:26.000Z",
+   "summary": "submitted by /u/BenjaminBoots196 [link] [comments]",
+   "id": "941bccbd9ecf",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "'I might be sick': Hesgeth accused of diminishing UK's role in Afghanistan",
+   "url": "https://www.youtube.com/watch?v=4E3lp9cYTkM",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-20T12:03:44.000Z",
+   "summary": "James O'Brien reacts as Downing Street condemns US Defense Secretary Pete Hegseth for downplaying the UK's role in Afghanistan. No10 said the US Secretary of State for War was \"wrong\" when he said just one or two nations took part in combat operations. It comes after the US…",
+   "thumb": "https://i1.ytimg.com/vi/4E3lp9cYTkM/hqdefault.jpg",
+   "id": "10d8d545ae4d",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Japan startet Mission zu Mars-Monden – ARD-Korrespondent beantwortet Fragen",
+   "url": "https://www.youtube.com/watch?v=KqW-_w8QDYs",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-20T11:08:42.000Z",
+   "summary": "Eine japanische Raumsonde ist samt dem deutsch-französischen Rover „Idefix“ Richtung Mars aufgebrochen. Eine H3-Rakete hob erfolgreich mit der Sonde von Japans Weltraumbahnhof Tanegashima auf der gleichnamigen Insel im Südwesten des Landes ab. Ziel der Raumfahrtmission ist der…",
+   "thumb": "https://i4.ytimg.com/vi/KqW-_w8QDYs/hqdefault.jpg",
+   "id": "e59931e88d4e",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Westminster Voting Intention: LAB: 27% (+3) CON: 23% (=) RFM: 22% (+1) LDM: 11% (-1) GRN: 10% (-1) RES: 3% (+1) SNP: 2% (-1) Via @yougov.co.uk, 18-19 Oct. Changes w/ 11-12 Oct.",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xap7cg/westminster_voting_intention_lab_27_3_con_23_rfm/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-20T11:06:24.000Z",
+   "summary": "submitted by /u/LargeCatInASmallBox [link] [comments]",
+   "id": "9a6d90ae530c",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "'You're blinded by hatred!': LBC caller goes to bat for Trump",
+   "url": "https://www.youtube.com/watch?v=B89PMZyBbYs",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-20T11:00:12.000Z",
+   "summary": "Putin, Donald Trump and China’s Xi Jinping could hold a three-way meeting on the sidelines of next month's APEC summit in China, the Kremlin said on Monday. In light of the proposal, President Zelenskyy has called it a ‘tragedy’ if the US sides with Russia on the Ukraine war.…",
+   "thumb": "https://i3.ytimg.com/vi/B89PMZyBbYs/hqdefault.jpg",
+   "id": "ffec7ae309e8",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Liz Truss Mocked Over New Book On Disastrous Mini-Budget",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xaoy55/liz_truss_mocked_over_new_book_on_disastrous/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-20T10:52:38.000Z",
+   "summary": "submitted by /u/huffpostuk [link] [comments]",
+   "id": "bee68f7fa4af",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Britain’s £100,000 tax trap",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xaoxqj/britains_100000_tax_trap/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-20T10:52:01.000Z",
+   "summary": "submitted by /u/financialtimes [link] [comments]",
+   "id": "2a6b428d27f1",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "The UK’s Royal Air Force will fly defensive missions to protect Saudi Arabia from escalating Houthi attacks, according to British officials familiar with the matter. RAF Typhoon fighter jets will help defend Saudi cities and infrastructure against aerial attacks from the Iran-backed militant group..",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xaoksn/the_uks_royal_air_force_will_fly_defensive/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-20T10:31:10.000Z",
+   "summary": "EXCLUSIVE: The UK’s Royal Air Force will fly defensive missions to protect Saudi Arabia from escalating Houthi attacks, according to British officials familiar with the matter RAF Typhoon fighter jets will help defend Saudi cities and infrastructure against aerial attacks from…",
+   "id": "26274c9bb05d",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Nick Ferrari disgusted at US comments on Britain's role in Afghanistan",
+   "url": "https://www.youtube.com/watch?v=4PNyhvoDY6E",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-20T09:56:57.000Z",
+   "summary": "Downing Street has hit back at the US after Pete Hegseth downplayed the UK and Nato's role in the war in Afghanistan. No10 said the US Secretary of State for Defence was \"wrong\" when he said just one or two nations took part in combat operations. It comes after the US vice…",
+   "thumb": "https://i1.ytimg.com/vi/4PNyhvoDY6E/hqdefault.jpg",
+   "id": "f10d57ee7081",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
   {
    "title": "MOMA-Reporter: Tiere töten, um andere Tiere zu retten | ARD Morgenmagazin",
    "url": "https://www.youtube.com/watch?v=1rTfR4GaNkM",
@@ -765,44 +997,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Plünderungen in Frankreich: „Ich bin sehr traurig, weil ich den Laden selbst aufgebaut habe“",
-   "url": "https://www.youtube.com/watch?v=DE6-Y1Odak4",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-20T08:08:24.000Z",
-   "summary": "Nach den schweren Ausschreitungen am Rande von Protesten in Frankreich hat Premierminister Sébastien Lecornu Ausgangssperren in mehreren Städten angekündigt. Er habe die Präfekten gebeten, lokal begrenzte Ausgangssperren zu erlassen, sagte Lecornu nach einem Krisentreffen. Die…",
-   "thumb": "https://i1.ytimg.com/vi/DE6-Y1Odak4/hqdefault.jpg",
-   "id": "ca4a3ea8ab3f",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "„Normalerweise äußere ich mich nicht zu Karnevalsvereinen“ – Schlagabtausch über Berliner Politik",
-   "url": "https://www.youtube.com/watch?v=q1YD3PgeWoQ",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-20T07:43:07.000Z",
-   "summary": "Mit dem Versprechen, große Wohnungsbauunternehmen zu vergesellschaften, hatte Die Linke in Berlin die Wahl gewonnen. Seither nähern sich Rot, Grün und Rot in mühsamen Schritten einem Bündnis, das diesen Plan umsetzen will. Nun haben die Landesgremien von Grünen und SPD die…",
-   "thumb": "https://i2.ytimg.com/vi/q1YD3PgeWoQ/hqdefault.jpg",
-   "id": "59d58143b785",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Hegseth secretly visits Israel, meets Netanyahu amid talk of renewed strikes",
    "url": "https://www.reddit.com/r/geopolitics/comments/1xaj6mf/hegseth_secretly_visits_israel_meets_netanyahu/",
    "source": "r/geopolitics",
@@ -831,25 +1025,6 @@
    "published": "2026-10-20T04:27:54.000Z",
    "summary": "submitted by /u/tas50 [link] [comments]",
    "id": "c264ce7360c4",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Kim Jong Un und der Ukraine-Krieg: Nordkoreas gefährlicher Aufstieg I 11KM - der tagesschau-Podcast",
-   "url": "https://www.youtube.com/watch?v=YlWu6neXFww",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-20T04:15:20.000Z",
-   "summary": "Nordkorea gilt als bitterarm, ist aber zu einem entscheidenden Helfer Russlands im Ukraine-Krieg geworden. Fernsehbilder zeigen Nordkoreas Machthaber Kim Jong Un mit Tränen in den Augen, als Särge gefallener Soldaten aus dem Ukrainekrieg eintreffen. Hinter dieser Szene steht…",
-   "thumb": "https://i2.ytimg.com/vi/YlWu6neXFww/hqdefault.jpg",
-   "id": "d7f93aea0a37",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -908,43 +1083,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "KT #790 - YUNG GRAVY + ERIK GRIFFIN",
-   "url": "https://www.youtube.com/watch?v=_XkQRV9dFL4",
-   "source": "Kill Tony",
-   "feedId": "yt-kill-tony",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "standup",
-    "listen"
-   ],
-   "published": "2026-10-20T01:00:09.000Z",
-   "summary": "Yung Gravy, Erik Griffin, Pat O'Neill, Dedrick Flynn, Martin Phillips, D Madness, Michael A. Gonzales, Jon Deas, Matthew Muehling, Grooveline Horns, Joe White, Troy Conrad, Monica Colt, Steve Glass, Tony Hinchcliffe, Brian Redban - RECORDED– 10/12/2026 TONY HINCHCLIFFE…",
-   "thumb": "https://i4.ytimg.com/vi/_XkQRV9dFL4/hqdefault.jpg",
-   "id": "c58904db8f1d",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "THE EXACT MOMENT Katie Found Out She Was FIRED, DURING INTERVIEW!",
-   "url": "https://www.youtube.com/watch?v=K0BEtGkxml4",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-20T00:05:22.000Z",
-   "summary": "Luke discusses The Washington Post's interview with Katie Zacharia during her firing. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
-   "thumb": "https://i4.ytimg.com/vi/K0BEtGkxml4/hqdefault.jpg",
-   "id": "34e8fcf96d0e",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Wtf is the product unconference?",
    "url": "https://www.reddit.com/r/ProductManagement/comments/1xaciev/wtf_is_the_product_unconference/",
    "source": "r/productmanagement",
@@ -978,58 +1116,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Burnham vows end to 'rip-off parking charges' under new rules",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xaat6o/burnham_vows_end_to_ripoff_parking_charges_under/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-19T22:13:49.000Z",
-   "summary": "submitted by /u/LargeCatInASmallBox [link] [comments]",
-   "id": "9a7ceda367b4",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "WATCH MAN DO THIS RIGHT BEHIND TRUMP AT RALLY!",
-   "url": "https://www.youtube.com/watch?v=cEdygJER1uc",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-19T22:05:32.000Z",
-   "summary": "Luke discusses shocking footage from a recent Trump rally. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
-   "thumb": "https://i4.ytimg.com/vi/cEdygJER1uc/hqdefault.jpg",
-   "id": "65e9503cd506",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Revealed: Jonathan Powell’s wife has defended Hamas",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xaadup/revealed_jonathan_powells_wife_has_defended_hamas/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-19T21:57:07.000Z",
-   "summary": "submitted by /u/Pale-Border-7122 [link] [comments]",
-   "id": "d28fd77db7ec",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "The French Fantasy Is Coming to an End",
    "url": "https://www.reddit.com/r/geopolitics/comments/1xa9dcm/the_french_fantasy_is_coming_to_an_end/",
    "source": "r/geopolitics",
@@ -1042,23 +1128,6 @@
    "published": "2026-10-19T21:16:13.000Z",
    "summary": "submitted by /u/nytopinion [link] [comments]",
    "id": "32270db15394",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Hegseth wrong to say most non-US Nato forces in Afghanistan did not fight, says No 10",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xa7vsv/hegseth_wrong_to_say_most_nonus_nato_forces_in/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-19T20:20:09.000Z",
-   "summary": "submitted by /u/diacewrb [link] [comments]",
-   "id": "d169045eb4bf",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1081,38 +1150,59 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Home Secretary threatens Eritrea with visa penalties",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xa4hle/home_secretary_threatens_eritrea_with_visa/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
+   "title": "KT #790 - YUNG GRAVY + ERIK GRIFFIN",
+   "url": "https://www.youtube.com/watch?v=_XkQRV9dFL4",
+   "source": "Kill Tony",
+   "feedId": "yt-kill-tony",
+   "type": "video",
    "tags": [
-    "politics",
-    "british"
+    "comedy",
+    "standup",
+    "listen"
    ],
-   "published": "2026-10-19T18:15:51.000Z",
-   "summary": "submitted by /u/Jessicas_skirt [link] [comments]",
-   "id": "080eb9174f90",
-   "score": 1,
+   "published": "2026-10-20T01:00:09.000Z",
+   "summary": "Yung Gravy, Erik Griffin, Pat O'Neill, Dedrick Flynn, Martin Phillips, D Madness, Michael A. Gonzales, Jon Deas, Matthew Muehling, Grooveline Horns, Joe White, Troy Conrad, Monica Colt, Steve Glass, Tony Hinchcliffe, Brian Redban - RECORDED– 10/12/2026 TONY HINCHCLIFFE…",
+   "thumb": "https://i4.ytimg.com/vi/_XkQRV9dFL4/hqdefault.jpg",
+   "id": "c58904db8f1d",
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
+   "why": "0"
   },
   {
-   "title": "Journalists forced to flee homes after Tommy Robinson shared images of where they lived online, court told",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xa2j7f/journalists_forced_to_flee_homes_after_tommy/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
+   "title": "THE EXACT MOMENT Katie Found Out She Was FIRED, DURING INTERVIEW!",
+   "url": "https://www.youtube.com/watch?v=K0BEtGkxml4",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
    "tags": [
     "politics",
-    "british"
+    "listen"
    ],
-   "published": "2026-10-19T17:04:42.000Z",
-   "summary": "submitted by /u/gravy_baron [link] [comments]",
-   "id": "3c1089207a33",
-   "score": 1,
+   "published": "2026-10-20T00:05:22.000Z",
+   "summary": "Luke discusses The Washington Post's interview with Katie Zacharia during her firing. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
+   "thumb": "https://i4.ytimg.com/vi/K0BEtGkxml4/hqdefault.jpg",
+   "id": "34e8fcf96d0e",
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
+   "why": "0"
+  },
+  {
+   "title": "WATCH MAN DO THIS RIGHT BEHIND TRUMP AT RALLY!",
+   "url": "https://www.youtube.com/watch?v=cEdygJER1uc",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-19T22:05:32.000Z",
+   "summary": "Luke discusses shocking footage from a recent Trump rally. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
+   "thumb": "https://i4.ytimg.com/vi/cEdygJER1uc/hqdefault.jpg",
+   "id": "65e9503cd506",
+   "score": 0,
+   "matched": [],
+   "why": "0"
   },
   {
    "title": "Where are you spending your L&D budget lately?",
@@ -1202,24 +1292,6 @@
    "why": "0"
   },
   {
-   "title": "Trump urges France to close their borders",
-   "url": "https://www.youtube.com/watch?v=e8h4u51my_g",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-19T18:17:38.000Z",
-   "summary": "Curfews imposed in cities across France as government admits police 'lost control'. Ben Kentish is joined by guests to discuss the meaning behind the chaos sweeping European countries and what the US leader has to say about it all. 03:43 | Freelance Journalist and Political…",
-   "thumb": "https://i2.ytimg.com/vi/e8h4u51my_g/hqdefault.jpg",
-   "id": "1458dc1a71e1",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "Why don't Brits protest like the French?",
    "url": "https://www.youtube.com/watch?v=mR7Ul_wRVik",
    "source": "PoliticsJOE",
@@ -1272,24 +1344,6 @@
    "why": "0"
   },
   {
-   "title": "Why is Trump breaking norms to endorse Netanyahu?",
-   "url": "https://www.youtube.com/watch?v=0OwBvf6Jyk4",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-19T15:36:48.000Z",
-   "summary": "Donald Trump has thrown his support behind Benjamin Netanyahu ahead of Israel’s election later this month, calling the prime minister a “great warrior” and urging voters to return him to office. In a lengthy Truth Social post, the US president said Mr Netanyahu had been a key…",
-   "thumb": "https://i1.ytimg.com/vi/0OwBvf6Jyk4/hqdefault.jpg",
-   "id": "59aa7b424c84",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "Dominic Cummings Exposes Boris Johnson's Broken Britain in Select Committee",
    "url": "https://www.youtube.com/watch?v=Ev7EIL0uSL4",
    "source": "PoliticsJOE",
@@ -1336,60 +1390,6 @@
    "summary": "At the Cumbria Clock Company, I discover that I knew far less about clocks than I thought. | ❓ Lateral, free weekly podcast: https://lateralcast.com/ https://youtube.com/lateralcast/ 🗺️ England series map: https://www.tomscott.com/england/ 🟥 MORE FROM TOM:…",
    "thumb": "https://i3.ytimg.com/vi/BxXfeotgVVA/hqdefault.jpg",
    "id": "636e08097a67",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Could this cost JD Vance his presidential aspirations?",
-   "url": "https://www.youtube.com/watch?v=KCaG9Jt8CqM",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-19T14:30:36.000Z",
-   "summary": "Simon Marks joins James O'Brien to talk about the moment that could 'cost JD Vance his presidential aspirations'. The US vice president is widely known to be eyeing up the White House, hoping to become Donald Trump's successor. Simon Marks points to a recent 'problematic'…",
-   "thumb": "https://i4.ytimg.com/vi/KCaG9Jt8CqM/hqdefault.jpg",
-   "id": "8225dd325343",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Putin-Trump-Xi summit | Is this only the start of Trump's Russia strategy?",
-   "url": "https://www.youtube.com/watch?v=zjvuMaxAddc",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-19T13:30:07.000Z",
-   "summary": "Simon Marks joins James O'Brien to discuss Putin's proposed three-way summit with U.S. President Donald Trump and Chinese leader Xi Jinping to talk over a Ukraine deal to end the war, an idea floated without the participation of Ukrainian President Volodymyr Zelenskyy. Listen…",
-   "thumb": "https://i3.ytimg.com/vi/zjvuMaxAddc/hqdefault.jpg",
-   "id": "646e954bc7de",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "This Trump Official is Going Viral…",
-   "url": "https://www.youtube.com/watch?v=_RAUcIBeVqE",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-19T13:00:21.000Z",
-   "summary": "Luke discusses Trump’s new ambassador for the U.S. State Department’s Anti-Trafficking Office, Barbera Thornhill. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected…",
-   "thumb": "https://i4.ytimg.com/vi/_RAUcIBeVqE/hqdefault.jpg",
-   "id": "6fd25c3eb0c8",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2711,5 +2711,5 @@
    "why": "0"
   }
  ],
- "contentHash": "91a0729145ca"
+ "contentHash": "1aaf39ebbeaa"
 }
