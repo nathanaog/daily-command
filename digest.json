@@ -1,17 +1,17 @@
 {
- "generated": "2026-10-20T18:59:47.850Z",
+ "generated": "2026-10-20T21:50:35.869Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
   "ok": 50,
-  "items": 113,
+  "items": 114,
   "duplicatesMerged": 0,
   "lengthsKnown": 1,
-  "lengthLookups": 97,
-  "lengthFailures": 97,
+  "lengthLookups": 98,
+  "lengthFailures": 98,
   "lengthVia": "video pages",
   "lengthFailReasons": {
-   "no length on page": 97
+   "no length on page": 98
   }
  },
  "feeds": [
@@ -267,7 +267,7 @@
    "name": "ProZD",
    "type": "youtube",
    "status": "ok",
-   "count": 1,
+   "count": 2,
    "resolved": {
     "channelId": "UC6MFZAOHXlKK1FI7V0XQVeA",
     "title": "ProZD",
@@ -630,20 +630,19 @@
    "id": "rd-productmanagement",
    "name": "r/productmanagement",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/productmanagement/top/.rss?t=day"
+   "lastOk": "2026-10-20T18:59:47.850Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-tech",
    "name": "r/tech",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": "2026-10-15T21:49:52.028Z",
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-gaming",
@@ -652,25 +651,26 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-10-20T13:05:04.079Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
   },
   {
    "id": "rd-xbox",
    "name": "r/xbox",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-slaythespire",
@@ -679,7 +679,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-geopolitics",
@@ -710,6 +710,131 @@
   }
  ],
  "items": [
+  {
+   "title": "Warum Siemens-Chef Busch an den Wirtschafts-Standort Deutschland glaubt | tagesthemen-Interview",
+   "url": "https://www.youtube.com/watch?v=qZHgiylPfwE",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-20T21:33:58.000Z",
+   "summary": "Roter Teppich für Wirtschaftsbosse: Erstmals hat die Bundesregierung führende Unternehmer zu einem Investitionsgipfel eingeladen. Auf dem „Invest in Germany Summit Berlin“ haben Bundeskanzler Merz und seine Kabinettskollegen versucht internationale Unternehmen davon zu…",
+   "thumb": "https://i2.ytimg.com/vi/qZHgiylPfwE/hqdefault.jpg",
+   "id": "fa543fc234c9",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "what is it like working with directors as a voice actor",
+   "url": "https://www.youtube.com/watch?v=JzdNo4JEYPI",
+   "source": "ProZD",
+   "feedId": "yt-prozd",
+   "type": "video",
+   "tags": [
+    "comedy",
+    "gaming"
+   ],
+   "published": "2026-10-20T21:27:01.000Z",
+   "summary": "My Patreon: https://www.patreon.com/ProZD My Cameo: https://www.cameo.com/prozd My Let's Play Channel: https://www.youtube.com/@prozdplaysgames My Food Channel: https://www.youtube.com/@ProZDEatsFood My Anime Channel: https://www.youtube.com/@ProZDWatchesAnime My Autograph…",
+   "thumb": "https://i3.ytimg.com/vi/JzdNo4JEYPI/hqdefault.jpg",
+   "id": "127c2f21a869",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Call of Duty Modern Warfare 4 - Before You Buy",
+   "url": "https://www.youtube.com/watch?v=HMKu-66d7sA",
+   "source": "GameRanx",
+   "feedId": "yt-gameranx",
+   "type": "video",
+   "tags": [
+    "gaming"
+   ],
+   "published": "2026-10-20T21:15:50.000Z",
+   "summary": "The Call of Duty: Modern Warfare 4 campaign wraps up the new MW reboot saga. Is it worth it? Let's talk. Subscribe for more: http://youtube.com/gameranxtv ▼▼ Watch more 'Before You Buy': https://bit.ly/2kfdxI6",
+   "thumb": "https://i1.ytimg.com/vi/HMKu-66d7sA/hqdefault.jpg",
+   "id": "af8c40ab327b",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "The mother of all privatisation disasters | James O’Brien - The Whole Show",
+   "url": "https://www.youtube.com/watch?v=SK7RWovo_VA",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-20T20:00:04.000Z",
+   "summary": "This is a catch-up version of James O'Brien's live, daily show on LBC Radio from the 20th of October 2026. Listen to the full show on the all-new LBC App: https://app.af.lbc.co.uk/btnc/thenewlbcapp #jamesobrien #politics #LBC LBC is the home of live debate around news and…",
+   "thumb": "https://i4.ytimg.com/vi/SK7RWovo_VA/hqdefault.jpg",
+   "id": "d6228e217999",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Ofcom Concedes Defeat in the 4chan Case",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xb1koh/ofcom_concedes_defeat_in_the_4chan_case/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-20T19:24:47.000Z",
+   "summary": "submitted by /u/Eastern-Opposite9521 [link] [comments]",
+   "id": "7043ec7b4d40",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "WASILLA ALASKA TRUMP RALLY",
+   "url": "https://www.youtube.com/watch?v=pFHvV5dyL6E",
+   "source": "The Good Liars",
+   "feedId": "yt-the-good-liars",
+   "type": "video",
+   "tags": [
+    "comedy",
+    "politics",
+    "debates"
+   ],
+   "published": "2026-10-20T19:06:36.000Z",
+   "summary": "The Good Liars visit Wasilla, Alaska for part II for their Trump Rally experience.",
+   "thumb": "https://i1.ytimg.com/vi/pFHvV5dyL6E/hqdefault.jpg",
+   "id": "b90cb9a94fe1",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Flying Cars? Tesla Roadster",
+   "url": "https://www.youtube.com/watch?v=4JHLoi5hr2Y",
+   "source": "Aberrant preach",
+   "feedId": "yt-aberrant-preach",
+   "type": "video",
+   "tags": [
+    "trash"
+   ],
+   "published": "2026-10-20T19:06:06.000Z",
+   "summary": "Elon's Tesla released the video of their Roadster... Flying cars, hover cars, floating cars, its preview only and seems very sus based on the video released. ———————————— Spotify: https://open.spotify.com/artist/6QJIJ6AugqPEFASp1V6zgH Merchandise ---…",
+   "thumb": "https://i1.ytimg.com/vi/4JHLoi5hr2Y/hqdefault.jpg",
+   "id": "e7a85da3e023",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
   {
    "title": "Ian Hislop on 40 years at Private Eye, Trump and Burnham...",
    "url": "https://www.youtube.com/watch?v=ihB818dXSxM",
@@ -759,7 +884,7 @@
     "listen"
    ],
    "published": "2026-10-20T18:29:55.000Z",
-   "summary": "Die 20-Uhr-Ausgabe der tagesschau im Livestream und auf Abruf findet ihr auch hier: https://ardmediathek.de/tagesschau und https://tagesschau.de Themen der tagesschau-Sendung: 00:00 Guten Abend 00:21 Kanzler Merz zieht ein positives Fazit des Investorengipfels in Berlin 02:34…",
+   "summary": "tagesschau 20:00 Uhr Kanzler Merz zieht ein positives Fazit des Investorengipfels in Berlin, Unternehmen fordern bessere Rahmenbedingungen für Investitionen, Grüne und SPD für Koalitionsgespräche mit der Linkspartei in Berlin, AfD bestätigt Hackerangriff auf E-Mail-Konten,…",
    "thumb": "https://i2.ytimg.com/vi/IPROokzwO9w/hqdefault.jpg",
    "id": "f09564d96211",
    "score": 1,
@@ -836,6 +961,23 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
+   "title": "Two men re-arrested in RAF Fairford investigation",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xaxixw/two_men_rearrested_in_raf_fairford_investigation/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-20T16:55:30.000Z",
+   "summary": "submitted by /u/iguled [link] [comments]",
+   "id": "ef4764113230",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
    "title": "tagesschau 20:00 Uhr, 29.09.2026",
    "url": "https://www.youtube.com/watch?v=hd2aeCHKo8I",
    "source": "Tagesschau",
@@ -850,6 +992,40 @@
    "summary": "tagesschau 20:00 Uhr Regierungskoalition verhandelt vor Einbringung ins Kabinett über Gesetzentwurf zur Pflegereform, Erste große Übung der Heimatschutzdivision im öffentlichen Raum, Region Bremen und Bremerhaven soll bis 2031 zur NATO-Drehscheibe ausgebaut werden,…",
    "thumb": "https://i1.ytimg.com/vi/hd2aeCHKo8I/hqdefault.jpg",
    "id": "d9d22310b0b0",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Westminster Voting Intention: LAB: 30% (+1) RFM: 24% (-1) CON: 22% (+3) GRN: 8% (-1) LDM: 7% (-1) SNP: 3% (-1) Via @deltapoll.bsky.social ,16-19 Oct. Changes w/ 11-14 Sep.",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xawhr9/westminster_voting_intention_lab_30_1_rfm_24_1/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-20T16:16:43.000Z",
+   "summary": "submitted by /u/ClumperFaz [link] [comments]",
+   "id": "bd568ae6f55c",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Palestine poppy creator is unmasked as NHS doctor who wrote book introducing children to stoning",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xaw8o9/palestine_poppy_creator_is_unmasked_as_nhs_doctor/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-20T16:07:33.000Z",
+   "summary": "submitted by /u/PossessionConnect963 [link] [comments]",
+   "id": "aed9fa6bd16a",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -886,25 +1062,6 @@
    "published": "2026-10-20T15:38:40.000Z",
    "summary": "US President Donald Trump has settled on a carrot-and-stick approach to ending the war in Ukraine. In international diplomacy, that can be a good strategy, but the trouble here is the distribution. Russian President Vladimir Putin has been handed the whole carrot, Ukrainian…",
    "id": "16f02b95c361",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "65 Jahre Anwerbeabkommen mit der Türkei",
-   "url": "https://www.youtube.com/watch?v=O0Uzo1Ci1-Y",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-20T15:34:30.000Z",
-   "summary": "Von einer Wirtschaftskrise sprach vor 65 Jahren noch niemand. Im Gegenteil: Deutschland boomte, händeringend wurde nach Arbeitskräften gesucht. Die Bundesregierung schloss deshalb ein Anwerbeabkommen mit der Türkei. Vom Start 1961 bis zum Stopp 1973 kamen darüber etwa 870.000…",
-   "thumb": "https://i4.ytimg.com/vi/O0Uzo1Ci1-Y/hqdefault.jpg",
-   "id": "c0aba67b6ee7",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -957,6 +1114,23 @@
    "summary": "How important are the US midterm elections? Lewis Goodall explains what’s at stake. As the November elections approach, Donald Trump’s approval ratings are still at a low, with only 28% of people thinking he’s an effective president. The Iran war, price of oil and cost of…",
    "thumb": "https://i3.ytimg.com/vi/ZoqHTMUIObs/hqdefault.jpg",
    "id": "64eb73321703",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Watching Netflix or YouTube could soon require a TV licence",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xaua5o/watching_netflix_or_youtube_could_soon_require_a/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-20T14:54:25.000Z",
+   "summary": "submitted by /u/Paul277 [link] [comments]",
+   "id": "b90280505d2e",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1015,24 +1189,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "British veterans react: U.S. calls NATO ‘a burden’ in Afghanistan",
-   "url": "https://www.youtube.com/watch?v=vRbg1Sp6WeY",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-20T13:00:25.000Z",
-   "summary": "Downing Street has hit back at the US after Pete Hegseth downplayed the UK and Nato's role in the war in Afghanistan. No10 said the US Secretary of State for War was \"wrong\" when he said just one or two nations took part in combat operations. It comes after the US vice…",
-   "thumb": "https://i3.ytimg.com/vi/vRbg1Sp6WeY/hqdefault.jpg",
-   "id": "dae4688c3225",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "AI made everyone on our team faster, but we're not shipping any faster. Anyone else?",
    "url": "https://www.reddit.com/r/ProductManagement/comments/1xarbw2/ai_made_everyone_on_our_team_faster_but_were_not/",
    "source": "r/productmanagement",
@@ -1044,23 +1200,6 @@
    "published": "2026-10-20T12:52:43.000Z",
    "summary": "I’m a PM at a transportation company, working with a team of 8 (PMs, engineers, data scientists, and QA). We’ve been using Claude Code and GitHub Copilot for a while now, and there’s definitely been a productivity boost. Engineers are writing code faster, tasks are getting done…",
    "id": "a1f9d60b674a",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Landlord’s £50 rent rise backfires as court cuts rent by £200",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xaqhiu/landlords_50_rent_rise_backfires_as_court_cuts/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-20T12:12:26.000Z",
-   "summary": "submitted by /u/BenjaminBoots196 [link] [comments]",
-   "id": "941bccbd9ecf",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1078,74 +1217,6 @@
    "published": "2026-10-20T11:55:17.000Z",
    "summary": "submitted by /u/Ben_Hecks [link] [comments]",
    "id": "1f0ca621570c",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Westminster Voting Intention: LAB: 27% (+3) CON: 23% (=) RFM: 22% (+1) LDM: 11% (-1) GRN: 10% (-1) RES: 3% (+1) SNP: 2% (-1) Via @yougov.co.uk, 18-19 Oct. Changes w/ 11-12 Oct.",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xap7cg/westminster_voting_intention_lab_27_3_con_23_rfm/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-20T11:06:24.000Z",
-   "summary": "submitted by /u/LargeCatInASmallBox [link] [comments]",
-   "id": "9a6d90ae530c",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Liz Truss Mocked Over New Book On Disastrous Mini-Budget",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xaoy55/liz_truss_mocked_over_new_book_on_disastrous/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-20T10:52:38.000Z",
-   "summary": "submitted by /u/huffpostuk [link] [comments]",
-   "id": "bee68f7fa4af",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Britain’s £100,000 tax trap",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xaoxqj/britains_100000_tax_trap/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-20T10:52:01.000Z",
-   "summary": "submitted by /u/financialtimes [link] [comments]",
-   "id": "2a6b428d27f1",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "The UK’s Royal Air Force will fly defensive missions to protect Saudi Arabia from escalating Houthi attacks, according to British officials familiar with the matter. RAF Typhoon fighter jets will help defend Saudi cities and infrastructure against aerial attacks from the Iran-backed militant group..",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xaoksn/the_uks_royal_air_force_will_fly_defensive/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-20T10:31:10.000Z",
-   "summary": "EXCLUSIVE: The UK’s Royal Air Force will fly defensive missions to protect Saudi Arabia from escalating Houthi attacks, according to British officials familiar with the matter RAF Typhoon fighter jets will help defend Saudi cities and infrastructure against aerial attacks from…",
-   "id": "26274c9bb05d",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1737,23 +1808,6 @@
    "why": "0"
   },
   {
-   "title": "GTA 6: NEW THINGS FROM LAUNCH TRAILER & MORE",
-   "url": "https://www.youtube.com/watch?v=UTrNTE9VPHM",
-   "source": "GameRanx",
-   "feedId": "yt-gameranx",
-   "type": "video",
-   "tags": [
-    "gaming"
-   ],
-   "published": "2026-10-16T19:58:23.000Z",
-   "summary": "Use code GAMERANXFB50 to get 50% OFF your first Factor box plus free breakfast for 1 year at https://bit.ly/3V2LyN4! Thank you to Factor for sponsoring this video! ~~SOURCES~~ GTA6 stuff: New trailer: https://youtu.be/oFwB6gZLRmc?si=ydfS4dkGzpZZmj-G Portrait changes…",
-   "thumb": "https://i2.ytimg.com/vi/UTrNTE9VPHM/hqdefault.jpg",
-   "id": "7f4e5279cae7",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "Toddler Sh0t His Teacher... Meet His Parent",
    "url": "https://www.youtube.com/watch?v=iBnOJClC2sM",
    "source": "Aberrant preach",
@@ -2254,23 +2308,6 @@
    "why": "0"
   },
   {
-   "title": "Dating Shows = S*x Work",
-   "url": "https://www.youtube.com/watch?v=oOAps5_hVUM",
-   "source": "Aberrant preach",
-   "feedId": "yt-aberrant-preach",
-   "type": "video",
-   "tags": [
-    "trash"
-   ],
-   "published": "2026-10-12T14:21:25.000Z",
-   "summary": "Jubilee copycats are now simply getting a bunch of OF girls and making them say the wildest things in these blind date type videos. That didn't seem enough and now they're getting fake goth OF girls... ———————————— Spotify: https://open.spotify.com/artist/6QJIJ6AugqPEFASp1V6zgH…",
-   "thumb": "https://i4.ytimg.com/vi/oOAps5_hVUM/hqdefault.jpg",
-   "id": "fd7a02863650",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "Generic Drugs: Last Week Tonight with John Oliver (HBO)",
    "url": "https://www.youtube.com/watch?v=TM1EbMKhT4Y",
    "source": "Last Week Tonight",
@@ -2433,25 +2470,6 @@
    "summary": "Josh Woodward is the head of Google Labs, the Gemini app, and AI Studio. He has spent over 17 years at Google and oversees its longest-running and largest labs team, whose products include NotebookLM (now Gemini Notebook), Project Genie, and Flow. His job is to find, experiment…",
    "thumb": "https://i4.ytimg.com/vi/3I6QYkccd3o/hqdefault.jpg",
    "id": "cf2af74101ea",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "OHIO TRUMP RALLY",
-   "url": "https://www.youtube.com/watch?v=z5cAiwQULKI",
-   "source": "The Good Liars",
-   "feedId": "yt-the-good-liars",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "politics",
-    "debates"
-   ],
-   "published": "2026-10-10T18:30:36.000Z",
-   "summary": "The Good Liars visit Dayton, Ohio for a Trump Rally https://www.youtube.com/channel/UCUNOwz9KTDIhhTTN3_ptUDA/join https://linktr.ee/thegoodliars",
-   "thumb": "https://i3.ytimg.com/vi/z5cAiwQULKI/hqdefault.jpg",
-   "id": "f52c86bfea5e",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2728,5 +2746,5 @@
    "why": "0"
   }
  ],
- "contentHash": "89b8d18972aa"
+ "contentHash": "cb15c2f84daf"
 }
