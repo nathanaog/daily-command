@@ -1,17 +1,17 @@
 {
- "generated": "2026-10-21T09:53:14.903Z",
+ "generated": "2026-10-21T13:06:27.499Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
   "ok": 50,
-  "items": 114,
+  "items": 115,
   "duplicatesMerged": 0,
   "lengthsKnown": 1,
-  "lengthLookups": 98,
-  "lengthFailures": 98,
+  "lengthLookups": 99,
+  "lengthFailures": 99,
   "lengthVia": "video pages",
   "lengthFailReasons": {
-   "no length on page": 98
+   "no length on page": 99
   }
  },
  "feeds": [
@@ -397,7 +397,7 @@
    "name": "The Economist",
    "type": "youtube",
    "status": "ok",
-   "count": 4,
+   "count": 5,
    "resolved": {
     "channelId": "UC0p5jTq6Xx_DosDFxVXnWaQ",
     "title": "The Economist",
@@ -630,19 +630,20 @@
    "id": "rd-productmanagement",
    "name": "r/productmanagement",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-10-21T03:53:41.881Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/productmanagement/top/.rss?t=day"
   },
   {
    "id": "rd-tech",
    "name": "r/tech",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": "2026-10-15T21:49:52.028Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-gaming",
@@ -651,7 +652,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-ukpolitics",
@@ -684,20 +685,19 @@
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
+   "lastOk": "2026-10-21T09:53:14.903Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-germany",
    "name": "r/germany",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": "2026-10-15T00:59:57.533Z",
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-unitedkingdom",
@@ -706,10 +706,185 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   }
  ],
  "items": [
+  {
+   "title": "Watch JD Vance FREEZE UP in Interview as Trump Gets EXPOSED!",
+   "url": "https://www.youtube.com/watch?v=iirNLVKiLn0",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-21T13:00:16.000Z",
+   "summary": "Luke discusses JD Vance's recent interview. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley Instagram -…",
+   "thumb": "https://i2.ytimg.com/vi/iirNLVKiLn0/hqdefault.jpg",
+   "id": "d6925fc8b2b5",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Simon Marks wants to know when the UK will ‘get a spine’ after Hegseth’s Afghanistan comments",
+   "url": "https://www.youtube.com/watch?v=m7RqhDzMURI",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-21T12:30:12.000Z",
+   "summary": "Simon Marks and LBC callers react to Pete Hegseth’s comments about UK and NATO troops’ involvement in Afghanistan. 00:00 | Simon Marks wonders when the UK will ‘grow a spine’ 04:50 | Caller Linda calls the comments ‘despicable’ and says Hegseth is ‘scum’ 11:06 | Caller Laura…",
+   "thumb": "https://i2.ytimg.com/vi/m7RqhDzMURI/hqdefault.jpg",
+   "id": "1944db8f1328",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "So könnte das flexible Deutschlandticket per App funktionieren",
+   "url": "https://www.youtube.com/watch?v=Y11B4B4swtA",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-21T12:10:41.000Z",
+   "summary": "Für gelegentliche Bus- und Bahnfahrer:innen könnte bald bundesweit ein neues digitales Fahrscheinangebot eingeführt werden – als Ergänzung zum bestehenden Deutschlandticket. Per Smartphone werden Fahrtbeginn und Fahrtende registriert. Dann wird der günstigste Tarif automatisch…",
+   "thumb": "https://i2.ytimg.com/vi/Y11B4B4swtA/hqdefault.jpg",
+   "id": "9c45ad30b7b2",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "‘Burnham definitely won this one’ | PMQs analysed",
+   "url": "https://www.youtube.com/watch?v=kY51EogMUW8",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-21T11:48:18.000Z",
+   "summary": "LBC's political correspondent joins James O'Brien to analyse Andy Burnham and James O'Brien's performance at today's PMQs. Listen to the full show on the all-new LBC App: https://app.af.lbc.co.uk/btnc/thenewlbcapp #jamesobrien #pmqs #burnham #badenoch #ukpolitics #uknews #LBC…",
+   "thumb": "https://i4.ytimg.com/vi/kY51EogMUW8/hqdefault.jpg",
+   "id": "5970c07c4be9",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "HIGHLIGHTS: Andy Burnham Faces Down Kemi Badenoch at PMQs",
+   "url": "https://www.youtube.com/watch?v=odeQN2wKKbQ",
+   "source": "PoliticsJOE",
+   "feedId": "yt-politicsjoe",
+   "type": "video",
+   "tags": [
+    "comedy"
+   ],
+   "published": "2026-10-21T11:42:10.000Z",
+   "summary": "On the day the government decided to grant new licences for natural gas at the Jackdaw field, Andy Burnham faced the Conservative leader at another session of PMQs. Like PoliticsJOE? We need your support: https://www.patreon.com/PoliticsJOE",
+   "thumb": "https://i4.ytimg.com/vi/odeQN2wKKbQ/hqdefault.jpg",
+   "id": "9bfcd3bbed27",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Bundesgerichtshof: Nur dann haben Verbraucher Anspruch auf ihre Schufa-Daten",
+   "url": "https://www.youtube.com/watch?v=-ULmM8MDt0Y",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-21T11:06:25.000Z",
+   "summary": "Der Bundesgerichtshof hat die Wirtschaftsauskunftei Schufa zu mehr Transparenz bei der Berechnung der Bonität von Verbraucher:innen verpflichtet. Führen Menschen an, dass sie wegen der Bonitätseinstufung von der Schufa keinen Vertrag mit einem Unternehmen, etwa einen…",
+   "thumb": "https://i2.ytimg.com/vi/-ULmM8MDt0Y/hqdefault.jpg",
+   "id": "9ce33fa7f623",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Are Product Managers expected to be software engineers now?",
+   "url": "https://www.reddit.com/r/ProductManagement/comments/1xbjyir/are_product_managers_expected_to_be_software/",
+   "source": "r/productmanagement",
+   "feedId": "rd-productmanagement",
+   "type": "post",
+   "tags": [
+    "product"
+   ],
+   "published": "2026-10-21T10:54:29.000Z",
+   "summary": "I’ve been noticing more roles lately that seem to blur the line between Product Management and Software Engineering. Some companies are explicitly asking whether I’d be comfortable owning the entire cycle, from defining the product and making product decisions to actually…",
+   "id": "b0e744c84f1d",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "How do you manage difference in leadership approach?",
+   "url": "https://www.reddit.com/r/ProductManagement/comments/1xbjv76/how_do_you_manage_difference_in_leadership/",
+   "source": "r/productmanagement",
+   "feedId": "rd-productmanagement",
+   "type": "post",
+   "tags": [
+    "product"
+   ],
+   "published": "2026-10-21T10:48:59.000Z",
+   "summary": "I am a PM2, with close to 5 years in the company. Recently, when I have reviews with my chief product officer, I realized that she was expecting speed. While, I was showing impact. I had all the metrics but she was not happy with me. I was getting a sense of that. Where as my…",
+   "id": "2f95fba28445",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "AfD co-leader Alice Weidel on Ukraine, migration and Germany’s future | The Economist",
+   "url": "https://www.youtube.com/watch?v=_cGGDu8sgXY",
+   "source": "The Economist",
+   "feedId": "yt-the-economist",
+   "type": "video",
+   "tags": [
+    "finance",
+    "business"
+   ],
+   "published": "2026-10-21T10:00:38.000Z",
+   "summary": "Alice Weidel is one of the most important politicians in Europe today. She is the co-leader of the Alternative for Germany (AfD), the right-wing populist party which is leading in Germany’s national polls and came top in two recent state elections. Ms Weidel is skilled at…",
+   "thumb": "https://i4.ytimg.com/vi/_cGGDu8sgXY/hqdefault.jpg",
+   "id": "4373119f1481",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "5 years of work ex across analytics and product ownership.How to determine if product management is right for me and with AI how different is the market for recruitment ?",
+   "url": "https://www.reddit.com/r/ProductManagement/comments/1xbixfm/5_years_of_work_ex_across_analytics_and_product/",
+   "source": "r/productmanagement",
+   "feedId": "rd-productmanagement",
+   "type": "post",
+   "tags": [
+    "product"
+   ],
+   "published": "2026-10-21T09:55:16.000Z",
+   "summary": "As mentioned in the title I have 5 years of work experience and I have worked as a data analyst/business analyst within financial risk at a US based custodian bank . My work revolved around typical business analyst tasks along with backlog prioritization , sprint planning ,…",
+   "id": "6975dcd8768f",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
   {
    "title": "US-Wahl in Alabama: Sorge vor Hürden bei der Stimmabgabe",
    "url": "https://www.youtube.com/watch?v=zSSG6dFG1os",
@@ -783,6 +958,22 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
+   "title": "Rate my introduction for Interview Prep for product manager role and Suggest me changes and ideas to make it more likeable",
+   "url": "https://www.reddit.com/r/ProductManagement/comments/1xbh4kx/rate_my_introduction_for_interview_prep_for/",
+   "source": "r/productmanagement",
+   "feedId": "rd-productmanagement",
+   "type": "post",
+   "tags": [
+    "product"
+   ],
+   "published": "2026-10-21T08:01:12.000Z",
+   "summary": "Good morning, and thank you for the opportunity. Myself ***, currently pursuing my PGDM. I started my career at Accenture in operations, where I learned how to work with high-volume processes, identify recurring issues, and coordinate with different teams to improve the way…",
+   "id": "ba7dcdd3f607",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
    "title": "Lawyer caught offering to make illegal-worker fine go away",
    "url": "https://www.reddit.com/r/ukpolitics/comments/1xbf1wg/lawyer_caught_offering_to_make_illegalworker_fine/",
    "source": "r/ukpolitics",
@@ -836,25 +1027,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "EU stärkt Rechte von Reisenden / Sprachtests in Kitas | \"15 Minuten\"",
-   "url": "https://www.youtube.com/watch?v=5hBMBZmVLCw",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-21T04:03:49.000Z",
-   "summary": "Unsere Infos heute: (00:00:00) Themenübersicht (00:00:41) EU stärkt Rechte von Reisenden Die EU will die Rechte von Reisenden stärken: Wer bei Reisen von Verspätungen oder Ausfällen betroffen ist, soll Entschädigungen künftig einfacher und schneller erhalten. Geplant sind ein…",
-   "thumb": "https://i2.ytimg.com/vi/5hBMBZmVLCw/hqdefault.jpg",
-   "id": "41c113b48103",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Pedoph!le Hops ON STAGE at Trump Rally, Then THIS F***ING HAPPENS!",
    "url": "https://www.youtube.com/watch?v=fASw_UflW40",
    "source": "Luke Beasley",
@@ -873,25 +1045,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "tagesthemen 22:15 Uhr, 20.10.2026",
-   "url": "https://www.youtube.com/watch?v=aW2O3QwwPlI",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-21T03:35:15.000Z",
-   "summary": "tagesthemen 22:15 Uhr 65 Jahre deutsch-türkisches Anwerbeabkommen, Milliarden-Versprechen beim Investitionsgipfel, Stimmung in Alabama vor den US-Midterms, Weitere Meldungen im Überblick, Warum junge Paare Kinder immer später kriegen - oder keine, Ausstellung \"Dschingis Khan…",
-   "thumb": "https://i2.ytimg.com/vi/aW2O3QwwPlI/hqdefault.jpg",
-   "id": "04a6f2e2d0c9",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "SHOCK Lindsey Graham LEAK BLOWS IT WIDE OPEN!",
    "url": "https://www.youtube.com/watch?v=bTbIvRnvVNA",
    "source": "Luke Beasley",
@@ -905,42 +1058,6 @@
    "summary": "Luke discusses everything surrounding the Navatek scandal. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
    "thumb": "https://i3.ytimg.com/vi/bTbIvRnvVNA/hqdefault.jpg",
    "id": "41cac4de53f4",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Simon Marks reacts to ongoing US-Ukraine tension",
-   "url": "https://www.youtube.com/watch?v=TrlnsIkamqU",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-21T00:37:02.000Z",
-   "summary": "Simon Marks wants to talk about Ukraine. LBC's Washington Correspondent deep dives into the fractured relationship between the US and Ukraine. 00:01 | Simon joins Tonight with Andrew Marr to look into the relationship between Donald Trump, Vladimir Putin, Xi Jinping and how…",
-   "thumb": "https://i1.ytimg.com/vi/TrlnsIkamqU/hqdefault.jpg",
-   "id": "1e19c94a5f09",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "OMG: Piers Morgan DESTROYS Pro-Putin Stooge LIVE ON AIR!",
-   "url": "https://www.youtube.com/watch?v=3kjLjB-crUw",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-20T23:52:22.000Z",
-   "summary": "Luke discusses Piers Morgan's interview with Konstantin Malofeev. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
-   "thumb": "https://i4.ytimg.com/vi/3kjLjB-crUw/hqdefault.jpg",
-   "id": "b471a15ac710",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -980,38 +1097,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "In a post AI world, which of these scenarios use the most useful for PMs and PRDs?",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1xb2kdx/in_a_post_ai_world_which_of_these_scenarios_use/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-10-20T20:01:56.000Z",
-   "summary": "Context: I’m a PM at a B-tier tech company building agents for internal use. My question is about which patterns PMs would find useful when working with agents and skills. Assume for now that: The SDLC more or less holds: Idea → Design/Intent → Spec → Build → Review → Deploy…",
-   "id": "c50c8bd15b3a",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Decision Paralysis",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1xb2b2o/decision_paralysis/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-10-20T19:52:25.000Z",
-   "summary": "Long time lurker first time poster I used to work as a solutions architect for a competitor of my current employer. I was looking for a change and wanted to move more towards the business side of things, so when an opportunity came up to work as a technical product manager for…",
-   "id": "27f4b786d84d",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Ofcom Concedes Defeat in the 4chan Case",
    "url": "https://www.reddit.com/r/ukpolitics/comments/1xb1koh/ofcom_concedes_defeat_in_the_4chan_case/",
    "source": "r/ukpolitics",
@@ -1027,6 +1112,42 @@
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Simon Marks reacts to ongoing US-Ukraine tension",
+   "url": "https://www.youtube.com/watch?v=TrlnsIkamqU",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-21T00:37:02.000Z",
+   "summary": "Simon Marks wants to talk about Ukraine. LBC's Washington Correspondent deep dives into the fractured relationship between the US and Ukraine. 00:01 | Simon joins Tonight with Andrew Marr to look into the relationship between Donald Trump, Vladimir Putin, Xi Jinping and how…",
+   "thumb": "https://i1.ytimg.com/vi/TrlnsIkamqU/hqdefault.jpg",
+   "id": "1e19c94a5f09",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "OMG: Piers Morgan DESTROYS Pro-Putin Stooge LIVE ON AIR!",
+   "url": "https://www.youtube.com/watch?v=3kjLjB-crUw",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-20T23:52:22.000Z",
+   "summary": "Luke discusses Piers Morgan's interview with Konstantin Malofeev. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
+   "thumb": "https://i4.ytimg.com/vi/3kjLjB-crUw/hqdefault.jpg",
+   "id": "b471a15ac710",
+   "score": 0,
+   "matched": [],
+   "why": "0"
   },
   {
    "title": "This is f***ing disgusting. I can’t get over it.",
@@ -1111,6 +1232,22 @@
    "published": "2026-10-20T20:44:34.000Z",
    "summary": "submitted by /u/eamus_catuli [link] [comments]",
    "id": "e2df7f9553ee",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "In a post AI world, which of these scenarios use the most useful for PMs and PRDs?",
+   "url": "https://www.reddit.com/r/ProductManagement/comments/1xb2kdx/in_a_post_ai_world_which_of_these_scenarios_use/",
+   "source": "r/productmanagement",
+   "feedId": "rd-productmanagement",
+   "type": "post",
+   "tags": [
+    "product"
+   ],
+   "published": "2026-10-20T20:01:56.000Z",
+   "summary": "Context: I’m a PM at a B-tier tech company building agents for internal use. My question is about which patterns PMs would find useful when working with agents and skills. Assume for now that: The SDLC more or less holds: Idea → Design/Intent → Spec → Build → Review → Deploy…",
+   "id": "c50c8bd15b3a",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1220,24 +1357,6 @@
    "why": "0"
   },
   {
-   "title": "LBC callers berate Trump administration for insulting British forces",
-   "url": "https://www.youtube.com/watch?v=9dDkbsq44kg",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-20T16:59:13.000Z",
-   "summary": "Ben Kentish and LBC callers react to Pete Hegseth's 'unprecedented' comments about the UK and its allies' role in Afghanistan. 0:00 | Pete Hegseth should 'pipe down and shut up' 6:03 | How the UK government should respond 11:09 | This is a case of 'wrong and right' 14:30 |…",
-   "thumb": "https://i2.ytimg.com/vi/9dDkbsq44kg/hqdefault.jpg",
-   "id": "bf4371444981",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "Two men re-arrested in RAF Fairford investigation",
    "url": "https://www.reddit.com/r/ukpolitics/comments/1xaxixw/two_men_rearrested_in_raf_fairford_investigation/",
    "source": "r/ukpolitics",
@@ -1250,90 +1369,6 @@
    "published": "2026-10-20T16:55:30.000Z",
    "summary": "submitted by /u/iguled [link] [comments]",
    "id": "ef4764113230",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "‘They could hold all the power’: Midterm elections explained",
-   "url": "https://www.youtube.com/watch?v=ZoqHTMUIObs",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-20T15:00:14.000Z",
-   "summary": "How important are the US midterm elections? Lewis Goodall explains what’s at stake. As the November elections approach, Donald Trump’s approval ratings are still at a low, with only 28% of people thinking he’s an effective president. The Iran war, price of oil and cost of…",
-   "thumb": "https://i3.ytimg.com/vi/ZoqHTMUIObs/hqdefault.jpg",
-   "id": "64eb73321703",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Guilfoyle THREATENS TO EXPOSE IT as She Suffers SHOUTING COLLAPSE!",
-   "url": "https://www.youtube.com/watch?v=4mmzOFoNK-s",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-20T13:00:33.000Z",
-   "summary": "Luke discusses the latest news on Kimberly Guilfoyle. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley Instagram…",
-   "thumb": "https://i1.ytimg.com/vi/4mmzOFoNK-s/hqdefault.jpg",
-   "id": "c7a8cbdf646e",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "AI made everyone on our team faster, but we're not shipping any faster. Anyone else?",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1xarbw2/ai_made_everyone_on_our_team_faster_but_were_not/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-10-20T12:52:43.000Z",
-   "summary": "I’m a PM at a transportation company, working with a team of 8 (PMs, engineers, data scientists, and QA). We’ve been using Claude Code and GitHub Copilot for a while now, and there’s definitely been a productivity boost. Engineers are writing code faster, tasks are getting done…",
-   "id": "a1f9d60b674a",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "How much do you rely on AI during product discovery?",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1xamtdy/how_much_do_you_rely_on_ai_during_product/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-10-20T08:43:27.000Z",
-   "summary": "Wanted to hear how others approach this. How often do you use AI for discovery? Do you mostly use it to summarize research or also to simulate user research to some extent? For example, I sometimes ask Chatgpt or Claude to go through recent research papers and help me figure…",
-   "id": "8f6897d94f0c",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Richard Riehle - Office Space PM / People Person dies at 78",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1xainht/richard_riehle_office_space_pm_people_person_dies/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-10-20T04:27:54.000Z",
-   "summary": "submitted by /u/tas50 [link] [comments]",
-   "id": "c264ce7360c4",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1963,23 +1998,6 @@
    "summary": "Rahul Agarwal enters the tank seeking $350K for a 7% stake in his company, Polygons. From Season 18 Episode 4 Watch Shark Tank US Now: http://AAN.SonyPictures.com/SharkTankUSHulu Subscribe to the Shark Tank Global channel: https://bit.ly/SharkTankGlobal Follow Us On Social:…",
    "thumb": "https://i1.ytimg.com/vi/xm1ShtnwIgU/hqdefault.jpg",
    "id": "224a00c7e477",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Going Deep on the Zionism is Racism Motion with NoJusticeMTG",
-   "url": "https://www.youtube.com/watch?v=44Nbl9_bedA",
-   "source": "PoliticsJOE",
-   "feedId": "yt-politicsjoe",
-   "type": "video",
-   "tags": [
-    "comedy"
-   ],
-   "published": "2026-10-15T15:50:28.000Z",
-   "summary": "Helena is a Green Party member and the streamer NoJusticeMTG. As someone who was in the room during the Green Party's Zionism is Racism motion that passed at their annual conference, she came by the PolJOE dungeon to break down the motion for us, and delve deeper into what it…",
-   "thumb": "https://i1.ytimg.com/vi/44Nbl9_bedA/hqdefault.jpg",
-   "id": "a89e5d598313",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2746,5 +2764,5 @@
    "why": "0"
   }
  ],
- "contentHash": "b82c03583cf5"
+ "contentHash": "c9edeef34c6e"
 }
