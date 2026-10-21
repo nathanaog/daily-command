@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-21T21:49:43.340Z",
+ "generated": "2026-10-21T21:53:17.440Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
@@ -630,20 +630,19 @@
    "id": "rd-productmanagement",
    "name": "r/productmanagement",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/productmanagement/top/.rss?t=day"
+   "lastOk": "2026-10-21T21:49:43.340Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-tech",
    "name": "r/tech",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": "2026-10-15T21:49:52.028Z",
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-gaming",
@@ -652,16 +651,15 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-10-21T15:54:55.125Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
   },
   {
    "id": "rd-xbox",
@@ -670,7 +668,7 @@
    "status": "cached",
    "count": 5,
    "lastOk": "2026-10-21T15:54:55.125Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)"
   },
   {
    "id": "rd-slaythespire",
@@ -679,7 +677,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-geopolitics",
@@ -866,6 +864,40 @@
    "published": "2026-10-21T18:00:14.000Z",
    "summary": "My company has had hiring freezes and layoffs over the past couple years. As a result, we have less Dev resources and everything is taking longer to deliver. This means that we already have a well defined roadmap for the next 2 years, and all that’s left to do is project…",
    "id": "f549d23597da",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Mahmood migration talks axed after union demands care worker joins private meeting",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xbubhg/mahmood_migration_talks_axed_after_union_demands/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-21T17:55:43.000Z",
+   "summary": "submitted by /u/theipaper [link] [comments]",
+   "id": "41881363e674",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Andy Burnham proposes plan to cut standing charges from gas bills",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xbu07b/andy_burnham_proposes_plan_to_cut_standing/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-21T17:44:28.000Z",
+   "summary": "submitted by /u/Adj-Noun-Numbers [link] [comments]",
+   "id": "a74cd620705e",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1116,6 +1148,23 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
+   "title": "Holocaust school lessons to be improved after 'shocking' antisemitism review",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xbr13l/holocaust_school_lessons_to_be_improved_after/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-21T15:57:21.000Z",
+   "summary": "submitted by /u/Kagedeah [link] [comments]",
+   "id": "fdc4c9b732ad",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
    "title": "I wrote down a pass/fail line before a small paid test. Is 3 out of 20 the right bar?",
    "url": "https://www.reddit.com/r/ProductManagement/comments/1xbqsg0/i_wrote_down_a_passfail_line_before_a_small_paid/",
    "source": "r/productmanagement",
@@ -1144,6 +1193,23 @@
    "summary": "November has plenty of game releases if you’re not planning on playing GTA6. Check out these November release dates for PC, PS5, Xbox Series X/S, and Nintendo Switch 2 games. Subscribe for more: https://www.youtube.com/gameranxTV?sub_confirmation=1 0:00 Intro 0:50 Ashes of the…",
    "thumb": "https://i2.ytimg.com/vi/AuqnN0g3XTc/hqdefault.jpg",
    "id": "01e096fbf85e",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Angela Rayner took £20,000 from donor... that her new law would ban",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xbqa56/angela_rayner_took_20000_from_donor_that_her_new/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-21T15:29:19.000Z",
+   "summary": "submitted by /u/theipaper [link] [comments]",
+   "id": "fbb5750ff13c",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1184,6 +1250,23 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
+   "title": "Reform says it has reported ITV to the police over undercover investigation",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xbpb75/reform_says_it_has_reported_itv_to_the_police/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-21T14:52:39.000Z",
+   "summary": "submitted by /u/FeigenbaumC [link] [comments]",
+   "id": "f198740d892f",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
    "title": "Call of Duty: Modern Warfare 4 - The Big Infinity Ward Engine Deep Dive | Digital Foundry",
    "url": "https://www.reddit.com/r/xbox/comments/1xbp4c8/call_of_duty_modern_warfare_4_the_big_infinity/",
    "source": "r/xbox",
@@ -1211,23 +1294,6 @@
    "published": "2026-10-21T14:37:44.000Z",
    "summary": "I have a US code for EA SPORTS FC™ 26 Ultimate Edition Xbox One & Xbox Series X|S that I don't need. I would like to give it away to someone in this sub. Leave a comment to enter, and at 6 p.m. EST, I'll choose a winner. Your account has to be at least two months old and have…",
    "id": "49c39a9e2ad2",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Matter of time until mass casualty event in Channel, border chief warns",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xbos2k/matter_of_time_until_mass_casualty_event_in/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-21T14:31:57.000Z",
-   "summary": "submitted by /u/theindependentonline [link] [comments]",
-   "id": "700a99fa9e97",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1314,74 +1380,6 @@
    "summary": "Luke discusses JD Vance's recent interview. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley Instagram -…",
    "thumb": "https://i2.ytimg.com/vi/iirNLVKiLn0/hqdefault.jpg",
    "id": "d6925fc8b2b5",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Cabinet split widens as minister refuses to back Shabana Mahmood’s immigration plans",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xbly3a/cabinet_split_widens_as_minister_refuses_to_back/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-21T12:34:54.000Z",
-   "summary": "submitted by /u/Jujingamay [link] [comments]",
-   "id": "d690b229417e",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Turning Point UK Leader (Former Tory Candidate) helps arrange a contract killing.",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xblv6w/turning_point_uk_leader_former_tory_candidate/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-21T12:31:10.000Z",
-   "summary": "submitted by /u/wedidntmeantogotosea [link] [comments]",
-   "id": "80f785623c09",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Speaker rages at ‘appalling’ treatment of MPs over Jackdaw announcement",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xbluli/speaker_rages_at_appalling_treatment_of_mps_over/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-21T12:30:27.000Z",
-   "summary": "submitted by /u/politics_uk [link] [comments]",
-   "id": "cf6a68921b7f",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Nearly 4,000 migrants waiting to cross to Britain - double the normal amount - warns border security commander",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xblqlo/nearly_4000_migrants_waiting_to_cross_to_britain/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-21T12:25:25.000Z",
-   "summary": "submitted by /u/dailymail [link] [comments]",
-   "id": "4beeedf7f253",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -2827,5 +2825,5 @@
    "why": "0"
   }
  ],
- "contentHash": "7fe59e06acfd"
+ "contentHash": "78cdda207960"
 }
