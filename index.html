@@ -188,12 +188,29 @@ ul.list a{color:var(--text);text-decoration:none} ul.list a:hover{text-decoratio
 .ytbox{position:relative;width:100%;aspect-ratio:16/9;background:#000;border-radius:14px;overflow:hidden;margin-bottom:10px}
 .ytbox iframe,.ytbox #ytFrame{position:absolute;inset:0;width:100%;height:100%;border:0}
 .wn .chip{min-height:36px}.wnpick{margin-top:8px;padding:10px 12px;border-radius:14px;background:var(--surface2)}
-.dock{position:fixed;left:0;right:0;bottom:calc(62px + env(safe-area-inset-bottom));z-index:7;background:var(--surface);border-top:1px solid var(--border);box-shadow:0 -6px 20px rgba(0,0,0,.25)}
-.dock-in{display:flex;gap:10px;padding:8px 10px;max-width:760px;margin:0 auto}.dockvid{width:200px;height:200px;flex:0 0 200px;background:#000;border-radius:10px;overflow:hidden}
-.dockvid.sp{background:transparent}.dockvid iframe,#dockFrame{width:100%;height:100%;display:block}.dockctl{flex:1;min-width:0;display:flex;flex-direction:column;gap:6px}
+.dock{position:fixed;left:0;right:0;bottom:calc(62px + env(safe-area-inset-bottom));z-index:7;background:var(--surface);border-top:1px solid var(--border);box-shadow:0 -6px 20px rgba(0,0,0,.25);transition:transform .18s ease,top .18s ease;touch-action:none;user-select:none;-webkit-user-select:none}
+.dock-in{display:flex;gap:10px;padding:8px 10px;max-width:760px;margin:0 auto;position:relative}
+.dockvid{width:200px;height:200px;flex:0 0 200px;background:#000;border-radius:10px;overflow:hidden}.dockvid.sp{background:transparent}
+.dockvid iframe,#dockFrame{width:100%;height:100%;display:block;border:0}.dockctl{flex:1;min-width:0;display:flex;flex-direction:column;gap:6px}
 .docktitle{font-size:.92rem;line-height:1.25;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
 .dockbtns{display:flex;gap:6px;align-items:center;flex-wrap:wrap}.dockbtns .icon{min-width:44px}
-body.docked main, body.docked .view{padding-bottom:240px}body.docked .fab{bottom:calc(300px + env(safe-area-inset-bottom))}
+.dockgrab{position:absolute;top:0;left:0;right:0;height:14px;display:flex;justify-content:center;align-items:center;cursor:grab}.dockgrab span{width:42px;height:4px;border-radius:2px;background:var(--border)}
+.only-mini,.only-max,.only-normal{display:none}
+/* mini: a 200×200 tile in the corner with a small pill of controls; the page stays usable around it */
+.dock.size-mini{left:auto;right:10px;bottom:calc(72px + env(safe-area-inset-bottom));background:transparent;border:0;box-shadow:none}
+.dock.size-mini .dock-in{flex-direction:column;align-items:flex-end;padding:0;gap:6px}
+.dock.size-mini .dockctl{order:-1;flex:none;background:var(--surface);border:1px solid var(--border);border-radius:999px;padding:3px 6px;box-shadow:0 4px 14px rgba(0,0,0,.3)}
+.dock.size-mini .dockvid{box-shadow:0 6px 20px rgba(0,0,0,.35)}
+.dock.size-mini .only-full{display:none}.dock.size-mini .only-mini{display:inline-flex}
+.dock.size-normal .only-normal{display:inline-flex}
+/* max: big video, everything readable, up next */
+.dock.size-max{top:calc(env(safe-area-inset-top) + 52px);border-radius:18px 18px 0 0;overflow-y:auto}
+.dock.size-max .dock-in{flex-direction:column;padding:16px 14px 14px}
+.dock.size-max .dockvid{width:100%;height:auto;aspect-ratio:16/9;flex:none;min-height:200px}
+.dock.size-max .docktitle{font-size:1.05rem;-webkit-line-clamp:4}.dock.size-max .only-max{display:block}
+body.docked-normal main{padding-bottom:240px}body.docked-mini main{padding-bottom:250px}
+body.docked-normal .fab{bottom:calc(300px + env(safe-area-inset-bottom))}body.docked-mini .fab{right:auto;left:18px}body.docked-max .fab{display:none}
+@media (min-width:900px){.dock.size-max{left:auto;width:520px;right:16px;border-radius:18px;bottom:calc(16px + env(safe-area-inset-bottom));top:auto;max-height:80vh}}
 .qitem{text-align:left;padding:0;font:inherit;color:inherit}
 .updbanner{position:sticky;top:0;z-index:9;width:100%;border:0;padding:12px;background:var(--accent);color:var(--bg);font-weight:600;cursor:pointer}
 .card.listen.mini{border-left:4px solid var(--accent)}
@@ -887,7 +904,7 @@ const QuickAdd = (() => {
    survives offline). Export/import is the same JSON. Later stages sync
    this same object to Google Drive's appDataFolder.
    ===================================================================== */
-const APP_BUILD = '1.9.1';   // shown in More; keep in step with VERSION in sw.js
+const APP_BUILD = '1.10.0';   // shown in More; keep in step with VERSION in sw.js
 const STORE_KEY = 'dailycommand.v1';
 const uid = () => Date.now().toString(36) + Math.random().toString(36).slice(2, 7);
 
@@ -2202,20 +2219,46 @@ const Dock = {
     try { this.yt?.destroy?.(); } catch (e) {}
     try { this.sp?.destroy?.(); } catch (e) {}
     this.yt = null; this.sp = null; this.item = null; this.state = 'idle';
-    const el = $('#dock'); el.classList.add('hidden'); el.innerHTML = ''; document.body.classList.remove('docked');
+    const el = $('#dock'); el.className = 'dock hidden'; el.innerHTML = ''; document.body.classList.remove('docked', 'docked-mini', 'docked-normal', 'docked-max');
     if (!silent) render();
   },
   handoffUrl() { const it = this.item; if (!it) return '#'; return this.kind === 'sp' ? ytOpenUrl(it.url || '') : ytOpenUrl(withT(it.url, this.pos() + 10)); },
+  /* Sizes: mini (corner tile) · normal (bar) · max (big video + up next). Only CSS classes change,
+     so the player keeps playing. Swipe up/down on the dock to change size; swipe the mini tile sideways to close. */
+  SIZES: ['mini', 'normal', 'max'],
+  size() { return this.SIZES.includes(S.ui.dockSize) ? S.ui.dockSize : 'mini'; },
+  setSize(sz) {
+    if (!this.SIZES.includes(sz)) return;
+    S.ui.dockSize = sz; save();
+    const el = $('#dock'); el.className = `dock size-${sz}`;
+    document.body.classList.remove('docked-mini', 'docked-normal', 'docked-max'); document.body.classList.add('docked', 'docked-' + sz);
+    this.upNext(); this.status();
+  },
+  grow() { const i = this.SIZES.indexOf(this.size()); this.setSize(this.SIZES[Math.min(2, i + 1)]); },
+  shrink() { const i = this.SIZES.indexOf(this.size()); this.setSize(this.SIZES[Math.max(0, i - 1)]); },
+  upNext() {
+    const el = $('#dockNext'); if (!el || !this.item) return;
+    if (this.size() !== 'max' || this.item.focus) { el.innerHTML = ''; return; }
+    const q = Listen.queue().filter(x => x.key !== this.item.key && dockable(x)).slice(0, 4);
+    el.innerHTML = q.length ? `<div class="small muted" style="margin:8px 0 4px">Up next</div><ul class="list">${q.map(x => `<li><button class="linkish qitem grow" data-act="listenDoneHere" data-key="${esc(x.key)}">${x.from === 'spotify' ? '🎙 ' : ''}${esc(x.title)}</button><span class="small muted num">${x.durationSec ? mmss(x.durationSec) : ''}</span></li>`).join('')}</ul>` : '';
+  },
   paint() {
-    const it = this.item;
-    $('#dock').innerHTML = `<div class="dock-in"><div class="dockvid ${this.kind === 'sp' ? 'sp' : ''}"><div id="dockFrame"></div></div>
-      <div class="dockctl"><div class="row" style="justify-content:space-between;gap:6px"><b class="docktitle">${esc(it.title)}</b><button class="icon" data-act="dockClose" aria-label="Close player">✕</button></div>
-        <div class="small muted" id="dockStatus">Loading…</div>
-        <div class="dockbtns"><button class="icon" data-act="dockSeek" data-d="-15" aria-label="Back 15 seconds">↺15</button>
+    const it = this.item, out = this.kind === 'sp' ? 'Spotify' : 'YouTube';
+    $('#dock').innerHTML = `<div class="dock-in">
+      <div class="dockgrab only-full" aria-hidden="true"><span></span></div>
+      <div class="dockvid ${this.kind === 'sp' ? 'sp' : ''}"><div id="dockFrame"></div></div>
+      <div class="dockctl">
+        <div class="row only-full" style="justify-content:space-between;gap:6px;align-items:flex-start"><b class="docktitle">${esc(it.title)}</b>
+          <span class="row" style="gap:2px"><button class="icon" data-act="dockSize" data-d="down" aria-label="Smaller" title="Smaller">▾</button><button class="icon only-normal" data-act="dockSize" data-d="up" aria-label="Bigger" title="Bigger">▴</button><button class="icon" data-act="dockClose" aria-label="Close player">✕</button></span></div>
+        <div class="small muted only-full" id="dockStatus">Loading…</div>
+        <div class="dockbtns"><button class="icon only-full" data-act="dockSeek" data-d="-15" aria-label="Back 15 seconds">↺15</button>
           <button class="btn sm primary" data-act="dockToggle" id="dockPP" aria-label="Play or pause">Pause</button>
-          <button class="icon" data-act="dockSeek" data-d="30" aria-label="Forward 30 seconds">30↻</button></div>
-        <div class="dockbtns">${it.focus ? '' : '<button class="btn sm" data-act="dockNext">✓ Next</button>'}<a class="btn sm ghost" id="dockOut" data-act="dockHandoff">⤴ ${this.kind === 'sp' ? 'Spotify' : 'YouTube'}</a></div></div></div>`;
-    this.status();
+          <button class="icon only-full" data-act="dockSeek" data-d="30" aria-label="Forward 30 seconds">30↻</button>
+          <button class="icon only-mini" data-act="dockSize" data-d="up" aria-label="Bigger player" title="Bigger">⤢</button>
+          <button class="icon only-mini" data-act="dockClose" aria-label="Close player">✕</button></div>
+        <div class="dockbtns only-full">${it.focus ? '' : '<button class="btn sm" data-act="dockNext">✓ Next</button>'}<a class="btn sm ghost" id="dockOut" data-act="dockHandoff">⤴ ${out}</a></div>
+        <div id="dockNext" class="only-max"></div></div></div>`;
+    this.setSize(this.size());
   },
   status() {
     const st = $('#dockStatus'); if (!st || !this.item) return;
@@ -2227,6 +2270,35 @@ const Dock = {
     const out = $('#dockOut'); if (out) { const h = this.handoffUrl(); out.setAttribute('href', h); if (!h.startsWith('intent:')) { out.target = '_blank'; out.rel = 'noopener'; } }
   },
 };
+/* Swipe on the dock — anywhere on its controls (the video iframe keeps its own touches).
+   A real swipe (> 40 px) changes size and cancels the tap it started on; a short touch is a normal tap. */
+(() => {
+  const el = $('#dock'); if (!el) return;
+  let g = null, swiped = false;
+  const move = e => {
+    if (!g) return;
+    const dx = e.clientX - g.x, dy = e.clientY - g.y;
+    if (!g.moving && Math.hypot(dx, dy) < 10) return;
+    g.moving = true; el.style.transition = 'none';
+    el.style.transform = Dock.size() === 'mini' && Math.abs(dx) > Math.abs(dy) ? `translateX(${dx}px)` : `translateY(${Math.max(-60, Math.min(80, dy * 0.6))}px)`;
+  };
+  const end = e => {
+    window.removeEventListener('pointermove', move); window.removeEventListener('pointerup', end); window.removeEventListener('pointercancel', end);
+    if (!g) return;
+    const dx = e.clientX - g.x, dy = e.clientY - g.y, onGrab = g.grab; g = null;
+    el.style.transition = ''; el.style.transform = '';
+    if (e.type === 'pointercancel') return;
+    if (Dock.size() === 'mini' && Math.abs(dx) > 70 && Math.abs(dx) > Math.abs(dy)) { swiped = true; return Dock.close(); }
+    if (Math.abs(dy) > 40 && Math.abs(dy) > Math.abs(dx)) { swiped = true; return dy < 0 ? Dock.grow() : Dock.shrink(); }
+    if (Math.hypot(dx, dy) < 8 && onGrab) Dock.setSize(Dock.size() === 'max' ? 'normal' : 'max');   // tap the handle
+  };
+  el.addEventListener('pointerdown', e => {
+    if (!Dock.item || e.target.closest('iframe')) return;
+    swiped = false; g = { x: e.clientX, y: e.clientY, grab: !!e.target.closest('.dockgrab') };
+    window.addEventListener('pointermove', move); window.addEventListener('pointerup', end); window.addEventListener('pointercancel', end);
+  });
+  el.addEventListener('click', e => { if (swiped) { swiped = false; e.stopPropagation(); e.preventDefault(); } }, true);   // swallow the tap that ended a swipe
+})();
 document.addEventListener('visibilitychange', () => {
   if (!Dock.item) return;
   if (document.visibilityState === 'hidden') Dock.savePos();
@@ -2243,8 +2315,20 @@ const ACT11 = {
   },
   focusHere() { const fa = S.settings.focusAudio; if (fa?.url) Dock.play({ key: 'focus', focus: true, title: fa.label || 'Focus audio', url: fa.url }); },
   spFocusHere(el) { const p = (C.spotify?.playlists || []).find(x => x.id === el.dataset.id); if (p) Dock.play({ key: 'focus', focus: true, title: p.name, uri: p.uri, url: p.url }); },
+  async ytTidy() {
+    if (!Google.ready('youtube')) return toast('Connect Google (with the YouTube playlist option) first.');
+    try {
+      const all = await YTList.mine(), keep = gset().ytPlaylistId || all[0]?.id, extra = all.filter(p => p.id !== keep);
+      if (!extra.length) { gstat('youtube', { dupes: 0 }); render(); return toast('No duplicates — just the one Listen playlist. ✓'); }
+      const n = extra.reduce((a, p) => a + (p.contentDetails?.itemCount || 0), 0);
+      if (!confirm(`Delete ${extra.length} extra “Listen” playlist${extra.length > 1 ? 's' : ''} (${n} videos in total)? The one the app uses is kept. Only playlists the app made are touched.`)) return;
+      if (!gset().ytPlaylistId && keep) { gset().ytPlaylistId = keep; save(); }
+      const k = await YTList.tidy(); render(); toast(`Deleted ${k} duplicate playlist${k > 1 ? 's' : ''}.`);
+    } catch (e) { toast('Couldn’t tidy: ' + e.message); }
+  },
   checkUpdate() { if (window.dcCheckUpdate) window.dcCheckUpdate(); else toast('Updates are checked when the app is installed from the website.'); },
   dockToggle() { Dock.toggle(); },
+  dockSize(el) { el.dataset.d === 'up' ? Dock.grow() : Dock.shrink(); },
   dockSeek(el) { Dock.seek(+el.dataset.d); },
   dockNext() { Dock.next(); },
   dockClose() { Dock.close(); },
@@ -2742,17 +2826,34 @@ window.dcAfterSave = () => DriveSync.schedule();
    press play on the playlist once and YouTube runs through it in the background (Premium).
    Quota: adding or removing an item costs 50 of the free 10,000 daily units. */
 const ytId = url => (String(url).match(/[?&]v=([\w-]{11})/) || [])[1] || null;
+const YT_TITLES = ['Natto – Listen', 'Daily Command – Listen'];   // the app's playlist, old and new name
 const YTList = {
-  async sync() {
+  running: null,
+  /** All the app's own Listen playlists in your account (there should be one; older versions could make several). */
+  async mine() {
+    const out = []; let page = '';
+    for (let i = 0; i < 4; i++) {
+      const r = await Google.api(`${GAPI.yt}/playlists?part=snippet,contentDetails&mine=true&maxResults=50${page ? '&pageToken=' + page : ''}`);
+      out.push(...(r.items || []).filter(p => YT_TITLES.includes(p.snippet?.title)));
+      if (!(page = r.nextPageToken)) break;
+    }
+    return out.sort((a, b) => (a.snippet.publishedAt || '').localeCompare(b.snippet.publishedAt || ''));   // oldest first
+  },
+  sync() { return this.running ||= this._sync().finally(() => { this.running = null; }); },   // never two at once (that made duplicates)
+  async _sync() {
     let pid = gset().ytPlaylistId;
     if (!pid) {
-      const p = await Google.api(`${GAPI.yt}/playlists?part=snippet,status`, { method: 'POST',
-        body: { snippet: { title: 'Natto – Listen', description: 'Kept topped up by The Natto App.' }, status: { privacyStatus: 'private' } } });
-      pid = gset().ytPlaylistId = p.id; save();
+      // Reuse an existing one (made on another device / before a reset) instead of creating yet another
+      const found = await this.mine();
+      gstat('youtube', { dupes: Math.max(0, found.length - 1) });
+      if (found.length) pid = found.find(p => p.snippet.title === YT_TITLES[0])?.id || found[0].id;
+      else pid = (await Google.api(`${GAPI.yt}/playlists?part=snippet,status`, { method: 'POST',
+        body: { snippet: { title: YT_TITLES[0], description: 'Kept topped up by The Natto App.' }, status: { privacyStatus: 'private' } } })).id;
+      gset().ytPlaylistId = pid; save();
     }
     let items;
     try { items = await Google.api(`${GAPI.yt}/playlistItems?part=snippet&maxResults=50&playlistId=${encodeURIComponent(pid)}`); }
-    catch (e) { if (e.status === 404) { gset().ytPlaylistId = null; save(); return this.sync(); } throw e; }
+    catch (e) { if (e.status === 404) { gset().ytPlaylistId = null; save(); return this._sync(); } throw e; }   // deleted in YouTube: find/make another
     const want = Listen.queue().map(x => ytId(x.url)).filter(Boolean).slice(0, gset().ytCount || 8);
     const have = (items.items || []).map(i => ({ item: i.id, vid: i.snippet?.resourceId?.videoId }));
     let removed = 0, added = 0;
@@ -2763,6 +2864,13 @@ const YTList = {
     gstat('youtube', { count: want.length, added, removed });
   },
   url() { return gset().ytPlaylistId ? `https://www.youtube.com/playlist?list=${gset().ytPlaylistId}` : null; },
+  /** Delete the extra copies, keeping the one the app uses. Only touches playlists with the app's own name. */
+  async tidy() {
+    const keep = gset().ytPlaylistId, all = await this.mine(), extra = all.filter(p => p.id !== keep);
+    for (const p of extra) await Google.api(`${GAPI.yt}/playlists?id=${encodeURIComponent(p.id)}`, { method: 'DELETE' });
+    gstat('youtube', { dupes: 0 });
+    return extra.length;
+  },
 };
 
 /* ---------------- UI pieces ---------------- */
@@ -2792,6 +2900,8 @@ function googleSectionHtml() {
     }).join('')}
     <div class="actions"><button class="btn primary" data-act="gConnect">${Google.everSignedIn() ? (Google.token() ? 'Refresh now' : 'Reconnect') : 'Connect Google'}</button>
       ${Google.everSignedIn() ? '<button class="btn" data-act="gSyncNow">Sync now</button><button class="btn ghost danger" data-act="gSignOut">Sign out</button>' : ''}</div>`;
+  if (Google.on('youtube') && Google.everSignedIn()) h += `<div class="row" style="gap:8px;flex-wrap:wrap;margin:6px 0"><span class="small muted" style="flex:1">YouTube: ${st.youtube?.dupes ? `<b>${st.youtube.dupes} duplicate “Listen” playlist${st.youtube.dupes > 1 ? 's' : ''}</b> found` : 'one “Natto – Listen” playlist'}.</span>
+      <button class="btn sm" data-act="ytTidy">${st.youtube?.dupes ? 'Delete duplicates' : 'Check for duplicates'}</button></div>`;
   if (C.gmail?.email) h += `<p class="small muted">Signed in as ${esc(C.gmail.email)}.</p>`;
   if (st.sync?.at) h += `<p class="small muted">Last sync ${ago(st.sync.at)}${st.sync.pulled ? ' · pulled changes' : ''}${st.sync.pushed ? ' · pushed changes' : ''}${st.sync.conflicts ? ` · ${st.sync.conflicts} clash${st.sync.conflicts > 1 ? 'es' : ''} (newest save won)` : ''}.</p>`;
   if (C.gcal?.calendars?.length) {
