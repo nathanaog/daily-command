@@ -1,17 +1,17 @@
 {
- "generated": "2026-10-21T15:54:55.125Z",
+ "generated": "2026-10-21T19:01:25.455Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
   "ok": 51,
-  "items": 120,
+  "items": 119,
   "duplicatesMerged": 0,
   "lengthsKnown": 1,
-  "lengthLookups": 99,
-  "lengthFailures": 99,
+  "lengthLookups": 98,
+  "lengthFailures": 98,
   "lengthVia": "video pages",
   "lengthFailReasons": {
-   "no length on page": 99
+   "no length on page": 98
   }
  },
  "feeds": [
@@ -475,7 +475,7 @@
    "name": "The Hustle",
    "type": "youtube",
    "status": "ok",
-   "count": 1,
+   "count": 0,
    "resolved": {
     "channelId": "UCkWVA1_vkY9GLyuLAre97AQ",
     "title": "The Hustle ",
@@ -657,46 +657,47 @@
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
+   "lastOk": "2026-10-21T15:54:55.125Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-xbox",
    "name": "r/xbox",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/xbox/top/.rss?t=day"
+   "lastOk": "2026-10-21T15:54:55.125Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-slaythespire",
    "name": "r/slaythespire",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-10-21T09:53:14.903Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
   },
   {
    "id": "rd-germany",
    "name": "r/germany",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": "2026-10-15T00:59:57.533Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-unitedkingdom",
@@ -705,10 +706,277 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   }
  ],
  "items": [
+  {
+   "title": "tagesschau 20:00 Uhr, 21.10.2026",
+   "url": "https://www.youtube.com/watch?v=kRdgDU7RZpQ",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-21T18:36:32.000Z",
+   "summary": "tagesschau 20:00 Uhr Treffen von US-Sondergesandtem Witkoff und Russlands Präsident Putin in Sankt Petersburg, Frankreich unter Schock nach landesweiten Ausschreitungen, Gravierende Sicherheitslücke in Programmiersprache PHP: Bundesamt für Sicherheit warnt vor Angriffen auf…",
+   "thumb": "https://i4.ytimg.com/vi/kRdgDU7RZpQ/hqdefault.jpg",
+   "id": "63e7ce464b43",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "BottleGate",
+   "url": "https://www.youtube.com/watch?v=3ZqLtS5AEyw",
+   "source": "Aberrant preach",
+   "feedId": "yt-aberrant-preach",
+   "type": "video",
+   "tags": [
+    "trash"
+   ],
+   "published": "2026-10-21T18:30:42.000Z",
+   "summary": "Gym bro freaks out once he sees a guy with Yeti water bottle he thinks its his. But the internet did not let him get away with that one ———————————— Spotify: https://open.spotify.com/artist/6QJIJ6AugqPEFASp1V6zgH Merchandise ---…",
+   "thumb": "https://i4.ytimg.com/vi/3ZqLtS5AEyw/hqdefault.jpg",
+   "id": "6d8d19dcb58f",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "‘I have no words…’ | US envoy ‘grovelling’ over Putin",
+   "url": "https://www.youtube.com/watch?v=1GYpIHV0oyo",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-21T18:15:55.000Z",
+   "summary": "Andrew Marr speaks to Anti-Corruption Campaigner and Head of Global Magnitsky Justice Campaign Bill Browder and LBC's Natasha Clark about the US envoy to Russia Steve Witkoff's 'vile' statement about Putin being 'a humanitarian'. Putin was hosting US special envoy Steve Witkoff…",
+   "thumb": "https://i2.ytimg.com/vi/1GYpIHV0oyo/hqdefault.jpg",
+   "id": "4c3bc0babcca",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Which Numbers Are the Funniest | Smartypants Presentation [Clip]",
+   "url": "https://www.youtube.com/watch?v=SIhg6iXI6e4",
+   "source": "Dropout",
+   "feedId": "yt-dropout",
+   "type": "video",
+   "tags": [
+    "comedy"
+   ],
+   "published": "2026-10-21T17:30:18.000Z",
+   "summary": "Have you ever wondered why people laugh at certain numbers? What makes them funny? Is it universal? Well don't worry. After extensive research, Paul Robalino is here to answer these hard hitting questions. You can watch the full episode here:…",
+   "thumb": "https://i4.ytimg.com/vi/SIhg6iXI6e4/hqdefault.jpg",
+   "id": "6c16d466b2f0",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Netanyaju Accuses Dugin of Spreading Anti-Semitism in the West",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xbti09/netanyaju_accuses_dugin_of_spreading_antisemitism/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-21T17:26:30.000Z",
+   "summary": "submitted by /u/DAnnunzio1919 [link] [comments]",
+   "id": "ed1576630dbb",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Kremlin payment firm A7 has been pumping billions in ‘untraceable’ cash into global financial system",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xbszzn/kremlin_payment_firm_a7_has_been_pumping_billions/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-21T17:08:32.000Z",
+   "summary": "submitted by /u/ICIJ [link] [comments]",
+   "id": "51d86ad88431",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Opinion | Trump’s Betrayal of Ukraine",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xbsu75/opinion_trumps_betrayal_of_ukraine/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-21T17:02:30.000Z",
+   "summary": "submitted by /u/IllIntroduction1509 [link] [comments]",
+   "id": "3b63182da209",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "WASILLA ALASKA TRUMP RALLY",
+   "url": "https://www.youtube.com/watch?v=A1BQXOa8C4g",
+   "source": "The Good Liars",
+   "feedId": "yt-the-good-liars",
+   "type": "video",
+   "tags": [
+    "comedy",
+    "politics",
+    "debates"
+   ],
+   "published": "2026-10-21T17:00:26.000Z",
+   "summary": "The Good Liars visit Wasilla, Alaska for part II for their Trump Rally experience.",
+   "thumb": "https://i2.ytimg.com/vi/A1BQXOa8C4g/hqdefault.jpg",
+   "id": "64a5e7397c62",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Learn Austrian German with Me in Klagenfurt",
+   "url": "https://www.youtube.com/watch?v=b-k2yDRx6yw",
+   "source": "Easy German",
+   "feedId": "yt-easy-german",
+   "type": "video",
+   "tags": [
+    "german",
+    "listen"
+   ],
+   "published": "2026-10-21T17:00:01.000Z",
+   "summary": "Join our Conversation Membership to practice speaking with us daily: https://easygerman.link/membership_eg683 --- LEARN MORE GERMAN WITH US: 🎧 LISTEN TO OUR PODCAST: http://www.easygerman.fm 📬 SUBSCRIBE TO OUR NEWSLETTER: https://www.easygerman.org/newsletter WATCH MORE: ➕…",
+   "thumb": "https://i3.ytimg.com/vi/b-k2yDRx6yw/hqdefault.jpg",
+   "id": "4b39b76c920c",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Going Deep on Andy Burnham's Jackdaw Drilling Deal",
+   "url": "https://www.youtube.com/watch?v=ORLItTIJUKM",
+   "source": "PoliticsJOE",
+   "feedId": "yt-politicsjoe",
+   "type": "video",
+   "tags": [
+    "comedy"
+   ],
+   "published": "2026-10-21T16:16:58.000Z",
+   "summary": "Today Andy Burnham's government decided to approve new gas licences for the Jackdaw field in the North Sea. Ava and Seán jumped into the studio to chew over the plan. Like PoliticsJOE? We need your support: https://www.patreon.com/PoliticsJOE Chapters 0:00 Intro 5:00 Is it…",
+   "thumb": "https://i4.ytimg.com/vi/ORLItTIJUKM/hqdefault.jpg",
+   "id": "4b6266c0a17d",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "What is going on with Trump? Lewis Goodall on his ‘disinhibited’ comments",
+   "url": "https://www.youtube.com/watch?v=OcGnjtG7MSM",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-21T16:15:32.000Z",
+   "summary": "Why is Donald Trump's administration embracing Vladimir Putin and is the US President becoming increasingly uninhibited in public? Lewis Goodall joins Shelagh Fogarty to examine America's changing relationship with Russia after Trump's envoy praised Putin as a 'great…",
+   "thumb": "https://i4.ytimg.com/vi/OcGnjtG7MSM/hqdefault.jpg",
+   "id": "c0c66ff36944",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Studie: Mehr Unfälle durch digitale Ablenkung im Auto",
+   "url": "https://www.youtube.com/watch?v=n2i3UCvMJto",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-21T16:08:45.000Z",
+   "summary": "Kurz nicht aufgepasst – und schon kracht es: Ein unaufmerksamer Moment im Auto riskiert Menschenleben. Nach neuen Untersuchungen des Allianz Zentrums für Technik ist Ablenkung in jedem dritten Verkehrsunfall entscheidend – also deutlich häufiger, als bisher angenommen. Als…",
+   "thumb": "https://i3.ytimg.com/vi/n2i3UCvMJto/hqdefault.jpg",
+   "id": "322aa132cf71",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Trump’s threats to take Greenland, and Russia’s growing military, are pushing the EU to expand its Arctic presence",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xbra3j/trumps_threats_to_take_greenland_and_russias/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-21T16:06:05.000Z",
+   "summary": "The European Union laid out a plan on Tuesday to increase its footprint in the Arctic as global warming, conflict and competition for energy resources and critical minerals pose fresh challenges. The EU move comes after threats from U.S. President Donald Trump to take control…",
+   "id": "2f01c3eaa2d9",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "tagesschau in Einfacher Sprache 19:00 Uhr, 21.10.2026",
+   "url": "https://www.youtube.com/watch?v=augpZ78z5q8",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-21T16:05:21.000Z",
+   "summary": "tagesschau in Einfacher Sprache 19:00 Uhr Klimawandel: Erderwärmung droht deutlich stärker auszufallen, Lastwagenfahrer in Italien protestieren gegen hohe Preise, Ukraine-Krieg: US-Sondergesandter Witkoff und Russlands Präsident Putin treffen sich in Sankt Petersburg, Das…",
+   "thumb": "https://i2.ytimg.com/vi/augpZ78z5q8/hqdefault.jpg",
+   "id": "d5b3b38270db",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Liberal vs. Conservative CLASH Over Trump, AI & Religion (ft. Greg Casar) | The Split",
+   "url": "https://www.youtube.com/watch?v=udQVP5GQutQ",
+   "source": "Jubilee",
+   "feedId": "yt-jubilee",
+   "type": "video",
+   "tags": [
+    "politics",
+    "debates"
+   ],
+   "published": "2026-10-21T16:00:12.000Z",
+   "summary": "Hey you 👈 Wanna be in a Jubilee video? https://bit.ly/be-in-a-video LET’S BE FRIENDS Instagram: https://www.instagram.com/jubileemedia/ TikTok: https://www.tiktok.com/@jubilee?lang=en Website: https://www.jubileemedia.com OUR LOVE + DATING CHANNEL 🍑 YouTube:…",
+   "thumb": "https://i2.ytimg.com/vi/udQVP5GQutQ/hqdefault.jpg",
+   "id": "c8349eb9741f",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
   {
    "title": "Top 10 NEW Games of November 2026",
    "url": "https://www.youtube.com/watch?v=AuqnN0g3XTc",
@@ -722,6 +990,23 @@
    "summary": "November has plenty of game releases if you’re not planning on playing GTA6. Check out these November release dates for PC, PS5, Xbox Series X/S, and Nintendo Switch 2 games. Subscribe for more: https://www.youtube.com/gameranxTV?sub_confirmation=1 0:00 Intro 0:50 Ashes of the…",
    "thumb": "https://i2.ytimg.com/vi/AuqnN0g3XTc/hqdefault.jpg",
    "id": "01e096fbf85e",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "The Missing Pillar of European Resilience",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xbq36b/the_missing_pillar_of_european_resilience/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-21T15:21:57.000Z",
+   "summary": "submitted by /u/RUSIOfficial [link] [comments]",
+   "id": "662ff4c8c4cc",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -987,24 +1272,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Simon Marks wants to know when the UK will ‘get a spine’ after Hegseth’s Afghanistan comments",
-   "url": "https://www.youtube.com/watch?v=m7RqhDzMURI",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-21T12:30:12.000Z",
-   "summary": "Simon Marks and LBC callers react to Pete Hegseth’s comments about UK and NATO troops’ involvement in Afghanistan. 00:00 | Simon Marks wonders when the UK will ‘grow a spine’ 04:50 | Caller Linda calls the comments ‘despicable’ and says Hegseth is ‘scum’ 11:06 | Caller Laura…",
-   "thumb": "https://i2.ytimg.com/vi/m7RqhDzMURI/hqdefault.jpg",
-   "id": "1944db8f1328",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Nearly 4,000 migrants waiting to cross to Britain - double the normal amount - warns border security commander",
    "url": "https://www.reddit.com/r/ukpolitics/comments/1xblqlo/nearly_4000_migrants_waiting_to_cross_to_britain/",
    "source": "r/ukpolitics",
@@ -1022,43 +1289,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "So könnte das flexible Deutschlandticket per App funktionieren",
-   "url": "https://www.youtube.com/watch?v=Y11B4B4swtA",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-21T12:10:41.000Z",
-   "summary": "Für gelegentliche Bus- und Bahnfahrer:innen könnte bald bundesweit ein neues digitales Fahrscheinangebot eingeführt werden – als Ergänzung zum bestehenden Deutschlandticket. Per Smartphone werden Fahrtbeginn und Fahrtende registriert. Dann wird der günstigste Tarif automatisch…",
-   "thumb": "https://i2.ytimg.com/vi/Y11B4B4swtA/hqdefault.jpg",
-   "id": "9c45ad30b7b2",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "‘Burnham definitely won this one’ | PMQs analysed",
-   "url": "https://www.youtube.com/watch?v=kY51EogMUW8",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-21T11:48:18.000Z",
-   "summary": "LBC's political correspondent joins James O'Brien to analyse Andy Burnham and James O'Brien's performance at today's PMQs. Listen to the full show on the all-new LBC App: https://app.af.lbc.co.uk/btnc/thenewlbcapp #jamesobrien #pmqs #burnham #badenoch #ukpolitics #uknews #LBC…",
-   "thumb": "https://i4.ytimg.com/vi/kY51EogMUW8/hqdefault.jpg",
-   "id": "5970c07c4be9",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "HIGHLIGHTS: Andy Burnham Faces Down Kemi Badenoch at PMQs",
    "url": "https://www.youtube.com/watch?v=odeQN2wKKbQ",
    "source": "PoliticsJOE",
@@ -1071,25 +1301,6 @@
    "summary": "On the day the government decided to grant new licences for natural gas at the Jackdaw field, Andy Burnham faced the Conservative leader at another session of PMQs. Like PoliticsJOE? We need your support: https://www.patreon.com/PoliticsJOE",
    "thumb": "https://i4.ytimg.com/vi/odeQN2wKKbQ/hqdefault.jpg",
    "id": "9bfcd3bbed27",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Bundesgerichtshof: Nur dann haben Verbraucher Anspruch auf ihre Schufa-Daten",
-   "url": "https://www.youtube.com/watch?v=-ULmM8MDt0Y",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-21T11:06:25.000Z",
-   "summary": "Der Bundesgerichtshof hat die Wirtschaftsauskunftei Schufa zu mehr Transparenz bei der Berechnung der Bonität von Verbraucher:innen verpflichtet. Führen Menschen an, dass sie wegen der Bonitätseinstufung von der Schufa keinen Vertrag mit einem Unternehmen, etwa einen…",
-   "thumb": "https://i2.ytimg.com/vi/-ULmM8MDt0Y/hqdefault.jpg",
-   "id": "9ce33fa7f623",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1177,59 +1388,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "US-Wahl in Alabama: Sorge vor Hürden bei der Stimmabgabe",
-   "url": "https://www.youtube.com/watch?v=zSSG6dFG1os",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-21T08:56:51.000Z",
-   "summary": "Es ist ein wichtiger Stimmungstest für die Politik von US-Präsident Trump: In knapp zwei Wochen wird ein Großteil des Kongresses neu gewählt – die sogenannten Midterms. Dass alle US-Amerikaner:innen wählen dürfen, war nicht immer der Fall. Immer wieder wurden Wahlgesetze…",
-   "thumb": "https://i3.ytimg.com/vi/zSSG6dFG1os/hqdefault.jpg",
-   "id": "c85da29f62f2",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Hegseth wrong to say most non-US Nato forces in Afghanistan did not fight, says No 10",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xbhfnh/hegseth_wrong_to_say_most_nonus_nato_forces_in/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-21T08:20:34.000Z",
-   "summary": "submitted by /u/diwalibonus [link] [comments]",
-   "id": "52c28f6e0110",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "King Charles praises Omani sultan’s efforts to reopen Strait of Hormuz",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xbh92n/king_charles_praises_omani_sultans_efforts_to/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-21T08:09:04.000Z",
-   "summary": "submitted by /u/TheTelegraph [link] [comments]",
-   "id": "ca5d952ed1f5",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Rate my introduction for Interview Prep for product manager role and Suggest me changes and ideas to make it more likeable",
    "url": "https://www.reddit.com/r/ProductManagement/comments/1xbh4kx/rate_my_introduction_for_interview_prep_for/",
    "source": "r/productmanagement",
@@ -1241,23 +1399,6 @@
    "published": "2026-10-21T08:01:12.000Z",
    "summary": "Good morning, and thank you for the opportunity. Myself ***, currently pursuing my PGDM. I started my career at Accenture in operations, where I learned how to work with high-volume processes, identify recurring issues, and coordinate with different teams to improve the way…",
    "id": "ba7dcdd3f607",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "UNRWA teacher alleges Hamas glorification, hatred of Jews in Gaza schools | A UNRWA teacher of 15 years alleged that Gaza schools taught hatred of Jews and glorified Hamas. After speaking out, she was threatened: “If you don't stop arguing, we will cut out your tongue.”",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xbekjq/unrwa_teacher_alleges_hamas_glorification_hatred/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-21T05:23:45.000Z",
-   "summary": "submitted by /u/NotSoSaneExile [link] [comments]",
-   "id": "f065e9504b84",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1365,40 +1506,6 @@
    "summary": "The Call of Duty: Modern Warfare 4 campaign wraps up the new MW reboot saga. Is it worth it? Let's talk. Subscribe for more: http://youtube.com/gameranxtv ▼▼ Watch more 'Before You Buy': https://bit.ly/2kfdxI6",
    "thumb": "https://i1.ytimg.com/vi/HMKu-66d7sA/hqdefault.jpg",
    "id": "af8c40ab327b",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Ukraine has given us ‘nothing but grief’, says Trump",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xb3qz7/ukraine_has_given_us_nothing_but_grief_says_trump/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-20T20:48:25.000Z",
-   "summary": "President Trump has accused Ukraine of giving the US nothing but “grief” and said Russia would “keep grinding forward” as his special envoy headed to Moscow for talks with President Putin. The US president continued to put pressure on his Ukrainian counterpart Volodymyr…",
-   "id": "e304f96d388e",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Musk Ordered Starlink Slowdown That Blindsided Ukraine",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xb3no4/musk_ordered_starlink_slowdown_that_blindsided/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-20T20:44:34.000Z",
-   "summary": "submitted by /u/eamus_catuli [link] [comments]",
-   "id": "e2df7f9553ee",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1992,23 +2099,6 @@
    "why": "0"
   },
   {
-   "title": "Trump's America has taken control of Britain | Tariq Ali interview",
-   "url": "https://www.youtube.com/watch?v=rQcHhatDUtA",
-   "source": "PoliticsJOE",
-   "feedId": "yt-politicsjoe",
-   "type": "video",
-   "tags": [
-    "comedy"
-   ],
-   "published": "2026-10-16T11:30:31.000Z",
-   "summary": "Tariq Ali is one of Britain's foremost figures on the left of politics, and following a busy recess for Andy Burnham, he came in to the studio to react to the Prime Minister's speech to Labour conference, his first few months in charge, and how Britain should position itself in…",
-   "thumb": "https://i3.ytimg.com/vi/rQcHhatDUtA/hqdefault.jpg",
-   "id": "5c7b0672bfc5",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "ALASKA TRUMP RALLY",
    "url": "https://www.youtube.com/watch?v=XQQwiRoerh0",
    "source": "The Good Liars",
@@ -2168,23 +2258,6 @@
    "summary": "Go to https://hensonshaving.com/TLDR and enter \"TLDR\" at checkout to get 100 free blades with your purchase. In this video we explore Burnham's promise to implement a more representative electoral system in the UK but will he actually succeed where countless other governments…",
    "thumb": "https://i2.ytimg.com/vi/QmGYruZYHCc/hqdefault.jpg",
    "id": "c979ca4f9006",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Scam Repair Shop Caught On Camera. Came Up With DUMBEST Lies",
-   "url": "https://www.youtube.com/watch?v=hAJzIdIMASU",
-   "source": "Aberrant preach",
-   "feedId": "yt-aberrant-preach",
-   "type": "video",
-   "tags": [
-    "trash"
-   ],
-   "published": "2026-10-14T18:30:02.000Z",
-   "summary": "Girl's grandmother passes down a valuable Rolleiflex camera of which she decided to have it cleaned. Only for the store to give a completely different camera than the one she handed in. Is this negligence or straight up thievery? ———————————— Spotify:…",
-   "thumb": "https://i1.ytimg.com/vi/hAJzIdIMASU/hqdefault.jpg",
-   "id": "4765fda6c46c",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2571,25 +2644,6 @@
    "why": "0"
   },
   {
-   "title": "OHIO TRUMP RALLY",
-   "url": "https://www.youtube.com/watch?v=z5cAiwQULKI",
-   "source": "The Good Liars",
-   "feedId": "yt-the-good-liars",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "politics",
-    "debates"
-   ],
-   "published": "2026-10-10T18:30:36.000Z",
-   "summary": "The Good Liars visit Dayton, Ohio for a Trump Rally https://www.youtube.com/channel/UCUNOwz9KTDIhhTTN3_ptUDA/join https://linktr.ee/thegoodliars",
-   "thumb": "https://i3.ytimg.com/vi/z5cAiwQULKI/hqdefault.jpg",
-   "id": "f52c86bfea5e",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "They Brought Mistresses. He Brought an Army - Turin 1706",
    "url": "https://www.youtube.com/watch?v=CBIGgKGmQdk",
    "source": "History Marche",
@@ -2640,24 +2694,6 @@
    "summary": "Donald Trump, until recently, has taken a hands-off approach to regulating artificial intelligence. The president has favoured boosting the stock market and ensuring that America beats China in the AI race. But that strategy is becoming unsustainable. Americans are increasingly…",
    "thumb": "https://i3.ytimg.com/vi/B8oXVMYXlfM/hqdefault.jpg",
    "id": "a677d05f561c",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Israeli Experts vs Palestinian Experts | Middle Ground",
-   "url": "https://www.youtube.com/watch?v=vjFwzUs_H-I",
-   "source": "Jubilee",
-   "feedId": "yt-jubilee",
-   "type": "video",
-   "tags": [
-    "politics",
-    "debates"
-   ],
-   "published": "2026-10-09T16:00:17.000Z",
-   "summary": "Hey you 👈 Wanna be in a Jubilee video? https://bit.ly/be-in-a-video LET’S BE FRIENDS Instagram: https://www.instagram.com/jubileemedia/ TikTok: https://www.tiktok.com/@jubilee?lang=en Website: https://www.jubileemedia.com OUR LOVE + DATING CHANNEL 🍑 YouTube:…",
-   "thumb": "https://i3.ytimg.com/vi/vjFwzUs_H-I/hqdefault.jpg",
-   "id": "123ebdfce123",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2789,59 +2825,7 @@
    "score": 0,
    "matched": [],
    "why": "0"
-  },
-  {
-   "title": "The Biggest Mistake In McDonald's History",
-   "url": "https://www.youtube.com/watch?v=3k6ndVuKFSA",
-   "source": "The Hustle",
-   "feedId": "yt-the-hustle",
-   "type": "video",
-   "tags": [
-    "business"
-   ],
-   "published": "2026-10-07T18:00:36.000Z",
-   "summary": "McDonald's was once the largest playground operator in the US. Now, it's bringing back the PlayPlace just as its stock sinks to a four-year low — but can it actually save the company? *How to scale your business without selling out:* https://clickhubspot.com/69xt By 1991,…",
-   "thumb": "https://i4.ytimg.com/vi/3k6ndVuKFSA/hqdefault.jpg",
-   "id": "419a9894a449",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Ron Funches Enters the Danger Zone | Crowd Control [Clip]",
-   "url": "https://www.youtube.com/watch?v=NvOIzNyFo1o",
-   "source": "Dropout",
-   "feedId": "yt-dropout",
-   "type": "video",
-   "tags": [
-    "comedy"
-   ],
-   "published": "2026-10-07T17:30:14.000Z",
-   "summary": "Welcome to Crowd Control, the improvised stand-up show where the audience is the material. In this clip, comedian Ron Funches relates his late-life autism diagnosis with an audience member's journey of self discovery and learns about the everlasting nightmares of gross anatomy…",
-   "thumb": "https://i3.ytimg.com/vi/NvOIzNyFo1o/hqdefault.jpg",
-   "id": "049d998810ef",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Learn to Talk About Food in German (for absolute beginners)",
-   "url": "https://www.youtube.com/watch?v=dIw__YleGcQ",
-   "source": "Easy German",
-   "feedId": "yt-easy-german",
-   "type": "video",
-   "tags": [
-    "german",
-    "listen"
-   ],
-   "published": "2026-10-07T17:00:27.000Z",
-   "summary": "Get the articles right with Seedlang's Gender Trainer: https://www.seedlang.com/promotion/seg-318 --- LEARN MORE GERMAN WITH US: 💡 JOIN OUR COMMUNITY: https://easygerman.link/membership_seg318 🎧 LISTEN TO OUR PODCAST: http://www.easygerman.fm 📬 SUBSCRIBE TO OUR NEWSLETTER:…",
-   "thumb": "https://i1.ytimg.com/vi/dIw__YleGcQ/hqdefault.jpg",
-   "id": "0a3bfc122646",
-   "score": 0,
-   "matched": [],
-   "why": "0"
   }
  ],
- "contentHash": "f4dcc53238b7"
+ "contentHash": "ad210b2bc144"
 }
