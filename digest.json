@@ -1,17 +1,17 @@
 {
- "generated": "2026-10-22T07:12:12.087Z",
+ "generated": "2026-10-22T09:55:28.039Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
   "ok": 51,
-  "items": 119,
+  "items": 120,
   "duplicatesMerged": 0,
   "lengthsKnown": 1,
   "lengthLookups": 99,
-  "lengthFailures": 98,
+  "lengthFailures": 99,
   "lengthVia": "video pages",
   "lengthFailReasons": {
-   "no length on page": 98
+   "no length on page": 99
   }
  },
  "feeds": [
@@ -215,7 +215,7 @@
    "name": "TLDR News",
    "type": "youtube",
    "status": "ok",
-   "count": 3,
+   "count": 4,
    "resolved": {
     "channelId": "UCSMqateX8OA2s1wsOR2EgJA",
     "title": "TLDR News",
@@ -657,9 +657,10 @@
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
+   "lastOk": "2026-10-22T07:12:12.087Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-xbox",
@@ -668,7 +669,7 @@
    "status": "cached",
    "count": 5,
    "lastOk": "2026-10-21T15:54:55.125Z",
-   "note": "rate-limited (429)"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-slaythespire",
@@ -677,25 +678,26 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-10-22T01:02:31.421Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
   },
   {
    "id": "rd-germany",
    "name": "r/germany",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": "2026-10-15T00:59:57.533Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-unitedkingdom",
@@ -704,12 +706,193 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   }
  ],
  "items": [
   {
-   "title": "Simon Marks: Trump’s America has been left with ‘indelible stains’",
+   "title": "Should we be extracting more gas from the UK? | James O’Brien - The Whole Show",
+   "url": "https://www.youtube.com/watch?v=CAN30QyJTkk",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-22T09:35:02.000Z",
+   "summary": "This is a catch-up version of James O'Brien's live, daily show on LBC Radio from the 21st of October 2026. Listen to the full show on the all-new LBC App: https://app.af.lbc.co.uk/btnc/thenewlbcapp #jamesobrien #politics #LBC LBC is the home of live debate around news and…",
+   "thumb": "https://i4.ytimg.com/vi/CAN30QyJTkk/hqdefault.jpg",
+   "id": "6acc2cb80d4a",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Gefährlicher Kampf gegen Asiatische Hornisse | ARD Morgenmagazin",
+   "url": "https://www.youtube.com/watch?v=DqPg0ZKw680",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-22T09:21:44.000Z",
+   "summary": "Seit zwölf Jahren nun schon breitet sich die Asiatische Hornisse in Deutschland aus. Aus einem einzigen Nest können im Herbst hunderte Jungköniginnen ausfliegen und im Frühjahr neue Völker gründen. Wer die Nester beseitigt, bringt sich aber selbst in Gefahr: Die Hornissen…",
+   "thumb": "https://i1.ytimg.com/vi/DqPg0ZKw680/hqdefault.jpg",
+   "id": "ccb1fc068195",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "I ran Nato. Putin’s nuclear threat is real, but this is how to stop him",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xcdjdj/i_ran_nato_putins_nuclear_threat_is_real_but_this/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-22T09:07:10.000Z",
+   "summary": "submitted by /u/robhastings [link] [comments]",
+   "id": "788a9d5673cd",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Wer steckt hinter den Schüssen auf Geschäfte in NRW?",
+   "url": "https://www.youtube.com/watch?v=X8TLxfv3ymk",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-22T08:36:42.000Z",
+   "summary": "Explosionen, Schüsse auf Geschäfte und Erpressung – das ist kein Fernsehkrimi sondern die Realität in so mancher deutschen Großstadt. Dahinter steckt oft Organisierte Kriminalität. Das Vorgehen wird dabei brutaler und die Täter:innen sind immer jünger. Jugendliche und junge…",
+   "thumb": "https://i1.ytimg.com/vi/X8TLxfv3ymk/hqdefault.jpg",
+   "id": "0971ac0425d7",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Cambridge-Analytica-Skandal: Was das Rekordurteil gegen Meta bedeutet",
+   "url": "https://www.youtube.com/watch?v=k9hMfyj62bw",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-22T08:35:36.000Z",
+   "summary": "Acht Jahre nach dem Skandal um den Missbrauch von Nutzerdaten ist der Facebookkonzern Meta in New Mexico zu einer Milliardenstrafe verurteilt worden. Der Fall solle anderen Tech-Unternehmen eine Warnung sein, sagte der Generalstaatsanwalt. Mehr Informationen zu diesem Thema:…",
+   "thumb": "https://i4.ytimg.com/vi/k9hMfyj62bw/hqdefault.jpg",
+   "id": "24b5e9282f97",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "The Conservative Comeback Explained",
+   "url": "https://www.youtube.com/watch?v=pnf571lKVmk",
+   "source": "TLDR News",
+   "feedId": "yt-tldr-news",
+   "type": "video",
+   "tags": [
+    "news",
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-22T08:30:04.000Z",
+   "summary": "Take back your privacy - start using Proton Mail for free: http://proton.me/tldr In this video, we’re going to have a look into the rise of the Conservatives, how this has happened, and whether it’s likely to continue. 📰 Too Long: https://toolong.news/ 🎉 TLDR Party:…",
+   "thumb": "https://i1.ytimg.com/vi/pnf571lKVmk/hqdefault.jpg",
+   "id": "0c1d26ecc6cf",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Zelenskyy backs Ukraine peace talks and presses for direct discussion with Putin",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xcco32/zelenskyy_backs_ukraine_peace_talks_and_presses/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-22T08:10:23.000Z",
+   "summary": "Ukrainian President Volodymyr Zelenskyy has backed plans for the resumption of talks between Ukrainian, American and Russian negotiators, saying that preparing the ground for a future meeting of national leaders is “very important for everyone.” Zelenskyy, who has previously…",
+   "id": "1c9ad4cca5ab",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Warum die Printausgabe des feministischen Magazins „Emma“ nach 50 Jahren eingestellt wird",
+   "url": "https://www.youtube.com/watch?v=d1walGmk-uU",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-22T07:19:48.000Z",
+   "summary": "Nach 50 Jahren ist Schluss. Das feministische Magazin „Emma“ wird eingestellt. Gründerin und Herausgeberin Alice Schwarzer betonte, die Gründe seien nicht ökonomischer Natur. „Wir meinen, es reicht.“ Mehr Informationen zu diesem Thema:…",
+   "thumb": "https://i1.ytimg.com/vi/d1walGmk-uU/hqdefault.jpg",
+   "id": "ac37c3b15118",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Gulf Oil Flows Top 24 Million Barrels a Day as Iran Says Situation Is ‘Truly Wartime’; Nournews Flags ‘October Surprise’",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xcbqti/gulf_oil_flows_top_24_million_barrels_a_day_as/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-22T07:11:06.000Z",
+   "summary": "submitted by /u/Beginning-Wish-4273 [link] [comments]",
+   "id": "07aded7129fc",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "U.S. pulls diplomats from Saudi Arabia as it reportedly readies Iran strikes after midterms",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xcbl1c/us_pulls_diplomats_from_saudi_arabia_as_it/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-22T07:01:19.000Z",
+   "summary": "submitted by /u/kai_vt [link] [comments]",
+   "id": "b296d15fc21d",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Trump envoy calls Putin a 'humanitarian' | Simon Marks reacts",
    "url": "https://www.youtube.com/watch?v=5TApNZz4FIc",
    "source": "LBC",
    "feedId": "yt-lbc",
@@ -746,25 +929,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Sicherheitslücke bedroht Webseiten / EU ermittelt gegen Booking / Diebstahl auf Friedhöfen",
-   "url": "https://www.youtube.com/watch?v=Y-_al8D-O6o",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-22T04:00:49.000Z",
-   "summary": "Unsere Infos heute: (00:00:07) Themenübersicht (00:00:35) Sicherheitslücke bedroht weltweit Webseiten Eine gravierende Sicherheitslücke hat Millionen Webseiten bedroht. Betroffen ist die weitverbreitete Programmiersprache PHP. In Deutschland waren Internetseiten mehrerer Städte…",
-   "thumb": "https://i2.ytimg.com/vi/Y-_al8D-O6o/hqdefault.jpg",
-   "id": "0aa37dd321b9",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "MAGA Hosts Go DEAD SILENT as Co-Host EXPOSES TRUMP On Air!",
    "url": "https://www.youtube.com/watch?v=5vqYOA3xPoQ",
    "source": "Luke Beasley",
@@ -778,6 +942,23 @@
    "summary": "Luke discusses a recent moment from Fox News' The Five. Check out Jessica Tarlov's new book below! https://sites.prh.com/idisagree Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join…",
    "thumb": "https://i2.ytimg.com/vi/5vqYOA3xPoQ/hqdefault.jpg",
    "id": "7b3c4c24f724",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "How Ukraine’s drone strikes on Russia crippled the world’s second-largest diesel supplier",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xc4s78/how_ukraines_drone_strikes_on_russia_crippled_the/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-22T01:00:03.000Z",
+   "summary": "submitted by /u/foodie_2598 [link] [comments]",
+   "id": "0bd70cca7c4d",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -817,94 +998,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Egypt rejects Libyan approval of maritime deal with Turkey",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xc2e6d/egypt_rejects_libyan_approval_of_maritime_deal/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-21T23:08:58.000Z",
-   "summary": "submitted by /u/Fair-Bookkeeper-1833 [link] [comments]",
-   "id": "5e2b3c7d1dc4",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Maritime Chokepoints: Hormuz and Beyond",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xc1c19/maritime_chokepoints_hormuz_and_beyond/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-21T22:22:00.000Z",
-   "summary": "submitted by /u/HooverInstitution [link] [comments]",
-   "id": "1b8f0cfd61e6",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Israeli military detain US and UK volunteers in West Bank including Democratic NY politician Brad Lander",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xc1bcr/israeli_military_detain_us_and_uk_volunteers_in/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-21T22:21:11.000Z",
-   "summary": "The Israeli military has detained about 80 US, Israeli and British volunteers helping Palestinians harvest olives near Bethlehem, including the New York Democratic congressional nominee Brad Lander, several rabbis and Israel’s former deputy attorney general. “I’ve been detained…",
-   "id": "910305ccf30f",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "WHAT JUST HAPPENED AT THIS TRUMP PRESSER, HE CRACKED!",
-   "url": "https://www.youtube.com/watch?v=1wX5IAUQgg4",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-21T21:42:25.000Z",
-   "summary": "Luke discusses Trump's recent Oval Office press conference. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
-   "thumb": "https://i2.ytimg.com/vi/1wX5IAUQgg4/hqdefault.jpg",
-   "id": "a344b7179701",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "tagesthemen 22:15 Uhr, 21.10.2026",
-   "url": "https://www.youtube.com/watch?v=5xn0i2X1Lk8",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-21T21:35:10.000Z",
-   "summary": "tagesthemen 22:15 Uhr Treffen von US-Sondergesandtem Witkoff und Russlands Präsident Putin in Sankt Petersburg, Polen rüstet sich für Katastrophenfall: TV-Quiz testet Sicherheitswissen in der Bevölkerung, Kritische Sicherheitslücke in Programmiersprache PHP: Bundesamt für…",
-   "thumb": "https://i2.ytimg.com/vi/5xn0i2X1Lk8/hqdefault.jpg",
-   "id": "53da512d1684",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Many migrants pay 60% more to the NHS than costs of the health care they use",
    "url": "https://www.reddit.com/r/ukpolitics/comments/1xbz0kc/many_migrants_pay_60_more_to_the_nhs_than_costs/",
    "source": "r/ukpolitics",
@@ -922,23 +1015,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "IDF appoints first commander of new Space Division as Israel eyes galactic warfare",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xbxnc6/idf_appoints_first_commander_of_new_space/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-21T19:57:43.000Z",
-   "summary": "submitted by /u/OpDanger [link] [comments]",
-   "id": "571318d40f10",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Reform UK fined for failing to declare it was publisher of campaigns material | Party given additional penalty by Electoral Commission for not paying original fine on time",
    "url": "https://www.reddit.com/r/ukpolitics/comments/1xbx5ex/reform_uk_fined_for_failing_to_declare_it_was/",
    "source": "r/ukpolitics",
@@ -951,43 +1027,6 @@
    "published": "2026-10-21T19:38:48.000Z",
    "summary": "submitted by /u/whencanistop [link] [comments]",
    "id": "857837c7bd43",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Iain Dale shuts down caller defending Russian oil",
-   "url": "https://www.youtube.com/watch?v=jiOAbB4uzN0",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-21T19:34:09.000Z",
-   "summary": "Should Britain improve relations with Russia and Iran if it means cheaper and more secure energy? Iain Dale has a furious exchange with caller James after he argues that Britain should consider importing energy from countries including Russia and Iran, if we're serious about…",
-   "thumb": "https://i3.ytimg.com/vi/jiOAbB4uzN0/hqdefault.jpg",
-   "id": "b1da892a7d62",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Sicherheitsexperte: Droht der Ukraine ein zweites Jalta hinter ihrem Rücken?",
-   "url": "https://www.youtube.com/watch?v=uloxHoHvPW0",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-21T19:22:10.000Z",
-   "summary": "Nach einem Treffen mit dem US-Sondergesandten erklärt sich Russlands Präsident Putin offenbar zu neuen Gesprächen mit den USA und der Ukraine bereit. Um ein Ende des Kriegs soll es dabei demnach aber nicht gehen. Sicherheitsexperte Andreas Umland vom Europäischen…",
-   "thumb": "https://i2.ytimg.com/vi/uloxHoHvPW0/hqdefault.jpg",
-   "id": "4a1b68db78b9",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1020,23 +1059,6 @@
    "published": "2026-10-21T18:00:14.000Z",
    "summary": "My company has had hiring freezes and layoffs over the past couple years. As a result, we have less Dev resources and everything is taking longer to deliver. This means that we already have a well defined roadmap for the next 2 years, and all that’s left to do is project…",
    "id": "f549d23597da",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Brazil's current president has a rising chance of being reelected due to mass media mobilization, even after losing the first round by more than 3 million votes",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xbtxr8/brazils_current_president_has_a_rising_chance_of/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-21T17:42:01.000Z",
-   "summary": "submitted by /u/spy8492 [link] [comments]",
-   "id": "3665321a082c",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1154,6 +1176,42 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
+   "title": "WHAT JUST HAPPENED AT THIS TRUMP PRESSER, HE CRACKED!",
+   "url": "https://www.youtube.com/watch?v=1wX5IAUQgg4",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-21T21:42:25.000Z",
+   "summary": "Luke discusses Trump's recent Oval Office press conference. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
+   "thumb": "https://i2.ytimg.com/vi/1wX5IAUQgg4/hqdefault.jpg",
+   "id": "a344b7179701",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Iain Dale shuts down caller defending Russian oil",
+   "url": "https://www.youtube.com/watch?v=jiOAbB4uzN0",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-21T19:34:09.000Z",
+   "summary": "Should Britain improve relations with Russia and Iran if it means cheaper and more secure energy? Iain Dale has a furious exchange with caller James after he argues that Britain should consider importing energy from countries including Russia and Iran, if we're serious about…",
+   "thumb": "https://i3.ytimg.com/vi/jiOAbB4uzN0/hqdefault.jpg",
+   "id": "b1da892a7d62",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
    "title": "British Medical Association lambasts NHS England’s single-sex spaces guidance",
    "url": "https://www.reddit.com/r/ukpolitics/comments/1xbw578/british_medical_association_lambasts_nhs_englands/",
    "source": "r/ukpolitics",
@@ -1166,25 +1224,6 @@
    "published": "2026-10-21T19:01:49.000Z",
    "summary": "submitted by /u/MasterDineo [link] [comments]",
    "id": "33226f8a1731",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "tagesschau 20:00 Uhr, 21.10.2026",
-   "url": "https://www.youtube.com/watch?v=kRdgDU7RZpQ",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-21T18:36:32.000Z",
-   "summary": "Die 20-Uhr-Ausgabe der tagesschau im Livestream und auf Abruf findet ihr auch hier: https://ardmediathek.de/tagesschau und https://tagesschau.de Themen der tagesschau-Sendung: 00:00 Guten Abend 00:21 Treffen von US-Sondergesandtem Witkoff und Russlands Präsident Putin in Sankt…",
-   "thumb": "https://i4.ytimg.com/vi/kRdgDU7RZpQ/hqdefault.jpg",
-   "id": "63e7ce464b43",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1378,24 +1417,6 @@
    "summary": "November has plenty of game releases if you’re not planning on playing GTA6. Check out these November release dates for PC, PS5, Xbox Series X/S, and Nintendo Switch 2 games. Subscribe for more: https://www.youtube.com/gameranxTV?sub_confirmation=1 0:00 Intro 0:50 Ashes of the…",
    "thumb": "https://i2.ytimg.com/vi/AuqnN0g3XTc/hqdefault.jpg",
    "id": "01e096fbf85e",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "The 'heroes' who 'gave everything' to fight Elon Musk",
-   "url": "https://www.youtube.com/watch?v=R4wVhXOHdgg",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-21T15:10:36.000Z",
-   "summary": "James O'Brien speaks to Michael Lewis, bestselling author of 'The Big Short', who has been investigating the 'hero' civil servants who have done everything they can to stop Elon Musk's DOGE. Lewis describes the damage Musk's pet project has done to the U.S. government, what his…",
-   "thumb": "https://i3.ytimg.com/vi/R4wVhXOHdgg/hqdefault.jpg",
-   "id": "0c06c3baf147",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2825,5 +2846,5 @@
    "why": "0"
   }
  ],
- "contentHash": "35c7f28e9935"
+ "contentHash": "55140f80920b"
 }
