@@ -1,17 +1,17 @@
 {
- "generated": "2026-10-22T01:02:31.421Z",
+ "generated": "2026-10-22T03:54:18.651Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
-  "ok": 6,
-  "items": 22,
+  "ok": 5,
+  "items": 25,
   "duplicatesMerged": 0,
   "lengthsKnown": 0,
-  "lengthLookups": 2,
-  "lengthFailures": 2,
+  "lengthLookups": 1,
+  "lengthFailures": 1,
   "lengthVia": "video pages",
   "lengthFailReasons": {
-   "no length on page": 2
+   "no length on page": 1
   }
  },
  "feeds": [
@@ -61,14 +61,15 @@
    "id": "yt-chris-spargo",
    "name": "Chris Spargo",
    "type": "youtube",
-   "status": "ok",
-   "count": 1,
+   "status": "error",
+   "count": 0,
    "resolved": {
     "channelId": "UCTzkxNEnbdvbBlgYl_W9daw",
     "title": "Chris Spargo",
     "via": "name search"
    },
-   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCTzkxNEnbdvbBlgYl_W9daw"
+   "error": "not found (404)",
+   "http": 404
   },
   {
    "id": "yt-flashgitz",
@@ -95,8 +96,8 @@
     "title": "The Good Liars",
     "via": "name search"
    },
-   "error": "HTTP 500",
-   "http": 500
+   "error": "not found (404)",
+   "http": 404
   },
   {
    "id": "yt-easy-german",
@@ -494,15 +495,14 @@
    "id": "yt-lenny-s-podcast",
    "name": "Lenny's Podcast",
    "type": "youtube",
-   "status": "error",
-   "count": 0,
+   "status": "ok",
+   "count": 5,
    "resolved": {
     "channelId": "UC6t1O76G0jYXOAoYCm153dA",
     "title": "Lenny's Podcast",
     "via": "name search"
    },
-   "error": "not found (404)",
-   "http": 404
+   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC6t1O76G0jYXOAoYCm153dA"
   },
   {
    "id": "yt-the-hustle",
@@ -522,14 +522,15 @@
    "id": "yt-history-marche",
    "name": "History Marche",
    "type": "youtube",
-   "status": "ok",
-   "count": 1,
+   "status": "error",
+   "count": 0,
    "resolved": {
     "channelId": "UC8MX9ECowgDMTOnFTE8EUJw",
     "title": "HistoryMarche",
     "via": "name search"
    },
-   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC8MX9ECowgDMTOnFTE8EUJw"
+   "error": "not found (404)",
+   "http": 404
   },
   {
    "id": "yt-radicalsoda",
@@ -675,19 +676,20 @@
    "id": "rd-productmanagement",
    "name": "r/productmanagement",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-10-21T21:49:43.340Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/productmanagement/top/.rss?t=day"
   },
   {
    "id": "rd-tech",
    "name": "r/tech",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": "2026-10-15T21:49:52.028Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-gaming",
@@ -696,7 +698,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-ukpolitics",
@@ -729,20 +731,19 @@
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
+   "lastOk": "2026-10-22T01:02:31.421Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-germany",
    "name": "r/germany",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": "2026-10-15T00:59:57.533Z",
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-unitedkingdom",
@@ -751,10 +752,26 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   }
  ],
  "items": [
+  {
+   "title": "How to collab with Biz Ops?",
+   "url": "https://www.reddit.com/r/ProductManagement/comments/1xc4l13/how_to_collab_with_biz_ops/",
+   "source": "r/productmanagement",
+   "feedId": "rd-productmanagement",
+   "type": "post",
+   "tags": [
+    "product"
+   ],
+   "published": "2026-10-22T00:50:11.000Z",
+   "summary": "I’m an internal PM at a company that has a Business Ops team. I’ve never worked at a company with a Biz Ops team before this. I am having a hard time understanding how what Biz Ops folks do arent just a duplication of what a PM does in terms of prioritizing work and projects…",
+   "id": "827fb573f03d",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
   {
    "title": "Egypt rejects Libyan approval of maritime deal with Turkey",
    "url": "https://www.reddit.com/r/geopolitics/comments/1xc2e6d/egypt_rejects_libyan_approval_of_maritime_deal/",
@@ -956,22 +973,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "I wrote down a pass/fail line before a small paid test. Is 3 out of 20 the right bar?",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1xbqsg0/i_wrote_down_a_passfail_line_before_a_small_paid/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-10-21T15:48:25.000Z",
-   "summary": "I'm running a small paid test in early November: 20 people, five lessons on one topic over one week, full price ($14.99) with a 30-day money-back guarantee. Before it starts, I wrote down what counts as a pass: at least 3 of the 20 pay, and at least 2 of those are strangers,…",
-   "id": "554b5d6b55f8",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Angela Rayner took £20,000 from donor... that her new law would ban",
    "url": "https://www.reddit.com/r/ukpolitics/comments/1xbqa56/angela_rayner_took_20000_from_donor_that_her_new/",
    "source": "r/ukpolitics",
@@ -1086,41 +1087,100 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "This NHS hospital is weirder than I thought",
-   "url": "https://www.youtube.com/watch?v=U0Q4G8cUKMo",
-   "source": "Chris Spargo",
-   "feedId": "yt-chris-spargo",
+   "title": "Good Ideas Don’t Come From Design Sprints",
+   "url": "https://www.youtube.com/shorts/IMi_ihnWZI8",
+   "source": "Lenny's Podcast",
+   "feedId": "yt-lenny-s-podcast",
    "type": "video",
    "tags": [
-    "british",
-    "education"
+    "product",
+    "business",
+    "listen"
    ],
-   "published": "2026-10-11T15:00:27.000Z",
-   "summary": "Click here to check out Huel: http://uk.huel.com/CHRIS10 and use code CHRIS10 to get £10 off your first order over £60. Minimum spend required. Offer valid for 30 days. New customers only. #ad You can donate monthly to the Children's Cancer Centre project if you're interested:…",
-   "thumb": "https://i2.ytimg.com/vi/U0Q4G8cUKMo/hqdefault.jpg",
-   "id": "9042639ff221",
+   "published": "2026-10-21T10:30:15.000Z",
+   "summary": "The best ideas at Google Labs never came from a design sprint. Josh Woodward, VP, Google Labs, Gemini & AI Studio, on where NotebookLM, Flow, AI Studio and Google Beam actually started: tiny groups of obsessed people who wouldn’t stop.",
+   "thumb": "https://i2.ytimg.com/vi/IMi_ihnWZI8/hqdefault.jpg",
+   "id": "b02ff93e3acd",
    "score": 0,
    "matched": [],
    "why": "0"
   },
   {
-   "title": "They Brought Mistresses. He Brought an Army - Turin 1706",
-   "url": "https://www.youtube.com/watch?v=CBIGgKGmQdk",
-   "source": "History Marche",
-   "feedId": "yt-history-marche",
+   "title": "Celebrate the PM Who Says “Don’t Launch This”",
+   "url": "https://www.youtube.com/shorts/N7yTF9dgObg",
+   "source": "Lenny's Podcast",
+   "feedId": "yt-lenny-s-podcast",
    "type": "video",
    "tags": [
-    "education",
-    "history"
+    "product",
+    "business",
+    "listen"
    ],
-   "published": "2026-10-10T17:01:19.000Z",
-   "summary": "🚩 Head to https://betterhelp.com/historymarche to get 10% off your first month with our paid partner, BetterHelp. 🚩 Therapy can be a meaningful space to reflect, grow, and create positive change in your life. 🚩 War of the Spanish Succession Playlist:…",
-   "thumb": "https://i4.ytimg.com/vi/CBIGgKGmQdk/hqdefault.jpg",
-   "id": "ba4ba7fc2631",
+   "published": "2026-10-20T10:30:13.000Z",
+   "summary": "A PM told him not to launch a Gemini feature. He replied all to say thank you. Josh Woodward, VP, Google Labs, Gemini & AI Studio, on the signs it’s time to kill an idea, and building a team that can say, “I don’t think this is working.”",
+   "thumb": "https://i3.ytimg.com/vi/N7yTF9dgObg/hqdefault.jpg",
+   "id": "f8ab98c7d060",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Hire for Unlearning Rate, Not Learning Rate",
+   "url": "https://www.youtube.com/shorts/wppJFCytpOE",
+   "source": "Lenny's Podcast",
+   "feedId": "yt-lenny-s-podcast",
+   "type": "video",
+   "tags": [
+    "product",
+    "business",
+    "listen"
+   ],
+   "published": "2026-10-19T10:30:26.000Z",
+   "summary": "Forget learning rate. How fast can someone learn something and then walk away from it? Josh Woodward, VP, Google Labs, Gemini & AI Studio, on the two signals he’s hiring for right now: unlearning rate and explosive endurance.",
+   "thumb": "https://i4.ytimg.com/vi/wppJFCytpOE/hqdefault.jpg",
+   "id": "2d4cf8085317",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Inside the black box of AI: How AI models actually think | Emmanuel Ameisen (Anthropic)",
+   "url": "https://www.youtube.com/watch?v=JHo-aiePjoM",
+   "source": "Lenny's Podcast",
+   "feedId": "yt-lenny-s-podcast",
+   "type": "video",
+   "tags": [
+    "product",
+    "business",
+    "listen"
+   ],
+   "published": "2026-10-18T12:30:11.000Z",
+   "summary": "Emmanuel Ameisen is an interpretability researcher at Anthropic, where he looks inside LLMs like Claude to understand how they think. Before joining Anthropic, he spent years in applied ML at Stripe and Insight, and is the author of Building Machine Learning Powered…",
+   "thumb": "https://i3.ytimg.com/vi/JHo-aiePjoM/hqdefault.jpg",
+   "id": "d05f647549ef",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Fall in Love With the Problem, Not the Product",
+   "url": "https://www.youtube.com/shorts/uU7TH-K-RYU",
+   "source": "Lenny's Podcast",
+   "feedId": "yt-lenny-s-podcast",
+   "type": "video",
+   "tags": [
+    "product",
+    "business",
+    "listen"
+   ],
+   "published": "2026-10-18T10:30:19.000Z",
+   "summary": "Early product-market fit isn’t DAU. It’s whether people’s eyes light up. Josh Woodward, VP, Google Labs, Gemini & AI Studio, on falling in love with the problem instead of the product and the one signal he watches for when showing early prototypes.",
+   "thumb": "https://i2.ytimg.com/vi/uU7TH-K-RYU/hqdefault.jpg",
+   "id": "48be83711cf1",
    "score": 0,
    "matched": [],
    "why": "0"
   }
  ],
- "contentHash": "6502fac1d9bc"
+ "contentHash": "4d0ee683902d"
 }
