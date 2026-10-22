@@ -1,17 +1,17 @@
 {
- "generated": "2026-10-22T15:52:35.606Z",
+ "generated": "2026-10-22T19:01:21.202Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
   "ok": 51,
-  "items": 122,
+  "items": 119,
   "duplicatesMerged": 0,
   "lengthsKnown": 1,
-  "lengthLookups": 101,
-  "lengthFailures": 101,
+  "lengthLookups": 98,
+  "lengthFailures": 98,
   "lengthVia": "video pages",
   "lengthFailReasons": {
-   "no length on page": 101
+   "no length on page": 98
   }
  },
  "feeds": [
@@ -189,7 +189,7 @@
    "name": "ColdFusion",
    "type": "youtube",
    "status": "ok",
-   "count": 2,
+   "count": 1,
    "resolved": {
     "channelId": "UC4QZ_LsYcvcq7qOsOhpAX4A",
     "title": "ColdFusion",
@@ -358,7 +358,7 @@
    "name": "Modern-Day Debate",
    "type": "youtube",
    "status": "ok",
-   "count": 3,
+   "count": 2,
    "resolved": {
     "channelId": "UC_cd4oF2phaIBD3WsU3f7Xg",
     "title": "Modern-Day Debate",
@@ -397,7 +397,7 @@
    "name": "The Economist",
    "type": "youtube",
    "status": "ok",
-   "count": 5,
+   "count": 4,
    "resolved": {
     "channelId": "UC0p5jTq6Xx_DosDFxVXnWaQ",
     "title": "The Economist",
@@ -657,9 +657,10 @@
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
+   "lastOk": "2026-10-22T15:52:35.606Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-xbox",
@@ -668,7 +669,7 @@
    "status": "cached",
    "count": 5,
    "lastOk": "2026-10-21T15:54:55.125Z",
-   "note": "rate-limited (429)"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-slaythespire",
@@ -677,25 +678,26 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-10-22T09:55:28.039Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
   },
   {
    "id": "rd-germany",
    "name": "r/germany",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": "2026-10-15T00:59:57.533Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-unitedkingdom",
@@ -704,10 +706,224 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   }
  ],
  "items": [
+  {
+   "title": "Chicken Prank In The Hood Ends Badly For Unseasoned Streamer",
+   "url": "https://www.youtube.com/watch?v=S6o47Pr97Fs",
+   "source": "Aberrant preach",
+   "feedId": "yt-aberrant-preach",
+   "type": "video",
+   "tags": [
+    "trash"
+   ],
+   "published": "2026-10-22T18:44:31.000Z",
+   "summary": "Kick streamer OnyxDenji tried to pull a Chud The Builder by antagonizing folks and luckily he also got to enjoy some consequences for his actions. ———————————— Spotify: https://open.spotify.com/artist/6QJIJ6AugqPEFASp1V6zgH Merchandise ---…",
+   "thumb": "https://i4.ytimg.com/vi/S6o47Pr97Fs/hqdefault.jpg",
+   "id": "c0f71939c96a",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "tagesschau 20:00 Uhr, 22.10.2026",
+   "url": "https://www.youtube.com/watch?v=Bemx6OAmR9A",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-22T18:33:41.000Z",
+   "summary": "Die 20-Uhr-Ausgabe der tagesschau im Livestream und auf Abruf findet ihr auch hier: https://ardmediathek.de/tagesschau und https://tagesschau.de 0:00 Guten Abend! 0:20 Nach Bekanntgabe von PHP-Sicherheitslücke bleiben viele Webseiten noch immer nicht erreichbar 2:33 Prognose…",
+   "thumb": "https://i3.ytimg.com/vi/Bemx6OAmR9A/hqdefault.jpg",
+   "id": "5ce4691604ee",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "The Chokepoint Trap: How the Search for Economic Security Will End in Geopolitical Calamity",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xcqf2v/the_chokepoint_trap_how_the_search_for_economic/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-22T18:20:54.000Z",
+   "summary": "submitted by /u/ForeignAffairsMag [link] [comments]",
+   "id": "29d7d4a7a3a8",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "'Thank you, MAGA...' | Kyiv hit with illegal 'cluster munitions'",
+   "url": "https://www.youtube.com/watch?v=p6SyR179KVQ",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-22T18:15:13.000Z",
+   "summary": "Zelenskyy has accused Russia of striking Kyiv with illegal cluster warheads despite ongoing peace talks with Donald Trump and Vladimir Putin. This comes after US envoy Steve Witkoff received international backlash after calling the Russian President a 'humanitarian'. Andrew…",
+   "thumb": "https://i1.ytimg.com/vi/p6SyR179KVQ/hqdefault.jpg",
+   "id": "5a4c29d93791",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Putin has become increasingly brazen at sea. Where the UK is vulnerable",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xcoss0/putin_has_become_increasingly_brazen_at_sea_where/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-22T17:21:34.000Z",
+   "summary": "submitted by /u/theipaper [link] [comments]",
+   "id": "a2b9c043ae86",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "SWAT Team Robot Successfully Dismantles Black Man",
+   "url": "https://www.youtube.com/watch?v=zM7B9UPcHzE",
+   "source": "The Onion",
+   "feedId": "yt-the-onion",
+   "type": "video",
+   "tags": [
+    "comedy"
+   ],
+   "published": "2026-10-22T17:00:38.000Z",
+   "summary": "Evacuation orders were in effect after downtown residents noticed a Black man was left suspiciously unattended in a high population area. Become an Onion member while it's still optional: https://membership.theonion.com/?campaign=701a500001geULHAA2",
+   "thumb": "https://i3.ytimg.com/vi/zM7B9UPcHzE/hqdefault.jpg",
+   "id": "e85ea514d7d3",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "‘Europe should be terrified’ as Ukraine support drains",
+   "url": "https://www.youtube.com/watch?v=sff18heTn-A",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-22T16:42:48.000Z",
+   "summary": "LBC's Joe Draper takes a look at new developments across the continent and inside the White House, where the West's support for Ukraine appears to be faltering. To find out more, Joe spoke to Timothy Ash, a Russia and Eurasia expert at Chatham House. The US is \"on the side of…",
+   "thumb": "https://i4.ytimg.com/vi/sff18heTn-A/hqdefault.jpg",
+   "id": "945b9a42ce17",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Looksmaxxing Sleepaway Camp",
+   "url": "https://www.youtube.com/watch?v=yx0gM_l60VY",
+   "source": "Channel 5 with Andrew Callaghan",
+   "feedId": "yt-channel-5-with-andrew-callaghan",
+   "type": "video",
+   "tags": [
+    "education",
+    "politics"
+   ],
+   "published": "2026-10-22T16:00:00.000Z",
+   "summary": "Head to https://chime.yt.link/qSMtFb0 for a $200 bonus and 3.75% APY with Chime® Thanks Chime for sponsoring this video! To see our reacquired catalog of All Gas No Brakes content, head to our Patreon at https://www.patreon.com/channel5",
+   "thumb": "https://i2.ytimg.com/vi/yx0gM_l60VY/hqdefault.jpg",
+   "id": "fc5e069422e7",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Can a Monthly Sock Subscription Become a Million Dollar Brand? | Shark Tank US | Shark Tank Global",
+   "url": "https://www.youtube.com/watch?v=z_R7d5rZ_xA",
+   "source": "Shark Tank Global",
+   "feedId": "yt-shark-tank-global",
+   "type": "video",
+   "tags": [
+    "trash",
+    "business"
+   ],
+   "published": "2026-10-22T15:59:48.000Z",
+   "summary": "Bryan DeLuca and Matt McClard enter the Tank seeking $250,000 for 10% of Foot Cardigan, their colorful sock subscription business that delivers a surprise pair to customers every month. From Season 7 Episode 3 Watch Shark Tank US Now: http://AAN.SonyPictures.com/SharkTankUSHulu…",
+   "thumb": "https://i3.ytimg.com/vi/z_R7d5rZ_xA/hqdefault.jpg",
+   "id": "74d378c7f3b7",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Ministerpräsidenten fordern schnelle Senkung der Stromsteuer für alle",
+   "url": "https://www.youtube.com/watch?v=7d86f9qGu-M",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-22T15:54:49.000Z",
+   "summary": "Die Ministerpräsident:innen machen Druck auf die Bundesregierung. Die Ministerpräsidentenkonferenz forderte die Koalition aus Union und SPD auf, die im Koalitionsvertrag vereinbarte Senkung der Stromsteuer für Bürger:innen und Unternehmen „schnellstmöglich“ zu realisieren.…",
+   "thumb": "https://i4.ytimg.com/vi/7d86f9qGu-M/hqdefault.jpg",
+   "id": "9a33a761b491",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "tagesschau in Einfacher Sprache 19:00 Uhr, 22.10.2026",
+   "url": "https://www.youtube.com/watch?v=xfCTczwnG5I",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-22T15:53:12.000Z",
+   "summary": "tagesschau in Einfacher Sprache 19:00 Uhr Sicherheitslücke in Programmiersprache PHP bedroht weltweit Webseiten, Facebook-Konzern Meta muss Milliarden Dollar Strafe zahlen, Mutmaßlicher russischer Spion in Brandenburg festgenommen, Das Wetter Die \"tagesschau in Einfacher…",
+   "thumb": "https://i1.ytimg.com/vi/xfCTczwnG5I/hqdefault.jpg",
+   "id": "c1a240eb60d9",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Putin is happily taking a US reset and keeping the war",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xclgur/putin_is_happily_taking_a_us_reset_and_keeping/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-22T15:19:47.000Z",
+   "summary": "Kyiv has offered to freeze the front line as Trump demanded, yet the pressure keeps landing on Zelenskyy, because Ukraine, wired into American systems, is the easier party to move. America’s reset with Russia has begun, and nobody waited for the war to end first: a…",
+   "id": "46e6b57bf359",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
   {
    "title": "EU-Parlament: Hält der Verbrenner-Kompromiss?",
    "url": "https://www.youtube.com/watch?v=OAOOORbMztw",
@@ -728,7 +944,7 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Lewis Goodall reacts to Trump's bizarre midterm rally",
+   "title": "Lewis Goodall reacts to Trump's gaffes at midterm rally",
    "url": "https://www.youtube.com/watch?v=jQ03uVjKMnE",
    "source": "LBC",
    "feedId": "yt-lbc",
@@ -759,6 +975,40 @@
    "summary": "Enjoy 1 month of Wispr Flow Pro using my link: https://ref.wisprflow.ai/levi-hildebrand-yt Subscribe! https://www.youtube.com/channel/UC-OJ-24roEfQ_-PCnLJSckg?sub_confirmation=1 Join our Patreon: https://www.patreon.com/c/LeviHildebrand For further reading, check out the…",
    "thumb": "https://i4.ytimg.com/vi/c5V0hdxBHbg/hqdefault.jpg",
    "id": "c854965d5462",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Why Kazakhstan Joined Both the American and Chinese AI Initiatives",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xcku3b/why_kazakhstan_joined_both_the_american_and/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-22T14:56:19.000Z",
+   "summary": "submitted by /u/RUSIOfficial [link] [comments]",
+   "id": "4ebc0226c2e9",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Nothing personal between me and Trump, Zelensky tells CNN",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xcksfq/nothing_personal_between_me_and_trump_zelensky/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-22T14:54:37.000Z",
+   "summary": "submitted by /u/cnn [link] [comments]",
+   "id": "d475261e5f47",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -796,25 +1046,6 @@
    "summary": "Take your personal data back with Incogni! Use code PLEASANTGREEN at the link below and get 60% off an annual plan: https://incogni.com/pleasantgreen Be careful what dating sites you pay for. The guys and girls you talk to may not be who you think! If you have a scam that needs…",
    "thumb": "https://i2.ytimg.com/vi/mypvVHAePnY/hqdefault.jpg",
    "id": "ae7f9c52fc68",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "„Ermittlungen wegen Spionage haben sich drastisch gehäuft“, so ARD-Sicherheitsexperte Holger Schmidt",
-   "url": "https://www.youtube.com/watch?v=UDzLqWwXkC0",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-22T14:21:24.000Z",
-   "summary": "In Brandenburg hat die Polizei einen mutmaßlichen Spion festgenommen. Er soll im Dienste Russlands Rüstungsfirmen ausgespäht haben. Der Mann selbst soll ukrainischer Herkunft sein und aus russisch besetztem Gebiet stammen. Mehr Informationen zu diesem Thema:…",
-   "thumb": "https://i2.ytimg.com/vi/UDzLqWwXkC0/hqdefault.jpg",
-   "id": "2a667ebc0e54",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -872,25 +1103,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Katastrophenschutz im Fernsehen: Polens Bevölkerung bekommt Tipps für den Ernstfall",
-   "url": "https://www.youtube.com/watch?v=_PkfQ3J31VY",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-22T13:58:37.000Z",
-   "summary": "Der hybride Krieg läuft längst: Drohnen im polnischen Luftraum, Cyberangriffe, Sabotage. Darauf sollen sich die 17 Millionen polnischen Haushalte systematisch vorbereiten. Dafür gibt es einen Sicherheitsratgeber. So heißt ein Buch, das die Regierung landesweit verteilt hat. Wie…",
-   "thumb": "https://i4.ytimg.com/vi/_PkfQ3J31VY/hqdefault.jpg",
-   "id": "504cc62e21c3",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Shelagh Fogarty questions Reform councillor over ties to far-right group",
    "url": "https://www.youtube.com/watch?v=aBRqPnTf-cM",
    "source": "LBC",
@@ -904,25 +1116,6 @@
    "summary": "Shelagh Fogarty takes on Reform councillor George Madgwick, who said that ITV's undercover sting 'interfered with elections'. The report uncovered that Mr Madgwick, a councillor in both Hampshire and Portsmouth, was a member of the private Portsmouth Patriots Facebook group.…",
    "thumb": "https://i2.ytimg.com/vi/aBRqPnTf-cM/hqdefault.jpg",
    "id": "682c0f97503d",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Bunker-Welt: Aktiviert die Schweiz jetzt ihre Geheimwaffe? | Stabile Zeitenlage",
-   "url": "https://www.youtube.com/watch?v=xkcLbqV_rSQ",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-22T13:30:11.000Z",
-   "summary": "Die #Schweiz ist bekannt für Berge, Uhren und Fondue. Aber unter der Erde verbergen sich in diesem kleinen Land hunderttausende #Bunker. In den Alpen liegen riesige Festungsanlagen – teilweise mit Platz für hunderte Soldaten. Aber wozu hat die Schweiz diese ganzen Bunker und…",
-   "thumb": "https://i1.ytimg.com/vi/xkcLbqV_rSQ/hqdefault.jpg",
-   "id": "8e044a4a309e",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1030,41 +1223,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Should we be extracting more gas from the UK? | James O’Brien - The Whole Show",
-   "url": "https://www.youtube.com/watch?v=CAN30QyJTkk",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-22T09:35:02.000Z",
-   "summary": "This is a catch-up version of James O'Brien's live, daily show on LBC Radio from the 21st of October 2026. Listen to the full show on the all-new LBC App: https://app.af.lbc.co.uk/btnc/thenewlbcapp #jamesobrien #politics #LBC LBC is the home of live debate around news and…",
-   "thumb": "https://i4.ytimg.com/vi/CAN30QyJTkk/hqdefault.jpg",
-   "id": "6acc2cb80d4a",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "I ran Nato. Putin’s nuclear threat is real, but this is how to stop him",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xcdjdj/i_ran_nato_putins_nuclear_threat_is_real_but_this/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-22T09:07:10.000Z",
-   "summary": "submitted by /u/robhastings [link] [comments]",
-   "id": "788a9d5673cd",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Weekly rant thread",
    "url": "https://www.reddit.com/r/ProductManagement/comments/1xcdfdq/weekly_rant_thread/",
    "source": "r/productmanagement",
@@ -1116,57 +1274,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Zelenskyy backs Ukraine peace talks and presses for direct discussion with Putin",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xcco32/zelenskyy_backs_ukraine_peace_talks_and_presses/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-22T08:10:23.000Z",
-   "summary": "Ukrainian President Volodymyr Zelenskyy has backed plans for the resumption of talks between Ukrainian, American and Russian negotiators, saying that preparing the ground for a future meeting of national leaders is “very important for everyone.” Zelenskyy, who has previously…",
-   "id": "1c9ad4cca5ab",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Gulf Oil Flows Top 24 Million Barrels a Day as Iran Says Situation Is ‘Truly Wartime’; Nournews Flags ‘October Surprise’",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xcbqti/gulf_oil_flows_top_24_million_barrels_a_day_as/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-22T07:11:06.000Z",
-   "summary": "submitted by /u/Beginning-Wish-4273 [link] [comments]",
-   "id": "07aded7129fc",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "U.S. pulls diplomats from Saudi Arabia as it reportedly readies Iran strikes after midterms",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xcbl1c/us_pulls_diplomats_from_saudi_arabia_as_it/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-22T07:01:19.000Z",
-   "summary": "submitted by /u/kai_vt [link] [comments]",
-   "id": "b296d15fc21d",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Is it normal for a Product Owner to suddenly be expected to manage developers?",
    "url": "https://www.reddit.com/r/ProductManagement/comments/1xcauad/is_it_normal_for_a_product_owner_to_suddenly_be/",
    "source": "r/productmanagement",
@@ -1178,41 +1285,6 @@
    "published": "2026-10-22T06:15:37.000Z",
    "summary": "I recently joined a small software company as a Product Owner. I have several years of experience in product and project management, but people management was never mentioned during my interviews or onboarding. About two weeks after I joined, HR sent me a meeting invitation and…",
    "id": "5603d93726fc",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Trump envoy calls Putin a 'humanitarian' | Simon Marks reacts",
-   "url": "https://www.youtube.com/watch?v=5TApNZz4FIc",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-22T06:00:08.000Z",
-   "summary": "Simon Marks reacts after US Special Envoy Steve Witkoff praised the Russian President as a “humanitarian” during a visit to Moscow. After hearing from former Conservative MP Tobias Ellwood and former National Security Adviser Sir Mark Lyall Grant on whether Britain and Europe…",
-   "thumb": "https://i2.ytimg.com/vi/5TApNZz4FIc/hqdefault.jpg",
-   "id": "e865b01f0ecc",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "How Ukraine’s drone strikes on Russia crippled the world’s second-largest diesel supplier",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xc4s78/how_ukraines_drone_strikes_on_russia_crippled_the/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-22T01:00:03.000Z",
-   "summary": "submitted by /u/foodie_2598 [link] [comments]",
-   "id": "0bd70cca7c4d",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -2099,23 +2171,6 @@
    "why": "0"
   },
   {
-   "title": "Toddler Sh0t His Teacher... Meet His Parent",
-   "url": "https://www.youtube.com/watch?v=iBnOJClC2sM",
-   "source": "Aberrant preach",
-   "feedId": "yt-aberrant-preach",
-   "type": "video",
-   "tags": [
-    "trash"
-   ],
-   "published": "2026-10-16T19:55:47.000Z",
-   "summary": "We covered a story of a 6 year old who brought a g*n to school and wounded his teacher Abigail Zwerner. Now we have bodycam of what happened that day ———————————— Spotify: https://open.spotify.com/artist/6QJIJ6AugqPEFASp1V6zgH Merchandise ---…",
-   "thumb": "https://i2.ytimg.com/vi/iBnOJClC2sM/hqdefault.jpg",
-   "id": "5ac978390cd9",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "Liberals vs. Conservatives Get Fact-Checked Live | Checkmate",
    "url": "https://www.youtube.com/watch?v=0t1jSu-C9KU",
    "source": "Jubilee",
@@ -2238,24 +2293,6 @@
    "summary": "Germany should stop financing an “already lost war” in Ukraine, says Alice Weidel. The co-leader of the populist-right Alternative for Germany, speaks to Zanny Minton Beddoes, The Economist’s editor-in-chief. Weidel argues that peace requires taking Russia’s security interests…",
    "thumb": "https://i2.ytimg.com/vi/5sorengsI0I/hqdefault.jpg",
    "id": "7313af3ed534",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Mindy Kaling Calls Polygons Ingenious | Shark Tank US | Shark Tank Global",
-   "url": "https://www.youtube.com/watch?v=xm1ShtnwIgU",
-   "source": "Shark Tank Global",
-   "feedId": "yt-shark-tank-global",
-   "type": "video",
-   "tags": [
-    "trash",
-    "business"
-   ],
-   "published": "2026-10-15T16:00:01.000Z",
-   "summary": "Rahul Agarwal enters the tank seeking $350K for a 7% stake in his company, Polygons. From Season 18 Episode 4 Watch Shark Tank US Now: http://AAN.SonyPictures.com/SharkTankUSHulu Subscribe to the Shark Tank Global channel: https://bit.ly/SharkTankGlobal Follow Us On Social:…",
-   "thumb": "https://i1.ytimg.com/vi/xm1ShtnwIgU/hqdefault.jpg",
-   "id": "224a00c7e477",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2787,98 +2824,7 @@
    "score": 0,
    "matched": [],
    "why": "0"
-  },
-  {
-   "title": "Mom Stays Home. Can Anyone Still Afford it? | Rachel Wilson Vs NSE",
-   "url": "https://www.youtube.com/watch?v=_atC05LGhfk",
-   "source": "Modern-Day Debate",
-   "feedId": "yt-modern-day-debate",
-   "type": "video",
-   "tags": [
-    "debates",
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-08T18:00:40.000Z",
-   "summary": "DEBATECON 9 will be in Orlando, FL on October 24/25th! LET’S GOOOOO! https://events.eventnoire.com/e/debatecon-9-by-modern-day-debate-2 OUR INSIDER'S EMAIL LIST FOR DEBATECON DISCOUNTS: https://forms.gle/rK5aqPAzAZXiDpDz9 *If you want a discount on DEBATECON 9 tickets and are…",
-   "thumb": "https://i4.ytimg.com/vi/_atC05LGhfk/hqdefault.jpg",
-   "id": "217eb8c23ebe",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "The new revolution in democracy has arrived. Play The Onion Voting Simulator 3D now",
-   "url": "https://www.youtube.com/watch?v=9iVXv-topXU",
-   "source": "The Onion",
-   "feedId": "yt-the-onion",
-   "type": "video",
-   "tags": [
-    "comedy"
-   ],
-   "published": "2026-10-08T17:30:36.000Z",
-   "summary": "Now available at https://theonion.com/voting-simulator/ Become an Onion member while it's still optional: https://membership.theonion.com/?campaign=701a500001geULHAA2",
-   "thumb": "https://i2.ytimg.com/vi/9iVXv-topXU/hqdefault.jpg",
-   "id": "60ae24780107",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "AI Keeps Pissing Off Mathematicians",
-   "url": "https://www.youtube.com/watch?v=SoLWCYnc-Bs",
-   "source": "ColdFusion",
-   "feedId": "yt-coldfusion",
-   "type": "video",
-   "tags": [
-    "finance",
-    "tech",
-    "listen"
-   ],
-   "published": "2026-10-08T17:05:21.000Z",
-   "summary": "Description: Visit https://brilliant.org/coldfusion to try Brilliant’s tutor for free and get 20% off an annual subscription. Tristan Buckmaster is at the centre of an unlikely controversy involving OpenAI and the pursuit of mathematics. Tristan claims that his chatlogs may…",
-   "thumb": "https://i4.ytimg.com/vi/SoLWCYnc-Bs/hqdefault.jpg",
-   "id": "8d87b874b34c",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "NATO 3.0: Will America defend Europe against Russia? | The Economist",
-   "url": "https://www.youtube.com/watch?v=htFXw5Dw3Qk",
-   "source": "The Economist",
-   "feedId": "yt-the-economist",
-   "type": "video",
-   "tags": [
-    "finance",
-    "business"
-   ],
-   "published": "2026-10-08T16:59:38.000Z",
-   "summary": "America is reviewing where it keeps its forces, at a delicate moment for NATO. Shashank Joshi, host of Inside Defence, sits down with Sir Richard Knighton, Britain’s Chief of the Defence Staff, in Washington to ask what Europe can bank on from America if war breaks out in the…",
-   "thumb": "https://i1.ytimg.com/vi/htFXw5Dw3Qk/hqdefault.jpg",
-   "id": "0190af130b16",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Tehran Streets",
-   "url": "https://www.youtube.com/watch?v=hrjzF9r4DpQ",
-   "source": "Channel 5 with Andrew Callaghan",
-   "feedId": "yt-channel-5-with-andrew-callaghan",
-   "type": "video",
-   "tags": [
-    "education",
-    "politics"
-   ],
-   "published": "2026-10-08T15:55:37.000Z",
-   "summary": "Go to https://ground.news/c5 to stay fully informed with all sides of every story. Subscribe for 40% off the Vantage plan through my link. To see our newest video ‘Berlin Streets’, head to our Patreon at https://www.patreon.com/channel5 To listen to 431n, go to…",
-   "thumb": "https://i1.ytimg.com/vi/hrjzF9r4DpQ/hqdefault.jpg",
-   "id": "ec775addea59",
-   "score": 0,
-   "matched": [],
-   "why": "0"
   }
  ],
- "contentHash": "f7d3ad23b685"
+ "contentHash": "bcb3c7ed584b"
 }
