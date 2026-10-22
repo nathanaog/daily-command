@@ -1,17 +1,17 @@
 {
- "generated": "2026-10-22T13:06:20.761Z",
+ "generated": "2026-10-22T15:52:35.606Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
   "ok": 51,
-  "items": 120,
+  "items": 122,
   "duplicatesMerged": 0,
   "lengthsKnown": 1,
-  "lengthLookups": 99,
-  "lengthFailures": 99,
+  "lengthLookups": 101,
+  "lengthFailures": 101,
   "lengthVia": "video pages",
   "lengthFailReasons": {
-   "no length on page": 99
+   "no length on page": 101
   }
  },
  "feeds": [
@@ -111,7 +111,7 @@
    "name": "Pleasant Green",
    "type": "youtube",
    "status": "ok",
-   "count": 0,
+   "count": 1,
    "resolved": {
     "channelId": "UCAPrhJwVweWZA8GEPoClSdw",
     "title": "Pleasant Green",
@@ -228,7 +228,7 @@
    "name": "Simplicissimus",
    "type": "youtube",
    "status": "ok",
-   "count": 2,
+   "count": 3,
    "resolved": {
     "channelId": "UCKGMHVipEvuZudhHD05FOYA",
     "title": "Simplicissimus",
@@ -630,20 +630,19 @@
    "id": "rd-productmanagement",
    "name": "r/productmanagement",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/productmanagement/top/.rss?t=day"
+   "lastOk": "2026-10-22T13:06:20.761Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-tech",
    "name": "r/tech",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": "2026-10-15T21:49:52.028Z",
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-gaming",
@@ -652,16 +651,15 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-10-22T07:12:12.087Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
   },
   {
    "id": "rd-xbox",
@@ -670,7 +668,7 @@
    "status": "cached",
    "count": 5,
    "lastOk": "2026-10-21T15:54:55.125Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)"
   },
   {
    "id": "rd-slaythespire",
@@ -679,7 +677,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-geopolitics",
@@ -711,7 +709,243 @@
  ],
  "items": [
   {
-   "title": "James O'Brien reacts to Steve Witkoff calling Putin a 'humanitarian'",
+   "title": "EU-Parlament: Hält der Verbrenner-Kompromiss?",
+   "url": "https://www.youtube.com/watch?v=OAOOORbMztw",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-22T15:11:22.000Z",
+   "summary": "Bei den ersten Abstimmungen im Europaparlament hat sich die Mehrheit der Abgeordneten für eine Lockerung des Verbrenner-Aus ausgesprochen. Der Industrie- und der Verkehrsausschuss stimmten einem Vorschlag zu, den Unterhändler:innen der konservativen EVP, der…",
+   "thumb": "https://i4.ytimg.com/vi/OAOOORbMztw/hqdefault.jpg",
+   "id": "f4b9512f3c08",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Lewis Goodall reacts to Trump's bizarre midterm rally",
+   "url": "https://www.youtube.com/watch?v=jQ03uVjKMnE",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-22T15:03:14.000Z",
+   "summary": "Lewis Goodall and Shelagh Fogarty react to Trump's bizarre speech at a rally in South Carolina on Wednesday. Listen to the full show on the all-new LBC App: https://app.af.lbc.co.uk/btnc/thenewlbcapp #shelaghfogarty #lewisgoodall #donaldtrump #trump #uspolitics #midterms…",
+   "thumb": "https://i3.ytimg.com/vi/jQ03uVjKMnE/hqdefault.jpg",
+   "id": "0db1e3729825",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Private Equity is RUINING Coffee",
+   "url": "https://www.youtube.com/watch?v=c5V0hdxBHbg",
+   "source": "Levi Hildebrand",
+   "feedId": "yt-levi-hildebrand",
+   "type": "video",
+   "tags": [
+    "comedy",
+    "business"
+   ],
+   "published": "2026-10-22T15:00:13.000Z",
+   "summary": "Enjoy 1 month of Wispr Flow Pro using my link: https://ref.wisprflow.ai/levi-hildebrand-yt Subscribe! https://www.youtube.com/channel/UC-OJ-24roEfQ_-PCnLJSckg?sub_confirmation=1 Join our Patreon: https://www.patreon.com/c/LeviHildebrand For further reading, check out the…",
+   "thumb": "https://i4.ytimg.com/vi/c5V0hdxBHbg/hqdefault.jpg",
+   "id": "c854965d5462",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "„Mutterschaft wird in Deutschland finanziell bestraft\", sagt Finanzbloggerin Natascha Wegelin",
+   "url": "https://www.youtube.com/watch?v=81lh9ODzNYY",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-22T14:32:09.000Z",
+   "summary": "Natascha Wegelin hat eine Mission: Die Autorin, Finanz-Bloggerin und Unternehmerin möchte Frauen in finanzielle Sicherheit und Selbstbestimmtheit begleiten. Unter dem „Madame Moneypenny“ informiert sie im Internet und bei Mentoring-Programmen, wie Frauen ihre…",
+   "thumb": "https://i1.ytimg.com/vi/81lh9ODzNYY/hqdefault.jpg",
+   "id": "98a16b197baf",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "The Women on Dating Sites Aren't Who You Think",
+   "url": "https://www.youtube.com/watch?v=mypvVHAePnY",
+   "source": "Pleasant Green",
+   "feedId": "yt-pleasant-green",
+   "type": "video",
+   "tags": [
+    "comedy",
+    "entertainment"
+   ],
+   "published": "2026-10-22T14:26:09.000Z",
+   "summary": "Take your personal data back with Incogni! Use code PLEASANTGREEN at the link below and get 60% off an annual plan: https://incogni.com/pleasantgreen Be careful what dating sites you pay for. The guys and girls you talk to may not be who you think! If you have a scam that needs…",
+   "thumb": "https://i2.ytimg.com/vi/mypvVHAePnY/hqdefault.jpg",
+   "id": "ae7f9c52fc68",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "„Ermittlungen wegen Spionage haben sich drastisch gehäuft“, so ARD-Sicherheitsexperte Holger Schmidt",
+   "url": "https://www.youtube.com/watch?v=UDzLqWwXkC0",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-22T14:21:24.000Z",
+   "summary": "In Brandenburg hat die Polizei einen mutmaßlichen Spion festgenommen. Er soll im Dienste Russlands Rüstungsfirmen ausgespäht haben. Der Mann selbst soll ukrainischer Herkunft sein und aus russisch besetztem Gebiet stammen. Mehr Informationen zu diesem Thema:…",
+   "thumb": "https://i2.ytimg.com/vi/UDzLqWwXkC0/hqdefault.jpg",
+   "id": "2a667ebc0e54",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Reform UK and Greens no longer considered main parties, stark new poll shows",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xcjfg2/reform_uk_and_greens_no_longer_considered_main/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-22T14:01:59.000Z",
+   "summary": "submitted by /u/theindependentonline [link] [comments]",
+   "id": "1dda692df798",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Der Spion bei der AfD",
+   "url": "https://www.youtube.com/watch?v=HHuIcNUFpbI",
+   "source": "Simplicissimus",
+   "feedId": "yt-simplicissimus",
+   "type": "video",
+   "tags": [
+    "german",
+    "education"
+   ],
+   "published": "2026-10-22T14:00:24.000Z",
+   "summary": "In der CLARK App kannst du bestehende Versicherungen hochladen, neue vergleichen und abschließen. Mit dem Code „SIMPLI“ bekommst du Gutscheine im Wert von bis zu 45 € für die ersten drei hochgeladenen Versicherungen unter https://simpli.deals/clark106 (Werbung) NordVPN bietet…",
+   "thumb": "https://i1.ytimg.com/vi/HHuIcNUFpbI/hqdefault.jpg",
+   "id": "890642320f20",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "How Undercover Policing Really Works With Former Drug Cop",
+   "url": "https://www.youtube.com/watch?v=0oV6mRywoVE",
+   "source": "PoliticsJOE",
+   "feedId": "yt-politicsjoe",
+   "type": "video",
+   "tags": [
+    "comedy"
+   ],
+   "published": "2026-10-22T14:00:07.000Z",
+   "summary": "How does undercover policing really work, and what happens when the people tasked with fighting crime begin to question the system they're working for? For our Systemic series, we sat down with Neil Woods, a former undercover drug police officer, to get a first hand account of…",
+   "thumb": "https://i1.ytimg.com/vi/0oV6mRywoVE/hqdefault.jpg",
+   "id": "2b6f7a0c17ab",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Katastrophenschutz im Fernsehen: Polens Bevölkerung bekommt Tipps für den Ernstfall",
+   "url": "https://www.youtube.com/watch?v=_PkfQ3J31VY",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-22T13:58:37.000Z",
+   "summary": "Der hybride Krieg läuft längst: Drohnen im polnischen Luftraum, Cyberangriffe, Sabotage. Darauf sollen sich die 17 Millionen polnischen Haushalte systematisch vorbereiten. Dafür gibt es einen Sicherheitsratgeber. So heißt ein Buch, das die Regierung landesweit verteilt hat. Wie…",
+   "thumb": "https://i4.ytimg.com/vi/_PkfQ3J31VY/hqdefault.jpg",
+   "id": "504cc62e21c3",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Shelagh Fogarty questions Reform councillor over ties to far-right group",
+   "url": "https://www.youtube.com/watch?v=aBRqPnTf-cM",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-22T13:54:09.000Z",
+   "summary": "Shelagh Fogarty takes on Reform councillor George Madgwick, who said that ITV's undercover sting 'interfered with elections'. The report uncovered that Mr Madgwick, a councillor in both Hampshire and Portsmouth, was a member of the private Portsmouth Patriots Facebook group.…",
+   "thumb": "https://i2.ytimg.com/vi/aBRqPnTf-cM/hqdefault.jpg",
+   "id": "682c0f97503d",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Bunker-Welt: Aktiviert die Schweiz jetzt ihre Geheimwaffe? | Stabile Zeitenlage",
+   "url": "https://www.youtube.com/watch?v=xkcLbqV_rSQ",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-22T13:30:11.000Z",
+   "summary": "Die #Schweiz ist bekannt für Berge, Uhren und Fondue. Aber unter der Erde verbergen sich in diesem kleinen Land hunderttausende #Bunker. In den Alpen liegen riesige Festungsanlagen – teilweise mit Platz für hunderte Soldaten. Aber wozu hat die Schweiz diese ganzen Bunker und…",
+   "thumb": "https://i1.ytimg.com/vi/xkcLbqV_rSQ/hqdefault.jpg",
+   "id": "8e044a4a309e",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Andy Burnham to appear on Celebrity Gogglebox for Stand Up To Cancer special",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xchip0/andy_burnham_to_appear_on_celebrity_gogglebox_for/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-22T12:42:43.000Z",
+   "summary": "submitted by /u/thesun [link] [comments]",
+   "id": "1da8a342508d",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "'This turns my stomach': Steve Witkoff calls Putin a 'humanitarian'",
    "url": "https://www.youtube.com/watch?v=1JrLVJNUATM",
    "source": "LBC",
    "feedId": "yt-lbc",
@@ -729,58 +963,52 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Radebeul: Ehrenamtliche päppeln Igel auf | tagesthemen mittendrin",
-   "url": "https://www.youtube.com/watch?v=DFpGRoVS1XI",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
+   "title": "The 'trillion pound' oil fund the government believes Britain could have built",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xch1hz/the_trillion_pound_oil_fund_the_government/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
    "tags": [
-    "german",
-    "news",
-    "listen"
+    "politics",
+    "british"
    ],
-   "published": "2026-10-22T11:59:37.000Z",
-   "summary": "Gesunde Igel brauchen keine Hilfe von Menschen - aber es gibt auch kranke, verletzte oder stark abgemagerte Tiere. In Radebeul in Sachsen gibt es den Verein Igelhilfe, der diesen Tieren hilft - und er hat jede Menge zu tun. Mehr tagesthemen mittendrin Reportagen hier:…",
-   "thumb": "https://i1.ytimg.com/vi/DFpGRoVS1XI/hqdefault.jpg",
-   "id": "5d4e13059784",
+   "published": "2026-10-22T12:20:28.000Z",
+   "summary": "submitted by /u/BigSupermark [link] [comments]",
+   "id": "5566982b0789",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Keine Patriot-Raketen: Was der US-Lieferstopp für die Ukraine bedeutet",
-   "url": "https://www.youtube.com/watch?v=HQjcJoc-4_w",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
+   "title": "London Green councillors encourage people 'inspired by the protests in France' to join demonstration",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xcgn94/london_green_councillors_encourage_people/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
    "tags": [
-    "german",
-    "news",
-    "listen"
+    "politics",
+    "british"
    ],
-   "published": "2026-10-22T11:48:31.000Z",
-   "summary": "Aller Friedensbemühungen zum Trotz: Russland hat die Ukraine erneut mit Raketen angegriffen, es gab Explosionen in Kiew und Odessa. Gestern hatte Russlands Präsident Putin den US-Sondergesandten Witkoff in Sankt Petersburg empfangen. Im Anschluss hieß es aus dem Kreml: Man sei…",
-   "thumb": "https://i1.ytimg.com/vi/HQjcJoc-4_w/hqdefault.jpg",
-   "id": "9b97a0f3aba6",
+   "published": "2026-10-22T12:01:34.000Z",
+   "summary": "submitted by /u/United-Artist1857 [link] [comments]",
+   "id": "db500da04518",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "„Update dringend installieren!“ – ARD-Reporter über die massive Sicherheitslücke im Netz",
-   "url": "https://www.youtube.com/watch?v=_2iHLjFaED8",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
+   "title": "Oxfam pays white staff 33pc less: Cancer Research UK and British Red Cross also report ‘negative pay gaps’ amid criticism of positive action policies",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xcghe7/oxfam_pays_white_staff_33pc_less_cancer_research/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
    "tags": [
-    "german",
-    "news",
-    "listen"
+    "politics",
+    "british"
    ],
-   "published": "2026-10-22T10:29:15.000Z",
-   "summary": "Eine Schockwelle ist gestern durch die Internet-Welt gerollt: Wegen einer Sicherheitslücke bei der weit verbreiteten Programmiersprache PHP sind viele Websites aktuell offline – vom einfachen Blog über große Nachrichtenportale bis hin zu komplexen Onlineshops. Auch heute gibt…",
-   "thumb": "https://i4.ytimg.com/vi/_2iHLjFaED8/hqdefault.jpg",
-   "id": "6149ec0fbb57",
+   "published": "2026-10-22T11:54:02.000Z",
+   "summary": "submitted by /u/Alti-Ok [link] [comments]",
+   "id": "41347d4ce6bf",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -815,25 +1043,6 @@
    "summary": "This is a catch-up version of James O'Brien's live, daily show on LBC Radio from the 21st of October 2026. Listen to the full show on the all-new LBC App: https://app.af.lbc.co.uk/btnc/thenewlbcapp #jamesobrien #politics #LBC LBC is the home of live debate around news and…",
    "thumb": "https://i4.ytimg.com/vi/CAN30QyJTkk/hqdefault.jpg",
    "id": "6acc2cb80d4a",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Gefährlicher Kampf gegen Asiatische Hornisse | ARD Morgenmagazin",
-   "url": "https://www.youtube.com/watch?v=DqPg0ZKw680",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-22T09:21:44.000Z",
-   "summary": "Seit zwölf Jahren nun schon breitet sich die Asiatische Hornisse in Deutschland aus. Aus einem einzigen Nest können im Herbst hunderte Jungköniginnen ausfliegen und im Frühjahr neue Völker gründen. Wer die Nester beseitigt, bringt sich aber selbst in Gefahr: Die Hornissen…",
-   "thumb": "https://i1.ytimg.com/vi/DqPg0ZKw680/hqdefault.jpg",
-   "id": "ccb1fc068195",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -883,25 +1092,6 @@
    "published": "2026-10-22T08:59:38.000Z",
    "summary": "I work with high tech software. I'm a realist at heart and I've always been used to progress being linear. But it is not. Progress is so fast I almost can't believe it, it's exponential. 1 year ago my mates were laughing at ideas like \"do we need developers\" \"do we need…",
    "id": "3e673e520d16",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Wer steckt hinter den Schüssen auf Geschäfte in NRW?",
-   "url": "https://www.youtube.com/watch?v=X8TLxfv3ymk",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-22T08:36:42.000Z",
-   "summary": "Explosionen, Schüsse auf Geschäfte und Erpressung – das ist kein Fernsehkrimi sondern die Realität in so mancher deutschen Großstadt. Dahinter steckt oft Organisierte Kriminalität. Das Vorgehen wird dabei brutaler und die Täter:innen sind immer jünger. Jugendliche und junge…",
-   "thumb": "https://i1.ytimg.com/vi/X8TLxfv3ymk/hqdefault.jpg",
-   "id": "0971ac0425d7",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1011,24 +1201,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "MAGA Hosts Go DEAD SILENT as Co-Host EXPOSES TRUMP On Air!",
-   "url": "https://www.youtube.com/watch?v=5vqYOA3xPoQ",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-22T01:42:27.000Z",
-   "summary": "Luke discusses a recent moment from Fox News' The Five. Check out Jessica Tarlov's new book below! https://sites.prh.com/idisagree Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join…",
-   "thumb": "https://i2.ytimg.com/vi/5vqYOA3xPoQ/hqdefault.jpg",
-   "id": "7b3c4c24f724",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "How Ukraine’s drone strikes on Russia crippled the world’s second-largest diesel supplier",
    "url": "https://www.reddit.com/r/geopolitics/comments/1xc4s78/how_ukraines_drone_strikes_on_russia_crippled_the/",
    "source": "r/geopolitics",
@@ -1041,40 +1213,6 @@
    "published": "2026-10-22T01:00:03.000Z",
    "summary": "submitted by /u/foodie_2598 [link] [comments]",
    "id": "0bd70cca7c4d",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Many migrants pay 60% more to the NHS than costs of the health care they use",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xbz0kc/many_migrants_pay_60_more_to_the_nhs_than_costs/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-21T20:49:53.000Z",
-   "summary": "submitted by /u/throwawayjustbc826 [link] [comments]",
-   "id": "9460920b2f4a",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Reform UK fined for failing to declare it was publisher of campaigns material | Party given additional penalty by Electoral Commission for not paying original fine on time",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xbx5ex/reform_uk_fined_for_failing_to_declare_it_was/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-21T19:38:48.000Z",
-   "summary": "submitted by /u/whencanistop [link] [comments]",
-   "id": "857837c7bd43",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1160,6 +1298,24 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
+   "title": "MAGA Hosts Go DEAD SILENT as Co-Host EXPOSES TRUMP On Air!",
+   "url": "https://www.youtube.com/watch?v=5vqYOA3xPoQ",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-22T01:42:27.000Z",
+   "summary": "Luke discusses a recent moment from Fox News' The Five. Check out Jessica Tarlov's new book below! https://sites.prh.com/idisagree Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join…",
+   "thumb": "https://i2.ytimg.com/vi/5vqYOA3xPoQ/hqdefault.jpg",
+   "id": "7b3c4c24f724",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
    "title": "How to collab with Biz Ops?",
    "url": "https://www.reddit.com/r/ProductManagement/comments/1xc4l13/how_to_collab_with_biz_ops/",
    "source": "r/productmanagement",
@@ -1212,41 +1368,6 @@
    "why": "0"
   },
   {
-   "title": "Iain Dale shuts down caller defending Russian oil",
-   "url": "https://www.youtube.com/watch?v=jiOAbB4uzN0",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-21T19:34:09.000Z",
-   "summary": "Should Britain improve relations with Russia and Iran if it means cheaper and more secure energy? Iain Dale has a furious exchange with caller James after he argues that Britain should consider importing energy from countries including Russia and Iran, if we're serious about…",
-   "thumb": "https://i3.ytimg.com/vi/jiOAbB4uzN0/hqdefault.jpg",
-   "id": "b1da892a7d62",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "British Medical Association lambasts NHS England’s single-sex spaces guidance",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xbw578/british_medical_association_lambasts_nhs_englands/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-21T19:01:49.000Z",
-   "summary": "submitted by /u/MasterDineo [link] [comments]",
-   "id": "33226f8a1731",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "Ruined His Life After Stealing A Water Bottle",
    "url": "https://www.youtube.com/watch?v=3ZqLtS5AEyw",
    "source": "Aberrant preach",
@@ -1259,58 +1380,6 @@
    "summary": "Gym bro freaks out once he sees a guy with Yeti water bottle he thinks its his. But the internet did not let him get away with that one ———————————— Spotify: https://open.spotify.com/artist/6QJIJ6AugqPEFASp1V6zgH Merchandise ---…",
    "thumb": "https://i4.ytimg.com/vi/3ZqLtS5AEyw/hqdefault.jpg",
    "id": "6d8d19dcb58f",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "‘I have no words…’ | US envoy ‘grovelling’ over Putin",
-   "url": "https://www.youtube.com/watch?v=1GYpIHV0oyo",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-21T18:15:55.000Z",
-   "summary": "Andrew Marr speaks to Anti-Corruption Campaigner and Head of Global Magnitsky Justice Campaign Bill Browder and LBC's Natasha Clark about the US envoy to Russia Steve Witkoff's 'vile' statement about Putin being 'a humanitarian'. Putin was hosting US special envoy Steve Witkoff…",
-   "thumb": "https://i2.ytimg.com/vi/1GYpIHV0oyo/hqdefault.jpg",
-   "id": "4c3bc0babcca",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "“Generational moment” as government acts on landmark antisemitism in schools and colleges review",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xbusvo/generational_moment_as_government_acts_on/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-21T18:12:49.000Z",
-   "summary": "submitted by /u/PriorPlatypusPal [link] [comments]",
-   "id": "a59617c73fac",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Mahmood migration talks axed after union demands care worker joins private meeting",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xbubhg/mahmood_migration_talks_axed_after_union_demands/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-21T17:55:43.000Z",
-   "summary": "submitted by /u/theipaper [link] [comments]",
-   "id": "41881363e674",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2025,23 +2094,6 @@
    "summary": "Go to http://ground.news/pb for a better way to stay informed. Subscribe for 40% off unlimited access to worldwide coverage through my link. In October 2026, Ukrainian drone strikes knocked out three of Yandex’s six major data centers, and a viral chart claimed that Russian…",
    "thumb": "https://i3.ytimg.com/vi/JnceIDVMZyQ/hqdefault.jpg",
    "id": "b317aa72b904",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Ireland Grinds to a Halt amid Biggest Strike in Nearly 20 years",
-   "url": "https://www.youtube.com/watch?v=5GL6eZEOojE",
-   "source": "PoliticsJOE",
-   "feedId": "yt-politicsjoe",
-   "type": "video",
-   "tags": [
-    "comedy"
-   ],
-   "published": "2026-10-17T09:00:03.000Z",
-   "summary": "Public sector workers across Ireland walked out today in the biggest strike Ireland has seen in 17 years, with about 300,000 predicted to be on the picket calling for better pay and conditions as the cost of living crisis continues to bite. We went down to a picket at Dublin's…",
-   "thumb": "https://i2.ytimg.com/vi/5GL6eZEOojE/hqdefault.jpg",
-   "id": "a382d0cf68fe",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2826,25 +2878,7 @@
    "score": 0,
    "matched": [],
    "why": "0"
-  },
-  {
-   "title": "Pet Overconsumption is OUT OF CONTROL",
-   "url": "https://www.youtube.com/watch?v=ViczVnzq0yQ",
-   "source": "Levi Hildebrand",
-   "feedId": "yt-levi-hildebrand",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "business"
-   ],
-   "published": "2026-10-08T15:00:40.000Z",
-   "summary": "Every year the pet product industry is worth more and more, and people are buying! Between pet categories on SHEIN and TEMU, AI slop items all over social media, and the rise of the pet wellness industry... we have plenty to discuss. Subscribe!…",
-   "thumb": "https://i3.ytimg.com/vi/ViczVnzq0yQ/hqdefault.jpg",
-   "id": "ebbb3d42e9fa",
-   "score": 0,
-   "matched": [],
-   "why": "0"
   }
  ],
- "contentHash": "51838e70574c"
+ "contentHash": "f7d3ad23b685"
 }
