@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-22T09:55:28.039Z",
+ "generated": "2026-10-22T13:06:20.761Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
@@ -630,19 +630,20 @@
    "id": "rd-productmanagement",
    "name": "r/productmanagement",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-10-22T03:54:18.651Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/productmanagement/top/.rss?t=day"
   },
   {
    "id": "rd-tech",
    "name": "r/tech",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": "2026-10-15T21:49:52.028Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-gaming",
@@ -651,7 +652,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-ukpolitics",
@@ -684,20 +685,19 @@
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
+   "lastOk": "2026-10-22T09:55:28.039Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-germany",
    "name": "r/germany",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": "2026-10-15T00:59:57.533Z",
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-unitedkingdom",
@@ -706,10 +706,101 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   }
  ],
  "items": [
+  {
+   "title": "James O'Brien reacts to Steve Witkoff calling Putin a 'humanitarian'",
+   "url": "https://www.youtube.com/watch?v=1JrLVJNUATM",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-22T12:24:30.000Z",
+   "summary": "James O'Brien reacts as US special envoy Steve Witkoff calls Putin a 'humanitarian' during his visit to St Petersburg. Hours before the talks, a Russian drone strike on Kharkiv Oblast killed two elderly residents and injured 11 people, including two children. Mr Putin thanked…",
+   "thumb": "https://i2.ytimg.com/vi/1JrLVJNUATM/hqdefault.jpg",
+   "id": "ebbef5efacf1",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Radebeul: Ehrenamtliche päppeln Igel auf | tagesthemen mittendrin",
+   "url": "https://www.youtube.com/watch?v=DFpGRoVS1XI",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-22T11:59:37.000Z",
+   "summary": "Gesunde Igel brauchen keine Hilfe von Menschen - aber es gibt auch kranke, verletzte oder stark abgemagerte Tiere. In Radebeul in Sachsen gibt es den Verein Igelhilfe, der diesen Tieren hilft - und er hat jede Menge zu tun. Mehr tagesthemen mittendrin Reportagen hier:…",
+   "thumb": "https://i1.ytimg.com/vi/DFpGRoVS1XI/hqdefault.jpg",
+   "id": "5d4e13059784",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Keine Patriot-Raketen: Was der US-Lieferstopp für die Ukraine bedeutet",
+   "url": "https://www.youtube.com/watch?v=HQjcJoc-4_w",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-22T11:48:31.000Z",
+   "summary": "Aller Friedensbemühungen zum Trotz: Russland hat die Ukraine erneut mit Raketen angegriffen, es gab Explosionen in Kiew und Odessa. Gestern hatte Russlands Präsident Putin den US-Sondergesandten Witkoff in Sankt Petersburg empfangen. Im Anschluss hieß es aus dem Kreml: Man sei…",
+   "thumb": "https://i1.ytimg.com/vi/HQjcJoc-4_w/hqdefault.jpg",
+   "id": "9b97a0f3aba6",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "„Update dringend installieren!“ – ARD-Reporter über die massive Sicherheitslücke im Netz",
+   "url": "https://www.youtube.com/watch?v=_2iHLjFaED8",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-22T10:29:15.000Z",
+   "summary": "Eine Schockwelle ist gestern durch die Internet-Welt gerollt: Wegen einer Sicherheitslücke bei der weit verbreiteten Programmiersprache PHP sind viele Websites aktuell offline – vom einfachen Blog über große Nachrichtenportale bis hin zu komplexen Onlineshops. Auch heute gibt…",
+   "thumb": "https://i4.ytimg.com/vi/_2iHLjFaED8/hqdefault.jpg",
+   "id": "6149ec0fbb57",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "If AI is making product delivery faster, how are teams keeping up with product discovery?",
+   "url": "https://www.reddit.com/r/ProductManagement/comments/1xce545/if_ai_is_making_product_delivery_faster_how_are/",
+   "source": "r/productmanagement",
+   "feedId": "rd-productmanagement",
+   "type": "post",
+   "tags": [
+    "product"
+   ],
+   "published": "2026-10-22T09:44:55.000Z",
+   "summary": "I’m relatively new to product management (was a designer before), so I figured more experienced PMs might have better product sense than me, and I wanted to ask how you’re dealing with this in your teams. With tech advancing and delivery getting cheaper and faster because of…",
+   "id": "e362c8961549",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
   {
    "title": "Should we be extracting more gas from the UK? | James O’Brien - The Whole Show",
    "url": "https://www.youtube.com/watch?v=CAN30QyJTkk",
@@ -765,6 +856,38 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
+   "title": "Weekly rant thread",
+   "url": "https://www.reddit.com/r/ProductManagement/comments/1xcdfdq/weekly_rant_thread/",
+   "source": "r/productmanagement",
+   "feedId": "rd-productmanagement",
+   "type": "post",
+   "tags": [
+    "product"
+   ],
+   "published": "2026-10-22T09:00:30.000Z",
+   "summary": "Share your frustrations and get support/feedback. You are not alone! submitted by /u/AutoModerator [link] [comments]",
+   "id": "38c08e5f80b0",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "No feeling to describe where SaaS seems to be going",
+   "url": "https://www.reddit.com/r/ProductManagement/comments/1xcdes6/no_feeling_to_describe_where_saas_seems_to_be/",
+   "source": "r/productmanagement",
+   "feedId": "rd-productmanagement",
+   "type": "post",
+   "tags": [
+    "product"
+   ],
+   "published": "2026-10-22T08:59:38.000Z",
+   "summary": "I work with high tech software. I'm a realist at heart and I've always been used to progress being linear. But it is not. Progress is so fast I almost can't believe it, it's exponential. 1 year ago my mates were laughing at ideas like \"do we need developers\" \"do we need…",
+   "id": "3e673e520d16",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
    "title": "Wer steckt hinter den Schüssen auf Geschäfte in NRW?",
    "url": "https://www.youtube.com/watch?v=X8TLxfv3ymk",
    "source": "Tagesschau",
@@ -779,25 +902,6 @@
    "summary": "Explosionen, Schüsse auf Geschäfte und Erpressung – das ist kein Fernsehkrimi sondern die Realität in so mancher deutschen Großstadt. Dahinter steckt oft Organisierte Kriminalität. Das Vorgehen wird dabei brutaler und die Täter:innen sind immer jünger. Jugendliche und junge…",
    "thumb": "https://i1.ytimg.com/vi/X8TLxfv3ymk/hqdefault.jpg",
    "id": "0971ac0425d7",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Cambridge-Analytica-Skandal: Was das Rekordurteil gegen Meta bedeutet",
-   "url": "https://www.youtube.com/watch?v=k9hMfyj62bw",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-22T08:35:36.000Z",
-   "summary": "Acht Jahre nach dem Skandal um den Missbrauch von Nutzerdaten ist der Facebookkonzern Meta in New Mexico zu einer Milliardenstrafe verurteilt worden. Der Fall solle anderen Tech-Unternehmen eine Warnung sein, sagte der Generalstaatsanwalt. Mehr Informationen zu diesem Thema:…",
-   "thumb": "https://i4.ytimg.com/vi/k9hMfyj62bw/hqdefault.jpg",
-   "id": "24b5e9282f97",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -839,25 +943,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Warum die Printausgabe des feministischen Magazins „Emma“ nach 50 Jahren eingestellt wird",
-   "url": "https://www.youtube.com/watch?v=d1walGmk-uU",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-22T07:19:48.000Z",
-   "summary": "Nach 50 Jahren ist Schluss. Das feministische Magazin „Emma“ wird eingestellt. Gründerin und Herausgeberin Alice Schwarzer betonte, die Gründe seien nicht ökonomischer Natur. „Wir meinen, es reicht.“ Mehr Informationen zu diesem Thema:…",
-   "thumb": "https://i1.ytimg.com/vi/d1walGmk-uU/hqdefault.jpg",
-   "id": "ac37c3b15118",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Gulf Oil Flows Top 24 Million Barrels a Day as Iran Says Situation Is ‘Truly Wartime’; Nournews Flags ‘October Surprise’",
    "url": "https://www.reddit.com/r/geopolitics/comments/1xcbqti/gulf_oil_flows_top_24_million_barrels_a_day_as/",
    "source": "r/geopolitics",
@@ -892,6 +977,22 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
+   "title": "Is it normal for a Product Owner to suddenly be expected to manage developers?",
+   "url": "https://www.reddit.com/r/ProductManagement/comments/1xcauad/is_it_normal_for_a_product_owner_to_suddenly_be/",
+   "source": "r/productmanagement",
+   "feedId": "rd-productmanagement",
+   "type": "post",
+   "tags": [
+    "product"
+   ],
+   "published": "2026-10-22T06:15:37.000Z",
+   "summary": "I recently joined a small software company as a Product Owner. I have several years of experience in product and project management, but people management was never mentioned during my interviews or onboarding. About two weeks after I joined, HR sent me a meeting invitation and…",
+   "id": "5603d93726fc",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
    "title": "Trump envoy calls Putin a 'humanitarian' | Simon Marks reacts",
    "url": "https://www.youtube.com/watch?v=5TApNZz4FIc",
    "source": "LBC",
@@ -905,25 +1006,6 @@
    "summary": "Simon Marks reacts after US Special Envoy Steve Witkoff praised the Russian President as a “humanitarian” during a visit to Moscow. After hearing from former Conservative MP Tobias Ellwood and former National Security Adviser Sir Mark Lyall Grant on whether Britain and Europe…",
    "thumb": "https://i2.ytimg.com/vi/5TApNZz4FIc/hqdefault.jpg",
    "id": "e865b01f0ecc",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Immer mehr Rechenzentren: Deutschlands riskante KI-Strategie I 11KM - der tagesschau-Podcast",
-   "url": "https://www.youtube.com/watch?v=HQcBuJSfCy0",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-22T04:15:42.000Z",
-   "summary": "In Deutschland entstehen gerade gigantische neue Rechenzentren, die enorme Mengen an Energie und Wasser verbrauchen. In dieser 11KM-Folge erzählt NDR-Reporterin Catharina Felke über den zum Teil ungesteuerten Ausbau dieser Projekte. Denn viele Gemeinden wissen nicht genau,…",
-   "thumb": "https://i1.ytimg.com/vi/HQcBuJSfCy0/hqdefault.jpg",
-   "id": "412b41452a4d",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -964,40 +1046,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "How to collab with Biz Ops?",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1xc4l13/how_to_collab_with_biz_ops/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-10-22T00:50:11.000Z",
-   "summary": "I’m an internal PM at a company that has a Business Ops team. I’ve never worked at a company with a Biz Ops team before this. I am having a hard time understanding how what Biz Ops folks do arent just a duplication of what a PM does in terms of prioritizing work and projects…",
-   "id": "827fb573f03d",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "OH SH*T: Republican STORMS OUT of Debate as Crowd SHOUTS HIM DOWN!",
-   "url": "https://www.youtube.com/watch?v=5UKrkz6U8bg",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-21T23:42:05.000Z",
-   "summary": "Luke follows up on Maryland Republican Andy Harris' meltdown. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
-   "thumb": "https://i2.ytimg.com/vi/5UKrkz6U8bg/hqdefault.jpg",
-   "id": "4880a7906c8e",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Many migrants pay 60% more to the NHS than costs of the health care they use",
    "url": "https://www.reddit.com/r/ukpolitics/comments/1xbz0kc/many_migrants_pay_60_more_to_the_nhs_than_costs/",
    "source": "r/ukpolitics",
@@ -1027,70 +1075,6 @@
    "published": "2026-10-21T19:38:48.000Z",
    "summary": "submitted by /u/whencanistop [link] [comments]",
    "id": "857837c7bd43",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Head of Product is spending all his time building AI Slop",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1xbw9p9/head_of_product_is_spending_all_his_time_building/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-10-21T19:06:23.000Z",
-   "summary": "Head of Product of SaaS company is spending all his time building useless internal tools or terrible process 'automations' that require more work than going straight via the LLM. Talks about how agentic workflows will change everything but is spending the day talking to Claude…",
-   "id": "cf8827882156",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Anyone else find themselves doing mostly project management?",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1xbug1u/anyone_else_find_themselves_doing_mostly_project/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-10-21T18:00:14.000Z",
-   "summary": "My company has had hiring freezes and layoffs over the past couple years. As a result, we have less Dev resources and everything is taking longer to deliver. This means that we already have a well defined roadmap for the next 2 years, and all that’s left to do is project…",
-   "id": "f549d23597da",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "For scrum masters out there, how have you navigated the constant pivots due to really quick changing AI capabilities for the product teams you work with?",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1xbt7jh/for_scrum_masters_out_there_how_have_you/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-10-21T17:16:06.000Z",
-   "summary": "My scrum master (who had traditionally worked only on the delivery side) is driving me up the wall 😂 submitted by /u/PercentageThat3818 [link] [comments]",
-   "id": "b1273c00ee27",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "New PM struggling with delivery in siloed org",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1xbrzc1/new_pm_struggling_with_delivery_in_siloed_org/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-10-21T16:31:14.000Z",
-   "summary": "Hi everyone. I'm in my first PM role, roughly 6 months in. I was promoted internally after 5 years. I work for an enterprise SaaS company that builds complex tools. My org is very siloed but my product area necessitates multiple engineering and product teams must contribute.…",
-   "id": "8aad82be0b45",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1174,6 +1158,40 @@
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "How to collab with Biz Ops?",
+   "url": "https://www.reddit.com/r/ProductManagement/comments/1xc4l13/how_to_collab_with_biz_ops/",
+   "source": "r/productmanagement",
+   "feedId": "rd-productmanagement",
+   "type": "post",
+   "tags": [
+    "product"
+   ],
+   "published": "2026-10-22T00:50:11.000Z",
+   "summary": "I’m an internal PM at a company that has a Business Ops team. I’ve never worked at a company with a Biz Ops team before this. I am having a hard time understanding how what Biz Ops folks do arent just a duplication of what a PM does in terms of prioritizing work and projects…",
+   "id": "827fb573f03d",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "OH SH*T: Republican STORMS OUT of Debate as Crowd SHOUTS HIM DOWN!",
+   "url": "https://www.youtube.com/watch?v=5UKrkz6U8bg",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-21T23:42:05.000Z",
+   "summary": "Luke follows up on Maryland Republican Andy Harris' meltdown. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
+   "thumb": "https://i2.ytimg.com/vi/5UKrkz6U8bg/hqdefault.jpg",
+   "id": "4880a7906c8e",
+   "score": 0,
+   "matched": [],
+   "why": "0"
   },
   {
    "title": "WHAT JUST HAPPENED AT THIS TRUMP PRESSER, HE CRACKED!",
@@ -1364,24 +1382,6 @@
    "summary": "Today Andy Burnham's government decided to approve new gas licences for the Jackdaw field in the North Sea. Ava and Seán jumped into the studio to chew over the plan. Like PoliticsJOE? We need your support: https://www.patreon.com/PoliticsJOE Chapters 0:00 Intro 5:00 Is it…",
    "thumb": "https://i4.ytimg.com/vi/ORLItTIJUKM/hqdefault.jpg",
    "id": "4b6266c0a17d",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "What is going on with Trump? Lewis Goodall on his ‘disinhibited’ comments",
-   "url": "https://www.youtube.com/watch?v=OcGnjtG7MSM",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-21T16:15:32.000Z",
-   "summary": "Why is Donald Trump's administration embracing Vladimir Putin and is the US President becoming increasingly uninhibited in public? Lewis Goodall joins Shelagh Fogarty to examine America's changing relationship with Russia after Trump's envoy praised Putin as a 'great…",
-   "thumb": "https://i4.ytimg.com/vi/OcGnjtG7MSM/hqdefault.jpg",
-   "id": "c0c66ff36944",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2011,7 +2011,7 @@
    "why": "0"
   },
   {
-   "title": "The Russian Bot Apocalypse",
+   "title": "Putin’s Plan to Protect Russia’s Internet Backfired",
    "url": "https://www.youtube.com/watch?v=JnceIDVMZyQ",
    "source": "Patrick Boyle",
    "feedId": "yt-patrick-boyle",
@@ -2846,5 +2846,5 @@
    "why": "0"
   }
  ],
- "contentHash": "55140f80920b"
+ "contentHash": "51838e70574c"
 }
