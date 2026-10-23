@@ -1,10 +1,10 @@
 {
- "generated": "2026-10-23T13:02:33.996Z",
+ "generated": "2026-10-23T15:55:56.378Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
   "ok": 51,
-  "items": 119,
+  "items": 118,
   "duplicatesMerged": 0,
   "lengthsKnown": 1,
   "lengthLookups": 98,
@@ -630,28 +630,28 @@
    "id": "rd-productmanagement",
    "name": "r/productmanagement",
    "type": "reddit",
-   "status": "cached",
-   "count": 5,
-   "lastOk": "2026-10-23T07:06:31.840Z",
-   "note": "not its turn this run"
+   "status": "ok",
+   "count": 4,
+   "url": "https://www.reddit.com/r/productmanagement/top/.rss?t=day"
   },
   {
    "id": "rd-tech",
    "name": "r/tech",
    "type": "reddit",
-   "status": "waiting",
+   "status": "empty",
    "count": 0,
-   "lastOk": "2026-10-15T21:49:52.028Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/tech/top/.rss?t=day"
   },
   {
    "id": "rd-gaming",
    "name": "r/gaming",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-ukpolitics",
@@ -684,20 +684,19 @@
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
+   "lastOk": "2026-10-23T13:02:33.996Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-germany",
    "name": "r/germany",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": "2026-10-15T00:59:57.533Z",
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-unitedkingdom",
@@ -706,10 +705,175 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   }
  ],
  "items": [
+  {
+   "title": "tagesschau in Einfacher Sprache 19:00 Uhr, 23.10.2026",
+   "url": "https://www.youtube.com/watch?v=DqauJ4SbWrw",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-23T15:47:14.000Z",
+   "summary": "tagesschau in Einfacher Sprache 19:00 Uhr Parteitag: CSU berät in München, Westjordanland wird abgeriegelt, Trump zu Starlink: Satelliten funktionieren, Europa: Viele Tote wegen Hitze, Das Wetter https://www.tagesschau.de",
+   "thumb": "https://i1.ytimg.com/vi/DqauJ4SbWrw/hqdefault.jpg",
+   "id": "77d7f60a0ef0",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "PM of a physical product - understanding the nature of the job?",
+   "url": "https://www.reddit.com/r/ProductManagement/comments/1xdhf2u/pm_of_a_physical_product_understanding_the_nature/",
+   "source": "r/productmanagement",
+   "feedId": "rd-productmanagement",
+   "type": "post",
+   "tags": [
+    "product"
+   ],
+   "published": "2026-10-23T15:37:14.000Z",
+   "summary": "I went into PM from engineering and the first year I had a great time, but my previous boss was very sales oriented so I traveled a ton and felt like a sales person more than anything else. I didn’t mind though, and through some product updates and changes I obtained a record…",
+   "id": "85ba222ab416",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Frankreich: Innenminister spricht von Terror-Tat bei Paris",
+   "url": "https://www.youtube.com/watch?v=4-QZ5_dkAGE",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-23T15:30:28.000Z",
+   "summary": "In der Region Paris hat ein Mann aus einem Auto heraus auf offener Straße das Feuer eröffnet und mindestens einen Menschen getötet. Zudem gebe es mindestens vier Verletzte, teilte die französische Nationalpolizei mit. Der 39-jährige Tatverdächtige sei festgenommen worden. Die…",
+   "thumb": "https://i1.ytimg.com/vi/4-QZ5_dkAGE/hqdefault.jpg",
+   "id": "c0863a9caaf7",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Melania Trump secures ceasefire in Ukrainian village | Simon Marks",
+   "url": "https://www.youtube.com/watch?v=mZNHOARjhGc",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-23T15:23:29.000Z",
+   "summary": "The White House has said Melania Trump has successfully secured a ceasefire between Russia and Ukraine localised to a blockaded city near the front line. Simon Marks joins Shelagh Fogarty to report the news and share his instant reaction, as well as insight as to how this…",
+   "thumb": "https://i2.ytimg.com/vi/mZNHOARjhGc/hqdefault.jpg",
+   "id": "0e99d0210af1",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "25 Jahre iPod: Wie der Musik-Player Technikgeschichte schrieb",
+   "url": "https://www.youtube.com/watch?v=QRdH0YaFenI",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-23T14:19:34.000Z",
+   "summary": "Eintausend Songs in der Tasche: Mit diesem Werbeslogan brachte Apple vor genau 25 Jahren den iPod an den Start, ein Produkt, das den Musikmarkt revolutionierte. Schließlich waren Player bis dahin entweder noch an CDs gebunden oder klobig und schwer, mit wenig Speicherplatz und…",
+   "thumb": "https://i2.ytimg.com/vi/QRdH0YaFenI/hqdefault.jpg",
+   "id": "ecc800c5ee76",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "LBC callers react to 'disturbing allegations' about Meghan Markle's father",
+   "url": "https://www.youtube.com/watch?v=dVe9PmdCPkg",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-23T14:13:52.000Z",
+   "summary": "Meghan Markle has said she is 'deeply distressed' after a series of allegations were made about her estranged father Thomas. In an interview with the Daily Mail, Thomas Snr denied possessing child sex images, calling the accusations “sick lies”. Authorities in the UK had…",
+   "thumb": "https://i1.ytimg.com/vi/dVe9PmdCPkg/hqdefault.jpg",
+   "id": "ae4bb42cd3f3",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Klimaschutz oder Klimaanpassung - was braucht es wirklich? | KlimaZeit vom 23.10.2026",
+   "url": "https://www.youtube.com/watch?v=BESKw0hiZ3Q",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-23T13:42:14.000Z",
+   "summary": "KlimaZeit 19:45 Uhr \"KlimaZeit\" bietet wöchentlich Hintergrundberichte, ordnet Ergebnisse der Klimaforschung ein, erklärt in aufwändigen Grafiken und Animationen alles Wissenswerte rund ums Klima, hinterfragt Entscheidungen der Politik und zeigt konstruktive Beispiele für die…",
+   "thumb": "https://i3.ytimg.com/vi/BESKw0hiZ3Q/hqdefault.jpg",
+   "id": "6dd118d2c2c9",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "„Unverhohlene Drohungen eines Streiks\" – ARD-Reporter zum Ringen um Sparkurs bei VW",
+   "url": "https://www.youtube.com/watch?v=Id5qpT1vxrY",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-23T13:42:11.000Z",
+   "summary": "Stellenabbau, Sparrunden und drohende Werkschließungen: Die Stimmung bei Volkswagen ist aufgeheizt, die Gewerkschaft IG Metall droht mit Streiks ab Januar. Heute spricht die Konzernspitze mit der IG Metall. Mehr Informationen zu diesem Thema:…",
+   "thumb": "https://i2.ytimg.com/vi/Id5qpT1vxrY/hqdefault.jpg",
+   "id": "3d859b8fa7ce",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Is it scaremongering to talk about AI job losses? | LBC callers react",
+   "url": "https://www.youtube.com/watch?v=as_uOY3qLdY",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-23T13:12:37.000Z",
+   "summary": "Simon Marks and LBC callers react to the news that Barclays will cut 5,000 jobs by the end of the year in a major AI-driven cull. 00:00 | Simon asks whether we should let tech billionaires keep getting wealthier while people are losing their jobs 03:58 | Piers Linney says AI…",
+   "thumb": "https://i2.ytimg.com/vi/as_uOY3qLdY/hqdefault.jpg",
+   "id": "69e50b52b8bd",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
   {
    "title": "How Big Tech Profit From Terror | Andrew Feinstein interview",
    "url": "https://www.youtube.com/watch?v=qMSpoXy0bBY",
@@ -779,44 +943,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Söder fordert „Extremismus-Klausel“ beim Länderfinanzausgleich",
-   "url": "https://www.youtube.com/watch?v=rGY92x2ZEmA",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-23T11:07:42.000Z",
-   "summary": "Umfragetief für die Union, Wahlerfolge für AfD und Linkspartei. Das ist die Ausgangslage für den zweitägigen Parteitag der CSU, der heute in München beginnt. Zum Auftakt wird der Vorsitzende Söder am späten Nachmittag eine Grundsatzrede halten. Angesichts der Wahlergebnisse in…",
-   "thumb": "https://i3.ytimg.com/vi/rGY92x2ZEmA/hqdefault.jpg",
-   "id": "5bfd86ba95ff",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Lübeck: Wasserpest bedroht beliebtes Naherholungsgebiet | tagesthemen mittendrin",
-   "url": "https://www.youtube.com/watch?v=5_CIqa0ekNU",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-23T10:35:02.000Z",
-   "summary": "Die Pflanze Wasserpest breitet sich in vielen Gewässern bedrohlich aus. Die Sorge wächst, dass Flüsse und Seen umkippen, andere Pflanzen und Fische sterben könnten. So auch in Lübeck, wo sich ein Verein dafür einsetzt, dass bei beliebtest Naherholungsgebiet intakt bleibt. Mehr…",
-   "thumb": "https://i2.ytimg.com/vi/5_CIqa0ekNU/hqdefault.jpg",
-   "id": "1b47dab3dc0c",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "‘Clean air is not a favour’: Indonesia’s neighbours fed up with acrid haze as Singapore threatens to prosecute | Indonesia",
    "url": "https://www.reddit.com/r/geopolitics/comments/1xda261/clean_air_is_not_a_favour_indonesias_neighbours/",
    "source": "r/geopolitics",
@@ -852,25 +978,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "„Große Scheunentore offen“: Experte warnt vor neuen Angriffen im Netz",
-   "url": "https://www.youtube.com/watch?v=yjvb0zzi2vY",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-23T09:26:26.000Z",
-   "summary": "Nach der Entdeckung der kritischen PHP-Sicherheitslücke reicht das bloße Einspielen von Software-Updates nach Einschätzung von IT-Sicherheitsexpert:innen bei weitem nicht aus. Sie warnen nun davor, sich in falscher Sicherheit zu wiegen, und fordern Systembetreiber eindringlich…",
-   "thumb": "https://i2.ytimg.com/vi/yjvb0zzi2vY/hqdefault.jpg",
-   "id": "21ba0e6bd9e3",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "White working-class children most likely to leave school as Neets: Social justice charity calls for internships and other schemes specifically targeted at the most disadvantaged groups",
    "url": "https://www.reddit.com/r/ukpolitics/comments/1xd8z2s/white_workingclass_children_most_likely_to_leave/",
    "source": "r/ukpolitics",
@@ -883,44 +990,6 @@
    "published": "2026-10-23T09:06:05.000Z",
    "summary": "submitted by /u/Alti-Ok [link] [comments]",
    "id": "4f5365f63ced",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Krieg gegen die Ukraine: Warum Selenskyj weiterhin auf US-Garantien vertraut",
-   "url": "https://www.youtube.com/watch?v=5AWvS5wsn0Y",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-23T08:24:40.000Z",
-   "summary": "+++ Update am 23.10.2026, 13 Uhr: Nach Informationen des ARD-Studios Kiew gibt es nach wie vor Einschränkungen bei Starlink. +++ Die Ukraine verfügt nach Angaben von US-Präsident Trump wieder über den vom Unternehmen SpaceX bereitgestellten Satelliten-Internetdienst Starlink.…",
-   "thumb": "https://i2.ytimg.com/vi/5AWvS5wsn0Y/hqdefault.jpg",
-   "id": "2d1e8c355e86",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Das Paradies der Weihnachtsfans | ARD Morgenmagazin",
-   "url": "https://www.youtube.com/watch?v=xPTXPD7UoqI",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-23T08:21:48.000Z",
-   "summary": "Kurz hinter der deutsch-niederländischen Grenze, in Duiven, finden Weihnachtsliebhaber ihr Paradies. Eine glitzernde Weihnachtswelt samt Kunstschnee auf 18.000 Quadratmetern. Hier hat Europas größter Deko-Markt seit erstem Oktober schon alles auf Weihnachten getrimmt.…",
-   "thumb": "https://i1.ytimg.com/vi/xPTXPD7UoqI/hqdefault.jpg",
-   "id": "fa652033e692",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -992,24 +1061,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Laura Ingraham VISIBLY NERVOUS as Democrat EXPOSES TRUMP On Air!",
-   "url": "https://www.youtube.com/watch?v=lvCqwfaDNp0",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-23T02:50:10.000Z",
-   "summary": "Luke discusses James Carville's appearance on Laura Ingraham's show. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
-   "thumb": "https://i1.ytimg.com/vi/lvCqwfaDNp0/hqdefault.jpg",
-   "id": "b96aaea97c96",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Lawless Britain”: an update. This morning’s figures show a scarcely-believable trend: crime down 78pc from its peak and British streets the safest for decades",
    "url": "https://www.reddit.com/r/ukpolitics/comments/1xd10ww/lawless_britain_an_update_this_mornings_figures/",
    "source": "r/ukpolitics",
@@ -1022,22 +1073,6 @@
    "published": "2026-10-23T01:41:53.000Z",
    "summary": "submitted by /u/reflibman [link] [comments]",
    "id": "ade8e0987138",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "File Sharing on Teams Made Worse",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1xctk8m/file_sharing_on_teams_made_worse/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-10-22T20:16:56.000Z",
-   "summary": "Who’s the moron at Microsoft that made filesharing substantially worse. When I’m trying to drag a file into the chat, teams used to just upload the file I want because that’s the file I chose. Now it tells me I uploaded it to a different chat, which could have been weeks ago,…",
-   "id": "b135c8666d93",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1123,6 +1158,24 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
+   "title": "Laura Ingraham VISIBLY NERVOUS as Democrat EXPOSES TRUMP On Air!",
+   "url": "https://www.youtube.com/watch?v=lvCqwfaDNp0",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-23T02:50:10.000Z",
+   "summary": "Luke discusses James Carville's appearance on Laura Ingraham's show. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
+   "thumb": "https://i1.ytimg.com/vi/lvCqwfaDNp0/hqdefault.jpg",
+   "id": "b96aaea97c96",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
    "title": "DAMN: Trump Suffers INSANE MENTAL EPISODE On Stage at Rally!",
    "url": "https://www.youtube.com/watch?v=NGsYxve8wdo",
    "source": "Luke Beasley",
@@ -1159,7 +1212,7 @@
    "why": "0"
   },
   {
-   "title": "Simon Marks: 'My worries about US bargaining with Russia'",
+   "title": "Simon Marks: 'My worries about the USA bargaining with Russia'",
    "url": "https://www.youtube.com/watch?v=wTTgWafddJs",
    "source": "LBC",
    "feedId": "yt-lbc",
@@ -1246,19 +1299,17 @@
    "why": "0"
   },
   {
-   "title": "What has AI ever done for us? | James O’Brien - The Whole Show",
-   "url": "https://www.youtube.com/watch?v=BUOHH0Tnc8I",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
+   "title": "File Sharing on Teams Made Worse",
+   "url": "https://www.reddit.com/r/ProductManagement/comments/1xctk8m/file_sharing_on_teams_made_worse/",
+   "source": "r/productmanagement",
+   "feedId": "rd-productmanagement",
+   "type": "post",
    "tags": [
-    "politics",
-    "listen"
+    "product"
    ],
-   "published": "2026-10-22T20:15:11.000Z",
-   "summary": "This is a catch-up version of James O'Brien's live, daily show on LBC Radio from the 22nd of October 2026. Listen to the full show on the all-new LBC App: https://app.af.lbc.co.uk/btnc/thenewlbcapp #jamesobrien #politics #LBC LBC is the home of live debate around news and…",
-   "thumb": "https://i3.ytimg.com/vi/BUOHH0Tnc8I/hqdefault.jpg",
-   "id": "9be515fdf8e9",
+   "published": "2026-10-22T20:16:56.000Z",
+   "summary": "Who’s the moron at Microsoft that made filesharing substantially worse. When I’m trying to drag a file into the chat, teams used to just upload the file I want because that’s the file I chose. Now it tells me I uploaded it to a different chat, which could have been weeks ago,…",
+   "id": "b135c8666d93",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1298,24 +1349,6 @@
    "why": "0"
   },
   {
-   "title": "Russia strikes Kyiv with illegal 'cluster munitions' | John Bolton",
-   "url": "https://www.youtube.com/watch?v=p6SyR179KVQ",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-22T18:15:13.000Z",
-   "summary": "Zelenskyy has accused Russia of striking Kyiv with illegal cluster warheads despite ongoing peace talks with Donald Trump and Vladimir Putin. This comes after US envoy Steve Witkoff received international backlash after calling the Russian President a 'humanitarian'. Andrew…",
-   "thumb": "https://i1.ytimg.com/vi/p6SyR179KVQ/hqdefault.jpg",
-   "id": "5a4c29d93791",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "SWAT Team Robot Successfully Dismantles Black Man",
    "url": "https://www.youtube.com/watch?v=zM7B9UPcHzE",
    "source": "The Onion",
@@ -1328,24 +1361,6 @@
    "summary": "Evacuation orders were in effect after downtown residents noticed a Black man was left suspiciously unattended in a high population area. Become an Onion member while it's still optional: https://membership.theonion.com/?campaign=701a500001geULHAA2",
    "thumb": "https://i3.ytimg.com/vi/zM7B9UPcHzE/hqdefault.jpg",
    "id": "e85ea514d7d3",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "‘Europe should be terrified’ as Ukraine support drains",
-   "url": "https://www.youtube.com/watch?v=sff18heTn-A",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-22T16:42:48.000Z",
-   "summary": "LBC's Joe Draper takes a look at new developments across the continent and inside the White House, where the West's support for Ukraine appears to be faltering. To find out more, Joe spoke to Timothy Ash, a Russia and Eurasia expert at Chatham House. The US is \"on the side of…",
-   "thumb": "https://i4.ytimg.com/vi/sff18heTn-A/hqdefault.jpg",
-   "id": "945b9a42ce17",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1453,38 +1468,6 @@
    "summary": "How does undercover policing really work, and what happens when the people tasked with fighting crime begin to question the system they're working for? For our Systemic series, we sat down with Neil Woods, a former undercover drug police officer, to get a first hand account of…",
    "thumb": "https://i1.ytimg.com/vi/0oV6mRywoVE/hqdefault.jpg",
    "id": "2b6f7a0c17ab",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "If AI is making product delivery faster, how are teams keeping up with product discovery?",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1xce545/if_ai_is_making_product_delivery_faster_how_are/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-10-22T09:44:55.000Z",
-   "summary": "I’m relatively new to product management (was a designer before), so I figured more experienced PMs might have better product sense than me, and I wanted to ask how you’re dealing with this in your teams. With tech advancing and delivery getting cheaper and faster because of…",
-   "id": "e362c8961549",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Weekly rant thread",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1xcdfdq/weekly_rant_thread/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-10-22T09:00:30.000Z",
-   "summary": "Share your frustrations and get support/feedback. You are not alone! submitted by /u/AutoModerator [link] [comments]",
-   "id": "38c08e5f80b0",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2824,5 +2807,5 @@
    "why": "0"
   }
  ],
- "contentHash": "241efcba6f87"
+ "contentHash": "fc34e21c05ab"
 }
