@@ -1,17 +1,17 @@
 {
- "generated": "2026-10-23T09:53:05.875Z",
+ "generated": "2026-10-23T13:02:33.996Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
   "ok": 51,
-  "items": 120,
+  "items": 119,
   "duplicatesMerged": 0,
   "lengthsKnown": 1,
-  "lengthLookups": 99,
-  "lengthFailures": 99,
+  "lengthLookups": 98,
+  "lengthFailures": 98,
   "lengthVia": "video pages",
   "lengthFailReasons": {
-   "no length on page": 99
+   "no length on page": 98
   }
  },
  "feeds": [
@@ -215,7 +215,7 @@
    "name": "TLDR News",
    "type": "youtube",
    "status": "ok",
-   "count": 4,
+   "count": 3,
    "resolved": {
     "channelId": "UCSMqateX8OA2s1wsOR2EgJA",
     "title": "TLDR News",
@@ -657,9 +657,10 @@
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
+   "lastOk": "2026-10-23T09:53:05.875Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-xbox",
@@ -668,7 +669,7 @@
    "status": "cached",
    "count": 5,
    "lastOk": "2026-10-21T15:54:55.125Z",
-   "note": "rate-limited (429)"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-slaythespire",
@@ -677,25 +678,26 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-10-23T03:53:31.700Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
   },
   {
    "id": "rd-germany",
    "name": "r/germany",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": "2026-10-15T00:59:57.533Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-unitedkingdom",
@@ -704,12 +706,153 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   }
  ],
  "items": [
   {
-   "title": "Offline aus Vorsicht: Neue Sicherheitslücken bedrohen Webserver",
+   "title": "How Big Tech Profit From Terror | Andrew Feinstein interview",
+   "url": "https://www.youtube.com/watch?v=qMSpoXy0bBY",
+   "source": "PoliticsJOE",
+   "feedId": "yt-politicsjoe",
+   "type": "video",
+   "tags": [
+    "comedy"
+   ],
+   "published": "2026-10-23T12:22:03.000Z",
+   "summary": "Andrew Feinstein is one of the most versatile people in British politics today. Formerly a member of the South African Parliament for Nelson Mandela's ANC, he has gained notoriety in the UK in recent years, most notably for running against Keir Starmer in Holborn and St Pancras…",
+   "thumb": "https://i2.ytimg.com/vi/qMSpoXy0bBY/hqdefault.jpg",
+   "id": "f9de87391b46",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "How Could China’s Crackdown on Offshore Wealth Reshape Global Capital Flows?",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xdcgrf/how_could_chinas_crackdown_on_offshore_wealth/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-23T12:19:39.000Z",
+   "summary": "submitted by /u/foodie_2598 [link] [comments]",
+   "id": "64541f83be6c",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Is the ECB about to bail out France?",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xdbsj7/is_the_ecb_about_to_bail_out_france/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-23T11:47:08.000Z",
+   "summary": "submitted by /u/TimesandSundayTimes [link] [comments]",
+   "id": "79ce30e10008",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "The risks of letting China’s Xi Jinping help carve up Ukraine",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xdbmw7/the_risks_of_letting_chinas_xi_jinping_help_carve/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-23T11:39:09.000Z",
+   "summary": "A possible meeting of the three leaders of China, the United States, and Russia may concern not only the issue of settling the war in Ukraine, but may also amount to a second Yalta, where issues relating to Europe will be decided. submitted by /u/Any-Original-6113 [link]…",
+   "id": "6b6f49b96a73",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Söder fordert „Extremismus-Klausel“ beim Länderfinanzausgleich",
+   "url": "https://www.youtube.com/watch?v=rGY92x2ZEmA",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-23T11:07:42.000Z",
+   "summary": "Umfragetief für die Union, Wahlerfolge für AfD und Linkspartei. Das ist die Ausgangslage für den zweitägigen Parteitag der CSU, der heute in München beginnt. Zum Auftakt wird der Vorsitzende Söder am späten Nachmittag eine Grundsatzrede halten. Angesichts der Wahlergebnisse in…",
+   "thumb": "https://i3.ytimg.com/vi/rGY92x2ZEmA/hqdefault.jpg",
+   "id": "5bfd86ba95ff",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Lübeck: Wasserpest bedroht beliebtes Naherholungsgebiet | tagesthemen mittendrin",
+   "url": "https://www.youtube.com/watch?v=5_CIqa0ekNU",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-23T10:35:02.000Z",
+   "summary": "Die Pflanze Wasserpest breitet sich in vielen Gewässern bedrohlich aus. Die Sorge wächst, dass Flüsse und Seen umkippen, andere Pflanzen und Fische sterben könnten. So auch in Lübeck, wo sich ein Verein dafür einsetzt, dass bei beliebtest Naherholungsgebiet intakt bleibt. Mehr…",
+   "thumb": "https://i2.ytimg.com/vi/5_CIqa0ekNU/hqdefault.jpg",
+   "id": "1b47dab3dc0c",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "‘Clean air is not a favour’: Indonesia’s neighbours fed up with acrid haze as Singapore threatens to prosecute | Indonesia",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xda261/clean_air_is_not_a_favour_indonesias_neighbours/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-23T10:12:14.000Z",
+   "summary": "submitted by /u/kjleebio [link] [comments]",
+   "id": "68e311fcecbd",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Prepare for food shortage and disruption, government warns",
+   "url": "https://www.youtube.com/watch?v=B1unESEO_1c",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-23T10:09:23.000Z",
+   "summary": "Defence Secretary Wes Streeting has called for the public to stockpile days’ worth of food and water for crisis situations in the face of \"increasingly sophisticated cyber attacks.\" Speaking on Thursday, Mr Streeting warned the public would need to prepare for crises after it…",
+   "thumb": "https://i3.ytimg.com/vi/B1unESEO_1c/hqdefault.jpg",
+   "id": "57c22c840dbe",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "„Große Scheunentore offen“: Experte warnt vor neuen Angriffen im Netz",
    "url": "https://www.youtube.com/watch?v=yjvb0zzi2vY",
    "source": "Tagesschau",
    "feedId": "yt-tagesschau",
@@ -756,7 +899,7 @@
     "listen"
    ],
    "published": "2026-10-23T08:24:40.000Z",
-   "summary": "Die Ukraine verfügt nach Angaben von US-Präsident Trump wieder über den vom Unternehmen SpaceX bereitgestellten Satelliten-Internetdienst Starlink. Ob er mit SpaceX-Chef Musk über das Thema gesprochen habe, wollte Trump auf Nachfrage von Journalist:innnen nicht sagen. Die…",
+   "summary": "+++ Update am 23.10.2026, 13 Uhr: Nach Informationen des ARD-Studios Kiew gibt es nach wie vor Einschränkungen bei Starlink. +++ Die Ukraine verfügt nach Angaben von US-Präsident Trump wieder über den vom Unternehmen SpaceX bereitgestellten Satelliten-Internetdienst Starlink.…",
    "thumb": "https://i2.ytimg.com/vi/5AWvS5wsn0Y/hqdefault.jpg",
    "id": "2d1e8c355e86",
    "score": 1,
@@ -795,25 +938,6 @@
    "published": "2026-10-23T07:48:03.000Z",
    "summary": "submitted by /u/HibasakiSanjuro [link] [comments]",
    "id": "ebf6106a0fe8",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Wahlkampf gegen das Regime: Warum Serbiens Jugend auf die Straße geht",
-   "url": "https://www.youtube.com/watch?v=5o-PY2LFi30",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-23T07:46:16.000Z",
-   "summary": "An Sonntag wählen die Serben eine neues Parlament. Die oppositionelle „Studentenliste“ tritt gegen die Partei Vučićs an – Zehntausende Menschen kamen zu ihrer Abschlusskundgebung in Belgrad. Mehr Informationen zu diesem Thema:…",
-   "thumb": "https://i2.ytimg.com/vi/5o-PY2LFi30/hqdefault.jpg",
-   "id": "e4f8bd27800a",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -868,25 +992,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Wahl in Serbien: Studenten fordern Machthaber Vucic heraus I 11KM - der tagesschau-Podcast",
-   "url": "https://www.youtube.com/watch?v=9pnMqBaMZHE",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-23T04:20:09.000Z",
-   "summary": "Bei den Parlamentswahlen in Serbien fordert eine studentische Protestbewegung den langjährigen Machthaber Aleksandar Vučić heraus. Oliver Soos, Korrespondent im ARD-Studio Wien, hat in #Serbien mit Studenten gesprochen, die genug haben von der Korruption im Land und sich um…",
-   "thumb": "https://i2.ytimg.com/vi/9pnMqBaMZHE/hqdefault.jpg",
-   "id": "28f8254ab675",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Laura Ingraham VISIBLY NERVOUS as Democrat EXPOSES TRUMP On Air!",
    "url": "https://www.youtube.com/watch?v=lvCqwfaDNp0",
    "source": "Luke Beasley",
@@ -922,94 +1027,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "DAMN: Trump Suffers INSANE MENTAL EPISODE On Stage at Rally!",
-   "url": "https://www.youtube.com/watch?v=NGsYxve8wdo",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-23T00:50:22.000Z",
-   "summary": "Luke discusses the bizarre moments from Trump’s latest rally. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
-   "thumb": "https://i3.ytimg.com/vi/NGsYxve8wdo/hqdefault.jpg",
-   "id": "6b42cf9eaba4",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "INSANE SH*T: Voting Machine FLIPS VOTES TO REPUBLICAN?!",
-   "url": "https://www.youtube.com/watch?v=dFLrOIVruvY",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-22T22:50:25.000Z",
-   "summary": "Luke discusses reports of voters' issues with voting machines. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
-   "thumb": "https://i1.ytimg.com/vi/dFLrOIVruvY/hqdefault.jpg",
-   "id": "d36a249626a0",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Simon Marks: 'My worries about US bargaining with Russia'",
-   "url": "https://www.youtube.com/watch?v=wTTgWafddJs",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-22T22:00:39.000Z",
-   "summary": "Simon Marks shares his thoughts on the latest news surrounding the ever-evolving relationship between the USA and Russia. Steve Witkoff, the US special envoy, made the remark as he met with the Russian leader in St. Petersburg this week. It comes as the US president has made a…",
-   "thumb": "https://i4.ytimg.com/vi/wTTgWafddJs/hqdefault.jpg",
-   "id": "63253ad4e896",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Who Wins Wars? – AbroadReview",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xcvbuv/who_wins_wars_abroadreview/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-22T21:26:14.000Z",
-   "summary": "Current events show that it is not just military might that wins wars. Research finds that distance, deployment, and aims all matter. My latest living lit review on AbroadReview. What am I missing? submitted by /u/tscherer [link] [comments]",
-   "id": "faffa0fec7a9",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "'This effectively sets Russia far behind in the AI race': Ukraine is wiping out data centers across the border",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xcu8h0/this_effectively_sets_russia_far_behind_in_the_ai/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-22T20:42:38.000Z",
-   "summary": "Russia prides itself on its digital advances — from an extensive e-commerce services sector to ambitious plans for developing artificial intelligence. But now, some of the key data centers at the heart of its technical prowess have been knocked out by Ukrainian drone attacks in…",
-   "id": "30aa2900921c",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "File Sharing on Teams Made Worse",
    "url": "https://www.reddit.com/r/ProductManagement/comments/1xctk8m/file_sharing_on_teams_made_worse/",
    "source": "r/productmanagement",
@@ -1021,57 +1038,6 @@
    "published": "2026-10-22T20:16:56.000Z",
    "summary": "Who’s the moron at Microsoft that made filesharing substantially worse. When I’m trying to drag a file into the chat, teams used to just upload the file I want because that’s the file I chose. Now it tells me I uploaded it to a different chat, which could have been weeks ago,…",
    "id": "b135c8666d93",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "The End of Primacy Without Pain: Why the Domestic Foundation of American Power Is Crumbling",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xctijv/the_end_of_primacy_without_pain_why_the_domestic/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-22T20:15:11.000Z",
-   "summary": "submitted by /u/carnegieendowment [link] [comments]",
-   "id": "40691479555a",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "The Chokepoint Trap: How the Search for Economic Security Will End in Geopolitical Calamity",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xcqf2v/the_chokepoint_trap_how_the_search_for_economic/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-22T18:20:54.000Z",
-   "summary": "submitted by /u/ForeignAffairsMag [link] [comments]",
-   "id": "29d7d4a7a3a8",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Putin has become increasingly brazen at sea. Where the UK is vulnerable",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xcoss0/putin_has_become_increasingly_brazen_at_sea_where/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-22T17:21:34.000Z",
-   "summary": "submitted by /u/theipaper [link] [comments]",
-   "id": "a2b9c043ae86",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1157,6 +1123,60 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
+   "title": "DAMN: Trump Suffers INSANE MENTAL EPISODE On Stage at Rally!",
+   "url": "https://www.youtube.com/watch?v=NGsYxve8wdo",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-23T00:50:22.000Z",
+   "summary": "Luke discusses the bizarre moments from Trump’s latest rally. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
+   "thumb": "https://i3.ytimg.com/vi/NGsYxve8wdo/hqdefault.jpg",
+   "id": "6b42cf9eaba4",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "INSANE SH*T: Voting Machine FLIPS VOTES TO REPUBLICAN?!",
+   "url": "https://www.youtube.com/watch?v=dFLrOIVruvY",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-22T22:50:25.000Z",
+   "summary": "Luke discusses reports of voters' issues with voting machines. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
+   "thumb": "https://i1.ytimg.com/vi/dFLrOIVruvY/hqdefault.jpg",
+   "id": "d36a249626a0",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Simon Marks: 'My worries about US bargaining with Russia'",
+   "url": "https://www.youtube.com/watch?v=wTTgWafddJs",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-22T22:00:39.000Z",
+   "summary": "Simon Marks shares his thoughts on the latest news surrounding the ever-evolving relationship between the USA and Russia. Steve Witkoff, the US special envoy, made the remark as he met with the Russian leader in St. Petersburg this week. It comes as the US president has made a…",
+   "thumb": "https://i4.ytimg.com/vi/wTTgWafddJs/hqdefault.jpg",
+   "id": "63253ad4e896",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
    "title": "Scottish Green activists push for legal recognition of polyamory",
    "url": "https://www.reddit.com/r/ukpolitics/comments/1xcvx9m/scottish_green_activists_push_for_legal/",
    "source": "r/ukpolitics",
@@ -1169,6 +1189,23 @@
    "published": "2026-10-22T21:50:44.000Z",
    "summary": "submitted by /u/endofdays2022 [link] [comments]",
    "id": "bb3d63c07351",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Who Wins Wars? – AbroadReview",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xcvbuv/who_wins_wars_abroadreview/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-22T21:26:14.000Z",
+   "summary": "Current events show that it is not just military might that wins wars. Research finds that distance, deployment, and aims all matter. My latest living lit review on AbroadReview. What am I missing? submitted by /u/tscherer [link] [comments]",
+   "id": "faffa0fec7a9",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1345,24 +1382,6 @@
    "summary": "Bryan DeLuca and Matt McClard enter the Tank seeking $250,000 for 10% of Foot Cardigan, their colorful sock subscription business that delivers a surprise pair to customers every month. From Season 7 Episode 3 Watch Shark Tank US Now: http://AAN.SonyPictures.com/SharkTankUSHulu…",
    "thumb": "https://i3.ytimg.com/vi/z_R7d5rZ_xA/hqdefault.jpg",
    "id": "74d378c7f3b7",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Lewis Goodall reacts to Trump's gaffes at midterm rally",
-   "url": "https://www.youtube.com/watch?v=jQ03uVjKMnE",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-22T15:03:14.000Z",
-   "summary": "Lewis Goodall and Shelagh Fogarty react to Trump's bizarre speech at a rally in South Carolina on Wednesday. Listen to the full show on the all-new LBC App: https://app.af.lbc.co.uk/btnc/thenewlbcapp #shelaghfogarty #lewisgoodall #donaldtrump #trump #uspolitics #midterms…",
-   "thumb": "https://i3.ytimg.com/vi/jQ03uVjKMnE/hqdefault.jpg",
-   "id": "0db1e3729825",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1890,23 +1909,6 @@
    "summary": "Buck and Arlene Wymer enter the Tank seeking $55,000 for 25% of their company, Under-Tec, which makes Under-Ease, protective underwear designed to trap flatulence odors using activated charcoal filters. Can their unusual invention convince the Sharks that there’s a market for…",
    "thumb": "https://i1.ytimg.com/vi/4YE0AiniDA4/hqdefault.jpg",
    "id": "9011ead7df6e",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Dominic Cummings Exposes Boris Johnson's Broken Britain in Select Committee",
-   "url": "https://www.youtube.com/watch?v=Ev7EIL0uSL4",
-   "source": "PoliticsJOE",
-   "feedId": "yt-politicsjoe",
-   "type": "video",
-   "tags": [
-    "comedy"
-   ],
-   "published": "2026-10-19T15:08:14.000Z",
-   "summary": "Boris Johnson's old Svengali was in front of the Lords Constitution Committee last week answering questions about his time in government, and in typical fashion, it was box office. Like PoliticsJOE? We need your support: https://www.patreon.com/PoliticsJOE Chapters 00:00 Intro…",
-   "thumb": "https://i2.ytimg.com/vi/Ev7EIL0uSL4/hqdefault.jpg",
-   "id": "c23007cc48a8",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2820,26 +2822,7 @@
    "score": 0,
    "matched": [],
    "why": "0"
-  },
-  {
-   "title": "The Holborn & St Pancras Election Explained",
-   "url": "https://www.youtube.com/watch?v=i2DqUAaox_8",
-   "source": "TLDR News",
-   "feedId": "yt-tldr-news",
-   "type": "video",
-   "tags": [
-    "news",
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-09T09:55:54.000Z",
-   "summary": "Want to restore the planet’s ecosystems and see your impact in monthly videos? The first 100 people to join Planet Wild with my code NEWS10 will get the first month free on me: https://planetwild.com/r/tldrnews/join/10 If you want to get to know them better first, check out…",
-   "thumb": "https://i2.ytimg.com/vi/i2DqUAaox_8/hqdefault.jpg",
-   "id": "05ef77f1ded9",
-   "score": 0,
-   "matched": [],
-   "why": "0"
   }
  ],
- "contentHash": "6241c4489a09"
+ "contentHash": "241efcba6f87"
 }
