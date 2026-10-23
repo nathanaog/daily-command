@@ -1,17 +1,17 @@
 {
- "generated": "2026-10-23T18:59:37.928Z",
+ "generated": "2026-10-23T21:50:03.413Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
   "ok": 51,
-  "items": 119,
+  "items": 121,
   "duplicatesMerged": 0,
   "lengthsKnown": 1,
-  "lengthLookups": 99,
-  "lengthFailures": 99,
+  "lengthLookups": 101,
+  "lengthFailures": 101,
   "lengthVia": "video pages",
   "lengthFailReasons": {
-   "no length on page": 99
+   "no length on page": 101
   }
  },
  "feeds": [
@@ -267,7 +267,7 @@
    "name": "ProZD",
    "type": "youtube",
    "status": "ok",
-   "count": 2,
+   "count": 3,
    "resolved": {
     "channelId": "UC6MFZAOHXlKK1FI7V0XQVeA",
     "title": "ProZD",
@@ -423,7 +423,7 @@
    "name": "Kill Tony",
    "type": "youtube",
    "status": "ok",
-   "count": 4,
+   "count": 5,
    "resolved": {
     "channelId": "UCwzCMiicL-hBUzyjWiJaseg",
     "title": "Kill Tony",
@@ -657,9 +657,10 @@
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
+   "lastOk": "2026-10-23T18:59:37.928Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-xbox",
@@ -668,7 +669,7 @@
    "status": "cached",
    "count": 5,
    "lastOk": "2026-10-21T15:54:55.125Z",
-   "note": "rate-limited (429)"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-slaythespire",
@@ -677,25 +678,26 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-10-23T13:02:33.996Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
   },
   {
    "id": "rd-germany",
    "name": "r/germany",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": "2026-10-15T00:59:57.533Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-unitedkingdom",
@@ -704,10 +706,227 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   }
  ],
  "items": [
+  {
+   "title": "The Spring and Autumn of Chinese Politics",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xdpusd/the_spring_and_autumn_of_chinese_politics/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-23T20:57:09.000Z",
+   "summary": "submitted by /u/carnegieendowment [link] [comments]",
+   "id": "e41fcfb3a825",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "tagesthemen 21:45 Uhr, 23.10.2026",
+   "url": "https://www.youtube.com/watch?v=H5TXZGwBPco",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-23T20:48:43.000Z",
+   "summary": "tagesthemen 21:45 Uhr CSU-Parteitag in München: Söder und die Extremismusklausel, Außenminister beraten über Lage in Nahost, Saudischer Kronprinz Mohammed bin Salman durch Huthi-Angriffe unter Druck, Flughafen Berlin-Brandenburg: Ryanair streicht Verbindungen und schließt…",
+   "thumb": "https://i1.ytimg.com/vi/H5TXZGwBPco/hqdefault.jpg",
+   "id": "59efb112c093",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "KT: Behind the Tape (Ep: 790 Yung Gravy + Erik Griffin)",
+   "url": "https://www.youtube.com/watch?v=te3Y-A8udTY",
+   "source": "Kill Tony",
+   "feedId": "yt-kill-tony",
+   "type": "video",
+   "tags": [
+    "comedy",
+    "standup",
+    "listen"
+   ],
+   "published": "2026-10-23T20:41:04.000Z",
+   "summary": "An exclusive, behind the scenes look from KT Episode 790 KT guest Yung Gravy + Erik Griffin Yung Gravy, Erik Griffin, Pat O'Neill, Dedrick Flynn, Martin Phillips, D Madness, Michael A. Gonzales, Jon Deas, Matthew Muehling, Grooveline Horns, Joe White, Troy Conrad, Monica Colt…",
+   "thumb": "https://i1.ytimg.com/vi/te3Y-A8udTY/hqdefault.jpg",
+   "id": "153abd7f2f31",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "‘I'm going to start prepping for a crisis’ | James O’Brien - The Whole Show",
+   "url": "https://www.youtube.com/watch?v=bwNzr92JOd4",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-23T20:00:10.000Z",
+   "summary": "This is a catch-up version of James O'Brien's live, daily show on LBC Radio from the 23rd of October 2026. Listen to the full show on the all-new LBC App: https://app.af.lbc.co.uk/btnc/thenewlbcapp #jamesobrien #politics #LBC LBC is the home of live debate around news and…",
+   "thumb": "https://i3.ytimg.com/vi/bwNzr92JOd4/hqdefault.jpg",
+   "id": "c8e3c9546e72",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "My Viewers' Top 10 Characters I've Voiced",
+   "url": "https://www.youtube.com/watch?v=cwANUZTGXeo",
+   "source": "ProZD",
+   "feedId": "yt-prozd",
+   "type": "video",
+   "tags": [
+    "comedy",
+    "gaming"
+   ],
+   "published": "2026-10-23T19:58:59.000Z",
+   "summary": "My Patreon: https://www.patreon.com/ProZD My Cameo: https://www.cameo.com/prozd My Let's Play Channel: https://www.youtube.com/@prozdplaysgames My Food Channel: https://www.youtube.com/@ProZDEatsFood My Anime Channel: https://www.youtube.com/@ProZDWatchesAnime My Autograph…",
+   "thumb": "https://i4.ytimg.com/vi/cwANUZTGXeo/hqdefault.jpg",
+   "id": "67d25224d572",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "CSU-Parteitag in München | tagesthemen-Interview",
+   "url": "https://www.youtube.com/watch?v=EU5kPCTbIg4",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-23T19:55:31.000Z",
+   "summary": "In München trifft sich die CSU zu ihrem Parteitag. Zwar steht die Partei in den Umfragen gut da, doch der Abwärtstrend bei der Schwesterpartei CDU löst auch in der CSU Besorgnis aus. Angesprochen auf die niedrigen Umfragewerte für die CSU unter jungen Wählern, verweist der…",
+   "thumb": "https://i2.ytimg.com/vi/EU5kPCTbIg4/hqdefault.jpg",
+   "id": "45a63adc9a37",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "'No merit' to U.S. claims Canada is interfering ahead of midterms: Carney",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xdo8bd/no_merit_to_us_claims_canada_is_interfering_ahead/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-23T19:53:11.000Z",
+   "summary": "submitted by /u/toronto_star [link] [comments]",
+   "id": "689428b67353",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "BER: Rückzug vom laut Ryanair „erfolglosesten Flughafen Europas“",
+   "url": "https://www.youtube.com/watch?v=B-X0lq4q1DU",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-23T19:48:00.000Z",
+   "summary": "Ryanair schließt zum 24. Oktober ihre Basis mit sieben Flugzeugen und dazugehörigen Crews am Berliner Flughafen BER. Der Airport wird zwar weiterhin von Ryanair angeflogen, verliert aber den Angaben zufolge rund die Hälfte des bisherigen Angebots. Die Luftverkehrsbranche…",
+   "thumb": "https://i3.ytimg.com/vi/B-X0lq4q1DU/hqdefault.jpg",
+   "id": "690b4de60a03",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Raw Material Risk Threatens Europe’s Drone Race",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xdo2xp/raw_material_risk_threatens_europes_drone_race/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-23T19:47:13.000Z",
+   "summary": "submitted by /u/CEPAORG [link] [comments]",
+   "id": "8b5bf1f1e349",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Cyberpunk 2077 2.5 UPDATE IS HUGE, Half Life 3 Leaked? & More",
+   "url": "https://www.youtube.com/watch?v=NgJzR8zZU78",
+   "source": "GameRanx",
+   "feedId": "yt-gameranx",
+   "type": "video",
+   "tags": [
+    "gaming"
+   ],
+   "published": "2026-10-23T19:37:05.000Z",
+   "summary": "Thank you Helix Sleep for sponsoring! Visit http://helixsleep.com/gameranx to take advantage of their Fall Savings Event and get 20% Off Sitewide! ~~SOURCES~~ Cyberpunk 2077 2.5 UPDATE IS HUGE https://www.youtube.com/watch?v=nhlnT9FzgJ8 HALF LIFE confirmed??…",
+   "thumb": "https://i3.ytimg.com/vi/NgJzR8zZU78/hqdefault.jpg",
+   "id": "1b9497657f1e",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "PENDLETON, SOUTH CAROLINA TRUMP RALLY",
+   "url": "https://www.youtube.com/watch?v=IMVlXHM5maE",
+   "source": "The Good Liars",
+   "feedId": "yt-the-good-liars",
+   "type": "video",
+   "tags": [
+    "comedy",
+    "politics",
+    "debates"
+   ],
+   "published": "2026-10-23T19:00:09.000Z",
+   "summary": "Jason visits Pendleton, South Carolina for a Trump rally. Join this channel to get access to perks: https://www.youtube.com/channel/UCUNOwz9KTDIhhTTN3_ptUDA/join https://linktr.ee/thegoodliars",
+   "thumb": "https://i2.ytimg.com/vi/IMVlXHM5maE/hqdefault.jpg",
+   "id": "c3f56074dfa4",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Debate: Green councillor confronted on 'Zionism is racism' motion",
+   "url": "https://www.youtube.com/watch?v=Gzk9AXwpSmM",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-23T19:00:07.000Z",
+   "summary": "Green Party leaders have called on people inspired by the recent riots in France to join an anti-austerity protest in London. This comes just weeks after their party conference drew attention when the party voted on a motion to adopt 'Zionism is racism' as an official party…",
+   "thumb": "https://i4.ytimg.com/vi/Gzk9AXwpSmM/hqdefault.jpg",
+   "id": "808e8a4e431f",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
   {
    "title": "tagesschau 20:00 Uhr, 23.10.2026",
    "url": "https://www.youtube.com/watch?v=J8V20jgbiqc",
@@ -720,7 +939,7 @@
     "listen"
    ],
    "published": "2026-10-23T18:32:31.000Z",
-   "summary": "tagesschau 20:00 Uhr CSU trifft sich zu Parteitag in München, Leak wirft neues Licht auf AfD-Spendenskandal, Israel verschärft Kontrollen an der Grenze zum Westjordanland, Musk hebt Starlink-Drosselung laut US-Präsident Trump auf, Anti-Terror-Behörde ermittelt nach Schüssen in…",
+   "summary": "Die 20-Uhr-Ausgabe der tagesschau im Livestream und auf Abruf findet ihr auch hier: https://ardmediathek.de/tagesschau und https://tagesschau.de 0:00 Guten Abend! 0:20 CSU trifft sich zu Parteitag in München 3:32 Leak wirft neues Licht auf AfD-Spendenskandal 4:09 Israel…",
    "thumb": "https://i3.ytimg.com/vi/J8V20jgbiqc/hqdefault.jpg",
    "id": "adaf3ec41325",
    "score": 1,
@@ -747,6 +966,23 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
+   "title": "The New Energy Stalemate in Ukraine: Why Russia’s Escalating Attacks Are Unlikely to End the War",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xdldng/the_new_energy_stalemate_in_ukraine_why_russias/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-23T18:05:11.000Z",
+   "summary": "submitted by /u/ForeignAffairsMag [link] [comments]",
+   "id": "f4526b1665cf",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
    "title": "Reform braces for Farage standards verdict over undeclared £5m gift | Reform UK",
    "url": "https://www.reddit.com/r/ukpolitics/comments/1xdkb82/reform_braces_for_farage_standards_verdict_over/",
    "source": "r/ukpolitics",
@@ -759,25 +995,6 @@
    "published": "2026-10-23T17:24:44.000Z",
    "summary": "submitted by /u/ClumperFaz [link] [comments]",
    "id": "00d25cd28631",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "PENDLETON, SOUTH CAROLINA TRUMP RALLY",
-   "url": "https://www.youtube.com/watch?v=IMVlXHM5maE",
-   "source": "The Good Liars",
-   "feedId": "yt-the-good-liars",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "politics",
-    "debates"
-   ],
-   "published": "2026-10-23T17:05:31.000Z",
-   "summary": "Jason visits Pendleton, South Carolina for a Trump rally. Join this channel to get access to perks: https://www.youtube.com/channel/UCUNOwz9KTDIhhTTN3_ptUDA/join https://linktr.ee/thegoodliars",
-   "thumb": "https://i2.ytimg.com/vi/IMVlXHM5maE/hqdefault.jpg",
-   "id": "c3f56074dfa4",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -813,6 +1030,23 @@
    "summary": "It's my very own Pokémon Quiz Board Game!! I've spent months creating hundreds of custom Pokémon cards, all with their own special abilities so our lovely players @DeliciousJames and @CushYT can make their own parties! The abilities of all these Pokémon stack up and affect…",
    "thumb": "https://i2.ytimg.com/vi/qtE2p6J4LU0/hqdefault.jpg",
    "id": "b21455e99c4d",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "The first Russian diesel tanker under Trump’s deal with Putin is headed to New York, the first such shipment since 2023",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xdjezn/the_first_russian_diesel_tanker_under_trumps_deal/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-23T16:51:20.000Z",
+   "summary": "A first tanker carrying Russian diesel to the United States under a new import agreement has set sail, the Kremlin said Friday, two weeks after President Donald Trump said he struck a deal with President Vladimir Putin despite Moscow’s invasion of Ukraine. “The first oil tanker…",
+   "id": "363260d261d6",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -906,25 +1140,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "tagesschau in Einfacher Sprache 19:00 Uhr, 23.10.2026",
-   "url": "https://www.youtube.com/watch?v=DqauJ4SbWrw",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-23T15:47:14.000Z",
-   "summary": "tagesschau in Einfacher Sprache 19:00 Uhr Parteitag: CSU berät in München, Westjordanland wird abgeriegelt, Trump zu Starlink: Satelliten funktionieren, Europa: Viele Tote wegen Hitze, Das Wetter Die \"tagesschau in Einfacher Sprache\" – immer Montag bis Freitag um 19:00 Uhr bei…",
-   "thumb": "https://i1.ytimg.com/vi/DqauJ4SbWrw/hqdefault.jpg",
-   "id": "77d7f60a0ef0",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "PM of a physical product - understanding the nature of the job?",
    "url": "https://www.reddit.com/r/ProductManagement/comments/1xdhf2u/pm_of_a_physical_product_understanding_the_nature/",
    "source": "r/productmanagement",
@@ -936,25 +1151,6 @@
    "published": "2026-10-23T15:37:14.000Z",
    "summary": "I went into PM from engineering and the first year I had a great time, but my previous boss was very sales oriented so I traveled a ton and felt like a sales person more than anything else. I didn’t mind though, and through some product updates and changes I obtained a record…",
    "id": "85ba222ab416",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Frankreich: Innenminister spricht von Terror-Tat bei Paris",
-   "url": "https://www.youtube.com/watch?v=4-QZ5_dkAGE",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-23T15:30:28.000Z",
-   "summary": "In der Region Paris hat ein Mann aus einem Auto heraus auf offener Straße das Feuer eröffnet und mindestens einen Menschen getötet. Zudem gebe es mindestens vier Verletzte, teilte die französische Nationalpolizei mit. Der 39-jährige Tatverdächtige sei festgenommen worden. Die…",
-   "thumb": "https://i1.ytimg.com/vi/4-QZ5_dkAGE/hqdefault.jpg",
-   "id": "c0863a9caaf7",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -995,25 +1191,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "25 Jahre iPod: Wie der Musik-Player Technikgeschichte schrieb",
-   "url": "https://www.youtube.com/watch?v=QRdH0YaFenI",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-23T14:19:34.000Z",
-   "summary": "Eintausend Songs in der Tasche: Mit diesem Werbeslogan brachte Apple vor genau 25 Jahren den iPod an den Start, ein Produkt, das den Musikmarkt revolutionierte. Schließlich waren Player bis dahin entweder noch an CDs gebunden oder klobig und schwer, mit wenig Speicherplatz und…",
-   "thumb": "https://i2.ytimg.com/vi/QRdH0YaFenI/hqdefault.jpg",
-   "id": "ecc800c5ee76",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "LBC callers react to 'disturbing allegations' about Meghan Markle's father",
    "url": "https://www.youtube.com/watch?v=dVe9PmdCPkg",
    "source": "LBC",
@@ -1049,24 +1226,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Is it scaremongering to talk about AI job losses? | LBC callers react",
-   "url": "https://www.youtube.com/watch?v=as_uOY3qLdY",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-23T13:12:37.000Z",
-   "summary": "Simon Marks and LBC callers react to the news that Barclays will cut 5,000 jobs by the end of the year in a major AI-driven cull. 00:00 | Simon asks whether we should let tech billionaires keep getting wealthier while people are losing their jobs 03:58 | Piers Linney says AI…",
-   "thumb": "https://i2.ytimg.com/vi/as_uOY3qLdY/hqdefault.jpg",
-   "id": "69e50b52b8bd",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Why I Didn't Run for the Green Party | Andrew Feinstein interview",
    "url": "https://www.youtube.com/watch?v=qMSpoXy0bBY",
    "source": "PoliticsJOE",
@@ -1079,92 +1238,6 @@
    "summary": "Andrew Feinstein is one of the most versatile people in British politics today. Formerly a member of the South African Parliament for Nelson Mandela's ANC, he has gained notoriety in the UK in recent years, most notably for running against Keir Starmer in Holborn and St Pancras…",
    "thumb": "https://i2.ytimg.com/vi/qMSpoXy0bBY/hqdefault.jpg",
    "id": "f9de87391b46",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "How Could China’s Crackdown on Offshore Wealth Reshape Global Capital Flows?",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xdcgrf/how_could_chinas_crackdown_on_offshore_wealth/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-23T12:19:39.000Z",
-   "summary": "submitted by /u/foodie_2598 [link] [comments]",
-   "id": "64541f83be6c",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Is the ECB about to bail out France?",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xdbsj7/is_the_ecb_about_to_bail_out_france/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-23T11:47:08.000Z",
-   "summary": "submitted by /u/TimesandSundayTimes [link] [comments]",
-   "id": "79ce30e10008",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "The risks of letting China’s Xi Jinping help carve up Ukraine",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xdbmw7/the_risks_of_letting_chinas_xi_jinping_help_carve/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-23T11:39:09.000Z",
-   "summary": "A possible meeting of the three leaders of China, the United States, and Russia may concern not only the issue of settling the war in Ukraine, but may also amount to a second Yalta, where issues relating to Europe will be decided. submitted by /u/Any-Original-6113 [link]…",
-   "id": "6b6f49b96a73",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "‘Clean air is not a favour’: Indonesia’s neighbours fed up with acrid haze as Singapore threatens to prosecute | Indonesia",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xda261/clean_air_is_not_a_favour_indonesias_neighbours/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-23T10:12:14.000Z",
-   "summary": "submitted by /u/kjleebio [link] [comments]",
-   "id": "68e311fcecbd",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Prepare for food shortage and disruption, government warns",
-   "url": "https://www.youtube.com/watch?v=B1unESEO_1c",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-23T10:09:23.000Z",
-   "summary": "Defence Secretary Wes Streeting has called for the public to stockpile days’ worth of food and water for crisis situations in the face of \"increasingly sophisticated cyber attacks.\" Speaking on Thursday, Mr Streeting warned the public would need to prepare for crises after it…",
-   "thumb": "https://i3.ytimg.com/vi/B1unESEO_1c/hqdefault.jpg",
-   "id": "57c22c840dbe",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1331,23 +1404,6 @@
    "summary": "Luke discusses reports of voters' issues with voting machines. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
    "thumb": "https://i1.ytimg.com/vi/dFLrOIVruvY/hqdefault.jpg",
    "id": "d36a249626a0",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Who Wins Wars? – AbroadReview",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xcvbuv/who_wins_wars_abroadreview/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-22T21:26:14.000Z",
-   "summary": "Current events show that it is not just military might that wins wars. Research finds that distance, deployment, and aims all matter. My latest living lit review on AbroadReview. What am I missing? submitted by /u/tscherer [link] [comments]",
-   "id": "faffa0fec7a9",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1981,23 +2037,6 @@
    "summary": "Buck and Arlene Wymer enter the Tank seeking $55,000 for 25% of their company, Under-Tec, which makes Under-Ease, protective underwear designed to trap flatulence odors using activated charcoal filters. Can their unusual invention convince the Sharks that there’s a market for…",
    "thumb": "https://i1.ytimg.com/vi/4YE0AiniDA4/hqdefault.jpg",
    "id": "9011ead7df6e",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "20 Legendary Games You Should REVISIT in 2026",
-   "url": "https://www.youtube.com/watch?v=dpAhJkaHDBs",
-   "source": "GameRanx",
-   "feedId": "yt-gameranx",
-   "type": "video",
-   "tags": [
-    "gaming"
-   ],
-   "published": "2026-10-19T15:03:39.000Z",
-   "summary": "We've got 20 games worth revisiting in 2026 for various reasons. Whether you're replaying or trying for the first time, you'll have a blast! Subscribe for more: https://www.youtube.com/gameranxTV?sub_confirmation=1 0:00 Intro 0:43 Portal 2 3:00 Grand Theft Auto 5 5:46 Burnout…",
-   "thumb": "https://i1.ytimg.com/vi/dpAhJkaHDBs/hqdefault.jpg",
-   "id": "12aaa946b5a4",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2823,5 +2862,5 @@
    "why": "0"
   }
  ],
- "contentHash": "8c0ec468591f"
+ "contentHash": "4388d78938e6"
 }
