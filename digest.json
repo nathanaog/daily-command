@@ -1,17 +1,17 @@
 {
- "generated": "2026-10-23T01:07:17.732Z",
+ "generated": "2026-10-23T03:53:31.700Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
-  "ok": 7,
-  "items": 25,
+  "ok": 11,
+  "items": 43,
   "duplicatesMerged": 0,
   "lengthsKnown": 0,
-  "lengthLookups": 5,
-  "lengthFailures": 5,
+  "lengthLookups": 14,
+  "lengthFailures": 14,
   "lengthVia": "video pages",
   "lengthFailReasons": {
-   "no length on page": 5
+   "no length on page": 14
   }
  },
  "feeds": [
@@ -131,15 +131,14 @@
    "id": "yt-patrick-boyle",
    "name": "Patrick Boyle",
    "type": "youtube",
-   "status": "error",
-   "count": 0,
+   "status": "ok",
+   "count": 2,
    "resolved": {
     "channelId": "UCASM0cgfkJxQ1ICmRilfHLw",
     "title": "Patrick Boyle",
     "via": "name search"
    },
-   "error": "not found (404)",
-   "http": 404
+   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCASM0cgfkJxQ1ICmRilfHLw"
   },
   {
    "id": "yt-last-week-tonight",
@@ -187,14 +186,15 @@
    "id": "yt-half-as-interesting",
    "name": "Half as Interesting",
    "type": "youtube",
-   "status": "ok",
-   "count": 2,
+   "status": "error",
+   "count": 0,
    "resolved": {
     "channelId": "UCuCkxoKLYO_EQ2GeFtbM_bw",
     "title": "Half as Interesting",
     "via": "name search"
    },
-   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCuCkxoKLYO_EQ2GeFtbM_bw"
+   "error": "not found (404)",
+   "http": 404
   },
   {
    "id": "yt-coldfusion",
@@ -396,43 +396,40 @@
    "id": "yt-dropout",
    "name": "Dropout",
    "type": "youtube",
-   "status": "error",
-   "count": 0,
+   "status": "ok",
+   "count": 5,
    "resolved": {
     "channelId": "UCPDXXXJj9nax0fr0Wfc048g",
     "title": "Dropout",
     "via": "name search"
    },
-   "error": "not found (404)",
-   "http": 404
+   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCPDXXXJj9nax0fr0Wfc048g"
   },
   {
    "id": "yt-the-onion",
    "name": "The Onion",
    "type": "youtube",
-   "status": "error",
-   "count": 0,
+   "status": "ok",
+   "count": 5,
    "resolved": {
     "channelId": "UCfAOh2t5DpxVrgS9NQKjC7A",
     "title": "The Onion",
     "via": "name search"
    },
-   "error": "not found (404)",
-   "http": 404
+   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCfAOh2t5DpxVrgS9NQKjC7A"
   },
   {
    "id": "yt-the-economist",
    "name": "The Economist",
    "type": "youtube",
-   "status": "error",
-   "count": 0,
+   "status": "ok",
+   "count": 5,
    "resolved": {
     "channelId": "UC0p5jTq6Xx_DosDFxVXnWaQ",
     "title": "The Economist",
     "via": "name search"
    },
-   "error": "not found (404)",
-   "http": 404
+   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC0p5jTq6Xx_DosDFxVXnWaQ"
   },
   {
    "id": "yt-shark-tank-global",
@@ -452,15 +449,14 @@
    "id": "yt-kill-tony",
    "name": "Kill Tony",
    "type": "youtube",
-   "status": "error",
-   "count": 0,
+   "status": "ok",
+   "count": 4,
    "resolved": {
     "channelId": "UCwzCMiicL-hBUzyjWiJaseg",
     "title": "Kill Tony",
     "via": "name search"
    },
-   "error": "not found (404)",
-   "http": 404
+   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCwzCMiicL-hBUzyjWiJaseg"
   },
   {
    "id": "yt-coffeezilla",
@@ -480,15 +476,14 @@
    "id": "yt-tom-scott",
    "name": "Tom Scott",
    "type": "youtube",
-   "status": "error",
-   "count": 0,
+   "status": "ok",
+   "count": 2,
    "resolved": {
     "channelId": "UCBa659QWEk1AI4Tg--mrJ2A",
     "title": "Tom Scott",
     "via": "name search"
    },
-   "error": "not found (404)",
-   "http": 404
+   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCBa659QWEk1AI4Tg--mrJ2A"
   },
   {
    "id": "yt-lenny-s-podcast",
@@ -592,15 +587,14 @@
    "id": "yt-oversimplified",
    "name": "OverSimplified",
    "type": "youtube",
-   "status": "error",
+   "status": "ok",
    "count": 0,
    "resolved": {
     "channelId": "UCNIuvl7V8zACPpTmmNIqP2A",
     "title": "OverSimplified",
     "via": "name search"
    },
-   "error": "not found (404)",
-   "http": 404
+   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCNIuvl7V8zACPpTmmNIqP2A"
   },
   {
    "id": "yt-ordinary-things",
@@ -634,14 +628,15 @@
    "id": "yt-economics-explained",
    "name": "Economics Explained",
    "type": "youtube",
-   "status": "ok",
-   "count": 3,
+   "status": "error",
+   "count": 0,
    "resolved": {
     "channelId": "UCZ4AMrDcNrfy3X6nsU8-rPg",
     "title": "Economics Explained",
     "via": "name search"
    },
-   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCZ4AMrDcNrfy3X6nsU8-rPg"
+   "error": "not found (404)",
+   "http": 404
   },
   {
    "id": "yt-j-j-mccullough",
@@ -661,14 +656,15 @@
    "id": "yt-adam-neely",
    "name": "Adam Neely",
    "type": "youtube",
-   "status": "ok",
+   "status": "error",
    "count": 0,
    "resolved": {
     "channelId": "UCnkp4xDOwqqJD7sSM3xdUiQ",
     "title": "Adam Neely",
     "via": "name search"
    },
-   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCnkp4xDOwqqJD7sSM3xdUiQ"
+   "error": "not found (404)",
+   "http": 404
   },
   {
    "id": "rd-productmanagement",
@@ -701,9 +697,10 @@
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
+   "lastOk": "2026-10-23T01:07:17.732Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-xbox",
@@ -712,7 +709,7 @@
    "status": "cached",
    "count": 5,
    "lastOk": "2026-10-21T15:54:55.125Z",
-   "note": "rate-limited (429)"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-slaythespire",
@@ -721,25 +718,26 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-10-22T19:01:21.202Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
   },
   {
    "id": "rd-germany",
    "name": "r/germany",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": "2026-10-15T00:59:57.533Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-unitedkingdom",
@@ -748,10 +746,27 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   }
  ],
  "items": [
+  {
+   "title": "Who Wins Wars? – AbroadReview",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xcvbuv/who_wins_wars_abroadreview/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-22T21:26:14.000Z",
+   "summary": "Current events show that it is not just military might that wins wars. Research finds that distance, deployment, and aims all matter. My latest living lit review on AbroadReview. What am I missing? submitted by /u/tscherer [link] [comments]",
+   "id": "faffa0fec7a9",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
   {
    "title": "Matthew Lesh / X: \"NEW: The Online Safety Act has been a failure, according to a new report from Ofcom. Ofcom have found \"no significant change\" in children encountering harmful content since the law came into effect last July. This is despite the signifigant threats to free speech and privacy.\"",
    "url": "https://www.reddit.com/r/ukpolitics/comments/1xcusnb/matthew_lesh_x_new_the_online_safety_act_has_been/",
@@ -770,6 +785,23 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
+   "title": "'This effectively sets Russia far behind in the AI race': Ukraine is wiping out data centers across the border",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xcu8h0/this_effectively_sets_russia_far_behind_in_the_ai/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-22T20:42:38.000Z",
+   "summary": "Russia prides itself on its digital advances — from an extensive e-commerce services sector to ambitious plans for developing artificial intelligence. But now, some of the key data centers at the heart of its technical prowess have been knocked out by Ukrainian drone attacks in…",
+   "id": "30aa2900921c",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
    "title": "File Sharing on Teams Made Worse",
    "url": "https://www.reddit.com/r/ProductManagement/comments/1xctk8m/file_sharing_on_teams_made_worse/",
    "source": "r/productmanagement",
@@ -781,6 +813,23 @@
    "published": "2026-10-22T20:16:56.000Z",
    "summary": "Who’s the moron at Microsoft that made filesharing substantially worse. When I’m trying to drag a file into the chat, teams used to just upload the file I want because that’s the file I chose. It shouldn’t question whether I want to upload that file or not and say I need to…",
    "id": "b135c8666d93",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "The End of Primacy Without Pain: Why the Domestic Foundation of American Power Is Crumbling",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xctijv/the_end_of_primacy_without_pain_why_the_domestic/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-22T20:15:11.000Z",
+   "summary": "submitted by /u/carnegieendowment [link] [comments]",
+   "id": "40691479555a",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -871,6 +920,23 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
+   "title": "SWAT Team Robot Successfully Dismantles Black Man",
+   "url": "https://www.youtube.com/watch?v=zM7B9UPcHzE",
+   "source": "The Onion",
+   "feedId": "yt-the-onion",
+   "type": "video",
+   "tags": [
+    "comedy"
+   ],
+   "published": "2026-10-22T17:00:38.000Z",
+   "summary": "Evacuation orders were in effect after downtown residents noticed a Black man was left suspiciously unattended in a high population area. Become an Onion member while it's still optional: https://membership.theonion.com/?campaign=701a500001geULHAA2",
+   "thumb": "https://i3.ytimg.com/vi/zM7B9UPcHzE/hqdefault.jpg",
+   "id": "e85ea514d7d3",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
    "title": "Global cyber security alert issued - as major tech boss says he's 'not seen anything like this in a long time'",
    "url": "https://www.reddit.com/r/ukpolitics/comments/1xcngv0/global_cyber_security_alert_issued_as_major_tech/",
    "source": "r/ukpolitics",
@@ -883,57 +949,6 @@
    "published": "2026-10-22T16:33:03.000Z",
    "summary": "submitted by /u/BuxtonEU [link] [comments]",
    "id": "c28413799bc0",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Putin is happily taking a US reset and keeping the war",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xclgur/putin_is_happily_taking_a_us_reset_and_keeping/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-22T15:19:47.000Z",
-   "summary": "Kyiv has offered to freeze the front line as Trump demanded, yet the pressure keeps landing on Zelenskyy, because Ukraine, wired into American systems, is the easier party to move. America’s reset with Russia has begun, and nobody waited for the war to end first: a…",
-   "id": "46e6b57bf359",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Why Kazakhstan Joined Both the American and Chinese AI Initiatives",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xcku3b/why_kazakhstan_joined_both_the_american_and/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-22T14:56:19.000Z",
-   "summary": "submitted by /u/RUSIOfficial [link] [comments]",
-   "id": "4ebc0226c2e9",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Nothing personal between me and Trump, Zelensky tells CNN",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xcksfq/nothing_personal_between_me_and_trump_zelensky/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-22T14:54:37.000Z",
-   "summary": "submitted by /u/cnn [link] [comments]",
-   "id": "d475261e5f47",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1083,95 +1098,396 @@
    "why": "0"
   },
   {
-   "title": "How Old Money Kills Economies",
-   "url": "https://www.youtube.com/watch?v=2a0veEb3znU",
-   "source": "Economics Explained",
-   "feedId": "yt-economics-explained",
+   "title": "The new revolution in democracy has arrived. Play The Onion Voting Simulator 3D.",
+   "url": "https://www.youtube.com/shorts/jiPdtCKVdcc",
+   "source": "The Onion",
+   "feedId": "yt-the-onion",
    "type": "video",
    "tags": [
-    "finance",
-    "listen"
+    "comedy"
    ],
-   "published": "2026-10-21T14:03:39.000Z",
-   "summary": "Head to https://chime.yt.link/tHtcoiS for a $200 bonus and 3.75% APY with Chime® Thanks Chime for sponsoring this video! 📫 11,123+ read our free newsletter that has weekly original stories Sign up: → https://economics-explained-tv-program.beehiiv.com/ This video was made…",
-   "thumb": "https://i3.ytimg.com/vi/2a0veEb3znU/hqdefault.jpg",
-   "id": "1dfb5d381fb9",
+   "published": "2026-10-21T20:30:32.000Z",
+   "summary": "Now available at https://theonion.com/voting-simulator/ Become an Onion member while it's still optional: https://membership.theonion.com/?campaign=701a500001geULHAA2",
+   "thumb": "https://i3.ytimg.com/vi/jiPdtCKVdcc/hqdefault.jpg",
+   "id": "3d9595370b13",
    "score": 0,
    "matched": [],
    "why": "0"
   },
   {
-   "title": "How Planes Fly Without Air Traffic Control",
-   "url": "https://www.youtube.com/watch?v=ju1OZStv2eI",
-   "source": "Half as Interesting",
-   "feedId": "yt-half-as-interesting",
+   "title": "Why the government can't meet the French protesters' demands | The Economist",
+   "url": "https://www.youtube.com/shorts/a_YnzSk_x9I",
+   "source": "The Economist",
+   "feedId": "yt-the-economist",
+   "type": "video",
+   "tags": [
+    "finance",
+    "business"
+   ],
+   "published": "2026-10-21T18:45:18.000Z",
+   "summary": "The French government is paralysed. Protests have swept the country, demanding more spending on education and lower petrol prices. The Economist’s Paris bureau chief, Sophie Pedder, explains why President Macron cannot meet the protesters’ demands. Read more:…",
+   "thumb": "https://i2.ytimg.com/vi/a_YnzSk_x9I/hqdefault.jpg",
+   "id": "5e82b9992878",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Which Numbers Are the Funniest | Smartypants Presentation [Clip]",
+   "url": "https://www.youtube.com/watch?v=SIhg6iXI6e4",
+   "source": "Dropout",
+   "feedId": "yt-dropout",
+   "type": "video",
+   "tags": [
+    "comedy"
+   ],
+   "published": "2026-10-21T17:30:18.000Z",
+   "summary": "Have you ever wondered why people laugh at certain numbers? What makes them funny? Is it universal? Well don't worry. After extensive research, Paul Robalino is here to answer these hard hitting questions. You can watch the full episode here:…",
+   "thumb": "https://i4.ytimg.com/vi/SIhg6iXI6e4/hqdefault.jpg",
+   "id": "6c16d466b2f0",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "\"Just Give Me The Damn Sepak Takraw Ball\"",
+   "url": "https://www.youtube.com/shorts/pi0VA2d7vs4",
+   "source": "The Onion",
+   "feedId": "yt-the-onion",
+   "type": "video",
+   "tags": [
+    "comedy"
+   ],
+   "published": "2026-10-21T17:00:37.000Z",
+   "summary": "Become an Onion member while it's still optional: https://membership.theonion.com/?campaign=701a500001geULHAA2",
+   "thumb": "https://i1.ytimg.com/vi/pi0VA2d7vs4/hqdefault.jpg",
+   "id": "10f717b29b62",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "AfD co-leader Alice Weidel on Ukraine, migration and Germany’s future | The Economist",
+   "url": "https://www.youtube.com/watch?v=_cGGDu8sgXY",
+   "source": "The Economist",
+   "feedId": "yt-the-economist",
+   "type": "video",
+   "tags": [
+    "finance",
+    "business"
+   ],
+   "published": "2026-10-21T10:00:38.000Z",
+   "summary": "Alice Weidel is one of the most important politicians in Europe today. She is the co-leader of the Alternative for Germany (AfD), the right-wing populist party which is leading in Germany’s national polls and came top in two recent state elections. Ms Weidel is skilled at…",
+   "thumb": "https://i4.ytimg.com/vi/_cGGDu8sgXY/hqdefault.jpg",
+   "id": "4373119f1481",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Russia is building its own version of Starlink | The Economist",
+   "url": "https://www.youtube.com/shorts/My3gZjfEupM",
+   "source": "The Economist",
+   "feedId": "yt-the-economist",
+   "type": "video",
+   "tags": [
+    "finance",
+    "business"
+   ],
+   "published": "2026-10-20T18:02:08.000Z",
+   "summary": "Russia is building its own version of Starlink—the satellite-internet system that has been crucial to Ukraine’s war effort. It's called Rassvet and currently has just 31 satellites in orbit, providing patchy coverage for only a few hours a day. But Russia aims to expand the…",
+   "thumb": "https://i2.ytimg.com/vi/My3gZjfEupM/hqdefault.jpg",
+   "id": "a370dc4496b3",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Is Pete Hegseth's Bold Pledge To 'Kill Everyone' By 2028 An Unrealistic Pipe Dream?",
+   "url": "https://www.youtube.com/watch?v=pu3Cr6qjbJI",
+   "source": "The Onion",
+   "feedId": "yt-the-onion",
+   "type": "video",
+   "tags": [
+    "comedy"
+   ],
+   "published": "2026-10-20T17:04:24.000Z",
+   "summary": "United States Defense Secretary Pete Hegseth announced an ambitious new plan to \"kill everyone\" within the next two years. But is this a realistic goal, or just another empty promise to rally support before the midterms? Our In The Know panelists discuss. Become an Onion member…",
+   "thumb": "https://i1.ytimg.com/vi/pu3Cr6qjbJI/hqdefault.jpg",
+   "id": "482656d197e7",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "KT #790 - YUNG GRAVY + ERIK GRIFFIN",
+   "url": "https://www.youtube.com/watch?v=_XkQRV9dFL4",
+   "source": "Kill Tony",
+   "feedId": "yt-kill-tony",
    "type": "video",
    "tags": [
     "comedy",
-    "education"
+    "standup",
+    "listen"
    ],
-   "published": "2026-10-19T18:40:58.000Z",
-   "summary": "Thanks to Storyblocks for sponsoring this video. Get 15% off any annual plan for a limited time, only available through this link: https://www.storyblocks.com/HAI Follow Sam from Half as Interesting on Instagram: http://Instagram.com/Sam.From.Wendover Follow Half as Interesting…",
-   "thumb": "https://i3.ytimg.com/vi/ju1OZStv2eI/hqdefault.jpg",
-   "id": "fdb4fbd01780",
+   "published": "2026-10-20T01:00:09.000Z",
+   "summary": "Yung Gravy, Erik Griffin, Pat O'Neill, Dedrick Flynn, Martin Phillips, D Madness, Michael A. Gonzales, Jon Deas, Matthew Muehling, Grooveline Horns, Joe White, Troy Conrad, Monica Colt, Steve Glass, Tony Hinchcliffe, Brian Redban - RECORDED– 10/12/2026 TONY HINCHCLIFFE…",
+   "thumb": "https://i4.ytimg.com/vi/_XkQRV9dFL4/hqdefault.jpg",
+   "id": "c58904db8f1d",
    "score": 0,
    "matched": [],
    "why": "0"
   },
   {
-   "title": "Living Paycheck to Paycheck? So Is Everyone Else",
-   "url": "https://www.youtube.com/watch?v=FZWLIOKUcIo",
-   "source": "Economics Explained",
-   "feedId": "yt-economics-explained",
+   "title": "Study Finds Growing Gap Between America's Rich and Super-Rich",
+   "url": "https://www.youtube.com/shorts/T65_h6XnKI8",
+   "source": "The Onion",
+   "feedId": "yt-the-onion",
+   "type": "video",
+   "tags": [
+    "comedy"
+   ],
+   "published": "2026-10-19T17:00:03.000Z",
+   "summary": "Become an Onion member while it's still optional: https://membership.theonion.com/?campaign=701a500001geULHAA2",
+   "thumb": "https://i1.ytimg.com/vi/T65_h6XnKI8/hqdefault.jpg",
+   "id": "b20f5e86c2fa",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Jacob Wysocki On Make Some Noise, New Dimension 20, And More!",
+   "url": "https://www.youtube.com/shorts/LryV--PotoA",
+   "source": "Dropout",
+   "feedId": "yt-dropout",
+   "type": "video",
+   "tags": [
+    "comedy"
+   ],
+   "published": "2026-10-19T15:00:21.000Z",
+   "summary": "This week on Dropout... 🔊 Monday: Make Some Noise (with Carl Tart, Jess McKenna, and Jacob Wysocki) ✏️ Tuesday: Toonout 🧸 Wednesday: Dimension 20: Toylight Finale 🗣️ Thursday: Adventuring Party 🐷 Friday: Smartyshorts Welcome to the Dropout channel! You can support us by…",
+   "thumb": "https://i1.ytimg.com/vi/LryV--PotoA/hqdefault.jpg",
+   "id": "1476fab5a5cb",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Clocks are so much more interesting than I thought.",
+   "url": "https://www.youtube.com/watch?v=BxXfeotgVVA",
+   "source": "Tom Scott",
+   "feedId": "yt-tom-scott",
+   "type": "video",
+   "tags": [
+    "education"
+   ],
+   "published": "2026-10-19T15:00:08.000Z",
+   "summary": "At the Cumbria Clock Company, I discover that I knew far less about clocks than I thought. | ❓ Lateral, free weekly podcast: https://lateralcast.com/ https://youtube.com/lateralcast/ 🗺️ England series map: https://www.tomscott.com/england/ 🟥 MORE FROM TOM:…",
+   "thumb": "https://i3.ytimg.com/vi/BxXfeotgVVA/hqdefault.jpg",
+   "id": "636e08097a67",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Are you about to lose your job? | The Economist",
+   "url": "https://www.youtube.com/shorts/ikTRw7W2u9g",
+   "source": "The Economist",
+   "feedId": "yt-the-economist",
    "type": "video",
    "tags": [
     "finance",
-    "listen"
+    "business"
    ],
-   "published": "2026-10-18T15:04:58.000Z",
-   "summary": "Ready to be seen? Check that appointment off your to-do list with Zocdoc ✅ : https://zocdoc.com/ee #sponsored 📫 11,231+ read our free newsletter that has weekly original stories Sign up: → https://economics-explained-tv-program.beehiiv.com/ This video was made possible by our…",
-   "thumb": "https://i3.ytimg.com/vi/FZWLIOKUcIo/hqdefault.jpg",
-   "id": "c1b0103afba2",
+   "published": "2026-10-19T10:00:28.000Z",
+   "summary": "At no time in polling history have Americans been less optimistic about their long-term employment prospects—and the main cause of this gloom is artificial intelligence. Alex Hern, The Economist's AI writer, explores whether people are right to worry. Video supported by…",
+   "thumb": "https://i2.ytimg.com/vi/ikTRw7W2u9g/hqdefault.jpg",
+   "id": "4eb1ad0c59ed",
    "score": 0,
    "matched": [],
    "why": "0"
   },
   {
-   "title": "The Logistics of IMAX",
-   "url": "https://www.youtube.com/watch?v=auScRXZwHhk",
-   "source": "Half as Interesting",
-   "feedId": "yt-half-as-interesting",
+   "title": "KT: Behind the Tape (Ep: 789 Tim Butterly + Kirk Fox)",
+   "url": "https://www.youtube.com/watch?v=J97RDpBsDHg",
+   "source": "Kill Tony",
+   "feedId": "yt-kill-tony",
    "type": "video",
    "tags": [
     "comedy",
-    "education"
+    "standup",
+    "listen"
    ],
-   "published": "2026-10-14T17:49:58.000Z",
-   "summary": "Get Nebula using my link for 50% off an annual subscription: https://go.nebula.tv/hai Follow Sam from Half as Interesting on Instagram: http://Instagram.com/Sam.From.Wendover Follow Half as Interesting on Twitter: http://twitter.com/halfinteresting Discuss this video on Reddit:…",
-   "thumb": "https://i2.ytimg.com/vi/auScRXZwHhk/hqdefault.jpg",
-   "id": "c10e962d54a1",
+   "published": "2026-10-18T13:00:10.000Z",
+   "summary": "An exclusive, behind the scenes look from KT Episode 789 KT guest Tim Butterly + Kirk Fox Tim Butterly, Kirk Fox, Pat O'Neill, Dedrick Flynn, Martin Phillips, D Madness, Michael A. Gonzales, Jon Deas, Matthew Muehling, Grooveline Horns, Joe White, Troy Conrad, Monica Colt…",
+   "thumb": "https://i3.ytimg.com/vi/J97RDpBsDHg/hqdefault.jpg",
+   "id": "5961f53720ee",
    "score": 0,
    "matched": [],
    "why": "0"
   },
   {
-   "title": "What Happens When AI Is Free ... South Korea Tried It",
-   "url": "https://www.youtube.com/watch?v=ZRNQ1QgbDj4",
-   "source": "Economics Explained",
-   "feedId": "yt-economics-explained",
+   "title": "Putin’s Plan to Protect Russia’s Internet Backfired",
+   "url": "https://www.youtube.com/watch?v=JnceIDVMZyQ",
+   "source": "Patrick Boyle",
+   "feedId": "yt-patrick-boyle",
    "type": "video",
    "tags": [
     "finance",
+    "education",
     "listen"
    ],
-   "published": "2026-10-14T14:58:48.000Z",
-   "summary": "Read Shopify's latest data on the rising global impact of entrepreneurship: https://www.shopify.com/entrepreneur 📫 10,859+ read our free newsletter that has weekly original stories Sign up: → https://economics-explained-tv-program.beehiiv.com/ This video was made possible by…",
-   "thumb": "https://i3.ytimg.com/vi/ZRNQ1QgbDj4/hqdefault.jpg",
-   "id": "23fb10aa8d43",
+   "published": "2026-10-17T11:27:44.000Z",
+   "summary": "Go to http://ground.news/pb for a better way to stay informed. Subscribe for 40% off unlimited access to worldwide coverage through my link. In October 2026, Ukrainian drone strikes knocked out three of Yandex’s six major data centers, and a viral chart claimed that Russian…",
+   "thumb": "https://i3.ytimg.com/vi/JnceIDVMZyQ/hqdefault.jpg",
+   "id": "b317aa72b904",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Alice Weidel on the AfD’s stance on non-traditional families | The Economist",
+   "url": "https://www.youtube.com/shorts/HWfAfWjS138",
+   "source": "The Economist",
+   "feedId": "yt-the-economist",
+   "type": "video",
+   "tags": [
+    "finance",
+    "business"
+   ],
+   "published": "2026-10-17T10:00:30.000Z",
+   "summary": "The Alternative for Germany party defines the family exclusively as a mother, father, and their children. The co-leader of the party, Alice Weidel, told The Economist’s editor-in-chief, Zanny Minton Beddoes, why she supports that description while raising two children with her…",
+   "thumb": "https://i1.ytimg.com/vi/HWfAfWjS138/hqdefault.jpg",
+   "id": "516802c5104f",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Hot Peasant Summer | Toonout [Animated Shorts]",
+   "url": "https://www.youtube.com/watch?v=JU9i8-q7ZOk",
+   "source": "Dropout",
+   "feedId": "yt-dropout",
+   "type": "video",
+   "tags": [
+    "comedy"
+   ],
+   "published": "2026-10-14T17:30:35.000Z",
+   "summary": "Nothing can stop the party for Brooke & Haley, not even getting flushed back to the 14th century. To watch more episode of Toonout and other animated series, sign up for Dropout: https://www.dropout.tv/plans Welcome to the Dropout channel! You can support us by signing up for…",
+   "thumb": "https://i3.ytimg.com/vi/JU9i8-q7ZOk/hqdefault.jpg",
+   "id": "7a3b5bbc7339",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "MP3 Trailer [New Dropout Series]",
+   "url": "https://www.youtube.com/watch?v=Q9Uvlu_mDAU",
+   "source": "Dropout",
+   "feedId": "yt-dropout",
+   "type": "video",
+   "tags": [
+    "comedy"
+   ],
+   "published": "2026-10-13T17:30:28.000Z",
+   "summary": "Welcome to the world of MP3 - where every episode brings new outrageous music videos, ridiculous hosts, and surprise guests. Premieres November 4th only on Dropout. Welcome to the Dropout channel! You can support us by signing up for Dropout.tv, our subscription video platform…",
+   "thumb": "https://i2.ytimg.com/vi/Q9Uvlu_mDAU/hqdefault.jpg",
+   "id": "c5bb691b7732",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "KT #789 - TIM BUTTERLY +KIRK FOX",
+   "url": "https://www.youtube.com/watch?v=ntTShp2YNlo",
+   "source": "Kill Tony",
+   "feedId": "yt-kill-tony",
+   "type": "video",
+   "tags": [
+    "comedy",
+    "standup",
+    "listen"
+   ],
+   "published": "2026-10-13T01:00:06.000Z",
+   "summary": "Tim Butterly, Kirk Fox, Pat O'Neill, Dedrick Flynn, Martin Phillips, D Madness, Michael A. Gonzales, Jon Deas, Matthew Muehling, Grooveline Horns, Joe White, Troy Conrad, Monica Colt, Steve Glass, Tony Hinchcliffe, Brian Redban - RECORDED– 10/05/2026 For advertising inquiries,…",
+   "thumb": "https://i3.ytimg.com/vi/ntTShp2YNlo/hqdefault.jpg",
+   "id": "addc529e979e",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Why robots still can't pick strawberries",
+   "url": "https://www.youtube.com/watch?v=TumxO2glmPQ",
+   "source": "Tom Scott",
+   "feedId": "yt-tom-scott",
+   "type": "video",
+   "tags": [
+    "education"
+   ],
+   "published": "2026-10-12T15:00:21.000Z",
+   "summary": "At Wilkin & Sons in Tiptree, a city boy gets impressed by agriculture, and meets some robots that work better than others. | AD: 💼 Find a fulfilling career that also helps the world: https://80000hours.org/tom | 🗺️ England series map: https://www.tomscott.com/england/ 🟥 MORE…",
+   "thumb": "https://i1.ytimg.com/vi/TumxO2glmPQ/hqdefault.jpg",
+   "id": "da63d329ef7b",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Emily Takes Over Dimension 20, Demi Adejuyigbe on New Crowd Control, And More!",
+   "url": "https://www.youtube.com/shorts/TN3sl6rpSVU",
+   "source": "Dropout",
+   "feedId": "yt-dropout",
+   "type": "video",
+   "tags": [
+    "comedy"
+   ],
+   "published": "2026-10-12T15:00:20.000Z",
+   "summary": "This week on Dropout... 🤣 Monday: Crowd Control (with Demi Adejuyigbe, Amber Ruffin, and Roz Hernandez) 🧸 Wednesday: Dimension 20: Toylight 🗣️ Thursday: Adventuring Party 🐷 Friday: Smartypants (with Ryan Creamer, Jeff Whitaker, and Corin Wells) Welcome to the Dropout…",
+   "thumb": "https://i1.ytimg.com/vi/TN3sl6rpSVU/hqdefault.jpg",
+   "id": "83da94a6c9e5",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "KT: Behind the Tape (Ep: 788 Wheeler Walker + Sam Tripoli)",
+   "url": "https://www.youtube.com/watch?v=aoogiviEa1A",
+   "source": "Kill Tony",
+   "feedId": "yt-kill-tony",
+   "type": "video",
+   "tags": [
+    "comedy",
+    "standup",
+    "listen"
+   ],
+   "published": "2026-10-12T05:54:09.000Z",
+   "summary": "An exclusive, behind the scenes look from KT Episode 788 KT guest Wheeler Walker + Sam Tripoli Wheeler Walker Jr, Sam Tripoli, Pat O'Neill, Dedrick Flynn, Martin Phillips, D Madness, Michael A. Gonzales, Jon Deas, Matthew Muehling, Grooveline Horns, Joe White, Troy Conrad,…",
+   "thumb": "https://i2.ytimg.com/vi/aoogiviEa1A/hqdefault.jpg",
+   "id": "72b24489802d",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "The Bond Market Has Singled Out France",
+   "url": "https://www.youtube.com/watch?v=Uje_KSCzJJc",
+   "source": "Patrick Boyle",
+   "feedId": "yt-patrick-boyle",
+   "type": "video",
+   "tags": [
+    "finance",
+    "education",
+    "listen"
+   ],
+   "published": "2026-10-10T10:54:47.000Z",
+   "summary": "They can't harm you, if they can't find you! Use code BOYLE at the link below and get 60% off an annual plan: https://incogni.com/boyle France now pays more to borrow than Greece and Italy, and French bond yields have hit their highest level in almost a quarter of a century. In…",
+   "thumb": "https://i2.ytimg.com/vi/Uje_KSCzJJc/hqdefault.jpg",
+   "id": "3785cc92960e",
    "score": 0,
    "matched": [],
    "why": "0"
   }
  ],
- "contentHash": "821cb0d34a82"
+ "contentHash": "30a56b14c15c"
 }
