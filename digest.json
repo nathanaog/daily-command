@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T18:52:06.704Z",
+ "generated": "2026-10-24T21:47:03.038Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
@@ -630,20 +630,19 @@
    "id": "rd-productmanagement",
    "name": "r/productmanagement",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 3,
-   "url": "https://www.reddit.com/r/productmanagement/top/.rss?t=day"
+   "lastOk": "2026-10-24T18:52:06.704Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-tech",
    "name": "r/tech",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": "2026-10-23T15:55:56.378Z",
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-gaming",
@@ -652,25 +651,26 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-10-24T12:58:31.910Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
   },
   {
    "id": "rd-xbox",
    "name": "r/xbox",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": "2026-10-21T15:54:55.125Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-slaythespire",
@@ -679,7 +679,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-geopolitics",
@@ -711,6 +711,129 @@
  ],
  "items": [
   {
+   "title": "Cenk Uygur, You F***ED UP. Admit it.",
+   "url": "https://www.youtube.com/watch?v=X3ct3XAlJvY",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-24T21:30:36.000Z",
+   "summary": "Luke discusses Cenk Uygur's bizarre shift in attitude toward Ukraine. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
+   "thumb": "https://i1.ytimg.com/vi/X3ct3XAlJvY/hqdefault.jpg",
+   "id": "7ffb2a9e973d",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Wes Streeting: Britain must be ready for war in 1,000 days",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xeitl6/wes_streeting_britain_must_be_ready_for_war_in/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-24T20:21:14.000Z",
+   "summary": "submitted by /u/TheTelegraph [link] [comments]",
+   "id": "6dcba98cc740",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Hunderte Menschen demonstrieren gegen Abschiebungen",
+   "url": "https://www.youtube.com/watch?v=bQYsZOpCfd0",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-24T20:09:18.000Z",
+   "summary": "Bei einem bundesweiten Aktionstag haben an mehreren Flughäfen Hunderte Menschen gegen Abschiebungen und Abschiebehaft demonstriert. Alle aktuellen Informationen, weitere Nachrichten und tagesschau24 im Livestream: https://www.tagesschau.de/ Alle Sendungen, Livestreams,…",
+   "thumb": "https://i3.ytimg.com/vi/bQYsZOpCfd0/hqdefault.jpg",
+   "id": "230592d8e677",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Queue of 100 hopefuls at cafe 'shows how the job market is'",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xehsru/queue_of_100_hopefuls_at_cafe_shows_how_the_job/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-24T19:39:09.000Z",
+   "summary": "submitted by /u/Desperate-Drawer-572 [link] [comments]",
+   "id": "b461d3cc3b4d",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "OH SH*T: Trump Fan Tried to HUMILIATE ME, Quickly REGRETS IT!",
+   "url": "https://www.youtube.com/watch?v=bMlZgdxoNeA",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-24T19:30:07.000Z",
+   "summary": "Luke reacts to criticism of his Chicago Thinker debate with Tim Pool and Jack Posobiec. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
+   "thumb": "https://i3.ytimg.com/vi/bMlZgdxoNeA/hqdefault.jpg",
+   "id": "bcab6730bc76",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "🚨Latest Opinium @The Observer poll🚨 Labour continues to lead in the polls, 8 points ahead of Reform in second place. 🌹LAB 30% (+1) ➡️REF 22% (-2) 🌳CON 20% (n/c) 🌍GRN 10% (+1) 🔶LD 9% (n/c) #Budget2026",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xegvgu/latest_opinium_the_observer_poll_labour_continues/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-24T19:01:34.000Z",
+   "summary": "submitted by /u/ClumperFaz [link] [comments]",
+   "id": "2d94671fff17",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "How councils actually ration SEND budgets: What a 10-month FOI battle into Derby City Council's EHCP matrix revealed about high-needs funding vs statutory law",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xeglyn/how_councils_actually_ration_send_budgets_what_a/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-24T18:51:02.000Z",
+   "summary": "(Disclosure under Rule 8: This is my own original FOI research and analysis of Derby City Council's SEND funding documents.) Most of the national coverage re. the SEND crisis focuses on the multi-billion pound High Needs deficit and the rise in EHCP requests, but there's very…",
+   "id": "321b58bace37",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
    "title": "tagesschau 20:00 Uhr, 24.10.2026",
    "url": "https://www.youtube.com/watch?v=pM6Rh5wNk-k",
    "source": "Tagesschau",
@@ -725,6 +848,23 @@
    "summary": "Die 20-Uhr-Ausgabe der tagesschau im Livestream und auf Abruf findet ihr auch hier: https://ardmediathek.de/tagesschau und https://tagesschau.de 0:00 Guten Abend! 0:20 Erneut landesweite Proteste in Frankreich gegen die hohen Lebenshaltungskosten 3:39 Ebenfalls Proteste in…",
    "thumb": "https://i1.ytimg.com/vi/pM6Rh5wNk-k/hqdefault.jpg",
    "id": "e7a375d5a8f4",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "John Healey to give £20bn boost to UK’s business lender and infrastructure bank",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xefd49/john_healey_to_give_20bn_boost_to_uks_business/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-24T18:01:43.000Z",
+   "summary": "submitted by /u/ldn6 [link] [comments]",
+   "id": "c6ff5544adcd",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -964,42 +1104,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Revealed: Palantir led secret review of how the MoD spends billions",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xe6ubd/revealed_palantir_led_secret_review_of_how_the/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-24T12:01:08.000Z",
-   "summary": "submitted by /u/RareEarthPetal [link] [comments]",
-   "id": "6e073c5617e2",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "ARD-Korrespondent über Proteste in Frankreich: Bis zu 70.000 Sicherheitskräfte im Einsatz",
-   "url": "https://www.youtube.com/watch?v=EsBFOuwF0zw",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-24T11:40:45.000Z",
-   "summary": "Eine Woche nach den gewaltsamen Ausschreitungen in Frankreich finden heute erneut landesweite Demonstrationen statt. Doch es gelten strenge Auflagen: In Paris wurde nur ein Protestmarsch genehmigt, die Route wurde zudem verkürzt. In einigen Städten haben die Behörden…",
-   "thumb": "https://i2.ytimg.com/vi/EsBFOuwF0zw/hqdefault.jpg",
-   "id": "91517bd52193",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "“So Much Worse Than People Realize”: Never-Before-Seen Images Reveal Damage at U.S. Bases as Troops Describe Being Abandoned",
    "url": "https://www.reddit.com/r/geopolitics/comments/1xe61v3/so_much_worse_than_people_realize_neverbeforeseen/",
    "source": "r/geopolitics",
@@ -1052,40 +1156,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Inheritance tax, student loans and pensions: Healey's potential Budget ‘rabbits’",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xe4lp7/inheritance_tax_student_loans_and_pensions/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-24T09:52:03.000Z",
-   "summary": "submitted by /u/theipaper [link] [comments]",
-   "id": "b09affb6fb96",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Thirty-three British warships left service since 2010",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xe4486/thirtythree_british_warships_left_service_since/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-24T09:21:42.000Z",
-   "summary": "submitted by /u/diacewrb [link] [comments]",
-   "id": "396f82b282a8",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "PM's also struggling with anxiety / depression",
    "url": "https://www.reddit.com/r/ProductManagement/comments/1xe3qeh/pms_also_struggling_with_anxiety_depression/",
    "source": "r/productmanagement",
@@ -1097,40 +1167,6 @@
    "published": "2026-10-24T08:57:45.000Z",
    "summary": "I'm wondering if there are others like me who struggle with severe anxiety issues. I love building things, and the PM role is something that fits me well. However, I absolutely fear stakeholder management and get anxiety when there are conflicts. I generally know theoretically…",
    "id": "be3cac84a7fb",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "UK state pension: How does it compare with other countries?",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xe3lkb/uk_state_pension_how_does_it_compare_with_other/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-24T08:49:18.000Z",
-   "summary": "submitted by /u/Kee2good4u [link] [comments]",
-   "id": "f1ceff80ba62",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Farage plays down his Trump friendship in Britain — and talks it up to MAGA",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xe3aw7/farage_plays_down_his_trump_friendship_in_britain/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-24T08:30:17.000Z",
-   "summary": "submitted by /u/RareEarthPetal [link] [comments]",
-   "id": "90afcee3428d",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1432,42 +1468,6 @@
    "summary": "Andrew Feinstein is one of the most versatile people in British politics today. Formerly a member of the South African Parliament for Nelson Mandela's ANC, he has gained notoriety in the UK in recent years, most notably for running against Keir Starmer in Holborn and St Pancras…",
    "thumb": "https://i2.ytimg.com/vi/qMSpoXy0bBY/hqdefault.jpg",
    "id": "f9de87391b46",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Laura Ingraham VISIBLY NERVOUS as Democrat EXPOSES TRUMP On Air!",
-   "url": "https://www.youtube.com/watch?v=lvCqwfaDNp0",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-23T02:50:10.000Z",
-   "summary": "Luke discusses James Carville's appearance on Laura Ingraham's show. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
-   "thumb": "https://i1.ytimg.com/vi/lvCqwfaDNp0/hqdefault.jpg",
-   "id": "b96aaea97c96",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "DAMN: Trump Suffers INSANE MENTAL EPISODE On Stage at Rally!",
-   "url": "https://www.youtube.com/watch?v=NGsYxve8wdo",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-23T00:50:22.000Z",
-   "summary": "Luke discusses the bizarre moments from Trump’s latest rally. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
-   "thumb": "https://i3.ytimg.com/vi/NGsYxve8wdo/hqdefault.jpg",
-   "id": "6b42cf9eaba4",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2785,5 +2785,5 @@
    "why": "0"
   }
  ],
- "contentHash": "5b01aa366d81"
+ "contentHash": "83425fe4b6c6"
 }
