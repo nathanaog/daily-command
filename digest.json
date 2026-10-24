@@ -1,13 +1,13 @@
 {
- "generated": "2026-10-24T07:02:35.473Z",
+ "generated": "2026-10-24T09:49:15.587Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
   "ok": 51,
-  "items": 122,
+  "items": 121,
   "duplicatesMerged": 0,
   "lengthsKnown": 1,
-  "lengthLookups": 102,
+  "lengthLookups": 101,
   "lengthFailures": 101,
   "lengthVia": "video pages",
   "lengthFailReasons": {
@@ -630,19 +630,20 @@
    "id": "rd-productmanagement",
    "name": "r/productmanagement",
    "type": "reddit",
-   "status": "cached",
-   "count": 5,
-   "lastOk": "2026-10-24T01:09:56.445Z",
-   "note": "not its turn this run"
+   "status": "ok",
+   "count": 4,
+   "url": "https://www.reddit.com/r/productmanagement/top/.rss?t=day"
   },
   {
    "id": "rd-tech",
    "name": "r/tech",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": "2026-10-23T15:55:56.378Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-gaming",
@@ -651,7 +652,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-ukpolitics",
@@ -684,20 +685,19 @@
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
+   "lastOk": "2026-10-24T07:02:35.473Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-germany",
    "name": "r/germany",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": "2026-10-15T00:59:57.533Z",
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-unitedkingdom",
@@ -706,10 +706,26 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   }
  ],
  "items": [
+  {
+   "title": "PM's also struggling with anxiety / depression",
+   "url": "https://www.reddit.com/r/ProductManagement/comments/1xe3qeh/pms_also_struggling_with_anxiety_depression/",
+   "source": "r/productmanagement",
+   "feedId": "rd-productmanagement",
+   "type": "post",
+   "tags": [
+    "product"
+   ],
+   "published": "2026-10-24T08:57:45.000Z",
+   "summary": "I'm wondering if there are others like me who struggle with severe anxiety issues. I love building things, and the PM role is something that fits me well. However, I absolutely fear stakeholder management and get anxiety when there are conflicts. I generally know theoretically…",
+   "id": "be3cac84a7fb",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
   {
    "title": "Gulf nations brace for possible return to all-out war between US and Iran",
    "url": "https://www.reddit.com/r/geopolitics/comments/1xe0w19/gulf_nations_brace_for_possible_return_to_allout/",
@@ -885,132 +901,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "tagesthemen 21:45 Uhr, 23.10.2026",
-   "url": "https://www.youtube.com/watch?v=H5TXZGwBPco",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-23T20:48:43.000Z",
-   "summary": "tagesthemen 21:45 Uhr CSU-Parteitag in München: Söder und die Extremismusklausel, Außenminister beraten über Lage in Nahost, Saudischer Kronprinz Mohammed bin Salman durch Huthi-Angriffe unter Druck, Flughafen Berlin-Brandenburg: Ryanair streicht Verbindungen und schließt…",
-   "thumb": "https://i1.ytimg.com/vi/H5TXZGwBPco/hqdefault.jpg",
-   "id": "59efb112c093",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "‘I'm going to start prepping for a crisis’ | James O’Brien - The Whole Show",
-   "url": "https://www.youtube.com/watch?v=bwNzr92JOd4",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-23T20:00:10.000Z",
-   "summary": "This is a catch-up version of James O'Brien's live, daily show on LBC Radio from the 23rd of October 2026. Listen to the full show on the all-new LBC App: https://app.af.lbc.co.uk/btnc/thenewlbcapp #jamesobrien #politics #LBC LBC is the home of live debate around news and…",
-   "thumb": "https://i3.ytimg.com/vi/bwNzr92JOd4/hqdefault.jpg",
-   "id": "c8e3c9546e72",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "My Viewers' Top 10 Characters I've Voiced",
-   "url": "https://www.youtube.com/watch?v=cwANUZTGXeo",
-   "source": "ProZD",
-   "feedId": "yt-prozd",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "gaming"
-   ],
-   "published": "2026-10-23T19:58:59.000Z",
-   "summary": "My Patreon: https://www.patreon.com/ProZD My Cameo: https://www.cameo.com/prozd My Let's Play Channel: https://www.youtube.com/@prozdplaysgames My Food Channel: https://www.youtube.com/@ProZDEatsFood My Anime Channel: https://www.youtube.com/@ProZDWatchesAnime My Autograph…",
-   "thumb": "https://i4.ytimg.com/vi/cwANUZTGXeo/hqdefault.jpg",
-   "id": "67d25224d572",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "CSU-Parteitag in München | tagesthemen-Interview",
-   "url": "https://www.youtube.com/watch?v=EU5kPCTbIg4",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-23T19:55:31.000Z",
-   "summary": "In München trifft sich die CSU zu ihrem Parteitag. Zwar steht die Partei in den Umfragen gut da, doch der Abwärtstrend bei der Schwesterpartei CDU löst auch in der CSU Besorgnis aus. Angesprochen auf die niedrigen Umfragewerte für die CSU unter jungen Wählern, verweist der…",
-   "thumb": "https://i2.ytimg.com/vi/EU5kPCTbIg4/hqdefault.jpg",
-   "id": "45a63adc9a37",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "BER: Rückzug vom laut Ryanair „erfolglosesten Flughafen Europas“",
-   "url": "https://www.youtube.com/watch?v=B-X0lq4q1DU",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-23T19:48:00.000Z",
-   "summary": "Ryanair schließt zum 24. Oktober ihre Basis mit sieben Flugzeugen und dazugehörigen Crews am Berliner Flughafen BER. Der Airport wird zwar weiterhin von Ryanair angeflogen, verliert aber den Angaben zufolge rund die Hälfte des bisherigen Angebots. Die Luftverkehrsbranche…",
-   "thumb": "https://i3.ytimg.com/vi/B-X0lq4q1DU/hqdefault.jpg",
-   "id": "690b4de60a03",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Cyberpunk 2077 2.5 UPDATE IS HUGE, Half Life 3 Leaked? & More",
-   "url": "https://www.youtube.com/watch?v=NgJzR8zZU78",
-   "source": "GameRanx",
-   "feedId": "yt-gameranx",
-   "type": "video",
-   "tags": [
-    "gaming"
-   ],
-   "published": "2026-10-23T19:37:05.000Z",
-   "summary": "Thank you Helix Sleep for sponsoring! Visit http://helixsleep.com/gameranx to take advantage of their Fall Savings Event and get 20% Off Sitewide! ~~SOURCES~~ Cyberpunk 2077 2.5 UPDATE IS HUGE https://www.youtube.com/watch?v=nhlnT9FzgJ8 HALF LIFE confirmed??…",
-   "thumb": "https://i3.ytimg.com/vi/NgJzR8zZU78/hqdefault.jpg",
-   "id": "1b9497657f1e",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Is this common or have I just landed in places with bad practices?",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1xdm4nk/is_this_common_or_have_i_just_landed_in_places/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-10-23T18:33:23.000Z",
-   "summary": "I work and have work for software companies. Is it common for low level product managers to not have a Single Source of Truth, meaning messy PRDs with lots of versions and lots of comments plus accepting changes to the PRD after creating epics and issues for development without…",
-   "id": "0db4a558b575",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Free Speech Union hit by internal allegations of racism and sexually inappropriate remarks",
    "url": "https://www.reddit.com/r/ukpolitics/comments/1xdlkew/free_speech_union_hit_by_internal_allegations_of/",
    "source": "r/ukpolitics",
@@ -1074,38 +964,6 @@
    "published": "2026-10-23T17:24:44.000Z",
    "summary": "submitted by /u/ClumperFaz [link] [comments]",
    "id": "00d25cd28631",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Sdlc changes with the existence of AI",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1xdhook/sdlc_changes_with_the_existence_of_ai/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-10-23T15:47:38.000Z",
-   "summary": "Hi pm squad. Now that prd are getting so easy to generate, it's really important that they have the correct information. I want them to be considered the source of Truth or some sort of documentation on decisions and evidence and evals needed. Is that the way you guys see it as…",
-   "id": "87ee5e264723",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "PM of a physical product - understanding the nature of the job?",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1xdhf2u/pm_of_a_physical_product_understanding_the_nature/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-10-23T15:37:14.000Z",
-   "summary": "I went into PM from engineering and the first year I had a great time, but my previous boss was very sales oriented so I traveled a ton and felt like a sales person more than anything else. I didn’t mind though, and through some product updates and changes I obtained a record…",
-   "id": "85ba222ab416",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1191,6 +1049,116 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
+   "title": "tagesthemen 21:45 Uhr, 23.10.2026",
+   "url": "https://www.youtube.com/watch?v=H5TXZGwBPco",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-23T20:48:43.000Z",
+   "summary": "tagesthemen 21:45 Uhr CSU-Parteitag in München: Söder und die Extremismusklausel, Außenminister beraten über Lage in Nahost, Saudischer Kronprinz Mohammed bin Salman durch Huthi-Angriffe unter Druck, Flughafen Berlin-Brandenburg: Ryanair streicht Verbindungen und schließt…",
+   "thumb": "https://i1.ytimg.com/vi/H5TXZGwBPco/hqdefault.jpg",
+   "id": "59efb112c093",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "‘I'm going to start prepping for a crisis’ | James O’Brien - The Whole Show",
+   "url": "https://www.youtube.com/watch?v=bwNzr92JOd4",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-23T20:00:10.000Z",
+   "summary": "This is a catch-up version of James O'Brien's live, daily show on LBC Radio from the 23rd of October 2026. Listen to the full show on the all-new LBC App: https://app.af.lbc.co.uk/btnc/thenewlbcapp #jamesobrien #politics #LBC LBC is the home of live debate around news and…",
+   "thumb": "https://i3.ytimg.com/vi/bwNzr92JOd4/hqdefault.jpg",
+   "id": "c8e3c9546e72",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "My Viewers' Top 10 Characters I've Voiced",
+   "url": "https://www.youtube.com/watch?v=cwANUZTGXeo",
+   "source": "ProZD",
+   "feedId": "yt-prozd",
+   "type": "video",
+   "tags": [
+    "comedy",
+    "gaming"
+   ],
+   "published": "2026-10-23T19:58:59.000Z",
+   "summary": "My Patreon: https://www.patreon.com/ProZD My Cameo: https://www.cameo.com/prozd My Let's Play Channel: https://www.youtube.com/@prozdplaysgames My Food Channel: https://www.youtube.com/@ProZDEatsFood My Anime Channel: https://www.youtube.com/@ProZDWatchesAnime My Autograph…",
+   "thumb": "https://i4.ytimg.com/vi/cwANUZTGXeo/hqdefault.jpg",
+   "id": "67d25224d572",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "CSU-Parteitag in München | tagesthemen-Interview",
+   "url": "https://www.youtube.com/watch?v=EU5kPCTbIg4",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-23T19:55:31.000Z",
+   "summary": "In München trifft sich die CSU zu ihrem Parteitag. Zwar steht die Partei in den Umfragen gut da, doch der Abwärtstrend bei der Schwesterpartei CDU löst auch in der CSU Besorgnis aus. Angesprochen auf die niedrigen Umfragewerte für die CSU unter jungen Wählern, verweist der…",
+   "thumb": "https://i2.ytimg.com/vi/EU5kPCTbIg4/hqdefault.jpg",
+   "id": "45a63adc9a37",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "BER: Rückzug vom laut Ryanair „erfolglosesten Flughafen Europas“",
+   "url": "https://www.youtube.com/watch?v=B-X0lq4q1DU",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-23T19:48:00.000Z",
+   "summary": "Ryanair schließt zum 24. Oktober ihre Basis mit sieben Flugzeugen und dazugehörigen Crews am Berliner Flughafen BER. Der Airport wird zwar weiterhin von Ryanair angeflogen, verliert aber den Angaben zufolge rund die Hälfte des bisherigen Angebots. Die Luftverkehrsbranche…",
+   "thumb": "https://i3.ytimg.com/vi/B-X0lq4q1DU/hqdefault.jpg",
+   "id": "690b4de60a03",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Cyberpunk 2077 2.5 UPDATE IS HUGE, Half Life 3 Leaked? & More",
+   "url": "https://www.youtube.com/watch?v=NgJzR8zZU78",
+   "source": "GameRanx",
+   "feedId": "yt-gameranx",
+   "type": "video",
+   "tags": [
+    "gaming"
+   ],
+   "published": "2026-10-23T19:37:05.000Z",
+   "summary": "Thank you Helix Sleep for sponsoring! Visit http://helixsleep.com/gameranx to take advantage of their Fall Savings Event and get 20% Off Sitewide! ~~SOURCES~~ Cyberpunk 2077 2.5 UPDATE IS HUGE https://www.youtube.com/watch?v=nhlnT9FzgJ8 HALF LIFE confirmed??…",
+   "thumb": "https://i3.ytimg.com/vi/NgJzR8zZU78/hqdefault.jpg",
+   "id": "1b9497657f1e",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
    "title": "PENDLETON, SOUTH CAROLINA TRUMP RALLY",
    "url": "https://www.youtube.com/watch?v=IMVlXHM5maE",
    "source": "The Good Liars",
@@ -1223,6 +1191,22 @@
    "summary": "Green Party leaders have called on people inspired by the recent riots in France to join an anti-austerity protest in London. This comes just weeks after their party conference drew attention when the party voted on a motion to adopt 'Zionism is racism' as an official party…",
    "thumb": "https://i4.ytimg.com/vi/Gzk9AXwpSmM/hqdefault.jpg",
    "id": "808e8a4e431f",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Is this common or have I just landed in places with bad practices?",
+   "url": "https://www.reddit.com/r/ProductManagement/comments/1xdm4nk/is_this_common_or_have_i_just_landed_in_places/",
+   "source": "r/productmanagement",
+   "feedId": "rd-productmanagement",
+   "type": "post",
+   "tags": [
+    "product"
+   ],
+   "published": "2026-10-23T18:33:23.000Z",
+   "summary": "I work and have work for software companies. Is it common for low level product managers to not have a Single Source of Truth, meaning messy PRDs with lots of versions and lots of comments plus accepting changes to the PRD after creating epics and issues for development without…",
+   "id": "0db4a558b575",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1355,6 +1339,38 @@
    "why": "0"
   },
   {
+   "title": "Sdlc changes with the existence of AI",
+   "url": "https://www.reddit.com/r/ProductManagement/comments/1xdhook/sdlc_changes_with_the_existence_of_ai/",
+   "source": "r/productmanagement",
+   "feedId": "rd-productmanagement",
+   "type": "post",
+   "tags": [
+    "product"
+   ],
+   "published": "2026-10-23T15:47:38.000Z",
+   "summary": "Hi pm squad. Now that prd are getting so easy to generate, it's really important that they have the correct information. I want them to be considered the source of Truth or some sort of documentation on decisions and evidence and evals needed. Is that the way you guys see it as…",
+   "id": "87ee5e264723",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "PM of a physical product - understanding the nature of the job?",
+   "url": "https://www.reddit.com/r/ProductManagement/comments/1xdhf2u/pm_of_a_physical_product_understanding_the_nature/",
+   "source": "r/productmanagement",
+   "feedId": "rd-productmanagement",
+   "type": "post",
+   "tags": [
+    "product"
+   ],
+   "published": "2026-10-23T15:37:14.000Z",
+   "summary": "I went into PM from engineering and the first year I had a great time, but my previous boss was very sales oriented so I traveled a ton and felt like a sales person more than anything else. I didn’t mind though, and through some product updates and changes I obtained a record…",
+   "id": "85ba222ab416",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
    "title": "Instant reaction: Melania secures surprise ceasefire in Ukraine",
    "url": "https://www.youtube.com/watch?v=mZNHOARjhGc",
    "source": "LBC",
@@ -1403,38 +1419,6 @@
    "summary": "Andrew Feinstein is one of the most versatile people in British politics today. Formerly a member of the South African Parliament for Nelson Mandela's ANC, he has gained notoriety in the UK in recent years, most notably for running against Keir Starmer in Holborn and St Pancras…",
    "thumb": "https://i2.ytimg.com/vi/qMSpoXy0bBY/hqdefault.jpg",
    "id": "f9de87391b46",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "PMs/designers, how is AI fitting in your design processes ?",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1xd66cn/pmsdesigners_how_is_ai_fitting_in_your_design/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-10-23T06:14:32.000Z",
-   "summary": "Is AI making it faster/easier to diagnose user issues and make data driven design decisions ? Keen to hear how other PMs/Designers know when something is not working for the users and how you then make decisions to prioritise a fix. Do these issues only surface after…",
-   "id": "ccc7f2600a6b",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Friday Show and Tell",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1xd5xb6/friday_show_and_tell/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-10-23T06:00:19.000Z",
-   "summary": "There are a lot of people here working on projects of some sort - side projects, startups, podcasts, blogs, etc. If you've got something you'd like to show off or get feedback, this is the place to do it. Standards still need to remain high, so there are a few guidelines: Don't…",
-   "id": "dc418204eafc",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2878,5 +2862,5 @@
    "why": "0"
   }
  ],
- "contentHash": "dbaa1fdd256d"
+ "contentHash": "001e2bb6a60a"
 }
