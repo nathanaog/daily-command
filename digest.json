@@ -1,17 +1,17 @@
 {
- "generated": "2026-10-24T12:58:31.910Z",
+ "generated": "2026-10-24T15:48:10.457Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
-  "ok": 51,
-  "items": 119,
+  "ok": 50,
+  "items": 118,
   "duplicatesMerged": 0,
   "lengthsKnown": 1,
-  "lengthLookups": 100,
-  "lengthFailures": 100,
+  "lengthLookups": 103,
+  "lengthFailures": 103,
   "lengthVia": "video pages",
   "lengthFailReasons": {
-   "no length on page": 100
+   "no length on page": 103
   }
  },
  "feeds": [
@@ -124,7 +124,7 @@
    "name": "Patrick Boyle",
    "type": "youtube",
    "status": "ok",
-   "count": 1,
+   "count": 2,
    "resolved": {
     "channelId": "UCASM0cgfkJxQ1ICmRilfHLw",
     "title": "Patrick Boyle",
@@ -397,7 +397,7 @@
    "name": "The Economist",
    "type": "youtube",
    "status": "ok",
-   "count": 4,
+   "count": 5,
    "resolved": {
     "channelId": "UC0p5jTq6Xx_DosDFxVXnWaQ",
     "title": "The Economist",
@@ -514,7 +514,7 @@
    "name": "How Money Works",
    "type": "youtube",
    "status": "ok",
-   "count": 1,
+   "count": 2,
    "resolved": {
     "channelId": "UCkCGANrihzExmu9QiqZpPlQ",
     "title": "How Money Works",
@@ -657,18 +657,19 @@
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
+   "lastOk": "2026-10-24T12:58:31.910Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-xbox",
    "name": "r/xbox",
    "type": "reddit",
-   "status": "cached",
-   "count": 4,
+   "status": "waiting",
+   "count": 0,
    "lastOk": "2026-10-21T15:54:55.125Z",
-   "note": "rate-limited (429)"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-slaythespire",
@@ -677,25 +678,26 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-10-24T07:02:35.473Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
   },
   {
    "id": "rd-germany",
    "name": "r/germany",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": "2026-10-15T00:59:57.533Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-unitedkingdom",
@@ -704,10 +706,121 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   }
  ],
  "items": [
+  {
+   "title": "Who Really Pays for AI Data Centers?",
+   "url": "https://www.youtube.com/watch?v=NyOeLB0WVNE",
+   "source": "Patrick Boyle",
+   "feedId": "yt-patrick-boyle",
+   "type": "video",
+   "tags": [
+    "finance",
+    "education",
+    "listen"
+   ],
+   "published": "2026-10-24T15:06:23.000Z",
+   "summary": "Go to https://surfshark.com/boyle or use code BOYLE at checkout to get 4 extra months of Surfshark! Americans now oppose new AI data centers by roughly three to one, ranking them below coal plants and nuclear power stations, and towns across the country are passing moratoriums…",
+   "thumb": "https://i3.ytimg.com/vi/NyOeLB0WVNE/hqdefault.jpg",
+   "id": "d4b4cee80321",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Why Saudi Arabia and the UAE can't stop the Yemen war | The Economist",
+   "url": "https://www.youtube.com/watch?v=QPpWpZEmgPA",
+   "source": "The Economist",
+   "feedId": "yt-the-economist",
+   "type": "video",
+   "tags": [
+    "finance",
+    "business"
+   ],
+   "published": "2026-10-24T14:00:21.000Z",
+   "summary": "The rivalry between Saudi Arabia and the United Arab Emirates is fuelling conflict in the Middle East. Mohammed bin Salman, Crown Prince of Saudi Arabia, and Mohamed bin Zayed, president of the UAE, were once allies. But personal animosity and differing foreign policy has…",
+   "thumb": "https://i2.ytimg.com/vi/QPpWpZEmgPA/hqdefault.jpg",
+   "id": "c926e8c3d071",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "How did Melania Trump secure a Russia-Ukraine ceasefire?",
+   "url": "https://www.youtube.com/watch?v=iDMUAGCzFGE",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-24T13:51:13.000Z",
+   "summary": "Ali Miraj reacts as Melania Trump secures a ceasefire between Russia and Ukraine for a blockaded town 'on the brink of disaster'. Both countries have agreed to temporarily stop all military action in Russian-occupied Oleshky to allow for humanitarian aid to enter and get ready…",
+   "thumb": "https://i2.ytimg.com/vi/iDMUAGCzFGE/hqdefault.jpg",
+   "id": "332d19cbdb96",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Why American Real Estate Refuses To Crash... For Now...",
+   "url": "https://www.youtube.com/watch?v=EhbkCW3iTvA",
+   "source": "How Money Works",
+   "feedId": "yt-how-money-works",
+   "type": "video",
+   "tags": [
+    "finance",
+    "business",
+    "listen"
+   ],
+   "published": "2026-10-24T13:19:41.000Z",
+   "summary": "Thanks to Monarch for partnering with me! Start your free trial and get 50% off your first year of total money clarity using my link https://monarchmoney.yt.link/VomI7sD or code hmw50 for 50% Off Monarch Core tier. ----- MHFIN Video -…",
+   "thumb": "https://i2.ytimg.com/vi/EhbkCW3iTvA/hqdefault.jpg",
+   "id": "f90173ea4c25",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Rettung aus der Luft: Ukrainischer Soldat mit Drohne gerettet",
+   "url": "https://www.youtube.com/watch?v=tsibS953_EE",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-24T13:09:14.000Z",
+   "summary": "Fast 500 Tage hat ein ukrainischer Soldat schwer verletzt an der Front ausgeharrt. Um zu überleben, amputierte Wlasenko sich beide Beine. Schließlich gelang es, ihn mit einer Flug-Drohne aus dem verminten Gebiet zu fliegen. Alle aktuellen Informationen, weitere Nachrichten und…",
+   "thumb": "https://i1.ytimg.com/vi/tsibS953_EE/hqdefault.jpg",
+   "id": "9cf6a0d96ff2",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "'Liberal democracy' or 'biblical fascism'? Israel’s choice at the polls",
+   "url": "https://www.youtube.com/watch?v=IutfAXJ0LI8",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-24T13:06:46.000Z",
+   "summary": "Matt Frei is live from Tel Aviv as Israeli's head to the polls for an election which could see the end of Netanyahu's reign. Matt is joined by former Israeli PM Ehud Olmert and Israel correspondent Anshel Pfeffer to discuss the mood in the region ahead of election day. Listen…",
+   "thumb": "https://i2.ytimg.com/vi/IutfAXJ0LI8/hqdefault.jpg",
+   "id": "7e9abb4014a7",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
   {
    "title": "Revealed: Palantir led secret review of how the MoD spends billions",
    "url": "https://www.reddit.com/r/ukpolitics/comments/1xe6ubd/revealed_palantir_led_secret_review_of_how_the/",
@@ -745,6 +858,23 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
+   "title": "“So Much Worse Than People Realize”: Never-Before-Seen Images Reveal Damage at U.S. Bases as Troops Describe Being Abandoned",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xe61v3/so_much_worse_than_people_realize_neverbeforeseen/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-24T11:17:53.000Z",
+   "summary": "submitted by /u/Profound-Bleakness05 [link] [comments]",
+   "id": "3c70319f61c0",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
    "title": "Nach Anschlag auf Soldaten: Israel startet Operation im Westjordanland",
    "url": "https://www.youtube.com/watch?v=FxFdA_dPfHA",
    "source": "Tagesschau",
@@ -759,6 +889,23 @@
    "summary": "Die israelische Armee und weitere Sicherheitskräfte haben eine Operation im Westjordanland begonnen. Sie durchsuchen nach eigenen Angaben den Raum Hebron nach „Terrorinfrastruktur und Waffen“. Dort waren gestern bei einem Schusswaffenangriff zwei israelische Soldaten getötet…",
    "thumb": "https://i3.ytimg.com/vi/FxFdA_dPfHA/hqdefault.jpg",
    "id": "bf6cee48dddb",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Iran in ‘Advanced Stages’ of Planning Attacks Against Americans, Officials Say",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xe5wk1/iran_in_advanced_stages_of_planning_attacks/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-24T11:09:46.000Z",
+   "summary": "submitted by /u/boppinmule [link] [comments]",
+   "id": "3e899266ff84",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -866,6 +1013,23 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
+   "title": "Iran Threatens to Target Undersea Internet Cables if US, Israel Resume Strikes",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xe2e4u/iran_threatens_to_target_undersea_internet_cables/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-24T07:33:42.000Z",
+   "summary": "submitted by /u/boppinmule [link] [comments]",
+   "id": "6574f3f4f984",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
    "title": "Gulf nations brace for possible return to all-out war between US and Iran",
    "url": "https://www.reddit.com/r/geopolitics/comments/1xe0w19/gulf_nations_brace_for_possible_return_to_allout/",
    "source": "r/geopolitics",
@@ -896,9 +1060,9 @@
    "summary": "Luke discusses a January 6th rioter criticizing the state of the Republican Party. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
    "thumb": "https://i2.ytimg.com/vi/QGraE9g07Yw/hqdefault.jpg",
    "id": "acd91f0d2b54",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
+   "why": "0"
   },
   {
    "title": "KT: Behind the Tape (Ep: 790 Yung Gravy + Erik Griffin)",
@@ -915,141 +1079,9 @@
    "summary": "An exclusive, behind the scenes look from KT Episode 790 KT guest Yung Gravy + Erik Griffin Yung Gravy, Erik Griffin, Pat O'Neill, Dedrick Flynn, Martin Phillips, D Madness, Michael A. Gonzales, Jon Deas, Matthew Muehling, Grooveline Horns, Joe White, Troy Conrad, Monica Colt…",
    "thumb": "https://i1.ytimg.com/vi/te3Y-A8udTY/hqdefault.jpg",
    "id": "153abd7f2f31",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "The Factory in Phoenix That Could Save American Manufacturing",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xdsbo9/the_factory_in_phoenix_that_could_save_american/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-23T22:40:51.000Z",
-   "summary": "submitted by /u/HooverInstitution [link] [comments]",
-   "id": "82c695c52d7e",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Gunmen open fire at a church during a funeral in Jordan, killing 7 and wounding 40",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xdrqy8/gunmen_open_fire_at_a_church_during_a_funeral_in/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-23T22:15:05.000Z",
-   "summary": "submitted by /u/thatshirtman [link] [comments]",
-   "id": "a5c0246b205e",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Report: Israel gave US intel that Hamas has no plans to disarm, Has 30,000-40,000 new troops, and is prepping for new war",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xdr75z/report_israel_gave_us_intel_that_hamas_has_no/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-23T21:51:54.000Z",
-   "summary": "submitted by /u/spicyorangedragon [link] [comments]",
-   "id": "84d6bf4a9724",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "The Spring and Autumn of Chinese Politics",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xdpusd/the_spring_and_autumn_of_chinese_politics/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-23T20:57:09.000Z",
-   "summary": "submitted by /u/carnegieendowment [link] [comments]",
-   "id": "e41fcfb3a825",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Call of Duty: Modern Warfare 4 - The Big Infinity Ward Engine Deep Dive | Digital Foundry",
-   "url": "https://www.reddit.com/r/xbox/comments/1xbp4c8/call_of_duty_modern_warfare_4_the_big_infinity/",
-   "source": "r/xbox",
-   "feedId": "rd-xbox",
-   "type": "post",
-   "tags": [
-    "gaming"
-   ],
-   "published": "2026-10-21T14:45:16.000Z",
-   "summary": "Video description: After a visit to Infinity Ward's R&D Centre in Poland we have new intel on the COD Engine upgrades shipping in Modern Warfare 4. Newly-added ray-marched fog and smoke, overhauled weather systems, and a new material pipeline are the highlights. Plus we have a…",
-   "id": "c08527d021bc",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "(GIVEAWAY) EA SPORTS FC 26 Ultimate Edition Xbox One & Xbox Series X|S",
-   "url": "https://www.reddit.com/r/xbox/comments/1xboxhp/giveaway_ea_sports_fc_26_ultimate_edition_xbox/",
-   "source": "r/xbox",
-   "feedId": "rd-xbox",
-   "type": "post",
-   "tags": [
-    "gaming"
-   ],
-   "published": "2026-10-21T14:37:44.000Z",
-   "summary": "I have a US code for EA SPORTS FC™ 26 Ultimate Edition Xbox One & Xbox Series X|S that I don't need. I would like to give it away to someone in this sub. Leave a comment to enter, and at 6 p.m. EST, I'll choose a winner. Your account has to be at least two months old and have…",
-   "id": "49c39a9e2ad2",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Cyberpunk 2077 now supports Xbox Play Anywhere",
-   "url": "https://www.reddit.com/r/xbox/comments/1xbop84/cyberpunk_2077_now_supports_xbox_play_anywhere/",
-   "source": "r/xbox",
-   "feedId": "rd-xbox",
-   "type": "post",
-   "tags": [
-    "gaming"
-   ],
-   "published": "2026-10-21T14:28:54.000Z",
-   "summary": "submitted by /u/redphx [link] [comments]",
-   "id": "6b61ad5c8f71",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Valor Mortis has officially reached a break-even point in just 7 DAYS!",
-   "url": "https://www.reddit.com/r/xbox/comments/1xbn5q7/valor_mortis_has_officially_reached_a_breakeven/",
-   "source": "r/xbox",
-   "feedId": "rd-xbox",
-   "type": "post",
-   "tags": [
-    "gaming"
-   ],
-   "published": "2026-10-21T13:27:44.000Z",
-   "summary": "submitted by /u/Turbostrider27 [link] [comments]",
-   "id": "d1a99cce7c51",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
+   "why": "0"
   },
   {
    "title": "Ethan Klein Announces He's Quitting After Wife Exposes Him",
@@ -1082,6 +1114,23 @@
    "summary": "Luke discusses some wild moments from Trump's recent rallies. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
    "thumb": "https://i3.ytimg.com/vi/2OoqIoEvstU/hqdefault.jpg",
    "id": "18d0f24af6bf",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "The Factory in Phoenix That Could Save American Manufacturing",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xdsbo9/the_factory_in_phoenix_that_could_save_american/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-23T22:40:51.000Z",
+   "summary": "submitted by /u/HooverInstitution [link] [comments]",
+   "id": "82c695c52d7e",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1156,25 +1205,6 @@
    "summary": "In München trifft sich die CSU zu ihrem Parteitag. Zwar steht die Partei in den Umfragen gut da, doch der Abwärtstrend bei der Schwesterpartei CDU löst auch in der CSU Besorgnis aus. Angesprochen auf die niedrigen Umfragewerte für die CSU unter jungen Wählern, verweist der…",
    "thumb": "https://i2.ytimg.com/vi/EU5kPCTbIg4/hqdefault.jpg",
    "id": "45a63adc9a37",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "BER: Rückzug vom laut Ryanair „erfolglosesten Flughafen Europas“",
-   "url": "https://www.youtube.com/watch?v=B-X0lq4q1DU",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-23T19:48:00.000Z",
-   "summary": "Ryanair schließt zum 24. Oktober ihre Basis mit sieben Flugzeugen und dazugehörigen Crews am Berliner Flughafen BER. Der Airport wird zwar weiterhin von Ryanair angeflogen, verliert aber den Angaben zufolge rund die Hälfte des bisherigen Angebots. Die Luftverkehrsbranche…",
-   "thumb": "https://i3.ytimg.com/vi/B-X0lq4q1DU/hqdefault.jpg",
-   "id": "690b4de60a03",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1285,24 +1315,6 @@
    "why": "0"
   },
   {
-   "title": "The moment American policy shifted... | Simon Marks' American Week",
-   "url": "https://www.youtube.com/watch?v=wzU-Pf6tJEU",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-23T16:50:16.000Z",
-   "summary": "Simon Marks returns with another edition of his American Week, where Steve Witkoff and Pete Hegseth made themselves the main characters of world politics. 00:21 Britain hopes to wrestle Trump back from Putin. 01:29 US special envoy declares Putin a 'humanitarian'. 02:52 Hostage…",
-   "thumb": "https://i4.ytimg.com/vi/wzU-Pf6tJEU/hqdefault.jpg",
-   "id": "3952dd276f3e",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "Test Your F*Boy Radar (ft. Pokimane) | Test Your Radar",
    "url": "https://www.youtube.com/watch?v=pi-Kv-dWsHk",
    "source": "Jubilee",
@@ -1366,24 +1378,6 @@
    "published": "2026-10-23T15:37:14.000Z",
    "summary": "I went into PM from engineering and the first year I had a great time, but my previous boss was very sales oriented so I traveled a ton and felt like a sales person more than anything else. I didn’t mind though, and through some product updates and changes I obtained a record…",
    "id": "85ba222ab416",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Instant reaction: Melania secures surprise ceasefire in Ukraine",
-   "url": "https://www.youtube.com/watch?v=mZNHOARjhGc",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-23T15:23:29.000Z",
-   "summary": "The White House has said Melania Trump has successfully secured a ceasefire between Russia and Ukraine localised to a blockaded city near the front line. Simon Marks joins Shelagh Fogarty to report the news and share his instant reaction, as well as insight as to how this…",
-   "thumb": "https://i2.ytimg.com/vi/mZNHOARjhGc/hqdefault.jpg",
-   "id": "0e99d0210af1",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1618,7 +1612,7 @@
    "why": "0"
   },
   {
-   "title": "How Undercover Policing Really Works With Former Drug Cop",
+   "title": "Undercover Cop Reveals the Dark Side Of Policing & Why He Regrets It",
    "url": "https://www.youtube.com/watch?v=0oV6mRywoVE",
    "source": "PoliticsJOE",
    "feedId": "yt-politicsjoe",
@@ -2516,7 +2510,7 @@
    "why": "0"
   },
   {
-   "title": "David Breaks Down His Debates with Conservatives | Surrounded Follow-Up",
+   "title": "Did David Almost Get Kicked Off Surrounded? | Surrounded Follow-Up",
    "url": "https://www.youtube.com/watch?v=O71_BzlwX9w",
    "source": "Jubilee",
    "feedId": "yt-jubilee",
@@ -2825,5 +2819,5 @@
    "why": "0"
   }
  ],
- "contentHash": "2af19fb71463"
+ "contentHash": "4d0d51bbdfb0"
 }
