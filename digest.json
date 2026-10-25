@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-25T07:04:06.239Z",
+ "generated": "2026-10-25T09:49:32.759Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
@@ -7,7 +7,7 @@
   "items": 117,
   "duplicatesMerged": 0,
   "lengthsKnown": 1,
-  "lengthLookups": 103,
+  "lengthLookups": 102,
   "lengthFailures": 102,
   "lengthVia": "video pages",
   "lengthFailReasons": {
@@ -657,20 +657,19 @@
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
+   "lastOk": "2026-10-25T07:04:06.239Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-xbox",
    "name": "r/xbox",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": "2026-10-21T15:54:55.125Z",
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-slaythespire",
@@ -679,25 +678,26 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-10-25T00:59:37.552Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
   },
   {
    "id": "rd-germany",
    "name": "r/germany",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": "2026-10-15T00:59:57.533Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-unitedkingdom",
@@ -706,10 +706,45 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   }
  ],
  "items": [
+  {
+   "title": "As Renewed War Fears Push Oil Above $117, Iranian Officials Debate Hormuz Strategy",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xexcz3/as_renewed_war_fears_push_oil_above_117_iranian/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-25T08:53:42.000Z",
+   "summary": "submitted by /u/Beginning-Wish-4273 [link] [comments]",
+   "id": "8ea12c1c2ea0",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "'I've spent $3,000 to vote Netanyahu out:' Israelis fly home for crucial election",
+   "url": "https://www.youtube.com/watch?v=NmKHpyFnS7Q",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-25T07:30:11.000Z",
+   "summary": "Deadlocked polling in the upcoming Israeli election has inspired hundreds of thousands to fly out and make a stand. There are 800,000 eligible voters living abroad, but with no postal voting available, this is the only option for many to participate in the first election since…",
+   "thumb": "https://i3.ytimg.com/vi/NmKHpyFnS7Q/hqdefault.jpg",
+   "id": "de165abc4bab",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
   {
    "title": "Burnham to defy Ed Miliband by giving Rosebank oil field green light",
    "url": "https://www.reddit.com/r/ukpolitics/comments/1xetqbe/burnham_to_defy_ed_miliband_by_giving_rosebank/",
@@ -782,24 +817,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Cenk Uygur, You F***ED UP. Admit it.",
-   "url": "https://www.youtube.com/watch?v=X3ct3XAlJvY",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-24T21:30:36.000Z",
-   "summary": "Luke discusses Cenk Uygur's bizarre shift in attitude toward Ukraine. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
-   "thumb": "https://i1.ytimg.com/vi/X3ct3XAlJvY/hqdefault.jpg",
-   "id": "7ffb2a9e973d",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "...looked into the effect budgets have on the Government's polling figures. The answer? Hardly at all. Average change in polling: -0.4 pts Only 4 of the last 21 budgets have caused a shift greater than 2pts!Election Maps UK (@electionmaps.uk)",
    "url": "https://www.reddit.com/r/ukpolitics/comments/1xekcjp/looked_into_the_effect_budgets_have_on_the/",
    "source": "r/ukpolitics",
@@ -829,25 +846,6 @@
    "published": "2026-10-24T20:21:14.000Z",
    "summary": "submitted by /u/TheTelegraph [link] [comments]",
    "id": "6dcba98cc740",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Hunderte Menschen demonstrieren gegen Abschiebungen",
-   "url": "https://www.youtube.com/watch?v=bQYsZOpCfd0",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-24T20:09:18.000Z",
-   "summary": "Bei einem bundesweiten Aktionstag haben an mehreren Flughäfen Hunderte Menschen gegen Abschiebungen und Abschiebehaft demonstriert. Alle aktuellen Informationen, weitere Nachrichten und tagesschau24 im Livestream: https://www.tagesschau.de/ Alle Sendungen, Livestreams,…",
-   "thumb": "https://i3.ytimg.com/vi/bQYsZOpCfd0/hqdefault.jpg",
-   "id": "230592d8e677",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -903,6 +901,43 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
+   "title": "Cenk Uygur, You F***ED UP. Admit it.",
+   "url": "https://www.youtube.com/watch?v=X3ct3XAlJvY",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-24T21:30:36.000Z",
+   "summary": "Luke discusses Cenk Uygur's bizarre shift in attitude toward Ukraine. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
+   "thumb": "https://i1.ytimg.com/vi/X3ct3XAlJvY/hqdefault.jpg",
+   "id": "7ffb2a9e973d",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Hunderte Menschen demonstrieren gegen Abschiebungen",
+   "url": "https://www.youtube.com/watch?v=bQYsZOpCfd0",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-24T20:09:18.000Z",
+   "summary": "Bei einem bundesweiten Aktionstag haben an mehreren Flughäfen Hunderte Menschen gegen Abschiebungen und Abschiebehaft demonstriert. Alle aktuellen Informationen, weitere Nachrichten und tagesschau24 im Livestream: https://www.tagesschau.de/ Alle Sendungen, Livestreams,…",
+   "thumb": "https://i3.ytimg.com/vi/bQYsZOpCfd0/hqdefault.jpg",
+   "id": "230592d8e677",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
    "title": "OH SH*T: Trump Fan Tried to HUMILIATE ME, Quickly REGRETS IT!",
    "url": "https://www.youtube.com/watch?v=bMlZgdxoNeA",
    "source": "Luke Beasley",
@@ -916,9 +951,9 @@
    "summary": "Luke reacts to criticism of his Chicago Thinker debate with Tim Pool and Jack Posobiec. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
    "thumb": "https://i3.ytimg.com/vi/bMlZgdxoNeA/hqdefault.jpg",
    "id": "bcab6730bc76",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
+   "why": "0"
   },
   {
    "title": "Finland teaching Britain how to thwart Russia’s hybrid warfare",
@@ -933,9 +968,9 @@
    "published": "2026-10-24T18:43:23.000Z",
    "summary": "submitted by /u/TheTelegraph [link] [comments]",
    "id": "4d8e4c84e5bf",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
+   "why": "0"
   },
   {
    "title": "tagesschau 20:00 Uhr, 24.10.2026",
@@ -949,7 +984,7 @@
     "listen"
    ],
    "published": "2026-10-24T18:30:28.000Z",
-   "summary": "Die 20-Uhr-Ausgabe der tagesschau im Livestream und auf Abruf findet ihr auch hier: https://ardmediathek.de/tagesschau und https://tagesschau.de 0:00 Guten Abend! 0:20 Erneut landesweite Proteste in Frankreich gegen die hohen Lebenshaltungskosten 3:39 Ebenfalls Proteste in…",
+   "summary": "tagesschau 20:00 Uhr Erneut landesweite Proteste in Frankreich gegen die hohen Lebenshaltungskosten, Ebenfalls Proteste in mehreren italienischen Städten gegen Lebenshaltungskosten, Abschluss des CSU-Parteitags in München mit Rede von Bundeskanzler Merz, Proteste gegen…",
    "thumb": "https://i1.ytimg.com/vi/pM6Rh5wNk-k/hqdefault.jpg",
    "id": "e7a375d5a8f4",
    "score": 0,
@@ -1240,23 +1275,6 @@
    "why": "0"
   },
   {
-   "title": "Iran Threatens to Target Undersea Internet Cables if US, Israel Resume Strikes",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xe2e4u/iran_threatens_to_target_undersea_internet_cables/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-24T07:33:42.000Z",
-   "summary": "submitted by /u/boppinmule [link] [comments]",
-   "id": "6574f3f4f984",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "Watch MAGA Supporter Realize TRUMP IS F***ED!",
    "url": "https://www.youtube.com/watch?v=QGraE9g07Yw",
    "source": "Luke Beasley",
@@ -1378,24 +1396,6 @@
    "summary": "Jason visits Pendleton, South Carolina for a Trump rally. Join this channel to get access to perks: https://www.youtube.com/channel/UCUNOwz9KTDIhhTTN3_ptUDA/join https://linktr.ee/thegoodliars",
    "thumb": "https://i2.ytimg.com/vi/IMVlXHM5maE/hqdefault.jpg",
    "id": "c3f56074dfa4",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Debate: Green councillor confronted on 'Zionism is racism' motion",
-   "url": "https://www.youtube.com/watch?v=Gzk9AXwpSmM",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-23T19:00:07.000Z",
-   "summary": "Green Party leaders have called on people inspired by the recent riots in France to join an anti-austerity protest in London. This comes just weeks after their party conference drew attention when the party voted on a motion to adopt 'Zionism is racism' as an official party…",
-   "thumb": "https://i4.ytimg.com/vi/Gzk9AXwpSmM/hqdefault.jpg",
-   "id": "808e8a4e431f",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2801,5 +2801,5 @@
    "why": "0"
   }
  ],
- "contentHash": "c072c7261645"
+ "contentHash": "e5fa780b2aaf"
 }
