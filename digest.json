@@ -1,17 +1,17 @@
 {
- "generated": "2026-10-25T15:48:39.623Z",
+ "generated": "2026-10-25T18:53:41.223Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
   "ok": 51,
-  "items": 117,
+  "items": 113,
   "duplicatesMerged": 0,
   "lengthsKnown": 1,
-  "lengthLookups": 101,
-  "lengthFailures": 101,
+  "lengthLookups": 100,
+  "lengthFailures": 100,
   "lengthVia": "video pages",
   "lengthFailReasons": {
-   "no length on page": 101
+   "no length on page": 100
   }
  },
  "feeds": [
@@ -358,7 +358,7 @@
    "name": "Modern-Day Debate",
    "type": "youtube",
    "status": "ok",
-   "count": 2,
+   "count": 1,
    "resolved": {
     "channelId": "UC_cd4oF2phaIBD3WsU3f7Xg",
     "title": "Modern-Day Debate",
@@ -657,20 +657,19 @@
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
+   "lastOk": "2026-10-25T15:48:39.623Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-xbox",
    "name": "r/xbox",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": "2026-10-21T15:54:55.125Z",
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-slaythespire",
@@ -679,25 +678,26 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "cached",
-   "count": 5,
-   "lastOk": "2026-10-25T09:49:32.759Z",
-   "note": "not its turn this run"
+   "status": "ok",
+   "count": 2,
+   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
   },
   {
    "id": "rd-germany",
    "name": "r/germany",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": "2026-10-15T00:59:57.533Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-unitedkingdom",
@@ -706,10 +706,174 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   }
  ],
  "items": [
+  {
+   "title": "Frankreich: ARD-Korrespondentin zum Wahlkampfauftakt der rechten Präsidentschaftskandidatin",
+   "url": "https://www.youtube.com/watch?v=10xsxnIIAaU",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-25T18:48:01.000Z",
+   "summary": "Marine Le Pen hat zum Auftakt ihres Präsidentschaftswahlkampfs die französische Lebensart beschworen. „In Frankreich lebt man wie die Franzosen“, betonte sie am Sonntag in ihrer Rede auf dem Parteitag des Rassemblement National (RN) in Orléans. Alle aktuellen Informationen,…",
+   "thumb": "https://i2.ytimg.com/vi/10xsxnIIAaU/hqdefault.jpg",
+   "id": "47441bd2c9aa",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Is America suffering from ‘Obama Derangement Syndrome’?",
+   "url": "https://www.youtube.com/watch?v=Yx5jW5Rv3p8",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-25T18:14:03.000Z",
+   "summary": "Is America suffering from 'Obama Derangement Syndrome'? Investigative journalist and author Nina Burleigh joins Henry Riley to discuss Barack Obama's intervention ahead of the US midterm elections and the increasingly tense battle between Democrats and Republicans. Nina says…",
+   "thumb": "https://i2.ytimg.com/vi/Yx5jW5Rv3p8/hqdefault.jpg",
+   "id": "382522eb8c77",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Inside Germany’s Unique Apprenticeship System",
+   "url": "https://www.youtube.com/watch?v=-4o4S6M6QcE",
+   "source": "Easy German",
+   "feedId": "yt-easy-german",
+   "type": "video",
+   "tags": [
+    "german",
+    "listen"
+   ],
+   "published": "2026-10-25T18:00:25.000Z",
+   "summary": "Download the guide on vocational training in Germany for free: https://easygerman.link/lm-pdf-004-ausbildung-in-deutschland --- Practice speaking German for your everyday life in Germany with our Conversation Membership: https://easygerman.link/membership_eg684 --- LEARN MORE…",
+   "thumb": "https://i2.ytimg.com/vi/-4o4S6M6QcE/hqdefault.jpg",
+   "id": "c6b899f2e952",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Enges Rennen bei Parlamentswahl in Serbien",
+   "url": "https://www.youtube.com/watch?v=1AmLImIC3qE",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-25T17:40:06.000Z",
+   "summary": "Bei der vorgezogenen Parlamentswahl in Serbien zeichnet sich eine hohe Wahlbeteiligung ab. Bis 13 Uhr gaben bereits 41,1 Prozent der Wahlberechtigten ihre Stimme ab und damit weit mehr als bei der vorherigen Parlamentswahl Ende 2023, berichtete die unabhängige…",
+   "thumb": "https://i2.ytimg.com/vi/1AmLImIC3qE/hqdefault.jpg",
+   "id": "96abbccd47a0",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Serbien: Oppositionelle klagen über Einschüchterungen",
+   "url": "https://www.youtube.com/watch?v=gOvkTiqMkUE",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-25T17:39:19.000Z",
+   "summary": "Die Wahlbeteiligung in Serbien scheint sehr hoch zu sein. Laut dem unabhängigen Wahlbeobachtungsinstitut Cirta hatten bis 13 Uhr rund 41 Prozent der Wählerinnen und Wähler ihre Stimme abgegeben. Bei der letzten Parlamentswahl waren es zu diesem Zeitpunkt nur 26 Prozent. Das…",
+   "thumb": "https://i4.ytimg.com/vi/gOvkTiqMkUE/hqdefault.jpg",
+   "id": "0c349e4bf78e",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "OH SH*T: Melania Tried TO SILENCE HER, So She DROPPED THIS!",
+   "url": "https://www.youtube.com/watch?v=UF8L8Kg6mTk",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-25T17:30:29.000Z",
+   "summary": "Luke discusses JoJoFromJerz's legal battle with Melania Trump. Check out Jo's Substack! https://substack.com/@jojofromjerz Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get…",
+   "thumb": "https://i2.ytimg.com/vi/UF8L8Kg6mTk/hqdefault.jpg",
+   "id": "046f8a941399",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "This Entrepreneur Wants to Change How We Drink Coconut Water | Shark Tank US | Shark Tank Global",
+   "url": "https://www.youtube.com/watch?v=ZZ87V9865iI",
+   "source": "Shark Tank Global",
+   "feedId": "yt-shark-tank-global",
+   "type": "video",
+   "tags": [
+    "trash",
+    "business"
+   ],
+   "published": "2026-10-25T16:59:51.000Z",
+   "summary": "Vincent “Coco Vinny” Zaldivar enters the Tank seeking $150,000 for 10% of Coco Taps, his company behind a patented tool kit that lets customers easily tap fresh coconuts and drink their water straight from the source From Season 9 Episode 12 Watch Shark Tank US Now:…",
+   "thumb": "https://i3.ytimg.com/vi/ZZ87V9865iI/hqdefault.jpg",
+   "id": "aa7e04f9b9f9",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "20 Sequels That Are NEVER GETTING MADE & Why",
+   "url": "https://www.youtube.com/watch?v=FkB1LvomXwE",
+   "source": "GameRanx",
+   "feedId": "yt-gameranx",
+   "type": "video",
+   "tags": [
+    "gaming"
+   ],
+   "published": "2026-10-25T16:14:12.000Z",
+   "summary": "We've got some bad news for fans of these game franchises. Subscribe for more: https://www.youtube.com/gameranxTV?sub_confirmation=1 0:00 Intro 0:53 Dishonored 3 2:24 Sleeping Dogs 2 4:04 Dante's Inferno Sequel (Dante's Inferno 2: Purgatorio) 6:08 Bully 2 7:49 Days Gone 2 9:20…",
+   "thumb": "https://i3.ytimg.com/vi/FkB1LvomXwE/hqdefault.jpg",
+   "id": "51f8d2a5bb2c",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "1 S*x Worker vs 20 Anti-S*x Work Advocates (ft Farha Khalidi) | Surrounded",
+   "url": "https://www.youtube.com/watch?v=CV91KbBPQwg",
+   "source": "Jubilee",
+   "feedId": "yt-jubilee",
+   "type": "video",
+   "tags": [
+    "politics",
+    "debates"
+   ],
+   "published": "2026-10-25T16:00:09.000Z",
+   "summary": "Hey you 👈 Wanna be in a Jubilee video? https://bit.ly/be-in-a-video LET’S BE FRIENDS Instagram: https://www.instagram.com/jubileemedia/ TikTok: https://www.tiktok.com/@jubilee?lang=en Website: https://www.jubileemedia.com OUR LOVE + DATING CHANNEL 🍑 YouTube:…",
+   "thumb": "https://i4.ytimg.com/vi/CV91KbBPQwg/hqdefault.jpg",
+   "id": "d5a8e8ab1085",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
   {
    "title": "Das Nordkorea mitten in Europa",
    "url": "https://www.youtube.com/watch?v=zNXG30YFVao",
@@ -742,6 +906,23 @@
    "summary": "Raheem Kassam phoned into Lewis Goodall's show to address his tweet being put to Reform's Robert Jenrick. In the tweet, Kassam described Conservative leader Kemi Badenoch as a 'Nigerian scammer'. Robert Jenrick refused to say whether the tweet was racist or not, whilst Kassam…",
    "thumb": "https://i2.ytimg.com/vi/yJijMLGP-T4/hqdefault.jpg",
    "id": "2c865b319754",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Musk accuses Ukraine of violating Starlink’s terms of service following dispute over coverage",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xf2knx/musk_accuses_ukraine_of_violating_starlinks_terms/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-25T13:36:40.000Z",
+   "summary": "submitted by /u/cnn [link] [comments]",
+   "id": "3ca03fb68c61",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -923,23 +1104,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "As Renewed War Fears Push Oil Above $117, Iranian Officials Debate Hormuz Strategy",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xexcz3/as_renewed_war_fears_push_oil_above_117_iranian/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-25T08:53:42.000Z",
-   "summary": "submitted by /u/Beginning-Wish-4273 [link] [comments]",
-   "id": "8ea12c1c2ea0",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "'I've spent $3,000 to vote Netanyahu out:' Israelis fly home for crucial election",
    "url": "https://www.youtube.com/watch?v=NmKHpyFnS7Q",
    "source": "LBC",
@@ -970,9 +1134,9 @@
    "published": "2026-10-25T00:03:09.000Z",
    "summary": "submitted by /u/BlueEmma25 [link] [comments]",
    "id": "d8a1102c1fd2",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
+   "why": "0"
   },
   {
    "title": "HELL ERUPTS at Vance Rally as Crowd Member CONFRONTS HIM TO HIS FACE!",
@@ -993,25 +1157,6 @@
    "why": "0"
   },
   {
-   "title": "tagesthemen 23:15 Uhr, 24.10.2026",
-   "url": "https://www.youtube.com/watch?v=mUHuhzjh9N0",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-24T21:50:50.000Z",
-   "summary": "tagesthemen 23:15 Uhr Erneut Proteste und teilweise Ausschreitungen in Frankreich, Italiens Jugend protestiert gegen hohe Lebenshaltungskosten, Israel vor der ersten Wahl nach dem Angriff der Hamas, Abschluss des CSU-Parteitags mit Rede von Bundeskanzler Merz, Die Meinung,…",
-   "thumb": "https://i2.ytimg.com/vi/mUHuhzjh9N0/hqdefault.jpg",
-   "id": "f48e0945d8d0",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "Cenk Uygur, You F***ED UP. Admit it.",
    "url": "https://www.youtube.com/watch?v=X3ct3XAlJvY",
    "source": "Luke Beasley",
@@ -1025,25 +1170,6 @@
    "summary": "Luke discusses Cenk Uygur's bizarre shift in attitude toward Ukraine. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
    "thumb": "https://i1.ytimg.com/vi/X3ct3XAlJvY/hqdefault.jpg",
    "id": "7ffb2a9e973d",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Hunderte Menschen demonstrieren gegen Abschiebungen",
-   "url": "https://www.youtube.com/watch?v=bQYsZOpCfd0",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-24T20:09:18.000Z",
-   "summary": "Bei einem bundesweiten Aktionstag haben an mehreren Flughäfen Hunderte Menschen gegen Abschiebungen und Abschiebehaft demonstriert. Alle aktuellen Informationen, weitere Nachrichten und tagesschau24 im Livestream: https://www.tagesschau.de/ Alle Sendungen, Livestreams,…",
-   "thumb": "https://i3.ytimg.com/vi/bQYsZOpCfd0/hqdefault.jpg",
-   "id": "230592d8e677",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1078,42 +1204,6 @@
    "summary": "Luke reacts to criticism of his Chicago Thinker debate with Tim Pool and Jack Posobiec. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
    "thumb": "https://i3.ytimg.com/vi/bMlZgdxoNeA/hqdefault.jpg",
    "id": "bcab6730bc76",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Finland teaching Britain how to thwart Russia’s hybrid warfare",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xegf1i/finland_teaching_britain_how_to_thwart_russias/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-24T18:43:23.000Z",
-   "summary": "submitted by /u/TheTelegraph [link] [comments]",
-   "id": "4d8e4c84e5bf",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "tagesschau 20:00 Uhr, 24.10.2026",
-   "url": "https://www.youtube.com/watch?v=pM6Rh5wNk-k",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-24T18:30:28.000Z",
-   "summary": "Die 20-Uhr-Ausgabe der tagesschau im Livestream und auf Abruf findet ihr auch hier: https://ardmediathek.de/tagesschau und https://tagesschau.de 0:00 Guten Abend! 0:20 Erneut landesweite Proteste in Frankreich gegen die hohen Lebenshaltungskosten 3:39 Ebenfalls Proteste in…",
-   "thumb": "https://i1.ytimg.com/vi/pM6Rh5wNk-k/hqdefault.jpg",
-   "id": "e7a375d5a8f4",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1278,24 +1368,6 @@
    "why": "0"
   },
   {
-   "title": "'Liberal democracy' or 'biblical fascism'? Israel’s choice at the polls",
-   "url": "https://www.youtube.com/watch?v=IutfAXJ0LI8",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-24T13:06:46.000Z",
-   "summary": "Matt Frei is live from Tel Aviv as Israeli's head to the polls for an election which could see the end of Netanyahu's reign. Matt is joined by former Israeli PM Ehud Olmert and Israel correspondent Anshel Pfeffer to discuss the mood in the region ahead of election day. Listen…",
-   "thumb": "https://i2.ytimg.com/vi/IutfAXJ0LI8/hqdefault.jpg",
-   "id": "7e9abb4014a7",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "How do you think product roles will evolve?",
    "url": "https://www.reddit.com/r/ProductManagement/comments/1xe837p/how_do_you_think_product_roles_will_evolve/",
    "source": "r/productmanagement",
@@ -1307,58 +1379,6 @@
    "published": "2026-10-24T13:02:11.000Z",
    "summary": "I'm a Head of Product at a fintech in the UAE, with over a decade of experience building fintech products, specifically trading and investment platforms. Over the last year, I've seen AI transform the nature of the product role. The domain knowledge and expertise I built over…",
    "id": "311e90fb71e0",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "“So Much Worse Than People Realize”: Never-Before-Seen Images Reveal Damage at U.S. Bases as Troops Describe Being Abandoned",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xe61v3/so_much_worse_than_people_realize_neverbeforeseen/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-24T11:17:53.000Z",
-   "summary": "submitted by /u/Profound-Bleakness05 [link] [comments]",
-   "id": "3c70319f61c0",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Iran in ‘Advanced Stages’ of Planning Attacks Against Americans, Officials Say",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xe5wk1/iran_in_advanced_stages_of_planning_attacks/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-24T11:09:46.000Z",
-   "summary": "submitted by /u/boppinmule [link] [comments]",
-   "id": "3e899266ff84",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Watch MAGA Supporter Realize TRUMP IS F***ED!",
-   "url": "https://www.youtube.com/watch?v=QGraE9g07Yw",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-24T01:30:19.000Z",
-   "summary": "Luke discusses a January 6th rioter criticizing the state of the Republican Party. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
-   "thumb": "https://i2.ytimg.com/vi/QGraE9g07Yw/hqdefault.jpg",
-   "id": "acd91f0d2b54",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1930,23 +1950,6 @@
    "why": "0"
   },
   {
-   "title": "Call of Duty Modern Warfare 4 - Before You Buy",
-   "url": "https://www.youtube.com/watch?v=HMKu-66d7sA",
-   "source": "GameRanx",
-   "feedId": "yt-gameranx",
-   "type": "video",
-   "tags": [
-    "gaming"
-   ],
-   "published": "2026-10-20T21:15:50.000Z",
-   "summary": "The Call of Duty: Modern Warfare 4 campaign wraps up the new MW reboot saga. Is it worth it? Let's talk. Subscribe for more: http://youtube.com/gameranxtv ▼▼ Watch more 'Before You Buy': https://bit.ly/2kfdxI6",
-   "thumb": "https://i1.ytimg.com/vi/HMKu-66d7sA/hqdefault.jpg",
-   "id": "af8c40ab327b",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "Flying Cars? Tesla Roadster",
    "url": "https://www.youtube.com/watch?v=4JHLoi5hr2Y",
    "source": "Aberrant preach",
@@ -2137,24 +2140,6 @@
    "summary": "Hey you 👈 Wanna be in a Jubilee video? https://bit.ly/be-in-a-video LET’S BE FRIENDS Instagram: https://www.instagram.com/jubileemedia/ TikTok: https://www.tiktok.com/@jubilee?lang=en Website: https://www.jubileemedia.com OUR LOVE + DATING CHANNEL 🍑 YouTube:…",
    "thumb": "https://i3.ytimg.com/vi/VnurpLQd4c0/hqdefault.jpg",
    "id": "7133fd3e05c4",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "This Kid Turned Cardboard Boxes Into a $35K Business Deal | Shark Tank US | Shark Tank Global",
-   "url": "https://www.youtube.com/watch?v=h-hI4op4p6c",
-   "source": "Shark Tank Global",
-   "feedId": "yt-shark-tank-global",
-   "type": "video",
-   "tags": [
-    "trash",
-    "business"
-   ],
-   "published": "2026-10-18T16:00:04.000Z",
-   "summary": "Noah Cahoon and his dad Brian enter the Tank seeking $35,000 for 25% of Paper Box Pilots, a creative toy business that transforms ordinary cardboard boxes into planes, race cars, and more. From Season 6 Episode 4 Watch Shark Tank US Now:…",
-   "thumb": "https://i1.ytimg.com/vi/h-hI4op4p6c/hqdefault.jpg",
-   "id": "98b70d9b05f3",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2563,24 +2548,6 @@
    "why": "0"
   },
   {
-   "title": "Did David Almost Get Kicked Off Surrounded? | Surrounded Follow-Up",
-   "url": "https://www.youtube.com/watch?v=O71_BzlwX9w",
-   "source": "Jubilee",
-   "feedId": "yt-jubilee",
-   "type": "video",
-   "tags": [
-    "politics",
-    "debates"
-   ],
-   "published": "2026-10-14T16:00:05.000Z",
-   "summary": "Hey you 👈 Wanna be in a Jubilee video? https://bit.ly/be-in-a-video LET’S BE FRIENDS Instagram: https://www.instagram.com/jubileemedia/ TikTok: https://www.tiktok.com/@jubilee?lang=en Website: https://www.jubileemedia.com OUR LOVE + DATING CHANNEL 🍑 YouTube:…",
-   "thumb": "https://i4.ytimg.com/vi/O71_BzlwX9w/hqdefault.jpg",
-   "id": "5d370527966c",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "What Happens When AI Is Free ... South Korea Tried It",
    "url": "https://www.youtube.com/watch?v=ZRNQ1QgbDj4",
    "source": "Economics Explained",
@@ -2760,44 +2727,7 @@
    "why": "0",
    "durationSec": 2345,
    "duration": "39:05"
-  },
-  {
-   "title": "Trinitarian Vs Unitarian | GodLogic Apologetics Vs Metaphysics Mike",
-   "url": "https://www.youtube.com/watch?v=CeZdxJveXBE",
-   "source": "Modern-Day Debate",
-   "feedId": "yt-modern-day-debate",
-   "type": "video",
-   "tags": [
-    "debates",
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-11T18:00:33.000Z",
-   "summary": "GodLogic Apologetics Vs Dr. Javad Hashmi will be in Orlando, FL on October 24/25th! LET’S GOOOOO! https://events.eventnoire.com/e/debatecon-9-by-modern-day-debate-2 LINKS TO GUESTS: @GodLogicApologetics @metaphysicsmike OUR INSIDER'S EMAIL LIST FOR DEBATECON DISCOUNTS:…",
-   "thumb": "https://i4.ytimg.com/vi/CeZdxJveXBE/hqdefault.jpg",
-   "id": "cfdad425315c",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "We Asked Native Speakers About Their Experience with German Learners",
-   "url": "https://www.youtube.com/watch?v=RbtIMGCizu0",
-   "source": "Easy German",
-   "feedId": "yt-easy-german",
-   "type": "video",
-   "tags": [
-    "german",
-    "listen"
-   ],
-   "published": "2026-10-11T17:00:32.000Z",
-   "summary": "🏫 Thanks to our partner GLS Sprachenzentrum! Use code EASYGERMAN to save the registration fee when you enroll to a German course. More info: https://www.easygerman.org/gls (Ad) --- LEARN MORE GERMAN WITH US: 💡 JOIN OUR COMMUNITY: https://easygerman.link/membership_eg681 🎧…",
-   "thumb": "https://i3.ytimg.com/vi/RbtIMGCizu0/hqdefault.jpg",
-   "id": "9a6eb2dba49b",
-   "score": 0,
-   "matched": [],
-   "why": "0"
   }
  ],
- "contentHash": "09a01458eee0"
+ "contentHash": "4578b71c1787"
 }
