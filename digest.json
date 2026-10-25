@@ -1,10 +1,10 @@
 {
- "generated": "2026-10-25T18:53:41.223Z",
+ "generated": "2026-10-25T21:46:51.250Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
   "ok": 51,
-  "items": 113,
+  "items": 110,
   "duplicatesMerged": 0,
   "lengthsKnown": 1,
   "lengthLookups": 100,
@@ -630,10 +630,9 @@
    "id": "rd-productmanagement",
    "name": "r/productmanagement",
    "type": "reddit",
-   "status": "cached",
-   "count": 4,
-   "lastOk": "2026-10-25T12:58:52.253Z",
-   "note": "not its turn this run"
+   "status": "ok",
+   "count": 1,
+   "url": "https://www.reddit.com/r/productmanagement/top/.rss?t=day"
   },
   {
    "id": "rd-tech",
@@ -642,7 +641,7 @@
    "status": "cached",
    "count": 1,
    "lastOk": "2026-10-25T12:58:52.253Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)"
   },
   {
    "id": "rd-gaming",
@@ -651,7 +650,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-ukpolitics",
@@ -684,20 +683,19 @@
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 2,
-   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
+   "lastOk": "2026-10-25T18:53:41.223Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-germany",
    "name": "r/germany",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": "2026-10-15T00:59:57.533Z",
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-unitedkingdom",
@@ -706,10 +704,82 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   }
  ],
  "items": [
+  {
+   "title": "WATCH: Republican Mayor LUNGES at Heckler, TRIES TO FIGHT HIM!",
+   "url": "https://www.youtube.com/watch?v=75Omsr2_GjE",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-25T21:30:21.000Z",
+   "summary": "Luke discusses Pemberton Township Mayor Matthew Bianchini charging a resident in a recent meeting. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X)…",
+   "thumb": "https://i4.ytimg.com/vi/75Omsr2_GjE/hqdefault.jpg",
+   "id": "12f642da6467",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "\"Hosts Must Clean, Not Guests\" - AirBnB New Rule Has Hosts Losing Their Minds",
+   "url": "https://www.youtube.com/watch?v=Ggj8fBm-JTg",
+   "source": "Aberrant preach",
+   "feedId": "yt-aberrant-preach",
+   "type": "video",
+   "tags": [
+    "trash"
+   ],
+   "published": "2026-10-25T19:39:19.000Z",
+   "summary": "AirBNB has issued a new policy change making hosts unable to demand pre check out chores that involve unecessary effort such as cleaning dishes or do laundry before leaving. ———————————— Spotify: https://open.spotify.com/artist/6QJIJ6AugqPEFASp1V6zgH Merchandise ---…",
+   "thumb": "https://i4.ytimg.com/vi/Ggj8fBm-JTg/hqdefault.jpg",
+   "id": "6b81b9fda544",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "tagesschau 20:00 Uhr, 25.10.2026",
+   "url": "https://www.youtube.com/watch?v=-nBMoYdzYG8",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-25T19:36:27.000Z",
+   "summary": "Die 20-Uhr-Ausgabe der tagesschau im Livestream und auf Abruf findet ihr auch hier: https://ardmediathek.de/tagesschau und https://tagesschau.de 0:00 Guten Abend! 0:21 Volkswagen-Tochter Audi will neues Werk im US-Bundesstaat Georgia eröffnen 2:49 Union und SPD bei…",
+   "thumb": "https://i2.ytimg.com/vi/-nBMoYdzYG8/hqdefault.jpg",
+   "id": "708474ed756a",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "MAGA Fox Host SNAPS, Goes OFF SCRIPT ON TRUMP Live On Air!",
+   "url": "https://www.youtube.com/watch?v=ALZNh757swk",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-25T19:30:06.000Z",
+   "summary": "Luke discusses Brian Kilmeade's reaction to Steve Witkoff calling Putin a humanitarian. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
+   "thumb": "https://i2.ytimg.com/vi/ALZNh757swk/hqdefault.jpg",
+   "id": "2b97b53604d3",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
   {
    "title": "Frankreich: ARD-Korrespondentin zum Wahlkampfauftakt der rechten Präsidentschaftskandidatin",
    "url": "https://www.youtube.com/watch?v=10xsxnIIAaU",
@@ -730,7 +800,7 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Is America suffering from ‘Obama Derangement Syndrome’?",
+   "title": "Is Trump’s rhetoric rooted in America’s reaction to Obama?",
    "url": "https://www.youtube.com/watch?v=Yx5jW5Rv3p8",
    "source": "LBC",
    "feedId": "yt-lbc",
@@ -1000,25 +1070,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Jugendproteste in Italien: Darum fühlt sich eine ganze Generation von der Politik ignoriert",
-   "url": "https://www.youtube.com/watch?v=bg0QRdjZil0",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-25T11:52:26.000Z",
-   "summary": "Zukunftsangst, Frust und Wut – Italiens Jugend fühlt sich von der Politik ignoriert und protestiert. Im Zentrum der Kritik stehen schlecht bezahlte Jobs, hohe Lebenshaltungskosten und die Rüstungspolitik. Vergangenes Wochenende kam es zu ähnlicher Gewalt wie in Frankreich.…",
-   "thumb": "https://i3.ytimg.com/vi/bg0QRdjZil0/hqdefault.jpg",
-   "id": "e367fee3ec2b",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Jeremy Hunt: I regret not making more cuts to welfare when I was chancellor",
    "url": "https://www.reddit.com/r/ukpolitics/comments/1xf02ff/jeremy_hunt_i_regret_not_making_more_cuts_to/",
    "source": "r/ukpolitics",
@@ -1099,9 +1150,9 @@
    "published": "2026-10-25T09:37:32.000Z",
    "summary": "Had some level of success these past 5 yrs with my own company, but it wasn't something that was going to go huge. Planning to go back to being a PM now, but after submitting a few resumes (even with internal referrals) - I'm getting passed on by companies left and right - was…",
    "id": "b85fa654b710",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
+   "why": "0"
   },
   {
    "title": "'I've spent $3,000 to vote Netanyahu out:' Israelis fly home for crucial election",
@@ -1117,9 +1168,9 @@
    "summary": "Deadlocked polling in the upcoming Israeli election has inspired hundreds of thousands to fly out and make a stand. There are 800,000 eligible voters living abroad, but with no postal voting available, this is the only option for many to participate in the first election since…",
    "thumb": "https://i3.ytimg.com/vi/NmKHpyFnS7Q/hqdefault.jpg",
    "id": "de165abc4bab",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
+   "why": "0"
   },
   {
    "title": "US executives quit $25bn gas venture over claims of secret Russian control",
@@ -1175,58 +1226,6 @@
    "why": "0"
   },
   {
-   "title": "Tips on getting up to speed on technical side of search product",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1xehpoq/tips_on_getting_up_to_speed_on_technical_side_of/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-10-24T19:35:43.000Z",
-   "summary": "I own a domain-specific dataset, and I depend on horizontal teams to deliver platform capabilities like search, alerts, notifications, dashboards, and whatnot. The data itself is structured data that we're buying from a vendor, and the integration work is something I own. It's…",
-   "id": "b843b11110d4",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "OH SH*T: Trump Fan Tried to HUMILIATE ME, Quickly REGRETS IT!",
-   "url": "https://www.youtube.com/watch?v=bMlZgdxoNeA",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-24T19:30:07.000Z",
-   "summary": "Luke reacts to criticism of his Chicago Thinker debate with Tim Pool and Jack Posobiec. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
-   "thumb": "https://i3.ytimg.com/vi/bMlZgdxoNeA/hqdefault.jpg",
-   "id": "bcab6730bc76",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Veteran HUMILIATES Trump Fans OUTSIDE POLLING PLACE On Camera!",
-   "url": "https://www.youtube.com/watch?v=CTizxf_Zr9c",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-24T17:30:36.000Z",
-   "summary": "Luke discusses a hostile interaction outside a polling place in North Carolina. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
-   "thumb": "https://i4.ytimg.com/vi/CTizxf_Zr9c/hqdefault.jpg",
-   "id": "c66299b4d69e",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "20 Upcoming Games WE'RE WORRIED ABOUT",
    "url": "https://www.youtube.com/watch?v=E4-tQqZFm3Y",
    "source": "GameRanx",
@@ -1276,22 +1275,6 @@
    "summary": "Go to https://surfshark.com/boyle or use code BOYLE at checkout to get 4 extra months of Surfshark! Americans now oppose new AI data centers by roughly three to one, ranking them below coal plants and nuclear power stations, and towns across the country are passing moratoriums…",
    "thumb": "https://i3.ytimg.com/vi/NyOeLB0WVNE/hqdefault.jpg",
    "id": "d4b4cee80321",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Leaving a product?",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1xea0wc/leaving_a_product/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-10-24T14:25:34.000Z",
-   "summary": "Has anyone “left” a product? I’m a product manager on a few internal products but one is uniquely difficult to deal with. My time is genuinely better spent doing something else. Has anyone had a similar conversation or experience? I’m ex tech manager myself so product is very…",
-   "id": "5e33bfbb1be5",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1363,22 +1346,6 @@
    "published": "2026-10-24T13:07:23.000Z",
    "summary": "submitted by /u/AdSpecialist6598 [link] [comments]",
    "id": "aded9f5f8612",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "How do you think product roles will evolve?",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1xe837p/how_do_you_think_product_roles_will_evolve/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-10-24T13:02:11.000Z",
-   "summary": "I'm a Head of Product at a fintech in the UAE, with over a decade of experience building fintech products, specifically trading and investment platforms. Over the last year, I've seen AI transform the nature of the product role. The domain knowledge and expertise I built over…",
-   "id": "311e90fb71e0",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1702,7 +1669,7 @@
    "why": "0"
   },
   {
-   "title": "Der Spion bei der AfD",
+   "title": "Wie die AfD ausspioniert wurde",
    "url": "https://www.youtube.com/watch?v=HHuIcNUFpbI",
    "source": "Simplicissimus",
    "feedId": "yt-simplicissimus",
@@ -1962,23 +1929,6 @@
    "summary": "Elon's Tesla released the video of their Roadster... Flying cars, hover cars, floating cars, its preview only and seems very sus based on the video released. ———————————— Spotify: https://open.spotify.com/artist/6QJIJ6AugqPEFASp1V6zgH Merchandise ---…",
    "thumb": "https://i1.ytimg.com/vi/4JHLoi5hr2Y/hqdefault.jpg",
    "id": "e7a85da3e023",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Dashcams Are A MUST!",
-   "url": "https://www.youtube.com/watch?v=wZ8-tKX5EHY",
-   "source": "Aberrant preach",
-   "feedId": "yt-aberrant-preach",
-   "type": "video",
-   "tags": [
-    "trash"
-   ],
-   "published": "2026-10-20T18:06:06.000Z",
-   "summary": "Cops thought they could get away with this one but they must have missed the memo that Teslas have dashcams all around. ———————————— Spotify: https://open.spotify.com/artist/6QJIJ6AugqPEFASp1V6zgH Merchandise --- https://www.enkreprinte.com/collections/aba-and-preach INSTAGRAM…",
-   "thumb": "https://i4.ytimg.com/vi/wZ8-tKX5EHY/hqdefault.jpg",
-   "id": "9ba743b148a1",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2729,5 +2679,5 @@
    "duration": "39:05"
   }
  ],
- "contentHash": "4578b71c1787"
+ "contentHash": "df7673a2a68a"
 }
