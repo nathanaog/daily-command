@@ -1,17 +1,17 @@
 {
- "generated": "2026-10-25T12:58:52.253Z",
+ "generated": "2026-10-25T15:48:39.623Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
   "ok": 51,
-  "items": 118,
+  "items": 117,
   "duplicatesMerged": 0,
   "lengthsKnown": 1,
-  "lengthLookups": 102,
-  "lengthFailures": 102,
+  "lengthLookups": 101,
+  "lengthFailures": 101,
   "lengthVia": "video pages",
   "lengthFailReasons": {
-   "no length on page": 102
+   "no length on page": 101
   }
  },
  "feeds": [
@@ -59,7 +59,7 @@
    "name": "Chris Spargo",
    "type": "youtube",
    "status": "ok",
-   "count": 1,
+   "count": 0,
    "resolved": {
     "channelId": "UCTzkxNEnbdvbBlgYl_W9daw",
     "title": "Chris Spargo",
@@ -630,46 +630,47 @@
    "id": "rd-productmanagement",
    "name": "r/productmanagement",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 4,
-   "url": "https://www.reddit.com/r/productmanagement/top/.rss?t=day"
+   "lastOk": "2026-10-25T12:58:52.253Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-tech",
    "name": "r/tech",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 1,
-   "url": "https://www.reddit.com/r/tech/top/.rss?t=day"
+   "lastOk": "2026-10-25T12:58:52.253Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-gaming",
    "name": "r/gaming",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-10-25T07:04:06.239Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
   },
   {
    "id": "rd-xbox",
    "name": "r/xbox",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": "2026-10-21T15:54:55.125Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-slaythespire",
@@ -678,7 +679,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-geopolitics",
@@ -710,6 +711,59 @@
  ],
  "items": [
   {
+   "title": "Das Nordkorea mitten in Europa",
+   "url": "https://www.youtube.com/watch?v=zNXG30YFVao",
+   "source": "Simplicissimus",
+   "feedId": "yt-simplicissimus",
+   "type": "video",
+   "tags": [
+    "german",
+    "education"
+   ],
+   "published": "2026-10-25T15:00:01.000Z",
+   "summary": "Starte mit Saily entspannt in deine nächste Reise und sei bei der Ankunft sofort vernetzt. Sichere dir als Neukunde 15 % Rabatt auf deine erste eSIM mit dem Code “SIMPLI”. Jetzt die App herunterladen, Code eingeben und loslegen: https://saily.com/simpli (Werbung) Das ist die…",
+   "thumb": "https://i3.ytimg.com/vi/zNXG30YFVao/hqdefault.jpg",
+   "id": "31672409834b",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Racism debate takes a turn with surprise phone-in",
+   "url": "https://www.youtube.com/watch?v=yJijMLGP-T4",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-25T14:00:50.000Z",
+   "summary": "Raheem Kassam phoned into Lewis Goodall's show to address his tweet being put to Reform's Robert Jenrick. In the tweet, Kassam described Conservative leader Kemi Badenoch as a 'Nigerian scammer'. Robert Jenrick refused to say whether the tweet was racist or not, whilst Kassam…",
+   "thumb": "https://i2.ytimg.com/vi/yJijMLGP-T4/hqdefault.jpg",
+   "id": "2c865b319754",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "General Election Nowcast - 25/10/26: LAB: 327 (-84) | 28.3% (Maj. of 4) CON: 125 (+4) | 21.1% LDM: 66 (-6) | 9.3% RFM: 52 (+47) | 21.9% SNP: 38 (+29) | 2.7% PLC: 8 (+4) | 1.0% GRN: 7 (+3) | 8.9% RES: 1 (+1) | 3.7% Oth: 7 (+2) | 2.9%",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xf28lb/general_election_nowcast_251026_lab_327_84_283/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-25T13:21:28.000Z",
+   "summary": "submitted by /u/LargeCatInASmallBox [link] [comments]",
+   "id": "2b8c0a25e261",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
    "title": "An 86-minute guide to finding PMF | Rob Snyder (Author, The Power of Pull)",
    "url": "https://www.youtube.com/watch?v=19qrLchbQEc",
    "source": "Lenny's Podcast",
@@ -724,6 +778,23 @@
    "summary": "Rob Snyder is the author of The Power of Pull and writes the newsletter The Physics of Startups. He has advised more than 50 startups on growing from zero to $1 million in ARR, drawing on his own experience as a founder who spent two years pushing a product the market didn’t…",
    "thumb": "https://i2.ytimg.com/vi/19qrLchbQEc/hqdefault.jpg",
    "id": "c7b9cf819249",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Scottish Greens propose plans for new 'millennial railcard'",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xf10io/scottish_greens_propose_plans_for_new_millennial/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-25T12:23:56.000Z",
+   "summary": "submitted by /u/HaveYuHeardAboutCunt [link] [comments]",
+   "id": "a9a03c3467bc",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -767,6 +838,23 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
+   "title": "Jeremy Hunt: I regret not making more cuts to welfare when I was chancellor",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xf02ff/jeremy_hunt_i_regret_not_making_more_cuts_to/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-25T11:33:45.000Z",
+   "summary": "submitted by /u/theipaper [link] [comments]",
+   "id": "a6ec804ea0a4",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
    "title": "Burnham leaves Farage behind in new poll",
    "url": "https://www.youtube.com/watch?v=cQGPMT587vc",
    "source": "LBC",
@@ -780,6 +868,40 @@
    "summary": "Lewis Goodall speaks to IPSOS, whose new poll reveals that Labour continues to climb in the polls under Andy Burnham. Labour is now leading by eight points over the Conservatives - who are in second place for the first time this parliament, according to fresh research from…",
    "thumb": "https://i4.ytimg.com/vi/cQGPMT587vc/hqdefault.jpg",
    "id": "5cd1e26818ac",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Exclusive: Burnham Explains How He Will Deliver Growth In Every Postcode",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xezys0/exclusive_burnham_explains_how_he_will_deliver/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-25T11:28:20.000Z",
+   "summary": "submitted by /u/huffpostuk [link] [comments]",
+   "id": "a617c63a86cf",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Budget 2026: No more fat to trim for 'squeezed middle'",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xezhnk/budget_2026_no_more_fat_to_trim_for_squeezed/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-25T11:01:37.000Z",
+   "summary": "submitted by /u/Desperate-Drawer-572 [link] [comments]",
+   "id": "dc293153eeef",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -836,23 +958,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Burnham to defy Ed Miliband by giving Rosebank oil field green light",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xetqbe/burnham_to_defy_ed_miliband_by_giving_rosebank/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-25T05:14:48.000Z",
-   "summary": "submitted by /u/coldbeers [link] [comments]",
-   "id": "513e60fbc32b",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "US executives quit $25bn gas venture over claims of secret Russian control",
    "url": "https://www.reddit.com/r/geopolitics/comments/1xenqmg/us_executives_quit_25bn_gas_venture_over_claims/",
    "source": "r/geopolitics",
@@ -865,74 +970,6 @@
    "published": "2026-10-25T00:03:09.000Z",
    "summary": "submitted by /u/BlueEmma25 [link] [comments]",
    "id": "d8a1102c1fd2",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "...looked into the effect budgets have on the Government's polling figures. The answer? Hardly at all. Average change in polling: -0.4 pts Only 4 of the last 21 budgets have caused a shift greater than 2pts!Election Maps UK (@electionmaps.uk)",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xekcjp/looked_into_the_effect_budgets_have_on_the/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-24T21:26:13.000Z",
-   "summary": "submitted by /u/LargeCatInASmallBox [link] [comments]",
-   "id": "b28cb62e301b",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Wes Streeting: Britain must be ready for war in 1,000 days",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xeitl6/wes_streeting_britain_must_be_ready_for_war_in/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-24T20:21:14.000Z",
-   "summary": "submitted by /u/TheTelegraph [link] [comments]",
-   "id": "6dcba98cc740",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Queue of 100 hopefuls at cafe 'shows how the job market is'",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xehsru/queue_of_100_hopefuls_at_cafe_shows_how_the_job/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-24T19:39:09.000Z",
-   "summary": "submitted by /u/Desperate-Drawer-572 [link] [comments]",
-   "id": "b461d3cc3b4d",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Treasury adviser quits and tells Healey: Entrepreneurs are not a sideshow",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xehm3a/treasury_adviser_quits_and_tells_healey/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-24T19:31:39.000Z",
-   "summary": "submitted by /u/coldbeers [link] [comments]",
-   "id": "dfd57830c7d6",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1074,7 +1111,7 @@
     "listen"
    ],
    "published": "2026-10-24T18:30:28.000Z",
-   "summary": "tagesschau 20:00 Uhr Erneut landesweite Proteste in Frankreich gegen die hohen Lebenshaltungskosten, Ebenfalls Proteste in mehreren italienischen Städten gegen Lebenshaltungskosten, Abschluss des CSU-Parteitags in München mit Rede von Bundeskanzler Merz, Proteste gegen…",
+   "summary": "Die 20-Uhr-Ausgabe der tagesschau im Livestream und auf Abruf findet ihr auch hier: https://ardmediathek.de/tagesschau und https://tagesschau.de 0:00 Guten Abend! 0:20 Erneut landesweite Proteste in Frankreich gegen die hohen Lebenshaltungskosten 3:39 Ebenfalls Proteste in…",
    "thumb": "https://i1.ytimg.com/vi/pM6Rh5wNk-k/hqdefault.jpg",
    "id": "e7a375d5a8f4",
    "score": 0,
@@ -1304,24 +1341,6 @@
    "published": "2026-10-24T11:09:46.000Z",
    "summary": "submitted by /u/boppinmule [link] [comments]",
    "id": "3e899266ff84",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Donald Trump awarded made-up 'Man of the Century' award",
-   "url": "https://www.youtube.com/watch?v=eOLxFP7Szzw",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-24T09:57:07.000Z",
-   "summary": "James Hanson reacts as Donald Trump receives another made up award... this time the 'Man of the Century' as awarded to him by Republican candidate Joe Mitchell. The former state representative is locked in a tight race for Iowa's second congressional district with Democrat…",
-   "thumb": "https://i2.ytimg.com/vi/eOLxFP7Szzw/hqdefault.jpg",
-   "id": "8922325572d0",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2778,43 +2797,7 @@
    "score": 0,
    "matched": [],
    "why": "0"
-  },
-  {
-   "title": "This NHS hospital is weirder than I thought",
-   "url": "https://www.youtube.com/watch?v=U0Q4G8cUKMo",
-   "source": "Chris Spargo",
-   "feedId": "yt-chris-spargo",
-   "type": "video",
-   "tags": [
-    "british",
-    "education"
-   ],
-   "published": "2026-10-11T15:00:27.000Z",
-   "summary": "Click here to check out Huel: http://uk.huel.com/CHRIS10 and use code CHRIS10 to get £10 off your first order over £60. Minimum spend required. Offer valid for 30 days. New customers only. #ad You can donate monthly to the Children's Cancer Centre project if you're interested:…",
-   "thumb": "https://i2.ytimg.com/vi/U0Q4G8cUKMo/hqdefault.jpg",
-   "id": "9042639ff221",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Der Absturz von Nike",
-   "url": "https://www.youtube.com/watch?v=O3EQVMJDn1s",
-   "source": "Simplicissimus",
-   "feedId": "yt-simplicissimus",
-   "type": "video",
-   "tags": [
-    "german",
-    "education"
-   ],
-   "published": "2026-10-11T14:00:38.000Z",
-   "summary": "Hol dir jetzt 20 € Willkommensbonus bei Revolut! Einfach die kostenlose App herunterladen, Konto eröffnen und mit der virtuellen Karte sofort loslegen: https://simpli.deals/revolut106 (Werbung) Bei KoRo findet ihr neben einer großen Auswahl an hochwertigen Lebensmitteln jetzt…",
-   "thumb": "https://i4.ytimg.com/vi/O3EQVMJDn1s/hqdefault.jpg",
-   "id": "7cb4cbde21fb",
-   "score": 0,
-   "matched": [],
-   "why": "0"
   }
  ],
- "contentHash": "e1e86cd016ac"
+ "contentHash": "09a01458eee0"
 }
