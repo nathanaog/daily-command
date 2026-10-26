@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-26T19:07:25.244Z",
+ "generated": "2026-10-26T21:51:09.363Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
@@ -657,20 +657,19 @@
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
+   "lastOk": "2026-10-26T19:07:25.244Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-xbox",
    "name": "r/xbox",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": "2026-10-21T15:54:55.125Z",
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-slaythespire",
@@ -679,25 +678,26 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-10-26T14:59:12.925Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
   },
   {
    "id": "rd-germany",
    "name": "r/germany",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": "2026-10-15T00:59:57.533Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-unitedkingdom",
@@ -706,10 +706,139 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   }
  ],
  "items": [
+  {
+   "title": "You Won’t F***ing Believe What Just Happened at a Trump Rally",
+   "url": "https://www.youtube.com/watch?v=WEJgVFPpPPo",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-26T21:40:22.000Z",
+   "summary": "Luke discusses the stark differences between Trump’s and Abdul’s recent rallies. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
+   "thumb": "https://i4.ytimg.com/vi/WEJgVFPpPPo/hqdefault.jpg",
+   "id": "02c5caabf903",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Emotionale Debatte über häusliche Pflege bei Hart aber fair",
+   "url": "https://www.youtube.com/watch?v=njOT4tTZzqA",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-26T21:36:17.000Z",
+   "summary": "Pflege zu Hause: Lässt die Politik Angehörige allein? Mehr als sechs Millionen Menschen in Deutschland sind pflegebedürftig. Tendenz: steigend. Die meisten von ihnen werden zu Hause versorgt. Von rund zehn Millionen Angehörigen. Oft sind sie überlastet und frustriert. Mit…",
+   "thumb": "https://i3.ytimg.com/vi/njOT4tTZzqA/hqdefault.jpg",
+   "id": "f14ba75e69d3",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "„Brasilien ist absolut gespalten“: Korrespondent über Lulas Sieg",
+   "url": "https://www.youtube.com/watch?v=j0brRvDpwSw",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-26T19:38:48.000Z",
+   "summary": "Feuerwerk und Freudentränen – in Brasilien feiern Anhänger:innen den Wahlsieg von Lula da Silva als Erfolg der Demokratie. Doch während die einen aufatmen, warnen andere vor dem politischen Kampf, der jetzt erst beginnt. Lula gewann die Stichwahl gegen Flávio Bolsonaro, den…",
+   "thumb": "https://i3.ytimg.com/vi/j0brRvDpwSw/hqdefault.jpg",
+   "id": "2eb3046ee271",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Trump will be 'very unhappy' over the election in Brazil",
+   "url": "https://www.youtube.com/watch?v=EDjfP9NxIHg",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-26T19:37:14.000Z",
+   "summary": "Brazil's President Lula da Silva has been re-elected for a historic fourth term following a nail-biting runoff against Trump-backed, far-right favourite Flavio Bolsonaro. The leftist president won a historic fourth term, defeating the son of jailed far-right president Jair…",
+   "thumb": "https://i2.ytimg.com/vi/EDjfP9NxIHg/hqdefault.jpg",
+   "id": "185f83e4263a",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Weniger Lärm, bessere Luft und weniger Unfälle: Tempo 40 erfolgreich getestet",
+   "url": "https://www.youtube.com/watch?v=ZRhB8fby0tA",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-26T19:29:44.000Z",
+   "summary": "Auf mehreren großen Straßen in Reutlingen, Stuttgart und Heilbronn gilt seit einigen Jahren Tempo 40. Ziel war es, die Luft sauberer zu machen und den Lärm zu reduzieren. Einen weiteren Effekt hat jetzt eine Recherche des SWR und der Neuen Pressegesellschaft ergeben: der…",
+   "thumb": "https://i3.ytimg.com/vi/ZRhB8fby0tA/hqdefault.jpg",
+   "id": "e04fd0969693",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "tagesschau 20:00 Uhr, 26.10.2026",
+   "url": "https://www.youtube.com/watch?v=tbbyApHfeLc",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-26T19:29:33.000Z",
+   "summary": "Die 20-Uhr-Ausgabe der tagesschau im Livestream und auf Abruf findet ihr auch hier: https://ardmediathek.de/tagesschau und https://tagesschau.de 0:00 Guten Abend! 0:21 Studentenliste gewinnt vorgezogene Parlamentswahl in Serbien, 4:53 Lula da Silva gewinnt Präsidentschaftswahl…",
+   "thumb": "https://i1.ytimg.com/vi/tbbyApHfeLc/hqdefault.jpg",
+   "id": "e5307783245c",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Action Needed to Get Ukraine’s Grain to the World",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xg5zqi/action_needed_to_get_ukraines_grain_to_the_world/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-26T19:05:17.000Z",
+   "summary": "submitted by /u/CEPAORG [link] [comments]",
+   "id": "6d38a3c42101",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
   {
    "title": "Serbien vor Machtwechsel | tagesthemen-Interview",
    "url": "https://www.youtube.com/watch?v=pGtcdw3u56g",
@@ -730,20 +859,18 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Historische Wahl in Brasilien: Wie konnte Lula das noch drehen?",
-   "url": "https://www.youtube.com/watch?v=Fv994iyuCFg",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
+   "title": "Russia’s Ministry of Control",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xg59kh/russias_ministry_of_control/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
    "tags": [
-    "german",
-    "news",
-    "listen"
+    "politics",
+    "news"
    ],
-   "published": "2026-10-26T18:22:01.000Z",
-   "summary": "Seine Anhänger:innen bejubeln seinen erneuten Wahlsieg, sein Herausforder:innen protestiert. Zum vierten Mal ist in Brasilien Lula da Silva zum Präsidenten gewählt worden. Der 80-jährige linke Politiker gewann die Stichwahl laut offiziellem Ergebnis mit 51,8 Prozent der…",
-   "thumb": "https://i3.ytimg.com/vi/Fv994iyuCFg/hqdefault.jpg",
-   "id": "6bb01a52835d",
+   "published": "2026-10-26T18:38:12.000Z",
+   "summary": "submitted by /u/CEPAORG [link] [comments]",
+   "id": "279e9ddcc049",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -783,7 +910,7 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "SIOUX CITY",
+   "title": "SIOUX CITY TRUMP RALLY",
    "url": "https://www.youtube.com/watch?v=veBxHSm0c80",
    "source": "The Good Liars",
    "feedId": "yt-the-good-liars",
@@ -797,6 +924,23 @@
    "summary": "The Good Liars visit Sioux City, Iowa for the Trump Rally",
    "thumb": "https://i3.ytimg.com/vi/veBxHSm0c80/hqdefault.jpg",
    "id": "c31479937413",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "What Israel’s Election Won’t Change: The Constraints and Costs of the New Security Consensus",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xg3swa/what_israels_election_wont_change_the_constraints/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-26T17:45:12.000Z",
+   "summary": "submitted by /u/ForeignAffairsMag [link] [comments]",
+   "id": "bd4d8c4eecc9",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -832,6 +976,40 @@
    "summary": "Home Secretary Shabana Mahmood is facing backlash over her planned immigration crackdown. Ms Mahmood wants to lengthen the time it takes for foreign nationals to be granted indefinite leave to remain (ILR) from five to 15 years. But she is under pressure from colleagues to…",
    "thumb": "https://i4.ytimg.com/vi/3hCbrr9o1G4/hqdefault.jpg",
    "id": "6aaf63526a08",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Dictatorship isn’t destiny for Russia’s indigenous peoples. They can build independent democracies - \"An independent Sakha will open to the world. Historically, we had business ties with Manchuria and Japan and the entire Pacific region will be open to us\"",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xg37lv/dictatorship_isnt_destiny_for_russias_indigenous/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-26T17:23:41.000Z",
+   "summary": "submitted by /u/paneuropeanism_ [link] [comments]",
+   "id": "0f5abadede97",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Spheres of Influence Won’t Help the US",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xg32tr/spheres_of_influence_wont_help_the_us/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-26T17:18:45.000Z",
+   "summary": "submitted by /u/CEPAORG [link] [comments]",
+   "id": "1d747965644b",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -873,25 +1051,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "tagesschau in Einfacher Sprache 19:00 Uhr, 26.10.2026",
-   "url": "https://www.youtube.com/watch?v=AZwV7Mks-fk",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-26T16:44:28.000Z",
-   "summary": "tagesschau in Einfacher Sprache 19:00 Uhr Lula gewinnt Präsidentenwahl in Brasilien, Studentenliste gewinnt Wahl in Serbien, Gebäudetyp E soll Wohnungsbau günstiger machen, Kreuzfahrtschiff \"Mein Schiff 3\" kollidiert mit Containerschiffen in Bremerhaven, Das Wetter…",
-   "thumb": "https://i2.ytimg.com/vi/AZwV7Mks-fk/hqdefault.jpg",
-   "id": "54f899d8b811",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "A week until the midterms: What to expect",
    "url": "https://www.youtube.com/watch?v=qPocyLAziiY",
    "source": "LBC",
@@ -922,44 +1081,6 @@
    "published": "2026-10-26T16:18:35.000Z",
    "summary": "submitted by /u/huffpostuk [link] [comments]",
    "id": "8dbacdb796dd",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Lulas Wahlsieg in Brasilien: Experte erklärt, was sich jetzt für EU und Deutschland ändert",
-   "url": "https://www.youtube.com/watch?v=XBi7Oph2nh4",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-26T15:50:24.000Z",
-   "summary": "Staatschef Lula hat die Präsidentschaftswahl in Brasilien gewonnen. Er setzte sich gegen den Herausforderer Bolsonaro durch – doch der will das Ergebnis nicht anerkennen. Politikwissenschaftler Günther Maihold ordnet die aktuelle Lage nach der Wahl ein. Alle aktuellen…",
-   "thumb": "https://i1.ytimg.com/vi/XBi7Oph2nh4/hqdefault.jpg",
-   "id": "9a9b5c884b40",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Kreuzfahrt-Kollision in Bremerhaven: \"Mein Schiff 3\"-Reise abgesagt",
-   "url": "https://www.youtube.com/watch?v=NsMfURx-F20",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-26T15:46:55.000Z",
-   "summary": "Nach der Schiffskollision in Bremerhaven während eines Sturms ermittelt die Polizei gegen den Kapitän des Kreuzfahrtschiffs „Mein Schiff 3“. Es geht um einen möglichen Verstoß gegen die Sorgfaltspflicht. Die Kreuzfahrt ist abgesagt. Mehr Informationen:…",
-   "thumb": "https://i3.ytimg.com/vi/NsMfURx-F20/hqdefault.jpg",
-   "id": "dc45c9a9f649",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1046,91 +1167,6 @@
    "published": "2026-10-26T14:31:22.000Z",
    "summary": "submitted by /u/Dismal_Uses [link] [comments]",
    "id": "bba5d079ec53",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "In ‘unprecedented confrontation,’ IDF chief said resisting Netanyahu's order for military action tied to Iran",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xfxjnv/in_unprecedented_confrontation_idf_chief_said/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-26T13:57:20.000Z",
-   "summary": "submitted by /u/diwalibonus [link] [comments]",
-   "id": "f0a4eac58d37",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Russia's global game: From Ukraine to the Middle East",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xfx8jw/russias_global_game_from_ukraine_to_the_middle/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-26T13:44:50.000Z",
-   "summary": "Russia is playing a game not only in Europe, where it continues its brutal aggression against Ukraine. The stakes of the Kremlin's policy in the Middle East are also extremely high, particularly amid the growing tensions and geopolitical shifts across the region. Speaking on…",
-   "id": "5322807c53ed",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "AfD’s plan to destroy the EU",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xfx4z5/afds_plan_to_destroy_the_eu/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-26T13:41:09.000Z",
-   "summary": "The Telegraph article describes the radical program of the Alternative for Germany (AfD) party to dismantle the current architecture of the European Union. AfD proposes stripping Brussels of real power and turning the EU into a “free federation of sovereign nations.”According…",
-   "id": "561d1f034ce5",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "France, UK carry out joint airborne nuclear-strike exercise for first time",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xfunqf/france_uk_carry_out_joint_airborne_nuclearstrike/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-26T11:52:30.000Z",
-   "summary": "SS: Despite the Brexit divide, Western Europe's Nuclear powers are working more closely together to protect themselves against threats from both Moscow and now, increasingly, Washington. France and the United Kingdom carried out a joint airborne nuclear strike exercise for the…",
-   "id": "64ec4d58f221",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "The cardiologist who could become Serbia's next PM. The Student List party defeated the government of Aleksandar Vučić in Sunday's election",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xftbr6/the_cardiologist_who_could_become_serbias_next_pm/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-26T10:41:17.000Z",
-   "summary": "As the dust settled on Sunday's historic general election in Serbia that saw Aleksandar Vučić, the prime minister and dominant force in Serbian politics for over a decade, ousted from office along with his Serbian Progressive Party, one big question was left unanswered: who…",
-   "id": "d34d207bfc9a",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1316,7 +1352,7 @@
    "why": "0"
   },
   {
-   "title": "Inside Germany’s Unique Apprenticeship System",
+   "title": "How Foreigners Become Skilled Workers in Germany",
    "url": "https://www.youtube.com/watch?v=-4o4S6M6QcE",
    "source": "Easy German",
    "feedId": "yt-easy-german",
@@ -1329,24 +1365,6 @@
    "summary": "Download the guide on vocational training in Germany for free: https://easygerman.link/lm-pdf-004-ausbildung-in-deutschland --- Practice speaking German for your everyday life in Germany with our Conversation Membership: https://easygerman.link/membership_eg684 --- LEARN MORE…",
    "thumb": "https://i2.ytimg.com/vi/-4o4S6M6QcE/hqdefault.jpg",
    "id": "c6b899f2e952",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "OH SH*T: Melania Tried TO SILENCE HER, So She DROPPED THIS!",
-   "url": "https://www.youtube.com/watch?v=UF8L8Kg6mTk",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-25T17:30:29.000Z",
-   "summary": "Luke discusses JoJoFromJerz's legal battle with Melania Trump. Check out Jo's Substack! https://substack.com/@jojofromjerz Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get…",
-   "thumb": "https://i2.ytimg.com/vi/UF8L8Kg6mTk/hqdefault.jpg",
-   "id": "046f8a941399",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1418,24 +1436,6 @@
    "summary": "Starte mit Saily entspannt in deine nächste Reise und sei bei der Ankunft sofort vernetzt. Sichere dir als Neukunde 15 % Rabatt auf deine erste eSIM mit dem Code “SIMPLI”. Jetzt die App herunterladen, Code eingeben und loslegen: https://saily.com/simpli (Werbung) Das ist die…",
    "thumb": "https://i3.ytimg.com/vi/zNXG30YFVao/hqdefault.jpg",
    "id": "31672409834b",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Racism debate takes a turn with surprise phone-in",
-   "url": "https://www.youtube.com/watch?v=yJijMLGP-T4",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-25T14:00:50.000Z",
-   "summary": "Raheem Kassam phoned into Lewis Goodall's show to address his tweet being put to Reform's Robert Jenrick. In the tweet, Kassam described Conservative leader Kemi Badenoch as a 'Nigerian scammer'. Robert Jenrick refused to say whether the tweet was racist or not, whilst Kassam…",
-   "thumb": "https://i2.ytimg.com/vi/yJijMLGP-T4/hqdefault.jpg",
-   "id": "2c865b319754",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2717,5 +2717,5 @@
    "why": "0"
   }
  ],
- "contentHash": "6f4eff277c97"
+ "contentHash": "3c96aadfdbe6"
 }
