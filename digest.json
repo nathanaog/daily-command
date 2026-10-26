@@ -1,12 +1,12 @@
 {
- "generated": "2026-10-26T07:13:20.656Z",
+ "generated": "2026-10-26T10:02:41.672Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
   "ok": 51,
-  "items": 114,
+  "items": 115,
   "duplicatesMerged": 0,
-  "lengthsKnown": 1,
+  "lengthsKnown": 2,
   "lengthLookups": 100,
   "lengthFailures": 99,
   "lengthVia": "video pages",
@@ -215,7 +215,7 @@
    "name": "TLDR News",
    "type": "youtube",
    "status": "ok",
-   "count": 3,
+   "count": 4,
    "resolved": {
     "channelId": "UCSMqateX8OA2s1wsOR2EgJA",
     "title": "TLDR News",
@@ -630,9 +630,10 @@
    "id": "rd-productmanagement",
    "name": "r/productmanagement",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 3,
-   "url": "https://www.reddit.com/r/productmanagement/top/.rss?t=day"
+   "lastOk": "2026-10-26T07:13:20.656Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-tech",
@@ -641,7 +642,7 @@
    "status": "cached",
    "count": 1,
    "lastOk": "2026-10-25T12:58:52.253Z",
-   "note": "rate-limited (429)"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-gaming",
@@ -650,25 +651,26 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-10-26T01:14:45.897Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
   },
   {
    "id": "rd-xbox",
    "name": "r/xbox",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": "2026-10-21T15:54:55.125Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-slaythespire",
@@ -677,7 +679,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-geopolitics",
@@ -709,6 +711,186 @@
  ],
  "items": [
   {
+   "title": "Why the UK is Looking Surprisingly Functional",
+   "url": "https://www.youtube.com/watch?v=j8mkyRBT9yE",
+   "source": "TLDR News",
+   "feedId": "yt-tldr-news",
+   "type": "video",
+   "tags": [
+    "news",
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-26T09:59:22.000Z",
+   "summary": "Take back your privacy - start using Proton Mail for free: http://proton.me/tldr Things are looking pretty bleak around the world at the moment... but look beneath the curtain, and the UK is actually doing pretty okay. In this video, we're going to go through a few reasons how…",
+   "thumb": "https://i3.ytimg.com/vi/j8mkyRBT9yE/hqdefault.jpg",
+   "id": "58886ee03ab6",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "\"Frankreich hat eine gute Zukunft vor sich\": Marine Le Pen im Wahlkampf",
+   "url": "https://www.youtube.com/watch?v=cRxhxcE8Ynk",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-26T09:47:09.000Z",
+   "summary": "Die rechtspopulistische französische Präsidentschaftskandidatin Le Pen führt derzeit in den Umfragen. Zum Auftakt der Wahlkampagne ihres Rassemblement National warb sie für einen politischen Neuanfang in Frankreich. Mehr Informationen:…",
+   "thumb": "https://i4.ytimg.com/vi/cRxhxcE8Ynk/hqdefault.jpg",
+   "id": "23dae811c90e",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Niederlage für Vucic: Studentenliste gewinnt Wahl in Serbien",
+   "url": "https://www.youtube.com/watch?v=j4l1p4JbUMg",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-26T09:42:20.000Z",
+   "summary": "Bei der vorgezogenen Parlamentswahl in Serbien hat der Spitzenkandidat der regierenden SNS-Partei, Vucic, seine Niederlage eingestanden. Die oppositionelle Studentenliste habe die Wahl gewonnen. Auf den Straßen herrschte vielerorts großer Jubel. Mehr Informationen:…",
+   "thumb": "https://i3.ytimg.com/vi/j4l1p4JbUMg/hqdefault.jpg",
+   "id": "26be061f4447",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Schiffskollision in Bremerhaven: Wie kam es zum Unfall der Mein Schiff 3?",
+   "url": "https://www.youtube.com/watch?v=wltay-O7hjY",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-26T09:36:57.000Z",
+   "summary": "Bei hohen Wellen und starkem Wind hat das Kreuzfahrtschiff Mein Schiff 3 in Bremerhaven zwei Containerschiffe gerammt. Insgesamt verlief die Sturmnacht im Norden relativ glimpflich. Doch für den Mittag gibt es weitere Sturmflutwarnungen. Mehr Informationen:…",
+   "thumb": "https://i4.ytimg.com/vi/wltay-O7hjY/hqdefault.jpg",
+   "id": "1f79c92e5cd9",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Brasilien: Jugend verhilft Lula zum Sieg der Präsidentschaftswahl",
+   "url": "https://www.youtube.com/watch?v=I-_dJ-m6dNM",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-26T09:34:32.000Z",
+   "summary": "Der linke Staatschef Lula hat die Präsidentschaftswahl in Brasilien gewonnen. Er setzte sich gegen den rechten Kandidaten Bolsonaro durch – doch der will das Ergebnis nicht anerkennen. Mehr Information: https://www.tagesschau.de/ausland/amerika/brasilien-wahlen-lula-100.html…",
+   "thumb": "https://i2.ytimg.com/vi/I-_dJ-m6dNM/hqdefault.jpg",
+   "id": "55122bfaeb04",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Burnham signals plans to take Britain back into EU at next election",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xfrm8f/burnham_signals_plans_to_take_britain_back_into/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-26T09:00:34.000Z",
+   "summary": "submitted by /u/Angel_Xtreme [link] [comments]",
+   "id": "d8fed3bbbfb9",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Jaguar Land Rover cyber-attack was state-sponsored, former minister admits",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xfr8l8/jaguar_land_rover_cyberattack_was_statesponsored/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-26T08:36:29.000Z",
+   "summary": "submitted by /u/OptioMkIX [link] [comments]",
+   "id": "7382f48456a0",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Andy Burnham Says He Wants UK to Rejoin EU in His Lifetime",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xfr3kh/andy_burnham_says_he_wants_uk_to_rejoin_eu_in_his/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-26T08:27:06.000Z",
+   "summary": "submitted by /u/bloomberg [link] [comments]",
+   "id": "8e4c71dff5e7",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Andy Burnham leaves open UK rejoining EU from 2030 as he slams Brexit for loss of border controls",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xfqw86/andy_burnham_leaves_open_uk_rejoining_eu_from/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-26T08:14:09.000Z",
+   "summary": "submitted by /u/Visual_Title9363 [link] [comments]",
+   "id": "cc62378391ba",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Bank Job by Liz Truss: zero-star review",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xfpwse/bank_job_by_liz_truss_zerostar_review/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-26T07:10:44.000Z",
+   "summary": "submitted by /u/Dismal_Uses [link] [comments]",
+   "id": "e13a860fa965",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
    "title": "The Republican Party & The Far Right: Last Week Tonight with John Oliver (HBO)",
    "url": "https://www.youtube.com/watch?v=SnsBI4YxwIs",
    "source": "Last Week Tonight",
@@ -727,7 +909,7 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Frauen in der Bundeswehr: Belästigt, gemobbt, missbraucht",
+   "title": "Frauen in der Bundeswehr: Belästigt, gemobbt, missbraucht I 11KM - der tagesschau-Podcast",
    "url": "https://www.youtube.com/watch?v=9Jbzinb-IIY",
    "source": "Tagesschau",
    "feedId": "yt-tagesschau",
@@ -741,25 +923,6 @@
    "summary": "Die Bundeswehr braucht dringend mehr Personal. Sie soll zur größten Armee Europas werden und setzt bei ihrer Recruiting-Strategie auch auf junge Frauen. Die wenigen, die sich beim Bund verpflichten, erleben eine männliche Übermacht, sexistische Sprüche bis hin zu sexuellem…",
    "thumb": "https://i2.ytimg.com/vi/9Jbzinb-IIY/hqdefault.jpg",
    "id": "ff8830c77473",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Neue Proteste in Europa / Audi baut erste US-Fabrik / Förster gegen Kirschlorbeer | \"15 Minuten\"",
-   "url": "https://www.youtube.com/watch?v=7cS8N7UH-CI",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-26T05:07:22.000Z",
-   "summary": "(00:00:07) Themenübersicht (00:01:08) Proteste Europa erlebt erneut ein Wochenende mit Protesten und teils schweren Ausschreitungen. In Barcelona kam es zu Plünderungen und zahlreichen Festnahmen, während in Frankreich trotz eines massiven Polizeiaufgebots wieder…",
-   "thumb": "https://i4.ytimg.com/vi/7cS8N7UH-CI/hqdefault.jpg",
-   "id": "94cf85eeb68e",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -871,59 +1034,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "tagesthemen 23:15 Uhr, 25.10.2026",
-   "url": "https://www.youtube.com/watch?v=bIjznMC8TLc",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-25T23:06:26.000Z",
-   "summary": "tagesthemen 23:15 Uhr Vorgezogene Parlamentswahl in Serbien: Vucic räumt Niederlage ein, Stichwahl um das Präsidentenamt in Brasilien, Parteitag in Orléans: Le Pen eröffnet Wahlkampf in Frankreich, Renaissance von handgemalten Werbewänden im Zeitalter von KI, Ergebnisse der…",
-   "thumb": "https://i3.ytimg.com/vi/bIjznMC8TLc/hqdefault.jpg",
-   "id": "004a99d6b0f8",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Shabana Mahmood ‘must quit if migration reforms are watered down’",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xfgddu/shabana_mahmood_must_quit_if_migration_reforms/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-25T22:55:25.000Z",
-   "summary": "submitted by /u/Desperate-Drawer-572 [link] [comments]",
-   "id": "9fcbc94b7e74",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "‘Our mortgage is going up £400 a month’: the rate shock facing millions",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xfg9h7/our_mortgage_is_going_up_400_a_month_the_rate/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-25T22:50:34.000Z",
-   "summary": "submitted by /u/Desperate-Drawer-572 [link] [comments]",
-   "id": "44b82099c47a",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "\"New\" tactics",
    "url": "https://www.reddit.com/r/ProductManagement/comments/1xfftha/new_tactics/",
    "source": "r/productmanagement",
@@ -935,41 +1045,6 @@
    "published": "2026-10-25T22:31:02.000Z",
    "summary": "Hello ProductManagement, I've been leaning heavily on the JTBD tool/tactic/template for a while now, and its served me well but I'm curious to learn if there's been any new (or old tools/tactics/templates with a new face) that people have been using lately. Would hate to be out…",
    "id": "fec63c0a2a81",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "WATCH: Republican Mayor LUNGES at Heckler, TRIES TO FIGHT HIM!",
-   "url": "https://www.youtube.com/watch?v=75Omsr2_GjE",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-25T21:30:21.000Z",
-   "summary": "Luke discusses Pemberton Township Mayor Matthew Bianchini charging a resident in a recent meeting. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X)…",
-   "thumb": "https://i4.ytimg.com/vi/75Omsr2_GjE/hqdefault.jpg",
-   "id": "12f642da6467",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Pensioners set to be shielded from income tax in budget || John Healey, the chancellor, is expected to announce a 3.9 per cent rise to the full state pension while protecting those on lower incomes from income tax",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xfe4p4/pensioners_set_to_be_shielded_from_income_tax_in/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-25T21:18:17.000Z",
-   "summary": "submitted by /u/Adj-Noun-Numbers [link] [comments]",
-   "id": "a548e3ff21f7",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -992,94 +1067,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Up to two billion pounds to replace the SA80 rifle",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xfcpzd/up_to_two_billion_pounds_to_replace_the_sa80_rifle/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-25T20:20:55.000Z",
-   "summary": "submitted by /u/diacewrb [link] [comments]",
-   "id": "acf8a1213884",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Navy Lookout: \"This government is taking preparations for war so seriously that the MoD is being forced to make £3.5Bn of in-year ‘efficiency savings’ during 2026-27. \"we needed to make some savings to bring them into line and balance the books. I have taken decisions to stop doing some thing…",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xfcalo/navy_lookout_this_government_is_taking/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-25T20:04:06.000Z",
-   "summary": "submitted by /u/HibasakiSanjuro [link] [comments]",
-   "id": "546002789b57",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "\"Hosts Must Clean, Not Guests\" - AirBnB New Rule Has Hosts Losing Their Minds",
-   "url": "https://www.youtube.com/watch?v=Ggj8fBm-JTg",
-   "source": "Aberrant preach",
-   "feedId": "yt-aberrant-preach",
-   "type": "video",
-   "tags": [
-    "trash"
-   ],
-   "published": "2026-10-25T19:39:19.000Z",
-   "summary": "AirBNB has issued a new policy change making hosts unable to demand pre check out chores that involve unecessary effort such as cleaning dishes or do laundry before leaving. ———————————— Spotify: https://open.spotify.com/artist/6QJIJ6AugqPEFASp1V6zgH Merchandise ---…",
-   "thumb": "https://i4.ytimg.com/vi/Ggj8fBm-JTg/hqdefault.jpg",
-   "id": "6b81b9fda544",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "tagesschau 20:00 Uhr, 25.10.2026",
-   "url": "https://www.youtube.com/watch?v=-nBMoYdzYG8",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-25T19:36:27.000Z",
-   "summary": "Die 20-Uhr-Ausgabe der tagesschau im Livestream und auf Abruf findet ihr auch hier: https://ardmediathek.de/tagesschau und https://tagesschau.de 0:00 Guten Abend! 0:21 Volkswagen-Tochter Audi will neues Werk im US-Bundesstaat Georgia eröffnen 2:49 Union und SPD bei…",
-   "thumb": "https://i2.ytimg.com/vi/-nBMoYdzYG8/hqdefault.jpg",
-   "id": "708474ed756a",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "MAGA Fox Host SNAPS, Goes OFF SCRIPT ON TRUMP Live On Air!",
-   "url": "https://www.youtube.com/watch?v=ALZNh757swk",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-25T19:30:06.000Z",
-   "summary": "Luke discusses Brian Kilmeade's reaction to Steve Witkoff calling Putin a humanitarian. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
-   "thumb": "https://i2.ytimg.com/vi/ALZNh757swk/hqdefault.jpg",
-   "id": "2b97b53604d3",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Europe's China problem is a competitiveness crisis - Europe must reform",
    "url": "https://www.reddit.com/r/geopolitics/comments/1xfa9ac/europes_china_problem_is_a_competitiveness_crisis/",
    "source": "r/geopolitics",
@@ -1097,20 +1084,54 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Frankreich: ARD-Korrespondentin zum Wahlkampfauftakt der rechten Präsidentschaftskandidatin",
-   "url": "https://www.youtube.com/watch?v=10xsxnIIAaU",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
+   "title": "WATCH: Republican Mayor LUNGES at Heckler, TRIES TO FIGHT HIM!",
+   "url": "https://www.youtube.com/watch?v=75Omsr2_GjE",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
    "type": "video",
    "tags": [
-    "german",
-    "news",
+    "politics",
     "listen"
    ],
-   "published": "2026-10-25T18:48:01.000Z",
-   "summary": "Marine Le Pen hat zum Auftakt ihres Präsidentschaftswahlkampfs die französische Lebensart beschworen. „In Frankreich lebt man wie die Franzosen“, betonte sie am Sonntag in ihrer Rede auf dem Parteitag des Rassemblement National (RN) in Orléans. Alle aktuellen Informationen,…",
-   "thumb": "https://i2.ytimg.com/vi/10xsxnIIAaU/hqdefault.jpg",
-   "id": "47441bd2c9aa",
+   "published": "2026-10-25T21:30:21.000Z",
+   "summary": "Luke discusses Pemberton Township Mayor Matthew Bianchini charging a resident in a recent meeting. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X)…",
+   "thumb": "https://i4.ytimg.com/vi/75Omsr2_GjE/hqdefault.jpg",
+   "id": "12f642da6467",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "\"Hosts Must Clean, Not Guests\" - AirBnB New Rule Has Hosts Losing Their Minds",
+   "url": "https://www.youtube.com/watch?v=Ggj8fBm-JTg",
+   "source": "Aberrant preach",
+   "feedId": "yt-aberrant-preach",
+   "type": "video",
+   "tags": [
+    "trash"
+   ],
+   "published": "2026-10-25T19:39:19.000Z",
+   "summary": "AirBNB has issued a new policy change making hosts unable to demand pre check out chores that involve unecessary effort such as cleaning dishes or do laundry before leaving. ———————————— Spotify: https://open.spotify.com/artist/6QJIJ6AugqPEFASp1V6zgH Merchandise ---…",
+   "thumb": "https://i4.ytimg.com/vi/Ggj8fBm-JTg/hqdefault.jpg",
+   "id": "6b81b9fda544",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "MAGA Fox Host SNAPS, Goes OFF SCRIPT ON TRUMP Live On Air!",
+   "url": "https://www.youtube.com/watch?v=ALZNh757swk",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-25T19:30:06.000Z",
+   "summary": "Luke discusses Brian Kilmeade's reaction to Steve Witkoff calling Putin a humanitarian. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
+   "thumb": "https://i2.ytimg.com/vi/ALZNh757swk/hqdefault.jpg",
+   "id": "2b97b53604d3",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2287,7 +2308,9 @@
    "id": "5961f53720ee",
    "score": 0,
    "matched": [],
-   "why": "0"
+   "why": "0",
+   "durationSec": 3647,
+   "duration": "1:00:47"
   },
   {
    "title": "Inside the black box of AI: How AI models actually think | Emmanuel Ameisen (Anthropic)",
@@ -2743,5 +2766,5 @@
    "why": "0"
   }
  ],
- "contentHash": "c4e72efa11c6"
+ "contentHash": "b4da9470a837"
 }
