@@ -1,17 +1,17 @@
 {
- "generated": "2026-10-26T16:15:15.651Z",
+ "generated": "2026-10-26T19:07:25.244Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
   "ok": 51,
-  "items": 113,
+  "items": 112,
   "duplicatesMerged": 0,
   "lengthsKnown": 2,
-  "lengthLookups": 99,
-  "lengthFailures": 99,
+  "lengthLookups": 98,
+  "lengthFailures": 98,
   "lengthVia": "video pages",
   "lengthFailReasons": {
-   "no length on page": 99
+   "no length on page": 98
   }
  },
  "feeds": [
@@ -436,7 +436,7 @@
    "name": "Coffeezilla",
    "type": "youtube",
    "status": "ok",
-   "count": 1,
+   "count": 0,
    "resolved": {
     "channelId": "UCFQMnBA3CS502aghlcr0_aw",
     "title": "Coffeezilla",
@@ -630,9 +630,10 @@
    "id": "rd-productmanagement",
    "name": "r/productmanagement",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 1,
-   "url": "https://www.reddit.com/r/productmanagement/top/.rss?t=day"
+   "lastOk": "2026-10-26T16:15:15.651Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-tech",
@@ -641,7 +642,7 @@
    "status": "cached",
    "count": 1,
    "lastOk": "2026-10-25T12:58:52.253Z",
-   "note": "rate-limited (429)"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-gaming",
@@ -650,25 +651,26 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-10-26T10:02:41.672Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
   },
   {
    "id": "rd-xbox",
    "name": "r/xbox",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": "2026-10-21T15:54:55.125Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-slaythespire",
@@ -677,7 +679,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-geopolitics",
@@ -709,7 +711,223 @@
  ],
  "items": [
   {
-   "title": "„Muss darum gehen, starke Polarisierung herunterzufahren“: Experte über Wahl in Brasilien",
+   "title": "Serbien vor Machtwechsel | tagesthemen-Interview",
+   "url": "https://www.youtube.com/watch?v=pGtcdw3u56g",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-26T18:56:04.000Z",
+   "summary": "In Serbien ist das rechtsnationalistische Lager von Langzeit-Präsident Vucic bei der Parlamentswahl abgewählt worden. Die aus der Protestbewegung hervorgegangene Studentenliste holte nach vorläufigen Angaben eine absolute Mehrheit. Wie es in Serbien jetzt weitergehen könnte,…",
+   "thumb": "https://i1.ytimg.com/vi/pGtcdw3u56g/hqdefault.jpg",
+   "id": "b078573b139f",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Historische Wahl in Brasilien: Wie konnte Lula das noch drehen?",
+   "url": "https://www.youtube.com/watch?v=Fv994iyuCFg",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-26T18:22:01.000Z",
+   "summary": "Seine Anhänger:innen bejubeln seinen erneuten Wahlsieg, sein Herausforder:innen protestiert. Zum vierten Mal ist in Brasilien Lula da Silva zum Präsidenten gewählt worden. Der 80-jährige linke Politiker gewann die Stichwahl laut offiziellem Ergebnis mit 51,8 Prozent der…",
+   "thumb": "https://i3.ytimg.com/vi/Fv994iyuCFg/hqdefault.jpg",
+   "id": "6bb01a52835d",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Ghosting Is R@pe",
+   "url": "https://www.youtube.com/watch?v=XhIAbzRdXF0",
+   "source": "Aberrant preach",
+   "feedId": "yt-aberrant-preach",
+   "type": "video",
+   "tags": [
+    "trash"
+   ],
+   "published": "2026-10-26T18:05:19.000Z",
+   "summary": "Girl talks about men who ghost women can pretty much equate to being r*pists. But it seems to be trendy optic shared by a lot of women online ———————————— Spotify: https://open.spotify.com/artist/6QJIJ6AugqPEFASp1V6zgH Merchandise ---…",
+   "thumb": "https://i1.ytimg.com/vi/XhIAbzRdXF0/hqdefault.jpg",
+   "id": "8cb2d7a1afc5",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Chris Philp MP on X: \"If the Home Secretary dilutes her own policy on ILR because Angela Rayner is calling the shots, surely her position is untenable? If she needs our votes to get the original policy through undiluted she has them (tho we would go further)\"",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xg4csc/chris_philp_mp_on_x_if_the_home_secretary_dilutes/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-26T18:04:47.000Z",
+   "summary": "submitted by /u/Alti-Ok [link] [comments]",
+   "id": "69fa728e367c",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "SIOUX CITY",
+   "url": "https://www.youtube.com/watch?v=veBxHSm0c80",
+   "source": "The Good Liars",
+   "feedId": "yt-the-good-liars",
+   "type": "video",
+   "tags": [
+    "comedy",
+    "politics",
+    "debates"
+   ],
+   "published": "2026-10-26T18:00:37.000Z",
+   "summary": "The Good Liars visit Sioux City, Iowa for the Trump Rally",
+   "thumb": "https://i3.ytimg.com/vi/veBxHSm0c80/hqdefault.jpg",
+   "id": "c31479937413",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Is Andy Burnham reversing Brexit?",
+   "url": "https://www.youtube.com/watch?v=XB8Fxoj6_wA",
+   "source": "PoliticsJOE",
+   "feedId": "yt-politicsjoe",
+   "type": "video",
+   "tags": [
+    "comedy"
+   ],
+   "published": "2026-10-26T17:32:50.000Z",
+   "summary": "Andy Burnham’s position on Brexit has been murky since the 2016 referendum. Ava traces his journey from voting Remain to accepting the result, opposing a second referendum, and eventually calling for closer ties. Recently, Burnham has called for an open debate about Britain’s…",
+   "thumb": "https://i1.ytimg.com/vi/XB8Fxoj6_wA/hqdefault.jpg",
+   "id": "6991d37e6a06",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Should people have to wait 15 years before settling permanently in the UK?",
+   "url": "https://www.youtube.com/watch?v=3hCbrr9o1G4",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-26T17:30:30.000Z",
+   "summary": "Home Secretary Shabana Mahmood is facing backlash over her planned immigration crackdown. Ms Mahmood wants to lengthen the time it takes for foreign nationals to be granted indefinite leave to remain (ILR) from five to 15 years. But she is under pressure from colleagues to…",
+   "thumb": "https://i4.ytimg.com/vi/3hCbrr9o1G4/hqdefault.jpg",
+   "id": "6aaf63526a08",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Will AI cause utopia or disaster? | The Economist",
+   "url": "https://www.youtube.com/watch?v=AoKo6EujpW8",
+   "source": "The Economist",
+   "feedId": "yt-the-economist",
+   "type": "video",
+   "tags": [
+    "finance",
+    "business"
+   ],
+   "published": "2026-10-26T17:00:25.000Z",
+   "summary": "Artificial intelligence could make the world richer than ever—or it may cause a catastrophe. It's something that even the tech bros can't agree on. Sam Altman, CEO of OpenAI, thinks AI is going to be hugely positive, and Demis Hassabis, CEO of DeepMind Technologies, believes…",
+   "thumb": "https://i2.ytimg.com/vi/AoKo6EujpW8/hqdefault.jpg",
+   "id": "b3514a42b683",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Can This Fizzy Ice Cream Invention Make a Splash? | Shark Tank US | Shark Tank Global",
+   "url": "https://www.youtube.com/watch?v=5zOLeQxqfH4",
+   "source": "Shark Tank Global",
+   "feedId": "yt-shark-tank-global",
+   "type": "video",
+   "tags": [
+    "trash",
+    "business"
+   ],
+   "published": "2026-10-26T17:00:01.000Z",
+   "summary": "David Chodosh enters the Tank seeking $150,000 for 25% of The Fizz, an inventive cup designed to turn bottled soda and ice cream into a fun, fizzy root beer float. From Season 1 Episode 6 Watch Shark Tank US Now: http://AAN.SonyPictures.com/SharkTankUSHulu Watch Shark Tank…",
+   "thumb": "https://i2.ytimg.com/vi/5zOLeQxqfH4/hqdefault.jpg",
+   "id": "12d67642b56d",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "tagesschau in Einfacher Sprache 19:00 Uhr, 26.10.2026",
+   "url": "https://www.youtube.com/watch?v=AZwV7Mks-fk",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-26T16:44:28.000Z",
+   "summary": "tagesschau in Einfacher Sprache 19:00 Uhr Lula gewinnt Präsidentenwahl in Brasilien, Studentenliste gewinnt Wahl in Serbien, Gebäudetyp E soll Wohnungsbau günstiger machen, Kreuzfahrtschiff \"Mein Schiff 3\" kollidiert mit Containerschiffen in Bremerhaven, Das Wetter…",
+   "thumb": "https://i2.ytimg.com/vi/AZwV7Mks-fk/hqdefault.jpg",
+   "id": "54f899d8b811",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "A week until the midterms: What to expect",
+   "url": "https://www.youtube.com/watch?v=qPocyLAziiY",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-26T16:30:30.000Z",
+   "summary": "A week out from the midterms, co-host of the News Agents Emily Maitlis joins Shelagh Fogarty to discuss what’s at stake. On 3rd November, US voters will head to the polls to decide whether Republicans will retain control of Congress or whether Democrats will take over.…",
+   "thumb": "https://i2.ytimg.com/vi/qPocyLAziiY/hqdefault.jpg",
+   "id": "4daed65cb16e",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Farage And Jenrick Mocked For Sea Of Empty Seats At Reform Event",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xg1f2b/farage_and_jenrick_mocked_for_sea_of_empty_seats/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-26T16:18:35.000Z",
+   "summary": "submitted by /u/huffpostuk [link] [comments]",
+   "id": "8dbacdb796dd",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Lulas Wahlsieg in Brasilien: Experte erklärt, was sich jetzt für EU und Deutschland ändert",
    "url": "https://www.youtube.com/watch?v=XBi7Oph2nh4",
    "source": "Tagesschau",
    "feedId": "yt-tagesschau",
@@ -747,6 +965,23 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
+   "title": "Home Secretary vows to leave 'no stone unturned' as she announces independent review of Henry Nowak murder amid 'two-tier policing' claims",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xg095u/home_secretary_vows_to_leave_no_stone_unturned_as/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-26T15:37:41.000Z",
+   "summary": "submitted by /u/dailymail [link] [comments]",
+   "id": "905e9d5a37c4",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
    "title": "Donald Trump praises Nicki Minaj's arse",
    "url": "https://www.youtube.com/watch?v=_rugcXn396A",
    "source": "LBC",
@@ -760,6 +995,23 @@
    "summary": "Donald Trump has praised Nicki Minaj's 'beautiful ass' at a Michigan rally ahead of the mid-term elections on November 3rd. The rapper joined him on stage, chanting: \"We love Trump. We love Trump.\" \"I am so honoured to be working with this president,\" she went on. \"He…",
    "thumb": "https://i4.ytimg.com/vi/_rugcXn396A/hqdefault.jpg",
    "id": "2d6a164bd8c0",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Independent review announced into murder of student Henry Nowak",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xg007u/independent_review_announced_into_murder_of/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-26T15:28:41.000Z",
+   "summary": "submitted by /u/radiant_0wl [link] [comments]",
+   "id": "2679be34ed04",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -782,39 +1034,18 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Schneller, billiger, einfacher: Gesetz soll das Bauen leichter machen",
-   "url": "https://www.youtube.com/watch?v=Gn08E6lU7rg",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
+   "title": "Private Eye | Ben Houchen : Lord a-leeching",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xfygbv/private_eye_ben_houchen_lord_aleeching/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
    "tags": [
-    "german",
-    "news",
-    "listen"
+    "politics",
+    "british"
    ],
-   "published": "2026-10-26T14:43:52.000Z",
-   "summary": "Angesichts fehlender Wohnungen will die Bundesregierung einen einfacheren Baustandard auf den Weg bringen und berät über einen entsprechenden Gesetzentwurf. Der sogenannte Gebäudetyp E soll schneller und billiger gebaut werden, indem man zum Beispiel auf Komfort verzichtet.…",
-   "thumb": "https://i4.ytimg.com/vi/Gn08E6lU7rg/hqdefault.jpg",
-   "id": "c3314316d07d",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Neuer US-Standort: Wie Audi-Mitarbeiter auf den Trump-Auftritt reagieren",
-   "url": "https://www.youtube.com/watch?v=68TmQXxvkns",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-26T14:26:37.000Z",
-   "summary": "US-Präsident Trump und Audi-Chef Döllner auf einer Bühne – das stößt auf scharfe Kritik. Der Vorstandsvorsitzende kündigte in den USA ein neues Werk an. Nun könnten die eigenen Konzernleitlinien für ihn zum Problem werden. ARD-Reporterin Daniela Olivares berichtet aus…",
-   "thumb": "https://i3.ytimg.com/vi/68TmQXxvkns/hqdefault.jpg",
-   "id": "d1b500b9bc49",
+   "published": "2026-10-26T14:31:22.000Z",
+   "summary": "submitted by /u/Dismal_Uses [link] [comments]",
+   "id": "bba5d079ec53",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -888,25 +1119,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Serbien: Was der Sieg der Studentenliste für das Land bedeutet – ARD-Reporter ordnet ein",
-   "url": "https://www.youtube.com/watch?v=H0pVKnLrNL0",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-26T11:07:25.000Z",
-   "summary": "Bei der vorgezogenen Parlamentswahl in Serbien hat der Spitzenkandidat der regierenden SNS-Partei, Vucic, seine Niederlage eingestanden. Die oppositionelle Studentenliste habe die Wahl gewonnen. Auf den Straßen herrschte Jubel. ARD-Korrespondent Andreas Bachmann aus Belgrad.…",
-   "thumb": "https://i1.ytimg.com/vi/H0pVKnLrNL0/hqdefault.jpg",
-   "id": "b35def1b3445",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "The cardiologist who could become Serbia's next PM. The Student List party defeated the government of Aleksandar Vučić in Sunday's election",
    "url": "https://www.reddit.com/r/geopolitics/comments/1xftbr6/the_cardiologist_who_could_become_serbias_next_pm/",
    "source": "r/geopolitics",
@@ -943,91 +1155,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Burnham signals plans to take Britain back into EU at next election",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xfrm8f/burnham_signals_plans_to_take_britain_back_into/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-26T09:00:34.000Z",
-   "summary": "submitted by /u/Angel_Xtreme [link] [comments]",
-   "id": "d8fed3bbbfb9",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Jaguar Land Rover cyber-attack was state-sponsored, former minister admits",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xfr8l8/jaguar_land_rover_cyberattack_was_statesponsored/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-26T08:36:29.000Z",
-   "summary": "submitted by /u/OptioMkIX [link] [comments]",
-   "id": "7382f48456a0",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Andy Burnham Says He Wants UK to Rejoin EU in His Lifetime",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xfr3kh/andy_burnham_says_he_wants_uk_to_rejoin_eu_in_his/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-26T08:27:06.000Z",
-   "summary": "submitted by /u/bloomberg [link] [comments]",
-   "id": "8e4c71dff5e7",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Andy Burnham leaves open UK rejoining EU from 2030 as he slams Brexit for loss of border controls",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xfqw86/andy_burnham_leaves_open_uk_rejoining_eu_from/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-26T08:14:09.000Z",
-   "summary": "submitted by /u/Visual_Title9363 [link] [comments]",
-   "id": "cc62378391ba",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Bank Job by Liz Truss: zero-star review",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xfpwse/bank_job_by_liz_truss_zerostar_review/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-26T07:10:44.000Z",
-   "summary": "submitted by /u/Dismal_Uses [link] [comments]",
-   "id": "e13a860fa965",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "The Republican Party & The Far Right: Last Week Tonight with John Oliver (HBO)",
    "url": "https://www.youtube.com/watch?v=SnsBI4YxwIs",
    "source": "Last Week Tonight",
@@ -1041,9 +1168,9 @@
    "summary": "Ahead of the midterms, John Oliver devotes an entire episode to discussing the rising prominence of extremist beliefs within the Republican Party – from white nationalism to antisemitism – and what it all has to do with Vandy potato chips. Subscribe to the #lastweektonight…",
    "thumb": "https://i4.ytimg.com/vi/SnsBI4YxwIs/hqdefault.jpg",
    "id": "670e79d2aa09",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
+   "why": "0"
   },
   {
    "title": "S13 E27: The Republican Party & The Far Right: 10/25/26: Last Week Tonight with John Oliver",
@@ -1333,42 +1460,6 @@
    "why": "0"
   },
   {
-   "title": "Burnham leaves Farage behind in new poll",
-   "url": "https://www.youtube.com/watch?v=cQGPMT587vc",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-25T11:29:58.000Z",
-   "summary": "Lewis Goodall speaks to IPSOS, whose new poll reveals that Labour continues to climb in the polls under Andy Burnham. Labour is now leading by eight points over the Conservatives - who are in second place for the first time this parliament, according to fresh research from…",
-   "thumb": "https://i4.ytimg.com/vi/cQGPMT587vc/hqdefault.jpg",
-   "id": "5cd1e26818ac",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "'I've spent $3,000 to vote Netanyahu out:' Israelis fly home for crucial election",
-   "url": "https://www.youtube.com/watch?v=NmKHpyFnS7Q",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-25T07:30:11.000Z",
-   "summary": "Deadlocked polling in the upcoming Israeli election has inspired hundreds of thousands to fly out and make a stand. There are 800,000 eligible voters living abroad, but with no postal voting available, this is the only option for many to participate in the first election since…",
-   "thumb": "https://i3.ytimg.com/vi/NmKHpyFnS7Q/hqdefault.jpg",
-   "id": "de165abc4bab",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "20 Upcoming Games WE'RE WORRIED ABOUT",
    "url": "https://www.youtube.com/watch?v=E4-tQqZFm3Y",
    "source": "GameRanx",
@@ -1611,7 +1702,7 @@
     "debates"
    ],
    "published": "2026-10-23T16:00:28.000Z",
-   "summary": "Hey you 👈 Wanna be in a Jubilee video? https://bit.ly/be-in-a-video LET’S BE FRIENDS Instagram: https://www.instagram.com/jubileemedia/ TikTok: https://www.tiktok.com/@jubilee?lang=en Website: https://www.jubileemedia.com OUR LOVE + DATING CHANNEL 🍑 YouTube:…",
+   "summary": "Injured in an accident? You may be owed serious money. You can start your claim with Morgan & Morgan: https://ForThePeople.com/JUBILEE — no fees unless you win! Hey you 👈 Wanna be in a Jubilee video? https://bit.ly/be-in-a-video LET’S BE FRIENDS Instagram:…",
    "thumb": "https://i1.ytimg.com/vi/pi-Kv-dWsHk/hqdefault.jpg",
    "id": "3a7734dd6bcf",
    "score": 0,
@@ -2042,23 +2133,6 @@
    "why": "0"
   },
   {
-   "title": "Flying Cars? Tesla Roadster",
-   "url": "https://www.youtube.com/watch?v=4JHLoi5hr2Y",
-   "source": "Aberrant preach",
-   "feedId": "yt-aberrant-preach",
-   "type": "video",
-   "tags": [
-    "trash"
-   ],
-   "published": "2026-10-20T19:06:06.000Z",
-   "summary": "Elon's Tesla released the video of their Roadster... Flying cars, hover cars, floating cars, its preview only and seems very sus based on the video released. ———————————— Spotify: https://open.spotify.com/artist/6QJIJ6AugqPEFASp1V6zgH Merchandise ---…",
-   "thumb": "https://i1.ytimg.com/vi/4JHLoi5hr2Y/hqdefault.jpg",
-   "id": "e7a85da3e023",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "Is Pete Hegseth's Bold Pledge To 'Kill Everyone' By 2028 An Unrealistic Pipe Dream?",
    "url": "https://www.youtube.com/watch?v=pu3Cr6qjbJI",
    "source": "The Onion",
@@ -2127,41 +2201,6 @@
    "summary": "Thanks to Storyblocks for sponsoring this video. Get 15% off any annual plan for a limited time, only available through this link: https://www.storyblocks.com/HAI Follow Sam from Half as Interesting on Instagram: http://Instagram.com/Sam.From.Wendover Follow Half as Interesting…",
    "thumb": "https://i3.ytimg.com/vi/ju1OZStv2eI/hqdefault.jpg",
    "id": "fdb4fbd01780",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Why don't Brits protest like the French?",
-   "url": "https://www.youtube.com/watch?v=mR7Ul_wRVik",
-   "source": "PoliticsJOE",
-   "feedId": "yt-politicsjoe",
-   "type": "video",
-   "tags": [
-    "comedy"
-   ],
-   "published": "2026-10-19T16:52:40.000Z",
-   "summary": "In France, protests over education cuts have grown into a movement involving unions, farmers, environmental campaigners and pensioners. Anger over declining public services, stagnant wages, and the cost of living has mobilised people across society. But isn't Britain facing the…",
-   "thumb": "https://i2.ytimg.com/vi/mR7Ul_wRVik/hqdefault.jpg",
-   "id": "7ac1c1729520",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "This Couple Invented Underwear for Flatulence | Shark Tank US | Shark Tank Global",
-   "url": "https://www.youtube.com/watch?v=4YE0AiniDA4",
-   "source": "Shark Tank Global",
-   "feedId": "yt-shark-tank-global",
-   "type": "video",
-   "tags": [
-    "trash",
-    "business"
-   ],
-   "published": "2026-10-19T16:19:50.000Z",
-   "summary": "Buck and Arlene Wymer enter the Tank seeking $55,000 for 25% of their company, Under-Tec, which makes Under-Ease, protective underwear designed to trap flatulence odors using activated charcoal filters. Can their unusual invention convince the Sharks that there’s a market for…",
-   "thumb": "https://i1.ytimg.com/vi/4YE0AiniDA4/hqdefault.jpg",
-   "id": "9011ead7df6e",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2426,25 +2465,6 @@
    "why": "0"
   },
   {
-   "title": "ALASKA TRUMP RALLY",
-   "url": "https://www.youtube.com/watch?v=XQQwiRoerh0",
-   "source": "The Good Liars",
-   "feedId": "yt-the-good-liars",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "politics",
-    "debates"
-   ],
-   "published": "2026-10-15T20:45:06.000Z",
-   "summary": "The Good Liars go to Alaska to talk with rally attendees. Special thanks to Dancing Bear Alaska for arranging a spectacular flight to see Mt. Denali. It was AWESOME LINK: https://www.instagram.com/dancingbearalaska/ BOOKING: www.dancingbearalaska.net…",
-   "thumb": "https://i1.ytimg.com/vi/XQQwiRoerh0/hqdefault.jpg",
-   "id": "de58ec93e785",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "Rachel Wilson Vs NotSoErudite: Do \"Women Jobs\" Actually Build the Economy?",
    "url": "https://www.youtube.com/watch?v=cKNlJbX3v_8",
    "source": "Modern-Day Debate",
@@ -2607,24 +2627,6 @@
    "why": "0"
   },
   {
-   "title": "AI won’t steal your job: Andrew Ng interview | The Economist",
-   "url": "https://www.youtube.com/watch?v=J-sMqnzHwI0",
-   "source": "The Economist",
-   "feedId": "yt-the-economist",
-   "type": "video",
-   "tags": [
-    "finance",
-    "business"
-   ],
-   "published": "2026-10-14T17:00:04.000Z",
-   "summary": "Will AI put millions of people out of work? Andrew Ng, CEO and founder of LearnVector, argues the fears are overblown. He tells Alex Hern, The Economist’s AI writer, that AI automates only part of most jobs, that its progress will be slowed by physical bottlenecks like building…",
-   "thumb": "https://i3.ytimg.com/vi/J-sMqnzHwI0/hqdefault.jpg",
-   "id": "f3ee429739b4",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "What Happens When AI Is Free ... South Korea Tried It",
    "url": "https://www.youtube.com/watch?v=ZRNQ1QgbDj4",
    "source": "Economics Explained",
@@ -2713,24 +2715,7 @@
    "score": 0,
    "matched": [],
    "why": "0"
-  },
-  {
-   "title": "I Investigated $100 Billion in Healthcare Fraud",
-   "url": "https://www.youtube.com/watch?v=9eWJISlh0fw",
-   "source": "Coffeezilla",
-   "feedId": "yt-coffeezilla",
-   "type": "video",
-   "tags": [
-    "finance"
-   ],
-   "published": "2026-10-12T17:47:01.000Z",
-   "summary": "LIMITED TIME MERCH!! https://coffeezilla.shop/ (PRE-ORDER ENDS NOVEMBER 6TH) Support Investigative Journalism: ► Patreon: https://patreon.com/coffeezilla Credits: HUNTERBROOK ENSIGN STORY: https://hntrbrk.com/investigations/ensign 3D Artist: Ed Leszczynski @LeszczynskiEd Video…",
-   "thumb": "https://i2.ytimg.com/vi/9eWJISlh0fw/hqdefault.jpg",
-   "id": "cc3a132b02be",
-   "score": 0,
-   "matched": [],
-   "why": "0"
   }
  ],
- "contentHash": "d7498ad723a9"
+ "contentHash": "6f4eff277c97"
 }
