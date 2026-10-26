@@ -1,10 +1,10 @@
 {
- "generated": "2026-10-26T14:59:12.925Z",
+ "generated": "2026-10-26T16:15:15.651Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
   "ok": 51,
-  "items": 115,
+  "items": 113,
   "duplicatesMerged": 0,
   "lengthsKnown": 2,
   "lengthLookups": 99,
@@ -630,10 +630,9 @@
    "id": "rd-productmanagement",
    "name": "r/productmanagement",
    "type": "reddit",
-   "status": "cached",
-   "count": 3,
-   "lastOk": "2026-10-26T07:13:20.656Z",
-   "note": "not its turn this run"
+   "status": "ok",
+   "count": 1,
+   "url": "https://www.reddit.com/r/productmanagement/top/.rss?t=day"
   },
   {
    "id": "rd-tech",
@@ -642,7 +641,7 @@
    "status": "cached",
    "count": 1,
    "lastOk": "2026-10-25T12:58:52.253Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)"
   },
   {
    "id": "rd-gaming",
@@ -651,7 +650,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-ukpolitics",
@@ -684,20 +683,19 @@
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
+   "lastOk": "2026-10-26T14:59:12.925Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-germany",
    "name": "r/germany",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": "2026-10-15T00:59:57.533Z",
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-unitedkingdom",
@@ -706,10 +704,83 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   }
  ],
  "items": [
+  {
+   "title": "„Muss darum gehen, starke Polarisierung herunterzufahren“: Experte über Wahl in Brasilien",
+   "url": "https://www.youtube.com/watch?v=XBi7Oph2nh4",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-26T15:50:24.000Z",
+   "summary": "Staatschef Lula hat die Präsidentschaftswahl in Brasilien gewonnen. Er setzte sich gegen den Herausforderer Bolsonaro durch – doch der will das Ergebnis nicht anerkennen. Politikwissenschaftler Günther Maihold ordnet die aktuelle Lage nach der Wahl ein. Alle aktuellen…",
+   "thumb": "https://i1.ytimg.com/vi/XBi7Oph2nh4/hqdefault.jpg",
+   "id": "9a9b5c884b40",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Kreuzfahrt-Kollision in Bremerhaven: \"Mein Schiff 3\"-Reise abgesagt",
+   "url": "https://www.youtube.com/watch?v=NsMfURx-F20",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-26T15:46:55.000Z",
+   "summary": "Nach der Schiffskollision in Bremerhaven während eines Sturms ermittelt die Polizei gegen den Kapitän des Kreuzfahrtschiffs „Mein Schiff 3“. Es geht um einen möglichen Verstoß gegen die Sorgfaltspflicht. Die Kreuzfahrt ist abgesagt. Mehr Informationen:…",
+   "thumb": "https://i3.ytimg.com/vi/NsMfURx-F20/hqdefault.jpg",
+   "id": "dc45c9a9f649",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Donald Trump praises Nicki Minaj's arse",
+   "url": "https://www.youtube.com/watch?v=_rugcXn396A",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-26T15:30:54.000Z",
+   "summary": "Donald Trump has praised Nicki Minaj's 'beautiful ass' at a Michigan rally ahead of the mid-term elections on November 3rd. The rapper joined him on stage, chanting: \"We love Trump. We love Trump.\" \"I am so honoured to be working with this president,\" she went on. \"He…",
+   "thumb": "https://i4.ytimg.com/vi/_rugcXn396A/hqdefault.jpg",
+   "id": "2d6a164bd8c0",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "This machine breaks things.",
+   "url": "https://www.youtube.com/watch?v=-E47v4Oy7fE",
+   "source": "Tom Scott",
+   "feedId": "yt-tom-scott",
+   "type": "video",
+   "tags": [
+    "education"
+   ],
+   "published": "2026-10-26T15:00:16.000Z",
+   "summary": "At Kirkaldy's Testing Works, there's the Universal Testing Machine. It breaks things. | AD: 🛡️ Get NordVPN's best deal with their next-gen antivirus: https://nordvpn.com/tomscott | 🗺️ England series map: https://www.tomscott.com/england/ 🟥 MORE FROM TOM:…",
+   "thumb": "https://i2.ytimg.com/vi/-E47v4Oy7fE/hqdefault.jpg",
+   "id": "58a074377add",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
   {
    "title": "Schneller, billiger, einfacher: Gesetz soll das Bauen leichter machen",
    "url": "https://www.youtube.com/watch?v=Gn08E6lU7rg",
@@ -730,7 +801,7 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Milliarden für US-Standort: Was der Audi-Plan für Arbeitsplätze bedeutet",
+   "title": "Neuer US-Standort: Wie Audi-Mitarbeiter auf den Trump-Auftritt reagieren",
    "url": "https://www.youtube.com/watch?v=68TmQXxvkns",
    "source": "Tagesschau",
    "feedId": "yt-tagesschau",
@@ -872,44 +943,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "\"Frankreich hat eine gute Zukunft vor sich\": Marine Le Pen im Wahlkampf",
-   "url": "https://www.youtube.com/watch?v=cRxhxcE8Ynk",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-26T09:47:09.000Z",
-   "summary": "Die rechtspopulistische französische Präsidentschaftskandidatin Le Pen führt derzeit in den Umfragen. Zum Auftakt der Wahlkampagne ihres Rassemblement National warb sie für einen politischen Neuanfang in Frankreich. Mehr Informationen:…",
-   "thumb": "https://i4.ytimg.com/vi/cRxhxcE8Ynk/hqdefault.jpg",
-   "id": "23dae811c90e",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Niederlage für Vucic: Studentenliste gewinnt Wahl in Serbien",
-   "url": "https://www.youtube.com/watch?v=j4l1p4JbUMg",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-26T09:42:20.000Z",
-   "summary": "Bei der vorgezogenen Parlamentswahl in Serbien hat der Spitzenkandidat der regierenden SNS-Partei, Vucic, seine Niederlage eingestanden. Die oppositionelle Studentenliste habe die Wahl gewonnen. Auf den Straßen herrschte vielerorts großer Jubel. Mehr Informationen:…",
-   "thumb": "https://i3.ytimg.com/vi/j4l1p4JbUMg/hqdefault.jpg",
-   "id": "26be061f4447",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Burnham signals plans to take Britain back into EU at next election",
    "url": "https://www.reddit.com/r/ukpolitics/comments/1xfrm8f/burnham_signals_plans_to_take_britain_back_into/",
    "source": "r/ukpolitics",
@@ -1013,22 +1046,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Where do you think the end game for Product will be, in the age of AI?",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1xfmsxc/where_do_you_think_the_end_game_for_product_will/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-10-26T04:03:30.000Z",
-   "summary": "Im currently in grad school, after having been a PM for the last 4 years. But honestly, its not a field im not sure i want to return to. Dont get me wrong, i love building, i love strategy, i also loved my engineers & designers that I worked with. But I cant stand this new…",
-   "id": "eebb37181c1d",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "S13 E27: The Republican Party & The Far Right: 10/25/26: Last Week Tonight with John Oliver",
    "url": "https://www.youtube.com/watch?v=zVwhVOB3ulU",
    "source": "Last Week Tonight",
@@ -1042,27 +1059,11 @@
    "summary": "Ahead of the midterms, John Oliver breaks down the details of the rising prominence of extremist beliefs within the Republican Party – from white nationalism to antisemitism to outright Nazi sympathies. Plus, we find out what Tucker Carlson has in common with Joseph Stalin!…",
    "thumb": "https://i3.ytimg.com/vi/zVwhVOB3ulU/hqdefault.jpg",
    "id": "83236b7ef4ea",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 2366,
    "duration": "39:26"
-  },
-  {
-   "title": "\"New\" tactics",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1xfftha/new_tactics/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-10-25T22:31:02.000Z",
-   "summary": "Hello ProductManagement, I've been leaning heavily on the JTBD tool/tactic/template for a while now, and its served me well but I'm curious to learn if there's been any new (or old tools/tactics/templates with a new face) that people have been using lately. Would hate to be out…",
-   "id": "fec63c0a2a81",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
   },
   {
    "title": "INSANE: Russia’s SECRET PLOT to CHANGE ELECTION RESULTS for Trump!",
@@ -1096,6 +1097,22 @@
    "summary": "Luke discusses Trump's defense of Vivek Ramaswamy's attack ad on Amy Acton. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
    "thumb": "https://i2.ytimg.com/vi/ImZWyMy8j4w/hqdefault.jpg",
    "id": "5189d9c68423",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "\"New\" tactics",
+   "url": "https://www.reddit.com/r/ProductManagement/comments/1xfftha/new_tactics/",
+   "source": "r/productmanagement",
+   "feedId": "rd-productmanagement",
+   "type": "post",
+   "tags": [
+    "product"
+   ],
+   "published": "2026-10-25T22:31:02.000Z",
+   "summary": "Hello ProductManagement, I've been leaning heavily on the JTBD tool/tactic/template for a while now, and its served me well but I'm curious to learn if there's been any new (or old tools/tactics/templates with a new face) that people have been using lately. Would hate to be out…",
+   "id": "fec63c0a2a81",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1334,22 +1351,6 @@
    "why": "0"
   },
   {
-   "title": "Anyone return to Product after being a Founder?",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1xey26y/anyone_return_to_product_after_being_a_founder/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-10-25T09:37:32.000Z",
-   "summary": "Had some level of success these past 5 yrs with my own company, but it wasn't something that was going to go huge. Planning to go back to being a PM now, but after submitting a few resumes (even with internal referrals) - I'm getting passed on by companies left and right - was…",
-   "id": "b85fa654b710",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "'I've spent $3,000 to vote Netanyahu out:' Israelis fly home for crucial election",
    "url": "https://www.youtube.com/watch?v=NmKHpyFnS7Q",
    "source": "LBC",
@@ -1435,24 +1436,6 @@
    "summary": "The rivalry between Saudi Arabia and the United Arab Emirates is fuelling conflict in the Middle East. Mohammed bin Salman, Crown Prince of Saudi Arabia, and Mohamed bin Zayed, president of the UAE, were once allies. But personal animosity and differing foreign policy has…",
    "thumb": "https://i2.ytimg.com/vi/QPpWpZEmgPA/hqdefault.jpg",
    "id": "c926e8c3d071",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "How did Melania Trump secure a Russia-Ukraine ceasefire?",
-   "url": "https://www.youtube.com/watch?v=iDMUAGCzFGE",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-24T13:51:13.000Z",
-   "summary": "Ali Miraj reacts as Melania Trump secures a ceasefire between Russia and Ukraine for a blockaded town 'on the brink of disaster'. Both countries have agreed to temporarily stop all military action in Russian-occupied Oleshky to allow for humanitarian aid to enter and get ready…",
-   "thumb": "https://i2.ytimg.com/vi/iDMUAGCzFGE/hqdefault.jpg",
-   "id": "332d19cbdb96",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2747,24 +2730,7 @@
    "score": 0,
    "matched": [],
    "why": "0"
-  },
-  {
-   "title": "Why robots still can't pick strawberries",
-   "url": "https://www.youtube.com/watch?v=TumxO2glmPQ",
-   "source": "Tom Scott",
-   "feedId": "yt-tom-scott",
-   "type": "video",
-   "tags": [
-    "education"
-   ],
-   "published": "2026-10-12T15:00:21.000Z",
-   "summary": "At Wilkin & Sons in Tiptree, a city boy gets impressed by agriculture, and meets some robots that work better than others. | AD: 💼 Find a fulfilling career that also helps the world: https://80000hours.org/tom | 🗺️ England series map: https://www.tomscott.com/england/ 🟥 MORE…",
-   "thumb": "https://i1.ytimg.com/vi/TumxO2glmPQ/hqdefault.jpg",
-   "id": "da63d329ef7b",
-   "score": 0,
-   "matched": [],
-   "why": "0"
   }
  ],
- "contentHash": "df6cae92dc1d"
+ "contentHash": "d7498ad723a9"
 }
