@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-26T10:02:41.672Z",
+ "generated": "2026-10-26T14:59:12.925Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
@@ -7,7 +7,7 @@
   "items": 115,
   "duplicatesMerged": 0,
   "lengthsKnown": 2,
-  "lengthLookups": 100,
+  "lengthLookups": 99,
   "lengthFailures": 99,
   "lengthVia": "video pages",
   "lengthFailReasons": {
@@ -657,20 +657,19 @@
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
+   "lastOk": "2026-10-26T10:02:41.672Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-xbox",
    "name": "r/xbox",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": "2026-10-21T15:54:55.125Z",
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-slaythespire",
@@ -679,25 +678,26 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-10-26T03:56:17.277Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
   },
   {
    "id": "rd-germany",
    "name": "r/germany",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": "2026-10-15T00:59:57.533Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-unitedkingdom",
@@ -706,10 +706,152 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   }
  ],
  "items": [
+  {
+   "title": "Schneller, billiger, einfacher: Gesetz soll das Bauen leichter machen",
+   "url": "https://www.youtube.com/watch?v=Gn08E6lU7rg",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-26T14:43:52.000Z",
+   "summary": "Angesichts fehlender Wohnungen will die Bundesregierung einen einfacheren Baustandard auf den Weg bringen und berät über einen entsprechenden Gesetzentwurf. Der sogenannte Gebäudetyp E soll schneller und billiger gebaut werden, indem man zum Beispiel auf Komfort verzichtet.…",
+   "thumb": "https://i4.ytimg.com/vi/Gn08E6lU7rg/hqdefault.jpg",
+   "id": "c3314316d07d",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Milliarden für US-Standort: Was der Audi-Plan für Arbeitsplätze bedeutet",
+   "url": "https://www.youtube.com/watch?v=68TmQXxvkns",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-26T14:26:37.000Z",
+   "summary": "US-Präsident Trump und Audi-Chef Döllner auf einer Bühne – das stößt auf scharfe Kritik. Der Vorstandsvorsitzende kündigte in den USA ein neues Werk an. Nun könnten die eigenen Konzernleitlinien für ihn zum Problem werden. ARD-Reporterin Daniela Olivares berichtet aus…",
+   "thumb": "https://i3.ytimg.com/vi/68TmQXxvkns/hqdefault.jpg",
+   "id": "d1b500b9bc49",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "In ‘unprecedented confrontation,’ IDF chief said resisting Netanyahu's order for military action tied to Iran",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xfxjnv/in_unprecedented_confrontation_idf_chief_said/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-26T13:57:20.000Z",
+   "summary": "submitted by /u/diwalibonus [link] [comments]",
+   "id": "f0a4eac58d37",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Russia's global game: From Ukraine to the Middle East",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xfx8jw/russias_global_game_from_ukraine_to_the_middle/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-26T13:44:50.000Z",
+   "summary": "Russia is playing a game not only in Europe, where it continues its brutal aggression against Ukraine. The stakes of the Kremlin's policy in the Middle East are also extremely high, particularly amid the growing tensions and geopolitical shifts across the region. Speaking on…",
+   "id": "5322807c53ed",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "AfD’s plan to destroy the EU",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xfx4z5/afds_plan_to_destroy_the_eu/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-26T13:41:09.000Z",
+   "summary": "The Telegraph article describes the radical program of the Alternative for Germany (AfD) party to dismantle the current architecture of the European Union. AfD proposes stripping Brussels of real power and turning the EU into a “free federation of sovereign nations.”According…",
+   "id": "561d1f034ce5",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "France, UK carry out joint airborne nuclear-strike exercise for first time",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xfunqf/france_uk_carry_out_joint_airborne_nuclearstrike/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-26T11:52:30.000Z",
+   "summary": "SS: Despite the Brexit divide, Western Europe's Nuclear powers are working more closely together to protect themselves against threats from both Moscow and now, increasingly, Washington. France and the United Kingdom carried out a joint airborne nuclear strike exercise for the…",
+   "id": "64ec4d58f221",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Serbien: Was der Sieg der Studentenliste für das Land bedeutet – ARD-Reporter ordnet ein",
+   "url": "https://www.youtube.com/watch?v=H0pVKnLrNL0",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-26T11:07:25.000Z",
+   "summary": "Bei der vorgezogenen Parlamentswahl in Serbien hat der Spitzenkandidat der regierenden SNS-Partei, Vucic, seine Niederlage eingestanden. Die oppositionelle Studentenliste habe die Wahl gewonnen. Auf den Straßen herrschte Jubel. ARD-Korrespondent Andreas Bachmann aus Belgrad.…",
+   "thumb": "https://i1.ytimg.com/vi/H0pVKnLrNL0/hqdefault.jpg",
+   "id": "b35def1b3445",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "The cardiologist who could become Serbia's next PM. The Student List party defeated the government of Aleksandar Vučić in Sunday's election",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xftbr6/the_cardiologist_who_could_become_serbias_next_pm/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-26T10:41:17.000Z",
+   "summary": "As the dust settled on Sunday's historic general election in Serbia that saw Aleksandar Vučić, the prime minister and dominant force in Serbian politics for over a decade, ousted from office along with his Serbian Progressive Party, one big question was left unanswered: who…",
+   "id": "d34d207bfc9a",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
   {
    "title": "Why the UK is Looking Surprisingly Functional",
    "url": "https://www.youtube.com/watch?v=j8mkyRBT9yE",
@@ -763,44 +905,6 @@
    "summary": "Bei der vorgezogenen Parlamentswahl in Serbien hat der Spitzenkandidat der regierenden SNS-Partei, Vucic, seine Niederlage eingestanden. Die oppositionelle Studentenliste habe die Wahl gewonnen. Auf den Straßen herrschte vielerorts großer Jubel. Mehr Informationen:…",
    "thumb": "https://i3.ytimg.com/vi/j4l1p4JbUMg/hqdefault.jpg",
    "id": "26be061f4447",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Schiffskollision in Bremerhaven: Wie kam es zum Unfall der Mein Schiff 3?",
-   "url": "https://www.youtube.com/watch?v=wltay-O7hjY",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-26T09:36:57.000Z",
-   "summary": "Bei hohen Wellen und starkem Wind hat das Kreuzfahrtschiff Mein Schiff 3 in Bremerhaven zwei Containerschiffe gerammt. Insgesamt verlief die Sturmnacht im Norden relativ glimpflich. Doch für den Mittag gibt es weitere Sturmflutwarnungen. Mehr Informationen:…",
-   "thumb": "https://i4.ytimg.com/vi/wltay-O7hjY/hqdefault.jpg",
-   "id": "1f79c92e5cd9",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Brasilien: Jugend verhilft Lula zum Sieg der Präsidentschaftswahl",
-   "url": "https://www.youtube.com/watch?v=I-_dJ-m6dNM",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-26T09:34:32.000Z",
-   "summary": "Der linke Staatschef Lula hat die Präsidentschaftswahl in Brasilien gewonnen. Er setzte sich gegen den rechten Kandidaten Bolsonaro durch – doch der will das Ergebnis nicht anerkennen. Mehr Information: https://www.tagesschau.de/ausland/amerika/brasilien-wahlen-lula-100.html…",
-   "thumb": "https://i2.ytimg.com/vi/I-_dJ-m6dNM/hqdefault.jpg",
-   "id": "55122bfaeb04",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -909,25 +1013,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Frauen in der Bundeswehr: Belästigt, gemobbt, missbraucht I 11KM - der tagesschau-Podcast",
-   "url": "https://www.youtube.com/watch?v=9Jbzinb-IIY",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-26T05:14:31.000Z",
-   "summary": "Die Bundeswehr braucht dringend mehr Personal. Sie soll zur größten Armee Europas werden und setzt bei ihrer Recruiting-Strategie auch auf junge Frauen. Die wenigen, die sich beim Bund verpflichten, erleben eine männliche Übermacht, sexistische Sprüche bis hin zu sexuellem…",
-   "thumb": "https://i2.ytimg.com/vi/9Jbzinb-IIY/hqdefault.jpg",
-   "id": "ff8830c77473",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Where do you think the end game for Product will be, in the age of AI?",
    "url": "https://www.reddit.com/r/ProductManagement/comments/1xfmsxc/where_do_you_think_the_end_game_for_product_will/",
    "source": "r/productmanagement",
@@ -964,18 +1049,17 @@
    "duration": "39:26"
   },
   {
-   "title": "Colombia reignites territorial dispute with Nicaragua over Caribbean islands",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xfjry5/colombia_reignites_territorial_dispute_with/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
+   "title": "\"New\" tactics",
+   "url": "https://www.reddit.com/r/ProductManagement/comments/1xfftha/new_tactics/",
+   "source": "r/productmanagement",
+   "feedId": "rd-productmanagement",
    "type": "post",
    "tags": [
-    "politics",
-    "news"
+    "product"
    ],
-   "published": "2026-10-26T01:30:42.000Z",
-   "summary": "submitted by /u/Some-Technology4413 [link] [comments]",
-   "id": "5f67a5d2a085",
+   "published": "2026-10-25T22:31:02.000Z",
+   "summary": "Hello ProductManagement, I've been leaning heavily on the JTBD tool/tactic/template for a while now, and its served me well but I'm curious to learn if there's been any new (or old tools/tactics/templates with a new face) that people have been using lately. Would hate to be out…",
+   "id": "fec63c0a2a81",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -994,26 +1078,9 @@
    "summary": "Luke discusses a reports of Russian groups creating fake videos attacking James Talarico. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
    "thumb": "https://i3.ytimg.com/vi/rw-ei7INcAA/hqdefault.jpg",
    "id": "d4047a2c5e77",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Lula wins election after final votes tallied",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xfiji6/lula_wins_election_after_final_votes_tallied/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-26T00:33:00.000Z",
-   "summary": "submitted by /u/Winter-Cow-6208 [link] [comments]",
-   "id": "b91685ca616d",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
+   "why": "0"
   },
   {
    "title": "WATCH TRUMP’S FACE as Reporter EXPOSES HIM!",
@@ -1029,59 +1096,9 @@
    "summary": "Luke discusses Trump's defense of Vivek Ramaswamy's attack ad on Amy Acton. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
    "thumb": "https://i2.ytimg.com/vi/ImZWyMy8j4w/hqdefault.jpg",
    "id": "5189d9c68423",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "\"New\" tactics",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1xfftha/new_tactics/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-10-25T22:31:02.000Z",
-   "summary": "Hello ProductManagement, I've been leaning heavily on the JTBD tool/tactic/template for a while now, and its served me well but I'm curious to learn if there's been any new (or old tools/tactics/templates with a new face) that people have been using lately. Would hate to be out…",
-   "id": "fec63c0a2a81",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Serbia's Vucic concedes defeat to student led movement in parliamentary election",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xfdhuz/serbias_vucic_concedes_defeat_to_student_led/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-25T20:52:24.000Z",
-   "summary": "submitted by /u/Ratnaprofitercina [link] [comments]",
-   "id": "9e40643d4319",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Europe's China problem is a competitiveness crisis - Europe must reform",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xfa9ac/europes_china_problem_is_a_competitiveness_crisis/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-25T18:44:16.000Z",
-   "summary": "submitted by /u/paneuropeanism_ [link] [comments]",
-   "id": "344cf01bc853",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
+   "why": "0"
   },
   {
    "title": "WATCH: Republican Mayor LUNGES at Heckler, TRIES TO FIGHT HIM!",
@@ -1280,23 +1297,6 @@
    "why": "0"
   },
   {
-   "title": "Musk accuses Ukraine of violating Starlink’s terms of service following dispute over coverage",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xf2knx/musk_accuses_ukraine_of_violating_starlinks_terms/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-25T13:36:40.000Z",
-   "summary": "submitted by /u/cnn [link] [comments]",
-   "id": "3ca03fb68c61",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "An 86-minute guide to finding PMF | Rob Snyder (Author, The Power of Pull)",
    "url": "https://www.youtube.com/watch?v=19qrLchbQEc",
    "source": "Lenny's Podcast",
@@ -1403,7 +1403,7 @@
    "why": "0"
   },
   {
-   "title": "Who Really Pays for AI Data Centers?",
+   "title": "Elon Musk’s Power Plant on Wheels",
    "url": "https://www.youtube.com/watch?v=NyOeLB0WVNE",
    "source": "Patrick Boyle",
    "feedId": "yt-patrick-boyle",
@@ -1688,7 +1688,7 @@
    "why": "0"
   },
   {
-   "title": "He Left Uber to Fix Farming's Billion-Dollar Problem",
+   "title": "Why Farmers Are Shooting Weeds With Lasers",
    "url": "https://www.youtube.com/watch?v=PpnCu8SUGCU",
    "source": "The Hustle",
    "feedId": "yt-the-hustle",
@@ -2766,5 +2766,5 @@
    "why": "0"
   }
  ],
- "contentHash": "b4da9470a837"
+ "contentHash": "df6cae92dc1d"
 }
