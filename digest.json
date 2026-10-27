@@ -1,10 +1,10 @@
 {
- "generated": "2026-10-27T16:03:24.276Z",
+ "generated": "2026-10-27T19:02:24.996Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
-  "ok": 51,
-  "items": 111,
+  "ok": 50,
+  "items": 110,
   "duplicatesMerged": 0,
   "lengthsKnown": 1,
   "lengthLookups": 98,
@@ -98,7 +98,7 @@
    "name": "Easy German",
    "type": "youtube",
    "status": "ok",
-   "count": 3,
+   "count": 4,
    "resolved": {
     "channelId": "UCbxb2fqe9oNgglAoYqsYOtQ",
     "title": "Easy German",
@@ -371,7 +371,7 @@
    "name": "Dropout",
    "type": "youtube",
    "status": "ok",
-   "count": 3,
+   "count": 2,
    "resolved": {
     "channelId": "UCPDXXXJj9nax0fr0Wfc048g",
     "title": "Dropout",
@@ -630,10 +630,9 @@
    "id": "rd-productmanagement",
    "name": "r/productmanagement",
    "type": "reddit",
-   "status": "cached",
-   "count": 1,
-   "lastOk": "2026-10-27T09:57:41.335Z",
-   "note": "not its turn this run"
+   "status": "empty",
+   "count": 0,
+   "url": "https://www.reddit.com/r/productmanagement/top/.rss?t=day"
   },
   {
    "id": "rd-tech",
@@ -642,7 +641,7 @@
    "status": "cached",
    "count": 1,
    "lastOk": "2026-10-27T01:08:56.460Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)"
   },
   {
    "id": "rd-gaming",
@@ -651,7 +650,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-ukpolitics",
@@ -684,20 +683,19 @@
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
+   "lastOk": "2026-10-27T16:03:24.276Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-germany",
    "name": "r/germany",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": "2026-10-15T00:59:57.533Z",
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-unitedkingdom",
@@ -706,10 +704,190 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   }
  ],
  "items": [
+  {
+   "title": "Netanyahu 'pressured' military to attack Iran in the days running up to election",
+   "url": "https://www.youtube.com/watch?v=HVjGASev0xc",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-27T18:15:29.000Z",
+   "summary": "Iranian professor warns that Britain's involvement in the war against Iran makes the UK government “complicit in war and therefore a target”. Mohammad Marandi, professor at the University of Tehran, joins Shelagh Fogarty to discuss Iran's position on Israel, its nuclear…",
+   "thumb": "https://i1.ytimg.com/vi/HVjGASev0xc/hqdefault.jpg",
+   "id": "bb52713e31b5",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Learn German with Our Live Podcast",
+   "url": "https://www.youtube.com/watch?v=-WbwNgcUT2o",
+   "source": "Easy German",
+   "feedId": "yt-easy-german",
+   "type": "video",
+   "tags": [
+    "german",
+    "listen"
+   ],
+   "published": "2026-10-27T18:00:37.000Z",
+   "summary": "💬 Thanks to our sponsor italki! Use code EASY10 to get €10 off your first lesson (minimum spend €20): https://go.italki.com/easy10 (Ad) 🎧 FOLLOW OUR PODCAST: https://www.easygerman.fm 💡 MEMBERS-ONLY AFTERSHOW: https://easygerman.link/membership_egp705 🧡 Marit ist nicht nur…",
+   "thumb": "https://i2.ytimg.com/vi/-WbwNgcUT2o/hqdefault.jpg",
+   "id": "fc57b1bccba5",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Should You Be Scared of the Bond Markets? | Budget Preview",
+   "url": "https://www.youtube.com/watch?v=cBwV_xon-sg",
+   "source": "PoliticsJOE",
+   "feedId": "yt-politicsjoe",
+   "type": "video",
+   "tags": [
+    "comedy"
+   ],
+   "published": "2026-10-27T17:33:42.000Z",
+   "summary": "Robin Wigglesworth, Financial Times journalist and author of The Fabulous Debt, joins us to explain how government borrowing works, why rising gilt yields matter, and how Labour's first Budget under Andy Burnham could take Britain out of a doom cycle of reliance on the market.…",
+   "thumb": "https://i4.ytimg.com/vi/cBwV_xon-sg/hqdefault.jpg",
+   "id": "c1464230c5ab",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Israel elections: Turnout is highest on record as Israelis vote in pivotal election",
+   "url": "https://www.youtube.com/watch?v=gSDbhyl2SX8",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-27T17:13:16.000Z",
+   "summary": "David Mencer, spokesperson for the Israeli Government in the office of the Prime Minister, joins Shelagh Fogarty to discuss the Israeli elections and what could be Benjamin Netanyahu's last day as Prime Minister. It marks the first general election since the October 7 attack.…",
+   "thumb": "https://i4.ytimg.com/vi/gSDbhyl2SX8/hqdefault.jpg",
+   "id": "1ef2beb7095b",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "20 NEW Games That Look Too Good To Be True",
+   "url": "https://www.youtube.com/watch?v=KyLCZWPn9Qc",
+   "source": "GameRanx",
+   "feedId": "yt-gameranx",
+   "type": "video",
+   "tags": [
+    "gaming"
+   ],
+   "published": "2026-10-27T17:05:14.000Z",
+   "summary": "Some games just look too good to be true. Here are some recent examples. Subscribe for more: https://www.youtube.com/gameranxTV?sub_confirmation=1 0:00 Intro 0:43 - NEO Berlin 2087 2:18 - Squadron 42 4:05 - Blood Message 5:08 - 1666: Amsterdam 6:12 - Supreme Experiment 8:02 -…",
+   "thumb": "https://i4.ytimg.com/vi/KyLCZWPn9Qc/hqdefault.jpg",
+   "id": "f45f370f8611",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Should Food Cost More?",
+   "url": "https://www.youtube.com/watch?v=LtvPbNf7dPM",
+   "source": "The Onion",
+   "feedId": "yt-the-onion",
+   "type": "video",
+   "tags": [
+    "comedy"
+   ],
+   "published": "2026-10-27T17:00:36.000Z",
+   "summary": "More Americans are struggling to afford basic food essentials than ever before. But are food prices high enough? Our In The Know panel debates. Become an Onion member while it's still optional: https://membership.theonion.com/?campaign=701a500001geULHAA2 Powered By Forge…",
+   "thumb": "https://i1.ytimg.com/vi/LtvPbNf7dPM/hqdefault.jpg",
+   "id": "4216268533b0",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Sanierung von Schulen und Hochschulen: Frankreichs Regierung hat erste Reformen angekündigt",
+   "url": "https://www.youtube.com/watch?v=cEbfIwTGDCE",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-27T16:49:39.000Z",
+   "summary": "Seit Wochen protestieren Schülerinnen und Schüler in Frankreich gegen Missstände im Bildungssystem. Zum Teil gab es dabei schwere Ausschreitungen. Nun hat die Regierung in Paris erste Reformen angekündigt. Demnach will sie Milliarden für die Sanierung von Schulen und…",
+   "thumb": "https://i4.ytimg.com/vi/cEbfIwTGDCE/hqdefault.jpg",
+   "id": "a71f2dfd94a4",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Netanjahus Gegner – Was eint sie und welche Aussichten haben sie?",
+   "url": "https://www.youtube.com/watch?v=XyKfJKxW3H4",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-27T16:46:27.000Z",
+   "summary": "Ein zentrales Thema im Wahlkampf der vergangenen Wochen war Sicherheit – damit kann der amtierende Premierminister Netanjahu immer noch bei vielen Menschen punkten. Auf der anderen Seite werfen viele Netanjahu vor, beim Überfall der Terrororganisation Hamas auf ihr Land versagt…",
+   "thumb": "https://i1.ytimg.com/vi/XyKfJKxW3H4/hqdefault.jpg",
+   "id": "c38dac2a1ae7",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "tagesschau in Einfacher Sprache 19:00 Uhr, 27.10.2026",
+   "url": "https://www.youtube.com/watch?v=ffsowi19dNQ",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-27T16:37:24.000Z",
+   "summary": "tagesschau in Einfacher Sprache 19:00 Uhr Israel: Wichtige Wahl, Ukraine: Kriegspause in Oleschky, Atomkraft: Wohin mit dem Müll?, Fußball: Harry Kane gewinnt Ballon d'Or, Das Wetter Die \"tagesschau in Einfacher Sprache\" – immer Montag bis Freitag um 19:00 Uhr bei tagesschau24…",
+   "thumb": "https://i3.ytimg.com/vi/ffsowi19dNQ/hqdefault.jpg",
+   "id": "5fb350e883eb",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Republican candidate in chaos as he's dropped by allies over attack ad",
+   "url": "https://www.youtube.com/watch?v=GrXqlnBLG94",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-27T16:05:39.000Z",
+   "summary": "Lewis Goodall joins Shelagh Fogarty to react to the rape allegations aimed at Trump by former Miss Switzerland Beatrice Keul. Lewis also reacts to the Republican attack ad against the Democrat's Ohio candidate Dr Amy Acton. The campaign video featured Dr Acton's estranged…",
+   "thumb": "https://i4.ytimg.com/vi/GrXqlnBLG94/hqdefault.jpg",
+   "id": "33aed4eeff52",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
   {
    "title": "Pläne der EU: Frontex soll auf 30.000 Beamte wachsen",
    "url": "https://www.youtube.com/watch?v=9xLgF8WcQZ0",
@@ -800,25 +978,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Erste Wahl in Israel seit Hamas-Terror vor drei Jahren: Bleibt Netanjahu an der Macht?",
-   "url": "https://www.youtube.com/watch?v=q4DMRT5CJUs",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-27T15:03:51.000Z",
-   "summary": "Zum ersten Mal seit dem verheerenden Terrorangriff der Hamas vom 7. Oktober 2023 und nach drei Jahren eines zermürbenden Krieges im Gazastreifen wählt Israel heute ein neues Parlament. Mehr als 7,3 Millionen Wahlberechtigte sind aufgerufen, über die Zukunft Israels zu…",
-   "thumb": "https://i2.ytimg.com/vi/q4DMRT5CJUs/hqdefault.jpg",
-   "id": "f3173288ef8d",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "The Israel Netanyahu Made: Why Bibi’s National Security Vision Will Endure",
    "url": "https://www.reddit.com/r/geopolitics/comments/1xgupa3/the_israel_netanyahu_made_why_bibis_national/",
    "source": "r/geopolitics",
@@ -853,7 +1012,7 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "'I didn't think this was serious...' | Simon Marks",
+   "title": "'It's like a bad stand up comedy act' | Simon Marks",
    "url": "https://www.youtube.com/watch?v=UnJ7lxwQUqU",
    "source": "LBC",
    "feedId": "yt-lbc",
@@ -958,44 +1117,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "„Für Netanjahu steht sehr viel auf dem Spiel“ – ARD-Journalistin zur Wahl in Israel",
-   "url": "https://www.youtube.com/watch?v=HTSv6Hp92ow",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-27T10:35:13.000Z",
-   "summary": "Zum ersten Mal seit dem verheerenden Terrorangriff der Hamas vom 7. Oktober 2023 und nach drei Jahren eines zermürbenden Krieges wählt Israel heute ein neues Parlament. Mehr als 7,3 Millionen Wahlberechtigte sind aufgerufen, über die Zukunft des Landes zu entscheiden. Etwa…",
-   "thumb": "https://i1.ytimg.com/vi/HTSv6Hp92ow/hqdefault.jpg",
-   "id": "7d6d99d5083e",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Wahl in Israel: Endet die Ära Netanjahu?",
-   "url": "https://www.youtube.com/watch?v=-eFKcuO8CcQ",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-27T09:37:56.000Z",
-   "summary": "Es ist eine Richtungsentscheidung in einer der schwersten Krisen Israels: Heute wird ein neues Parlament gewählt. Mehr als 7,3 Millionen Wahlberechtigte stimmen ab. Etwa 70.000 Staatsbürger:innen aus aller Welt fliegen ein, um ihre Stimme abzugeben. Weder Premier Netanjahu noch…",
-   "thumb": "https://i2.ytimg.com/vi/-eFKcuO8CcQ/hqdefault.jpg",
-   "id": "25d548194377",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "How much benefit payments will rise by after the Budget",
    "url": "https://www.reddit.com/r/ukpolitics/comments/1xgnvkq/how_much_benefit_payments_will_rise_by_after_the/",
    "source": "r/ukpolitics",
@@ -1042,24 +1163,6 @@
    "published": "2026-10-27T09:09:04.000Z",
    "summary": "submitted by /u/twistedLucidity [link] [comments]",
    "id": "bf7bb1c3d06d",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Nicki Minaj: Rapper-turned-US press secretary?",
-   "url": "https://www.youtube.com/watch?v=mss_qcokjKs",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-27T08:56:00.000Z",
-   "summary": "Is Nicki Minaj about to become the US press secretary? Rumours are flying after Trump official Steven Chueng shared a video of the rapper on X with the caption: “I think we may have found the new White House Press Secretary!” The president's 'number one fan' had previously…",
-   "thumb": "https://i2.ytimg.com/vi/mss_qcokjKs/hqdefault.jpg",
-   "id": "9185d6ad25c3",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1155,24 +1258,6 @@
    "why": "0"
   },
   {
-   "title": "Is freedom of movement back on the table? | James O’Brien - The Whole Show",
-   "url": "https://www.youtube.com/watch?v=n1qaJzPL78E",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-26T22:00:14.000Z",
-   "summary": "This is a catch-up version of James O'Brien's live, daily show on LBC Radio from the 26th of October 2026. Listen to the full show on the all-new LBC App: https://app.af.lbc.co.uk/btnc/thenewlbcapp #jamesobrien #politics #LBC LBC is the home of live debate around news and…",
-   "thumb": "https://i3.ytimg.com/vi/n1qaJzPL78E/hqdefault.jpg",
-   "id": "5cd333dc70a7",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "You Won’t F***ing Believe What Just Happened at a Trump Rally",
    "url": "https://www.youtube.com/watch?v=WEJgVFPpPPo",
    "source": "Luke Beasley",
@@ -1186,24 +1271,6 @@
    "summary": "Luke discusses the stark differences between Trump’s and Abdul’s recent rallies. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
    "thumb": "https://i4.ytimg.com/vi/WEJgVFPpPPo/hqdefault.jpg",
    "id": "02c5caabf903",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Trump will be 'very unhappy' over the election in Brazil",
-   "url": "https://www.youtube.com/watch?v=EDjfP9NxIHg",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-26T19:37:14.000Z",
-   "summary": "Brazil's President Lula da Silva has been re-elected for a historic fourth term following a nail-biting runoff against Trump-backed, far-right favourite Flavio Bolsonaro. The leftist president won a historic fourth term, defeating the son of jailed far-right president Jair…",
-   "thumb": "https://i2.ytimg.com/vi/EDjfP9NxIHg/hqdefault.jpg",
-   "id": "185f83e4263a",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1293,22 +1360,6 @@
    "summary": "David Chodosh enters the Tank seeking $150,000 for 25% of The Fizz, an inventive cup designed to turn bottled soda and ice cream into a fun, fizzy root beer float. From Season 1 Episode 6 Watch Shark Tank US Now: http://AAN.SonyPictures.com/SharkTankUSHulu Watch Shark Tank…",
    "thumb": "https://i2.ytimg.com/vi/5zOLeQxqfH4/hqdefault.jpg",
    "id": "12d67642b56d",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Product Lead Role",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1xg25ma/product_lead_role/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-10-26T16:45:18.000Z",
-   "summary": "Any other product leads here? How many hours a week do you typically work? I ask bc I average about 60 hours a week and we are building a number of projects that has become very difficult to keep track of. Anyone else experience the same thing? It’s only me and a junior PM in…",
-   "id": "1d9e99578358",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1773,7 +1824,7 @@
     "business"
    ],
    "published": "2026-10-23T15:59:47.000Z",
-   "summary": "It''s a Shark eat Shark world! Watch as Lori and Mr. Wonderful go head to head in the most heated bidding battles. 00:00 Wad-Free 08:47 Outer 18:02 Scholly 25:13 Scrub Daddy 36:15 Marz Sprays Watch Shark Tank US Now: http://AAN.SonyPictures.com/SharkTankUSHulu Watch Shark Tank…",
+   "summary": "TV|Compilation|SharkTank_DragonsDen|N/A",
    "thumb": "https://i3.ytimg.com/vi/6UYxKfA6kEw/hqdefault.jpg",
    "id": "95fff25e2d30",
    "score": 0,
@@ -1793,23 +1844,6 @@
    "summary": "Andrew Feinstein is one of the most versatile people in British politics today. Formerly a member of the South African Parliament for Nelson Mandela's ANC, he has gained notoriety in the UK in recent years, most notably for running against Keir Starmer in Holborn and St Pancras…",
    "thumb": "https://i2.ytimg.com/vi/qMSpoXy0bBY/hqdefault.jpg",
    "id": "f9de87391b46",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "10 Things That KILLED BioWare",
-   "url": "https://www.youtube.com/watch?v=n93j-y53SGI",
-   "source": "GameRanx",
-   "feedId": "yt-gameranx",
-   "type": "video",
-   "tags": [
-    "gaming"
-   ],
-   "published": "2026-10-22T20:35:04.000Z",
-   "summary": "EA has announced they have officially closed BioWare, legendary game studio behind Baldur's Gate, Mass Effect, Dragon Age, and KOTOR. Let's talk about why this was unfortunately inevitable.",
-   "thumb": "https://i3.ytimg.com/vi/n93j-y53SGI/hqdefault.jpg",
-   "id": "d6a694402993",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2058,23 +2092,6 @@
    "summary": "Join our Conversation Membership to practice speaking with us daily: https://easygerman.link/membership_eg683 --- LEARN MORE GERMAN WITH US: 🎧 LISTEN TO OUR PODCAST: http://www.easygerman.fm 📬 SUBSCRIBE TO OUR NEWSLETTER: https://www.easygerman.org/newsletter WATCH MORE: ➕…",
    "thumb": "https://i3.ytimg.com/vi/b-k2yDRx6yw/hqdefault.jpg",
    "id": "4b39b76c920c",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Going Deep on Andy Burnham's Jackdaw Drilling Deal",
-   "url": "https://www.youtube.com/watch?v=ORLItTIJUKM",
-   "source": "PoliticsJOE",
-   "feedId": "yt-politicsjoe",
-   "type": "video",
-   "tags": [
-    "comedy"
-   ],
-   "published": "2026-10-21T16:16:58.000Z",
-   "summary": "Today Andy Burnham's government decided to approve new gas licences for the Jackdaw field in the North Sea. Ava and Seán jumped into the studio to chew over the plan. Like PoliticsJOE? We need your support: https://www.patreon.com/PoliticsJOE Chapters 0:00 Intro 5:00 Is it…",
-   "thumb": "https://i4.ytimg.com/vi/ORLItTIJUKM/hqdefault.jpg",
-   "id": "4b6266c0a17d",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2660,41 +2677,7 @@
    "score": 0,
    "matched": [],
    "why": "0"
-  },
-  {
-   "title": "MP3 Trailer [New Dropout Series]",
-   "url": "https://www.youtube.com/watch?v=Q9Uvlu_mDAU",
-   "source": "Dropout",
-   "feedId": "yt-dropout",
-   "type": "video",
-   "tags": [
-    "comedy"
-   ],
-   "published": "2026-10-13T17:30:28.000Z",
-   "summary": "Welcome to the world of MP3 - where every episode brings new outrageous music videos, ridiculous hosts, and surprise guests. Premieres November 4th only on Dropout. Welcome to the Dropout channel! You can support us by signing up for Dropout.tv, our subscription video platform…",
-   "thumb": "https://i2.ytimg.com/vi/Q9Uvlu_mDAU/hqdefault.jpg",
-   "id": "c5bb691b7732",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Will Trump Running For Midterm President Help Down-Ballot Republicans?",
-   "url": "https://www.youtube.com/watch?v=68KAR5Mra7U",
-   "source": "The Onion",
-   "feedId": "yt-the-onion",
-   "type": "video",
-   "tags": [
-    "comedy"
-   ],
-   "published": "2026-10-13T17:00:31.000Z",
-   "summary": "In The Know panelists debate whether Trump's decision to run for Midterm President will help or hurt republican candidates in this year's elections. Become an Onion member while it's still optional: https://membership.theonion.com/?campaign=701a500001geULHAA2 Powered by Forge…",
-   "thumb": "https://i3.ytimg.com/vi/68KAR5Mra7U/hqdefault.jpg",
-   "id": "6ada446ffe03",
-   "score": 0,
-   "matched": [],
-   "why": "0"
   }
  ],
- "contentHash": "f3c32ab920a7"
+ "contentHash": "a875946bce8a"
 }
