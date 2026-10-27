@@ -1,17 +1,17 @@
 {
- "generated": "2026-10-27T07:08:08.625Z",
+ "generated": "2026-10-27T09:57:41.335Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
   "ok": 51,
-  "items": 112,
+  "items": 111,
   "duplicatesMerged": 0,
   "lengthsKnown": 1,
-  "lengthLookups": 100,
-  "lengthFailures": 99,
+  "lengthLookups": 98,
+  "lengthFailures": 98,
   "lengthVia": "video pages",
   "lengthFailReasons": {
-   "no length on page": 99
+   "no length on page": 98
   }
  },
  "feeds": [
@@ -215,7 +215,7 @@
    "name": "TLDR News",
    "type": "youtube",
    "status": "ok",
-   "count": 4,
+   "count": 3,
    "resolved": {
     "channelId": "UCSMqateX8OA2s1wsOR2EgJA",
     "title": "TLDR News",
@@ -630,10 +630,9 @@
    "id": "rd-productmanagement",
    "name": "r/productmanagement",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 1,
-   "lastOk": "2026-10-27T01:08:56.460Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/productmanagement/top/.rss?t=day"
   },
   {
    "id": "rd-tech",
@@ -642,7 +641,7 @@
    "status": "cached",
    "count": 1,
    "lastOk": "2026-10-27T01:08:56.460Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)"
   },
   {
    "id": "rd-gaming",
@@ -651,7 +650,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-ukpolitics",
@@ -684,20 +683,19 @@
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
+   "lastOk": "2026-10-27T07:08:08.625Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-germany",
    "name": "r/germany",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": "2026-10-15T00:59:57.533Z",
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-unitedkingdom",
@@ -706,12 +704,49 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   }
  ],
  "items": [
   {
-   "title": "Wahl in Israel: Endet die Ära Netanjahu?",
+   "title": "Knesset-Wahl 2026: Israel vor Schicksalswahl",
+   "url": "https://www.youtube.com/watch?v=-eFKcuO8CcQ",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-27T09:37:56.000Z",
+   "summary": "Es ist eine Richtungsentscheidung in einer der schwersten Krisen Israels: Heute wird ein neues Parlament gewählt. Mehr als 7,3 Millionen Wahlberechtigte stimmen ab. Etwa 70.000 Staatsbürger:innen aus aller Welt fliegen ein, um ihre Stimme abzugeben. Weder Premier Netanjahu noch…",
+   "thumb": "https://i2.ytimg.com/vi/-eFKcuO8CcQ/hqdefault.jpg",
+   "id": "25d548194377",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Nicki Minaj: Rapper-turned-US press secretary?",
+   "url": "https://www.youtube.com/watch?v=mss_qcokjKs",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-27T08:56:00.000Z",
+   "summary": "Is Nicki Minaj about to become the US press secretary? Rumours are flying after Trump official Steven Chueng shared a video of the rapper on X with the caption: “I think we may have found the new White House Press Secretary!” The president's 'number one fan' had previously…",
+   "thumb": "https://i2.ytimg.com/vi/mss_qcokjKs/hqdefault.jpg",
+   "id": "9185d6ad25c3",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Wahl in Israel: Endet die Ära Netanjahu? I 11KM - der tagesschau-Podcast",
    "url": "https://www.youtube.com/watch?v=L-5oCV0G-qk",
    "source": "Tagesschau",
    "feedId": "yt-tagesschau",
@@ -722,7 +757,7 @@
     "listen"
    ],
    "published": "2026-10-27T05:12:27.000Z",
-   "summary": "Bei der Parlamentswahl in Israel zeichnet sich laut Umfragen ein enges Rennen zwischen dem langjährigen Premierminister Benjamin \"Bibi\" Netanjahu und seinem Herausforderer Gadi Eisenkot ab. Bettina Meier, Korrespondentin im ARD-Studio in Tel Aviv, hat den Wahlkampf begleitet.…",
+   "summary": "Bei der Parlamentswahl in #Israel zeichnet sich laut Umfragen ein enges Rennen zwischen dem langjährigen Premierminister Benjamin \"Bibi\" Netanjahu und seinem Herausforderer Gadi Eisenkot ab. Bettina Meier, Korrespondentin im ARD-Studio in Tel Aviv, hat den Wahlkampf begleitet.…",
    "thumb": "https://i1.ytimg.com/vi/L-5oCV0G-qk/hqdefault.jpg",
    "id": "d2ee8f65da9e",
    "score": 1,
@@ -730,7 +765,7 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Einfacher bauen, günstiger wohnen? / Israel wählt / Leise Supermärkte – wem das hilft",
+   "title": "Einfacher bauen, günstiger wohnen? / Israel wählt / Leise Supermärkte – wem das hilft | \"15 Minuten\"",
    "url": "https://www.youtube.com/watch?v=8fopiBsGZvs",
    "source": "Tagesschau",
    "feedId": "yt-tagesschau",
@@ -944,43 +979,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "You Won’t F***ing Believe What Just Happened at a Trump Rally",
-   "url": "https://www.youtube.com/watch?v=WEJgVFPpPPo",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-26T21:40:22.000Z",
-   "summary": "Luke discusses the stark differences between Trump’s and Abdul’s recent rallies. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
-   "thumb": "https://i4.ytimg.com/vi/WEJgVFPpPPo/hqdefault.jpg",
-   "id": "02c5caabf903",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Emotionale Debatte über häusliche Pflege bei Hart aber fair",
-   "url": "https://www.youtube.com/watch?v=njOT4tTZzqA",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-26T21:36:17.000Z",
-   "summary": "Pflege zu Hause: Lässt die Politik Angehörige allein? Mehr als sechs Millionen Menschen in Deutschland sind pflegebedürftig. Tendenz: steigend. Die meisten von ihnen werden zu Hause versorgt. Von rund zehn Millionen Angehörigen. Oft sind sie überlastet und frustriert. Mit…",
-   "thumb": "https://i3.ytimg.com/vi/njOT4tTZzqA/hqdefault.jpg",
-   "id": "f14ba75e69d3",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Is the UK government actually preparing for mass unemployment with recent accouncemant of layoffs?",
    "url": "https://www.reddit.com/r/ukpolitics/comments/1xg8iz8/is_the_uk_government_actually_preparing_for_mass/",
    "source": "r/ukpolitics",
@@ -1032,8 +1030,26 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "„Brasilien ist absolut gespalten“: Korrespondent über Lulas Sieg",
-   "url": "https://www.youtube.com/watch?v=j0brRvDpwSw",
+   "title": "You Won’t F***ing Believe What Just Happened at a Trump Rally",
+   "url": "https://www.youtube.com/watch?v=WEJgVFPpPPo",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-26T21:40:22.000Z",
+   "summary": "Luke discusses the stark differences between Trump’s and Abdul’s recent rallies. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
+   "thumb": "https://i4.ytimg.com/vi/WEJgVFPpPPo/hqdefault.jpg",
+   "id": "02c5caabf903",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Emotionale Debatte über häusliche Pflege bei Hart aber fair",
+   "url": "https://www.youtube.com/watch?v=njOT4tTZzqA",
    "source": "Tagesschau",
    "feedId": "yt-tagesschau",
    "type": "video",
@@ -1042,13 +1058,13 @@
     "news",
     "listen"
    ],
-   "published": "2026-10-26T19:38:48.000Z",
-   "summary": "Feuerwerk und Freudentränen – in Brasilien feiern Anhänger:innen den Wahlsieg von Lula da Silva als Erfolg der Demokratie. Doch während die einen aufatmen, warnen andere vor dem politischen Kampf, der jetzt erst beginnt. Lula gewann die Stichwahl gegen Flávio Bolsonaro, den…",
-   "thumb": "https://i3.ytimg.com/vi/j0brRvDpwSw/hqdefault.jpg",
-   "id": "2eb3046ee271",
-   "score": 1,
+   "published": "2026-10-26T21:36:17.000Z",
+   "summary": "Pflege zu Hause: Lässt die Politik Angehörige allein? Mehr als sechs Millionen Menschen in Deutschland sind pflegebedürftig. Tendenz: steigend. Die meisten von ihnen werden zu Hause versorgt. Von rund zehn Millionen Angehörigen. Oft sind sie überlastet und frustriert. Mit…",
+   "thumb": "https://i3.ytimg.com/vi/njOT4tTZzqA/hqdefault.jpg",
+   "id": "f14ba75e69d3",
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
+   "why": "0"
   },
   {
    "title": "Trump will be 'very unhappy' over the election in Brazil",
@@ -1064,25 +1080,9 @@
    "summary": "Brazil's President Lula da Silva has been re-elected for a historic fourth term following a nail-biting runoff against Trump-backed, far-right favourite Flavio Bolsonaro. The leftist president won a historic fourth term, defeating the son of jailed far-right president Jair…",
    "thumb": "https://i2.ytimg.com/vi/EDjfP9NxIHg/hqdefault.jpg",
    "id": "185f83e4263a",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Product Lead Role",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1xg25ma/product_lead_role/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-10-26T16:45:18.000Z",
-   "summary": "Any other product leads here? How many hours a week do you typically work? I ask bc I average about 60 hours a week and we are building a number of projects that has become very difficult to keep track of. Anyone else experience the same thing? It’s only me and a junior PM in…",
-   "id": "1d9e99578358",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
+   "why": "0"
   },
   {
    "title": "Action Needed to Get Ukraine’s Grain to the World",
@@ -1243,6 +1243,22 @@
    "why": "0"
   },
   {
+   "title": "Product Lead Role",
+   "url": "https://www.reddit.com/r/ProductManagement/comments/1xg25ma/product_lead_role/",
+   "source": "r/productmanagement",
+   "feedId": "rd-productmanagement",
+   "type": "post",
+   "tags": [
+    "product"
+   ],
+   "published": "2026-10-26T16:45:18.000Z",
+   "summary": "Any other product leads here? How many hours a week do you typically work? I ask bc I average about 60 hours a week and we are building a number of projects that has become very difficult to keep track of. Anyone else experience the same thing? It’s only me and a junior PM in…",
+   "id": "1d9e99578358",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
    "title": "A week until the midterms: What to expect",
    "url": "https://www.youtube.com/watch?v=qPocyLAziiY",
    "source": "LBC",
@@ -1256,24 +1272,6 @@
    "summary": "A week out from the midterms, co-host of the News Agents Emily Maitlis joins Shelagh Fogarty to discuss what’s at stake. On 3rd November, US voters will head to the polls to decide whether Republicans will retain control of Congress or whether Democrats will take over.…",
    "thumb": "https://i2.ytimg.com/vi/qPocyLAziiY/hqdefault.jpg",
    "id": "4daed65cb16e",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Donald Trump praises Nicki Minaj's arse",
-   "url": "https://www.youtube.com/watch?v=_rugcXn396A",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-26T15:30:54.000Z",
-   "summary": "Donald Trump has praised Nicki Minaj's 'beautiful ass' at a Michigan rally ahead of the mid-term elections on November 3rd. The rapper joined him on stage, chanting: \"We love Trump. We love Trump.\" \"I am so honoured to be working with this president,\" she went on. \"He…",
-   "thumb": "https://i4.ytimg.com/vi/_rugcXn396A/hqdefault.jpg",
-   "id": "2d6a164bd8c0",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2694,26 +2692,7 @@
    "score": 0,
    "matched": [],
    "why": "0"
-  },
-  {
-   "title": "Could Another Brexit Debate End Farage?",
-   "url": "https://www.youtube.com/watch?v=ZeyP_CHjEZw",
-   "source": "TLDR News",
-   "feedId": "yt-tldr-news",
-   "type": "video",
-   "tags": [
-    "news",
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-13T09:00:14.000Z",
-   "summary": "Go to https://hensonshaving.com/TLDR and enter \"TLDR\" at checkout to get 100 free blades with your purchase. Nigel Farage said Andy Burnham’s comments about potentially rejoining the EU had given him “the biggest boost in [his] career\". We look at why — even if it seems…",
-   "thumb": "https://i3.ytimg.com/vi/ZeyP_CHjEZw/hqdefault.jpg",
-   "id": "b9534585cb6d",
-   "score": 0,
-   "matched": [],
-   "why": "0"
   }
  ],
- "contentHash": "ffdc7ee9e2ee"
+ "contentHash": "9c2976009466"
 }
