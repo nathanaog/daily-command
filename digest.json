@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-27T19:02:24.996Z",
+ "generated": "2026-10-27T21:52:24.467Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
@@ -630,9 +630,10 @@
    "id": "rd-productmanagement",
    "name": "r/productmanagement",
    "type": "reddit",
-   "status": "empty",
+   "status": "waiting",
    "count": 0,
-   "url": "https://www.reddit.com/r/productmanagement/top/.rss?t=day"
+   "lastOk": "2026-10-27T19:02:24.996Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-tech",
@@ -641,7 +642,7 @@
    "status": "cached",
    "count": 1,
    "lastOk": "2026-10-27T01:08:56.460Z",
-   "note": "rate-limited (429)"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-gaming",
@@ -650,25 +651,26 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-10-27T13:08:43.161Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
   },
   {
    "id": "rd-xbox",
    "name": "r/xbox",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": "2026-10-21T15:54:55.125Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-slaythespire",
@@ -677,7 +679,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-geopolitics",
@@ -708,6 +710,152 @@
   }
  ],
  "items": [
+  {
+   "title": "tagesthemen 21:45 Uhr, 27.10.2026",
+   "url": "https://www.youtube.com/watch?v=ODer1QKk6EI",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-27T21:51:40.000Z",
+   "summary": "tagesthemen 21:45 Uhr Parlamentswahl in Israel, Die Meinung, Finnlands Präsident Stubb und Norwegens Ministerpräsident Störe telefonieren auf eigene Initiative mit Russlands Kremlchef Putin, Fachleute grenzen geeignete Gebiete für ein Atommüll-Endlager in Deutschland weiter…",
+   "thumb": "https://i4.ytimg.com/vi/ODer1QKk6EI/hqdefault.jpg",
+   "id": "87038abe8d4e",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "DAMN: MAGA Hosts GO SILENT as Co-Host EMBARRASSES TRUMP On Air!",
+   "url": "https://www.youtube.com/watch?v=N_M6vxrQrYg",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-27T20:35:00.000Z",
+   "summary": "Luke discusses Jessica Tarlov on Fox News' The Five. Check out Jessica Tarlov's new book below! https://sites.prh.com/idisagree Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join…",
+   "thumb": "https://i3.ytimg.com/vi/N_M6vxrQrYg/hqdefault.jpg",
+   "id": "d9433d62bf7f",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Everybody thinks pensioners have it too easy | James O’Brien - The Whole Show",
+   "url": "https://www.youtube.com/watch?v=YLovVLO-CSk",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-27T20:00:01.000Z",
+   "summary": "This is a catch-up version of James O'Brien's live, daily show on LBC Radio from the 27th of October 2026. Listen to the full show on the all-new LBC App: https://app.af.lbc.co.uk/btnc/thenewlbcapp #jamesobrien #politics #LBC LBC is the home of live debate around news and…",
+   "thumb": "https://i2.ytimg.com/vi/YLovVLO-CSk/hqdefault.jpg",
+   "id": "844534cec307",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Neuer Zwischenstand: Viele Regionen bei Endlagersuche ausgeschlossen",
+   "url": "https://www.youtube.com/watch?v=BQrJq2iR2nA",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-27T19:45:47.000Z",
+   "summary": "Etwa 27.000 Kubikmeter hochradioaktive Abfälle aus Atomkraftwerken befinden sich in deutschen Zwischenlagern. Nur wohin mit dem Müll auf Dauer? Gesucht wird immer noch ein Endlager. Fachleute haben die geeigneten Gebiete nun auf weniger als fünf Prozent der Fläche Deutschlands…",
+   "thumb": "https://i3.ytimg.com/vi/BQrJq2iR2nA/hqdefault.jpg",
+   "id": "dfb372687ffc",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Parlamentswahl in Israel: Extrem hohe Wahlbeteiligung",
+   "url": "https://www.youtube.com/watch?v=G3fCDgU63Sw",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-27T19:41:24.000Z",
+   "summary": "Es ist die erste Parlamentswahl in Israel seit dem Überfall der Hamas vor drei Jahren. Und die Beteiligung ist riesig. Bis 17 Uhr deutscher Zeit hatten etwa zwei Drittel der gut sieben Millionen Wahlberechtigten bereits ihre Stimme abgegeben. Geöffnet sind die Wahllokale noch…",
+   "thumb": "https://i4.ytimg.com/vi/G3fCDgU63Sw/hqdefault.jpg",
+   "id": "036b3006f4c5",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "tagesschau 20:00 Uhr, 27.10.2026",
+   "url": "https://www.youtube.com/watch?v=0kwJfVgKL-8",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-27T19:35:21.000Z",
+   "summary": "Die 20-Uhr-Ausgabe der tagesschau im Livestream und auf Abruf findet ihr auch hier: https://ardmediathek.de/tagesschau und https://tagesschau.de 0:00 Guten Abend! 0:20 Parlamentswahl in Israel 4:19 EU-Kommission will Grenzschutzbehörde Frontex massiv ausbauen 6:25 Kommission…",
+   "thumb": "https://i1.ytimg.com/vi/0kwJfVgKL-8/hqdefault.jpg",
+   "id": "0fdb1b33ce8d",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Critics savage Liz Truss's 'deranged' new book about her disasterous mini-budget",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xh1v2p/critics_savage_liz_trusss_deranged_new_book_about/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-27T19:16:07.000Z",
+   "summary": "submitted by /u/Illustrious-Fee5670 [link] [comments]",
+   "id": "714778429ed8",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Graduate jobs plunge to lowest in a decade as AI and rising costs hit entry-level hiring",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xh175i/graduate_jobs_plunge_to_lowest_in_a_decade_as_ai/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-27T18:51:47.000Z",
+   "summary": "submitted by /u/Desperate-Drawer-572 [link] [comments]",
+   "id": "7886208d5e69",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
   {
    "title": "Netanyahu 'pressured' military to attack Iran in the days running up to election",
    "url": "https://www.youtube.com/watch?v=HVjGASev0xc",
@@ -833,39 +981,35 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Netanjahus Gegner – Was eint sie und welche Aussichten haben sie?",
-   "url": "https://www.youtube.com/watch?v=XyKfJKxW3H4",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
+   "title": "Three of Britain’s four nuclear deterrent submarines put to sea",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xgxgn6/three_of_britains_four_nuclear_deterrent/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
    "tags": [
-    "german",
-    "news",
-    "listen"
+    "politics",
+    "british"
    ],
-   "published": "2026-10-27T16:46:27.000Z",
-   "summary": "Ein zentrales Thema im Wahlkampf der vergangenen Wochen war Sicherheit – damit kann der amtierende Premierminister Netanjahu immer noch bei vielen Menschen punkten. Auf der anderen Seite werfen viele Netanjahu vor, beim Überfall der Terrororganisation Hamas auf ihr Land versagt…",
-   "thumb": "https://i1.ytimg.com/vi/XyKfJKxW3H4/hqdefault.jpg",
-   "id": "c38dac2a1ae7",
+   "published": "2026-10-27T16:36:22.000Z",
+   "summary": "submitted by /u/HibasakiSanjuro [link] [comments]",
+   "id": "58d8579cda76",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "tagesschau in Einfacher Sprache 19:00 Uhr, 27.10.2026",
-   "url": "https://www.youtube.com/watch?v=ffsowi19dNQ",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
+   "title": "Hate pays: YouTube faces questions over millions earned from hateful content",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xgx6en/hate_pays_youtube_faces_questions_over_millions/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
    "tags": [
-    "german",
-    "news",
-    "listen"
+    "politics",
+    "british"
    ],
-   "published": "2026-10-27T16:37:24.000Z",
-   "summary": "tagesschau in Einfacher Sprache 19:00 Uhr Israel: Wichtige Wahl, Ukraine: Kriegspause in Oleschky, Atomkraft: Wohin mit dem Müll?, Fußball: Harry Kane gewinnt Ballon d'Or, Das Wetter Die \"tagesschau in Einfacher Sprache\" – immer Montag bis Freitag um 19:00 Uhr bei tagesschau24…",
-   "thumb": "https://i3.ytimg.com/vi/ffsowi19dNQ/hqdefault.jpg",
-   "id": "5fb350e883eb",
+   "published": "2026-10-27T16:26:08.000Z",
+   "summary": "submitted by /u/yu3 [link] [comments]",
+   "id": "036c3cae94cb",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -884,25 +1028,6 @@
    "summary": "Lewis Goodall joins Shelagh Fogarty to react to the rape allegations aimed at Trump by former Miss Switzerland Beatrice Keul. Lewis also reacts to the Republican attack ad against the Democrat's Ohio candidate Dr Amy Acton. The campaign video featured Dr Acton's estranged…",
    "thumb": "https://i4.ytimg.com/vi/GrXqlnBLG94/hqdefault.jpg",
    "id": "33aed4eeff52",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Pläne der EU: Frontex soll auf 30.000 Beamte wachsen",
-   "url": "https://www.youtube.com/watch?v=9xLgF8WcQZ0",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-27T15:56:29.000Z",
-   "summary": "Die EU-Kommission will Frontex ausbauen. Die Grenzschutzagentur soll sich künftig verstärkt um Abschiebungen kümmern. Die europäische Grenzschutzagentur Frontex soll einem Vorschlag der EU-Kommission zufolge künftig eine größere Rolle bei Abschiebungen spielen - auch zwischen…",
-   "thumb": "https://i2.ytimg.com/vi/9xLgF8WcQZ0/hqdefault.jpg",
-   "id": "99afaff6fe01",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -942,25 +1067,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Netanjahu gegen Eisenkot: Wer gewinnt die Wahl in Israel?",
-   "url": "https://www.youtube.com/watch?v=jn8U3S7r2kQ",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-27T15:45:10.000Z",
-   "summary": "Benjamin Netanjahu hat Israel länger regiert als jeder andere Politiker vor ihm. Heute entscheiden die Wähler:innen, ob eine weitere Amtszeit dazukommt. Es ist eine Abstimmung über einen Premier, der im Land wie kein Zweiter polarisiert. Mehr zum Thema:…",
-   "thumb": "https://i3.ytimg.com/vi/jn8U3S7r2kQ/hqdefault.jpg",
-   "id": "c35d8cb3e5fe",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Norman Finkelstein: Netanyahu DESTROYED Global Order - With Trump's Help",
    "url": "https://www.youtube.com/watch?v=r0qpbAT2AiY",
    "source": "PoliticsJOE",
@@ -973,6 +1079,23 @@
    "summary": "Norman Finkelstein is the world's foremost expert on the history and politics of Israel and Gaza. He joined us in studio to discuss his new book Gaza's Gravediggers. Professor Finkelstein breaks down how the international community has failed the people of Gaza, particularly…",
    "thumb": "https://i3.ytimg.com/vi/r0qpbAT2AiY/hqdefault.jpg",
    "id": "38d07199e5e5",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Inside the deprived Cheshire town spending 93% of taxpayers' cash on social care",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xguvl9/inside_the_deprived_cheshire_town_spending_93_of/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-27T15:01:08.000Z",
+   "summary": "submitted by /u/theipaper [link] [comments]",
+   "id": "88eabccdd53c",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1065,109 +1188,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Farage blames 'staff incompetence' for half-empty Reform event",
-   "url": "https://www.youtube.com/watch?v=WPGuC4vwMWc",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-27T12:38:34.000Z",
-   "summary": "James O'Brien is joined by Henry Riley as a fourth Reform council leader resigns. Staffordshire County Council leader Martin Murray steps down after just seven months in the role, citing that his decision was in the 'best interests' of Staffordshire and its residents. Listen to…",
-   "thumb": "https://i4.ytimg.com/vi/WPGuC4vwMWc/hqdefault.jpg",
-   "id": "8094dbdfe252",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Labour’s housebuilding target ‘effectively dead’ - Manifesto pledge to build 1.5mn homes by 2029 looks increasingly unrealistic",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xgpxca/labours_housebuilding_target_effectively_dead/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-27T11:25:49.000Z",
-   "summary": "submitted by /u/blast-processor [link] [comments]",
-   "id": "522c579c7cad",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Nigel Farage lashes out at Reform ‘incompetence’ after speech in half-empty hall",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xgpocu/nigel_farage_lashes_out_at_reform_incompetence/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-27T11:12:32.000Z",
-   "summary": "submitted by /u/Metro-UK [link] [comments]",
-   "id": "97c94b97e1a9",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "How much benefit payments will rise by after the Budget",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xgnvkq/how_much_benefit_payments_will_rise_by_after_the/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-27T09:29:11.000Z",
-   "summary": "submitted by /u/theipaper [link] [comments]",
-   "id": "668be8f68114",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Holyrood Voting Intention: Constituency: SNP: 34% (-4) LAB: 18% (-1) RFM: 13% (-3) CON: 12% (=) LDM: 9% (-2) GRN: 7% (+5) Regional List: SNP: 28% (+1) LAB: 17% (+1) GRN: 15% (+1) CON: 13% (+1) RFM: 13% (-4) LDM: 9% (=) Via Norstat, 20-23 Oct. Changes w/ May 2026.",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xgnmhb/holyrood_voting_intention_constituency_snp_34_4/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-27T09:13:15.000Z",
-   "summary": "submitted by /u/Vumatius [link] [comments]",
-   "id": "229615f39d36",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Two men charged under National Security Act after RAF Fairford incident",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xgnjz1/two_men_charged_under_national_security_act_after/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-27T09:09:04.000Z",
-   "summary": "submitted by /u/twistedLucidity [link] [comments]",
-   "id": "bf7bb1c3d06d",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "OMG: Trump’s AG LOSES IT On Air as CNN Host EXPOSES HIM!",
    "url": "https://www.youtube.com/watch?v=EC8qSQ7jigk",
    "source": "Luke Beasley",
@@ -1253,24 +1273,6 @@
    "summary": "Phantom Blade Zero (PC, PS5) is an action RPG with big ambition and an emphasis on fun. Let's talk. Subscribe for more: http://youtube.com/gameranxtv ▼▼ Watch more 'Before You Buy': https://bit.ly/2kfdxI6",
    "thumb": "https://i4.ytimg.com/vi/Wf9irsB_ETs/hqdefault.jpg",
    "id": "ba2b0ff31aae",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "You Won’t F***ing Believe What Just Happened at a Trump Rally",
-   "url": "https://www.youtube.com/watch?v=WEJgVFPpPPo",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-26T21:40:22.000Z",
-   "summary": "Luke discusses the stark differences between Trump’s and Abdul’s recent rallies. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
-   "thumb": "https://i4.ytimg.com/vi/WEJgVFPpPPo/hqdefault.jpg",
-   "id": "02c5caabf903",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2679,5 +2681,5 @@
    "why": "0"
   }
  ],
- "contentHash": "a875946bce8a"
+ "contentHash": "92f1a98136e0"
 }
