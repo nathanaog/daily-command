@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-27T09:57:41.335Z",
+ "generated": "2026-10-27T13:08:43.161Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
@@ -630,9 +630,10 @@
    "id": "rd-productmanagement",
    "name": "r/productmanagement",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 1,
-   "url": "https://www.reddit.com/r/productmanagement/top/.rss?t=day"
+   "lastOk": "2026-10-27T09:57:41.335Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-tech",
@@ -641,7 +642,7 @@
    "status": "cached",
    "count": 1,
    "lastOk": "2026-10-27T01:08:56.460Z",
-   "note": "rate-limited (429)"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-gaming",
@@ -650,25 +651,26 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-10-27T03:53:46.198Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
   },
   {
    "id": "rd-xbox",
    "name": "r/xbox",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": "2026-10-21T15:54:55.125Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-slaythespire",
@@ -677,7 +679,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-geopolitics",
@@ -709,7 +711,96 @@
  ],
  "items": [
   {
-   "title": "Knesset-Wahl 2026: Israel vor Schicksalswahl",
+   "title": "Watch MELANIA’S FACE as Visibly ILL TRUMP Sounds LIKE HELL!",
+   "url": "https://www.youtube.com/watch?v=2yemoR4cEZw",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-27T13:00:33.000Z",
+   "summary": "Luke discusses Trump's latest gaggle with the press in Florida. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
+   "thumb": "https://i3.ytimg.com/vi/2yemoR4cEZw/hqdefault.jpg",
+   "id": "41b2efbde96f",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Farage blames 'staff incompetence' for half-empty Reform event",
+   "url": "https://www.youtube.com/watch?v=WPGuC4vwMWc",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-27T12:38:34.000Z",
+   "summary": "James O'Brien is joined by Henry Riley as a fourth Reform council leader resigns. Staffordshire County Council leader Martin Murray steps down after just seven months in the role, citing that his decision was in the 'best interests' of Staffordshire and its residents. Listen to…",
+   "thumb": "https://i4.ytimg.com/vi/WPGuC4vwMWc/hqdefault.jpg",
+   "id": "8094dbdfe252",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Labour’s housebuilding target ‘effectively dead’ - Manifesto pledge to build 1.5mn homes by 2029 looks increasingly unrealistic",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xgpxca/labours_housebuilding_target_effectively_dead/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-27T11:25:49.000Z",
+   "summary": "submitted by /u/blast-processor [link] [comments]",
+   "id": "522c579c7cad",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Nigel Farage lashes out at Reform ‘incompetence’ after speech in half-empty hall",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xgpocu/nigel_farage_lashes_out_at_reform_incompetence/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-27T11:12:32.000Z",
+   "summary": "submitted by /u/Metro-UK [link] [comments]",
+   "id": "97c94b97e1a9",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "„Netanjahu führt Kampagne der Angst“ – ARD-Korrespondentin zur Wahl in Israel",
+   "url": "https://www.youtube.com/watch?v=HTSv6Hp92ow",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-27T10:35:13.000Z",
+   "summary": "Zum ersten Mal seit dem verheerenden Terrorangriff der Hamas vom 7. Oktober 2023 und nach drei Jahren eines zermürbenden Krieges wählt Israel heute ein neues Parlament. Mehr als 7,3 Millionen Wahlberechtigte sind aufgerufen, über die Zukunft des Landes zu entscheiden. Etwa…",
+   "thumb": "https://i1.ytimg.com/vi/HTSv6Hp92ow/hqdefault.jpg",
+   "id": "7d6d99d5083e",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Wahl in Israel: Endet die Ära Netanjahu?",
    "url": "https://www.youtube.com/watch?v=-eFKcuO8CcQ",
    "source": "Tagesschau",
    "feedId": "yt-tagesschau",
@@ -723,6 +814,57 @@
    "summary": "Es ist eine Richtungsentscheidung in einer der schwersten Krisen Israels: Heute wird ein neues Parlament gewählt. Mehr als 7,3 Millionen Wahlberechtigte stimmen ab. Etwa 70.000 Staatsbürger:innen aus aller Welt fliegen ein, um ihre Stimme abzugeben. Weder Premier Netanjahu noch…",
    "thumb": "https://i2.ytimg.com/vi/-eFKcuO8CcQ/hqdefault.jpg",
    "id": "25d548194377",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "How much benefit payments will rise by after the Budget",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xgnvkq/how_much_benefit_payments_will_rise_by_after_the/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-27T09:29:11.000Z",
+   "summary": "submitted by /u/theipaper [link] [comments]",
+   "id": "668be8f68114",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Holyrood Voting Intention: Constituency: SNP: 34% (-4) LAB: 18% (-1) RFM: 13% (-3) CON: 12% (=) LDM: 9% (-2) GRN: 7% (+5) Regional List: SNP: 28% (+1) LAB: 17% (+1) GRN: 15% (+1) CON: 13% (+1) RFM: 13% (-4) LDM: 9% (=) Via Norstat, 20-23 Oct. Changes w/ May 2026.",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xgnmhb/holyrood_voting_intention_constituency_snp_34_4/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-27T09:13:15.000Z",
+   "summary": "submitted by /u/Vumatius [link] [comments]",
+   "id": "229615f39d36",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Two men charged under National Security Act after RAF Fairford incident",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xgnjz1/two_men_charged_under_national_security_act_after/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-27T09:09:04.000Z",
+   "summary": "submitted by /u/twistedLucidity [link] [comments]",
+   "id": "bf7bb1c3d06d",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -837,43 +979,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "KT #791 - JIM NORTON + ANTHONY CUMIA",
-   "url": "https://www.youtube.com/watch?v=1MJir9VHriw",
-   "source": "Kill Tony",
-   "feedId": "yt-kill-tony",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "standup",
-    "listen"
-   ],
-   "published": "2026-10-27T01:00:11.000Z",
-   "summary": "Jim Norton, Anthony Cumia, Pat O'Neill, Dedrick Flynn, Martin Phillips, D Madness, Michael A. Gonzales, Jon Deas, Matthew Muehling, Grooveline Horns, Joe White, Troy Conrad, Monica Colt, Steve Glass, Tony Hinchcliffe, Brian Redban - RECORDED– 10/19/2026 TONY HINCHCLIFFE…",
-   "thumb": "https://i2.ytimg.com/vi/1MJir9VHriw/hqdefault.jpg",
-   "id": "28f10a57dd6e",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "OH SH*T: McConnell SHOCKS TRUMP With Most UNEXPECTED MOVE!",
-   "url": "https://www.youtube.com/watch?v=Trw6Rxl_Gfc",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-26T23:40:12.000Z",
-   "summary": "Luke discusses Mitch McConnell's op-ed on Trump's handling of the Russia/Ukraine war. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
-   "thumb": "https://i1.ytimg.com/vi/Trw6Rxl_Gfc/hqdefault.jpg",
-   "id": "47da4eb3b86e",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Kyiv's Brussels blunder leaves EU scrambling over phantom Zelensky visit",
    "url": "https://www.reddit.com/r/geopolitics/comments/1xgc71d/kyivs_brussels_blunder_leaves_eu_scrambling_over/",
    "source": "r/geopolitics",
@@ -891,6 +996,43 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
+   "title": "KT #791 - JIM NORTON + ANTHONY CUMIA",
+   "url": "https://www.youtube.com/watch?v=1MJir9VHriw",
+   "source": "Kill Tony",
+   "feedId": "yt-kill-tony",
+   "type": "video",
+   "tags": [
+    "comedy",
+    "standup",
+    "listen"
+   ],
+   "published": "2026-10-27T01:00:11.000Z",
+   "summary": "Jim Norton, Anthony Cumia, Pat O'Neill, Dedrick Flynn, Martin Phillips, D Madness, Michael A. Gonzales, Jon Deas, Matthew Muehling, Grooveline Horns, Joe White, Troy Conrad, Monica Colt, Steve Glass, Tony Hinchcliffe, Brian Redban - RECORDED– 10/19/2026 TONY HINCHCLIFFE…",
+   "thumb": "https://i2.ytimg.com/vi/1MJir9VHriw/hqdefault.jpg",
+   "id": "28f10a57dd6e",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "OH SH*T: McConnell SHOCKS TRUMP With Most UNEXPECTED MOVE!",
+   "url": "https://www.youtube.com/watch?v=Trw6Rxl_Gfc",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-26T23:40:12.000Z",
+   "summary": "Luke discusses Mitch McConnell's op-ed on Trump's handling of the Russia/Ukraine war. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
+   "thumb": "https://i1.ytimg.com/vi/Trw6Rxl_Gfc/hqdefault.jpg",
+   "id": "47da4eb3b86e",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
    "title": "Phantom Blade Zero - Before You Buy",
    "url": "https://www.youtube.com/watch?v=Wf9irsB_ETs",
    "source": "GameRanx",
@@ -903,26 +1045,9 @@
    "summary": "Phantom Blade Zero (PC, PS5) is an action RPG with big ambition and an emphasis on fun. Let's talk. Subscribe for more: http://youtube.com/gameranxtv ▼▼ Watch more 'Before You Buy': https://bit.ly/2kfdxI6",
    "thumb": "https://i4.ytimg.com/vi/Wf9irsB_ETs/hqdefault.jpg",
    "id": "ba2b0ff31aae",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "While Kemi Badenoch has criticised Andy Burnham for appearing on a charity episode of Gogglebox, Britons tend to say it was acceptable by 48% to 30% Acceptable: 48% Unacceptable: 30%",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xgbkp8/while_kemi_badenoch_has_criticised_andy_burnham/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-26T22:40:54.000Z",
-   "summary": "submitted by /u/ClumperFaz [link] [comments]",
-   "id": "692db697553f",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
+   "why": "0"
   },
   {
    "title": "tagesthemen 22:15 Uhr, 26.10.2026",
@@ -939,9 +1064,9 @@
    "summary": "tagesthemen 22:15 Uhr Studentenliste gewinnt bei Wahl in Serbien, Lula gewinnt Präsidentenwahl in Brasilien, Israel vor der Wahl: Die Lage der arabischen Parteien, Kritik an Auftritt von Audi-Chef Döllner auf US-Wahlkampfveranstaltung, Die Meinung, Weitere Meldungen im…",
    "thumb": "https://i3.ytimg.com/vi/rUu-EhIeCTI/hqdefault.jpg",
    "id": "c7cc227a8764",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
+   "why": "0"
   },
   {
    "title": "Is freedom of movement back on the table? | James O’Brien - The Whole Show",
@@ -957,77 +1082,9 @@
    "summary": "This is a catch-up version of James O'Brien's live, daily show on LBC Radio from the 26th of October 2026. Listen to the full show on the all-new LBC App: https://app.af.lbc.co.uk/btnc/thenewlbcapp #jamesobrien #politics #LBC LBC is the home of live debate around news and…",
    "thumb": "https://i3.ytimg.com/vi/n1qaJzPL78E/hqdefault.jpg",
    "id": "5cd333dc70a7",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "'Mahmood is furious': Cabinet anger as Burnham opens door to Brexit free movement",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xgakri/mahmood_is_furious_cabinet_anger_as_burnham_opens/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-26T21:59:43.000Z",
-   "summary": "submitted by /u/Desperate-Drawer-572 [link] [comments]",
-   "id": "43597dd48ccb",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Is the UK government actually preparing for mass unemployment with recent accouncemant of layoffs?",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xg8iz8/is_the_uk_government_actually_preparing_for_mass/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-26T20:39:41.000Z",
-   "summary": "I genuinely think the government needs to start having a serious conversation about overhauling the welfare system, Universal Credit, housing benefit etc, before we get hit with a wave of unemployment that the current system just isn't designed to handle. The way I see it, the…",
-   "id": "ef71373b558f",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Revealed: Expensive gas behind ‘nearly 90%’ of rise in UK electricity bills",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xg795n/revealed_expensive_gas_behind_nearly_90_of_rise/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-26T19:52:08.000Z",
-   "summary": "submitted by /u/Incanus_uk [link] [comments]",
-   "id": "ed963df7c3b1",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Israel detains SNP MP and Scottish Green MSP trying to enter Palestinian West Bank",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xg6wof/israel_detains_snp_mp_and_scottish_green_msp/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-26T19:39:08.000Z",
-   "summary": "submitted by /u/BabyfurStepdad [link] [comments]",
-   "id": "e05b8daaeada",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
+   "why": "0"
   },
   {
    "title": "You Won’t F***ing Believe What Just Happened at a Trump Rally",
@@ -1043,25 +1100,6 @@
    "summary": "Luke discusses the stark differences between Trump’s and Abdul’s recent rallies. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
    "thumb": "https://i4.ytimg.com/vi/WEJgVFPpPPo/hqdefault.jpg",
    "id": "02c5caabf903",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Emotionale Debatte über häusliche Pflege bei Hart aber fair",
-   "url": "https://www.youtube.com/watch?v=njOT4tTZzqA",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-26T21:36:17.000Z",
-   "summary": "Pflege zu Hause: Lässt die Politik Angehörige allein? Mehr als sechs Millionen Menschen in Deutschland sind pflegebedürftig. Tendenz: steigend. Die meisten von ihnen werden zu Hause versorgt. Von rund zehn Millionen Angehörigen. Oft sind sie überlastet und frustriert. Mit…",
-   "thumb": "https://i3.ytimg.com/vi/njOT4tTZzqA/hqdefault.jpg",
-   "id": "f14ba75e69d3",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1259,24 +1297,6 @@
    "why": "0"
   },
   {
-   "title": "A week until the midterms: What to expect",
-   "url": "https://www.youtube.com/watch?v=qPocyLAziiY",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-26T16:30:30.000Z",
-   "summary": "A week out from the midterms, co-host of the News Agents Emily Maitlis joins Shelagh Fogarty to discuss what’s at stake. On 3rd November, US voters will head to the polls to decide whether Republicans will retain control of Congress or whether Democrats will take over.…",
-   "thumb": "https://i2.ytimg.com/vi/qPocyLAziiY/hqdefault.jpg",
-   "id": "4daed65cb16e",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "This machine breaks things.",
    "url": "https://www.youtube.com/watch?v=-E47v4Oy7fE",
    "source": "Tom Scott",
@@ -1365,24 +1385,6 @@
    "why": "0",
    "durationSec": 2366,
    "duration": "39:26"
-  },
-  {
-   "title": "INSANE: Russia’s SECRET PLOT to CHANGE ELECTION RESULTS for Trump!",
-   "url": "https://www.youtube.com/watch?v=rw-ei7INcAA",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-26T01:30:05.000Z",
-   "summary": "Luke discusses a reports of Russian groups creating fake videos attacking James Talarico. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
-   "thumb": "https://i3.ytimg.com/vi/rw-ei7INcAA/hqdefault.jpg",
-   "id": "d4047a2c5e77",
-   "score": 0,
-   "matched": [],
-   "why": "0"
   },
   {
    "title": "\"Hosts Must Clean, Not Guests\" - AirBnB New Rule Has Hosts Losing Their Minds",
@@ -2694,5 +2696,5 @@
    "why": "0"
   }
  ],
- "contentHash": "9c2976009466"
+ "contentHash": "34e39d78b25b"
 }
