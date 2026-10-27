@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-27T13:08:43.161Z",
+ "generated": "2026-10-27T16:03:24.276Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
@@ -657,20 +657,19 @@
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
+   "lastOk": "2026-10-27T13:08:43.161Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-xbox",
    "name": "r/xbox",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": "2026-10-21T15:54:55.125Z",
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-slaythespire",
@@ -679,25 +678,26 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-10-27T07:08:08.625Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
   },
   {
    "id": "rd-germany",
    "name": "r/germany",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": "2026-10-15T00:59:57.533Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-unitedkingdom",
@@ -706,10 +706,187 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   }
  ],
  "items": [
+  {
+   "title": "Pläne der EU: Frontex soll auf 30.000 Beamte wachsen",
+   "url": "https://www.youtube.com/watch?v=9xLgF8WcQZ0",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-27T15:56:29.000Z",
+   "summary": "Die EU-Kommission will Frontex ausbauen. Die Grenzschutzagentur soll sich künftig verstärkt um Abschiebungen kümmern. Die europäische Grenzschutzagentur Frontex soll einem Vorschlag der EU-Kommission zufolge künftig eine größere Rolle bei Abschiebungen spielen - auch zwischen…",
+   "thumb": "https://i2.ytimg.com/vi/9xLgF8WcQZ0/hqdefault.jpg",
+   "id": "99afaff6fe01",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Why the Netherlands Must Hold the Line on ASML",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xgw5bk/why_the_netherlands_must_hold_the_line_on_asml/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-27T15:48:33.000Z",
+   "summary": "submitted by /u/RUSIOfficial [link] [comments]",
+   "id": "70e42213f1ad",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Russia is starting to realize that Donald Trump is not Grandfather Frost",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xgw2ey/russia_is_starting_to_realize_that_donald_trump/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-27T15:45:36.000Z",
+   "summary": "Putin is losing hope in Trump’s ability to end the war with Ukraine and is talking directly with the leaders of European countries. It turns out that it’s not only the U.S. with influence over the almost five-year-long war, but Europe also has its own cards to play. What’s…",
+   "id": "0f62af881cb7",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Netanjahu gegen Eisenkot: Wer gewinnt die Wahl in Israel?",
+   "url": "https://www.youtube.com/watch?v=jn8U3S7r2kQ",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-27T15:45:10.000Z",
+   "summary": "Benjamin Netanjahu hat Israel länger regiert als jeder andere Politiker vor ihm. Heute entscheiden die Wähler:innen, ob eine weitere Amtszeit dazukommt. Es ist eine Abstimmung über einen Premier, der im Land wie kein Zweiter polarisiert. Mehr zum Thema:…",
+   "thumb": "https://i3.ytimg.com/vi/jn8U3S7r2kQ/hqdefault.jpg",
+   "id": "c35d8cb3e5fe",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Norman Finkelstein: Netanyahu DESTROYED Global Order - With Trump's Help",
+   "url": "https://www.youtube.com/watch?v=r0qpbAT2AiY",
+   "source": "PoliticsJOE",
+   "feedId": "yt-politicsjoe",
+   "type": "video",
+   "tags": [
+    "comedy"
+   ],
+   "published": "2026-10-27T15:16:49.000Z",
+   "summary": "Norman Finkelstein is the world's foremost expert on the history and politics of Israel and Gaza. He joined us in studio to discuss his new book Gaza's Gravediggers. Professor Finkelstein breaks down how the international community has failed the people of Gaza, particularly…",
+   "thumb": "https://i3.ytimg.com/vi/r0qpbAT2AiY/hqdefault.jpg",
+   "id": "38d07199e5e5",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Erste Wahl in Israel seit Hamas-Terror vor drei Jahren: Bleibt Netanjahu an der Macht?",
+   "url": "https://www.youtube.com/watch?v=q4DMRT5CJUs",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-27T15:03:51.000Z",
+   "summary": "Zum ersten Mal seit dem verheerenden Terrorangriff der Hamas vom 7. Oktober 2023 und nach drei Jahren eines zermürbenden Krieges im Gazastreifen wählt Israel heute ein neues Parlament. Mehr als 7,3 Millionen Wahlberechtigte sind aufgerufen, über die Zukunft Israels zu…",
+   "thumb": "https://i2.ytimg.com/vi/q4DMRT5CJUs/hqdefault.jpg",
+   "id": "f3173288ef8d",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "The Israel Netanyahu Made: Why Bibi’s National Security Vision Will Endure",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xgupa3/the_israel_netanyahu_made_why_bibis_national/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-27T14:54:34.000Z",
+   "summary": "submitted by /u/ForeignAffairsMag [link] [comments]",
+   "id": "ee8d5de3d2c8",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Putin’s Strategy Is Working: Trump Could Salvage the Kremlin’s Objectives in Ukraine",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xguofv/putins_strategy_is_working_trump_could_salvage/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-27T14:53:42.000Z",
+   "summary": "submitted by /u/ForeignAffairsMag [link] [comments]",
+   "id": "da7f06cf8278",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "'I didn't think this was serious...' | Simon Marks",
+   "url": "https://www.youtube.com/watch?v=UnJ7lxwQUqU",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-27T14:40:18.000Z",
+   "summary": "James O'Brien is joined by Simon Marks to react as Nicki Minaj is teased as Trump's next press secretary. 0:00 | Trump and Obama go head to head 5:33 | RFK Jr. makes 'racist' Arab claims 7:38 | Ex-FBI chief faces third federal charge 10:03 | Nicki Minaj... new press secretary?…",
+   "thumb": "https://i2.ytimg.com/vi/UnJ7lxwQUqU/hqdefault.jpg",
+   "id": "cc0271dc7116",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "The disturbing picture that shows Netanyahu is on the brink",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xgspse/the_disturbing_picture_that_shows_netanyahu_is_on/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-27T13:35:47.000Z",
+   "summary": "submitted by /u/theipaper [link] [comments]",
+   "id": "3b9d13ef8353",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
   {
    "title": "Watch MELANIA’S FACE as Visibly ILL TRUMP Sounds LIKE HELL!",
    "url": "https://www.youtube.com/watch?v=2yemoR4cEZw",
@@ -781,7 +958,7 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "„Netanjahu führt Kampagne der Angst“ – ARD-Korrespondentin zur Wahl in Israel",
+   "title": "„Für Netanjahu steht sehr viel auf dem Spiel“ – ARD-Journalistin zur Wahl in Israel",
    "url": "https://www.youtube.com/watch?v=HTSv6Hp92ow",
    "source": "Tagesschau",
    "feedId": "yt-tagesschau",
@@ -888,44 +1065,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Wahl in Israel: Endet die Ära Netanjahu? I 11KM - der tagesschau-Podcast",
-   "url": "https://www.youtube.com/watch?v=L-5oCV0G-qk",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-27T05:12:27.000Z",
-   "summary": "Bei der Parlamentswahl in #Israel zeichnet sich laut Umfragen ein enges Rennen zwischen dem langjährigen Premierminister Benjamin \"Bibi\" Netanjahu und seinem Herausforderer Gadi Eisenkot ab. Bettina Meier, Korrespondentin im ARD-Studio in Tel Aviv, hat den Wahlkampf begleitet.…",
-   "thumb": "https://i1.ytimg.com/vi/L-5oCV0G-qk/hqdefault.jpg",
-   "id": "d2ee8f65da9e",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Einfacher bauen, günstiger wohnen? / Israel wählt / Leise Supermärkte – wem das hilft | \"15 Minuten\"",
-   "url": "https://www.youtube.com/watch?v=8fopiBsGZvs",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-27T05:03:51.000Z",
-   "summary": "Unsere Infos heute (00:00:07) Themenübersicht (00:00:34) Gebäudetyp E: Einfacher bauen, günstiger wohnen? Die Bundesregierung bringt einen Gesetzentwurf für den sogenannten Gebäudetyp E auf den Weg. Bauherren, Unternehmen und Käufer sollen einfacher vereinbaren können, auf…",
-   "thumb": "https://i1.ytimg.com/vi/8fopiBsGZvs/hqdefault.jpg",
-   "id": "cce11b524734",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "OMG: Trump’s AG LOSES IT On Air as CNN Host EXPOSES HIM!",
    "url": "https://www.youtube.com/watch?v=EC8qSQ7jigk",
    "source": "Luke Beasley",
@@ -939,26 +1078,9 @@
    "summary": "Luke discusses Todd Blanche's appearance on CNN. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley Instagram -…",
    "thumb": "https://i2.ytimg.com/vi/EC8qSQ7jigk/hqdefault.jpg",
    "id": "c1d1479fdec4",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Lula's comeback in Brazil dents Trump's ambitions for Latin America",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xghhzv/lulas_comeback_in_brazil_dents_trumps_ambitions/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-27T03:06:43.000Z",
-   "summary": "submitted by /u/BranVan3001 [link] [comments]",
-   "id": "50e81542fd72",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
+   "why": "0"
   },
   {
    "title": "INSANE EPSTEIN Bomb Drops RIGHT BEFORE Election!",
@@ -974,26 +1096,9 @@
    "summary": "Luke discusses House Judiciary Democrats' new Epstein report. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
    "thumb": "https://i1.ytimg.com/vi/0clj_3cgCoQ/hqdefault.jpg",
    "id": "3fe09e6c7440",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Kyiv's Brussels blunder leaves EU scrambling over phantom Zelensky visit",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xgc71d/kyivs_brussels_blunder_leaves_eu_scrambling_over/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-26T23:06:46.000Z",
-   "summary": "submitted by /u/KI_official [link] [comments]",
-   "id": "0930b11dd7e8",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
+   "why": "0"
   },
   {
    "title": "KT #791 - JIM NORTON + ANTHONY CUMIA",
@@ -1045,25 +1150,6 @@
    "summary": "Phantom Blade Zero (PC, PS5) is an action RPG with big ambition and an emphasis on fun. Let's talk. Subscribe for more: http://youtube.com/gameranxtv ▼▼ Watch more 'Before You Buy': https://bit.ly/2kfdxI6",
    "thumb": "https://i4.ytimg.com/vi/Wf9irsB_ETs/hqdefault.jpg",
    "id": "ba2b0ff31aae",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "tagesthemen 22:15 Uhr, 26.10.2026",
-   "url": "https://www.youtube.com/watch?v=rUu-EhIeCTI",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-26T22:14:59.000Z",
-   "summary": "tagesthemen 22:15 Uhr Studentenliste gewinnt bei Wahl in Serbien, Lula gewinnt Präsidentenwahl in Brasilien, Israel vor der Wahl: Die Lage der arabischen Parteien, Kritik an Auftritt von Audi-Chef Döllner auf US-Wahlkampfveranstaltung, Die Meinung, Weitere Meldungen im…",
-   "thumb": "https://i3.ytimg.com/vi/rUu-EhIeCTI/hqdefault.jpg",
-   "id": "c7cc227a8764",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1123,40 +1209,6 @@
    "why": "0"
   },
   {
-   "title": "Action Needed to Get Ukraine’s Grain to the World",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xg5zqi/action_needed_to_get_ukraines_grain_to_the_world/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-26T19:05:17.000Z",
-   "summary": "submitted by /u/CEPAORG [link] [comments]",
-   "id": "6d38a3c42101",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Russia’s Ministry of Control",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xg59kh/russias_ministry_of_control/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-26T18:38:12.000Z",
-   "summary": "submitted by /u/CEPAORG [link] [comments]",
-   "id": "279e9ddcc049",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "Ghosting Is R@pe",
    "url": "https://www.youtube.com/watch?v=XhIAbzRdXF0",
    "source": "Aberrant preach",
@@ -1193,23 +1245,6 @@
    "why": "0"
   },
   {
-   "title": "What Israel’s Election Won’t Change: The Constraints and Costs of the New Security Consensus",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xg3swa/what_israels_election_wont_change_the_constraints/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-26T17:45:12.000Z",
-   "summary": "submitted by /u/ForeignAffairsMag [link] [comments]",
-   "id": "bd4d8c4eecc9",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "Is Andy Burnham reversing Brexit?",
    "url": "https://www.youtube.com/watch?v=XB8Fxoj6_wA",
    "source": "PoliticsJOE",
@@ -1222,24 +1257,6 @@
    "summary": "Andy Burnham’s position on Brexit has been murky since the 2016 referendum. Ava traces his journey from voting Remain to accepting the result, opposing a second referendum, and eventually calling for closer ties. Recently, Burnham has called for an open debate about Britain’s…",
    "thumb": "https://i1.ytimg.com/vi/XB8Fxoj6_wA/hqdefault.jpg",
    "id": "6991d37e6a06",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Should people have to wait 15 years before settling permanently in the UK?",
-   "url": "https://www.youtube.com/watch?v=3hCbrr9o1G4",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-26T17:30:30.000Z",
-   "summary": "Home Secretary Shabana Mahmood is facing backlash over her planned immigration crackdown. Ms Mahmood wants to lengthen the time it takes for foreign nationals to be granted indefinite leave to remain (ILR) from five to 15 years. But she is under pressure from colleagues to…",
-   "thumb": "https://i4.ytimg.com/vi/3hCbrr9o1G4/hqdefault.jpg",
-   "id": "6aaf63526a08",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2099,23 +2116,6 @@
    "why": "0"
   },
   {
-   "title": "HIGHLIGHTS: Andy Burnham Faces Down Kemi Badenoch at PMQs",
-   "url": "https://www.youtube.com/watch?v=odeQN2wKKbQ",
-   "source": "PoliticsJOE",
-   "feedId": "yt-politicsjoe",
-   "type": "video",
-   "tags": [
-    "comedy"
-   ],
-   "published": "2026-10-21T11:42:10.000Z",
-   "summary": "On the day the government decided to grant new licences for natural gas at the Jackdaw field, Andy Burnham faced the Conservative leader at another session of PMQs. Like PoliticsJOE? We need your support: https://www.patreon.com/PoliticsJOE",
-   "thumb": "https://i4.ytimg.com/vi/odeQN2wKKbQ/hqdefault.jpg",
-   "id": "9bfcd3bbed27",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "AfD co-leader Alice Weidel on Ukraine, migration and Germany’s future | The Economist",
    "url": "https://www.youtube.com/watch?v=_cGGDu8sgXY",
    "source": "The Economist",
@@ -2696,5 +2696,5 @@
    "why": "0"
   }
  ],
- "contentHash": "34e39d78b25b"
+ "contentHash": "f3c32ab920a7"
 }
