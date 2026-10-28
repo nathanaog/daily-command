@@ -1,11 +1,11 @@
 {
- "generated": "2026-10-28T13:18:00.591Z",
+ "generated": "2026-10-28T16:07:55.180Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
-  "ok": 51,
-  "items": 115,
-  "duplicatesMerged": 0,
+  "ok": 52,
+  "items": 120,
+  "duplicatesMerged": 1,
   "lengthsKnown": 1,
   "lengthLookups": 98,
   "lengthFailures": 98,
@@ -254,7 +254,7 @@
    "name": "Channel 5 with Andrew Callaghan",
    "type": "youtube",
    "status": "ok",
-   "count": 2,
+   "count": 3,
    "resolved": {
     "channelId": "UC-AQKm7HUNMmxjdS371MSwg",
     "title": "Channel 5 with Andrew Callaghan",
@@ -630,9 +630,10 @@
    "id": "rd-productmanagement",
    "name": "r/productmanagement",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/productmanagement/top/.rss?t=day"
+   "lastOk": "2026-10-28T13:18:00.591Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-tech",
@@ -641,7 +642,7 @@
    "status": "cached",
    "count": 1,
    "lastOk": "2026-10-27T01:08:56.460Z",
-   "note": "rate-limited (429)"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-gaming",
@@ -650,34 +651,34 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-10-28T07:20:19.279Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
   },
   {
    "id": "rd-xbox",
    "name": "r/xbox",
    "type": "reddit",
-   "status": "waiting",
-   "count": 0,
-   "lastOk": "2026-10-21T15:54:55.125Z",
-   "note": "not its turn this run"
+   "status": "ok",
+   "count": 5,
+   "url": "https://www.reddit.com/r/xbox/top/.rss?t=day"
   },
   {
    "id": "rd-slaythespire",
    "name": "r/slaythespire",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-geopolitics",
@@ -709,27 +710,44 @@
  ],
  "items": [
   {
-   "title": "tagesthemen 21:45 Uhr, 27.10.2026",
-   "url": "https://www.youtube.com/watch?v=VPVeUNtm9Js",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
+   "title": "'Well-targeted measures': Andrew Marr's expert analysis of the Budget",
+   "url": "https://www.youtube.com/watch?v=WGnqrVUO20M",
+   "source": "LBC",
+   "feedId": "yt-lbc",
    "type": "video",
    "tags": [
-    "german",
-    "news",
+    "politics",
     "listen"
    ],
-   "published": "2026-10-28T13:12:05.000Z",
-   "summary": "tagesthemen 21:45 Uhr Parlamentswahl in Israel, Die Meinung, Finnlands Präsident Stubb und Norwegens Ministerpräsident Störe telefonieren auf eigene Initiative mit Russlands Kremlchef Putin, Fachleute grenzen geeignete Gebiete für ein Atommüll-Endlager in Deutschland weiter…",
-   "thumb": "https://i3.ytimg.com/vi/VPVeUNtm9Js/hqdefault.jpg",
-   "id": "9f2a498fd21b",
+   "published": "2026-10-28T16:00:38.000Z",
+   "summary": "Andrew Marr joins Shelagh Fogarty to analyse John Healey's first Budget. The impact of the war in Iran has contributed to the difficulties facing the economy, pushing up inflation as a result of higher oil and gas prices. The Chancellor unveiled a £2.6 billion energy bills…",
+   "thumb": "https://i4.ytimg.com/vi/WGnqrVUO20M/hqdefault.jpg",
+   "id": "2b2aeddfa3ea",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Suttgart: Millionen für den Staat bei Justizauktion",
-   "url": "https://www.youtube.com/watch?v=KPF2NXq06eM",
+   "title": "Farha Khalidi Defends Her Hottest Takes | Surrounded Follow-Up",
+   "url": "https://www.youtube.com/watch?v=2xIMdLp9iCQ",
+   "source": "Jubilee",
+   "feedId": "yt-jubilee",
+   "type": "video",
+   "tags": [
+    "politics",
+    "debates"
+   ],
+   "published": "2026-10-28T16:00:17.000Z",
+   "summary": "Hey you 👈 Wanna be in a Jubilee video? https://bit.ly/be-in-a-video LET’S BE FRIENDS Instagram: https://www.instagram.com/jubileemedia/ TikTok: https://www.tiktok.com/@jubilee?lang=en Website: https://www.jubileemedia.com OUR LOVE + DATING CHANNEL 🍑 YouTube:…",
+   "thumb": "https://i3.ytimg.com/vi/2xIMdLp9iCQ/hqdefault.jpg",
+   "id": "4901298e5d20",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Patt nach Wahl in Israel: Was das für den Nahen Osten bedeutet",
+   "url": "https://www.youtube.com/watch?v=l8XPsksiOSo",
    "source": "Tagesschau",
    "feedId": "yt-tagesschau",
    "type": "video",
@@ -738,10 +756,304 @@
     "news",
     "listen"
    ],
-   "published": "2026-10-28T12:51:48.000Z",
-   "summary": "In Stuttgart hat die baden-württembergischen Justiz auf der bisher größten Versteigerungsaktion zahlreiche beschlagnahmte Luxusgüter versteigert - mit dabei Luxusuhren und Luxusautos wie Lamborghinis. Mehr tagesthemen mittendrin Reportagen hier:…",
-   "thumb": "https://i4.ytimg.com/vi/KPF2NXq06eM/hqdefault.jpg",
-   "id": "2ed6ef753de8",
+   "published": "2026-10-28T15:31:12.000Z",
+   "summary": "Die Menschen in Israel haben ein neues Parlament gewählt. Doch am Tag danach zeigt sich: Eindeutige Wahlsieger gibt es nicht. Teilauszählungen zufolge liegt das Regierungslager von Langzeit-Premierminister Benjamin Netanjahu vor dem Oppositionsbündnis seines Rivalen Gadi…",
+   "thumb": "https://i1.ytimg.com/vi/l8XPsksiOSo/hqdefault.jpg",
+   "id": "b08e03c2ff57",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "„Vorläufiges Ergebnis zeigt, wie gespalten Israel ist\" – ARD-Journalistin zur Knesset-Wahl",
+   "url": "https://www.youtube.com/watch?v=XrxRzqaHa4s",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-28T15:27:12.000Z",
+   "summary": "In Israel haben die Menschen ein neues Parlament gewählt. Die Wahlbeteiligung war mit 77,7 Prozent die höchste seit Jahrzehnten. Teilergebnissen zufolge liegt das Regierungslager von Ministerpräsident Benjamin Netanjahu vor dem Oppositionsbündnis seines Rivalen Gadi Eisenkot -…",
+   "thumb": "https://i1.ytimg.com/vi/XrxRzqaHa4s/hqdefault.jpg",
+   "id": "69a4f926005a",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Anyone have regrets selling their Series X?",
+   "url": "https://www.reddit.com/r/xbox/comments/1xhr21q/anyone_have_regrets_selling_their_series_x/",
+   "source": "r/xbox",
+   "feedId": "rd-xbox",
+   "type": "post",
+   "tags": [
+    "gaming"
+   ],
+   "published": "2026-10-28T15:22:59.000Z",
+   "summary": "Has anyone sold their Series X recently and regretted it? I'm on the fence, I'm a console collector but I feel like I could get the full value back. I mostly played Game Pass so I wouldn't really be losing a library. I guess the backwards compatibility means I could explore…",
+   "id": "842d83e55d70",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Zugunglück in Spanien: „Ganz Spanien leidet mit den Menschen“ – ARD-Reporter ist vor Ort",
+   "url": "https://www.youtube.com/watch?v=Ic4UicmPils",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-28T15:21:17.000Z",
+   "summary": "Beim Zusammenstoß zweier Züge in Spanien ist die Zahl der Toten auf mindestens 68 gestiegen. Mehrere Waggons sollen entgleist sein. Die Strecke zwischen der Hauptstadt Madrid und der südlichen Region Andalusien wurde gesperrt. In Spanien hat es bei einem Zugunglück viele Tote…",
+   "thumb": "https://i2.ytimg.com/vi/Ic4UicmPils/hqdefault.jpg",
+   "id": "da633f63ac2a",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Series X sold out since day 1.",
+   "url": "https://www.reddit.com/r/xbox/comments/1xhqv2s/series_x_sold_out_since_day_1/",
+   "source": "r/xbox",
+   "feedId": "rd-xbox",
+   "type": "post",
+   "tags": [
+    "gaming"
+   ],
+   "published": "2026-10-28T15:16:05.000Z",
+   "summary": "I’ve been looking for a series X console pretty much since release, say 5 to 6 years but everywhere I look in Canada they have been sold out. I’ve checked all the typical stores: EB games, Costco, Walmart, Best Buy, Staples, Amazon, etc and none of them have had the console for…",
+   "id": "dd958ee36982",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "„Viele hoffen, dass der neue Premier nicht der alte sein wird“: ARD-Reporter berichtet aus Kairo",
+   "url": "https://www.youtube.com/watch?v=bJOGzJvhCaU",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-28T15:14:50.000Z",
+   "summary": "Die Menschen in Israel haben ein neues Parlament gewählt. Doch am Tag danach zeigt sich: Eindeutige Wahlsieger gibt es nicht. Teilauszählungen zufolge liegt das Regierungslager von Langzeit-Premierminister Benjamin Netanjahu vor dem Oppositionsbündnis seines Rivalen Gadi…",
+   "thumb": "https://i3.ytimg.com/vi/bJOGzJvhCaU/hqdefault.jpg",
+   "id": "8983a2ce6b02",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Titan Quest II | Pre-Order Trailer",
+   "url": "https://www.reddit.com/r/xbox/comments/1xhqgmw/titan_quest_ii_preorder_trailer/",
+   "source": "r/xbox",
+   "feedId": "rd-xbox",
+   "type": "post",
+   "tags": [
+    "gaming"
+   ],
+   "published": "2026-10-28T15:01:27.000Z",
+   "summary": ">Titan Quest II launches on January 19, 2027! >Pre-order today and begin your odyssey before anyone else. >Challenge Nemesis, the Goddess of Retribution, in an action RPG inspired by Greek mythology. Battle legendary monsters, master powerful abilities, and change fate itself.…",
+   "id": "ee3e96ae1f28",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Lewis Goodall reacts to John Healey's 'unspectacular' Budget",
+   "url": "https://www.youtube.com/watch?v=nRo_3WjDyTk",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-28T15:00:14.000Z",
+   "summary": "Lewis Goodall joins Shelagh Fogarty and Natasha Clark to share his thoughts about the 'unspectacular' Budget. In a move to tackle the cost of living crisis, the Chancellor announced an increase to the minimum wage and also announced a drop in tax for everyday \"essentials\" such…",
+   "thumb": "https://i3.ytimg.com/vi/nRo_3WjDyTk/hqdefault.jpg",
+   "id": "be53695be635",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Landlords face 4% tax rise on rental income from 2027",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xhq1ss/landlords_face_4_tax_rise_on_rental_income_from/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-28T14:45:50.000Z",
+   "summary": "submitted by /u/diacewrb [link] [comments]",
+   "id": "ddfcf4858a58",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Tommy Robinson guilty of harassing Daily Mail journalists",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xhq07y/tommy_robinson_guilty_of_harassing_daily_mail/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-28T14:44:06.000Z",
+   "summary": "submitted by /u/BarbaricOklahoma [link] [comments]",
+   "id": "976dcc0cec5b",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Refusing to pay for online multiplayer has made me appreciate and enjoy single player games a lot more",
+   "url": "https://www.reddit.com/r/xbox/comments/1xhpxe8/refusing_to_pay_for_online_multiplayer_has_made/",
+   "source": "r/xbox",
+   "feedId": "rd-xbox",
+   "type": "post",
+   "tags": [
+    "gaming"
+   ],
+   "published": "2026-10-28T14:41:03.000Z",
+   "summary": "I don't know if anyone else can relate to this, but I've always been an online multiplayer gamer my whole life, but ever since prices of pretty much everything have increased, I came to a realization that we shouldn't be paying for online multiplayer, so I started looking at…",
+   "id": "8a1ed47f30e7",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "This game looks phenomenal",
+   "url": "https://www.reddit.com/r/xbox/comments/1xhps87/this_game_looks_phenomenal/",
+   "source": "r/xbox",
+   "feedId": "rd-xbox",
+   "type": "post",
+   "tags": [
+    "gaming"
+   ],
+   "published": "2026-10-28T14:35:31.000Z",
+   "summary": "just got around to playing it *Gears of War E Day submitted by /u/Dangerous_Alfalfa_77 [link] [comments]",
+   "id": "ea722918e121",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "'A politically short-term Budget' | Instant reaction",
+   "url": "https://www.youtube.com/watch?v=KY5Gf9B0lQU",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-28T14:07:45.000Z",
+   "summary": "Shelagh Fogarty is joined by LBC's political editor Natasha Clark and money expert's Gabriel Nussbaum and Sir Howard Davies to share their instant reaction to John Healey's first Budget. The Chancellor said the Budget would be for the \"working people of Britain, for British…",
+   "thumb": "https://i4.ytimg.com/vi/KY5Gf9B0lQU/hqdefault.jpg",
+   "id": "0c7347167a4c",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Israeli Election Day",
+   "url": "https://www.youtube.com/watch?v=YcpC3-59yhE",
+   "source": "Channel 5 with Andrew Callaghan",
+   "feedId": "yt-channel-5-with-andrew-callaghan",
+   "type": "video",
+   "tags": [
+    "education",
+    "politics"
+   ],
+   "published": "2026-10-28T14:00:30.000Z",
+   "summary": "To see 'Combat Obscura' or any of the 17 other documentaries currently streaming on C5.NOW while knowing that you are directly supporting independent filmmakers bringing you knowledge, perspective and entertainment, head to https://c5.now OR download the C5.NOW app on iOs,…",
+   "thumb": "https://i2.ytimg.com/vi/YcpC3-59yhE/hqdefault.jpg",
+   "id": "fcd4ed29f857",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "How China Is Restarting Its Economy",
+   "url": "https://www.youtube.com/watch?v=vQodCxq7b9g",
+   "source": "Economics Explained",
+   "feedId": "yt-economics-explained",
+   "type": "video",
+   "tags": [
+    "finance",
+    "listen"
+   ],
+   "published": "2026-10-28T14:00:07.000Z",
+   "summary": "If you want to learn more about Pasqal Holding SA (NASDAQ: PSQL), check out their website: https://investors.pasqal.com/ 📫11,142+ read our free newsletter that has weekly original stories Sign up: → https://economics-explained-tv-program.beehiiv.com/ Disclaimer: This content…",
+   "thumb": "https://i3.ytimg.com/vi/vQodCxq7b9g/hqdefault.jpg",
+   "id": "95b8ef42f922",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Workers should be able to know colleagues' salaries, rights body says",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xho45e/workers_should_be_able_to_know_colleagues/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-28T13:30:01.000Z",
+   "summary": "submitted by /u/Desperate-Drawer-572 [link] [comments]",
+   "id": "41fef23b2bb3",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Westminster Voting Intention: LAB: 32% (+2) RFM: 25% (+1) CON: 21% (-1) GRN: 8% (=) LDM: 7% (=) SNP: 4% (+1) Via @DeltapollUK, 23-26 Oct. Changes w/ 16-19 Oct.",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xhnx9w/westminster_voting_intention_lab_32_2_rfm_25_1/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-28T13:22:04.000Z",
+   "summary": "submitted by /u/Little-Attorney1287 [link] [comments]",
+   "id": "7c14256419e2",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "£100 energy bill support to be sent directly to bank accounts for 20 million people",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xhnnxl/100_energy_bill_support_to_be_sent_directly_to/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-28T13:10:58.000Z",
+   "summary": "submitted by /u/Desperate-Drawer-572 [link] [comments]",
+   "id": "9b673b77910a",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -777,63 +1089,6 @@
    "summary": "Today just the co-main event, but Andy Burnham made Kemi Badenoch look rather silly at PMQs when she interrogated his government's plans to reopen the conversation on Brexit. Like PoliticsJOE? We need your support: https://www.patreon.com/PoliticsJOE",
    "thumb": "https://i2.ytimg.com/vi/IsdjbwZzMYw/hqdefault.jpg",
    "id": "adbfbd012627",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Kahla: Aus für Porzellan-Hersteller | tagesthemen mittendrin",
-   "url": "https://www.youtube.com/watch?v=p9MsklMgvxA",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-28T11:54:26.000Z",
-   "summary": "Als Thüringen im 19. Jahrhundert zum Zentrum der deutschen Porzellanindustrie wurde, verdankte es das einer günstigen heimischen Energiequelle: Der Thüringer Wald bot einen unerschöpflichen Vorrat an Fichtenholz, mit dem sich die Öfen stundenlang auf 1400 Grad erhitzen ließen.…",
-   "thumb": "https://i1.ytimg.com/vi/p9MsklMgvxA/hqdefault.jpg",
-   "id": "0d34851be3c6",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Spanien: Mindestens 30 Tote bei Zugunglück",
-   "url": "https://www.youtube.com/watch?v=7PQ8IKYxml8",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-28T10:51:07.000Z",
-   "summary": "Beim Zusammenstoß zweier Schnellzüge in Spanien sind mindestens 30 Menschen getötet worden. Zwei Waggons sollen entgleist sein. Die Strecke zwischen der Hauptstadt Madrid und der südlichen Region Andalusien wurde gesperrt. Aktuelle Infos dazu im tagesschau-Update. Mehr…",
-   "thumb": "https://i4.ytimg.com/vi/7PQ8IKYxml8/hqdefault.jpg",
-   "id": "689193e37976",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Wenn Wut eskaliert: Ist Frankreich Vorbote für Deutschland? | Presseclub",
-   "url": "https://www.youtube.com/watch?v=U_mV-xfzB-Y",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-28T10:34:23.000Z",
-   "summary": "Presseclub | 25. Oktober 2026, 12:03 - 12:45 Uhr Liberté, égalité, brutalité – die Bilder der Verwüstung aus Frankreich sind verstörend. Sind sie auch ein Menetekel für Deutschland? Was Anfang September mit friedlichen Protesten über den maroden Zustand der Schulen begonnen…",
-   "thumb": "https://i2.ytimg.com/vi/U_mV-xfzB-Y/hqdefault.jpg",
-   "id": "aea14aa114c2",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -907,23 +1162,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Free Speech Union: The anti-Muslim hostility definition has had a chilling effect on free speech. Since its publication in March, it has been used to silence people who wish to criticise, debate or mock Islam — including private citizens, politicians and comedians.",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xhg0by/free_speech_union_the_antimuslim_hostility/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-28T05:51:49.000Z",
-   "summary": "submitted by /u/BigSupermark [link] [comments]",
-   "id": "0c4faa5656e0",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Anyone else having AI dissonance between Engineering and Product on PRDs generated by AI for Agentic SDLC",
    "url": "https://www.reddit.com/r/ProductManagement/comments/1xhdli4/anyone_else_having_ai_dissonance_between/",
    "source": "r/productmanagement",
@@ -935,24 +1173,6 @@
    "published": "2026-10-28T03:35:16.000Z",
    "summary": "Oh my gosh. I can't count how many times there is criticism on PRDs generated from AI. it's almost like folks don't want to trust it unless they wrote it but then don't want to write it because they want AI to write it. submitted by /u/Mobile-Influence-371 [link] [comments]",
    "id": "e603d598c8ea",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "OMG: She Went On Stage at Trump Rally, INSTANTLY HUMILIATING!",
-   "url": "https://www.youtube.com/watch?v=2sEoTJCI2eg",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-28T02:35:16.000Z",
-   "summary": "Luke discusses Trump's Mississippi rally with Sen. Cindy Hyde-Smith. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
-   "thumb": "https://i3.ytimg.com/vi/2sEoTJCI2eg/hqdefault.jpg",
-   "id": "6db08f737cfc",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -975,21 +1195,22 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "John Healey to reverse cuts to Cash Isa allowance",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xh7l8i/john_healey_to_reverse_cuts_to_cash_isa_allowance/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
+   "title": "OMG: She Went On Stage at Trump Rally, INSTANTLY HUMILIATING!",
+   "url": "https://www.youtube.com/watch?v=2sEoTJCI2eg",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
    "tags": [
     "politics",
-    "british"
+    "listen"
    ],
-   "published": "2026-10-27T22:57:57.000Z",
-   "summary": "submitted by /u/Intrepid-Cheek-7538 [link] [comments]",
-   "id": "d8c3dfaeafdf",
-   "score": 1,
+   "published": "2026-10-28T02:35:16.000Z",
+   "summary": "Luke discusses Trump's Mississippi rally with Sen. Cindy Hyde-Smith. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
+   "thumb": "https://i3.ytimg.com/vi/2sEoTJCI2eg/hqdefault.jpg",
+   "id": "6db08f737cfc",
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
+   "why": "0"
   },
   {
    "title": "OMG: Fox News Airs HUMILIATING News For Trump RIGHT BEFORE Election!",
@@ -1145,93 +1366,6 @@
    "why": "0"
   },
   {
-   "title": "'Everybody thinks pensioners have it too easy' | James O’Brien - The Whole Show",
-   "url": "https://www.youtube.com/watch?v=YLovVLO-CSk",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-27T20:00:01.000Z",
-   "summary": "This is a catch-up version of James O'Brien's live, daily show on LBC Radio from the 27th of October 2026. Listen to the full show on the all-new LBC App: https://app.af.lbc.co.uk/btnc/thenewlbcapp #jamesobrien #politics #LBC LBC is the home of live debate around news and…",
-   "thumb": "https://i2.ytimg.com/vi/YLovVLO-CSk/hqdefault.jpg",
-   "id": "844534cec307",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "London borough granted powers to block HMOs in bid to crack down on rogue landlords",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xh1yn6/london_borough_granted_powers_to_block_hmos_in/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-27T19:19:41.000Z",
-   "summary": "submitted by /u/Anony_mouse202 [link] [comments]",
-   "id": "91308aeaea2f",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Critics savage Liz Truss's 'deranged' new book about her disasterous mini-budget",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xh1v2p/critics_savage_liz_trusss_deranged_new_book_about/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-27T19:16:07.000Z",
-   "summary": "submitted by /u/Illustrious-Fee5670 [link] [comments]",
-   "id": "714778429ed8",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Graduate jobs plunge to lowest in a decade as AI and rising costs hit entry-level hiring",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xh175i/graduate_jobs_plunge_to_lowest_in_a_decade_as_ai/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-27T18:51:47.000Z",
-   "summary": "submitted by /u/Desperate-Drawer-572 [link] [comments]",
-   "id": "7886208d5e69",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Netanyahu 'pressured' military to attack Iran in the days running up to election",
-   "url": "https://www.youtube.com/watch?v=HVjGASev0xc",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-27T18:15:29.000Z",
-   "summary": "Iranian professor warns that Britain's involvement in the war against Iran makes the UK government “complicit in war and therefore a target”. Mohammad Marandi, professor at the University of Tehran, joins Shelagh Fogarty to discuss Iran's position on Israel, its nuclear…",
-   "thumb": "https://i1.ytimg.com/vi/HVjGASev0xc/hqdefault.jpg",
-   "id": "bb52713e31b5",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "Learn German with Our Live Podcast",
    "url": "https://www.youtube.com/watch?v=-WbwNgcUT2o",
    "source": "Easy German",
@@ -1262,24 +1396,6 @@
    "summary": "Robin Wigglesworth, Financial Times journalist and author of The Fabulous Debt, joins us to explain how government borrowing works, why rising gilt yields matter, and how Labour's first Budget under Andy Burnham could take Britain out of a doom cycle of reliance on the market.…",
    "thumb": "https://i4.ytimg.com/vi/cBwV_xon-sg/hqdefault.jpg",
    "id": "c1464230c5ab",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Israel elections: Turnout is highest on record as Israelis vote in pivotal election",
-   "url": "https://www.youtube.com/watch?v=gSDbhyl2SX8",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-27T17:13:16.000Z",
-   "summary": "David Mencer, spokesperson for the Israeli Government in the office of the Prime Minister, joins Shelagh Fogarty to discuss the Israeli elections and what could be Benjamin Netanyahu's last day as Prime Minister. It marks the first general election since the October 7 attack.…",
-   "thumb": "https://i4.ytimg.com/vi/gSDbhyl2SX8/hqdefault.jpg",
-   "id": "1ef2beb7095b",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1946,7 +2062,7 @@
    "why": "0"
   },
   {
-   "title": "Why Farmers Are Shooting Weeds With Lasers",
+   "title": "Can Lasers Kill Farming's Oldest Enemy?",
    "url": "https://www.youtube.com/watch?v=PpnCu8SUGCU",
    "source": "The Hustle",
    "feedId": "yt-the-hustle",
@@ -2543,24 +2659,6 @@
    "why": "0"
   },
   {
-   "title": "Liberals vs. Conservatives Get Fact-Checked Live | Checkmate",
-   "url": "https://www.youtube.com/watch?v=0t1jSu-C9KU",
-   "source": "Jubilee",
-   "feedId": "yt-jubilee",
-   "type": "video",
-   "tags": [
-    "politics",
-    "debates"
-   ],
-   "published": "2026-10-16T16:00:38.000Z",
-   "summary": "Earn extra cash in your free time! Head to https://itl.ink/jubileexfreecash for a $10 Sign-up bonus today. Hey you 👈 Wanna be in a Jubilee video? https://bit.ly/be-in-a-video LET’S BE FRIENDS Instagram: https://www.instagram.com/jubileemedia/ TikTok:…",
-   "thumb": "https://i1.ytimg.com/vi/0t1jSu-C9KU/hqdefault.jpg",
-   "id": "b27f8256542f",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "Bashar's Alien Cult",
    "url": "https://www.youtube.com/watch?v=u1LKaBiD9JY",
    "source": "Channel 5 with Andrew Callaghan",
@@ -2739,25 +2837,7 @@
    "score": 0,
    "matched": [],
    "why": "0"
-  },
-  {
-   "title": "What Happens When AI Is Free ... South Korea Tried It",
-   "url": "https://www.youtube.com/watch?v=ZRNQ1QgbDj4",
-   "source": "Economics Explained",
-   "feedId": "yt-economics-explained",
-   "type": "video",
-   "tags": [
-    "finance",
-    "listen"
-   ],
-   "published": "2026-10-14T14:58:48.000Z",
-   "summary": "Read Shopify's latest data on the rising global impact of entrepreneurship: https://www.shopify.com/entrepreneur 📫 10,859+ read our free newsletter that has weekly original stories Sign up: → https://economics-explained-tv-program.beehiiv.com/ This video was made possible by…",
-   "thumb": "https://i3.ytimg.com/vi/ZRNQ1QgbDj4/hqdefault.jpg",
-   "id": "23fb10aa8d43",
-   "score": 0,
-   "matched": [],
-   "why": "0"
   }
  ],
- "contentHash": "3fac7f18ffb2"
+ "contentHash": "5afc89ccf1e4"
 }
