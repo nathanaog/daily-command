@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-28T10:05:17.540Z",
+ "generated": "2026-10-28T13:18:00.591Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
@@ -630,10 +630,9 @@
    "id": "rd-productmanagement",
    "name": "r/productmanagement",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-10-28T04:01:59.716Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/productmanagement/top/.rss?t=day"
   },
   {
    "id": "rd-tech",
@@ -642,7 +641,7 @@
    "status": "cached",
    "count": 1,
    "lastOk": "2026-10-27T01:08:56.460Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)"
   },
   {
    "id": "rd-gaming",
@@ -651,7 +650,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-ukpolitics",
@@ -684,20 +683,19 @@
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
+   "lastOk": "2026-10-28T10:05:17.540Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-germany",
    "name": "r/germany",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": "2026-10-15T00:59:57.533Z",
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-unitedkingdom",
@@ -706,13 +704,13 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   }
  ],
  "items": [
   {
-   "title": "Nach Aufhebung von Schutzstatus: Warum 350.000 Haitianern in den USA die Abschiebung droht",
-   "url": "https://www.youtube.com/watch?v=eoxDhfqmYmc",
+   "title": "tagesthemen 21:45 Uhr, 27.10.2026",
+   "url": "https://www.youtube.com/watch?v=VPVeUNtm9Js",
    "source": "Tagesschau",
    "feedId": "yt-tagesschau",
    "type": "video",
@@ -721,17 +719,17 @@
     "news",
     "listen"
    ],
-   "published": "2026-10-28T10:04:37.000Z",
-   "summary": "In den USA werden am kommenden Dienstag das Repräsentantenhaus und ein Teil des Senats neu gewählt. So eine Zwischenwahl ist immer auch eine Abrechnung mit dem Präsidenten. Trump hat die größte Abschiebe-Operation der US-Geschichte versprochen. Zunächst sollte dies…",
-   "thumb": "https://i2.ytimg.com/vi/eoxDhfqmYmc/hqdefault.jpg",
-   "id": "ef8f398a5b18",
+   "published": "2026-10-28T13:12:05.000Z",
+   "summary": "tagesthemen 21:45 Uhr Parlamentswahl in Israel, Die Meinung, Finnlands Präsident Stubb und Norwegens Ministerpräsident Störe telefonieren auf eigene Initiative mit Russlands Kremlchef Putin, Fachleute grenzen geeignete Gebiete für ein Atommüll-Endlager in Deutschland weiter…",
+   "thumb": "https://i3.ytimg.com/vi/VPVeUNtm9Js/hqdefault.jpg",
+   "id": "9f2a498fd21b",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Krieg gegen die Ukraine: Norwegen und Finnland sprechen mit Putin",
-   "url": "https://www.youtube.com/watch?v=eMBtLxp6Npg",
+   "title": "Suttgart: Millionen für den Staat bei Justizauktion",
+   "url": "https://www.youtube.com/watch?v=KPF2NXq06eM",
    "source": "Tagesschau",
    "feedId": "yt-tagesschau",
    "type": "video",
@@ -740,10 +738,102 @@
     "news",
     "listen"
    ],
-   "published": "2026-10-28T09:43:45.000Z",
-   "summary": "Das Telefonat des finnischen Präsidenten Stubb und des norwegischen Regierungschefs Störe mit dem russischen Präsidenten Putin ruft geteilte Reaktionen hervor: Für die einen ist es ein falsches Signal, für die anderen ein Hoffnungsschimmer. Einigkeit herrscht hingegen in der…",
-   "thumb": "https://i2.ytimg.com/vi/eMBtLxp6Npg/hqdefault.jpg",
-   "id": "4c43521e7b6e",
+   "published": "2026-10-28T12:51:48.000Z",
+   "summary": "In Stuttgart hat die baden-württembergischen Justiz auf der bisher größten Versteigerungsaktion zahlreiche beschlagnahmte Luxusgüter versteigert - mit dabei Luxusuhren und Luxusautos wie Lamborghinis. Mehr tagesthemen mittendrin Reportagen hier:…",
+   "thumb": "https://i4.ytimg.com/vi/KPF2NXq06eM/hqdefault.jpg",
+   "id": "2ed6ef753de8",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "'She's in a bit of a pickle' | PMQs analysed",
+   "url": "https://www.youtube.com/watch?v=4pe2ljzu34I",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-28T12:48:30.000Z",
+   "summary": "LBC's political editor Natasha Clark joins James O'Brien to analyse Andy Burnham and Kemi Badenoch’s performance at today's PMQs. Listen to the full show on the all-new LBC App: https://app.af.lbc.co.uk/btnc/thenewlbcapp #jamesobrien #natashclark #pmqs #burnham #badenoch…",
+   "thumb": "https://i1.ytimg.com/vi/4pe2ljzu34I/hqdefault.jpg",
+   "id": "639869c995dc",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "HIGHLIGHTS: Andy Burnham HAMMERS Kemi Badenoch over Brexit failings at PMQs",
+   "url": "https://www.youtube.com/watch?v=IsdjbwZzMYw",
+   "source": "PoliticsJOE",
+   "feedId": "yt-politicsjoe",
+   "type": "video",
+   "tags": [
+    "comedy"
+   ],
+   "published": "2026-10-28T12:48:04.000Z",
+   "summary": "Today just the co-main event, but Andy Burnham made Kemi Badenoch look rather silly at PMQs when she interrogated his government's plans to reopen the conversation on Brexit. Like PoliticsJOE? We need your support: https://www.patreon.com/PoliticsJOE",
+   "thumb": "https://i2.ytimg.com/vi/IsdjbwZzMYw/hqdefault.jpg",
+   "id": "adbfbd012627",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Kahla: Aus für Porzellan-Hersteller | tagesthemen mittendrin",
+   "url": "https://www.youtube.com/watch?v=p9MsklMgvxA",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-28T11:54:26.000Z",
+   "summary": "Als Thüringen im 19. Jahrhundert zum Zentrum der deutschen Porzellanindustrie wurde, verdankte es das einer günstigen heimischen Energiequelle: Der Thüringer Wald bot einen unerschöpflichen Vorrat an Fichtenholz, mit dem sich die Öfen stundenlang auf 1400 Grad erhitzen ließen.…",
+   "thumb": "https://i1.ytimg.com/vi/p9MsklMgvxA/hqdefault.jpg",
+   "id": "0d34851be3c6",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Spanien: Mindestens 30 Tote bei Zugunglück",
+   "url": "https://www.youtube.com/watch?v=7PQ8IKYxml8",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-28T10:51:07.000Z",
+   "summary": "Beim Zusammenstoß zweier Schnellzüge in Spanien sind mindestens 30 Menschen getötet worden. Zwei Waggons sollen entgleist sein. Die Strecke zwischen der Hauptstadt Madrid und der südlichen Region Andalusien wurde gesperrt. Aktuelle Infos dazu im tagesschau-Update. Mehr…",
+   "thumb": "https://i4.ytimg.com/vi/7PQ8IKYxml8/hqdefault.jpg",
+   "id": "689193e37976",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Wenn Wut eskaliert: Ist Frankreich Vorbote für Deutschland? | Presseclub",
+   "url": "https://www.youtube.com/watch?v=U_mV-xfzB-Y",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-28T10:34:23.000Z",
+   "summary": "Presseclub | 25. Oktober 2026, 12:03 - 12:45 Uhr Liberté, égalité, brutalité – die Bilder der Verwüstung aus Frankreich sind verstörend. Sind sie auch ein Menetekel für Deutschland? Was Anfang September mit friedlichen Protesten über den maroden Zustand der Schulen begonnen…",
+   "thumb": "https://i2.ytimg.com/vi/U_mV-xfzB-Y/hqdefault.jpg",
+   "id": "aea14aa114c2",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -817,25 +907,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Wahl in Israel: Prognosen zeigen Patt-Situation",
-   "url": "https://www.youtube.com/watch?v=qhnTaXlQVeI",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-28T08:38:18.000Z",
-   "summary": "Nach der Wahl in Israel und ersten Teilauszählungen gibt es ein enges Rennen um die Mehrheit im Parlament. Sowohl Eisenkot als auch Netanjahu kündigten an, eine Regierung bilden zu wollen. Viele im Ausland lebende Israelis waren extra angereist, weil es in Israel keine…",
-   "thumb": "https://i2.ytimg.com/vi/qhnTaXlQVeI/hqdefault.jpg",
-   "id": "0e5618dfbc65",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Free Speech Union: The anti-Muslim hostility definition has had a chilling effect on free speech. Since its publication in March, it has been used to silence people who wish to criticise, debate or mock Islam — including private citizens, politicians and comedians.",
    "url": "https://www.reddit.com/r/ukpolitics/comments/1xhg0by/free_speech_union_the_antimuslim_hostility/",
    "source": "r/ukpolitics",
@@ -848,44 +919,6 @@
    "published": "2026-10-28T05:51:49.000Z",
    "summary": "submitted by /u/BigSupermark [link] [comments]",
    "id": "0c4faa5656e0",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Trump und Putin: Wendepunkt im Ukraine-Krieg? I 11KM - der tagesschau-Podcast",
-   "url": "https://www.youtube.com/watch?v=g4ADMClpmvw",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-28T05:17:22.000Z",
-   "summary": "Wendepunkt im Ukraine-Krieg? In dieser 11KM-Folge analysiert NDR-Journalist Stefan Niemann, warum sich Donald #Trump in den letzten Wochen hinter den russischen Präsidenten Vladimir #Putin stellt und inwiefern Putins Kalkül vor den US-amerikanischen Midterms voll aufzugehen…",
-   "thumb": "https://i4.ytimg.com/vi/g4ADMClpmvw/hqdefault.jpg",
-   "id": "af2695378a4d",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Atommüll Endlager Suche / Hitlers Kehlsteinhaus nach Brand/ Rehe als Tierheim-Futter | \"15 Minuten\"",
-   "url": "https://www.youtube.com/watch?v=0J6EPApR_Jw",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-28T05:13:57.000Z",
-   "summary": "Unsere Infos heute: (00:00:07) Themenübersicht (00:00:34) Endlagersuche für hochradioaktiven Atommüll Die Suche nach einem Endlager für den hochradioaktiven Atommüll in Deutschland wird konkreter. Vollständig als Standort ausgeschlossen wurden nun Rheinland-Pfalz, Hessen,…",
-   "thumb": "https://i1.ytimg.com/vi/0J6EPApR_Jw/hqdefault.jpg",
-   "id": "624361c33b9b",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -925,40 +958,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "OMG: Fox News Airs HUMILIATING News For Trump RIGHT BEFORE Election!",
-   "url": "https://www.youtube.com/watch?v=8f2T7q-_Cng",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-28T00:35:13.000Z",
-   "summary": "Luke discusses Fox News' reporting on the state of the midterms. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
-   "thumb": "https://i1.ytimg.com/vi/8f2T7q-_Cng/hqdefault.jpg",
-   "id": "c7f10b9f9366",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "If/when the AI bubble bursts, where do you think that leaves your products?",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1xh8v9b/ifwhen_the_ai_bubble_bursts_where_do_you_think/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-10-27T23:52:22.000Z",
-   "summary": "Many suggest we are in this bubble and it will either make or break things. I’m all for the end of generated slop images/powerpoints/docs but what about agentic AI in products, I’d guess that would stay regardless if it’s delivering value and not a sprinkle of fair dust cos it…",
-   "id": "8205b4c2b6a2",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "We Went to Cuba to See How the Fuel Crisis Is Forcing Havana to Open Its Economy",
    "url": "https://www.reddit.com/r/geopolitics/comments/1xh7mnq/we_went_to_cuba_to_see_how_the_fuel_crisis_is/",
    "source": "r/geopolitics",
@@ -993,6 +992,56 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
+   "title": "OMG: Fox News Airs HUMILIATING News For Trump RIGHT BEFORE Election!",
+   "url": "https://www.youtube.com/watch?v=8f2T7q-_Cng",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-28T00:35:13.000Z",
+   "summary": "Luke discusses Fox News' reporting on the state of the midterms. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
+   "thumb": "https://i1.ytimg.com/vi/8f2T7q-_Cng/hqdefault.jpg",
+   "id": "c7f10b9f9366",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "If/when the AI bubble bursts, where do you think that leaves your products?",
+   "url": "https://www.reddit.com/r/ProductManagement/comments/1xh8v9b/ifwhen_the_ai_bubble_bursts_where_do_you_think/",
+   "source": "r/productmanagement",
+   "feedId": "rd-productmanagement",
+   "type": "post",
+   "tags": [
+    "product"
+   ],
+   "published": "2026-10-27T23:52:22.000Z",
+   "summary": "Many suggest we are in this bubble and it will either make or break things. I’m all for the end of generated slop images/powerpoints/docs but what about agentic AI in products, I’d guess that would stay regardless if it’s delivering value and not a sprinkle of fair dust cos it…",
+   "id": "8205b4c2b6a2",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "The PM skills I don’t see AI or FDEs replacing anytime soon",
+   "url": "https://www.reddit.com/r/ProductManagement/comments/1xh7okb/the_pm_skills_i_dont_see_ai_or_fdes_replacing/",
+   "source": "r/productmanagement",
+   "feedId": "rd-productmanagement",
+   "type": "post",
+   "tags": [
+    "product"
+   ],
+   "published": "2026-10-27T23:01:43.000Z",
+   "summary": "I see a lot of posts here worried that product management roles are being replaced by AI or FDEs with no PM experience. Based on multiple customer sessions over Teams these past few weeks, I see that there’s still many PM skills they won’t be able to replace anytime soon. I’m a…",
+   "id": "72b081fcff45",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
    "title": "iPhone Duo - Before You Buy",
    "url": "https://www.youtube.com/watch?v=14yDpPTrYwg",
    "source": "GameRanx",
@@ -1005,9 +1054,9 @@
    "summary": "We love taking the newest trending tech and trying to game on it as much as possible. How does Apple's first foldable smartphone stack up with games? Let's talk. ~~SOURCES~~ https://9to5mac.com/2026/10/25/iphone-duo-displays-cracking/…",
    "thumb": "https://i2.ytimg.com/vi/14yDpPTrYwg/hqdefault.jpg",
    "id": "91418cfb6bab",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
+   "why": "0"
   },
   {
    "title": "Let's talk about Claude Code as a product",
@@ -1021,9 +1070,9 @@
    "published": "2026-10-27T22:39:51.000Z",
    "summary": "CC has been one of the best products I've used in the past few years. I am talking about the harness and TUI, not the Claude models. They have been shipping meaningful and decent sized updates almost daily for a while (including multiple features a day), and honestly I don't…",
    "id": "d7e60ef92856",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
+   "why": "0"
   },
   {
    "title": "Bill Maher VISIBLY NERVOUS as Trump Dinner GOES PUBLIC!",
@@ -1039,9 +1088,9 @@
    "summary": "Luke discusses Bill Maher recounting his dinner with Trump. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
    "thumb": "https://i2.ytimg.com/vi/UvRW3Z4CCBQ/hqdefault.jpg",
    "id": "e9b5a2b0089a",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
+   "why": "0"
   },
   {
    "title": "Exit polls say Netanyahu retains largest party | Israel elections",
@@ -1057,9 +1106,9 @@
    "summary": "Exit polls in the Israeli general election have suggested that prime minister Benjamin Netanyahu could be ousted - as his right-wing bloc appears set to gain fewer seats than its centre-right rival. Despite this, Mr Netanyahu's Likud party is still set to be the largest single…",
    "thumb": "https://i4.ytimg.com/vi/_kj_mpWV11c/hqdefault.jpg",
    "id": "8a2a93acc5fc",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
+   "why": "0"
   },
   {
    "title": "AI and Hard Lines Product Development / Management",
@@ -1073,25 +1122,9 @@
    "published": "2026-10-27T22:15:48.000Z",
    "summary": "Any hard goods cpg product managers who have found some good resources on leveraging AI in your daily work? submitted by /u/MarshalJedCooper [link] [comments]",
    "id": "5dcd5a905bac",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "If PMs can do their own analysis with AI, does the data team just become infra?",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1xh5q98/if_pms_can_do_their_own_analysis_with_ai_does_the/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-10-27T21:42:01.000Z",
-   "summary": "I built a prototype for analysis with AI against a local DuckDB file I set up. The tables, views and macros are heavily commented, and there's a simple way for the agent to explore the db a piece at a time, the same way it would look over a big codebase. Duckdb runs efficiently…",
-   "id": "e89a01b9e35e",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
+   "why": "0"
   },
   {
    "title": "DAMN: MAGA Hosts GO SILENT as Co-Host EMBARRASSES TRUMP On Air!",
@@ -1281,24 +1314,6 @@
    "summary": "More Americans are struggling to afford basic food essentials than ever before. But are food prices high enough? Our In The Know panel debates. Become an Onion member while it's still optional: https://membership.theonion.com/?campaign=701a500001geULHAA2 Powered By Forge…",
    "thumb": "https://i1.ytimg.com/vi/LtvPbNf7dPM/hqdefault.jpg",
    "id": "4216268533b0",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Republican candidate in chaos as he's dropped by allies over attack ad",
-   "url": "https://www.youtube.com/watch?v=GrXqlnBLG94",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-27T16:05:39.000Z",
-   "summary": "Lewis Goodall joins Shelagh Fogarty to react to the rape allegations aimed at Trump by former Miss Switzerland Beatrice Keul. Lewis also reacts to the Republican attack ad against the Democrat's Ohio candidate Dr Amy Acton. The campaign video featured Dr Acton's estranged…",
-   "thumb": "https://i4.ytimg.com/vi/GrXqlnBLG94/hqdefault.jpg",
-   "id": "33aed4eeff52",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2072,23 +2087,6 @@
    "why": "0"
   },
   {
-   "title": "Undercover Cop Reveals the Dark Side Of Policing & Why He Regrets It",
-   "url": "https://www.youtube.com/watch?v=0oV6mRywoVE",
-   "source": "PoliticsJOE",
-   "feedId": "yt-politicsjoe",
-   "type": "video",
-   "tags": [
-    "comedy"
-   ],
-   "published": "2026-10-22T14:00:07.000Z",
-   "summary": "How does undercover policing really work, and what happens when the people tasked with fighting crime begin to question the system they're working for? For our Systemic series, we sat down with Neil Woods, a former undercover drug police officer, to get a first hand account of…",
-   "thumb": "https://i1.ytimg.com/vi/0oV6mRywoVE/hqdefault.jpg",
-   "id": "2b6f7a0c17ab",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "The Conservative Comeback Explained",
    "url": "https://www.youtube.com/watch?v=pnf571lKVmk",
    "source": "TLDR News",
@@ -2761,5 +2759,5 @@
    "why": "0"
   }
  ],
- "contentHash": "cc1826fcde84"
+ "contentHash": "3fac7f18ffb2"
 }
