@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-28T19:10:04.808Z",
+ "generated": "2026-10-28T21:56:34.903Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
@@ -630,10 +630,9 @@
    "id": "rd-productmanagement",
    "name": "r/productmanagement",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-10-28T13:18:00.591Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/productmanagement/top/.rss?t=day"
   },
   {
    "id": "rd-tech",
@@ -642,7 +641,7 @@
    "status": "cached",
    "count": 1,
    "lastOk": "2026-10-27T01:08:56.460Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)"
   },
   {
    "id": "rd-gaming",
@@ -651,7 +650,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-ukpolitics",
@@ -684,20 +683,19 @@
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
+   "lastOk": "2026-10-28T19:10:04.808Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-germany",
    "name": "r/germany",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": "2026-10-15T00:59:57.533Z",
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-unitedkingdom",
@@ -706,10 +704,137 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   }
  ],
  "items": [
+  {
+   "title": "tagesthemen 21:35 Uhr, 28.10.2026",
+   "url": "https://www.youtube.com/watch?v=OIHiEUxdn1Q",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-28T21:02:43.000Z",
+   "summary": "tagesthemen 21:35 Uhr Zugkollision in Spanien: Aktuelle Informationen und Hintergründe, Nach der Wahl in Israel: Wer wird neuer Premierminister?, Wer folgt auf Bundespräsident Steinmeier? Debatte um Nachfolgeregelung, Weitere Nachrichten im Überblick https://www.tagesschau.de",
+   "thumb": "https://i4.ytimg.com/vi/OIHiEUxdn1Q/hqdefault.jpg",
+   "id": "c3f6745e703c",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "What did the budget ever do for us? | James O’Brien - The Whole Show",
+   "url": "https://www.youtube.com/watch?v=VitUibSAcIQ",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-28T21:00:10.000Z",
+   "summary": "This is a catch-up version of James O'Brien's live, daily show on LBC Radio from the 28th of October 2026. Listen to the full show on the all-new LBC App: https://app.af.lbc.co.uk/btnc/thenewlbcapp #jamesobrien #politics #LBC LBC is the home of live debate around news and…",
+   "thumb": "https://i3.ytimg.com/vi/VitUibSAcIQ/hqdefault.jpg",
+   "id": "ff2f75496fdf",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "OH SH*T: Piers Morgan HUMILIATES MAGA Star for 10 MINUTES STRAIGHT!",
+   "url": "https://www.youtube.com/watch?v=1gBa_wzbAnw",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-28T20:33:13.000Z",
+   "summary": "Luke discusses Liz Wheeler's disasterpus appearance on Piers Morgan's show. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
+   "thumb": "https://i2.ytimg.com/vi/1gBa_wzbAnw/hqdefault.jpg",
+   "id": "6560c13f8942",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Farage skips Budget following 'physical altercation' with MP",
+   "url": "https://www.youtube.com/watch?v=EzM3V99GRu0",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-28T19:40:22.000Z",
+   "summary": "In Reform UK's response to the Budget, Nigel Farage claimed a 'physical altercation' with a Lib Dem MP at the King's Speech in May deterred him from appearing in the Commons today. Tom Swarbrick quizzes Reform MP Robert Jenrick over the alleged altercation. Listen to the full…",
+   "thumb": "https://i2.ytimg.com/vi/EzM3V99GRu0/hqdefault.jpg",
+   "id": "f59a710412d7",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "tagesschau 20:00 Uhr, 28.10.2026",
+   "url": "https://www.youtube.com/watch?v=QwGuhdnFPyo",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-28T19:37:05.000Z",
+   "summary": "tagesschau 20:00 Uhr Mindestens 68 Tote nach Zugunglück in Spanien, Keine klaren Mehrheiten bei Parlamentswahl in Israel, Bundeskanzler Merz besucht auf seiner Asienreise Japan, Zweitägiger Russland-Afrika-Gipfel in Moskau, Elterngeld soll weiterhin für 14 Monate ausbezahlt…",
+   "thumb": "https://i2.ytimg.com/vi/QwGuhdnFPyo/hqdefault.jpg",
+   "id": "db8cc517dd33",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "How to handle stressful GPM dynamic",
+   "url": "https://www.reddit.com/r/ProductManagement/comments/1xhy4eg/how_to_handle_stressful_gpm_dynamic/",
+   "source": "r/productmanagement",
+   "feedId": "rd-productmanagement",
+   "type": "post",
+   "tags": [
+    "product"
+   ],
+   "published": "2026-10-28T19:34:53.000Z",
+   "summary": "I'm a new PM (~6 months) leading a new product area. I have solid business requirements in place and the team has started work for new features based off PRDs and designs, etc etc. But I'm concerned about the dynamic with my manager and frequently changing requirements. I…",
+   "id": "5c41fb1d5056",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Wie kam es zur Katastrophe bei Urda? ARD-Journalist mit den neuesten Erkenntnissen",
+   "url": "https://www.youtube.com/watch?v=N00if4Ln6IQ",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-28T19:24:58.000Z",
+   "summary": "Die Zahl der Toten nach dem schweren Zugunglück in Spanien ist auf 68 gestiegen. Ein Hochgeschwindigkeitszug war am Morgen auf einen stehenden Zug aufgefahren – laut ersten Ermittlungen vermutlich wegen einer falschen Ansage der Leitstelle. Mehr zum Thema:…",
+   "thumb": "https://i3.ytimg.com/vi/N00if4Ln6IQ/hqdefault.jpg",
+   "id": "5975b9f1efea",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
   {
    "title": "10 Grindy Games So Addictive You'll LOSE Track of Time",
    "url": "https://www.youtube.com/watch?v=-5aMjaivw4w",
@@ -910,39 +1035,17 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "tagesschau in Einfacher Sprache 19:00 Uhr, 28.10.2026",
-   "url": "https://www.youtube.com/watch?v=JOu49x4Jej4",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
+   "title": "Is it better to connect chatgpt/claude to your product data or use the AI built into your analytics tool?",
+   "url": "https://www.reddit.com/r/ProductManagement/comments/1xht9om/is_it_better_to_connect_chatgptclaude_to_your/",
+   "source": "r/productmanagement",
+   "feedId": "rd-productmanagement",
+   "type": "post",
    "tags": [
-    "german",
-    "news",
-    "listen"
+    "product"
    ],
-   "published": "2026-10-28T16:49:45.000Z",
-   "summary": "tagesschau in Einfacher Sprache 19:00 Uhr Spanien: Viele Tote bei Unfall mit Zügen, Kein klarer Gewinner nach Wahlen in Israel, Regierung: Pläne zur Unterstützung für Eltern, Brasilien: Wahlverlierer verlässt das Land, Das Wetter Die \"tagesschau in Einfacher Sprache\" – immer…",
-   "thumb": "https://i3.ytimg.com/vi/JOu49x4Jej4/hqdefault.jpg",
-   "id": "986fa5004e9d",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Elterngeldreform: Bundesregierung überarbeitet Sparpläne",
-   "url": "https://www.youtube.com/watch?v=_cn6u5kOZvY",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-28T16:49:08.000Z",
-   "summary": "Bundesfamilienministerin Karin Prien will das Elterngeld umbauen, rückt aber von der ursprünglich geplanten Verkürzung der Bezugsdauer von 14 auf 12 Monate ab. Stattdessen soll es für kürzere Elternpausen mehr Geld geben. Wer dagegen länger beruflich aussetzt, bekommt vom Staat…",
-   "thumb": "https://i4.ytimg.com/vi/_cn6u5kOZvY/hqdefault.jpg",
-   "id": "5dc4d610fcf5",
+   "published": "2026-10-28T16:42:11.000Z",
+   "summary": "I want to use AI for analytics but idk what the right way looks like. I’ve seen some people connect claude/chatgpt to their product data or instead use the AI that’s built into analytics tool, but which is the better option if the goal is understanding why users aren't using a…",
+   "id": "2744d2f0570b",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1030,25 +1133,6 @@
    "published": "2026-10-28T15:40:44.000Z",
    "summary": "submitted by /u/paneuropeanism_ [link] [comments]",
    "id": "813aadefcca0",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "„Vorläufiges Ergebnis zeigt, wie gespalten Israel ist\" – ARD-Journalistin zur Knesset-Wahl",
-   "url": "https://www.youtube.com/watch?v=XrxRzqaHa4s",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-28T15:27:12.000Z",
-   "summary": "In Israel haben die Menschen ein neues Parlament gewählt. Die Wahlbeteiligung war mit 77,7 Prozent die höchste seit Jahrzehnten. Teilergebnissen zufolge liegt das Regierungslager von Ministerpräsident Benjamin Netanjahu vor dem Oppositionsbündnis seines Rivalen Gadi Eisenkot -…",
-   "thumb": "https://i1.ytimg.com/vi/XrxRzqaHa4s/hqdefault.jpg",
-   "id": "69a4f926005a",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1203,24 +1287,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "'A politically short-term Budget' | Instant reaction",
-   "url": "https://www.youtube.com/watch?v=KY5Gf9B0lQU",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-28T14:07:45.000Z",
-   "summary": "Shelagh Fogarty is joined by LBC's political editor Natasha Clark and money expert's Gabriel Nussbaum and Sir Howard Davies to share their instant reaction to John Healey's first Budget. The Chancellor said the Budget would be for the \"working people of Britain, for British…",
-   "thumb": "https://i4.ytimg.com/vi/KY5Gf9B0lQU/hqdefault.jpg",
-   "id": "0c7347167a4c",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Israeli Election Day",
    "url": "https://www.youtube.com/watch?v=YcpC3-59yhE",
    "source": "Channel 5 with Andrew Callaghan",
@@ -1325,24 +1391,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "'She's in a bit of a pickle' | PMQs analysed",
-   "url": "https://www.youtube.com/watch?v=4pe2ljzu34I",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-28T12:48:30.000Z",
-   "summary": "LBC's political editor Natasha Clark joins James O'Brien to analyse Andy Burnham and Kemi Badenoch’s performance at today's PMQs. Listen to the full show on the all-new LBC App: https://app.af.lbc.co.uk/btnc/thenewlbcapp #jamesobrien #natashclark #pmqs #burnham #badenoch…",
-   "thumb": "https://i1.ytimg.com/vi/4pe2ljzu34I/hqdefault.jpg",
-   "id": "639869c995dc",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "HIGHLIGHTS: Andy Burnham HAMMERS Kemi Badenoch over Brexit failings at PMQs",
    "url": "https://www.youtube.com/watch?v=IsdjbwZzMYw",
    "source": "PoliticsJOE",
@@ -1371,9 +1419,9 @@
    "published": "2026-10-28T03:35:16.000Z",
    "summary": "Oh my gosh. I can't count how many times there is criticism on PRDs generated from AI. it's almost like folks don't want to trust it unless they wrote it but then don't want to write it because they want AI to write it. submitted by /u/Mobile-Influence-371 [link] [comments]",
    "id": "e603d598c8ea",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
+   "why": "0"
   },
   {
    "title": "OMG: She Went On Stage at Trump Rally, INSTANTLY HUMILIATING!",
@@ -1461,22 +1509,6 @@
    "why": "0"
   },
   {
-   "title": "Let's talk about Claude Code as a product",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1xh760r/lets_talk_about_claude_code_as_a_product/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-10-27T22:39:51.000Z",
-   "summary": "CC has been one of the best products I've used in the past few years. I am talking about the harness and TUI, not the Claude models. They have been shipping meaningful and decent sized updates almost daily for a while (including multiple features a day), and honestly I don't…",
-   "id": "d7e60ef92856",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "Bill Maher VISIBLY NERVOUS as Trump Dinner GOES PUBLIC!",
    "url": "https://www.youtube.com/watch?v=UvRW3Z4CCBQ",
    "source": "Luke Beasley",
@@ -1490,22 +1522,6 @@
    "summary": "Luke discusses Bill Maher recounting his dinner with Trump. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
    "thumb": "https://i2.ytimg.com/vi/UvRW3Z4CCBQ/hqdefault.jpg",
    "id": "e9b5a2b0089a",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "AI and Hard Lines Product Development / Management",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1xh6ky5/ai_and_hard_lines_product_development_management/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-10-27T22:15:48.000Z",
-   "summary": "Any hard goods cpg product managers who have found some good resources on leveraging AI in your daily work? submitted by /u/MarshalJedCooper [link] [comments]",
-   "id": "5dcd5a905bac",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1610,24 +1626,6 @@
    "summary": "Norman Finkelstein is the world's foremost expert on the history and politics of Israel and Gaza. He joined us in studio to discuss his new book Gaza's Gravediggers. Professor Finkelstein breaks down how the international community has failed the people of Gaza, particularly…",
    "thumb": "https://i3.ytimg.com/vi/r0qpbAT2AiY/hqdefault.jpg",
    "id": "38d07199e5e5",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Watch MELANIA’S FACE as Visibly ILL TRUMP Sounds LIKE HELL!",
-   "url": "https://www.youtube.com/watch?v=2yemoR4cEZw",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-27T13:00:33.000Z",
-   "summary": "Luke discusses Trump's latest gaggle with the press in Florida. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
-   "thumb": "https://i3.ytimg.com/vi/2yemoR4cEZw/hqdefault.jpg",
-   "id": "41b2efbde96f",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2897,5 +2895,5 @@
    "why": "0"
   }
  ],
- "contentHash": "ce41ac3003e4"
+ "contentHash": "9c04c2dd5cc9"
 }
