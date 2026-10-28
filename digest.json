@@ -1,17 +1,17 @@
 {
- "generated": "2026-10-28T16:07:55.180Z",
+ "generated": "2026-10-28T19:10:04.808Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
   "ok": 52,
-  "items": 120,
-  "duplicatesMerged": 1,
+  "items": 123,
+  "duplicatesMerged": 0,
   "lengthsKnown": 1,
-  "lengthLookups": 98,
-  "lengthFailures": 98,
+  "lengthLookups": 101,
+  "lengthFailures": 101,
   "lengthVia": "video pages",
   "lengthFailReasons": {
-   "no length on page": 98
+   "no length on page": 101
   }
  },
  "feeds": [
@@ -59,7 +59,7 @@
    "name": "Chris Spargo",
    "type": "youtube",
    "status": "ok",
-   "count": 0,
+   "count": 1,
    "resolved": {
     "channelId": "UCTzkxNEnbdvbBlgYl_W9daw",
     "title": "Chris Spargo",
@@ -176,7 +176,7 @@
    "name": "Half as Interesting",
    "type": "youtube",
    "status": "ok",
-   "count": 2,
+   "count": 1,
    "resolved": {
     "channelId": "UCuCkxoKLYO_EQ2GeFtbM_bw",
     "title": "Half as Interesting",
@@ -189,7 +189,7 @@
    "name": "ColdFusion",
    "type": "youtube",
    "status": "ok",
-   "count": 1,
+   "count": 2,
    "resolved": {
     "channelId": "UC4QZ_LsYcvcq7qOsOhpAX4A",
     "title": "ColdFusion",
@@ -605,7 +605,7 @@
    "name": "J.J. McCullough",
    "type": "youtube",
    "status": "ok",
-   "count": 1,
+   "count": 2,
    "resolved": {
     "channelId": "UCyhOl6uRlxryALlT5yifldw",
     "title": "J.J. McCullough",
@@ -657,46 +657,47 @@
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
+   "lastOk": "2026-10-28T16:07:55.180Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-xbox",
    "name": "r/xbox",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/xbox/top/.rss?t=day"
+   "lastOk": "2026-10-28T16:07:55.180Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-slaythespire",
    "name": "r/slaythespire",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-10-28T10:05:17.540Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
   },
   {
    "id": "rd-germany",
    "name": "r/germany",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": "2026-10-15T00:59:57.533Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-unitedkingdom",
@@ -705,10 +706,281 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   }
  ],
  "items": [
+  {
+   "title": "10 Grindy Games So Addictive You'll LOSE Track of Time",
+   "url": "https://www.youtube.com/watch?v=-5aMjaivw4w",
+   "source": "GameRanx",
+   "feedId": "yt-gameranx",
+   "type": "video",
+   "tags": [
+    "gaming"
+   ],
+   "published": "2026-10-28T18:17:08.000Z",
+   "summary": "If you're looking for a big ol' game to grind in (and are avoiding microtransactions) we've got you covered with these traditional games. Subscribe for more: https://www.youtube.com/gameranxTV?sub_confirmation=1 0:00 Intro 0:52 Monster Hunter Series 3:31 Diablo 2: Resurrected…",
+   "thumb": "https://i2.ytimg.com/vi/-5aMjaivw4w/hqdefault.jpg",
+   "id": "1208feacb187",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "a TON of stuff happened in Canadian politics this month",
+   "url": "https://www.youtube.com/watch?v=wjkUoyUWlZs",
+   "source": "J.J. McCullough",
+   "feedId": "yt-j-j-mccullough",
+   "type": "video",
+   "tags": [
+    "politics",
+    "culture",
+    "entertainment"
+   ],
+   "published": "2026-10-28T18:00:59.000Z",
+   "summary": "Everything that happened in Canadian politics in October of 2026. Get your official JJ McCullough collection t-shirt here! https://www.lmxunlimited.ltd/jj SUBSCRIBE: https://www.youtube.com/jjmccullough?sub_confirmation=1 FOLLOW ME: ✋🏻 Support me on PATREON!…",
+   "thumb": "https://i4.ytimg.com/vi/wjkUoyUWlZs/hqdefault.jpg",
+   "id": "9b35a3a5a803",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Kanzler Merz in Japan: Warum beide Länder jetzt zusammenhalten müssen",
+   "url": "https://www.youtube.com/watch?v=7Kv4K8zw8V8",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-28T17:50:12.000Z",
+   "summary": "Auf dem zweiten Teil seiner Asienreise traf Merz mit Ministerpräsidentin Sanae Takaichi zusammen. Beim Treffen der Regierungen der dritt- und viertgrößten Volkswirtschaften der Welt bezeichnete Merz Japan trotz der geografischen Entfernung dabei als \"Nachbarn\" und Wertepartner.…",
+   "thumb": "https://i4.ytimg.com/vi/7Kv4K8zw8V8/hqdefault.jpg",
+   "id": "4c56e05cf094",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Going Deep on Andy Burnham's First Budget",
+   "url": "https://www.youtube.com/watch?v=Si7oy75EfVo",
+   "source": "PoliticsJOE",
+   "feedId": "yt-politicsjoe",
+   "type": "video",
+   "tags": [
+    "comedy"
+   ],
+   "published": "2026-10-28T17:49:07.000Z",
+   "summary": "Skip to 9:20 if you want straight economy chat. Andy Burnham's Chancellor John Healey gave his first budget, and the first of Andy Burnham's reign as Prime Minister. Ava and Seán headed into the content dungeon to chew the fat. Like PoliticsJOE? We need your support:…",
+   "thumb": "https://i4.ytimg.com/vi/Si7oy75EfVo/hqdefault.jpg",
+   "id": "767aabe2176f",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "'Why no help for landlords?' LBC callers react to the budget",
+   "url": "https://www.youtube.com/watch?v=01TUQ7pyuvg",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-28T17:39:29.000Z",
+   "summary": "Chancellor John Healey has delivered Andy Burnham's first Autumn Budget, and the country is still digesting the news. Shelagh Fogarty hears from LBC's callers. 00:00 | Robert, a pensioner, wants everything to be means tested. 03:00 | Andy, thinks he and his fellow landlords…",
+   "thumb": "https://i1.ytimg.com/vi/01TUQ7pyuvg/hqdefault.jpg",
+   "id": "0dad0be3471b",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Off the Reservation | Toonout [Animated Shorts]",
+   "url": "https://www.youtube.com/watch?v=hj11xxbyJW4",
+   "source": "Dropout",
+   "feedId": "yt-dropout",
+   "type": "video",
+   "tags": [
+    "comedy"
+   ],
+   "published": "2026-10-28T17:30:18.000Z",
+   "summary": "A group of Native teens decides to make their ancestors proud the only way they know how. To watch more episode of Toonout and other animated series, sign up for Dropout: https://www.dropout.tv/plans Welcome to the Dropout channel! You can support us by signing up for…",
+   "thumb": "https://i1.ytimg.com/vi/hj11xxbyJW4/hqdefault.jpg",
+   "id": "d1730d89b79f",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Präsident Putin teilt auf dem Russland-Afrika-Gipfel in Moskau gegen ehemalige Kolonialmächte aus",
+   "url": "https://www.youtube.com/watch?v=9l9APi09n4Q",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-28T17:18:13.000Z",
+   "summary": "In Moskau findet zum dritten Mal ein Russland-Afrika-Gipfel statt. Damit versucht Präsident Wladimir Putin, den Einfluss seines Landes auf dem südlichen Kontinent zu vergrößern. Bei dem Treffen sind 48 afrikanische Staaten vertreten, 22 davon durch ihre Regierungschefs.…",
+   "thumb": "https://i2.ytimg.com/vi/9l9APi09n4Q/hqdefault.jpg",
+   "id": "2aece7a2b273",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Why Everyone Stopped Buying GoPro",
+   "url": "https://www.youtube.com/watch?v=25ckBnzay8Y",
+   "source": "ColdFusion",
+   "feedId": "yt-coldfusion",
+   "type": "video",
+   "tags": [
+    "finance",
+    "tech",
+    "listen"
+   ],
+   "published": "2026-10-28T17:10:33.000Z",
+   "summary": "Try Wispr Flow for free: https://ref.wisprflow.ai/coldfusion-yt-v03 and use code COLDFUSION to get 1 month of Wispr Flow Pro with unlimited words! At one stage, GoPro's CEO Nick Woodman, was the highest paid CEO in the US, but the company is no longer what it once was. In this…",
+   "thumb": "https://i3.ytimg.com/vi/25ckBnzay8Y/hqdefault.jpg",
+   "id": "121b77edfe70",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "MISSISSIPPI TRUMP RALLY",
+   "url": "https://www.youtube.com/watch?v=kog1j3uG3o0",
+   "source": "The Good Liars",
+   "feedId": "yt-the-good-liars",
+   "type": "video",
+   "tags": [
+    "comedy",
+    "politics",
+    "debates"
+   ],
+   "published": "2026-10-28T17:00:39.000Z",
+   "summary": "The Good Liars visit Mississippi for the first time and talk to Trump Supporters eager to get into the rally to see Donald Trump speak https://linktr.ee/thegoodliars",
+   "thumb": "https://i4.ytimg.com/vi/kog1j3uG3o0/hqdefault.jpg",
+   "id": "04c4b0090437",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "This building is legally required to let you in*",
+   "url": "https://www.youtube.com/watch?v=pTq51r85KkM",
+   "source": "Chris Spargo",
+   "feedId": "yt-chris-spargo",
+   "type": "video",
+   "tags": [
+    "british",
+    "education"
+   ],
+   "published": "2026-10-28T17:00:11.000Z",
+   "summary": "Find out more about Synology: https://sy.to/h2luk @osullivanluke @CityEd. Patreon: https://www.patreon.com/c/ChrisSpargo Ko-fi: https://ko-fi.com/chrisspargo Edited by @JoeDanHirst and me Background music is @JarrahTarrah \"First Period\" https://www.youtube.com/watch?v=q6p6sx4v7D0",
+   "thumb": "https://i1.ytimg.com/vi/pTq51r85KkM/hqdefault.jpg",
+   "id": "28f7e29ca14f",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "The World Forgot How Gangster China Really Is...",
+   "url": "https://www.youtube.com/watch?v=k0LXEEviIL0",
+   "source": "Aberrant preach",
+   "feedId": "yt-aberrant-preach",
+   "type": "video",
+   "tags": [
+    "trash"
+   ],
+   "published": "2026-10-28T16:56:18.000Z",
+   "summary": "Kylian Mbappé set the spanish football league LaLiga ablaze after expressing how funny he found some of his depictions as Mao Zedong, resulting in China blocking all broadcast of LaLiga and any ads relevants to him. ———————————— Spotify:…",
+   "thumb": "https://i4.ytimg.com/vi/k0LXEEviIL0/hqdefault.jpg",
+   "id": "ec77c89509d5",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "tagesschau in Einfacher Sprache 19:00 Uhr, 28.10.2026",
+   "url": "https://www.youtube.com/watch?v=JOu49x4Jej4",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-28T16:49:45.000Z",
+   "summary": "tagesschau in Einfacher Sprache 19:00 Uhr Spanien: Viele Tote bei Unfall mit Zügen, Kein klarer Gewinner nach Wahlen in Israel, Regierung: Pläne zur Unterstützung für Eltern, Brasilien: Wahlverlierer verlässt das Land, Das Wetter Die \"tagesschau in Einfacher Sprache\" – immer…",
+   "thumb": "https://i3.ytimg.com/vi/JOu49x4Jej4/hqdefault.jpg",
+   "id": "986fa5004e9d",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Elterngeldreform: Bundesregierung überarbeitet Sparpläne",
+   "url": "https://www.youtube.com/watch?v=_cn6u5kOZvY",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-28T16:49:08.000Z",
+   "summary": "Bundesfamilienministerin Karin Prien will das Elterngeld umbauen, rückt aber von der ursprünglich geplanten Verkürzung der Bezugsdauer von 14 auf 12 Monate ab. Stattdessen soll es für kürzere Elternpausen mehr Geld geben. Wer dagegen länger beruflich aussetzt, bekommt vom Staat…",
+   "thumb": "https://i4.ytimg.com/vi/_cn6u5kOZvY/hqdefault.jpg",
+   "id": "5dc4d610fcf5",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Hell will freeze over before Havana gives in to Trump. But regular Cubans don’t have that long",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xht875/hell_will_freeze_over_before_havana_gives_in_to/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-28T16:40:40.000Z",
+   "summary": "submitted by /u/cnn [link] [comments]",
+   "id": "a7629c2692b8",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Cormac Lucey: The chaos in France is a warning for Europe",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xhs48a/cormac_lucey_the_chaos_in_france_is_a_warning_for/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-28T16:01:18.000Z",
+   "summary": "submitted by /u/TimesandSundayTimes [link] [comments]",
+   "id": "4c4c266f03d3",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
   {
    "title": "'Well-targeted measures': Andrew Marr's expert analysis of the Budget",
    "url": "https://www.youtube.com/watch?v=WGnqrVUO20M",
@@ -746,20 +1018,18 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Patt nach Wahl in Israel: Was das für den Nahen Osten bedeutet",
-   "url": "https://www.youtube.com/watch?v=l8XPsksiOSo",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
+   "title": "Gabriel Attal: \"It is the responsibility of my generation to create the United States of Europe\"",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xhrjoy/gabriel_attal_it_is_the_responsibility_of_my/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
    "tags": [
-    "german",
-    "news",
-    "listen"
+    "politics",
+    "news"
    ],
-   "published": "2026-10-28T15:31:12.000Z",
-   "summary": "Die Menschen in Israel haben ein neues Parlament gewählt. Doch am Tag danach zeigt sich: Eindeutige Wahlsieger gibt es nicht. Teilauszählungen zufolge liegt das Regierungslager von Langzeit-Premierminister Benjamin Netanjahu vor dem Oppositionsbündnis seines Rivalen Gadi…",
-   "thumb": "https://i1.ytimg.com/vi/l8XPsksiOSo/hqdefault.jpg",
-   "id": "b08e03c2ff57",
+   "published": "2026-10-28T15:40:44.000Z",
+   "summary": "submitted by /u/paneuropeanism_ [link] [comments]",
+   "id": "813aadefcca0",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -800,25 +1070,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Zugunglück in Spanien: „Ganz Spanien leidet mit den Menschen“ – ARD-Reporter ist vor Ort",
-   "url": "https://www.youtube.com/watch?v=Ic4UicmPils",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-28T15:21:17.000Z",
-   "summary": "Beim Zusammenstoß zweier Züge in Spanien ist die Zahl der Toten auf mindestens 68 gestiegen. Mehrere Waggons sollen entgleist sein. Die Strecke zwischen der Hauptstadt Madrid und der südlichen Region Andalusien wurde gesperrt. In Spanien hat es bei einem Zugunglück viele Tote…",
-   "thumb": "https://i2.ytimg.com/vi/Ic4UicmPils/hqdefault.jpg",
-   "id": "da633f63ac2a",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Series X sold out since day 1.",
    "url": "https://www.reddit.com/r/xbox/comments/1xhqv2s/series_x_sold_out_since_day_1/",
    "source": "r/xbox",
@@ -830,25 +1081,6 @@
    "published": "2026-10-28T15:16:05.000Z",
    "summary": "I’ve been looking for a series X console pretty much since release, say 5 to 6 years but everywhere I look in Canada they have been sold out. I’ve checked all the typical stores: EB games, Costco, Walmart, Best Buy, Staples, Amazon, etc and none of them have had the console for…",
    "id": "dd958ee36982",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "„Viele hoffen, dass der neue Premier nicht der alte sein wird“: ARD-Reporter berichtet aus Kairo",
-   "url": "https://www.youtube.com/watch?v=bJOGzJvhCaU",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-28T15:14:50.000Z",
-   "summary": "Die Menschen in Israel haben ein neues Parlament gewählt. Doch am Tag danach zeigt sich: Eindeutige Wahlsieger gibt es nicht. Teilauszählungen zufolge liegt das Regierungslager von Langzeit-Premierminister Benjamin Netanjahu vor dem Oppositionsbündnis seines Rivalen Gadi…",
-   "thumb": "https://i3.ytimg.com/vi/bJOGzJvhCaU/hqdefault.jpg",
-   "id": "8983a2ce6b02",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -870,7 +1102,7 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Lewis Goodall reacts to John Healey's 'unspectacular' Budget",
+   "title": "'It looks pretty dire': Lewis Goodall reacts to the Budget",
    "url": "https://www.youtube.com/watch?v=nRo_3WjDyTk",
    "source": "LBC",
    "feedId": "yt-lbc",
@@ -883,6 +1115,23 @@
    "summary": "Lewis Goodall joins Shelagh Fogarty and Natasha Clark to share his thoughts about the 'unspectacular' Budget. In a move to tackle the cost of living crisis, the Chancellor announced an increase to the minimum wage and also announced a drop in tax for everyday \"essentials\" such…",
    "thumb": "https://i3.ytimg.com/vi/nRo_3WjDyTk/hqdefault.jpg",
    "id": "be53695be635",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Ukraine: Time to End the War",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xhq9ar/ukraine_time_to_end_the_war/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-28T14:53:47.000Z",
+   "summary": "submitted by /u/thenationmagazine [link] [comments]",
+   "id": "5d75ae66b4e0",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1008,6 +1257,23 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
+   "title": "Flavio Bolsonaro lands in US after fleeing Brazil following election defeat",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xhoq35/flavio_bolsonaro_lands_in_us_after_fleeing_brazil/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-28T13:54:45.000Z",
+   "summary": "submitted by /u/cnn [link] [comments]",
+   "id": "2162ba76ba8e",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
    "title": "Workers should be able to know colleagues' salaries, rights body says",
    "url": "https://www.reddit.com/r/ukpolitics/comments/1xho45e/workers_should_be_able_to_know_colleagues/",
    "source": "r/ukpolitics",
@@ -1094,74 +1360,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "EU safeguards against ‘Trojan horses’ will ‘bite hard’: Commissioner Kos",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xhj973/eu_safeguards_against_trojan_horses_will_bite/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-28T09:20:13.000Z",
-   "summary": "Enlargement Commissioner Marta Kos also told TVP World that the victory of a student movement in Serbia's parliamentary elections could be \"a new start\" for the country in its efforts to join the EU. Kos said the EU had introduced the safeguards in light of its experience with…",
-   "id": "e68747367b9a",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Iranian officials weigh diplomacy and military pressure over Strait of Hormuz as Tehran pursues regional talks",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xhj11x/iranian_officials_weigh_diplomacy_and_military/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-28T09:06:26.000Z",
-   "summary": "submitted by /u/Beginning-Wish-4273 [link] [comments]",
-   "id": "7320d0c6572e",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Spain accuses Trump ally Milei of ‘disgraceful’ election interference",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xhiy8y/spain_accuses_trump_ally_milei_of_disgraceful/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-28T09:01:36.000Z",
-   "summary": "submitted by /u/diwalibonus [link] [comments]",
-   "id": "fe3a27751a38",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "US warns Gulf states of possible renewed Iran offensive after midterms – report",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xhiwcp/us_warns_gulf_states_of_possible_renewed_iran/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-28T08:58:32.000Z",
-   "summary": "submitted by /u/diwalibonus [link] [comments]",
-   "id": "a3b4d8c26453",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Anyone else having AI dissonance between Engineering and Product on PRDs generated by AI for Agentic SDLC",
    "url": "https://www.reddit.com/r/ProductManagement/comments/1xhdli4/anyone_else_having_ai_dissonance_between/",
    "source": "r/productmanagement",
@@ -1173,23 +1371,6 @@
    "published": "2026-10-28T03:35:16.000Z",
    "summary": "Oh my gosh. I can't count how many times there is criticism on PRDs generated from AI. it's almost like folks don't want to trust it unless they wrote it but then don't want to write it because they want AI to write it. submitted by /u/Mobile-Influence-371 [link] [comments]",
    "id": "e603d598c8ea",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "We Went to Cuba to See How the Fuel Crisis Is Forcing Havana to Open Its Economy",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xh7mnq/we_went_to_cuba_to_see_how_the_fuel_crisis_is/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-27T22:59:41.000Z",
-   "summary": "submitted by /u/Unfair-Ticket9474 [link] [comments]",
-   "id": "ff0aa6676b35",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1309,24 +1490,6 @@
    "summary": "Luke discusses Bill Maher recounting his dinner with Trump. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
    "thumb": "https://i2.ytimg.com/vi/UvRW3Z4CCBQ/hqdefault.jpg",
    "id": "e9b5a2b0089a",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Exit polls say Netanyahu retains largest party | Israel elections",
-   "url": "https://www.youtube.com/watch?v=_kj_mpWV11c",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-27T22:15:54.000Z",
-   "summary": "Exit polls in the Israeli general election have suggested that prime minister Benjamin Netanyahu could be ousted - as his right-wing bloc appears set to gain fewer seats than its centre-right rival. Despite this, Mr Netanyahu's Likud party is still set to be the largest single…",
-   "thumb": "https://i4.ytimg.com/vi/_kj_mpWV11c/hqdefault.jpg",
-   "id": "8a2a93acc5fc",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1810,23 +1973,6 @@
    "why": "0"
   },
   {
-   "title": "20 Upcoming Games WE'RE WORRIED ABOUT",
-   "url": "https://www.youtube.com/watch?v=E4-tQqZFm3Y",
-   "source": "GameRanx",
-   "feedId": "yt-gameranx",
-   "type": "video",
-   "tags": [
-    "gaming"
-   ],
-   "published": "2026-10-24T16:21:36.000Z",
-   "summary": "Sometimes a game is announced...and things happen. Subscribe for more: https://www.youtube.com/gameranxTV?sub_confirmation=1 0:00 Intro 0:20 Marvel's Blade 3:14 Star Wars: Knights of the Old Republic Remake 5:21 Kingmakers 6:39 DokeV 8:46 Judas 11:06 Deus Ex Remastered 12:42…",
-   "thumb": "https://i2.ytimg.com/vi/E4-tQqZFm3Y/hqdefault.jpg",
-   "id": "451ff2cdfbab",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "This Veteran Created Energy Bars for Dogs on the Go | Shark Tank US | Shark Tank Global",
    "url": "https://www.youtube.com/watch?v=FvHuTl2p_wA",
    "source": "Shark Tank Global",
@@ -2037,26 +2183,9 @@
     "business"
    ],
    "published": "2026-10-23T15:59:47.000Z",
-   "summary": "TV|Compilation|SharkTank_DragonsDen|N/A",
+   "summary": "Who are you betting on? 00:00 Wad-Free 08:49 Outer 18:03 Scholly 25:13 Scrub Daddy 36:20 Marz Sprays Watch Shark Tank: http://AAN.SonyPictures.com/SharkTankUSHulu Some of the links above are affiliate links; we may earn a small commission if you click through and make a…",
    "thumb": "https://i3.ytimg.com/vi/6UYxKfA6kEw/hqdefault.jpg",
    "id": "95fff25e2d30",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Why I Didn't Run for the Green Party | Andrew Feinstein interview",
-   "url": "https://www.youtube.com/watch?v=qMSpoXy0bBY",
-   "source": "PoliticsJOE",
-   "feedId": "yt-politicsjoe",
-   "type": "video",
-   "tags": [
-    "comedy"
-   ],
-   "published": "2026-10-23T12:22:03.000Z",
-   "summary": "Andrew Feinstein is one of the most versatile people in British politics today. Formerly a member of the South African Parliament for Nelson Mandela's ANC, he has gained notoriety in the UK in recent years, most notably for running against Keir Starmer in Holborn and St Pancras…",
-   "thumb": "https://i2.ytimg.com/vi/qMSpoXy0bBY/hqdefault.jpg",
-   "id": "f9de87391b46",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2217,23 +2346,6 @@
    "summary": "Take back your privacy - start using Proton Mail for free: http://proton.me/tldr In this video, we’re going to have a look into the rise of the Conservatives, how this has happened, and whether it’s likely to continue. 📰 Too Long: https://toolong.news/ 🎉 TLDR Party:…",
    "thumb": "https://i1.ytimg.com/vi/pnf571lKVmk/hqdefault.jpg",
    "id": "0c1d26ecc6cf",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Ruined His Life After Stealing A Water Bottle",
-   "url": "https://www.youtube.com/watch?v=3ZqLtS5AEyw",
-   "source": "Aberrant preach",
-   "feedId": "yt-aberrant-preach",
-   "type": "video",
-   "tags": [
-    "trash"
-   ],
-   "published": "2026-10-21T18:30:42.000Z",
-   "summary": "Gym bro freaks out once he sees a guy with Yeti water bottle he thinks its his. But the internet did not let him get away with that one ———————————— Spotify: https://open.spotify.com/artist/6QJIJ6AugqPEFASp1V6zgH Merchandise ---…",
-   "thumb": "https://i4.ytimg.com/vi/3ZqLtS5AEyw/hqdefault.jpg",
-   "id": "6d8d19dcb58f",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2603,25 +2715,6 @@
    "why": "0"
   },
   {
-   "title": "GRAND ISLAND TRUMP RALLY",
-   "url": "https://www.youtube.com/watch?v=3M8__9WmwVY",
-   "source": "The Good Liars",
-   "feedId": "yt-the-good-liars",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "politics",
-    "debates"
-   ],
-   "published": "2026-10-17T19:30:06.000Z",
-   "summary": "Part two of The Good Liars visit the Grand Island, NE. Join this channel to get access to perks: https://www.youtube.com/channel/UCUNOwz9KTDIhhTTN3_ptUDA/join https://linktr.ee/thegoodliars",
-   "thumb": "https://i4.ytimg.com/vi/3M8__9WmwVY/hqdefault.jpg",
-   "id": "8be46d6b5cd1",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "Manga Reviews (i read Mashle)",
    "url": "https://www.youtube.com/watch?v=8jjK9UIx6dw",
    "source": "ProZD",
@@ -2802,42 +2895,7 @@
    "score": 0,
    "matched": [],
    "why": "0"
-  },
-  {
-   "title": "The Logistics of IMAX",
-   "url": "https://www.youtube.com/watch?v=auScRXZwHhk",
-   "source": "Half as Interesting",
-   "feedId": "yt-half-as-interesting",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "education"
-   ],
-   "published": "2026-10-14T17:49:58.000Z",
-   "summary": "Get Nebula using my link for 50% off an annual subscription: https://go.nebula.tv/hai Follow Sam from Half as Interesting on Instagram: http://Instagram.com/Sam.From.Wendover Follow Half as Interesting on Twitter: http://twitter.com/halfinteresting Discuss this video on Reddit:…",
-   "thumb": "https://i2.ytimg.com/vi/auScRXZwHhk/hqdefault.jpg",
-   "id": "c10e962d54a1",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Hot Peasant Summer | Toonout [Animated Shorts]",
-   "url": "https://www.youtube.com/watch?v=JU9i8-q7ZOk",
-   "source": "Dropout",
-   "feedId": "yt-dropout",
-   "type": "video",
-   "tags": [
-    "comedy"
-   ],
-   "published": "2026-10-14T17:30:35.000Z",
-   "summary": "Nothing can stop the party for Brooke & Haley, not even getting flushed back to the 14th century. To watch more episode of Toonout and other animated series, sign up for Dropout: https://www.dropout.tv/plans Welcome to the Dropout channel! You can support us by signing up for…",
-   "thumb": "https://i3.ytimg.com/vi/JU9i8-q7ZOk/hqdefault.jpg",
-   "id": "7a3b5bbc7339",
-   "score": 0,
-   "matched": [],
-   "why": "0"
   }
  ],
- "contentHash": "5afc89ccf1e4"
+ "contentHash": "ce41ac3003e4"
 }
