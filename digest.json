@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-28T07:20:19.279Z",
+ "generated": "2026-10-28T10:05:17.540Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
@@ -7,7 +7,7 @@
   "items": 115,
   "duplicatesMerged": 0,
   "lengthsKnown": 1,
-  "lengthLookups": 99,
+  "lengthLookups": 98,
   "lengthFailures": 98,
   "lengthVia": "video pages",
   "lengthFailReasons": {
@@ -657,20 +657,19 @@
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
+   "lastOk": "2026-10-28T07:20:19.279Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-xbox",
    "name": "r/xbox",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": "2026-10-21T15:54:55.125Z",
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-slaythespire",
@@ -679,25 +678,26 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-10-28T01:20:56.595Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
   },
   {
    "id": "rd-germany",
    "name": "r/germany",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": "2026-10-15T00:59:57.533Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-unitedkingdom",
@@ -706,10 +706,135 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   }
  ],
  "items": [
+  {
+   "title": "Nach Aufhebung von Schutzstatus: Warum 350.000 Haitianern in den USA die Abschiebung droht",
+   "url": "https://www.youtube.com/watch?v=eoxDhfqmYmc",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-28T10:04:37.000Z",
+   "summary": "In den USA werden am kommenden Dienstag das Repräsentantenhaus und ein Teil des Senats neu gewählt. So eine Zwischenwahl ist immer auch eine Abrechnung mit dem Präsidenten. Trump hat die größte Abschiebe-Operation der US-Geschichte versprochen. Zunächst sollte dies…",
+   "thumb": "https://i2.ytimg.com/vi/eoxDhfqmYmc/hqdefault.jpg",
+   "id": "ef8f398a5b18",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Krieg gegen die Ukraine: Norwegen und Finnland sprechen mit Putin",
+   "url": "https://www.youtube.com/watch?v=eMBtLxp6Npg",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-28T09:43:45.000Z",
+   "summary": "Das Telefonat des finnischen Präsidenten Stubb und des norwegischen Regierungschefs Störe mit dem russischen Präsidenten Putin ruft geteilte Reaktionen hervor: Für die einen ist es ein falsches Signal, für die anderen ein Hoffnungsschimmer. Einigkeit herrscht hingegen in der…",
+   "thumb": "https://i2.ytimg.com/vi/eMBtLxp6Npg/hqdefault.jpg",
+   "id": "4c43521e7b6e",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "EU safeguards against ‘Trojan horses’ will ‘bite hard’: Commissioner Kos",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xhj973/eu_safeguards_against_trojan_horses_will_bite/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-28T09:20:13.000Z",
+   "summary": "Enlargement Commissioner Marta Kos also told TVP World that the victory of a student movement in Serbia's parliamentary elections could be \"a new start\" for the country in its efforts to join the EU. Kos said the EU had introduced the safeguards in light of its experience with…",
+   "id": "e68747367b9a",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Iranian officials weigh diplomacy and military pressure over Strait of Hormuz as Tehran pursues regional talks",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xhj11x/iranian_officials_weigh_diplomacy_and_military/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-28T09:06:26.000Z",
+   "summary": "submitted by /u/Beginning-Wish-4273 [link] [comments]",
+   "id": "7320d0c6572e",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Spain accuses Trump ally Milei of ‘disgraceful’ election interference",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xhiy8y/spain_accuses_trump_ally_milei_of_disgraceful/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-28T09:01:36.000Z",
+   "summary": "submitted by /u/diwalibonus [link] [comments]",
+   "id": "fe3a27751a38",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "US warns Gulf states of possible renewed Iran offensive after midterms – report",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xhiwcp/us_warns_gulf_states_of_possible_renewed_iran/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-28T08:58:32.000Z",
+   "summary": "submitted by /u/diwalibonus [link] [comments]",
+   "id": "a3b4d8c26453",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Wahl in Israel: Prognosen zeigen Patt-Situation",
+   "url": "https://www.youtube.com/watch?v=qhnTaXlQVeI",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-28T08:38:18.000Z",
+   "summary": "Nach der Wahl in Israel und ersten Teilauszählungen gibt es ein enges Rennen um die Mehrheit im Parlament. Sowohl Eisenkot als auch Netanjahu kündigten an, eine Regierung bilden zu wollen. Viele im Ausland lebende Israelis waren extra angereist, weil es in Israel keine…",
+   "thumb": "https://i2.ytimg.com/vi/qhnTaXlQVeI/hqdefault.jpg",
+   "id": "0e5618dfbc65",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
   {
    "title": "Free Speech Union: The anti-Muslim hostility definition has had a chilling effect on free speech. Since its publication in March, it has been used to silence people who wish to criticise, debate or mock Islam — including private citizens, politicians and comedians.",
    "url": "https://www.reddit.com/r/ukpolitics/comments/1xhg0by/free_speech_union_the_antimuslim_hostility/",
@@ -728,7 +853,7 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Trump und Putin: Wendepunkt im Ukraine-Krieg?",
+   "title": "Trump und Putin: Wendepunkt im Ukraine-Krieg? I 11KM - der tagesschau-Podcast",
    "url": "https://www.youtube.com/watch?v=g4ADMClpmvw",
    "source": "Tagesschau",
    "feedId": "yt-tagesschau",
@@ -739,7 +864,7 @@
     "listen"
    ],
    "published": "2026-10-28T05:17:22.000Z",
-   "summary": "Wendepunkt im Ukraine-Krieg? In dieser 11KM-Folge analysiert NDR-Journalist Stefan Niemann, warum sich Donald Trump in den letzten Wochen hinter den russischen Präsidenten Vladimir Putin stellt und inwiefern Putins Kalkül vor den US-amerikanischen Midterms voll aufzugehen…",
+   "summary": "Wendepunkt im Ukraine-Krieg? In dieser 11KM-Folge analysiert NDR-Journalist Stefan Niemann, warum sich Donald #Trump in den letzten Wochen hinter den russischen Präsidenten Vladimir #Putin stellt und inwiefern Putins Kalkül vor den US-amerikanischen Midterms voll aufzugehen…",
    "thumb": "https://i4.ytimg.com/vi/g4ADMClpmvw/hqdefault.jpg",
    "id": "af2695378a4d",
    "score": 1,
@@ -953,42 +1078,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "U.S. issuing visas to Brazil's Flávio Bolsonaro and family after he lost presidential election, official says",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xh6klj/us_issuing_visas_to_brazils_flávio_bolsonaro_and/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-27T22:15:27.000Z",
-   "summary": "Brazilian Senator Flávio Bolsonaro and his family will receive U.S. visas after Bolsonaro lost Brazil's presidential election over the weekend, a senior State Department official told CBS News on Tuesday. Bolsonaro, an ally of President Trump, and his family will be allowed…",
-   "id": "79d001f035e7",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "tagesthemen 21:45 Uhr, 27.10.2026",
-   "url": "https://www.youtube.com/watch?v=ODer1QKk6EI",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-27T21:51:40.000Z",
-   "summary": "tagesthemen 21:45 Uhr Parlamentswahl in Israel, Die Meinung, Finnlands Präsident Stubb und Norwegens Ministerpräsident Störe telefonieren auf eigene Initiative mit Russlands Kremlchef Putin, Fachleute grenzen geeignete Gebiete für ein Atommüll-Endlager in Deutschland weiter…",
-   "thumb": "https://i4.ytimg.com/vi/ODer1QKk6EI/hqdefault.jpg",
-   "id": "87038abe8d4e",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "If PMs can do their own analysis with AI, does the data team just become infra?",
    "url": "https://www.reddit.com/r/ProductManagement/comments/1xh5q98/if_pms_can_do_their_own_analysis_with_ai_does_the/",
    "source": "r/productmanagement",
@@ -1000,57 +1089,6 @@
    "published": "2026-10-27T21:42:01.000Z",
    "summary": "I built a prototype for analysis with AI against a local DuckDB file I set up. The tables, views and macros are heavily commented, and there's a simple way for the agent to explore the db a piece at a time, the same way it would look over a big codebase. Duckdb runs efficiently…",
    "id": "e89a01b9e35e",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Norway and Finland leaders hold rare call with Putin",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xh4ns9/norway_and_finland_leaders_hold_rare_call_with/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-27T21:00:30.000Z",
-   "summary": "submitted by /u/Winter-Cow-6208 [link] [comments]",
-   "id": "1ab113383b73",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "The U.S. Called It Putin’s ‘Slush Fund.’ Now Trump May Drop Sanctions on It.",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xh4nme/the_us_called_it_putins_slush_fund_now_trump_may/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-27T21:00:21.000Z",
-   "summary": "The Trump administration is exploring a new concession to Russia: lifting sanctions on the country’s flagship government investment fund, long viewed by U.S. officials as one of the Kremlin’s most powerful tools of international influence. Russian officials have pushed for the…",
-   "id": "aa9951164b31",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Marco Rubio Allegedly Behind Flavio Bolsonaro’s Escape From Brazil",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xh49fp/marco_rubio_allegedly_behind_flavio_bolsonaros/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-27T20:45:19.000Z",
-   "summary": "submitted by /u/rhythmstripp [link] [comments]",
-   "id": "c9b094c4bc99",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1069,12 +1107,12 @@
    "summary": "Luke discusses Jessica Tarlov on Fox News' The Five. Check out Jessica Tarlov's new book below! https://sites.prh.com/idisagree Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join…",
    "thumb": "https://i3.ytimg.com/vi/N_M6vxrQrYg/hqdefault.jpg",
    "id": "d9433d62bf7f",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
+   "why": "0"
   },
   {
-   "title": "Everybody thinks pensioners have it too easy | James O’Brien - The Whole Show",
+   "title": "'Everybody thinks pensioners have it too easy' | James O’Brien - The Whole Show",
    "url": "https://www.youtube.com/watch?v=YLovVLO-CSk",
    "source": "LBC",
    "feedId": "yt-lbc",
@@ -1087,47 +1125,9 @@
    "summary": "This is a catch-up version of James O'Brien's live, daily show on LBC Radio from the 27th of October 2026. Listen to the full show on the all-new LBC App: https://app.af.lbc.co.uk/btnc/thenewlbcapp #jamesobrien #politics #LBC LBC is the home of live debate around news and…",
    "thumb": "https://i2.ytimg.com/vi/YLovVLO-CSk/hqdefault.jpg",
    "id": "844534cec307",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Neuer Zwischenstand: Viele Regionen bei Endlagersuche ausgeschlossen",
-   "url": "https://www.youtube.com/watch?v=BQrJq2iR2nA",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-27T19:45:47.000Z",
-   "summary": "Etwa 27.000 Kubikmeter hochradioaktive Abfälle aus Atomkraftwerken befinden sich in deutschen Zwischenlagern. Nur wohin mit dem Müll auf Dauer? Gesucht wird immer noch ein Endlager. Fachleute haben die geeigneten Gebiete nun auf weniger als fünf Prozent der Fläche Deutschlands…",
-   "thumb": "https://i3.ytimg.com/vi/BQrJq2iR2nA/hqdefault.jpg",
-   "id": "dfb372687ffc",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Parlamentswahl in Israel: Extrem hohe Wahlbeteiligung",
-   "url": "https://www.youtube.com/watch?v=G3fCDgU63Sw",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-27T19:41:24.000Z",
-   "summary": "Es ist die erste Parlamentswahl in Israel seit dem Überfall der Hamas vor drei Jahren. Und die Beteiligung ist riesig. Bis 17 Uhr deutscher Zeit hatten etwa zwei Drittel der gut sieben Millionen Wahlberechtigten bereits ihre Stimme abgegeben. Geöffnet sind die Wahllokale noch…",
-   "thumb": "https://i4.ytimg.com/vi/G3fCDgU63Sw/hqdefault.jpg",
-   "id": "036b3006f4c5",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
+   "why": "0"
   },
   {
    "title": "London borough granted powers to block HMOs in bid to crack down on rogue landlords",
@@ -2761,5 +2761,5 @@
    "why": "0"
   }
  ],
- "contentHash": "5b6f56b3b514"
+ "contentHash": "cc1826fcde84"
 }
