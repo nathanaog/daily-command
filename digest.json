@@ -1,18 +1,16 @@
 {
- "generated": "2026-10-29T01:19:20.051Z",
+ "generated": "2026-10-29T04:03:52.444Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
-  "ok": 11,
-  "items": 33,
+  "ok": 5,
+  "items": 21,
   "duplicatesMerged": 0,
-  "lengthsKnown": 1,
-  "lengthLookups": 7,
-  "lengthFailures": 7,
+  "lengthsKnown": 0,
+  "lengthLookups": 0,
+  "lengthFailures": 0,
   "lengthVia": "video pages",
-  "lengthFailReasons": {
-   "no length on page": 7
-  }
+  "lengthFailReasons": {}
  },
  "feeds": [
   {
@@ -145,27 +143,29 @@
    "id": "yt-last-week-tonight",
    "name": "Last Week Tonight",
    "type": "youtube",
-   "status": "ok",
-   "count": 5,
+   "status": "error",
+   "count": 0,
    "resolved": {
     "channelId": "UC3XTzVzaHQEd30rQbuvCtTQ",
     "title": "LastWeekTonight",
     "via": "name search"
    },
-   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC3XTzVzaHQEd30rQbuvCtTQ"
+   "error": "not found (404)",
+   "http": 404
   },
   {
    "id": "yt-billy-on-the-street",
    "name": "Billy on the Street",
    "type": "youtube",
-   "status": "ok",
+   "status": "error",
    "count": 0,
    "resolved": {
     "channelId": "UCc81WI54KgJoei06f_3mWgQ",
     "title": "billyonthestreettv",
     "via": "name search"
    },
-   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCc81WI54KgJoei06f_3mWgQ"
+   "error": "not found (404)",
+   "http": 404
   },
   {
    "id": "yt-politicsjoe",
@@ -199,14 +199,15 @@
    "id": "yt-coldfusion",
    "name": "ColdFusion",
    "type": "youtube",
-   "status": "ok",
-   "count": 2,
+   "status": "error",
+   "count": 0,
    "resolved": {
     "channelId": "UC4QZ_LsYcvcq7qOsOhpAX4A",
     "title": "ColdFusion",
     "via": "name search"
    },
-   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC4QZ_LsYcvcq7qOsOhpAX4A"
+   "error": "not found (404)",
+   "http": 404
   },
   {
    "id": "yt-levi-hildebrand",
@@ -478,14 +479,15 @@
    "id": "yt-tom-scott",
    "name": "Tom Scott",
    "type": "youtube",
-   "status": "ok",
-   "count": 2,
+   "status": "error",
+   "count": 0,
    "resolved": {
     "channelId": "UCBa659QWEk1AI4Tg--mrJ2A",
     "title": "Tom Scott",
     "via": "name search"
    },
-   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCBa659QWEk1AI4Tg--mrJ2A"
+   "error": "not found (404)",
+   "http": 404
   },
   {
    "id": "yt-lenny-s-podcast",
@@ -617,14 +619,15 @@
    "id": "yt-bacon",
    "name": "Bacon_",
    "type": "youtube",
-   "status": "ok",
+   "status": "error",
    "count": 0,
    "resolved": {
     "channelId": "UCcybVOrBgpzUxm-mlBT0WTA",
     "title": "Bacon_",
     "via": "name search"
    },
-   "url": "https://www.youtube.com/feeds/videos.xml?playlist_id=UULFcybVOrBgpzUxm-mlBT0WTA"
+   "error": "not found (404)",
+   "http": 404
   },
   {
    "id": "yt-economics-explained",
@@ -644,14 +647,15 @@
    "id": "yt-j-j-mccullough",
    "name": "J.J. McCullough",
    "type": "youtube",
-   "status": "ok",
-   "count": 3,
+   "status": "error",
+   "count": 0,
    "resolved": {
     "channelId": "UCyhOl6uRlxryALlT5yifldw",
     "title": "J.J. McCullough",
     "via": "name search"
    },
-   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCyhOl6uRlxryALlT5yifldw"
+   "error": "not found (404)",
+   "http": 404
   },
   {
    "id": "yt-adam-neely",
@@ -698,9 +702,10 @@
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
+   "lastOk": "2026-10-29T01:19:20.051Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-xbox",
@@ -709,7 +714,7 @@
    "status": "cached",
    "count": 5,
    "lastOk": "2026-10-28T16:07:55.180Z",
-   "note": "rate-limited (429)"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-slaythespire",
@@ -718,25 +723,26 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-10-28T19:10:04.808Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
   },
   {
    "id": "rd-germany",
    "name": "r/germany",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": "2026-10-15T00:59:57.533Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-unitedkingdom",
@@ -745,7 +751,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   }
  ],
  "items": [
@@ -767,6 +773,74 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
+   "title": "Exclusive | Vance Reaches Out to Iranian Hard-Liner in Bid to Restart Peace Talks",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xi1sdv/exclusive_vance_reaches_out_to_iranian_hardliner/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-28T21:54:46.000Z",
+   "summary": "submitted by /u/Unfair-Ticket9474 [link] [comments]",
+   "id": "d0ff0772596e",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "The Backdoor to American Innovation: How Military Partnerships Make Washington Vulnerable to Its Adversaries",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xhy8jc/the_backdoor_to_american_innovation_how_military/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-28T19:39:13.000Z",
+   "summary": "submitted by /u/ForeignAffairsMag [link] [comments]",
+   "id": "8837893e3a8f",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "How to Secure the Straits: Why Iran and the Houthis Keep Winning the Waterways",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xhy7lr/how_to_secure_the_straits_why_iran_and_the/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-28T19:38:14.000Z",
+   "summary": "submitted by /u/ForeignAffairsMag [link] [comments]",
+   "id": "68a7cdb2b640",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "The China Price: Beijing’s Green Path to Ending Dollar Dominance",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xhy6i7/the_china_price_beijings_green_path_to_ending/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-28T19:37:06.000Z",
+   "summary": "submitted by /u/ForeignAffairsMag [link] [comments]",
+   "id": "c13e8330ffca",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
    "title": "How to handle stressful GPM dynamic",
    "url": "https://www.reddit.com/r/ProductManagement/comments/1xhy4eg/how_to_handle_stressful_gpm_dynamic/",
    "source": "r/productmanagement",
@@ -778,6 +852,23 @@
    "published": "2026-10-28T19:34:53.000Z",
    "summary": "I'm a new PM (~6 months) leading a new product area. I have solid business requirements in place and the team has started work for new features based off PRDs and designs, etc etc. But I'm concerned about the dynamic with my manager and frequently changing requirements. I…",
    "id": "5c41fb1d5056",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Why India Is Erupting",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xhx5jk/why_india_is_erupting/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-28T19:00:23.000Z",
+   "summary": "submitted by /u/theatlantic [link] [comments]",
+   "id": "3f19d52bcf41",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -795,25 +886,6 @@
    "published": "2026-10-28T18:58:36.000Z",
    "summary": "submitted by /u/Pale-Border-7122 [link] [comments]",
    "id": "c961c748a2eb",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "a TON of stuff happened in Canadian politics this month",
-   "url": "https://www.youtube.com/watch?v=wjkUoyUWlZs",
-   "source": "J.J. McCullough",
-   "feedId": "yt-j-j-mccullough",
-   "type": "video",
-   "tags": [
-    "politics",
-    "culture",
-    "entertainment"
-   ],
-   "published": "2026-10-28T18:00:59.000Z",
-   "summary": "Everything that happened in Canadian politics in October of 2026. Get your official JJ McCullough collection t-shirt here! https://www.lmxunlimited.ltd/jj SUBSCRIBE: https://www.youtube.com/jjmccullough?sub_confirmation=1 FOLLOW ME: ✋🏻 Support me on PATREON!…",
-   "thumb": "https://i4.ytimg.com/vi/wjkUoyUWlZs/hqdefault.jpg",
-   "id": "9b35a3a5a803",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -853,25 +925,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Why Everyone Stopped Buying GoPro",
-   "url": "https://www.youtube.com/watch?v=25ckBnzay8Y",
-   "source": "ColdFusion",
-   "feedId": "yt-coldfusion",
-   "type": "video",
-   "tags": [
-    "finance",
-    "tech",
-    "listen"
-   ],
-   "published": "2026-10-28T17:10:33.000Z",
-   "summary": "Try Wispr Flow for free: https://ref.wisprflow.ai/coldfusion-yt-v03 and use code COLDFUSION to get 1 month of Wispr Flow Pro with unlimited words! At one stage, GoPro's CEO Nick Woodman, was the highest paid CEO in the US, but the company is no longer what it once was. In this…",
-   "thumb": "https://i3.ytimg.com/vi/25ckBnzay8Y/hqdefault.jpg",
-   "id": "121b77edfe70",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "John Healey's 'Breathing Space' Budget Just Kicked The Can Down The Road",
    "url": "https://www.reddit.com/r/ukpolitics/comments/1xhtja7/john_healeys_breathing_space_budget_just_kicked/",
    "source": "r/ukpolitics",
@@ -900,57 +953,6 @@
    "published": "2026-10-28T16:42:11.000Z",
    "summary": "I want to use AI for analytics but idk what the right way looks like. I’ve seen some people connect claude/chatgpt to their product data or instead use the AI that’s built into analytics tool, but which is the better option if the goal is understanding why users aren't using a…",
    "id": "2744d2f0570b",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Hell will freeze over before Havana gives in to Trump. But regular Cubans don’t have that long",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xht875/hell_will_freeze_over_before_havana_gives_in_to/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-28T16:40:40.000Z",
-   "summary": "submitted by /u/cnn [link] [comments]",
-   "id": "a7629c2692b8",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Cormac Lucey: The chaos in France is a warning for Europe",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xhs48a/cormac_lucey_the_chaos_in_france_is_a_warning_for/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-28T16:01:18.000Z",
-   "summary": "submitted by /u/TimesandSundayTimes [link] [comments]",
-   "id": "4c4c266f03d3",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Gabriel Attal: \"It is the responsibility of my generation to create the United States of Europe\"",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xhrjoy/gabriel_attal_it_is_the_responsibility_of_my/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-28T15:40:44.000Z",
-   "summary": "submitted by /u/paneuropeanism_ [link] [comments]",
-   "id": "813aadefcca0",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1004,23 +1006,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Ukraine: Time to End the War",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xhq9ar/ukraine_time_to_end_the_war/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-28T14:53:47.000Z",
-   "summary": "submitted by /u/thenationmagazine [link] [comments]",
-   "id": "5d75ae66b4e0",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Refusing to pay for online multiplayer has made me appreciate and enjoy single player games a lot more",
    "url": "https://www.reddit.com/r/xbox/comments/1xhpxe8/refusing_to_pay_for_online_multiplayer_has_made/",
    "source": "r/xbox",
@@ -1048,23 +1033,6 @@
    "published": "2026-10-28T14:35:31.000Z",
    "summary": "just got around to playing it *Gears of War E Day submitted by /u/Dangerous_Alfalfa_77 [link] [comments]",
    "id": "ea722918e121",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Flavio Bolsonaro lands in US after fleeing Brazil following election defeat",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xhoq35/flavio_bolsonaro_lands_in_us_after_fleeing_brazil/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-28T13:54:45.000Z",
-   "summary": "submitted by /u/cnn [link] [comments]",
-   "id": "2162ba76ba8e",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1118,59 +1086,6 @@
    "why": "0"
   },
   {
-   "title": "The Republican Party & Bo French #lastweektonight",
-   "url": "https://www.youtube.com/shorts/EMV7E5J_iwU",
-   "source": "Last Week Tonight",
-   "feedId": "yt-last-week-tonight",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "politics"
-   ],
-   "published": "2026-10-27T14:00:23.000Z",
-   "summary": "You know things are going wrong when you’ve lost the moral high ground to Karl Fucking Rove.",
-   "thumb": "https://i2.ytimg.com/vi/EMV7E5J_iwU/hqdefault.jpg",
-   "id": "fc5a59d68049",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "This machine breaks things.",
-   "url": "https://www.youtube.com/watch?v=-E47v4Oy7fE",
-   "source": "Tom Scott",
-   "feedId": "yt-tom-scott",
-   "type": "video",
-   "tags": [
-    "education"
-   ],
-   "published": "2026-10-26T15:00:16.000Z",
-   "summary": "At Kirkaldy's Testing Works, there's the Universal Testing Machine. It breaks things. | AD: 🛡️ Get NordVPN's best deal with their next-gen antivirus: https://nordvpn.com/tomscott | 🗺️ England series map: https://www.tomscott.com/england/ 🟥 MORE FROM TOM:…",
-   "thumb": "https://i2.ytimg.com/vi/-E47v4Oy7fE/hqdefault.jpg",
-   "id": "58a074377add",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "The Republican Party & The Far Right",
-   "url": "https://www.youtube.com/shorts/XEEO4K4rz5U",
-   "source": "Last Week Tonight",
-   "feedId": "yt-last-week-tonight",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "politics"
-   ],
-   "published": "2026-10-26T14:00:25.000Z",
-   "summary": "Contrary to what Elon Musk may think, we don’t believe everyone on the right is Hitler! But if the shoe fits, that’s probably because you’re already goose-stepping in it.",
-   "thumb": "https://i1.ytimg.com/vi/XEEO4K4rz5U/hqdefault.jpg",
-   "id": "f480894b6708",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "Researchers synchronize 105,000 tiny magnetic oscillators in 45 nanoseconds, pointing to faster, low-power computing",
    "url": "https://www.reddit.com/r/tech/comments/1xfvlyn/researchers_synchronize_105000_tiny_magnetic/",
    "source": "r/tech",
@@ -1185,137 +1100,7 @@
    "score": 0,
    "matched": [],
    "why": "0"
-  },
-  {
-   "title": "The Republican Party & The Far Right: Last Week Tonight with John Oliver (HBO)",
-   "url": "https://www.youtube.com/watch?v=SnsBI4YxwIs",
-   "source": "Last Week Tonight",
-   "feedId": "yt-last-week-tonight",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "politics"
-   ],
-   "published": "2026-10-26T06:30:26.000Z",
-   "summary": "Ahead of the midterms, John Oliver devotes an entire episode to discussing the rising prominence of extremist beliefs within the Republican Party – from white nationalism to antisemitism – and what it all has to do with Vandy potato chips. Subscribe to the #lastweektonight…",
-   "thumb": "https://i4.ytimg.com/vi/SnsBI4YxwIs/hqdefault.jpg",
-   "id": "670e79d2aa09",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "S13 E27: The Republican Party & The Far Right: 10/25/26: Last Week Tonight with John Oliver",
-   "url": "https://www.youtube.com/watch?v=zVwhVOB3ulU",
-   "source": "Last Week Tonight",
-   "feedId": "yt-last-week-tonight",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "politics"
-   ],
-   "published": "2026-10-26T03:00:08.000Z",
-   "summary": "Ahead of the midterms, John Oliver breaks down the details of the rising prominence of extremist beliefs within the Republican Party – from white nationalism to antisemitism to outright Nazi sympathies. Plus, we find out what Tucker Carlson has in common with Joseph Stalin!…",
-   "thumb": "https://i3.ytimg.com/vi/zVwhVOB3ulU/hqdefault.jpg",
-   "id": "83236b7ef4ea",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 2366,
-   "duration": "39:26"
-  },
-  {
-   "title": "The Most Powerful Men in America",
-   "url": "https://www.youtube.com/shorts/bPUk166oGGc",
-   "source": "J.J. McCullough",
-   "feedId": "yt-j-j-mccullough",
-   "type": "video",
-   "tags": [
-    "politics",
-    "culture",
-    "entertainment"
-   ],
-   "published": "2026-10-19T20:43:20.000Z",
-   "summary": "SUBSCRIBE: https://www.youtube.com/jjmccullough?sub_confirmation=1 FOLLOW ME: ✋🏻 Support me on PATREON! https://www.patreon.com/jjmccullough 📷 Follow me on INSTAGRAM! https://www.instagram.com/jjmccullough/ ✏️ Read my SUBSTACK: https://jjmccullough.substack.com 🤖 Join my…",
-   "thumb": "https://i3.ytimg.com/vi/bPUk166oGGc/hqdefault.jpg",
-   "id": "8ea96a791be6",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Clocks are so much more interesting than I thought.",
-   "url": "https://www.youtube.com/watch?v=BxXfeotgVVA",
-   "source": "Tom Scott",
-   "feedId": "yt-tom-scott",
-   "type": "video",
-   "tags": [
-    "education"
-   ],
-   "published": "2026-10-19T15:00:08.000Z",
-   "summary": "At the Cumbria Clock Company, I discover that I knew far less about clocks than I thought. | ❓ Lateral, free weekly podcast: https://lateralcast.com/ https://youtube.com/lateralcast/ 🗺️ England series map: https://www.tomscott.com/england/ 🟥 MORE FROM TOM:…",
-   "thumb": "https://i3.ytimg.com/vi/BxXfeotgVVA/hqdefault.jpg",
-   "id": "636e08097a67",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Canadian political terms iceberg EXPLAINED",
-   "url": "https://www.youtube.com/watch?v=TCsfyIn_6Wc",
-   "source": "J.J. McCullough",
-   "feedId": "yt-j-j-mccullough",
-   "type": "video",
-   "tags": [
-    "politics",
-    "culture",
-    "entertainment"
-   ],
-   "published": "2026-10-18T15:49:51.000Z",
-   "summary": "Dozens of definitions of common words and phrases used in Canadian politics and government, including a lot of terms relating to Quebec lol. The first Iceberg vid: https://www.youtube.com/watch?v=Q9LrjU5n63g SUBSCRIBE: https://www.youtube.com/jjmccullough?sub_confirmation=1…",
-   "thumb": "https://i1.ytimg.com/vi/TCsfyIn_6Wc/hqdefault.jpg",
-   "id": "c85a694a2ec8",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Generic Drugs & Overseas Manufacturing #lastweektonight",
-   "url": "https://www.youtube.com/shorts/xJEOHX5GiO4",
-   "source": "Last Week Tonight",
-   "feedId": "yt-last-week-tonight",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "politics"
-   ],
-   "published": "2026-10-16T14:00:29.000Z",
-   "summary": "You know what they say about making sure your generic drugs are manufactured in accordance with safety standards that prevent anyone from needing to get their eyeballs removed! Location, location, location.",
-   "thumb": "https://i1.ytimg.com/vi/xJEOHX5GiO4/hqdefault.jpg",
-   "id": "6023305e73b2",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Bill Gates’ Daughter is in Trouble",
-   "url": "https://www.youtube.com/watch?v=P8CVqDKeOKk",
-   "source": "ColdFusion",
-   "feedId": "yt-coldfusion",
-   "type": "video",
-   "tags": [
-    "finance",
-    "tech",
-    "listen"
-   ],
-   "published": "2026-10-15T15:30:15.000Z",
-   "summary": "Go to https://buyraycon.com/coldfusionCLIP to get 25% off! Thanks to Raycon for sponsoring! ColdFusion Podcast: https://www.youtube.com/@ThroughTheWeb Watch or listen to ColdFusion on Spotify: https://open.spotify.com/show/1YEwCKoRz8fEDqheXB6UJ1 ColdFusion Music:…",
-   "thumb": "https://i1.ytimg.com/vi/P8CVqDKeOKk/hqdefault.jpg",
-   "id": "46ccadd9b256",
-   "score": 0,
-   "matched": [],
-   "why": "0"
   }
  ],
- "contentHash": "b354e1bc4ee0"
+ "contentHash": "dd0dac8a98c9"
 }
