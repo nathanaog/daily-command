@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-29T07:21:13.324Z",
+ "generated": "2026-10-29T10:07:25.111Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
@@ -7,7 +7,7 @@
   "items": 123,
   "duplicatesMerged": 0,
   "lengthsKnown": 1,
-  "lengthLookups": 103,
+  "lengthLookups": 102,
   "lengthFailures": 102,
   "lengthVia": "video pages",
   "lengthFailReasons": {
@@ -630,9 +630,10 @@
    "id": "rd-productmanagement",
    "name": "r/productmanagement",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 4,
-   "url": "https://www.reddit.com/r/productmanagement/top/.rss?t=day"
+   "lastOk": "2026-10-29T07:21:13.324Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-tech",
@@ -641,7 +642,7 @@
    "status": "cached",
    "count": 1,
    "lastOk": "2026-10-27T01:08:56.460Z",
-   "note": "rate-limited (429)"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-gaming",
@@ -650,16 +651,15 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-10-29T01:19:20.051Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
   },
   {
    "id": "rd-xbox",
@@ -668,7 +668,7 @@
    "status": "cached",
    "count": 5,
    "lastOk": "2026-10-28T16:07:55.180Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)"
   },
   {
    "id": "rd-slaythespire",
@@ -677,7 +677,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-geopolitics",
@@ -709,6 +709,115 @@
  ],
  "items": [
   {
+   "title": "The Chancellor refuses to make 'crude cuts' to welfare bill",
+   "url": "https://www.youtube.com/watch?v=lvs8ZNEXCb4",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-29T10:00:08.000Z",
+   "summary": "Speaking to LBC's Nick Ferrari at Breakfast after delivering his first Budget, the Chancellor defended his decision not to announce cuts to Britain's growing benefits bill as he pledged to reform the sector. Mr Healey told the Commons on Wednesday he would address the country's…",
+   "thumb": "https://i1.ytimg.com/vi/lvs8ZNEXCb4/hqdefault.jpg",
+   "id": "a756d3e4dbec",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Nach Präsidentschaftswahl in Brasilien: Bolsonaro flieht in die USA",
+   "url": "https://www.youtube.com/watch?v=rQtD7Fl0iFE",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-29T09:42:07.000Z",
+   "summary": "Heimlich hat sich der brasilianische Wahlverlierer Flávio Bolsonaro in die USA abgesetzt. Gegen ihn wird wegen Korruption und Geldwäsche ermittelt. Entgegen eindeutiger Ergebnisse hat er sich nun selbst zum Wahlsieger in Brasilien erklärt. Das US-Außenministerium hatte der…",
+   "thumb": "https://i3.ytimg.com/vi/rQtD7Fl0iFE/hqdefault.jpg",
+   "id": "23d5251ebcc0",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Burnham’s First Budget Explained",
+   "url": "https://www.youtube.com/watch?v=ygVX149E5cE",
+   "source": "TLDR News",
+   "feedId": "yt-tldr-news",
+   "type": "video",
+   "tags": [
+    "news",
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-29T09:30:29.000Z",
+   "summary": "Pre-order a copy of Too Long: toolong.news/TL010 Sign Up for TLDR Party: https://toolong.news/party TLDR Party Explained: https://www.youtube.com/watch?v=KVXXC3jk4Kg Chancellor John Healey delivered his budget yesterday, the first of the new Burnham government, but it was not…",
+   "thumb": "https://i2.ytimg.com/vi/ygVX149E5cE/hqdefault.jpg",
+   "id": "4db98a7a79cf",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Wer folgt auf Steinmeier? Streit um das Amt des Bundespräsidenten",
+   "url": "https://www.youtube.com/watch?v=Zhg9GwZuzWM",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-29T08:29:38.000Z",
+   "summary": "Bundeskanzler Friedrich Merz vermeidet weiterhin eine Festlegung der Frage des künftigen Bundespräsidenten – die Debatte über den künftigen Präsidenten oder die Präsidentin geht derweil lebhaft weiter. Merz und seine Partei ließen bislang offen, wen sie sich im höchsten…",
+   "thumb": "https://i3.ytimg.com/vi/Zhg9GwZuzWM/hqdefault.jpg",
+   "id": "7bf4848e3dd5",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "UK boosts support to Ukraine with £10 billion package",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xidsq4/uk_boosts_support_to_ukraine_with_10_billion/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-29T07:57:16.000Z",
+   "summary": "submitted by /u/PoiHolloi2020 [link] [comments]",
+   "id": "87db8f1872f6",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Kosovan criminal who stole from disabled people can't be deported as she is 'culturally and socially integrated' in Britain, judge rules",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xidm4e/kosovan_criminal_who_stole_from_disabled_people/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-29T07:45:18.000Z",
+   "summary": "submitted by /u/BigSupermark [link] [comments]",
+   "id": "e14086e9cf85",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
    "title": "AfD-Leak: Was die gehackten E-Mails bereits verraten I 11KM - der tagesschau-Podcast",
    "url": "https://www.youtube.com/watch?v=9w7Ktbkvh5c",
    "source": "Tagesschau",
@@ -720,7 +829,7 @@
     "listen"
    ],
    "published": "2026-10-29T05:18:54.000Z",
-   "summary": "240.000 E-Mails, insgesamt rund 280 GB Daten: Was steht im #AfD-Leak? Darüber spricht NDR-Investigativjournalistin Mandy Sarti mit 11KM-Host Elena Kuch. Gemeinsam mit Kolleginnen und Kollegen von NDR und WDR recherchiert Mandy seit Tagen in den Daten, die von Hackern…",
+   "summary": "Über 400.000 E-Mails, insgesamt rund 280 GB Daten: Was steht im #AfD-Leak? Darüber spricht NDR-Investigativjournalistin Mandy Sarti mit 11KM-Host Elena Kuch. Gemeinsam mit Kolleginnen und Kollegen von NDR und WDR recherchiert Mandy seit Tagen in den Daten, die von Hackern…",
    "thumb": "https://i2.ytimg.com/vi/9w7Ktbkvh5c/hqdefault.jpg",
    "id": "36d19092c0e4",
    "score": 1,
@@ -763,6 +872,23 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
+   "title": "Europe's first deportation center for failed asylum seekers to open in Rwanda: report",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xia2yo/europes_first_deportation_center_for_failed/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-29T04:12:18.000Z",
+   "summary": "submitted by /u/GalacticScale [link] [comments]",
+   "id": "549b21e3aab0",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
    "title": "WATCH: Tim Miller EXPOSES Charlie Kirk Show Hosts TO THEIR FACE!",
    "url": "https://www.youtube.com/watch?v=zZtastxjbKA",
    "source": "Luke Beasley",
@@ -799,8 +925,8 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Iraqi migrant granted asylum after sleeping with another man’s wife. The migrant claimed to have fled his home country amid \"death threats\" from his lover's husband, putting him \"at risk of serious harm\" upon his return.",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xi3axi/iraqi_migrant_granted_asylum_after_sleeping_with/",
+   "title": "Jessica Elgot on X: \"💥Interesting new migration measures buried in the Budget.. - changing salary requirements for some sectors - expand visas to graduates from top 150 institutions - extend some graduate visas to 2 years for eligible unis",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xi4t4a/jessica_elgot_on_x_interesting_new_migration/",
    "source": "r/ukpolitics",
    "feedId": "rd-ukpolitics",
    "type": "post",
@@ -808,9 +934,26 @@
     "politics",
     "british"
    ],
-   "published": "2026-10-28T22:56:27.000Z",
-   "summary": "submitted by /u/ITMidget [link] [comments]",
-   "id": "cfa3509231c0",
+   "published": "2026-10-29T00:00:06.000Z",
+   "summary": "Interesting new migration measures buried in the Budget.. changing salary requirements for some sectors expand visas to graduates from top 150 institutions extend some graduate visas to 2 years for eligible unis giving highest-skill workers longer to find a new job submitted by…",
+   "id": "15ffe98f42af",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Rupert Lowe MP: \"Look at this, stashed away on page 118 of the budget... The Government is implementing visa salary requirement changes from spring 2027 that will reduce 'occupation-specific minimum salary thresholds from the median to the 25th percentile of wages'. In short, making it FAR…”",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xi4783/rupert_lowe_mp_look_at_this_stashed_away_on_page/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-28T23:34:11.000Z",
+   "summary": "Look at this, stashed away on page 118 of the budget... The Government is implementing visa salary requirement changes from spring 2027 that will reduce 'occupation-specific minimum salary thresholds from the median to the 25th percentile of wages'. In short, making it FAR…",
+   "id": "0befd71127c4",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -886,79 +1029,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "tagesthemen 21:35 Uhr, 28.10.2026",
-   "url": "https://www.youtube.com/watch?v=OIHiEUxdn1Q",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-28T21:02:43.000Z",
-   "summary": "tagesthemen 21:35 Uhr Zugkollision in Spanien: Aktuelle Informationen und Hintergründe, Nach der Wahl in Israel: Wer wird neuer Premierminister?, Wer folgt auf Bundespräsident Steinmeier? Debatte um Nachfolgeregelung, Weitere Nachrichten im Überblick https://www.tagesschau.de",
-   "thumb": "https://i4.ytimg.com/vi/OIHiEUxdn1Q/hqdefault.jpg",
-   "id": "c3f6745e703c",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "What did the budget ever do for us? | James O’Brien - The Whole Show",
-   "url": "https://www.youtube.com/watch?v=VitUibSAcIQ",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-28T21:00:10.000Z",
-   "summary": "This is a catch-up version of James O'Brien's live, daily show on LBC Radio from the 28th of October 2026. Listen to the full show on the all-new LBC App: https://app.af.lbc.co.uk/btnc/thenewlbcapp #jamesobrien #politics #LBC LBC is the home of live debate around news and…",
-   "thumb": "https://i3.ytimg.com/vi/VitUibSAcIQ/hqdefault.jpg",
-   "id": "ff2f75496fdf",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "OH SH*T: Piers Morgan HUMILIATES MAGA Star for 10 MINUTES STRAIGHT!",
-   "url": "https://www.youtube.com/watch?v=1gBa_wzbAnw",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-28T20:33:13.000Z",
-   "summary": "Luke discusses Liz Wheeler's disasterpus appearance on Piers Morgan's show. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
-   "thumb": "https://i2.ytimg.com/vi/1gBa_wzbAnw/hqdefault.jpg",
-   "id": "6560c13f8942",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Farage skips Budget following 'physical altercation' with MP",
-   "url": "https://www.youtube.com/watch?v=EzM3V99GRu0",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-28T19:40:22.000Z",
-   "summary": "In Reform UK's response to the Budget, Nigel Farage claimed a 'physical altercation' with a Lib Dem MP at the King's Speech in May deterred him from appearing in the Commons today. Tom Swarbrick quizzes Reform MP Robert Jenrick over the alleged altercation. Listen to the full…",
-   "thumb": "https://i2.ytimg.com/vi/EzM3V99GRu0/hqdefault.jpg",
-   "id": "f59a710412d7",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "The Backdoor to American Innovation: How Military Partnerships Make Washington Vulnerable to Its Adversaries",
    "url": "https://www.reddit.com/r/geopolitics/comments/1xhy8jc/the_backdoor_to_american_innovation_how_military/",
    "source": "r/geopolitics",
@@ -1010,25 +1080,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "tagesschau 20:00 Uhr, 28.10.2026",
-   "url": "https://www.youtube.com/watch?v=QwGuhdnFPyo",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-28T19:37:05.000Z",
-   "summary": "tagesschau 20:00 Uhr Mindestens 68 Tote nach Zugunglück in Spanien, Keine klaren Mehrheiten bei Parlamentswahl in Israel, Bundeskanzler Merz besucht auf seiner Asienreise Japan, Zweitägiger Russland-Afrika-Gipfel in Moskau, Elterngeld soll weiterhin für 14 Monate ausbezahlt…",
-   "thumb": "https://i2.ytimg.com/vi/QwGuhdnFPyo/hqdefault.jpg",
-   "id": "db8cc517dd33",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "How to handle stressful GPM dynamic",
    "url": "https://www.reddit.com/r/ProductManagement/comments/1xhy4eg/how_to_handle_stressful_gpm_dynamic/",
    "source": "r/productmanagement",
@@ -1040,25 +1091,6 @@
    "published": "2026-10-28T19:34:53.000Z",
    "summary": "I'm a new PM (~6 months) leading a new product area. I have solid business requirements in place and the team has started work for new features based off PRDs and designs, etc etc. But I'm concerned about the dynamic with my manager and frequently changing requirements. I…",
    "id": "5c41fb1d5056",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Wie kam es zur Katastrophe bei Urda? ARD-Journalist mit den neuesten Erkenntnissen",
-   "url": "https://www.youtube.com/watch?v=N00if4Ln6IQ",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-28T19:24:58.000Z",
-   "summary": "Die Zahl der Toten nach dem schweren Zugunglück in Spanien ist auf 68 gestiegen. Ein Hochgeschwindigkeitszug war am Morgen auf einen stehenden Zug aufgefahren – laut ersten Ermittlungen vermutlich wegen einer falschen Ansage der Leitstelle. Mehr zum Thema:…",
-   "thumb": "https://i3.ytimg.com/vi/N00if4Ln6IQ/hqdefault.jpg",
-   "id": "5975b9f1efea",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1076,74 +1108,6 @@
    "published": "2026-10-28T19:00:23.000Z",
    "summary": "submitted by /u/theatlantic [link] [comments]",
    "id": "3f19d52bcf41",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "John Healey tells departments to make 1% cuts to fund defence",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xhx3ba/john_healey_tells_departments_to_make_1_cuts_to/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-28T18:58:36.000Z",
-   "summary": "submitted by /u/Pale-Border-7122 [link] [comments]",
-   "id": "c961c748a2eb",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Breaking: UK to give sponsored workers up to six months to find a new job, and two-year graduate visa for “high-compliance universities”",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xhumwk/breaking_uk_to_give_sponsored_workers_up_to_six/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-28T17:30:01.000Z",
-   "summary": "submitted by /u/Hollowsythe [link] [comments]",
-   "id": "f8f246a99eaf",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Tommy Robinson faces up to 10 years in jail after being found guilty of harassing journalists",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xhukfx/tommy_robinson_faces_up_to_10_years_in_jail_after/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-28T17:27:34.000Z",
-   "summary": "submitted by /u/Bascule2000 [link] [comments]",
-   "id": "d812c4cddcfc",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "John Healey's 'Breathing Space' Budget Just Kicked The Can Down The Road",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xhtja7/john_healeys_breathing_space_budget_just_kicked/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-28T16:51:56.000Z",
-   "summary": "submitted by /u/huffpostuk [link] [comments]",
-   "id": "cc0fe84e9ef1",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1227,6 +1191,79 @@
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "tagesthemen 21:35 Uhr, 28.10.2026",
+   "url": "https://www.youtube.com/watch?v=OIHiEUxdn1Q",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-28T21:02:43.000Z",
+   "summary": "tagesthemen 21:35 Uhr Zugkollision in Spanien: Aktuelle Informationen und Hintergründe, Nach der Wahl in Israel: Wer wird neuer Premierminister?, Wer folgt auf Bundespräsident Steinmeier? Debatte um Nachfolgeregelung, Weitere Nachrichten im Überblick https://www.tagesschau.de",
+   "thumb": "https://i4.ytimg.com/vi/OIHiEUxdn1Q/hqdefault.jpg",
+   "id": "c3f6745e703c",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "What did the budget ever do for us? | James O’Brien - The Whole Show",
+   "url": "https://www.youtube.com/watch?v=VitUibSAcIQ",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-28T21:00:10.000Z",
+   "summary": "This is a catch-up version of James O'Brien's live, daily show on LBC Radio from the 28th of October 2026. Listen to the full show on the all-new LBC App: https://app.af.lbc.co.uk/btnc/thenewlbcapp #jamesobrien #politics #LBC LBC is the home of live debate around news and…",
+   "thumb": "https://i3.ytimg.com/vi/VitUibSAcIQ/hqdefault.jpg",
+   "id": "ff2f75496fdf",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "OH SH*T: Piers Morgan HUMILIATES MAGA Star for 10 MINUTES STRAIGHT!",
+   "url": "https://www.youtube.com/watch?v=1gBa_wzbAnw",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-28T20:33:13.000Z",
+   "summary": "Luke discusses Liz Wheeler's disasterpus appearance on Piers Morgan's show. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
+   "thumb": "https://i2.ytimg.com/vi/1gBa_wzbAnw/hqdefault.jpg",
+   "id": "6560c13f8942",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Farage skips Budget following 'physical altercation' with MP",
+   "url": "https://www.youtube.com/watch?v=EzM3V99GRu0",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-28T19:40:22.000Z",
+   "summary": "In Reform UK's response to the Budget, Nigel Farage claimed a 'physical altercation' with a Lib Dem MP at the King's Speech in May deterred him from appearing in the Commons today. Tom Swarbrick quizzes Reform MP Robert Jenrick over the alleged altercation. Listen to the full…",
+   "thumb": "https://i2.ytimg.com/vi/EzM3V99GRu0/hqdefault.jpg",
+   "id": "f59a710412d7",
+   "score": 0,
+   "matched": [],
+   "why": "0"
   },
   {
    "title": "10 Grindy Games So Addictive You'll LOSE Track of Time",
@@ -1442,24 +1479,6 @@
    "why": "0"
   },
   {
-   "title": "'It looks pretty dire': Lewis Goodall reacts to the Budget",
-   "url": "https://www.youtube.com/watch?v=nRo_3WjDyTk",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-28T15:00:14.000Z",
-   "summary": "Lewis Goodall joins Shelagh Fogarty and Natasha Clark to share his thoughts about the 'unspectacular' Budget. In a move to tackle the cost of living crisis, the Chancellor announced an increase to the minimum wage and also announced a drop in tax for everyday \"essentials\" such…",
-   "thumb": "https://i3.ytimg.com/vi/nRo_3WjDyTk/hqdefault.jpg",
-   "id": "be53695be635",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "Israeli Election Day",
    "url": "https://www.youtube.com/watch?v=YcpC3-59yhE",
    "source": "Channel 5 with Andrew Callaghan",
@@ -1548,7 +1567,7 @@
    "why": "0"
   },
   {
-   "title": "Learn German with Our Live Podcast",
+   "title": "A Podcast to Learn German",
    "url": "https://www.youtube.com/watch?v=-WbwNgcUT2o",
    "source": "Easy German",
    "feedId": "yt-easy-german",
@@ -2877,26 +2896,7 @@
    "score": 0,
    "matched": [],
    "why": "0"
-  },
-  {
-   "title": "Can Burnham Actually Ditch First-Past-the-Post?",
-   "url": "https://www.youtube.com/watch?v=QmGYruZYHCc",
-   "source": "TLDR News",
-   "feedId": "yt-tldr-news",
-   "type": "video",
-   "tags": [
-    "news",
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-15T09:30:07.000Z",
-   "summary": "Go to https://hensonshaving.com/TLDR and enter \"TLDR\" at checkout to get 100 free blades with your purchase. In this video we explore Burnham's promise to implement a more representative electoral system in the UK but will he actually succeed where countless other governments…",
-   "thumb": "https://i2.ytimg.com/vi/QmGYruZYHCc/hqdefault.jpg",
-   "id": "c979ca4f9006",
-   "score": 0,
-   "matched": [],
-   "why": "0"
   }
  ],
- "contentHash": "19862bdadbed"
+ "contentHash": "3b43e4128bc2"
 }
