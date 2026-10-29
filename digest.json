@@ -1,17 +1,17 @@
 {
- "generated": "2026-10-29T16:11:07.819Z",
+ "generated": "2026-10-29T19:12:08.113Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
   "ok": 51,
-  "items": 121,
+  "items": 120,
   "duplicatesMerged": 0,
   "lengthsKnown": 1,
-  "lengthLookups": 100,
-  "lengthFailures": 100,
+  "lengthLookups": 99,
+  "lengthFailures": 99,
   "lengthVia": "video pages",
   "lengthFailReasons": {
-   "no length on page": 100
+   "no length on page": 99
   }
  },
  "feeds": [
@@ -358,7 +358,7 @@
    "name": "Modern-Day Debate",
    "type": "youtube",
    "status": "ok",
-   "count": 2,
+   "count": 1,
    "resolved": {
     "channelId": "UC_cd4oF2phaIBD3WsU3f7Xg",
     "title": "Modern-Day Debate",
@@ -384,7 +384,7 @@
    "name": "The Onion",
    "type": "youtube",
    "status": "ok",
-   "count": 4,
+   "count": 3,
    "resolved": {
     "channelId": "UCfAOh2t5DpxVrgS9NQKjC7A",
     "title": "The Onion",
@@ -475,7 +475,7 @@
    "name": "The Hustle",
    "type": "youtube",
    "status": "ok",
-   "count": 1,
+   "count": 2,
    "resolved": {
     "channelId": "UCkWVA1_vkY9GLyuLAre97AQ",
     "title": "The Hustle ",
@@ -630,20 +630,19 @@
    "id": "rd-productmanagement",
    "name": "r/productmanagement",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/productmanagement/top/.rss?t=day"
+   "lastOk": "2026-10-29T16:11:07.819Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-tech",
    "name": "r/tech",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": "2026-10-27T01:08:56.460Z",
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-gaming",
@@ -652,16 +651,15 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-10-29T10:07:25.111Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
   },
   {
    "id": "rd-xbox",
@@ -670,7 +668,7 @@
    "status": "cached",
    "count": 5,
    "lastOk": "2026-10-28T16:07:55.180Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)"
   },
   {
    "id": "rd-slaythespire",
@@ -679,7 +677,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-geopolitics",
@@ -711,7 +709,223 @@
  ],
  "items": [
   {
-   "title": "Innenministerium zum neuen Bevölkerungsschutz-Zentrum des Deutschen Roten Kreuzes",
+   "title": "The Problem That Made Cheesecake Factory Worth $5.5 Billion",
+   "url": "https://www.youtube.com/watch?v=jvmEXxNM-rU",
+   "source": "The Hustle",
+   "feedId": "yt-the-hustle",
+   "type": "video",
+   "tags": [
+    "business"
+   ],
+   "published": "2026-10-29T19:00:37.000Z",
+   "summary": "The Cheesecake Factory breaks nearly every rule in the chain restaurant playbook. So why did its stock more than double this summer? *How do iconic brands like this keep winning? The 9 lessons you need to know:* https://clickhubspot.com/olpl A 21-page menu. Mall locations.…",
+   "thumb": "https://i3.ytimg.com/vi/jvmEXxNM-rU/hqdefault.jpg",
+   "id": "01f44958e25d",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Should the world fear Trump-Putin-Xi collusion? | The Economist",
+   "url": "https://www.youtube.com/watch?v=2y4u-6i6pyQ",
+   "source": "The Economist",
+   "feedId": "yt-the-economist",
+   "type": "video",
+   "tags": [
+    "finance",
+    "business"
+   ],
+   "published": "2026-10-29T18:58:22.000Z",
+   "summary": "Donald Trump, Vladimir Putin and Xi Jinping could sit down together as soon as next month, after America’s president declared himself open to a three-way meeting with his Russian and Chinese counterparts. It would be a summit for the ages. Chumminess between Mr Putin and Mr Xi…",
+   "thumb": "https://i3.ytimg.com/vi/2y4u-6i6pyQ/hqdefault.jpg",
+   "id": "e5f02bf4342a",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Berliner Linken-Politikerin Elif Eralp reagiert auf „Spiegel“-Bericht: Angst um eigene Sicherheit?",
+   "url": "https://www.youtube.com/watch?v=zQXVbnPuTBg",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-29T18:40:50.000Z",
+   "summary": "In nicht für die Öffentlichkeit bestimmten Anmerkungen zu einem „Spiegel“-Interview sorgte sich Linken-Politikerin Elif Eralp um ihre Sicherheit. Nun bekräftigte sie, klar gegen Gewalt vorgehen zu wollen. Dazu ARD-Korrespondent Sebastian Schöbel in Berlin. Mehr Informationen:…",
+   "thumb": "https://i3.ytimg.com/vi/zQXVbnPuTBg/hqdefault.jpg",
+   "id": "7ee20b240eaa",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Chillicothe, Ohio Trump Rally",
+   "url": "https://www.youtube.com/watch?v=kEyB1qg9sSo",
+   "source": "The Good Liars",
+   "feedId": "yt-the-good-liars",
+   "type": "video",
+   "tags": [
+    "comedy",
+    "politics",
+    "debates"
+   ],
+   "published": "2026-10-29T18:12:11.000Z",
+   "summary": "Jason visits Chillicothe, Ohio to talk to Trump supporters about socialism, Trump and Jesus (in that order), and much more! Join this channel to get access to perks: https://www.youtube.com/channel/UCUNOwz9KTDIhhTTN3_ptUDA/join https://linktr.ee/thegoodliars",
+   "thumb": "https://i4.ytimg.com/vi/kEyB1qg9sSo/hqdefault.jpg",
+   "id": "b0cf75c3daba",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Poundland files for administration, 12,000 jobs at risk",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xirduk/poundland_files_for_administration_12000_jobs_at/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-29T18:04:12.000Z",
+   "summary": "submitted by /u/OGSyedIsEverywhere [link] [comments]",
+   "id": "bcad376fec88",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Vorzeitiger Abschied von der EZB: Warum Christine Lagarde gehen will",
+   "url": "https://www.youtube.com/watch?v=c-mI9kILdqs",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-29T17:55:46.000Z",
+   "summary": "Offiziell wurde es bereits heute Vormittag von der Europäischen Zentralbank erklärt: EZB-Präsidentin Christine Lagarde tritt vorzeitig zurück. Sie wird ihren Posten zum 7. Februar niederlegen – etwa acht Monate vor dem regulären Ende ihrer Amtszeit. Am Nachmittag äußerte sich…",
+   "thumb": "https://i4.ytimg.com/vi/c-mI9kILdqs/hqdefault.jpg",
+   "id": "af0a9d011754",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Phantom Blade Zero: 10 Things The Game DOESN'T TELL YOU",
+   "url": "https://www.youtube.com/watch?v=vZdgn9J1SlM",
+   "source": "GameRanx",
+   "feedId": "yt-gameranx",
+   "type": "video",
+   "tags": [
+    "gaming"
+   ],
+   "published": "2026-10-29T17:42:41.000Z",
+   "summary": "Phantom Blade Zero (PC, PS5) is a game with lots of challenge and some weird secrets. Here are some tips for starting out. Subscribe for more: https://www.youtube.com/gameranxTV?sub_confirmation=1 0:00 Intro 0:57 Number 10 4:28 Number 9 7:55 Number 8 9:23 Number 7 13:19 Number…",
+   "thumb": "https://i3.ytimg.com/vi/vZdgn9J1SlM/hqdefault.jpg",
+   "id": "5f6e4207f96d",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Zehntausende Flüchtlinge: Sie sind aus dem Sudan vor dem Bürgerkrieg in den Südsudan geflohen",
+   "url": "https://www.youtube.com/watch?v=5DPiuqZwbmI",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-29T17:22:43.000Z",
+   "summary": "Die Menschen im Sudan hungern, leiden und sterben. Seit dreieinhalb Jahren tobt in dem afrikanischen Land ein Krieg. Die sudanesische Armee SAF und die Miliz RSF kämpfen um die Vorherrschaft. Als die Miliz vor einem Jahr die Großstadt al-Fashir eroberte, verübte sie dort ein…",
+   "thumb": "https://i2.ytimg.com/vi/5DPiuqZwbmI/hqdefault.jpg",
+   "id": "d811c1ceaa4f",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "3 Sharks Fight Over Vulcan Pest's Genius Rat Trap | Shark Tank US | Shark Tank Global",
+   "url": "https://www.youtube.com/watch?v=OF-NLSklKk4",
+   "source": "Shark Tank Global",
+   "feedId": "yt-shark-tank-global",
+   "type": "video",
+   "tags": [
+    "trash",
+    "business"
+   ],
+   "published": "2026-10-29T16:45:25.000Z",
+   "summary": "Ian Fleming enters the tank seeking $100K for a 5% stake in his company, Vulcan Pest. From Season 18 Episode 5 Watch Shark Tank US Now: http://AAN.SonyPictures.com/SharkTankUSHulu Watch Shark Tank Australia Now: http://aan.sonypictures.com/SharkTankAustralia Watch Dragons’ Den…",
+   "thumb": "https://i4.ytimg.com/vi/OF-NLSklKk4/hqdefault.jpg",
+   "id": "c95697787ec6",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "‘Your village needs you’: locals back vote to leave UK over asylum plan",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xip0ca/your_village_needs_you_locals_back_vote_to_leave/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-29T16:37:43.000Z",
+   "summary": "submitted by /u/LeadingPiece9608 [link] [comments]",
+   "id": "bd26236eb388",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "tagesschau in Einfacher Sprache 19:00 Uhr, 29.10.2026",
+   "url": "https://www.youtube.com/watch?v=maKpaNa-jbE",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-29T16:37:08.000Z",
+   "summary": "tagesschau in Einfacher Sprache 19:00 Uhr Zugunfall in Spanien: Suche nach Opfern, Autobauer VW macht Verlust, Bundespräsident Steinmeier zu Besuch in China, Schauspielerin Elke Sommer ist tot, Das Wetter Die \"tagesschau in Einfacher Sprache\" – immer Montag bis Freitag um 19:00…",
+   "thumb": "https://i2.ytimg.com/vi/maKpaNa-jbE/hqdefault.jpg",
+   "id": "0c92e54e6127",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Nigel Farage accused of shoving female Lib Dem MP in parliament",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xiome7/nigel_farage_accused_of_shoving_female_lib_dem_mp/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-29T16:23:36.000Z",
+   "summary": "submitted by /u/YouGotSoHeavy [link] [comments]",
+   "id": "794a9abd8f83",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Innenministerium bereitet Deutschland mit neuem Zentrum auf Krisen und Katastrophen vor",
    "url": "https://www.youtube.com/watch?v=aRccKBqjukE",
    "source": "Tagesschau",
    "feedId": "yt-tagesschau",
@@ -730,39 +944,18 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Spritpreise über zwei Euro: Hilft der „Tankrabatt“ Pendlern wirklich?",
-   "url": "https://www.youtube.com/watch?v=DfAzijH7TfY",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
+   "title": "Britons ‘face worst decade for income growth since records began’",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xin1zk/britons_face_worst_decade_for_income_growth_since/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
    "tags": [
-    "german",
-    "news",
-    "listen"
+    "politics",
+    "british"
    ],
-   "published": "2026-10-29T15:37:48.000Z",
-   "summary": "Durch den Krieg in Iran ist der Ölpreis stark angestiegen und das Tanken erheblich teurer geworden. Um Autofahrer:innen zu entlasten, hat die Bundesregierung zum 1. Oktober die Energiesteuer auf Kraftstoff gesenkt. Durch diesen sogenannten Tankrabatt kostet ein Liter Benzin…",
-   "thumb": "https://i1.ytimg.com/vi/DfAzijH7TfY/hqdefault.jpg",
-   "id": "1342146942d4",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Zugunglück auf Strecke Madrid-Sevilla: Gedenken an die Opfer und Suche nach den Ursachen",
-   "url": "https://www.youtube.com/watch?v=y5Oq8V5dPdg",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-29T15:07:52.000Z",
-   "summary": "Die Zahl der Todesopfer der Bahnkatastrophe in der spanischen Provinz Toledo ist weiter gestiegen. Inzwischen sind es 69. In der Nacht fanden Einsatzkräfte in den Trümmern der beiden Hochgeschwindigkeitszüge eine weitere Leiche. Die Bergungsteams suchen weiter. Als…",
-   "thumb": "https://i2.ytimg.com/vi/y5Oq8V5dPdg/hqdefault.jpg",
-   "id": "a6b28c566198",
+   "published": "2026-10-29T15:26:15.000Z",
+   "summary": "submitted by /u/LeadingPiece9608 [link] [comments]",
+   "id": "76f90ac22890",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -786,20 +979,18 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Milliarden-Minus bei VW: Was die Krise für deutsche Arbeitsplätze bedeutet",
-   "url": "https://www.youtube.com/watch?v=sMKZVJZrm9Y",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
+   "title": "[OC] The UK’s Age-Check Plan Runs Through Your Phone. Ofcom’s latest reports point towards a bigger role for app stores and operating systems in the UK’s online-safety plans. But who oversees the checks built into your phone?",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xilu37/oc_the_uks_agecheck_plan_runs_through_your_phone/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
    "tags": [
-    "german",
-    "news",
-    "listen"
+    "politics",
+    "british"
    ],
-   "published": "2026-10-29T14:50:19.000Z",
-   "summary": "Volkswagen steuert auf das erste Verlustjahr seit dem Diesel-Skandal zu. Im dritten Quartal stand unter dem Strich ein Verlust von rund 5,82 Milliarden Euro, wie der VW-Konzern in Wolfsburg mitteilte. Volkswagen verliert bei den Verkaufszahlen deutlich an Boden. Im laufenden…",
-   "thumb": "https://i4.ytimg.com/vi/sMKZVJZrm9Y/hqdefault.jpg",
-   "id": "6b1f28b0c5d3",
+   "published": "2026-10-29T14:40:15.000Z",
+   "summary": "submitted by /u/MY79 [link] [comments]",
+   "id": "01d2c1d90964",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -869,25 +1060,6 @@
    "summary": "Avi Shlaim, Emeritus Professor of International Relations at the University of Oxford and one of the leading historians of the Arab-Israeli conflict, examines Netanyahu’s impact on Israel, the destruction of Gaza and the future of Palestine. Shlaim argues that Britain bears…",
    "thumb": "https://i2.ytimg.com/vi/AQfxsrD4cZ8/hqdefault.jpg",
    "id": "6429d26f3a6f",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Verliert Deutschland den Anschluss? Was Steinmeiers China-Besuch zeigt",
-   "url": "https://www.youtube.com/watch?v=GiJ7C1wJRjA",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-29T12:24:35.000Z",
-   "summary": "Bundespräsident Steinmeier hat bei seiner China-Reise eine Grundsatzrede an einer Universität in Peking gehalten. Dabei würdigte er Chinas Aufstieg zur Weltmacht, sprach aber auch Probleme an. Er mahnte, sich gemeinsam für eine regelbasierte Weltordnung und fairen Welthandel…",
-   "thumb": "https://i4.ytimg.com/vi/GiJ7C1wJRjA/hqdefault.jpg",
-   "id": "10b4e5a4bc1e",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -980,40 +1152,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "UK boosts support to Ukraine with £10 billion package",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xidsq4/uk_boosts_support_to_ukraine_with_10_billion/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-29T07:57:16.000Z",
-   "summary": "submitted by /u/PoiHolloi2020 [link] [comments]",
-   "id": "87db8f1872f6",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Kosovan criminal who stole from disabled people can't be deported as she is 'culturally and socially integrated' in Britain, judge rules",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xidm4e/kosovan_criminal_who_stole_from_disabled_people/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-29T07:45:18.000Z",
-   "summary": "submitted by /u/BigSupermark [link] [comments]",
-   "id": "e14086e9cf85",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Switzerland suspends MSF funding after reports of sexual exploitation",
    "url": "https://www.reddit.com/r/geopolitics/comments/1xicr4f/switzerland_suspends_msf_funding_after_reports_of/",
    "source": "r/geopolitics",
@@ -1042,57 +1180,6 @@
    "published": "2026-10-29T05:13:48.000Z",
    "summary": "I mean it has always been “bring the highest value to the customers while driving business metrics, usually revenue” and “do what needs to be done in order to move the work forward”. It is still so. But how does that actually look that like in your organization with all the AI…",
    "id": "e0e2e9efd24f",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Europe's first deportation center for failed asylum seekers to open in Rwanda: report",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xia2yo/europes_first_deportation_center_for_failed/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-29T04:12:18.000Z",
-   "summary": "submitted by /u/GalacticScale [link] [comments]",
-   "id": "549b21e3aab0",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Jessica Elgot on X: \"💥Interesting new migration measures buried in the Budget.. - changing salary requirements for some sectors - expand visas to graduates from top 150 institutions - extend some graduate visas to 2 years for eligible unis",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xi4t4a/jessica_elgot_on_x_interesting_new_migration/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-29T00:00:06.000Z",
-   "summary": "Interesting new migration measures buried in the Budget.. changing salary requirements for some sectors expand visas to graduates from top 150 institutions extend some graduate visas to 2 years for eligible unis giving highest-skill workers longer to find a new job submitted by…",
-   "id": "15ffe98f42af",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Rupert Lowe MP: \"Look at this, stashed away on page 118 of the budget... The Government is implementing visa salary requirement changes from spring 2027 that will reduce 'occupation-specific minimum salary thresholds from the median to the 25th percentile of wages'. In short, making it FAR…”",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xi4783/rupert_lowe_mp_look_at_this_stashed_away_on_page/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-28T23:34:11.000Z",
-   "summary": "Look at this, stashed away on page 118 of the budget... The Government is implementing visa salary requirement changes from spring 2027 that will reduce 'occupation-specific minimum salary thresholds from the median to the 25th percentile of wages'. In short, making it FAR…",
-   "id": "0befd71127c4",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1958,23 +2045,6 @@
    "why": "0"
   },
   {
-   "title": "20 Sequels That Are NEVER GETTING MADE & Why",
-   "url": "https://www.youtube.com/watch?v=FkB1LvomXwE",
-   "source": "GameRanx",
-   "feedId": "yt-gameranx",
-   "type": "video",
-   "tags": [
-    "gaming"
-   ],
-   "published": "2026-10-25T16:14:12.000Z",
-   "summary": "We've got some bad news for fans of these game franchises. Subscribe for more: https://www.youtube.com/gameranxTV?sub_confirmation=1 0:00 Intro 0:53 Dishonored 3 2:24 Sleeping Dogs 2 4:04 Dante's Inferno Sequel (Dante's Inferno 2: Purgatorio) 6:08 Bully 2 7:49 Days Gone 2 9:20…",
-   "thumb": "https://i3.ytimg.com/vi/FkB1LvomXwE/hqdefault.jpg",
-   "id": "51f8d2a5bb2c",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "1 S*x Worker vs 20 Anti-S*x Work Advocates (ft Farha Khalidi) | Surrounded",
    "url": "https://www.youtube.com/watch?v=CV91KbBPQwg",
    "source": "Jubilee",
@@ -2300,24 +2370,6 @@
    "why": "0"
   },
   {
-   "title": "Can a Monthly Sock Subscription Become a Million Dollar Brand? | Shark Tank US | Shark Tank Global",
-   "url": "https://www.youtube.com/watch?v=z_R7d5rZ_xA",
-   "source": "Shark Tank Global",
-   "feedId": "yt-shark-tank-global",
-   "type": "video",
-   "tags": [
-    "trash",
-    "business"
-   ],
-   "published": "2026-10-22T15:59:48.000Z",
-   "summary": "Bryan DeLuca and Matt McClard enter the Tank seeking $250,000 for 10% of Foot Cardigan, their colorful sock subscription business that delivers a surprise pair to customers every month. From Season 7 Episode 3 Watch Shark Tank US Now: http://AAN.SonyPictures.com/SharkTankUSHulu…",
-   "thumb": "https://i3.ytimg.com/vi/z_R7d5rZ_xA/hqdefault.jpg",
-   "id": "74d378c7f3b7",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "Private Equity is RUINING Coffee",
    "url": "https://www.youtube.com/watch?v=c5V0hdxBHbg",
    "source": "Levi Hildebrand",
@@ -2548,25 +2600,6 @@
    "summary": "Yung Gravy, Erik Griffin, Pat O'Neill, Dedrick Flynn, Martin Phillips, D Madness, Michael A. Gonzales, Jon Deas, Matthew Muehling, Grooveline Horns, Joe White, Troy Conrad, Monica Colt, Steve Glass, Tony Hinchcliffe, Brian Redban - RECORDED– 10/12/2026 TONY HINCHCLIFFE…",
    "thumb": "https://i4.ytimg.com/vi/_XkQRV9dFL4/hqdefault.jpg",
    "id": "c58904db8f1d",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "BULLHEAD CITY, AZ TRUMP RALLY",
-   "url": "https://www.youtube.com/watch?v=TTFfXN9jPug",
-   "source": "The Good Liars",
-   "feedId": "yt-the-good-liars",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "politics",
-    "debates"
-   ],
-   "published": "2026-10-19T19:30:10.000Z",
-   "summary": "Jason visits Bullhead City, AZ for a Trump rally. Join this channel to get access to perks: https://www.youtube.com/channel/UCUNOwz9KTDIhhTTN3_ptUDA/join https://linktr.ee/thegoodliars",
-   "thumb": "https://i1.ytimg.com/vi/TTFfXN9jPug/hqdefault.jpg",
-   "id": "ec0e31fcf735",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2808,61 +2841,7 @@
    "score": 0,
    "matched": [],
    "why": "0"
-  },
-  {
-   "title": "Rachel Wilson Vs NotSoErudite: Do \"Women Jobs\" Actually Build the Economy?",
-   "url": "https://www.youtube.com/watch?v=cKNlJbX3v_8",
-   "source": "Modern-Day Debate",
-   "feedId": "yt-modern-day-debate",
-   "type": "video",
-   "tags": [
-    "debates",
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-15T18:00:17.000Z",
-   "summary": "DEBATECON 9 will be in Orlando, FL on October 24/25th! LET’S GOOOOO! https://events.eventnoire.com/e/debatecon-9-by-modern-day-debate-2 OUR INSIDER'S EMAIL LIST FOR DEBATECON DISCOUNTS: https://forms.gle/rK5aqPAzAZXiDpDz9 *If you want a discount on DEBATECON 9 tickets and are…",
-   "thumb": "https://i4.ytimg.com/vi/cKNlJbX3v_8/hqdefault.jpg",
-   "id": "0beedb5ca115",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Authorities Investigate Collision Between Trains From Chicago Traveling 80 MPH, DC Traveling 75 MPH",
-   "url": "https://www.youtube.com/watch?v=AKuUG7luvQc",
-   "source": "The Onion",
-   "feedId": "yt-the-onion",
-   "type": "video",
-   "tags": [
-    "comedy"
-   ],
-   "published": "2026-10-15T17:40:43.000Z",
-   "summary": "Railway investigators believe they have narrowed down the time of the crash to A) 8:54 p.m., B) 5:32 p.m., C) 7:01 p.m., or D) None of the above. Become an Onion member while it's still optional: https://membership.theonion.com/?campaign=701a500001geULHAA2",
-   "thumb": "https://i2.ytimg.com/vi/AKuUG7luvQc/hqdefault.jpg",
-   "id": "66e0fe0b981c",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Germany is “wrong” to finance Ukraine war: Alice Weidel interview | The Economist",
-   "url": "https://www.youtube.com/watch?v=5sorengsI0I",
-   "source": "The Economist",
-   "feedId": "yt-the-economist",
-   "type": "video",
-   "tags": [
-    "finance",
-    "business"
-   ],
-   "published": "2026-10-15T17:00:25.000Z",
-   "summary": "Germany should stop financing an “already lost war” in Ukraine, says Alice Weidel. The co-leader of the populist-right Alternative for Germany, speaks to Zanny Minton Beddoes, The Economist’s editor-in-chief. Weidel argues that peace requires taking Russia’s security interests…",
-   "thumb": "https://i2.ytimg.com/vi/5sorengsI0I/hqdefault.jpg",
-   "id": "7313af3ed534",
-   "score": 0,
-   "matched": [],
-   "why": "0"
   }
  ],
- "contentHash": "c7279c6e5e2a"
+ "contentHash": "d2e6a6d05619"
 }
