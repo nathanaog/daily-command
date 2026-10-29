@@ -1,17 +1,17 @@
 {
- "generated": "2026-10-29T19:12:08.113Z",
+ "generated": "2026-10-29T21:58:45.204Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
   "ok": 51,
-  "items": 120,
+  "items": 121,
   "duplicatesMerged": 0,
   "lengthsKnown": 1,
-  "lengthLookups": 99,
-  "lengthFailures": 99,
+  "lengthLookups": 100,
+  "lengthFailures": 100,
   "lengthVia": "video pages",
   "lengthFailReasons": {
-   "no length on page": 99
+   "no length on page": 100
   }
  },
  "feeds": [
@@ -267,7 +267,7 @@
    "name": "ProZD",
    "type": "youtube",
    "status": "ok",
-   "count": 3,
+   "count": 4,
    "resolved": {
     "channelId": "UC6MFZAOHXlKK1FI7V0XQVeA",
     "title": "ProZD",
@@ -657,9 +657,10 @@
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
+   "lastOk": "2026-10-29T19:12:08.113Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-xbox",
@@ -668,7 +669,7 @@
    "status": "cached",
    "count": 5,
    "lastOk": "2026-10-28T16:07:55.180Z",
-   "note": "rate-limited (429)"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-slaythespire",
@@ -677,25 +678,26 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-10-29T13:20:20.408Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
   },
   {
    "id": "rd-germany",
    "name": "r/germany",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": "2026-10-15T00:59:57.533Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-unitedkingdom",
@@ -704,10 +706,209 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   }
  ],
  "items": [
+  {
+   "title": "Neuköllns Bezirksbürgermeister über die Gefahr von Hamas-Sympathisanten | tagesthemen-Interview",
+   "url": "https://www.youtube.com/watch?v=pTiSUO-Sb2s",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-29T21:50:03.000Z",
+   "summary": "Elif Eralp will neue Regierende Bürgermeisterin Berlins werden. Während ihre Linkspartei bald in Koalitionsverhandlungen mit der SPD und den Grünen eintreten möchte, sorgt nun ein Bericht des „Spiegel“ für Unruhe. Demnach fürchte sich Elif Eralp vor Hamas-Sympathisanten im…",
+   "thumb": "https://i1.ytimg.com/vi/pTiSUO-Sb2s/hqdefault.jpg",
+   "id": "fe4918611766",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Could Trump and Netanyahu be preparing to escalate the Iran war?",
+   "url": "https://www.youtube.com/watch?v=New2XejEJZ0",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-29T21:00:26.000Z",
+   "summary": "Could Donald Trump restart the war with Iran after the US midterm elections? Andrew Marr speaks to two former senior officials about growing fears of renewed escalation between the US, Israel and Iran. Jeffrey Feltman, former head of the UN Department of Political Affairs and…",
+   "thumb": "https://i3.ytimg.com/vi/New2XejEJZ0/hqdefault.jpg",
+   "id": "fbc0c20de956",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "looking up wikipedia pages as you're watching something",
+   "url": "https://www.youtube.com/watch?v=Rb96qcVxZAI",
+   "source": "ProZD",
+   "feedId": "yt-prozd",
+   "type": "video",
+   "tags": [
+    "comedy",
+    "gaming"
+   ],
+   "published": "2026-10-29T20:47:52.000Z",
+   "summary": "My Patreon: https://www.patreon.com/ProZD My Cameo: https://www.cameo.com/prozd My Let's Play Channel: https://www.youtube.com/@prozdplaysgames My Food Channel: https://www.youtube.com/@ProZDEatsFood My Anime Channel: https://www.youtube.com/@ProZDWatchesAnime My Autograph…",
+   "thumb": "https://i3.ytimg.com/vi/Rb96qcVxZAI/hqdefault.jpg",
+   "id": "2d151f6a5ebd",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "The Fed’s decision to hold interest rates steady helps Warsh deny Tehran a say over monetary policy",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xivpxa/the_feds_decision_to_hold_interest_rates_steady/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-29T20:46:30.000Z",
+   "summary": "Federal Reserve Chairman Kevin Warsh has talked tough on inflation since returning to the central bank this spring. And yet, despite prices rising comfortably ahead of target in recent months, the Federal Open Market Committee (FOMC)—led by Warsh—appears to be taking its foot…",
+   "id": "e0897b8765af",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "EU chief von der Leyen pushes Canada as 'associate member'",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xivhxn/eu_chief_von_der_leyen_pushes_canada_as_associate/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-29T20:37:45.000Z",
+   "summary": "submitted by /u/toronto_star [link] [comments]",
+   "id": "9ee5cf78261c",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Lib Dem MP accused of ‘physical altercation’ with Farage speaks out",
+   "url": "https://www.youtube.com/watch?v=RE--bh1SIz4",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-29T20:07:42.000Z",
+   "summary": "Nigel Farage claimed that a ‘prior physical altercation’ with Lib Dem MP Caroline Voaden stopped him going to the House of Commons for the Budget. 01:07 | Tom Swarbrick quizzes Robert Jenrick on the allegations 02:59 | Caroline Voaden, the MP in question, calls the whole thing…",
+   "thumb": "https://i3.ytimg.com/vi/RE--bh1SIz4/hqdefault.jpg",
+   "id": "d1455a118da0",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Fox News Reporter HUMILIATED by Liberal AT TRUMP RALLY!",
+   "url": "https://www.youtube.com/watch?v=zB7lrfcIg9Y",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-29T20:05:07.000Z",
+   "summary": "Luke discusses some recent Fox News man-on-the-street interviews. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
+   "thumb": "https://i3.ytimg.com/vi/zB7lrfcIg9Y/hqdefault.jpg",
+   "id": "8372e0361658",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Reported Vance Letter to Iran Security Chief Mohsen Rezaei Comes as Tehran Weighs Hormuz Strategy",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xiugkr/reported_vance_letter_to_iran_security_chief/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-29T19:59:41.000Z",
+   "summary": "submitted by /u/Beginning-Wish-4273 [link] [comments]",
+   "id": "76b904e634f8",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Bundespräsident in Peking: Warnung vor wirtschaftlichen Abhängigkeiten",
+   "url": "https://www.youtube.com/watch?v=ybEDajnOTV0",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-29T19:35:39.000Z",
+   "summary": "Die Beziehungen zwischen Europa und China sind angespannt. Kritik an den Handelspraktiken Pekings oder der Unterstützung für Russland lassen auch in Deutschland den Ruf nach mehr Unabhängigkeit von China lauter werden. Jetzt ist Bundespräsident Steinmeier nach Peking gereist…",
+   "thumb": "https://i2.ytimg.com/vi/ybEDajnOTV0/hqdefault.jpg",
+   "id": "4727cf061399",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "tagesschau 20:00 Uhr, 29.10.2026",
+   "url": "https://www.youtube.com/watch?v=9VnIZ9q3wkE",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-29T19:31:41.000Z",
+   "summary": "tagesschau 20:00 Uhr Die Themen der Sendung: 00:00 Guten Abend 00:23 Diskussion über Spiegel-Interview der Berliner Linken-Politikerin Eralp 02:28 Bundeskanzler Merz hebt in Südkorea die Zusammenarbeit hervor 04:41 Bundespräsident Steinmeier hält in Peking eine Grundsatzrede zu…",
+   "thumb": "https://i2.ytimg.com/vi/9VnIZ9q3wkE/hqdefault.jpg",
+   "id": "c3b973bf82fd",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Chillicothe, Ohio Trump Rally",
+   "url": "https://www.youtube.com/watch?v=kEyB1qg9sSo",
+   "source": "The Good Liars",
+   "feedId": "yt-the-good-liars",
+   "type": "video",
+   "tags": [
+    "comedy",
+    "politics",
+    "debates"
+   ],
+   "published": "2026-10-29T19:30:08.000Z",
+   "summary": "Jason visits Chillicothe, Ohio to talk to Trump supporters about socialism, Trump and Jesus (in that order), and much more! Join this channel to get access to perks: https://www.youtube.com/channel/UCUNOwz9KTDIhhTTN3_ptUDA/join https://linktr.ee/thegoodliars",
+   "thumb": "https://i4.ytimg.com/vi/kEyB1qg9sSo/hqdefault.jpg",
+   "id": "b0cf75c3daba",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
   {
    "title": "The Problem That Made Cheesecake Factory Worth $5.5 Billion",
    "url": "https://www.youtube.com/watch?v=jvmEXxNM-rU",
@@ -758,25 +959,6 @@
    "summary": "In nicht für die Öffentlichkeit bestimmten Anmerkungen zu einem „Spiegel“-Interview sorgte sich Linken-Politikerin Elif Eralp um ihre Sicherheit. Nun bekräftigte sie, klar gegen Gewalt vorgehen zu wollen. Dazu ARD-Korrespondent Sebastian Schöbel in Berlin. Mehr Informationen:…",
    "thumb": "https://i3.ytimg.com/vi/zQXVbnPuTBg/hqdefault.jpg",
    "id": "7ee20b240eaa",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Chillicothe, Ohio Trump Rally",
-   "url": "https://www.youtube.com/watch?v=kEyB1qg9sSo",
-   "source": "The Good Liars",
-   "feedId": "yt-the-good-liars",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "politics",
-    "debates"
-   ],
-   "published": "2026-10-29T18:12:11.000Z",
-   "summary": "Jason visits Chillicothe, Ohio to talk to Trump supporters about socialism, Trump and Jesus (in that order), and much more! Join this channel to get access to perks: https://www.youtube.com/channel/UCUNOwz9KTDIhhTTN3_ptUDA/join https://linktr.ee/thegoodliars",
-   "thumb": "https://i4.ytimg.com/vi/kEyB1qg9sSo/hqdefault.jpg",
-   "id": "b0cf75c3daba",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -835,20 +1017,18 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Zehntausende Flüchtlinge: Sie sind aus dem Sudan vor dem Bürgerkrieg in den Südsudan geflohen",
-   "url": "https://www.youtube.com/watch?v=5DPiuqZwbmI",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
+   "title": "Only the Gulf Can End the Iran War: The Arab Monarchies Must Help Washington and Tehran Save Face",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xiplbt/only_the_gulf_can_end_the_iran_war_the_arab/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
    "tags": [
-    "german",
-    "news",
-    "listen"
+    "politics",
+    "news"
    ],
-   "published": "2026-10-29T17:22:43.000Z",
-   "summary": "Die Menschen im Sudan hungern, leiden und sterben. Seit dreieinhalb Jahren tobt in dem afrikanischen Land ein Krieg. Die sudanesische Armee SAF und die Miliz RSF kämpfen um die Vorherrschaft. Als die Miliz vor einem Jahr die Großstadt al-Fashir eroberte, verübte sie dort ein…",
-   "thumb": "https://i2.ytimg.com/vi/5DPiuqZwbmI/hqdefault.jpg",
-   "id": "d811c1ceaa4f",
+   "published": "2026-10-29T16:58:56.000Z",
+   "summary": "submitted by /u/ForeignAffairsMag [link] [comments]",
+   "id": "f8b661aabc8b",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -889,25 +1069,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "tagesschau in Einfacher Sprache 19:00 Uhr, 29.10.2026",
-   "url": "https://www.youtube.com/watch?v=maKpaNa-jbE",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-29T16:37:08.000Z",
-   "summary": "tagesschau in Einfacher Sprache 19:00 Uhr Zugunfall in Spanien: Suche nach Opfern, Autobauer VW macht Verlust, Bundespräsident Steinmeier zu Besuch in China, Schauspielerin Elke Sommer ist tot, Das Wetter Die \"tagesschau in Einfacher Sprache\" – immer Montag bis Freitag um 19:00…",
-   "thumb": "https://i2.ytimg.com/vi/maKpaNa-jbE/hqdefault.jpg",
-   "id": "0c92e54e6127",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Nigel Farage accused of shoving female Lib Dem MP in parliament",
    "url": "https://www.reddit.com/r/ukpolitics/comments/1xiome7/nigel_farage_accused_of_shoving_female_lib_dem_mp/",
    "source": "r/ukpolitics",
@@ -925,20 +1086,18 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Innenministerium bereitet Deutschland mit neuem Zentrum auf Krisen und Katastrophen vor",
-   "url": "https://www.youtube.com/watch?v=aRccKBqjukE",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
+   "title": "Polish FM says he trusts Nordic diplomacy with Putin, braces for ‘uncomfortable’ G20 with Lavrov",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xiohb9/polish_fm_says_he_trusts_nordic_diplomacy_with/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
    "tags": [
-    "german",
-    "news",
-    "listen"
+    "politics",
+    "news"
    ],
-   "published": "2026-10-29T15:41:13.000Z",
-   "summary": "In Brandenburg hat das Deutsche Rote Kreuz ein neues Bevölkerungsschutzzentrum eröffnet. Dort lagert Material, um bei Katastrophen bis zu 5.000 Menschen versorgen zu können. Laut Innenminister Dobrindt setzt das Projekt Maßstäbe. Das Innenministerium bereitet Deutschland so…",
-   "thumb": "https://i2.ytimg.com/vi/aRccKBqjukE/hqdefault.jpg",
-   "id": "50db12c54cea",
+   "published": "2026-10-29T16:18:28.000Z",
+   "summary": "Poland's foreign minister said he would prefer the EU to speak to the Kremlin as a bloc about ending the war in Ukraine, but indicated he was confident Norway and Finland had “fairly and firmly” represented the interests of the region in a phone call with Vladimir Putin. On…",
+   "id": "3de115322dae",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1065,23 +1224,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Middle Powers and the Illusion of a Post-America Middle East",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xigqwu/middle_powers_and_the_illusion_of_a_postamerica/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-29T10:55:09.000Z",
-   "summary": "submitted by /u/RUSIOfficial [link] [comments]",
-   "id": "023dafa59274",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Police Called To 3-year-old's Soccer Game Because He Was TOO GOOD???",
    "url": "https://www.youtube.com/watch?v=05Ro9inVa68",
    "source": "Aberrant preach",
@@ -1128,42 +1270,6 @@
    "summary": "Speaking to LBC's Nick Ferrari at Breakfast after delivering his first Budget, the Chancellor defended his decision not to announce cuts to Britain's growing benefits bill as he pledged to reform the sector. Mr Healey told the Commons on Wednesday he would address the country's…",
    "thumb": "https://i1.ytimg.com/vi/lvs8ZNEXCb4/hqdefault.jpg",
    "id": "a756d3e4dbec",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Burnham’s First Budget Explained",
-   "url": "https://www.youtube.com/watch?v=ygVX149E5cE",
-   "source": "TLDR News",
-   "feedId": "yt-tldr-news",
-   "type": "video",
-   "tags": [
-    "news",
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-29T09:30:29.000Z",
-   "summary": "Pre-order a copy of Too Long: toolong.news/TL010 Sign Up for TLDR Party: https://toolong.news/party TLDR Party Explained: https://www.youtube.com/watch?v=KVXXC3jk4Kg Chancellor John Healey delivered his budget yesterday, the first of the new Burnham government, but it was not…",
-   "thumb": "https://i2.ytimg.com/vi/ygVX149E5cE/hqdefault.jpg",
-   "id": "4db98a7a79cf",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Switzerland suspends MSF funding after reports of sexual exploitation",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xicr4f/switzerland_suspends_msf_funding_after_reports_of/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-29T06:50:30.000Z",
-   "summary": "submitted by /u/NotSoSaneExile [link] [comments]",
-   "id": "1440b39269a3",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1265,6 +1371,25 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
+   "title": "Burnham’s First Budget Explained",
+   "url": "https://www.youtube.com/watch?v=ygVX149E5cE",
+   "source": "TLDR News",
+   "feedId": "yt-tldr-news",
+   "type": "video",
+   "tags": [
+    "news",
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-29T09:30:29.000Z",
+   "summary": "Pre-order a copy of Too Long: toolong.news/TL010 Sign Up for TLDR Party: https://toolong.news/party TLDR Party Explained: https://www.youtube.com/watch?v=KVXXC3jk4Kg Chancellor John Healey delivered his budget yesterday, the first of the new Burnham government, but it was not…",
+   "thumb": "https://i2.ytimg.com/vi/ygVX149E5cE/hqdefault.jpg",
+   "id": "4db98a7a79cf",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
    "title": "WATCH: Tim Miller EXPOSES Charlie Kirk Show Hosts TO THEIR FACE!",
    "url": "https://www.youtube.com/watch?v=zZtastxjbKA",
    "source": "Luke Beasley",
@@ -1354,23 +1479,6 @@
    "why": "0"
   },
   {
-   "title": "Exclusive | Vance Reaches Out to Iranian Hard-Liner in Bid to Restart Peace Talks",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xi1sdv/exclusive_vance_reaches_out_to_iranian_hardliner/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-28T21:54:46.000Z",
-   "summary": "submitted by /u/Unfair-Ticket9474 [link] [comments]",
-   "id": "d0ff0772596e",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "What did the budget ever do for us? | James O’Brien - The Whole Show",
    "url": "https://www.youtube.com/watch?v=VitUibSAcIQ",
    "source": "LBC",
@@ -1384,76 +1492,6 @@
    "summary": "This is a catch-up version of James O'Brien's live, daily show on LBC Radio from the 28th of October 2026. Listen to the full show on the all-new LBC App: https://app.af.lbc.co.uk/btnc/thenewlbcapp #jamesobrien #politics #LBC LBC is the home of live debate around news and…",
    "thumb": "https://i3.ytimg.com/vi/VitUibSAcIQ/hqdefault.jpg",
    "id": "ff2f75496fdf",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "OH SH*T: Piers Morgan HUMILIATES MAGA Star for 10 MINUTES STRAIGHT!",
-   "url": "https://www.youtube.com/watch?v=1gBa_wzbAnw",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-28T20:33:13.000Z",
-   "summary": "Luke discusses Liz Wheeler's disasterpus appearance on Piers Morgan's show. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
-   "thumb": "https://i2.ytimg.com/vi/1gBa_wzbAnw/hqdefault.jpg",
-   "id": "6560c13f8942",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Farage skips Budget following 'physical altercation' with MP",
-   "url": "https://www.youtube.com/watch?v=EzM3V99GRu0",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-28T19:40:22.000Z",
-   "summary": "In Reform UK's response to the Budget, Nigel Farage claimed a 'physical altercation' with a Lib Dem MP at the King's Speech in May deterred him from appearing in the Commons today. Tom Swarbrick quizzes Reform MP Robert Jenrick over the alleged altercation. Listen to the full…",
-   "thumb": "https://i2.ytimg.com/vi/EzM3V99GRu0/hqdefault.jpg",
-   "id": "f59a710412d7",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "The Backdoor to American Innovation: How Military Partnerships Make Washington Vulnerable to Its Adversaries",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xhy8jc/the_backdoor_to_american_innovation_how_military/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-28T19:39:13.000Z",
-   "summary": "submitted by /u/ForeignAffairsMag [link] [comments]",
-   "id": "8837893e3a8f",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "How to Secure the Straits: Why Iran and the Houthis Keep Winning the Waterways",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xhy7lr/how_to_secure_the_straits_why_iran_and_the/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-28T19:38:14.000Z",
-   "summary": "submitted by /u/ForeignAffairsMag [link] [comments]",
-   "id": "68a7cdb2b640",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1523,24 +1561,6 @@
    "summary": "Skip to 9:20 if you want straight economy chat. Andy Burnham's Chancellor John Healey gave his first budget, and the first of Andy Burnham's reign as Prime Minister. Ava and Seán headed into the content dungeon to chew the fat. Like PoliticsJOE? We need your support:…",
    "thumb": "https://i4.ytimg.com/vi/Si7oy75EfVo/hqdefault.jpg",
    "id": "767aabe2176f",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "'Why no help for landlords?' LBC callers react to the budget",
-   "url": "https://www.youtube.com/watch?v=01TUQ7pyuvg",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-28T17:39:29.000Z",
-   "summary": "Chancellor John Healey has delivered Andy Burnham's first Autumn Budget, and the country is still digesting the news. Shelagh Fogarty hears from LBC's callers. 00:00 | Robert, a pensioner, wants everything to be means tested. 03:00 | Andy, thinks he and his fellow landlords…",
-   "thumb": "https://i1.ytimg.com/vi/01TUQ7pyuvg/hqdefault.jpg",
-   "id": "0dad0be3471b",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2843,5 +2863,5 @@
    "why": "0"
   }
  ],
- "contentHash": "d2e6a6d05619"
+ "contentHash": "a9d9370f6a74"
 }
