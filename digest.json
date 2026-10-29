@@ -1,10 +1,10 @@
 {
- "generated": "2026-10-29T10:07:25.111Z",
+ "generated": "2026-10-29T13:20:20.408Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
-  "ok": 52,
-  "items": 123,
+  "ok": 51,
+  "items": 122,
   "duplicatesMerged": 0,
   "lengthsKnown": 1,
   "lengthLookups": 102,
@@ -639,8 +639,8 @@
    "id": "rd-tech",
    "name": "r/tech",
    "type": "reddit",
-   "status": "cached",
-   "count": 1,
+   "status": "waiting",
+   "count": 0,
    "lastOk": "2026-10-27T01:08:56.460Z",
    "note": "not its turn this run"
   },
@@ -657,9 +657,10 @@
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
+   "lastOk": "2026-10-29T10:07:25.111Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-xbox",
@@ -668,7 +669,7 @@
    "status": "cached",
    "count": 5,
    "lastOk": "2026-10-28T16:07:55.180Z",
-   "note": "rate-limited (429)"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-slaythespire",
@@ -677,25 +678,26 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-10-29T04:03:52.444Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
   },
   {
    "id": "rd-germany",
    "name": "r/germany",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": "2026-10-15T00:59:57.533Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-unitedkingdom",
@@ -704,10 +706,136 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   }
  ],
  "items": [
+  {
+   "title": "MAGA Candidate’s S*X SCANDAL LEAKS, Watch HIM PANIC!",
+   "url": "https://www.youtube.com/watch?v=bSrs54LLy3E",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-29T13:00:09.000Z",
+   "summary": "Luke discusses Brent Taylor's scandal. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley Instagram -…",
+   "thumb": "https://i3.ytimg.com/vi/bSrs54LLy3E/hqdefault.jpg",
+   "id": "6fee94cb38f6",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Avi Shlaim: Benjamin Netanyahu has changed Israel forever",
+   "url": "https://www.youtube.com/watch?v=AQfxsrD4cZ8",
+   "source": "PoliticsJOE",
+   "feedId": "yt-politicsjoe",
+   "type": "video",
+   "tags": [
+    "comedy"
+   ],
+   "published": "2026-10-29T12:59:17.000Z",
+   "summary": "Avi Shlaim, Emeritus Professor of International Relations at the University of Oxford and one of the leading historians of the Arab-Israeli conflict, examines Netanyahu’s impact on Israel, the destruction of Gaza and the future of Palestine. Shlaim argues that Britain bears…",
+   "thumb": "https://i2.ytimg.com/vi/AQfxsrD4cZ8/hqdefault.jpg",
+   "id": "6429d26f3a6f",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Verliert Deutschland den Anschluss? Was Steinmeiers China-Besuch zeigt",
+   "url": "https://www.youtube.com/watch?v=GiJ7C1wJRjA",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-29T12:24:35.000Z",
+   "summary": "Bundespräsident Steinmeier hat bei seiner China-Reise eine Grundsatzrede an einer Universität in Peking gehalten. Dabei würdigte er Chinas Aufstieg zur Weltmacht, sprach aber auch Probleme an. Er mahnte, sich gemeinsam für eine regelbasierte Weltordnung und fairen Welthandel…",
+   "thumb": "https://i4.ytimg.com/vi/GiJ7C1wJRjA/hqdefault.jpg",
+   "id": "10b4e5a4bc1e",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Middle Powers and the Illusion of a Post-America Middle East",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xigqwu/middle_powers_and_the_illusion_of_a_postamerica/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-29T10:55:09.000Z",
+   "summary": "submitted by /u/RUSIOfficial [link] [comments]",
+   "id": "023dafa59274",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "„Sehr unwahrscheinlich\": ARD-Bahnexperte zu möglichen Zugunglücken in Deutschland",
+   "url": "https://www.youtube.com/watch?v=de2_JjCk8-8",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-29T10:48:51.000Z",
+   "summary": "In Spanien suchen die Rettungskräfte nach dem schweren Zugunglück nach weiteren Opfern in den Waggon-Trümmern. Die Regierung versprach Aufklärung, in Madrid gab es Proteste. Als Unfallursache könnte menschliches Versagen eine Rolle gespielt haben. Ist so ein schweres Zugunglück…",
+   "thumb": "https://i1.ytimg.com/vi/de2_JjCk8-8/hqdefault.jpg",
+   "id": "d0e0943011de",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Zugunglück in Spanien: ARD-Journalist berichtet von Bergungsarbeiten an Unfallstelle",
+   "url": "https://www.youtube.com/watch?v=Mn9qyhXOgQw",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-29T10:17:46.000Z",
+   "summary": "In Spanien suchen die Rettungskräfte nach dem schwerem Zugunglück nach weiteren Opfern in den Waggon-Trümmern. Die Regierung versprach Aufklärung, in Madrid gab es Proteste. Als Unfallursache könnte menschliches Versagen eine Rolle gespielt haben. Mehr zum Thema:…",
+   "thumb": "https://i2.ytimg.com/vi/Mn9qyhXOgQw/hqdefault.jpg",
+   "id": "b396b5f7a274",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Police Called To 3-year-old's Soccer Game Because He Was TOO GOOD???",
+   "url": "https://www.youtube.com/watch?v=05Ro9inVa68",
+   "source": "Aberrant preach",
+   "feedId": "yt-aberrant-preach",
+   "type": "video",
+   "tags": [
+    "trash"
+   ],
+   "published": "2026-10-29T10:10:42.000Z",
+   "summary": "Police was called for a 3 year old kid being too good at football. If that wasn't ridiculous enough, we got access to the bodycam. The reasoning is wilder. ———————————— Spotify: https://open.spotify.com/artist/6QJIJ6AugqPEFASp1V6zgH Merchandise ---…",
+   "thumb": "https://i1.ytimg.com/vi/05Ro9inVa68/hqdefault.jpg",
+   "id": "2099d4ffaf24",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
   {
    "title": "The Chancellor refuses to make 'crude cuts' to welfare bill",
    "url": "https://www.youtube.com/watch?v=lvs8ZNEXCb4",
@@ -818,20 +946,18 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "AfD-Leak: Was die gehackten E-Mails bereits verraten I 11KM - der tagesschau-Podcast",
-   "url": "https://www.youtube.com/watch?v=9w7Ktbkvh5c",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
+   "title": "Switzerland suspends MSF funding after reports of sexual exploitation",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xicr4f/switzerland_suspends_msf_funding_after_reports_of/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
    "tags": [
-    "german",
-    "news",
-    "listen"
+    "politics",
+    "news"
    ],
-   "published": "2026-10-29T05:18:54.000Z",
-   "summary": "Über 400.000 E-Mails, insgesamt rund 280 GB Daten: Was steht im #AfD-Leak? Darüber spricht NDR-Investigativjournalistin Mandy Sarti mit 11KM-Host Elena Kuch. Gemeinsam mit Kolleginnen und Kollegen von NDR und WDR recherchiert Mandy seit Tagen in den Daten, die von Hackern…",
-   "thumb": "https://i2.ytimg.com/vi/9w7Ktbkvh5c/hqdefault.jpg",
-   "id": "36d19092c0e4",
+   "published": "2026-10-29T06:50:30.000Z",
+   "summary": "submitted by /u/NotSoSaneExile [link] [comments]",
+   "id": "1440b39269a3",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -848,25 +974,6 @@
    "published": "2026-10-29T05:13:48.000Z",
    "summary": "I mean it has always been “bring the highest value to the customers while driving business metrics, usually revenue” and “do what needs to be done in order to move the work forward”. It is still so. But how does that actually look that like in your organization with all the AI…",
    "id": "e0e2e9efd24f",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Zugunglück Spanien/ EU-Gebühr für Billigware/ VW zerlegt Autos/ Streit um Weinautomat | \"15 \"Minuten",
-   "url": "https://www.youtube.com/watch?v=ewMT7P5M8A0",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-29T04:57:33.000Z",
-   "summary": "(00:00:07) Themenübersicht (00:00:45) Zugunglück in Spanien Bei einem Zugunglück in Spanien hat es mehrere Tote und Verletzte gegeben. Zwei Züge sollen zusammengestoßen sein, darauf seien mehrere Waggons entgleist. (00:02:08) Neue EU-Gebühr für Temu, Shein & Co. Bestellungen…",
-   "thumb": "https://i2.ytimg.com/vi/ewMT7P5M8A0/hqdefault.jpg",
-   "id": "42109693c30c",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -907,24 +1014,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Rally Crowd GASPS as Trump LOSES HIS SH*T On Stage!",
-   "url": "https://www.youtube.com/watch?v=AO9HBzg21ps",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-29T00:33:07.000Z",
-   "summary": "Luke discusses Trump's latest rallies in Texas. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley Instagram -…",
-   "thumb": "https://i2.ytimg.com/vi/AO9HBzg21ps/hqdefault.jpg",
-   "id": "4b34d103ab2c",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Jessica Elgot on X: \"💥Interesting new migration measures buried in the Budget.. - changing salary requirements for some sectors - expand visas to graduates from top 150 institutions - extend some graduate visas to 2 years for eligible unis",
    "url": "https://www.reddit.com/r/ukpolitics/comments/1xi4t4a/jessica_elgot_on_x_interesting_new_migration/",
    "source": "r/ukpolitics",
@@ -959,43 +1048,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Eastern Orthodox Vs Protestantism, Which Is the True Church? | Jay Dyer Vs Dr. David Wood",
-   "url": "https://www.youtube.com/watch?v=IpKKCNJ81NE",
-   "source": "Modern-Day Debate",
-   "feedId": "yt-modern-day-debate",
-   "type": "video",
-   "tags": [
-    "debates",
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-28T22:35:05.000Z",
-   "summary": "Andrew Wilson Vs Cenk Uygur at DEBATECON X in Dallas TX on February 20/21st: https://events.eventnoire.com/e/debatecon-x-by-modern-day-debate LINKS TO GUESTS: @JayDyer @apologeticsroadshow OUR INSIDER'S EMAIL LIST FOR DEBATECON DISCOUNTS: https://forms.gle/rK5aqPAzAZXiDpDz9 OUR…",
-   "thumb": "https://i2.ytimg.com/vi/IpKKCNJ81NE/hqdefault.jpg",
-   "id": "e66886092d1e",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "DAMN: Katie Zacharia RETURNS, FUMES in Interview after FIRING!",
-   "url": "https://www.youtube.com/watch?v=QV46a6p8pco",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-28T22:33:16.000Z",
-   "summary": "Luke discusses Katie Zacharia's Newsmax interview. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley Instagram -…",
-   "thumb": "https://i2.ytimg.com/vi/QV46a6p8pco/hqdefault.jpg",
-   "id": "34442f0436c8",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Division of responsibilities between PM and QA",
    "url": "https://www.reddit.com/r/ProductManagement/comments/1xi28by/division_of_responsibilities_between_pm_and_qa/",
    "source": "r/productmanagement",
@@ -1012,74 +1064,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Exclusive | Vance Reaches Out to Iranian Hard-Liner in Bid to Restart Peace Talks",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xi1sdv/exclusive_vance_reaches_out_to_iranian_hardliner/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-28T21:54:46.000Z",
-   "summary": "submitted by /u/Unfair-Ticket9474 [link] [comments]",
-   "id": "d0ff0772596e",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "The Backdoor to American Innovation: How Military Partnerships Make Washington Vulnerable to Its Adversaries",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xhy8jc/the_backdoor_to_american_innovation_how_military/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-28T19:39:13.000Z",
-   "summary": "submitted by /u/ForeignAffairsMag [link] [comments]",
-   "id": "8837893e3a8f",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "How to Secure the Straits: Why Iran and the Houthis Keep Winning the Waterways",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xhy7lr/how_to_secure_the_straits_why_iran_and_the/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-28T19:38:14.000Z",
-   "summary": "submitted by /u/ForeignAffairsMag [link] [comments]",
-   "id": "68a7cdb2b640",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "The China Price: Beijing’s Green Path to Ending Dollar Dominance",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xhy6i7/the_china_price_beijings_green_path_to_ending/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-28T19:37:06.000Z",
-   "summary": "submitted by /u/ForeignAffairsMag [link] [comments]",
-   "id": "c13e8330ffca",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "How to handle stressful GPM dynamic",
    "url": "https://www.reddit.com/r/ProductManagement/comments/1xhy4eg/how_to_handle_stressful_gpm_dynamic/",
    "source": "r/productmanagement",
@@ -1091,23 +1075,6 @@
    "published": "2026-10-28T19:34:53.000Z",
    "summary": "I'm a new PM (~6 months) leading a new product area. I have solid business requirements in place and the team has started work for new features based off PRDs and designs, etc etc. But I'm concerned about the dynamic with my manager and frequently changing requirements. I…",
    "id": "5c41fb1d5056",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Why India Is Erupting",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xhx5jk/why_india_is_erupting/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-28T19:00:23.000Z",
-   "summary": "submitted by /u/theatlantic [link] [comments]",
-   "id": "3f19d52bcf41",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1193,20 +1160,73 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "tagesthemen 21:35 Uhr, 28.10.2026",
-   "url": "https://www.youtube.com/watch?v=OIHiEUxdn1Q",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
+   "title": "Rally Crowd GASPS as Trump LOSES HIS SH*T On Stage!",
+   "url": "https://www.youtube.com/watch?v=AO9HBzg21ps",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
    "type": "video",
    "tags": [
-    "german",
-    "news",
+    "politics",
     "listen"
    ],
-   "published": "2026-10-28T21:02:43.000Z",
-   "summary": "tagesthemen 21:35 Uhr Zugkollision in Spanien: Aktuelle Informationen und Hintergründe, Nach der Wahl in Israel: Wer wird neuer Premierminister?, Wer folgt auf Bundespräsident Steinmeier? Debatte um Nachfolgeregelung, Weitere Nachrichten im Überblick https://www.tagesschau.de",
-   "thumb": "https://i4.ytimg.com/vi/OIHiEUxdn1Q/hqdefault.jpg",
-   "id": "c3f6745e703c",
+   "published": "2026-10-29T00:33:07.000Z",
+   "summary": "Luke discusses Trump's latest rallies in Texas. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley Instagram -…",
+   "thumb": "https://i2.ytimg.com/vi/AO9HBzg21ps/hqdefault.jpg",
+   "id": "4b34d103ab2c",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Eastern Orthodox Vs Protestantism, Which Is the True Church? | Jay Dyer Vs Dr. David Wood",
+   "url": "https://www.youtube.com/watch?v=IpKKCNJ81NE",
+   "source": "Modern-Day Debate",
+   "feedId": "yt-modern-day-debate",
+   "type": "video",
+   "tags": [
+    "debates",
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-28T22:35:05.000Z",
+   "summary": "Andrew Wilson Vs Cenk Uygur at DEBATECON X in Dallas TX on February 20/21st: https://events.eventnoire.com/e/debatecon-x-by-modern-day-debate LINKS TO GUESTS: @JayDyer @apologeticsroadshow OUR INSIDER'S EMAIL LIST FOR DEBATECON DISCOUNTS: https://forms.gle/rK5aqPAzAZXiDpDz9 OUR…",
+   "thumb": "https://i2.ytimg.com/vi/IpKKCNJ81NE/hqdefault.jpg",
+   "id": "e66886092d1e",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "DAMN: Katie Zacharia RETURNS, FUMES in Interview after FIRING!",
+   "url": "https://www.youtube.com/watch?v=QV46a6p8pco",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-28T22:33:16.000Z",
+   "summary": "Luke discusses Katie Zacharia's Newsmax interview. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley Instagram -…",
+   "thumb": "https://i2.ytimg.com/vi/QV46a6p8pco/hqdefault.jpg",
+   "id": "34442f0436c8",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Exclusive | Vance Reaches Out to Iranian Hard-Liner in Bid to Restart Peace Talks",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xi1sdv/exclusive_vance_reaches_out_to_iranian_hardliner/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-28T21:54:46.000Z",
+   "summary": "submitted by /u/Unfair-Ticket9474 [link] [comments]",
+   "id": "d0ff0772596e",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1261,6 +1281,40 @@
    "summary": "In Reform UK's response to the Budget, Nigel Farage claimed a 'physical altercation' with a Lib Dem MP at the King's Speech in May deterred him from appearing in the Commons today. Tom Swarbrick quizzes Reform MP Robert Jenrick over the alleged altercation. Listen to the full…",
    "thumb": "https://i2.ytimg.com/vi/EzM3V99GRu0/hqdefault.jpg",
    "id": "f59a710412d7",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "The Backdoor to American Innovation: How Military Partnerships Make Washington Vulnerable to Its Adversaries",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xhy8jc/the_backdoor_to_american_innovation_how_military/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-28T19:39:13.000Z",
+   "summary": "submitted by /u/ForeignAffairsMag [link] [comments]",
+   "id": "8837893e3a8f",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "How to Secure the Straits: Why Iran and the Houthis Keep Winning the Waterways",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xhy7lr/how_to_secure_the_straits_why_iran_and_the/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-28T19:38:14.000Z",
+   "summary": "submitted by /u/ForeignAffairsMag [link] [comments]",
+   "id": "68a7cdb2b640",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1532,24 +1586,6 @@
    "why": "0"
   },
   {
-   "title": "OMG: She Went On Stage at Trump Rally, INSTANTLY HUMILIATING!",
-   "url": "https://www.youtube.com/watch?v=2sEoTJCI2eg",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-28T02:35:16.000Z",
-   "summary": "Luke discusses Trump's Mississippi rally with Sen. Cindy Hyde-Smith. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
-   "thumb": "https://i3.ytimg.com/vi/2sEoTJCI2eg/hqdefault.jpg",
-   "id": "6db08f737cfc",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "iPhone Duo - Before You Buy",
    "url": "https://www.youtube.com/watch?v=14yDpPTrYwg",
    "source": "GameRanx",
@@ -1725,23 +1761,6 @@
    "why": "0"
   },
   {
-   "title": "Is Andy Burnham reversing Brexit?",
-   "url": "https://www.youtube.com/watch?v=XB8Fxoj6_wA",
-   "source": "PoliticsJOE",
-   "feedId": "yt-politicsjoe",
-   "type": "video",
-   "tags": [
-    "comedy"
-   ],
-   "published": "2026-10-26T17:32:50.000Z",
-   "summary": "Andy Burnham’s position on Brexit has been murky since the 2016 referendum. Ava traces his journey from voting Remain to accepting the result, opposing a second referendum, and eventually calling for closer ties. Recently, Burnham has called for an open debate about Britain’s…",
-   "thumb": "https://i1.ytimg.com/vi/XB8Fxoj6_wA/hqdefault.jpg",
-   "id": "6991d37e6a06",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "Will AI cause utopia or disaster? | The Economist",
    "url": "https://www.youtube.com/watch?v=AoKo6EujpW8",
    "source": "The Economist",
@@ -1790,22 +1809,6 @@
    "summary": "At Kirkaldy's Testing Works, there's the Universal Testing Machine. It breaks things. | AD: 🛡️ Get NordVPN's best deal with their next-gen antivirus: https://nordvpn.com/tomscott | 🗺️ England series map: https://www.tomscott.com/england/ 🟥 MORE FROM TOM:…",
    "thumb": "https://i2.ytimg.com/vi/-E47v4Oy7fE/hqdefault.jpg",
    "id": "58a074377add",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Researchers synchronize 105,000 tiny magnetic oscillators in 45 nanoseconds, pointing to faster, low-power computing",
-   "url": "https://www.reddit.com/r/tech/comments/1xfvlyn/researchers_synchronize_105000_tiny_magnetic/",
-   "source": "r/tech",
-   "feedId": "rd-tech",
-   "type": "post",
-   "tags": [
-    "tech"
-   ],
-   "published": "2026-10-26T12:36:38.000Z",
-   "summary": "submitted by /u/AdSpecialist6598 [link] [comments]",
-   "id": "b15edcd00340",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2223,23 +2226,6 @@
    "summary": "American farmers could spend $12 billion this year fighting weeds with chemical herbicides that can damage soil, threaten the environment, and put the people growing our food at risk. A Seattle startup thinks lasers are the fix. *Why do some startups take off and others don't?…",
    "thumb": "https://i1.ytimg.com/vi/PpnCu8SUGCU/hqdefault.jpg",
    "id": "33dba3ee4875",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "This Streamer Getting Beat Is So Satisfying",
-   "url": "https://www.youtube.com/watch?v=S6o47Pr97Fs",
-   "source": "Aberrant preach",
-   "feedId": "yt-aberrant-preach",
-   "type": "video",
-   "tags": [
-    "trash"
-   ],
-   "published": "2026-10-22T18:44:31.000Z",
-   "summary": "Kick streamer OnyxDenji tried to pull a Chud The Builder by antagonizing folks and luckily he also got to enjoy some consequences for his actions. ———————————— Spotify: https://open.spotify.com/artist/6QJIJ6AugqPEFASp1V6zgH Merchandise ---…",
-   "thumb": "https://i4.ytimg.com/vi/S6o47Pr97Fs/hqdefault.jpg",
-   "id": "c0f71939c96a",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2898,5 +2884,5 @@
    "why": "0"
   }
  ],
- "contentHash": "3b43e4128bc2"
+ "contentHash": "865d20ebbda0"
 }
