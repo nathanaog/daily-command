@@ -1,17 +1,17 @@
 {
- "generated": "2026-10-30T07:20:48.180Z",
+ "generated": "2026-10-30T10:07:48.436Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
   "ok": 51,
-  "items": 122,
+  "items": 123,
   "duplicatesMerged": 0,
   "lengthsKnown": 1,
   "lengthLookups": 102,
-  "lengthFailures": 101,
+  "lengthFailures": 102,
   "lengthVia": "video pages",
   "lengthFailReasons": {
-   "no length on page": 101
+   "no length on page": 102
   }
  },
  "feeds": [
@@ -215,7 +215,7 @@
    "name": "TLDR News",
    "type": "youtube",
    "status": "ok",
-   "count": 3,
+   "count": 4,
    "resolved": {
     "channelId": "UCSMqateX8OA2s1wsOR2EgJA",
     "title": "TLDR News",
@@ -630,19 +630,20 @@
    "id": "rd-productmanagement",
    "name": "r/productmanagement",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-10-30T01:22:33.393Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/productmanagement/top/.rss?t=day"
   },
   {
    "id": "rd-tech",
    "name": "r/tech",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": "2026-10-27T01:08:56.460Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-gaming",
@@ -651,7 +652,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-ukpolitics",
@@ -684,20 +685,19 @@
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
+   "lastOk": "2026-10-30T07:20:48.180Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-germany",
    "name": "r/germany",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": "2026-10-15T00:59:57.533Z",
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-unitedkingdom",
@@ -706,12 +706,84 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   }
  ],
  "items": [
   {
-   "title": "Trump vor den Midterms: Der Frust der jungen Generation",
+   "title": "Nach Spiegel-Bericht: Debatte um Elif Eralp überschattet Regierungsbildung in Berlin",
+   "url": "https://www.youtube.com/watch?v=AFTEYP9DTpQ",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-30T09:39:07.000Z",
+   "summary": "Elif Eralp von der Linken möchte Regierende Bürgermeisterin in Berlin werden. Ein solches Amt braucht Mut. Nun hat sie wohl aus Versehen dem Spiegel mitgeteilt: Aus Angst um sich und ihre Familie wolle sie nicht öffentlich über einen Terrorsympathisanten sprechen, der Kontakte…",
+   "thumb": "https://i2.ytimg.com/vi/AFTEYP9DTpQ/hqdefault.jpg",
+   "id": "9b41b7b20f8b",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Should Burnham Call an Election?",
+   "url": "https://www.youtube.com/watch?v=9oudg7AuyD4",
+   "source": "TLDR News",
+   "feedId": "yt-tldr-news",
+   "type": "video",
+   "tags": [
+    "news",
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-30T09:30:24.000Z",
+   "summary": "Pre-order a copy of Too Long: toolong.news/TL010 Andymonium podcast: youtube.com/@TLDRpodcasts We take a look at whether Burnham should call an election, the rumours swirling about the different groups pushing him to, and ultimately, whether it looks likely that he will. 📰 Too…",
+   "thumb": "https://i2.ytimg.com/vi/9oudg7AuyD4/hqdefault.jpg",
+   "id": "ade2cc79170d",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "What is Britain bracing for? | UK households urged to stockpile",
+   "url": "https://www.youtube.com/watch?v=oJDRq2qr8xw",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-30T09:00:26.000Z",
+   "summary": "Across Britain, there is a growing army of people spending thousands of pounds to amass years' worth of supplies and train for crisis situations. LBC has been to meet some of the country's long-term preppers who have been getting ready for disaster scenarios long before the…",
+   "thumb": "https://i4.ytimg.com/vi/oJDRq2qr8xw/hqdefault.jpg",
+   "id": "824cf523e044",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Friday Show and Tell",
+   "url": "https://www.reddit.com/r/ProductManagement/comments/1xj7hre/friday_show_and_tell/",
+   "source": "r/productmanagement",
+   "feedId": "rd-productmanagement",
+   "type": "post",
+   "tags": [
+    "product"
+   ],
+   "published": "2026-10-30T06:00:47.000Z",
+   "summary": "There are a lot of people here working on projects of some sort - side projects, startups, podcasts, blogs, etc. If you've got something you'd like to show off or get feedback, this is the place to do it. Standards still need to remain high, so there are a few guidelines: Don't…",
+   "id": "b648f99edf9a",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Trump vor den Midterms: Der Frust der jungen Generation I 11KM - der tagesschau-Podcast",
    "url": "https://www.youtube.com/watch?v=SaW0bbXvlkg",
    "source": "Tagesschau",
    "feedId": "yt-tagesschau",
@@ -722,7 +794,7 @@
     "listen"
    ],
    "published": "2026-10-30T05:19:58.000Z",
-   "summary": "American Dream und Alltagsrechnung prallen in den USA aufeinander: ARD Washington-Korrespondentin Anne Schneider spricht mit 11KM-Host Kevin Ebert über die junge Generation in den USA, die sich bei den Midterm-Wahlen in der Nacht zum 4. November 2026 kaum vertreten fühlt. Wie…",
+   "summary": "American Dream und Alltagsrechnung prallen in den #USA aufeinander: ARD Washington-Korrespondentin Anne Schneider spricht mit 11KM-Host Kevin Ebert über die junge Generation in den USA, die sich bei den Midterm-Wahlen in der Nacht zum 4. November 2026 kaum vertreten fühlt. Wie…",
    "thumb": "https://i4.ytimg.com/vi/SaW0bbXvlkg/hqdefault.jpg",
    "id": "916945cc99aa",
    "score": 1,
@@ -744,6 +816,38 @@
    "summary": "Unsere Infos heute: (00:00:07) Themenübersicht (00:00:37) GenZ - Proteste In mehr als 30 Städten sind am Samstag Proteste der Gruppierung „Gen Z regelt“ angekündigt. Während die Organisatoren friedliche Demonstrationen versprechen, bereiten sich Sicherheitsbehörden und viele…",
    "thumb": "https://i3.ytimg.com/vi/n5b9RaqvA2I/hqdefault.jpg",
    "id": "af135b3bbbc7",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Thoughts on doordash buying Instacart",
+   "url": "https://www.reddit.com/r/ProductManagement/comments/1xj5qg9/thoughts_on_doordash_buying_instacart/",
+   "source": "r/productmanagement",
+   "feedId": "rd-productmanagement",
+   "type": "post",
+   "tags": [
+    "product"
+   ],
+   "published": "2026-10-30T04:17:46.000Z",
+   "summary": "What does this mean for the PM org at these two companies and also what are people's thoughts on this from a business perspective? submitted by /u/DarkFlowerPewPew [link] [comments]",
+   "id": "9064a3b65c3b",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Is engineering-led product normal on internal platforms?",
+   "url": "https://www.reddit.com/r/ProductManagement/comments/1xj41cm/is_engineeringled_product_normal_on_internal/",
+   "source": "r/productmanagement",
+   "feedId": "rd-productmanagement",
+   "type": "post",
+   "tags": [
+    "product"
+   ],
+   "published": "2026-10-30T02:50:17.000Z",
+   "summary": "Hi all, looking for advice/perspective from anyone who's been here. Im a PM who owns an internal product meant to serve several business units. Two of those units are higher priority than mine. My system was already in development before a major organizational shift. That shift…",
+   "id": "f4626b29c1c7",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -890,24 +994,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "DAMN: Man SCREAMS at TRUMP’S FACE as Rally GOES TO SH*T!",
-   "url": "https://www.youtube.com/watch?v=KEafeklplgI",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-29T22:05:08.000Z",
-   "summary": "Luke discusses Trump's latest rallies as the midterms approach. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
-   "thumb": "https://i4.ytimg.com/vi/KEafeklplgI/hqdefault.jpg",
-   "id": "912d39bf6138",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Europe Is Aflame, and It’s Not Going to Stop",
    "url": "https://www.reddit.com/r/geopolitics/comments/1xixjur/europe_is_aflame_and_its_not_going_to_stop/",
    "source": "r/geopolitics",
@@ -920,25 +1006,6 @@
    "published": "2026-10-29T21:58:33.000Z",
    "summary": "submitted by /u/nytopinion [link] [comments]",
    "id": "1848c2b413ab",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Neuköllns Bezirksbürgermeister über die Gefahr von Hamas-Sympathisanten | tagesthemen-Interview",
-   "url": "https://www.youtube.com/watch?v=pTiSUO-Sb2s",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-29T21:50:03.000Z",
-   "summary": "Elif Eralp will neue Regierende Bürgermeisterin Berlins werden. Während ihre Linkspartei bald in Koalitionsverhandlungen mit der SPD und den Grünen eintreten möchte, sorgt nun ein Bericht des „Spiegel“ für Unruhe. Demnach fürchte sich Elif Eralp vor Hamas-Sympathisanten im…",
-   "thumb": "https://i1.ytimg.com/vi/pTiSUO-Sb2s/hqdefault.jpg",
-   "id": "fe4918611766",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -961,58 +1028,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Book reco on product led retention?",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1xiw7av/book_reco_on_product_led_retention/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-10-29T21:05:18.000Z",
-   "summary": "This will be my new focus area soon and wanted to understand the fundamentals. submitted by /u/Stoned_Monke0906 [link] [comments]",
-   "id": "7902b303cd0f",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Could Trump and Netanyahu be preparing to escalate the Iran war?",
-   "url": "https://www.youtube.com/watch?v=New2XejEJZ0",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-29T21:00:26.000Z",
-   "summary": "Could Donald Trump restart the war with Iran after the US midterm elections? Andrew Marr speaks to two former senior officials about growing fears of renewed escalation between the US, Israel and Iran. Jeffrey Feltman, former head of the UN Department of Political Affairs and…",
-   "thumb": "https://i3.ytimg.com/vi/New2XejEJZ0/hqdefault.jpg",
-   "id": "fbc0c20de956",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "looking up wikipedia pages as you're watching something",
-   "url": "https://www.youtube.com/watch?v=Rb96qcVxZAI",
-   "source": "ProZD",
-   "feedId": "yt-prozd",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "gaming"
-   ],
-   "published": "2026-10-29T20:47:52.000Z",
-   "summary": "My Patreon: https://www.patreon.com/ProZD My Cameo: https://www.cameo.com/prozd My Let's Play Channel: https://www.youtube.com/@prozdplaysgames My Food Channel: https://www.youtube.com/@ProZDEatsFood My Anime Channel: https://www.youtube.com/@ProZDWatchesAnime My Autograph…",
-   "thumb": "https://i3.ytimg.com/vi/Rb96qcVxZAI/hqdefault.jpg",
-   "id": "2d151f6a5ebd",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Patrick Stewart sketch: what has the ECHR ever done for us?",
    "url": "https://www.reddit.com/r/ukpolitics/comments/1xivgic/patrick_stewart_sketch_what_has_the_echr_ever/",
    "source": "r/ukpolitics",
@@ -1030,24 +1045,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Lib Dem MP accused of ‘physical altercation’ with Farage speaks out",
-   "url": "https://www.youtube.com/watch?v=RE--bh1SIz4",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-29T20:07:42.000Z",
-   "summary": "Nigel Farage claimed that a ‘prior physical altercation’ with Lib Dem MP Caroline Voaden stopped him going to the House of Commons for the Budget. 01:07 | Tom Swarbrick quizzes Robert Jenrick on the allegations 02:59 | Caroline Voaden, the MP in question, calls the whole thing…",
-   "thumb": "https://i3.ytimg.com/vi/RE--bh1SIz4/hqdefault.jpg",
-   "id": "d1455a118da0",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Home Office on X: \"From today, charities can apply to sponsor refugees through new, capped Named Community Sponsorship and Refugee study safe and legal routes. Sponsors will provide accommodation, integration support and help finding work. First arrivals are expected in autumn 2027.\"",
    "url": "https://www.reddit.com/r/ukpolitics/comments/1xiunqw/home_office_on_x_from_today_charities_can_apply/",
    "source": "r/ukpolitics",
@@ -1060,42 +1057,6 @@
    "published": "2026-10-29T20:06:37.000Z",
    "summary": "submitted by /u/Kataera [link] [comments]",
    "id": "97d9ed378c20",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Fox News Reporter HUMILIATED by Liberal AT TRUMP RALLY!",
-   "url": "https://www.youtube.com/watch?v=zB7lrfcIg9Y",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-29T20:05:07.000Z",
-   "summary": "Luke discusses some recent Fox News man-on-the-street interviews. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
-   "thumb": "https://i3.ytimg.com/vi/zB7lrfcIg9Y/hqdefault.jpg",
-   "id": "8372e0361658",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "A tale of two extremes in the media today | James O’Brien - The Whole Show",
-   "url": "https://www.youtube.com/watch?v=Vn3NQ-lsnSo",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-29T20:00:35.000Z",
-   "summary": "This is a catch-up version of James O'Brien's live, daily show on LBC Radio from the 29th of October 2026. Listen to the full show on the all-new LBC App: https://app.af.lbc.co.uk/btnc/thenewlbcapp #jamesobrien #politics #LBC LBC is the home of live debate around news and…",
-   "thumb": "https://i3.ytimg.com/vi/Vn3NQ-lsnSo/hqdefault.jpg",
-   "id": "68cc14eaac5f",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1135,44 +1096,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Bundespräsident in Peking: Warnung vor wirtschaftlichen Abhängigkeiten",
-   "url": "https://www.youtube.com/watch?v=ybEDajnOTV0",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-29T19:35:39.000Z",
-   "summary": "Die Beziehungen zwischen Europa und China sind angespannt. Kritik an den Handelspraktiken Pekings oder der Unterstützung für Russland lassen auch in Deutschland den Ruf nach mehr Unabhängigkeit von China lauter werden. Jetzt ist Bundespräsident Steinmeier nach Peking gereist…",
-   "thumb": "https://i2.ytimg.com/vi/ybEDajnOTV0/hqdefault.jpg",
-   "id": "4727cf061399",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Chillicothe, Ohio Trump Rally",
-   "url": "https://www.youtube.com/watch?v=kEyB1qg9sSo",
-   "source": "The Good Liars",
-   "feedId": "yt-the-good-liars",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "politics",
-    "debates"
-   ],
-   "published": "2026-10-29T19:30:08.000Z",
-   "summary": "Jason visits Chillicothe, Ohio to talk to Trump supporters about socialism, Trump and Jesus (in that order), and much more! Join this channel to get access to perks: https://www.youtube.com/channel/UCUNOwz9KTDIhhTTN3_ptUDA/join https://linktr.ee/thegoodliars",
-   "thumb": "https://i4.ytimg.com/vi/kEyB1qg9sSo/hqdefault.jpg",
-   "id": "b0cf75c3daba",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Why is it in British politics there's no longer any talk of Stewardship, Generational Inheritance or Continuity?",
    "url": "https://www.reddit.com/r/ukpolitics/comments/1xis8zk/why_is_it_in_british_politics_theres_no_longer/",
    "source": "r/ukpolitics",
@@ -1185,38 +1108,6 @@
    "published": "2026-10-29T18:36:29.000Z",
    "summary": "A question: Why is it in British politics there's no longer any talk of Stewardship, Generational Inheritance or Continuity? The thing I find annoying about modern politics, is all the short term-ism. The endless banging on about which tiny tax tweak to make here or how many…",
    "id": "2be60242e0b4",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "New to a PM role and inherited a team with no process and somewhat low morale, advice needed",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1xipfau/new_to_a_pm_role_and_inherited_a_team_with_no/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-10-29T16:52:51.000Z",
-   "summary": "I’ve only been a PM for about 2 months. I was moved in this role because I’m a domain expert in the industry we’re building in, and I had previous technical PM experience. I inherited a team with basically no process. We use Linear. Devs + QA report to me, there’s no…",
-   "id": "dc2084c177ae",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "We changed our app. Nearly all users have adapted, but a vocal minority is frustrated enough that customer success is irate and wants to revert changes...how do I navigate this? More inside...",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1xikydy/we_changed_our_app_nearly_all_users_have_adapted/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-10-29T14:06:07.000Z",
-   "summary": "v2 launched. Changed a legacy workflow. We knew this would cause headaches and tried our best at enabling our customer success team but there are existing customers with one or two reps who miss \"the old way of doing things\" I get on a call with the most frustrated user...…",
-   "id": "f45cc4ce2555",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1300,6 +1191,168 @@
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "DAMN: Man SCREAMS at TRUMP’S FACE as Rally GOES TO SH*T!",
+   "url": "https://www.youtube.com/watch?v=KEafeklplgI",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-29T22:05:08.000Z",
+   "summary": "Luke discusses Trump's latest rallies as the midterms approach. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
+   "thumb": "https://i4.ytimg.com/vi/KEafeklplgI/hqdefault.jpg",
+   "id": "912d39bf6138",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Neuköllns Bezirksbürgermeister über die Gefahr von Hamas-Sympathisanten | tagesthemen-Interview",
+   "url": "https://www.youtube.com/watch?v=pTiSUO-Sb2s",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-29T21:50:03.000Z",
+   "summary": "Elif Eralp will neue Regierende Bürgermeisterin Berlins werden. Während ihre Linkspartei bald in Koalitionsverhandlungen mit der SPD und den Grünen eintreten möchte, sorgt nun ein Bericht des „Spiegel“ für Unruhe. Demnach fürchte sich Elif Eralp vor Hamas-Sympathisanten im…",
+   "thumb": "https://i1.ytimg.com/vi/pTiSUO-Sb2s/hqdefault.jpg",
+   "id": "fe4918611766",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Book reco on product led retention?",
+   "url": "https://www.reddit.com/r/ProductManagement/comments/1xiw7av/book_reco_on_product_led_retention/",
+   "source": "r/productmanagement",
+   "feedId": "rd-productmanagement",
+   "type": "post",
+   "tags": [
+    "product"
+   ],
+   "published": "2026-10-29T21:05:18.000Z",
+   "summary": "This will be my new focus area soon and wanted to understand the fundamentals. submitted by /u/Stoned_Monke0906 [link] [comments]",
+   "id": "7902b303cd0f",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Could Trump and Netanyahu be preparing to escalate the Iran war?",
+   "url": "https://www.youtube.com/watch?v=New2XejEJZ0",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-29T21:00:26.000Z",
+   "summary": "Could Donald Trump restart the war with Iran after the US midterm elections? Andrew Marr speaks to two former senior officials about growing fears of renewed escalation between the US, Israel and Iran. Jeffrey Feltman, former head of the UN Department of Political Affairs and…",
+   "thumb": "https://i3.ytimg.com/vi/New2XejEJZ0/hqdefault.jpg",
+   "id": "fbc0c20de956",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "looking up wikipedia pages as you're watching something",
+   "url": "https://www.youtube.com/watch?v=Rb96qcVxZAI",
+   "source": "ProZD",
+   "feedId": "yt-prozd",
+   "type": "video",
+   "tags": [
+    "comedy",
+    "gaming"
+   ],
+   "published": "2026-10-29T20:47:52.000Z",
+   "summary": "My Patreon: https://www.patreon.com/ProZD My Cameo: https://www.cameo.com/prozd My Let's Play Channel: https://www.youtube.com/@prozdplaysgames My Food Channel: https://www.youtube.com/@ProZDEatsFood My Anime Channel: https://www.youtube.com/@ProZDWatchesAnime My Autograph…",
+   "thumb": "https://i3.ytimg.com/vi/Rb96qcVxZAI/hqdefault.jpg",
+   "id": "2d151f6a5ebd",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Lib Dem MP accused of ‘physical altercation’ with Farage speaks out",
+   "url": "https://www.youtube.com/watch?v=RE--bh1SIz4",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-29T20:07:42.000Z",
+   "summary": "Nigel Farage claimed that a ‘prior physical altercation’ with Lib Dem MP Caroline Voaden stopped him going to the House of Commons for the Budget. 01:07 | Tom Swarbrick quizzes Robert Jenrick on the allegations 02:59 | Caroline Voaden, the MP in question, calls the whole thing…",
+   "thumb": "https://i3.ytimg.com/vi/RE--bh1SIz4/hqdefault.jpg",
+   "id": "d1455a118da0",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Fox News Reporter HUMILIATED by Liberal AT TRUMP RALLY!",
+   "url": "https://www.youtube.com/watch?v=zB7lrfcIg9Y",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-29T20:05:07.000Z",
+   "summary": "Luke discusses some recent Fox News man-on-the-street interviews. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
+   "thumb": "https://i3.ytimg.com/vi/zB7lrfcIg9Y/hqdefault.jpg",
+   "id": "8372e0361658",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "A tale of two extremes in the media today | James O’Brien - The Whole Show",
+   "url": "https://www.youtube.com/watch?v=Vn3NQ-lsnSo",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-29T20:00:35.000Z",
+   "summary": "This is a catch-up version of James O'Brien's live, daily show on LBC Radio from the 29th of October 2026. Listen to the full show on the all-new LBC App: https://app.af.lbc.co.uk/btnc/thenewlbcapp #jamesobrien #politics #LBC LBC is the home of live debate around news and…",
+   "thumb": "https://i3.ytimg.com/vi/Vn3NQ-lsnSo/hqdefault.jpg",
+   "id": "68cc14eaac5f",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Chillicothe, Ohio Trump Rally",
+   "url": "https://www.youtube.com/watch?v=kEyB1qg9sSo",
+   "source": "The Good Liars",
+   "feedId": "yt-the-good-liars",
+   "type": "video",
+   "tags": [
+    "comedy",
+    "politics",
+    "debates"
+   ],
+   "published": "2026-10-29T19:30:08.000Z",
+   "summary": "Jason visits Chillicothe, Ohio to talk to Trump supporters about socialism, Trump and Jesus (in that order), and much more! Join this channel to get access to perks: https://www.youtube.com/channel/UCUNOwz9KTDIhhTTN3_ptUDA/join https://linktr.ee/thegoodliars",
+   "thumb": "https://i4.ytimg.com/vi/kEyB1qg9sSo/hqdefault.jpg",
+   "id": "b0cf75c3daba",
+   "score": 0,
+   "matched": [],
+   "why": "0"
   },
   {
    "title": "The Problem That Made Cheesecake Factory Worth $5.5 Billion",
@@ -1455,40 +1508,6 @@
    "summary": "Police was called for a 3 year old kid being too good at football. If that wasn't ridiculous enough, we got access to the bodycam. The reasoning is wilder. ———————————— Spotify: https://open.spotify.com/artist/6QJIJ6AugqPEFASp1V6zgH Merchandise ---…",
    "thumb": "https://i1.ytimg.com/vi/05Ro9inVa68/hqdefault.jpg",
    "id": "2099d4ffaf24",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Weekly rant thread",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1xifr9q/weekly_rant_thread/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-10-29T10:00:58.000Z",
-   "summary": "Share your frustrations and get support/feedback. You are not alone! submitted by /u/AutoModerator [link] [comments]",
-   "id": "9b33331a9b4c",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "The Chancellor refuses to make 'crude cuts' to welfare bill",
-   "url": "https://www.youtube.com/watch?v=lvs8ZNEXCb4",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-29T10:00:08.000Z",
-   "summary": "Speaking to LBC's Nick Ferrari at Breakfast after delivering his first Budget, the Chancellor defended his decision not to announce cuts to Britain's growing benefits bill as he pledged to reform the sector. Mr Healey told the Commons on Wednesday he would address the country's…",
-   "thumb": "https://i1.ytimg.com/vi/lvs8ZNEXCb4/hqdefault.jpg",
-   "id": "a756d3e4dbec",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2882,5 +2901,5 @@
    "why": "0"
   }
  ],
- "contentHash": "c2b510d68d1d"
+ "contentHash": "8d4658a22002"
 }
