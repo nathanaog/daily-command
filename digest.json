@@ -1,17 +1,17 @@
 {
- "generated": "2026-10-30T13:16:26.165Z",
+ "generated": "2026-10-30T16:04:25.287Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
   "ok": 51,
-  "items": 123,
+  "items": 122,
   "duplicatesMerged": 0,
   "lengthsKnown": 1,
-  "lengthLookups": 102,
-  "lengthFailures": 102,
+  "lengthLookups": 101,
+  "lengthFailures": 101,
   "lengthVia": "video pages",
   "lengthFailReasons": {
-   "no length on page": 102
+   "no length on page": 101
   }
  },
  "feeds": [
@@ -254,7 +254,7 @@
    "name": "Channel 5 with Andrew Callaghan",
    "type": "youtube",
    "status": "ok",
-   "count": 3,
+   "count": 2,
    "resolved": {
     "channelId": "UC-AQKm7HUNMmxjdS371MSwg",
     "title": "Channel 5 with Andrew Callaghan",
@@ -657,9 +657,10 @@
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
+   "lastOk": "2026-10-30T13:16:26.165Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-xbox",
@@ -668,7 +669,7 @@
    "status": "cached",
    "count": 5,
    "lastOk": "2026-10-28T16:07:55.180Z",
-   "note": "rate-limited (429)"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-slaythespire",
@@ -677,25 +678,26 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-10-30T07:20:48.180Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
   },
   {
    "id": "rd-germany",
    "name": "r/germany",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": "2026-10-15T00:59:57.533Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-unitedkingdom",
@@ -704,32 +706,31 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   }
  ],
  "items": [
   {
-   "title": "Streik in Italien: ARD-Reporterin ordnet Protest-Aktion ein",
-   "url": "https://www.youtube.com/watch?v=qfnJhyxTQXM",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
+   "title": "Feminists vs Manosphere: Who Lies More in a Debate? | Checkmate",
+   "url": "https://www.youtube.com/watch?v=xc2FTsYuIM8",
+   "source": "Jubilee",
+   "feedId": "yt-jubilee",
    "type": "video",
    "tags": [
-    "german",
-    "news",
-    "listen"
+    "politics",
+    "debates"
    ],
-   "published": "2026-10-30T12:42:47.000Z",
-   "summary": "In Italien haben Gewerkschaften für heute zu einem Generalstreik aufgerufen. Der Protest richtet sich gegen Arbeitsbedingungen, hohe Lebenshaltungskosten und verschiedene Pläne der Regierung von Ministerpräsidentin Meloni. Auch Studenten und Schüler wollen auf die Straßen…",
-   "thumb": "https://i2.ytimg.com/vi/qfnJhyxTQXM/hqdefault.jpg",
-   "id": "46094bef477e",
+   "published": "2026-10-30T16:00:05.000Z",
+   "summary": "Sponsored by BetterHelp. Visit https://betterhelp.com/jubileemedia. For members in the US, therapy may now cost less. With insurance, many members pay $15 or less. Some pay $0. If you don't have insurance or you don’t live in the United States, you can still get 10% off your…",
+   "thumb": "https://i1.ytimg.com/vi/xc2FTsYuIM8/hqdefault.jpg",
+   "id": "403aedb0bf96",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Tübingen: Einjähriger bekommt eine gespendete Leber | tagesthemen mittendrin",
-   "url": "https://www.youtube.com/watch?v=sBcR9Vy4ijU",
+   "title": "Marode Schulen und Inflation: Was hinter den Jugendprotesten der Gen-Z steckt",
+   "url": "https://www.youtube.com/watch?v=oegmlztpgUI",
    "source": "Tagesschau",
    "feedId": "yt-tagesschau",
    "type": "video",
@@ -738,10 +739,120 @@
     "news",
     "listen"
    ],
-   "published": "2026-10-30T12:06:43.000Z",
-   "summary": "In Deutschland warten tausende Menschen auf eine Spenderorgan, unter ihnen auch viele Kinder. Wir konnten ein medizinisches Team in der Uniklinik Tübingen und die Eltern des Jungen bei der Transplantation einer gespendeten Leber begleiten. Mehr tagesthemen mittendrin Reportagen…",
-   "thumb": "https://i4.ytimg.com/vi/sBcR9Vy4ijU/hqdefault.jpg",
-   "id": "35fe5eb34435",
+   "published": "2026-10-30T15:48:25.000Z",
+   "summary": "Am Wochenende gehen bundesweit Jugendliche der Generation Z auf die Straße. Sie sorgen sich um ihre Zukunft, kritisieren hohe Lebenskosten, Probleme im Bildungssystem und eine mögliche Wehrpflicht. „Sie meinen es jetzt wirklich ernst und sie fordern jetzt wirklich ernsthafte…",
+   "thumb": "https://i4.ytimg.com/vi/oegmlztpgUI/hqdefault.jpg",
+   "id": "80c90a0f76c4",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "The American Midterms Can END Trump | Jacob Weisberg interview",
+   "url": "https://www.youtube.com/watch?v=E-t49q27BwM",
+   "source": "PoliticsJOE",
+   "feedId": "yt-politicsjoe",
+   "type": "video",
+   "tags": [
+    "comedy"
+   ],
+   "published": "2026-10-30T15:37:36.000Z",
+   "summary": "Donald Trump’s second presidency has been marked by a striking lack of resistance. While figures inside his first administration regularly challenged his decisions, Trump 2.0 has seen politicians, business leaders, media organisations and institutions fall into line. So why has…",
+   "thumb": "https://i2.ytimg.com/vi/E-t49q27BwM/hqdefault.jpg",
+   "id": "2ff35079d2dc",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Putin open to phone call with Zelensky, Ukraine suspects a Kremlin trap",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xji39o/putin_open_to_phone_call_with_zelensky_ukraine/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-30T15:15:19.000Z",
+   "summary": "submitted by /u/KI_official [link] [comments]",
+   "id": "7dbb728a6f89",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Können wir unsere Ökosysteme noch retten? | KlimaZeit vom 30.10.2026",
+   "url": "https://www.youtube.com/watch?v=hAT8Pm1sZgs",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-30T14:52:25.000Z",
+   "summary": "KlimaZeit 19:45 Uhr https://www.tagesschau.de",
+   "thumb": "https://i1.ytimg.com/vi/hAT8Pm1sZgs/hqdefault.jpg",
+   "id": "bb8ea7a203fa",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Demos in 34 Städten: ARD-Korrespondent ordnet Protesttag und Initiative „Gen Z regelt“ ein",
+   "url": "https://www.youtube.com/watch?v=0PBR-muVVP8",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-30T14:33:02.000Z",
+   "summary": "Die Bilder gewaltsamer Ausschreitungen in Frankreich sind vielen noch vor Augen: Und weil für morgen die Initiative „Gen Z regelt“ in Deutschland zu Protesten aufgerufen hat, rüsten sich in einigen der 34 Städte, wo Demos angekündigt sind, Ladenbesitzer:innen. Schaufenster…",
+   "thumb": "https://i1.ytimg.com/vi/0PBR-muVVP8/hqdefault.jpg",
+   "id": "705a74d4ad1f",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Krieg gegen die Ukraine: Hilfe für Menschen in Oleschky",
+   "url": "https://www.youtube.com/watch?v=L6iP9-Emv7s",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-30T14:28:50.000Z",
+   "summary": "Seit Dienstag gilt für die ukrainische Stadt Oleschky eine lokal begrenzte Waffenruhe. Ziel ist, die Menschen in der abgeriegelten und verminten Stadt mit dem Nötigsten zu versorgen – und sie aus der Stadt herauszuholen. Inzwischen läuft der Hilfseinsatz. In Oleschky stehen…",
+   "thumb": "https://i1.ytimg.com/vi/L6iP9-Emv7s/hqdefault.jpg",
+   "id": "9fa024e4e8ee",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Läden teils verbarrikadiert: „Gen Z regelt“ ruft zu bundesweiten Protesten auf",
+   "url": "https://www.youtube.com/watch?v=opKicBYwhAw",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-30T13:56:34.000Z",
+   "summary": "Die Bilder gewaltsamer Ausschreitungen in Frankreich sind vielen noch vor Augen: Für Samstag hat die Initiative „Gen Z regelt“ in Deutschland zu Protesten aufgerufen hat. Deshalb verbarrikadieren in einigen der 34 Städte, in denen Demos angekündigt sind, Ladenbesitzer:innen…",
+   "thumb": "https://i4.ytimg.com/vi/opKicBYwhAw/hqdefault.jpg",
+   "id": "6f3745c09acd",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -764,39 +875,18 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Letzte kremlkritische Zeitung Russlands eingestellt – ARD-Korrespondent zum Aus der Nowaja Gaseta",
-   "url": "https://www.youtube.com/watch?v=Sdbn7SpoUj0",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
+   "title": "EU Defence Commissioner Kubilius receives a comprehensive proposal for the creation of a European Army from the Action Committee for the United States of Europe, bringing together policymakers, academics and prominent public figures",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xjc3h4/eu_defence_commissioner_kubilius_receives_a/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
    "tags": [
-    "german",
-    "news",
-    "listen"
+    "politics",
+    "news"
    ],
-   "published": "2026-10-30T11:35:09.000Z",
-   "summary": "Die letzte große unabhängige Redaktion in Russland gibt auf: Die kremlkritische Zeitung „Nowaja Gaseta“ hat heute angekündigt, ihre Arbeit einzustellen. Am 9. November soll endgültig Schluss sein. Die Zeitung, deren Mitgründer Dmitri Muratow 2021 den Friedensnobelpreis erhielt,…",
-   "thumb": "https://i4.ytimg.com/vi/Sdbn7SpoUj0/hqdefault.jpg",
-   "id": "de8420d89f03",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Captain Jean-Luc Picard und Professor Charles Xavier: Patrick Stewart gestorben",
-   "url": "https://www.youtube.com/watch?v=jnnB48bbDGQ",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-30T10:38:10.000Z",
-   "summary": "Der britische Schauspieler Patrick Stewart ist tot. Er starb im Alter von 86 Jahren in Los Angeles nach einer Alzheimer-Erkrankung. Stewart war vor allem bekannt als Captain Jean-Luc Picard in „Star Trek: The Next Generation“ und als Professor Charles Xavier in den…",
-   "thumb": "https://i3.ytimg.com/vi/jnnB48bbDGQ/hqdefault.jpg",
-   "id": "7ef66426862c",
+   "published": "2026-10-30T10:50:52.000Z",
+   "summary": "submitted by /u/paneuropeanism_ [link] [comments]",
+   "id": "c76679db2365",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -819,6 +909,23 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
+   "title": "Pentagon tells Europeans to cool their rhetoric on Russia, sources say",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xjbjhl/pentagon_tells_europeans_to_cool_their_rhetoric/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-30T10:18:21.000Z",
+   "summary": "submitted by /u/Pleasant_Memory_2952 [link] [comments]",
+   "id": "65271d4ce111",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
    "title": "UK net migration set to fall to lowest level since 1997",
    "url": "https://www.reddit.com/r/ukpolitics/comments/1xjb1jv/uk_net_migration_set_to_fall_to_lowest_level/",
    "source": "r/ukpolitics",
@@ -831,25 +938,6 @@
    "published": "2026-10-30T09:48:32.000Z",
    "summary": "submitted by /u/Alti-Ok [link] [comments]",
    "id": "f07ea8085dbe",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Nach Spiegel-Bericht: Debatte um Elif Eralp überschattet Regierungsbildung in Berlin",
-   "url": "https://www.youtube.com/watch?v=AFTEYP9DTpQ",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-30T09:39:07.000Z",
-   "summary": "Elif Eralp von der Linken möchte Regierende Bürgermeisterin in Berlin werden. Ein solches Amt braucht Mut. Nun hat sie wohl aus Versehen dem Spiegel mitgeteilt: Aus Angst um sich und ihre Familie wolle sie nicht öffentlich über einen Terrorsympathisanten sprechen, der Kontakte…",
-   "thumb": "https://i2.ytimg.com/vi/AFTEYP9DTpQ/hqdefault.jpg",
-   "id": "9b41b7b20f8b",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -974,58 +1062,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "OMG: Katie Zacharia CRASHES AND BURNS on Live TV AGAIN, WORST Interview YET!",
-   "url": "https://www.youtube.com/watch?v=1aH7jcPwwec",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-30T02:05:15.000Z",
-   "summary": "Luke discusses Katie Zacharia's appearance on Piers Morgan's show. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
-   "thumb": "https://i2.ytimg.com/vi/1aH7jcPwwec/hqdefault.jpg",
-   "id": "e83281331c55",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Trump’s Deportation Deal With Cameroon Will Equip Unit Accused of War Crimes",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xj2qhw/trumps_deportation_deal_with_cameroon_will_equip/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-30T01:46:59.000Z",
-   "summary": "The Trump administration agreed to send around $35 million in military aid to a Central African military unit previously accused of war crimes as part of a wider arrangement to deport third-country migrants to the region, U.S. officials and congressional aides said. Those…",
-   "id": "fc7662aa61e8",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Supporting Freedom Abroad Is Still in America’s National Interests",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xj0fdo/supporting_freedom_abroad_is_still_in_americas/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-30T00:00:05.000Z",
-   "summary": "submitted by /u/HooverInstitution [link] [comments]",
-   "id": "c8e7bffa559b",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Career advice for PM mom",
    "url": "https://www.reddit.com/r/ProductManagement/comments/1xj04b7/career_advice_for_pm_mom/",
    "source": "r/productmanagement",
@@ -1037,57 +1073,6 @@
    "published": "2026-10-29T23:46:21.000Z",
    "summary": "Hi team product. I’m a principle PM and I’m realizing that with all the emotional bandwidth I spend at work, I’m left tapped out for my family. I want to remedy that. So a few questions for the group: Has anyone figured out a way to do part time or fractional PM work but not…",
    "id": "ed4c2c977222",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "El Salvador sends 2,000 troops to Haiti to rescue four missing soldiers",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xiy4kt/el_salvador_sends_2000_troops_to_haiti_to_rescue/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-29T22:21:31.000Z",
-   "summary": "submitted by /u/jcm95 [link] [comments]",
-   "id": "f731180551b8",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Europe Is Aflame, and It’s Not Going to Stop",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xixjur/europe_is_aflame_and_its_not_going_to_stop/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-29T21:58:33.000Z",
-   "summary": "submitted by /u/nytopinion [link] [comments]",
-   "id": "1848c2b413ab",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Why did Russia agree to the Oleshky ceasefire?",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xiwyc9/why_did_russia_agree_to_the_oleshky_ceasefire/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-29T21:34:42.000Z",
-   "summary": "submitted by /u/KI_official [link] [comments]",
-   "id": "6049a7e0ce85",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1173,6 +1158,41 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
+   "title": "OMG: Katie Zacharia CRASHES AND BURNS on Live TV AGAIN, WORST Interview YET!",
+   "url": "https://www.youtube.com/watch?v=1aH7jcPwwec",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-30T02:05:15.000Z",
+   "summary": "Luke discusses Katie Zacharia's appearance on Piers Morgan's show. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
+   "thumb": "https://i2.ytimg.com/vi/1aH7jcPwwec/hqdefault.jpg",
+   "id": "e83281331c55",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Trump’s Deportation Deal With Cameroon Will Equip Unit Accused of War Crimes",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xj2qhw/trumps_deportation_deal_with_cameroon_will_equip/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-30T01:46:59.000Z",
+   "summary": "The Trump administration agreed to send around $35 million in military aid to a Central African military unit previously accused of war crimes as part of a wider arrangement to deport third-country migrants to the region, U.S. officials and congressional aides said. Those…",
+   "id": "fc7662aa61e8",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
    "title": "Watch Child EMBARRASS Ken Paxton Live On Fox News!",
    "url": "https://www.youtube.com/watch?v=66FTXVZCe_M",
    "source": "Luke Beasley",
@@ -1186,6 +1206,23 @@
    "summary": "Luke discusses Ken Paxton's goings-on as the midterms approach. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
    "thumb": "https://i3.ytimg.com/vi/66FTXVZCe_M/hqdefault.jpg",
    "id": "b3e3feb5db6c",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Supporting Freedom Abroad Is Still in America’s National Interests",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xj0fdo/supporting_freedom_abroad_is_still_in_americas/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-30T00:00:05.000Z",
+   "summary": "submitted by /u/HooverInstitution [link] [comments]",
+   "id": "c8e7bffa559b",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1844,23 +1881,6 @@
    "summary": "More Americans are struggling to afford basic food essentials than ever before. But are food prices high enough? Our In The Know panel debates. Become an Onion member while it's still optional: https://membership.theonion.com/?campaign=701a500001geULHAA2 Powered By Forge…",
    "thumb": "https://i1.ytimg.com/vi/LtvPbNf7dPM/hqdefault.jpg",
    "id": "4216268533b0",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Norman Finkelstein: Netanyahu DESTROYED Global Order - With Trump's Help",
-   "url": "https://www.youtube.com/watch?v=r0qpbAT2AiY",
-   "source": "PoliticsJOE",
-   "feedId": "yt-politicsjoe",
-   "type": "video",
-   "tags": [
-    "comedy"
-   ],
-   "published": "2026-10-27T15:16:49.000Z",
-   "summary": "Norman Finkelstein is the world's foremost expert on the history and politics of Israel and Gaza. He joined us in studio to discuss his new book Gaza's Gravediggers. Professor Finkelstein breaks down how the international community has failed the people of Gaza, particularly…",
-   "thumb": "https://i3.ytimg.com/vi/r0qpbAT2AiY/hqdefault.jpg",
-   "id": "38d07199e5e5",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2714,24 +2734,6 @@
    "why": "0"
   },
   {
-   "title": "James Talarico Debates Texas Voters: Jubilee x CNN Townhall",
-   "url": "https://www.youtube.com/watch?v=VnurpLQd4c0",
-   "source": "Jubilee",
-   "feedId": "yt-jubilee",
-   "type": "video",
-   "tags": [
-    "politics",
-    "debates"
-   ],
-   "published": "2026-10-18T16:00:31.000Z",
-   "summary": "Hey you 👈 Wanna be in a Jubilee video? https://bit.ly/be-in-a-video LET’S BE FRIENDS Instagram: https://www.instagram.com/jubileemedia/ TikTok: https://www.tiktok.com/@jubilee?lang=en Website: https://www.jubileemedia.com OUR LOVE + DATING CHANNEL 🍑 YouTube:…",
-   "thumb": "https://i3.ytimg.com/vi/VnurpLQd4c0/hqdefault.jpg",
-   "id": "7133fd3e05c4",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "Canadian political terms iceberg EXPLAINED",
    "url": "https://www.youtube.com/watch?v=TCsfyIn_6Wc",
    "source": "J.J. McCullough",
@@ -2879,25 +2881,7 @@
    "score": 0,
    "matched": [],
    "why": "0"
-  },
-  {
-   "title": "Bashar's Alien Cult",
-   "url": "https://www.youtube.com/watch?v=u1LKaBiD9JY",
-   "source": "Channel 5 with Andrew Callaghan",
-   "feedId": "yt-channel-5-with-andrew-callaghan",
-   "type": "video",
-   "tags": [
-    "education",
-    "politics"
-   ],
-   "published": "2026-10-16T16:00:11.000Z",
-   "summary": "To see our unreleased, uncensored All Gas No Brakes catalog, head to https://www.patreon.com/channel5 Also, to see our uncensored, new All Gas No Brakes episode, 'Camp Looksmaxx,' head to https://www.patreon.com/channel5 Subscriptions are $5 a month but power the entire…",
-   "thumb": "https://i2.ytimg.com/vi/u1LKaBiD9JY/hqdefault.jpg",
-   "id": "a4b963100670",
-   "score": 0,
-   "matched": [],
-   "why": "0"
   }
  ],
- "contentHash": "9ab30fd6b264"
+ "contentHash": "70da75775abb"
 }
