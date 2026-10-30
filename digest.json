@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-30T10:07:48.436Z",
+ "generated": "2026-10-30T13:16:26.165Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
@@ -630,20 +630,19 @@
    "id": "rd-productmanagement",
    "name": "r/productmanagement",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/productmanagement/top/.rss?t=day"
+   "lastOk": "2026-10-30T10:07:48.436Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-tech",
    "name": "r/tech",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": "2026-10-27T01:08:56.460Z",
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-gaming",
@@ -652,16 +651,15 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-10-30T04:05:32.894Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
   },
   {
    "id": "rd-xbox",
@@ -670,7 +668,7 @@
    "status": "cached",
    "count": 5,
    "lastOk": "2026-10-28T16:07:55.180Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)"
   },
   {
    "id": "rd-slaythespire",
@@ -679,7 +677,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-geopolitics",
@@ -710,6 +708,133 @@
   }
  ],
  "items": [
+  {
+   "title": "Streik in Italien: ARD-Reporterin ordnet Protest-Aktion ein",
+   "url": "https://www.youtube.com/watch?v=qfnJhyxTQXM",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-30T12:42:47.000Z",
+   "summary": "In Italien haben Gewerkschaften für heute zu einem Generalstreik aufgerufen. Der Protest richtet sich gegen Arbeitsbedingungen, hohe Lebenshaltungskosten und verschiedene Pläne der Regierung von Ministerpräsidentin Meloni. Auch Studenten und Schüler wollen auf die Straßen…",
+   "thumb": "https://i2.ytimg.com/vi/qfnJhyxTQXM/hqdefault.jpg",
+   "id": "46094bef477e",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Tübingen: Einjähriger bekommt eine gespendete Leber | tagesthemen mittendrin",
+   "url": "https://www.youtube.com/watch?v=sBcR9Vy4ijU",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-30T12:06:43.000Z",
+   "summary": "In Deutschland warten tausende Menschen auf eine Spenderorgan, unter ihnen auch viele Kinder. Wir konnten ein medizinisches Team in der Uniklinik Tübingen und die Eltern des Jungen bei der Transplantation einer gespendeten Leber begleiten. Mehr tagesthemen mittendrin Reportagen…",
+   "thumb": "https://i4.ytimg.com/vi/sBcR9Vy4ijU/hqdefault.jpg",
+   "id": "35fe5eb34435",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Reform fury at Restore Britain after losing by-election to Labour by two votes",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xjdkkn/reform_fury_at_restore_britain_after_losing/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-30T12:06:43.000Z",
+   "summary": "submitted by /u/JOE_Media [link] [comments]",
+   "id": "2d7022521542",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Letzte kremlkritische Zeitung Russlands eingestellt – ARD-Korrespondent zum Aus der Nowaja Gaseta",
+   "url": "https://www.youtube.com/watch?v=Sdbn7SpoUj0",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-30T11:35:09.000Z",
+   "summary": "Die letzte große unabhängige Redaktion in Russland gibt auf: Die kremlkritische Zeitung „Nowaja Gaseta“ hat heute angekündigt, ihre Arbeit einzustellen. Am 9. November soll endgültig Schluss sein. Die Zeitung, deren Mitgründer Dmitri Muratow 2021 den Friedensnobelpreis erhielt,…",
+   "thumb": "https://i4.ytimg.com/vi/Sdbn7SpoUj0/hqdefault.jpg",
+   "id": "de8420d89f03",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Captain Jean-Luc Picard und Professor Charles Xavier: Patrick Stewart gestorben",
+   "url": "https://www.youtube.com/watch?v=jnnB48bbDGQ",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-30T10:38:10.000Z",
+   "summary": "Der britische Schauspieler Patrick Stewart ist tot. Er starb im Alter von 86 Jahren in Los Angeles nach einer Alzheimer-Erkrankung. Stewart war vor allem bekannt als Captain Jean-Luc Picard in „Star Trek: The Next Generation“ und als Professor Charles Xavier in den…",
+   "thumb": "https://i3.ytimg.com/vi/jnnB48bbDGQ/hqdefault.jpg",
+   "id": "7ef66426862c",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Centre for Migration Control: “The refugee sponsorship route will initially apply to refugees in the countries below. There are over 4 million registered refugees in these countries - 853k Afghans, 375k Somalians, and 83k Syrians. The Home Secretary is yet to put a cap on how many could arrive.”",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xjbnsr/centre_for_migration_control_the_refugee/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-30T10:25:25.000Z",
+   "summary": "submitted by /u/Little-Attorney1287 [link] [comments]",
+   "id": "6a7876db9339",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "UK net migration set to fall to lowest level since 1997",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xjb1jv/uk_net_migration_set_to_fall_to_lowest_level/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-30T09:48:32.000Z",
+   "summary": "submitted by /u/Alti-Ok [link] [comments]",
+   "id": "f07ea8085dbe",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
   {
    "title": "Nach Spiegel-Bericht: Debatte um Elif Eralp überschattet Regierungsbildung in Berlin",
    "url": "https://www.youtube.com/watch?v=AFTEYP9DTpQ",
@@ -767,6 +892,40 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
+   "title": "Britain faces worst decade on record for household income, warns Ifs - Think tank says average family’s disposable income would rise by just 2pc over the 2020s",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xja517/britain_faces_worst_decade_on_record_for/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-30T08:51:54.000Z",
+   "summary": "submitted by /u/blast-processor [link] [comments]",
+   "id": "8ae9d198906d",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "St James (Dudley) Council By-Election Result: 🌹 LAB: 38.0% (+16.2) ➡️ RFM: 37.9% (-11.0) 🌳 CON: 13.8% (-0.1) ◼️ RES: 6.9% (New) 🌍 GRN: 3.4% (-7.2) No LDM (-3.9) or TUSC (-0.9) as previous. Labour GAIN from Reform UK. Changes w/ 2026",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xja1jo/st_james_dudley_council_byelection_result_lab_380/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-30T08:45:35.000Z",
+   "summary": "submitted by /u/LargeCatInASmallBox [link] [comments]",
+   "id": "aa10da68ca24",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
    "title": "Friday Show and Tell",
    "url": "https://www.reddit.com/r/ProductManagement/comments/1xj7hre/friday_show_and_tell/",
    "source": "r/productmanagement",
@@ -778,44 +937,6 @@
    "published": "2026-10-30T06:00:47.000Z",
    "summary": "There are a lot of people here working on projects of some sort - side projects, startups, podcasts, blogs, etc. If you've got something you'd like to show off or get feedback, this is the place to do it. Standards still need to remain high, so there are a few guidelines: Don't…",
    "id": "b648f99edf9a",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Trump vor den Midterms: Der Frust der jungen Generation I 11KM - der tagesschau-Podcast",
-   "url": "https://www.youtube.com/watch?v=SaW0bbXvlkg",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-30T05:19:58.000Z",
-   "summary": "American Dream und Alltagsrechnung prallen in den #USA aufeinander: ARD Washington-Korrespondentin Anne Schneider spricht mit 11KM-Host Kevin Ebert über die junge Generation in den USA, die sich bei den Midterm-Wahlen in der Nacht zum 4. November 2026 kaum vertreten fühlt. Wie…",
-   "thumb": "https://i4.ytimg.com/vi/SaW0bbXvlkg/hqdefault.jpg",
-   "id": "916945cc99aa",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Gen Z-Proteste am Wochenende / Haft für Telefonbetrüger / Neues Zentrum für Zivilschutz",
-   "url": "https://www.youtube.com/watch?v=n5b9RaqvA2I",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-30T05:10:33.000Z",
-   "summary": "Unsere Infos heute: (00:00:07) Themenübersicht (00:00:37) GenZ - Proteste In mehr als 30 Städten sind am Samstag Proteste der Gruppierung „Gen Z regelt“ angekündigt. Während die Organisatoren friedliche Demonstrationen versprechen, bereiten sich Sicherheitsbehörden und viele…",
-   "thumb": "https://i3.ytimg.com/vi/n5b9RaqvA2I/hqdefault.jpg",
-   "id": "af135b3bbbc7",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -888,24 +1009,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Watch Child EMBARRASS Ken Paxton Live On Fox News!",
-   "url": "https://www.youtube.com/watch?v=66FTXVZCe_M",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-30T00:05:11.000Z",
-   "summary": "Luke discusses Ken Paxton's goings-on as the midterms approach. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
-   "thumb": "https://i3.ytimg.com/vi/66FTXVZCe_M/hqdefault.jpg",
-   "id": "b3e3feb5db6c",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Supporting Freedom Abroad Is Still in America’s National Interests",
    "url": "https://www.reddit.com/r/geopolitics/comments/1xj0fdo/supporting_freedom_abroad_is_still_in_americas/",
    "source": "r/geopolitics",
@@ -934,44 +1037,6 @@
    "published": "2026-10-29T23:46:21.000Z",
    "summary": "Hi team product. I’m a principle PM and I’m realizing that with all the emotional bandwidth I spend at work, I’m left tapped out for my family. I want to remedy that. So a few questions for the group: Has anyone figured out a way to do part time or fractional PM work but not…",
    "id": "ed4c2c977222",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Islamic Dilemma or Christian Dilemma? | GodLogicApologetics Vs Dr. Javad Hashmi",
-   "url": "https://www.youtube.com/watch?v=DvG5eLM_aGU",
-   "source": "Modern-Day Debate",
-   "feedId": "yt-modern-day-debate",
-   "type": "video",
-   "tags": [
-    "debates",
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-29T23:09:25.000Z",
-   "summary": "Andrew Wilson Vs Cenk Uygur at DEBATECON X in Dallas TX on February 20/21st: https://events.eventnoire.com/e/debatecon-x-by-modern-day-debate LINKS TO GUESTS: @GodLogicApologetics @DrJavadTHashmi OUR INSIDER'S EMAIL LIST FOR DEBATECON DISCOUNTS:…",
-   "thumb": "https://i1.ytimg.com/vi/DvG5eLM_aGU/hqdefault.jpg",
-   "id": "460011e77801",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "tagesthemen 22:15 Uhr, 29.10.2026",
-   "url": "https://www.youtube.com/watch?v=jUGD960I5CM",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-29T22:29:43.000Z",
-   "summary": "tagesthemen 22:15 Uhr Diskussion über Spiegel-Interview der Berliner Linken-Politikerin Eralp, Staatstrauer nach dem Zugunglück in Spanien, EU-Kanada-Gipfel beschäftigt sich mit künftiger Zusammenarbeit, Wegen eines brutalen Bürgerkriegs im Sudan sind mehr als 12 Millionen…",
-   "thumb": "https://i3.ytimg.com/vi/jUGD960I5CM/hqdefault.jpg",
-   "id": "43ddf14745e3",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1023,91 +1088,6 @@
    "published": "2026-10-29T21:34:42.000Z",
    "summary": "submitted by /u/KI_official [link] [comments]",
    "id": "6049a7e0ce85",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Patrick Stewart sketch: what has the ECHR ever done for us?",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xivgic/patrick_stewart_sketch_what_has_the_echr_ever/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-29T20:36:16.000Z",
-   "summary": "submitted by /u/Rare-Activity-752 [link] [comments]",
-   "id": "c870b43b489c",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Home Office on X: \"From today, charities can apply to sponsor refugees through new, capped Named Community Sponsorship and Refugee study safe and legal routes. Sponsors will provide accommodation, integration support and help finding work. First arrivals are expected in autumn 2027.\"",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xiunqw/home_office_on_x_from_today_charities_can_apply/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-29T20:06:37.000Z",
-   "summary": "submitted by /u/Kataera [link] [comments]",
-   "id": "97d9ed378c20",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Housebuilding is the best way to address the UK’s cost of living crisis",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xiu92p/housebuilding_is_the_best_way_to_address_the_uks/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-29T19:52:07.000Z",
-   "summary": "submitted by /u/ProjectLeeds [link] [comments]",
-   "id": "f9d03bcfacc6",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "YouGov: In terms of perceived fairness, the 2026 Budget is the best received since Rishi Sunak's March 2021 Budget",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xiu1qv/yougov_in_terms_of_perceived_fairness_the_2026/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-29T19:44:20.000Z",
-   "summary": "submitted by /u/EddyZacianLand [link] [comments]",
-   "id": "fd904b008939",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Why is it in British politics there's no longer any talk of Stewardship, Generational Inheritance or Continuity?",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xis8zk/why_is_it_in_british_politics_theres_no_longer/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-29T18:36:29.000Z",
-   "summary": "A question: Why is it in British politics there's no longer any talk of Stewardship, Generational Inheritance or Continuity? The thing I find annoying about modern politics, is all the short term-ism. The endless banging on about which tiny tax tweak to make here or how many…",
-   "id": "2be60242e0b4",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1193,6 +1173,43 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
+   "title": "Watch Child EMBARRASS Ken Paxton Live On Fox News!",
+   "url": "https://www.youtube.com/watch?v=66FTXVZCe_M",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-30T00:05:11.000Z",
+   "summary": "Luke discusses Ken Paxton's goings-on as the midterms approach. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
+   "thumb": "https://i3.ytimg.com/vi/66FTXVZCe_M/hqdefault.jpg",
+   "id": "b3e3feb5db6c",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Islamic Dilemma or Christian Dilemma? | GodLogicApologetics Vs Dr. Javad Hashmi",
+   "url": "https://www.youtube.com/watch?v=DvG5eLM_aGU",
+   "source": "Modern-Day Debate",
+   "feedId": "yt-modern-day-debate",
+   "type": "video",
+   "tags": [
+    "debates",
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-29T23:09:25.000Z",
+   "summary": "Andrew Wilson Vs Cenk Uygur at DEBATECON X in Dallas TX on February 20/21st: https://events.eventnoire.com/e/debatecon-x-by-modern-day-debate LINKS TO GUESTS: @GodLogicApologetics @DrJavadTHashmi OUR INSIDER'S EMAIL LIST FOR DEBATECON DISCOUNTS:…",
+   "thumb": "https://i1.ytimg.com/vi/DvG5eLM_aGU/hqdefault.jpg",
+   "id": "460011e77801",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
    "title": "DAMN: Man SCREAMS at TRUMP’S FACE as Rally GOES TO SH*T!",
    "url": "https://www.youtube.com/watch?v=KEafeklplgI",
    "source": "Luke Beasley",
@@ -1206,25 +1223,6 @@
    "summary": "Luke discusses Trump's latest rallies as the midterms approach. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
    "thumb": "https://i4.ytimg.com/vi/KEafeklplgI/hqdefault.jpg",
    "id": "912d39bf6138",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Neuköllns Bezirksbürgermeister über die Gefahr von Hamas-Sympathisanten | tagesthemen-Interview",
-   "url": "https://www.youtube.com/watch?v=pTiSUO-Sb2s",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-29T21:50:03.000Z",
-   "summary": "Elif Eralp will neue Regierende Bürgermeisterin Berlins werden. Während ihre Linkspartei bald in Koalitionsverhandlungen mit der SPD und den Grünen eintreten möchte, sorgt nun ein Bericht des „Spiegel“ für Unruhe. Demnach fürchte sich Elif Eralp vor Hamas-Sympathisanten im…",
-   "thumb": "https://i1.ytimg.com/vi/pTiSUO-Sb2s/hqdefault.jpg",
-   "id": "fe4918611766",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2901,5 +2899,5 @@
    "why": "0"
   }
  ],
- "contentHash": "8d4658a22002"
+ "contentHash": "9ab30fd6b264"
 }
