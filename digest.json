@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-30T19:05:31.747Z",
+ "generated": "2026-10-30T21:53:48.722Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
@@ -630,20 +630,19 @@
    "id": "rd-productmanagement",
    "name": "r/productmanagement",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/productmanagement/top/.rss?t=day"
+   "lastOk": "2026-10-30T19:05:31.747Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-tech",
    "name": "r/tech",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": "2026-10-27T01:08:56.460Z",
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-gaming",
@@ -652,16 +651,15 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-10-30T13:16:26.165Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
   },
   {
    "id": "rd-xbox",
@@ -670,7 +668,7 @@
    "status": "cached",
    "count": 5,
    "lastOk": "2026-10-28T16:07:55.180Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)"
   },
   {
    "id": "rd-slaythespire",
@@ -679,7 +677,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-geopolitics",
@@ -711,6 +709,132 @@
  ],
  "items": [
   {
+   "title": "tagesthemen 21:45 Uhr, 30.10.2026",
+   "url": "https://www.youtube.com/watch?v=QxyipvfB1gg",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-30T21:46:28.000Z",
+   "summary": "tagesthemen 21:45 Uhr Vorbereitungen auf bundesweite Jugendproteste, Evakuierungen in der ukrainischen Frontstadt Oleschky, G-20 Außenministertreffen in Atlanta, US-Kongresswahlen: Namensgleiche Kandidaten sorgen für Skandal in Alaska, Weitere Meldungen im Überblick,…",
+   "thumb": "https://i2.ytimg.com/vi/QxyipvfB1gg/hqdefault.jpg",
+   "id": "4e88331c3495",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Kommt die Welle der Jugendproteste jetzt nach Deutschland? | tagesthemen-Interview",
+   "url": "https://www.youtube.com/watch?v=_kLcZ3bHCL0",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-30T20:56:48.000Z",
+   "summary": "Am Samstag wollen in ganz Deutschland vor allem junge Menschen für bessere Lebensbedingungen auf die Straße gehen. Die Initiative \"Gen Z regelt\" hat online zu Demonstrationen in über 30 Städten aufgerufen. Kommt die Welle der Jugendproteste nun nach Deutschland? Und welche…",
+   "thumb": "https://i4.ytimg.com/vi/_kLcZ3bHCL0/hqdefault.jpg",
+   "id": "cb54695ba321",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "GTA6 SIZE REVEALED, ELDER SCROLLS 6 LEAKED? & MORE",
+   "url": "https://www.youtube.com/watch?v=sGgNvGbwrH4",
+   "source": "GameRanx",
+   "feedId": "yt-gameranx",
+   "type": "video",
+   "tags": [
+    "gaming"
+   ],
+   "published": "2026-10-30T20:42:12.000Z",
+   "summary": "Spend less time searching and more time with the people who matter most. Head to https://zocdoc.com/gameranx to find and book the care you need. 🤧 #sponsored Thank you Zocdoc for sponsoring this video! ~~SOURCES~~ GTA size revealed…",
+   "thumb": "https://i4.ytimg.com/vi/sGgNvGbwrH4/hqdefault.jpg",
+   "id": "9dad4bdb5fe1",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "$6.3bn has just been stolen...is this question too stupid to ask? | James O’Brien - The Whole Show",
+   "url": "https://www.youtube.com/watch?v=clVIDYxjQ_w",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-30T20:00:24.000Z",
+   "summary": "This is a catch-up version of James O'Brien's live, daily show on LBC Radio from the 30th of October 2026. Listen to the full show on the all-new LBC App: https://app.af.lbc.co.uk/btnc/thenewlbcapp #jamesobrien #politics #LBC LBC is the home of live debate around news and…",
+   "thumb": "https://i4.ytimg.com/vi/clVIDYxjQ_w/hqdefault.jpg",
+   "id": "01ddb17f7a25",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "tagesschau 20:00 Uhr, 30.10.2026",
+   "url": "https://www.youtube.com/watch?v=m3cRUr8MgSk",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-30T19:43:25.000Z",
+   "summary": "tagesschau 20:00 Uhr Initiative \"Gen Z regelt\" ruft zu bundesweiten Protesten auf, Italienische Gewerkschaft USB ruft zu Generalstreik auf, EU und Kanada gründen bei Gipfeltreffen \"Allianz für die Zukunft\", Evakuierungen in ukrainischer Frontstadt Oleschky beginnen, Russische…",
+   "thumb": "https://i2.ytimg.com/vi/m3cRUr8MgSk/hqdefault.jpg",
+   "id": "ff9fcbf0a65d",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "The hidden plan to bring more cheap foreign labour to Britain",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xjoxu9/the_hidden_plan_to_bring_more_cheap_foreign/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-30T19:30:21.000Z",
+   "summary": "submitted by /u/Alti-Ok [link] [comments]",
+   "id": "80720ea0c46f",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "More over-45s are living in house shares as rent soars – ‘I’m starting again at 52’",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xjom02/more_over45s_are_living_in_house_shares_as_rent/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-30T19:17:46.000Z",
+   "summary": "submitted by /u/InternetStranger5 [link] [comments]",
+   "id": "3914161cf04a",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
    "title": "Career transition from FTE Product Management",
    "url": "https://www.reddit.com/r/ProductManagement/comments/1xjnp3i/career_transition_from_fte_product_management/",
    "source": "r/productmanagement",
@@ -722,6 +846,23 @@
    "published": "2026-10-30T18:42:35.000Z",
    "summary": "Hi all, curious if anyone has made a similar leap - for background, I am deciding whether to make the backwards transition from my current FTE role to CW in a Fortune 100 Fintech company. I'm starting to hesitate largely due to looking at the landscape for CW / PM roles in…",
    "id": "9b4c23f47025",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Westminster Voting Intention: LAB: 31% (+3) RFM: 22% (-1) CON: 21% (+2) LDM: 8% (=) GRN: 8% (=) RES: 5% (-2) SNP: 2% (-1) Via BMG Research, 28-29 Oct. Changes w/ 23-24 Sep. [Largest Labour Lead (9%) with ANY pollster since September 2026, and just 1% short of lead at the 2024 General Election.]",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xjnm7f/westminster_voting_intention_lab_31_3_rfm_22_1/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-30T18:39:35.000Z",
+   "summary": "submitted by /u/LargeCatInASmallBox [link] [comments]",
+   "id": "cea4216f35ef",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -854,58 +995,35 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Nach Spiegel-Bericht: Debatte um Eralp überlagert Regierungsbildung in Berlin",
-   "url": "https://www.youtube.com/watch?v=U3RwlLGgMno",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
+   "title": "Senior Greens warn party being taken over by pro-Palestinian activists",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xjk1s1/senior_greens_warn_party_being_taken_over_by/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
    "tags": [
-    "german",
-    "news",
-    "listen"
+    "politics",
+    "british"
    ],
-   "published": "2026-10-30T16:58:27.000Z",
-   "summary": "Die Regierungsbildung in Berlin wird erneut von einer Debatte über die Linkspartei überschattet. Im Fokus: die mögliche künftige Regierende Bürgermeisterin Elif Eralp. In eigentlich nicht für die Öffentlichkeit bestimmten Anmerkungen zu einem Spiegel-Interview sorgte sich Eralp…",
-   "thumb": "https://i2.ytimg.com/vi/U3RwlLGgMno/hqdefault.jpg",
-   "id": "f49ff1b926e5",
+   "published": "2026-10-30T16:28:06.000Z",
+   "summary": "submitted by /u/EddyZacianLand [link] [comments]",
+   "id": "fc0af1a6e629",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "tagesschau in Einfacher Sprache 19:00 Uhr, 30.10.2026",
-   "url": "https://www.youtube.com/watch?v=LVHuuhNSHH0",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
+   "title": "Boost for Burnham as surge in voters who think Labour will win next election, new poll shows",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xjjvau/boost_for_burnham_as_surge_in_voters_who_think/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
    "tags": [
-    "german",
-    "news",
-    "listen"
+    "politics",
+    "british"
    ],
-   "published": "2026-10-30T16:43:52.000Z",
-   "summary": "tagesschau in Einfacher Sprache 19:00 Uhr Ergebnis von der Wahl in Israel, Proteste in Italien, Schauspieler Patrick Stewart gestorben, Tennisspieler Zverev auf Platz eins, Das Wetter https://www.tagesschau.de",
-   "thumb": "https://i1.ytimg.com/vi/LVHuuhNSHH0/hqdefault.jpg",
-   "id": "1c03107937c7",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Binance gehackt: Schwerwiegendster Hack auf die Finanzbranche in der Geschichte",
-   "url": "https://www.youtube.com/watch?v=leYfukfytvo",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-30T16:19:12.000Z",
-   "summary": "Es ist der wohl schwerwiegendste Hackerangriff auf die Finanzbranche in der Geschichte. Unbekannte haben die weltgrößte Kryptobörse Binance gehackt. Diese beziffert den Schaden auf 6,3 Milliarden Dollar - circa 5,6 Milliarden Euro. Vermutet hinter dem Angriff werden…",
-   "thumb": "https://i1.ytimg.com/vi/leYfukfytvo/hqdefault.jpg",
-   "id": "27756685302a",
+   "published": "2026-10-30T16:21:27.000Z",
+   "summary": "submitted by /u/Jay_CD [link] [comments]",
+   "id": "518f5b559382",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -981,23 +1099,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Reform fury at Restore Britain after losing by-election to Labour by two votes",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xjdkkn/reform_fury_at_restore_britain_after_losing/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-30T12:06:43.000Z",
-   "summary": "submitted by /u/JOE_Media [link] [comments]",
-   "id": "2d7022521542",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "EU Defence Commissioner Kubilius receives a comprehensive proposal for the creation of a European Army from the Action Committee for the United States of Europe, bringing together policymakers, academics and prominent public figures",
    "url": "https://www.reddit.com/r/geopolitics/comments/1xjc3h4/eu_defence_commissioner_kubilius_receives_a/",
    "source": "r/geopolitics",
@@ -1015,23 +1116,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Centre for Migration Control: “The refugee sponsorship route will initially apply to refugees in the countries below. There are over 4 million registered refugees in these countries - 853k Afghans, 375k Somalians, and 83k Syrians. The Home Secretary is yet to put a cap on how many could arrive.”",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xjbnsr/centre_for_migration_control_the_refugee/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-30T10:25:25.000Z",
-   "summary": "submitted by /u/Little-Attorney1287 [link] [comments]",
-   "id": "6a7876db9339",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Pentagon tells Europeans to cool their rhetoric on Russia, sources say",
    "url": "https://www.reddit.com/r/geopolitics/comments/1xjbjhl/pentagon_tells_europeans_to_cool_their_rhetoric/",
    "source": "r/geopolitics",
@@ -1044,94 +1128,6 @@
    "published": "2026-10-30T10:18:21.000Z",
    "summary": "submitted by /u/Pleasant_Memory_2952 [link] [comments]",
    "id": "65271d4ce111",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "UK net migration set to fall to lowest level since 1997",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xjb1jv/uk_net_migration_set_to_fall_to_lowest_level/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-30T09:48:32.000Z",
-   "summary": "submitted by /u/Alti-Ok [link] [comments]",
-   "id": "f07ea8085dbe",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Should Burnham Call an Election?",
-   "url": "https://www.youtube.com/watch?v=9oudg7AuyD4",
-   "source": "TLDR News",
-   "feedId": "yt-tldr-news",
-   "type": "video",
-   "tags": [
-    "news",
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-30T09:30:24.000Z",
-   "summary": "Pre-order a copy of Too Long: toolong.news/TL010 Andymonium podcast: youtube.com/@TLDRpodcasts We take a look at whether Burnham should call an election, the rumours swirling about the different groups pushing him to, and ultimately, whether it looks likely that he will. 📰 Too…",
-   "thumb": "https://i2.ytimg.com/vi/9oudg7AuyD4/hqdefault.jpg",
-   "id": "ade2cc79170d",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "What is Britain bracing for? | UK households urged to stockpile",
-   "url": "https://www.youtube.com/watch?v=oJDRq2qr8xw",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-30T09:00:26.000Z",
-   "summary": "Across Britain, there is a growing army of people spending thousands of pounds to amass years' worth of supplies and train for crisis situations. LBC has been to meet some of the country's long-term preppers who have been getting ready for disaster scenarios long before the…",
-   "thumb": "https://i4.ytimg.com/vi/oJDRq2qr8xw/hqdefault.jpg",
-   "id": "824cf523e044",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Britain faces worst decade on record for household income, warns Ifs - Think tank says average family’s disposable income would rise by just 2pc over the 2020s",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xja517/britain_faces_worst_decade_on_record_for/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-30T08:51:54.000Z",
-   "summary": "submitted by /u/blast-processor [link] [comments]",
-   "id": "8ae9d198906d",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "St James (Dudley) Council By-Election Result: 🌹 LAB: 38.0% (+16.2) ➡️ RFM: 37.9% (-11.0) 🌳 CON: 13.8% (-0.1) ◼️ RES: 6.9% (New) 🌍 GRN: 3.4% (-7.2) No LDM (-3.9) or TUSC (-0.9) as previous. Labour GAIN from Reform UK. Changes w/ 2026",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xja1jo/st_james_dudley_council_byelection_result_lab_380/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-30T08:45:35.000Z",
-   "summary": "submitted by /u/LargeCatInASmallBox [link] [comments]",
-   "id": "aa10da68ca24",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1215,6 +1211,43 @@
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Should Burnham Call an Election?",
+   "url": "https://www.youtube.com/watch?v=9oudg7AuyD4",
+   "source": "TLDR News",
+   "feedId": "yt-tldr-news",
+   "type": "video",
+   "tags": [
+    "news",
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-30T09:30:24.000Z",
+   "summary": "Pre-order a copy of Too Long: toolong.news/TL010 Andymonium podcast: youtube.com/@TLDRpodcasts We take a look at whether Burnham should call an election, the rumours swirling about the different groups pushing him to, and ultimately, whether it looks likely that he will. 📰 Too…",
+   "thumb": "https://i2.ytimg.com/vi/9oudg7AuyD4/hqdefault.jpg",
+   "id": "ade2cc79170d",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "What is Britain bracing for? | UK households urged to stockpile",
+   "url": "https://www.youtube.com/watch?v=oJDRq2qr8xw",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-30T09:00:26.000Z",
+   "summary": "Across Britain, there is a growing army of people spending thousands of pounds to amass years' worth of supplies and train for crisis situations. LBC has been to meet some of the country's long-term preppers who have been getting ready for disaster scenarios long before the…",
+   "thumb": "https://i4.ytimg.com/vi/oJDRq2qr8xw/hqdefault.jpg",
+   "id": "824cf523e044",
+   "score": 0,
+   "matched": [],
+   "why": "0"
   },
   {
    "title": "Friday Show and Tell",
@@ -1362,7 +1395,7 @@
     "listen"
    ],
    "published": "2026-10-29T23:09:25.000Z",
-   "summary": "Andrew Wilson Vs Cenk Uygur at DEBATECON X in Dallas TX on February 20/21st: https://events.eventnoire.com/e/debatecon-x-by-modern-day-debate LINKS TO GUESTS: @GodLogicApologetics @DrJavadTHashmi OUR INSIDER'S EMAIL LIST FOR DEBATECON DISCOUNTS:…",
+   "summary": "Huge thank you to our DEBATECON 9 sponsors including: Revival of the Anointed's Rule: https://revivingtheroar.org/ Apologetics Ark: https://www.apologeticsark.com/links @UncensoredAmerica Andrew Wilson Vs Cenk Uygur at DEBATECON X in Dallas TX on February 20/21st:…",
    "thumb": "https://i1.ytimg.com/vi/DvG5eLM_aGU/hqdefault.jpg",
    "id": "460011e77801",
    "score": 0,
@@ -1455,24 +1488,6 @@
    "summary": "Luke discusses some recent Fox News man-on-the-street interviews. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
    "thumb": "https://i3.ytimg.com/vi/zB7lrfcIg9Y/hqdefault.jpg",
    "id": "8372e0361658",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "A tale of two extremes in the media today | James O’Brien - The Whole Show",
-   "url": "https://www.youtube.com/watch?v=Vn3NQ-lsnSo",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-29T20:00:35.000Z",
-   "summary": "This is a catch-up version of James O'Brien's live, daily show on LBC Radio from the 29th of October 2026. Listen to the full show on the all-new LBC App: https://app.af.lbc.co.uk/btnc/thenewlbcapp #jamesobrien #politics #LBC LBC is the home of live debate around news and…",
-   "thumb": "https://i3.ytimg.com/vi/Vn3NQ-lsnSo/hqdefault.jpg",
-   "id": "68cc14eaac5f",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1667,7 +1682,7 @@
     "listen"
    ],
    "published": "2026-10-28T22:35:05.000Z",
-   "summary": "Andrew Wilson Vs Cenk Uygur at DEBATECON X in Dallas TX on February 20/21st: https://events.eventnoire.com/e/debatecon-x-by-modern-day-debate LINKS TO GUESTS: @JayDyer @apologeticsroadshow OUR INSIDER'S EMAIL LIST FOR DEBATECON DISCOUNTS: https://forms.gle/rK5aqPAzAZXiDpDz9 OUR…",
+   "summary": "Huge thank you to our DEBATECON 9 sponsors including: Revival of the Anointed's Rule: https://revivingtheroar.org/ Apologetics Ark: https://www.apologeticsark.com/links @UncensoredAmerica Andrew Wilson Vs Cenk Uygur at DEBATECON X in Dallas TX on February 20/21st:…",
    "thumb": "https://i2.ytimg.com/vi/IpKKCNJ81NE/hqdefault.jpg",
    "id": "e66886092d1e",
    "score": 0,
@@ -1989,23 +2004,6 @@
    "summary": "Jim Norton, Anthony Cumia, Pat O'Neill, Dedrick Flynn, Martin Phillips, D Madness, Michael A. Gonzales, Jon Deas, Matthew Muehling, Grooveline Horns, Joe White, Troy Conrad, Monica Colt, Steve Glass, Tony Hinchcliffe, Brian Redban - RECORDED– 10/19/2026 TONY HINCHCLIFFE…",
    "thumb": "https://i2.ytimg.com/vi/1MJir9VHriw/hqdefault.jpg",
    "id": "28f10a57dd6e",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Phantom Blade Zero - Before You Buy",
-   "url": "https://www.youtube.com/watch?v=Wf9irsB_ETs",
-   "source": "GameRanx",
-   "feedId": "yt-gameranx",
-   "type": "video",
-   "tags": [
-    "gaming"
-   ],
-   "published": "2026-10-26T22:58:50.000Z",
-   "summary": "Phantom Blade Zero (PC, PS5) is an action RPG with big ambition and an emphasis on fun. Let's talk. Subscribe for more: http://youtube.com/gameranxtv ▼▼ Watch more 'Before You Buy': https://bit.ly/2kfdxI6",
-   "thumb": "https://i4.ytimg.com/vi/Wf9irsB_ETs/hqdefault.jpg",
-   "id": "ba2b0ff31aae",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2919,5 +2917,5 @@
    "why": "0"
   }
  ],
- "contentHash": "7bb269e87cae"
+ "contentHash": "9dcefdb1843b"
 }
