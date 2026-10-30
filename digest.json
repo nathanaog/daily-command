@@ -1,17 +1,17 @@
 {
- "generated": "2026-10-29T21:58:45.204Z",
+ "generated": "2026-10-30T01:22:33.393Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
-  "ok": 51,
-  "items": 121,
+  "ok": 50,
+  "items": 123,
   "duplicatesMerged": 0,
   "lengthsKnown": 1,
-  "lengthLookups": 100,
-  "lengthFailures": 100,
+  "lengthLookups": 94,
+  "lengthFailures": 94,
   "lengthVia": "video pages",
   "lengthFailReasons": {
-   "no length on page": 100
+   "no length on page": 94
   }
  },
  "feeds": [
@@ -39,7 +39,7 @@
     "title": "Jubilee",
     "via": "name search"
    },
-   "url": "https://www.youtube.com/feeds/videos.xml?playlist_id=UULFJjSDX-jUChzOEyok9XYRJQ"
+   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCJjSDX-jUChzOEyok9XYRJQ"
   },
   {
    "id": "yt-lbc",
@@ -201,14 +201,15 @@
    "id": "yt-levi-hildebrand",
    "name": "Levi Hildebrand",
    "type": "youtube",
-   "status": "ok",
-   "count": 2,
+   "status": "error",
+   "count": 0,
    "resolved": {
     "channelId": "UC-OJ-24roEfQ_-PCnLJSckg",
     "title": "Levi Hildebrand",
     "via": "name search"
    },
-   "url": "https://www.youtube.com/feeds/videos.xml?playlist_id=UULF-OJ-24roEfQ_-PCnLJSckg"
+   "error": "not found (404)",
+   "http": 404
   },
   {
    "id": "yt-tldr-news",
@@ -273,7 +274,7 @@
     "title": "ProZD",
     "via": "name search"
    },
-   "url": "https://www.youtube.com/feeds/videos.xml?playlist_id=UULF6MFZAOHXlKK1FI7V0XQVeA"
+   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC6MFZAOHXlKK1FI7V0XQVeA"
   },
   {
    "id": "yt-luke-beasley",
@@ -351,14 +352,14 @@
     "title": "gameranx",
     "via": "name search"
    },
-   "url": "https://www.youtube.com/feeds/videos.xml?playlist_id=UULFNvzD7Z-g64bPXxGzaQaa4g"
+   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCNvzD7Z-g64bPXxGzaQaa4g"
   },
   {
    "id": "yt-modern-day-debate",
    "name": "Modern-Day Debate",
    "type": "youtube",
    "status": "ok",
-   "count": 1,
+   "count": 2,
    "resolved": {
     "channelId": "UC_cd4oF2phaIBD3WsU3f7Xg",
     "title": "Modern-Day Debate",
@@ -462,13 +463,13 @@
    "name": "Lenny's Podcast",
    "type": "youtube",
    "status": "ok",
-   "count": 2,
+   "count": 5,
    "resolved": {
     "channelId": "UC6t1O76G0jYXOAoYCm153dA",
     "title": "Lenny's Podcast",
     "via": "name search"
    },
-   "url": "https://www.youtube.com/feeds/videos.xml?playlist_id=UULF6t1O76G0jYXOAoYCm153dA"
+   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC6t1O76G0jYXOAoYCm153dA"
   },
   {
    "id": "yt-the-hustle",
@@ -624,25 +625,26 @@
     "title": "Adam Neely",
     "via": "name search"
    },
-   "url": "https://www.youtube.com/feeds/videos.xml?playlist_id=UULFnkp4xDOwqqJD7sSM3xdUiQ"
+   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCnkp4xDOwqqJD7sSM3xdUiQ"
   },
   {
    "id": "rd-productmanagement",
    "name": "r/productmanagement",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-10-29T16:11:07.819Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/productmanagement/top/.rss?t=day"
   },
   {
    "id": "rd-tech",
    "name": "r/tech",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": "2026-10-27T01:08:56.460Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-gaming",
@@ -651,7 +653,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-ukpolitics",
@@ -684,20 +686,19 @@
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
+   "lastOk": "2026-10-29T21:58:45.204Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-germany",
    "name": "r/germany",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": "2026-10-15T00:59:57.533Z",
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-unitedkingdom",
@@ -706,10 +707,100 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   }
  ],
  "items": [
+  {
+   "title": "Watch Child EMBARRASS Ken Paxton Live On Fox News!",
+   "url": "https://www.youtube.com/watch?v=66FTXVZCe_M",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-30T00:05:11.000Z",
+   "summary": "Luke discusses Ken Paxton's goings-on as the midterms approach. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
+   "thumb": "https://i3.ytimg.com/vi/66FTXVZCe_M/hqdefault.jpg",
+   "id": "b3e3feb5db6c",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Career advice for PM mom",
+   "url": "https://www.reddit.com/r/ProductManagement/comments/1xj04b7/career_advice_for_pm_mom/",
+   "source": "r/productmanagement",
+   "feedId": "rd-productmanagement",
+   "type": "post",
+   "tags": [
+    "product"
+   ],
+   "published": "2026-10-29T23:46:21.000Z",
+   "summary": "Hi team product. I’m a principle PM and I’m realizing that with all the emotional bandwidth I spend at work, I’m left tapped out for my family. I want to remedy that. So a few questions for the group: Has anyone figured out a way to do part time or fractional PM work but not…",
+   "id": "ed4c2c977222",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Islamic Dilemma or Christian Dilemma? | GodLogicApologetics Vs Dr. Javad Hashmi",
+   "url": "https://www.youtube.com/watch?v=DvG5eLM_aGU",
+   "source": "Modern-Day Debate",
+   "feedId": "yt-modern-day-debate",
+   "type": "video",
+   "tags": [
+    "debates",
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-29T23:09:25.000Z",
+   "summary": "Andrew Wilson Vs Cenk Uygur at DEBATECON X in Dallas TX on February 20/21st: https://events.eventnoire.com/e/debatecon-x-by-modern-day-debate LINKS TO GUESTS: @GodLogicApologetics @DrJavadTHashmi OUR INSIDER'S EMAIL LIST FOR DEBATECON DISCOUNTS:…",
+   "thumb": "https://i1.ytimg.com/vi/DvG5eLM_aGU/hqdefault.jpg",
+   "id": "460011e77801",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "tagesthemen 22:15 Uhr, 29.10.2026",
+   "url": "https://www.youtube.com/watch?v=jUGD960I5CM",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-29T22:29:43.000Z",
+   "summary": "tagesthemen 22:15 Uhr Diskussion über Spiegel-Interview der Berliner Linken-Politikerin Eralp, Staatstrauer nach dem Zugunglück in Spanien, EU-Kanada-Gipfel beschäftigt sich mit künftiger Zusammenarbeit, Wegen eines brutalen Bürgerkriegs im Sudan sind mehr als 12 Millionen…",
+   "thumb": "https://i3.ytimg.com/vi/jUGD960I5CM/hqdefault.jpg",
+   "id": "43ddf14745e3",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "DAMN: Man SCREAMS at TRUMP’S FACE as Rally GOES TO SH*T!",
+   "url": "https://www.youtube.com/watch?v=KEafeklplgI",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-29T22:05:08.000Z",
+   "summary": "Luke discusses Trump's latest rallies as the midterms approach. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
+   "thumb": "https://i4.ytimg.com/vi/KEafeklplgI/hqdefault.jpg",
+   "id": "912d39bf6138",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
   {
    "title": "Neuköllns Bezirksbürgermeister über die Gefahr von Hamas-Sympathisanten | tagesthemen-Interview",
    "url": "https://www.youtube.com/watch?v=pTiSUO-Sb2s",
@@ -725,6 +816,22 @@
    "summary": "Elif Eralp will neue Regierende Bürgermeisterin Berlins werden. Während ihre Linkspartei bald in Koalitionsverhandlungen mit der SPD und den Grünen eintreten möchte, sorgt nun ein Bericht des „Spiegel“ für Unruhe. Demnach fürchte sich Elif Eralp vor Hamas-Sympathisanten im…",
    "thumb": "https://i1.ytimg.com/vi/pTiSUO-Sb2s/hqdefault.jpg",
    "id": "fe4918611766",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Book reco on product led retention?",
+   "url": "https://www.reddit.com/r/ProductManagement/comments/1xiw7av/book_reco_on_product_led_retention/",
+   "source": "r/productmanagement",
+   "feedId": "rd-productmanagement",
+   "type": "post",
+   "tags": [
+    "product"
+   ],
+   "published": "2026-10-29T21:05:18.000Z",
+   "summary": "This will be my new focus area soon and wanted to understand the fundamentals. submitted by /u/Stoned_Monke0906 [link] [comments]",
+   "id": "7902b303cd0f",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -836,6 +943,24 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
+   "title": "A tale of two extremes in the media today | James O’Brien - The Whole Show",
+   "url": "https://www.youtube.com/watch?v=Vn3NQ-lsnSo",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-29T20:00:35.000Z",
+   "summary": "This is a catch-up version of James O'Brien's live, daily show on LBC Radio from the 29th of October 2026. Listen to the full show on the all-new LBC App: https://app.af.lbc.co.uk/btnc/thenewlbcapp #jamesobrien #politics #LBC LBC is the home of live debate around news and…",
+   "thumb": "https://i3.ytimg.com/vi/Vn3NQ-lsnSo/hqdefault.jpg",
+   "id": "68cc14eaac5f",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
    "title": "Reported Vance Letter to Iran Security Chief Mohsen Rezaei Comes as Tehran Weighs Hormuz Strategy",
    "url": "https://www.reddit.com/r/geopolitics/comments/1xiugkr/reported_vance_letter_to_iran_security_chief/",
    "source": "r/geopolitics",
@@ -927,6 +1052,24 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
+   "title": "Is Voting Republican going to destroy America? #voting #maga #davidmauricio #surrounded #jubilee",
+   "url": "https://www.youtube.com/shorts/hPPgPY-HEUE",
+   "source": "Jubilee",
+   "feedId": "yt-jubilee",
+   "type": "video",
+   "tags": [
+    "politics",
+    "debates"
+   ],
+   "published": "2026-10-29T19:00:16.000Z",
+   "summary": "Hey you 👈 Wanna be in a Jubilee video? https://bit.ly/be-in-a-video LET’S BE FRIENDS Instagram: https://www.instagram.com/jubileemedia/ TikTok: https://www.tiktok.com/@jubilee?lang=en Website: https://www.jubileemedia.com OUR LOVE + DATING CHANNEL 🍑 YouTube:…",
+   "thumb": "https://i1.ytimg.com/vi/hPPgPY-HEUE/hqdefault.jpg",
+   "id": "bab2db504160",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
    "title": "Should the world fear Trump-Putin-Xi collusion? | The Economist",
    "url": "https://www.youtube.com/watch?v=2y4u-6i6pyQ",
    "source": "The Economist",
@@ -981,25 +1124,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Vorzeitiger Abschied von der EZB: Warum Christine Lagarde gehen will",
-   "url": "https://www.youtube.com/watch?v=c-mI9kILdqs",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-29T17:55:46.000Z",
-   "summary": "Offiziell wurde es bereits heute Vormittag von der Europäischen Zentralbank erklärt: EZB-Präsidentin Christine Lagarde tritt vorzeitig zurück. Sie wird ihren Posten zum 7. Februar niederlegen – etwa acht Monate vor dem regulären Ende ihrer Amtszeit. Am Nachmittag äußerte sich…",
-   "thumb": "https://i4.ytimg.com/vi/c-mI9kILdqs/hqdefault.jpg",
-   "id": "af0a9d011754",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Phantom Blade Zero: 10 Things The Game DOESN'T TELL YOU",
    "url": "https://www.youtube.com/watch?v=vZdgn9J1SlM",
    "source": "GameRanx",
@@ -1017,6 +1141,24 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
+   "title": "Harry Sisson vs 20 MAGA men, this Sunday on #surrounded",
+   "url": "https://www.youtube.com/shorts/i7p1PQNgLvY",
+   "source": "Jubilee",
+   "feedId": "yt-jubilee",
+   "type": "video",
+   "tags": [
+    "politics",
+    "debates"
+   ],
+   "published": "2026-10-29T17:00:09.000Z",
+   "summary": "Hey you 👈 Wanna be in a Jubilee video? https://bit.ly/be-in-a-video LET’S BE FRIENDS Instagram: https://www.instagram.com/jubileemedia/ TikTok: https://www.tiktok.com/@jubilee?lang=en Website: https://www.jubileemedia.com OUR LOVE + DATING CHANNEL 🍑 YouTube:…",
+   "thumb": "https://i2.ytimg.com/vi/i7p1PQNgLvY/hqdefault.jpg",
+   "id": "e6a1e3310879",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
    "title": "Only the Gulf Can End the Iran War: The Arab Monarchies Must Help Washington and Tehran Save Face",
    "url": "https://www.reddit.com/r/geopolitics/comments/1xiplbt/only_the_gulf_can_end_the_iran_war_the_arab/",
    "source": "r/geopolitics",
@@ -1029,6 +1171,22 @@
    "published": "2026-10-29T16:58:56.000Z",
    "summary": "submitted by /u/ForeignAffairsMag [link] [comments]",
    "id": "f8b661aabc8b",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "New to a PM role and inherited a team with no process and somewhat low morale, advice needed",
+   "url": "https://www.reddit.com/r/ProductManagement/comments/1xipfau/new_to_a_pm_role_and_inherited_a_team_with_no/",
+   "source": "r/productmanagement",
+   "feedId": "rd-productmanagement",
+   "type": "post",
+   "tags": [
+    "product"
+   ],
+   "published": "2026-10-29T16:52:51.000Z",
+   "summary": "I’ve only been a PM for about 2 months. I was moved in this role because I’m a domain expert in the industry we’re building in, and I had previous technical PM experience. I inherited a team with basically no process. We use Linear. Devs + QA report to me, there’s no…",
+   "id": "dc2084c177ae",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1120,24 +1278,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Rich VS Poor Consumerism",
-   "url": "https://www.youtube.com/watch?v=5KP8gugE2Xw",
-   "source": "Levi Hildebrand",
-   "feedId": "yt-levi-hildebrand",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "business"
-   ],
-   "published": "2026-10-29T15:00:07.000Z",
-   "summary": "Spread the word about how we can meaningfully impact climate change and use our link https://clmtpwr.us/Levi to check your voter registration and make a voting plan. Get out to vote before or on Election Day, November 3rd! Subscribe!…",
-   "thumb": "https://i2.ytimg.com/vi/5KP8gugE2Xw/hqdefault.jpg",
-   "id": "7d3461c099d7",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "[OC] The UK’s Age-Check Plan Runs Through Your Phone. Ofcom’s latest reports point towards a bigger role for app stores and operating systems in the UK’s online-safety plans. But who oversees the checks built into your phone?",
    "url": "https://www.reddit.com/r/ukpolitics/comments/1xilu37/oc_the_uks_agecheck_plan_runs_through_your_phone/",
    "source": "r/ukpolitics",
@@ -1184,108 +1324,6 @@
    "published": "2026-10-29T14:06:07.000Z",
    "summary": "v2 launched. Changed a legacy workflow. We knew this would cause headaches and tried our best at enabling our customer success team but there are existing customers with one or two reps who miss \"the old way of doing things\" I get on a call with the most frustrated user...…",
    "id": "f45cc4ce2555",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "MAGA Candidate’s S*X SCANDAL LEAKS, Watch HIM PANIC!",
-   "url": "https://www.youtube.com/watch?v=bSrs54LLy3E",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-29T13:00:09.000Z",
-   "summary": "Luke discusses Brent Taylor's scandal. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley Instagram -…",
-   "thumb": "https://i3.ytimg.com/vi/bSrs54LLy3E/hqdefault.jpg",
-   "id": "6fee94cb38f6",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Avi Shlaim: Benjamin Netanyahu has changed Israel forever",
-   "url": "https://www.youtube.com/watch?v=AQfxsrD4cZ8",
-   "source": "PoliticsJOE",
-   "feedId": "yt-politicsjoe",
-   "type": "video",
-   "tags": [
-    "comedy"
-   ],
-   "published": "2026-10-29T12:59:17.000Z",
-   "summary": "Avi Shlaim, Emeritus Professor of International Relations at the University of Oxford and one of the leading historians of the Arab-Israeli conflict, examines Netanyahu’s impact on Israel, the destruction of Gaza and the future of Palestine. Shlaim argues that Britain bears…",
-   "thumb": "https://i2.ytimg.com/vi/AQfxsrD4cZ8/hqdefault.jpg",
-   "id": "6429d26f3a6f",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Police Called To 3-year-old's Soccer Game Because He Was TOO GOOD???",
-   "url": "https://www.youtube.com/watch?v=05Ro9inVa68",
-   "source": "Aberrant preach",
-   "feedId": "yt-aberrant-preach",
-   "type": "video",
-   "tags": [
-    "trash"
-   ],
-   "published": "2026-10-29T10:10:42.000Z",
-   "summary": "Police was called for a 3 year old kid being too good at football. If that wasn't ridiculous enough, we got access to the bodycam. The reasoning is wilder. ———————————— Spotify: https://open.spotify.com/artist/6QJIJ6AugqPEFASp1V6zgH Merchandise ---…",
-   "thumb": "https://i1.ytimg.com/vi/05Ro9inVa68/hqdefault.jpg",
-   "id": "2099d4ffaf24",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Weekly rant thread",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1xifr9q/weekly_rant_thread/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-10-29T10:00:58.000Z",
-   "summary": "Share your frustrations and get support/feedback. You are not alone! submitted by /u/AutoModerator [link] [comments]",
-   "id": "9b33331a9b4c",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "The Chancellor refuses to make 'crude cuts' to welfare bill",
-   "url": "https://www.youtube.com/watch?v=lvs8ZNEXCb4",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-29T10:00:08.000Z",
-   "summary": "Speaking to LBC's Nick Ferrari at Breakfast after delivering his first Budget, the Chancellor defended his decision not to announce cuts to Britain's growing benefits bill as he pledged to reform the sector. Mr Healey told the Commons on Wednesday he would address the country's…",
-   "thumb": "https://i1.ytimg.com/vi/lvs8ZNEXCb4/hqdefault.jpg",
-   "id": "a756d3e4dbec",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "What is being a product manager now, October/november 2026?",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1xib5tn/what_is_being_a_product_manager_now/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-10-29T05:13:48.000Z",
-   "summary": "I mean it has always been “bring the highest value to the customers while driving business metrics, usually revenue” and “do what needs to be done in order to move the work forward”. It is still so. But how does that actually look that like in your organization with all the AI…",
-   "id": "e0e2e9efd24f",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1371,6 +1409,92 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
+   "title": "MAGA Candidate’s S*X SCANDAL LEAKS, Watch HIM PANIC!",
+   "url": "https://www.youtube.com/watch?v=bSrs54LLy3E",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-29T13:00:09.000Z",
+   "summary": "Luke discusses Brent Taylor's scandal. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley Instagram -…",
+   "thumb": "https://i3.ytimg.com/vi/bSrs54LLy3E/hqdefault.jpg",
+   "id": "6fee94cb38f6",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Avi Shlaim: Benjamin Netanyahu has changed Israel forever",
+   "url": "https://www.youtube.com/watch?v=AQfxsrD4cZ8",
+   "source": "PoliticsJOE",
+   "feedId": "yt-politicsjoe",
+   "type": "video",
+   "tags": [
+    "comedy"
+   ],
+   "published": "2026-10-29T12:59:17.000Z",
+   "summary": "Avi Shlaim, Emeritus Professor of International Relations at the University of Oxford and one of the leading historians of the Arab-Israeli conflict, examines Netanyahu’s impact on Israel, the destruction of Gaza and the future of Palestine. Shlaim argues that Britain bears…",
+   "thumb": "https://i2.ytimg.com/vi/AQfxsrD4cZ8/hqdefault.jpg",
+   "id": "6429d26f3a6f",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Police Called To 3-year-old's Soccer Game Because He Was TOO GOOD???",
+   "url": "https://www.youtube.com/watch?v=05Ro9inVa68",
+   "source": "Aberrant preach",
+   "feedId": "yt-aberrant-preach",
+   "type": "video",
+   "tags": [
+    "trash"
+   ],
+   "published": "2026-10-29T10:10:42.000Z",
+   "summary": "Police was called for a 3 year old kid being too good at football. If that wasn't ridiculous enough, we got access to the bodycam. The reasoning is wilder. ———————————— Spotify: https://open.spotify.com/artist/6QJIJ6AugqPEFASp1V6zgH Merchandise ---…",
+   "thumb": "https://i1.ytimg.com/vi/05Ro9inVa68/hqdefault.jpg",
+   "id": "2099d4ffaf24",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Weekly rant thread",
+   "url": "https://www.reddit.com/r/ProductManagement/comments/1xifr9q/weekly_rant_thread/",
+   "source": "r/productmanagement",
+   "feedId": "rd-productmanagement",
+   "type": "post",
+   "tags": [
+    "product"
+   ],
+   "published": "2026-10-29T10:00:58.000Z",
+   "summary": "Share your frustrations and get support/feedback. You are not alone! submitted by /u/AutoModerator [link] [comments]",
+   "id": "9b33331a9b4c",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "The Chancellor refuses to make 'crude cuts' to welfare bill",
+   "url": "https://www.youtube.com/watch?v=lvs8ZNEXCb4",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-29T10:00:08.000Z",
+   "summary": "Speaking to LBC's Nick Ferrari at Breakfast after delivering his first Budget, the Chancellor defended his decision not to announce cuts to Britain's growing benefits bill as he pledged to reform the sector. Mr Healey told the Commons on Wednesday he would address the country's…",
+   "thumb": "https://i1.ytimg.com/vi/lvs8ZNEXCb4/hqdefault.jpg",
+   "id": "a756d3e4dbec",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
    "title": "Burnham’s First Budget Explained",
    "url": "https://www.youtube.com/watch?v=ygVX149E5cE",
    "source": "TLDR News",
@@ -1408,24 +1532,6 @@
    "why": "0"
   },
   {
-   "title": "Rally Crowd GASPS as Trump LOSES HIS SH*T On Stage!",
-   "url": "https://www.youtube.com/watch?v=AO9HBzg21ps",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-29T00:33:07.000Z",
-   "summary": "Luke discusses Trump's latest rallies in Texas. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley Instagram -…",
-   "thumb": "https://i2.ytimg.com/vi/AO9HBzg21ps/hqdefault.jpg",
-   "id": "4b34d103ab2c",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "Eastern Orthodox Vs Protestantism, Which Is the True Church? | Jay Dyer Vs Dr. David Wood",
    "url": "https://www.youtube.com/watch?v=IpKKCNJ81NE",
    "source": "Modern-Day Debate",
@@ -1445,69 +1551,19 @@
    "why": "0"
   },
   {
-   "title": "DAMN: Katie Zacharia RETURNS, FUMES in Interview after FIRING!",
-   "url": "https://www.youtube.com/watch?v=QV46a6p8pco",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
+   "title": "David discusses Donald Trump's failures with MAGA #maga #donaldtrump #surrounded #jubilee",
+   "url": "https://www.youtube.com/shorts/eB9ubzUdXU4",
+   "source": "Jubilee",
+   "feedId": "yt-jubilee",
    "type": "video",
    "tags": [
     "politics",
-    "listen"
+    "debates"
    ],
-   "published": "2026-10-28T22:33:16.000Z",
-   "summary": "Luke discusses Katie Zacharia's Newsmax interview. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley Instagram -…",
-   "thumb": "https://i2.ytimg.com/vi/QV46a6p8pco/hqdefault.jpg",
-   "id": "34442f0436c8",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Division of responsibilities between PM and QA",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1xi28by/division_of_responsibilities_between_pm_and_qa/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-10-28T22:12:08.000Z",
-   "summary": "I run a highly technical infrastructure service for internal IT at my company. Part of my role involves supervising the product managers. We also have a QA team who report to someone else. I struggle with what expectations to set with my PMs regarding acceptance criteria in…",
-   "id": "ac4883d1eea2",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "What did the budget ever do for us? | James O’Brien - The Whole Show",
-   "url": "https://www.youtube.com/watch?v=VitUibSAcIQ",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-28T21:00:10.000Z",
-   "summary": "This is a catch-up version of James O'Brien's live, daily show on LBC Radio from the 28th of October 2026. Listen to the full show on the all-new LBC App: https://app.af.lbc.co.uk/btnc/thenewlbcapp #jamesobrien #politics #LBC LBC is the home of live debate around news and…",
-   "thumb": "https://i3.ytimg.com/vi/VitUibSAcIQ/hqdefault.jpg",
-   "id": "ff2f75496fdf",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "How to handle stressful GPM dynamic",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1xhy4eg/how_to_handle_stressful_gpm_dynamic/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-10-28T19:34:53.000Z",
-   "summary": "I'm a new PM (~6 months) leading a new product area. I have solid business requirements in place and the team has started work for new features based off PRDs and designs, etc etc. But I'm concerned about the dynamic with my manager and frequently changing requirements. I…",
-   "id": "5c41fb1d5056",
+   "published": "2026-10-28T19:00:31.000Z",
+   "summary": "Hey you 👈 Wanna be in a Jubilee video? https://bit.ly/be-in-a-video LET’S BE FRIENDS Instagram: https://www.instagram.com/jubileemedia/ TikTok: https://www.tiktok.com/@jubilee?lang=en Website: https://www.jubileemedia.com OUR LOVE + DATING CHANNEL 🍑 YouTube:…",
+   "thumb": "https://i2.ytimg.com/vi/eB9ubzUdXU4/hqdefault.jpg",
+   "id": "683a758e2bb0",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1549,6 +1605,24 @@
    "why": "0"
   },
   {
+   "title": "Feminists vs the manosphere, this Friday on #checkmate",
+   "url": "https://www.youtube.com/shorts/nVHsVJDfk1w",
+   "source": "Jubilee",
+   "feedId": "yt-jubilee",
+   "type": "video",
+   "tags": [
+    "politics",
+    "debates"
+   ],
+   "published": "2026-10-28T18:00:11.000Z",
+   "summary": "Hey you 👈 Wanna be in a Jubilee video? https://bit.ly/be-in-a-video LET’S BE FRIENDS Instagram: https://www.instagram.com/jubileemedia/ TikTok: https://www.tiktok.com/@jubilee?lang=en Website: https://www.jubileemedia.com OUR LOVE + DATING CHANNEL 🍑 YouTube:…",
+   "thumb": "https://i3.ytimg.com/vi/nVHsVJDfk1w/hqdefault.jpg",
+   "id": "dec10842940f",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
    "title": "Going Deep on Andy Burnham's First Budget",
    "url": "https://www.youtube.com/watch?v=Si7oy75EfVo",
    "source": "PoliticsJOE",
@@ -1561,6 +1635,25 @@
    "summary": "Skip to 9:20 if you want straight economy chat. Andy Burnham's Chancellor John Healey gave his first budget, and the first of Andy Burnham's reign as Prime Minister. Ava and Seán headed into the content dungeon to chew the fat. Like PoliticsJOE? We need your support:…",
    "thumb": "https://i4.ytimg.com/vi/Si7oy75EfVo/hqdefault.jpg",
    "id": "767aabe2176f",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Your cold email isn't a sales pitch",
+   "url": "https://www.youtube.com/shorts/odrLBDG9o3U",
+   "source": "Lenny's Podcast",
+   "feedId": "yt-lenny-s-podcast",
+   "type": "video",
+   "tags": [
+    "product",
+    "business",
+    "listen"
+   ],
+   "published": "2026-10-28T17:30:34.000Z",
+   "summary": "No template online will get you a reply, except \"leave me alone.\" Rob Snyder, Author, The Power of Pull, on \"founder magic\" outreach: skip the pitch and just get them to talk with you.",
+   "thumb": "https://i4.ytimg.com/vi/odrLBDG9o3U/hqdefault.jpg",
+   "id": "a24c1c0d3b87",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1727,6 +1820,25 @@
    "why": "0"
   },
   {
+   "title": "The Design Partner Trap",
+   "url": "https://www.youtube.com/shorts/nBu1HbmwX7w",
+   "source": "Lenny's Podcast",
+   "feedId": "yt-lenny-s-podcast",
+   "type": "video",
+   "tags": [
+    "product",
+    "business",
+    "listen"
+   ],
+   "published": "2026-10-28T10:30:32.000Z",
+   "summary": "They give you feedback, buy into your vision, and never buy from you. Rob Snyder, Author, The Power of Pull , on why design partners are a negative signal to people who actually need your product.",
+   "thumb": "https://i3.ytimg.com/vi/nBu1HbmwX7w/hqdefault.jpg",
+   "id": "9e4e3264de4f",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
    "title": "iPhone Duo - Before You Buy",
    "url": "https://www.youtube.com/watch?v=14yDpPTrYwg",
    "source": "GameRanx",
@@ -1739,6 +1851,25 @@
    "summary": "We love taking the newest trending tech and trying to game on it as much as possible. How does Apple's first foldable smartphone stack up with games? Let's talk. ~~SOURCES~~ https://9to5mac.com/2026/10/25/iphone-duo-displays-cracking/…",
    "thumb": "https://i2.ytimg.com/vi/14yDpPTrYwg/hqdefault.jpg",
    "id": "91418cfb6bab",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Does your product need to be 10x better?",
+   "url": "https://www.youtube.com/shorts/2HZPSYxws50",
+   "source": "Lenny's Podcast",
+   "feedId": "yt-lenny-s-podcast",
+   "type": "video",
+   "tags": [
+    "product",
+    "business",
+    "listen"
+   ],
+   "published": "2026-10-27T21:00:04.000Z",
+   "summary": "Linear beat Jira with a better experience. So why can't every startup win that way? Rob Snyder, Author, The Power of Pull, on why better only wins when the buyer is already pulling for it.",
+   "thumb": "https://i3.ytimg.com/vi/2HZPSYxws50/hqdefault.jpg",
+   "id": "8eedcb414a75",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1955,6 +2086,25 @@
    "why": "0"
   },
   {
+   "title": "AI Progress Is Smooth Until It Crosses a Threshold",
+   "url": "https://www.youtube.com/shorts/ucVpG3ekHOw",
+   "source": "Lenny's Podcast",
+   "feedId": "yt-lenny-s-podcast",
+   "type": "video",
+   "tags": [
+    "product",
+    "business",
+    "listen"
+   ],
+   "published": "2026-10-26T10:30:07.000Z",
+   "summary": "AI progress looks like sudden jumps from the outside. From the inside, it's a smooth line that crosses a threshold. Emmanuel Ameisen, Interpretability Researcher at Anthropic, on why 80% accuracy is useless, 99% is useful, and the model that got Claude writing most of his code.",
+   "thumb": "https://i2.ytimg.com/vi/ucVpG3ekHOw/hqdefault.jpg",
+   "id": "862d32fc3fa2",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
    "title": "Why the UK is Looking Surprisingly Functional",
    "url": "https://www.youtube.com/watch?v=j8mkyRBT9yE",
    "source": "TLDR News",
@@ -2060,24 +2210,6 @@
    "summary": "Vincent “Coco Vinny” Zaldivar enters the Tank seeking $150,000 for 10% of Coco Taps, his company behind a patented tool kit that lets customers easily tap fresh coconuts and drink their water straight from the source From Season 9 Episode 12 Watch Shark Tank US Now:…",
    "thumb": "https://i3.ytimg.com/vi/ZZ87V9865iI/hqdefault.jpg",
    "id": "aa7e04f9b9f9",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "1 S*x Worker vs 20 Anti-S*x Work Advocates (ft Farha Khalidi) | Surrounded",
-   "url": "https://www.youtube.com/watch?v=CV91KbBPQwg",
-   "source": "Jubilee",
-   "feedId": "yt-jubilee",
-   "type": "video",
-   "tags": [
-    "politics",
-    "debates"
-   ],
-   "published": "2026-10-25T16:00:09.000Z",
-   "summary": "Hey you 👈 Wanna be in a Jubilee video? https://bit.ly/be-in-a-video LET’S BE FRIENDS Instagram: https://www.instagram.com/jubileemedia/ TikTok: https://www.tiktok.com/@jubilee?lang=en Website: https://www.jubileemedia.com OUR LOVE + DATING CHANNEL 🍑 YouTube:…",
-   "thumb": "https://i4.ytimg.com/vi/CV91KbBPQwg/hqdefault.jpg",
-   "id": "d5a8e8ab1085",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2302,24 +2434,6 @@
    "why": "0"
   },
   {
-   "title": "Test Your F*Boy Radar (ft. Pokimane) | Test Your Radar",
-   "url": "https://www.youtube.com/watch?v=pi-Kv-dWsHk",
-   "source": "Jubilee",
-   "feedId": "yt-jubilee",
-   "type": "video",
-   "tags": [
-    "politics",
-    "debates"
-   ],
-   "published": "2026-10-23T16:00:28.000Z",
-   "summary": "Injured in an accident? You may be owed serious money. You can start your claim with Morgan & Morgan: https://ForThePeople.com/JUBILEE — no fees unless you win! Hey you 👈 Wanna be in a Jubilee video? https://bit.ly/be-in-a-video LET’S BE FRIENDS Instagram:…",
-   "thumb": "https://i1.ytimg.com/vi/pi-Kv-dWsHk/hqdefault.jpg",
-   "id": "3a7734dd6bcf",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "Shark vs. Shark: Mr. Wonderful and Lori | Shark Tank US | Shark Tank Global",
    "url": "https://www.youtube.com/watch?v=6UYxKfA6kEw",
    "source": "Shark Tank Global",
@@ -2385,24 +2499,6 @@
    "summary": "Head to https://chime.yt.link/qSMtFb0 for a $200 bonus and 3.75% APY with Chime® Thanks Chime for sponsoring this video! To see our reacquired catalog of All Gas No Brakes content, head to our Patreon at https://www.patreon.com/channel5",
    "thumb": "https://i2.ytimg.com/vi/yx0gM_l60VY/hqdefault.jpg",
    "id": "fc5e069422e7",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Private Equity is RUINING Coffee",
-   "url": "https://www.youtube.com/watch?v=c5V0hdxBHbg",
-   "source": "Levi Hildebrand",
-   "feedId": "yt-levi-hildebrand",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "business"
-   ],
-   "published": "2026-10-22T15:00:13.000Z",
-   "summary": "Enjoy 1 month of Wispr Flow Pro using my link: https://ref.wisprflow.ai/levi-hildebrand-yt Subscribe! https://www.youtube.com/channel/UC-OJ-24roEfQ_-PCnLJSckg?sub_confirmation=1 Join our Patreon: https://www.patreon.com/c/LeviHildebrand For further reading, check out the…",
-   "thumb": "https://i4.ytimg.com/vi/c5V0hdxBHbg/hqdefault.jpg",
-   "id": "c854965d5462",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2512,24 +2608,6 @@
    "summary": "Join our Conversation Membership to practice speaking with us daily: https://easygerman.link/membership_eg683 --- LEARN MORE GERMAN WITH US: 🎧 LISTEN TO OUR PODCAST: http://www.easygerman.fm 📬 SUBSCRIBE TO OUR NEWSLETTER: https://www.easygerman.org/newsletter WATCH MORE: ➕…",
    "thumb": "https://i3.ytimg.com/vi/b-k2yDRx6yw/hqdefault.jpg",
    "id": "4b39b76c920c",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Liberal vs. Conservative CLASH Over Trump, AI & Religion (ft. Greg Casar) | The Split",
-   "url": "https://www.youtube.com/watch?v=udQVP5GQutQ",
-   "source": "Jubilee",
-   "feedId": "yt-jubilee",
-   "type": "video",
-   "tags": [
-    "politics",
-    "debates"
-   ],
-   "published": "2026-10-21T16:00:12.000Z",
-   "summary": "Hey you 👈 Wanna be in a Jubilee video? https://bit.ly/be-in-a-video LET’S BE FRIENDS Instagram: https://www.instagram.com/jubileemedia/ TikTok: https://www.tiktok.com/@jubilee?lang=en Website: https://www.jubileemedia.com OUR LOVE + DATING CHANNEL 🍑 YouTube:…",
-   "thumb": "https://i2.ytimg.com/vi/udQVP5GQutQ/hqdefault.jpg",
-   "id": "c8349eb9741f",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2678,24 +2756,6 @@
    "why": "0"
   },
   {
-   "title": "James Talarico Debates Texas Voters: Jubilee x CNN Townhall",
-   "url": "https://www.youtube.com/watch?v=VnurpLQd4c0",
-   "source": "Jubilee",
-   "feedId": "yt-jubilee",
-   "type": "video",
-   "tags": [
-    "politics",
-    "debates"
-   ],
-   "published": "2026-10-18T16:00:31.000Z",
-   "summary": "Hey you 👈 Wanna be in a Jubilee video? https://bit.ly/be-in-a-video LET’S BE FRIENDS Instagram: https://www.instagram.com/jubileemedia/ TikTok: https://www.tiktok.com/@jubilee?lang=en Website: https://www.jubileemedia.com OUR LOVE + DATING CHANNEL 🍑 YouTube:…",
-   "thumb": "https://i3.ytimg.com/vi/VnurpLQd4c0/hqdefault.jpg",
-   "id": "7133fd3e05c4",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "Canadian political terms iceberg EXPLAINED",
    "url": "https://www.youtube.com/watch?v=TCsfyIn_6Wc",
    "source": "J.J. McCullough",
@@ -2765,25 +2825,6 @@
    "summary": "An exclusive, behind the scenes look from KT Episode 789 KT guest Tim Butterly + Kirk Fox Tim Butterly, Kirk Fox, Pat O'Neill, Dedrick Flynn, Martin Phillips, D Madness, Michael A. Gonzales, Jon Deas, Matthew Muehling, Grooveline Horns, Joe White, Troy Conrad, Monica Colt…",
    "thumb": "https://i3.ytimg.com/vi/J97RDpBsDHg/hqdefault.jpg",
    "id": "5961f53720ee",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Inside the black box of AI: How AI models actually think | Emmanuel Ameisen (Anthropic)",
-   "url": "https://www.youtube.com/watch?v=JHo-aiePjoM",
-   "source": "Lenny's Podcast",
-   "feedId": "yt-lenny-s-podcast",
-   "type": "video",
-   "tags": [
-    "product",
-    "business",
-    "listen"
-   ],
-   "published": "2026-10-18T12:30:11.000Z",
-   "summary": "Emmanuel Ameisen is an interpretability researcher at Anthropic, where he looks inside LLMs like Claude to understand how they think. Before joining Anthropic, he spent years in applied ML at Stripe and Insight, and is the author of Building Machine Learning Powered…",
-   "thumb": "https://i3.ytimg.com/vi/JHo-aiePjoM/hqdefault.jpg",
-   "id": "d05f647549ef",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2863,5 +2904,5 @@
    "why": "0"
   }
  ],
- "contentHash": "a9d9370f6a74"
+ "contentHash": "9f427b3f9449"
 }
