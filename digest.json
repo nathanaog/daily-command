@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-31T07:15:48.114Z",
+ "generated": "2026-10-31T09:56:14.281Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
@@ -7,7 +7,7 @@
   "items": 130,
   "duplicatesMerged": 0,
   "lengthsKnown": 1,
-  "lengthLookups": 106,
+  "lengthLookups": 105,
   "lengthFailures": 105,
   "lengthVia": "video pages",
   "lengthFailReasons": {
@@ -657,9 +657,10 @@
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
+   "lastOk": "2026-10-31T07:15:48.114Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-xbox",
@@ -668,7 +669,7 @@
    "status": "cached",
    "count": 5,
    "lastOk": "2026-10-28T16:07:55.180Z",
-   "note": "rate-limited (429)"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-slaythespire",
@@ -677,16 +678,15 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-10-31T01:21:53.748Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
   },
   {
    "id": "rd-germany",
@@ -695,7 +695,7 @@
    "status": "cached",
    "count": 5,
    "lastOk": "2026-10-31T01:21:53.748Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)"
   },
   {
    "id": "rd-unitedkingdom",
@@ -704,7 +704,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   }
  ],
  "items": [
@@ -847,25 +847,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "tagesthemen 21:45 Uhr, 30.10.2026",
-   "url": "https://www.youtube.com/watch?v=QxyipvfB1gg",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-30T21:46:28.000Z",
-   "summary": "tagesthemen 21:45 Uhr Vorbereitungen auf bundesweite Jugendproteste, Evakuierungen in der ukrainischen Frontstadt Oleschky, G-20 Außenministertreffen in Atlanta, US-Kongresswahlen: Namensgleiche Kandidaten sorgen für Skandal in Alaska, Weitere Meldungen im Überblick,…",
-   "thumb": "https://i2.ytimg.com/vi/QxyipvfB1gg/hqdefault.jpg",
-   "id": "4e88331c3495",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Monster energy-drinkers",
    "url": "https://www.reddit.com/r/germany/comments/1xjrmdc/monster_energydrinkers/",
    "source": "r/germany",
@@ -917,25 +898,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Kommt die Welle der Jugendproteste jetzt nach Deutschland? | tagesthemen-Interview",
-   "url": "https://www.youtube.com/watch?v=_kLcZ3bHCL0",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-30T20:56:48.000Z",
-   "summary": "Am Samstag wollen in ganz Deutschland vor allem junge Menschen für bessere Lebensbedingungen auf die Straße gehen. Die Initiative \"Gen Z regelt\" hat online zu Demonstrationen in über 30 Städten aufgerufen. Kommt die Welle der Jugendproteste nun nach Deutschland? Und welche…",
-   "thumb": "https://i4.ytimg.com/vi/_kLcZ3bHCL0/hqdefault.jpg",
-   "id": "cb54695ba321",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Reform UK Named ‘Authoritarian-Leaning’ Party in Index of Far-Right Cooperation Across Europe",
    "url": "https://www.reddit.com/r/ukpolitics/comments/1xjr4da/reform_uk_named_authoritarianleaning_party_in/",
    "source": "r/ukpolitics",
@@ -953,58 +915,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "GTA6 SIZE REVEALED, ELDER SCROLLS 6 LEAKED? & MORE",
-   "url": "https://www.youtube.com/watch?v=sGgNvGbwrH4",
-   "source": "GameRanx",
-   "feedId": "yt-gameranx",
-   "type": "video",
-   "tags": [
-    "gaming"
-   ],
-   "published": "2026-10-30T20:42:12.000Z",
-   "summary": "Spend less time searching and more time with the people who matter most. Head to https://zocdoc.com/gameranx to find and book the care you need. 🤧 #sponsored Thank you Zocdoc for sponsoring this video! ~~SOURCES~~ GTA size revealed…",
-   "thumb": "https://i4.ytimg.com/vi/sGgNvGbwrH4/hqdefault.jpg",
-   "id": "9dad4bdb5fe1",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Russia: The Revolt of the Letter-Writers",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xjqcf2/russia_the_revolt_of_the_letterwriters/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-30T20:23:53.000Z",
-   "summary": "submitted by /u/CEPAORG [link] [comments]",
-   "id": "0c14a5bc6743",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "$6.3bn has just been stolen...is this question too stupid to ask? | James O’Brien - The Whole Show",
-   "url": "https://www.youtube.com/watch?v=clVIDYxjQ_w",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-30T20:00:24.000Z",
-   "summary": "This is a catch-up version of James O'Brien's live, daily show on LBC Radio from the 30th of October 2026. Listen to the full show on the all-new LBC App: https://app.af.lbc.co.uk/btnc/thenewlbcapp #jamesobrien #politics #LBC LBC is the home of live debate around news and…",
-   "thumb": "https://i4.ytimg.com/vi/clVIDYxjQ_w/hqdefault.jpg",
-   "id": "01ddb17f7a25",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Health Insurance for Enrollment- International Student",
    "url": "https://www.reddit.com/r/germany/comments/1xjpobg/health_insurance_for_enrollment_international/",
    "source": "r/germany",
@@ -1017,25 +927,6 @@
    "published": "2026-10-30T19:59:05.000Z",
    "summary": "Do you guys have any tips regarding the health insurance needed for enrolment? - Which providers do you recommend? - How was your experience with the process? - How long did you wait to receive a confirmation? - Has anyone used TK or Expatrio? submitted by…",
    "id": "4b9ac9d7292c",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "tagesschau 20:00 Uhr, 30.10.2026",
-   "url": "https://www.youtube.com/watch?v=m3cRUr8MgSk",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-30T19:43:25.000Z",
-   "summary": "tagesschau 20:00 Uhr Initiative \"Gen Z regelt\" ruft zu bundesweiten Protesten auf, Italienische Gewerkschaft USB ruft zu Generalstreik auf, EU und Kanada gründen bei Gipfeltreffen \"Allianz für die Zukunft\", Evakuierungen in ukrainischer Frontstadt Oleschky beginnen, Russische…",
-   "thumb": "https://i2.ytimg.com/vi/m3cRUr8MgSk/hqdefault.jpg",
-   "id": "ff9fcbf0a65d",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1070,57 +961,6 @@
    "published": "2026-10-30T19:17:46.000Z",
    "summary": "submitted by /u/InternetStranger5 [link] [comments]",
    "id": "3914161cf04a",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Amazon mining boss wanted by Brazil for sheltering Jair Bolsonaro’s spy chief has businesses, properties in Florida",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xjksf9/amazon_mining_boss_wanted_by_brazil_for/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-30T16:55:32.000Z",
-   "summary": "submitted by /u/ICIJ [link] [comments]",
-   "id": "d1f1ad44459c",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Can the Nordic Model Save NATO? | A New Way to Deter Russia",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xjjn4t/can_the_nordic_model_save_nato_a_new_way_to_deter/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-30T16:13:02.000Z",
-   "summary": "submitted by /u/ForeignAffairsMag [link] [comments]",
-   "id": "7a900d172fa1",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Putin open to phone call with Zelensky, Ukraine suspects a Kremlin trap",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xji39o/putin_open_to_phone_call_with_zelensky_ukraine/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-30T15:15:19.000Z",
-   "summary": "submitted by /u/KI_official [link] [comments]",
-   "id": "7dbb728a6f89",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1204,6 +1044,115 @@
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "tagesthemen 21:45 Uhr, 30.10.2026",
+   "url": "https://www.youtube.com/watch?v=QxyipvfB1gg",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-30T21:46:28.000Z",
+   "summary": "tagesthemen 21:45 Uhr Vorbereitungen auf bundesweite Jugendproteste, Evakuierungen in der ukrainischen Frontstadt Oleschky, G-20 Außenministertreffen in Atlanta, US-Kongresswahlen: Namensgleiche Kandidaten sorgen für Skandal in Alaska, Weitere Meldungen im Überblick,…",
+   "thumb": "https://i2.ytimg.com/vi/QxyipvfB1gg/hqdefault.jpg",
+   "id": "4e88331c3495",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Kommt die Welle der Jugendproteste jetzt nach Deutschland? | tagesthemen-Interview",
+   "url": "https://www.youtube.com/watch?v=_kLcZ3bHCL0",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-30T20:56:48.000Z",
+   "summary": "Am Samstag wollen in ganz Deutschland vor allem junge Menschen für bessere Lebensbedingungen auf die Straße gehen. Die Initiative \"Gen Z regelt\" hat online zu Demonstrationen in über 30 Städten aufgerufen. Kommt die Welle der Jugendproteste nun nach Deutschland? Und welche…",
+   "thumb": "https://i4.ytimg.com/vi/_kLcZ3bHCL0/hqdefault.jpg",
+   "id": "cb54695ba321",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "GTA6 SIZE REVEALED, ELDER SCROLLS 6 LEAKED? & MORE",
+   "url": "https://www.youtube.com/watch?v=sGgNvGbwrH4",
+   "source": "GameRanx",
+   "feedId": "yt-gameranx",
+   "type": "video",
+   "tags": [
+    "gaming"
+   ],
+   "published": "2026-10-30T20:42:12.000Z",
+   "summary": "Spend less time searching and more time with the people who matter most. Head to https://zocdoc.com/gameranx to find and book the care you need. 🤧 #sponsored Thank you Zocdoc for sponsoring this video! ~~SOURCES~~ GTA size revealed…",
+   "thumb": "https://i4.ytimg.com/vi/sGgNvGbwrH4/hqdefault.jpg",
+   "id": "9dad4bdb5fe1",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Russia: The Revolt of the Letter-Writers",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xjqcf2/russia_the_revolt_of_the_letterwriters/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-30T20:23:53.000Z",
+   "summary": "submitted by /u/CEPAORG [link] [comments]",
+   "id": "0c14a5bc6743",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "$6.3bn has just been stolen...is this question too stupid to ask? | James O’Brien - The Whole Show",
+   "url": "https://www.youtube.com/watch?v=clVIDYxjQ_w",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-30T20:00:24.000Z",
+   "summary": "This is a catch-up version of James O'Brien's live, daily show on LBC Radio from the 30th of October 2026. Listen to the full show on the all-new LBC App: https://app.af.lbc.co.uk/btnc/thenewlbcapp #jamesobrien #politics #LBC LBC is the home of live debate around news and…",
+   "thumb": "https://i4.ytimg.com/vi/clVIDYxjQ_w/hqdefault.jpg",
+   "id": "01ddb17f7a25",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "tagesschau 20:00 Uhr, 30.10.2026",
+   "url": "https://www.youtube.com/watch?v=m3cRUr8MgSk",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-30T19:43:25.000Z",
+   "summary": "tagesschau 20:00 Uhr Initiative \"Gen Z regelt\" ruft zu bundesweiten Protesten auf, Italienische Gewerkschaft USB ruft zu Generalstreik auf, EU und Kanada gründen bei Gipfeltreffen \"Allianz für die Zukunft\", Evakuierungen in ukrainischer Frontstadt Oleschky beginnen, Russische…",
+   "thumb": "https://i2.ytimg.com/vi/m3cRUr8MgSk/hqdefault.jpg",
+   "id": "ff9fcbf0a65d",
+   "score": 0,
+   "matched": [],
+   "why": "0"
   },
   {
    "title": "“Very high risk” Trump will escalate Iran war after midterms | The Economist",
@@ -1333,7 +1282,24 @@
    "why": "0"
   },
   {
-   "title": "Berlin Streets",
+   "title": "Amazon mining boss wanted by Brazil for sheltering Jair Bolsonaro’s spy chief has businesses, properties in Florida",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xjksf9/amazon_mining_boss_wanted_by_brazil_for/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-30T16:55:32.000Z",
+   "summary": "submitted by /u/ICIJ [link] [comments]",
+   "id": "d1f1ad44459c",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Berlin Club Scene",
    "url": "https://www.youtube.com/watch?v=YFe8LFCgT68",
    "source": "Channel 5 with Andrew Callaghan",
    "feedId": "yt-channel-5-with-andrew-callaghan",
@@ -1346,6 +1312,23 @@
    "summary": "To see 'Combat Obscura' or any of the 17 other documentaries currently streaming on C5.NOW while knowing that you are directly supporting independent filmmakers bringing you knowledge, perspective and entertainment, head to https://c5.now OR download the C5.NOW app on iOs,…",
    "thumb": "https://i2.ytimg.com/vi/YFe8LFCgT68/hqdefault.jpg",
    "id": "e98dc520efe4",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Can the Nordic Model Save NATO? | A New Way to Deter Russia",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xjjn4t/can_the_nordic_model_save_nato_a_new_way_to_deter/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-30T16:13:02.000Z",
+   "summary": "submitted by /u/ForeignAffairsMag [link] [comments]",
+   "id": "7a900d172fa1",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1381,6 +1364,23 @@
    "summary": "Donald Trump’s second presidency has been marked by a striking lack of resistance. While figures inside his first administration regularly challenged his decisions, Trump 2.0 has seen politicians, business leaders, media organisations and institutions fall into line. So why has…",
    "thumb": "https://i2.ytimg.com/vi/E-t49q27BwM/hqdefault.jpg",
    "id": "2ff35079d2dc",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Putin open to phone call with Zelensky, Ukraine suspects a Kremlin trap",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xji39o/putin_open_to_phone_call_with_zelensky_ukraine/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-30T15:15:19.000Z",
+   "summary": "submitted by /u/KI_official [link] [comments]",
+   "id": "7dbb728a6f89",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2641,7 +2641,7 @@
    "why": "0"
   },
   {
-   "title": "Wie die AfD ausspioniert wurde",
+   "title": "Die Unterwanderung der AfD",
    "url": "https://www.youtube.com/watch?v=HHuIcNUFpbI",
    "source": "Simplicissimus",
    "feedId": "yt-simplicissimus",
@@ -3024,5 +3024,5 @@
    "why": "0"
   }
  ],
- "contentHash": "dcda428d9b19"
+ "contentHash": "8c4679aebc2e"
 }
