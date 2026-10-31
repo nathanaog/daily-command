@@ -1,17 +1,17 @@
 {
- "generated": "2026-10-31T13:09:38.480Z",
+ "generated": "2026-10-31T15:51:37.073Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
-  "ok": 52,
-  "items": 129,
+  "ok": 51,
+  "items": 125,
   "duplicatesMerged": 0,
   "lengthsKnown": 1,
-  "lengthLookups": 105,
-  "lengthFailures": 105,
+  "lengthLookups": 106,
+  "lengthFailures": 106,
   "lengthVia": "video pages",
   "lengthFailReasons": {
-   "no length on page": 105
+   "no length on page": 106
   }
  },
  "feeds": [
@@ -124,7 +124,7 @@
    "name": "Patrick Boyle",
    "type": "youtube",
    "status": "ok",
-   "count": 1,
+   "count": 2,
    "resolved": {
     "channelId": "UCASM0cgfkJxQ1ICmRilfHLw",
     "title": "Patrick Boyle",
@@ -630,20 +630,19 @@
    "id": "rd-productmanagement",
    "name": "r/productmanagement",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 3,
-   "url": "https://www.reddit.com/r/productmanagement/top/.rss?t=day"
+   "lastOk": "2026-10-31T13:09:38.480Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-tech",
    "name": "r/tech",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": "2026-10-27T01:08:56.460Z",
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-gaming",
@@ -652,25 +651,26 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-10-31T07:15:48.114Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
   },
   {
    "id": "rd-xbox",
    "name": "r/xbox",
    "type": "reddit",
-   "status": "cached",
-   "count": 5,
+   "status": "error",
+   "count": 0,
    "lastOk": "2026-10-28T16:07:55.180Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-slaythespire",
@@ -679,7 +679,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-geopolitics",
@@ -711,7 +711,113 @@
  ],
  "items": [
   {
-   "title": "Israeli election ends in deadlock... what now?",
+   "title": "UK police should not have let US force take over airbase trial, MoD documents show",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xkc0mr/uk_police_should_not_have_let_us_force_take_over/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-31T14:43:40.000Z",
+   "summary": "submitted by /u/TaxOwlbear [link] [comments]",
+   "id": "516b00ea95e4",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "What Anthropic’s IPO Filing Actually Says",
+   "url": "https://www.youtube.com/watch?v=Ic1Jf7VlXRM",
+   "source": "Patrick Boyle",
+   "feedId": "yt-patrick-boyle",
+   "type": "video",
+   "tags": [
+    "finance",
+    "education",
+    "listen"
+   ],
+   "published": "2026-10-31T14:25:37.000Z",
+   "summary": "Join Revolut and get $20 here: https://get.revolut.com/z4lF/patrick Offer expires 6 months from 10/31/2026 Exclusions apply. $20 bonus paid by Revolut subject to the terms and conditions found: https://www.revolut.com/en-US/legal/partner-sign-up-bonus/ Anthropic — the maker of…",
+   "thumb": "https://i2.ytimg.com/vi/Ic1Jf7VlXRM/hqdefault.jpg",
+   "id": "1506b22092d8",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Revealed: More than 30 senior Tories named in new Covid PPE ‘VIP lane’ records",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xkanwx/revealed_more_than_30_senior_tories_named_in_new/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-31T13:46:51.000Z",
+   "summary": "submitted by /u/zeros3ss [link] [comments]",
+   "id": "553d71c69d8d",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Kemi Badenoch on X: \"Slavery was an evil in which people from every continent and region participated. We should be honest about the whole history, not select the parts that are politically convenient today, especially given Britain's leading role in ending the transatlantic slave trade...",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xkaf1c/kemi_badenoch_on_x_slavery_was_an_evil_in_which/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-31T13:36:05.000Z",
+   "summary": "submitted by /u/radiant_0wl [link] [comments]",
+   "id": "9c25d8b0eb69",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Proteste in Warschau: Streit um polnisches Verfassungsgericht",
+   "url": "https://www.youtube.com/watch?v=bhADjI80d_Y",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-31T13:25:49.000Z",
+   "summary": "In Polen hat sich der Streit über die Neubesetzung von Richterämtern am Verfassungsgericht zugespitzt. Vor dem Gebäude in Warschau versammelten sich gestern Abend zahlreiche Demonstrant:innen, die meisten von ihnen Anhänger:innen der oppositionellen PiS-Partei. Hintergrund ist…",
+   "thumb": "https://i3.ytimg.com/vi/bhADjI80d_Y/hqdefault.jpg",
+   "id": "19da5956afd4",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "G20 photocall cancelled after Ed Miliband and other foreign ministers refuse to be pictured with Russia's Sergei Lavrov",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xka5j0/g20_photocall_cancelled_after_ed_miliband_and/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-31T13:24:25.000Z",
+   "summary": "submitted by /u/ijustwannanap [link] [comments]",
+   "id": "65391e17165a",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Arab parties hold key to power in Israel's election stalemate",
    "url": "https://www.youtube.com/watch?v=poQXUlt-XfY",
    "source": "LBC",
    "feedId": "yt-lbc",
@@ -729,7 +835,24 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "'The man's a wimp!': Nigel Farage's 'terrible' week",
+   "title": "Police forced to work on rest days to protect Number 10 North, officers claim",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xk9kxa/police_forced_to_work_on_rest_days_to_protect/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-31T12:59:29.000Z",
+   "summary": "submitted by /u/Ivashkin [link] [comments]",
+   "id": "0da97bacf5ef",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "'There's zero chance Nigel Farage will be PM' | James Hanson",
    "url": "https://www.youtube.com/watch?v=1EJTDr2m5Sg",
    "source": "LBC",
    "feedId": "yt-lbc",
@@ -742,25 +865,6 @@
    "summary": "James Hanson takes you through yet another 'terrible week' for Reform, starting with an empty auditorium and ending with a 'physical altercation' with a Lib Dem... With Reform 'tanking' in the polls, Hanson asks: 'Does Farage actually want to be Prime Minister anymore?'. Listen…",
    "thumb": "https://i2.ytimg.com/vi/1EJTDr2m5Sg/hqdefault.jpg",
    "id": "a42150af6680",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "CORINTH TRUMP RALLY",
-   "url": "https://www.youtube.com/watch?v=t6ppbn4V1yA",
-   "source": "The Good Liars",
-   "feedId": "yt-the-good-liars",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "politics",
-    "debates"
-   ],
-   "published": "2026-10-31T11:47:03.000Z",
-   "summary": "The Good Liars visit Corinth, Mississippi for the Trump Rally https://www.youtube.com/channel/UCUNOwz9KTDIhhTTN3_ptUDA/join https://linktr.ee/thegoodliars",
-   "thumb": "https://i1.ytimg.com/vi/t6ppbn4V1yA/hqdefault.jpg",
-   "id": "2749cbc6cc22",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -837,23 +941,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "British people can’t be made to pay for the wrongs of slavery – but we must confront our complicated history | Andy Burnham",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xju8tu/british_people_cant_be_made_to_pay_for_the_wrongs/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-30T23:05:48.000Z",
-   "summary": "submitted by /u/LycanIndarys [link] [comments]",
-   "id": "a48050be4ca8",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Read full Royal Office statement on end of MINURSO mandate and future of Sahara issue at UN",
    "url": "https://www.reddit.com/r/geopolitics/comments/1xjtp1n/read_full_royal_office_statement_on_end_of/",
    "source": "r/geopolitics",
@@ -922,23 +1009,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Robert Struthers on X: \"Healey's Budget is the most popular in our tracker since 2022. 33% of those who heard about it feel positive and 28% negative. It's the first fiscal event we've polled where more positive than negative.\"",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xjrk59/robert_struthers_on_x_healeys_budget_is_the_most/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-30T21:12:26.000Z",
-   "summary": "submitted by /u/ZealousidealPie9199 [link] [comments]",
-   "id": "372b5b353a51",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "American with a HiSET (GED equivalent) living in Bavaria – What are my options for obtaining an Abitur and eventually attending university?",
    "url": "https://www.reddit.com/r/germany/comments/1xjrj8t/american_with_a_hiset_ged_equivalent_living_in/",
    "source": "r/germany",
@@ -956,23 +1026,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Reform UK Named ‘Authoritarian-Leaning’ Party in Index of Far-Right Cooperation Across Europe",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xjr4da/reform_uk_named_authoritarianleaning_party_in/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-30T20:54:53.000Z",
-   "summary": "submitted by /u/birdinthebush74 [link] [comments]",
-   "id": "c3926ac0ec57",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Health Insurance for Enrollment- International Student",
    "url": "https://www.reddit.com/r/germany/comments/1xjpobg/health_insurance_for_enrollment_international/",
    "source": "r/germany",
@@ -985,120 +1038,6 @@
    "published": "2026-10-30T19:59:05.000Z",
    "summary": "Do you guys have any tips regarding the health insurance needed for enrolment? - Which providers do you recommend? - How was your experience with the process? - How long did you wait to receive a confirmation? - Has anyone used TK or Expatrio? submitted by…",
    "id": "4b9ac9d7292c",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "The hidden plan to bring more cheap foreign labour to Britain",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xjoxu9/the_hidden_plan_to_bring_more_cheap_foreign/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-30T19:30:21.000Z",
-   "summary": "submitted by /u/Alti-Ok [link] [comments]",
-   "id": "80720ea0c46f",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "More over-45s are living in house shares as rent soars – ‘I’m starting again at 52’",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xjom02/more_over45s_are_living_in_house_shares_as_rent/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-30T19:17:46.000Z",
-   "summary": "submitted by /u/InternetStranger5 [link] [comments]",
-   "id": "3914161cf04a",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Anyone have regrets selling their Series X?",
-   "url": "https://www.reddit.com/r/xbox/comments/1xhr21q/anyone_have_regrets_selling_their_series_x/",
-   "source": "r/xbox",
-   "feedId": "rd-xbox",
-   "type": "post",
-   "tags": [
-    "gaming"
-   ],
-   "published": "2026-10-28T15:22:59.000Z",
-   "summary": "Has anyone sold their Series X recently and regretted it? I'm on the fence, I'm a console collector but I feel like I could get the full value back. I mostly played Game Pass so I wouldn't really be losing a library. I guess the backwards compatibility means I could explore…",
-   "id": "842d83e55d70",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Series X sold out since day 1.",
-   "url": "https://www.reddit.com/r/xbox/comments/1xhqv2s/series_x_sold_out_since_day_1/",
-   "source": "r/xbox",
-   "feedId": "rd-xbox",
-   "type": "post",
-   "tags": [
-    "gaming"
-   ],
-   "published": "2026-10-28T15:16:05.000Z",
-   "summary": "I’ve been looking for a series X console pretty much since release, say 5 to 6 years but everywhere I look in Canada they have been sold out. I’ve checked all the typical stores: EB games, Costco, Walmart, Best Buy, Staples, Amazon, etc and none of them have had the console for…",
-   "id": "dd958ee36982",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Titan Quest II | Pre-Order Trailer",
-   "url": "https://www.reddit.com/r/xbox/comments/1xhqgmw/titan_quest_ii_preorder_trailer/",
-   "source": "r/xbox",
-   "feedId": "rd-xbox",
-   "type": "post",
-   "tags": [
-    "gaming"
-   ],
-   "published": "2026-10-28T15:01:27.000Z",
-   "summary": ">Titan Quest II launches on January 19, 2027! >Pre-order today and begin your odyssey before anyone else. >Challenge Nemesis, the Goddess of Retribution, in an action RPG inspired by Greek mythology. Battle legendary monsters, master powerful abilities, and change fate itself.…",
-   "id": "ee3e96ae1f28",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Refusing to pay for online multiplayer has made me appreciate and enjoy single player games a lot more",
-   "url": "https://www.reddit.com/r/xbox/comments/1xhpxe8/refusing_to_pay_for_online_multiplayer_has_made/",
-   "source": "r/xbox",
-   "feedId": "rd-xbox",
-   "type": "post",
-   "tags": [
-    "gaming"
-   ],
-   "published": "2026-10-28T14:41:03.000Z",
-   "summary": "I don't know if anyone else can relate to this, but I've always been an online multiplayer gamer my whole life, but ever since prices of pretty much everything have increased, I came to a realization that we shouldn't be paying for online multiplayer, so I started looking at…",
-   "id": "8a1ed47f30e7",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "This game looks phenomenal",
-   "url": "https://www.reddit.com/r/xbox/comments/1xhps87/this_game_looks_phenomenal/",
-   "source": "r/xbox",
-   "feedId": "rd-xbox",
-   "type": "post",
-   "tags": [
-    "gaming"
-   ],
-   "published": "2026-10-28T14:35:31.000Z",
-   "summary": "just got around to playing it *Gears of War E Day submitted by /u/Dangerous_Alfalfa_77 [link] [comments]",
-   "id": "ea722918e121",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1314,25 +1253,6 @@
    "summary": "Get your Ridge tech gear, built for your day-to-day use. Here's my link http://ridge.com/HAI Follow Sam from Half as Interesting on Instagram: http://Instagram.com/Sam.From.Wendover Follow Half as Interesting on Twitter: http://twitter.com/halfinteresting Discuss this video on…",
    "thumb": "https://i3.ytimg.com/vi/FPg1UL0RNnA/hqdefault.jpg",
    "id": "929a9a5940e8",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Weltnaturkonferenz COP17: Wie kann ein Drittel der Erde geschützt werden?",
-   "url": "https://www.youtube.com/watch?v=XWUFvcst-JM",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-30T18:23:04.000Z",
-   "summary": "Bis 2030 soll rund ein Drittel der Erdoberfläche unter Schutz stehen. Das ist eines der 23 Ziele des Weltnaturabkommens, auf das sich die rund 200 Vertragsparteien der UN-Konvention über die biologische Vielfalt bereits 2022 geeinigt haben. Doch wie das erreicht werden soll,…",
-   "thumb": "https://i1.ytimg.com/vi/XWUFvcst-JM/hqdefault.jpg",
-   "id": "f3c7641ff153",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2718,6 +2638,25 @@
    "why": "0"
   },
   {
+   "title": "WASILLA ALASKA TRUMP RALLY",
+   "url": "https://www.youtube.com/watch?v=A1BQXOa8C4g",
+   "source": "The Good Liars",
+   "feedId": "yt-the-good-liars",
+   "type": "video",
+   "tags": [
+    "comedy",
+    "politics",
+    "debates"
+   ],
+   "published": "2026-10-21T17:00:26.000Z",
+   "summary": "The Good Liars visit Wasilla, Alaska for part II for their Trump Rally experience.",
+   "thumb": "https://i2.ytimg.com/vi/A1BQXOa8C4g/hqdefault.jpg",
+   "id": "64a5e7397c62",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
    "title": "Learn German with Me in Klagenfurt",
    "url": "https://www.youtube.com/watch?v=b-k2yDRx6yw",
    "source": "Easy German",
@@ -3009,5 +2948,5 @@
    "why": "0"
   }
  ],
- "contentHash": "5e9e6a702e4a"
+ "contentHash": "b916fe3c513c"
 }
