@@ -1,17 +1,17 @@
 {
- "generated": "2026-10-31T15:51:37.073Z",
+ "generated": "2026-10-31T19:02:36.421Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
   "ok": 51,
-  "items": 125,
+  "items": 126,
   "duplicatesMerged": 0,
   "lengthsKnown": 1,
-  "lengthLookups": 106,
-  "lengthFailures": 106,
+  "lengthLookups": 107,
+  "lengthFailures": 107,
   "lengthVia": "video pages",
   "lengthFailReasons": {
-   "no length on page": 106
+   "no length on page": 107
   }
  },
  "feeds": [
@@ -267,7 +267,7 @@
    "name": "ProZD",
    "type": "youtube",
    "status": "ok",
-   "count": 4,
+   "count": 3,
    "resolved": {
     "channelId": "UC6MFZAOHXlKK1FI7V0XQVeA",
     "title": "ProZD",
@@ -488,7 +488,7 @@
    "name": "History Marche",
    "type": "youtube",
    "status": "ok",
-   "count": 0,
+   "count": 1,
    "resolved": {
     "channelId": "UC8MX9ECowgDMTOnFTE8EUJw",
     "title": "HistoryMarche",
@@ -514,7 +514,7 @@
    "name": "How Money Works",
    "type": "youtube",
    "status": "ok",
-   "count": 2,
+   "count": 3,
    "resolved": {
     "channelId": "UCkCGANrihzExmu9QiqZpPlQ",
     "title": "How Money Works",
@@ -657,20 +657,19 @@
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
+   "lastOk": "2026-10-31T15:51:37.073Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-xbox",
    "name": "r/xbox",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": "2026-10-28T16:07:55.180Z",
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-slaythespire",
@@ -679,16 +678,15 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-10-31T09:56:14.281Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
   },
   {
    "id": "rd-germany",
@@ -697,7 +695,7 @@
    "status": "cached",
    "count": 5,
    "lastOk": "2026-10-31T01:21:53.748Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)"
   },
   {
    "id": "rd-unitedkingdom",
@@ -706,10 +704,190 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   }
  ],
  "items": [
+  {
+   "title": "'I don't know if negotiated peace is achievable,' Rubio says as uncertainty hangs over Russia-Ukraine talks",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xkh448/i_dont_know_if_negotiated_peace_is_achievable/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-31T18:08:31.000Z",
+   "summary": "submitted by /u/KI_official [link] [comments]",
+   "id": "c25628396243",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "The Road to Vienna: Battle of St. Gotthard 1664",
+   "url": "https://www.youtube.com/watch?v=mi5rzCpHgP8",
+   "source": "History Marche",
+   "feedId": "yt-history-marche",
+   "type": "video",
+   "tags": [
+    "education",
+    "history"
+   ],
+   "published": "2026-10-31T17:51:04.000Z",
+   "summary": "Play Tacticus at: https://play.tacticusgame.com/HistoryMarchexTacticus Use code MARCHEWAAGH to get special rewards (valid until November 20th 2026) 🚩 Related videos: Siege of Vienna 1683: https://youtu.be/1c5UV3EsQmk Battle of Parkany 1683: https://youtu.be/i4fg9guwEvo 🔔…",
+   "thumb": "https://i2.ytimg.com/vi/mi5rzCpHgP8/hqdefault.jpg",
+   "id": "52716b7d62f8",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Amid simultaneous incursion in western Daraa | Israeli tanks advance deep into Wadi Al-Raqqad for first time",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xkggka/amid_simultaneous_incursion_in_western_daraa/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-31T17:42:43.000Z",
+   "summary": "submitted by /u/boppinmule [link] [comments]",
+   "id": "7ab03d2e2a4a",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "10 Weird Gaming Stories of October 2026",
+   "url": "https://www.youtube.com/watch?v=5joqNstgWWI",
+   "source": "GameRanx",
+   "feedId": "yt-gameranx",
+   "type": "video",
+   "tags": [
+    "gaming"
+   ],
+   "published": "2026-10-31T17:34:23.000Z",
+   "summary": "October 2026 saw no shortage of crazy gaming news stories, from viral Steam hits to Claude game flips. Subscribe for more: https://www.youtube.com/gameranxTV?sub_confirmation=1 0:00 Intro 0:39 Number 10 2:35 Number 9 3:44 Number 8 5:15 Number 7 7:16 Number 6 8:42 Number 5 9:52…",
+   "thumb": "https://i2.ytimg.com/vi/5joqNstgWWI/hqdefault.jpg",
+   "id": "2f7d44e91866",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Fox Host VISIBLY DIES INSIDE as Trump’s Brain COLLAPSES Mid-Interview!",
+   "url": "https://www.youtube.com/watch?v=GQ6_rm1JDpM",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-31T17:30:15.000Z",
+   "summary": "Luke discusses Trump's latest Fox News interview. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley Instagram -…",
+   "thumb": "https://i4.ytimg.com/vi/GQ6_rm1JDpM/hqdefault.jpg",
+   "id": "9f3d7035e617",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Bildung, Rente, Lebenskosten und Wehrpflicht: Darum demonstriert die Gen Z heute",
+   "url": "https://www.youtube.com/watch?v=U29qCkM1X40",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-31T17:01:51.000Z",
+   "summary": "In vielen deutschen Großstädten demonstrieren junge Menschen für bessere Bildung, mehr Klimaschutz und bezahlbaren Wohnraum. Aufgerufen dazu hatte die Gruppe „Gen Z regelt“. Nach ihren Angaben hatten sich bundesweit mehr als 180.000 Menschen angemeldet. Die Zahl der…",
+   "thumb": "https://i2.ytimg.com/vi/U29qCkM1X40/hqdefault.jpg",
+   "id": "b0553be9e0a7",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "CORINTH TRUMP RALLY",
+   "url": "https://www.youtube.com/watch?v=js5t0kUqSZM",
+   "source": "The Good Liars",
+   "feedId": "yt-the-good-liars",
+   "type": "video",
+   "tags": [
+    "comedy",
+    "politics",
+    "debates"
+   ],
+   "published": "2026-10-31T17:00:11.000Z",
+   "summary": "The Good Liars visit Corinth, Mississippi for the Trump Rally https://www.youtube.com/channel/UCUNOwz9KTDIhhTTN3_ptUDA/join https://linktr.ee/thegoodliars",
+   "thumb": "https://i3.ytimg.com/vi/js5t0kUqSZM/hqdefault.jpg",
+   "id": "37da32e5be01",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "The Sharks Clash Over These Clothing Freshness Swipes | Shark Tank US | Shark Tank Global",
+   "url": "https://www.youtube.com/watch?v=_k8bxQxnfpI",
+   "source": "Shark Tank Global",
+   "feedId": "yt-shark-tank-global",
+   "type": "video",
+   "tags": [
+    "trash",
+    "business"
+   ],
+   "published": "2026-10-31T16:59:55.000Z",
+   "summary": "Ben and Eric Kusin enter the Tank seeking $150,000 for 5% of Reviver, a portable clothing-freshening product designed to tackle unwanted odors on the go. From Season 6 Episode 4 Watch Shark Tank US Now: http://AAN.SonyPictures.com/SharkTankUSHulu Watch Shark Tank Australia Now:…",
+   "thumb": "https://i4.ytimg.com/vi/_k8bxQxnfpI/hqdefault.jpg",
+   "id": "d255d23950e9",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "How Trump's 'foul temper' is causing global unpredictability",
+   "url": "https://www.youtube.com/watch?v=i5KCx8hr3SQ",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-31T16:39:30.000Z",
+   "summary": "The US cancelled the annual G20 'family photo' after Australia, the UK, and a host of other nations refused to appear beside the Russian foreign minister. Matt Frei is joined by diplomatic editor Patrick Wintour and former UK ambassador to the US Sir Peter Westmacott to discuss…",
+   "thumb": "https://i2.ytimg.com/vi/i5KCx8hr3SQ/hqdefault.jpg",
+   "id": "73917a00672f",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "If You Were TRYING To Destroy The Economy...",
+   "url": "https://www.youtube.com/watch?v=OAVin6xxd8E",
+   "source": "How Money Works",
+   "feedId": "yt-how-money-works",
+   "type": "video",
+   "tags": [
+    "finance",
+    "business",
+    "listen"
+   ],
+   "published": "2026-10-31T16:26:00.000Z",
+   "summary": "Sign up for our FREE newsletter! - https://www.compoundeddaily.com/ Books we recommend - https://www.howmoneyworkslibrary.com/ Listen on Spotify - https://open.spotify.com/show/5gi1JobDJC3QqaF4aKfenR?si=f3IsgWIlSKObF8BT1Fitig ----- My Other Channel: @howhistoryworks Edited By:…",
+   "thumb": "https://i4.ytimg.com/vi/OAVin6xxd8E/hqdefault.jpg",
+   "id": "3b5a05f9cead",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
   {
    "title": "UK police should not have let US force take over airbase trial, MoD documents show",
    "url": "https://www.reddit.com/r/ukpolitics/comments/1xkc0mr/uk_police_should_not_have_let_us_force_take_over/",
@@ -723,6 +901,23 @@
    "published": "2026-10-31T14:43:40.000Z",
    "summary": "submitted by /u/TaxOwlbear [link] [comments]",
    "id": "516b00ea95e4",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "The Bursting of the Tel Aviv Bubble",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xkbnir/the_bursting_of_the_tel_aviv_bubble/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-31T14:28:40.000Z",
+   "summary": "submitted by /u/theatlantic [link] [comments]",
+   "id": "469c9a035fc1",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -742,6 +937,40 @@
    "summary": "Join Revolut and get $20 here: https://get.revolut.com/z4lF/patrick Offer expires 6 months from 10/31/2026 Exclusions apply. $20 bonus paid by Revolut subject to the terms and conditions found: https://www.revolut.com/en-US/legal/partner-sign-up-bonus/ Anthropic — the maker of…",
    "thumb": "https://i2.ytimg.com/vi/Ic1Jf7VlXRM/hqdefault.jpg",
    "id": "1506b22092d8",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Thoughts on the recent attack on Russian oil refineries by Ukraine? And about the 3 way talks next month to stop the war involving U.S., Russia and Ukrain?",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xkb1v4/thoughts_on_the_recent_attack_on_russian_oil/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-31T14:03:12.000Z",
+   "summary": "submitted by /u/Bella_396 [link] [comments]",
+   "id": "f80c67803155",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Oleshky evacuees return to Ukraine under Melania Trump-brokered ceasefire",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xkaps5/oleshky_evacuees_return_to_ukraine_under_melania/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-31T13:49:08.000Z",
+   "summary": "submitted by /u/cnn [link] [comments]",
+   "id": "c8a04efbe99c",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -936,23 +1165,6 @@
    "published": "2026-10-31T10:21:10.000Z",
    "summary": "I'm interested in learning how you define goals and measure the success of developing a new product in practice. Which KPIs, metrics, or criteria do you typically use throughout the product development process and after launch? A few questions I'd love to hear your thoughts on:…",
    "id": "3292c9467fc4",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Read full Royal Office statement on end of MINURSO mandate and future of Sahara issue at UN",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xjtp1n/read_full_royal_office_statement_on_end_of/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-30T22:41:53.000Z",
-   "summary": "submitted by /u/HiddenGriffin [link] [comments]",
-   "id": "9202e7e54498",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1168,23 +1380,6 @@
    "why": "0"
   },
   {
-   "title": "Russia: The Revolt of the Letter-Writers",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xjqcf2/russia_the_revolt_of_the_letterwriters/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-30T20:23:53.000Z",
-   "summary": "submitted by /u/CEPAORG [link] [comments]",
-   "id": "0c14a5bc6743",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "$6.3bn has just been stolen...is this question too stupid to ask? | James O’Brien - The Whole Show",
    "url": "https://www.youtube.com/watch?v=clVIDYxjQ_w",
    "source": "LBC",
@@ -1198,25 +1393,6 @@
    "summary": "This is a catch-up version of James O'Brien's live, daily show on LBC Radio from the 30th of October 2026. Listen to the full show on the all-new LBC App: https://app.af.lbc.co.uk/btnc/thenewlbcapp #jamesobrien #politics #LBC LBC is the home of live debate around news and…",
    "thumb": "https://i4.ytimg.com/vi/clVIDYxjQ_w/hqdefault.jpg",
    "id": "01ddb17f7a25",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "tagesschau 20:00 Uhr, 30.10.2026",
-   "url": "https://www.youtube.com/watch?v=m3cRUr8MgSk",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-30T19:43:25.000Z",
-   "summary": "tagesschau 20:00 Uhr Initiative \"Gen Z regelt\" ruft zu bundesweiten Protesten auf, Italienische Gewerkschaft USB ruft zu Generalstreik auf, EU und Kanada gründen bei Gipfeltreffen \"Allianz für die Zukunft\", Evakuierungen in ukrainischer Frontstadt Oleschky beginnen, Russische…",
-   "thumb": "https://i2.ytimg.com/vi/m3cRUr8MgSk/hqdefault.jpg",
-   "id": "ff9fcbf0a65d",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1258,24 +1434,6 @@
    "why": "0"
   },
   {
-   "title": "What is going on with Donald Trump's obsession with arses?",
-   "url": "https://www.youtube.com/watch?v=ya3m6bYazYA",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-30T17:56:12.000Z",
-   "summary": "Why is American politics now obsessed with arses? Shelagh Fogarty reacts. Listen to the full show on the all-new LBC App: https://app.af.lbc.co.uk/btnc/thenewlbcapp #shelaghfogarty #donaldtrump #republicans #nickiminaj #jdvance #jonhusted #usnews #uspolitics #midterms #LBC LBC…",
-   "thumb": "https://i2.ytimg.com/vi/ya3m6bYazYA/hqdefault.jpg",
-   "id": "a081bf63d059",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "Approaching Women When You're \"Ugly\" Is A Crime",
    "url": "https://www.youtube.com/watch?v=te3SMMZxhDs",
    "source": "Aberrant preach",
@@ -1311,23 +1469,6 @@
    "why": "0"
   },
   {
-   "title": "Amazon mining boss wanted by Brazil for sheltering Jair Bolsonaro’s spy chief has businesses, properties in Florida",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xjksf9/amazon_mining_boss_wanted_by_brazil_for/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-30T16:55:32.000Z",
-   "summary": "submitted by /u/ICIJ [link] [comments]",
-   "id": "d1f1ad44459c",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "Berlin Club Scene",
    "url": "https://www.youtube.com/watch?v=YFe8LFCgT68",
    "source": "Channel 5 with Andrew Callaghan",
@@ -1341,23 +1482,6 @@
    "summary": "To see 'Combat Obscura' or any of the 17 other documentaries currently streaming on C5.NOW while knowing that you are directly supporting independent filmmakers bringing you knowledge, perspective and entertainment, head to https://c5.now OR download the C5.NOW app on iOs,…",
    "thumb": "https://i2.ytimg.com/vi/YFe8LFCgT68/hqdefault.jpg",
    "id": "e98dc520efe4",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Can the Nordic Model Save NATO? | A New Way to Deter Russia",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xjjn4t/can_the_nordic_model_save_nato_a_new_way_to_deter/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-30T16:13:02.000Z",
-   "summary": "submitted by /u/ForeignAffairsMag [link] [comments]",
-   "id": "7a900d172fa1",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1393,23 +1517,6 @@
    "summary": "Donald Trump’s second presidency has been marked by a striking lack of resistance. While figures inside his first administration regularly challenged his decisions, Trump 2.0 has seen politicians, business leaders, media organisations and institutions fall into line. So why has…",
    "thumb": "https://i2.ytimg.com/vi/E-t49q27BwM/hqdefault.jpg",
    "id": "2ff35079d2dc",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Putin open to phone call with Zelensky, Ukraine suspects a Kremlin trap",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xji39o/putin_open_to_phone_call_with_zelensky_ukraine/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-30T15:15:19.000Z",
-   "summary": "submitted by /u/KI_official [link] [comments]",
-   "id": "7dbb728a6f89",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1645,24 +1752,6 @@
    "summary": "Spread the word about how we can meaningfully impact climate change and use our link https://clmtpwr.us/Levi to check your voter registration and make a voting plan. Get out to vote before or on Election Day, November 3rd! Subscribe!…",
    "thumb": "https://i2.ytimg.com/vi/5KP8gugE2Xw/hqdefault.jpg",
    "id": "7d3461c099d7",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "MAGA Candidate’s S*X SCANDAL LEAKS, Watch HIM PANIC!",
-   "url": "https://www.youtube.com/watch?v=bSrs54LLy3E",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-29T13:00:09.000Z",
-   "summary": "Luke discusses Brent Taylor's scandal. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley Instagram -…",
-   "thumb": "https://i3.ytimg.com/vi/bSrs54LLy3E/hqdefault.jpg",
-   "id": "6fee94cb38f6",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2006,23 +2095,6 @@
    "why": "0"
   },
   {
-   "title": "20 NEW Games That Look Too Good To Be True",
-   "url": "https://www.youtube.com/watch?v=KyLCZWPn9Qc",
-   "source": "GameRanx",
-   "feedId": "yt-gameranx",
-   "type": "video",
-   "tags": [
-    "gaming"
-   ],
-   "published": "2026-10-27T17:05:14.000Z",
-   "summary": "Some games just look too good to be true. Here are some recent examples. Subscribe for more: https://www.youtube.com/gameranxTV?sub_confirmation=1 0:00 Intro 0:43 - NEO Berlin 2087 2:18 - Squadron 42 4:05 - Blood Message 5:08 - 1666: Amsterdam 6:12 - Supreme Experiment 8:02 -…",
-   "thumb": "https://i4.ytimg.com/vi/KyLCZWPn9Qc/hqdefault.jpg",
-   "id": "f45f370f8611",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "Should Food Cost More?",
    "url": "https://www.youtube.com/watch?v=LtvPbNf7dPM",
    "source": "The Onion",
@@ -2308,24 +2380,6 @@
    "summary": "Rob Snyder is the author of The Power of Pull and writes the newsletter The Physics of Startups. He has advised more than 50 startups on growing from zero to $1 million in ARR, drawing on his own experience as a founder who spent two years pushing a product the market didn’t…",
    "thumb": "https://i2.ytimg.com/vi/19qrLchbQEc/hqdefault.jpg",
    "id": "c7b9cf819249",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "This Veteran Created Energy Bars for Dogs on the Go | Shark Tank US | Shark Tank Global",
-   "url": "https://www.youtube.com/watch?v=FvHuTl2p_wA",
-   "source": "Shark Tank Global",
-   "feedId": "yt-shark-tank-global",
-   "type": "video",
-   "tags": [
-    "trash",
-    "business"
-   ],
-   "published": "2026-10-24T15:59:55.000Z",
-   "summary": "Kristina Guerrero enters the Tank seeking $100,000 for 20% of TurboPup, her company making compact, complete meal bars for dogs on the go. Inspired by a backcountry adventure with her own dog, Christina hopes to turn a simple idea into a new way to feed active pups. From Season…",
-   "thumb": "https://i3.ytimg.com/vi/FvHuTl2p_wA/hqdefault.jpg",
-   "id": "81d0dbbeda8d",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2638,25 +2692,6 @@
    "why": "0"
   },
   {
-   "title": "WASILLA ALASKA TRUMP RALLY",
-   "url": "https://www.youtube.com/watch?v=A1BQXOa8C4g",
-   "source": "The Good Liars",
-   "feedId": "yt-the-good-liars",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "politics",
-    "debates"
-   ],
-   "published": "2026-10-21T17:00:26.000Z",
-   "summary": "The Good Liars visit Wasilla, Alaska for part II for their Trump Rally experience.",
-   "thumb": "https://i2.ytimg.com/vi/A1BQXOa8C4g/hqdefault.jpg",
-   "id": "64a5e7397c62",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "Learn German with Me in Klagenfurt",
    "url": "https://www.youtube.com/watch?v=b-k2yDRx6yw",
    "source": "Easy German",
@@ -2928,25 +2963,7 @@
    "score": 0,
    "matched": [],
    "why": "0"
-  },
-  {
-   "title": "Manga Reviews (i read Mashle)",
-   "url": "https://www.youtube.com/watch?v=8jjK9UIx6dw",
-   "source": "ProZD",
-   "feedId": "yt-prozd",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "gaming"
-   ],
-   "published": "2026-10-17T17:27:44.000Z",
-   "summary": "My Patreon: https://www.patreon.com/ProZD $5 a month gets you all the perks",
-   "thumb": "https://i1.ytimg.com/vi/8jjK9UIx6dw/hqdefault.jpg",
-   "id": "80b095c084a5",
-   "score": 0,
-   "matched": [],
-   "why": "0"
   }
  ],
- "contentHash": "b916fe3c513c"
+ "contentHash": "f436a5ae1898"
 }
