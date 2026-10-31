@@ -1,10 +1,10 @@
 {
- "generated": "2026-10-31T09:56:14.281Z",
+ "generated": "2026-10-31T13:09:38.480Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
   "ok": 52,
-  "items": 130,
+  "items": 129,
   "duplicatesMerged": 0,
   "lengthsKnown": 1,
   "lengthLookups": 105,
@@ -124,7 +124,7 @@
    "name": "Patrick Boyle",
    "type": "youtube",
    "status": "ok",
-   "count": 2,
+   "count": 1,
    "resolved": {
     "channelId": "UCASM0cgfkJxQ1ICmRilfHLw",
     "title": "Patrick Boyle",
@@ -306,7 +306,7 @@
    "name": "Bald and Bankrupt",
    "type": "youtube",
    "status": "ok",
-   "count": 0,
+   "count": 1,
    "resolved": {
     "channelId": "UCxDZs_ltFFvn0FDHT6kmoXA",
     "title": "bald and bankrupt",
@@ -630,19 +630,20 @@
    "id": "rd-productmanagement",
    "name": "r/productmanagement",
    "type": "reddit",
-   "status": "cached",
-   "count": 4,
-   "lastOk": "2026-10-31T04:00:33.603Z",
-   "note": "not its turn this run"
+   "status": "ok",
+   "count": 3,
+   "url": "https://www.reddit.com/r/productmanagement/top/.rss?t=day"
   },
   {
    "id": "rd-tech",
    "name": "r/tech",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": "2026-10-27T01:08:56.460Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-gaming",
@@ -651,7 +652,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-ukpolitics",
@@ -684,9 +685,10 @@
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
+   "lastOk": "2026-10-31T09:56:14.281Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-germany",
@@ -695,7 +697,7 @@
    "status": "cached",
    "count": 5,
    "lastOk": "2026-10-31T01:21:53.748Z",
-   "note": "rate-limited (429)"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-unitedkingdom",
@@ -704,60 +706,132 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   }
  ],
  "items": [
   {
-   "title": "KT: Behind the Tape (Ep: 791 Jim Norton + Anthony Cumia)",
-   "url": "https://www.youtube.com/watch?v=bHuLgxWgNWM",
-   "source": "Kill Tony",
-   "feedId": "yt-kill-tony",
+   "title": "Israeli election ends in deadlock... what now?",
+   "url": "https://www.youtube.com/watch?v=poQXUlt-XfY",
+   "source": "LBC",
+   "feedId": "yt-lbc",
    "type": "video",
    "tags": [
-    "comedy",
-    "standup",
-    "listen"
-   ],
-   "published": "2026-10-31T01:00:09.000Z",
-   "summary": "An exclusive, behind-the-scenes look from KT Episode 791 KT guest Jim Norton + Anthony Cumia Jim Norton, Anthony Cumia, Pat O'Neill, Dedrick Flynn, Martin Phillips, D Madness, Michael A. Gonzales, Jon Deas, Matthew Muehling, Grooveline Horns, Joe White, Troy Conrad, Monica Colt…",
-   "thumb": "https://i3.ytimg.com/vi/bHuLgxWgNWM/hqdefault.jpg",
-   "id": "f05cd3c609d3",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Israel Or Palestine, Who's in the Right/Wrong? | @NickMatau Vs @1stamender",
-   "url": "https://www.youtube.com/watch?v=UuXkzdC6tsA",
-   "source": "Modern-Day Debate",
-   "feedId": "yt-modern-day-debate",
-   "type": "video",
-   "tags": [
-    "debates",
     "politics",
     "listen"
    ],
-   "published": "2026-10-31T00:04:56.000Z",
-   "summary": "Huge thank you to our DEBATECON 9 sponsors including: Revival of the Anointed's Rule: https://revivingtheroar.org/ Apologetics Ark: https://www.apologeticsark.com/links Nick Matau Vs Owen Shroyer at UCLA on December 3rd: https://uncensoredamerica.us/matau-vs-shroyer-ucla/ Nick…",
-   "thumb": "https://i2.ytimg.com/vi/UuXkzdC6tsA/hqdefault.jpg",
-   "id": "547160359611",
+   "published": "2026-10-31T13:00:21.000Z",
+   "summary": "Israel's election has ended with no party achieving an overall majority, as Prime Minister Benjamin Netanyahu repeated his accusations that Arab-led parties had \"stolen\" the election. Matthew Wright is joined by senior researcher Dr Shany Mor and Matt Frei is joined by…",
+   "thumb": "https://i1.ytimg.com/vi/poQXUlt-XfY/hqdefault.jpg",
+   "id": "1dc02b3f9cc8",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Anyone using AI for rapid or automated AB testing?",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1xjuxyx/anyone_using_ai_for_rapid_or_automated_ab_testing/",
+   "title": "'The man's a wimp!': Nigel Farage's 'terrible' week",
+   "url": "https://www.youtube.com/watch?v=1EJTDr2m5Sg",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-31T12:00:24.000Z",
+   "summary": "James Hanson takes you through yet another 'terrible week' for Reform, starting with an empty auditorium and ending with a 'physical altercation' with a Lib Dem... With Reform 'tanking' in the polls, Hanson asks: 'Does Farage actually want to be Prime Minister anymore?'. Listen…",
+   "thumb": "https://i2.ytimg.com/vi/1EJTDr2m5Sg/hqdefault.jpg",
+   "id": "a42150af6680",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "CORINTH TRUMP RALLY",
+   "url": "https://www.youtube.com/watch?v=t6ppbn4V1yA",
+   "source": "The Good Liars",
+   "feedId": "yt-the-good-liars",
+   "type": "video",
+   "tags": [
+    "comedy",
+    "politics",
+    "debates"
+   ],
+   "published": "2026-10-31T11:47:03.000Z",
+   "summary": "The Good Liars visit Corinth, Mississippi for the Trump Rally https://www.youtube.com/channel/UCUNOwz9KTDIhhTTN3_ptUDA/join https://linktr.ee/thegoodliars",
+   "thumb": "https://i1.ytimg.com/vi/t6ppbn4V1yA/hqdefault.jpg",
+   "id": "2749cbc6cc22",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "The election that could derail US politics | Simon Marks' American Week",
+   "url": "https://www.youtube.com/watch?v=roT8qAS-11U",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-31T11:02:52.000Z",
+   "summary": "Simon Marks runs through the final week of rallies and campaigns as America braces for a tense midterm election. 00:08 | Midterms 2026: What’s at stake? 1:46 | Trump ‘obsesses’ over male physique 2:51 | Trump brags about oil and gas industry 4:19 | Obama’s great skewering of…",
+   "thumb": "https://i3.ytimg.com/vi/roT8qAS-11U/hqdefault.jpg",
+   "id": "952b3c8abb07",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "„Politik der Älteren“ - Expertin über den Frust der Gen Z",
+   "url": "https://www.youtube.com/watch?v=ibLactgJ3ss",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-31T10:51:08.000Z",
+   "summary": "Junge Menschen in Frankreich machten den Anfang, inzwischen gibt es in vielen europäischen Ländern Jugendproteste. Die Gruppe „Gen Z regelt“ hat heute in Deutschland zu Demonstrationen aufgerufen. In mehr als 30 Städten wollen junge Menschen für bessere Bildung, ein bezahlbares…",
+   "thumb": "https://i2.ytimg.com/vi/ibLactgJ3ss/hqdefault.jpg",
+   "id": "7c765541cf70",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "24 Hours In An Abandoned Soviet City",
+   "url": "https://www.youtube.com/watch?v=5wypCQp11wo",
+   "source": "Bald and Bankrupt",
+   "feedId": "yt-bald-and-bankrupt",
+   "type": "video",
+   "tags": [
+    "travel",
+    "chill"
+   ],
+   "published": "2026-10-31T10:33:41.000Z",
+   "summary": "When you travel the backroads of the former USSR you hear towns mentioned by ranndom strangers you meet in platskart and marshrutkas. Ming-Kush was one such town I had heard of a few times. A formerly closed Soviet town that mined uranium, it had subsequently fallen into…",
+   "thumb": "https://i2.ytimg.com/vi/5wypCQp11wo/hqdefault.jpg",
+   "id": "ab292ba2c350",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Product success indicators?",
+   "url": "https://www.reddit.com/r/ProductManagement/comments/1xk6mlh/product_success_indicators/",
    "source": "r/productmanagement",
    "feedId": "rd-productmanagement",
    "type": "post",
    "tags": [
     "product"
    ],
-   "published": "2026-10-30T23:36:18.000Z",
-   "summary": "Just curious if anyone has been working with AI to greatly improve their AB testing or CRO program? Thinking about how AI could be leveraged to run a testing program mostly on its own , but I lack any real experience in this sort of thing. submitted by /u/Almostnicklee [link]…",
-   "id": "f287ea687f98",
+   "published": "2026-10-31T10:21:10.000Z",
+   "summary": "I'm interested in learning how you define goals and measure the success of developing a new product in practice. Which KPIs, metrics, or criteria do you typically use throughout the product development process and after launch? A few questions I'd love to hear your thoughts on:…",
+   "id": "3292c9467fc4",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -809,22 +883,6 @@
    "published": "2026-10-30T22:01:28.000Z",
    "summary": "Hi everyone, I'm currently receiving ALG1 in Germany and planning to export my unemployment benefits to France for 3 months, potentially extending to 6 months, using the PD U2 form. I'm wondering whether I need to officially deregister ( Abmeldung ) from Germany during this…",
    "id": "4972ba853bce",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "What are you sing for SaaS subscription management?",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1xjslys/what_are_you_sing_for_saas_subscription_management/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-10-30T21:55:52.000Z",
-   "summary": "We're on Zoho Subscriptions right now, but it's starting to feel limiting as our billing gets more complicated. We need something that handles trials, plan changes, recurring payment, invoices, cancellations, and self-serve account management without relying on workarounds.…",
-   "id": "9d9547162d4b",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1046,6 +1104,76 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
+   "title": "KT: Behind the Tape (Ep: 791 Jim Norton + Anthony Cumia)",
+   "url": "https://www.youtube.com/watch?v=bHuLgxWgNWM",
+   "source": "Kill Tony",
+   "feedId": "yt-kill-tony",
+   "type": "video",
+   "tags": [
+    "comedy",
+    "standup",
+    "listen"
+   ],
+   "published": "2026-10-31T01:00:09.000Z",
+   "summary": "An exclusive, behind-the-scenes look from KT Episode 791 KT guest Jim Norton + Anthony Cumia Jim Norton, Anthony Cumia, Pat O'Neill, Dedrick Flynn, Martin Phillips, D Madness, Michael A. Gonzales, Jon Deas, Matthew Muehling, Grooveline Horns, Joe White, Troy Conrad, Monica Colt…",
+   "thumb": "https://i3.ytimg.com/vi/bHuLgxWgNWM/hqdefault.jpg",
+   "id": "f05cd3c609d3",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Israel Or Palestine, Who's in the Right/Wrong? | @NickMatau Vs @1stamender",
+   "url": "https://www.youtube.com/watch?v=UuXkzdC6tsA",
+   "source": "Modern-Day Debate",
+   "feedId": "yt-modern-day-debate",
+   "type": "video",
+   "tags": [
+    "debates",
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-31T00:04:56.000Z",
+   "summary": "Huge thank you to our DEBATECON 9 sponsors including: Revival of the Anointed's Rule: https://revivingtheroar.org/ Apologetics Ark: https://www.apologeticsark.com/links Nick Matau Vs Owen Shroyer at UCLA on December 3rd: https://uncensoredamerica.us/matau-vs-shroyer-ucla/ Nick…",
+   "thumb": "https://i2.ytimg.com/vi/UuXkzdC6tsA/hqdefault.jpg",
+   "id": "547160359611",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Anyone using AI for rapid or automated AB testing?",
+   "url": "https://www.reddit.com/r/ProductManagement/comments/1xjuxyx/anyone_using_ai_for_rapid_or_automated_ab_testing/",
+   "source": "r/productmanagement",
+   "feedId": "rd-productmanagement",
+   "type": "post",
+   "tags": [
+    "product"
+   ],
+   "published": "2026-10-30T23:36:18.000Z",
+   "summary": "Just curious if anyone has been working with AI to greatly improve their AB testing or CRO program? Thinking about how AI could be leveraged to run a testing program mostly on its own , but I lack any real experience in this sort of thing. submitted by /u/Almostnicklee [link]…",
+   "id": "f287ea687f98",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "What are you sing for SaaS subscription management?",
+   "url": "https://www.reddit.com/r/ProductManagement/comments/1xjslys/what_are_you_sing_for_saas_subscription_management/",
+   "source": "r/productmanagement",
+   "feedId": "rd-productmanagement",
+   "type": "post",
+   "tags": [
+    "product"
+   ],
+   "published": "2026-10-30T21:55:52.000Z",
+   "summary": "We're on Zoho Subscriptions right now, but it's starting to feel limiting as our billing gets more complicated. We need something that handles trials, plan changes, recurring payment, invoices, cancellations, and self-serve account management without relying on workarounds.…",
+   "id": "9d9547162d4b",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
    "title": "tagesthemen 21:45 Uhr, 30.10.2026",
    "url": "https://www.youtube.com/watch?v=QxyipvfB1gg",
    "source": "Tagesschau",
@@ -1245,25 +1373,6 @@
    "why": "0"
   },
   {
-   "title": "Ich habe eine Linken-Politikerin und Neuköllns Bürgermeister zu Rot-Grün-Rot befragt",
-   "url": "https://www.youtube.com/watch?v=xf7R_brB3B8",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-30T17:00:36.000Z",
-   "summary": "Die Linke hat in Berlin die Wahl gewonnen und will regieren. Ob die Partei in der Hauptstadt regierungsfähig ist, diskutiert ganz Deutschland. Bei Draußenpolitik spricht Louis Klamroth mit den Neuköllner Bürgermeister Martin Hikel (SPD), der Linken-Politikerin Martha Kleedörfer…",
-   "thumb": "https://i1.ytimg.com/vi/xf7R_brB3B8/hqdefault.jpg",
-   "id": "36bff15bad20",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "Spooky Season With The Sharks | Shark Tank US | Shark Tank Global",
    "url": "https://www.youtube.com/watch?v=ry1F6yI26PU",
    "source": "Shark Tank Global",
@@ -1405,56 +1514,6 @@
    "why": "0"
   },
   {
-   "title": "What is Britain bracing for? | UK households urged to stockpile",
-   "url": "https://www.youtube.com/watch?v=oJDRq2qr8xw",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-30T09:00:26.000Z",
-   "summary": "Across Britain, there is a growing army of people spending thousands of pounds to amass years' worth of supplies and train for crisis situations. LBC has been to meet some of the country's long-term preppers who have been getting ready for disaster scenarios long before the…",
-   "thumb": "https://i4.ytimg.com/vi/oJDRq2qr8xw/hqdefault.jpg",
-   "id": "824cf523e044",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Friday Show and Tell",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1xj7hre/friday_show_and_tell/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-10-30T06:00:47.000Z",
-   "summary": "There are a lot of people here working on projects of some sort - side projects, startups, podcasts, blogs, etc. If you've got something you'd like to show off or get feedback, this is the place to do it. Standards still need to remain high, so there are a few guidelines: Don't…",
-   "id": "b648f99edf9a",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Thoughts on doordash buying Instacart",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1xj5qg9/thoughts_on_doordash_buying_instacart/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-10-30T04:17:46.000Z",
-   "summary": "What does this mean for the PM org at these two companies and also what are people's thoughts on this from a business perspective? submitted by /u/DarkFlowerPewPew [link] [comments]",
-   "id": "9064a3b65c3b",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "OMG: Katie Zacharia CRASHES AND BURNS on Live TV AGAIN, WORST Interview YET!",
    "url": "https://www.youtube.com/watch?v=1aH7jcPwwec",
    "source": "Luke Beasley",
@@ -1528,24 +1587,6 @@
    "why": "0"
   },
   {
-   "title": "Could Trump and Netanyahu be preparing to escalate the Iran war?",
-   "url": "https://www.youtube.com/watch?v=New2XejEJZ0",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-29T21:00:26.000Z",
-   "summary": "Could Donald Trump restart the war with Iran after the US midterm elections? Andrew Marr speaks to two former senior officials about growing fears of renewed escalation between the US, Israel and Iran. Jeffrey Feltman, former head of the UN Department of Political Affairs and…",
-   "thumb": "https://i3.ytimg.com/vi/New2XejEJZ0/hqdefault.jpg",
-   "id": "fbc0c20de956",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "looking up wikipedia pages as you're watching something",
    "url": "https://www.youtube.com/watch?v=Rb96qcVxZAI",
    "source": "ProZD",
@@ -1559,24 +1600,6 @@
    "summary": "My Patreon: https://www.patreon.com/ProZD My Cameo: https://www.cameo.com/prozd My Let's Play Channel: https://www.youtube.com/@prozdplaysgames My Food Channel: https://www.youtube.com/@ProZDEatsFood My Anime Channel: https://www.youtube.com/@ProZDWatchesAnime My Autograph…",
    "thumb": "https://i3.ytimg.com/vi/Rb96qcVxZAI/hqdefault.jpg",
    "id": "2d151f6a5ebd",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Lib Dem MP accused of ‘physical altercation’ with Farage speaks out",
-   "url": "https://www.youtube.com/watch?v=RE--bh1SIz4",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-29T20:07:42.000Z",
-   "summary": "Nigel Farage claimed that a ‘prior physical altercation’ with Lib Dem MP Caroline Voaden stopped him going to the House of Commons for the Budget. 01:07 | Tom Swarbrick quizzes Robert Jenrick on the allegations 02:59 | Caroline Voaden, the MP in question, calls the whole thing…",
-   "thumb": "https://i3.ytimg.com/vi/RE--bh1SIz4/hqdefault.jpg",
-   "id": "d1455a118da0",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2695,25 +2718,6 @@
    "why": "0"
   },
   {
-   "title": "WASILLA ALASKA TRUMP RALLY",
-   "url": "https://www.youtube.com/watch?v=A1BQXOa8C4g",
-   "source": "The Good Liars",
-   "feedId": "yt-the-good-liars",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "politics",
-    "debates"
-   ],
-   "published": "2026-10-21T17:00:26.000Z",
-   "summary": "The Good Liars visit Wasilla, Alaska for part II for their Trump Rally experience.",
-   "thumb": "https://i2.ytimg.com/vi/A1BQXOa8C4g/hqdefault.jpg",
-   "id": "64a5e7397c62",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "Learn German with Me in Klagenfurt",
    "url": "https://www.youtube.com/watch?v=b-k2yDRx6yw",
    "source": "Easy German",
@@ -3003,26 +3007,7 @@
    "score": 0,
    "matched": [],
    "why": "0"
-  },
-  {
-   "title": "Putin’s Plan to Protect Russia’s Internet Backfired",
-   "url": "https://www.youtube.com/watch?v=JnceIDVMZyQ",
-   "source": "Patrick Boyle",
-   "feedId": "yt-patrick-boyle",
-   "type": "video",
-   "tags": [
-    "finance",
-    "education",
-    "listen"
-   ],
-   "published": "2026-10-17T11:27:44.000Z",
-   "summary": "Go to http://ground.news/pb for a better way to stay informed. Subscribe for 40% off unlimited access to worldwide coverage through my link. In October 2026, Ukrainian drone strikes knocked out three of Yandex’s six major data centers, and a viral chart claimed that Russian…",
-   "thumb": "https://i3.ytimg.com/vi/JnceIDVMZyQ/hqdefault.jpg",
-   "id": "b317aa72b904",
-   "score": 0,
-   "matched": [],
-   "why": "0"
   }
  ],
- "contentHash": "8c4679aebc2e"
+ "contentHash": "5e9e6a702e4a"
 }
