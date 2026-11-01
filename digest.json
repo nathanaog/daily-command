@@ -1,17 +1,17 @@
 {
- "generated": "2026-11-01T09:59:21.046Z",
+ "generated": "2026-11-01T13:11:01.045Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
   "ok": 51,
-  "items": 126,
+  "items": 123,
   "duplicatesMerged": 0,
   "lengthsKnown": 1,
-  "lengthLookups": 107,
-  "lengthFailures": 107,
+  "lengthLookups": 104,
+  "lengthFailures": 104,
   "lengthVia": "video pages",
   "lengthFailReasons": {
-   "no length on page": 107
+   "no length on page": 104
   }
  },
  "feeds": [
@@ -423,7 +423,7 @@
    "name": "Kill Tony",
    "type": "youtube",
    "status": "ok",
-   "count": 5,
+   "count": 4,
    "resolved": {
     "channelId": "UCwzCMiicL-hBUzyjWiJaseg",
     "title": "Kill Tony",
@@ -462,7 +462,7 @@
    "name": "Lenny's Podcast",
    "type": "youtube",
    "status": "ok",
-   "count": 2,
+   "count": 1,
    "resolved": {
     "channelId": "UC6t1O76G0jYXOAoYCm153dA",
     "title": "Lenny's Podcast",
@@ -514,7 +514,7 @@
    "name": "How Money Works",
    "type": "youtube",
    "status": "ok",
-   "count": 3,
+   "count": 2,
    "resolved": {
     "channelId": "UCkCGANrihzExmu9QiqZpPlQ",
     "title": "How Money Works",
@@ -657,20 +657,19 @@
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
+   "lastOk": "2026-11-01T09:59:21.046Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-xbox",
    "name": "r/xbox",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": "2026-10-28T16:07:55.180Z",
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-slaythespire",
@@ -679,16 +678,15 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-11-01T04:09:16.110Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
   },
   {
    "id": "rd-germany",
@@ -697,7 +695,7 @@
    "status": "cached",
    "count": 5,
    "lastOk": "2026-10-31T01:21:53.748Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)"
   },
   {
    "id": "rd-unitedkingdom",
@@ -706,10 +704,47 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   }
  ],
  "items": [
+  {
+   "title": "The morality of Donald Trump",
+   "url": "https://www.youtube.com/watch?v=7JVwDatAR8I",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-01T11:30:34.000Z",
+   "summary": "It's been 10 years since Donald Trump was elected President for the first time. Ahead of the mid-terms, long-time spiritual advisor Mark Burns speaks to James Hanson about his legacy and the morality which drives him. Listen to the full show on the all-new LBC App:…",
+   "thumb": "https://i4.ytimg.com/vi/7JVwDatAR8I/hqdefault.jpg",
+   "id": "92167e745888",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Jugendproteste: Ausschreitungen nach friedlichen Demos",
+   "url": "https://www.youtube.com/watch?v=hyrCHIK2_3k",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-01T11:05:02.000Z",
+   "summary": "Die Proteste der Gruppe „Gen Z regelt\" sind gestern zunächst friedlich verlaufen: Bundesweit beteiligten sich zehntausende junge Menschen an Demonstrationen für bessere Schulen, mehr Klimaschutz und gegen steigende Preise und eine mögliche Wehrpflicht. Nach den Veranstaltungen…",
+   "thumb": "https://i1.ytimg.com/vi/hyrCHIK2_3k/hqdefault.jpg",
+   "id": "706e9654b809",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
   {
    "title": "Rachel Reeves says UK’s future is in EU as she backs Andy Burnham on Brexit",
    "url": "https://www.reddit.com/r/ukpolitics/comments/1xkyelr/rachel_reeves_says_uks_future_is_in_eu_as_she/",
@@ -762,8 +797,8 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Judge ends Trump's attempts to sue Wall Street Journal over Epstein reporting",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xkrulx/judge_ends_trumps_attempts_to_sue_wall_street/",
+   "title": "Quad not ‘anti-China’, says Rubio as first summit in two years set before Trump-Xi talks",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xkws5l/quad_not_antichina_says_rubio_as_first_summit_in/",
    "source": "r/geopolitics",
    "feedId": "rd-geopolitics",
    "type": "post",
@@ -771,46 +806,26 @@
     "politics",
     "news"
    ],
-   "published": "2026-11-01T02:25:05.000Z",
-   "summary": "submitted by /u/Ay7agaX [link] [comments]",
-   "id": "c31425ff3486",
+   "published": "2026-11-01T07:17:37.000Z",
+   "summary": "SS: So they finally set the date for Quad leaders summit, just before Trump’s meeting with Xi at APEC. This is going to be Trump’s first Quad summit. He took a much much longer route to realizing the value of Quad in managing China, but I guess Nobel aspirations and great…",
+   "id": "8762730149fe",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "SCREAMING ERUPTS as Fox News Host HUMILIATES TRUMP Live On Air!",
-   "url": "https://www.youtube.com/watch?v=gva92Du12GI",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
+   "title": "\"As prime minister, I saw firsthand that Vladimir Putin is truly evil\"",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xkw1iq/as_prime_minister_i_saw_firsthand_that_vladimir/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
    "tags": [
     "politics",
-    "listen"
+    "news"
    ],
-   "published": "2026-11-01T01:00:11.000Z",
-   "summary": "Luke discusses Jessica Tarlov on The Five. Check out Jessica Tarlov's new book below! https://sites.prh.com/idisagree Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get…",
-   "thumb": "https://i4.ytimg.com/vi/gva92Du12GI/hqdefault.jpg",
-   "id": "6149949aeb49",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "tagesthemen 23:20 Uhr, 31.10.2026",
-   "url": "https://www.youtube.com/watch?v=N7PQKg2Z7Qk",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-31T23:14:54.000Z",
-   "summary": "tagesthemen 23:20 Uhr Deutschlandweite \"GenZ\"-Proteste für soziale Gerechtigkeit, Landesweite Proteste in Frankreich gegen hohe Lebenshaltungskosten, Konflikt über Unabhängigkeit des Verfassungsgerichts in Polen spitzt sich zu, Ritterturniere mit dem E-Bike in London, Der…",
-   "thumb": "https://i3.ytimg.com/vi/N7PQKg2Z7Qk/hqdefault.jpg",
-   "id": "2c01b388e3fe",
+   "published": "2026-11-01T06:30:56.000Z",
+   "summary": "submitted by /u/Burial [link] [comments]",
+   "id": "c0cd98fdb20f",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -833,24 +848,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Visibly STUNNED Data Guru Makes SHOCK MIDTERM PREDICTION!",
-   "url": "https://www.youtube.com/watch?v=UVNDcddwQys",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-31T22:00:15.000Z",
-   "summary": "Luke discusses Harry Enten's latest midterm prediction. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
-   "thumb": "https://i2.ytimg.com/vi/UVNDcddwQys/hqdefault.jpg",
-   "id": "458ed610089c",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "How to stand out with new leadership",
    "url": "https://www.reddit.com/r/ProductManagement/comments/1xkmbp1/how_to_stand_out_with_new_leadership/",
    "source": "r/productmanagement",
@@ -862,57 +859,6 @@
    "published": "2026-10-31T21:48:54.000Z",
    "summary": "I got a pretty shit review last cycle due to forced stack ranking and now got moved to a new team under the intention of an opportunity to make more impact. I don't believe I was deserving of my review but there was obviously a huge disconnect between what my leaders thought my…",
    "id": "2e03d4c50e3f",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Message to the Public from the National Security Council Ahead of the 2026 Jewish High Holidays: Attempts to Harm Israelis Around the World Are Ongoing",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xkier5/message_to_the_public_from_the_national_security/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-31T19:00:49.000Z",
-   "summary": "submitted by /u/DayTrader_Dav [link] [comments]",
-   "id": "f03d515a2863",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "'I don't know if negotiated peace is achievable,' Rubio says as uncertainty hangs over Russia-Ukraine talks",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xkh448/i_dont_know_if_negotiated_peace_is_achievable/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-31T18:08:31.000Z",
-   "summary": "submitted by /u/KI_official [link] [comments]",
-   "id": "c25628396243",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Amid simultaneous incursion in western Daraa | Israeli tanks advance deep into Wadi Al-Raqqad for first time",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xkggka/amid_simultaneous_incursion_in_western_daraa/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-31T17:42:43.000Z",
-   "summary": "submitted by /u/boppinmule [link] [comments]",
-   "id": "7ab03d2e2a4a",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1003,6 +949,61 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
+   "title": "SCREAMING ERUPTS as Fox News Host HUMILIATES TRUMP Live On Air!",
+   "url": "https://www.youtube.com/watch?v=gva92Du12GI",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-01T01:00:11.000Z",
+   "summary": "Luke discusses Jessica Tarlov on The Five. Check out Jessica Tarlov's new book below! https://sites.prh.com/idisagree Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get…",
+   "thumb": "https://i4.ytimg.com/vi/gva92Du12GI/hqdefault.jpg",
+   "id": "6149949aeb49",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "tagesthemen 23:20 Uhr, 31.10.2026",
+   "url": "https://www.youtube.com/watch?v=N7PQKg2Z7Qk",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-31T23:14:54.000Z",
+   "summary": "tagesthemen 23:20 Uhr Deutschlandweite \"GenZ\"-Proteste für soziale Gerechtigkeit, Landesweite Proteste in Frankreich gegen hohe Lebenshaltungskosten, Konflikt über Unabhängigkeit des Verfassungsgerichts in Polen spitzt sich zu, Ritterturniere mit dem E-Bike in London, Der…",
+   "thumb": "https://i3.ytimg.com/vi/N7PQKg2Z7Qk/hqdefault.jpg",
+   "id": "2c01b388e3fe",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Visibly STUNNED Data Guru Makes SHOCK MIDTERM PREDICTION!",
+   "url": "https://www.youtube.com/watch?v=UVNDcddwQys",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-31T22:00:15.000Z",
+   "summary": "Luke discusses Harry Enten's latest midterm prediction. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
+   "thumb": "https://i2.ytimg.com/vi/UVNDcddwQys/hqdefault.jpg",
+   "id": "458ed610089c",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
    "title": "Former Restore ‘rising star’ defects to Reform UK",
    "url": "https://www.reddit.com/r/ukpolitics/comments/1xkmdqv/former_restore_rising_star_defects_to_reform_uk/",
    "source": "r/ukpolitics",
@@ -1039,6 +1040,40 @@
    "why": "0"
   },
   {
+   "title": "Message to the Public from the National Security Council Ahead of the 2026 Jewish High Holidays: Attempts to Harm Israelis Around the World Are Ongoing",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xkier5/message_to_the_public_from_the_national_security/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-31T19:00:49.000Z",
+   "summary": "submitted by /u/DayTrader_Dav [link] [comments]",
+   "id": "f03d515a2863",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "'I don't know if negotiated peace is achievable,' Rubio says as uncertainty hangs over Russia-Ukraine talks",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xkh448/i_dont_know_if_negotiated_peace_is_achievable/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-31T18:08:31.000Z",
+   "summary": "submitted by /u/KI_official [link] [comments]",
+   "id": "c25628396243",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
    "title": "The Road to Vienna: Battle of St. Gotthard 1664",
    "url": "https://www.youtube.com/watch?v=mi5rzCpHgP8",
    "source": "History Marche",
@@ -1052,6 +1087,23 @@
    "summary": "Play Tacticus at: https://play.tacticusgame.com/HistoryMarchexTacticus Use code MARCHEWAAGH to get special rewards (valid until November 20th 2026) 🚩 Related videos: Siege of Vienna 1683: https://youtu.be/1c5UV3EsQmk Battle of Parkany 1683: https://youtu.be/i4fg9guwEvo 🔔…",
    "thumb": "https://i2.ytimg.com/vi/mi5rzCpHgP8/hqdefault.jpg",
    "id": "52716b7d62f8",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Amid simultaneous incursion in western Daraa | Israeli tanks advance deep into Wadi Al-Raqqad for first time",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xkggka/amid_simultaneous_incursion_in_western_daraa/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-10-31T17:42:43.000Z",
+   "summary": "submitted by /u/boppinmule [link] [comments]",
+   "id": "7ab03d2e2a4a",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1201,23 +1253,6 @@
    "why": "0"
   },
   {
-   "title": "The Bursting of the Tel Aviv Bubble",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xkbnir/the_bursting_of_the_tel_aviv_bubble/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-31T14:28:40.000Z",
-   "summary": "submitted by /u/theatlantic [link] [comments]",
-   "id": "469c9a035fc1",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "What Anthropic’s IPO Filing Actually Says",
    "url": "https://www.youtube.com/watch?v=Ic1Jf7VlXRM",
    "source": "Patrick Boyle",
@@ -1310,25 +1345,6 @@
    "why": "0"
   },
   {
-   "title": "„Politik der Älteren“ - Expertin über den Frust der Gen Z",
-   "url": "https://www.youtube.com/watch?v=ibLactgJ3ss",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-31T10:51:08.000Z",
-   "summary": "Junge Menschen in Frankreich machten den Anfang, inzwischen gibt es in vielen europäischen Ländern Jugendproteste. Die Gruppe „Gen Z regelt“ hat heute in Deutschland zu Demonstrationen aufgerufen. In mehr als 30 Städten wollen junge Menschen für bessere Bildung, ein bezahlbares…",
-   "thumb": "https://i2.ytimg.com/vi/ibLactgJ3ss/hqdefault.jpg",
-   "id": "7c765541cf70",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "24 Hours In An Abandoned Soviet City",
    "url": "https://www.youtube.com/watch?v=5wypCQp11wo",
    "source": "Bald and Bankrupt",
@@ -1413,24 +1429,6 @@
    "summary": "Spend less time searching and more time with the people who matter most. Head to https://zocdoc.com/gameranx to find and book the care you need. 🤧 #sponsored Thank you Zocdoc for sponsoring this video! ~~SOURCES~~ GTA size revealed…",
    "thumb": "https://i4.ytimg.com/vi/sGgNvGbwrH4/hqdefault.jpg",
    "id": "9dad4bdb5fe1",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "$6.3bn has just been stolen...is this question too stupid to ask? | James O’Brien - The Whole Show",
-   "url": "https://www.youtube.com/watch?v=clVIDYxjQ_w",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-30T20:00:24.000Z",
-   "summary": "This is a catch-up version of James O'Brien's live, daily show on LBC Radio from the 30th of October 2026. Listen to the full show on the all-new LBC App: https://app.af.lbc.co.uk/btnc/thenewlbcapp #jamesobrien #politics #LBC LBC is the home of live debate around news and…",
-   "thumb": "https://i4.ytimg.com/vi/clVIDYxjQ_w/hqdefault.jpg",
-   "id": "01ddb17f7a25",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2908,64 +2906,7 @@
    "score": 0,
    "matched": [],
    "why": "0"
-  },
-  {
-   "title": "KT: Behind the Tape (Ep: 789 Tim Butterly + Kirk Fox)",
-   "url": "https://www.youtube.com/watch?v=J97RDpBsDHg",
-   "source": "Kill Tony",
-   "feedId": "yt-kill-tony",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "standup",
-    "listen"
-   ],
-   "published": "2026-10-18T13:00:10.000Z",
-   "summary": "An exclusive, behind the scenes look from KT Episode 789 KT guest Tim Butterly + Kirk Fox Tim Butterly, Kirk Fox, Pat O'Neill, Dedrick Flynn, Martin Phillips, D Madness, Michael A. Gonzales, Jon Deas, Matthew Muehling, Grooveline Horns, Joe White, Troy Conrad, Monica Colt…",
-   "thumb": "https://i3.ytimg.com/vi/J97RDpBsDHg/hqdefault.jpg",
-   "id": "5961f53720ee",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Inside the black box of AI: How AI models actually think | Emmanuel Ameisen (Anthropic)",
-   "url": "https://www.youtube.com/watch?v=JHo-aiePjoM",
-   "source": "Lenny's Podcast",
-   "feedId": "yt-lenny-s-podcast",
-   "type": "video",
-   "tags": [
-    "product",
-    "business",
-    "listen"
-   ],
-   "published": "2026-10-18T12:30:11.000Z",
-   "summary": "Emmanuel Ameisen is an interpretability researcher at Anthropic, where he looks inside LLMs like Claude to understand how they think. Before joining Anthropic, he spent years in applied ML at Stripe and Insight, and is the author of Building Machine Learning Powered…",
-   "thumb": "https://i3.ytimg.com/vi/JHo-aiePjoM/hqdefault.jpg",
-   "id": "d05f647549ef",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "tHe pOpULaTiOn iS CoLlapSiNg!",
-   "url": "https://www.youtube.com/watch?v=xWLCnTcyYAI",
-   "source": "How Money Works",
-   "feedId": "yt-how-money-works",
-   "type": "video",
-   "tags": [
-    "finance",
-    "business",
-    "listen"
-   ],
-   "published": "2026-10-18T11:24:16.000Z",
-   "summary": "Thanks to Monarch for partnering with me! Start your free trial and get 50% off your first year of total money clarity using my link https://monarchmoney.yt.link/781l1Eu or code hmw50 for 50% Off Monarch Core tier. ---- Sign up for our FREE newsletter! -…",
-   "thumb": "https://i1.ytimg.com/vi/xWLCnTcyYAI/hqdefault.jpg",
-   "id": "35432c4d131e",
-   "score": 0,
-   "matched": [],
-   "why": "0"
   }
  ],
- "contentHash": "cb8ade64b9a5"
+ "contentHash": "d46117073843"
 }
