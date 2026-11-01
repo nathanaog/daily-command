@@ -1,17 +1,17 @@
 {
- "generated": "2026-11-01T13:11:01.045Z",
+ "generated": "2026-11-01T15:51:08.573Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
   "ok": 51,
-  "items": 123,
+  "items": 121,
   "duplicatesMerged": 0,
   "lengthsKnown": 1,
-  "lengthLookups": 104,
-  "lengthFailures": 104,
+  "lengthLookups": 103,
+  "lengthFailures": 103,
   "lengthVia": "video pages",
   "lengthFailReasons": {
-   "no length on page": 104
+   "no length on page": 103
   }
  },
  "feeds": [
@@ -462,7 +462,7 @@
    "name": "Lenny's Podcast",
    "type": "youtube",
    "status": "ok",
-   "count": 1,
+   "count": 2,
    "resolved": {
     "channelId": "UC6t1O76G0jYXOAoYCm153dA",
     "title": "Lenny's Podcast",
@@ -592,7 +592,7 @@
    "name": "Economics Explained",
    "type": "youtube",
    "status": "ok",
-   "count": 3,
+   "count": 2,
    "resolved": {
     "channelId": "UCZ4AMrDcNrfy3X6nsU8-rPg",
     "title": "Economics Explained",
@@ -605,7 +605,7 @@
    "name": "J.J. McCullough",
    "type": "youtube",
    "status": "ok",
-   "count": 2,
+   "count": 1,
    "resolved": {
     "channelId": "UCyhOl6uRlxryALlT5yifldw",
     "title": "J.J. McCullough",
@@ -630,19 +630,20 @@
    "id": "rd-productmanagement",
    "name": "r/productmanagement",
    "type": "reddit",
-   "status": "cached",
-   "count": 3,
-   "lastOk": "2026-11-01T07:22:39.109Z",
-   "note": "not its turn this run"
+   "status": "ok",
+   "count": 2,
+   "url": "https://www.reddit.com/r/productmanagement/top/.rss?t=day"
   },
   {
    "id": "rd-tech",
    "name": "r/tech",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": "2026-10-27T01:08:56.460Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-gaming",
@@ -651,7 +652,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-ukpolitics",
@@ -684,9 +685,10 @@
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
+   "lastOk": "2026-11-01T13:11:01.045Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-germany",
@@ -695,7 +697,7 @@
    "status": "cached",
    "count": 5,
    "lastOk": "2026-10-31T01:21:53.748Z",
-   "note": "rate-limited (429)"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-unitedkingdom",
@@ -704,10 +706,66 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   }
  ],
  "items": [
+  {
+   "title": "Verletzte Polizisten und Plünderungen: Wo es nach friedlichen Demos eskalierte",
+   "url": "https://www.youtube.com/watch?v=lEKVzZvOFNI",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-01T15:33:18.000Z",
+   "summary": "Bildung, Lebenskosten, Wehrpflicht – bei den Gen-Z-Protesten demonstrierten gestern zehntausende Menschen bundesweit friedlich. Am Abend kam es in einigen Städten dann aber zu Ausschreitungen durch gewaltbereite Gruppen. Besonders in Frankfurt am Main eskalierte die Lage. 100…",
+   "thumb": "https://i1.ytimg.com/vi/lEKVzZvOFNI/hqdefault.jpg",
+   "id": "d00c97be087c",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Die dunkle Welt der privaten Pokerspiele",
+   "url": "https://www.youtube.com/watch?v=GPG5FzoA-_8",
+   "source": "Simplicissimus",
+   "feedId": "yt-simplicissimus",
+   "type": "video",
+   "tags": [
+    "german",
+    "education"
+   ],
+   "published": "2026-11-01T15:00:29.000Z",
+   "summary": "Sichere dir bei HOLY den Special Edition Thermo Shaker gratis im Starter Set Deluxe. Bis zum 02.12.26 sparst du mit dem Code “SIMPLI” wie gewohnt 10% auf das Set und auf deine gesamte Bestellung: https://simpli.deals/holy116 (Werbung) Das hier ist die Geschichte eines illegalen…",
+   "thumb": "https://i4.ytimg.com/vi/GPG5FzoA-_8/hqdefault.jpg",
+   "id": "41779e06b102",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "86 minutes of paid-UGC alpha | Hector Serrano (Wispr Flow)",
+   "url": "https://www.youtube.com/watch?v=KzS5Qs7vSMg",
+   "source": "Lenny's Podcast",
+   "feedId": "yt-lenny-s-podcast",
+   "type": "video",
+   "tags": [
+    "product",
+    "business",
+    "listen"
+   ],
+   "published": "2026-11-01T13:30:01.000Z",
+   "summary": "Hector Serrano runs one of the most innovative and successful paid growth programs in Silicon Valley. As Head of Content at Wispr Flow, a leading AI voice-to-text tool, he built a roster of 50 creators who drive 500 to 600 paid user-generated content (UGC) ads every month. The…",
+   "thumb": "https://i4.ytimg.com/vi/KzS5Qs7vSMg/hqdefault.jpg",
+   "id": "2896928f9e9d",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
   {
    "title": "The morality of Donald Trump",
    "url": "https://www.youtube.com/watch?v=7JVwDatAR8I",
@@ -843,22 +901,6 @@
    "published": "2026-10-31T23:03:32.000Z",
    "summary": "submitted by /u/BigSupermark [link] [comments]",
    "id": "ab98526eb0b2",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "How to stand out with new leadership",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1xkmbp1/how_to_stand_out_with_new_leadership/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-10-31T21:48:54.000Z",
-   "summary": "I got a pretty shit review last cycle due to forced stack ranking and now got moved to a new team under the intention of an opportunity to make more impact. I don't believe I was deserving of my review but there was obviously a huge disconnect between what my leaders thought my…",
-   "id": "2e03d4c50e3f",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1016,6 +1058,22 @@
    "published": "2026-10-31T21:51:27.000Z",
    "summary": "submitted by /u/Dismal_Uses [link] [comments]",
    "id": "0963fa331755",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "How to stand out with new leadership",
+   "url": "https://www.reddit.com/r/ProductManagement/comments/1xkmbp1/how_to_stand_out_with_new_leadership/",
+   "source": "r/productmanagement",
+   "feedId": "rd-productmanagement",
+   "type": "post",
+   "tags": [
+    "product"
+   ],
+   "published": "2026-10-31T21:48:54.000Z",
+   "summary": "I got a pretty shit review last cycle due to forced stack ranking and now got moved to a new team under the intention of an opportunity to make more impact. I don't believe I was deserving of my review but there was obviously a huge disconnect between what my leaders thought my…",
+   "id": "2e03d4c50e3f",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1253,7 +1311,7 @@
    "why": "0"
   },
   {
-   "title": "What Anthropic’s IPO Filing Actually Says",
+   "title": "Anthropic Opened Its Books. What Is It Really Worth?",
    "url": "https://www.youtube.com/watch?v=Ic1Jf7VlXRM",
    "source": "Patrick Boyle",
    "feedId": "yt-patrick-boyle",
@@ -1267,25 +1325,6 @@
    "summary": "Join Revolut and get $20 here: https://get.revolut.com/z4lF/patrick Offer expires 6 months from 10/31/2026 Exclusions apply. $20 bonus paid by Revolut subject to the terms and conditions found: https://www.revolut.com/en-US/legal/partner-sign-up-bonus/ Anthropic — the maker of…",
    "thumb": "https://i2.ytimg.com/vi/Ic1Jf7VlXRM/hqdefault.jpg",
    "id": "1506b22092d8",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Proteste in Warschau: Streit um polnisches Verfassungsgericht",
-   "url": "https://www.youtube.com/watch?v=bhADjI80d_Y",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-31T13:25:49.000Z",
-   "summary": "In Polen hat sich der Streit über die Neubesetzung von Richterämtern am Verfassungsgericht zugespitzt. Vor dem Gebäude in Warschau versammelten sich gestern Abend zahlreiche Demonstrant:innen, die meisten von ihnen Anhänger:innen der oppositionellen PiS-Partei. Hintergrund ist…",
-   "thumb": "https://i3.ytimg.com/vi/bhADjI80d_Y/hqdefault.jpg",
-   "id": "19da5956afd4",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1358,22 +1397,6 @@
    "summary": "When you travel the backroads of the former USSR you hear towns mentioned by ranndom strangers you meet in platskart and marshrutkas. Ming-Kush was one such town I had heard of a few times. A formerly closed Soviet town that mined uranium, it had subsequently fallen into…",
    "thumb": "https://i2.ytimg.com/vi/5wypCQp11wo/hqdefault.jpg",
    "id": "ab292ba2c350",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Product success indicators?",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1xk6mlh/product_success_indicators/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-10-31T10:21:10.000Z",
-   "summary": "I'm interested in learning how you define goals and measure the success of developing a new product in practice. Which KPIs, metrics, or criteria do you typically use throughout the product development process and after launch? A few questions I'd love to hear your thoughts on:…",
-   "id": "3292c9467fc4",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2851,62 +2874,7 @@
    "score": 0,
    "matched": [],
    "why": "0"
-  },
-  {
-   "title": "Canadian political terms iceberg EXPLAINED",
-   "url": "https://www.youtube.com/watch?v=TCsfyIn_6Wc",
-   "source": "J.J. McCullough",
-   "feedId": "yt-j-j-mccullough",
-   "type": "video",
-   "tags": [
-    "politics",
-    "culture",
-    "entertainment"
-   ],
-   "published": "2026-10-18T15:49:51.000Z",
-   "summary": "Dozens of definitions of common words and phrases used in Canadian politics and government, including a lot of terms relating to Quebec lol. The first Iceberg vid: https://www.youtube.com/watch?v=Q9LrjU5n63g SUBSCRIBE: https://www.youtube.com/jjmccullough?sub_confirmation=1…",
-   "thumb": "https://i1.ytimg.com/vi/TCsfyIn_6Wc/hqdefault.jpg",
-   "id": "c85a694a2ec8",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Living Paycheck to Paycheck? So Is Everyone Else",
-   "url": "https://www.youtube.com/watch?v=FZWLIOKUcIo",
-   "source": "Economics Explained",
-   "feedId": "yt-economics-explained",
-   "type": "video",
-   "tags": [
-    "finance",
-    "listen"
-   ],
-   "published": "2026-10-18T15:04:58.000Z",
-   "summary": "Ready to be seen? Check that appointment off your to-do list with Zocdoc ✅ : https://zocdoc.com/ee #sponsored 📫 11,231+ read our free newsletter that has weekly original stories Sign up: → https://economics-explained-tv-program.beehiiv.com/ This video was made possible by our…",
-   "thumb": "https://i3.ytimg.com/vi/FZWLIOKUcIo/hqdefault.jpg",
-   "id": "c1b0103afba2",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Wie dieser Junge die USA gehackt hat",
-   "url": "https://www.youtube.com/watch?v=3eJ2KhzWZVM",
-   "source": "Simplicissimus",
-   "feedId": "yt-simplicissimus",
-   "type": "video",
-   "tags": [
-    "german",
-    "education"
-   ],
-   "published": "2026-10-18T14:00:02.000Z",
-   "summary": "Checkt die Musik bei Epidemic Sound aus und sichert euch 50% Rabatt mit dem Code SIMPLI50 auf alle Jahresabos: https://simpli.deals/epidemicsound106 (Werbung) Das ist die Geschichte vom meistgesuchten Hacker der Welt. Dieses Video basiert größtenteils auf dem Buch „Das Phantom…",
-   "thumb": "https://i4.ytimg.com/vi/3eJ2KhzWZVM/hqdefault.jpg",
-   "id": "0b33d61e65f1",
-   "score": 0,
-   "matched": [],
-   "why": "0"
   }
  ],
- "contentHash": "d46117073843"
+ "contentHash": "d289a69a370a"
 }
