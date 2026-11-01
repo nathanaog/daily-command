@@ -1,17 +1,17 @@
 {
- "generated": "2026-11-01T19:02:51.848Z",
+ "generated": "2026-11-01T21:51:43.798Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
   "ok": 52,
-  "items": 128,
+  "items": 127,
   "duplicatesMerged": 0,
   "lengthsKnown": 1,
   "lengthLookups": 105,
   "lengthFailures": 105,
   "lengthVia": "video pages",
   "lengthFailReasons": {
-   "HTTP 429": 105
+   "no length on page": 105
   }
  },
  "feeds": [
@@ -657,37 +657,36 @@
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
+   "lastOk": "2026-11-01T19:02:51.848Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-xbox",
    "name": "r/xbox",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/xbox/top/.rss?t=day"
+   "lastOk": "2026-11-01T19:02:51.848Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-slaythespire",
    "name": "r/slaythespire",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "cached",
-   "count": 5,
-   "lastOk": "2026-11-01T13:11:01.045Z",
-   "note": "not its turn this run"
+   "status": "ok",
+   "count": 4,
+   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
   },
   {
    "id": "rd-germany",
@@ -696,7 +695,7 @@
    "status": "cached",
    "count": 5,
    "lastOk": "2026-10-31T01:21:53.748Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)"
   },
   {
    "id": "rd-unitedkingdom",
@@ -705,10 +704,104 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   }
  ],
  "items": [
+  {
+   "title": "Onlinehandel: Pakete in die EU sind jetzt teurer",
+   "url": "https://www.youtube.com/watch?v=NB9KXAuuh7Y",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-01T20:57:59.000Z",
+   "summary": "Für Millionen im Internet bestellte und in die EU eingeführte Produkte werden mindestens zwei Euro mehr fällig. Eine entsprechende neue Bearbeitungsgebühr gilt nun für Importe aus Drittländern wie China oder den USA. Die Gebühr bezahlen müssen Online-Händler oder Importeure an…",
+   "thumb": "https://i3.ytimg.com/vi/NB9KXAuuh7Y/hqdefault.jpg",
+   "id": "49a8ac47fe7b",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Wer waren die Täter bei den Krawallen? | tagesthemen-Interview",
+   "url": "https://www.youtube.com/watch?v=fKefZTFXxFw",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-01T20:51:59.000Z",
+   "summary": "Allein in Frankfurt wurden bei den Ausschreitungen nach den friedlichen „Gen Z regelt\"-Demos 17 Geschäfte demoliert und fünf geplündert. Wer waren die Täter? Und warum ist die Gewalt so eskaliert? Die tagesthemen haben darüber mit dem hessischen Innenminister Roman Poseck, CDU,…",
+   "thumb": "https://i3.ytimg.com/vi/fKefZTFXxFw/hqdefault.jpg",
+   "id": "3774b0b6f255",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Krawalle in Frankfurt und Köln: Polizei und Politik zeigen sich entsetzt",
+   "url": "https://www.youtube.com/watch?v=kE5iZ4YlNSE",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-01T20:49:33.000Z",
+   "summary": "Verletzte und geplünderte Geschäfte: Die Ausschreitungen nach den Protesten der Gen Z lösen Entsetzen aus. In Köln und Frankfurt wurden die Demos nach Einschätzung der Polizei unterwandert. Innenminister Dobrindt kündigte ein hartes Vorgehen an. Unterwanderung oder spontane…",
+   "thumb": "https://i4.ytimg.com/vi/kE5iZ4YlNSE/hqdefault.jpg",
+   "id": "ea7e7d38bdcf",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "OH SH*T: Viewer Calls in to Hannity’s Show, WRECKS TRUMP!",
+   "url": "https://www.youtube.com/watch?v=mk7uNgTjsFc",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-01T20:33:15.000Z",
+   "summary": "Luke discusses some recent moments from Sean Hannity's radio show. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
+   "thumb": "https://i2.ytimg.com/vi/mk7uNgTjsFc/hqdefault.jpg",
+   "id": "634f0d200f36",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "tagesschau 20:00 Uhr, 01.11.2026",
+   "url": "https://www.youtube.com/watch?v=HL5L60wzWwM",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-01T19:37:58.000Z",
+   "summary": "Die 20-Uhr-Ausgabe der tagesschau im Livestream und auf Abruf findet ihr auch hier: https://ardmediathek.de/tagesschau und https://tagesschau.de 0:00 Guten Abend! 0:21 Friedliche Proteste der \"Gen Z regelt\"-Initiative enden mit Krawallen in mehreren Städten 3:08 Innenminister…",
+   "thumb": "https://i1.ytimg.com/vi/HL5L60wzWwM/hqdefault.jpg",
+   "id": "7a17ffeb57dd",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
   {
    "title": "Mid-terms won't go as badly for Trump as predicted, says ally",
    "url": "https://www.youtube.com/watch?v=GgLStbtzsd4",
@@ -723,6 +816,23 @@
    "summary": "There has been prevailing speculation amongst pollsters that the mid-term election results will be very tough for Donald Trump and the Republicans. However, the President is famous for defying polls - and his former chief of staff for the National Security Council is confident…",
    "thumb": "https://i4.ytimg.com/vi/GgLStbtzsd4/hqdefault.jpg",
    "id": "87687f3ab807",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "China, Russia Deepen Arctic Cooperation In Challenge To US",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xlb21z/china_russia_deepen_arctic_cooperation_in/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-11-01T18:50:49.000Z",
+   "summary": "submitted by /u/Strongbow85 [link] [comments]",
+   "id": "d6b705fd23c1",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -952,20 +1062,18 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Ausschreitungen nach Protesten: Was in Berlin, Köln und Frankfurt geschah",
-   "url": "https://www.youtube.com/watch?v=lEKVzZvOFNI",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
+   "title": "The U.S. Is Bullying Europe Like Never Before",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xl5vp9/the_us_is_bullying_europe_like_never_before/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
    "tags": [
-    "german",
-    "news",
-    "listen"
+    "politics",
+    "news"
    ],
-   "published": "2026-11-01T15:33:18.000Z",
-   "summary": "Bildung, Lebenskosten, Wehrpflicht – bei den Gen-Z-Protesten demonstrierten gestern zehntausende Menschen bundesweit friedlich. Am Abend kam es in einigen Städten dann aber zu Ausschreitungen durch gewaltbereite Gruppen. Besonders in Frankfurt am Main eskalierte die Lage. 100…",
-   "thumb": "https://i1.ytimg.com/vi/lEKVzZvOFNI/hqdefault.jpg",
-   "id": "d00c97be087c",
+   "published": "2026-11-01T15:28:14.000Z",
+   "summary": "submitted by /u/theatlantic [link] [comments]",
+   "id": "9abdb54ded68",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1094,59 +1202,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Jugendproteste: Ausschreitungen nach friedlichen Demos",
-   "url": "https://www.youtube.com/watch?v=hyrCHIK2_3k",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-01T11:05:02.000Z",
-   "summary": "Die Proteste der Gruppe „Gen Z regelt\" sind gestern zunächst friedlich verlaufen: Bundesweit beteiligten sich zehntausende junge Menschen an Demonstrationen für bessere Schulen, mehr Klimaschutz und gegen steigende Preise und eine mögliche Wehrpflicht. Nach den Veranstaltungen…",
-   "thumb": "https://i1.ytimg.com/vi/hyrCHIK2_3k/hqdefault.jpg",
-   "id": "706e9654b809",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Quad not ‘anti-China’, says Rubio as first summit in two years set before Trump-Xi talks",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xkws5l/quad_not_antichina_says_rubio_as_first_summit_in/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-11-01T07:17:37.000Z",
-   "summary": "SS: So they finally set the date for Quad leaders summit, just before Trump’s meeting with Xi at APEC. This is going to be Trump’s first Quad summit. He took a much much longer route to realizing the value of Quad in managing China, but I guess Nobel aspirations and great…",
-   "id": "8762730149fe",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "\"As prime minister, I saw firsthand that Vladimir Putin is truly evil\"",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xkw1iq/as_prime_minister_i_saw_firsthand_that_vladimir/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-11-01T06:30:56.000Z",
-   "summary": "submitted by /u/Burial [link] [comments]",
-   "id": "c0cd98fdb20f",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "PD U2 – Exporting ALG1 to France for 3–6 months: Is Abmeldung required?",
    "url": "https://www.reddit.com/r/germany/comments/1xjsr4o/pd_u2_exporting_alg1_to_france_for_36_months_is/",
    "source": "r/germany",
@@ -1232,6 +1287,40 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
+   "title": "Quad not ‘anti-China’, says Rubio as first summit in two years set before Trump-Xi talks",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xkws5l/quad_not_antichina_says_rubio_as_first_summit_in/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-11-01T07:17:37.000Z",
+   "summary": "SS: So they finally set the date for Quad leaders summit, just before Trump’s meeting with Xi at APEC. This is going to be Trump’s first Quad summit. He took a much much longer route to realizing the value of Quad in managing China, but I guess Nobel aspirations and great…",
+   "id": "8762730149fe",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "\"As prime minister, I saw firsthand that Vladimir Putin is truly evil\"",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xkw1iq/as_prime_minister_i_saw_firsthand_that_vladimir/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-11-01T06:30:56.000Z",
+   "summary": "submitted by /u/Burial [link] [comments]",
+   "id": "c0cd98fdb20f",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
    "title": "SCREAMING ERUPTS as Fox News Host HUMILIATES TRUMP Live On Air!",
    "url": "https://www.youtube.com/watch?v=gva92Du12GI",
    "source": "Luke Beasley",
@@ -1245,25 +1334,6 @@
    "summary": "Luke discusses Jessica Tarlov on The Five. Check out Jessica Tarlov's new book below! https://sites.prh.com/idisagree Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get…",
    "thumb": "https://i4.ytimg.com/vi/gva92Du12GI/hqdefault.jpg",
    "id": "6149949aeb49",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "tagesthemen 23:20 Uhr, 31.10.2026",
-   "url": "https://www.youtube.com/watch?v=N7PQKg2Z7Qk",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-31T23:14:54.000Z",
-   "summary": "tagesthemen 23:20 Uhr Deutschlandweite \"GenZ\"-Proteste für soziale Gerechtigkeit, Landesweite Proteste in Frankreich gegen hohe Lebenshaltungskosten, Konflikt über Unabhängigkeit des Verfassungsgerichts in Polen spitzt sich zu, Ritterturniere mit dem E-Bike in London, Der…",
-   "thumb": "https://i3.ytimg.com/vi/N7PQKg2Z7Qk/hqdefault.jpg",
-   "id": "2c01b388e3fe",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1303,59 +1373,6 @@
    "why": "0"
   },
   {
-   "title": "tagesschau 20:00 Uhr, 31.10.2026",
-   "url": "https://www.youtube.com/watch?v=lcLd3gfP-BM",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-31T19:34:22.000Z",
-   "summary": "tagesschau 20:00 Uhr Deutschlandweite \"GenZ\"-Proteste für soziale Gerechtigkeit, Landesweite Proteste in Frankreich gegen hohe Lebenshaltungskosten, USA genehmigen Verkauf von 500 Patriot-Raketen an die Ukraine, Evakuierung der ukrainischen Frontstadt Oleschky ist…",
-   "thumb": "https://i1.ytimg.com/vi/lcLd3gfP-BM/hqdefault.jpg",
-   "id": "e5b633e3c30b",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Message to the Public from the National Security Council Ahead of the 2026 Jewish High Holidays: Attempts to Harm Israelis Around the World Are Ongoing",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xkier5/message_to_the_public_from_the_national_security/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-31T19:00:49.000Z",
-   "summary": "submitted by /u/DayTrader_Dav [link] [comments]",
-   "id": "f03d515a2863",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "'I don't know if negotiated peace is achievable,' Rubio says as uncertainty hangs over Russia-Ukraine talks",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xkh448/i_dont_know_if_negotiated_peace_is_achievable/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-31T18:08:31.000Z",
-   "summary": "submitted by /u/KI_official [link] [comments]",
-   "id": "c25628396243",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "The Road to Vienna: Battle of St. Gotthard 1664",
    "url": "https://www.youtube.com/watch?v=mi5rzCpHgP8",
    "source": "History Marche",
@@ -1369,23 +1386,6 @@
    "summary": "Play Tacticus at: https://play.tacticusgame.com/HistoryMarchexTacticus Use code MARCHEWAAGH to get special rewards (valid until November 20th 2026) 🚩 Related videos: Siege of Vienna 1683: https://youtu.be/1c5UV3EsQmk Battle of Parkany 1683: https://youtu.be/i4fg9guwEvo 🔔…",
    "thumb": "https://i2.ytimg.com/vi/mi5rzCpHgP8/hqdefault.jpg",
    "id": "52716b7d62f8",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Amid simultaneous incursion in western Daraa | Israeli tanks advance deep into Wadi Al-Raqqad for first time",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xkggka/amid_simultaneous_incursion_in_western_daraa/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-10-31T17:42:43.000Z",
-   "summary": "submitted by /u/boppinmule [link] [comments]",
-   "id": "7ab03d2e2a4a",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1800,24 +1800,6 @@
    "summary": "Luke discusses Katie Zacharia's appearance on Piers Morgan's show. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
    "thumb": "https://i2.ytimg.com/vi/1aH7jcPwwec/hqdefault.jpg",
    "id": "e83281331c55",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Watch Child EMBARRASS Ken Paxton Live On Fox News!",
-   "url": "https://www.youtube.com/watch?v=66FTXVZCe_M",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-30T00:05:11.000Z",
-   "summary": "Luke discusses Ken Paxton's goings-on as the midterms approach. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
-   "thumb": "https://i3.ytimg.com/vi/66FTXVZCe_M/hqdefault.jpg",
-   "id": "b3e3feb5db6c",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2992,5 +2974,5 @@
    "why": "0"
   }
  ],
- "contentHash": "9a2cdac1e92f"
+ "contentHash": "b82b124a0d4f"
 }
