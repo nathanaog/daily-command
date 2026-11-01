@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-01T07:22:39.109Z",
+ "generated": "2026-11-01T09:59:21.046Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
@@ -7,7 +7,7 @@
   "items": 126,
   "duplicatesMerged": 0,
   "lengthsKnown": 1,
-  "lengthLookups": 108,
+  "lengthLookups": 107,
   "lengthFailures": 107,
   "lengthVia": "video pages",
   "lengthFailReasons": {
@@ -630,20 +630,19 @@
    "id": "rd-productmanagement",
    "name": "r/productmanagement",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 3,
-   "url": "https://www.reddit.com/r/productmanagement/top/.rss?t=day"
+   "lastOk": "2026-11-01T07:22:39.109Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-tech",
    "name": "r/tech",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": "2026-10-27T01:08:56.460Z",
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-gaming",
@@ -652,25 +651,26 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-11-01T01:28:32.995Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
   },
   {
    "id": "rd-xbox",
    "name": "r/xbox",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": "2026-10-28T16:07:55.180Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-slaythespire",
@@ -679,7 +679,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-geopolitics",
@@ -710,6 +710,57 @@
   }
  ],
  "items": [
+  {
+   "title": "Rachel Reeves says UK’s future is in EU as she backs Andy Burnham on Brexit",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xkyelr/rachel_reeves_says_uks_future_is_in_eu_as_she/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-11-01T09:02:59.000Z",
+   "summary": "submitted by /u/RareEarthPetal [link] [comments]",
+   "id": "b672a0af95d7",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "North Sea oil and gas tax take 'close to zero' in five years, OBR says",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xkxemw/north_sea_oil_and_gas_tax_take_close_to_zero_in/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-11-01T07:58:45.000Z",
+   "summary": "submitted by /u/RareEarthPetal [link] [comments]",
+   "id": "dc0bdac5de56",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "UK Greens lose 18,000 members amid ‘Zionism is racism’ row",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xkx557/uk_greens_lose_18000_members_amid_zionism_is/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-11-01T07:41:07.000Z",
+   "summary": "submitted by /u/Aaron_R_JNS [link] [comments]",
+   "id": "d9b30a47ff93",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
   {
    "title": "Judge ends Trump's attempts to sue Wall Street Journal over Epstein reporting",
    "url": "https://www.reddit.com/r/geopolitics/comments/1xkrulx/judge_ends_trumps_attempts_to_sue_wall_street/",
@@ -816,76 +867,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Latest Opinium @The Observer poll 🚨. Little movement in voting intention after the Budget, with Labour maintaining an 8-point lead over Reform. 🌹 LAB 30% (n/c). ➡️ REF 22% (n/c). 🌳 CON 20% (n/c). 🔶 LD 10% (+1). 🌍 GRN 8% (-2) .",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xkksib/latest_opinium_the_observer_poll_little_movement/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-31T20:39:31.000Z",
-   "summary": "submitted by /u/ClumperFaz [link] [comments]",
-   "id": "52a5ce667940",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "🚨 Latest Opinium @ObserverUK poll 🚨 For the first time, both Labour and Conservative leaders are on positive net approval. 🌹 Burnham +7 (+1) 🌳 Badenoch +2 (+3) 🔶 Davey -7 (n/c) ➡️ Farage -26 (+2) 🌍 Polanski -32 (n/c)",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xkkg3j/latest_opinium_observeruk_poll_for_the_first_time/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-31T20:24:29.000Z",
-   "summary": "submitted by /u/ijustwannanap [link] [comments]",
-   "id": "8acd301a9b6e",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "‘We all know you are the aggressor’ in Ukraine, Miliband tells Russian envoy",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xkjjdu/we_all_know_you_are_the_aggressor_in_ukraine/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-31T19:47:15.000Z",
-   "summary": "submitted by /u/ClumperFaz [link] [comments]",
-   "id": "bb6cf0fffa10",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "tagesschau 20:00 Uhr, 31.10.2026",
-   "url": "https://www.youtube.com/watch?v=lcLd3gfP-BM",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-31T19:34:22.000Z",
-   "summary": "tagesschau 20:00 Uhr Deutschlandweite \"GenZ\"-Proteste für soziale Gerechtigkeit, Landesweite Proteste in Frankreich gegen hohe Lebenshaltungskosten, USA genehmigen Verkauf von 500 Patriot-Raketen an die Ukraine, Evakuierung der ukrainischen Frontstadt Oleschky ist…",
-   "thumb": "https://i1.ytimg.com/vi/lcLd3gfP-BM/hqdefault.jpg",
-   "id": "e5b633e3c30b",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Message to the Public from the National Security Council Ahead of the 2026 Jewish High Holidays: Attempts to Harm Israelis Around the World Are Ongoing",
    "url": "https://www.reddit.com/r/geopolitics/comments/1xkier5/message_to_the_public_from_the_national_security/",
    "source": "r/geopolitics",
@@ -898,23 +879,6 @@
    "published": "2026-10-31T19:00:49.000Z",
    "summary": "submitted by /u/DayTrader_Dav [link] [comments]",
    "id": "f03d515a2863",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "In Scotland’s NHS ‘you’d have to kill someone to get sacked’",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xkhi5v/in_scotlands_nhs_youd_have_to_kill_someone_to_get/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-31T18:23:50.000Z",
-   "summary": "submitted by /u/TimesandSundayTimes [link] [comments]",
-   "id": "bbcb2897f048",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1037,6 +1001,42 @@
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Former Restore ‘rising star’ defects to Reform UK",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xkmdqv/former_restore_rising_star_defects_to_reform_uk/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-10-31T21:51:27.000Z",
+   "summary": "submitted by /u/Dismal_Uses [link] [comments]",
+   "id": "0963fa331755",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "tagesschau 20:00 Uhr, 31.10.2026",
+   "url": "https://www.youtube.com/watch?v=lcLd3gfP-BM",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-10-31T19:34:22.000Z",
+   "summary": "tagesschau 20:00 Uhr Deutschlandweite \"GenZ\"-Proteste für soziale Gerechtigkeit, Landesweite Proteste in Frankreich gegen hohe Lebenshaltungskosten, USA genehmigen Verkauf von 500 Patriot-Raketen an die Ukraine, Evakuierung der ukrainischen Frontstadt Oleschky ist…",
+   "thumb": "https://i1.ytimg.com/vi/lcLd3gfP-BM/hqdefault.jpg",
+   "id": "e5b633e3c30b",
+   "score": 0,
+   "matched": [],
+   "why": "0"
   },
   {
    "title": "The Road to Vienna: Battle of St. Gotthard 1664",
@@ -2967,5 +2967,5 @@
    "why": "0"
   }
  ],
- "contentHash": "37784be338a9"
+ "contentHash": "cb8ade64b9a5"
 }
