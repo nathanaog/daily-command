@@ -1,17 +1,17 @@
 {
- "generated": "2026-11-01T15:51:08.573Z",
+ "generated": "2026-11-01T19:02:51.848Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
-  "ok": 51,
-  "items": 121,
+  "ok": 52,
+  "items": 128,
   "duplicatesMerged": 0,
   "lengthsKnown": 1,
-  "lengthLookups": 103,
-  "lengthFailures": 103,
+  "lengthLookups": 105,
+  "lengthFailures": 105,
   "lengthVia": "video pages",
   "lengthFailReasons": {
-   "no length on page": 103
+   "HTTP 429": 105
   }
  },
  "feeds": [
@@ -358,7 +358,7 @@
    "name": "Modern-Day Debate",
    "type": "youtube",
    "status": "ok",
-   "count": 3,
+   "count": 4,
    "resolved": {
     "channelId": "UC_cd4oF2phaIBD3WsU3f7Xg",
     "title": "Modern-Day Debate",
@@ -592,7 +592,7 @@
    "name": "Economics Explained",
    "type": "youtube",
    "status": "ok",
-   "count": 2,
+   "count": 3,
    "resolved": {
     "channelId": "UCZ4AMrDcNrfy3X6nsU8-rPg",
     "title": "Economics Explained",
@@ -630,20 +630,19 @@
    "id": "rd-productmanagement",
    "name": "r/productmanagement",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 2,
-   "url": "https://www.reddit.com/r/productmanagement/top/.rss?t=day"
+   "lastOk": "2026-11-01T15:51:08.573Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-tech",
    "name": "r/tech",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": "2026-10-27T01:08:56.460Z",
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-gaming",
@@ -652,34 +651,34 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-11-01T09:59:21.046Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
   },
   {
    "id": "rd-xbox",
    "name": "r/xbox",
    "type": "reddit",
-   "status": "waiting",
-   "count": 0,
-   "lastOk": "2026-10-28T16:07:55.180Z",
-   "note": "not its turn this run"
+   "status": "ok",
+   "count": 5,
+   "url": "https://www.reddit.com/r/xbox/top/.rss?t=day"
   },
   {
    "id": "rd-slaythespire",
    "name": "r/slaythespire",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-geopolitics",
@@ -711,7 +710,249 @@
  ],
  "items": [
   {
-   "title": "Verletzte Polizisten und Plünderungen: Wo es nach friedlichen Demos eskalierte",
+   "title": "Mid-terms won't go as badly for Trump as predicted, says ally",
+   "url": "https://www.youtube.com/watch?v=GgLStbtzsd4",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-01T19:00:37.000Z",
+   "summary": "There has been prevailing speculation amongst pollsters that the mid-term election results will be very tough for Donald Trump and the Republicans. However, the President is famous for defying polls - and his former chief of staff for the National Security Council is confident…",
+   "thumb": "https://i4.ytimg.com/vi/GgLStbtzsd4/hqdefault.jpg",
+   "id": "87687f3ab807",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Deal ALERT! Hope someone gets lucky",
+   "url": "https://www.reddit.com/r/xbox/comments/1xlaeis/deal_alert_hope_someone_gets_lucky/",
+   "source": "r/xbox",
+   "feedId": "rd-xbox",
+   "type": "post",
+   "tags": [
+    "gaming"
+   ],
+   "published": "2026-11-01T18:25:08.000Z",
+   "summary": "submitted by /u/Advanced-Winner-1542 [link] [comments]",
+   "id": "ba856ec6a4f4",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "What Germans Think About Turks (Street Interviews)",
+   "url": "https://www.youtube.com/watch?v=WninNBkt6MI",
+   "source": "Easy German",
+   "feedId": "yt-easy-german",
+   "type": "video",
+   "tags": [
+    "german",
+    "listen"
+   ],
+   "published": "2026-11-01T18:00:23.000Z",
+   "summary": "📺 Learn German the fun way with Lingopie! Get your 7-day free trial + up to 73% OFF the yearly plan: https://learn.lingopie.com/easygerman_nov (Ad) --- LEARN MORE GERMAN WITH US: 💡 JOIN OUR COMMUNITY: https://easygerman.link/membership_eg685 🎧 LISTEN TO OUR PODCAST:…",
+   "thumb": "https://i4.ytimg.com/vi/WninNBkt6MI/hqdefault.jpg",
+   "id": "9c572c4f4619",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "XBOX Series X - All Digital Gaming Console - 1TB SSD - Includes XBOX Wireless Controller - $599.99",
+   "url": "https://www.reddit.com/r/xbox/comments/1xl96ga/xbox_series_x_all_digital_gaming_console_1tb_ssd/",
+   "source": "r/xbox",
+   "feedId": "rd-xbox",
+   "type": "post",
+   "tags": [
+    "gaming"
+   ],
+   "published": "2026-11-01T17:37:40.000Z",
+   "summary": "submitted by /u/pcm-42067 [link] [comments]",
+   "id": "04d218bf9250",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Opinion ~Why blaming Xbox players for 'Gears of War: E-Day' sales is completely ridiculous | WindowsCentral",
+   "url": "https://www.reddit.com/r/xbox/comments/1xl90hf/opinion_why_blaming_xbox_players_for_gears_of_war/",
+   "source": "r/xbox",
+   "feedId": "rd-xbox",
+   "type": "post",
+   "tags": [
+    "gaming"
+   ],
+   "published": "2026-11-01T17:31:15.000Z",
+   "summary": "This kind of conversation in general is becoming extremely exhausting, and if you don’t play on XBOX, why even question it? I’m sure they’ll be some interesting points to discuss. submitted by /u/imitzFinn [link] [comments]",
+   "id": "f16ce382454b",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "What are you guys currently playing on Xbox? Looking for something to get hooked on again",
+   "url": "https://www.reddit.com/r/xbox/comments/1xl8fmq/what_are_you_guys_currently_playing_on_xbox/",
+   "source": "r/xbox",
+   "feedId": "rd-xbox",
+   "type": "post",
+   "tags": [
+    "gaming"
+   ],
+   "published": "2026-11-01T17:09:03.000Z",
+   "summary": "Hey everyone! I’m currently in a bit of a gaming slump. I really want to get back into a game that I can sink dozens of hours into, but nothing seems to keep me motivated for long lately. I’m mainly into games like Soulslikes, Roguelikes and challenging games with satisfying…",
+   "id": "efa8903c3760",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "8BitDo Ultimate 3E, Victrix BFG Reloaded, or Scuf Valor Pro",
+   "url": "https://www.reddit.com/r/xbox/comments/1xl8cno/8bitdo_ultimate_3e_victrix_bfg_reloaded_or_scuf/",
+   "source": "r/xbox",
+   "feedId": "rd-xbox",
+   "type": "post",
+   "tags": [
+    "gaming"
+   ],
+   "published": "2026-11-01T17:05:54.000Z",
+   "summary": "Looking for a new controller for my Xbox Series X. Was considering the GameSir G7 Pro for the longest time, but it not being wireless for the Xbox unless I get the special editions (which designs aren't to my liking) is a dealbreaker for me. The new 8BitDo looks great to me…",
+   "id": "4ec832e4210d",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "1 Liberal Man vs 20 MAGA Conservatives (ft. Harry Sisson) | Surrounded",
+   "url": "https://www.youtube.com/watch?v=xTY0y2wX8WE",
+   "source": "Jubilee",
+   "feedId": "yt-jubilee",
+   "type": "video",
+   "tags": [
+    "politics",
+    "debates"
+   ],
+   "published": "2026-11-01T17:00:13.000Z",
+   "summary": "Hey you 👈 Wanna be in a Jubilee video? https://bit.ly/be-in-a-video LET’S BE FRIENDS Instagram: https://www.instagram.com/jubileemedia/ TikTok: https://www.tiktok.com/@jubilee?lang=en Website: https://www.jubileemedia.com OUR LOVE + DATING CHANNEL 🍑 YouTube:…",
+   "thumb": "https://i1.ytimg.com/vi/xTY0y2wX8WE/hqdefault.jpg",
+   "id": "fc05009095c8",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "The Sharks Fight Over This Brooklyn Pizza Business | Shark Tank US | Shark Tank Global",
+   "url": "https://www.youtube.com/watch?v=3GPpsLi3Ouk",
+   "source": "Shark Tank Global",
+   "feedId": "yt-shark-tank-global",
+   "type": "video",
+   "tags": [
+    "trash",
+    "business"
+   ],
+   "published": "2026-11-01T16:59:53.000Z",
+   "summary": "Brooklyn-born pizza entrepreneur Thomas Cucco enters the Tank seeking $200,000 for 10% of Table 87, his gourmet coal-oven pizza brand bringing authentic New York slices to supermarket freezers. From Season 7, Episode 4 Watch Shark Tank US Now:…",
+   "thumb": "https://i4.ytimg.com/vi/3GPpsLi3Ouk/hqdefault.jpg",
+   "id": "888b40cf1ac1",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "20 Legendary Games That AGED LIKE MILK",
+   "url": "https://www.youtube.com/watch?v=ubo9bTtWnKo",
+   "source": "GameRanx",
+   "feedId": "yt-gameranx",
+   "type": "video",
+   "tags": [
+    "gaming"
+   ],
+   "published": "2026-11-01T16:30:43.000Z",
+   "summary": "Some legendary games just don’t hold up for younger players. Subscribe for more: https://www.youtube.com/gameranxTV?sub_confirmation=1 0:00 Intro 0:38 The Witcher: Enhanced Edition 2:00 The Elder Scrolls: Daggerfall 3:56 Hitman: Codename 47 5:22 Assassin's Creed 1 6:50 System…",
+   "thumb": "https://i2.ytimg.com/vi/ubo9bTtWnKo/hqdefault.jpg",
+   "id": "65167f3e05b3",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Eastern Orthodoxy on Trial | Alex Sorin Vs Andrew Griffin",
+   "url": "https://www.youtube.com/watch?v=vZWWMRW6QFw",
+   "source": "Modern-Day Debate",
+   "feedId": "yt-modern-day-debate",
+   "type": "video",
+   "tags": [
+    "debates",
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-01T16:25:28.000Z",
+   "summary": "Huge thank you to our DEBATECON 9 sponsors including: Revival of the Anointed's Rule: https://revivingtheroar.org/ Apologetics Ark: https://www.apologeticsark.com/links @UncensoredAmerica Yonaguni International Cuisine (Aguadilla, Puerto Rico):…",
+   "thumb": "https://i3.ytimg.com/vi/vZWWMRW6QFw/hqdefault.jpg",
+   "id": "3cc8fe18d3d3",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Keine Chancen ohne reiche Eltern? Expertin über den Frust junger Menschen",
+   "url": "https://www.youtube.com/watch?v=5pNmcVJW20I",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-01T16:16:55.000Z",
+   "summary": "Die Bildungsproteste der Gruppe „Gen Z regelt“ sind zunächst friedlich verlaufen: Bundesweit beteiligten sich Zehntausende junge Menschen an Demonstrationen für bessere Schulen, mehr Klimaschutz, gegen steigende Preise und eine mögliche Wehrpflicht. „Junge Menschen sehnen sich…",
+   "thumb": "https://i2.ytimg.com/vi/5pNmcVJW20I/hqdefault.jpg",
+   "id": "db173dd3c6be",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Why Argentina Wants the World’s Corrupt Billionaires",
+   "url": "https://www.youtube.com/watch?v=deQXeIhyhc4",
+   "source": "Economics Explained",
+   "feedId": "yt-economics-explained",
+   "type": "video",
+   "tags": [
+    "finance",
+    "listen"
+   ],
+   "published": "2026-11-01T15:56:04.000Z",
+   "summary": "Thanks to Monarch for partnering with me! Start your free trial and get 50% off your first year of total money clarity using my link https://monarchmoney.yt.link/0Sz54Iw or code economics50 for 50% Off Monarch Core tier. 📫 11,593+ read our free newsletter that has weekly…",
+   "thumb": "https://i1.ytimg.com/vi/deQXeIhyhc4/hqdefault.jpg",
+   "id": "a8fb7ef8f933",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "What should Cameron have done about growing euroscepticism?",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xl61yp/what_should_cameron_have_done_about_growing/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-11-01T15:35:17.000Z",
+   "summary": "I know a lot of people argue that Cameron should never have called the Brexit referendum in the first place, but I’ve always wondered what the actual alternative was. Euroscepticism was clearly gaining ground at the time, UKIP was becoming increasingly influential there was…",
+   "id": "9d11bed19c55",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Ausschreitungen nach Protesten: Was in Berlin, Köln und Frankfurt geschah",
    "url": "https://www.youtube.com/watch?v=lEKVzZvOFNI",
    "source": "Tagesschau",
    "feedId": "yt-tagesschau",
@@ -730,6 +971,57 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
+   "title": "Nearly 1,200 small-boat migrants arrive over three days after three-week pause in Channel crossings",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xl5slb/nearly_1200_smallboat_migrants_arrive_over_three/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-11-01T15:24:42.000Z",
+   "summary": "submitted by /u/Desperate-Drawer-572 [link] [comments]",
+   "id": "8cd45c54a353",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "BBC admits vetting failure after hosting ‘anti-Semitic’ Iran apologist",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xl5gf7/bbc_admits_vetting_failure_after_hosting/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-11-01T15:10:57.000Z",
+   "summary": "submitted by /u/WhySoSeriously55 [link] [comments]",
+   "id": "89cb2d39304a",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Green party must avoid being taken over by hard left, says former leader",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xl59is/green_party_must_avoid_being_taken_over_by_hard/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-11-01T15:03:24.000Z",
+   "summary": "submitted by /u/RareEarthPetal [link] [comments]",
+   "id": "f65b532f2f84",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
    "title": "Die dunkle Welt der privaten Pokerspiele",
    "url": "https://www.youtube.com/watch?v=GPG5FzoA-_8",
    "source": "Simplicissimus",
@@ -743,6 +1035,23 @@
    "summary": "Sichere dir bei HOLY den Special Edition Thermo Shaker gratis im Starter Set Deluxe. Bis zum 02.12.26 sparst du mit dem Code “SIMPLI” wie gewohnt 10% auf das Set und auf deine gesamte Bestellung: https://simpli.deals/holy116 (Werbung) Das hier ist die Geschichte eines illegalen…",
    "thumb": "https://i4.ytimg.com/vi/GPG5FzoA-_8/hqdefault.jpg",
    "id": "41779e06b102",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "What you need to know about changes to the planning system || The government says planning officers, rather than councillors, should decide most applications unless exemptions apply.",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xl3i4o/what_you_need_to_know_about_changes_to_the/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-11-01T13:48:14.000Z",
+   "summary": "submitted by /u/Adj-Noun-Numbers [link] [comments]",
+   "id": "0d9c7457d103",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -804,57 +1113,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Rachel Reeves says UK’s future is in EU as she backs Andy Burnham on Brexit",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xkyelr/rachel_reeves_says_uks_future_is_in_eu_as_she/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-11-01T09:02:59.000Z",
-   "summary": "submitted by /u/RareEarthPetal [link] [comments]",
-   "id": "b672a0af95d7",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "North Sea oil and gas tax take 'close to zero' in five years, OBR says",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xkxemw/north_sea_oil_and_gas_tax_take_close_to_zero_in/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-11-01T07:58:45.000Z",
-   "summary": "submitted by /u/RareEarthPetal [link] [comments]",
-   "id": "dc0bdac5de56",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "UK Greens lose 18,000 members amid ‘Zionism is racism’ row",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xkx557/uk_greens_lose_18000_members_amid_zionism_is/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-11-01T07:41:07.000Z",
-   "summary": "submitted by /u/Aaron_R_JNS [link] [comments]",
-   "id": "d9b30a47ff93",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Quad not ‘anti-China’, says Rubio as first summit in two years set before Trump-Xi talks",
    "url": "https://www.reddit.com/r/geopolitics/comments/1xkws5l/quad_not_antichina_says_rubio_as_first_summit_in/",
    "source": "r/geopolitics",
@@ -884,23 +1142,6 @@
    "published": "2026-11-01T06:30:56.000Z",
    "summary": "submitted by /u/Burial [link] [comments]",
    "id": "c0cd98fdb20f",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Rupert Lowe MP : \"I agree. The British establishment should apologise over slavery. To us. For allowing this pathetic, self-loathing, anti-white bullshit to drag on for so long. The answer, to any jumped-up Caribbean or African, is this",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xknx4y/rupert_lowe_mp_i_agree_the_british_establishment/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-31T23:03:32.000Z",
-   "summary": "submitted by /u/BigSupermark [link] [comments]",
-   "id": "ab98526eb0b2",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1046,23 +1287,6 @@
    "why": "0"
   },
   {
-   "title": "Former Restore ‘rising star’ defects to Reform UK",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xkmdqv/former_restore_rising_star_defects_to_reform_uk/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-10-31T21:51:27.000Z",
-   "summary": "submitted by /u/Dismal_Uses [link] [comments]",
-   "id": "0963fa331755",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "How to stand out with new leadership",
    "url": "https://www.reddit.com/r/ProductManagement/comments/1xkmbp1/how_to_stand_out_with_new_leadership/",
    "source": "r/productmanagement",
@@ -1202,25 +1426,6 @@
    "why": "0"
   },
   {
-   "title": "Jugendproteste der Gen Z: Wut über Bildungspolitik und hohe Lebenskosten",
-   "url": "https://www.youtube.com/watch?v=U29qCkM1X40",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-10-31T17:01:51.000Z",
-   "summary": "In vielen deutschen Großstädten demonstrieren junge Menschen für bessere Bildung, mehr Klimaschutz und bezahlbaren Wohnraum. Aufgerufen dazu hatte die Gruppe „Gen Z regelt“. Nach ihren Angaben hatten sich bundesweit mehr als 180.000 Menschen angemeldet. Die Zahl der…",
-   "thumb": "https://i2.ytimg.com/vi/U29qCkM1X40/hqdefault.jpg",
-   "id": "b0553be9e0a7",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "CORINTH TRUMP RALLY",
    "url": "https://www.youtube.com/watch?v=js5t0kUqSZM",
    "source": "The Good Liars",
@@ -1287,7 +1492,7 @@
     "listen"
    ],
    "published": "2026-10-31T16:26:00.000Z",
-   "summary": "Sign up for our FREE newsletter! - https://www.compoundeddaily.com/ Books we recommend - https://www.howmoneyworkslibrary.com/ Listen on Spotify - https://open.spotify.com/show/5gi1JobDJC3QqaF4aKfenR?si=f3IsgWIlSKObF8BT1Fitig ----- My Other Channel: @howhistoryworks Edited By:…",
+   "summary": "Start your own store with #printify: https://try.printify.com/ba6mdz2kmzmq The first 100 people who use the code HowMoneyWorks will get 15% off their first order! ----- Sign up for our FREE newsletter! - https://www.compoundeddaily.com/ Books we recommend -…",
    "thumb": "https://i4.ytimg.com/vi/OAVin6xxd8E/hqdefault.jpg",
    "id": "3b5a05f9cead",
    "score": 0,
@@ -1361,24 +1566,6 @@
    "summary": "James Hanson takes you through yet another 'terrible week' for Reform, starting with an empty auditorium and ending with a 'physical altercation' with a Lib Dem... With Reform 'tanking' in the polls, Hanson asks: 'Does Farage actually want to be Prime Minister anymore?'. Listen…",
    "thumb": "https://i2.ytimg.com/vi/1EJTDr2m5Sg/hqdefault.jpg",
    "id": "a42150af6680",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "The election that could derail US politics | Simon Marks' American Week",
-   "url": "https://www.youtube.com/watch?v=roT8qAS-11U",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-31T11:02:52.000Z",
-   "summary": "Simon Marks runs through the final week of rallies and campaigns as America braces for a tense midterm election. 00:08 | Midterms 2026: What’s at stake? 1:46 | Trump ‘obsesses’ over male physique 2:51 | Trump brags about oil and gas industry 4:19 | Obama’s great skewering of…",
-   "thumb": "https://i3.ytimg.com/vi/roT8qAS-11U/hqdefault.jpg",
-   "id": "952b3c8abb07",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2066,23 +2253,6 @@
    "why": "0"
   },
   {
-   "title": "iPhone Duo - Before You Buy",
-   "url": "https://www.youtube.com/watch?v=14yDpPTrYwg",
-   "source": "GameRanx",
-   "feedId": "yt-gameranx",
-   "type": "video",
-   "tags": [
-    "gaming"
-   ],
-   "published": "2026-10-27T22:42:25.000Z",
-   "summary": "We love taking the newest trending tech and trying to game on it as much as possible. How does Apple's first foldable smartphone stack up with games? Let's talk. ~~SOURCES~~ https://9to5mac.com/2026/10/25/iphone-duo-displays-cracking/…",
-   "thumb": "https://i2.ytimg.com/vi/14yDpPTrYwg/hqdefault.jpg",
-   "id": "91418cfb6bab",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "A Podcast to Learn German",
    "url": "https://www.youtube.com/watch?v=-WbwNgcUT2o",
    "source": "Easy German",
@@ -2330,24 +2500,6 @@
    "summary": "Download the guide on vocational training in Germany for free: https://easygerman.link/lm-pdf-004-ausbildung-in-deutschland --- Practice speaking German for your everyday life in Germany with our Conversation Membership: https://easygerman.link/membership_eg684 --- LEARN MORE…",
    "thumb": "https://i2.ytimg.com/vi/-4o4S6M6QcE/hqdefault.jpg",
    "id": "c6b899f2e952",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "This Entrepreneur Wants to Change How We Drink Coconut Water | Shark Tank US | Shark Tank Global",
-   "url": "https://www.youtube.com/watch?v=ZZ87V9865iI",
-   "source": "Shark Tank Global",
-   "feedId": "yt-shark-tank-global",
-   "type": "video",
-   "tags": [
-    "trash",
-    "business"
-   ],
-   "published": "2026-10-25T16:59:51.000Z",
-   "summary": "Vincent “Coco Vinny” Zaldivar enters the Tank seeking $150,000 for 10% of Coco Taps, his company behind a patented tool kit that lets customers easily tap fresh coconuts and drink their water straight from the source From Season 9 Episode 12 Watch Shark Tank US Now:…",
-   "thumb": "https://i3.ytimg.com/vi/ZZ87V9865iI/hqdefault.jpg",
-   "id": "aa7e04f9b9f9",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2733,24 +2885,6 @@
    "why": "0"
   },
   {
-   "title": "Liberal vs. Conservative CLASH Over Trump, AI & Religion (ft. Greg Casar) | The Split",
-   "url": "https://www.youtube.com/watch?v=udQVP5GQutQ",
-   "source": "Jubilee",
-   "feedId": "yt-jubilee",
-   "type": "video",
-   "tags": [
-    "politics",
-    "debates"
-   ],
-   "published": "2026-10-21T16:00:12.000Z",
-   "summary": "Hey you 👈 Wanna be in a Jubilee video? https://bit.ly/be-in-a-video LET’S BE FRIENDS Instagram: https://www.instagram.com/jubileemedia/ TikTok: https://www.tiktok.com/@jubilee?lang=en Website: https://www.jubileemedia.com OUR LOVE + DATING CHANNEL 🍑 YouTube:…",
-   "thumb": "https://i2.ytimg.com/vi/udQVP5GQutQ/hqdefault.jpg",
-   "id": "c8349eb9741f",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "How Old Money Kills Economies",
    "url": "https://www.youtube.com/watch?v=2a0veEb3znU",
    "source": "Economics Explained",
@@ -2856,25 +2990,7 @@
    "score": 0,
    "matched": [],
    "why": "0"
-  },
-  {
-   "title": "How Do Germans Deal with Saying Goodbye?",
-   "url": "https://www.youtube.com/watch?v=6gr5wvJpxCU",
-   "source": "Easy German",
-   "feedId": "yt-easy-german",
-   "type": "video",
-   "tags": [
-    "german",
-    "listen"
-   ],
-   "published": "2026-10-18T17:00:30.000Z",
-   "summary": "Werde Teil unserer tollen Deutschlern-Community und verbessere dein Deutsch mit uns: https://easygerman.link/membership_eg682 --- LEARN MORE GERMAN WITH US: 🎧 LISTEN TO OUR PODCAST: http://www.easygerman.fm 📬 SUBSCRIBE TO OUR NEWSLETTER: https://www.easygerman.org/newsletter…",
-   "thumb": "https://i3.ytimg.com/vi/6gr5wvJpxCU/hqdefault.jpg",
-   "id": "ef9cd66c139d",
-   "score": 0,
-   "matched": [],
-   "why": "0"
   }
  ],
- "contentHash": "d289a69a370a"
+ "contentHash": "9a2cdac1e92f"
 }
