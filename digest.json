@@ -1,17 +1,17 @@
 {
- "generated": "2026-11-02T01:28:06.809Z",
+ "generated": "2026-11-02T04:16:50.522Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
-  "ok": 15,
-  "items": 58,
+  "ok": 6,
+  "items": 26,
   "duplicatesMerged": 0,
-  "lengthsKnown": 1,
-  "lengthLookups": 17,
-  "lengthFailures": 17,
+  "lengthsKnown": 0,
+  "lengthLookups": 2,
+  "lengthFailures": 2,
   "lengthVia": "video pages",
   "lengthFailReasons": {
-   "no length on page": 17
+   "no length on page": 2
   }
  },
  "feeds": [
@@ -33,14 +33,15 @@
    "id": "yt-jubilee",
    "name": "Jubilee",
    "type": "youtube",
-   "status": "ok",
-   "count": 5,
+   "status": "error",
+   "count": 0,
    "resolved": {
     "channelId": "UCJjSDX-jUChzOEyok9XYRJQ",
     "title": "Jubilee",
     "via": "name search"
    },
-   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCJjSDX-jUChzOEyok9XYRJQ"
+   "error": "not found (404)",
+   "http": 404
   },
   {
    "id": "yt-lbc",
@@ -74,27 +75,29 @@
    "id": "yt-flashgitz",
    "name": "Flashgitz",
    "type": "youtube",
-   "status": "ok",
-   "count": 2,
+   "status": "error",
+   "count": 0,
    "resolved": {
     "channelId": "UCNnKprAG-MWLsk-GsbsC2BA",
     "title": "Flashgitz",
     "via": "name search"
    },
-   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCNnKprAG-MWLsk-GsbsC2BA"
+   "error": "not found (404)",
+   "http": 404
   },
   {
    "id": "yt-the-good-liars",
    "name": "The Good Liars",
    "type": "youtube",
-   "status": "ok",
-   "count": 5,
+   "status": "error",
+   "count": 0,
    "resolved": {
     "channelId": "UCUNOwz9KTDIhhTTN3_ptUDA",
     "title": "The Good Liars",
     "via": "name search"
    },
-   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCUNOwz9KTDIhhTTN3_ptUDA"
+   "error": "not found (404)",
+   "http": 404
   },
   {
    "id": "yt-easy-german",
@@ -142,14 +145,15 @@
    "id": "yt-last-week-tonight",
    "name": "Last Week Tonight",
    "type": "youtube",
-   "status": "ok",
-   "count": 5,
+   "status": "error",
+   "count": 0,
    "resolved": {
     "channelId": "UC3XTzVzaHQEd30rQbuvCtTQ",
     "title": "LastWeekTonight",
     "via": "name search"
    },
-   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC3XTzVzaHQEd30rQbuvCtTQ"
+   "error": "not found (404)",
+   "http": 404
   },
   {
    "id": "yt-billy-on-the-street",
@@ -253,14 +257,15 @@
    "id": "yt-aberrant-preach",
    "name": "Aberrant preach",
    "type": "youtube",
-   "status": "ok",
-   "count": 5,
+   "status": "error",
+   "count": 0,
    "resolved": {
     "channelId": "UCaiVt4r6YLPzJVgr7pOmD6w",
     "title": "Aba N Preach",
     "via": "name search"
    },
-   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCaiVt4r6YLPzJVgr7pOmD6w"
+   "error": "not found (404)",
+   "http": 404
   },
   {
    "id": "yt-channel-5-with-andrew-callaghan",
@@ -371,8 +376,8 @@
     "title": "gameranx",
     "via": "name search"
    },
-   "error": "HTTP 500",
-   "http": 500
+   "error": "not found (404)",
+   "http": 404
   },
   {
    "id": "yt-modern-day-debate",
@@ -392,14 +397,15 @@
    "id": "yt-dropout",
    "name": "Dropout",
    "type": "youtube",
-   "status": "ok",
-   "count": 4,
+   "status": "error",
+   "count": 0,
    "resolved": {
     "channelId": "UCPDXXXJj9nax0fr0Wfc048g",
     "title": "Dropout",
     "via": "name search"
    },
-   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCPDXXXJj9nax0fr0Wfc048g"
+   "error": "not found (404)",
+   "http": 404
   },
   {
    "id": "yt-the-onion",
@@ -461,27 +467,29 @@
    "id": "yt-coffeezilla",
    "name": "Coffeezilla",
    "type": "youtube",
-   "status": "ok",
+   "status": "error",
    "count": 0,
    "resolved": {
     "channelId": "UCFQMnBA3CS502aghlcr0_aw",
     "title": "Coffeezilla",
     "via": "name search"
    },
-   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCFQMnBA3CS502aghlcr0_aw"
+   "error": "not found (404)",
+   "http": 404
   },
   {
    "id": "yt-tom-scott",
    "name": "Tom Scott",
    "type": "youtube",
-   "status": "ok",
-   "count": 2,
+   "status": "error",
+   "count": 0,
    "resolved": {
     "channelId": "UCBa659QWEk1AI4Tg--mrJ2A",
     "title": "Tom Scott",
     "via": "name search"
    },
-   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCBa659QWEk1AI4Tg--mrJ2A"
+   "error": "not found (404)",
+   "http": 404
   },
   {
    "id": "yt-lenny-s-podcast",
@@ -501,27 +509,29 @@
    "id": "yt-the-hustle",
    "name": "The Hustle",
    "type": "youtube",
-   "status": "ok",
-   "count": 5,
+   "status": "error",
+   "count": 0,
    "resolved": {
     "channelId": "UCkWVA1_vkY9GLyuLAre97AQ",
     "title": "The Hustle ",
     "via": "name search"
    },
-   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCkWVA1_vkY9GLyuLAre97AQ"
+   "error": "not found (404)",
+   "http": 404
   },
   {
    "id": "yt-history-marche",
    "name": "History Marche",
    "type": "youtube",
-   "status": "ok",
-   "count": 1,
+   "status": "error",
+   "count": 0,
    "resolved": {
     "channelId": "UC8MX9ECowgDMTOnFTE8EUJw",
     "title": "HistoryMarche",
     "via": "name search"
    },
-   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC8MX9ECowgDMTOnFTE8EUJw"
+   "error": "not found (404)",
+   "http": 404
   },
   {
    "id": "yt-radicalsoda",
@@ -541,15 +551,14 @@
    "id": "yt-how-money-works",
    "name": "How Money Works",
    "type": "youtube",
-   "status": "error",
-   "count": 0,
+   "status": "ok",
+   "count": 2,
    "resolved": {
     "channelId": "UCkCGANrihzExmu9QiqZpPlQ",
     "title": "How Money Works",
     "via": "name search"
    },
-   "error": "not found (404)",
-   "http": 404
+   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCkCGANrihzExmu9QiqZpPlQ"
   },
   {
    "id": "yt-joel-haver",
@@ -646,8 +655,8 @@
     "title": "J.J. McCullough",
     "via": "name search"
    },
-   "error": "not found (404)",
-   "http": 404
+   "error": "HTTP 500",
+   "http": 500
   },
   {
    "id": "yt-adam-neely",
@@ -667,20 +676,19 @@
    "id": "rd-productmanagement",
    "name": "r/productmanagement",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/productmanagement/top/.rss?t=day"
+   "lastOk": "2026-11-02T01:28:06.809Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-tech",
    "name": "r/tech",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": "2026-10-27T01:08:56.460Z",
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-gaming",
@@ -689,34 +697,34 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-11-01T19:02:51.848Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
   },
   {
    "id": "rd-xbox",
    "name": "r/xbox",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-11-01T19:02:51.848Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/xbox/top/.rss?t=day"
   },
   {
    "id": "rd-slaythespire",
    "name": "r/slaythespire",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-geopolitics",
@@ -748,20 +756,115 @@
  ],
  "items": [
   {
-   "title": "ROCK HILL TRUMP RALLY",
-   "url": "https://www.youtube.com/watch?v=ARmxv6JYjRc",
-   "source": "The Good Liars",
-   "feedId": "yt-the-good-liars",
-   "type": "video",
+   "title": "Free 1-Month Trial of PC Game Pass",
+   "url": "https://www.reddit.com/r/xbox/comments/1xlmune/free_1month_trial_of_pc_game_pass/",
+   "source": "r/xbox",
+   "feedId": "rd-xbox",
+   "type": "post",
    "tags": [
-    "comedy",
-    "politics",
-    "debates"
+    "gaming"
    ],
-   "published": "2026-11-01T22:44:56.000Z",
-   "summary": "The Good Liars visit South Carolina for the Trump Rally https://www.youtube.com/channel/UCUNOwz9KTDIhhTTN3_ptUDA/join https://linktr.ee/thegoodliars",
-   "thumb": "https://i2.ytimg.com/vi/ARmxv6JYjRc/hqdefault.jpg",
-   "id": "89b9424b79b0",
+   "published": "2026-11-02T03:37:27.000Z",
+   "summary": "Enjoy! 👍🏻 submitted by /u/TheThirstyTwink [link] [comments]",
+   "id": "441e85f33bcf",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "What is the best Ultimate deal right now?",
+   "url": "https://www.reddit.com/r/xbox/comments/1xlmb9y/what_is_the_best_ultimate_deal_right_now/",
+   "source": "r/xbox",
+   "feedId": "rd-xbox",
+   "type": "post",
+   "tags": [
+    "gaming"
+   ],
+   "published": "2026-11-02T03:09:14.000Z",
+   "summary": "Just ran out of my 3 years, not looking to pay $25/month. Are there any deals left? submitted by /u/dude52760 [link] [comments]",
+   "id": "be91dcb777cd",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Care workers to be treated like doctors under Mahmood migration plans",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xlgsyy/care_workers_to_be_treated_like_doctors_under/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-11-01T22:46:06.000Z",
+   "summary": "submitted by /u/Desperate-Drawer-572 [link] [comments]",
+   "id": "3c55f9e2b445",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "The rest of my controller collection as of so far",
+   "url": "https://www.reddit.com/r/xbox/comments/1xlfub7/the_rest_of_my_controller_collection_as_of_so_far/",
+   "source": "r/xbox",
+   "feedId": "rd-xbox",
+   "type": "post",
+   "tags": [
+    "gaming"
+   ],
+   "published": "2026-11-01T22:04:25.000Z",
+   "summary": "submitted by /u/LilNardoDaVinci [link] [comments]",
+   "id": "c3fa69d7401c",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Possible To Game Share GTA With Son At Uni?",
+   "url": "https://www.reddit.com/r/xbox/comments/1xlfs94/possible_to_game_share_gta_with_son_at_uni/",
+   "source": "r/xbox",
+   "feedId": "rd-xbox",
+   "type": "post",
+   "tags": [
+    "gaming"
+   ],
+   "published": "2026-11-01T22:02:02.000Z",
+   "summary": "Apologies if this is a dumb question. My son is at university and I share my Game Pass Ultimate with him.and it's been working fine. If I buy Grand Theft Auto VI (probably will get the standard edition, code in.box from Amazon) will I be able.to share the game with him, so he…",
+   "id": "2906dce9f76f",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "What were you guys playing during the holidays?",
+   "url": "https://www.reddit.com/r/xbox/comments/1xlf8jy/what_were_you_guys_playing_during_the_holidays/",
+   "source": "r/xbox",
+   "feedId": "rd-xbox",
+   "type": "post",
+   "tags": [
+    "gaming"
+   ],
+   "published": "2026-11-01T21:38:59.000Z",
+   "summary": "Me gear Of war E day Beautiful game submitted by /u/Kooky_Tough4525 [link] [comments]",
+   "id": "6509a79b5a07",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Skilled migrants ‘contribute billions more to UK than they cost’",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xlf3s9/skilled_migrants_contribute_billions_more_to_uk/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-11-01T21:33:24.000Z",
+   "summary": "submitted by /u/Desperate-Drawer-572 [link] [comments]",
+   "id": "3b8631f91767",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -799,19 +902,35 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Jubilee's Election Night Watch Party premieres on our channel Tuesday November 3, 5pm PST/8pm EST",
-   "url": "https://www.youtube.com/shorts/xM1RA4SiqZ4",
-   "source": "Jubilee",
-   "feedId": "yt-jubilee",
-   "type": "video",
+   "title": "Five armed Brits who were driving the Channel coast in a 'battle bus' and 'planning attacks on migrants in France' are fined £2,500 and barred from parts of the country",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xldtv0/five_armed_brits_who_were_driving_the_channel/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
    "tags": [
     "politics",
-    "debates"
+    "british"
    ],
-   "published": "2026-11-01T20:30:39.000Z",
-   "summary": "Hey you 👈 Wanna be in a Jubilee video? https://bit.ly/be-in-a-video LET’S BE FRIENDS Instagram: https://www.instagram.com/jubileemedia/ TikTok: https://www.tiktok.com/@jubilee?lang=en Website: https://www.jubileemedia.com OUR LOVE + DATING CHANNEL 🍑 YouTube:…",
-   "thumb": "https://i1.ytimg.com/vi/xM1RA4SiqZ4/hqdefault.jpg",
-   "id": "70fc49b27be6",
+   "published": "2026-11-01T20:40:58.000Z",
+   "summary": "submitted by /u/ijustwannanap [link] [comments]",
+   "id": "3f8ea98da671",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Chris Philp MP: \"By Mahmood’s own admission in a speech this March, letting low wage care workers alone stay forever will cost taxpayers £10 billion and be an “affront”. Now it looks likes she’s about to do exactly that. After talking tough all year, Mahmood appears to have capitulated control\"",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xld2dv/chris_philp_mp_by_mahmoods_own_admission_in_a/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-11-01T20:10:05.000Z",
+   "summary": "submitted by /u/Alti-Ok [link] [comments]",
+   "id": "4dd5c3c7866f",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -833,19 +952,18 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Harry Sisson discusses trans youth with MAGA man #transgender #lgbtqia #surrounded #jubilee",
-   "url": "https://www.youtube.com/shorts/2rjDSi8deMs",
-   "source": "Jubilee",
-   "feedId": "yt-jubilee",
-   "type": "video",
+   "title": "Carers set to be spared in migrant crackdown as overseas recruits plunge by 90%",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xlbncw/carers_set_to_be_spared_in_migrant_crackdown_as/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
    "tags": [
     "politics",
-    "debates"
+    "british"
    ],
-   "published": "2026-11-01T19:00:09.000Z",
-   "summary": "Hey you 👈 Wanna be in a Jubilee video? https://bit.ly/be-in-a-video LET’S BE FRIENDS Instagram: https://www.instagram.com/jubileemedia/ TikTok: https://www.tiktok.com/@jubilee?lang=en Website: https://www.jubileemedia.com OUR LOVE + DATING CHANNEL 🍑 YouTube:…",
-   "thumb": "https://i3.ytimg.com/vi/2rjDSi8deMs/hqdefault.jpg",
-   "id": "471944ea5167",
+   "published": "2026-11-01T19:13:57.000Z",
+   "summary": "submitted by /u/Desperate-Drawer-572 [link] [comments]",
+   "id": "9dcd1bc6c58f",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -868,40 +986,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Deal ALERT! Hope someone gets lucky",
-   "url": "https://www.reddit.com/r/xbox/comments/1xlaeis/deal_alert_hope_someone_gets_lucky/",
-   "source": "r/xbox",
-   "feedId": "rd-xbox",
-   "type": "post",
-   "tags": [
-    "gaming"
-   ],
-   "published": "2026-11-01T18:25:08.000Z",
-   "summary": "submitted by /u/Advanced-Winner-1542 [link] [comments]",
-   "id": "ba856ec6a4f4",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Has Donald Trump normalized political violence in America? #donaldtrump #charliekirk #jubilee",
-   "url": "https://www.youtube.com/shorts/f8MumT0UiF4",
-   "source": "Jubilee",
-   "feedId": "yt-jubilee",
-   "type": "video",
-   "tags": [
-    "politics",
-    "debates"
-   ],
-   "published": "2026-11-01T18:00:14.000Z",
-   "summary": "Hey you 👈 Wanna be in a Jubilee video? https://bit.ly/be-in-a-video LET’S BE FRIENDS Instagram: https://www.instagram.com/jubileemedia/ TikTok: https://www.tiktok.com/@jubilee?lang=en Website: https://www.jubileemedia.com OUR LOVE + DATING CHANNEL 🍑 YouTube:…",
-   "thumb": "https://i3.ytimg.com/vi/f8MumT0UiF4/hqdefault.jpg",
-   "id": "c7250a8e5772",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Are customers ever happy?",
    "url": "https://www.reddit.com/r/ProductManagement/comments/1xl9fxd/are_customers_ever_happy/",
    "source": "r/productmanagement",
@@ -913,123 +997,6 @@
    "published": "2026-11-01T17:47:43.000Z",
    "summary": "I understand that humans (and Reddit) are intrinsically negatively biased. But sometimes I think about the PM’s that say they got into product and love it so much because they just enjoy building tech products that people love. I’m not saying that’s an impossible threshold, but…",
    "id": "39090979f57e",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "XBOX Series X - All Digital Gaming Console - 1TB SSD - Includes XBOX Wireless Controller - $599.99",
-   "url": "https://www.reddit.com/r/xbox/comments/1xl96ga/xbox_series_x_all_digital_gaming_console_1tb_ssd/",
-   "source": "r/xbox",
-   "feedId": "rd-xbox",
-   "type": "post",
-   "tags": [
-    "gaming"
-   ],
-   "published": "2026-11-01T17:37:40.000Z",
-   "summary": "submitted by /u/pcm-42067 [link] [comments]",
-   "id": "04d218bf9250",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Opinion ~Why blaming Xbox players for 'Gears of War: E-Day' sales is completely ridiculous | WindowsCentral",
-   "url": "https://www.reddit.com/r/xbox/comments/1xl90hf/opinion_why_blaming_xbox_players_for_gears_of_war/",
-   "source": "r/xbox",
-   "feedId": "rd-xbox",
-   "type": "post",
-   "tags": [
-    "gaming"
-   ],
-   "published": "2026-11-01T17:31:15.000Z",
-   "summary": "This kind of conversation in general is becoming extremely exhausting, and if you don’t play on XBOX, why even question it? I’m sure they’ll be some interesting points to discuss. submitted by /u/imitzFinn [link] [comments]",
-   "id": "f16ce382454b",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "What are you guys currently playing on Xbox? Looking for something to get hooked on again",
-   "url": "https://www.reddit.com/r/xbox/comments/1xl8fmq/what_are_you_guys_currently_playing_on_xbox/",
-   "source": "r/xbox",
-   "feedId": "rd-xbox",
-   "type": "post",
-   "tags": [
-    "gaming"
-   ],
-   "published": "2026-11-01T17:09:03.000Z",
-   "summary": "Hey everyone! I’m currently in a bit of a gaming slump. I really want to get back into a game that I can sink dozens of hours into, but nothing seems to keep me motivated for long lately. I’m mainly into games like Soulslikes, Roguelikes and challenging games with satisfying…",
-   "id": "efa8903c3760",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "8BitDo Ultimate 3E, Victrix BFG Reloaded, or Scuf Valor Pro",
-   "url": "https://www.reddit.com/r/xbox/comments/1xl8cno/8bitdo_ultimate_3e_victrix_bfg_reloaded_or_scuf/",
-   "source": "r/xbox",
-   "feedId": "rd-xbox",
-   "type": "post",
-   "tags": [
-    "gaming"
-   ],
-   "published": "2026-11-01T17:05:54.000Z",
-   "summary": "Looking for a new controller for my Xbox Series X. Was considering the GameSir G7 Pro for the longest time, but it not being wireless for the Xbox unless I get the special editions (which designs aren't to my liking) is a dealbreaker for me. The new 8BitDo looks great to me…",
-   "id": "4ec832e4210d",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Harry Sisson discusses immigration #immigration #birthrightcitizenship #surrounded #jubilee",
-   "url": "https://www.youtube.com/shorts/mc4mytNF7jg",
-   "source": "Jubilee",
-   "feedId": "yt-jubilee",
-   "type": "video",
-   "tags": [
-    "politics",
-    "debates"
-   ],
-   "published": "2026-11-01T17:00:24.000Z",
-   "summary": "Hey you 👈 Wanna be in a Jubilee video? https://bit.ly/be-in-a-video LET’S BE FRIENDS Instagram: https://www.instagram.com/jubileemedia/ TikTok: https://www.tiktok.com/@jubilee?lang=en Website: https://www.jubileemedia.com OUR LOVE + DATING CHANNEL 🍑 YouTube:…",
-   "thumb": "https://i2.ytimg.com/vi/mc4mytNF7jg/hqdefault.jpg",
-   "id": "55e034608104",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "1 Liberal Man vs 20 MAGA Conservatives (ft. Harry Sisson) | Surrounded",
-   "url": "https://www.youtube.com/watch?v=xTY0y2wX8WE",
-   "source": "Jubilee",
-   "feedId": "yt-jubilee",
-   "type": "video",
-   "tags": [
-    "politics",
-    "debates"
-   ],
-   "published": "2026-11-01T17:00:13.000Z",
-   "summary": "Hey you 👈 Wanna be in a Jubilee video? https://bit.ly/be-in-a-video LET’S BE FRIENDS Instagram: https://www.instagram.com/jubileemedia/ TikTok: https://www.tiktok.com/@jubilee?lang=en Website: https://www.jubileemedia.com OUR LOVE + DATING CHANNEL 🍑 YouTube:…",
-   "thumb": "https://i1.ytimg.com/vi/xTY0y2wX8WE/hqdefault.jpg",
-   "id": "fc05009095c8",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "How Miniso Launches 1,600 New Products a Month",
-   "url": "https://www.youtube.com/shorts/Rll-tUIx8OY",
-   "source": "The Hustle",
-   "feedId": "yt-the-hustle",
-   "type": "video",
-   "tags": [
-    "business"
-   ],
-   "published": "2026-11-01T16:52:17.000Z",
-   "summary": "How Miniso Launches 1,600 New Products a Month",
-   "thumb": "https://i3.ytimg.com/vi/Rll-tUIx8OY/hqdefault.jpg",
-   "id": "19f271250fd3",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1051,23 +1018,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "What should Cameron have done about growing euroscepticism?",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xl61yp/what_should_cameron_have_done_about_growing/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-11-01T15:35:17.000Z",
-   "summary": "I know a lot of people argue that Cameron should never have called the Brexit referendum in the first place, but I’ve always wondered what the actual alternative was. Euroscepticism was clearly gaining ground at the time, UKIP was becoming increasingly influential there was…",
-   "id": "9d11bed19c55",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "The U.S. Is Bullying Europe Like Never Before",
    "url": "https://www.reddit.com/r/geopolitics/comments/1xl5vp9/the_us_is_bullying_europe_like_never_before/",
    "source": "r/geopolitics",
@@ -1080,74 +1030,6 @@
    "published": "2026-11-01T15:28:14.000Z",
    "summary": "submitted by /u/theatlantic [link] [comments]",
    "id": "9abdb54ded68",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Nearly 1,200 small-boat migrants arrive over three days after three-week pause in Channel crossings",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xl5slb/nearly_1200_smallboat_migrants_arrive_over_three/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-11-01T15:24:42.000Z",
-   "summary": "submitted by /u/Desperate-Drawer-572 [link] [comments]",
-   "id": "8cd45c54a353",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "BBC admits vetting failure after hosting ‘anti-Semitic’ Iran apologist",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xl5gf7/bbc_admits_vetting_failure_after_hosting/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-11-01T15:10:57.000Z",
-   "summary": "submitted by /u/WhySoSeriously55 [link] [comments]",
-   "id": "89cb2d39304a",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Green party must avoid being taken over by hard left, says former leader",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xl59is/green_party_must_avoid_being_taken_over_by_hard/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-11-01T15:03:24.000Z",
-   "summary": "submitted by /u/RareEarthPetal [link] [comments]",
-   "id": "f65b532f2f84",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "What you need to know about changes to the planning system || The government says planning officers, rather than councillors, should decide most applications unless exemptions apply.",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xl3i4o/what_you_need_to_know_about_changes_to_the/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-11-01T13:48:14.000Z",
-   "summary": "submitted by /u/Adj-Noun-Numbers [link] [comments]",
-   "id": "0d9c7457d103",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1272,482 +1154,43 @@
    "why": "0"
   },
   {
-   "title": "Why a Toy Story Villain Became a Retail Hit in China",
-   "url": "https://www.youtube.com/shorts/LjzX44L1vFc",
-   "source": "The Hustle",
-   "feedId": "yt-the-hustle",
+   "title": "If You Were TRYING To Destroy The Economy...",
+   "url": "https://www.youtube.com/watch?v=OAVin6xxd8E",
+   "source": "How Money Works",
+   "feedId": "yt-how-money-works",
    "type": "video",
    "tags": [
-    "business"
+    "finance",
+    "business",
+    "listen"
    ],
-   "published": "2026-11-01T00:18:55.000Z",
-   "summary": "Why a Toy Story Villain Became a Retail Hit in China",
-   "thumb": "https://i1.ytimg.com/vi/LjzX44L1vFc/hqdefault.jpg",
-   "id": "dd3461a27035",
+   "published": "2026-10-31T16:26:00.000Z",
+   "summary": "Start your own store with #printify: https://try.printify.com/ba6mdz2kmzmq The first 100 people who use the code HowMoneyWorks will get 15% off their first order! ----- Sign up for our FREE newsletter! - https://www.compoundeddaily.com/ Books we recommend -…",
+   "thumb": "https://i4.ytimg.com/vi/OAVin6xxd8E/hqdefault.jpg",
+   "id": "3b5a05f9cead",
    "score": 0,
    "matched": [],
    "why": "0"
   },
   {
-   "title": "The Road to Vienna: Battle of St. Gotthard 1664",
-   "url": "https://www.youtube.com/watch?v=mi5rzCpHgP8",
-   "source": "History Marche",
-   "feedId": "yt-history-marche",
+   "title": "How American Real Estate Is Delaying The Inevitable... For Now",
+   "url": "https://www.youtube.com/watch?v=EhbkCW3iTvA",
+   "source": "How Money Works",
+   "feedId": "yt-how-money-works",
    "type": "video",
    "tags": [
-    "education",
-    "history"
+    "finance",
+    "business",
+    "listen"
    ],
-   "published": "2026-10-31T17:51:04.000Z",
-   "summary": "Play Tacticus at: https://play.tacticusgame.com/HistoryMarchexTacticus Use code MARCHEWAAGH to get special rewards (valid until November 20th 2026) 🚩 Related videos: Siege of Vienna 1683: https://youtu.be/1c5UV3EsQmk Battle of Parkany 1683: https://youtu.be/i4fg9guwEvo 🔔…",
-   "thumb": "https://i2.ytimg.com/vi/mi5rzCpHgP8/hqdefault.jpg",
-   "id": "52716b7d62f8",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "CORINTH TRUMP RALLY",
-   "url": "https://www.youtube.com/watch?v=js5t0kUqSZM",
-   "source": "The Good Liars",
-   "feedId": "yt-the-good-liars",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "politics",
-    "debates"
-   ],
-   "published": "2026-10-31T17:00:11.000Z",
-   "summary": "The Good Liars visit Corinth, Mississippi for the Trump Rally https://www.youtube.com/channel/UCUNOwz9KTDIhhTTN3_ptUDA/join https://linktr.ee/thegoodliars",
-   "thumb": "https://i3.ytimg.com/vi/js5t0kUqSZM/hqdefault.jpg",
-   "id": "37da32e5be01",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Why Luckin and Starbucks Are Making Opposite Bets on Coffee",
-   "url": "https://www.youtube.com/shorts/GFYpkAIRCHA",
-   "source": "The Hustle",
-   "feedId": "yt-the-hustle",
-   "type": "video",
-   "tags": [
-    "business"
-   ],
-   "published": "2026-10-31T00:35:35.000Z",
-   "summary": "Why Luckin and Starbucks Are Making Opposite Bets on Coffee",
-   "thumb": "https://i4.ytimg.com/vi/GFYpkAIRCHA/hqdefault.jpg",
-   "id": "7a023024f156",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Approaching Women When You're \"Ugly\" Is A Crime",
-   "url": "https://www.youtube.com/watch?v=te3SMMZxhDs",
-   "source": "Aberrant preach",
-   "feedId": "yt-aberrant-preach",
-   "type": "video",
-   "tags": [
-    "trash"
-   ],
-   "published": "2026-10-30T17:44:49.000Z",
-   "summary": "Guy thought he was vibing with a girl at the Bruno Mars concert and thought he might've had a shot. And internet proceeded to do what it does best and shame him for it. ———————————— Spotify: https://open.spotify.com/artist/6QJIJ6AugqPEFASp1V6zgH Merchandise ---…",
-   "thumb": "https://i1.ytimg.com/vi/te3SMMZxhDs/hqdefault.jpg",
-   "id": "055ce93d17fa",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "This Startup Wants to Power Cities With Lasers",
-   "url": "https://www.youtube.com/shorts/qeT4aqs-4PQ",
-   "source": "The Hustle",
-   "feedId": "yt-the-hustle",
-   "type": "video",
-   "tags": [
-    "business"
-   ],
-   "published": "2026-10-30T17:00:08.000Z",
-   "summary": "But can lasers really power an entire city?",
-   "thumb": "https://i2.ytimg.com/vi/qeT4aqs-4PQ/hqdefault.jpg",
-   "id": "bed758d05be0",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Why Nearly Half of China’s Bubble Tea Shops Closed",
-   "url": "https://www.youtube.com/shorts/F_4xhhL_yvk",
-   "source": "The Hustle",
-   "feedId": "yt-the-hustle",
-   "type": "video",
-   "tags": [
-    "business"
-   ],
-   "published": "2026-10-29T21:19:46.000Z",
-   "summary": "Why Nearly Half of China’s Bubble Tea Shops Closed",
-   "thumb": "https://i3.ytimg.com/vi/F_4xhhL_yvk/hqdefault.jpg",
-   "id": "6a5519211d8a",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Chillicothe, Ohio Trump Rally",
-   "url": "https://www.youtube.com/watch?v=kEyB1qg9sSo",
-   "source": "The Good Liars",
-   "feedId": "yt-the-good-liars",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "politics",
-    "debates"
-   ],
-   "published": "2026-10-29T19:30:08.000Z",
-   "summary": "Jason visits Chillicothe, Ohio to talk to Trump supporters about socialism, Trump and Jesus (in that order), and much more! Join this channel to get access to perks: https://www.youtube.com/channel/UCUNOwz9KTDIhhTTN3_ptUDA/join https://linktr.ee/thegoodliars",
-   "thumb": "https://i4.ytimg.com/vi/kEyB1qg9sSo/hqdefault.jpg",
-   "id": "b0cf75c3daba",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Mike Collins & Marshall Rawson #lastweektonight",
-   "url": "https://www.youtube.com/shorts/LOzF4eGZnfY",
-   "source": "Last Week Tonight",
-   "feedId": "yt-last-week-tonight",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "politics"
-   ],
-   "published": "2026-10-29T14:00:04.000Z",
-   "summary": "Meet two of the candidates running for office in next week’s midterm elections. And while you’re at it, meet the man we can only assume is the world’s worst-dressed son-in-law.",
-   "thumb": "https://i1.ytimg.com/vi/LOzF4eGZnfY/hqdefault.jpg",
-   "id": "e1b77dde924f",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Police Called To 3-year-old's Soccer Game Because He Was TOO GOOD???",
-   "url": "https://www.youtube.com/watch?v=05Ro9inVa68",
-   "source": "Aberrant preach",
-   "feedId": "yt-aberrant-preach",
-   "type": "video",
-   "tags": [
-    "trash"
-   ],
-   "published": "2026-10-29T10:10:42.000Z",
-   "summary": "Police was called for a 3 year old kid being too good at football. If that wasn't ridiculous enough, we got access to the bodycam. The reasoning is wilder. ———————————— Spotify: https://open.spotify.com/artist/6QJIJ6AugqPEFASp1V6zgH Merchandise ---…",
-   "thumb": "https://i1.ytimg.com/vi/05Ro9inVa68/hqdefault.jpg",
-   "id": "2099d4ffaf24",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Off the Reservation | Toonout [Animated Shorts]",
-   "url": "https://www.youtube.com/watch?v=hj11xxbyJW4",
-   "source": "Dropout",
-   "feedId": "yt-dropout",
-   "type": "video",
-   "tags": [
-    "comedy"
-   ],
-   "published": "2026-10-28T17:30:18.000Z",
-   "summary": "A group of Native teens decides to make their ancestors proud the only way they know how. To watch more episode of Toonout and other animated series, sign up for Dropout: https://www.dropout.tv/plans Welcome to the Dropout channel! You can support us by signing up for…",
-   "thumb": "https://i1.ytimg.com/vi/hj11xxbyJW4/hqdefault.jpg",
-   "id": "d1730d89b79f",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "MISSISSIPPI TRUMP RALLY",
-   "url": "https://www.youtube.com/watch?v=kog1j3uG3o0",
-   "source": "The Good Liars",
-   "feedId": "yt-the-good-liars",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "politics",
-    "debates"
-   ],
-   "published": "2026-10-28T17:00:39.000Z",
-   "summary": "The Good Liars visit Mississippi for the first time and talk to Trump Supporters eager to get into the rally to see Donald Trump speak https://linktr.ee/thegoodliars",
-   "thumb": "https://i4.ytimg.com/vi/kog1j3uG3o0/hqdefault.jpg",
-   "id": "04c4b0090437",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "The World Forgot How Gangster China Really Is...",
-   "url": "https://www.youtube.com/watch?v=k0LXEEviIL0",
-   "source": "Aberrant preach",
-   "feedId": "yt-aberrant-preach",
-   "type": "video",
-   "tags": [
-    "trash"
-   ],
-   "published": "2026-10-28T16:56:18.000Z",
-   "summary": "Kylian Mbappé set the spanish football league LaLiga ablaze after expressing how funny he found some of his depictions as Mao Zedong, resulting in China blocking all broadcast of LaLiga and any ads relevants to him. ———————————— Spotify:…",
-   "thumb": "https://i4.ytimg.com/vi/k0LXEEviIL0/hqdefault.jpg",
-   "id": "ec77c89509d5",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "THIS SWORD MAKES THINGS EXPLODE!",
-   "url": "https://www.youtube.com/shorts/6WcGCnPPjDY",
-   "source": "Flashgitz",
-   "feedId": "yt-flashgitz",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "cartoon"
-   ],
-   "published": "2026-10-28T14:52:57.000Z",
-   "summary": "It's called War World, of course there's gonna be a lot of explosions... and our team crushed it as always. Look at all of those beautiful impact frames - so sick! Show: SPACE KING Episode: WAR WORLD #spaceking #indieanimation #warworld #impactframes #lylerath",
-   "thumb": "https://i3.ytimg.com/vi/6WcGCnPPjDY/hqdefault.jpg",
-   "id": "52398595b2f5",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "The Republican Party & Bo French #lastweektonight",
-   "url": "https://www.youtube.com/shorts/EMV7E5J_iwU",
-   "source": "Last Week Tonight",
-   "feedId": "yt-last-week-tonight",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "politics"
-   ],
-   "published": "2026-10-27T14:00:23.000Z",
-   "summary": "You know things are going wrong when you’ve lost the moral high ground to Karl Fucking Rove.",
-   "thumb": "https://i2.ytimg.com/vi/EMV7E5J_iwU/hqdefault.jpg",
-   "id": "fc5a59d68049",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Ghosting Is R@pe",
-   "url": "https://www.youtube.com/watch?v=XhIAbzRdXF0",
-   "source": "Aberrant preach",
-   "feedId": "yt-aberrant-preach",
-   "type": "video",
-   "tags": [
-    "trash"
-   ],
-   "published": "2026-10-26T18:05:19.000Z",
-   "summary": "Girl talks about men who ghost women can pretty much equate to being r*pists. But it seems to be trendy optic shared by a lot of women online ———————————— Spotify: https://open.spotify.com/artist/6QJIJ6AugqPEFASp1V6zgH Merchandise ---…",
-   "thumb": "https://i1.ytimg.com/vi/XhIAbzRdXF0/hqdefault.jpg",
-   "id": "8cb2d7a1afc5",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "SIOUX CITY TRUMP RALLY",
-   "url": "https://www.youtube.com/watch?v=veBxHSm0c80",
-   "source": "The Good Liars",
-   "feedId": "yt-the-good-liars",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "politics",
-    "debates"
-   ],
-   "published": "2026-10-26T18:00:37.000Z",
-   "summary": "The Good Liars visit Sioux City, Iowa for the Trump Rally",
-   "thumb": "https://i3.ytimg.com/vi/veBxHSm0c80/hqdefault.jpg",
-   "id": "c31479937413",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Drew Lynch on Crowd Control, Catherine McCafferty on Smartypants, And More!",
-   "url": "https://www.youtube.com/shorts/ZFpJDhqN2DI",
-   "source": "Dropout",
-   "feedId": "yt-dropout",
-   "type": "video",
-   "tags": [
-    "comedy"
-   ],
-   "published": "2026-10-26T15:00:19.000Z",
-   "summary": "This week on Dropout... 🤣 Monday: Crowd Control (with Emily Catalano, Guy Branum, and Drew Lynch) 🗣️ Wednesday: Adventuring Academy (with Jasper William Cartwright) 🐷 Friday: Smartypants (with Londale Theus Jr, Catherine McCafferty, and Grant O’Brien) Welcome to the Dropout…",
-   "thumb": "https://i3.ytimg.com/vi/ZFpJDhqN2DI/hqdefault.jpg",
-   "id": "8f56065a9ea9",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "This machine breaks things.",
-   "url": "https://www.youtube.com/watch?v=-E47v4Oy7fE",
-   "source": "Tom Scott",
-   "feedId": "yt-tom-scott",
-   "type": "video",
-   "tags": [
-    "education"
-   ],
-   "published": "2026-10-26T15:00:16.000Z",
-   "summary": "At Kirkaldy's Testing Works, there's the Universal Testing Machine. It breaks things. | AD: 🛡️ Get NordVPN's best deal with their next-gen antivirus: https://nordvpn.com/tomscott | 🗺️ England series map: https://www.tomscott.com/england/ 🟥 MORE FROM TOM:…",
-   "thumb": "https://i2.ytimg.com/vi/-E47v4Oy7fE/hqdefault.jpg",
-   "id": "58a074377add",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "The MVP of War World?",
-   "url": "https://www.youtube.com/shorts/_9GSx7Ugyo8",
-   "source": "Flashgitz",
-   "feedId": "yt-flashgitz",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "cartoon"
-   ],
-   "published": "2026-10-26T14:38:01.000Z",
-   "summary": "So apparently you guys liked the skeleton shield in episode 5 of Space King... I guess it *IS* the living skeleton of a dead saint ☠️ So sayeth, Space King 🙌 #SpaceKing #Flashgitz #Warworld #Grimboar #SkeletonShield #Hatemonger",
-   "thumb": "https://i4.ytimg.com/vi/_9GSx7Ugyo8/hqdefault.jpg",
-   "id": "66d1e70e860b",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "The Republican Party & The Far Right",
-   "url": "https://www.youtube.com/shorts/XEEO4K4rz5U",
-   "source": "Last Week Tonight",
-   "feedId": "yt-last-week-tonight",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "politics"
-   ],
-   "published": "2026-10-26T14:00:25.000Z",
-   "summary": "Contrary to what Elon Musk may think, we don’t believe everyone on the right is Hitler! But if the shoe fits, that’s probably because you’re already goose-stepping in it.",
-   "thumb": "https://i1.ytimg.com/vi/XEEO4K4rz5U/hqdefault.jpg",
-   "id": "f480894b6708",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "The Republican Party & The Far Right: Last Week Tonight with John Oliver (HBO)",
-   "url": "https://www.youtube.com/watch?v=SnsBI4YxwIs",
-   "source": "Last Week Tonight",
-   "feedId": "yt-last-week-tonight",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "politics"
-   ],
-   "published": "2026-10-26T06:30:26.000Z",
-   "summary": "Ahead of the midterms, John Oliver devotes an entire episode to discussing the rising prominence of extremist beliefs within the Republican Party – from white nationalism to antisemitism – and what it all has to do with Vandy potato chips. Subscribe to the #lastweektonight…",
-   "thumb": "https://i4.ytimg.com/vi/SnsBI4YxwIs/hqdefault.jpg",
-   "id": "670e79d2aa09",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "S13 E27: The Republican Party & The Far Right: 10/25/26: Last Week Tonight with John Oliver",
-   "url": "https://www.youtube.com/watch?v=zVwhVOB3ulU",
-   "source": "Last Week Tonight",
-   "feedId": "yt-last-week-tonight",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "politics"
-   ],
-   "published": "2026-10-26T03:00:08.000Z",
-   "summary": "Ahead of the midterms, John Oliver breaks down the details of the rising prominence of extremist beliefs within the Republican Party – from white nationalism to antisemitism to outright Nazi sympathies. Plus, we find out what Tucker Carlson has in common with Joseph Stalin!…",
-   "thumb": "https://i3.ytimg.com/vi/zVwhVOB3ulU/hqdefault.jpg",
-   "id": "83236b7ef4ea",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 2366,
-   "duration": "39:26"
-  },
-  {
-   "title": "\"Hosts Must Clean, Not Guests\" - AirBnB New Rule Has Hosts Losing Their Minds",
-   "url": "https://www.youtube.com/watch?v=Ggj8fBm-JTg",
-   "source": "Aberrant preach",
-   "feedId": "yt-aberrant-preach",
-   "type": "video",
-   "tags": [
-    "trash"
-   ],
-   "published": "2026-10-25T19:39:19.000Z",
-   "summary": "AirBNB has issued a new policy change making hosts unable to demand pre check out chores that involve unecessary effort such as cleaning dishes or do laundry before leaving. ———————————— Spotify: https://open.spotify.com/artist/6QJIJ6AugqPEFASp1V6zgH Merchandise ---…",
-   "thumb": "https://i4.ytimg.com/vi/Ggj8fBm-JTg/hqdefault.jpg",
-   "id": "6b81b9fda544",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Which Numbers Are the Funniest | Smartypants Presentation [Clip]",
-   "url": "https://www.youtube.com/watch?v=SIhg6iXI6e4",
-   "source": "Dropout",
-   "feedId": "yt-dropout",
-   "type": "video",
-   "tags": [
-    "comedy"
-   ],
-   "published": "2026-10-21T17:30:18.000Z",
-   "summary": "Have you ever wondered why people laugh at certain numbers? What makes them funny? Is it universal? Well don't worry. After extensive research, Paul Robalino is here to answer these hard hitting questions. You can watch the full episode here:…",
-   "thumb": "https://i4.ytimg.com/vi/SIhg6iXI6e4/hqdefault.jpg",
-   "id": "6c16d466b2f0",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Jacob Wysocki On Make Some Noise, New Dimension 20, And More!",
-   "url": "https://www.youtube.com/shorts/LryV--PotoA",
-   "source": "Dropout",
-   "feedId": "yt-dropout",
-   "type": "video",
-   "tags": [
-    "comedy"
-   ],
-   "published": "2026-10-19T15:00:21.000Z",
-   "summary": "This week on Dropout... 🔊 Monday: Make Some Noise (with Carl Tart, Jess McKenna, and Jacob Wysocki) ✏️ Tuesday: Toonout 🧸 Wednesday: Dimension 20: Toylight Finale 🗣️ Thursday: Adventuring Party 🐷 Friday: Smartyshorts Welcome to the Dropout channel! You can support us by…",
-   "thumb": "https://i1.ytimg.com/vi/LryV--PotoA/hqdefault.jpg",
-   "id": "1476fab5a5cb",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Clocks are so much more interesting than I thought.",
-   "url": "https://www.youtube.com/watch?v=BxXfeotgVVA",
-   "source": "Tom Scott",
-   "feedId": "yt-tom-scott",
-   "type": "video",
-   "tags": [
-    "education"
-   ],
-   "published": "2026-10-19T15:00:08.000Z",
-   "summary": "At the Cumbria Clock Company, I discover that I knew far less about clocks than I thought. | ❓ Lateral, free weekly podcast: https://lateralcast.com/ https://youtube.com/lateralcast/ 🗺️ England series map: https://www.tomscott.com/england/ 🟥 MORE FROM TOM:…",
-   "thumb": "https://i3.ytimg.com/vi/BxXfeotgVVA/hqdefault.jpg",
-   "id": "636e08097a67",
+   "published": "2026-10-24T13:19:41.000Z",
+   "summary": "Thanks to Monarch for partnering with me! Start your free trial and get 50% off your first year of total money clarity using my link https://monarchmoney.yt.link/VomI7sD or code hmw50 for 50% Off Monarch Core tier. ----- MHFIN Video -…",
+   "thumb": "https://i2.ytimg.com/vi/EhbkCW3iTvA/hqdefault.jpg",
+   "id": "f90173ea4c25",
    "score": 0,
    "matched": [],
    "why": "0"
   }
  ],
- "contentHash": "bdea4b52ef6e"
+ "contentHash": "58f23a401e04"
 }
