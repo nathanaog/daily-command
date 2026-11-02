@@ -1,18 +1,16 @@
 {
- "generated": "2026-11-02T04:16:50.522Z",
+ "generated": "2026-11-02T07:45:47.367Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
   "ok": 6,
-  "items": 26,
+  "items": 24,
   "duplicatesMerged": 0,
   "lengthsKnown": 0,
-  "lengthLookups": 2,
-  "lengthFailures": 2,
+  "lengthLookups": 0,
+  "lengthFailures": 0,
   "lengthVia": "video pages",
-  "lengthFailReasons": {
-   "no length on page": 2
-  }
+  "lengthFailReasons": {}
  },
  "feeds": [
   {
@@ -551,14 +549,15 @@
    "id": "yt-how-money-works",
    "name": "How Money Works",
    "type": "youtube",
-   "status": "ok",
-   "count": 2,
+   "status": "error",
+   "count": 0,
    "resolved": {
     "channelId": "UCkCGANrihzExmu9QiqZpPlQ",
     "title": "How Money Works",
     "via": "name search"
    },
-   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCkCGANrihzExmu9QiqZpPlQ"
+   "error": "not found (404)",
+   "http": 404
   },
   {
    "id": "yt-joel-haver",
@@ -655,22 +654,21 @@
     "title": "J.J. McCullough",
     "via": "name search"
    },
-   "error": "HTTP 500",
-   "http": 500
+   "error": "not found (404)",
+   "http": 404
   },
   {
    "id": "yt-adam-neely",
    "name": "Adam Neely",
    "type": "youtube",
-   "status": "error",
+   "status": "ok",
    "count": 0,
    "resolved": {
     "channelId": "UCnkp4xDOwqqJD7sSM3xdUiQ",
     "title": "Adam Neely",
     "via": "name search"
    },
-   "error": "not found (404)",
-   "http": 404
+   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCnkp4xDOwqqJD7sSM3xdUiQ"
   },
   {
    "id": "rd-productmanagement",
@@ -703,37 +701,36 @@
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
+   "lastOk": "2026-11-02T04:16:50.522Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-xbox",
    "name": "r/xbox",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/xbox/top/.rss?t=day"
+   "lastOk": "2026-11-02T04:16:50.522Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-slaythespire",
    "name": "r/slaythespire",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 4,
-   "lastOk": "2026-11-01T21:51:43.798Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
   },
   {
    "id": "rd-germany",
@@ -742,7 +739,7 @@
    "status": "cached",
    "count": 5,
    "lastOk": "2026-10-31T01:21:53.748Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)"
   },
   {
    "id": "rd-unitedkingdom",
@@ -751,7 +748,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   }
  ],
  "items": [
@@ -783,6 +780,40 @@
    "published": "2026-11-02T03:09:14.000Z",
    "summary": "Just ran out of my 3 years, not looking to pay $25/month. Are there any deals left? submitted by /u/dude52760 [link] [comments]",
    "id": "be91dcb777cd",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "The U.S. Once Dominated the World’s Oceans. China’s Xi is Changing That.",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xlluz4/the_us_once_dominated_the_worlds_oceans_chinas_xi/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-11-02T02:46:29.000Z",
+   "summary": "submitted by /u/Unfair-Ticket9474 [link] [comments]",
+   "id": "fcdf9cc39ca1",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Canada’s “New World Order” Is A Façade",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xljgbp/canadas_new_world_order_is_a_façade/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-11-02T00:48:27.000Z",
+   "summary": "submitted by /u/RealpolitikPodcast [link] [comments]",
+   "id": "4835705a842c",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -969,23 +1000,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "China, Russia Deepen Arctic Cooperation In Challenge To US",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xlb21z/china_russia_deepen_arctic_cooperation_in/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-11-01T18:50:49.000Z",
-   "summary": "submitted by /u/Strongbow85 [link] [comments]",
-   "id": "d6b705fd23c1",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Are customers ever happy?",
    "url": "https://www.reddit.com/r/ProductManagement/comments/1xl9fxd/are_customers_ever_happy/",
    "source": "r/productmanagement",
@@ -1013,23 +1027,6 @@
    "published": "2026-11-01T16:46:09.000Z",
    "summary": "Might take a job as a TPM for improving computer vision models. I will be evaluating models, writing model requirements document, reading confusion matrices etc. I have no experience in this and I made that clear Omar the onsite. What does a computer vision model tpm do? How…",
    "id": "3de25c0495dc",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "The U.S. Is Bullying Europe Like Never Before",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xl5vp9/the_us_is_bullying_europe_like_never_before/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-11-01T15:28:14.000Z",
-   "summary": "submitted by /u/theatlantic [link] [comments]",
-   "id": "9abdb54ded68",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1120,8 +1117,8 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Quad not ‘anti-China’, says Rubio as first summit in two years set before Trump-Xi talks",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xkws5l/quad_not_antichina_says_rubio_as_first_summit_in/",
+   "title": "China, Russia Deepen Arctic Cooperation In Challenge To US",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xlb21z/china_russia_deepen_arctic_cooperation_in/",
    "source": "r/geopolitics",
    "feedId": "rd-geopolitics",
    "type": "post",
@@ -1129,16 +1126,16 @@
     "politics",
     "news"
    ],
-   "published": "2026-11-01T07:17:37.000Z",
-   "summary": "SS: So they finally set the date for Quad leaders summit, just before Trump’s meeting with Xi at APEC. This is going to be Trump’s first Quad summit. He took a much much longer route to realizing the value of Quad in managing China, but I guess Nobel aspirations and great…",
-   "id": "8762730149fe",
+   "published": "2026-11-01T18:50:49.000Z",
+   "summary": "submitted by /u/Strongbow85 [link] [comments]",
+   "id": "d6b705fd23c1",
    "score": 0,
    "matched": [],
    "why": "0"
   },
   {
-   "title": "\"As prime minister, I saw firsthand that Vladimir Putin is truly evil\"",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xkw1iq/as_prime_minister_i_saw_firsthand_that_vladimir/",
+   "title": "The U.S. Is Bullying Europe Like Never Before",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xl5vp9/the_us_is_bullying_europe_like_never_before/",
    "source": "r/geopolitics",
    "feedId": "rd-geopolitics",
    "type": "post",
@@ -1146,51 +1143,13 @@
     "politics",
     "news"
    ],
-   "published": "2026-11-01T06:30:56.000Z",
-   "summary": "submitted by /u/Burial [link] [comments]",
-   "id": "c0cd98fdb20f",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "If You Were TRYING To Destroy The Economy...",
-   "url": "https://www.youtube.com/watch?v=OAVin6xxd8E",
-   "source": "How Money Works",
-   "feedId": "yt-how-money-works",
-   "type": "video",
-   "tags": [
-    "finance",
-    "business",
-    "listen"
-   ],
-   "published": "2026-10-31T16:26:00.000Z",
-   "summary": "Start your own store with #printify: https://try.printify.com/ba6mdz2kmzmq The first 100 people who use the code HowMoneyWorks will get 15% off their first order! ----- Sign up for our FREE newsletter! - https://www.compoundeddaily.com/ Books we recommend -…",
-   "thumb": "https://i4.ytimg.com/vi/OAVin6xxd8E/hqdefault.jpg",
-   "id": "3b5a05f9cead",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "How American Real Estate Is Delaying The Inevitable... For Now",
-   "url": "https://www.youtube.com/watch?v=EhbkCW3iTvA",
-   "source": "How Money Works",
-   "feedId": "yt-how-money-works",
-   "type": "video",
-   "tags": [
-    "finance",
-    "business",
-    "listen"
-   ],
-   "published": "2026-10-24T13:19:41.000Z",
-   "summary": "Thanks to Monarch for partnering with me! Start your free trial and get 50% off your first year of total money clarity using my link https://monarchmoney.yt.link/VomI7sD or code hmw50 for 50% Off Monarch Core tier. ----- MHFIN Video -…",
-   "thumb": "https://i2.ytimg.com/vi/EhbkCW3iTvA/hqdefault.jpg",
-   "id": "f90173ea4c25",
+   "published": "2026-11-01T15:28:14.000Z",
+   "summary": "submitted by /u/theatlantic [link] [comments]",
+   "id": "9abdb54ded68",
    "score": 0,
    "matched": [],
    "why": "0"
   }
  ],
- "contentHash": "58f23a401e04"
+ "contentHash": "43638293f9be"
 }
