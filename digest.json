@@ -1,17 +1,17 @@
 {
- "generated": "2026-11-02T13:29:32.449Z",
+ "generated": "2026-11-02T16:19:27.998Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
   "ok": 52,
-  "items": 132,
+  "items": 135,
   "duplicatesMerged": 0,
   "lengthsKnown": 2,
-  "lengthLookups": 106,
-  "lengthFailures": 106,
+  "lengthLookups": 108,
+  "lengthFailures": 108,
   "lengthVia": "video pages",
   "lengthFailReasons": {
-   "no length on page": 106
+   "no length on page": 108
   }
  },
  "feeds": [
@@ -189,7 +189,7 @@
    "name": "ColdFusion",
    "type": "youtube",
    "status": "ok",
-   "count": 1,
+   "count": 2,
    "resolved": {
     "channelId": "UC4QZ_LsYcvcq7qOsOhpAX4A",
     "title": "ColdFusion",
@@ -254,7 +254,7 @@
    "name": "Channel 5 with Andrew Callaghan",
    "type": "youtube",
    "status": "ok",
-   "count": 3,
+   "count": 4,
    "resolved": {
     "channelId": "UC-AQKm7HUNMmxjdS371MSwg",
     "title": "Channel 5 with Andrew Callaghan",
@@ -657,9 +657,10 @@
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
+   "lastOk": "2026-11-02T13:29:32.449Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-xbox",
@@ -668,7 +669,7 @@
    "status": "cached",
    "count": 5,
    "lastOk": "2026-11-02T04:16:50.522Z",
-   "note": "rate-limited (429)"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-slaythespire",
@@ -677,16 +678,15 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "cached",
-   "count": 4,
-   "lastOk": "2026-11-02T07:45:47.367Z",
-   "note": "not its turn this run"
+   "status": "ok",
+   "count": 5,
+   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
   },
   {
    "id": "rd-germany",
@@ -695,7 +695,7 @@
    "status": "cached",
    "count": 5,
    "lastOk": "2026-10-31T01:21:53.748Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)"
   },
   {
    "id": "rd-unitedkingdom",
@@ -704,10 +704,225 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   }
  ],
  "items": [
+  {
+   "title": "This room keeps Great Britain's lights on.",
+   "url": "https://www.youtube.com/watch?v=NBXu6Z9Fw_M",
+   "source": "Tom Scott",
+   "feedId": "yt-tom-scott",
+   "type": "video",
+   "tags": [
+    "education"
+   ],
+   "published": "2026-11-02T16:05:24.000Z",
+   "summary": "The team at Britain's National Energy System Operator have a job that's quite different to just a few years ago. | ▶️ Watch the next episode right now on Nebula: https://nebula.tv/videos/tomscott-why-you-cant-touch-stonehenge | 🗺️ England series map:…",
+   "thumb": "https://i3.ytimg.com/vi/NBXu6Z9Fw_M/hqdefault.jpg",
+   "id": "ce482129bfbc",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Investigating Jared Kushner's Empire of Fraud & Corruption",
+   "url": "https://www.youtube.com/watch?v=MM7QGccszUU",
+   "source": "Channel 5 with Andrew Callaghan",
+   "feedId": "yt-channel-5-with-andrew-callaghan",
+   "type": "video",
+   "tags": [
+    "education",
+    "politics"
+   ],
+   "published": "2026-11-02T16:00:11.000Z",
+   "summary": "Go to https://ground.news/channel5 to stay fully informed with all sides of every story. Subscribe for 40% off the Vantage plan through my link. To see 'Combat Obscura' or any of the 17 other documentaries currently streaming on C5.NOW while knowing that you are directly…",
+   "thumb": "https://i2.ytimg.com/vi/MM7QGccszUU/hqdefault.jpg",
+   "id": "bff8ddf2952b",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Moscow hit by record losses as Ukrainian drones target Russian military site",
+   "url": "https://www.youtube.com/watch?v=c-9azkzbenI",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-02T15:38:36.000Z",
+   "summary": "Russia has recorded its deadliest month in Ukraine since it began the war four years ago, data from Kyiv indicates, as Ukrainian forces launched overnight strikes against a major Russian missile plant. Former ambassador to Ukraine, Leigh Turner, joins Shelagh Fogarty as…",
+   "thumb": "https://i4.ytimg.com/vi/c-9azkzbenI/hqdefault.jpg",
+   "id": "03e8187d4b7a",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "The Backlash to Corruption Is Going Global",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xm0f4b/the_backlash_to_corruption_is_going_global/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-11-02T15:35:37.000Z",
+   "summary": "submitted by /u/theatlantic [link] [comments]",
+   "id": "337895e59af3",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "‘Maximum discretion’ is a thing of the past: Swiss politicians step onto the world stage",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xlzo3i/maximum_discretion_is_a_thing_of_the_past_swiss/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-11-02T15:07:45.000Z",
+   "summary": "submitted by /u/Sudden-Ad-4281 [link] [comments]",
+   "id": "b5a8de23d9f3",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Steve Jobs Warned Apple. They Didn’t Listen.",
+   "url": "https://www.youtube.com/watch?v=Sb1_j9A25nQ",
+   "source": "ColdFusion",
+   "feedId": "yt-coldfusion",
+   "type": "video",
+   "tags": [
+    "finance",
+    "tech",
+    "listen"
+   ],
+   "published": "2026-11-02T14:49:00.000Z",
+   "summary": "Visit https://brilliant.org/coldfusion to try Brilliant’s tutor for free and get 20% off an annual subscription. Apple is breaking all of their rules and seem lost, but is there a method to the madness? ColdFusion Music: https://www.youtube.com/@coldfusionmusic…",
+   "thumb": "https://i4.ytimg.com/vi/Sb1_j9A25nQ/hqdefault.jpg",
+   "id": "6e44456627fc",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Is Texas finally turning against Republicans?",
+   "url": "https://www.youtube.com/watch?v=9UWvqDbkNLY",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-02T14:12:04.000Z",
+   "summary": "After decades of heartbreak for Democrats, is Texas finally turning blue? Simon Marks fills in for James O'Brien with the latest. Listen to the full show on the all-new LBC App: https://app.af.lbc.co.uk/btnc/thenewlbcapp #jamesobrien #simonmarks #usmidterms #republicans…",
+   "thumb": "https://i2.ytimg.com/vi/9UWvqDbkNLY/hqdefault.jpg",
+   "id": "c0173ca8ac46",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Why I called out a GB News host on live TV",
+   "url": "https://www.youtube.com/watch?v=sJDvuMrZBzw",
+   "source": "PoliticsJOE",
+   "feedId": "yt-politicsjoe",
+   "type": "video",
+   "tags": [
+    "comedy"
+   ],
+   "published": "2026-11-02T14:08:19.000Z",
+   "summary": "Andy Twelves caused a bit of a stir on GB News last week, clashing with host Nana Akua in a viral clip. But what was the context? Andy takes us behind the scenes, revealing what it's like to be talking head, as well as the perils of being a left-wing commentator on right-wing…",
+   "thumb": "https://i4.ytimg.com/vi/sJDvuMrZBzw/hqdefault.jpg",
+   "id": "57f5709a125b",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Uganda begins withdrawing troops from Somalia after two-decade effort to battle militants",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xlxt7t/uganda_begins_withdrawing_troops_from_somalia/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-11-02T13:55:13.000Z",
+   "summary": "submitted by /u/DWNews [link] [comments]",
+   "id": "0d4ab154aa33",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Nadeln in Halloween-Süßigkeiten: Worauf Eltern jetzt achten müssen",
+   "url": "https://www.youtube.com/watch?v=K-PU0x6jgqw",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-02T13:51:38.000Z",
+   "summary": "Bundesweit häufen sich die Fälle gefundener Fremdkörper in Halloween-Süßigkeiten. Die Polizei bittet Eltern, die gesammelten Naschereien ihrer Kinder sorgfältig zu überprüfen. Die Ermittlungen laufen. Mehr Informationen:…",
+   "thumb": "https://i4.ytimg.com/vi/K-PU0x6jgqw/hqdefault.jpg",
+   "id": "7ce8c1902268",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Midterms in den USA: Worum geht es bei den Zwischenwahlen?",
+   "url": "https://www.youtube.com/watch?v=O0WgXHtN_iM",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-02T13:49:58.000Z",
+   "summary": "Was genau sind eigentlich die Midterms? Wieso wird in den USA am Dienstag gewählt? Und warum sind die Zwischenwahlen für US-Präsident Donald Trump so wichtig? Wir erklären es im Video. Bei den Zwischenwahlen am 3. November in den USA steht Präsident Trump selbst gar nicht auf…",
+   "thumb": "https://i4.ytimg.com/vi/O0WgXHtN_iM/hqdefault.jpg",
+   "id": "26301c0bfd2b",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Bitburg: Siedlung aus dem Mittelalter bei Straßenbau gefunden | tagesthemen mittendrin",
+   "url": "https://www.youtube.com/watch?v=iHkkiH_gAHs",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-02T13:41:34.000Z",
+   "summary": "Bitburg in der Eifel soll eine Umgehungsstraße bekommen. Dabei wurden Reste einer Siedlung aus dem Mittelalter gefunden. Der Bau der Straße muss pausieren, Archäologinnen und Archäologen dürfen zunächst graben - bis am Ende die Straße drüber gebaut und viel von den Funden damit…",
+   "thumb": "https://i2.ytimg.com/vi/iHkkiH_gAHs/hqdefault.jpg",
+   "id": "ebe304f2f3d5",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
   {
    "title": "Henry Nowak’s family claim they were manipulated by police",
    "url": "https://www.reddit.com/r/ukpolitics/comments/1xlv7vs/henry_nowaks_family_claim_they_were_manipulated/",
@@ -738,6 +953,23 @@
    "published": "2026-11-02T11:05:12.000Z",
    "summary": "submitted by /u/HotMinuteUK [link] [comments]",
    "id": "ef7a3697f3a3",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Oil prices fall as Iran and Qatari mediators hold talks to end war",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xlu95z/oil_prices_fall_as_iran_and_qatari_mediators_hold/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-11-02T11:02:33.000Z",
+   "summary": "submitted by /u/TimesandSundayTimes [link] [comments]",
+   "id": "64e8e87e36e3",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -849,6 +1081,23 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
+   "title": "Venezuela’s Machado returns from exile to crowds of cheering supporters",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xlsv2o/venezuelas_machado_returns_from_exile_to_crowds/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-11-02T09:38:35.000Z",
+   "summary": "Venezuela's opposition leader has returned and she has called for elections. How will the US react, will they allow it or not and does that even matter? The next presidential election is set for 2030, but I feel like it will happen in the coming 6 months. The current regime…",
+   "id": "edc5b4a3cb9b",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
    "title": "Berlin: SPD-Mitglieder fordern Stopp von Koalition mit Linken",
    "url": "https://www.youtube.com/watch?v=w2w1u5J0UhA",
    "source": "Tagesschau",
@@ -863,63 +1112,6 @@
    "summary": "Gut sechs Wochen nach der Wahl zum Berliner Abgeordnetenhaus starten am Vormittag die Koalitionsverhandlungen zwischen der Linken, Grünen und SPD. Die Gespräche werden von einer Dacharbeitsgruppe aus Spitzenpolitikern der drei Parteien geführt. Hinzu kommen rund ein Dutzend…",
    "thumb": "https://i4.ytimg.com/vi/w2w1u5J0UhA/hqdefault.jpg",
    "id": "f5b9efa3b7b3",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Plünderungen nach Demos: Innenminister Dobrindt droht mit harten Strafen",
-   "url": "https://www.youtube.com/watch?v=lET8WpW33_4",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-02T09:22:49.000Z",
-   "summary": "Es begann als friedlicher Protest: Am Samstag sind mehrere Tausend Menschen bundesweit überwiegend friedlich auf die Straße gegangen. Die Initiative \"Gen Z regelt\" hatte zur Teilnahme aufgerufen. Unter anderem ging es um bessere Bildung und bezahlbaren Wohnraum. Doch vor allem…",
-   "thumb": "https://i1.ytimg.com/vi/lET8WpW33_4/hqdefault.jpg",
-   "id": "cac978c122bd",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "MOMA-Reporter: Stimmung in Alaska vor den Midterms | ARD Morgenmagazin",
-   "url": "https://www.youtube.com/watch?v=6vFb-0NcS1g",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-02T09:06:26.000Z",
-   "summary": "Wenige Tage vor den wegweisenden Wahlen zur Mitte von Donald Trumps zweiter Amtszeit hören wir uns bei Demokraten und Republikanern um: Wie ist die Stimmung? Welche Themen bewegen die Wähler? Unser Blick richtet sich auf Alaska. Hier könnte die republikanische Mehrheit kippen.…",
-   "thumb": "https://i3.ytimg.com/vi/6vFb-0NcS1g/hqdefault.jpg",
-   "id": "fd7de8177584",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Eigene KI im Rathaus: Kleine Stadt will unabhängig von Big Tech werden",
-   "url": "https://www.youtube.com/watch?v=L1y-_o6Hwok",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-02T08:23:45.000Z",
-   "summary": "Welche Chancen bietet uns die Künstliche Intelligenz? Welche Risiken und Folgen sind mit ihr verbunden? Es gibt viele Fragen rund um KI. Diese stehen auch im Mittelpunkt der Diskussionen auf dem Digitalgipfel in Berlin, der heute beginnt. Zwei Tage lang tauschen sich…",
-   "thumb": "https://i1.ytimg.com/vi/L1y-_o6Hwok/hqdefault.jpg",
-   "id": "71a194c657d5",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -959,26 +1151,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "S13 E28: Midterm Elections & The $100 Bill: 11/1/26: Last Week Tonight with John Oliver",
-   "url": "https://www.youtube.com/watch?v=Lz-QkCnw6WQ",
-   "source": "Last Week Tonight",
-   "feedId": "yt-last-week-tonight",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "politics"
-   ],
-   "published": "2026-11-02T04:00:20.000Z",
-   "summary": "Ahead of this week’s midterm elections, John Oliver discusses why things aren’t looking great for Republicans, how they’re desperately trying to get ahead, and whether or not guys want their fingers to look like sausages. Plus, he takes a look at the $100 bill, crime, and Steve…",
-   "thumb": "https://i1.ytimg.com/vi/Lz-QkCnw6WQ/hqdefault.jpg",
-   "id": "09c99d8d2de7",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 2385,
-   "duration": "39:45"
-  },
-  {
    "title": "Free 1-Month Trial of PC Game Pass",
    "url": "https://www.reddit.com/r/xbox/comments/1xlmune/free_1month_trial_of_pc_game_pass/",
    "source": "r/xbox",
@@ -995,24 +1167,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "IT LEAKED: Trump’s DISTURBING Plan if DEMOCRATS WIN On Tuesday!",
-   "url": "https://www.youtube.com/watch?v=ZZvA44eLWkw",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-02T03:30:25.000Z",
-   "summary": "Luke discusses Chris Murphy's testimony on what comes after the midterms. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
-   "thumb": "https://i3.ytimg.com/vi/ZZvA44eLWkw/hqdefault.jpg",
-   "id": "1200ee48536f",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "What is the best Ultimate deal right now?",
    "url": "https://www.reddit.com/r/xbox/comments/1xlmb9y/what_is_the_best_ultimate_deal_right_now/",
    "source": "r/xbox",
@@ -1024,58 +1178,6 @@
    "published": "2026-11-02T03:09:14.000Z",
    "summary": "Just ran out of my 3 years, not looking to pay $25/month. Are there any deals left? submitted by /u/dude52760 [link] [comments]",
    "id": "be91dcb777cd",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "The U.S. Once Dominated the World’s Oceans. China’s Xi is Changing That.",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xlluz4/the_us_once_dominated_the_worlds_oceans_chinas_xi/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-11-02T02:46:29.000Z",
-   "summary": "submitted by /u/Unfair-Ticket9474 [link] [comments]",
-   "id": "fcdf9cc39ca1",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Ossoff’s SECRET 2028 Plan LEAKED!",
-   "url": "https://www.youtube.com/watch?v=IJ1dVXensGo",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-02T01:30:16.000Z",
-   "summary": "Luke discusses some reporting on Jon Ossoff's 2028 plans. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
-   "thumb": "https://i2.ytimg.com/vi/IJ1dVXensGo/hqdefault.jpg",
-   "id": "c4d6c156d558",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Canada’s “New World Order” Is A Façade",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xljgbp/canadas_new_world_order_is_a_façade/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-11-02T00:48:27.000Z",
-   "summary": "submitted by /u/RealpolitikPodcast [link] [comments]",
-   "id": "4835705a842c",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1214,6 +1316,62 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
+   "title": "S13 E28: Midterm Elections & The $100 Bill: 11/1/26: Last Week Tonight with John Oliver",
+   "url": "https://www.youtube.com/watch?v=Lz-QkCnw6WQ",
+   "source": "Last Week Tonight",
+   "feedId": "yt-last-week-tonight",
+   "type": "video",
+   "tags": [
+    "comedy",
+    "politics"
+   ],
+   "published": "2026-11-02T04:00:20.000Z",
+   "summary": "Ahead of this week’s midterm elections, John Oliver discusses why things aren’t looking great for Republicans, how they’re desperately trying to get ahead, and whether or not guys want their fingers to look like sausages. Plus, he takes a look at the $100 bill, crime, and Steve…",
+   "thumb": "https://i1.ytimg.com/vi/Lz-QkCnw6WQ/hqdefault.jpg",
+   "id": "09c99d8d2de7",
+   "score": 0,
+   "matched": [],
+   "why": "0",
+   "durationSec": 2385,
+   "duration": "39:45"
+  },
+  {
+   "title": "IT LEAKED: Trump’s DISTURBING Plan if DEMOCRATS WIN On Tuesday!",
+   "url": "https://www.youtube.com/watch?v=ZZvA44eLWkw",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-02T03:30:25.000Z",
+   "summary": "Luke discusses Chris Murphy's testimony on what comes after the midterms. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
+   "thumb": "https://i3.ytimg.com/vi/ZZvA44eLWkw/hqdefault.jpg",
+   "id": "1200ee48536f",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Ossoff’s SECRET 2028 Plan LEAKED!",
+   "url": "https://www.youtube.com/watch?v=IJ1dVXensGo",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-02T01:30:16.000Z",
+   "summary": "Luke discusses some reporting on Jon Ossoff's 2028 plans. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
+   "thumb": "https://i2.ytimg.com/vi/IJ1dVXensGo/hqdefault.jpg",
+   "id": "c4d6c156d558",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
    "title": "Watch Trump Rally Turn SUDDENLY DISGUSTING!",
    "url": "https://www.youtube.com/watch?v=7xWy1os1fK4",
    "source": "Luke Beasley",
@@ -1330,23 +1488,6 @@
    "summary": "There has been prevailing speculation amongst pollsters that the mid-term election results will be very tough for Donald Trump and the Republicans. However, the President is famous for defying polls - and his former chief of staff for the National Security Council is confident…",
    "thumb": "https://i4.ytimg.com/vi/GgLStbtzsd4/hqdefault.jpg",
    "id": "87687f3ab807",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "China, Russia Deepen Arctic Cooperation In Challenge To US",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xlb21z/china_russia_deepen_arctic_cooperation_in/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-11-01T18:50:49.000Z",
-   "summary": "submitted by /u/Strongbow85 [link] [comments]",
-   "id": "d6b705fd23c1",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1476,23 +1617,6 @@
    "why": "0"
   },
   {
-   "title": "The U.S. Is Bullying Europe Like Never Before",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xl5vp9/the_us_is_bullying_europe_like_never_before/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-11-01T15:28:14.000Z",
-   "summary": "submitted by /u/theatlantic [link] [comments]",
-   "id": "9abdb54ded68",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "Die dunkle Welt der privaten Pokerspiele",
    "url": "https://www.youtube.com/watch?v=GPG5FzoA-_8",
    "source": "Simplicissimus",
@@ -1525,24 +1649,6 @@
    "summary": "Hector Serrano runs one of the most innovative and successful paid growth programs in Silicon Valley. As Head of Content at Wispr Flow, a leading AI voice-to-text tool, he built a roster of 50 creators who drive 500 to 600 paid user-generated content (UGC) ads every month. The…",
    "thumb": "https://i4.ytimg.com/vi/KzS5Qs7vSMg/hqdefault.jpg",
    "id": "2896928f9e9d",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "The morality of Donald Trump",
-   "url": "https://www.youtube.com/watch?v=7JVwDatAR8I",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-01T11:30:34.000Z",
-   "summary": "It's been 10 years since Donald Trump was elected President for the first time. Ahead of the mid-terms, long-time spiritual advisor Mark Burns speaks to James Hanson about his legacy and the morality which drives him. Listen to the full show on the all-new LBC App:…",
-   "thumb": "https://i4.ytimg.com/vi/7JVwDatAR8I/hqdefault.jpg",
-   "id": "92167e745888",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1633,24 +1739,6 @@
    "summary": "Ben and Eric Kusin enter the Tank seeking $150,000 for 5% of Reviver, a portable clothing-freshening product designed to tackle unwanted odors on the go. From Season 6 Episode 4 Watch Shark Tank US Now: http://AAN.SonyPictures.com/SharkTankUSHulu Watch Shark Tank Australia Now:…",
    "thumb": "https://i4.ytimg.com/vi/_k8bxQxnfpI/hqdefault.jpg",
    "id": "d255d23950e9",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "How Trump's 'foul temper' is causing global unpredictability",
-   "url": "https://www.youtube.com/watch?v=i5KCx8hr3SQ",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-10-31T16:39:30.000Z",
-   "summary": "The US cancelled the annual G20 'family photo' after Australia, the UK, and a host of other nations refused to appear beside the Russian foreign minister. Matt Frei is joined by diplomatic editor Patrick Wintour and former UK ambassador to the US Sir Peter Westmacott to discuss…",
-   "thumb": "https://i2.ytimg.com/vi/i5KCx8hr3SQ/hqdefault.jpg",
-   "id": "73917a00672f",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2358,23 +2446,6 @@
    "why": "0"
   },
   {
-   "title": "Should You Be Scared of the Bond Markets? | Budget Preview",
-   "url": "https://www.youtube.com/watch?v=cBwV_xon-sg",
-   "source": "PoliticsJOE",
-   "feedId": "yt-politicsjoe",
-   "type": "video",
-   "tags": [
-    "comedy"
-   ],
-   "published": "2026-10-27T17:33:42.000Z",
-   "summary": "Robin Wigglesworth, Financial Times journalist and author of The Fabulous Debt, joins us to explain how government borrowing works, why rising gilt yields matter, and how Labour's first Budget under Andy Burnham could take Britain out of a doom cycle of reliance on the market.…",
-   "thumb": "https://i4.ytimg.com/vi/cBwV_xon-sg/hqdefault.jpg",
-   "id": "c1464230c5ab",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "Should Food Cost More?",
    "url": "https://www.youtube.com/watch?v=LtvPbNf7dPM",
    "source": "The Onion",
@@ -3041,24 +3112,7 @@
    "score": 0,
    "matched": [],
    "why": "0"
-  },
-  {
-   "title": "Clocks are so much more interesting than I thought.",
-   "url": "https://www.youtube.com/watch?v=BxXfeotgVVA",
-   "source": "Tom Scott",
-   "feedId": "yt-tom-scott",
-   "type": "video",
-   "tags": [
-    "education"
-   ],
-   "published": "2026-10-19T15:00:08.000Z",
-   "summary": "At the Cumbria Clock Company, I discover that I knew far less about clocks than I thought. | ❓ Lateral, free weekly podcast: https://lateralcast.com/ https://youtube.com/lateralcast/ 🗺️ England series map: https://www.tomscott.com/england/ 🟥 MORE FROM TOM:…",
-   "thumb": "https://i3.ytimg.com/vi/BxXfeotgVVA/hqdefault.jpg",
-   "id": "636e08097a67",
-   "score": 0,
-   "matched": [],
-   "why": "0"
   }
  ],
- "contentHash": "f0e82b1fe03e"
+ "contentHash": "7bc7884bd121"
 }
