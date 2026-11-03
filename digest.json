@@ -1,17 +1,17 @@
 {
- "generated": "2026-11-03T16:10:45.956Z",
+ "generated": "2026-11-03T19:13:59.653Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
   "ok": 51,
-  "items": 130,
+  "items": 131,
   "duplicatesMerged": 0,
   "lengthsKnown": 2,
-  "lengthLookups": 109,
-  "lengthFailures": 109,
+  "lengthLookups": 110,
+  "lengthFailures": 110,
   "lengthVia": "video pages",
   "lengthFailReasons": {
-   "no length on page": 109
+   "no length on page": 110
   }
  },
  "feeds": [
@@ -202,7 +202,7 @@
    "name": "Levi Hildebrand",
    "type": "youtube",
    "status": "ok",
-   "count": 2,
+   "count": 3,
    "resolved": {
     "channelId": "UC-OJ-24roEfQ_-PCnLJSckg",
     "title": "Levi Hildebrand",
@@ -371,7 +371,7 @@
    "name": "Dropout",
    "type": "youtube",
    "status": "ok",
-   "count": 2,
+   "count": 3,
    "resolved": {
     "channelId": "UCPDXXXJj9nax0fr0Wfc048g",
     "title": "Dropout",
@@ -384,7 +384,7 @@
    "name": "The Onion",
    "type": "youtube",
    "status": "ok",
-   "count": 3,
+   "count": 2,
    "resolved": {
     "channelId": "UCfAOh2t5DpxVrgS9NQKjC7A",
     "title": "The Onion",
@@ -657,9 +657,10 @@
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
+   "lastOk": "2026-11-03T16:10:45.956Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-xbox",
@@ -668,7 +669,7 @@
    "status": "cached",
    "count": 5,
    "lastOk": "2026-11-02T04:16:50.522Z",
-   "note": "rate-limited (429)"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-slaythespire",
@@ -677,25 +678,26 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-11-03T10:12:20.588Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
   },
   {
    "id": "rd-germany",
    "name": "r/germany",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": "2026-10-31T01:21:53.748Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-unitedkingdom",
@@ -704,10 +706,195 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   }
  ],
  "items": [
+  {
+   "title": "Wer zeichnet diese Gesichter? Rätsel um Street Art in Wien",
+   "url": "https://www.youtube.com/watch?v=SaEsHAXFUCg",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-03T19:11:07.000Z",
+   "summary": "Wenn in Österreich jemand als „Schlawiner“ bezeichnet wird, dann ist das meist anerkennend gemeint. Der „Schlawiner“, von dem jetzt die Rede ist, der ist nicht nur ein Schlitzohr, sondern kann auch noch ziemlich gut zeichnen. Aber, und das ist das Faszinierende an diesem…",
+   "thumb": "https://i4.ytimg.com/vi/SaEsHAXFUCg/hqdefault.jpg",
+   "id": "c92afe6d6267",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "„Es sieht gut aus für die Demokraten“, Politikwissenschaftlerin zur Bedeutung der Midterms",
+   "url": "https://www.youtube.com/watch?v=y3_co27aH28",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-03T19:09:12.000Z",
+   "summary": "Donald Trump steht gar nicht auf dem Stimmzettel – und doch entscheiden die US-Bürger:innen heute indirekt auch über die zweite Hälfte seiner Amtszeit als Präsident. Denn vom Ausgang der Kongresswahlen hängt ab, ob Trump künftig bei der Durchsetzung seiner Politik auf das…",
+   "thumb": "https://i2.ytimg.com/vi/y3_co27aH28/hqdefault.jpg",
+   "id": "2dbbb6e9ad71",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Christiane Amanpour assesses how Trump will respond to the US midterm outcomes",
+   "url": "https://www.youtube.com/watch?v=MShlGagOAIc",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-03T19:00:08.000Z",
+   "summary": "With Americans heading to the polls for the US midterms, Andrew Marr is joined by Chief International Anchor at CNN Christiane Amanpour and Sir John Sawers, former Chief of the Secret Intelligence Service, to assess the Republican chances, the international climate, and how…",
+   "thumb": "https://i2.ytimg.com/vi/MShlGagOAIc/hqdefault.jpg",
+   "id": "fc2e534327e6",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Selenskyj-Besuch in Berlin: Was Merz der Ukraine jetzt zugesagt hat",
+   "url": "https://www.youtube.com/watch?v=0n___mmpKGI",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-03T18:17:26.000Z",
+   "summary": "Russische Angriffe auf die Energie-Infrastruktur, Raketeneinschläge in den Städten: Der Ukraine droht ein harter Kriegswinter. Kanzler Merz sagt Unterstützung zu, fordert aber auch mehr Engagement der europäischen Partner. Mehr Informationen:…",
+   "thumb": "https://i1.ytimg.com/vi/0n___mmpKGI/hqdefault.jpg",
+   "id": "f8903d1194c4",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "What If Your Church Councils Contradict Each Other? — Jay Dyer vs David Wood",
+   "url": "https://www.youtube.com/watch?v=Fx7mTVxeu7c",
+   "source": "Modern-Day Debate",
+   "feedId": "yt-modern-day-debate",
+   "type": "video",
+   "tags": [
+    "debates",
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-03T18:00:08.000Z",
+   "summary": "Huge thank you to our DEBATECON 9 sponsors including: Revival of the Anointed's Rule: https://revivingtheroar.org/ Apologetics Ark: https://www.apologeticsark.com/links @UncensoredAmerica Yonaguni International Cuisine (Aguadilla, Puerto Rico):…",
+   "thumb": "https://i3.ytimg.com/vi/Fx7mTVxeu7c/hqdefault.jpg",
+   "id": "3cd8e8bc0550",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Hacker greifen Supermärkte in Deutschland an – mehrere Bundesländer betroffen",
+   "url": "https://www.youtube.com/watch?v=Q02YQg-bNXk",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-03T17:59:32.000Z",
+   "summary": "Statt fünf waren es plötzlich 50 Grad: In der Nacht zu Dienstag haben Hacker in mehreren Supermärkten in Deutschland die Kühlanlagen umgestellt. Große Mengen an Lebensmitteln mussten entsorgt werden. Ähnliche Cyberangriffe gab es auch im Ausland. Mehr Informationen:…",
+   "thumb": "https://i2.ytimg.com/vi/Q02YQg-bNXk/hqdefault.jpg",
+   "id": "70ae5e913ff1",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "US midterms: 'The Republicans know it's over'",
+   "url": "https://www.youtube.com/watch?v=E0ImTePt3fU",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-03T17:33:49.000Z",
+   "summary": "The polls have opened in the historic US midterm elections that will define the rest of Trump's presidency. Initially projected to take only the House, Democrats are now favoured to take the Senate, completely kneecapping the President's power. President Trump has already sued…",
+   "thumb": "https://i2.ytimg.com/vi/E0ImTePt3fU/hqdefault.jpg",
+   "id": "91586b9680db",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "The iPhone Duo is Already Broken",
+   "url": "https://www.youtube.com/watch?v=2mVMbe60eoU",
+   "source": "Levi Hildebrand",
+   "feedId": "yt-levi-hildebrand",
+   "type": "video",
+   "tags": [
+    "comedy",
+    "business"
+   ],
+   "published": "2026-11-03T17:15:09.000Z",
+   "summary": "Take back your privacy and get your free Proton Mail account using my link: proton.me/levi Subscribe! https://www.youtube.com/channel/UC-OJ-24roEfQ_-PCnLJSckg?sub_confirmation=1 Join our Patreon: https://www.patreon.com/c/LeviHildebrand For further reading, check out the…",
+   "thumb": "https://i3.ytimg.com/vi/2mVMbe60eoU/hqdefault.jpg",
+   "id": "a61e0814db9a",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "tagesschau in Einfacher Sprache 19:00 Uhr, 03.11.2026",
+   "url": "https://www.youtube.com/watch?v=ocGmZlfofwQ",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-03T16:44:22.000Z",
+   "summary": "tagesschau in Einfacher Sprache 19:00 Uhr USA: Wahlen für neuen Kongress, Wahlen in den USA: Test für Trump, Besuch in Berlin: Selenskyj trifft Merz, Angriff auf Supermärkte: Lebensmittel verdorben, Das Wetter Die \"tagesschau in Einfacher Sprache\" – immer Montag bis Freitag um…",
+   "thumb": "https://i4.ytimg.com/vi/ocGmZlfofwQ/hqdefault.jpg",
+   "id": "d45f001f7d99",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "20 Flaws GTA 6 Is Trying To Fix",
+   "url": "https://www.youtube.com/watch?v=ZUPsRg7i4Bg",
+   "source": "GameRanx",
+   "feedId": "yt-gameranx",
+   "type": "video",
+   "tags": [
+    "gaming"
+   ],
+   "published": "2026-11-03T16:40:32.000Z",
+   "summary": "According to reports and previews, Rockstar's Grand Theft Auto VI is introducing big changes and improvements. Here's everything we know. ~~SOURCES~~ https://www.ign.com/articles/gta-6-the-big-interview http://www.ign.com/articles/gta-6-car-steal-system-explained…",
+   "thumb": "https://i3.ytimg.com/vi/ZUPsRg7i4Bg/hqdefault.jpg",
+   "id": "5bcc8b83cbdb",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
   {
    "title": "Watch MAGA Host Realize Trump is F***ED IN THE HEAD Mid-Interview!",
    "url": "https://www.youtube.com/watch?v=MIuu8f8uIMs",
@@ -727,39 +914,35 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Wohnungsnot in Deutschland: Hilft der Bau-Turbo wirklich?",
-   "url": "https://www.youtube.com/watch?v=4lUtflhQYE4",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
+   "title": "India Stall Opens in Central Asia’s Military Bazaar",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xmwpxn/india_stall_opens_in_central_asias_military_bazaar/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
    "tags": [
-    "german",
-    "news",
-    "listen"
+    "politics",
+    "news"
    ],
-   "published": "2026-11-03T15:08:50.000Z",
-   "summary": "In Deutschland fehlen geschätzt mehr als eine Million Wohnungen. Vor allem in Ballungsräumen ist bezahlbarer Wohnraum knapp. Der Mangel sorgt für hohe Preise und steigende Mieten. Bisherige Bemühungen, den Wohnungsbau anzukurbeln, haben keine spürbare Entlastung gebracht. Seit…",
-   "thumb": "https://i1.ytimg.com/vi/4lUtflhQYE4/hqdefault.jpg",
-   "id": "796b6fabfc0e",
+   "published": "2026-11-03T15:57:11.000Z",
+   "summary": "submitted by /u/CEPAORG [link] [comments]",
+   "id": "c40bcd267488",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Midterms in den USA: Demokraten gewinnen voraussichtlich im Repräsentantenhaus",
-   "url": "https://www.youtube.com/watch?v=C4Ic3d2_Cn8",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
+   "title": "Poland hosts Europe's bid for peace influence [ANALYSIS]",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xmw188/poland_hosts_europes_bid_for_peace_influence/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
    "tags": [
-    "german",
-    "news",
-    "listen"
+    "politics",
+    "news"
    ],
-   "published": "2026-11-03T15:06:18.000Z",
-   "summary": "Republikaner:innen oder Demokrat:innen: Wer überzeugt mehr? In den USA finden heute die Zwischenwahlen statt, ein wichtiger Gradmesser für Trumps Politik. Weltweit wird der Ausgang der Wahl mit Spannung erwartet. „Worüber wir, glaube ich, große Einigkeit haben bei allen…",
-   "thumb": "https://i4.ytimg.com/vi/C4Ic3d2_Cn8/hqdefault.jpg",
-   "id": "d53d7635579c",
+   "published": "2026-11-03T15:31:09.000Z",
+   "summary": "As European troops prepare in Poland for a post-war mission in Ukraine, their governments are seeking a greater say in US-led peace talks with Moscow and Kyiv. Next Monday, at a military training ground near the little-known town of Nowa Dęba in southeastern Poland, European…",
+   "id": "f1118e1ff5e2",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -817,20 +1000,18 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "„Die Leute wollen jetzt den Präsidenten zur Rechenschaft ziehen“, USA-Expertin zu den Midterms",
-   "url": "https://www.youtube.com/watch?v=EMZINRErdL0",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
+   "title": "Trump says U.S. will stop US$4 billion funding to Israel at end of 2026",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xmtuca/trump_says_us_will_stop_us4_billion_funding_to/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
    "tags": [
-    "german",
-    "news",
-    "listen"
+    "politics",
+    "news"
    ],
-   "published": "2026-11-03T14:24:18.000Z",
-   "summary": "Auch wenn er nirgendwo auf dem Wahlzettel steht, bei der Wahl geht es auch um US-Präsident Trump und wie sein politischer Kurs bei den Wähler:innen ankommt. Und dies könnte sich dann in den Wahlergebnissen für die Republikanische Partei niederschlagen. Die Umfragen hatten…",
-   "thumb": "https://i2.ytimg.com/vi/EMZINRErdL0/hqdefault.jpg",
-   "id": "df1f152da496",
+   "published": "2026-11-03T14:06:59.000Z",
+   "summary": "submitted by /u/Firecracker048 [link] [comments]",
+   "id": "ddc64a1e7dae",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -865,25 +1046,6 @@
    "summary": "What do British people think about the rise of the right-wing globally? In the first of our new series Generational, we brought together five Brits from different generations to debate some of the most pressing issues of our time. Will Donald Trump mark the end of the surge in…",
    "thumb": "https://i4.ytimg.com/vi/sBRy1sMvUJg/hqdefault.jpg",
    "id": "8cac46663c8b",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Angriffe auf Stromnetz vor dem Winter: Was der Ukraine jetzt droht",
-   "url": "https://www.youtube.com/watch?v=jCttoOlEmeM",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-03T13:55:03.000Z",
-   "summary": "Russland setzt seine Angriffe auf die Energieinfrastruktur der Ukraine fort. Präsident Selenskyj teilte mit, Russland habe in der Nacht Drohnen, ballistische Raketen und Marschflugkörper auf sein Land abgefeuert. Nach offiziellen Angaben wurden Energieanlagen in zehn Regionen…",
-   "thumb": "https://i3.ytimg.com/vi/jCttoOlEmeM/hqdefault.jpg",
-   "id": "9413d02f722f",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -940,25 +1102,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Midterms in den USA: Droht Trump ein „Denkzettel“?",
-   "url": "https://www.youtube.com/watch?v=P-bZyfblFuk",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-03T12:43:56.000Z",
-   "summary": "Noch kann niemand sagen, wie die Kongresswahlen ausgehen, ob Präsident Trump einen Denkzettel erhält oder vielleicht doch Rückendeckung für seinen Kurs bekommt. Die Umfragen vor der Wahl sahen jedenfalls nicht gut aus für Trump und seine Republikaner. Viele seiner früheren…",
-   "thumb": "https://i1.ytimg.com/vi/P-bZyfblFuk/hqdefault.jpg",
-   "id": "5b7bf3118a52",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "James O'Brien reacts to Mahmood's 'cruel' immigration reforms",
    "url": "https://www.youtube.com/watch?v=UeNn46ibwAo",
    "source": "LBC",
@@ -994,19 +1137,18 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Shabana Mahmood U-turns on toughening immigration rules",
-   "url": "https://www.youtube.com/watch?v=tdM4VrH9_0g",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
+   "title": "US has conducted defensive strikes on Iranian targets in the Strait of Hormuz, US official says",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xmqot7/us_has_conducted_defensive_strikes_on_iranian/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
    "tags": [
     "politics",
-    "listen"
+    "news"
    ],
-   "published": "2026-11-03T11:30:13.000Z",
-   "summary": "Shabana Mahmood has been criticised for the immigration changes which her left-wing Labour colleagues have decried as \"cruel\". Mr Philp said the government had \"caved in completely\" by preserving the five-year route for care workers who earn at least £25,000 and comply with…",
-   "thumb": "https://i1.ytimg.com/vi/tdM4VrH9_0g/hqdefault.jpg",
-   "id": "c31298551915",
+   "published": "2026-11-03T11:38:15.000Z",
+   "summary": "submitted by /u/boppinmule [link] [comments]",
+   "id": "bb8ef1dd49a2",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1044,26 +1186,8 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Trump’s spiritual adviser: ‘He was chosen by God!’",
-   "url": "https://www.youtube.com/watch?v=kwbFQxwBuR4",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-03T10:30:04.000Z",
-   "summary": "Nick Ferrari asks Donald Trump's spiritual adviser Pastor Mark Burns to explain the President's relationship with God, and why he keeps talking about men's bodies. Listen to the full show on the all-new LBC App: https://app.af.lbc.co.uk/btnc/thenewlbcapp #nickferrari…",
-   "thumb": "https://i4.ytimg.com/vi/kwbFQxwBuR4/hqdefault.jpg",
-   "id": "ff6689d1b0db",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Germany: Ukraine's Zelenskyy to make surprise Berlin visit, Merz says",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xmnssc/germany_ukraines_zelenskyy_to_make_surprise/",
+   "title": "Why a US-Russia showdown left Morocco celebrating",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xmp9mq/why_a_usrussia_showdown_left_morocco_celebrating/",
    "source": "r/geopolitics",
    "feedId": "rd-geopolitics",
    "type": "post",
@@ -1071,79 +1195,9 @@
     "politics",
     "news"
    ],
-   "published": "2026-11-03T08:44:08.000Z",
-   "summary": "submitted by /u/DWNews [link] [comments]",
-   "id": "00c80f911432",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "KT #792 - JIMMY CARR + LUIS J GOMEZ + STEVE RANNAZZISI",
-   "url": "https://www.youtube.com/watch?v=Gm1JAZ1dPTM",
-   "source": "Kill Tony",
-   "feedId": "yt-kill-tony",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "standup",
-    "listen"
-   ],
-   "published": "2026-11-03T06:09:46.000Z",
-   "summary": "Jimmy Carr, Luis J Gomez, Steve Rannazzisi, Pat O'Neill, Dedrick Flynn, Martin Phillips, D Madness, Michael A. Gonzales, Jon Deas, Matthew Muehling, Grooveline Horns, Joe White, Troy Conrad, Monica Colt, Steve Glass, Tony Hinchcliffe, Brian Redban - RECORDED– 10/26/2026 TONY…",
-   "thumb": "https://i4.ytimg.com/vi/Gm1JAZ1dPTM/hqdefault.jpg",
-   "id": "f84f2c6ceba7",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "‘Bad faith, trust deficit’: Inside story of how Trump stalled India-US trade talks",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xmkkzy/bad_faith_trust_deficit_inside_story_of_how_trump/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-11-03T05:27:57.000Z",
-   "summary": "submitted by /u/diwalibonus [link] [comments]",
-   "id": "59359d217ea7",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "US strikes Iranian island as Trump downplays prospect of new war",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xmhvpb/us_strikes_iranian_island_as_trump_downplays/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-11-03T03:08:45.000Z",
-   "summary": "submitted by /u/marketrent [link] [comments]",
-   "id": "25496a9f9c33",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Netanyahu is pressing Trump to attack Iran after the midterms, officials tell AP",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xmbkz7/netanyahu_is_pressing_trump_to_attack_iran_after/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-11-02T22:26:32.000Z",
-   "summary": "submitted by /u/Fair-Bookkeeper-1833 [link] [comments]",
-   "id": "d8bee3ebb16a",
+   "published": "2026-11-03T10:15:19.000Z",
+   "summary": "submitted by /u/HiddenGriffin [link] [comments]",
+   "id": "9a03682e4146",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1227,6 +1281,25 @@
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "KT #792 - JIMMY CARR + LUIS J GOMEZ + STEVE RANNAZZISI",
+   "url": "https://www.youtube.com/watch?v=Gm1JAZ1dPTM",
+   "source": "Kill Tony",
+   "feedId": "yt-kill-tony",
+   "type": "video",
+   "tags": [
+    "comedy",
+    "standup",
+    "listen"
+   ],
+   "published": "2026-11-03T06:09:46.000Z",
+   "summary": "Jimmy Carr, Luis J Gomez, Steve Rannazzisi, Pat O'Neill, Dedrick Flynn, Martin Phillips, D Madness, Michael A. Gonzales, Jon Deas, Matthew Muehling, Grooveline Horns, Joe White, Troy Conrad, Monica Colt, Steve Glass, Tony Hinchcliffe, Brian Redban - RECORDED– 10/26/2026 TONY…",
+   "thumb": "https://i4.ytimg.com/vi/Gm1JAZ1dPTM/hqdefault.jpg",
+   "id": "f84f2c6ceba7",
+   "score": 0,
+   "matched": [],
+   "why": "0"
   },
   {
    "title": "Visibly STIMULATED Don Jr. FLAILS on Stage at WILD Speech!",
@@ -1366,23 +1439,6 @@
    "summary": "Come see me on tour! ✨ Adam Neely & Lau Noah ✨ https://www.adamneelyxlaunoah.com/tour ☀️ Sungazer ☀️ https://www.sungazermusic.com/tour 0:00 Intro 8:33 Part 1 - Democracy 16:46 Part 2 - Autocracy 21:36 Part 3 - Jazz 28:25 Part 4 - Genre 35:11 Part 5 - Money 42:03 Conclusion…",
    "thumb": "https://i4.ytimg.com/vi/kIMIlLx4DIc/hqdefault.jpg",
    "id": "e598585ebf53",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Hackers claim to have stolen 23TB of data from Russian statistics body, including Ukraine war casualty figures — Russian Federal State Statistics Service admits its servers were hit by coordinated cyberattacks",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xm5ux0/hackers_claim_to_have_stolen_23tb_of_data_from/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-11-02T18:51:03.000Z",
-   "summary": "submitted by /u/Firecracker048 [link] [comments]",
-   "id": "52da5c2ed26b",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2131,23 +2187,6 @@
    "why": "0"
   },
   {
-   "title": "Phantom Blade Zero: 10 Things The Game DOESN'T TELL YOU",
-   "url": "https://www.youtube.com/watch?v=vZdgn9J1SlM",
-   "source": "GameRanx",
-   "feedId": "yt-gameranx",
-   "type": "video",
-   "tags": [
-    "gaming"
-   ],
-   "published": "2026-10-29T17:42:41.000Z",
-   "summary": "Phantom Blade Zero (PC, PS5) is a game with lots of challenge and some weird secrets. Here are some tips for starting out. Subscribe for more: https://www.youtube.com/gameranxTV?sub_confirmation=1 0:00 Intro 0:57 Number 10 4:28 Number 9 7:55 Number 8 9:23 Number 7 13:19 Number…",
-   "thumb": "https://i3.ytimg.com/vi/vZdgn9J1SlM/hqdefault.jpg",
-   "id": "5f6e4207f96d",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "3 Sharks Fight Over Vulcan Pest's Genius Rat Trap | Shark Tank US | Shark Tank Global",
    "url": "https://www.youtube.com/watch?v=OF-NLSklKk4",
    "source": "Shark Tank Global",
@@ -2237,20 +2276,18 @@
    "why": "0"
   },
   {
-   "title": "Eastern Orthodox Vs Protestantism, Which Is the True Church? | Jay Dyer Vs Dr. David Wood",
-   "url": "https://www.youtube.com/watch?v=IpKKCNJ81NE",
-   "source": "Modern-Day Debate",
-   "feedId": "yt-modern-day-debate",
+   "title": "Beverage Girlie by QW3NCH (Official Music Video) | MP3 [New Dropout Series]",
+   "url": "https://www.youtube.com/watch?v=t4jRDESxxK4",
+   "source": "Dropout",
+   "feedId": "yt-dropout",
    "type": "video",
    "tags": [
-    "debates",
-    "politics",
-    "listen"
+    "comedy"
    ],
-   "published": "2026-10-28T22:35:05.000Z",
-   "summary": "Huge thank you to our DEBATECON 9 sponsors including: Revival of the Anointed's Rule: https://revivingtheroar.org/ Apologetics Ark: https://www.apologeticsark.com/links @UncensoredAmerica Andrew Wilson Vs Cenk Uygur at DEBATECON X in Dallas TX on February 20/21st:…",
-   "thumb": "https://i2.ytimg.com/vi/IpKKCNJ81NE/hqdefault.jpg",
-   "id": "e66886092d1e",
+   "published": "2026-10-29T00:31:02.000Z",
+   "summary": "The official music video for Beverage Girlie by QW3NCH (Anna Garcia, Lily Du, & Jess McKenna) Get ready for MP3- Music Presentation 3! Your new favorite music video countdown show where every episode brings new outrageous music videos, ridiculous hosts, and surprise guests.…",
+   "thumb": "https://i1.ytimg.com/vi/t4jRDESxxK4/hqdefault.jpg",
+   "id": "841626b64647",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -3012,24 +3049,7 @@
    "score": 0,
    "matched": [],
    "why": "0"
-  },
-  {
-   "title": "Is Pete Hegseth's Bold Pledge To 'Kill Everyone' By 2028 An Unrealistic Pipe Dream?",
-   "url": "https://www.youtube.com/watch?v=pu3Cr6qjbJI",
-   "source": "The Onion",
-   "feedId": "yt-the-onion",
-   "type": "video",
-   "tags": [
-    "comedy"
-   ],
-   "published": "2026-10-20T17:04:24.000Z",
-   "summary": "United States Defense Secretary Pete Hegseth announced an ambitious new plan to \"kill everyone\" within the next two years. But is this a realistic goal, or just another empty promise to rally support before the midterms? Our In The Know panelists discuss. Become an Onion member…",
-   "thumb": "https://i1.ytimg.com/vi/pu3Cr6qjbJI/hqdefault.jpg",
-   "id": "482656d197e7",
-   "score": 0,
-   "matched": [],
-   "why": "0"
   }
  ],
- "contentHash": "4fa000d42c85"
+ "contentHash": "b4dee03d4dee"
 }
