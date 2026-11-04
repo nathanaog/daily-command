@@ -1,17 +1,17 @@
 {
- "generated": "2026-11-04T16:11:29.979Z",
+ "generated": "2026-11-04T19:19:12.610Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
   "ok": 51,
-  "items": 131,
+  "items": 129,
   "duplicatesMerged": 0,
   "lengthsKnown": 2,
-  "lengthLookups": 109,
-  "lengthFailures": 109,
+  "lengthLookups": 108,
+  "lengthFailures": 108,
   "lengthVia": "video pages",
   "lengthFailReasons": {
-   "no length on page": 109
+   "no length on page": 108
   }
  },
  "feeds": [
@@ -371,7 +371,7 @@
    "name": "Dropout",
    "type": "youtube",
    "status": "ok",
-   "count": 3,
+   "count": 2,
    "resolved": {
     "channelId": "UCPDXXXJj9nax0fr0Wfc048g",
     "title": "Dropout",
@@ -630,19 +630,20 @@
    "id": "rd-productmanagement",
    "name": "r/productmanagement",
    "type": "reddit",
-   "status": "cached",
-   "count": 5,
-   "lastOk": "2026-11-04T07:37:38.337Z",
-   "note": "not its turn this run"
+   "status": "ok",
+   "count": 4,
+   "url": "https://www.reddit.com/r/productmanagement/top/.rss?t=day"
   },
   {
    "id": "rd-tech",
    "name": "r/tech",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": "2026-11-03T04:10:53.713Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-gaming",
@@ -651,7 +652,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-ukpolitics",
@@ -684,20 +685,19 @@
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
+   "lastOk": "2026-11-04T16:11:29.979Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-germany",
    "name": "r/germany",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": "2026-10-31T01:21:53.748Z",
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-unitedkingdom",
@@ -706,10 +706,169 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   }
  ],
  "items": [
+  {
+   "title": "Abdul El-Sayed’s Historic Victory Against Trump’s Republicans on a Pro-Gaza Platform",
+   "url": "https://www.youtube.com/watch?v=a1thfeK1DN0",
+   "source": "PoliticsJOE",
+   "feedId": "yt-politicsjoe",
+   "type": "video",
+   "tags": [
+    "comedy"
+   ],
+   "published": "2026-11-04T18:55:59.000Z",
+   "summary": "It’s midterms day in the States, and voters handily rejected Donald Trump's Republicans. Ava and Seán dig into the results, focusing particularly on Abdul El-Sayed’s victories in both the Democratic Primary and the Senate race. Like PoliticsJOE? We need your support:…",
+   "thumb": "https://i2.ytimg.com/vi/a1thfeK1DN0/hqdefault.jpg",
+   "id": "0394b0db8022",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "'The Democrats could release the Epstein files...' | Blaire White midterm reaction",
+   "url": "https://www.youtube.com/watch?v=2vtEl5b5w_A",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-04T18:34:22.000Z",
+   "summary": "The Democrats have won both Senate and House of Representatives in the US Midterm elections, in a blow to Donald Trump's presidency. The Republicans lost control of both houses of Congress in the results on Tuesday, with the President now taking aim at both the Iran war and…",
+   "thumb": "https://i3.ytimg.com/vi/2vtEl5b5w_A/hqdefault.jpg",
+   "id": "6e2d9482973d",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Beverage Girlie by QW3NCH (Official Music Video) | MP3 [New Dropout Series]",
+   "url": "https://www.youtube.com/watch?v=t4jRDESxxK4",
+   "source": "Dropout",
+   "feedId": "yt-dropout",
+   "type": "video",
+   "tags": [
+    "comedy"
+   ],
+   "published": "2026-11-04T18:30:11.000Z",
+   "summary": "The official music video for Beverage Girlie by QW3NCH (Anna Garcia, Lily Du, & Jess McKenna) Get ready for MP3- Music Presentation 3! Your new favorite music video countdown show where every episode brings new outrageous music videos, ridiculous hosts, and surprise guests.…",
+   "thumb": "https://i1.ytimg.com/vi/t4jRDESxxK4/hqdefault.jpg",
+   "id": "841626b64647",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "How to Get a Drivers License in Germany",
+   "url": "https://www.youtube.com/watch?v=aiFJ11GY7sE",
+   "source": "Easy German",
+   "feedId": "yt-easy-german",
+   "type": "video",
+   "tags": [
+    "german",
+    "listen"
+   ],
+   "published": "2026-11-04T18:00:17.000Z",
+   "summary": "Download our free guide on getting a driving license in Germany here: https://easygerman.link/lm-pdf-005-fhrerschein-in-deutschland --- Vielen Dank an Tolga und die Fahrschule Mobil werden in Spandau für die Unterstützung beim Dreh dieses Videos! Tolga könnt ihr hier folgen:…",
+   "thumb": "https://i2.ytimg.com/vi/aiFJ11GY7sE/hqdefault.jpg",
+   "id": "d0c79fb50c86",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "20 Game of The Year Contenders of 2026",
+   "url": "https://www.youtube.com/watch?v=30B9HuAyfg8",
+   "source": "GameRanx",
+   "feedId": "yt-gameranx",
+   "type": "video",
+   "tags": [
+    "gaming"
+   ],
+   "published": "2026-11-04T17:40:22.000Z",
+   "summary": "2026 gaming awards season is looking stacked. Here are some contenders. Subscribe for more: https://www.youtube.com/gameranxTV?sub_confirmation=1 0:00 Intro 01:05 Phantom Blade Zero 02:01 Resident Evil Requiem 03:12 Forza Horizon 6 04:31 Star Wars: Galactic Racer 05:36 Doom:…",
+   "thumb": "https://i4.ytimg.com/vi/30B9HuAyfg8/hqdefault.jpg",
+   "id": "00fa0b596196",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Harry Sisson Reacts to His Viral Debates | Surrounded Follow-Up",
+   "url": "https://www.youtube.com/watch?v=5lIqh7ejrx8",
+   "source": "Jubilee",
+   "feedId": "yt-jubilee",
+   "type": "video",
+   "tags": [
+    "politics",
+    "debates"
+   ],
+   "published": "2026-11-04T17:00:13.000Z",
+   "summary": "Hey you 👈 Wanna be in a Jubilee video? https://bit.ly/be-in-a-video LET’S BE FRIENDS Instagram: https://www.instagram.com/jubileemedia/ TikTok: https://www.tiktok.com/@jubilee?lang=en Website: https://www.jubileemedia.com OUR LOVE + DATING CHANNEL 🍑 YouTube:…",
+   "thumb": "https://i2.ytimg.com/vi/5lIqh7ejrx8/hqdefault.jpg",
+   "id": "25649e4ee21e",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "tagesschau in Einfacher Sprache 19:00 Uhr, 04.11.2026",
+   "url": "https://www.youtube.com/watch?v=1YuNpUlpS0U",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-04T16:39:37.000Z",
+   "summary": "tagesschau in Einfacher Sprache 19:00 Uhr Wahl in den USA: Demokraten gewinnen, Wahl in USA: Folgen für deutsche Wirtschaft, Deutschland: Große Übung für Krise, Bücher für Kinder: Janosch ist gestorben, Das Wetter https://www.tagesschau.de",
+   "thumb": "https://i2.ytimg.com/vi/1YuNpUlpS0U/hqdefault.jpg",
+   "id": "196739c600e6",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Schiffweiler: Altes Handwerk ist neuer Trend | tagesthemen mittendrin",
+   "url": "https://www.youtube.com/watch?v=gzrOHfMvVXk",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-04T16:26:04.000Z",
+   "summary": "Sauerkraut selbst herstellen statt fertig kaufen: Beim Obst- und Gartenbauverein Schiffweiler im Saarland entdecken immer mehr Menschen die Freude am Selbermachen. Dabei geht es nicht nur um den Geschmack, sondern auch um die Gemeinschaft und den Erhalt alter Traditionen. Mehr…",
+   "thumb": "https://i4.ytimg.com/vi/gzrOHfMvVXk/hqdefault.jpg",
+   "id": "777bb3d29ef9",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "How to break out of the cycle of false reporting from the dev team?",
+   "url": "https://www.reddit.com/r/ProductManagement/comments/1xnrlfl/how_to_break_out_of_the_cycle_of_false_reporting/",
+   "source": "r/productmanagement",
+   "feedId": "rd-productmanagement",
+   "type": "post",
+   "tags": [
+    "product"
+   ],
+   "published": "2026-11-04T15:48:03.000Z",
+   "summary": "Hey everyone, I’m in a bit of a career emergency right now and need advice. Any input is much appreciated. The gist is (like for many), leadership wants firm commitments on milestones and quarterly deliverables. However, we have a very poor history of delivering with any kind…",
+   "id": "d5027fa493a3",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
   {
    "title": "Christiane Amanpour explains why Trump lost the midterms",
    "url": "https://www.youtube.com/watch?v=KrBsPiVKwSg",
@@ -760,6 +919,38 @@
    "summary": "James O’Brien and LBC’s political editor Natasha Clark react to First Secretary of State Louise Haigh and the Conservative’s Alex Burghar's performance in today’s Prime Minister’s Questions. Listen to the full show on the all-new LBC App:…",
    "thumb": "https://i1.ytimg.com/vi/LhGf3D1I59g/hqdefault.jpg",
    "id": "9e8ea5fb0429",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Help me tackle this (New workplace)",
+   "url": "https://www.reddit.com/r/ProductManagement/comments/1xnof3t/help_me_tackle_this_new_workplace/",
+   "source": "r/productmanagement",
+   "feedId": "rd-productmanagement",
+   "type": "post",
+   "tags": [
+    "product"
+   ],
+   "published": "2026-11-04T13:38:37.000Z",
+   "summary": "I recently joined a new company which is not a product company or a service company. They’ve a bunch of developers, QAs, and people from other roles (Developers and design) leading some projects. Projects? Basically, internal tools. From about start of the year, they decided to…",
+   "id": "6506e32e6d53",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Examples of AI Making things worse for Product Managers (and others)",
+   "url": "https://www.reddit.com/r/ProductManagement/comments/1xnnxv7/examples_of_ai_making_things_worse_for_product/",
+   "source": "r/productmanagement",
+   "feedId": "rd-productmanagement",
+   "type": "post",
+   "tags": [
+    "product"
+   ],
+   "published": "2026-11-04T13:16:22.000Z",
+   "summary": "Everyone in my company is supposed to be using AI as much as possible. However, there are many times it makes things much, much harder. Here are some top-of-mind examples. What else do you see where you work? AI-Slop documents: Business writes a 20 page AI-slop requirements doc…",
+   "id": "4e52679ff6f3",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -891,25 +1082,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Wer war Janosch wirklich? Das bewegte Leben des Tigerenten-Erfinders",
-   "url": "https://www.youtube.com/watch?v=JgkwH8jD7rk",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-04T11:42:30.000Z",
-   "summary": "Er erschuf den kleinen Tiger und den kleinen Bären, ließ Onkel Popov fliegen und lehrte Millionen Kindern Schnuddelbuddels Lebensweisheit: „Wer das hier liest, braucht sich vor nichts mehr zu fürchten.“ Nun ist Janosch gestorben. Mehr Informationen:…",
-   "thumb": "https://i3.ytimg.com/vi/JgkwH8jD7rk/hqdefault.jpg",
-   "id": "66c3f6f6bcdf",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Is Trump about to start Nuclear War?",
    "url": "https://www.youtube.com/watch?v=eFn9mYXD1oo",
    "source": "PoliticsJOE",
@@ -961,25 +1133,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "US-Kongress kippt: Was Trumps Wahlschlappe für die USA bedeutet",
-   "url": "https://www.youtube.com/watch?v=2RX_aUWSkS0",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-04T10:47:52.000Z",
-   "summary": "Die Demokraten gewinnen vor allem bei jungen Wählern, Schwarzen und Latinos hinzu. Einige Ergebnisse sind für die Republikaner regelrecht demütigend. Das hat viel mit US-Präsident Trump zu tun. Mehr Informationen:…",
-   "thumb": "https://i3.ytimg.com/vi/2RX_aUWSkS0/hqdefault.jpg",
-   "id": "105dd6e8fb67",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Millions of Dollars Pouring into UK Democracy from Trump’s America",
    "url": "https://www.reddit.com/r/ukpolitics/comments/1xnkto4/millions_of_dollars_pouring_into_uk_democracy/",
    "source": "r/ukpolitics",
@@ -1009,24 +1162,6 @@
    "published": "2026-11-04T10:10:54.000Z",
    "summary": "submitted by /u/ITMidget [link] [comments]",
    "id": "a5f8518cd330",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Trump's major midterm fail | LBC callers react",
-   "url": "https://www.youtube.com/watch?v=oBlfnRuQT7w",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-04T09:30:19.000Z",
-   "summary": "Donald Trump has been dealt a midterms nightmare as the Democrats took control of the Senate and House of Representatives overnight. The results mark a crushing blow to Trump's presidency, despite him claiming he would have won by \"landslide\" if his name had been on the ballot.…",
-   "thumb": "https://i4.ytimg.com/vi/oBlfnRuQT7w/hqdefault.jpg",
-   "id": "30adaeb77dc0",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1095,22 +1230,6 @@
    "summary": "In The Know's Midterm 2026 Election Panel debates if El-Sayed's string of broken campaign promises over the last half-minute could mean the end of the progressive movement in America. Become an Onion member while it's still optional:…",
    "thumb": "https://i1.ytimg.com/vi/4vkqSigZeDI/hqdefault.jpg",
    "id": "92498650dda1",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Need help with driving strategy",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1xn8c05/need_help_with_driving_strategy/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-11-03T23:13:21.000Z",
-   "summary": "I recently joined a midsized B2B SaaS company, and the product domain I inherited is a collection of three products. About three months after I joined, my manager left. He had been overseeing this area, but there wasn’t really a clear vision or point of view for the domain. The…",
-   "id": "02bbe15500d5",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1194,6 +1313,22 @@
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Need help with driving strategy",
+   "url": "https://www.reddit.com/r/ProductManagement/comments/1xn8c05/need_help_with_driving_strategy/",
+   "source": "r/productmanagement",
+   "feedId": "rd-productmanagement",
+   "type": "post",
+   "tags": [
+    "product"
+   ],
+   "published": "2026-11-03T23:13:21.000Z",
+   "summary": "I recently joined a midsized B2B SaaS company, and the product domain I inherited is a collection of three products. About three months after I joined, my manager left. He had been overseeing this area, but there wasn’t really a clear vision or point of view for the domain. The…",
+   "id": "02bbe15500d5",
+   "score": 0,
+   "matched": [],
+   "why": "0"
   },
   {
    "title": "Is the Quran Good, Or Evil? | Apostate Prophet Vs Waleed Naeem",
@@ -1303,38 +1438,6 @@
    "why": "0"
   },
   {
-   "title": "How common is low/no work at jobs?",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1xmxezd/how_common_is_lowno_work_at_jobs/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-11-03T16:22:31.000Z",
-   "summary": "I work in a pretty big MNC, but that also means that there are multiple teams handling different areas. Weirdly my team has been very low on work over the past whole year. I just got into product management so it’s kinda sad because I didn’t really get a great first hand…",
-   "id": "5356d70fc84a",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Outgrown my role, exhausted the learning curve, but can't leave. What now?",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1xmx288/outgrown_my_role_exhausted_the_learning_curve_but/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-11-03T16:09:34.000Z",
-   "summary": "I'm a Group PM and have been in my current organisation for nearly five years. Somewhere along the way, I've outgrown my immediate environment, including my boss in terms of product thinking and problem-solving. Unfortunately, organisational hierarchies don't automatically…",
-   "id": "8d3d39456cc0",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "Watch MAGA Host Realize Trump is F***ED IN THE HEAD Mid-Interview!",
    "url": "https://www.youtube.com/watch?v=MIuu8f8uIMs",
    "source": "Luke Beasley",
@@ -1365,38 +1468,6 @@
    "summary": "What do British people think about the rise of the right-wing globally? In the first of our new series Generational, we brought together five Brits from different generations to debate some of the most pressing issues of our time. Will Donald Trump mark the end of the surge in…",
    "thumb": "https://i4.ytimg.com/vi/sBRy1sMvUJg/hqdefault.jpg",
    "id": "8cac46663c8b",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "How do yall efficiently and effectively review LLM outputs",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1xmqcf2/how_do_yall_efficiently_and_effectively_review/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-11-03T11:18:44.000Z",
-   "summary": "With Claude, it’s become far too easy to create a document, and I don’t just mean PRDs, I’m talking prototypes, BRDs, timelines roadmap, workflow diagrams. That’s just what you might be generating on individual basis, but what about those that are passed to you. How do yall…",
-   "id": "287e10c08ff0",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Is this normal in Product Management, is my organisation dysfunctional, or am I just not cut out for this?",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1xmpu1q/is_this_normal_in_product_management_is_my/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-11-03T10:49:39.000Z",
-   "summary": "I'm interested in getting some honest perspectives from other PMs, particularly those working at a scale up. Quarterly priorities that don't stick : Each quarter, we agree what we're focusing on in the coming months (both discovery and delivery.) However, throughout the…",
-   "id": "0f5bbc910957",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2039,23 +2110,6 @@
    "why": "0"
   },
   {
-   "title": "GTA6 SIZE REVEALED, ELDER SCROLLS 6 LEAKED? & MORE",
-   "url": "https://www.youtube.com/watch?v=sGgNvGbwrH4",
-   "source": "GameRanx",
-   "feedId": "yt-gameranx",
-   "type": "video",
-   "tags": [
-    "gaming"
-   ],
-   "published": "2026-10-30T20:42:12.000Z",
-   "summary": "Spend less time searching and more time with the people who matter most. Head to https://zocdoc.com/gameranx to find and book the care you need. 🤧 #sponsored Thank you Zocdoc for sponsoring this video! ~~SOURCES~~ GTA size revealed…",
-   "thumb": "https://i4.ytimg.com/vi/sGgNvGbwrH4/hqdefault.jpg",
-   "id": "9dad4bdb5fe1",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "“Very high risk” Trump will escalate Iran war after midterms | The Economist",
    "url": "https://www.youtube.com/watch?v=cUevqOdZ-UA",
    "source": "The Economist",
@@ -2158,23 +2212,6 @@
    "summary": "Sponsored by BetterHelp. Visit https://betterhelp.com/jubileemedia. For members in the US, therapy may now cost less. With insurance, many members pay $15 or less. Some pay $0. If you don't have insurance or you don’t live in the United States, you can still get 10% off your…",
    "thumb": "https://i1.ytimg.com/vi/xc2FTsYuIM8/hqdefault.jpg",
    "id": "403aedb0bf96",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "The American Midterms Can END Trump | Jacob Weisberg interview",
-   "url": "https://www.youtube.com/watch?v=E-t49q27BwM",
-   "source": "PoliticsJOE",
-   "feedId": "yt-politicsjoe",
-   "type": "video",
-   "tags": [
-    "comedy"
-   ],
-   "published": "2026-10-30T15:37:36.000Z",
-   "summary": "Donald Trump’s second presidency has been marked by a striking lack of resistance. While figures inside his first administration regularly challenged his decisions, Trump 2.0 has seen politicians, business leaders, media organisations and institutions fall into line. So why has…",
-   "thumb": "https://i2.ytimg.com/vi/E-t49q27BwM/hqdefault.jpg",
-   "id": "2ff35079d2dc",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2338,23 +2375,6 @@
    "summary": "Pre-order a copy of Too Long: toolong.news/TL010 Sign Up for TLDR Party: https://toolong.news/party TLDR Party Explained: https://www.youtube.com/watch?v=KVXXC3jk4Kg Chancellor John Healey delivered his budget yesterday, the first of the new Burnham government, but it was not…",
    "thumb": "https://i2.ytimg.com/vi/ygVX149E5cE/hqdefault.jpg",
    "id": "4db98a7a79cf",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Beverage Girlie by QW3NCH (Official Music Video) | MP3 [New Dropout Series]",
-   "url": "https://www.youtube.com/watch?v=t4jRDESxxK4",
-   "source": "Dropout",
-   "feedId": "yt-dropout",
-   "type": "video",
-   "tags": [
-    "comedy"
-   ],
-   "published": "2026-10-29T00:31:02.000Z",
-   "summary": "The official music video for Beverage Girlie by QW3NCH (Anna Garcia, Lily Du, & Jess McKenna) Get ready for MP3- Music Presentation 3! Your new favorite music video countdown show where every episode brings new outrageous music videos, ridiculous hosts, and surprise guests.…",
-   "thumb": "https://i1.ytimg.com/vi/t4jRDESxxK4/hqdefault.jpg",
-   "id": "841626b64647",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2870,24 +2890,6 @@
    "why": "0"
   },
   {
-   "title": "Test Your F*Boy Radar (ft. Pokimane) | Test Your Radar",
-   "url": "https://www.youtube.com/watch?v=pi-Kv-dWsHk",
-   "source": "Jubilee",
-   "feedId": "yt-jubilee",
-   "type": "video",
-   "tags": [
-    "politics",
-    "debates"
-   ],
-   "published": "2026-10-23T16:00:28.000Z",
-   "summary": "Injured in an accident? You may be owed serious money. You can start your claim with Morgan & Morgan: https://ForThePeople.com/JUBILEE — no fees unless you win! Hey you 👈 Wanna be in a Jubilee video? https://bit.ly/be-in-a-video LET’S BE FRIENDS Instagram:…",
-   "thumb": "https://i1.ytimg.com/vi/pi-Kv-dWsHk/hqdefault.jpg",
-   "id": "3a7734dd6bcf",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "Can Lasers Kill Farming's Oldest Enemy?",
    "url": "https://www.youtube.com/watch?v=PpnCu8SUGCU",
    "source": "The Hustle",
@@ -3011,42 +3013,7 @@
    "score": 0,
    "matched": [],
    "why": "0"
-  },
-  {
-   "title": "Which Numbers Are the Funniest | Smartypants Presentation [Clip]",
-   "url": "https://www.youtube.com/watch?v=SIhg6iXI6e4",
-   "source": "Dropout",
-   "feedId": "yt-dropout",
-   "type": "video",
-   "tags": [
-    "comedy"
-   ],
-   "published": "2026-10-21T17:30:18.000Z",
-   "summary": "Have you ever wondered why people laugh at certain numbers? What makes them funny? Is it universal? Well don't worry. After extensive research, Paul Robalino is here to answer these hard hitting questions. You can watch the full episode here:…",
-   "thumb": "https://i4.ytimg.com/vi/SIhg6iXI6e4/hqdefault.jpg",
-   "id": "6c16d466b2f0",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Learn German with Me in Klagenfurt",
-   "url": "https://www.youtube.com/watch?v=b-k2yDRx6yw",
-   "source": "Easy German",
-   "feedId": "yt-easy-german",
-   "type": "video",
-   "tags": [
-    "german",
-    "listen"
-   ],
-   "published": "2026-10-21T17:00:01.000Z",
-   "summary": "Join our Conversation Membership to practice speaking with us daily: https://easygerman.link/membership_eg683 --- LEARN MORE GERMAN WITH US: 🎧 LISTEN TO OUR PODCAST: http://www.easygerman.fm 📬 SUBSCRIBE TO OUR NEWSLETTER: https://www.easygerman.org/newsletter WATCH MORE: ➕…",
-   "thumb": "https://i3.ytimg.com/vi/b-k2yDRx6yw/hqdefault.jpg",
-   "id": "4b39b76c920c",
-   "score": 0,
-   "matched": [],
-   "why": "0"
   }
  ],
- "contentHash": "597cbf102528"
+ "contentHash": "3990bc3b4e57"
 }
