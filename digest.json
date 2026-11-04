@@ -1,17 +1,17 @@
 {
- "generated": "2026-11-04T13:28:24.047Z",
+ "generated": "2026-11-04T16:11:29.979Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
   "ok": 51,
-  "items": 132,
+  "items": 131,
   "duplicatesMerged": 0,
   "lengthsKnown": 2,
-  "lengthLookups": 112,
-  "lengthFailures": 110,
+  "lengthLookups": 109,
+  "lengthFailures": 109,
   "lengthVia": "video pages",
   "lengthFailReasons": {
-   "no length on page": 110
+   "no length on page": 109
   }
  },
  "feeds": [
@@ -592,7 +592,7 @@
    "name": "Economics Explained",
    "type": "youtube",
    "status": "ok",
-   "count": 3,
+   "count": 2,
    "resolved": {
     "channelId": "UCZ4AMrDcNrfy3X6nsU8-rPg",
     "title": "Economics Explained",
@@ -657,9 +657,10 @@
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
+   "lastOk": "2026-11-04T13:28:24.047Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-xbox",
@@ -668,7 +669,7 @@
    "status": "cached",
    "count": 5,
    "lastOk": "2026-11-02T04:16:50.522Z",
-   "note": "rate-limited (429)"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-slaythespire",
@@ -677,25 +678,26 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-11-04T04:14:47.580Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
   },
   {
    "id": "rd-germany",
    "name": "r/germany",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": "2026-10-31T01:21:53.748Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-unitedkingdom",
@@ -704,10 +706,64 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   }
  ],
  "items": [
+  {
+   "title": "Christiane Amanpour explains why Trump lost the midterms",
+   "url": "https://www.youtube.com/watch?v=KrBsPiVKwSg",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-04T15:15:08.000Z",
+   "summary": "Chief International Anchor for CNN and Host of the geopolitical podcast The Ex Files Christiane Amanpour joins Shelagh Fogarty to analyse the U.S. midterm election results. They go over the reasons for losing, blaming, in large part, the Iran war, and also discuss what this…",
+   "thumb": "https://i4.ytimg.com/vi/KrBsPiVKwSg/hqdefault.jpg",
+   "id": "26a92e7001b9",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Has America just rejected Trumpism? | Simon Marks",
+   "url": "https://www.youtube.com/watch?v=kCLXBvZzkbU",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-04T14:30:15.000Z",
+   "summary": "Donald Trump has been dealt a Midterm nightmare as the Democrats took control of the Senate and House of Representatives overnight. The results mark a crushing blow to Trump's presidency, despite him claiming he would have won by \"landslide\" if his name had been on the ballot.…",
+   "thumb": "https://i4.ytimg.com/vi/kCLXBvZzkbU/hqdefault.jpg",
+   "id": "b19303f62f0f",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "“Nice to have a day off from blaming immigration\" | PMQs analysed",
+   "url": "https://www.youtube.com/watch?v=LhGf3D1I59g",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-04T13:40:36.000Z",
+   "summary": "James O’Brien and LBC’s political editor Natasha Clark react to First Secretary of State Louise Haigh and the Conservative’s Alex Burghar's performance in today’s Prime Minister’s Questions. Listen to the full show on the all-new LBC App:…",
+   "thumb": "https://i1.ytimg.com/vi/LhGf3D1I59g/hqdefault.jpg",
+   "id": "9e8ea5fb0429",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
   {
    "title": "Tom Harwood:”Labour MPs are now trying to ban oral sex.We're bringing back sodomy laws, chaps.And because no one wants to be known as 'the sex mp', we're simply letting these awful miserable sexless puritanical modern mary whitehouses roll back the sexual freedoms hard won sixty years ago”",
    "url": "https://www.reddit.com/r/ukpolitics/comments/1xnnjrm/tom_harwoodlabour_mps_are_now_trying_to_ban_oral/",
@@ -726,7 +782,7 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "'I'm scared of what Trump will do next...' | James O'Brien",
+   "title": "James O’Brien reacts to Trump’s midterm defeat",
    "url": "https://www.youtube.com/watch?v=otFQlgNyhxU",
    "source": "LBC",
    "feedId": "yt-lbc",
@@ -871,6 +927,40 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
+   "title": "President Zelensky: The US role in the world may become even smaller, so Europe's role in the world must become even greater. Freedom and security in Europe have no alternative to Germany",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xnli4w/president_zelensky_the_us_role_in_the_world_may/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-11-04T11:08:32.000Z",
+   "summary": "submitted by /u/paneuropeanism_ [link] [comments]",
+   "id": "fcebb924f59c",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Blue wave sweeps Congress as Americans deliver stinging rebuke to Trump",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xnlcj9/blue_wave_sweeps_congress_as_americans_deliver/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-11-04T10:59:38.000Z",
+   "summary": "Republicans suffered historic defeats in deep-red states as Democrats claimed comfortable majorities in the House and Senate, leaving the future of Maga in tatters submitted by /u/TheObserverUK [link] [comments]",
+   "id": "b22074b9980e",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
    "title": "US-Kongress kippt: Was Trumps Wahlschlappe für die USA bedeutet",
    "url": "https://www.youtube.com/watch?v=2RX_aUWSkS0",
    "source": "Tagesschau",
@@ -942,19 +1032,18 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Trump's midterm meltdown: As it happened",
-   "url": "https://www.youtube.com/watch?v=KcmasLwRmb0",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
+   "title": "Live updates: 2026 US midterm elections and results",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xnj1qq/live_updates_2026_us_midterm_elections_and_results/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
    "tags": [
     "politics",
-    "listen"
+    "news"
    ],
-   "published": "2026-11-04T08:30:00.000Z",
-   "summary": "In case you missed it, Charlotte Lynch gives you a rundown of how Trump's midterm meltdown unravelled. Democrats have won both the House and the Senate in what's been described as a historic \"Midterm massacre\" - as Trump insists he \"would have won in a landslide\" if his name…",
-   "thumb": "https://i4.ytimg.com/vi/KcmasLwRmb0/hqdefault.jpg",
-   "id": "c2928c1336c8",
+   "published": "2026-11-04T08:31:09.000Z",
+   "summary": "First Brazil, then Israel and now the US start fighting the oligarchy. Perhaps there is hope after all. submitted by /u/PM_THE_REAPER [link] [comments]",
+   "id": "0df713fe7839",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -977,19 +1066,18 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "‘Texas has fallen’: How Democrats turned Texas blue",
-   "url": "https://www.youtube.com/watch?v=z0FgUlkMc_M",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
+   "title": "Democrats win control of Congress; experts say little will change for Ukraine, Europe",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xnioql/democrats_win_control_of_congress_experts_say/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
    "tags": [
     "politics",
-    "listen"
+    "news"
    ],
-   "published": "2026-11-04T08:05:04.000Z",
-   "summary": "Republicans have suffered a historic loss in Texas as the state elects its first Democratic senator in over thirty years. James Talarico compared his victory over Republican Ken Paxton, the state’s Attorney General and a firm ally of Donald Trump, to David and Goliath. Elon…",
-   "thumb": "https://i3.ytimg.com/vi/z0FgUlkMc_M/hqdefault.jpg",
-   "id": "e32686b0bdb4",
+   "published": "2026-11-04T08:07:40.000Z",
+   "summary": "submitted by /u/kindermaxi123 [link] [comments]",
+   "id": "e51869e1d8dc",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1012,24 +1100,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Trump and Musk: The two biggest losers",
-   "url": "https://www.youtube.com/watch?v=8-m8eOyL9wg",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-04T06:30:32.000Z",
-   "summary": "Elon Musk might have buyer's remorse after spending close to $500 million on Republican campaigns. Matt Frei joins Simon Marks to Listen to the full show on the all-new LBC App: https://app.af.lbc.co.uk/btnc/thenewlbcapp #simonmarks #mattfrei #jonsopel #emilymaitlis…",
-   "thumb": "https://i1.ytimg.com/vi/8-m8eOyL9wg/hqdefault.jpg",
-   "id": "21c13b63d639",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Need help with driving strategy",
    "url": "https://www.reddit.com/r/ProductManagement/comments/1xn8c05/need_help_with_driving_strategy/",
    "source": "r/productmanagement",
@@ -1041,23 +1111,6 @@
    "published": "2026-11-03T23:13:21.000Z",
    "summary": "I recently joined a midsized B2B SaaS company, and the product domain I inherited is a collection of three products. About three months after I joined, my manager left. He had been overseeing this area, but there wasn’t really a clear vision or point of view for the domain. The…",
    "id": "02bbe15500d5",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "America’s AI Ambitions Depend on Taiwan: Washington Cannot Achieve Tech Dominance on Its Own",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xn3po5/americas_ai_ambitions_depend_on_taiwan_washington/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-11-03T20:10:09.000Z",
-   "summary": "submitted by /u/ForeignAffairsMag [link] [comments]",
-   "id": "2153c3fb5b09",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1162,6 +1215,23 @@
    "why": "0"
   },
   {
+   "title": "America’s AI Ambitions Depend on Taiwan: Washington Cannot Achieve Tech Dominance on Its Own",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xn3po5/americas_ai_ambitions_depend_on_taiwan_washington/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-11-03T20:10:09.000Z",
+   "summary": "submitted by /u/ForeignAffairsMag [link] [comments]",
+   "id": "2153c3fb5b09",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
    "title": "Enough Is Enough",
    "url": "https://www.youtube.com/watch?v=2965PkndV2c",
    "source": "Aberrant preach",
@@ -1208,7 +1278,7 @@
     "business"
    ],
    "published": "2026-11-03T17:15:09.000Z",
-   "summary": "Take back your privacy and get your free Proton Mail account using my link: proton.me/levi Subscribe! https://www.youtube.com/channel/UC-OJ-24roEfQ_-PCnLJSckg?sub_confirmation=1 Join our Patreon: https://www.patreon.com/c/LeviHildebrand For further reading, check out the…",
+   "summary": "Take back your privacy and get your free Proton Mail account using my link: https://proton.me/levi Subscribe! https://www.youtube.com/channel/UC-OJ-24roEfQ_-PCnLJSckg?sub_confirmation=1 Join our Patreon: https://www.patreon.com/c/LeviHildebrand For further reading, check out…",
    "thumb": "https://i3.ytimg.com/vi/2mVMbe60eoU/hqdefault.jpg",
    "id": "a61e0814db9a",
    "score": 0,
@@ -1283,57 +1353,6 @@
    "why": "0"
   },
   {
-   "title": "India Stall Opens in Central Asia’s Military Bazaar",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xmwpxn/india_stall_opens_in_central_asias_military_bazaar/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-11-03T15:57:11.000Z",
-   "summary": "submitted by /u/CEPAORG [link] [comments]",
-   "id": "c40bcd267488",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Poland hosts Europe's bid for peace influence [ANALYSIS]",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xmw188/poland_hosts_europes_bid_for_peace_influence/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-11-03T15:31:09.000Z",
-   "summary": "As European troops prepare in Poland for a post-war mission in Ukraine, their governments are seeking a greater say in US-led peace talks with Moscow and Kyiv. Next Monday, at a military training ground near the little-known town of Nowa Dęba in southeastern Poland, European…",
-   "id": "f1118e1ff5e2",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Trump says U.S. will stop US$4 billion funding to Israel at end of 2026",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xmtuca/trump_says_us_will_stop_us4_billion_funding_to/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-11-03T14:06:59.000Z",
-   "summary": "submitted by /u/Firecracker048 [link] [comments]",
-   "id": "ddc64a1e7dae",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "Every Generation Debates the Rise of the Far-Right",
    "url": "https://www.youtube.com/watch?v=sBRy1sMvUJg",
    "source": "PoliticsJOE",
@@ -1346,23 +1365,6 @@
    "summary": "What do British people think about the rise of the right-wing globally? In the first of our new series Generational, we brought together five Brits from different generations to debate some of the most pressing issues of our time. Will Donald Trump mark the end of the surge in…",
    "thumb": "https://i4.ytimg.com/vi/sBRy1sMvUJg/hqdefault.jpg",
    "id": "8cac46663c8b",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "US has conducted defensive strikes on Iranian targets in the Strait of Hormuz, US official says",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xmqot7/us_has_conducted_defensive_strikes_on_iranian/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-11-03T11:38:15.000Z",
-   "summary": "submitted by /u/boppinmule [link] [comments]",
-   "id": "bb8ef1dd49a2",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -3044,25 +3046,7 @@
    "score": 0,
    "matched": [],
    "why": "0"
-  },
-  {
-   "title": "How Old Money Kills Economies",
-   "url": "https://www.youtube.com/watch?v=2a0veEb3znU",
-   "source": "Economics Explained",
-   "feedId": "yt-economics-explained",
-   "type": "video",
-   "tags": [
-    "finance",
-    "listen"
-   ],
-   "published": "2026-10-21T14:03:39.000Z",
-   "summary": "Head to https://chime.yt.link/tHtcoiS for a $200 bonus and 3.75% APY with Chime® Thanks Chime for sponsoring this video! 📫 11,123+ read our free newsletter that has weekly original stories Sign up: → https://economics-explained-tv-program.beehiiv.com/ This video was made…",
-   "thumb": "https://i3.ytimg.com/vi/2a0veEb3znU/hqdefault.jpg",
-   "id": "1dfb5d381fb9",
-   "score": 0,
-   "matched": [],
-   "why": "0"
   }
  ],
- "contentHash": "ae0c4bb45d35"
+ "contentHash": "597cbf102528"
 }
