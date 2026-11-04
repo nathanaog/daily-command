@@ -1,17 +1,17 @@
 {
- "generated": "2026-11-04T01:26:07.566Z",
+ "generated": "2026-11-04T04:14:47.580Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
-  "ok": 6,
-  "items": 26,
+  "ok": 5,
+  "items": 23,
   "duplicatesMerged": 0,
   "lengthsKnown": 0,
-  "lengthLookups": 5,
-  "lengthFailures": 5,
+  "lengthLookups": 4,
+  "lengthFailures": 4,
   "lengthVia": "video pages",
   "lengthFailReasons": {
-   "no length on page": 5
+   "no length on page": 4
   }
  },
  "feeds": [
@@ -194,8 +194,8 @@
     "title": "Half as Interesting",
     "via": "name search"
    },
-   "error": "HTTP 500",
-   "http": 500
+   "error": "not found (404)",
+   "http": 404
   },
   {
    "id": "yt-coldfusion",
@@ -229,15 +229,14 @@
    "id": "yt-tldr-news",
    "name": "TLDR News",
    "type": "youtube",
-   "status": "error",
-   "count": 0,
+   "status": "ok",
+   "count": 4,
    "resolved": {
     "channelId": "UCSMqateX8OA2s1wsOR2EgJA",
     "title": "TLDR News",
     "via": "name search"
    },
-   "error": "not found (404)",
-   "http": 404
+   "url": "https://www.youtube.com/feeds/videos.xml?playlist_id=UULFSMqateX8OA2s1wsOR2EgJA"
   },
   {
    "id": "yt-simplicissimus",
@@ -397,14 +396,15 @@
    "id": "yt-dropout",
    "name": "Dropout",
    "type": "youtube",
-   "status": "ok",
-   "count": 5,
+   "status": "error",
+   "count": 0,
    "resolved": {
     "channelId": "UCPDXXXJj9nax0fr0Wfc048g",
     "title": "Dropout",
     "via": "name search"
    },
-   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCPDXXXJj9nax0fr0Wfc048g"
+   "error": "not found (404)",
+   "http": 404
   },
   {
    "id": "yt-the-onion",
@@ -480,14 +480,15 @@
    "id": "yt-tom-scott",
    "name": "Tom Scott",
    "type": "youtube",
-   "status": "ok",
-   "count": 2,
+   "status": "error",
+   "count": 0,
    "resolved": {
     "channelId": "UCBa659QWEk1AI4Tg--mrJ2A",
     "title": "Tom Scott",
     "via": "name search"
    },
-   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCBa659QWEk1AI4Tg--mrJ2A"
+   "error": "not found (404)",
+   "http": 404
   },
   {
    "id": "yt-lenny-s-podcast",
@@ -654,8 +655,8 @@
     "title": "J.J. McCullough",
     "via": "name search"
    },
-   "error": "HTTP 500",
-   "http": 500
+   "error": "not found (404)",
+   "http": 404
   },
   {
    "id": "yt-adam-neely",
@@ -702,9 +703,10 @@
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
+   "lastOk": "2026-11-04T01:26:07.566Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-xbox",
@@ -713,7 +715,7 @@
    "status": "cached",
    "count": 5,
    "lastOk": "2026-11-02T04:16:50.522Z",
-   "note": "rate-limited (429)"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-slaythespire",
@@ -722,25 +724,26 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-11-03T19:13:59.653Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
   },
   {
    "id": "rd-germany",
    "name": "r/germany",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": "2026-10-31T01:21:53.748Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-unitedkingdom",
@@ -749,7 +752,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   }
  ],
  "items": [
@@ -822,6 +825,23 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
+   "title": "America’s AI Ambitions Depend on Taiwan: Washington Cannot Achieve Tech Dominance on Its Own",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xn3po5/americas_ai_ambitions_depend_on_taiwan_washington/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-11-03T20:10:09.000Z",
+   "summary": "submitted by /u/ForeignAffairsMag [link] [comments]",
+   "id": "2153c3fb5b09",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
    "title": "I’d all but forgotten my ‘altercation’ with Nigel Farage. But since he mentions it, here’s what happened",
    "url": "https://www.reddit.com/r/ukpolitics/comments/1xn1syn/id_all_but_forgotten_my_altercation_with_nigel/",
    "source": "r/ukpolitics",
@@ -871,74 +891,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "India Stall Opens in Central Asia’s Military Bazaar",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xmwpxn/india_stall_opens_in_central_asias_military_bazaar/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-11-03T15:57:11.000Z",
-   "summary": "submitted by /u/CEPAORG [link] [comments]",
-   "id": "c40bcd267488",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Poland hosts Europe's bid for peace influence [ANALYSIS]",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xmw188/poland_hosts_europes_bid_for_peace_influence/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-11-03T15:31:09.000Z",
-   "summary": "As European troops prepare in Poland for a post-war mission in Ukraine, their governments are seeking a greater say in US-led peace talks with Moscow and Kyiv. Next Monday, at a military training ground near the little-known town of Nowa Dęba in southeastern Poland, European…",
-   "id": "f1118e1ff5e2",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Trump says U.S. will stop US$4 billion funding to Israel at end of 2026",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xmtuca/trump_says_us_will_stop_us4_billion_funding_to/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-11-03T14:06:59.000Z",
-   "summary": "submitted by /u/Firecracker048 [link] [comments]",
-   "id": "ddc64a1e7dae",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "US has conducted defensive strikes on Iranian targets in the Strait of Hormuz, US official says",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xmqot7/us_has_conducted_defensive_strikes_on_iranian/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-11-03T11:38:15.000Z",
-   "summary": "submitted by /u/boppinmule [link] [comments]",
-   "id": "bb8ef1dd49a2",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "How do yall efficiently and effectively review LLM outputs",
    "url": "https://www.reddit.com/r/ProductManagement/comments/1xmqcf2/how_do_yall_efficiently_and_effectively_review/",
    "source": "r/productmanagement",
@@ -966,23 +918,6 @@
    "published": "2026-11-03T10:49:39.000Z",
    "summary": "I'm interested in getting some honest perspectives from other PMs, particularly those working at a scale up. Quarterly priorities that don't stick : Each quarter, we agree what we're focusing on in the coming months (both discovery and delivery.) However, throughout the…",
    "id": "0f5bbc910957",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Why a US-Russia showdown left Morocco celebrating",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xmp9mq/why_a_usrussia_showdown_left_morocco_celebrating/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-11-03T10:15:19.000Z",
-   "summary": "submitted by /u/HiddenGriffin [link] [comments]",
-   "id": "9a03682e4146",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1068,124 +1003,149 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "It's getting harder to balance the power grid. Here's why.",
-   "url": "https://www.youtube.com/watch?v=NBXu6Z9Fw_M",
-   "source": "Tom Scott",
-   "feedId": "yt-tom-scott",
-   "type": "video",
+   "title": "India Stall Opens in Central Asia’s Military Bazaar",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xmwpxn/india_stall_opens_in_central_asias_military_bazaar/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
    "tags": [
-    "education"
+    "politics",
+    "news"
    ],
-   "published": "2026-11-02T16:05:24.000Z",
-   "summary": "The team at Britain's National Energy System Operator have a job that's quite different to just a few years ago. | ▶️ Watch the next episode right now on Nebula: https://nebula.tv/videos/tomscott-why-you-cant-touch-stonehenge | 🗺️ England series map:…",
-   "thumb": "https://i3.ytimg.com/vi/NBXu6Z9Fw_M/hqdefault.jpg",
-   "id": "ce482129bfbc",
+   "published": "2026-11-03T15:57:11.000Z",
+   "summary": "submitted by /u/CEPAORG [link] [comments]",
+   "id": "c40bcd267488",
    "score": 0,
    "matched": [],
    "why": "0"
   },
   {
-   "title": "A BIG Week on Dropout, New Dropout Show Premiere, And More!",
-   "url": "https://www.youtube.com/shorts/JrudvJxDGq0",
-   "source": "Dropout",
-   "feedId": "yt-dropout",
-   "type": "video",
+   "title": "Poland hosts Europe's bid for peace influence [ANALYSIS]",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xmw188/poland_hosts_europes_bid_for_peace_influence/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
    "tags": [
-    "comedy"
+    "politics",
+    "news"
    ],
-   "published": "2026-11-02T16:00:02.000Z",
-   "summary": "This week on Dropout... 🔊 Monday: Make Some Noise (with Rekha Shankar, Jordan Myrick, Lily Du) ✏️ Tuesday: Toonout (*This will be the last Toonout short of 2026 but we will return with new Toonout shorts in 2027!) 🎵 Wednesday: Beverage Girlie Music Video YouTube Premiere…",
-   "thumb": "https://i3.ytimg.com/vi/JrudvJxDGq0/hqdefault.jpg",
-   "id": "3103fa7b8c13",
+   "published": "2026-11-03T15:31:09.000Z",
+   "summary": "As European troops prepare in Poland for a post-war mission in Ukraine, their governments are seeking a greater say in US-led peace talks with Moscow and Kyiv. Next Monday, at a military training ground near the little-known town of Nowa Dęba in southeastern Poland, European…",
+   "id": "f1118e1ff5e2",
    "score": 0,
    "matched": [],
    "why": "0"
   },
   {
-   "title": "Beverage Girlie by QW3NCH (Official Music Video) | MP3 [New Dropout Series]",
-   "url": "https://www.youtube.com/watch?v=t4jRDESxxK4",
-   "source": "Dropout",
-   "feedId": "yt-dropout",
-   "type": "video",
+   "title": "Trump says U.S. will stop US$4 billion funding to Israel at end of 2026",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xmtuca/trump_says_us_will_stop_us4_billion_funding_to/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
    "tags": [
-    "comedy"
+    "politics",
+    "news"
    ],
-   "published": "2026-10-29T00:31:02.000Z",
-   "summary": "The official music video for Beverage Girlie by QW3NCH (Anna Garcia, Lily Du, & Jess McKenna) Get ready for MP3- Music Presentation 3! Your new favorite music video countdown show where every episode brings new outrageous music videos, ridiculous hosts, and surprise guests.…",
-   "thumb": "https://i1.ytimg.com/vi/t4jRDESxxK4/hqdefault.jpg",
-   "id": "841626b64647",
+   "published": "2026-11-03T14:06:59.000Z",
+   "summary": "submitted by /u/Firecracker048 [link] [comments]",
+   "id": "ddc64a1e7dae",
    "score": 0,
    "matched": [],
    "why": "0"
   },
   {
-   "title": "Off the Reservation | Toonout [Animated Shorts]",
-   "url": "https://www.youtube.com/watch?v=hj11xxbyJW4",
-   "source": "Dropout",
-   "feedId": "yt-dropout",
-   "type": "video",
+   "title": "US has conducted defensive strikes on Iranian targets in the Strait of Hormuz, US official says",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xmqot7/us_has_conducted_defensive_strikes_on_iranian/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
    "tags": [
-    "comedy"
+    "politics",
+    "news"
    ],
-   "published": "2026-10-28T17:30:18.000Z",
-   "summary": "A group of Native teens decides to make their ancestors proud the only way they know how. To watch more episode of Toonout and other animated series, sign up for Dropout: https://www.dropout.tv/plans Welcome to the Dropout channel! You can support us by signing up for…",
-   "thumb": "https://i1.ytimg.com/vi/hj11xxbyJW4/hqdefault.jpg",
-   "id": "d1730d89b79f",
+   "published": "2026-11-03T11:38:15.000Z",
+   "summary": "submitted by /u/boppinmule [link] [comments]",
+   "id": "bb8ef1dd49a2",
    "score": 0,
    "matched": [],
    "why": "0"
   },
   {
-   "title": "Drew Lynch on Crowd Control, Catherine McCafferty on Smartypants, And More!",
-   "url": "https://www.youtube.com/shorts/ZFpJDhqN2DI",
-   "source": "Dropout",
-   "feedId": "yt-dropout",
+   "title": "Should Burnham Call an Election?",
+   "url": "https://www.youtube.com/watch?v=9oudg7AuyD4",
+   "source": "TLDR News",
+   "feedId": "yt-tldr-news",
    "type": "video",
    "tags": [
-    "comedy"
+    "news",
+    "politics",
+    "listen"
    ],
-   "published": "2026-10-26T15:00:19.000Z",
-   "summary": "This week on Dropout... 🤣 Monday: Crowd Control (with Emily Catalano, Guy Branum, and Drew Lynch) 🗣️ Wednesday: Adventuring Academy (with Jasper William Cartwright) 🐷 Friday: Smartypants (with Londale Theus Jr, Catherine McCafferty, and Grant O’Brien) Welcome to the Dropout…",
-   "thumb": "https://i3.ytimg.com/vi/ZFpJDhqN2DI/hqdefault.jpg",
-   "id": "8f56065a9ea9",
+   "published": "2026-10-30T09:30:24.000Z",
+   "summary": "Pre-order a copy of Too Long: toolong.news/TL010 Andymonium podcast: youtube.com/@TLDRpodcasts We take a look at whether Burnham should call an election, the rumours swirling about the different groups pushing him to, and ultimately, whether it looks likely that he will. 📰 Too…",
+   "thumb": "https://i2.ytimg.com/vi/9oudg7AuyD4/hqdefault.jpg",
+   "id": "ade2cc79170d",
    "score": 0,
    "matched": [],
    "why": "0"
   },
   {
-   "title": "This machine breaks things.",
-   "url": "https://www.youtube.com/watch?v=-E47v4Oy7fE",
-   "source": "Tom Scott",
-   "feedId": "yt-tom-scott",
+   "title": "Burnham’s First Budget Explained",
+   "url": "https://www.youtube.com/watch?v=ygVX149E5cE",
+   "source": "TLDR News",
+   "feedId": "yt-tldr-news",
    "type": "video",
    "tags": [
-    "education"
+    "news",
+    "politics",
+    "listen"
    ],
-   "published": "2026-10-26T15:00:16.000Z",
-   "summary": "At Kirkaldy's Testing Works, there's the Universal Testing Machine. It breaks things. | AD: 🛡️ Get NordVPN's best deal with their next-gen antivirus: https://nordvpn.com/tomscott | 🗺️ England series map: https://www.tomscott.com/england/ 🟥 MORE FROM TOM:…",
-   "thumb": "https://i2.ytimg.com/vi/-E47v4Oy7fE/hqdefault.jpg",
-   "id": "58a074377add",
+   "published": "2026-10-29T09:30:29.000Z",
+   "summary": "Pre-order a copy of Too Long: toolong.news/TL010 Sign Up for TLDR Party: https://toolong.news/party TLDR Party Explained: https://www.youtube.com/watch?v=KVXXC3jk4Kg Chancellor John Healey delivered his budget yesterday, the first of the new Burnham government, but it was not…",
+   "thumb": "https://i2.ytimg.com/vi/ygVX149E5cE/hqdefault.jpg",
+   "id": "4db98a7a79cf",
    "score": 0,
    "matched": [],
    "why": "0"
   },
   {
-   "title": "Which Numbers Are the Funniest | Smartypants Presentation [Clip]",
-   "url": "https://www.youtube.com/watch?v=SIhg6iXI6e4",
-   "source": "Dropout",
-   "feedId": "yt-dropout",
+   "title": "Why the UK is Looking Surprisingly Functional",
+   "url": "https://www.youtube.com/watch?v=j8mkyRBT9yE",
+   "source": "TLDR News",
+   "feedId": "yt-tldr-news",
    "type": "video",
    "tags": [
-    "comedy"
+    "news",
+    "politics",
+    "listen"
    ],
-   "published": "2026-10-21T17:30:18.000Z",
-   "summary": "Have you ever wondered why people laugh at certain numbers? What makes them funny? Is it universal? Well don't worry. After extensive research, Paul Robalino is here to answer these hard hitting questions. You can watch the full episode here:…",
-   "thumb": "https://i4.ytimg.com/vi/SIhg6iXI6e4/hqdefault.jpg",
-   "id": "6c16d466b2f0",
+   "published": "2026-10-26T09:59:22.000Z",
+   "summary": "Take back your privacy - start using Proton Mail for free: http://proton.me/tldr Things are looking pretty bleak around the world at the moment... but look beneath the curtain, and the UK is actually doing pretty okay. In this video, we're going to go through a few reasons how…",
+   "thumb": "https://i3.ytimg.com/vi/j8mkyRBT9yE/hqdefault.jpg",
+   "id": "58886ee03ab6",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "The Conservative Comeback Explained",
+   "url": "https://www.youtube.com/watch?v=pnf571lKVmk",
+   "source": "TLDR News",
+   "feedId": "yt-tldr-news",
+   "type": "video",
+   "tags": [
+    "news",
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-22T08:30:04.000Z",
+   "summary": "Take back your privacy - start using Proton Mail for free: http://proton.me/tldr In this video, we’re going to have a look into the rise of the Conservatives, how this has happened, and whether it’s likely to continue. 📰 Too Long: https://toolong.news/ 🎉 TLDR Party:…",
+   "thumb": "https://i1.ytimg.com/vi/pnf571lKVmk/hqdefault.jpg",
+   "id": "0c1d26ecc6cf",
    "score": 0,
    "matched": [],
    "why": "0"
   }
  ],
- "contentHash": "005a4f19a33a"
+ "contentHash": "5cfd5e2cb501"
 }
