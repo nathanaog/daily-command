@@ -1,17 +1,17 @@
 {
- "generated": "2026-11-05T13:33:06.901Z",
+ "generated": "2026-11-05T16:22:07.666Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
   "ok": 51,
-  "items": 125,
+  "items": 121,
   "duplicatesMerged": 0,
   "lengthsKnown": 2,
-  "lengthLookups": 107,
-  "lengthFailures": 107,
+  "lengthLookups": 103,
+  "lengthFailures": 103,
   "lengthVia": "video pages",
   "lengthFailReasons": {
-   "no length on page": 107
+   "no length on page": 103
   }
  },
  "feeds": [
@@ -111,7 +111,7 @@
    "name": "Pleasant Green",
    "type": "youtube",
    "status": "ok",
-   "count": 1,
+   "count": 0,
    "resolved": {
     "channelId": "UCAPrhJwVweWZA8GEPoClSdw",
     "title": "Pleasant Green",
@@ -202,7 +202,7 @@
    "name": "Levi Hildebrand",
    "type": "youtube",
    "status": "ok",
-   "count": 3,
+   "count": 2,
    "resolved": {
     "channelId": "UC-OJ-24roEfQ_-PCnLJSckg",
     "title": "Levi Hildebrand",
@@ -228,7 +228,7 @@
    "name": "Simplicissimus",
    "type": "youtube",
    "status": "ok",
-   "count": 3,
+   "count": 2,
    "resolved": {
     "channelId": "UCKGMHVipEvuZudhHD05FOYA",
     "title": "Simplicissimus",
@@ -254,7 +254,7 @@
    "name": "Channel 5 with Andrew Callaghan",
    "type": "youtube",
    "status": "ok",
-   "count": 4,
+   "count": 3,
    "resolved": {
     "channelId": "UC-AQKm7HUNMmxjdS371MSwg",
     "title": "Channel 5 with Andrew Callaghan",
@@ -630,9 +630,10 @@
    "id": "rd-productmanagement",
    "name": "r/productmanagement",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/productmanagement/top/.rss?t=day"
+   "lastOk": "2026-11-05T13:33:06.901Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-tech",
@@ -641,7 +642,7 @@
    "status": "cached",
    "count": 1,
    "lastOk": "2026-11-05T04:14:56.920Z",
-   "note": "rate-limited (429)"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-gaming",
@@ -650,25 +651,26 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-11-05T07:39:01.409Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
   },
   {
    "id": "rd-xbox",
    "name": "r/xbox",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": "2026-11-02T04:16:50.522Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-slaythespire",
@@ -677,7 +679,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-geopolitics",
@@ -708,6 +710,236 @@
   }
  ],
  "items": [
+  {
+   "title": "WATCH: Alex Jones SNAPS, Suffers TOTAL MELTDOWN after Election DISASTER!",
+   "url": "https://www.youtube.com/watch?v=BaLtPld7SmE",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-05T16:00:26.000Z",
+   "summary": "Luke discusses Alex Jones' meltdown following the midterm blowout. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
+   "thumb": "https://i3.ytimg.com/vi/BaLtPld7SmE/hqdefault.jpg",
+   "id": "0d14a2325b98",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Why are Labour banning porn?",
+   "url": "https://www.youtube.com/watch?v=_vk2BJ36ZtM",
+   "source": "PoliticsJOE",
+   "feedId": "yt-politicsjoe",
+   "type": "video",
+   "tags": [
+    "comedy"
+   ],
+   "published": "2026-11-05T15:52:49.000Z",
+   "summary": "From tomorrow, Labour will crack down on porn depicting strangulation or suffocation, sexual activity between people who are related, or adults role-playing as children under 16. The legislation will bring online pornography in line with existing regulations for offline…",
+   "thumb": "https://i4.ytimg.com/vi/_vk2BJ36ZtM/hqdefault.jpg",
+   "id": "9d479769a55c",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "UK government ‘house of cards’ heavily reliant on US AI models",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xom1qi/uk_government_house_of_cards_heavily_reliant_on/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-11-05T15:48:22.000Z",
+   "summary": "submitted by /u/locai_al-ibadi [link] [comments]",
+   "id": "108603582877",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Russell Brand faces years behind bars after guilty verdict",
+   "url": "https://www.youtube.com/watch?v=mbW6_xioNDk",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-05T15:41:16.000Z",
+   "summary": "Actor and comedian Russell Brand has been found guilty of rape and three counts of sexual assault during his showbiz career. LBC's reporter Helen Hoddinott, who has been following the case from Southwark Crown Court, breaks down the rise and fall of Russell Brand. Brand, 51,…",
+   "thumb": "https://i2.ytimg.com/vi/mbW6_xioNDk/hqdefault.jpg",
+   "id": "6b6c8070773c",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Russell Brand found guilty of rape and three sexual assaults",
+   "url": "https://www.youtube.com/watch?v=-QwEnRaXfhI",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-05T15:05:51.000Z",
+   "summary": "Actor and comedian Russell Brand has been found guilty of rape and three counts of sexual assault during his showbiz career. Brand, 51, preyed on women he encountered while becoming one of Britain’s best-known stand-up comedians, a lauded TV and radio host, and a Hollywood…",
+   "thumb": "https://i2.ytimg.com/vi/-QwEnRaXfhI/hqdefault.jpg",
+   "id": "bcb8c3ed0cc9",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Warum China gerade auf der halben Welt Stadien baut | Stabile Zeitenlage",
+   "url": "https://www.youtube.com/watch?v=fo57CFhSIh4",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-05T15:04:38.000Z",
+   "summary": "Seit einiger Zeit baut #China überall auf der Welt Stadien – mittlerweile sind es um die 150 in mehr als 70 Ländern. Klar, China will damit seinen Einfluss und seine Stellung als #Supermacht weiter zementieren. Aber es steckt noch etwas anderes dahinter. Was das ist und wie…",
+   "thumb": "https://i3.ytimg.com/vi/fo57CFhSIh4/hqdefault.jpg",
+   "id": "b03f24b6870b",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "WATCH SCOTT JENNINGS’ FACE as He Realizes Trump is F***ED!",
+   "url": "https://www.youtube.com/watch?v=V8mbGANcym4",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-05T15:00:09.000Z",
+   "summary": "Luke discusses Scott Jennings' reaction to the midterm results. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
+   "thumb": "https://i3.ytimg.com/vi/V8mbGANcym4/hqdefault.jpg",
+   "id": "6111a031c5ad",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Generalstreik in Frankreich: Korrespondentin erklärt Hintergründe",
+   "url": "https://www.youtube.com/watch?v=Z3lRdRq1o0A",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-05T14:56:20.000Z",
+   "summary": "Die wichtigsten Gewerkschaften in Frankreich haben zu Streiks und landesweiten Protesten aufgerufen. Auch die Proteste der Schüler und Studierenden schließen sich an. Das Themenfeld ist weit: Es soll um Gehälter, die Bewahrung des öffentlichen Dienstes, Beschäftigung und…",
+   "thumb": "https://i3.ytimg.com/vi/Z3lRdRq1o0A/hqdefault.jpg",
+   "id": "6f9c9109c26b",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "The Reform council descending into chaos – with a £90m deficit and sexism row",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xok8fy/the_reform_council_descending_into_chaos_with_a/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-11-05T14:36:54.000Z",
+   "summary": "submitted by /u/theipaper [link] [comments]",
+   "id": "5e5205c88259",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Burnham Says 10-Year Plan for UK Could Be Delayed to Next Year",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xojeov/burnham_says_10year_plan_for_uk_could_be_delayed/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-11-05T14:02:36.000Z",
+   "summary": "submitted by /u/bloomberg [link] [comments]",
+   "id": "1382bd0cbb79",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "OMG: Fox Host SHUTS UP MAGA Co-Hosts, EMBARRASSES TRUMP On Air!",
+   "url": "https://www.youtube.com/watch?v=voO_4FVXEJo",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-05T14:00:40.000Z",
+   "summary": "Luke discusses Fox & Friends' reaction to the midterm election results. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
+   "thumb": "https://i3.ytimg.com/vi/voO_4FVXEJo/hqdefault.jpg",
+   "id": "4b5514eb6e18",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Liverpool Council's taxpayer-funded ‘racial trauma’ staff counselling",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xoj7ua/liverpool_councils_taxpayerfunded_racial_trauma/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-11-05T13:54:36.000Z",
+   "summary": "submitted by /u/Alti-Ok [link] [comments]",
+   "id": "f3f3ce91edfc",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Why the Bank of England will keep raising interest rates",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xoixp1/why_the_bank_of_england_will_keep_raising/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-11-05T13:41:52.000Z",
+   "summary": "submitted by /u/dwillun [link] [comments]",
+   "id": "39100e5e1553",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
   {
    "title": "Wie Republikaner auf die Wahlschlappe reagieren",
    "url": "https://www.youtube.com/watch?v=sEkD8pvbeB8",
@@ -802,44 +1034,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "US-Wahlen: Welche Konsequenzen ziehen die Republikaner?",
-   "url": "https://www.youtube.com/watch?v=gaUwcrZeZtI",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-05T10:46:19.000Z",
-   "summary": "Der republikanische US-Senator Ted Cruz hat seiner Partei nach der Niederlage bei den Zwischenwahlen schwere Versäumnisse vorgeworfen. Zu viele republikanische Politiker hätten die wirtschaftlichen Sorgen und die Not vieler Amerikaner entweder nicht verstanden oder sich nicht…",
-   "thumb": "https://i4.ytimg.com/vi/gaUwcrZeZtI/hqdefault.jpg",
-   "id": "829a61bbdb0c",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "ARD-Korrespondentin beantwortet Fragen zum Tod Hubert Aiwangers",
-   "url": "https://www.youtube.com/watch?v=F33O09wCcjE",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-05T10:34:15.000Z",
-   "summary": "Der unerwartete Tod von Hubert Aiwanger mit 55 Jahren hat parteiübergreifend Bestürzung ausgelöst. Der Chef der Freien Wähler war leblos in einem Hotel aufgefunden worden. Bayerns Ministerpräsident Söder sprach von einer „absoluten Tragödie“. Weitere Stimmen zum Tod Aiwangers:…",
-   "thumb": "https://i3.ytimg.com/vi/F33O09wCcjE/hqdefault.jpg",
-   "id": "71135fbfec97",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Weekly rant thread",
    "url": "https://www.reddit.com/r/ProductManagement/comments/1xoeuma/weekly_rant_thread/",
    "source": "r/productmanagement",
@@ -907,23 +1101,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "‘It’s just vape shops, nail shops, charity shops’: can anything save the British high street? | Retail industry",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xoc0n6/its_just_vape_shops_nail_shops_charity_shops_can/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-11-05T06:52:34.000Z",
-   "summary": "submitted by /u/Imakemyownnamereddit [link] [comments]",
-   "id": "656a0b656266",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "I’ve never seen anything like this",
    "url": "https://www.youtube.com/watch?v=JiKUIIwsPkg",
    "source": "Luke Beasley",
@@ -960,60 +1137,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "FINALLY: Jessica Tarlov HUMILIATES Leavitt TO HER FACE On Fox News!",
-   "url": "https://www.youtube.com/watch?v=3b2JnzQ6ffI",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-05T03:50:34.000Z",
-   "summary": "Luke discusses Karoline Leavitt and Jessica Tarlov's clash on Fox News. Check out Jessica Tarlov's new book below! https://sites.prh.com/idisagree Want to support the show and gain access to a daily bonus show? Become a member here:…",
-   "thumb": "https://i4.ytimg.com/vi/3b2JnzQ6ffI/hqdefault.jpg",
-   "id": "772dc919aa02",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "DAMN: Trump SNAPS at Fox Host as Post-Election Interview GOES TO CRAP!",
-   "url": "https://www.youtube.com/watch?v=Fud4JQE2DU4",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-05T02:50:01.000Z",
-   "summary": "Luke discusses the first interview's Trump did following the blue tsunami. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
-   "thumb": "https://i3.ytimg.com/vi/Fud4JQE2DU4/hqdefault.jpg",
-   "id": "4482f9db14da",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "WATCH HIM REALIZE",
-   "url": "https://www.youtube.com/watch?v=Gb2GzPYWZnc",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-05T01:50:29.000Z",
-   "summary": "Luke discusses Jesse Watters' failed prediciton. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley Instagram -…",
-   "thumb": "https://i4.ytimg.com/vi/Gb2GzPYWZnc/hqdefault.jpg",
-   "id": "e1e9dfba947f",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Does Coercive Bombing Work?",
    "url": "https://www.reddit.com/r/geopolitics/comments/1xo345x/does_coercive_bombing_work/",
    "source": "r/geopolitics",
@@ -1026,57 +1149,6 @@
    "published": "2026-11-04T23:17:29.000Z",
    "summary": "submitted by /u/HooverInstitution [link] [comments]",
    "id": "5adbc882a684",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Pound rises to its highest level since the Brexit referendum",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xo1h4m/pound_rises_to_its_highest_level_since_the_brexit/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-11-04T22:08:31.000Z",
-   "summary": "submitted by /u/collogue [link] [comments]",
-   "id": "f67d5d61c789",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Burnham makes new North Sea drilling illegal",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xnzt64/burnham_makes_new_north_sea_drilling_illegal/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-11-04T21:02:14.000Z",
-   "summary": "submitted by /u/DangerousAd40867 [link] [comments]",
-   "id": "c7a5fba4d759",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "UK government to outlaw new North Sea drilling",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xnyt3w/uk_government_to_outlaw_new_north_sea_drilling/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-11-04T20:22:32.000Z",
-   "summary": "submitted by /u/Kagedeah [link] [comments]",
-   "id": "835a2381eece",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1128,42 +1200,6 @@
    "published": "2026-11-04T23:10:34.000Z",
    "summary": "How is it to be a Product Manager in an AI company (OpenAI, Anthropic, xAI, Mistral,...)? How do you organize the team, leverage AI, and do you have unlimited tokens? I heard that the work is very engineering-driven, giving engineers a lot of agency so that product management…",
    "id": "bfbda4c05e98",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "'US voters are comfortable with fascism - unless it's expensive' | James O’Brien - The Whole Show",
-   "url": "https://www.youtube.com/watch?v=fLSo17kY9aY",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-04T22:00:09.000Z",
-   "summary": "This is a catch-up version of James O'Brien's live, daily show on LBC Radio from the 4th of November 2026. Listen to the full show on the all-new LBC App: https://app.af.lbc.co.uk/btnc/thenewlbcapp #jamesobrien #politics #LBC LBC is the home of live debate around news and…",
-   "thumb": "https://i3.ytimg.com/vi/fLSo17kY9aY/hqdefault.jpg",
-   "id": "500cceeb2b91",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Trump ally: ‘I feel sorry for him'",
-   "url": "https://www.youtube.com/watch?v=IxS055nsAgc",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-04T21:35:58.000Z",
-   "summary": "Tom Swarbrick speaks with Trump ally Pat Shriver about the president’s future following the Republicans’ widespread midterm loss. The Democrats swept to victory, winning both the House and the Senate, in what was a widely expected win. Shriver doubles down on her support of…",
-   "thumb": "https://i2.ytimg.com/vi/IxS055nsAgc/hqdefault.jpg",
-   "id": "66e292fb1f96",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1319,23 +1355,6 @@
    "summary": "Hey you 👈 Wanna be in a Jubilee video? https://bit.ly/be-in-a-video LET’S BE FRIENDS Instagram: https://www.instagram.com/jubileemedia/ TikTok: https://www.tiktok.com/@jubilee?lang=en Website: https://www.jubileemedia.com OUR LOVE + DATING CHANNEL 🍑 YouTube:…",
    "thumb": "https://i2.ytimg.com/vi/5lIqh7ejrx8/hqdefault.jpg",
    "id": "25649e4ee21e",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "UK government announces public interest investigation into Sky deal to takeover ITV's media arm",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xnt1i5/uk_government_announces_public_interest/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-11-04T16:44:11.000Z",
-   "summary": "submitted by /u/Kagedeah [link] [comments]",
-   "id": "851c453cfa92",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1706,23 +1725,6 @@
    "summary": "Visit https://brilliant.org/coldfusion to try Brilliant’s tutor for free and get 20% off an annual subscription. Apple is breaking all of their rules and seem lost, but is there a method to the madness? ColdFusion Music: https://www.youtube.com/@coldfusionmusic…",
    "thumb": "https://i4.ytimg.com/vi/Sb1_j9A25nQ/hqdefault.jpg",
    "id": "6e44456627fc",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Why I called out a GB News host on live TV",
-   "url": "https://www.youtube.com/watch?v=sJDvuMrZBzw",
-   "source": "PoliticsJOE",
-   "feedId": "yt-politicsjoe",
-   "type": "video",
-   "tags": [
-    "comedy"
-   ],
-   "published": "2026-11-02T14:08:19.000Z",
-   "summary": "Andy Twelves caused a bit of a stir on GB News last week, clashing with host Nana Akua in a viral clip. But what was the context? Andy takes us behind the scenes, revealing what it's like to be talking head, as well as the perils of being a left-wing commentator on right-wing…",
-   "thumb": "https://i4.ytimg.com/vi/sJDvuMrZBzw/hqdefault.jpg",
-   "id": "57f5709a125b",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2872,79 +2874,7 @@
    "score": 0,
    "matched": [],
    "why": "0"
-  },
-  {
-   "title": "Looksmaxxing Sleepaway Camp",
-   "url": "https://www.youtube.com/watch?v=yx0gM_l60VY",
-   "source": "Channel 5 with Andrew Callaghan",
-   "feedId": "yt-channel-5-with-andrew-callaghan",
-   "type": "video",
-   "tags": [
-    "education",
-    "politics"
-   ],
-   "published": "2026-10-22T16:00:00.000Z",
-   "summary": "Head to https://chime.yt.link/qSMtFb0 for a $200 bonus and 3.75% APY with Chime® Thanks Chime for sponsoring this video! To see our reacquired catalog of All Gas No Brakes content, head to our Patreon at https://www.patreon.com/channel5",
-   "thumb": "https://i2.ytimg.com/vi/yx0gM_l60VY/hqdefault.jpg",
-   "id": "fc5e069422e7",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "7 Brew is Trying to KILL its Customers",
-   "url": "https://www.youtube.com/watch?v=c5V0hdxBHbg",
-   "source": "Levi Hildebrand",
-   "feedId": "yt-levi-hildebrand",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "business"
-   ],
-   "published": "2026-10-22T15:00:13.000Z",
-   "summary": "Enjoy 1 month of Wispr Flow Pro using my link: https://ref.wisprflow.ai/levi-hildebrand-yt Subscribe! https://www.youtube.com/channel/UC-OJ-24roEfQ_-PCnLJSckg?sub_confirmation=1 Join our Patreon: https://www.patreon.com/c/LeviHildebrand For further reading, check out the…",
-   "thumb": "https://i4.ytimg.com/vi/c5V0hdxBHbg/hqdefault.jpg",
-   "id": "c854965d5462",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "The Women on Dating Sites Aren't Who You Think",
-   "url": "https://www.youtube.com/watch?v=mypvVHAePnY",
-   "source": "Pleasant Green",
-   "feedId": "yt-pleasant-green",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "entertainment"
-   ],
-   "published": "2026-10-22T14:26:09.000Z",
-   "summary": "Take your personal data back with Incogni! Use code PLEASANTGREEN at the link below and get 60% off an annual plan: https://incogni.com/pleasantgreen Be careful what dating sites you pay for. The guys and girls you talk to may not be who you think! If you have a scam that needs…",
-   "thumb": "https://i2.ytimg.com/vi/mypvVHAePnY/hqdefault.jpg",
-   "id": "ae7f9c52fc68",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Die Unterwanderung der AfD",
-   "url": "https://www.youtube.com/watch?v=HHuIcNUFpbI",
-   "source": "Simplicissimus",
-   "feedId": "yt-simplicissimus",
-   "type": "video",
-   "tags": [
-    "german",
-    "education"
-   ],
-   "published": "2026-10-22T14:00:24.000Z",
-   "summary": "In der CLARK App kannst du bestehende Versicherungen hochladen, neue vergleichen und abschließen. Mit dem Code „SIMPLI“ bekommst du Gutscheine im Wert von bis zu 45 € für die ersten drei hochgeladenen Versicherungen unter https://simpli.deals/clark106 (Werbung) NordVPN bietet…",
-   "thumb": "https://i1.ytimg.com/vi/HHuIcNUFpbI/hqdefault.jpg",
-   "id": "890642320f20",
-   "score": 0,
-   "matched": [],
-   "why": "0"
   }
  ],
- "contentHash": "9226e14c6018"
+ "contentHash": "656aff9e9eba"
 }
