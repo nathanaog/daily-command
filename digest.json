@@ -1,13 +1,13 @@
 {
- "generated": "2026-11-05T10:22:10.647Z",
+ "generated": "2026-11-05T13:33:06.901Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
   "ok": 51,
-  "items": 124,
+  "items": 125,
   "duplicatesMerged": 0,
   "lengthsKnown": 2,
-  "lengthLookups": 109,
+  "lengthLookups": 107,
   "lengthFailures": 107,
   "lengthVia": "video pages",
   "lengthFailReasons": {
@@ -630,10 +630,9 @@
    "id": "rd-productmanagement",
    "name": "r/productmanagement",
    "type": "reddit",
-   "status": "cached",
-   "count": 4,
-   "lastOk": "2026-11-05T04:14:56.920Z",
-   "note": "not its turn this run"
+   "status": "ok",
+   "count": 5,
+   "url": "https://www.reddit.com/r/productmanagement/top/.rss?t=day"
   },
   {
    "id": "rd-tech",
@@ -642,7 +641,7 @@
    "status": "cached",
    "count": 1,
    "lastOk": "2026-11-05T04:14:56.920Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)"
   },
   {
    "id": "rd-gaming",
@@ -651,7 +650,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-ukpolitics",
@@ -684,20 +683,19 @@
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
+   "lastOk": "2026-11-05T10:22:10.647Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-germany",
    "name": "r/germany",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": "2026-10-31T01:21:53.748Z",
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-unitedkingdom",
@@ -706,13 +704,13 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   }
  ],
  "items": [
   {
-   "title": "Klatsche für Trump: Was heißt das für Deutschland?",
-   "url": "https://www.youtube.com/watch?v=gsVtaDhC1w8",
+   "title": "Wie Republikaner auf die Wahlschlappe reagieren",
+   "url": "https://www.youtube.com/watch?v=sEkD8pvbeB8",
    "source": "Tagesschau",
    "feedId": "yt-tagesschau",
    "type": "video",
@@ -721,36 +719,35 @@
     "news",
     "listen"
    ],
-   "published": "2026-11-05T10:16:44.000Z",
-   "summary": "Ein Teilerfolg für die Demokraten war erwartet worden. Doch die Zwischenwahlen in den USA kommen einem Desaster für Präsident Trump gleich. Deutsche Politiker:innen haben die Niederlage der Republikaner bei den US-Midterms begrüßt, dämpfen aber die Erwartung an eine andere…",
-   "thumb": "https://i4.ytimg.com/vi/gsVtaDhC1w8/hqdefault.jpg",
-   "id": "8dba5d435d56",
+   "published": "2026-11-05T13:04:30.000Z",
+   "summary": "Vizepräsident J.D. Vance machte keinen Hehl aus seinem Zorn und aus seiner eigenen Ambition: Donald Trump hat es im Iran vergeigt. Trump sieht die Gründe der Niederlage seiner Republikaner bei den US-Kongresswahlen darin, dass er selbst nicht auf den Wahlzetteln stand. Die…",
+   "thumb": "https://i4.ytimg.com/vi/sEkD8pvbeB8/hqdefault.jpg",
+   "id": "d15269d6cfd4",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "MOMA-Reporter: Wenn das Pilgern zum Event wird | ARD Morgenmagazin",
-   "url": "https://www.youtube.com/watch?v=QPRoYUnrq5k",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
+   "title": "Who will be the next Democrat President?",
+   "url": "https://www.youtube.com/watch?v=Z3DA2Tg-L0I",
+   "source": "LBC",
+   "feedId": "yt-lbc",
    "type": "video",
    "tags": [
-    "german",
-    "news",
+    "politics",
     "listen"
    ],
-   "published": "2026-11-05T10:00:28.000Z",
-   "summary": "20 Jahre ist es her, da erschien Hape Kerkelings „Ich bin dann mal weg“: Ein Bestseller über seine Wanderung auf dem Jakobsweg, der sich gut 800 Kilometer durch Europa zieht und im spanischen Santiago de Compostela endet. Seit Hape Kerkeling hat sich dort aber viel verändert:…",
-   "thumb": "https://i2.ytimg.com/vi/QPRoYUnrq5k/hqdefault.jpg",
-   "id": "2cc685f8b59b",
+   "published": "2026-11-05T12:55:25.000Z",
+   "summary": "Most of the focus on the midterm results has been on the failings of Trump and the Republican Party, so Andrew Marr has turned his attention to the Democrats. 00:00 | Andrew is joined by John Podesta, who was the former White House Chief of Staff to Bill Clinton. They discuss…",
+   "thumb": "https://i3.ytimg.com/vi/Z3DA2Tg-L0I/hqdefault.jpg",
+   "id": "13be6a40640f",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Eisenberg: Spitzenpreis für Krankenhaus in Thüringen | tagesthemen mittendrin",
-   "url": "https://www.youtube.com/watch?v=6fgLbKtPHPo",
+   "title": "Was sich bei der Pflege ändern soll – Bundestag berät Gesetz",
+   "url": "https://www.youtube.com/watch?v=6TiHXVyXHos",
    "source": "Tagesschau",
    "feedId": "yt-tagesschau",
    "type": "video",
@@ -759,17 +756,35 @@
     "news",
     "listen"
    ],
-   "published": "2026-11-05T09:47:53.000Z",
-   "summary": "Die Waldkliniken in Thüringen sind mit dem \"Grand Hospital Award\" ausgezeichnet worden, einem der bedeutendsten internationalen Preise der Branche. Es ist das erste Mal, dass diese Auszeichnung an ein Krankenhaus in Deutschland vergeben wurde. Mehr tagesthemen mittendrin…",
-   "thumb": "https://i3.ytimg.com/vi/6fgLbKtPHPo/hqdefault.jpg",
-   "id": "ed18971eb821",
+   "published": "2026-11-05T12:53:37.000Z",
+   "summary": "In einer teils emotional geführten Debatte hat sich der Bundestag erstmals mit dem Gesetzentwurf zur Pflegereform befasst. Bundesgesundheitsminister Linnemann kündigte Änderungen an: „Wir wollen das Gesetz nachbessern.“ Abgeordnete aus Koalition wie Opposition lenkten den Blick…",
+   "thumb": "https://i3.ytimg.com/vi/6TiHXVyXHos/hqdefault.jpg",
+   "id": "eecc440d54df",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Karl-Theodor zu Guttenberg und John Bolton über die Ergebnisse der US-Midterms | maischberger",
-   "url": "https://www.youtube.com/watch?v=7L65zskkZjA",
+   "title": "James O'Brien changes his mind on Trump's midterm defeat",
+   "url": "https://www.youtube.com/watch?v=cl8QepWIOf4",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-05T11:45:30.000Z",
+   "summary": "Democrats seized control of both the Senate and House on Tuesday, scoring sweeping victories in Republican strongholds for the first time in generations Donald Trump has blamed the sweeping midterm election defeat on the Iran war and poor quality candidates, as Tehran issued a…",
+   "thumb": "https://i4.ytimg.com/vi/cl8QepWIOf4/hqdefault.jpg",
+   "id": "28f10bf33b64",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Pflegereform: Worüber der Bundestag jetzt berät",
+   "url": "https://www.youtube.com/watch?v=1F8Oh8MJmTs",
    "source": "Tagesschau",
    "feedId": "yt-tagesschau",
    "type": "video",
@@ -778,10 +793,80 @@
     "news",
     "listen"
    ],
-   "published": "2026-11-05T09:19:34.000Z",
-   "summary": "💻 maischberger in der ARD-Mediathek: https://www.ardmediathek.de/video/maischberger/maischberger-am-04-11-2026/wdr/Y3JpZDovL3dkci5kZS9CZWl0cmFnLXNvcGhvcmEtZDRkZmQzYTYtODdlNS00MjA2LWEzNGYtYzdiOGQxMDVhNjg4 🎧 maischberger als Podcast:…",
-   "thumb": "https://i4.ytimg.com/vi/7L65zskkZjA/hqdefault.jpg",
-   "id": "5af78cfa119c",
+   "published": "2026-11-05T11:30:28.000Z",
+   "summary": "Der Bundestag debattiert heute über eine erste Pflegereform. Verschiedene Leistungen der Pflegeversicherung sollen neu sortiert und teilweise zusammengelegt werden. Außerdem sind Kürzungen in verschiedenen Bereichen vorgesehen. Die große Strukturreform soll dann im neuen Jahr…",
+   "thumb": "https://i2.ytimg.com/vi/1F8Oh8MJmTs/hqdefault.jpg",
+   "id": "7ff5ddb35974",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "US-Wahlen: Welche Konsequenzen ziehen die Republikaner?",
+   "url": "https://www.youtube.com/watch?v=gaUwcrZeZtI",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-05T10:46:19.000Z",
+   "summary": "Der republikanische US-Senator Ted Cruz hat seiner Partei nach der Niederlage bei den Zwischenwahlen schwere Versäumnisse vorgeworfen. Zu viele republikanische Politiker hätten die wirtschaftlichen Sorgen und die Not vieler Amerikaner entweder nicht verstanden oder sich nicht…",
+   "thumb": "https://i4.ytimg.com/vi/gaUwcrZeZtI/hqdefault.jpg",
+   "id": "829a61bbdb0c",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "ARD-Korrespondentin beantwortet Fragen zum Tod Hubert Aiwangers",
+   "url": "https://www.youtube.com/watch?v=F33O09wCcjE",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-05T10:34:15.000Z",
+   "summary": "Der unerwartete Tod von Hubert Aiwanger mit 55 Jahren hat parteiübergreifend Bestürzung ausgelöst. Der Chef der Freien Wähler war leblos in einem Hotel aufgefunden worden. Bayerns Ministerpräsident Söder sprach von einer „absoluten Tragödie“. Weitere Stimmen zum Tod Aiwangers:…",
+   "thumb": "https://i3.ytimg.com/vi/F33O09wCcjE/hqdefault.jpg",
+   "id": "71135fbfec97",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Weekly rant thread",
+   "url": "https://www.reddit.com/r/ProductManagement/comments/1xoeuma/weekly_rant_thread/",
+   "source": "r/productmanagement",
+   "feedId": "rd-productmanagement",
+   "type": "post",
+   "tags": [
+    "product"
+   ],
+   "published": "2026-11-05T10:00:37.000Z",
+   "summary": "Share your frustrations and get support/feedback. You are not alone! submitted by /u/AutoModerator [link] [comments]",
+   "id": "69f0ff1948f5",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "25F, Good at pretending the roadmap is fixed, cant get an internship. Hire me, PMs of Reddit",
+   "url": "https://www.reddit.com/r/ProductManagement/comments/1xoe5tg/25f_good_at_pretending_the_roadmap_is_fixed_cant/",
+   "source": "r/productmanagement",
+   "feedId": "rd-productmanagement",
+   "type": "post",
+   "tags": [
+    "product"
+   ],
+   "published": "2026-11-05T09:14:00.000Z",
+   "summary": "I am 25F looking for a Product Internship to switch my domain from sales to product, I have done professional training at IIT Delhi for PM, having a 3+ years of experience in sales I understand the customers behaviour well. I am currently pursuing Executive MBA from IIM…",
+   "id": "e7d1d89aee75",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -804,26 +889,7 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Franziska Giffey (SPD) über die Koalitionsverhandlungen in Berlin | maischberger",
-   "url": "https://www.youtube.com/watch?v=837RZAa80OM",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-05T09:03:17.000Z",
-   "summary": "💻 maischberger in der ARD-Mediathek: https://www.ardmediathek.de/video/maischberger/maischberger-am-04-11-2026/wdr/Y3JpZDovL3dkci5kZS9CZWl0cmFnLXNvcGhvcmEtZDRkZmQzYTYtODdlNS00MjA2LWEzNGYtYzdiOGQxMDVhNjg4 🎧 maischberger als Podcast:…",
-   "thumb": "https://i1.ytimg.com/vi/837RZAa80OM/hqdefault.jpg",
-   "id": "a48f1aa39b37",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "How do you deal with a narcissist?",
+   "title": "‘Trump cares more about this than the election results’",
    "url": "https://www.youtube.com/watch?v=7-5HlVWAp5Q",
    "source": "LBC",
    "feedId": "yt-lbc",
@@ -948,41 +1014,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "GodLogic Apologetics Vs Andrew Griffin | Trinitarian Vs Unitarian",
-   "url": "https://www.youtube.com/watch?v=fNzinTR0GIM",
-   "source": "Modern-Day Debate",
-   "feedId": "yt-modern-day-debate",
-   "type": "video",
-   "tags": [
-    "debates",
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-05T00:55:36.000Z",
-   "summary": "Huge thank you to our DEBATECON 9 sponsors including: Revival of the Anointed's Rule: https://revivingtheroar.org/ Apologetics Ark: https://www.apologeticsark.com/links @UncensoredAmerica Yonaguni International Cuisine (Aguadilla, Puerto Rico):…",
-   "thumb": "https://i3.ytimg.com/vi/fNzinTR0GIM/hqdefault.jpg",
-   "id": "e955bf36c3f5",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "The Only SaaS Moats Left in 2026",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1xo4k0r/the_only_saas_moats_left_in_2026/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-11-05T00:22:08.000Z",
-   "summary": "submitted by /u/cgielow [link] [comments]",
-   "id": "e8cfd3e7b53f",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Does Coercive Bombing Work?",
    "url": "https://www.reddit.com/r/geopolitics/comments/1xo345x/does_coercive_bombing_work/",
    "source": "r/geopolitics",
@@ -995,22 +1026,6 @@
    "published": "2026-11-04T23:17:29.000Z",
    "summary": "submitted by /u/HooverInstitution [link] [comments]",
    "id": "5adbc882a684",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "What is it actually like being a PM at a frontier AI company?",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1xo2yfe/what_is_it_actually_like_being_a_pm_at_a_frontier/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-11-04T23:10:34.000Z",
-   "summary": "How is it to be a Product Manager in an AI company (OpenAI, Anthropic, xAI, Mistral,...)? How do you organize the team, leverage AI, and do you have unlimited tokens? I heard that the work is very engineering-driven, giving engineers a lot of agency so that product management…",
-   "id": "bfbda4c05e98",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1067,6 +1082,57 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
+   "title": "GodLogic Apologetics Vs Andrew Griffin | Trinitarian Vs Unitarian",
+   "url": "https://www.youtube.com/watch?v=fNzinTR0GIM",
+   "source": "Modern-Day Debate",
+   "feedId": "yt-modern-day-debate",
+   "type": "video",
+   "tags": [
+    "debates",
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-05T00:55:36.000Z",
+   "summary": "Huge thank you to our DEBATECON 9 sponsors including: Revival of the Anointed's Rule: https://revivingtheroar.org/ Apologetics Ark: https://www.apologeticsark.com/links @UncensoredAmerica Yonaguni International Cuisine (Aguadilla, Puerto Rico):…",
+   "thumb": "https://i3.ytimg.com/vi/fNzinTR0GIM/hqdefault.jpg",
+   "id": "e955bf36c3f5",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "The Only SaaS Moats Left in 2026",
+   "url": "https://www.reddit.com/r/ProductManagement/comments/1xo4k0r/the_only_saas_moats_left_in_2026/",
+   "source": "r/productmanagement",
+   "feedId": "rd-productmanagement",
+   "type": "post",
+   "tags": [
+    "product"
+   ],
+   "published": "2026-11-05T00:22:08.000Z",
+   "summary": "submitted by /u/cgielow [link] [comments]",
+   "id": "e8cfd3e7b53f",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "What is it actually like being a PM at a frontier AI company?",
+   "url": "https://www.reddit.com/r/ProductManagement/comments/1xo2yfe/what_is_it_actually_like_being_a_pm_at_a_frontier/",
+   "source": "r/productmanagement",
+   "feedId": "rd-productmanagement",
+   "type": "post",
+   "tags": [
+    "product"
+   ],
+   "published": "2026-11-04T23:10:34.000Z",
+   "summary": "How is it to be a Product Manager in an AI company (OpenAI, Anthropic, xAI, Mistral,...)? How do you organize the team, leverage AI, and do you have unlimited tokens? I heard that the work is very engineering-driven, giving engineers a lot of agency so that product management…",
+   "id": "bfbda4c05e98",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
    "title": "'US voters are comfortable with fascism - unless it's expensive' | James O’Brien - The Whole Show",
    "url": "https://www.youtube.com/watch?v=fLSo17kY9aY",
    "source": "LBC",
@@ -1098,42 +1164,6 @@
    "summary": "Tom Swarbrick speaks with Trump ally Pat Shriver about the president’s future following the Republicans’ widespread midterm loss. The Democrats swept to victory, winning both the House and the Senate, in what was a widely expected win. Shriver doubles down on her support of…",
    "thumb": "https://i2.ytimg.com/vi/IxS055nsAgc/hqdefault.jpg",
    "id": "66e292fb1f96",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "How likely is a Trump impeachment now he's lost the House and Senate?",
-   "url": "https://www.youtube.com/watch?v=1qyC0Iddsv8",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-04T20:40:36.000Z",
-   "summary": "Donald Trump has been dealt a midterm nightmare as the Democrats took control of the House of Representatives and Senate overnight. With the Democrats now holding ‘all the power’: How will they yield it? Ex-Trump lawyer Michael Cohen tells Andrew Marr there is a possibility of…",
-   "thumb": "https://i2.ytimg.com/vi/1qyC0Iddsv8/hqdefault.jpg",
-   "id": "36e9c3e3ee32",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Andrew Marr's verdict on the 'midterms massacre'",
-   "url": "https://www.youtube.com/watch?v=SuFM4qAAXWw",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-04T20:00:06.000Z",
-   "summary": "Following the Democrats surging to victory in the US midterms, Andrew Marr is joined by Secretary Leon Panetta, former CIA director, and Robert Wilkie, former United States Secretary of State for Veterans' Affairs, to break down what this means for the final years of the Trump…",
-   "thumb": "https://i4.ytimg.com/vi/SuFM4qAAXWw/hqdefault.jpg",
-   "id": "72f6f3093021",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1322,22 +1352,6 @@
    "published": "2026-11-04T13:38:37.000Z",
    "summary": "I recently joined a new company which is not a product company or a service company. They’ve a bunch of developers, QAs, and people from other roles (Developers and design) leading some projects. Projects? Basically, internal tools. From about start of the year, they decided to…",
    "id": "6506e32e6d53",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Examples of AI Making things worse for Product Managers (and others)",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1xnnxv7/examples_of_ai_making_things_worse_for_product/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-11-04T13:16:22.000Z",
-   "summary": "Everyone in my company is supposed to be using AI as much as possible. However, there are many times it makes things much, much harder. Here are some top-of-mind examples. What else do you see where you work? AI-Slop documents: Business writes a 20 page AI-slop requirements doc…",
-   "id": "4e52679ff6f3",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2932,5 +2946,5 @@
    "why": "0"
   }
  ],
- "contentHash": "4184c1baf152"
+ "contentHash": "9226e14c6018"
 }
