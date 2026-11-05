@@ -1,17 +1,17 @@
 {
- "generated": "2026-11-05T16:22:07.666Z",
+ "generated": "2026-11-05T19:16:34.105Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
   "ok": 51,
-  "items": 121,
+  "items": 122,
   "duplicatesMerged": 0,
   "lengthsKnown": 2,
-  "lengthLookups": 103,
-  "lengthFailures": 103,
+  "lengthLookups": 104,
+  "lengthFailures": 104,
   "lengthVia": "video pages",
   "lengthFailReasons": {
-   "no length on page": 103
+   "no length on page": 104
   }
  },
  "feeds": [
@@ -371,7 +371,7 @@
    "name": "Dropout",
    "type": "youtube",
    "status": "ok",
-   "count": 2,
+   "count": 4,
    "resolved": {
     "channelId": "UCPDXXXJj9nax0fr0Wfc048g",
     "title": "Dropout",
@@ -384,7 +384,7 @@
    "name": "The Onion",
    "type": "youtube",
    "status": "ok",
-   "count": 3,
+   "count": 2,
    "resolved": {
     "channelId": "UCfAOh2t5DpxVrgS9NQKjC7A",
     "title": "The Onion",
@@ -657,20 +657,19 @@
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
+   "lastOk": "2026-11-05T16:22:07.666Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-xbox",
    "name": "r/xbox",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": "2026-11-02T04:16:50.522Z",
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-slaythespire",
@@ -679,25 +678,26 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-11-05T10:22:10.647Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
   },
   {
    "id": "rd-germany",
    "name": "r/germany",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": "2026-10-31T01:21:53.748Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-unitedkingdom",
@@ -706,10 +706,226 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   }
  ],
  "items": [
+  {
+   "title": "Russell Brand convicted: Why this case is different",
+   "url": "https://www.youtube.com/watch?v=miKvsFew0H4",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-05T19:15:05.000Z",
+   "summary": "Brand, 51, preyed on women he encountered while becoming one of Britain’s best-known stand-up comedians, a lauded TV host, and a Hollywood movie star. His victims came to court to reveal how Brand had forced them into sexual activity, sometimes within seconds of them first…",
+   "thumb": "https://i2.ytimg.com/vi/miKvsFew0H4/hqdefault.jpg",
+   "id": "388f5ca392e9",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "„Ich sehe niemanden, der diese Lücke füllen könnte“ – Korrespondent über Tod Aiwangers",
+   "url": "https://www.youtube.com/watch?v=KWtAn2i1-RI",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-05T18:54:40.000Z",
+   "summary": "Hubert Aiwanger, Chef der Freien Wähler und Vize-Ministerpräsident in Bayern, ist gestern überraschend im Alter von 55 Jahren gestorben. Aiwanger war am Mittwochabend leblos in einem Berliner Hotel an der Friedrichstraße aufgefunden worden. Der 55-jährige Bundesparteichef der…",
+   "thumb": "https://i4.ytimg.com/vi/KWtAn2i1-RI/hqdefault.jpg",
+   "id": "e456a2b2b903",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Mid-Size American City by Truth Summons (Official Music Video) | MP3 [New Dropout Series]",
+   "url": "https://www.youtube.com/watch?v=HfyIwNenIFo",
+   "source": "Dropout",
+   "feedId": "yt-dropout",
+   "type": "video",
+   "tags": [
+    "comedy"
+   ],
+   "published": "2026-11-05T18:30:19.000Z",
+   "summary": "The official music video for Mid-Size American City by Truth Summons (Jacob Wysocki) Get ready for MP3- Music Presentation 3! Your new favorite music video countdown show where every episode brings new outrageous music videos, ridiculous hosts, and surprise guests. With music…",
+   "thumb": "https://i1.ytimg.com/vi/HfyIwNenIFo/hqdefault.jpg",
+   "id": "c493b029cb79",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Courtside by King Torrent (Official Music Video) | MP3 [New Dropout Series]",
+   "url": "https://www.youtube.com/watch?v=nrFpDYXXObQ",
+   "source": "Dropout",
+   "feedId": "yt-dropout",
+   "type": "video",
+   "tags": [
+    "comedy"
+   ],
+   "published": "2026-11-05T18:30:14.000Z",
+   "summary": "The official music video for Courtside by King Torrent (Lou Wilson) Get ready for MP3- Music Presentation 3! Your new favorite music video countdown show where every episode brings new outrageous music videos, ridiculous hosts, and surprise guests. With music and compositions…",
+   "thumb": "https://i3.ytimg.com/vi/nrFpDYXXObQ/hqdefault.jpg",
+   "id": "14d3be668d3f",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Russell Brand’s police interviews released following guilty rape verdict",
+   "url": "https://www.youtube.com/watch?v=7wQmfgkeZ2w",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-05T18:30:05.000Z",
+   "summary": "Actor and comedian Russell Brand is set to face years behind bars after being found guilty of rape and three sexual assaults. Sections of his interviews with the Metropolitan Police have been released following the verdict. He told police that he ‘led a very promiscuous life’…",
+   "thumb": "https://i4.ytimg.com/vi/7wQmfgkeZ2w/hqdefault.jpg",
+   "id": "c30c6dd23e51",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "\"You Are a Protestant Who Argues Like A Muslim\" — Jay Dyer vs David Wood",
+   "url": "https://www.youtube.com/watch?v=5-_d64UzBKw",
+   "source": "Modern-Day Debate",
+   "feedId": "yt-modern-day-debate",
+   "type": "video",
+   "tags": [
+    "debates",
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-05T18:30:02.000Z",
+   "summary": "Huge thank you to our DEBATECON 9 sponsors including: Revival of the Anointed's Rule: https://revivingtheroar.org/ Apologetics Ark: https://www.apologeticsark.com/links @UncensoredAmerica Yonaguni International Cuisine (Aguadilla, Puerto Rico):…",
+   "thumb": "https://i2.ytimg.com/vi/5-_d64UzBKw/hqdefault.jpg",
+   "id": "a257e577fd76",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "JD Vance breaks ranks with Trump over election defeat",
+   "url": "https://www.youtube.com/watch?v=2UTUIWaBSwg",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-05T18:00:32.000Z",
+   "summary": "Shelagh Fogarty is joined by Kamala Harris' former adviser Mike Nellis to discuss the midterms results as JD Vance blames the Iran war for defeat. The Vice President has distanced himself from President Donald Trump's war on Iran, questioning whether it was worth the cost and…",
+   "thumb": "https://i3.ytimg.com/vi/2UTUIWaBSwg/hqdefault.jpg",
+   "id": "c31c56c9aa16",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "WWE Legend Bill Goldberg Puts Kevin O’Leary in a Headlock! | Shark Tank US | Shark Tank Global",
+   "url": "https://www.youtube.com/watch?v=Efpe1MnKHVk",
+   "source": "Shark Tank Global",
+   "feedId": "yt-shark-tank-global",
+   "type": "video",
+   "tags": [
+    "trash",
+    "business"
+   ],
+   "published": "2026-11-05T17:00:04.000Z",
+   "summary": "Cody J. Brdar, Jordan Ruben, and Bill Goldberg enter the tank seeking $250K for a 5% stake in their premium automotive brand, HeroCovers. From Season 18 Episode 6 Watch Shark Tank US Now: http://AAN.SonyPictures.com/SharkTankUSHulu Watch Shark Tank Australia Now:…",
+   "thumb": "https://i2.ytimg.com/vi/Efpe1MnKHVk/hqdefault.jpg",
+   "id": "ce1559f6bd20",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "tagesschau in Einfacher Sprache 19:00 Uhr, 05.11.2026",
+   "url": "https://www.youtube.com/watch?v=Ac2_n6iCx68",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-05T16:55:00.000Z",
+   "summary": "tagesschau in Einfacher Sprache 19:00 Uhr Chef der Freien Wähler und Bayerns Vizeministerpräsident Hubert Aiwanger mit 55 Jahren gestorben, Bundestag debattiert über Pflegegesetz, Französische Gewerkschaften rufen zum Generalstreik für höhere Löhne auf, Das Wetter…",
+   "thumb": "https://i2.ytimg.com/vi/Ac2_n6iCx68/hqdefault.jpg",
+   "id": "b92b2ab246da",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Tierschutzgesetz soll geändert werden",
+   "url": "https://www.youtube.com/watch?v=c9MM8_an1a0",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-05T16:38:06.000Z",
+   "summary": "Im Bundestag wird heute über eine Änderung des Tierschutzgesetzes abgestimmt. Demnach soll in größeren Schlachtbetrieben eine Videoüberwachung Pflicht werden. Veterinär:innen sollen so im Zweifelsfall Missbrauch und illegale Handlungen besser kontrollieren können. Am Bodensee…",
+   "thumb": "https://i4.ytimg.com/vi/c9MM8_an1a0/hqdefault.jpg",
+   "id": "ae686912deb8",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "WATCH: Russell Brand's Police Interviews Before Rape Charge",
+   "url": "https://www.youtube.com/watch?v=RCWY4Zlnz2o",
+   "source": "PoliticsJOE",
+   "feedId": "yt-politicsjoe",
+   "type": "video",
+   "tags": [
+    "comedy"
+   ],
+   "published": "2026-11-05T16:26:58.000Z",
+   "summary": "Today Russell Brand was found guilty of rape and three counts of sexual assault at Southwark Crown Court. He is being held in custody until he is handed a sentence on Monday, which, according to the Judge, will likely be custodial sentence. Here are some of Brand's interactions…",
+   "thumb": "https://i3.ytimg.com/vi/RCWY4Zlnz2o/hqdefault.jpg",
+   "id": "1eb36541937b",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "“Regime Change Came in Texas Before Tehran”",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xommh2/regime_change_came_in_texas_before_tehran/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-11-05T16:11:02.000Z",
+   "summary": "submitted by /u/newyorker [link] [comments]",
+   "id": "5ba4c979b44e",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
   {
    "title": "WATCH: Alex Jones SNAPS, Suffers TOTAL MELTDOWN after Election DISASTER!",
    "url": "https://www.youtube.com/watch?v=BaLtPld7SmE",
@@ -776,6 +992,23 @@
    "summary": "Actor and comedian Russell Brand has been found guilty of rape and three counts of sexual assault during his showbiz career. LBC's reporter Helen Hoddinott, who has been following the case from Southwark Crown Court, breaks down the rise and fall of Russell Brand. Brand, 51,…",
    "thumb": "https://i2.ytimg.com/vi/mbW6_xioNDk/hqdefault.jpg",
    "id": "6b6c8070773c",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Europe’s Defence Coalitions Need Someone to Own the Outcome",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xol3w5/europes_defence_coalitions_need_someone_to_own/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-11-05T15:11:24.000Z",
+   "summary": "submitted by /u/RUSIOfficial [link] [comments]",
+   "id": "5f5636b8627c",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -872,6 +1105,23 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
+   "title": "Three Ways the New Democratic Congress Could Constrain Trump on Foreign Policy",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xojw0z/three_ways_the_new_democratic_congress_could/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-11-05T14:22:20.000Z",
+   "summary": "submitted by /u/carnegieendowment [link] [comments]",
+   "id": "43536fef9a39",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
    "title": "Burnham Says 10-Year Plan for UK Could Be Delayed to Next Year",
    "url": "https://www.reddit.com/r/ukpolitics/comments/1xojeov/burnham_says_10year_plan_for_uk_could_be_delayed/",
    "source": "r/ukpolitics",
@@ -941,94 +1191,35 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Wie Republikaner auf die Wahlschlappe reagieren",
-   "url": "https://www.youtube.com/watch?v=sEkD8pvbeB8",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-05T13:04:30.000Z",
-   "summary": "Vizepräsident J.D. Vance machte keinen Hehl aus seinem Zorn und aus seiner eigenen Ambition: Donald Trump hat es im Iran vergeigt. Trump sieht die Gründe der Niederlage seiner Republikaner bei den US-Kongresswahlen darin, dass er selbst nicht auf den Wahlzetteln stand. Die…",
-   "thumb": "https://i4.ytimg.com/vi/sEkD8pvbeB8/hqdefault.jpg",
-   "id": "d15269d6cfd4",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Who will be the next Democrat President?",
-   "url": "https://www.youtube.com/watch?v=Z3DA2Tg-L0I",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
+   "title": "The war in Ukraine is largely forgotten in the U.S.",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xogzrb/the_war_in_ukraine_is_largely_forgotten_in_the_us/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
    "tags": [
     "politics",
-    "listen"
+    "news"
    ],
-   "published": "2026-11-05T12:55:25.000Z",
-   "summary": "Most of the focus on the midterm results has been on the failings of Trump and the Republican Party, so Andrew Marr has turned his attention to the Democrats. 00:00 | Andrew is joined by John Podesta, who was the former White House Chief of Staff to Bill Clinton. They discuss…",
-   "thumb": "https://i3.ytimg.com/vi/Z3DA2Tg-L0I/hqdefault.jpg",
-   "id": "13be6a40640f",
+   "published": "2026-11-05T12:06:34.000Z",
+   "summary": "After Americans voted in the midterm elections, handing control of Congress to the Democrats, questions are growing over whether the Democratic “blue wave” will be enough to change broader trends in U.S. foreign policy. In World Talks, Steven Moore, Founder of the Ukraine…",
+   "id": "eef6adb487c0",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Was sich bei der Pflege ändern soll – Bundestag berät Gesetz",
-   "url": "https://www.youtube.com/watch?v=6TiHXVyXHos",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-05T12:53:37.000Z",
-   "summary": "In einer teils emotional geführten Debatte hat sich der Bundestag erstmals mit dem Gesetzentwurf zur Pflegereform befasst. Bundesgesundheitsminister Linnemann kündigte Änderungen an: „Wir wollen das Gesetz nachbessern.“ Abgeordnete aus Koalition wie Opposition lenkten den Blick…",
-   "thumb": "https://i3.ytimg.com/vi/6TiHXVyXHos/hqdefault.jpg",
-   "id": "eecc440d54df",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "James O'Brien changes his mind on Trump's midterm defeat",
-   "url": "https://www.youtube.com/watch?v=cl8QepWIOf4",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
+   "title": "Russia deepened Iran support with missile launcher deal",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xogatw/russia_deepened_iran_support_with_missile/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
    "tags": [
     "politics",
-    "listen"
+    "news"
    ],
-   "published": "2026-11-05T11:45:30.000Z",
-   "summary": "Democrats seized control of both the Senate and House on Tuesday, scoring sweeping victories in Republican strongholds for the first time in generations Donald Trump has blamed the sweeping midterm election defeat on the Iran war and poor quality candidates, as Tehran issued a…",
-   "thumb": "https://i4.ytimg.com/vi/cl8QepWIOf4/hqdefault.jpg",
-   "id": "28f10bf33b64",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Pflegereform: Worüber der Bundestag jetzt berät",
-   "url": "https://www.youtube.com/watch?v=1F8Oh8MJmTs",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-05T11:30:28.000Z",
-   "summary": "Der Bundestag debattiert heute über eine erste Pflegereform. Verschiedene Leistungen der Pflegeversicherung sollen neu sortiert und teilweise zusammengelegt werden. Außerdem sind Kürzungen in verschiedenen Bereichen vorgesehen. Die große Strukturreform soll dann im neuen Jahr…",
-   "thumb": "https://i2.ytimg.com/vi/1F8Oh8MJmTs/hqdefault.jpg",
-   "id": "7ff5ddb35974",
+   "published": "2026-11-05T11:28:49.000Z",
+   "summary": "Russia agreed to supply Iran with 90 launchers for the advanced guided missiles widely used by its forces in Ukraine, a sign of Moscow’s military support for Tehran despite the demands of its own sputtering war effort. A production schedule for 2024 and 2025 from a major…",
+   "id": "6bc86c0f6979",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1066,41 +1257,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "South Korea to patrol Strait of Hormuz, oil tankers reportedly hit mines",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xoe59h/south_korea_to_patrol_strait_of_hormuz_oil/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-11-05T09:13:00.000Z",
-   "summary": "submitted by /u/kai_vt [link] [comments]",
-   "id": "6b3570ffefc2",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "‘Trump cares more about this than the election results’",
-   "url": "https://www.youtube.com/watch?v=7-5HlVWAp5Q",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-05T08:21:32.000Z",
-   "summary": "The Republicans have just suffered their worst electoral defeat in decades in the recent midterms, but Donald Trump seems to be more concerned about his 'pet project': the White House Ballroom. Nick Ferrari finds it concerning that the President is so focused on his ‘vanity…",
-   "thumb": "https://i4.ytimg.com/vi/7-5HlVWAp5Q/hqdefault.jpg",
-   "id": "c2c2f407d8ec",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "I’ve never seen anything like this",
    "url": "https://www.youtube.com/watch?v=JiKUIIwsPkg",
    "source": "Luke Beasley",
@@ -1114,9 +1270,9 @@
    "summary": "Luke discusses Ron DeSantis' reaction to the blue tsunami. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
    "thumb": "https://i3.ytimg.com/vi/JiKUIIwsPkg/hqdefault.jpg",
    "id": "51877f205c62",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
+   "why": "0"
   },
   {
    "title": "It f***ing happened",
@@ -1132,26 +1288,9 @@
    "summary": "Luke discusses Elon Musk's failure. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley Instagram -…",
    "thumb": "https://i3.ytimg.com/vi/F5aCGQ9xBF8/hqdefault.jpg",
    "id": "af29479ee7c7",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Does Coercive Bombing Work?",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xo345x/does_coercive_bombing_work/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-11-04T23:17:29.000Z",
-   "summary": "submitted by /u/HooverInstitution [link] [comments]",
-   "id": "5adbc882a684",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
+   "why": "0"
   },
   {
    "title": "GodLogic Apologetics Vs Andrew Griffin | Trinitarian Vs Unitarian",
@@ -1222,23 +1361,6 @@
    "why": "0"
   },
   {
-   "title": "Iran Watching For Trump's Next Move After Stunning Midterm Elections Blow",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xnxgi4/iran_watching_for_trumps_next_move_after_stunning/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-11-04T19:30:34.000Z",
-   "summary": "submitted by /u/RFERL_ReadsReddit [link] [comments]",
-   "id": "098cef04322a",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "Abdul El-Sayed’s Historic Victory Against Trump’s Republicans on a Pro-Gaza Platform",
    "url": "https://www.youtube.com/watch?v=a1thfeK1DN0",
    "source": "PoliticsJOE",
@@ -1251,23 +1373,6 @@
    "summary": "It’s midterms day in the States, and voters handily rejected Donald Trump's Republicans. Ava and Seán dig into the results, focusing particularly on Abdul El-Sayed’s victories in both the Democratic Primary and the Senate race. Like PoliticsJOE? We need your support:…",
    "thumb": "https://i2.ytimg.com/vi/a1thfeK1DN0/hqdefault.jpg",
    "id": "0394b0db8022",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "How banking giant ICBC helped Chinese firms gain a foothold in Europe’s wind market",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xnwjk0/how_banking_giant_icbc_helped_chinese_firms_gain/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-11-04T18:55:19.000Z",
-   "summary": "submitted by /u/ICIJ [link] [comments]",
-   "id": "192974c4348f",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1303,23 +1408,6 @@
    "summary": "Download our free guide on getting a driving license in Germany here: https://easygerman.link/lm-pdf-005-fhrerschein-in-deutschland --- Vielen Dank an Tolga und die Fahrschule Mobil werden in Spandau für die Unterstützung beim Dreh dieses Videos! Tolga könnt ihr hier folgen:…",
    "thumb": "https://i2.ytimg.com/vi/aiFJ11GY7sE/hqdefault.jpg",
    "id": "d0c79fb50c86",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "The Dangers of a Lame-Duck Trump: How Far Will He Go to Make Peace—and War?",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xnuqd7/the_dangers_of_a_lameduck_trump_how_far_will_he/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-11-04T17:46:42.000Z",
-   "summary": "submitted by /u/ForeignAffairsMag [link] [comments]",
-   "id": "97f419dc1724",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1528,23 +1616,6 @@
    "summary": "According to reports and previews, Rockstar's Grand Theft Auto VI is introducing big changes and improvements. Here's everything we know. ~~SOURCES~~ https://www.ign.com/articles/gta-6-the-big-interview http://www.ign.com/articles/gta-6-car-steal-system-explained…",
    "thumb": "https://i3.ytimg.com/vi/ZUPsRg7i4Bg/hqdefault.jpg",
    "id": "5bcc8b83cbdb",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Every Generation Debates the Rise of the Far-Right",
-   "url": "https://www.youtube.com/watch?v=sBRy1sMvUJg",
-   "source": "PoliticsJOE",
-   "feedId": "yt-politicsjoe",
-   "type": "video",
-   "tags": [
-    "comedy"
-   ],
-   "published": "2026-11-03T13:56:53.000Z",
-   "summary": "What do British people think about the rise of the right-wing globally? In the first of our new series Generational, we brought together five Brits from different generations to debate some of the most pressing issues of our time. Will Donald Trump mark the end of the surge in…",
-   "thumb": "https://i4.ytimg.com/vi/sBRy1sMvUJg/hqdefault.jpg",
-   "id": "8cac46663c8b",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1853,25 +1924,6 @@
    "summary": "Some legendary games just don’t hold up for younger players. Subscribe for more: https://www.youtube.com/gameranxTV?sub_confirmation=1 0:00 Intro 0:38 The Witcher: Enhanced Edition 2:00 The Elder Scrolls: Daggerfall 3:56 Hitman: Codename 47 5:22 Assassin's Creed 1 6:50 System…",
    "thumb": "https://i2.ytimg.com/vi/ubo9bTtWnKo/hqdefault.jpg",
    "id": "65167f3e05b3",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Eastern Orthodoxy on Trial | Alex Sorin Vs Andrew Griffin",
-   "url": "https://www.youtube.com/watch?v=vZWWMRW6QFw",
-   "source": "Modern-Day Debate",
-   "feedId": "yt-modern-day-debate",
-   "type": "video",
-   "tags": [
-    "debates",
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-01T16:25:28.000Z",
-   "summary": "Huge thank you to our DEBATECON 9 sponsors including: Revival of the Anointed's Rule: https://revivingtheroar.org/ Apologetics Ark: https://www.apologeticsark.com/links @UncensoredAmerica Yonaguni International Cuisine (Aguadilla, Puerto Rico):…",
-   "thumb": "https://i3.ytimg.com/vi/vZWWMRW6QFw/hqdefault.jpg",
-   "id": "3cc8fe18d3d3",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2260,24 +2312,6 @@
    "why": "0"
   },
   {
-   "title": "3 Sharks Fight Over Vulcan Pest's Genius Rat Trap | Shark Tank US | Shark Tank Global",
-   "url": "https://www.youtube.com/watch?v=OF-NLSklKk4",
-   "source": "Shark Tank Global",
-   "feedId": "yt-shark-tank-global",
-   "type": "video",
-   "tags": [
-    "trash",
-    "business"
-   ],
-   "published": "2026-10-29T16:45:25.000Z",
-   "summary": "Ian Fleming enters the tank seeking $100K for a 5% stake in his company, Vulcan Pest. From Season 18 Episode 5 Watch Shark Tank US Now: http://AAN.SonyPictures.com/SharkTankUSHulu Watch Shark Tank Australia Now: http://aan.sonypictures.com/SharkTankAustralia Watch Dragons’ Den…",
-   "thumb": "https://i4.ytimg.com/vi/OF-NLSklKk4/hqdefault.jpg",
-   "id": "c95697787ec6",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "Rich VS Poor Consumerism",
    "url": "https://www.youtube.com/watch?v=5KP8gugE2Xw",
    "source": "Levi Hildebrand",
@@ -2487,7 +2521,7 @@
     "listen"
    ],
    "published": "2026-10-28T14:00:07.000Z",
-   "summary": "If you want to learn more about Pasqal Holding SA (NASDAQ: PSQL), check out their website: https://investors.pasqal.com/ 📫11,142+ read our free newsletter that has weekly original stories Sign up: → https://economics-explained-tv-program.beehiiv.com/ Disclaimer: This content…",
+   "summary": "If you want to learn more about Pasqal Holding SA (NASDAQ: PSQL), check out their website: https://investors.pasqal.com/ 📫11,142+ read our free newsletter that has weekly original stories Sign up: → https://economicsexplained.substack.com/subscribe Disclaimer: This content was…",
    "thumb": "https://i3.ytimg.com/vi/vQodCxq7b9g/hqdefault.jpg",
    "id": "95b8ef42f922",
    "score": 0,
@@ -2857,24 +2891,7 @@
    "score": 0,
    "matched": [],
    "why": "0"
-  },
-  {
-   "title": "SWAT Team Robot Successfully Dismantles Black Man",
-   "url": "https://www.youtube.com/watch?v=zM7B9UPcHzE",
-   "source": "The Onion",
-   "feedId": "yt-the-onion",
-   "type": "video",
-   "tags": [
-    "comedy"
-   ],
-   "published": "2026-10-22T17:00:38.000Z",
-   "summary": "Evacuation orders were in effect after downtown residents noticed a Black man was left suspiciously unattended in a high population area. Become an Onion member while it's still optional: https://membership.theonion.com/?campaign=701a500001geULHAA2",
-   "thumb": "https://i3.ytimg.com/vi/zM7B9UPcHzE/hqdefault.jpg",
-   "id": "e85ea514d7d3",
-   "score": 0,
-   "matched": [],
-   "why": "0"
   }
  ],
- "contentHash": "656aff9e9eba"
+ "contentHash": "43dca0fa2e38"
 }
