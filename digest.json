@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-05T04:14:56.920Z",
+ "generated": "2026-11-05T07:39:01.409Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
@@ -675,46 +675,47 @@
    "id": "rd-productmanagement",
    "name": "r/productmanagement",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 4,
-   "url": "https://www.reddit.com/r/productmanagement/top/.rss?t=day"
+   "lastOk": "2026-11-05T04:14:56.920Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-tech",
    "name": "r/tech",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 1,
-   "url": "https://www.reddit.com/r/tech/top/.rss?t=day"
+   "lastOk": "2026-11-05T04:14:56.920Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-gaming",
    "name": "r/gaming",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-11-04T22:03:23.356Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
   },
   {
    "id": "rd-xbox",
    "name": "r/xbox",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": "2026-11-02T04:16:50.522Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-slaythespire",
@@ -723,7 +724,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-geopolitics",
@@ -754,6 +755,23 @@
   }
  ],
  "items": [
+  {
+   "title": "‘It’s just vape shops, nail shops, charity shops’: can anything save the British high street? | Retail industry",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xoc0n6/its_just_vape_shops_nail_shops_charity_shops_can/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-11-05T06:52:34.000Z",
+   "summary": "submitted by /u/Imakemyownnamereddit [link] [comments]",
+   "id": "656a0b656266",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
   {
    "title": "The Only SaaS Moats Left in 2026",
    "url": "https://www.reddit.com/r/ProductManagement/comments/1xo4k0r/the_only_saas_moats_left_in_2026/",
@@ -799,6 +817,23 @@
    "published": "2026-11-04T23:10:34.000Z",
    "summary": "How is it to be a Product Manager in an AI company (OpenAI, Anthropic, xAI, Mistral,...)? How do you organize the team, leverage AI, and do you have unlimited tokens? I heard that the work is very engineering-driven, giving engineers a lot of agency so that product management…",
    "id": "bfbda4c05e98",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Pound rises to its highest level since the Brexit referendum",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xo1h4m/pound_rises_to_its_highest_level_since_the_brexit/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-11-04T22:08:31.000Z",
+   "summary": "submitted by /u/collogue [link] [comments]",
+   "id": "f67d5d61c789",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -918,43 +953,9 @@
    "published": "2026-11-04T16:44:11.000Z",
    "summary": "submitted by /u/Kagedeah [link] [comments]",
    "id": "851c453cfa92",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "UK Regulators Say Firms Can’t Blame Their AI Agents When Things Go Wrong",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xnsbz4/uk_regulators_say_firms_cant_blame_their_ai/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-11-04T16:16:42.000Z",
-   "summary": "submitted by /u/Puzzleheaded-King584 [link] [comments]",
-   "id": "8386792d4417",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Farage pinned his fortunes to Trump – now it’s triggered his downfall",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xns71i/farage_pinned_his_fortunes_to_trump_now_its/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-11-04T16:11:24.000Z",
-   "summary": "submitted by /u/theindependentonline [link] [comments]",
-   "id": "9a6d73bdd1d3",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
+   "why": "0"
   },
   {
    "title": "Help me tackle this (New workplace)",
@@ -1005,5 +1006,5 @@
    "why": "0"
   }
  ],
- "contentHash": "b04ef6bdc0e4"
+ "contentHash": "0b3cecfd86c7"
 }
