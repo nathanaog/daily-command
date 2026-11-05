@@ -1,10 +1,10 @@
 {
- "generated": "2026-11-05T19:16:34.105Z",
+ "generated": "2026-11-05T22:01:59.939Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
   "ok": 51,
-  "items": 122,
+  "items": 121,
   "duplicatesMerged": 0,
   "lengthsKnown": 2,
   "lengthLookups": 104,
@@ -630,10 +630,9 @@
    "id": "rd-productmanagement",
    "name": "r/productmanagement",
    "type": "reddit",
-   "status": "cached",
-   "count": 5,
-   "lastOk": "2026-11-05T13:33:06.901Z",
-   "note": "not its turn this run"
+   "status": "ok",
+   "count": 4,
+   "url": "https://www.reddit.com/r/productmanagement/top/.rss?t=day"
   },
   {
    "id": "rd-tech",
@@ -642,7 +641,7 @@
    "status": "cached",
    "count": 1,
    "lastOk": "2026-11-05T04:14:56.920Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)"
   },
   {
    "id": "rd-gaming",
@@ -651,7 +650,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-ukpolitics",
@@ -684,20 +683,19 @@
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
+   "lastOk": "2026-11-05T19:16:34.105Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-germany",
    "name": "r/germany",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": "2026-10-31T01:21:53.748Z",
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-unitedkingdom",
@@ -706,10 +704,119 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   }
  ],
  "items": [
+  {
+   "title": "Midterms mayhem: Simon Marks answers your questions",
+   "url": "https://www.youtube.com/watch?v=mEUdzKgSzYM",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-05T22:00:11.000Z",
+   "summary": "After a destructive midterm election for the Republican Party, LBC's Washington Correspondent Simon Marks is on hand with Iain Dale to answer all your burning questions about US politics: 00:20 Simon's takeaway from the midterm results. 04:20 Caller Rose asks what chance there…",
+   "thumb": "https://i2.ytimg.com/vi/mEUdzKgSzYM/hqdefault.jpg",
+   "id": "dabe2fa87039",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "The tide has changed in Trump's America | James O’Brien - The Whole Show",
+   "url": "https://www.youtube.com/watch?v=H09KTVUzXh0",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-05T21:00:39.000Z",
+   "summary": "The American midterm results offer a glimmer of hope that the tide may be turning against Trump, corruption and the politics of division. But how did standing up for equality, human rights and basic compassion become so controversial? Plus, callers discuss the influence of…",
+   "thumb": "https://i1.ytimg.com/vi/H09KTVUzXh0/hqdefault.jpg",
+   "id": "085356c936c3",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Why Nike's Perfect Comeback Isn't Working",
+   "url": "https://www.youtube.com/watch?v=43f2QwapwG4",
+   "source": "The Hustle",
+   "feedId": "yt-the-hustle",
+   "type": "video",
+   "tags": [
+    "business"
+   ],
+   "published": "2026-11-05T20:00:32.000Z",
+   "summary": "Nike’s CEO did everything the turnaround playbook says to do. So why is the company still getting worse? *How to prevent your business from falling like Nike:* https://clickhubspot.com/yaz1 Kylian Mbappé just left Nike for On. Around the same time, the stock hit a decade low…",
+   "thumb": "https://i1.ytimg.com/vi/43f2QwapwG4/hqdefault.jpg",
+   "id": "a426385a7bbe",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "'Truth and justice’: Russell Brand guilty of rape",
+   "url": "https://www.youtube.com/watch?v=hqP8mXsooos",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-05T20:00:22.000Z",
+   "summary": "Actor and comedian Russell Brand has been found guilty of rape and three counts of sexual assault. His victims came to court to reveal how Brand had forced them into sexual activity, sometimes within seconds of them first meeting, using his immense fame to pursue a goal of sex…",
+   "thumb": "https://i1.ytimg.com/vi/hqP8mXsooos/hqdefault.jpg",
+   "id": "31d0851227f4",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Bombendrohungen gegen Passagierflüge in Europa",
+   "url": "https://www.youtube.com/watch?v=dJinIqiOJ3k",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-05T19:43:33.000Z",
+   "summary": "Wieder hat es Bombendrohungen gegen Flugzeuge im europäischen Luftraum gegeben. Mehr als 20 Maschinen wurden umgeleitet oder von Militärflugzeugen eskortiert. Unter anderem eine irische Maschine musste außerplanmäßig auf einem französischen Luftwaffenstützpunkt landen. Die…",
+   "thumb": "https://i1.ytimg.com/vi/dJinIqiOJ3k/hqdefault.jpg",
+   "id": "ebea1172796e",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "tagesschau 20:00 Uhr, 05.11.2026",
+   "url": "https://www.youtube.com/watch?v=5F5XsJLTSVI",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-05T19:31:07.000Z",
+   "summary": "tagesschau 20:00 Uhr Die 20-Uhr-Ausgabe der tagesschau im Livestream und auf Abruf findet ihr auch hier: https://ardmediathek.de/tagesschau und https://tagesschau.de Themen der tagesschau-Sendung: 00:00 Guten Abend 00:21 Freie Wähler-Chef und bayerischer Vize-Ministerpräsident…",
+   "thumb": "https://i2.ytimg.com/vi/5F5XsJLTSVI/hqdefault.jpg",
+   "id": "4dec8715d1fb",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
   {
    "title": "Russell Brand convicted: Why this case is different",
    "url": "https://www.youtube.com/watch?v=miKvsFew0H4",
@@ -819,24 +926,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "JD Vance breaks ranks with Trump over election defeat",
-   "url": "https://www.youtube.com/watch?v=2UTUIWaBSwg",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-05T18:00:32.000Z",
-   "summary": "Shelagh Fogarty is joined by Kamala Harris' former adviser Mike Nellis to discuss the midterms results as JD Vance blames the Iran war for defeat. The Vice President has distanced himself from President Donald Trump's war on Iran, questioning whether it was worth the cost and…",
-   "thumb": "https://i3.ytimg.com/vi/2UTUIWaBSwg/hqdefault.jpg",
-   "id": "c31c56c9aa16",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "WWE Legend Bill Goldberg Puts Kevin O’Leary in a Headlock! | Shark Tank US | Shark Tank Global",
    "url": "https://www.youtube.com/watch?v=Efpe1MnKHVk",
    "source": "Shark Tank Global",
@@ -905,6 +994,22 @@
    "summary": "Today Russell Brand was found guilty of rape and three counts of sexual assault at Southwark Crown Court. He is being held in custody until he is handed a sentence on Monday, which, according to the Judge, will likely be custodial sentence. Here are some of Brand's interactions…",
    "thumb": "https://i3.ytimg.com/vi/RCWY4Zlnz2o/hqdefault.jpg",
    "id": "1eb36541937b",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "How do you handle stakeholders who expect an LLM feature to be right 100% of the time?",
+   "url": "https://www.reddit.com/r/ProductManagement/comments/1xomn6k/how_do_you_handle_stakeholders_who_expect_an_llm/",
+   "source": "r/productmanagement",
+   "feedId": "rd-productmanagement",
+   "type": "post",
+   "tags": [
+    "product"
+   ],
+   "published": "2026-11-05T16:11:44.000Z",
+   "summary": "Genuine question for people who have shipped these, and I will share what has worked for me. The pattern: a business owner sees a good demo, then the first wrong answer in testing becomes \"the AI does not work\". The conversation goes binary very fast. What has helped me: -…",
+   "id": "305ba5c4a367",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -979,24 +1084,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Russell Brand faces years behind bars after guilty verdict",
-   "url": "https://www.youtube.com/watch?v=mbW6_xioNDk",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-05T15:41:16.000Z",
-   "summary": "Actor and comedian Russell Brand has been found guilty of rape and three counts of sexual assault during his showbiz career. LBC's reporter Helen Hoddinott, who has been following the case from Southwark Crown Court, breaks down the rise and fall of Russell Brand. Brand, 51,…",
-   "thumb": "https://i2.ytimg.com/vi/mbW6_xioNDk/hqdefault.jpg",
-   "id": "6b6c8070773c",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Europe’s Defence Coalitions Need Someone to Own the Outcome",
    "url": "https://www.reddit.com/r/geopolitics/comments/1xol3w5/europes_defence_coalitions_need_someone_to_own/",
    "source": "r/geopolitics",
@@ -1009,43 +1096,6 @@
    "published": "2026-11-05T15:11:24.000Z",
    "summary": "submitted by /u/RUSIOfficial [link] [comments]",
    "id": "5f5636b8627c",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Russell Brand found guilty of rape and three sexual assaults",
-   "url": "https://www.youtube.com/watch?v=-QwEnRaXfhI",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-05T15:05:51.000Z",
-   "summary": "Actor and comedian Russell Brand has been found guilty of rape and three counts of sexual assault during his showbiz career. Brand, 51, preyed on women he encountered while becoming one of Britain’s best-known stand-up comedians, a lauded TV and radio host, and a Hollywood…",
-   "thumb": "https://i2.ytimg.com/vi/-QwEnRaXfhI/hqdefault.jpg",
-   "id": "bcb8c3ed0cc9",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Warum China gerade auf der halben Welt Stadien baut | Stabile Zeitenlage",
-   "url": "https://www.youtube.com/watch?v=fo57CFhSIh4",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-05T15:04:38.000Z",
-   "summary": "Seit einiger Zeit baut #China überall auf der Welt Stadien – mittlerweile sind es um die 150 in mehr als 70 Ländern. Klar, China will damit seinen Einfluss und seine Stellung als #Supermacht weiter zementieren. Aber es steckt noch etwas anderes dahinter. Was das ist und wie…",
-   "thumb": "https://i3.ytimg.com/vi/fo57CFhSIh4/hqdefault.jpg",
-   "id": "b03f24b6870b",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1064,25 +1114,6 @@
    "summary": "Luke discusses Scott Jennings' reaction to the midterm results. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
    "thumb": "https://i3.ytimg.com/vi/V8mbGANcym4/hqdefault.jpg",
    "id": "6111a031c5ad",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Generalstreik in Frankreich: Korrespondentin erklärt Hintergründe",
-   "url": "https://www.youtube.com/watch?v=Z3lRdRq1o0A",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-05T14:56:20.000Z",
-   "summary": "Die wichtigsten Gewerkschaften in Frankreich haben zu Streiks und landesweiten Protesten aufgerufen. Auch die Proteste der Schüler und Studierenden schließen sich an. Das Themenfeld ist weit: Es soll um Gehälter, die Bewahrung des öffentlichen Dienstes, Beschäftigung und…",
-   "thumb": "https://i3.ytimg.com/vi/Z3lRdRq1o0A/hqdefault.jpg",
-   "id": "6f9c9109c26b",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1236,25 +1267,9 @@
    "published": "2026-11-05T10:00:37.000Z",
    "summary": "Share your frustrations and get support/feedback. You are not alone! submitted by /u/AutoModerator [link] [comments]",
    "id": "69f0ff1948f5",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "25F, Good at pretending the roadmap is fixed, cant get an internship. Hire me, PMs of Reddit",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1xoe5tg/25f_good_at_pretending_the_roadmap_is_fixed_cant/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-11-05T09:14:00.000Z",
-   "summary": "I am 25F looking for a Product Internship to switch my domain from sales to product, I have done professional training at IIT Delhi for PM, having a 3+ years of experience in sales I understand the customers behaviour well. I am currently pursuing Executive MBA from IIM…",
-   "id": "e7d1d89aee75",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
+   "why": "0"
   },
   {
    "title": "I’ve never seen anything like this",
@@ -1443,22 +1458,6 @@
    "summary": "Hey you 👈 Wanna be in a Jubilee video? https://bit.ly/be-in-a-video LET’S BE FRIENDS Instagram: https://www.instagram.com/jubileemedia/ TikTok: https://www.tiktok.com/@jubilee?lang=en Website: https://www.jubileemedia.com OUR LOVE + DATING CHANNEL 🍑 YouTube:…",
    "thumb": "https://i2.ytimg.com/vi/5lIqh7ejrx8/hqdefault.jpg",
    "id": "25649e4ee21e",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Help me tackle this (New workplace)",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1xnof3t/help_me_tackle_this_new_workplace/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-11-04T13:38:37.000Z",
-   "summary": "I recently joined a new company which is not a product company or a service company. They’ve a bunch of developers, QAs, and people from other roles (Developers and design) leading some projects. Projects? Basically, internal tools. From about start of the year, they decided to…",
-   "id": "6506e32e6d53",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2874,24 +2873,7 @@
    "score": 0,
    "matched": [],
    "why": "0"
-  },
-  {
-   "title": "Can Lasers Kill Farming's Oldest Enemy?",
-   "url": "https://www.youtube.com/watch?v=PpnCu8SUGCU",
-   "source": "The Hustle",
-   "feedId": "yt-the-hustle",
-   "type": "video",
-   "tags": [
-    "business"
-   ],
-   "published": "2026-10-22T19:30:28.000Z",
-   "summary": "American farmers could spend $12 billion this year fighting weeds with chemical herbicides that can damage soil, threaten the environment, and put the people growing our food at risk. A Seattle startup thinks lasers are the fix. *Why do some startups take off and others don't?…",
-   "thumb": "https://i1.ytimg.com/vi/PpnCu8SUGCU/hqdefault.jpg",
-   "id": "33dba3ee4875",
-   "score": 0,
-   "matched": [],
-   "why": "0"
   }
  ],
- "contentHash": "43dca0fa2e38"
+ "contentHash": "c440f3b5415c"
 }
