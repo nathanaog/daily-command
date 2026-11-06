@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-06T10:20:01.302Z",
+ "generated": "2026-11-06T13:27:59.719Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
@@ -7,7 +7,7 @@
   "items": 124,
   "duplicatesMerged": 0,
   "lengthsKnown": 2,
-  "lengthLookups": 108,
+  "lengthLookups": 106,
   "lengthFailures": 106,
   "lengthVia": "video pages",
   "lengthFailReasons": {
@@ -657,20 +657,19 @@
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
+   "lastOk": "2026-11-06T10:20:01.302Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-xbox",
    "name": "r/xbox",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": "2026-11-02T04:16:50.522Z",
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-slaythespire",
@@ -679,25 +678,26 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-11-06T04:13:21.792Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
   },
   {
    "id": "rd-germany",
    "name": "r/germany",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": "2026-10-31T01:21:53.748Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-unitedkingdom",
@@ -706,10 +706,155 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   }
  ],
  "items": [
+  {
+   "title": "K.o.-Tropfen im Club: Bringen härtere Strafen den Opfern wirklich Schutz?",
+   "url": "https://www.youtube.com/watch?v=rVfA3a71_d4",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-06T13:24:01.000Z",
+   "summary": "Der Bundestag hat heute für eine Strafverschärfung beim Einsatz von sogenannten K.o.-Mitteln gestimmt. Diese werden von Täter:innen häufig verwendet, um ihre Opfer zu betäuben. Wer die Substanzen für eine Vergewaltigung oder einen Raub einsetzt, soll jetzt mit mindestens fünf…",
+   "thumb": "https://i3.ytimg.com/vi/rVfA3a71_d4/hqdefault.jpg",
+   "id": "6eab5bfb05cc",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "MOMA-Reporter: Drogenhilfe in Frankfurt | ARD Morgenmagazin",
+   "url": "https://www.youtube.com/watch?v=aZbUBl75e_E",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-06T12:57:43.000Z",
+   "summary": "Die Sucht nach Substanzen wie Kokain, Heroin und Crack führt immer noch viele ins Verderben. Im vergangenen Jahr sind in Deutschland 2.150 Menschen an den Folgen ihres Drogen-Konsums gestorben. Einer der Hotspots ist Frankfurt am Main. Die Bilder vom Bahnhofs-Viertel sorgen…",
+   "thumb": "https://i2.ytimg.com/vi/aZbUBl75e_E/hqdefault.jpg",
+   "id": "325d6d7065f8",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Bankenkollaps in Paraguay: Warum Präsident Peña zurücktritt",
+   "url": "https://www.youtube.com/watch?v=luMHDv9N64M",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-06T12:45:17.000Z",
+   "summary": "In Paraguay zieht die Krise um die Ueno Bank immer weitere Kreise: Weil Präsident Peña die Risiken zu lange ignorierte, leitete das Parlament ein Amtsenthebungsverfahren ein. Auch die Staatsanwaltschaft ermittelt. Mehr dazu:…",
+   "thumb": "https://i1.ytimg.com/vi/luMHDv9N64M/hqdefault.jpg",
+   "id": "cc79435aa85a",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Unexpected Trump moves in foreign policy lie ahead. Democrats have taken control of both chambers of Congress, weakening Donald Trump’s political position.",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xpbqln/unexpected_trump_moves_in_foreign_policy_lie/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-11-06T12:36:37.000Z",
+   "summary": "For Europe, Ukraine, and Poland, the result brings both hope and uncertainty, as Trump could become even more unpredictable in the months ahead. “We are heading into a very uncertain period,” says Marcin Bużański, Director, Center for Diplomacy and Negotiation, Civitas…",
+   "id": "4845b3c9f6b0",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Russell Brand - the fallout",
+   "url": "https://www.youtube.com/watch?v=uWKRLjrOwR4",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-06T12:30:38.000Z",
+   "summary": "Russell Brand has spent his first night in a cell last night as he faces many years behind bars for rape and sexual offences. The 51-year-old preyed on women he encountered while becoming one of Britain’s best-known stand-up comedians, a lauded TV host, and a Hollywood movie…",
+   "thumb": "https://i2.ytimg.com/vi/uWKRLjrOwR4/hqdefault.jpg",
+   "id": "7598fa1cab8d",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "We Need to Talk About Reparations | Marvin Rees interview",
+   "url": "https://www.youtube.com/watch?v=sNZYEVUKN1A",
+   "source": "PoliticsJOE",
+   "feedId": "yt-politicsjoe",
+   "type": "video",
+   "tags": [
+    "comedy"
+   ],
+   "published": "2026-11-06T12:00:32.000Z",
+   "summary": "Should Britain pay reparations for its role in the transatlantic slave trade after Charles' apology? As the King expresses his sorrow over Britain's historical involvement in slavery, the debate over reparations is once again gathering momentum. Former Bristol mayor Lord Marvin…",
+   "thumb": "https://i4.ytimg.com/vi/sNZYEVUKN1A/hqdefault.jpg",
+   "id": "dc2a650d3626",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Why won't young people fight for Britain?",
+   "url": "https://www.youtube.com/watch?v=rDRyp8DSk8M",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-06T11:30:38.000Z",
+   "summary": "Singer-songwriter James Blunt has said he understands why Brits would choose not to go to war for their country because of politicians who \"try and divide us so extremely\". It comes as a recent survey revealed that only 22 per cent of Britons aged 16 to 34, spanning Gen Z and…",
+   "thumb": "https://i3.ytimg.com/vi/rDRyp8DSk8M/hqdefault.jpg",
+   "id": "ab2ed7c1659e",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "JD Vance vs Trump: Simon Marks' analysis",
+   "url": "https://www.youtube.com/watch?v=0o37zJSQlgU",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-06T10:30:30.000Z",
+   "summary": "Ben Kentish is joined by LBC's Washington Correspondent Simon Marks for a US midterms debrief, looking into the distance JD Vance is putting between himself and his President regarding the Iran War. 00:32 | JD Vance vs Trump: Inner tension amongst the Republican Party 04:13 |…",
+   "thumb": "https://i1.ytimg.com/vi/0o37zJSQlgU/hqdefault.jpg",
+   "id": "6d69ccf217ad",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
   {
    "title": "Aufgaben und Geschichte: Was macht ein Bundespräsident?",
    "url": "https://www.youtube.com/watch?v=tQGxQzouOB8",
@@ -785,20 +930,18 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Giftmord an Litwinenko: Hätte der Westen Putin früher stoppen können?",
-   "url": "https://www.youtube.com/watch?v=wf4fhxAoBb4",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
+   "title": "Iran's chief negotiator says Americans voted 'no to war'",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xp83ay/irans_chief_negotiator_says_americans_voted_no_to/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
    "tags": [
-    "german",
-    "news",
-    "listen"
+    "politics",
+    "news"
    ],
-   "published": "2026-11-06T09:19:13.000Z",
-   "summary": "Vor 20 Jahren wurde der russische Ex-Agent Litwinenko in London vergiftet. Seine Witwe treibt heute vor allem eins um: Hat der Westen mit seiner zaghaften Reaktion damals Putins heutige Aggression ermutigt? Auch auf dem Cover des Buches, das seine Frau Marina Litwinenko nun…",
-   "thumb": "https://i4.ytimg.com/vi/wf4fhxAoBb4/hqdefault.jpg",
-   "id": "702e685ee99e",
+   "published": "2026-11-06T08:54:00.000Z",
+   "summary": "submitted by /u/diwalibonus [link] [comments]",
+   "id": "d0921a3ba168",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -833,6 +976,23 @@
    "published": "2026-11-06T08:31:08.000Z",
    "summary": "submitted by /u/LogicalDirect [link] [comments]",
    "id": "47af48472610",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Global tech stocks plunge after Democrats win big in midterms",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xp7qjv/global_tech_stocks_plunge_after_democrats_win_big/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-11-06T08:30:04.000Z",
+   "summary": "submitted by /u/TimesandSundayTimes [link] [comments]",
+   "id": "d70ba3b9d3f6",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -958,24 +1118,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Visibly Depressed Fox Host SNAPS AT CO-HOST On Air, SH*TS ON TRUMP!",
-   "url": "https://www.youtube.com/watch?v=uJcwX4m7_Ns",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-06T00:45:06.000Z",
-   "summary": "Luke discusses a recent tense exchange on Fox News' The Five. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
-   "thumb": "https://i2.ytimg.com/vi/uJcwX4m7_Ns/hqdefault.jpg",
-   "id": "df725a9dd327",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Right to Buy split my estate. Now its days could be numbered",
    "url": "https://www.reddit.com/r/ukpolitics/comments/1xoyxwv/right_to_buy_split_my_estate_now_its_days_could/",
    "source": "r/ukpolitics",
@@ -993,6 +1135,24 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
+   "title": "Visibly Depressed Fox Host SNAPS AT CO-HOST On Air, SH*TS ON TRUMP!",
+   "url": "https://www.youtube.com/watch?v=uJcwX4m7_Ns",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-06T00:45:06.000Z",
+   "summary": "Luke discusses a recent tense exchange on Fox News' The Five. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
+   "thumb": "https://i2.ytimg.com/vi/uJcwX4m7_Ns/hqdefault.jpg",
+   "id": "df725a9dd327",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
    "title": "The Legend of Zelda: Ocarina of Time Remake - Before You Buy",
    "url": "https://www.youtube.com/watch?v=HuF6-efVdyI",
    "source": "GameRanx",
@@ -1005,9 +1165,9 @@
    "summary": "The Ocarina of Time remake for Nintendo Switch 2 is here at long last. How is it? Let's talk. Subscribe for more: http://youtube.com/gameranxtv ▼▼ Buy Zelda: https://link.amazon/B0fW70j5E Watch more 'Before You Buy': https://bit.ly/2kfdxI6",
    "thumb": "https://i1.ytimg.com/vi/HuF6-efVdyI/hqdefault.jpg",
    "id": "9875b019f78c",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
+   "why": "0"
   },
   {
    "title": "Will the midterm defeat make Trump stand up to Putin?",
@@ -1023,9 +1183,9 @@
    "summary": "Bomb threats that disrupted at least 15 flights this week have raised concerns about how ‘hybrid warfare’ can disrupt life in Europe. 00:00 | Andrew Marr outlines the warnings over Russia’s ability to undermine the UK 01:49 | Transport secretary Heidi Alexander says the…",
    "thumb": "https://i3.ytimg.com/vi/6mC_tXmZVW0/hqdefault.jpg",
    "id": "6ddd289a3103",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
+   "why": "0"
   },
   {
    "title": "Christianity Vs Secular Humanism, Which Is Best for Society? | Jay Dyer Vs 1stAmender",
@@ -1042,9 +1202,9 @@
    "summary": "Huge thank you to our DEBATECON 9 sponsors including: Revival of the Anointed's Rule: https://revivingtheroar.org/ Apologetics Ark: https://www.apologeticsark.com/links @UncensoredAmerica Yonaguni International Cuisine (Aguadilla, Puerto Rico):…",
    "thumb": "https://i1.ytimg.com/vi/xRjsslA_sfY/hqdefault.jpg",
    "id": "c8e8f30b3716",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
+   "why": "0"
   },
   {
    "title": "She LEAKED SH*T On Hegseth to GET HIM FIRED?!",
@@ -1060,42 +1220,6 @@
    "summary": "Luke discusses reporting of the Trump administration gearing up to throw Hegseth under the bus. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
    "thumb": "https://i1.ytimg.com/vi/HM4jx-7r9I0/hqdefault.jpg",
    "id": "b34ff819ed69",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Trump envoy's push to reopen Lithuanian ports to Belarus exposes rift in Washington",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xorrk3/trump_envoys_push_to_reopen_lithuanian_ports_to/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-11-05T19:25:32.000Z",
-   "summary": "submitted by /u/KI_official [link] [comments]",
-   "id": "8aa1c12a08bd",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "tagesthemen 22:15 Uhr, 05.11.2026",
-   "url": "https://www.youtube.com/watch?v=wlEhzLHBua0",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-05T22:16:46.000Z",
-   "summary": "tagesthemen 22:15 Uhr Bombendrohungen gegenüber Flugzeugen führt zu Störungen im europäischen Luftraum, Chef der Freien Wähler und bayerischer Vize-Ministerpräsident Aiwanger im Alter von 55 Jahren gestorben, Bundestag befasst sich mit Reform der Pflegeversicherung, Überblick…",
-   "thumb": "https://i4.ytimg.com/vi/wlEhzLHBua0/hqdefault.jpg",
-   "id": "3e6700d38e03",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1119,24 +1243,6 @@
    "why": "0"
   },
   {
-   "title": "The tide has changed in Trump's America | James O’Brien - The Whole Show",
-   "url": "https://www.youtube.com/watch?v=H09KTVUzXh0",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-05T21:00:39.000Z",
-   "summary": "The American midterm results offer a glimmer of hope that the tide may be turning against Trump, corruption and the politics of division. But how did standing up for equality, human rights and basic compassion become so controversial? Plus, callers discuss the influence of…",
-   "thumb": "https://i1.ytimg.com/vi/H09KTVUzXh0/hqdefault.jpg",
-   "id": "085356c936c3",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "Why Nike's Perfect Comeback Isn't Working",
    "url": "https://www.youtube.com/watch?v=43f2QwapwG4",
    "source": "The Hustle",
@@ -1154,56 +1260,18 @@
    "why": "0"
   },
   {
-   "title": "'Truth and justice’: Russell Brand guilty of rape",
-   "url": "https://www.youtube.com/watch?v=hqP8mXsooos",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
+   "title": "Trump envoy's push to reopen Lithuanian ports to Belarus exposes rift in Washington",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xorrk3/trump_envoys_push_to_reopen_lithuanian_ports_to/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
    "tags": [
     "politics",
-    "listen"
+    "news"
    ],
-   "published": "2026-11-05T20:00:22.000Z",
-   "summary": "Actor and comedian Russell Brand has been found guilty of rape and three counts of sexual assault. His victims came to court to reveal how Brand had forced them into sexual activity, sometimes within seconds of them first meeting, using his immense fame to pursue a goal of sex…",
-   "thumb": "https://i1.ytimg.com/vi/hqP8mXsooos/hqdefault.jpg",
-   "id": "31d0851227f4",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Bombendrohungen gegen Passagierflüge in Europa",
-   "url": "https://www.youtube.com/watch?v=dJinIqiOJ3k",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-05T19:43:33.000Z",
-   "summary": "Wieder hat es Bombendrohungen gegen Flugzeuge im europäischen Luftraum gegeben. Mehr als 20 Maschinen wurden umgeleitet oder von Militärflugzeugen eskortiert. Unter anderem eine irische Maschine musste außerplanmäßig auf einem französischen Luftwaffenstützpunkt landen. Die…",
-   "thumb": "https://i1.ytimg.com/vi/dJinIqiOJ3k/hqdefault.jpg",
-   "id": "ebea1172796e",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Russell Brand convicted: Why this case is different",
-   "url": "https://www.youtube.com/watch?v=miKvsFew0H4",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-05T19:15:05.000Z",
-   "summary": "Brand, 51, preyed on women he encountered while becoming one of Britain’s best-known stand-up comedians, a lauded TV host, and a Hollywood movie star. His victims came to court to reveal how Brand had forced them into sexual activity, sometimes within seconds of them first…",
-   "thumb": "https://i2.ytimg.com/vi/miKvsFew0H4/hqdefault.jpg",
-   "id": "388f5ca392e9",
+   "published": "2026-11-05T19:25:32.000Z",
+   "summary": "submitted by /u/KI_official [link] [comments]",
+   "id": "8aa1c12a08bd",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1360,57 +1428,6 @@
    "summary": "From tomorrow, Labour will crack down on porn depicting strangulation or suffocation, sexual activity between people who are related, or adults role-playing as children under 16. The legislation will bring online pornography in line with existing regulations for offline…",
    "thumb": "https://i4.ytimg.com/vi/_vk2BJ36ZtM/hqdefault.jpg",
    "id": "9d479769a55c",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Europe’s Defence Coalitions Need Someone to Own the Outcome",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xol3w5/europes_defence_coalitions_need_someone_to_own/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-11-05T15:11:24.000Z",
-   "summary": "submitted by /u/RUSIOfficial [link] [comments]",
-   "id": "5f5636b8627c",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Three Ways the New Democratic Congress Could Constrain Trump on Foreign Policy",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xojw0z/three_ways_the_new_democratic_congress_could/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-11-05T14:22:20.000Z",
-   "summary": "submitted by /u/carnegieendowment [link] [comments]",
-   "id": "43536fef9a39",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "The war in Ukraine is largely forgotten in the U.S.",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xogzrb/the_war_in_ukraine_is_largely_forgotten_in_the_us/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-11-05T12:06:34.000Z",
-   "summary": "After Americans voted in the midterm elections, handing control of Congress to the Democrats, questions are growing over whether the Democratic “blue wave” will be enough to change broader trends in U.S. foreign policy. In World Talks, Steven Moore, Founder of the Ukraine…",
-   "id": "eef6adb487c0",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1583,23 +1600,6 @@
    "summary": "Louise Haigh deputised for Andy Burnham while he flanks the King on his tour of the Caribbean, and Alex Burghart made it as clunky as he possibly could. Like PoliticsJOE? We need your support: https://www.patreon.com/PoliticsJOE",
    "thumb": "https://i4.ytimg.com/vi/Cn-YsWhNVOI/hqdefault.jpg",
    "id": "ab2d1469dd4c",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Is Trump about to start Nuclear War?",
-   "url": "https://www.youtube.com/watch?v=eFn9mYXD1oo",
-   "source": "PoliticsJOE",
-   "feedId": "yt-politicsjoe",
-   "type": "video",
-   "tags": [
-    "comedy"
-   ],
-   "published": "2026-11-04T11:14:14.000Z",
-   "summary": "Friend of the podcast Scott Lucas joins us to dig into claims made by Tucker Carlson that Donald Trump wants to nuke Iran. Firstly, is there any truth to the claim, and what would drive Trump to consider such an extreme move? Lucas details where the Republican party has found…",
-   "thumb": "https://i2.ytimg.com/vi/eFn9mYXD1oo/hqdefault.jpg",
-   "id": "525b95ba9b65",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2931,5 +2931,5 @@
    "why": "0"
   }
  ],
- "contentHash": "0f01fa1e20a9"
+ "contentHash": "c63884cf96a0"
 }
