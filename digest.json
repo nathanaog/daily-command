@@ -1,32 +1,31 @@
 {
- "generated": "2026-11-06T01:30:16.721Z",
+ "generated": "2026-11-06T04:13:21.792Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
-  "ok": 13,
-  "items": 36,
+  "ok": 5,
+  "items": 15,
   "duplicatesMerged": 0,
-  "lengthsKnown": 1,
-  "lengthLookups": 13,
-  "lengthFailures": 12,
+  "lengthsKnown": 0,
+  "lengthLookups": 0,
+  "lengthFailures": 0,
   "lengthVia": "video pages",
-  "lengthFailReasons": {
-   "no length on page": 12
-  }
+  "lengthFailReasons": {}
  },
  "feeds": [
   {
    "id": "yt-map-men",
    "name": "Map Men",
    "type": "youtube",
-   "status": "ok",
+   "status": "error",
    "count": 0,
    "resolved": {
     "channelId": "UCbbQalJ4OaC0oQ0AqRaOJ9g",
     "title": "Map Men",
     "via": "name search"
    },
-   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCbbQalJ4OaC0oQ0AqRaOJ9g"
+   "error": "not found (404)",
+   "http": 404
   },
   {
    "id": "yt-jubilee",
@@ -60,14 +59,15 @@
    "id": "yt-chris-spargo",
    "name": "Chris Spargo",
    "type": "youtube",
-   "status": "ok",
-   "count": 2,
+   "status": "error",
+   "count": 0,
    "resolved": {
     "channelId": "UCTzkxNEnbdvbBlgYl_W9daw",
     "title": "Chris Spargo",
     "via": "name search"
    },
-   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCTzkxNEnbdvbBlgYl_W9daw"
+   "error": "not found (404)",
+   "http": 404
   },
   {
    "id": "yt-flashgitz",
@@ -157,14 +157,15 @@
    "id": "yt-billy-on-the-street",
    "name": "Billy on the Street",
    "type": "youtube",
-   "status": "ok",
-   "count": 1,
+   "status": "error",
+   "count": 0,
    "resolved": {
     "channelId": "UCc81WI54KgJoei06f_3mWgQ",
     "title": "billyonthestreettv",
     "via": "name search"
    },
-   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCc81WI54KgJoei06f_3mWgQ"
+   "error": "not found (404)",
+   "http": 404
   },
   {
    "id": "yt-politicsjoe",
@@ -198,14 +199,15 @@
    "id": "yt-coldfusion",
    "name": "ColdFusion",
    "type": "youtube",
-   "status": "ok",
-   "count": 2,
+   "status": "error",
+   "count": 0,
    "resolved": {
     "channelId": "UC4QZ_LsYcvcq7qOsOhpAX4A",
     "title": "ColdFusion",
     "via": "name search"
    },
-   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC4QZ_LsYcvcq7qOsOhpAX4A"
+   "error": "not found (404)",
+   "http": 404
   },
   {
    "id": "yt-levi-hildebrand",
@@ -267,14 +269,15 @@
    "id": "yt-channel-5-with-andrew-callaghan",
    "name": "Channel 5 with Andrew Callaghan",
    "type": "youtube",
-   "status": "ok",
-   "count": 5,
+   "status": "error",
+   "count": 0,
    "resolved": {
     "channelId": "UC-AQKm7HUNMmxjdS371MSwg",
     "title": "Channel 5 with Andrew Callaghan",
     "via": "name search"
    },
-   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC-AQKm7HUNMmxjdS371MSwg"
+   "error": "not found (404)",
+   "http": 404
   },
   {
    "id": "yt-prozd",
@@ -350,15 +353,14 @@
    "id": "yt-the-nk-guys",
    "name": "The NK guys",
    "type": "youtube",
-   "status": "error",
+   "status": "ok",
    "count": 0,
    "resolved": {
     "channelId": "UCTi5i5m-Xm-o7sALcVKiKjg",
     "title": "The NK Guys",
     "via": "name search"
    },
-   "error": "not found (404)",
-   "http": 404
+   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCTi5i5m-Xm-o7sALcVKiKjg"
   },
   {
    "id": "yt-gameranx",
@@ -378,14 +380,15 @@
    "id": "yt-modern-day-debate",
    "name": "Modern-Day Debate",
    "type": "youtube",
-   "status": "ok",
-   "count": 5,
+   "status": "error",
+   "count": 0,
    "resolved": {
     "channelId": "UC_cd4oF2phaIBD3WsU3f7Xg",
     "title": "Modern-Day Debate",
     "via": "name search"
    },
-   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC_cd4oF2phaIBD3WsU3f7Xg"
+   "error": "not found (404)",
+   "http": 404
   },
   {
    "id": "yt-dropout",
@@ -447,14 +450,15 @@
    "id": "yt-kill-tony",
    "name": "Kill Tony",
    "type": "youtube",
-   "status": "ok",
-   "count": 4,
+   "status": "error",
+   "count": 0,
    "resolved": {
     "channelId": "UCwzCMiicL-hBUzyjWiJaseg",
     "title": "Kill Tony",
     "via": "name search"
    },
-   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCwzCMiicL-hBUzyjWiJaseg"
+   "error": "not found (404)",
+   "http": 404
   },
   {
    "id": "yt-coffeezilla",
@@ -474,14 +478,15 @@
    "id": "yt-tom-scott",
    "name": "Tom Scott",
    "type": "youtube",
-   "status": "ok",
-   "count": 2,
+   "status": "error",
+   "count": 0,
    "resolved": {
     "channelId": "UCBa659QWEk1AI4Tg--mrJ2A",
     "title": "Tom Scott",
     "via": "name search"
    },
-   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCBa659QWEk1AI4Tg--mrJ2A"
+   "error": "not found (404)",
+   "http": 404
   },
   {
    "id": "yt-lenny-s-podcast",
@@ -557,14 +562,15 @@
    "id": "yt-joel-haver",
    "name": "Joel Haver",
    "type": "youtube",
-   "status": "ok",
+   "status": "error",
    "count": 0,
    "resolved": {
     "channelId": "UCVIFCOJwv3emlVmBbPCZrvw",
     "title": "Joel Haver",
     "via": "name search"
    },
-   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCVIFCOJwv3emlVmBbPCZrvw"
+   "error": "not found (404)",
+   "http": 404
   },
   {
    "id": "yt-bluejay",
@@ -695,20 +701,19 @@
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
+   "lastOk": "2026-11-06T01:30:16.721Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-xbox",
    "name": "r/xbox",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": "2026-11-02T04:16:50.522Z",
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-slaythespire",
@@ -717,25 +722,26 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-11-05T19:16:34.105Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
   },
   {
    "id": "rd-germany",
    "name": "r/germany",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": "2026-10-31T01:21:53.748Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-unitedkingdom",
@@ -744,29 +750,10 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   }
  ],
  "items": [
-  {
-   "title": "Trinitarian Vs Unitarian | GodLogic Vs Andrew Griffin",
-   "url": "https://www.youtube.com/shorts/KUHZ_Zx2js0",
-   "source": "Modern-Day Debate",
-   "feedId": "yt-modern-day-debate",
-   "type": "video",
-   "tags": [
-    "debates",
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-06T01:00:37.000Z",
-   "summary": "Huge thank you to our DEBATECON 9 sponsors including: Revival of the Anointed's Rule: https://revivingtheroar.org/ Apologetics Ark: https://www.apologeticsark.com/links @UncensoredAmerica Yonaguni International Cuisine (Aguadilla, Puerto Rico):…",
-   "thumb": "https://i4.ytimg.com/vi/KUHZ_Zx2js0/hqdefault.jpg",
-   "id": "e2b8ca7d02e1",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
   {
    "title": "Firms told to publish salaries in job adverts ahead of new law",
    "url": "https://www.reddit.com/r/ukpolitics/comments/1xoxhk7/firms_told_to_publish_salaries_in_job_adverts/",
@@ -780,25 +767,6 @@
    "published": "2026-11-05T23:20:34.000Z",
    "summary": "submitted by /u/Desperate-Drawer-572 [link] [comments]",
    "id": "63d9ee2b4c4e",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Christianity Vs Secular Humanism, Which Is Best for Society? | Jay Dyer Vs 1stAmender",
-   "url": "https://www.youtube.com/watch?v=xRjsslA_sfY",
-   "source": "Modern-Day Debate",
-   "feedId": "yt-modern-day-debate",
-   "type": "video",
-   "tags": [
-    "debates",
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-05T23:08:55.000Z",
-   "summary": "Huge thank you to our DEBATECON 9 sponsors including: Revival of the Anointed's Rule: https://revivingtheroar.org/ Apologetics Ark: https://www.apologeticsark.com/links @UncensoredAmerica Yonaguni International Cuisine (Aguadilla, Puerto Rico):…",
-   "thumb": "https://i1.ytimg.com/vi/xRjsslA_sfY/hqdefault.jpg",
-   "id": "c8e8f30b3716",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -872,76 +840,18 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Micropenis Call-to-Action",
-   "url": "https://www.youtube.com/shorts/XN91ABWz10M",
-   "source": "Channel 5 with Andrew Callaghan",
-   "feedId": "yt-channel-5-with-andrew-callaghan",
-   "type": "video",
+   "title": "Trump envoy's push to reopen Lithuanian ports to Belarus exposes rift in Washington",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xorrk3/trump_envoys_push_to_reopen_lithuanian_ports_to/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
    "tags": [
-    "education",
-    "politics"
-   ],
-   "published": "2026-11-05T19:08:06.000Z",
-   "summary": "",
-   "thumb": "https://i1.ytimg.com/vi/XN91ABWz10M/hqdefault.jpg",
-   "id": "79e4a857a704",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "\"You Are a Protestant Who Argues Like A Muslim\" — Jay Dyer vs David Wood",
-   "url": "https://www.youtube.com/watch?v=5-_d64UzBKw",
-   "source": "Modern-Day Debate",
-   "feedId": "yt-modern-day-debate",
-   "type": "video",
-   "tags": [
-    "debates",
     "politics",
-    "listen"
+    "news"
    ],
-   "published": "2026-11-05T18:30:02.000Z",
-   "summary": "Huge thank you to our DEBATECON 9 sponsors including: Revival of the Anointed's Rule: https://revivingtheroar.org/ Apologetics Ark: https://www.apologeticsark.com/links @UncensoredAmerica Yonaguni International Cuisine (Aguadilla, Puerto Rico):…",
-   "thumb": "https://i2.ytimg.com/vi/5-_d64UzBKw/hqdefault.jpg",
-   "id": "a257e577fd76",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Can You Find the True Church With Only a Bible? Jay Dyer Vs David Wood",
-   "url": "https://www.youtube.com/shorts/yqIKimUP4ck",
-   "source": "Modern-Day Debate",
-   "feedId": "yt-modern-day-debate",
-   "type": "video",
-   "tags": [
-    "debates",
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-05T18:00:33.000Z",
-   "summary": "Huge thank you to our DEBATECON 9 sponsors including: Revival of the Anointed's Rule: https://revivingtheroar.org/ Apologetics Ark: https://www.apologeticsark.com/links @UncensoredAmerica Yonaguni International Cuisine (Aguadilla, Puerto Rico):…",
-   "thumb": "https://i2.ytimg.com/vi/yqIKimUP4ck/hqdefault.jpg",
-   "id": "f12e3e80c560",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Should We Affirm Trans Identities? | Andrew Wilson Vs Sara Blake Alton",
-   "url": "https://www.youtube.com/watch?v=_JokddttIZA",
-   "source": "Modern-Day Debate",
-   "feedId": "yt-modern-day-debate",
-   "type": "video",
-   "tags": [
-    "debates",
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-05T16:24:56.000Z",
-   "summary": "Huge thank you to our DEBATECON 9 sponsors including: Revival of the Anointed's Rule: https://revivingtheroar.org/ Apologetics Ark: https://www.apologeticsark.com/links @UncensoredAmerica Yonaguni International Cuisine (Aguadilla, Puerto Rico):…",
-   "thumb": "https://i4.ytimg.com/vi/_JokddttIZA/hqdefault.jpg",
-   "id": "82e38801cf25",
+   "published": "2026-11-05T19:25:32.000Z",
+   "summary": "submitted by /u/KI_official [link] [comments]",
+   "id": "8aa1c12a08bd",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -975,9 +885,9 @@
    "published": "2026-11-05T16:11:02.000Z",
    "summary": "submitted by /u/newyorker [link] [comments]",
    "id": "5ba4c979b44e",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
+   "why": "0"
   },
   {
    "title": "Europe’s Defence Coalitions Need Someone to Own the Outcome",
@@ -992,9 +902,9 @@
    "published": "2026-11-05T15:11:24.000Z",
    "summary": "submitted by /u/RUSIOfficial [link] [comments]",
    "id": "5f5636b8627c",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
+   "why": "0"
   },
   {
    "title": "Three Ways the New Democratic Congress Could Constrain Trump on Foreign Policy",
@@ -1009,9 +919,9 @@
    "published": "2026-11-05T14:22:20.000Z",
    "summary": "submitted by /u/carnegieendowment [link] [comments]",
    "id": "43536fef9a39",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
+   "why": "0"
   },
   {
    "title": "The war in Ukraine is largely forgotten in the U.S.",
@@ -1026,26 +936,9 @@
    "published": "2026-11-05T12:06:34.000Z",
    "summary": "After Americans voted in the midterm elections, handing control of Congress to the Democrats, questions are growing over whether the Democratic “blue wave” will be enough to change broader trends in U.S. foreign policy. In World Talks, Steven Moore, Founder of the Ukraine…",
    "id": "eef6adb487c0",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Russia deepened Iran support with missile launcher deal",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xogatw/russia_deepened_iran_support_with_missile/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-11-05T11:28:49.000Z",
-   "summary": "Russia agreed to supply Iran with 90 launchers for the advanced guided missiles widely used by its forces in Ukraine, a sign of Moscow’s military support for Tehran despite the demands of its own sputtering war effort. A production schedule for 2024 and 2025 from a major…",
-   "id": "6bc86c0f6979",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
+   "why": "0"
   },
   {
    "title": "Weekly rant thread",
@@ -1096,41 +989,6 @@
    "why": "0"
   },
   {
-   "title": "Pressing Edi Rama about his infamous yacht trip with Ivanka and Jared",
-   "url": "https://www.youtube.com/shorts/DlVQWPJqYjE",
-   "source": "Channel 5 with Andrew Callaghan",
-   "feedId": "yt-channel-5-with-andrew-callaghan",
-   "type": "video",
-   "tags": [
-    "education",
-    "politics"
-   ],
-   "published": "2026-11-04T17:35:51.000Z",
-   "summary": "Pressing Edi Rama about his infamous yacht trip with Ivanka Trump and Jared Kushner",
-   "thumb": "https://i1.ytimg.com/vi/DlVQWPJqYjE/hqdefault.jpg",
-   "id": "f40a97f28aa8",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "WHAT’S THE BEST CONCERT YOU EVER SAW? #billyonthestreet",
-   "url": "https://www.youtube.com/shorts/WI0sdKhzEzU",
-   "source": "Billy on the Street",
-   "feedId": "yt-billy-on-the-street",
-   "type": "video",
-   "tags": [
-    "comedy"
-   ],
-   "published": "2026-11-04T16:00:28.000Z",
-   "summary": "",
-   "thumb": "https://i4.ytimg.com/vi/WI0sdKhzEzU/hqdefault.jpg",
-   "id": "c8fcf0ebcfa5",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "For the first time, AI guides surgeons through a brain tumor operation",
    "url": "https://www.reddit.com/r/tech/comments/1xnnsaz/for_the_first_time_ai_guides_surgeons_through_a/",
    "source": "r/tech",
@@ -1145,247 +1003,7 @@
    "score": 0,
    "matched": [],
    "why": "0"
-  },
-  {
-   "title": "Albanian Prime Minister Sits Down with Channel 5",
-   "url": "https://www.youtube.com/shorts/YPpo08zsK8s",
-   "source": "Channel 5 with Andrew Callaghan",
-   "feedId": "yt-channel-5-with-andrew-callaghan",
-   "type": "video",
-   "tags": [
-    "education",
-    "politics"
-   ],
-   "published": "2026-11-03T17:28:52.000Z",
-   "summary": "",
-   "thumb": "https://i2.ytimg.com/vi/YPpo08zsK8s/hqdefault.jpg",
-   "id": "ef36d634136b",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "KT #792 - JIMMY CARR + LUIS J GOMEZ + STEVE RANNAZZISI",
-   "url": "https://www.youtube.com/watch?v=Gm1JAZ1dPTM",
-   "source": "Kill Tony",
-   "feedId": "yt-kill-tony",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "standup",
-    "listen"
-   ],
-   "published": "2026-11-03T06:09:46.000Z",
-   "summary": "Jimmy Carr, Luis J Gomez, Steve Rannazzisi, Pat O'Neill, Dedrick Flynn, Martin Phillips, D Madness, Michael A. Gonzales, Jon Deas, Matthew Muehling, Grooveline Horns, Joe White, Troy Conrad, Monica Colt, Steve Glass, Tony Hinchcliffe, Brian Redban - RECORDED– 10/26/2026 TONY…",
-   "thumb": "https://i4.ytimg.com/vi/Gm1JAZ1dPTM/hqdefault.jpg",
-   "id": "f84f2c6ceba7",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "It's getting harder to balance the power grid. Here's why.",
-   "url": "https://www.youtube.com/watch?v=NBXu6Z9Fw_M",
-   "source": "Tom Scott",
-   "feedId": "yt-tom-scott",
-   "type": "video",
-   "tags": [
-    "education"
-   ],
-   "published": "2026-11-02T16:05:24.000Z",
-   "summary": "The team at Britain's National Energy System Operator have a job that's quite different to just a few years ago. | ▶️ Watch the next episode right now on Nebula: https://nebula.tv/videos/tomscott-why-you-cant-touch-stonehenge | 🗺️ England series map:…",
-   "thumb": "https://i3.ytimg.com/vi/NBXu6Z9Fw_M/hqdefault.jpg",
-   "id": "ce482129bfbc",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Investigating Jared Kushner's Empire of Fraud & Corruption",
-   "url": "https://www.youtube.com/watch?v=MM7QGccszUU",
-   "source": "Channel 5 with Andrew Callaghan",
-   "feedId": "yt-channel-5-with-andrew-callaghan",
-   "type": "video",
-   "tags": [
-    "education",
-    "politics"
-   ],
-   "published": "2026-11-02T16:00:11.000Z",
-   "summary": "Go to https://ground.news/channel5 to stay fully informed with all sides of every story. Subscribe for 40% off the Vantage plan through my link. To see 'Combat Obscura' or any of the 17 other documentaries currently streaming on C5.NOW while knowing that you are directly…",
-   "thumb": "https://i2.ytimg.com/vi/MM7QGccszUU/hqdefault.jpg",
-   "id": "bff8ddf2952b",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Why Apple Seems Confused",
-   "url": "https://www.youtube.com/watch?v=Sb1_j9A25nQ",
-   "source": "ColdFusion",
-   "feedId": "yt-coldfusion",
-   "type": "video",
-   "tags": [
-    "finance",
-    "tech",
-    "listen"
-   ],
-   "published": "2026-11-02T14:49:00.000Z",
-   "summary": "Visit https://brilliant.org/coldfusion to try Brilliant’s tutor for free and get 20% off an annual subscription. Apple is breaking all of their rules and seem lost, but is there a method to the madness? ColdFusion Music: https://www.youtube.com/@coldfusionmusic…",
-   "thumb": "https://i4.ytimg.com/vi/Sb1_j9A25nQ/hqdefault.jpg",
-   "id": "6e44456627fc",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Do you need substances to party in Berlin?",
-   "url": "https://www.youtube.com/shorts/IEHayauFtQo",
-   "source": "Channel 5 with Andrew Callaghan",
-   "feedId": "yt-channel-5-with-andrew-callaghan",
-   "type": "video",
-   "tags": [
-    "education",
-    "politics"
-   ],
-   "published": "2026-11-01T20:43:35.000Z",
-   "summary": "",
-   "thumb": "https://i2.ytimg.com/vi/IEHayauFtQo/hqdefault.jpg",
-   "id": "ea72035273e8",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Synology https://sy.to/h2luk",
-   "url": "https://www.youtube.com/shorts/SH5P3vXA3ww",
-   "source": "Chris Spargo",
-   "feedId": "yt-chris-spargo",
-   "type": "video",
-   "tags": [
-    "british",
-    "education"
-   ],
-   "published": "2026-10-31T08:00:26.000Z",
-   "summary": "Ad for Synology",
-   "thumb": "https://i4.ytimg.com/vi/SH5P3vXA3ww/hqdefault.jpg",
-   "id": "292cb42e77c9",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "KT: Behind the Tape (Ep: 791 Jim Norton + Anthony Cumia)",
-   "url": "https://www.youtube.com/watch?v=bHuLgxWgNWM",
-   "source": "Kill Tony",
-   "feedId": "yt-kill-tony",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "standup",
-    "listen"
-   ],
-   "published": "2026-10-31T01:00:09.000Z",
-   "summary": "An exclusive, behind-the-scenes look from KT Episode 791 KT guest Jim Norton + Anthony Cumia Jim Norton, Anthony Cumia, Pat O'Neill, Dedrick Flynn, Martin Phillips, D Madness, Michael A. Gonzales, Jon Deas, Matthew Muehling, Grooveline Horns, Joe White, Troy Conrad, Monica Colt…",
-   "thumb": "https://i3.ytimg.com/vi/bHuLgxWgNWM/hqdefault.jpg",
-   "id": "f05cd3c609d3",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Why Everyone Stopped Buying GoPro",
-   "url": "https://www.youtube.com/watch?v=25ckBnzay8Y",
-   "source": "ColdFusion",
-   "feedId": "yt-coldfusion",
-   "type": "video",
-   "tags": [
-    "finance",
-    "tech",
-    "listen"
-   ],
-   "published": "2026-10-28T17:10:33.000Z",
-   "summary": "Try Wispr Flow for free: https://ref.wisprflow.ai/coldfusion-yt-v03 and use code COLDFUSION to get 1 month of Wispr Flow Pro with unlimited words! At one stage, GoPro's CEO Nick Woodman, was the highest paid CEO in the US, but the company is no longer what it once was. In this…",
-   "thumb": "https://i3.ytimg.com/vi/25ckBnzay8Y/hqdefault.jpg",
-   "id": "121b77edfe70",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "This building is legally required to let you in*",
-   "url": "https://www.youtube.com/watch?v=pTq51r85KkM",
-   "source": "Chris Spargo",
-   "feedId": "yt-chris-spargo",
-   "type": "video",
-   "tags": [
-    "british",
-    "education"
-   ],
-   "published": "2026-10-28T17:00:11.000Z",
-   "summary": "Find out more about Synology: https://sy.to/h2luk @osullivanluke @CityEd. Patreon: https://www.patreon.com/c/ChrisSpargo Ko-fi: https://ko-fi.com/chrisspargo Edited by @JoeDanHirst and me Background music is @JarrahTarrah \"First Period\" https://www.youtube.com/watch?v=q6p6sx4v7D0",
-   "thumb": "https://i1.ytimg.com/vi/pTq51r85KkM/hqdefault.jpg",
-   "id": "28f7e29ca14f",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 849,
-   "duration": "14:09"
-  },
-  {
-   "title": "KT #791 - JIM NORTON + ANTHONY CUMIA",
-   "url": "https://www.youtube.com/watch?v=1MJir9VHriw",
-   "source": "Kill Tony",
-   "feedId": "yt-kill-tony",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "standup",
-    "listen"
-   ],
-   "published": "2026-10-27T01:00:11.000Z",
-   "summary": "Jim Norton, Anthony Cumia, Pat O'Neill, Dedrick Flynn, Martin Phillips, D Madness, Michael A. Gonzales, Jon Deas, Matthew Muehling, Grooveline Horns, Joe White, Troy Conrad, Monica Colt, Steve Glass, Tony Hinchcliffe, Brian Redban - RECORDED– 10/19/2026 TONY HINCHCLIFFE…",
-   "thumb": "https://i2.ytimg.com/vi/1MJir9VHriw/hqdefault.jpg",
-   "id": "28f10a57dd6e",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "This machine breaks things.",
-   "url": "https://www.youtube.com/watch?v=-E47v4Oy7fE",
-   "source": "Tom Scott",
-   "feedId": "yt-tom-scott",
-   "type": "video",
-   "tags": [
-    "education"
-   ],
-   "published": "2026-10-26T15:00:16.000Z",
-   "summary": "At Kirkaldy's Testing Works, there's the Universal Testing Machine. It breaks things. | AD: 🛡️ Get NordVPN's best deal with their next-gen antivirus: https://nordvpn.com/tomscott | 🗺️ England series map: https://www.tomscott.com/england/ 🟥 MORE FROM TOM:…",
-   "thumb": "https://i2.ytimg.com/vi/-E47v4Oy7fE/hqdefault.jpg",
-   "id": "58a074377add",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "KT: Behind the Tape (Ep: 790 Yung Gravy + Erik Griffin)",
-   "url": "https://www.youtube.com/watch?v=te3Y-A8udTY",
-   "source": "Kill Tony",
-   "feedId": "yt-kill-tony",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "standup",
-    "listen"
-   ],
-   "published": "2026-10-24T01:00:10.000Z",
-   "summary": "An exclusive, behind the scenes look from KT Episode 790 KT guest Yung Gravy + Erik Griffin Yung Gravy, Erik Griffin, Pat O'Neill, Dedrick Flynn, Martin Phillips, D Madness, Michael A. Gonzales, Jon Deas, Matthew Muehling, Grooveline Horns, Joe White, Troy Conrad, Monica Colt…",
-   "thumb": "https://i1.ytimg.com/vi/te3Y-A8udTY/hqdefault.jpg",
-   "id": "153abd7f2f31",
-   "score": 0,
-   "matched": [],
-   "why": "0"
   }
  ],
- "contentHash": "75d6cb9d7b1f"
+ "contentHash": "92ceebcd9e49"
 }
