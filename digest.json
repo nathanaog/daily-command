@@ -1,10 +1,10 @@
 {
- "generated": "2026-11-06T04:13:21.792Z",
+ "generated": "2026-11-06T07:36:48.255Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
-  "ok": 5,
-  "items": 15,
+  "ok": 4,
+  "items": 16,
   "duplicatesMerged": 0,
   "lengthsKnown": 0,
   "lengthLookups": 0,
@@ -353,14 +353,15 @@
    "id": "yt-the-nk-guys",
    "name": "The NK guys",
    "type": "youtube",
-   "status": "ok",
+   "status": "error",
    "count": 0,
    "resolved": {
     "channelId": "UCTi5i5m-Xm-o7sALcVKiKjg",
     "title": "The NK Guys",
     "via": "name search"
    },
-   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCTi5i5m-Xm-o7sALcVKiKjg"
+   "error": "not found (404)",
+   "http": 404
   },
   {
    "id": "yt-gameranx",
@@ -674,10 +675,9 @@
    "id": "rd-productmanagement",
    "name": "r/productmanagement",
    "type": "reddit",
-   "status": "cached",
-   "count": 4,
-   "lastOk": "2026-11-05T22:01:59.939Z",
-   "note": "not its turn this run"
+   "status": "ok",
+   "count": 5,
+   "url": "https://www.reddit.com/r/productmanagement/top/.rss?t=day"
   },
   {
    "id": "rd-tech",
@@ -686,7 +686,7 @@
    "status": "cached",
    "count": 1,
    "lastOk": "2026-11-05T04:14:56.920Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)"
   },
   {
    "id": "rd-gaming",
@@ -695,7 +695,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-ukpolitics",
@@ -728,20 +728,19 @@
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
+   "lastOk": "2026-11-06T04:13:21.792Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-germany",
    "name": "r/germany",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": "2026-10-31T01:21:53.748Z",
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-unitedkingdom",
@@ -750,10 +749,58 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   }
  ],
  "items": [
+  {
+   "title": "Friday Show and Tell",
+   "url": "https://www.reddit.com/r/ProductManagement/comments/1xp6dm0/friday_show_and_tell/",
+   "source": "r/productmanagement",
+   "feedId": "rd-productmanagement",
+   "type": "post",
+   "tags": [
+    "product"
+   ],
+   "published": "2026-11-06T07:00:34.000Z",
+   "summary": "There are a lot of people here working on projects of some sort - side projects, startups, podcasts, blogs, etc. If you've got something you'd like to show off or get feedback, this is the place to do it. Standards still need to remain high, so there are a few guidelines: Don't…",
+   "id": "5772d4eac0bf",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "What's everyone's favourite resource to learn about evals",
+   "url": "https://www.reddit.com/r/ProductManagement/comments/1xp3dmk/whats_everyones_favourite_resource_to_learn_about/",
+   "source": "r/productmanagement",
+   "feedId": "rd-productmanagement",
+   "type": "post",
+   "tags": [
+    "product"
+   ],
+   "published": "2026-11-06T04:06:42.000Z",
+   "summary": "And how are you using evals at work? submitted by /u/DarkFlowerPewPew [link] [comments]",
+   "id": "cc333bb2e6c1",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Tips for joining a startup?",
+   "url": "https://www.reddit.com/r/ProductManagement/comments/1xp027o/tips_for_joining_a_startup/",
+   "source": "r/productmanagement",
+   "feedId": "rd-productmanagement",
+   "type": "post",
+   "tags": [
+    "product"
+   ],
+   "published": "2026-11-06T01:19:31.000Z",
+   "summary": "I'm in big tech and i'm excited about a startup but also nervous about ownership and ambiguity. I'm nervous it'll be too open ended for me since i'm used to scoped problems and managers guiding me. I don't think I'd get any of that at a startup so unsure if i'lll be successful.…",
+   "id": "b463b661a176",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
   {
    "title": "Firms told to publish salaries in job adverts ahead of new law",
    "url": "https://www.reddit.com/r/ukpolitics/comments/1xoxhk7/firms_told_to_publish_salaries_in_job_adverts/",
@@ -868,9 +915,9 @@
    "published": "2026-11-05T16:11:44.000Z",
    "summary": "Genuine question for people who have shipped these, and I will share what has worked for me. The pattern: a business owner sees a good demo, then the first wrong answer in testing becomes \"the AI does not work\". The conversation goes binary very fast. What has helped me: -…",
    "id": "305ba5c4a367",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
+   "why": "0"
   },
   {
    "title": "“Regime Change Came in Texas Before Tehran”",
@@ -957,38 +1004,6 @@
    "why": "0"
   },
   {
-   "title": "The Only SaaS Moats Left in 2026",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1xo4k0r/the_only_saas_moats_left_in_2026/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-11-05T00:22:08.000Z",
-   "summary": "submitted by /u/cgielow [link] [comments]",
-   "id": "e8cfd3e7b53f",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "What is it actually like being a PM at a frontier AI company?",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1xo2yfe/what_is_it_actually_like_being_a_pm_at_a_frontier/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-11-04T23:10:34.000Z",
-   "summary": "How is it to be a Product Manager in an AI company (OpenAI, Anthropic, xAI, Mistral,...)? How do you organize the team, leverage AI, and do you have unlimited tokens? I heard that the work is very engineering-driven, giving engineers a lot of agency so that product management…",
-   "id": "bfbda4c05e98",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "For the first time, AI guides surgeons through a brain tumor operation",
    "url": "https://www.reddit.com/r/tech/comments/1xnnsaz/for_the_first_time_ai_guides_surgeons_through_a/",
    "source": "r/tech",
@@ -1005,5 +1020,5 @@
    "why": "0"
   }
  ],
- "contentHash": "92ceebcd9e49"
+ "contentHash": "8f603eb9cd27"
 }
