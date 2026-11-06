@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-06T16:05:21.951Z",
+ "generated": "2026-11-06T19:14:36.743Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
@@ -254,7 +254,7 @@
    "name": "Channel 5 with Andrew Callaghan",
    "type": "youtube",
    "status": "ok",
-   "count": 3,
+   "count": 4,
    "resolved": {
     "channelId": "UC-AQKm7HUNMmxjdS371MSwg",
     "title": "Channel 5 with Andrew Callaghan",
@@ -501,7 +501,7 @@
    "name": "RadicalSoda",
    "type": "youtube",
    "status": "ok",
-   "count": 1,
+   "count": 0,
    "resolved": {
     "channelId": "UCK045mDx8Pf9DpPG-kX8YUg",
     "title": "RadicalSoda",
@@ -630,9 +630,10 @@
    "id": "rd-productmanagement",
    "name": "r/productmanagement",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 4,
-   "url": "https://www.reddit.com/r/productmanagement/top/.rss?t=day"
+   "lastOk": "2026-11-06T16:05:21.951Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-tech",
@@ -641,7 +642,7 @@
    "status": "cached",
    "count": 1,
    "lastOk": "2026-11-05T04:14:56.920Z",
-   "note": "rate-limited (429)"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-gaming",
@@ -650,25 +651,26 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-11-06T10:20:01.302Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
   },
   {
    "id": "rd-xbox",
    "name": "r/xbox",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": "2026-11-02T04:16:50.522Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-slaythespire",
@@ -677,7 +679,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-geopolitics",
@@ -709,7 +711,170 @@
  ],
  "items": [
   {
-   "title": "'Why I turned down an interview with Trump' | Chris Williamson",
+   "title": "Russell Brand's rape case: the cost of speaking out | James O’Brien - The Whole Show",
+   "url": "https://www.youtube.com/watch?v=KmTGNdm2-z8",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-06T19:00:26.000Z",
+   "summary": "The Russell Brand sexual assault case has reignited debate about sexual violence and the challenges women face when reporting rape. But what does it really take to come forward with allegations against a famous or powerful man? James explores why women can find it so difficult…",
+   "thumb": "https://i4.ytimg.com/vi/KmTGNdm2-z8/hqdefault.jpg",
+   "id": "5b9f7511b827",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Nick Matau Vs Nadir Ahmed - Israel Or Palestine, Which Is More Moral?",
+   "url": "https://www.youtube.com/watch?v=2yIQrA_d8s4",
+   "source": "Modern-Day Debate",
+   "feedId": "yt-modern-day-debate",
+   "type": "video",
+   "tags": [
+    "debates",
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-06T18:50:12.000Z",
+   "summary": "Huge thank you to our DEBATECON 9 sponsors including: Revival of the Anointed's Rule: https://revivingtheroar.org/ Apologetics Ark: https://www.apologeticsark.com/links @UncensoredAmerica Yonaguni International Cuisine (Aguadilla, Puerto Rico):…",
+   "thumb": "https://i3.ytimg.com/vi/2yIQrA_d8s4/hqdefault.jpg",
+   "id": "720bac752952",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "UK Sex Workers Wake Up to Sites Purging Their Content Following UK Porn Ban",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xpim96/uk_sex_workers_wake_up_to_sites_purging_their/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-11-06T17:25:19.000Z",
+   "summary": "submitted by /u/RareEarthPetal [link] [comments]",
+   "id": "65d39f290ded",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "20 People Ask Ex-CIA Spy Anything (ft. Andrew Bustamante)",
+   "url": "https://www.youtube.com/watch?v=LEZOo2x4dHA",
+   "source": "Jubilee",
+   "feedId": "yt-jubilee",
+   "type": "video",
+   "tags": [
+    "politics",
+    "debates"
+   ],
+   "published": "2026-11-06T17:00:20.000Z",
+   "summary": "Hey you 👈 Wanna be in a Jubilee video? https://bit.ly/be-in-a-video LET’S BE FRIENDS Instagram: https://www.instagram.com/jubileemedia/ TikTok: https://www.tiktok.com/@jubilee?lang=en Website: https://www.jubileemedia.com OUR LOVE + DATING CHANNEL 🍑 YouTube:…",
+   "thumb": "https://i1.ytimg.com/vi/LEZOo2x4dHA/hqdefault.jpg",
+   "id": "4da57d4d1463",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Shark vs. Shark: Robert vs. Mr. Wonderful | Shark Tank US | Shark Tank Global",
+   "url": "https://www.youtube.com/watch?v=sIxkItBzT9Q",
+   "source": "Shark Tank Global",
+   "feedId": "yt-shark-tank-global",
+   "type": "video",
+   "tags": [
+    "trash",
+    "business"
+   ],
+   "published": "2026-11-06T17:00:02.000Z",
+   "summary": "The competition gets personal when Robert Herjavec and Kevin O'Leary set their sights on the same business. Watch as the Shark brawls unfold! 00:00 - ZipString 08:20 - Lectec 16:10 - Supply 25:41 - Sanaía 37:36 - Drain Strain Watch Shark Tank US Now:…",
+   "thumb": "https://i4.ytimg.com/vi/sIxkItBzT9Q/hqdefault.jpg",
+   "id": "f2fafe7f1521",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "tagesschau in Einfacher Sprache 19:00 Uhr, 06.11.2026",
+   "url": "https://www.youtube.com/watch?v=6m5U15aEjXc",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-06T16:44:12.000Z",
+   "summary": "tagesschau in Einfacher Sprache 19:00 Uhr CDU: Aigner soll Bundespräsidentin werden, Bundestag: Gesetz gegen K.o.-Tropfen, Düsseldorf: Prozess gegen \"Reichsbürger\", Paraguay: Krise in der Regierung, Das Wetter Die \"tagesschau in Einfacher Sprache\" – immer Montag bis Freitag um…",
+   "thumb": "https://i3.ytimg.com/vi/6m5U15aEjXc/hqdefault.jpg",
+   "id": "c0c79bdc1671",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "The UK ranks as the 7th biggest nanny state, according to the Nanny State Index",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xphgng/the_uk_ranks_as_the_7th_biggest_nanny_state/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-11-06T16:41:26.000Z",
+   "summary": "submitted by /u/adnshrnly [link] [comments]",
+   "id": "7af477eb6867",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Grimes Interview (Ft. Ivy Wolk)",
+   "url": "https://www.youtube.com/watch?v=RzHlHrz58oA",
+   "source": "Channel 5 with Andrew Callaghan",
+   "feedId": "yt-channel-5-with-andrew-callaghan",
+   "type": "video",
+   "tags": [
+    "education",
+    "politics"
+   ],
+   "published": "2026-11-06T16:41:14.000Z",
+   "summary": "Come home to your house and your peace of mind. 💙 Protect both with my sponsor https://simplisafe.com/channel5 and get 70% off a system with professional monitoring. SimpliSafe. Ahead of crime, in real time.",
+   "thumb": "https://i3.ytimg.com/vi/RzHlHrz58oA/hqdefault.jpg",
+   "id": "5d138014426a",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Ilse Aigner soll Bundespräsidentin werden – Union laut ARD-Informationen einig",
+   "url": "https://www.youtube.com/watch?v=YDiy4LjI8mw",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-06T16:08:32.000Z",
+   "summary": "Die Unionsparteien sind sich einig, dass sie die CSU-Politikerin Ilse Aigner als Bundespräsidentin vorschlagen wollen. Das erfuhr das ARD-Hauptstadtstudio. Ihre Nominierung soll am Montag bekannt gegeben werden. Zuerst hatten die Süddeutsche Zeitung und der Spiegel darüber…",
+   "thumb": "https://i2.ytimg.com/vi/YDiy4LjI8mw/hqdefault.jpg",
+   "id": "ff0f8ec14c7b",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "'Why I'll never release my Andrew Tate interview' | Chris Williamson",
    "url": "https://www.youtube.com/watch?v=6sTMWbY-P1E",
    "source": "LBC",
    "feedId": "yt-lbc",
@@ -727,7 +892,7 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Midterms 2026: the end of the Trump era?",
+   "title": "Midterms 2026: is Trump over?",
    "url": "https://www.youtube.com/watch?v=vnf21iEcuyY",
    "source": "The Economist",
    "feedId": "yt-the-economist",
@@ -745,6 +910,40 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
+   "title": "'Misleading' student loans information left out examples of higher-salary repayments",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xpfptt/misleading_student_loans_information_left_out/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-11-06T15:32:52.000Z",
+   "summary": "submitted by /u/diacewrb [link] [comments]",
+   "id": "917faa67779c",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Democrats plan to force Trump to release full Mandelson files",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xpf50g/democrats_plan_to_force_trump_to_release_full/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-11-06T15:09:30.000Z",
+   "summary": "submitted by /u/Little-Attorney1287 [link] [comments]",
+   "id": "16938ce5b6e5",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
    "title": "North Korean Fathers & Sons Experience America for the First Time (Marathon)",
    "url": "https://www.youtube.com/watch?v=LJRhmd8_jl0",
    "source": "The NK guys",
@@ -757,6 +956,23 @@
    "summary": "ex-North Korean Tank Commander Jung Min-Woo & His Son Jung Tae-Min Try American Snacks for the First Time ex-North Korean Tank Commander Kwon Hyo-jin and his son, Kwon Jin-woo, share the story of the eight years they spent apart while Hyo-jin was imprisoned in North Korea. 0:00…",
    "thumb": "https://i1.ytimg.com/vi/LJRhmd8_jl0/hqdefault.jpg",
    "id": "3ae346c6926d",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "We’ll need to spend on Neets to get benefits down, says Andy Burnham",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xperey/well_need_to_spend_on_neets_to_get_benefits_down/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-11-06T14:54:19.000Z",
+   "summary": "submitted by /u/DangerousAd40867 [link] [comments]",
+   "id": "c37d79dcae2e",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -837,25 +1053,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Weltklimakonferenz in Antalya: Was der Streit ums Geld für uns bedeutet",
-   "url": "https://www.youtube.com/watch?v=q-oL4DjtDEQ",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-06T13:32:49.000Z",
-   "summary": "Am Montag startet in der Türkei die nächste UN-Klimakonferenz. Fragt man Forscher, sind die Gründe für den langsamen Fortschritt beim Klimaschutz offensichtlich. Eine Studie zeigt, wie die Wende gelingen kann. Mehr dazu:…",
-   "thumb": "https://i2.ytimg.com/vi/q-oL4DjtDEQ/hqdefault.jpg",
-   "id": "e417cfb2c2c9",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "'Is MAGA a safe space for sex offenders?' | James O'Brien",
    "url": "https://www.youtube.com/watch?v=A8EnEbOPLBo",
    "source": "LBC",
@@ -886,25 +1083,6 @@
    "summary": "Penguinz0 aka MoistCritikal covered a streamer who thinks pets are akin to ragdolls and funnily enough, we have covered this same streamer before for her compulsive lying. ———————————— Spotify: https://open.spotify.com/artist/6QJIJ6AugqPEFASp1V6zgH Merchandise ---…",
    "thumb": "https://i4.ytimg.com/vi/_kZdGVGAK2U/hqdefault.jpg",
    "id": "71f2b06f7693",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "K.-o.-Tropfen im Club: Bringen härtere Strafen den Opfern wirklich Schutz?",
-   "url": "https://www.youtube.com/watch?v=rVfA3a71_d4",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-06T13:24:01.000Z",
-   "summary": "Der Bundestag hat heute für eine Strafverschärfung beim Einsatz von sogenannten K.-o.-Mitteln gestimmt. Diese werden von Täter:innen häufig verwendet, um ihre Opfer zu betäuben. Wer die Substanzen für eine Vergewaltigung oder einen Raub einsetzt, soll jetzt mit mindestens fünf…",
-   "thumb": "https://i3.ytimg.com/vi/rVfA3a71_d4/hqdefault.jpg",
-   "id": "6eab5bfb05cc",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -945,7 +1123,7 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "We Need to Talk About Slavery Reparations | Marvin Rees interview",
+   "title": "Who REALLY Pays For Reparations? | Marvin Rees interview",
    "url": "https://www.youtube.com/watch?v=sNZYEVUKN1A",
    "source": "PoliticsJOE",
    "feedId": "yt-politicsjoe",
@@ -962,7 +1140,7 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Why won't young people fight for Britain?",
+   "title": "'Unbelievable attitude!' | Why won't Gen Z fight for Britain?",
    "url": "https://www.youtube.com/watch?v=rDRyp8DSk8M",
    "source": "LBC",
    "feedId": "yt-lbc",
@@ -975,41 +1153,6 @@
    "summary": "Singer-songwriter James Blunt has said he understands why Brits would choose not to go to war for their country because of politicians who \"try and divide us so extremely\". It comes as a recent survey revealed that only 22 per cent of Britons aged 16 to 34, spanning Gen Z and…",
    "thumb": "https://i3.ytimg.com/vi/rDRyp8DSk8M/hqdefault.jpg",
    "id": "ab2ed7c1659e",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "JD Vance vs Trump: Simon Marks' analysis",
-   "url": "https://www.youtube.com/watch?v=0o37zJSQlgU",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-06T10:30:30.000Z",
-   "summary": "Ben Kentish is joined by LBC's Washington Correspondent Simon Marks for a US midterms debrief, looking into the distance JD Vance is putting between himself and his President regarding the Iran War. 00:32 | JD Vance vs Trump: Inner tension amongst the Republican Party 04:13 |…",
-   "thumb": "https://i1.ytimg.com/vi/0o37zJSQlgU/hqdefault.jpg",
-   "id": "6d69ccf217ad",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Green Party leader Zack Polanski is condemned for sharing posts from 'extremist' social media accounts that spread anti-Semitic messages online",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xp8njs/green_party_leader_zack_polanski_is_condemned_for/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-11-06T09:31:07.000Z",
-   "summary": "submitted by /u/diwalibonus [link] [comments]",
-   "id": "4c7da01dcfda",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1051,40 +1194,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "EXCLUSIVE: Most Brits Think Government Shouldn't Use Disappearing WhatsApps",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xp8065/exclusive_most_brits_think_government_shouldnt/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-11-06T08:48:06.000Z",
-   "summary": "submitted by /u/huffpostuk [link] [comments]",
-   "id": "fed722195627",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "New ‘say what you pay’ law to help young people into work: Jobseekers will no longer have to apply for jobs without knowing what they pay, under new plans announced by the Prime Minister to legally require employers to publish salaries in job adverts.",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xp7r58/new_say_what_you_pay_law_to_help_young_people/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-11-06T08:31:08.000Z",
-   "summary": "submitted by /u/LogicalDirect [link] [comments]",
-   "id": "47af48472610",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Global tech stocks plunge after Democrats win big in midterms",
    "url": "https://www.reddit.com/r/geopolitics/comments/1xp7qjv/global_tech_stocks_plunge_after_democrats_win_big/",
    "source": "r/geopolitics",
@@ -1097,23 +1206,6 @@
    "published": "2026-11-06T08:30:04.000Z",
    "summary": "submitted by /u/TimesandSundayTimes [link] [comments]",
    "id": "d70ba3b9d3f6",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Home Office investigation after BBC catches lawyer offering to make fines go away",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xp7hcn/home_office_investigation_after_bbc_catches/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-11-06T08:12:29.000Z",
-   "summary": "submitted by /u/Burnit_Sanders [link] [comments]",
-   "id": "688611371fd0",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1135,43 +1227,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "How North Korea Pulled Off the Biggest Heist in History",
-   "url": "https://www.youtube.com/watch?v=yU8JpuK5NZs",
-   "source": "Patrick Boyle",
-   "feedId": "yt-patrick-boyle",
-   "type": "video",
-   "tags": [
-    "finance",
-    "education",
-    "listen"
-   ],
-   "published": "2026-11-06T06:41:48.000Z",
-   "summary": "Go to http://ground.news/pb for a better way to stay informed. Subscribe for 40% off unlimited access to worldwide coverage through my link. Last week, hackers drained $6.3 billion from Binance, the world’s largest crypto exchange, in what blockchain analysts call the largest…",
-   "thumb": "https://i2.ytimg.com/vi/yU8JpuK5NZs/hqdefault.jpg",
-   "id": "3d8797a8d007",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "OMG: MELANIA LEAK EXPOSES TRUMP!",
-   "url": "https://www.youtube.com/watch?v=VM4EvoZChRY",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-06T04:45:34.000Z",
-   "summary": "Luke discusses a new leak that has come out about Trump and Melania. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
-   "thumb": "https://i3.ytimg.com/vi/VM4EvoZChRY/hqdefault.jpg",
-   "id": "33d44e51787d",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "What's everyone's favourite resource to learn about evals",
    "url": "https://www.reddit.com/r/ProductManagement/comments/1xp3dmk/whats_everyones_favourite_resource_to_learn_about/",
    "source": "r/productmanagement",
@@ -1188,21 +1243,41 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Right to Buy split my estate. Now its days could be numbered",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xoyxwv/right_to_buy_split_my_estate_now_its_days_could/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
+   "title": "How North Korea Pulled Off the Biggest Heist in History",
+   "url": "https://www.youtube.com/watch?v=yU8JpuK5NZs",
+   "source": "Patrick Boyle",
+   "feedId": "yt-patrick-boyle",
+   "type": "video",
+   "tags": [
+    "finance",
+    "education",
+    "listen"
+   ],
+   "published": "2026-11-06T06:41:48.000Z",
+   "summary": "Go to http://ground.news/pb for a better way to stay informed. Subscribe for 40% off unlimited access to worldwide coverage through my link. Last week, hackers drained $6.3 billion from Binance, the world’s largest crypto exchange, in what blockchain analysts call the largest…",
+   "thumb": "https://i2.ytimg.com/vi/yU8JpuK5NZs/hqdefault.jpg",
+   "id": "3d8797a8d007",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "OMG: MELANIA LEAK EXPOSES TRUMP!",
+   "url": "https://www.youtube.com/watch?v=VM4EvoZChRY",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
    "tags": [
     "politics",
-    "british"
+    "listen"
    ],
-   "published": "2026-11-06T00:26:09.000Z",
-   "summary": "submitted by /u/niteninja1 [link] [comments]",
-   "id": "de406d0ab6aa",
-   "score": 1,
+   "published": "2026-11-06T04:45:34.000Z",
+   "summary": "Luke discusses a new leak that has come out about Trump and Melania. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
+   "thumb": "https://i3.ytimg.com/vi/VM4EvoZChRY/hqdefault.jpg",
+   "id": "33d44e51787d",
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
+   "why": "0"
   },
   {
    "title": "IT LEAKED. This Was The Moment HE FOUND OUT.",
@@ -1687,25 +1762,6 @@
    "summary": "After the whole debacle with Atrioc being caught with deepfake spicy content on a computer tab featuring Pokimane and his now best friend's wife QT Cinderella, him attending the wedding got Pokimane feeling some type of way about her friends attending said wedding. ————————————…",
    "thumb": "https://i3.ytimg.com/vi/2965PkndV2c/hqdefault.jpg",
    "id": "9d07fc958848",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "What If Your Church Councils Contradict Each Other? — Jay Dyer vs David Wood",
-   "url": "https://www.youtube.com/watch?v=Fx7mTVxeu7c",
-   "source": "Modern-Day Debate",
-   "feedId": "yt-modern-day-debate",
-   "type": "video",
-   "tags": [
-    "debates",
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-03T18:00:08.000Z",
-   "summary": "Huge thank you to our DEBATECON 9 sponsors including: Revival of the Anointed's Rule: https://revivingtheroar.org/ Apologetics Ark: https://www.apologeticsark.com/links @UncensoredAmerica Yonaguni International Cuisine (Aguadilla, Puerto Rico):…",
-   "thumb": "https://i3.ytimg.com/vi/Fx7mTVxeu7c/hqdefault.jpg",
-   "id": "3cd8e8bc0550",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2256,24 +2312,6 @@
    "why": "0"
   },
   {
-   "title": "Spooky Season With The Sharks | Shark Tank US | Shark Tank Global",
-   "url": "https://www.youtube.com/watch?v=ry1F6yI26PU",
-   "source": "Shark Tank Global",
-   "feedId": "yt-shark-tank-global",
-   "type": "video",
-   "tags": [
-    "trash",
-    "business"
-   ],
-   "published": "2026-10-30T16:59:50.000Z",
-   "summary": "Spooky season has arrived in the Tank 🎃 From Halloween-inspired ideas to unexpected surprises, the Sharks get a taste of the season’s spookiest side. 00:00 - Halloween Moments / Pumpkin Glove Scraper 09:08 - Switch Witch 16:36 - American Ghost Walks 25:36 - The Murder Mystery…",
-   "thumb": "https://i3.ytimg.com/vi/ry1F6yI26PU/hqdefault.jpg",
-   "id": "288b04d23ff2",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "Berlin Club Scene",
    "url": "https://www.youtube.com/watch?v=YFe8LFCgT68",
    "source": "Channel 5 with Andrew Callaghan",
@@ -2765,24 +2803,6 @@
    "why": "0"
   },
   {
-   "title": "1 S*x Worker vs 20 Anti-S*x Work Advocates (ft Farha Khalidi) | Surrounded",
-   "url": "https://www.youtube.com/watch?v=CV91KbBPQwg",
-   "source": "Jubilee",
-   "feedId": "yt-jubilee",
-   "type": "video",
-   "tags": [
-    "politics",
-    "debates"
-   ],
-   "published": "2026-10-25T16:00:09.000Z",
-   "summary": "Hey you 👈 Wanna be in a Jubilee video? https://bit.ly/be-in-a-video LET’S BE FRIENDS Instagram: https://www.instagram.com/jubileemedia/ TikTok: https://www.tiktok.com/@jubilee?lang=en Website: https://www.jubileemedia.com OUR LOVE + DATING CHANNEL 🍑 YouTube:…",
-   "thumb": "https://i4.ytimg.com/vi/CV91KbBPQwg/hqdefault.jpg",
-   "id": "d5a8e8ab1085",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "Das Nordkorea mitten in Europa",
    "url": "https://www.youtube.com/watch?v=zNXG30YFVao",
    "source": "Simplicissimus",
@@ -2911,24 +2931,7 @@
    "score": 0,
    "matched": [],
    "why": "0"
-  },
-  {
-   "title": "Distressing YouTubers with my Pokémon Board Game",
-   "url": "https://www.youtube.com/watch?v=qtE2p6J4LU0",
-   "source": "RadicalSoda",
-   "feedId": "yt-radicalsoda",
-   "type": "video",
-   "tags": [
-    "gaming"
-   ],
-   "published": "2026-10-23T17:00:04.000Z",
-   "summary": "It's my very own Pokémon Quiz Board Game!! I've spent months creating hundreds of custom Pokémon cards, all with their own special abilities so our lovely players @DeliciousJames and @CushYT can make their own parties! The abilities of all these Pokémon stack up and affect…",
-   "thumb": "https://i2.ytimg.com/vi/qtE2p6J4LU0/hqdefault.jpg",
-   "id": "b21455e99c4d",
-   "score": 0,
-   "matched": [],
-   "why": "0"
   }
  ],
- "contentHash": "9502a20031c3"
+ "contentHash": "46afd9797f34"
 }
