@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-06T13:27:59.719Z",
+ "generated": "2026-11-06T16:05:21.951Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
@@ -7,11 +7,11 @@
   "items": 124,
   "duplicatesMerged": 0,
   "lengthsKnown": 2,
-  "lengthLookups": 106,
-  "lengthFailures": 106,
+  "lengthLookups": 107,
+  "lengthFailures": 107,
   "lengthVia": "video pages",
   "lengthFailReasons": {
-   "no length on page": 106
+   "no length on page": 107
   }
  },
  "feeds": [
@@ -332,7 +332,7 @@
    "name": "The NK guys",
    "type": "youtube",
    "status": "ok",
-   "count": 0,
+   "count": 1,
    "resolved": {
     "channelId": "UCTi5i5m-Xm-o7sALcVKiKjg",
     "title": "The NK Guys",
@@ -630,10 +630,9 @@
    "id": "rd-productmanagement",
    "name": "r/productmanagement",
    "type": "reddit",
-   "status": "cached",
-   "count": 5,
-   "lastOk": "2026-11-06T07:36:48.255Z",
-   "note": "not its turn this run"
+   "status": "ok",
+   "count": 4,
+   "url": "https://www.reddit.com/r/productmanagement/top/.rss?t=day"
   },
   {
    "id": "rd-tech",
@@ -642,7 +641,7 @@
    "status": "cached",
    "count": 1,
    "lastOk": "2026-11-05T04:14:56.920Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)"
   },
   {
    "id": "rd-gaming",
@@ -651,7 +650,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-ukpolitics",
@@ -684,20 +683,19 @@
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
+   "lastOk": "2026-11-06T13:27:59.719Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-germany",
    "name": "r/germany",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": "2026-10-31T01:21:53.748Z",
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-unitedkingdom",
@@ -706,12 +704,194 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   }
  ],
  "items": [
   {
-   "title": "K.o.-Tropfen im Club: Bringen härtere Strafen den Opfern wirklich Schutz?",
+   "title": "'Why I turned down an interview with Trump' | Chris Williamson",
+   "url": "https://www.youtube.com/watch?v=6sTMWbY-P1E",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-06T16:00:11.000Z",
+   "summary": "Host of Modern Wisdom, Chris Williamson, joins Tom Swarbrick to discuss why he's not a 'gateway drug' to the manosphere and reveals why he turned down an interview with Donald Trump. Listen to the full show on the all-new LBC App: https://app.af.lbc.co.uk/btnc/thenewlbcapp…",
+   "thumb": "https://i3.ytimg.com/vi/6sTMWbY-P1E/hqdefault.jpg",
+   "id": "61f7b24a2375",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Midterms 2026: the end of the Trump era?",
+   "url": "https://www.youtube.com/watch?v=vnf21iEcuyY",
+   "source": "The Economist",
+   "feedId": "yt-the-economist",
+   "type": "video",
+   "tags": [
+    "finance",
+    "business"
+   ],
+   "published": "2026-11-06T15:57:19.000Z",
+   "summary": "Did the 2026 midterm elections signal the end of the Trump era? Subscribe: https://www.youtube.com/@TheEconomist?sub_confirmation=1 The midterms were a resounding rebuke of President Donald Trump, with Democrats winning majorities in both the House and Senate and making…",
+   "thumb": "https://i3.ytimg.com/vi/vnf21iEcuyY/hqdefault.jpg",
+   "id": "95816bc760a9",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "North Korean Fathers & Sons Experience America for the First Time (Marathon)",
+   "url": "https://www.youtube.com/watch?v=LJRhmd8_jl0",
+   "source": "The NK guys",
+   "feedId": "yt-the-nk-guys",
+   "type": "video",
+   "tags": [
+    "culture"
+   ],
+   "published": "2026-11-06T15:00:38.000Z",
+   "summary": "ex-North Korean Tank Commander Jung Min-Woo & His Son Jung Tae-Min Try American Snacks for the First Time ex-North Korean Tank Commander Kwon Hyo-jin and his son, Kwon Jin-woo, share the story of the eight years they spent apart while Hyo-jin was imprisoned in North Korea. 0:00…",
+   "thumb": "https://i1.ytimg.com/vi/LJRhmd8_jl0/hqdefault.jpg",
+   "id": "3ae346c6926d",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "K.-o.-Tropfen im Glas: Warum du im Verdachtsfall sofort handeln musst",
+   "url": "https://www.youtube.com/watch?v=WN1WiVYLKJI",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-06T14:53:37.000Z",
+   "summary": "Der Bundestag hat heute für eine Strafverschärfung beim Einsatz von sogenannten K.-o.-Mitteln gestimmt. Diese werden von Täter:innen häufig verwendet, um ihre Opfer zu betäuben. Wer die Substanzen für eine Vergewaltigung oder einen Raub einsetzt, soll jetzt mit mindestens fünf…",
+   "thumb": "https://i4.ytimg.com/vi/WN1WiVYLKJI/hqdefault.jpg",
+   "id": "f749ae317eea",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Drohungen gegen Flüge: Was bekannt ist",
+   "url": "https://www.youtube.com/watch?v=C7-GnTX-UgI",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-06T14:09:42.000Z",
+   "summary": "Die Serie rätselhafter Bombendrohungen im europäischen Luftverkehr hält an. Auch am Freitag wurden wieder mehrere Fälle gemeldet. Insgesamt gab es damit seit Dienstag mindestens 30 Drohungen gegen Flugzeuge. In Irland sorgen nahezu identische Drohungen gegen Medienhäuser für…",
+   "thumb": "https://i4.ytimg.com/vi/C7-GnTX-UgI/hqdefault.jpg",
+   "id": "40074abebd10",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Kari Lake COMES OUT OF HIDING to DO IT Again!",
+   "url": "https://www.youtube.com/watch?v=tdCVlKN2PM4",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-06T14:00:34.000Z",
+   "summary": "Luke discusses Kari Lake, once again, doing Kari Lake things... Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
+   "thumb": "https://i1.ytimg.com/vi/tdCVlKN2PM4/hqdefault.jpg",
+   "id": "03774b32ee85",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "ARD-Finanzexpertin erklärt die Einbrüche an den Börsen",
+   "url": "https://www.youtube.com/watch?v=sPNK_Ugmo6A",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-06T13:59:47.000Z",
+   "summary": "Ein Einbruch bei Chip- und Technologiewerten hat in den USA eine Verkaufswelle ausgelöst, die inzwischen auch die Börsen in Asien und das Frankfurter Parkett erfasst hat. Auslöser war ein massiver Kursrutsch an der Wall Street, wo große Tech- und Chipkonzerne binnen Stunden…",
+   "thumb": "https://i4.ytimg.com/vi/sPNK_Ugmo6A/hqdefault.jpg",
+   "id": "b869be0f88ba",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Weltklimakonferenz in Antalya: Was der Streit ums Geld für uns bedeutet",
+   "url": "https://www.youtube.com/watch?v=q-oL4DjtDEQ",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-06T13:32:49.000Z",
+   "summary": "Am Montag startet in der Türkei die nächste UN-Klimakonferenz. Fragt man Forscher, sind die Gründe für den langsamen Fortschritt beim Klimaschutz offensichtlich. Eine Studie zeigt, wie die Wende gelingen kann. Mehr dazu:…",
+   "thumb": "https://i2.ytimg.com/vi/q-oL4DjtDEQ/hqdefault.jpg",
+   "id": "e417cfb2c2c9",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "'Is MAGA a safe space for sex offenders?' | James O'Brien",
+   "url": "https://www.youtube.com/watch?v=A8EnEbOPLBo",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-06T13:30:19.000Z",
+   "summary": "James O'Brien takes a look into the political landscape surrounding the Russell Brand case as the actor and comedian was found guilty of rape and three counts of sexual assault during his showbiz career. 00:00 | James asks the questions: 'How hard is it for victims to come…",
+   "thumb": "https://i2.ytimg.com/vi/A8EnEbOPLBo/hqdefault.jpg",
+   "id": "f9a586bfe918",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "This Animal @buser Also Falsely Accused 3 Men For Fun",
+   "url": "https://www.youtube.com/watch?v=_kZdGVGAK2U",
+   "source": "Aberrant preach",
+   "feedId": "yt-aberrant-preach",
+   "type": "video",
+   "tags": [
+    "trash"
+   ],
+   "published": "2026-11-06T13:28:50.000Z",
+   "summary": "Penguinz0 aka MoistCritikal covered a streamer who thinks pets are akin to ragdolls and funnily enough, we have covered this same streamer before for her compulsive lying. ———————————— Spotify: https://open.spotify.com/artist/6QJIJ6AugqPEFASp1V6zgH Merchandise ---…",
+   "thumb": "https://i4.ytimg.com/vi/_kZdGVGAK2U/hqdefault.jpg",
+   "id": "71f2b06f7693",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "K.-o.-Tropfen im Club: Bringen härtere Strafen den Opfern wirklich Schutz?",
    "url": "https://www.youtube.com/watch?v=rVfA3a71_d4",
    "source": "Tagesschau",
    "feedId": "yt-tagesschau",
@@ -722,47 +902,9 @@
     "listen"
    ],
    "published": "2026-11-06T13:24:01.000Z",
-   "summary": "Der Bundestag hat heute für eine Strafverschärfung beim Einsatz von sogenannten K.o.-Mitteln gestimmt. Diese werden von Täter:innen häufig verwendet, um ihre Opfer zu betäuben. Wer die Substanzen für eine Vergewaltigung oder einen Raub einsetzt, soll jetzt mit mindestens fünf…",
+   "summary": "Der Bundestag hat heute für eine Strafverschärfung beim Einsatz von sogenannten K.-o.-Mitteln gestimmt. Diese werden von Täter:innen häufig verwendet, um ihre Opfer zu betäuben. Wer die Substanzen für eine Vergewaltigung oder einen Raub einsetzt, soll jetzt mit mindestens fünf…",
    "thumb": "https://i3.ytimg.com/vi/rVfA3a71_d4/hqdefault.jpg",
    "id": "6eab5bfb05cc",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "MOMA-Reporter: Drogenhilfe in Frankfurt | ARD Morgenmagazin",
-   "url": "https://www.youtube.com/watch?v=aZbUBl75e_E",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-06T12:57:43.000Z",
-   "summary": "Die Sucht nach Substanzen wie Kokain, Heroin und Crack führt immer noch viele ins Verderben. Im vergangenen Jahr sind in Deutschland 2.150 Menschen an den Folgen ihres Drogen-Konsums gestorben. Einer der Hotspots ist Frankfurt am Main. Die Bilder vom Bahnhofs-Viertel sorgen…",
-   "thumb": "https://i2.ytimg.com/vi/aZbUBl75e_E/hqdefault.jpg",
-   "id": "325d6d7065f8",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Bankenkollaps in Paraguay: Warum Präsident Peña zurücktritt",
-   "url": "https://www.youtube.com/watch?v=luMHDv9N64M",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-06T12:45:17.000Z",
-   "summary": "In Paraguay zieht die Krise um die Ueno Bank immer weitere Kreise: Weil Präsident Peña die Risiken zu lange ignorierte, leitete das Parlament ein Amtsenthebungsverfahren ein. Auch die Staatsanwaltschaft ermittelt. Mehr dazu:…",
-   "thumb": "https://i1.ytimg.com/vi/luMHDv9N64M/hqdefault.jpg",
-   "id": "cc79435aa85a",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -795,7 +937,7 @@
     "listen"
    ],
    "published": "2026-11-06T12:30:38.000Z",
-   "summary": "Russell Brand has spent his first night in a cell last night as he faces many years behind bars for rape and sexual offences. The 51-year-old preyed on women he encountered while becoming one of Britain’s best-known stand-up comedians, a lauded TV host, and a Hollywood movie…",
+   "summary": "AUDIO CREDIT: Audio played from Ed Miliband's interview with Russell Brand comes from 'Milibrand: The Interview', which is featured on Russell Brand's YouTube channel in 2015. Russell Brand has spent his first night in a cell last night as he faces many years behind bars for…",
    "thumb": "https://i2.ytimg.com/vi/uWKRLjrOwR4/hqdefault.jpg",
    "id": "7598fa1cab8d",
    "score": 1,
@@ -803,7 +945,7 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "We Need to Talk About Reparations | Marvin Rees interview",
+   "title": "We Need to Talk About Slavery Reparations | Marvin Rees interview",
    "url": "https://www.youtube.com/watch?v=sNZYEVUKN1A",
    "source": "PoliticsJOE",
    "feedId": "yt-politicsjoe",
@@ -851,44 +993,6 @@
    "summary": "Ben Kentish is joined by LBC's Washington Correspondent Simon Marks for a US midterms debrief, looking into the distance JD Vance is putting between himself and his President regarding the Iran War. 00:32 | JD Vance vs Trump: Inner tension amongst the Republican Party 04:13 |…",
    "thumb": "https://i1.ytimg.com/vi/0o37zJSQlgU/hqdefault.jpg",
    "id": "6d69ccf217ad",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Aufgaben und Geschichte: Was macht ein Bundespräsident?",
-   "url": "https://www.youtube.com/watch?v=tQGxQzouOB8",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-06T10:08:22.000Z",
-   "summary": "Der Bundespräsident ist das Staatsoberhaupt der Bundesrepublik – so will es das Grundgesetz von 1949. Auch wenn der Begriff \"Staatsoberhaupt\" dort gar nicht ausdrücklich auftaucht, ergibt sich dies aus den dort beschriebenen Aufgaben und Pflichten und aus dem Willen der Mütter…",
-   "thumb": "https://i1.ytimg.com/vi/tQGxQzouOB8/hqdefault.jpg",
-   "id": "0ba1bce44cfe",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Annaberg-Buchholz: Warum das Weihnachtsgebäck in altem Stollen lagert | tagesthemen mittendrin",
-   "url": "https://www.youtube.com/watch?v=ZYCVHHTVQtQ",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-06T09:45:19.000Z",
-   "summary": "Im Erzgebirge gibt es eine ganz besondere Tradition: Hier wird der Weihnachtsstollen unter Tage gelagert. Warum das so ist und was den Stollen so besonders macht - wir haben uns das angeschaut. Mehr tagesthemen mittendrin Reportagen hier:…",
-   "thumb": "https://i3.ytimg.com/vi/ZYCVHHTVQtQ/hqdefault.jpg",
-   "id": "82f4205ff1d7",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1084,40 +1188,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "IT LEAKED. This Was The Moment HE FOUND OUT.",
-   "url": "https://www.youtube.com/watch?v=3u_vvlzpPaw",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-06T02:45:37.000Z",
-   "summary": "Luke discusses behind-the-scenes reporting of Trump on election night. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
-   "thumb": "https://i4.ytimg.com/vi/3u_vvlzpPaw/hqdefault.jpg",
-   "id": "1f25b34e9106",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Tips for joining a startup?",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1xp027o/tips_for_joining_a_startup/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-11-06T01:19:31.000Z",
-   "summary": "I'm in big tech and i'm excited about a startup but also nervous about ownership and ambiguity. I'm nervous it'll be too open ended for me since i'm used to scoped problems and managers guiding me. I don't think I'd get any of that at a startup so unsure if i'lll be successful.…",
-   "id": "b463b661a176",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Right to Buy split my estate. Now its days could be numbered",
    "url": "https://www.reddit.com/r/ukpolitics/comments/1xoyxwv/right_to_buy_split_my_estate_now_its_days_could/",
    "source": "r/ukpolitics",
@@ -1133,6 +1203,40 @@
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "IT LEAKED. This Was The Moment HE FOUND OUT.",
+   "url": "https://www.youtube.com/watch?v=3u_vvlzpPaw",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-06T02:45:37.000Z",
+   "summary": "Luke discusses behind-the-scenes reporting of Trump on election night. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
+   "thumb": "https://i4.ytimg.com/vi/3u_vvlzpPaw/hqdefault.jpg",
+   "id": "1f25b34e9106",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Tips for joining a startup?",
+   "url": "https://www.reddit.com/r/ProductManagement/comments/1xp027o/tips_for_joining_a_startup/",
+   "source": "r/productmanagement",
+   "feedId": "rd-productmanagement",
+   "type": "post",
+   "tags": [
+    "product"
+   ],
+   "published": "2026-11-06T01:19:31.000Z",
+   "summary": "I'm in big tech and i'm excited about a startup but also nervous about ownership and ambiguity. I'm nervous it'll be too open ended for me since i'm used to scoped problems and managers guiding me. I don't think I'd get any of that at a startup so unsure if i'lll be successful.…",
+   "id": "b463b661a176",
+   "score": 0,
+   "matched": [],
+   "why": "0"
   },
   {
    "title": "Visibly Depressed Fox Host SNAPS AT CO-HOST On Air, SH*TS ON TRUMP!",
@@ -1165,24 +1269,6 @@
    "summary": "The Ocarina of Time remake for Nintendo Switch 2 is here at long last. How is it? Let's talk. Subscribe for more: http://youtube.com/gameranxtv ▼▼ Buy Zelda: https://link.amazon/B0fW70j5E Watch more 'Before You Buy': https://bit.ly/2kfdxI6",
    "thumb": "https://i1.ytimg.com/vi/HuF6-efVdyI/hqdefault.jpg",
    "id": "9875b019f78c",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Will the midterm defeat make Trump stand up to Putin?",
-   "url": "https://www.youtube.com/watch?v=6mC_tXmZVW0",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-05T23:22:45.000Z",
-   "summary": "Bomb threats that disrupted at least 15 flights this week have raised concerns about how ‘hybrid warfare’ can disrupt life in Europe. 00:00 | Andrew Marr outlines the warnings over Russia’s ability to undermine the UK 01:49 | Transport secretary Heidi Alexander says the…",
-   "thumb": "https://i3.ytimg.com/vi/6mC_tXmZVW0/hqdefault.jpg",
-   "id": "6ddd289a3103",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1225,25 +1311,7 @@
    "why": "0"
   },
   {
-   "title": "Midterms mayhem: Simon Marks answers your questions",
-   "url": "https://www.youtube.com/watch?v=mEUdzKgSzYM",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-05T22:00:11.000Z",
-   "summary": "After a destructive midterm election for the Republican Party, LBC's Washington Correspondent Simon Marks is on hand with Iain Dale to answer all your burning questions about US politics: 00:20 Simon's takeaway from the midterm results. 04:20 Caller Rose asks what chance there…",
-   "thumb": "https://i2.ytimg.com/vi/mEUdzKgSzYM/hqdefault.jpg",
-   "id": "dabe2fa87039",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Why Nike's Perfect Comeback Isn't Working",
+   "title": "Why Nobody Wants Nikes Anymore",
    "url": "https://www.youtube.com/watch?v=43f2QwapwG4",
    "source": "The Hustle",
    "feedId": "yt-the-hustle",
@@ -1398,24 +1466,6 @@
    "why": "0"
   },
   {
-   "title": "WATCH: Alex Jones SNAPS, Suffers TOTAL MELTDOWN after Election DISASTER!",
-   "url": "https://www.youtube.com/watch?v=BaLtPld7SmE",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-05T16:00:26.000Z",
-   "summary": "Luke discusses Alex Jones' meltdown following the midterm blowout. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
-   "thumb": "https://i3.ytimg.com/vi/BaLtPld7SmE/hqdefault.jpg",
-   "id": "0d14a2325b98",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "Why are Labour banning porn?",
    "url": "https://www.youtube.com/watch?v=_vk2BJ36ZtM",
    "source": "PoliticsJOE",
@@ -1428,22 +1478,6 @@
    "summary": "From tomorrow, Labour will crack down on porn depicting strangulation or suffocation, sexual activity between people who are related, or adults role-playing as children under 16. The legislation will bring online pornography in line with existing regulations for offline…",
    "thumb": "https://i4.ytimg.com/vi/_vk2BJ36ZtM/hqdefault.jpg",
    "id": "9d479769a55c",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Weekly rant thread",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1xoeuma/weekly_rant_thread/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-11-05T10:00:37.000Z",
-   "summary": "Share your frustrations and get support/feedback. You are not alone! submitted by /u/AutoModerator [link] [comments]",
-   "id": "69f0ff1948f5",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1519,7 +1553,7 @@
    "why": "0"
   },
   {
-   "title": "How to Get a Drivers License in Germany",
+   "title": "Everything You Need to Know About the German Drivers License",
    "url": "https://www.youtube.com/watch?v=aiFJ11GY7sE",
    "source": "Easy German",
    "feedId": "yt-easy-german",
@@ -2513,23 +2547,6 @@
    "why": "0"
   },
   {
-   "title": "The World Forgot How Gangster China Really Is...",
-   "url": "https://www.youtube.com/watch?v=k0LXEEviIL0",
-   "source": "Aberrant preach",
-   "feedId": "yt-aberrant-preach",
-   "type": "video",
-   "tags": [
-    "trash"
-   ],
-   "published": "2026-10-28T16:56:18.000Z",
-   "summary": "Kylian Mbappé set the spanish football league LaLiga ablaze after expressing how funny he found some of his depictions as Mao Zedong, resulting in China blocking all broadcast of LaLiga and any ads relevants to him. ———————————— Spotify:…",
-   "thumb": "https://i4.ytimg.com/vi/k0LXEEviIL0/hqdefault.jpg",
-   "id": "ec77c89509d5",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "Farha Khalidi Defends Her Hottest Takes | Surrounded Follow-Up",
    "url": "https://www.youtube.com/watch?v=2xIMdLp9iCQ",
    "source": "Jubilee",
@@ -2896,24 +2913,6 @@
    "why": "0"
   },
   {
-   "title": "Will France blow up the euro zone? | The Economist",
-   "url": "https://www.youtube.com/watch?v=q2uVRZougS8",
-   "source": "The Economist",
-   "feedId": "yt-the-economist",
-   "type": "video",
-   "tags": [
-    "finance",
-    "business"
-   ],
-   "published": "2026-10-23T17:00:08.000Z",
-   "summary": "France’s streets are on fire—and so are its finances. Soaring borrowing costs mean its debt is becoming more expensive to service. If the prospect of passing even meagre spending cuts in next year’s budget is implausible, the fiscal discipline that is ultimately required feels…",
-   "thumb": "https://i2.ytimg.com/vi/q2uVRZougS8/hqdefault.jpg",
-   "id": "ad7c1a795ee5",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "Distressing YouTubers with my Pokémon Board Game",
    "url": "https://www.youtube.com/watch?v=qtE2p6J4LU0",
    "source": "RadicalSoda",
@@ -2931,5 +2930,5 @@
    "why": "0"
   }
  ],
- "contentHash": "c63884cf96a0"
+ "contentHash": "9502a20031c3"
 }
