@@ -1,17 +1,17 @@
 {
- "generated": "2026-11-06T21:56:34.502Z",
+ "generated": "2026-11-07T01:22:55.569Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
-  "ok": 12,
-  "items": 39,
+  "ok": 5,
+  "items": 20,
   "duplicatesMerged": 0,
   "lengthsKnown": 0,
-  "lengthLookups": 14,
-  "lengthFailures": 14,
+  "lengthLookups": 5,
+  "lengthFailures": 5,
   "lengthVia": "video pages",
   "lengthFailReasons": {
-   "no length on page": 14
+   "no length on page": 5
   }
  },
  "feeds": [
@@ -54,8 +54,8 @@
     "title": "LBC",
     "via": "name search"
    },
-   "error": "HTTP 500",
-   "http": 500
+   "error": "not found (404)",
+   "http": 404
   },
   {
    "id": "yt-chris-spargo",
@@ -89,14 +89,15 @@
    "id": "yt-the-good-liars",
    "name": "The Good Liars",
    "type": "youtube",
-   "status": "ok",
-   "count": 5,
+   "status": "error",
+   "count": 0,
    "resolved": {
     "channelId": "UCUNOwz9KTDIhhTTN3_ptUDA",
     "title": "The Good Liars",
     "via": "name search"
    },
-   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCUNOwz9KTDIhhTTN3_ptUDA"
+   "error": "not found (404)",
+   "http": 404
   },
   {
    "id": "yt-easy-german",
@@ -144,27 +145,29 @@
    "id": "yt-last-week-tonight",
    "name": "Last Week Tonight",
    "type": "youtube",
-   "status": "ok",
-   "count": 5,
+   "status": "error",
+   "count": 0,
    "resolved": {
     "channelId": "UC3XTzVzaHQEd30rQbuvCtTQ",
     "title": "LastWeekTonight",
     "via": "name search"
    },
-   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC3XTzVzaHQEd30rQbuvCtTQ"
+   "error": "not found (404)",
+   "http": 404
   },
   {
    "id": "yt-billy-on-the-street",
    "name": "Billy on the Street",
    "type": "youtube",
-   "status": "ok",
-   "count": 1,
+   "status": "error",
+   "count": 0,
    "resolved": {
     "channelId": "UCc81WI54KgJoei06f_3mWgQ",
     "title": "billyonthestreettv",
     "via": "name search"
    },
-   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCc81WI54KgJoei06f_3mWgQ"
+   "error": "not found (404)",
+   "http": 404
   },
   {
    "id": "yt-politicsjoe",
@@ -198,14 +201,15 @@
    "id": "yt-coldfusion",
    "name": "ColdFusion",
    "type": "youtube",
-   "status": "ok",
-   "count": 2,
+   "status": "error",
+   "count": 0,
    "resolved": {
     "channelId": "UC4QZ_LsYcvcq7qOsOhpAX4A",
     "title": "ColdFusion",
     "via": "name search"
    },
-   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC4QZ_LsYcvcq7qOsOhpAX4A"
+   "error": "not found (404)",
+   "http": 404
   },
   {
    "id": "yt-levi-hildebrand",
@@ -323,14 +327,15 @@
    "id": "yt-bald-and-bankrupt",
    "name": "Bald and Bankrupt",
    "type": "youtube",
-   "status": "ok",
-   "count": 1,
+   "status": "error",
+   "count": 0,
    "resolved": {
     "channelId": "UCxDZs_ltFFvn0FDHT6kmoXA",
     "title": "bald and bankrupt",
     "via": "name search"
    },
-   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCxDZs_ltFFvn0FDHT6kmoXA"
+   "error": "not found (404)",
+   "http": 404
   },
   {
    "id": "yt-tagesschau",
@@ -371,7 +376,7 @@
     "title": "gameranx",
     "via": "name search"
    },
-   "url": "https://www.youtube.com/feeds/videos.xml?playlist_id=UULFNvzD7Z-g64bPXxGzaQaa4g"
+   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCNvzD7Z-g64bPXxGzaQaa4g"
   },
   {
    "id": "yt-modern-day-debate",
@@ -384,8 +389,8 @@
     "title": "Modern-Day Debate",
     "via": "name search"
    },
-   "error": "HTTP 500",
-   "http": 500
+   "error": "not found (404)",
+   "http": 404
   },
   {
    "id": "yt-dropout",
@@ -461,14 +466,15 @@
    "id": "yt-coffeezilla",
    "name": "Coffeezilla",
    "type": "youtube",
-   "status": "ok",
+   "status": "error",
    "count": 0,
    "resolved": {
     "channelId": "UCFQMnBA3CS502aghlcr0_aw",
     "title": "Coffeezilla",
     "via": "name search"
    },
-   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCFQMnBA3CS502aghlcr0_aw"
+   "error": "not found (404)",
+   "http": 404
   },
   {
    "id": "yt-tom-scott",
@@ -502,14 +508,15 @@
    "id": "yt-the-hustle",
    "name": "The Hustle",
    "type": "youtube",
-   "status": "ok",
-   "count": 5,
+   "status": "error",
+   "count": 0,
    "resolved": {
     "channelId": "UCkWVA1_vkY9GLyuLAre97AQ",
     "title": "The Hustle ",
     "via": "name search"
    },
-   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCkWVA1_vkY9GLyuLAre97AQ"
+   "error": "not found (404)",
+   "http": 404
   },
   {
    "id": "yt-history-marche",
@@ -669,28 +676,28 @@
    "id": "rd-productmanagement",
    "name": "r/productmanagement",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 4,
-   "lastOk": "2026-11-06T16:05:21.951Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/productmanagement/top/.rss?t=day"
   },
   {
    "id": "rd-tech",
    "name": "r/tech",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 1,
-   "lastOk": "2026-11-05T04:14:56.920Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/tech/top/.rss?t=day"
   },
   {
    "id": "rd-gaming",
    "name": "r/gaming",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-ukpolitics",
@@ -723,20 +730,19 @@
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
+   "lastOk": "2026-11-06T21:56:34.502Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-germany",
    "name": "r/germany",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": "2026-10-31T01:21:53.748Z",
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-unitedkingdom",
@@ -745,10 +751,26 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   }
  ],
  "items": [
+  {
+   "title": "If everyone can build your sw product?",
+   "url": "https://www.reddit.com/r/ProductManagement/comments/1xppy9n/if_everyone_can_build_your_sw_product/",
+   "source": "r/productmanagement",
+   "feedId": "rd-productmanagement",
+   "type": "post",
+   "tags": [
+    "product"
+   ],
+   "published": "2026-11-06T22:20:33.000Z",
+   "summary": "If most sufficiently complicated digital apps /services can be reverse engineered fast and within a relatively low token budget -say below $100.000 (using frontier LLM based coding assistants/agents + some foundational sw engineering skills). Or say less than $1M for something…",
+   "id": "1eee576d3377",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
   {
    "title": "GTA6 - NEW THINGS WE FOUND & MORE",
    "url": "https://www.youtube.com/watch?v=tvPdp-RPAKo",
@@ -759,7 +781,7 @@
     "gaming"
    ],
    "published": "2026-11-06T21:39:12.000Z",
-   "summary": "Get the best of Ridge this holiday up to 49% off - use our link https://ridge.com/GAMERANX Sponsored by Ridge. ~~SOURCES~~ *------subscribe to Jake's YouTube channel https://youtube.com/@jakebaldino?si=TNNySOlzXhyCBEKa?sub_confirmation=1 GTA6 new screenshots and preload info…",
+   "summary": "Get the best of Ridge this holiday up to 49% off - use our link https://ridge.com/GAMERANX Sponsored by Ridge. *------subscribe to Jake's YouTube channel https://youtube.com/@jakebaldino?si=TNNySOlzXhyCBEKa?sub_confirmation=1 ~~SOURCES~~ GTA6 new screenshots and preload info…",
    "thumb": "https://i1.ytimg.com/vi/tvPdp-RPAKo/hqdefault.jpg",
    "id": "fcc7043d2a08",
    "score": 1,
@@ -796,6 +818,22 @@
    "published": "2026-11-06T18:29:06.000Z",
    "summary": "submitted by /u/carnegieendowment [link] [comments]",
    "id": "12717ef7be12",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "How does your company decide when to say no to paid development?",
+   "url": "https://www.reddit.com/r/ProductManagement/comments/1xpk7gw/how_does_your_company_decide_when_to_say_no_to/",
+   "source": "r/productmanagement",
+   "feedId": "rd-productmanagement",
+   "type": "post",
+   "tags": [
+    "product"
+   ],
+   "published": "2026-11-06T18:26:29.000Z",
+   "summary": "Curious how other product teams approach customer-funded development. One challenge I see is that paid development doesn’t necessarily mean additional engineering capacity. It often competes with existing roadmap priorities, and accepting the work can delay other initiatives.…",
+   "id": "efc058db4073",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -937,6 +975,22 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
+   "title": "Scientists create a spray-on powder that seals life-threatening wounds in seconds",
+   "url": "https://www.reddit.com/r/tech/comments/1xpci15/scientists_create_a_sprayon_powder_that_seals/",
+   "source": "r/tech",
+   "feedId": "rd-tech",
+   "type": "post",
+   "tags": [
+    "tech"
+   ],
+   "published": "2026-11-06T13:14:23.000Z",
+   "summary": "submitted by /u/AdSpecialist6598 [link] [comments]",
+   "id": "a99ed22d214f",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
    "title": "Friday Show and Tell",
    "url": "https://www.reddit.com/r/ProductManagement/comments/1xp6dm0/friday_show_and_tell/",
    "source": "r/productmanagement",
@@ -948,9 +1002,9 @@
    "published": "2026-11-06T07:00:34.000Z",
    "summary": "There are a lot of people here working on projects of some sort - side projects, startups, podcasts, blogs, etc. If you've got something you'd like to show off or get feedback, this is the place to do it. Standards still need to remain high, so there are a few guidelines: Don't…",
    "id": "5772d4eac0bf",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
+   "why": "0"
   },
   {
    "title": "What's everyone's favourite resource to learn about evals",
@@ -964,22 +1018,6 @@
    "published": "2026-11-06T04:06:42.000Z",
    "summary": "And how are you using evals at work? submitted by /u/DarkFlowerPewPew [link] [comments]",
    "id": "cc333bb2e6c1",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Tips for joining a startup?",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1xp027o/tips_for_joining_a_startup/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-11-06T01:19:31.000Z",
-   "summary": "I'm in big tech and i'm excited about a startup but also nervous about ownership and ambiguity. I'm nervous it'll be too open ended for me since i'm used to scoped problems and managers guiding me. I don't think I'd get any of that at a startup so unsure if i'lll be successful.…",
-   "id": "b463b661a176",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -997,57 +1035,6 @@
    "summary": "The Ocarina of Time remake for Nintendo Switch 2 is here at long last. How is it? Let's talk. Subscribe for more: http://youtube.com/gameranxtv ▼▼ Buy Zelda: https://link.amazon/B0fW70j5E Watch more 'Before You Buy': https://bit.ly/2kfdxI6",
    "thumb": "https://i1.ytimg.com/vi/HuF6-efVdyI/hqdefault.jpg",
    "id": "9875b019f78c",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Why Nobody Wants Nikes Anymore",
-   "url": "https://www.youtube.com/watch?v=43f2QwapwG4",
-   "source": "The Hustle",
-   "feedId": "yt-the-hustle",
-   "type": "video",
-   "tags": [
-    "business"
-   ],
-   "published": "2026-11-05T20:00:32.000Z",
-   "summary": "Nike’s CEO did everything the turnaround playbook says to do. So why is the company still getting worse? *How to prevent your business from falling like Nike:* https://clickhubspot.com/yaz1 Kylian Mbappé just left Nike for On. Around the same time, the stock hit a decade low…",
-   "thumb": "https://i1.ytimg.com/vi/43f2QwapwG4/hqdefault.jpg",
-   "id": "a426385a7bbe",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "How do you handle stakeholders who expect an LLM feature to be right 100% of the time?",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1xomn6k/how_do_you_handle_stakeholders_who_expect_an_llm/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-11-05T16:11:44.000Z",
-   "summary": "Genuine question for people who have shipped these, and I will share what has worked for me. The pattern: a business owner sees a good demo, then the first wrong answer in testing becomes \"the AI does not work\". The conversation goes binary very fast. What has helped me: -…",
-   "id": "305ba5c4a367",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "The $100 Bill #lastweektonight",
-   "url": "https://www.youtube.com/shorts/2T4VhRwBnEs",
-   "source": "Last Week Tonight",
-   "feedId": "yt-last-week-tonight",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "politics"
-   ],
-   "published": "2026-11-05T15:00:38.000Z",
-   "summary": "Hundred dollar bills are used for two things: crime, and for Steve Harvey to buy some Tic Tacs.",
-   "thumb": "https://i3.ytimg.com/vi/2T4VhRwBnEs/hqdefault.jpg",
-   "id": "dccad17e400d",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1087,75 +1074,6 @@
    "why": "0"
   },
   {
-   "title": "WHAT’S THE BEST CONCERT YOU EVER SAW? #billyonthestreet",
-   "url": "https://www.youtube.com/shorts/WI0sdKhzEzU",
-   "source": "Billy on the Street",
-   "feedId": "yt-billy-on-the-street",
-   "type": "video",
-   "tags": [
-    "comedy"
-   ],
-   "published": "2026-11-04T16:00:28.000Z",
-   "summary": "",
-   "thumb": "https://i4.ytimg.com/vi/WI0sdKhzEzU/hqdefault.jpg",
-   "id": "c8fcf0ebcfa5",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "For the first time, AI guides surgeons through a brain tumor operation",
-   "url": "https://www.reddit.com/r/tech/comments/1xnnsaz/for_the_first_time_ai_guides_surgeons_through_a/",
-   "source": "r/tech",
-   "feedId": "rd-tech",
-   "type": "post",
-   "tags": [
-    "tech"
-   ],
-   "published": "2026-11-04T13:09:06.000Z",
-   "summary": "submitted by /u/AdSpecialist6598 [link] [comments]",
-   "id": "da93e0987798",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Republicans & James Talarico #lastweektonight",
-   "url": "https://www.youtube.com/shorts/KcK_EIEODJE",
-   "source": "Last Week Tonight",
-   "feedId": "yt-last-week-tonight",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "politics"
-   ],
-   "published": "2026-11-03T17:20:12.000Z",
-   "summary": "James Talarico has dealt with a lot on the campaign trail. Which is why we’re really hoping his fingers don’t also look like sausages. For his sake.",
-   "thumb": "https://i4.ytimg.com/vi/KcK_EIEODJE/hqdefault.jpg",
-   "id": "18cbf27dd010",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Republicans & Abdul El-Sayed #lastweektonight",
-   "url": "https://www.youtube.com/shorts/4RoLmhoLdRQ",
-   "source": "Last Week Tonight",
-   "feedId": "yt-last-week-tonight",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "politics"
-   ],
-   "published": "2026-11-03T17:05:33.000Z",
-   "summary": "Abdul El-Sayed isn’t going to cancel Christmas. That’s a job for President No Pencils.",
-   "thumb": "https://i1.ytimg.com/vi/4RoLmhoLdRQ/hqdefault.jpg",
-   "id": "5b7061ce3dd2",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "20 Flaws GTA 6 Is Trying To Fix",
    "url": "https://www.youtube.com/watch?v=ZUPsRg7i4Bg",
    "source": "GameRanx",
@@ -1171,262 +1089,7 @@
    "score": 0,
    "matched": [],
    "why": "0"
-  },
-  {
-   "title": "DAYTONA BEACH TRUMP RALLY",
-   "url": "https://www.youtube.com/watch?v=ncvy2LRGoMw",
-   "source": "The Good Liars",
-   "feedId": "yt-the-good-liars",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "politics",
-    "debates"
-   ],
-   "published": "2026-11-02T21:15:07.000Z",
-   "summary": "The Good Liars Talk Show! Featuring interviews from the Daytona Beach Trump rally featuring not one, but TWO Good Liars. Join this channel to get access to perks: https://www.youtube.com/channel/UCUNOwz9KTDIhhTTN3_ptUDA/join https://linktr.ee/thegoodliars",
-   "thumb": "https://i3.ytimg.com/vi/ncvy2LRGoMw/hqdefault.jpg",
-   "id": "8c911b21571c",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Midterms & Trump #lastweektonight",
-   "url": "https://www.youtube.com/shorts/uEpFWeXkZ3s",
-   "source": "Last Week Tonight",
-   "feedId": "yt-last-week-tonight",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "politics"
-   ],
-   "published": "2026-11-02T17:00:19.000Z",
-   "summary": "Some Republicans have been distancing themselves from Trump ahead of the midterms. And – wait, whoa, sorry – got distracted by the thought of Elizabeth Holmes whisking eggs.",
-   "thumb": "https://i2.ytimg.com/vi/uEpFWeXkZ3s/hqdefault.jpg",
-   "id": "5ae1290391d4",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Midterm Elections #lastweektonight",
-   "url": "https://www.youtube.com/shorts/iJIPA0cYK_8",
-   "source": "Last Week Tonight",
-   "feedId": "yt-last-week-tonight",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "politics"
-   ],
-   "published": "2026-11-02T15:00:04.000Z",
-   "summary": "The hallmark of any great rally? Begging people to stay, of course!",
-   "thumb": "https://i2.ytimg.com/vi/iJIPA0cYK_8/hqdefault.jpg",
-   "id": "0d2e579a959d",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Why Apple Seems Confused",
-   "url": "https://www.youtube.com/watch?v=Sb1_j9A25nQ",
-   "source": "ColdFusion",
-   "feedId": "yt-coldfusion",
-   "type": "video",
-   "tags": [
-    "finance",
-    "tech",
-    "listen"
-   ],
-   "published": "2026-11-02T14:49:00.000Z",
-   "summary": "Visit https://brilliant.org/coldfusion to try Brilliant’s tutor for free and get 20% off an annual subscription. Apple is breaking all of their rules and seem lost, but is there a method to the madness? ColdFusion Music: https://www.youtube.com/@ColdFusionmusic…",
-   "thumb": "https://i4.ytimg.com/vi/Sb1_j9A25nQ/hqdefault.jpg",
-   "id": "6e44456627fc",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "ROCK HILL TRUMP RALLY",
-   "url": "https://www.youtube.com/watch?v=ARmxv6JYjRc",
-   "source": "The Good Liars",
-   "feedId": "yt-the-good-liars",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "politics",
-    "debates"
-   ],
-   "published": "2026-11-01T22:44:56.000Z",
-   "summary": "The Good Liars visit South Carolina for the Trump Rally https://www.youtube.com/channel/UCUNOwz9KTDIhhTTN3_ptUDA/join https://linktr.ee/thegoodliars",
-   "thumb": "https://i2.ytimg.com/vi/ARmxv6JYjRc/hqdefault.jpg",
-   "id": "89b9424b79b0",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "How Miniso Launches 1,600 New Products a Month",
-   "url": "https://www.youtube.com/shorts/Rll-tUIx8OY",
-   "source": "The Hustle",
-   "feedId": "yt-the-hustle",
-   "type": "video",
-   "tags": [
-    "business"
-   ],
-   "published": "2026-11-01T16:52:17.000Z",
-   "summary": "How Miniso Launches 1,600 New Products a Month",
-   "thumb": "https://i3.ytimg.com/vi/Rll-tUIx8OY/hqdefault.jpg",
-   "id": "19f271250fd3",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Why a Toy Story Villain Became a Retail Hit in China",
-   "url": "https://www.youtube.com/shorts/LjzX44L1vFc",
-   "source": "The Hustle",
-   "feedId": "yt-the-hustle",
-   "type": "video",
-   "tags": [
-    "business"
-   ],
-   "published": "2026-11-01T00:18:55.000Z",
-   "summary": "Why a Toy Story Villain Became a Retail Hit in China",
-   "thumb": "https://i1.ytimg.com/vi/LjzX44L1vFc/hqdefault.jpg",
-   "id": "dd3461a27035",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "CORINTH TRUMP RALLY",
-   "url": "https://www.youtube.com/watch?v=js5t0kUqSZM",
-   "source": "The Good Liars",
-   "feedId": "yt-the-good-liars",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "politics",
-    "debates"
-   ],
-   "published": "2026-10-31T17:00:11.000Z",
-   "summary": "The Good Liars visit Corinth, Mississippi for the Trump Rally https://www.youtube.com/channel/UCUNOwz9KTDIhhTTN3_ptUDA/join https://linktr.ee/thegoodliars",
-   "thumb": "https://i3.ytimg.com/vi/js5t0kUqSZM/hqdefault.jpg",
-   "id": "37da32e5be01",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "24 Hours In An Abandoned Soviet City",
-   "url": "https://www.youtube.com/watch?v=5wypCQp11wo",
-   "source": "Bald and Bankrupt",
-   "feedId": "yt-bald-and-bankrupt",
-   "type": "video",
-   "tags": [
-    "travel",
-    "chill"
-   ],
-   "published": "2026-10-31T10:33:41.000Z",
-   "summary": "When you travel the backroads of the former USSR you hear towns mentioned by ranndom strangers you meet in platskart and marshrutkas. Ming-Kush was one such town I had heard of a few times. A formerly closed Soviet town that mined uranium, it had subsequently fallen into…",
-   "thumb": "https://i2.ytimg.com/vi/5wypCQp11wo/hqdefault.jpg",
-   "id": "ab292ba2c350",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Why Luckin and Starbucks Are Making Opposite Bets on Coffee",
-   "url": "https://www.youtube.com/shorts/GFYpkAIRCHA",
-   "source": "The Hustle",
-   "feedId": "yt-the-hustle",
-   "type": "video",
-   "tags": [
-    "business"
-   ],
-   "published": "2026-10-31T00:35:35.000Z",
-   "summary": "Why Luckin and Starbucks Are Making Opposite Bets on Coffee",
-   "thumb": "https://i4.ytimg.com/vi/GFYpkAIRCHA/hqdefault.jpg",
-   "id": "7a023024f156",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "This Startup Wants to Power Cities With Lasers",
-   "url": "https://www.youtube.com/shorts/qeT4aqs-4PQ",
-   "source": "The Hustle",
-   "feedId": "yt-the-hustle",
-   "type": "video",
-   "tags": [
-    "business"
-   ],
-   "published": "2026-10-30T17:00:08.000Z",
-   "summary": "But can lasers really power an entire city?",
-   "thumb": "https://i2.ytimg.com/vi/qeT4aqs-4PQ/hqdefault.jpg",
-   "id": "bed758d05be0",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Chillicothe, Ohio Trump Rally",
-   "url": "https://www.youtube.com/watch?v=kEyB1qg9sSo",
-   "source": "The Good Liars",
-   "feedId": "yt-the-good-liars",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "politics",
-    "debates"
-   ],
-   "published": "2026-10-29T19:30:08.000Z",
-   "summary": "Jason visits Chillicothe, Ohio to talk to Trump supporters about socialism, Trump and Jesus (in that order), and much more! Join this channel to get access to perks: https://www.youtube.com/channel/UCUNOwz9KTDIhhTTN3_ptUDA/join https://linktr.ee/thegoodliars",
-   "thumb": "https://i4.ytimg.com/vi/kEyB1qg9sSo/hqdefault.jpg",
-   "id": "b0cf75c3daba",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Why Everyone Stopped Buying GoPro",
-   "url": "https://www.youtube.com/watch?v=25ckBnzay8Y",
-   "source": "ColdFusion",
-   "feedId": "yt-coldfusion",
-   "type": "video",
-   "tags": [
-    "finance",
-    "tech",
-    "listen"
-   ],
-   "published": "2026-10-28T17:10:33.000Z",
-   "summary": "Try Wispr Flow for free: https://ref.wisprflow.ai/coldfusion-yt-v03 and use code COLDFUSION to get 1 month of Wispr Flow Pro with unlimited words! At one stage, GoPro's CEO Nick Woodman, was the highest paid CEO in the US, but the company is no longer what it once was. In this…",
-   "thumb": "https://i3.ytimg.com/vi/25ckBnzay8Y/hqdefault.jpg",
-   "id": "121b77edfe70",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "MISSISSIPPI TRUMP RALLY",
-   "url": "https://www.youtube.com/watch?v=kog1j3uG3o0",
-   "source": "The Good Liars",
-   "feedId": "yt-the-good-liars",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "politics",
-    "debates"
-   ],
-   "published": "2026-10-28T17:00:39.000Z",
-   "summary": "The Good Liars visit Mississippi for the first time and talk to Trump Supporters eager to get into the rally to see Donald Trump speak https://linktr.ee/thegoodliars",
-   "thumb": "https://i4.ytimg.com/vi/kog1j3uG3o0/hqdefault.jpg",
-   "id": "04c4b0090437",
-   "score": 0,
-   "matched": [],
-   "why": "0"
   }
  ],
- "contentHash": "7f8751811143"
+ "contentHash": "8225e2230f12"
 }
