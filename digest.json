@@ -1,10 +1,10 @@
 {
- "generated": "2026-11-07T19:04:52.310Z",
+ "generated": "2026-11-07T21:52:57.028Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
-  "ok": 50,
-  "items": 119,
+  "ok": 51,
+  "items": 124,
   "duplicatesMerged": 0,
   "lengthsKnown": 2,
   "lengthLookups": 105,
@@ -630,21 +630,48 @@
    "id": "rd-productmanagement",
    "name": "r/productmanagement",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 2,
-   "url": "https://www.reddit.com/r/productmanagement/top/.rss?t=day"
+   "lastOk": "2026-11-07T19:04:52.310Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-tech",
    "name": "r/tech",
    "type": "reddit",
-   "status": "empty",
+   "status": "waiting",
    "count": 0,
-   "url": "https://www.reddit.com/r/tech/top/.rss?t=day"
+   "lastOk": "2026-11-07T19:04:52.310Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-gaming",
    "name": "r/gaming",
+   "type": "reddit",
+   "status": "waiting",
+   "count": 0,
+   "lastOk": null,
+   "note": "not its turn this run"
+  },
+  {
+   "id": "rd-ukpolitics",
+   "name": "r/ukpolitics",
+   "type": "reddit",
+   "status": "ok",
+   "count": 5,
+   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
+  },
+  {
+   "id": "rd-xbox",
+   "name": "r/xbox",
+   "type": "reddit",
+   "status": "ok",
+   "count": 5,
+   "url": "https://www.reddit.com/r/xbox/top/.rss?t=day"
+  },
+  {
+   "id": "rd-slaythespire",
+   "name": "r/slaythespire",
    "type": "reddit",
    "status": "error",
    "count": 0,
@@ -652,33 +679,6 @@
    "note": "rate-limited (429)",
    "error": "rate-limited (429)",
    "http": 429
-  },
-  {
-   "id": "rd-ukpolitics",
-   "name": "r/ukpolitics",
-   "type": "reddit",
-   "status": "cached",
-   "count": 5,
-   "lastOk": "2026-11-07T13:13:17.477Z",
-   "note": "not its turn this run"
-  },
-  {
-   "id": "rd-xbox",
-   "name": "r/xbox",
-   "type": "reddit",
-   "status": "waiting",
-   "count": 0,
-   "lastOk": "2026-11-02T04:16:50.522Z",
-   "note": "not its turn this run"
-  },
-  {
-   "id": "rd-slaythespire",
-   "name": "r/slaythespire",
-   "type": "reddit",
-   "status": "waiting",
-   "count": 0,
-   "lastOk": null,
-   "note": "not its turn this run"
   },
   {
    "id": "rd-geopolitics",
@@ -709,6 +709,246 @@
   }
  ],
  "items": [
+  {
+   "title": "OH SH*T: Proud Boys Founder LOSES IT AT ME as I EXPOSE HIM!",
+   "url": "https://www.youtube.com/watch?v=0XSICgSpKO0",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-07T21:30:39.000Z",
+   "summary": "Luke discusses his clash with Gavin McInnes on his midterm election stream. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
+   "thumb": "https://i1.ytimg.com/vi/0XSICgSpKO0/hqdefault.jpg",
+   "id": "10277820dcca",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Friedrich-Naumann-Stiftung ehrt Pahlavi stellvertretend für das iranisches Volk mit Freiheitspreis",
+   "url": "https://www.youtube.com/watch?v=uUQhNIeS44o",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-07T20:58:29.000Z",
+   "summary": "Der iranische Oppositionelle Pahlavi hat stellvertretend für das iranische Volk den Freiheitspreis der FDP-nahen Friedrich-Naumann-Stiftung entgegengenommen. Während der Verleihung gab es auch Demonstrationen. Weitere Informationen:…",
+   "thumb": "https://i2.ytimg.com/vi/uUQhNIeS44o/hqdefault.jpg",
+   "id": "f3a2000b9350",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "The best $5 I spent this weekend. Rouge Flight",
+   "url": "https://www.reddit.com/r/xbox/comments/1xqgfa4/the_best_5_i_spent_this_weekend_rouge_flight/",
+   "source": "r/xbox",
+   "feedId": "rd-xbox",
+   "type": "post",
+   "tags": [
+    "gaming"
+   ],
+   "published": "2026-11-07T20:43:30.000Z",
+   "summary": "I’ve had this game sitting in my wishlist for quite some time and seen it was on sale for $5 today and purchased it because it had 5 stars and it’s the best $5 I spent all week. Nice shump. submitted by /u/Big-Reporter3498 [link] [comments]",
+   "id": "6fba3f2ae1ff",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Labour MPs urge Burnham to scrap trans bill - Fears that parents could be criminalised for having honest conversations with children",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xqge3x/labour_mps_urge_burnham_to_scrap_trans_bill_fears/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-11-07T20:42:02.000Z",
+   "summary": "submitted by /u/blast-processor [link] [comments]",
+   "id": "561ac22f6c0c",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "LG C6 Oled 65 with Xbox series X",
+   "url": "https://www.reddit.com/r/xbox/comments/1xqg44v/lg_c6_oled_65_with_xbox_series_x/",
+   "source": "r/xbox",
+   "feedId": "rd-xbox",
+   "type": "post",
+   "tags": [
+    "gaming"
+   ],
+   "published": "2026-11-07T20:29:40.000Z",
+   "summary": "It look insane on my LG C6 Oled with Xbox series x it blow my I can’t wait to play for GTA 6🔥and I’m so excited for FSR 4.1 What the best settings for Xbox series x ? submitted by /u/Ronte97 [link] [comments]",
+   "id": "509e34a88060",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Stealth wood controller",
+   "url": "https://www.reddit.com/r/xbox/comments/1xqfipa/stealth_wood_controller/",
+   "source": "r/xbox",
+   "feedId": "rd-xbox",
+   "type": "post",
+   "tags": [
+    "gaming"
+   ],
+   "published": "2026-11-07T20:03:23.000Z",
+   "summary": "Put together a sleek looking controller with a black and wood theme that came out looking amazing ! The side grips have built in trigger stops that add a nice texture and a shorter trigger pull for faster paced game Edit: parts list extremerate woodgrain face shell ,…",
+   "id": "e0fe183e5bc4",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Opinium on X: Reform's lead over the Conservatives narrows to just 1 point, its smallest since April 2025. Labour has a 7-point lead over Reform. 🌹 LAB 28% (-2), ➡️ REF 21% (-1), 🌳 CON 20% (n/c), 🌍 GRN 11% (+3), 🔶 LD 10% (n/c) .",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xqfhtt/opinium_on_x_reforms_lead_over_the_conservatives/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-11-07T20:02:18.000Z",
+   "summary": "submitted by /u/ClumperFaz [link] [comments]",
+   "id": "293a0461027a",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Dan Neidle on X: \"On Thursday I wrote about the 2014 injunction Russell Brand obtained against a woman who accused him of assault. I've now obtained the final order. It's breathtaking. She had no lawyer. No trial. Yet she was silenced for life",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xqfdow/dan_neidle_on_x_on_thursday_i_wrote_about_the/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-11-07T19:57:51.000Z",
+   "summary": "submitted by /u/FormerlyPallas_ [link] [comments]",
+   "id": "a50a7d316773",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Tödliche Schüsse in Krakau: ARD-Korrespondent zur Lage vor Ort",
+   "url": "https://www.youtube.com/watch?v=FTZnk5rz2rg",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-07T19:41:35.000Z",
+   "summary": "Bei Schüssen auf dem zentralen Hauptmarkt der polnischen Stadt Krakau sind nach Polizeiangaben mindestens sechs Menschen getötet und 15 weitere verletzt worden. Der mutmaßliche Täter konnte demnach gefasst werden. Unter den Verletzten seien auch mindestens zwei Polizist:innen.…",
+   "thumb": "https://i3.ytimg.com/vi/FTZnk5rz2rg/hqdefault.jpg",
+   "id": "b5989781949b",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "A ‘win-win’: every EU nation would welcome UK’s return, says Cypriot president",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xqeulw/a_winwin_every_eu_nation_would_welcome_uks_return/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-11-07T19:34:54.000Z",
+   "summary": "submitted by /u/TheObserverUK [link] [comments]",
+   "id": "778a45d74c48",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "tagesschau 20:00 Uhr, 07.11.2026",
+   "url": "https://www.youtube.com/watch?v=TxHkyZxH0u8",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-07T19:26:20.000Z",
+   "summary": "Die 20-Uhr-Ausgabe im Livestream und früher auf Abruf: https://ardmediathek.de/tagesschau und https://tagesschau.de Themen der Sendung: 00:00 Guten Abend 00:22 US-Präsident Trump ernennt Steven Miller als neuen Stabschef 02:26 Russland setzt Angriffe auf Energieversorgung in…",
+   "thumb": "https://i1.ytimg.com/vi/TxHkyZxH0u8/hqdefault.jpg",
+   "id": "b19f2318c971",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "‘Dirty’ Trump deserved to be thrashed in the US midterms, says Kemi Badenoch",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xqec6a/dirty_trump_deserved_to_be_thrashed_in_the_us/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-11-07T19:13:02.000Z",
+   "summary": "submitted by /u/ImpressiveRest2423 [link] [comments]",
+   "id": "8585caabff1a",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Vice City wallpaper for the Homepage 🤩",
+   "url": "https://www.reddit.com/r/xbox/comments/1xqdv2o/vice_city_wallpaper_for_the_homepage/",
+   "source": "r/xbox",
+   "feedId": "rd-xbox",
+   "type": "post",
+   "tags": [
+    "gaming"
+   ],
+   "published": "2026-11-07T18:52:53.000Z",
+   "summary": "submitted by /u/sweettoothGupy [link] [comments]",
+   "id": "e56d71f93604",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Building My Collection",
+   "url": "https://www.reddit.com/r/xbox/comments/1xqdm0q/building_my_collection/",
+   "source": "r/xbox",
+   "feedId": "rd-xbox",
+   "type": "post",
+   "tags": [
+    "gaming"
+   ],
+   "published": "2026-11-07T18:42:10.000Z",
+   "summary": "I wish Xbox released more of these controllers. I’d buy each one submitted by /u/Limp-Dinner-4999 [link] [comments]",
+   "id": "50da004e6184",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
   {
    "title": "OH DAMN: They Have NO IDEA How Bad It’s About to Get!",
    "url": "https://www.youtube.com/watch?v=S2cvN0QHLOU",
@@ -765,7 +1005,7 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Ranking YouTuber Products",
+   "title": "Ranking YouTuber Food Products (they all suck)",
    "url": "https://www.youtube.com/watch?v=eQanqCGaD74",
    "source": "Levi Hildebrand",
    "feedId": "yt-levi-hildebrand",
@@ -797,25 +1037,6 @@
    "summary": "Seit 1990 hat die Bundesrepublik ihre CO₂-Emissionen fast halbiert, das haben wenige andere Länder geschafft. Der Ersatz der alten DDR-Braunkohlekraftwerke hat dazu beigetragen. Und vor allem der Aufbau von Wind- und Solarenergie, die mittlerweile mehr als die Hälfte unseres…",
    "thumb": "https://i3.ytimg.com/vi/ZhzXNTrgLqM/hqdefault.jpg",
    "id": "2061dc867b4a",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Trinkwasser per Lkw: Was die Dürre im Allgäu für die Menschen vor Ort bedeutet",
-   "url": "https://www.youtube.com/watch?v=4yG0b8dRYeY",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-07T15:39:02.000Z",
-   "summary": "Kristallklare Seen, wilde Bäche und grüne Wiesen – so haben viele das Allgäu vor Augen. Doch die Realität sieht inzwischen anders aus. Seit Monaten hat es im Oberallgäu kaum geregnet, die Grundwasserpegel sinken. In Wiggensbach hat die anhaltende Dürre jetzt sogar dazu geführt,…",
-   "thumb": "https://i1.ytimg.com/vi/4yG0b8dRYeY/hqdefault.jpg",
-   "id": "cfcde6a2b94e",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -977,25 +1198,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Staatskrise in Polen: Streit um Reform der Justiz eskaliert",
-   "url": "https://www.youtube.com/watch?v=8ZlfgQsHalc",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-07T13:39:33.000Z",
-   "summary": "Polen steckt in einer Staatskrise. Seit Tagen demonstrieren beide politischen Lager. Die längst abgewählte rechtskonservative PiS-Regierung hatte die obersten Gerichte gefügig gemacht und mit Parteigängern besetzt. Seit drei Jahren versucht Ministerpräsident Tusk die…",
-   "thumb": "https://i1.ytimg.com/vi/8ZlfgQsHalc/hqdefault.jpg",
-   "id": "05c7b70a25e3",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "'AI will change the world: Accept it' | Piers Linney",
    "url": "https://www.youtube.com/watch?v=N-lNgyf-8KA",
    "source": "LBC",
@@ -1009,25 +1211,6 @@
    "summary": "Dragons' Den star Piers Linney joins Matt Frei with a warning about the 'revolutionary change' AI is about to inflict on humanity. Are we witnessing the equivalent of the internet era but for artificial intelligence? Is this the moment our horses turn into cars? Piers tries to…",
    "thumb": "https://i3.ytimg.com/vi/N-lNgyf-8KA/hqdefault.jpg",
    "id": "4c544f82201a",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Neuer Stabschef im Weißen Haus: Darum holt Trump Stephen Miller ins Zentrum der Macht",
-   "url": "https://www.youtube.com/watch?v=KjX1g5xYpxg",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-07T12:50:59.000Z",
-   "summary": "US-Präsident Trump hat erste personelle Konsequenzen aus der Wahlniederlage für die Republikaner:innen bei den Midterms gezogen. Seine bisherige Stabschefin Wiles wird durch ihren Stellvertreter Miller ersetzt. Miller gilt als rechter Hardliner und unter anderem als Vordenker…",
-   "thumb": "https://i4.ytimg.com/vi/KjX1g5xYpxg/hqdefault.jpg",
-   "id": "fe97f8d909ca",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1051,35 +1234,20 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Burnham’s 10-year plan morphs into ‘high-level’ blueprint - Delay deepens doubts within Labour whether PM’s vision for UK will be as transformational as billed",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xq3khb/burnhams_10year_plan_morphs_into_highlevel/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
+   "title": "Did the Early Church Believe in Icon Veneration? | Alex Sorin Vs Gnostic Informant",
+   "url": "https://www.youtube.com/watch?v=lu8m3UIlpxk",
+   "source": "Modern-Day Debate",
+   "feedId": "yt-modern-day-debate",
+   "type": "video",
    "tags": [
+    "debates",
     "politics",
-    "british"
+    "listen"
    ],
-   "published": "2026-11-07T10:47:54.000Z",
-   "summary": "submitted by /u/blast-processor [link] [comments]",
-   "id": "816286b8e8f5",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "'My mortgage has gone up already': How rising interest rates are hitting people's pockets",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xq3guw/my_mortgage_has_gone_up_already_how_rising/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-11-07T10:41:12.000Z",
-   "summary": "submitted by /u/Desperate-Drawer-572 [link] [comments]",
-   "id": "0951c5f64227",
+   "published": "2026-11-07T10:50:08.000Z",
+   "summary": "Huge thank you to our DEBATECON 9 sponsors including: Revival of the Anointed's Rule: https://revivingtheroar.org/ Apologetics Ark: https://www.apologeticsark.com/links @UncensoredAmerica Yonaguni International Cuisine (Aguadilla, Puerto Rico):…",
+   "thumb": "https://i1.ytimg.com/vi/lu8m3UIlpxk/hqdefault.jpg",
+   "id": "39ab93e25855",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1098,57 +1266,6 @@
    "summary": "Keir Giles, associate fellow of the Russia and Eurasia Programme at Chatham House, joins Matthew Wright to discuss Donald Trump's proposed deal with Russia over Ukraine and what it could mean for Europe's security. Giles describes the proposals as effectively 'Russia's wish…",
    "thumb": "https://i4.ytimg.com/vi/woeznjRzYgI/hqdefault.jpg",
    "id": "dcb9988052b0",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Exclusive: Sacha Lord’s lobbying group forced to hand back £35,000 grant after making false claims",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xq373a/exclusive_sacha_lords_lobbying_group_forced_to/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-11-07T10:22:59.000Z",
-   "summary": "submitted by /u/Weimar_Historian [link] [comments]",
-   "id": "7ffc5ddafba3",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "How Silicon Valley lobbied to put delivery robots on UK pavements, and won",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xq36bb/how_silicon_valley_lobbied_to_put_delivery_robots/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-11-07T10:21:34.000Z",
-   "summary": "submitted by /u/LogicalDirect [link] [comments]",
-   "id": "f4c690f49eb6",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "The injunction that permanently silenced Russell Brand’s accuser",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xq30gq/the_injunction_that_permanently_silenced_russell/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-11-07T10:10:56.000Z",
-   "summary": "submitted by /u/Jawshey [link] [comments]",
-   "id": "7b2743ce7601",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1413,24 +1530,6 @@
    "summary": "ex-North Korean Tank Commander Jung Min-Woo & His Son Jung Tae-Min Try American Snacks for the First Time ex-North Korean Tank Commander Kwon Hyo-jin and his son, Kwon Jin-woo, share the story of the eight years they spent apart while Hyo-jin was imprisoned in North Korea. 0:00…",
    "thumb": "https://i1.ytimg.com/vi/LJRhmd8_jl0/hqdefault.jpg",
    "id": "3ae346c6926d",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Kari Lake COMES OUT OF HIDING to DO IT Again!",
-   "url": "https://www.youtube.com/watch?v=tdCVlKN2PM4",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-06T14:00:34.000Z",
-   "summary": "Luke discusses Kari Lake, once again, doing Kari Lake things... Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
-   "thumb": "https://i1.ytimg.com/vi/tdCVlKN2PM4/hqdefault.jpg",
-   "id": "03774b32ee85",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1818,25 +1917,6 @@
    "summary": "In The Know's Midterm 2026 Election Panel debates if El-Sayed's string of broken campaign promises over the last half-minute could mean the end of the progressive movement in America. Become an Onion member while it's still optional:…",
    "thumb": "https://i1.ytimg.com/vi/4vkqSigZeDI/hqdefault.jpg",
    "id": "92498650dda1",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Is the Quran Good, Or Evil? | Apostate Prophet Vs Waleed Naeem",
-   "url": "https://www.youtube.com/watch?v=DaLu_VmJj2s",
-   "source": "Modern-Day Debate",
-   "feedId": "yt-modern-day-debate",
-   "type": "video",
-   "tags": [
-    "debates",
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-03T22:33:29.000Z",
-   "summary": "Huge thank you to our DEBATECON 9 sponsors including: Revival of the Anointed's Rule: https://revivingtheroar.org/ Apologetics Ark: https://www.apologeticsark.com/links @UncensoredAmerica Yonaguni International Cuisine (Aguadilla, Puerto Rico):…",
-   "thumb": "https://i1.ytimg.com/vi/DaLu_VmJj2s/hqdefault.jpg",
-   "id": "222c16c10ce2",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2846,5 +2926,5 @@
    "why": "0"
   }
  ],
- "contentHash": "e1cf4b71d5e7"
+ "contentHash": "03f2a2a8a90e"
 }
