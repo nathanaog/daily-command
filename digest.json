@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-07T10:02:12.257Z",
+ "generated": "2026-11-07T13:13:17.477Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
@@ -7,7 +7,7 @@
   "items": 122,
   "duplicatesMerged": 0,
   "lengthsKnown": 2,
-  "lengthLookups": 108,
+  "lengthLookups": 106,
   "lengthFailures": 106,
   "lengthVia": "video pages",
   "lengthFailReasons": {
@@ -630,9 +630,10 @@
    "id": "rd-productmanagement",
    "name": "r/productmanagement",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 3,
-   "url": "https://www.reddit.com/r/productmanagement/top/.rss?t=day"
+   "lastOk": "2026-11-07T10:02:12.257Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-tech",
@@ -641,7 +642,7 @@
    "status": "cached",
    "count": 1,
    "lastOk": "2026-11-07T01:22:55.569Z",
-   "note": "rate-limited (429)"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-gaming",
@@ -650,25 +651,26 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-11-07T04:08:34.096Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
   },
   {
    "id": "rd-xbox",
    "name": "r/xbox",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": "2026-11-02T04:16:50.522Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-slaythespire",
@@ -677,7 +679,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-geopolitics",
@@ -708,6 +710,183 @@
   }
  ],
  "items": [
+  {
+   "title": "'AI will change the world: Accept it' | Piers Linney",
+   "url": "https://www.youtube.com/watch?v=N-lNgyf-8KA",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-07T13:00:24.000Z",
+   "summary": "Dragons' Den star Piers Linney joins Matt Frei with a warning about the 'revolutionary change' AI is about to inflict on humanity. Are we witnessing the equivalent of the internet era but for artificial intelligence? Is this the moment our horses turn into cars? Piers tries to…",
+   "thumb": "https://i3.ytimg.com/vi/N-lNgyf-8KA/hqdefault.jpg",
+   "id": "4c544f82201a",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Neuer Stabschef im Weißen Haus: Darum holt Trump Stephen Miller ins Zentrum der Macht",
+   "url": "https://www.youtube.com/watch?v=KjX1g5xYpxg",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-07T12:50:59.000Z",
+   "summary": "US-Präsident Trump hat erste personelle Konsequenzen aus der Wahlniederlage für die Republikaner:innen bei den Midterms gezogen. Seine bisherige Stabschefin Wiles wird durch ihren Stellvertreter Miller ersetzt. Miller gilt als rechter Hardliner und unter anderem als Vordenker…",
+   "thumb": "https://i4.ytimg.com/vi/KjX1g5xYpxg/hqdefault.jpg",
+   "id": "fe97f8d909ca",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "'Trump lost a battle, but the war's not over' | Simon Marks' American Week",
+   "url": "https://www.youtube.com/watch?v=HgsCJwdqm4Q",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-07T12:00:09.000Z",
+   "summary": "LBC's Simon Marks has had a very busy week... and this jam-packed edition of American Week is not one to miss. 00:17 | Trump’s midterm nightmare 1:46 | The midterms that saw historic firsts 3:18 | Trump accepts midterm results 4:01 | Blame falls to Republican candidates 4:49 |…",
+   "thumb": "https://i1.ytimg.com/vi/HgsCJwdqm4Q/hqdefault.jpg",
+   "id": "43bda1c2a1ce",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Papst Leo XIV. in Uruguay: Warum dieser Besuch besonders ist",
+   "url": "https://www.youtube.com/watch?v=px9hpWs4tb4",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-07T11:56:02.000Z",
+   "summary": "Nach seiner überstandenen Krebs-OP reist Leo XIV. elf Tage durch Südamerika. Den Auftakt macht Uruguay. In dem Land gibt es relativ wenige Katholik:innen – eine Besonderheit in Lateinamerika. In der Hauptstadt Montevideo wurde das Kirchenoberhaupt mit offenen Armen empfangen.…",
+   "thumb": "https://i1.ytimg.com/vi/px9hpWs4tb4/hqdefault.jpg",
+   "id": "ff2a48d7d1f3",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Burnham’s 10-year plan morphs into ‘high-level’ blueprint - Delay deepens doubts within Labour whether PM’s vision for UK will be as transformational as billed",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xq3khb/burnhams_10year_plan_morphs_into_highlevel/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-11-07T10:47:54.000Z",
+   "summary": "submitted by /u/blast-processor [link] [comments]",
+   "id": "816286b8e8f5",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "'My mortgage has gone up already': How rising interest rates are hitting people's pockets",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xq3guw/my_mortgage_has_gone_up_already_how_rising/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-11-07T10:41:12.000Z",
+   "summary": "submitted by /u/Desperate-Drawer-572 [link] [comments]",
+   "id": "0951c5f64227",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Trump's 'big, beautiful deal' with Russia - what does it mean for Ukraine?",
+   "url": "https://www.youtube.com/watch?v=woeznjRzYgI",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-07T10:33:25.000Z",
+   "summary": "Keir Giles, associate fellow of the Russia and Eurasia Programme at Chatham House, joins Matthew Wright to discuss Donald Trump's proposed deal with Russia over Ukraine and what it could mean for Europe's security. Giles describes the proposals as effectively 'Russia's wish…",
+   "thumb": "https://i4.ytimg.com/vi/woeznjRzYgI/hqdefault.jpg",
+   "id": "dcb9988052b0",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Exclusive: Sacha Lord’s lobbying group forced to hand back £35,000 grant after making false claims",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xq373a/exclusive_sacha_lords_lobbying_group_forced_to/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-11-07T10:22:59.000Z",
+   "summary": "submitted by /u/Weimar_Historian [link] [comments]",
+   "id": "7ffc5ddafba3",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "How Silicon Valley lobbied to put delivery robots on UK pavements, and won",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xq36bb/how_silicon_valley_lobbied_to_put_delivery_robots/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-11-07T10:21:34.000Z",
+   "summary": "submitted by /u/LogicalDirect [link] [comments]",
+   "id": "f4c690f49eb6",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "The injunction that permanently silenced Russell Brand’s accuser",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xq30gq/the_injunction_that_permanently_silenced_russell/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-11-07T10:10:56.000Z",
+   "summary": "submitted by /u/Jawshey [link] [comments]",
+   "id": "7b2743ce7601",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
   {
    "title": "Trump is 'doubling down on craziness' by appointing Stephen Miller as Chief of Staff",
    "url": "https://www.youtube.com/watch?v=N2V8Ho5cBPc",
@@ -815,23 +994,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Why dose the goverment act like it is a town council when it can make or un make any law it wants? Why is it so unambitious?",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xps73q/why_dose_the_goverment_act_like_it_is_a_town/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-11-07T00:02:29.000Z",
-   "summary": "In the UK paliment is sovergign. This means it can make or unmake any law it wants. Courts cannot strike down laws passed by parliment and a 51% vote is as valid as an 88% vote there is no such thing as a super majority. Burnam can do what ever he wants yet he acts like he's…",
-   "id": "7b9ea0333f42",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Trump discusses Middle East de-escalation with Qatar’s emir",
    "url": "https://www.reddit.com/r/geopolitics/comments/1xprmq9/trump_discusses_middle_east_deescalation_with/",
    "source": "r/geopolitics",
@@ -849,41 +1011,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "IT HAPPENED.",
-   "url": "https://www.youtube.com/watch?v=4u6HACqr1hc",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-06T23:35:01.000Z",
-   "summary": "Luke discusses Susie Wiles being replaced by Stephen Miller as White House Chief of Staff. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
-   "thumb": "https://i1.ytimg.com/vi/4u6HACqr1hc/hqdefault.jpg",
-   "id": "d7d148ee33b5",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "UK prepares to extend Palantir’s NHS contract as it draws up plans for potential replacement",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xpr08b/uk_prepares_to_extend_palantirs_nhs_contract_as/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-11-06T23:07:19.000Z",
-   "summary": "submitted by /u/SaltyW123 [link] [comments]",
-   "id": "4280d50e3138",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "If everyone can build your sw product?",
    "url": "https://www.reddit.com/r/ProductManagement/comments/1xppy9n/if_everyone_can_build_your_sw_product/",
    "source": "r/productmanagement",
@@ -895,40 +1022,6 @@
    "published": "2026-11-06T22:20:33.000Z",
    "summary": "If most sufficiently complicated digital apps /services can be reverse engineered fast and within a relatively low token budget -say below $100.000 (using frontier LLM based coding assistants/agents + some foundational sw engineering skills). Or say less than $1M for something…",
    "id": "1eee576d3377",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "More than 300,000 homes stand empty across England",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xpp139/more_than_300000_homes_stand_empty_across_england/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-11-06T21:41:43.000Z",
-   "summary": "submitted by /u/DesperateFill4523 [link] [comments]",
-   "id": "f08ecc0aaacc",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "UK government to extend controversial Palantir NHS contract as it draws up plan for British alternative – as it happened",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xpmymr/uk_government_to_extend_controversial_palantir/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-11-06T20:15:43.000Z",
-   "summary": "submitted by /u/Too_much_Colour [link] [comments]",
-   "id": "a6f4709607af",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -951,21 +1044,22 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "UK Sex Workers Wake Up to Sites Purging Their Content Following UK Porn Ban",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xpim96/uk_sex_workers_wake_up_to_sites_purging_their/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
+   "title": "IT HAPPENED.",
+   "url": "https://www.youtube.com/watch?v=4u6HACqr1hc",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
    "tags": [
     "politics",
-    "british"
+    "listen"
    ],
-   "published": "2026-11-06T17:25:19.000Z",
-   "summary": "submitted by /u/RareEarthPetal [link] [comments]",
-   "id": "65d39f290ded",
-   "score": 1,
+   "published": "2026-11-06T23:35:01.000Z",
+   "summary": "Luke discusses Susie Wiles being replaced by Stephen Miller as White House Chief of Staff. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
+   "thumb": "https://i1.ytimg.com/vi/4u6HACqr1hc/hqdefault.jpg",
+   "id": "d7d148ee33b5",
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
+   "why": "0"
   },
   {
    "title": "tagesthemen 21:45 Uhr, 06.11.2026",
@@ -1023,24 +1117,6 @@
    "why": "0"
   },
   {
-   "title": "'Trump lost a battle, but the war's not over' | Simon Marks' American Week",
-   "url": "https://www.youtube.com/watch?v=HgsCJwdqm4Q",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-06T20:46:14.000Z",
-   "summary": "LBC's Simon Marks' has had a very busy week... and this jam-packed edition of American Week is not one to miss. 00:17 | Trump’s midterm nightmare 1:46 | The midterms that saw historic firsts 3:18 | Trump accepts midterm results 4:01 | Blame falls to Republican candidates 4:49 |…",
-   "thumb": "https://i1.ytimg.com/vi/HgsCJwdqm4Q/hqdefault.jpg",
-   "id": "43bda1c2a1ce",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "Art Cologne: Hohe Preise als Problem für junge Kunstinteressierte",
    "url": "https://www.youtube.com/watch?v=3QydwmB9mq0",
    "source": "Tagesschau",
@@ -1055,25 +1131,6 @@
    "summary": "Bei der ältesten Kunstmesse der Welt stellen bis Sonntag mehr als 160 Galerien und Kunsthändler:innen in Köln aus. Die Preisspanne für die angebotenen Werke bei der Art Cologne reicht von einigen Tausend Euro bis hin zu Millionenbeträgen etwa für Werke des Malers Ernst Ludwig…",
    "thumb": "https://i4.ytimg.com/vi/3QydwmB9mq0/hqdefault.jpg",
    "id": "6b3e90a68e37",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "tagesschau 20:00 Uhr, 06.11.2026",
-   "url": "https://www.youtube.com/watch?v=FS0H69X-4k4",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-06T19:40:19.000Z",
-   "summary": "Die 20-Uhr-Ausgabe der tagesschau im Livestream und auf Abruf findet ihr auch hier: https://ardmediathek.de/tagesschau und https://tagesschau.de 0:00 Guten Abend! 0:20 Union will Aigner als Bundespräsidentin 4:09 Weltweiter Ausverkauf bei KI- und Halbleiteraktien 7:41 Erneut…",
-   "thumb": "https://i3.ytimg.com/vi/FS0H69X-4k4/hqdefault.jpg",
-   "id": "8caf2101cfb6",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1202,25 +1259,6 @@
    "why": "0"
   },
   {
-   "title": "tagesschau in Einfacher Sprache 19:00 Uhr, 06.11.2026",
-   "url": "https://www.youtube.com/watch?v=6m5U15aEjXc",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-06T16:44:12.000Z",
-   "summary": "tagesschau in Einfacher Sprache 19:00 Uhr CDU: Aigner soll Bundespräsidentin werden, Bundestag: Gesetz gegen K.o.-Tropfen, Düsseldorf: Prozess gegen \"Reichsbürger\", Paraguay: Krise in der Regierung, Das Wetter Die \"tagesschau in Einfacher Sprache\" – immer Montag bis Freitag um…",
-   "thumb": "https://i3.ytimg.com/vi/6m5U15aEjXc/hqdefault.jpg",
-   "id": "c0c79bdc1671",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "Grimes Interview (Ft. Ivy Wolk)",
    "url": "https://www.youtube.com/watch?v=RzHlHrz58oA",
    "source": "Channel 5 with Andrew Callaghan",
@@ -1234,24 +1272,6 @@
    "summary": "Come home to your house and your peace of mind. 💙 Protect both with my sponsor https://simplisafe.com/channel5 and get 70% off a system with professional monitoring. SimpliSafe. Ahead of crime, in real time.",
    "thumb": "https://i3.ytimg.com/vi/RzHlHrz58oA/hqdefault.jpg",
    "id": "5d138014426a",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "'Why I'll never release my Andrew Tate interview' | Chris Williamson",
-   "url": "https://www.youtube.com/watch?v=6sTMWbY-P1E",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-06T16:00:11.000Z",
-   "summary": "Host of Modern Wisdom, Chris Williamson, joins Tom Swarbrick to discuss why he's not a 'gateway drug' to the manosphere and reveals why he turned down an interview with Donald Trump. Listen to the full show on the all-new LBC App: https://app.af.lbc.co.uk/btnc/thenewlbcapp…",
-   "thumb": "https://i3.ytimg.com/vi/6sTMWbY-P1E/hqdefault.jpg",
-   "id": "61f7b24a2375",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1305,24 +1325,6 @@
    "summary": "Luke discusses Kari Lake, once again, doing Kari Lake things... Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
    "thumb": "https://i1.ytimg.com/vi/tdCVlKN2PM4/hqdefault.jpg",
    "id": "03774b32ee85",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "'Is MAGA a safe space for sex offenders?' | James O'Brien",
-   "url": "https://www.youtube.com/watch?v=A8EnEbOPLBo",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-06T13:30:19.000Z",
-   "summary": "James O'Brien takes a look into the political landscape surrounding the Russell Brand case as the actor and comedian was found guilty of rape and three counts of sexual assault during his showbiz career. 00:00 | James asks the questions: 'How hard is it for victims to come…",
-   "thumb": "https://i2.ytimg.com/vi/A8EnEbOPLBo/hqdefault.jpg",
-   "id": "f9a586bfe918",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2897,5 +2899,5 @@
    "why": "0"
   }
  ],
- "contentHash": "fa84da67e811"
+ "contentHash": "2b59aef7e8cf"
 }
