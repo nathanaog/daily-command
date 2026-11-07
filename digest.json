@@ -1,18 +1,16 @@
 {
- "generated": "2026-11-07T01:22:55.569Z",
+ "generated": "2026-11-07T04:08:34.096Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
-  "ok": 5,
-  "items": 20,
+  "ok": 4,
+  "items": 15,
   "duplicatesMerged": 0,
   "lengthsKnown": 0,
-  "lengthLookups": 5,
-  "lengthFailures": 5,
+  "lengthLookups": 0,
+  "lengthFailures": 0,
   "lengthVia": "video pages",
-  "lengthFailReasons": {
-   "no length on page": 5
-  }
+  "lengthFailReasons": {}
  },
  "feeds": [
   {
@@ -369,14 +367,15 @@
    "id": "yt-gameranx",
    "name": "GameRanx",
    "type": "youtube",
-   "status": "ok",
-   "count": 5,
+   "status": "error",
+   "count": 0,
    "resolved": {
     "channelId": "UCNvzD7Z-g64bPXxGzaQaa4g",
     "title": "gameranx",
     "via": "name search"
    },
-   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCNvzD7Z-g64bPXxGzaQaa4g"
+   "error": "not found (404)",
+   "http": 404
   },
   {
    "id": "yt-modern-day-debate",
@@ -676,46 +675,47 @@
    "id": "rd-productmanagement",
    "name": "r/productmanagement",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 4,
-   "url": "https://www.reddit.com/r/productmanagement/top/.rss?t=day"
+   "lastOk": "2026-11-07T01:22:55.569Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-tech",
    "name": "r/tech",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 1,
-   "url": "https://www.reddit.com/r/tech/top/.rss?t=day"
+   "lastOk": "2026-11-07T01:22:55.569Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-gaming",
    "name": "r/gaming",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-11-06T19:14:36.743Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
   },
   {
    "id": "rd-xbox",
    "name": "r/xbox",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": "2026-11-02T04:16:50.522Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-slaythespire",
@@ -724,7 +724,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-geopolitics",
@@ -756,6 +756,40 @@
  ],
  "items": [
   {
+   "title": "Why dose the goverment act like it is a town council when it can make or un make any law it wants? Why is it so unambitious?",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xps73q/why_dose_the_goverment_act_like_it_is_a_town/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-11-07T00:02:29.000Z",
+   "summary": "In the UK paliment is sovergign. This means it can make or unmake any law it wants. Courts cannot strike down laws passed by parliment and a 51% vote is as valid as an 88% vote there is no such thing as a super majority. Burnam can do what ever he wants yet he acts like he's…",
+   "id": "7b9ea0333f42",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "UK prepares to extend Palantir’s NHS contract as it draws up plans for potential replacement",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xpr08b/uk_prepares_to_extend_palantirs_nhs_contract_as/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-11-06T23:07:19.000Z",
+   "summary": "submitted by /u/SaltyW123 [link] [comments]",
+   "id": "4280d50e3138",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
    "title": "If everyone can build your sw product?",
    "url": "https://www.reddit.com/r/ProductManagement/comments/1xppy9n/if_everyone_can_build_your_sw_product/",
    "source": "r/productmanagement",
@@ -772,18 +806,35 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "GTA6 - NEW THINGS WE FOUND & MORE",
-   "url": "https://www.youtube.com/watch?v=tvPdp-RPAKo",
-   "source": "GameRanx",
-   "feedId": "yt-gameranx",
-   "type": "video",
+   "title": "More than 300,000 homes stand empty across England",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xpp139/more_than_300000_homes_stand_empty_across_england/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
    "tags": [
-    "gaming"
+    "politics",
+    "british"
    ],
-   "published": "2026-11-06T21:39:12.000Z",
-   "summary": "Get the best of Ridge this holiday up to 49% off - use our link https://ridge.com/GAMERANX Sponsored by Ridge. *------subscribe to Jake's YouTube channel https://youtube.com/@jakebaldino?si=TNNySOlzXhyCBEKa?sub_confirmation=1 ~~SOURCES~~ GTA6 new screenshots and preload info…",
-   "thumb": "https://i1.ytimg.com/vi/tvPdp-RPAKo/hqdefault.jpg",
-   "id": "fcc7043d2a08",
+   "published": "2026-11-06T21:41:43.000Z",
+   "summary": "submitted by /u/DesperateFill4523 [link] [comments]",
+   "id": "f08ecc0aaacc",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "UK government to extend controversial Palantir NHS contract as it draws up plan for British alternative – as it happened",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xpmymr/uk_government_to_extend_controversial_palantir/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-11-06T20:15:43.000Z",
+   "summary": "submitted by /u/Too_much_Colour [link] [comments]",
+   "id": "a6f4709607af",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -873,23 +924,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "The UK ranks as the 7th biggest nanny state, according to the Nanny State Index",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xphgng/the_uk_ranks_as_the_7th_biggest_nanny_state/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-11-06T16:41:26.000Z",
-   "summary": "submitted by /u/adnshrnly [link] [comments]",
-   "id": "7af477eb6867",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Israel, Greece, Cyprus slam Turkey-Libya sea deal, agree to deepen defense ties | The Jerusalem Post",
    "url": "https://www.reddit.com/r/geopolitics/comments/1xpgfqf/israel_greece_cyprus_slam_turkeylibya_sea_deal/",
    "source": "r/geopolitics",
@@ -919,57 +953,6 @@
    "published": "2026-11-06T15:49:22.000Z",
    "summary": "submitted by /u/NotSoSaneExile [link] [comments]",
    "id": "bb91c96f8607",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "'Misleading' student loans information left out examples of higher-salary repayments",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xpfptt/misleading_student_loans_information_left_out/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-11-06T15:32:52.000Z",
-   "summary": "submitted by /u/diacewrb [link] [comments]",
-   "id": "917faa67779c",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Democrats plan to force Trump to release full Mandelson files",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xpf50g/democrats_plan_to_force_trump_to_release_full/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-11-06T15:09:30.000Z",
-   "summary": "submitted by /u/Little-Attorney1287 [link] [comments]",
-   "id": "16938ce5b6e5",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "We’ll need to spend on Neets to get benefits down, says Andy Burnham",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xperey/well_need_to_spend_on_neets_to_get_benefits_down/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-11-06T14:54:19.000Z",
-   "summary": "submitted by /u/DangerousAd40867 [link] [comments]",
-   "id": "c37d79dcae2e",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1021,75 +1004,7 @@
    "score": 0,
    "matched": [],
    "why": "0"
-  },
-  {
-   "title": "The Legend of Zelda: Ocarina of Time Remake - Before You Buy",
-   "url": "https://www.youtube.com/watch?v=HuF6-efVdyI",
-   "source": "GameRanx",
-   "feedId": "yt-gameranx",
-   "type": "video",
-   "tags": [
-    "gaming"
-   ],
-   "published": "2026-11-05T23:38:35.000Z",
-   "summary": "The Ocarina of Time remake for Nintendo Switch 2 is here at long last. How is it? Let's talk. Subscribe for more: http://youtube.com/gameranxtv ▼▼ Buy Zelda: https://link.amazon/B0fW70j5E Watch more 'Before You Buy': https://bit.ly/2kfdxI6",
-   "thumb": "https://i1.ytimg.com/vi/HuF6-efVdyI/hqdefault.jpg",
-   "id": "9875b019f78c",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Godzilla: Destroy All Monsters Melee - Before You Buy",
-   "url": "https://www.youtube.com/watch?v=WVyxHb3OfwI",
-   "source": "GameRanx",
-   "feedId": "yt-gameranx",
-   "type": "video",
-   "tags": [
-    "gaming"
-   ],
-   "published": "2026-11-04T19:50:20.000Z",
-   "summary": "Godzilla: Destroy All Monsters Melee (PC, PS5, Xbox Series X/S, Switch 2) is a remake of a classic Gamecube brawler. How is it? Let's talk. Subscribe for more: http://youtube.com/gameranxtv ▼▼ Watch more 'Before You Buy': https://bit.ly/2kfdxI6",
-   "thumb": "https://i4.ytimg.com/vi/WVyxHb3OfwI/hqdefault.jpg",
-   "id": "2bde378c4fc4",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "20 Game of The Year Contenders of 2026",
-   "url": "https://www.youtube.com/watch?v=30B9HuAyfg8",
-   "source": "GameRanx",
-   "feedId": "yt-gameranx",
-   "type": "video",
-   "tags": [
-    "gaming"
-   ],
-   "published": "2026-11-04T17:40:22.000Z",
-   "summary": "2026 gaming awards season is looking stacked. Here are some contenders. Subscribe for more: https://www.youtube.com/gameranxTV?sub_confirmation=1 0:00 Intro 01:05 Phantom Blade Zero 02:01 Resident Evil Requiem 03:12 Forza Horizon 6 04:31 Star Wars: Galactic Racer 05:36 Doom:…",
-   "thumb": "https://i4.ytimg.com/vi/30B9HuAyfg8/hqdefault.jpg",
-   "id": "00fa0b596196",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "20 Flaws GTA 6 Is Trying To Fix",
-   "url": "https://www.youtube.com/watch?v=ZUPsRg7i4Bg",
-   "source": "GameRanx",
-   "feedId": "yt-gameranx",
-   "type": "video",
-   "tags": [
-    "gaming"
-   ],
-   "published": "2026-11-03T16:40:32.000Z",
-   "summary": "According to reports and previews, Rockstar's Grand Theft Auto VI is introducing big changes and improvements. Here's everything we know. ~~SOURCES~~ https://www.ign.com/articles/gta-6-the-big-interview http://www.ign.com/articles/gta-6-car-steal-system-explained…",
-   "thumb": "https://i3.ytimg.com/vi/ZUPsRg7i4Bg/hqdefault.jpg",
-   "id": "5bcc8b83cbdb",
-   "score": 0,
-   "matched": [],
-   "why": "0"
   }
  ],
- "contentHash": "8225e2230f12"
+ "contentHash": "22d9f02418a8"
 }
