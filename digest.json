@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-07T04:08:34.096Z",
+ "generated": "2026-11-07T07:23:36.545Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
@@ -702,20 +702,19 @@
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
+   "lastOk": "2026-11-07T04:08:34.096Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-xbox",
    "name": "r/xbox",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": "2026-11-02T04:16:50.522Z",
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-slaythespire",
@@ -724,25 +723,26 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-11-06T21:56:34.502Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
   },
   {
    "id": "rd-germany",
    "name": "r/germany",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": "2026-10-31T01:21:53.748Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-unitedkingdom",
@@ -751,10 +751,27 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   }
  ],
  "items": [
+  {
+   "title": "US Treasury sanctions Canadian money services firms over Iran-related transactions",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xpxn9z/us_treasury_sanctions_canadian_money_services/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-11-07T04:40:00.000Z",
+   "summary": "Excerpt: WASHINGTON, Nov 6 (Reuters) - The US Treasury said on Friday ​that it had imposed financial sanctions on eight money services firms ‌based in Canada that it alleges have facilitated transactions with sanctioned Iranian entities. The sanctions effectively cut the firms…",
+   "id": "86e8ec80b8f0",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
   {
    "title": "Why dose the goverment act like it is a town council when it can make or un make any law it wants? Why is it so unambitious?",
    "url": "https://www.reddit.com/r/ukpolitics/comments/1xps73q/why_dose_the_goverment_act_like_it_is_a_town/",
@@ -768,6 +785,23 @@
    "published": "2026-11-07T00:02:29.000Z",
    "summary": "In the UK paliment is sovergign. This means it can make or unmake any law it wants. Courts cannot strike down laws passed by parliment and a 51% vote is as valid as an 88% vote there is no such thing as a super majority. Burnam can do what ever he wants yet he acts like he's…",
    "id": "7b9ea0333f42",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Trump discusses Middle East de-escalation with Qatar’s emir",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xprmq9/trump_discusses_middle_east_deescalation_with/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-11-06T23:36:14.000Z",
+   "summary": "submitted by /u/Fair-Bookkeeper-1833 [link] [comments]",
+   "id": "9e6814721be0",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -857,23 +891,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "What the New Democratic Congress Can (and Can’t) Do on Foreign Policy",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xpk9wh/what_the_new_democratic_congress_can_and_cant_do/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-11-06T18:29:06.000Z",
-   "summary": "submitted by /u/carnegieendowment [link] [comments]",
-   "id": "12717ef7be12",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "How does your company decide when to say no to paid development?",
    "url": "https://www.reddit.com/r/ProductManagement/comments/1xpk7gw/how_does_your_company_decide_when_to_say_no_to/",
    "source": "r/productmanagement",
@@ -885,23 +902,6 @@
    "published": "2026-11-06T18:26:29.000Z",
    "summary": "Curious how other product teams approach customer-funded development. One challenge I see is that paid development doesn’t necessarily mean additional engineering capacity. It often competes with existing roadmap priorities, and accepting the work can delay other initiatives.…",
    "id": "efc058db4073",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "After the Midterm Rout, Can Trump Change Course Without Giving Up Tariffs?",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xpk58v/after_the_midterm_rout_can_trump_change_course/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-11-06T18:24:06.000Z",
-   "summary": "submitted by /u/carnegieendowment [link] [comments]",
-   "id": "4f06a577201e",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -924,8 +924,8 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Israel, Greece, Cyprus slam Turkey-Libya sea deal, agree to deepen defense ties | The Jerusalem Post",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xpgfqf/israel_greece_cyprus_slam_turkeylibya_sea_deal/",
+   "title": "What the New Democratic Congress Can (and Can’t) Do on Foreign Policy",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xpk9wh/what_the_new_democratic_congress_can_and_cant_do/",
    "source": "r/geopolitics",
    "feedId": "rd-geopolitics",
    "type": "post",
@@ -933,16 +933,16 @@
     "politics",
     "news"
    ],
-   "published": "2026-11-06T16:01:34.000Z",
-   "summary": "submitted by /u/NotSoSaneExile [link] [comments]",
-   "id": "0baa67edafba",
-   "score": 1,
+   "published": "2026-11-06T18:29:06.000Z",
+   "summary": "submitted by /u/carnegieendowment [link] [comments]",
+   "id": "12717ef7be12",
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
+   "why": "0"
   },
   {
-   "title": "UNIFIL confirms it will start leaving south Lebanon when mandate ends on Dec. 31 | Lebanese officials have warned peacekeepers’ withdrawal could leave security vacuum, while Israel has accused security force of letting Hezbollah infrastructure proliferate",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xpg4n7/unifil_confirms_it_will_start_leaving_south/",
+   "title": "After the Midterm Rout, Can Trump Change Course Without Giving Up Tariffs?",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xpk58v/after_the_midterm_rout_can_trump_change_course/",
    "source": "r/geopolitics",
    "feedId": "rd-geopolitics",
    "type": "post",
@@ -950,12 +950,12 @@
     "politics",
     "news"
    ],
-   "published": "2026-11-06T15:49:22.000Z",
-   "summary": "submitted by /u/NotSoSaneExile [link] [comments]",
-   "id": "bb91c96f8607",
-   "score": 1,
+   "published": "2026-11-06T18:24:06.000Z",
+   "summary": "submitted by /u/carnegieendowment [link] [comments]",
+   "id": "4f06a577201e",
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
+   "why": "0"
   },
   {
    "title": "Scientists create a spray-on powder that seals life-threatening wounds in seconds",
@@ -1006,5 +1006,5 @@
    "why": "0"
   }
  ],
- "contentHash": "22d9f02418a8"
+ "contentHash": "2409ea20918c"
 }
