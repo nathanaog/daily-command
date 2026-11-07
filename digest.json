@@ -1,17 +1,17 @@
 {
- "generated": "2026-11-07T15:54:03.007Z",
+ "generated": "2026-11-07T19:04:52.310Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
-  "ok": 51,
-  "items": 120,
+  "ok": 50,
+  "items": 119,
   "duplicatesMerged": 0,
   "lengthsKnown": 2,
-  "lengthLookups": 104,
-  "lengthFailures": 104,
+  "lengthLookups": 105,
+  "lengthFailures": 105,
   "lengthVia": "video pages",
   "lengthFailReasons": {
-   "no length on page": 104
+   "no length on page": 105
   }
  },
  "feeds": [
@@ -202,7 +202,7 @@
    "name": "Levi Hildebrand",
    "type": "youtube",
    "status": "ok",
-   "count": 2,
+   "count": 3,
    "resolved": {
     "channelId": "UC-OJ-24roEfQ_-PCnLJSckg",
     "title": "Levi Hildebrand",
@@ -630,28 +630,28 @@
    "id": "rd-productmanagement",
    "name": "r/productmanagement",
    "type": "reddit",
-   "status": "cached",
-   "count": 3,
-   "lastOk": "2026-11-07T10:02:12.257Z",
-   "note": "not its turn this run"
+   "status": "ok",
+   "count": 2,
+   "url": "https://www.reddit.com/r/productmanagement/top/.rss?t=day"
   },
   {
    "id": "rd-tech",
    "name": "r/tech",
    "type": "reddit",
-   "status": "cached",
-   "count": 1,
-   "lastOk": "2026-11-07T01:22:55.569Z",
-   "note": "not its turn this run"
+   "status": "empty",
+   "count": 0,
+   "url": "https://www.reddit.com/r/tech/top/.rss?t=day"
   },
   {
    "id": "rd-gaming",
    "name": "r/gaming",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-ukpolitics",
@@ -684,20 +684,19 @@
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
+   "lastOk": "2026-11-07T15:54:03.007Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-germany",
    "name": "r/germany",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": "2026-10-31T01:21:53.748Z",
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-unitedkingdom",
@@ -706,10 +705,83 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   }
  ],
  "items": [
+  {
+   "title": "OH DAMN: They Have NO IDEA How Bad It’s About to Get!",
+   "url": "https://www.youtube.com/watch?v=S2cvN0QHLOU",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-07T18:30:15.000Z",
+   "summary": "Luke is joined by Matthew Cole to discusses his new book, Princes and Thieves. Check out the book below! https://www.amazon.com/Princes-Thieves-Kushner-Mohammed-Zayeds-ebook/dp/B0GPGXL1YK?ref_=ast_author_mpb Want to support the show and gain access to a daily bonus show? Become…",
+   "thumb": "https://i4.ytimg.com/vi/S2cvN0QHLOU/hqdefault.jpg",
+   "id": "b9afdf83720c",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "She Dreamed of This Baby Invention 10 Years Ago | Shark Tank US | Shark Tank Global",
+   "url": "https://www.youtube.com/watch?v=0cTtC5Mb34w",
+   "source": "Shark Tank Global",
+   "feedId": "yt-shark-tank-global",
+   "type": "video",
+   "tags": [
+    "trash",
+    "business"
+   ],
+   "published": "2026-11-07T16:59:58.000Z",
+   "summary": "Gary Harutyunyan and Siran Kirakosyan enter the Tank seeking $70,000 for 25% of Sleepy Baby, a wearable device designed to mimic a parent’s gentle patting and help soothe babies to sleep. From Season 17, Episode 9 Watch Shark Tank US Now:…",
+   "thumb": "https://i1.ytimg.com/vi/0cTtC5Mb34w/hqdefault.jpg",
+   "id": "4ed37f0d21b1",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "15 Jahre LIFE-Studie in Leipzig: Wie der Lebensstil unsere Gesundheit prägt",
+   "url": "https://www.youtube.com/watch?v=relPLn6zRiE",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-07T16:54:52.000Z",
+   "summary": "Es ist eines der größten Gesundheitsforschungsprojekte Deutschlands. In Leipzig werden im Rahmen der sogenannten LIFE-Studie Tausende Bürger:innen über viele Jahre begleitet und regelmäßig medizinisch untersucht. Die gewonnenen Daten sollen helfen, Volkskrankheiten wie…",
+   "thumb": "https://i3.ytimg.com/vi/relPLn6zRiE/hqdefault.jpg",
+   "id": "646e0947a3fa",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Ranking YouTuber Products",
+   "url": "https://www.youtube.com/watch?v=eQanqCGaD74",
+   "source": "Levi Hildebrand",
+   "feedId": "yt-levi-hildebrand",
+   "type": "video",
+   "tags": [
+    "comedy",
+    "business"
+   ],
+   "published": "2026-11-07T16:00:03.000Z",
+   "summary": "Consider supporting our channel and get a little something in the process here: https://www.levihildebrand.com Subscribe! https://www.youtube.com/channel/UC-OJ-24roEfQ_-PCnLJSckg?sub_confirmation=1 Join our Patreon: https://www.patreon.com/c/LeviHildebrand For further reading,…",
+   "thumb": "https://i2.ytimg.com/vi/eQanqCGaD74/hqdefault.jpg",
+   "id": "51ecf5f83580",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
   {
    "title": "E-Auto-Boom oder Verbrenner: Wohin steuert die Klimapolitik?",
    "url": "https://www.youtube.com/watch?v=ZhzXNTrgLqM",
@@ -749,7 +821,7 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "\"Obese\" Is An Outdated Term",
+   "title": "20 Obese Vs 1 Fitness Expert",
    "url": "https://www.youtube.com/watch?v=HPJrTjLscDc",
    "source": "Aberrant preach",
    "feedId": "yt-aberrant-preach",
@@ -979,25 +1051,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Papst Leo XIV. in Uruguay: Warum dieser Besuch besonders ist",
-   "url": "https://www.youtube.com/watch?v=px9hpWs4tb4",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-07T11:56:02.000Z",
-   "summary": "Nach seiner überstandenen Krebs-OP reist Leo XIV. elf Tage durch Südamerika. Den Auftakt macht Uruguay. In dem Land gibt es relativ wenige Katholik:innen – eine Besonderheit in Lateinamerika. In der Hauptstadt Montevideo wurde das Kirchenoberhaupt mit offenen Armen empfangen.…",
-   "thumb": "https://i1.ytimg.com/vi/px9hpWs4tb4/hqdefault.jpg",
-   "id": "ff2a48d7d1f3",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Burnham’s 10-year plan morphs into ‘high-level’ blueprint - Delay deepens doubts within Labour whether PM’s vision for UK will be as transformational as billed",
    "url": "https://www.reddit.com/r/ukpolitics/comments/1xq3khb/burnhams_10year_plan_morphs_into_highlevel/",
    "source": "r/ukpolitics",
@@ -1101,22 +1154,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "How do you get \"loss\" feedback?",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1xpyptg/how_do_you_get_loss_feedback/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-11-07T05:39:40.000Z",
-   "summary": "Hey everyone, not sure if this is directly product management, but at the small company I work for it is something I have to deal with frequently. I am heavily involved with the new customer/prospect process—demos, RFP/RFQs, etc.—and I have been doing my best to track win/loss…",
-   "id": "8a4de1788fe7",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "US Treasury sanctions Canadian money services firms over Iran-related transactions",
    "url": "https://www.reddit.com/r/geopolitics/comments/1xpxn9z/us_treasury_sanctions_canadian_money_services/",
    "source": "r/geopolitics",
@@ -1134,20 +1171,20 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "If everyone can build your sw product?",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1xppy9n/if_everyone_can_build_your_sw_product/",
+   "title": "How do you get \"loss\" feedback?",
+   "url": "https://www.reddit.com/r/ProductManagement/comments/1xpyptg/how_do_you_get_loss_feedback/",
    "source": "r/productmanagement",
    "feedId": "rd-productmanagement",
    "type": "post",
    "tags": [
     "product"
    ],
-   "published": "2026-11-06T22:20:33.000Z",
-   "summary": "If most sufficiently complicated digital apps /services can be reverse engineered fast and within a relatively low token budget -say below $100.000 (using frontier LLM based coding assistants/agents + some foundational sw engineering skills). Or say less than $1M for something…",
-   "id": "1eee576d3377",
-   "score": 1,
+   "published": "2026-11-07T05:39:40.000Z",
+   "summary": "Hey everyone, not sure if this is directly product management, but at the small company I work for it is something I have to deal with frequently. I am heavily involved with the new customer/prospect process—demos, RFP/RFQs, etc.—and I have been doing my best to track win/loss…",
+   "id": "8a4de1788fe7",
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
+   "why": "0"
   },
   {
    "title": "It’s OVER For BOEBERT?!",
@@ -1240,6 +1277,22 @@
    "why": "0"
   },
   {
+   "title": "If everyone can build your sw product?",
+   "url": "https://www.reddit.com/r/ProductManagement/comments/1xppy9n/if_everyone_can_build_your_sw_product/",
+   "source": "r/productmanagement",
+   "feedId": "rd-productmanagement",
+   "type": "post",
+   "tags": [
+    "product"
+   ],
+   "published": "2026-11-06T22:20:33.000Z",
+   "summary": "If most sufficiently complicated digital apps /services can be reverse engineered fast and within a relatively low token budget -say below $100.000 (using frontier LLM based coding assistants/agents + some foundational sw engineering skills). Or say less than $1M for something…",
+   "id": "1eee576d3377",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
    "title": "GTA6 - NEW THINGS WE FOUND & MORE",
    "url": "https://www.youtube.com/watch?v=tvPdp-RPAKo",
    "source": "GameRanx",
@@ -1271,22 +1324,6 @@
    "summary": "Huge thank you to our DEBATECON 9 sponsors including: Revival of the Anointed's Rule: https://revivingtheroar.org/ Apologetics Ark: https://www.apologeticsark.com/links @UncensoredAmerica Yonaguni International Cuisine (Aguadilla, Puerto Rico):…",
    "thumb": "https://i3.ytimg.com/vi/2yIQrA_d8s4/hqdefault.jpg",
    "id": "720bac752952",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "How does your company decide when to say no to paid development?",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1xpk7gw/how_does_your_company_decide_when_to_say_no_to/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-11-06T18:26:29.000Z",
-   "summary": "Curious how other product teams approach customer-funded development. One challenge I see is that paid development doesn’t necessarily mean additional engineering capacity. It often competes with existing roadmap priorities, and accepting the work can delay other initiatives.…",
-   "id": "efc058db4073",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1416,22 +1453,6 @@
    "why": "0"
   },
   {
-   "title": "Scientists create a spray-on powder that seals life-threatening wounds in seconds",
-   "url": "https://www.reddit.com/r/tech/comments/1xpci15/scientists_create_a_sprayon_powder_that_seals/",
-   "source": "r/tech",
-   "feedId": "rd-tech",
-   "type": "post",
-   "tags": [
-    "tech"
-   ],
-   "published": "2026-11-06T13:14:23.000Z",
-   "summary": "submitted by /u/AdSpecialist6598 [link] [comments]",
-   "id": "a99ed22d214f",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "Who REALLY Pays For Reparations? | Marvin Rees interview",
    "url": "https://www.youtube.com/watch?v=sNZYEVUKN1A",
    "source": "PoliticsJOE",
@@ -1482,24 +1503,6 @@
    "summary": "Go to http://ground.news/pb for a better way to stay informed. Subscribe for 40% off unlimited access to worldwide coverage through my link. Last week, hackers drained $6.3 billion from Binance, the world’s largest crypto exchange, in what blockchain analysts call the largest…",
    "thumb": "https://i2.ytimg.com/vi/yU8JpuK5NZs/hqdefault.jpg",
    "id": "3d8797a8d007",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "OMG: MELANIA LEAK EXPOSES TRUMP!",
-   "url": "https://www.youtube.com/watch?v=VM4EvoZChRY",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-06T04:45:34.000Z",
-   "summary": "Luke discusses a new leak that has come out about Trump and Melania. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
-   "thumb": "https://i3.ytimg.com/vi/VM4EvoZChRY/hqdefault.jpg",
-   "id": "33d44e51787d",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2221,24 +2224,6 @@
    "why": "0"
   },
   {
-   "title": "The Sharks Clash Over These Clothing Freshness Swipes | Shark Tank US | Shark Tank Global",
-   "url": "https://www.youtube.com/watch?v=_k8bxQxnfpI",
-   "source": "Shark Tank Global",
-   "feedId": "yt-shark-tank-global",
-   "type": "video",
-   "tags": [
-    "trash",
-    "business"
-   ],
-   "published": "2026-10-31T16:59:55.000Z",
-   "summary": "Ben and Eric Kusin enter the Tank seeking $150,000 for 5% of Reviver, a portable clothing-freshening product designed to tackle unwanted odors on the go. From Season 6 Episode 4 Watch Shark Tank US Now: http://AAN.SonyPictures.com/SharkTankUSHulu Watch Shark Tank Australia Now:…",
-   "thumb": "https://i4.ytimg.com/vi/_k8bxQxnfpI/hqdefault.jpg",
-   "id": "d255d23950e9",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "If You Were TRYING To Destroy The Economy...",
    "url": "https://www.youtube.com/watch?v=OAVin6xxd8E",
    "source": "How Money Works",
@@ -2861,5 +2846,5 @@
    "why": "0"
   }
  ],
- "contentHash": "ba9c5430141b"
+ "contentHash": "e1cf4b71d5e7"
 }
