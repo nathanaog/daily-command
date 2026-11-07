@@ -1,17 +1,17 @@
 {
- "generated": "2026-11-07T13:13:17.477Z",
+ "generated": "2026-11-07T15:54:03.007Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
   "ok": 51,
-  "items": 122,
+  "items": 120,
   "duplicatesMerged": 0,
   "lengthsKnown": 2,
-  "lengthLookups": 106,
-  "lengthFailures": 106,
+  "lengthLookups": 104,
+  "lengthFailures": 104,
   "lengthVia": "video pages",
   "lengthFailReasons": {
-   "no length on page": 106
+   "no length on page": 104
   }
  },
  "feeds": [
@@ -124,7 +124,7 @@
    "name": "Patrick Boyle",
    "type": "youtube",
    "status": "ok",
-   "count": 3,
+   "count": 2,
    "resolved": {
     "channelId": "UCASM0cgfkJxQ1ICmRilfHLw",
     "title": "Patrick Boyle",
@@ -514,7 +514,7 @@
    "name": "How Money Works",
    "type": "youtube",
    "status": "ok",
-   "count": 2,
+   "count": 1,
    "resolved": {
     "channelId": "UCkCGANrihzExmu9QiqZpPlQ",
     "title": "How Money Works",
@@ -657,20 +657,19 @@
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
+   "lastOk": "2026-11-07T13:13:17.477Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-xbox",
    "name": "r/xbox",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": "2026-11-02T04:16:50.522Z",
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-slaythespire",
@@ -679,25 +678,26 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-11-07T07:23:36.545Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
   },
   {
    "id": "rd-germany",
    "name": "r/germany",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": "2026-10-31T01:21:53.748Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-unitedkingdom",
@@ -706,10 +706,223 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   }
  ],
  "items": [
+  {
+   "title": "E-Auto-Boom oder Verbrenner: Wohin steuert die Klimapolitik?",
+   "url": "https://www.youtube.com/watch?v=ZhzXNTrgLqM",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-07T15:39:16.000Z",
+   "summary": "Seit 1990 hat die Bundesrepublik ihre CO₂-Emissionen fast halbiert, das haben wenige andere Länder geschafft. Der Ersatz der alten DDR-Braunkohlekraftwerke hat dazu beigetragen. Und vor allem der Aufbau von Wind- und Solarenergie, die mittlerweile mehr als die Hälfte unseres…",
+   "thumb": "https://i3.ytimg.com/vi/ZhzXNTrgLqM/hqdefault.jpg",
+   "id": "2061dc867b4a",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Trinkwasser per Lkw: Was die Dürre im Allgäu für die Menschen vor Ort bedeutet",
+   "url": "https://www.youtube.com/watch?v=4yG0b8dRYeY",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-07T15:39:02.000Z",
+   "summary": "Kristallklare Seen, wilde Bäche und grüne Wiesen – so haben viele das Allgäu vor Augen. Doch die Realität sieht inzwischen anders aus. Seit Monaten hat es im Oberallgäu kaum geregnet, die Grundwasserpegel sinken. In Wiggensbach hat die anhaltende Dürre jetzt sogar dazu geführt,…",
+   "thumb": "https://i1.ytimg.com/vi/4yG0b8dRYeY/hqdefault.jpg",
+   "id": "cfcde6a2b94e",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "\"Obese\" Is An Outdated Term",
+   "url": "https://www.youtube.com/watch?v=HPJrTjLscDc",
+   "source": "Aberrant preach",
+   "feedId": "yt-aberrant-preach",
+   "type": "video",
+   "tags": [
+    "trash"
+   ],
+   "published": "2026-11-07T15:29:28.000Z",
+   "summary": "Jillian Michaels was surrounded by body positivity supporters but this one specific woman takes the cake for not listening the answer she herself asks for... Jubliee ———————————— Spotify: https://open.spotify.com/artist/6QJIJ6AugqPEFASp1V6zgH Merchandise ---…",
+   "thumb": "https://i1.ytimg.com/vi/HPJrTjLscDc/hqdefault.jpg",
+   "id": "9d4176b0de89",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Is Pete Hegseth about to get fired?",
+   "url": "https://www.youtube.com/watch?v=swGaf-I_dTM",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-07T15:03:40.000Z",
+   "summary": "Donald Trump is reportedly 'considering firing Hegseth' as MAGA loyalists turn on the Presider after the midterms humiliation. 00:00 | Simon Marks tells Matt Frei he thinks Hegseth will go whenever is most politically expedient for President Trump 02:19 | JD Vance has tried to…",
+   "thumb": "https://i4.ytimg.com/vi/swGaf-I_dTM/hqdefault.jpg",
+   "id": "d85c3a1ebcc2",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Trump economist: tariffs are “a success” | The Economist",
+   "url": "https://www.youtube.com/watch?v=RSxXHunYyiw",
+   "source": "The Economist",
+   "feedId": "yt-the-economist",
+   "type": "video",
+   "tags": [
+    "finance",
+    "business"
+   ],
+   "published": "2026-11-07T15:00:39.000Z",
+   "summary": "Donald Trump’s tariffs have severely impacted consumer prices in the United States. However Pierre Yared, the economist President Trump called “a star”, maintains that “Liberation Day” was a success. Subscribe: http://youtube.com/@TheEconomist?sub_confirmation=1 Pierre Yared…",
+   "thumb": "https://i3.ytimg.com/vi/RSxXHunYyiw/hqdefault.jpg",
+   "id": "d6de063c0900",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Black On African Crime?",
+   "url": "https://www.youtube.com/watch?v=q_2-dNK7agM",
+   "source": "Aberrant preach",
+   "feedId": "yt-aberrant-preach",
+   "type": "video",
+   "tags": [
+    "trash"
+   ],
+   "published": "2026-11-07T14:39:29.000Z",
+   "summary": "Javits Frimpong was a ghanaian immigrant in the USA, barely here for a whole year when he was g_nned down in a Bronx street over nothing by other apparent teenage schoolmates. ———————————— Spotify: https://open.spotify.com/artist/6QJIJ6AugqPEFASp1V6zgH Merchandise ---…",
+   "thumb": "https://i2.ytimg.com/vi/q_2-dNK7agM/hqdefault.jpg",
+   "id": "80c371bc17e4",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "25 UPCOMING Games We're MOST EXCITED ABOUT",
+   "url": "https://www.youtube.com/watch?v=rk20dVV-AH0",
+   "source": "GameRanx",
+   "feedId": "yt-gameranx",
+   "type": "video",
+   "tags": [
+    "gaming"
+   ],
+   "published": "2026-11-07T14:35:21.000Z",
+   "summary": "Which game are you looking forward to the most? Subscribe for more: https://www.youtube.com/gameranxTV?sub_confirmation=1 0:00 intro 1:00 Light No Fire 2:05 Total War: WARHAMMER 40,000 3:34 The Expanse: Osiris Reborn 5:11 Metro 2039 6:00 Fable 7:26 Resident Evil Veronica 8:50…",
+   "thumb": "https://i3.ytimg.com/vi/rk20dVV-AH0/hqdefault.jpg",
+   "id": "e7c07d3ff411",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "The 2027 Encyclopedia Geopolitica Geopolitical Reading List",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xq7g9k/the_2027_encyclopedia_geopolitica_geopolitical/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-11-07T14:19:07.000Z",
+   "summary": "submitted by /u/sageandonion [link] [comments]",
+   "id": "b0f8f9a5b5c1",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "British troops will be allowed to fire back at Russian forces if attacked in mission — London and Paris pressing ahead with preparations for the \"Multinational Force-Ukraine\" (MNF-U)",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xq7b3d/british_troops_will_be_allowed_to_fire_back_at/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-11-07T14:12:39.000Z",
+   "summary": "submitted by /u/paneuropeanism_ [link] [comments]",
+   "id": "6b1b00d60095",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Haiti PM says gang leader Mathias Saintil is dead",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xq74vc/haiti_pm_says_gang_leader_mathias_saintil_is_dead/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-11-07T14:04:40.000Z",
+   "summary": "Excerpt: PORT-AU-PRINCE, Nov 6 (Reuters) - Haiti authorities on Friday confirmed gang leader Mathias Saintil was ​dead, after Prime Minister Alix Didier Fils-Aime ‌said on X there was \"one less gang leader.\" \"The fight to free the country from the grip of ​bandits continues…",
+   "id": "c0e2e679633f",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Why Trump’s allies are losing faith in America",
+   "url": "https://www.youtube.com/watch?v=B556WajawDs",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-07T14:00:00.000Z",
+   "summary": "Hadley Gamble, chief international anchor at IMI, joins Matt Frei to discuss the fallout from Donald Trump's war with Iran and the impact on America's Gulf allies. Gamble examines how the disruption to global oil supplies could benefit Vladimir Putin, strengthen Russia's…",
+   "thumb": "https://i3.ytimg.com/vi/B556WajawDs/hqdefault.jpg",
+   "id": "1b643731f849",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Staatskrise in Polen: Streit um Reform der Justiz eskaliert",
+   "url": "https://www.youtube.com/watch?v=8ZlfgQsHalc",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-07T13:39:33.000Z",
+   "summary": "Polen steckt in einer Staatskrise. Seit Tagen demonstrieren beide politischen Lager. Die längst abgewählte rechtskonservative PiS-Regierung hatte die obersten Gerichte gefügig gemacht und mit Parteigängern besetzt. Seit drei Jahren versucht Ministerpräsident Tusk die…",
+   "thumb": "https://i1.ytimg.com/vi/8ZlfgQsHalc/hqdefault.jpg",
+   "id": "05c7b70a25e3",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
   {
    "title": "'AI will change the world: Accept it' | Piers Linney",
    "url": "https://www.youtube.com/watch?v=N-lNgyf-8KA",
@@ -888,24 +1101,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Trump is 'doubling down on craziness' by appointing Stephen Miller as Chief of Staff",
-   "url": "https://www.youtube.com/watch?v=N2V8Ho5cBPc",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-07T08:35:21.000Z",
-   "summary": "Donald Trump is replacing his top White House aide Susie Wiles after the Republicans took a hammering in the US midterms. Trump biographer Michael Wolff joins Rachel Johnson to give his immediate reaction - and to explain why he's trying to raise so much money despite leaving…",
-   "thumb": "https://i3.ytimg.com/vi/N2V8Ho5cBPc/hqdefault.jpg",
-   "id": "01e9f0b8cd1c",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "How do you get \"loss\" feedback?",
    "url": "https://www.reddit.com/r/ProductManagement/comments/1xpyptg/how_do_you_get_loss_feedback/",
    "source": "r/productmanagement",
@@ -939,78 +1134,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "It’s OVER For BOEBERT?!",
-   "url": "https://www.youtube.com/watch?v=Fq4a-LSAUho",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-07T03:35:16.000Z",
-   "summary": "Luke discusses the latest update on Lauren Boebert's congressional race. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
-   "thumb": "https://i3.ytimg.com/vi/Fq4a-LSAUho/hqdefault.jpg",
-   "id": "401f4992fedf",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "KT: Behind the Tape (Ep: 792 Jimmy Carr + Luis J. Gomez + Steve Rannazzisi)",
-   "url": "https://www.youtube.com/watch?v=g_sevSzQBlM",
-   "source": "Kill Tony",
-   "feedId": "yt-kill-tony",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "standup",
-    "listen"
-   ],
-   "published": "2026-11-07T02:00:07.000Z",
-   "summary": "An exclusive, behind-the-scenes look from KT Episode 792 KT guest Jimmy Carr + Luis J. Gomez Jimmy Carr, Luis J. Gomez, Steve Rannazzisi, Pat O'Neill, Dedrick Flynn, Martin Phillips, D Madness, Michael A. Gonzales, Jon Deas, Matthew Muehling, Grooveline Horns, Joe White, Troy…",
-   "thumb": "https://i4.ytimg.com/vi/g_sevSzQBlM/hqdefault.jpg",
-   "id": "ccb0d857f99c",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "OMG: Marjorie Greene Drops THIS VIDEO Exposes Trump after FIRING!",
-   "url": "https://www.youtube.com/watch?v=X2Moqr7X9Js",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-07T01:35:36.000Z",
-   "summary": "Luke discusses Marjorie Greene's response to the midterm blowout. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
-   "thumb": "https://i1.ytimg.com/vi/X2Moqr7X9Js/hqdefault.jpg",
-   "id": "547ed4d3f4d9",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Trump discusses Middle East de-escalation with Qatar’s emir",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xprmq9/trump_discusses_middle_east_deescalation_with/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-11-06T23:36:14.000Z",
-   "summary": "submitted by /u/Fair-Bookkeeper-1833 [link] [comments]",
-   "id": "9e6814721be0",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "If everyone can build your sw product?",
    "url": "https://www.reddit.com/r/ProductManagement/comments/1xppy9n/if_everyone_can_build_your_sw_product/",
    "source": "r/productmanagement",
@@ -1027,8 +1150,63 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Aukus is ‘worst, riskiest and most costly’ Australian defence decision ever, public inquiry into submarine deal says | Australian politics",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xpmeei/aukus_is_worst_riskiest_and_most_costly/",
+   "title": "It’s OVER For BOEBERT?!",
+   "url": "https://www.youtube.com/watch?v=Fq4a-LSAUho",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-07T03:35:16.000Z",
+   "summary": "Luke discusses the latest update on Lauren Boebert's congressional race. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
+   "thumb": "https://i3.ytimg.com/vi/Fq4a-LSAUho/hqdefault.jpg",
+   "id": "401f4992fedf",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "KT: Behind the Tape (Ep: 792 Jimmy Carr + Luis J. Gomez + Steve Rannazzisi)",
+   "url": "https://www.youtube.com/watch?v=g_sevSzQBlM",
+   "source": "Kill Tony",
+   "feedId": "yt-kill-tony",
+   "type": "video",
+   "tags": [
+    "comedy",
+    "standup",
+    "listen"
+   ],
+   "published": "2026-11-07T02:00:07.000Z",
+   "summary": "An exclusive, behind-the-scenes look from KT Episode 792 KT guest Jimmy Carr + Luis J. Gomez Jimmy Carr, Luis J. Gomez, Steve Rannazzisi, Pat O'Neill, Dedrick Flynn, Martin Phillips, D Madness, Michael A. Gonzales, Jon Deas, Matthew Muehling, Grooveline Horns, Joe White, Troy…",
+   "thumb": "https://i4.ytimg.com/vi/g_sevSzQBlM/hqdefault.jpg",
+   "id": "ccb0d857f99c",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "OMG: Marjorie Greene Drops THIS VIDEO Exposes Trump after FIRING!",
+   "url": "https://www.youtube.com/watch?v=X2Moqr7X9Js",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-07T01:35:36.000Z",
+   "summary": "Luke discusses Marjorie Greene's response to the midterm blowout. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
+   "thumb": "https://i1.ytimg.com/vi/X2Moqr7X9Js/hqdefault.jpg",
+   "id": "547ed4d3f4d9",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Trump discusses Middle East de-escalation with Qatar’s emir",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xprmq9/trump_discusses_middle_east_deescalation_with/",
    "source": "r/geopolitics",
    "feedId": "rd-geopolitics",
    "type": "post",
@@ -1036,12 +1214,12 @@
     "politics",
     "news"
    ],
-   "published": "2026-11-06T19:53:17.000Z",
-   "summary": "SS: A senior Australian defence figure and a Labour senator led a public inquiry into the Aukus Submarine deal that emerged after the controversial cancellation of the Franco-Australian submarine purchase. The two figures have argued that the agreement should be suspended and…",
-   "id": "5669cb9a0be5",
-   "score": 1,
+   "published": "2026-11-06T23:36:14.000Z",
+   "summary": "submitted by /u/Fair-Bookkeeper-1833 [link] [comments]",
+   "id": "9e6814721be0",
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
+   "why": "0"
   },
   {
    "title": "IT HAPPENED.",
@@ -1062,25 +1240,6 @@
    "why": "0"
   },
   {
-   "title": "tagesthemen 21:45 Uhr, 06.11.2026",
-   "url": "https://www.youtube.com/watch?v=e3rynj8H9kY",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-06T21:57:56.000Z",
-   "summary": "tagesthemen 21:45 Uhr Union legt sich bei Bundespräsidenten-Kandidatur auf Aigner fest, Porträt der möglichen neuen Bundespräsidentin Ilse Aigner, UN-Klimakonferenz: Ist Elektrifizierung der Heilsbringer für ein besseres Klima?, Einsatz von K.o.-Tropfen soll härter bestraft…",
-   "thumb": "https://i2.ytimg.com/vi/e3rynj8H9kY/hqdefault.jpg",
-   "id": "212f038ccd78",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "GTA6 - NEW THINGS WE FOUND & MORE",
    "url": "https://www.youtube.com/watch?v=tvPdp-RPAKo",
    "source": "GameRanx",
@@ -1093,62 +1252,6 @@
    "summary": "Get the best of Ridge this holiday up to 49% off - use our link https://ridge.com/GAMERANX Sponsored by Ridge. *------subscribe to Jake's YouTube channel https://youtube.com/@jakebaldino?si=TNNySOlzXhyCBEKa?sub_confirmation=1 ~~SOURCES~~ GTA6 new screenshots and preload info…",
    "thumb": "https://i1.ytimg.com/vi/tvPdp-RPAKo/hqdefault.jpg",
    "id": "fcc7043d2a08",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Kandidatin für das Bundespräsidialamt: Fliegen Ilse Aigner die Herzen zu?",
-   "url": "https://www.youtube.com/watch?v=sdO9Tm9hzAg",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-06T21:25:37.000Z",
-   "summary": "Die CSU hatte sie schon vor Monaten als Nachfolgerin für Bundespräsident Steinmeier ins Gespräch gebracht. Zuletzt hatten auch immer mehr CDU-Politiker Ilse Aigner unterstützt. Jetzt ist die Entscheidung offenbar gefallen: Die CSU-Politikerin soll für das Bundespräsidenten-Amt…",
-   "thumb": "https://i4.ytimg.com/vi/sdO9Tm9hzAg/hqdefault.jpg",
-   "id": "d56cda59bac2",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Art Cologne: Hohe Preise als Problem für junge Kunstinteressierte",
-   "url": "https://www.youtube.com/watch?v=3QydwmB9mq0",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-06T19:51:35.000Z",
-   "summary": "Bei der ältesten Kunstmesse der Welt stellen bis Sonntag mehr als 160 Galerien und Kunsthändler:innen in Köln aus. Die Preisspanne für die angebotenen Werke bei der Art Cologne reicht von einigen Tausend Euro bis hin zu Millionenbeträgen etwa für Werke des Malers Ernst Ludwig…",
-   "thumb": "https://i4.ytimg.com/vi/3QydwmB9mq0/hqdefault.jpg",
-   "id": "6b3e90a68e37",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Russell Brand's rape case: the cost of speaking out | James O’Brien - The Whole Show",
-   "url": "https://www.youtube.com/watch?v=KmTGNdm2-z8",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-06T19:00:26.000Z",
-   "summary": "The Russell Brand sexual assault case has reignited debate about sexual violence and the challenges women face when reporting rape. But what does it really take to come forward with allegations against a famous or powerful man? James explores why women can find it so difficult…",
-   "thumb": "https://i4.ytimg.com/vi/KmTGNdm2-z8/hqdefault.jpg",
-   "id": "5b9f7511b827",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1173,23 +1276,6 @@
    "why": "0"
   },
   {
-   "title": "What the New Democratic Congress Can (and Can’t) Do on Foreign Policy",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xpk9wh/what_the_new_democratic_congress_can_and_cant_do/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-11-06T18:29:06.000Z",
-   "summary": "submitted by /u/carnegieendowment [link] [comments]",
-   "id": "12717ef7be12",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "How does your company decide when to say no to paid development?",
    "url": "https://www.reddit.com/r/ProductManagement/comments/1xpk7gw/how_does_your_company_decide_when_to_say_no_to/",
    "source": "r/productmanagement",
@@ -1201,23 +1287,6 @@
    "published": "2026-11-06T18:26:29.000Z",
    "summary": "Curious how other product teams approach customer-funded development. One challenge I see is that paid development doesn’t necessarily mean additional engineering capacity. It often competes with existing roadmap priorities, and accepting the work can delay other initiatives.…",
    "id": "efc058db4073",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "After the Midterm Rout, Can Trump Change Course Without Giving Up Tariffs?",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xpk58v/after_the_midterm_rout_can_trump_change_course/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-11-06T18:24:06.000Z",
-   "summary": "submitted by /u/carnegieendowment [link] [comments]",
-   "id": "4f06a577201e",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1399,7 +1468,7 @@
    "why": "0"
   },
   {
-   "title": "How North Korea Pulled Off the Biggest Heist in History",
+   "title": "North Korea Robbed Binance. Can Anyone Get the Money Back?",
    "url": "https://www.youtube.com/watch?v=yU8JpuK5NZs",
    "source": "Patrick Boyle",
    "feedId": "yt-patrick-boyle",
@@ -1800,23 +1869,6 @@
    "summary": "Take back your privacy and get your free Proton Mail account using my link: https://proton.me/levi Subscribe! https://www.youtube.com/channel/UC-OJ-24roEfQ_-PCnLJSckg?sub_confirmation=1 Join our Patreon: https://www.patreon.com/c/LeviHildebrand For further reading, check out…",
    "thumb": "https://i3.ytimg.com/vi/2mVMbe60eoU/hqdefault.jpg",
    "id": "a61e0814db9a",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "20 Flaws GTA 6 Is Trying To Fix",
-   "url": "https://www.youtube.com/watch?v=ZUPsRg7i4Bg",
-   "source": "GameRanx",
-   "feedId": "yt-gameranx",
-   "type": "video",
-   "tags": [
-    "gaming"
-   ],
-   "published": "2026-11-03T16:40:32.000Z",
-   "summary": "According to reports and previews, Rockstar's Grand Theft Auto VI is introducing big changes and improvements. Here's everything we know. ~~SOURCES~~ https://www.ign.com/articles/gta-6-the-big-interview http://www.ign.com/articles/gta-6-car-steal-system-explained…",
-   "thumb": "https://i3.ytimg.com/vi/ZUPsRg7i4Bg/hqdefault.jpg",
-   "id": "5bcc8b83cbdb",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2298,23 +2350,6 @@
    "why": "0"
   },
   {
-   "title": "Approaching Women When You're \"Ugly\" Is A Crime",
-   "url": "https://www.youtube.com/watch?v=te3SMMZxhDs",
-   "source": "Aberrant preach",
-   "feedId": "yt-aberrant-preach",
-   "type": "video",
-   "tags": [
-    "trash"
-   ],
-   "published": "2026-10-30T17:44:49.000Z",
-   "summary": "Guy thought he was vibing with a girl at the Bruno Mars concert and thought he might've had a shot. And internet proceeded to do what it does best and shame him for it. ———————————— Spotify: https://open.spotify.com/artist/6QJIJ6AugqPEFASp1V6zgH Merchandise ---…",
-   "thumb": "https://i1.ytimg.com/vi/te3SMMZxhDs/hqdefault.jpg",
-   "id": "055ce93d17fa",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "Berlin Club Scene",
    "url": "https://www.youtube.com/watch?v=YFe8LFCgT68",
    "source": "Channel 5 with Andrew Callaghan",
@@ -2455,23 +2490,6 @@
    "summary": "Spread the word about how we can meaningfully impact climate change and use our link https://clmtpwr.us/Levi to check your voter registration and make a voting plan. Get out to vote before or on Election Day, November 3rd! Subscribe!…",
    "thumb": "https://i2.ytimg.com/vi/5KP8gugE2Xw/hqdefault.jpg",
    "id": "7d3461c099d7",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Police Called To 3-year-old's Soccer Game Because He Was TOO GOOD???",
-   "url": "https://www.youtube.com/watch?v=05Ro9inVa68",
-   "source": "Aberrant preach",
-   "feedId": "yt-aberrant-preach",
-   "type": "video",
-   "tags": [
-    "trash"
-   ],
-   "published": "2026-10-29T10:10:42.000Z",
-   "summary": "Police was called for a 3 year old kid being too good at football. If that wasn't ridiculous enough, we got access to the bodycam. The reasoning is wilder. ———————————— Spotify: https://open.spotify.com/artist/6QJIJ6AugqPEFASp1V6zgH Merchandise ---…",
-   "thumb": "https://i1.ytimg.com/vi/05Ro9inVa68/hqdefault.jpg",
-   "id": "2099d4ffaf24",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2841,63 +2859,7 @@
    "score": 0,
    "matched": [],
    "why": "0"
-  },
-  {
-   "title": "Elon Musk’s Power Plant on Wheels",
-   "url": "https://www.youtube.com/watch?v=NyOeLB0WVNE",
-   "source": "Patrick Boyle",
-   "feedId": "yt-patrick-boyle",
-   "type": "video",
-   "tags": [
-    "finance",
-    "education",
-    "listen"
-   ],
-   "published": "2026-10-24T15:06:23.000Z",
-   "summary": "Go to https://surfshark.com/boyle or use code BOYLE at checkout to get 4 extra months of Surfshark! Americans now oppose new AI data centers by roughly three to one, ranking them below coal plants and nuclear power stations, and towns across the country are passing moratoriums…",
-   "thumb": "https://i3.ytimg.com/vi/NyOeLB0WVNE/hqdefault.jpg",
-   "id": "d4b4cee80321",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Why Saudi Arabia and the UAE can't stop the Yemen war | The Economist",
-   "url": "https://www.youtube.com/watch?v=QPpWpZEmgPA",
-   "source": "The Economist",
-   "feedId": "yt-the-economist",
-   "type": "video",
-   "tags": [
-    "finance",
-    "business"
-   ],
-   "published": "2026-10-24T14:00:21.000Z",
-   "summary": "The rivalry between Saudi Arabia and the United Arab Emirates is fuelling conflict in the Middle East. Mohammed bin Salman, Crown Prince of Saudi Arabia, and Mohamed bin Zayed, president of the UAE, were once allies. But personal animosity and differing foreign policy has…",
-   "thumb": "https://i2.ytimg.com/vi/QPpWpZEmgPA/hqdefault.jpg",
-   "id": "c926e8c3d071",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "How American Real Estate Is Delaying The Inevitable... For Now",
-   "url": "https://www.youtube.com/watch?v=EhbkCW3iTvA",
-   "source": "How Money Works",
-   "feedId": "yt-how-money-works",
-   "type": "video",
-   "tags": [
-    "finance",
-    "business",
-    "listen"
-   ],
-   "published": "2026-10-24T13:19:41.000Z",
-   "summary": "Thanks to Monarch for partnering with me! Start your free trial and get 50% off your first year of total money clarity using my link https://monarchmoney.yt.link/VomI7sD or code hmw50 for 50% Off Monarch Core tier. ----- MHFIN Video -…",
-   "thumb": "https://i2.ytimg.com/vi/EhbkCW3iTvA/hqdefault.jpg",
-   "id": "f90173ea4c25",
-   "score": 0,
-   "matched": [],
-   "why": "0"
   }
  ],
- "contentHash": "2b59aef7e8cf"
+ "contentHash": "ba9c5430141b"
 }
