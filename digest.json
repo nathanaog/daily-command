@@ -1,17 +1,17 @@
 {
- "generated": "2026-11-08T15:53:58.479Z",
+ "generated": "2026-11-08T19:03:42.200Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
   "ok": 51,
   "items": 123,
   "duplicatesMerged": 0,
-  "lengthsKnown": 2,
+  "lengthsKnown": 3,
   "lengthLookups": 104,
-  "lengthFailures": 104,
+  "lengthFailures": 103,
   "lengthVia": "video pages",
   "lengthFailReasons": {
-   "no length on page": 104
+   "no length on page": 103
   }
  },
  "feeds": [
@@ -657,9 +657,10 @@
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
+   "lastOk": "2026-11-08T15:53:58.479Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-xbox",
@@ -668,7 +669,7 @@
    "status": "cached",
    "count": 5,
    "lastOk": "2026-11-07T21:52:57.028Z",
-   "note": "rate-limited (429)"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-slaythespire",
@@ -677,25 +678,26 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-11-08T10:02:07.777Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
   },
   {
    "id": "rd-germany",
    "name": "r/germany",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": "2026-10-31T01:21:53.748Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-unitedkingdom",
@@ -704,10 +706,135 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   }
  ],
  "items": [
+  {
+   "title": "WATCH HIM REALIZE Just How Bad it is!",
+   "url": "https://www.youtube.com/watch?v=RGNCIvCl40Y",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-08T18:30:08.000Z",
+   "summary": "Luke discusses Jesse Watters' monologue reflecting on the midterms. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
+   "thumb": "https://i3.ytimg.com/vi/RGNCIvCl40Y/hqdefault.jpg",
+   "id": "643690a8ee0e",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Learn Everyday German in Chemnitz",
+   "url": "https://www.youtube.com/watch?v=l15FIo3a1jk",
+   "source": "Easy German",
+   "feedId": "yt-easy-german",
+   "type": "video",
+   "tags": [
+    "german",
+    "listen"
+   ],
+   "published": "2026-11-08T18:00:36.000Z",
+   "summary": "Become a member now and take part in our Beginner Challenge: https://easygerman.link/membership_eg686 --- LEARN MORE GERMAN WITH US: 🎧 LISTEN TO OUR PODCAST: http://www.easygerman.fm 📬 SUBSCRIBE TO OUR NEWSLETTER: https://www.easygerman.org/newsletter WATCH MORE: ➕ INSTAGRAM:…",
+   "thumb": "https://i1.ytimg.com/vi/l15FIo3a1jk/hqdefault.jpg",
+   "id": "64ed6644e191",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "tagesthemen 21:45 Uhr, 06.11.2026",
+   "url": "https://www.youtube.com/watch?v=ArC74Xc2GdE",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-08T17:43:47.000Z",
+   "summary": "tagesthemen 21:45 Uhr Union legt sich bei Bundespräsidenten-Kandidatur auf Aigner fest, Porträt der möglichen neuen Bundespräsidentin Ilse Aigner, UN-Klimakonferenz: Ist Elektrifizierung der Heilsbringer für ein besseres Klima?, Einsatz von K.o.-Tropfen soll härter bestraft…",
+   "thumb": "https://i2.ytimg.com/vi/ArC74Xc2GdE/hqdefault.jpg",
+   "id": "4bd80a54ef6d",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "10 Developers That Warned Us, But Nobody Listened",
+   "url": "https://www.youtube.com/watch?v=UjB432B1Pg4",
+   "source": "GameRanx",
+   "feedId": "yt-gameranx",
+   "type": "video",
+   "tags": [
+    "gaming"
+   ],
+   "published": "2026-11-08T17:39:07.000Z",
+   "summary": "Game creators and developers can predict the future sometimes. Subscribe for more: https://www.youtube.com/gameranxTV?sub_confirmation=1 0:00 Intro 0:26 Number 10 3:16 Number 9 5:35 Number 8 7:06 Number 7 8:52 Number 6 10:34 Number 5 13:17 Number 4 15:19 Number 3 17:25 Number 2…",
+   "thumb": "https://i2.ytimg.com/vi/UjB432B1Pg4/hqdefault.jpg",
+   "id": "79e0f139eb2a",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Liberal Feminist vs Traditional Activist (Kyla Turner vs. Lila Rose) | Face Off",
+   "url": "https://www.youtube.com/watch?v=bMCBuZxc4vE",
+   "source": "Jubilee",
+   "feedId": "yt-jubilee",
+   "type": "video",
+   "tags": [
+    "politics",
+    "debates"
+   ],
+   "published": "2026-11-08T17:00:40.000Z",
+   "summary": "Hey you 👈 Wanna be in a Jubilee video? https://bit.ly/be-in-a-video LET’S BE FRIENDS Instagram: https://www.instagram.com/jubileemedia/ TikTok: https://www.tiktok.com/@jubilee?lang=en Website: https://www.jubileemedia.com OUR LOVE + DATING CHANNEL 🍑 YouTube:…",
+   "thumb": "https://i3.ytimg.com/vi/bMCBuZxc4vE/hqdefault.jpg",
+   "id": "fad9460ea4e8",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Can This Sports Bra Stop Breast Pain During Exercise? | Shark Tank US | Shark Tank Global",
+   "url": "https://www.youtube.com/watch?v=euo2W0lEw7s",
+   "source": "Shark Tank Global",
+   "feedId": "yt-shark-tank-global",
+   "type": "video",
+   "tags": [
+    "trash",
+    "business"
+   ],
+   "published": "2026-11-08T16:59:49.000Z",
+   "summary": "Kimberly Cayce enters the Tank seeking $125,000 for 20% of Kalyx Technologies, a premium sports bra brand designed to reduce breast movement and exercise-related pain without sacrificing style. From Season 1 Episode 6 Watch Shark Tank US Now:…",
+   "thumb": "https://i2.ytimg.com/vi/euo2W0lEw7s/hqdefault.jpg",
+   "id": "76057fab3c31",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "An ‘America First’ Approach to Famine",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xr19j8/an_america_first_approach_to_famine/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-11-08T15:40:13.000Z",
+   "summary": "submitted by /u/theatlantic [link] [comments]",
+   "id": "333cf9ea6dee",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
   {
    "title": "„Gefährlichste Migrationsroute der Welt“: Kanaren melden immer mehr Flüchtlingsankünfte",
    "url": "https://www.youtube.com/watch?v=kHS0_IbmLOg",
@@ -780,6 +907,23 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
+   "title": "Situation Report: The US Midterms As Seen from Beijing, Moscow, and Tehran",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xqz6lp/situation_report_the_us_midterms_as_seen_from/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-11-08T14:05:14.000Z",
+   "summary": "submitted by /u/Adept_Grand_6523 [link] [comments]",
+   "id": "cb7a4727fcb6",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
    "title": "General Election Nowcast - 08/11/26: LAB: 333 (-78) | 28.5% (Maj. of 16) CON: 126 (+5) | 21.5% LDM: 64 (-8) | 9.1% RFM: 45 (+40) | 21.4% SNP: 41 (+32) | 2.6% PLC: 8 (+4) | 1.0% GRN: 7 (+3) | 9.0% RES: 1 (+1) | 4.0% Oth: 6 (+1) | 2.6% electionmaps.uk/nowcast",
    "url": "https://www.reddit.com/r/ukpolitics/comments/1xqz6jq/general_election_nowcast_081126_lab_333_78_285/",
    "source": "r/ukpolitics",
@@ -797,7 +941,7 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Why Google wants to win the frontier conversation | Tulsee Doshi (Head of Product for Gemini)",
+   "title": "Why PMs are suddenly valuable again | Tulsee Doshi (Head of Product, Gemini)",
    "url": "https://www.youtube.com/watch?v=qGf2Yvan4Wg",
    "source": "Lenny's Podcast",
    "feedId": "yt-lenny-s-podcast",
@@ -816,25 +960,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "tagesthemen 21:45 Uhr, 06.11.2026",
-   "url": "https://www.youtube.com/watch?v=pOZCQlYhHXg",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-08T13:13:44.000Z",
-   "summary": "tagesthemen 21:45 Uhr Union legt sich bei Bundespräsidenten-Kandidatur auf Aigner fest, Porträt der möglichen neuen Bundespräsidentin Ilse Aigner, UN-Klimakonferenz: Ist Elektrifizierung der Heilsbringer für ein besseres Klima?, Einsatz von K.o.-Tropfen soll härter bestraft…",
-   "thumb": "https://i1.ytimg.com/vi/pOZCQlYhHXg/hqdefault.jpg",
-   "id": "4cd6ae3dc109",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Republican tells Trump to 'go further' after midterms defeat",
    "url": "https://www.youtube.com/watch?v=hsAQReQpCog",
    "source": "LBC",
@@ -848,6 +973,23 @@
    "summary": "As the Republican Party does some soul-searching, Lewis Goodall spoke to Erol Morkoç of Republicans Overseas. Ultimate Fighting Championship (UFC) boss Dana White says he has a meeting with Donald Trump in Washington after being offered the job of White House press secretary.…",
    "thumb": "https://i1.ytimg.com/vi/hsAQReQpCog/hqdefault.jpg",
    "id": "ab9e06ad5aa2",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Europe must stockpile critical raw materials, Germany's Merz says",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xqxtee/europe_must_stockpile_critical_raw_materials/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-11-08T12:56:45.000Z",
+   "summary": "submitted by /u/paneuropeanism_ [link] [comments]",
+   "id": "de8e9b4d9971",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -969,57 +1111,6 @@
    "published": "2026-11-08T08:09:46.000Z",
    "summary": "Mykola Zientsev, a Kyiv-based security expert, said there were some signs that Rassvet was already having an impact on precision strikes by Russian jet-powered drones. “In practical terms, Russia already possesses at least two high-quality satellite communications windows every…",
    "id": "5d52dddf803f",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "I’m a nuclear expert: A desperate Trump striking Iran now could be apocalyptic",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xqriaz/im_a_nuclear_expert_a_desperate_trump_striking/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-11-08T06:11:38.000Z",
-   "summary": "submitted by /u/apokrif1 [link] [comments]",
-   "id": "f43e14235fde",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Ending The Era of the Myopic Pursuit of GDP Growth",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xqnr6z/ending_the_era_of_the_myopic_pursuit_of_gdp_growth/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-11-08T02:37:44.000Z",
-   "summary": "submitted by /u/gurugreen72 [link] [comments]",
-   "id": "39eee9dcaa44",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "See How Russia Is Failing on the Ukraine Battlefield",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xqm4wq/see_how_russia_is_failing_on_the_ukraine/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-11-08T01:13:22.000Z",
-   "summary": "submitted by /u/Unfair-Ticket9474 [link] [comments]",
-   "id": "ba5c06e131c9",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1410,24 +1501,6 @@
    "why": "0"
   },
   {
-   "title": "OMG: Marjorie Greene Drops THIS VIDEO Exposes Trump after FIRING!",
-   "url": "https://www.youtube.com/watch?v=X2Moqr7X9Js",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-07T01:35:36.000Z",
-   "summary": "Luke discusses Marjorie Greene's response to the midterm blowout. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
-   "thumb": "https://i1.ytimg.com/vi/X2Moqr7X9Js/hqdefault.jpg",
-   "id": "547ed4d3f4d9",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "GTA6 - NEW THINGS WE FOUND & MORE",
    "url": "https://www.youtube.com/watch?v=tvPdp-RPAKo",
    "source": "GameRanx",
@@ -1479,7 +1552,9 @@
    "id": "4da57d4d1463",
    "score": 0,
    "matched": [],
-   "why": "0"
+   "why": "0",
+   "durationSec": 4073,
+   "duration": "1:07:53"
   },
   {
    "title": "Shark vs. Shark: Robert vs. Mr. Wonderful | Shark Tank US | Shark Tank Global",
@@ -1871,23 +1946,6 @@
    "why": "0"
   },
   {
-   "title": "20 Game of The Year Contenders of 2026",
-   "url": "https://www.youtube.com/watch?v=30B9HuAyfg8",
-   "source": "GameRanx",
-   "feedId": "yt-gameranx",
-   "type": "video",
-   "tags": [
-    "gaming"
-   ],
-   "published": "2026-11-04T17:40:22.000Z",
-   "summary": "2026 gaming awards season is looking stacked. Here are some contenders. Subscribe for more: https://www.youtube.com/gameranxTV?sub_confirmation=1 0:00 Intro 01:05 Phantom Blade Zero 02:01 Resident Evil Requiem 03:12 Forza Horizon 6 04:31 Star Wars: Galactic Racer 05:36 Doom:…",
-   "thumb": "https://i4.ytimg.com/vi/30B9HuAyfg8/hqdefault.jpg",
-   "id": "00fa0b596196",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "Harry Sisson Reacts to His Viral Debates | Surrounded Follow-Up",
    "url": "https://www.youtube.com/watch?v=5lIqh7ejrx8",
    "source": "Jubilee",
@@ -2207,24 +2265,6 @@
    "summary": "Hey you 👈 Wanna be in a Jubilee video? https://bit.ly/be-in-a-video LET’S BE FRIENDS Instagram: https://www.instagram.com/jubileemedia/ TikTok: https://www.tiktok.com/@jubilee?lang=en Website: https://www.jubileemedia.com OUR LOVE + DATING CHANNEL 🍑 YouTube:…",
    "thumb": "https://i1.ytimg.com/vi/xTY0y2wX8WE/hqdefault.jpg",
    "id": "fc05009095c8",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "The Sharks Fight Over This Brooklyn Pizza Business | Shark Tank US | Shark Tank Global",
-   "url": "https://www.youtube.com/watch?v=3GPpsLi3Ouk",
-   "source": "Shark Tank Global",
-   "feedId": "yt-shark-tank-global",
-   "type": "video",
-   "tags": [
-    "trash",
-    "business"
-   ],
-   "published": "2026-11-01T16:59:53.000Z",
-   "summary": "Brooklyn-born pizza entrepreneur Thomas Cucco enters the Tank seeking $200,000 for 10% of Table 87, his gourmet coal-oven pizza brand bringing authentic New York slices to supermarket freezers. From Season 7, Episode 4 Watch Shark Tank US Now:…",
-   "thumb": "https://i4.ytimg.com/vi/3GPpsLi3Ouk/hqdefault.jpg",
-   "id": "888b40cf1ac1",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2689,24 +2729,6 @@
    "why": "0"
   },
   {
-   "title": "Farha Khalidi Defends Her Hottest Takes | Surrounded Follow-Up",
-   "url": "https://www.youtube.com/watch?v=2xIMdLp9iCQ",
-   "source": "Jubilee",
-   "feedId": "yt-jubilee",
-   "type": "video",
-   "tags": [
-    "politics",
-    "debates"
-   ],
-   "published": "2026-10-28T16:00:17.000Z",
-   "summary": "Hey you 👈 Wanna be in a Jubilee video? https://bit.ly/be-in-a-video LET’S BE FRIENDS Instagram: https://www.instagram.com/jubileemedia/ TikTok: https://www.tiktok.com/@jubilee?lang=en Website: https://www.jubileemedia.com OUR LOVE + DATING CHANNEL 🍑 YouTube:…",
-   "thumb": "https://i3.ytimg.com/vi/2xIMdLp9iCQ/hqdefault.jpg",
-   "id": "4901298e5d20",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "Israeli Election Day",
    "url": "https://www.youtube.com/watch?v=YcpC3-59yhE",
    "source": "Channel 5 with Andrew Callaghan",
@@ -2887,25 +2909,7 @@
    "why": "0",
    "durationSec": 2366,
    "duration": "39:26"
-  },
-  {
-   "title": "How Foreigners Become Skilled Workers in Germany",
-   "url": "https://www.youtube.com/watch?v=-4o4S6M6QcE",
-   "source": "Easy German",
-   "feedId": "yt-easy-german",
-   "type": "video",
-   "tags": [
-    "german",
-    "listen"
-   ],
-   "published": "2026-10-25T18:00:25.000Z",
-   "summary": "Download the guide on vocational training in Germany for free: https://easygerman.link/lm-pdf-004-ausbildung-in-deutschland --- Practice speaking German for your everyday life in Germany with our Conversation Membership: https://easygerman.link/membership_eg684 --- LEARN MORE…",
-   "thumb": "https://i2.ytimg.com/vi/-4o4S6M6QcE/hqdefault.jpg",
-   "id": "c6b899f2e952",
-   "score": 0,
-   "matched": [],
-   "why": "0"
   }
  ],
- "contentHash": "71b8bb8aeefe"
+ "contentHash": "a98ab9e05522"
 }
