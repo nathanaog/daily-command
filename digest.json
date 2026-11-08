@@ -1,13 +1,13 @@
 {
- "generated": "2026-11-08T19:03:42.200Z",
+ "generated": "2026-11-08T21:53:30.149Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
-  "ok": 51,
-  "items": 123,
+  "ok": 50,
+  "items": 121,
   "duplicatesMerged": 0,
   "lengthsKnown": 3,
-  "lengthLookups": 104,
+  "lengthLookups": 103,
   "lengthFailures": 103,
   "lengthVia": "video pages",
   "lengthFailReasons": {
@@ -630,19 +630,20 @@
    "id": "rd-productmanagement",
    "name": "r/productmanagement",
    "type": "reddit",
-   "status": "cached",
-   "count": 2,
-   "lastOk": "2026-11-08T13:13:00.361Z",
-   "note": "not its turn this run"
+   "status": "empty",
+   "count": 0,
+   "url": "https://www.reddit.com/r/productmanagement/top/.rss?t=day"
   },
   {
    "id": "rd-tech",
    "name": "r/tech",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": "2026-11-07T19:04:52.310Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-gaming",
@@ -651,7 +652,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-ukpolitics",
@@ -684,20 +685,19 @@
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
+   "lastOk": "2026-11-08T19:03:42.200Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-germany",
    "name": "r/germany",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": "2026-10-31T01:21:53.748Z",
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-unitedkingdom",
@@ -706,10 +706,47 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   }
  ],
  "items": [
+  {
+   "title": "Visibly Depressed Don Jr. Realizes He’s F***ED Live On Air!",
+   "url": "https://www.youtube.com/watch?v=9Kur9UVvgAw",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-08T21:30:33.000Z",
+   "summary": "Luke discusses Don Jr.'s latest podcast reflecting on the midterm blowout. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
+   "thumb": "https://i2.ytimg.com/vi/9Kur9UVvgAw/hqdefault.jpg",
+   "id": "f1466dc2fbdc",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "tagesschau 20:00 Uhr, 08.11.2026",
+   "url": "https://www.youtube.com/watch?v=XemZmZ4AqUU",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-08T19:28:08.000Z",
+   "summary": "Die 20-Uhr-Ausgabe im Livestream und früher auf Abruf: https://ardmediathek.de/tagesschau und https://tagesschau.de Themen der Sendung: 00:00 Guten Abend 00:21 Staatsanwaltschaft in Polen ermittelt nach Schüssen in Krakau wegen Terrorismus 02:30 Diskussion in der Regierung vor…",
+   "thumb": "https://i1.ytimg.com/vi/XemZmZ4AqUU/hqdefault.jpg",
+   "id": "e566966f46c1",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
   {
    "title": "WATCH HIM REALIZE Just How Bad it is!",
    "url": "https://www.youtube.com/watch?v=RGNCIvCl40Y",
@@ -1048,22 +1085,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Please can you review my Product Resume",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1xqvw6l/please_can_you_review_my_product_resume/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-11-08T11:00:36.000Z",
-   "summary": "[Edit: I understand this might look like a sales resume but all I have is sales experience and I am open to entry level roles Business Analyst and Associate Roles. How can I show my optimise my resume to stand out please guide me] I am 25F trying to switch my domain from Sales…",
-   "id": "0890bb6cdbfa",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "How the military still plays a role in James Blunt’s life",
    "url": "https://www.youtube.com/watch?v=9sDggmRPeLw",
    "source": "LBC",
@@ -1270,25 +1291,6 @@
    "why": "0"
   },
   {
-   "title": "Friedrich-Naumann-Stiftung ehrt Pahlavi stellvertretend für das iranisches Volk mit Freiheitspreis",
-   "url": "https://www.youtube.com/watch?v=uUQhNIeS44o",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-07T20:58:29.000Z",
-   "summary": "Der iranische Oppositionelle Pahlavi hat stellvertretend für das iranische Volk den Freiheitspreis der FDP-nahen Friedrich-Naumann-Stiftung entgegengenommen. Während der Verleihung gab es auch Demonstrationen. Weitere Informationen:…",
-   "thumb": "https://i2.ytimg.com/vi/uUQhNIeS44o/hqdefault.jpg",
-   "id": "f3a2000b9350",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "OH DAMN: They Have NO IDEA How Bad It’s About to Get!",
    "url": "https://www.youtube.com/watch?v=S2cvN0QHLOU",
    "source": "Luke Beasley",
@@ -1302,22 +1304,6 @@
    "summary": "Luke is joined by Matthew Cole to discusses his new book, Princes and Thieves. Check out the book below! https://www.amazon.com/Princes-Thieves-Kushner-Mohammed-Zayeds-ebook/dp/B0GPGXL1YK?ref_=ast_author_mpb Want to support the show and gain access to a daily bonus show? Become…",
    "thumb": "https://i4.ytimg.com/vi/S2cvN0QHLOU/hqdefault.jpg",
    "id": "b9afdf83720c",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "WTF Aren't We Focused on ARR?",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1xqdarj/wtf_arent_we_focused_on_arr/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-11-07T18:29:07.000Z",
-   "summary": "Product Managers who don't understand how their biz makes bank, what the hell are you actually managing? Features? Backlogs? Jira tickets? At this point in my career, I've talked to a lot of product peeps, and quite frankly, I'm a bit shocked by how many can't explain why…",
-   "id": "74c7c94e9da8",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1459,24 +1445,6 @@
    "summary": "Hadley Gamble, chief international anchor at IMI, joins Matt Frei to discuss the fallout from Donald Trump's war with Iran and the impact on America's Gulf allies. Gamble examines how the disruption to global oil supplies could benefit Vladimir Putin, strengthen Russia's…",
    "thumb": "https://i3.ytimg.com/vi/B556WajawDs/hqdefault.jpg",
    "id": "1b643731f849",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "It’s OVER For BOEBERT?!",
-   "url": "https://www.youtube.com/watch?v=Fq4a-LSAUho",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-07T03:35:16.000Z",
-   "summary": "Luke discusses the latest update on Lauren Boebert's congressional race. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
-   "thumb": "https://i3.ytimg.com/vi/Fq4a-LSAUho/hqdefault.jpg",
-   "id": "401f4992fedf",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2911,5 +2879,5 @@
    "duration": "39:26"
   }
  ],
- "contentHash": "a98ab9e05522"
+ "contentHash": "62f044cf814c"
 }
