@@ -1,17 +1,17 @@
 {
- "generated": "2026-11-08T04:12:09.845Z",
+ "generated": "2026-11-08T07:25:01.522Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
-  "ok": 6,
-  "items": 18,
+  "ok": 9,
+  "items": 30,
   "duplicatesMerged": 0,
   "lengthsKnown": 0,
-  "lengthLookups": 1,
-  "lengthFailures": 1,
+  "lengthLookups": 13,
+  "lengthFailures": 13,
   "lengthVia": "video pages",
   "lengthFailReasons": {
-   "no length on page": 1
+   "no length on page": 13
   }
  },
  "feeds": [
@@ -124,8 +124,8 @@
     "title": "Pleasant Green",
     "via": "name search"
    },
-   "error": "not found (404)",
-   "http": 404
+   "error": "HTTP 500",
+   "http": 500
   },
   {
    "id": "yt-patrick-boyle",
@@ -229,15 +229,14 @@
    "id": "yt-tldr-news",
    "name": "TLDR News",
    "type": "youtube",
-   "status": "error",
-   "count": 0,
+   "status": "ok",
+   "count": 4,
    "resolved": {
     "channelId": "UCSMqateX8OA2s1wsOR2EgJA",
     "title": "TLDR News",
     "via": "name search"
    },
-   "error": "not found (404)",
-   "http": 404
+   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCSMqateX8OA2s1wsOR2EgJA"
   },
   {
    "id": "yt-simplicissimus",
@@ -341,15 +340,14 @@
    "id": "yt-tagesschau",
    "name": "Tagesschau",
    "type": "youtube",
-   "status": "error",
-   "count": 0,
+   "status": "ok",
+   "count": 5,
    "resolved": {
     "channelId": "UC5NOEUbkLheQcaaRldYW5GA",
     "title": "tagesschau",
     "via": "name search"
    },
-   "error": "not found (404)",
-   "http": 404
+   "url": "https://www.youtube.com/feeds/videos.xml?playlist_id=UULF5NOEUbkLheQcaaRldYW5GA"
   },
   {
    "id": "yt-the-nk-guys",
@@ -480,15 +478,14 @@
    "id": "yt-tom-scott",
    "name": "Tom Scott",
    "type": "youtube",
-   "status": "error",
-   "count": 0,
+   "status": "ok",
+   "count": 2,
    "resolved": {
     "channelId": "UCBa659QWEk1AI4Tg--mrJ2A",
     "title": "Tom Scott",
     "via": "name search"
    },
-   "error": "not found (404)",
-   "http": 404
+   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCBa659QWEk1AI4Tg--mrJ2A"
   },
   {
    "id": "yt-lenny-s-podcast",
@@ -634,15 +631,14 @@
    "id": "yt-economics-explained",
    "name": "Economics Explained",
    "type": "youtube",
-   "status": "error",
-   "count": 0,
+   "status": "ok",
+   "count": 2,
    "resolved": {
     "channelId": "UCZ4AMrDcNrfy3X6nsU8-rPg",
     "title": "Economics Explained",
     "via": "name search"
    },
-   "error": "not found (404)",
-   "http": 404
+   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCZ4AMrDcNrfy3X6nsU8-rPg"
   },
   {
    "id": "yt-j-j-mccullough",
@@ -662,33 +658,33 @@
    "id": "yt-adam-neely",
    "name": "Adam Neely",
    "type": "youtube",
-   "status": "ok",
-   "count": 1,
+   "status": "error",
+   "count": 0,
    "resolved": {
     "channelId": "UCnkp4xDOwqqJD7sSM3xdUiQ",
     "title": "Adam Neely",
     "via": "name search"
    },
-   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCnkp4xDOwqqJD7sSM3xdUiQ"
+   "error": "not found (404)",
+   "http": 404
   },
   {
    "id": "rd-productmanagement",
    "name": "r/productmanagement",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 2,
-   "url": "https://www.reddit.com/r/productmanagement/top/.rss?t=day"
+   "lastOk": "2026-11-08T04:12:09.845Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-tech",
    "name": "r/tech",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": "2026-11-07T19:04:52.310Z",
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-gaming",
@@ -697,16 +693,15 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-11-07T21:52:57.028Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
   },
   {
    "id": "rd-xbox",
@@ -715,7 +710,7 @@
    "status": "cached",
    "count": 5,
    "lastOk": "2026-11-07T21:52:57.028Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)"
   },
   {
    "id": "rd-slaythespire",
@@ -724,7 +719,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-geopolitics",
@@ -756,6 +751,23 @@
  ],
  "items": [
   {
+   "title": "CPS pushes ahead with race bias plan despite ‘two-tier’ warnings - Tories warn ethnic minorities could be treated differently because of who they are, not what they have done",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xql0r4/cps_pushes_ahead_with_race_bias_plan_despite/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-11-08T00:17:04.000Z",
+   "summary": "submitted by /u/FormerlyPallas_ [link] [comments]",
+   "id": "32064bae32b5",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
    "title": "A ‘customer success story’: leaked documents show Cisco doubled down on Israeli military deals during Gaza war",
    "url": "https://www.reddit.com/r/geopolitics/comments/1xqkydm/a_customer_success_story_leaked_documents_show/",
    "source": "r/geopolitics",
@@ -768,6 +780,78 @@
    "published": "2026-11-08T00:13:51.000Z",
    "summary": "submitted by /u/ChiefFun [link] [comments]",
    "id": "5e8e6b0a942d",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Raise the Colours boss Ryan Bridge detained in Somalia days before UK court appearance | Searchlight",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xqjuun/raise_the_colours_boss_ryan_bridge_detained_in/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-11-07T23:21:40.000Z",
+   "summary": "submitted by /u/ijustwannanap [link] [comments]",
+   "id": "c51a67e3b023",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "tagesthemen 23:30 Uhr, 07.11.2026",
+   "url": "https://www.youtube.com/watch?v=aJObSI6EG8Y",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-07T23:17:35.000Z",
+   "summary": "tagesthemen 23:30 Uhr Tote und Verletzte nach Schüssen in Krakau, Stephen Miller wird neuer Stabschef im Weißen Haus, Französischer Linkspolitiker Jean-Luc Mélenchon stellt Wahlprogramm vor, Debatte über Eishockey-WM in Deutschland: Sollte Russland teilnehmen dürfen?, Der…",
+   "thumb": "https://i2.ytimg.com/vi/aJObSI6EG8Y/hqdefault.jpg",
+   "id": "fec2a29e74d4",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Andy Burnham on X: \"I’m shocked and saddened by the appalling shooting in Kraków today. My thoughts are with the families of those who have lost their lives, everyone injured and all those affected by this senseless violence. The United Kingdom stands in solidarity with the people of Poland.\" / X",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xqimbm/andy_burnham_on_x_im_shocked_and_saddened_by_the/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-11-07T22:22:58.000Z",
+   "summary": "submitted by /u/collogue [link] [comments]",
+   "id": "7ce2fe8cd8da",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Friedrich-Naumann-Stiftung ehrt Pahlavi stellvertretend für das iranisches Volk mit Freiheitspreis",
+   "url": "https://www.youtube.com/watch?v=uUQhNIeS44o",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-07T20:58:29.000Z",
+   "summary": "Der iranische Oppositionelle Pahlavi hat stellvertretend für das iranische Volk den Freiheitspreis der FDP-nahen Friedrich-Naumann-Stiftung entgegengenommen. Während der Verleihung gab es auch Demonstrationen. Weitere Informationen:…",
+   "thumb": "https://i2.ytimg.com/vi/uUQhNIeS44o/hqdefault.jpg",
+   "id": "f3a2000b9350",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -872,52 +956,39 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Dan Neidle on X: \"On Thursday I wrote about the 2014 injunction Russell Brand obtained against a woman who accused him of assault. I've now obtained the final order. It's breathtaking. She had no lawyer. No trial. Yet she was silenced for life",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xqfdow/dan_neidle_on_x_on_thursday_i_wrote_about_the/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
+   "title": "Tödliche Schüsse in Krakau: ARD-Korrespondent zur Lage vor Ort",
+   "url": "https://www.youtube.com/watch?v=FTZnk5rz2rg",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
    "tags": [
-    "politics",
-    "british"
+    "german",
+    "news",
+    "listen"
    ],
-   "published": "2026-11-07T19:57:51.000Z",
-   "summary": "submitted by /u/FormerlyPallas_ [link] [comments]",
-   "id": "a50a7d316773",
+   "published": "2026-11-07T19:41:35.000Z",
+   "summary": "Bei Schüssen auf dem zentralen Hauptmarkt der polnischen Stadt Krakau sind nach Polizeiangaben mindestens sechs Menschen getötet und 15 weitere verletzt worden. Der mutmaßliche Täter konnte demnach gefasst werden. Unter den Verletzten seien auch mindestens zwei Polizist:innen.…",
+   "thumb": "https://i3.ytimg.com/vi/FTZnk5rz2rg/hqdefault.jpg",
+   "id": "b5989781949b",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "A ‘win-win’: every EU nation would welcome UK’s return, says Cypriot president",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xqeulw/a_winwin_every_eu_nation_would_welcome_uks_return/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
+   "title": "tagesschau 20:00 Uhr, 07.11.2026",
+   "url": "https://www.youtube.com/watch?v=TxHkyZxH0u8",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
    "tags": [
-    "politics",
-    "british"
+    "german",
+    "news",
+    "listen"
    ],
-   "published": "2026-11-07T19:34:54.000Z",
-   "summary": "submitted by /u/TheObserverUK [link] [comments]",
-   "id": "778a45d74c48",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "‘Dirty’ Trump deserved to be thrashed in the US midterms, says Kemi Badenoch",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xqec6a/dirty_trump_deserved_to_be_thrashed_in_the_us/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-11-07T19:13:02.000Z",
-   "summary": "submitted by /u/ImpressiveRest2423 [link] [comments]",
-   "id": "8585caabff1a",
+   "published": "2026-11-07T19:26:20.000Z",
+   "summary": "tagesschau 20:00 Uhr US-Präsident Trump ernennt Steven Miller als neuen Stabschef, Russland setzt Angriffe auf Energieversorgung in der Ukraine fort, Ilse Aigner soll zur Wahl als Bundespräsidentin nominiert werden, Tote und Verletzte nach Schüssen in Krakau,…",
+   "thumb": "https://i1.ytimg.com/vi/TxHkyZxH0u8/hqdefault.jpg",
+   "id": "b19f2318c971",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1022,6 +1093,25 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
+   "title": "15 Jahre LIFE-Studie in Leipzig: Wie der Lebensstil unsere Gesundheit prägt",
+   "url": "https://www.youtube.com/watch?v=relPLn6zRiE",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-07T16:54:52.000Z",
+   "summary": "Es ist eines der größten Gesundheitsforschungsprojekte Deutschlands. In Leipzig werden im Rahmen der sogenannten LIFE-Studie Tausende Bürger:innen über viele Jahre begleitet und regelmäßig medizinisch untersucht. Die gewonnenen Daten sollen helfen, Volkskrankheiten wie…",
+   "thumb": "https://i3.ytimg.com/vi/relPLn6zRiE/hqdefault.jpg",
+   "id": "646e0947a3fa",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
    "title": "How do you get \"loss\" feedback?",
    "url": "https://www.reddit.com/r/ProductManagement/comments/1xpyptg/how_do_you_get_loss_feedback/",
    "source": "r/productmanagement",
@@ -1038,22 +1128,151 @@
    "why": "0"
   },
   {
-   "title": "Music is Inherently Political",
-   "url": "https://www.youtube.com/watch?v=kIMIlLx4DIc",
-   "source": "Adam Neely",
-   "feedId": "yt-adam-neely",
+   "title": "The Green Party Split Explained",
+   "url": "https://www.youtube.com/watch?v=T-LtFNpz-aE",
+   "source": "TLDR News",
+   "feedId": "yt-tldr-news",
    "type": "video",
    "tags": [
-    "music"
+    "news",
+    "politics",
+    "listen"
    ],
-   "published": "2026-11-02T18:54:43.000Z",
-   "summary": "Come see me on tour! ✨ Adam Neely & Lau Noah ✨ https://www.adamneelyxlaunoah.com/tour ☀️ Sungazer ☀️ https://www.sungazermusic.com/tour 0:00 Intro 8:33 Part 1 - Democracy 16:46 Part 2 - Autocracy 21:36 Part 3 - Jazz 28:25 Part 4 - Genre 35:11 Part 5 - Money 42:03 Conclusion…",
-   "thumb": "https://i4.ytimg.com/vi/kIMIlLx4DIc/hqdefault.jpg",
-   "id": "e598585ebf53",
+   "published": "2026-11-06T09:30:25.000Z",
+   "summary": "Pre-order a copy of Too Long: toolong.news/TL010 In this video, we’re going to explain this green split in a little more detail and go through how it’s come about, where Zack Polanski sits on the issue, and which direction the Green Party is likely to head in. Why the Greens…",
+   "thumb": "https://i1.ytimg.com/vi/T-LtFNpz-aE/hqdefault.jpg",
+   "id": "4183f2162fe2",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "It's getting harder to balance the power grid. Here's why.",
+   "url": "https://www.youtube.com/watch?v=NBXu6Z9Fw_M",
+   "source": "Tom Scott",
+   "feedId": "yt-tom-scott",
+   "type": "video",
+   "tags": [
+    "education"
+   ],
+   "published": "2026-11-02T16:05:24.000Z",
+   "summary": "The team at Britain's National Energy System Operator have a job that's quite different to just a few years ago. | ▶️ Watch the next episode right now on Nebula: https://nebula.tv/videos/tomscott-why-you-cant-touch-stonehenge | 🗺️ England series map:…",
+   "thumb": "https://i3.ytimg.com/vi/NBXu6Z9Fw_M/hqdefault.jpg",
+   "id": "ce482129bfbc",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Why Argentina Wants the World’s Corrupt Billionaires",
+   "url": "https://www.youtube.com/watch?v=deQXeIhyhc4",
+   "source": "Economics Explained",
+   "feedId": "yt-economics-explained",
+   "type": "video",
+   "tags": [
+    "finance",
+    "listen"
+   ],
+   "published": "2026-11-01T15:56:04.000Z",
+   "summary": "Thanks to Monarch for partnering with me! Start your free trial and get 50% off your first year of total money clarity using my link https://monarchmoney.yt.link/0Sz54Iw or code economics50 for 50% Off Monarch Core tier. 📫 11,593+ read our free newsletter that has weekly…",
+   "thumb": "https://i1.ytimg.com/vi/deQXeIhyhc4/hqdefault.jpg",
+   "id": "a8fb7ef8f933",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Should Burnham Call an Election?",
+   "url": "https://www.youtube.com/watch?v=9oudg7AuyD4",
+   "source": "TLDR News",
+   "feedId": "yt-tldr-news",
+   "type": "video",
+   "tags": [
+    "news",
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-30T09:30:24.000Z",
+   "summary": "Pre-order a copy of Too Long: toolong.news/TL010 Andymonium podcast: youtube.com/@TLDRpodcasts We take a look at whether Burnham should call an election, the rumours swirling about the different groups pushing him to, and ultimately, whether it looks likely that he will. 📰 Too…",
+   "thumb": "https://i2.ytimg.com/vi/9oudg7AuyD4/hqdefault.jpg",
+   "id": "ade2cc79170d",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Burnham’s First Budget Explained",
+   "url": "https://www.youtube.com/watch?v=ygVX149E5cE",
+   "source": "TLDR News",
+   "feedId": "yt-tldr-news",
+   "type": "video",
+   "tags": [
+    "news",
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-29T09:30:29.000Z",
+   "summary": "Pre-order a copy of Too Long: toolong.news/TL010 Sign Up for TLDR Party: https://toolong.news/party TLDR Party Explained: https://www.youtube.com/watch?v=KVXXC3jk4Kg Chancellor John Healey delivered his budget yesterday, the first of the new Burnham government, but it was not…",
+   "thumb": "https://i2.ytimg.com/vi/ygVX149E5cE/hqdefault.jpg",
+   "id": "4db98a7a79cf",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "How China Is Restarting Its Economy",
+   "url": "https://www.youtube.com/watch?v=vQodCxq7b9g",
+   "source": "Economics Explained",
+   "feedId": "yt-economics-explained",
+   "type": "video",
+   "tags": [
+    "finance",
+    "listen"
+   ],
+   "published": "2026-10-28T14:00:07.000Z",
+   "summary": "If you want to learn more about Pasqal Holding SA (NASDAQ: PSQL), check out their website: https://investors.pasqal.com/ 📫11,142+ read our free newsletter that has weekly original stories Sign up: → https://economicsexplained.substack.com/subscribe Disclaimer: This content was…",
+   "thumb": "https://i3.ytimg.com/vi/vQodCxq7b9g/hqdefault.jpg",
+   "id": "95b8ef42f922",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "This machine breaks things.",
+   "url": "https://www.youtube.com/watch?v=-E47v4Oy7fE",
+   "source": "Tom Scott",
+   "feedId": "yt-tom-scott",
+   "type": "video",
+   "tags": [
+    "education"
+   ],
+   "published": "2026-10-26T15:00:16.000Z",
+   "summary": "At Kirkaldy's Testing Works, there's the Universal Testing Machine. It breaks things. | AD: 🛡️ Get NordVPN's best deal with their next-gen antivirus: https://nordvpn.com/tomscott | 🗺️ England series map: https://www.tomscott.com/england/ 🟥 MORE FROM TOM:…",
+   "thumb": "https://i2.ytimg.com/vi/-E47v4Oy7fE/hqdefault.jpg",
+   "id": "58a074377add",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Why the UK is Looking Surprisingly Functional",
+   "url": "https://www.youtube.com/watch?v=j8mkyRBT9yE",
+   "source": "TLDR News",
+   "feedId": "yt-tldr-news",
+   "type": "video",
+   "tags": [
+    "news",
+    "politics",
+    "listen"
+   ],
+   "published": "2026-10-26T09:59:22.000Z",
+   "summary": "Take back your privacy - start using Proton Mail for free: http://proton.me/tldr Things are looking pretty bleak around the world at the moment... but look beneath the curtain, and the UK is actually doing pretty okay. In this video, we're going to go through a few reasons how…",
+   "thumb": "https://i3.ytimg.com/vi/j8mkyRBT9yE/hqdefault.jpg",
+   "id": "58886ee03ab6",
    "score": 0,
    "matched": [],
    "why": "0"
   }
  ],
- "contentHash": "43523e980fd7"
+ "contentHash": "98a72af9c94d"
 }
