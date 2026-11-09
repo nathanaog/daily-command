@@ -1,17 +1,17 @@
 {
- "generated": "2026-11-09T16:21:23.182Z",
+ "generated": "2026-11-09T19:15:23.612Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
   "ok": 51,
-  "items": 126,
+  "items": 125,
   "duplicatesMerged": 0,
   "lengthsKnown": 2,
-  "lengthLookups": 105,
-  "lengthFailures": 105,
+  "lengthLookups": 104,
+  "lengthFailures": 104,
   "lengthVia": "video pages",
   "lengthFailReasons": {
-   "no length on page": 105
+   "no length on page": 104
   }
  },
  "feeds": [
@@ -397,7 +397,7 @@
    "name": "The Economist",
    "type": "youtube",
    "status": "ok",
-   "count": 5,
+   "count": 4,
    "resolved": {
     "channelId": "UC0p5jTq6Xx_DosDFxVXnWaQ",
     "title": "The Economist",
@@ -630,20 +630,19 @@
    "id": "rd-productmanagement",
    "name": "r/productmanagement",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 4,
-   "url": "https://www.reddit.com/r/productmanagement/top/.rss?t=day"
+   "lastOk": "2026-11-09T16:21:23.182Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-tech",
    "name": "r/tech",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": "2026-11-07T19:04:52.310Z",
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-gaming",
@@ -652,16 +651,15 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-11-09T10:16:11.947Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
   },
   {
    "id": "rd-xbox",
@@ -670,7 +668,7 @@
    "status": "cached",
    "count": 5,
    "lastOk": "2026-11-07T21:52:57.028Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)"
   },
   {
    "id": "rd-slaythespire",
@@ -679,7 +677,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-geopolitics",
@@ -711,6 +709,227 @@
  ],
  "items": [
   {
+   "title": "Weltklimakonferenz COP31 beginnt: Lange Schlangen in Antalya",
+   "url": "https://www.youtube.com/watch?v=6keBfMr_jeM",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-09T19:00:53.000Z",
+   "summary": "Riesiger Andrang auf der COP31 in Antalya: Am Morgen müssen viele in langen Schlangen warten, um überhaupt hineinzukommen. Delegierte aus gut 190 Ländern kommen zum Gipfel, etwa 80.000 Menschen werden erwartet. Es könnte die zweitgrößte COP aller Zeiten werden. Hier mehr dazu:…",
+   "thumb": "https://i3.ytimg.com/vi/6keBfMr_jeM/hqdefault.jpg",
+   "id": "a97006b320a6",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Simon Marks breaks down the MAGA civil war",
+   "url": "https://www.youtube.com/watch?v=8yrqlUZ64QA",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-09T18:50:08.000Z",
+   "summary": "Simon Marks takes a look at the civil war brewing within MAGA after Republican politicians look to recover from the midterms drubbing. 00:00 - Ron De Santis hits out 03:05 - Is JD Vance still Trump’s heir? 07:48 - Is Rubio going to run? 10:12 - The Middle East will decide…",
+   "thumb": "https://i1.ytimg.com/vi/8yrqlUZ64QA/hqdefault.jpg",
+   "id": "cde212f053c9",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Frankreich macht Iran für Cyberangriffe verantwortlich",
+   "url": "https://www.youtube.com/watch?v=p50DnycYmUA",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-09T18:36:07.000Z",
+   "summary": "Die französische Regierung hat die iranische Revolutionsgarde für die Cyberangriffe auf Kühlanlagen in Frankreich verantwortlich gemacht. Dank des Einsatzes staatlicher Behörden könne er bestätigen, „dass die Verantwortung für diesen Angriff bei der Revolutionsgarde der…",
+   "thumb": "https://i1.ytimg.com/vi/p50DnycYmUA/hqdefault.jpg",
+   "id": "98a901abf3c8",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Meet the woman who ran marathons while seven months pregnant",
+   "url": "https://www.youtube.com/watch?v=0KnFi1Ncnp8",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-09T18:10:37.000Z",
+   "summary": "A mother-to-be has defended running seven marathons during her pregnancy after being targeted by critics. Deirdre Keane, 38, completed the New York Marathon in a little over four hours while seven months pregnant. Her picture, crossing the finishing line last week, went viral…",
+   "thumb": "https://i1.ytimg.com/vi/0KnFi1Ncnp8/hqdefault.jpg",
+   "id": "695e35d946bd",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Wie sich Jüdinnen und Juden in Deutschland zu schützen versuchen",
+   "url": "https://www.youtube.com/watch?v=JzSOhi2IAwo",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-09T18:08:23.000Z",
+   "summary": "88 Jahre nach der NS-Pogromnacht sehen sich viele jüdische Menschen in Deutschland erneut bedroht. Im Rahmen der jüdischen Kulturwoche in Stuttgart berichten Jüdinnen und Juden darüber, wie sie die wachsende Zahl antisemitischer Angriffe erleben - und wie sie sich künftig…",
+   "thumb": "https://i3.ytimg.com/vi/JzSOhi2IAwo/hqdefault.jpg",
+   "id": "da573e5b929f",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Wurde der Nvidia-Chef ausspioniert? Experte beantwortet Fragen",
+   "url": "https://www.youtube.com/watch?v=XhEUjRCahT0",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-09T18:03:50.000Z",
+   "summary": "Der KI-Chip-Gigant Nvidia hat nach Berichten über einen Spionageverdacht eine Untersuchung gegen seinen Gründer und Konzernchef Jensen Huang eingeleitet. Er soll eine Affäre mit einer mutmaßlichen chinesischen Spionin gehabt haben. Im tagesschau-Interview beantwortet ein…",
+   "thumb": "https://i1.ytimg.com/vi/XhEUjRCahT0/hqdefault.jpg",
+   "id": "6b21105be4fb",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "10 GREEDY Games That Had a Slow DOWNFALL",
+   "url": "https://www.youtube.com/watch?v=ASY-TjQNOeM",
+   "source": "GameRanx",
+   "feedId": "yt-gameranx",
+   "type": "video",
+   "tags": [
+    "gaming"
+   ],
+   "published": "2026-11-09T17:54:42.000Z",
+   "summary": "Some games start strong and end up getting slowly killed off thanks to greed. Subscribe for more: https://www.youtube.com/gameranxTV?sub_confirmation=1 0:00 Intro 0:49 Number 10 2:59 Number 9 5:06 Number 8 7:16 Number 7 9:14 Number 6 11:50 Number 5 14:02 Number 4 16:24 Number 3…",
+   "thumb": "https://i2.ytimg.com/vi/ASY-TjQNOeM/hqdefault.jpg",
+   "id": "858cb993f1dc",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "How predators like Russell Brand operate' | James O’Brien - The Whole Show",
+   "url": "https://www.youtube.com/watch?v=D_39m7ggbCY",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-09T17:47:52.000Z",
+   "summary": "As Russell Brand is sentenced for rape and sexual assault, James explores why individuals who report sexual abuse and misconduct can face such a long and difficult battle to be heard. Why are institutions so often slow to act on allegations of sexual violence? From protecting…",
+   "thumb": "https://i1.ytimg.com/vi/D_39m7ggbCY/hqdefault.jpg",
+   "id": "fc766f0f204a",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Kevin O’Leary Has a Brutal Prediction for This Invention | Shark Tank US | Shark Tank Global",
+   "url": "https://www.youtube.com/watch?v=pXxTyoBXbCw",
+   "source": "Shark Tank Global",
+   "feedId": "yt-shark-tank-global",
+   "type": "video",
+   "tags": [
+    "trash",
+    "business"
+   ],
+   "published": "2026-11-09T17:09:55.000Z",
+   "summary": "Tate Koenig enters the Tank seeking $75,000 for 10% of The Cheese Chopper, a 3-in-1 kitchen gadget that slices, shreds, and stores cheese in one convenient container. From Season 12, Episode 20 Watch Shark Tank US Now: http://AAN.SonyPictures.com/SharkTankUSHulu Watch Shark…",
+   "thumb": "https://i1.ytimg.com/vi/pXxTyoBXbCw/hqdefault.jpg",
+   "id": "a2c313f06aec",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Icon Veneration on Trial | Jay Dyer Vs Dr. David Wood",
+   "url": "https://www.youtube.com/watch?v=fuViJKnmqRc",
+   "source": "Modern-Day Debate",
+   "feedId": "yt-modern-day-debate",
+   "type": "video",
+   "tags": [
+    "debates",
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-09T17:00:15.000Z",
+   "summary": "Huge thank you to our DEBATECON 9 sponsors including: Revival of the Anointed's Rule: https://revivingtheroar.org/ Apologetics Ark: https://www.apologeticsark.com/links @UncensoredAmerica Yonaguni International Cuisine (Aguadilla, Puerto Rico):…",
+   "thumb": "https://i3.ytimg.com/vi/fuViJKnmqRc/hqdefault.jpg",
+   "id": "7f76fa8ec167",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "tagesschau in Einfacher Sprache 19:00 Uhr, 09.11.2026",
+   "url": "https://www.youtube.com/watch?v=KOK7-SkdORg",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-09T16:41:14.000Z",
+   "summary": "tagesschau in Einfacher Sprache 19:00 Uhr Die \"tagesschau in Einfacher Sprache\" – immer Montag bis Freitag um 19:00 Uhr bei tagesschau24 und rund um die Uhr in der Mediathek. Nachrichten in Einfacher Sprache richten sich vor allem an Menschen mit Lese-, Lern- und/oder…",
+   "thumb": "https://i4.ytimg.com/vi/KOK7-SkdORg/hqdefault.jpg",
+   "id": "211149850e60",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "LBC callers react to Russell Brand's jail sentence",
+   "url": "https://www.youtube.com/watch?v=ptOuQhSrn0o",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-09T16:30:17.000Z",
+   "summary": "Russell Brand has been jailed for 10 years and six months for rape and sexual assaults. The disgraced star appeared at Southwark Crown Court today watched by his wife Laura, and his father sitting in the public gallery. Brand’s wife said “oh God” as her husband walked into the…",
+   "thumb": "https://i1.ytimg.com/vi/ptOuQhSrn0o/hqdefault.jpg",
+   "id": "88808d480d00",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
    "title": "Is there any technical skill that would give me edge over other PMs in the market?",
    "url": "https://www.reddit.com/r/ProductManagement/comments/1xrw083/is_there_any_technical_skill_that_would_give_me/",
    "source": "r/productmanagement",
@@ -727,7 +946,24 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "This is why you can't touch Stonehenge any more.",
+   "title": "Hundreds of civil servants caught working multiple jobs",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xrvuzt/hundreds_of_civil_servants_caught_working/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-11-09T16:15:02.000Z",
+   "summary": "submitted by /u/Little-Attorney1287 [link] [comments]",
+   "id": "3a58fa199b7e",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Why you can't touch Stonehenge any more",
    "url": "https://www.youtube.com/watch?v=0V-4lQYNugA",
    "source": "Tom Scott",
    "feedId": "yt-tom-scott",
@@ -780,95 +1016,69 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Russische Zeitung „Nowaja Gaseta“ stellt den Betrieb ein",
-   "url": "https://www.youtube.com/watch?v=6D4bqbKKakg",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-09T14:55:04.000Z",
-   "summary": "Heute werden die Lichter endgültig ausgehen. Die russische Zeitung „Nowaja Gaseta“ stellt ihren Betrieb ein. Nach mehr als 30 Jahren muss eine der letzten unabhängigen Stimmen Russlands aufgeben. In dieser Zeit hat das Blatt immer kritisch über die Ereignisse in Russland…",
-   "thumb": "https://i3.ytimg.com/vi/6D4bqbKKakg/hqdefault.jpg",
-   "id": "423675862c4d",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "COP31 in Antalya: ARD-Korrespondentin über die Weltklimakonferenz mit ungewöhnlicher Doppelspitze",
-   "url": "https://www.youtube.com/watch?v=nuW-Jk1Hoso",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-09T14:26:37.000Z",
-   "summary": "In der Türkei beginnt die Klimakonferenz in neuem Format und mit alten Streitpunkten. Und wieder ist die große Frage: Kommt die Weltgemeinschaft beim Ausstieg aus Fossilen Energien voran? Mindestens zwei Wochen lang werden Abgesandte aus über 190 Staaten in Antalya über…",
-   "thumb": "https://i3.ytimg.com/vi/nuW-Jk1Hoso/hqdefault.jpg",
-   "id": "2ee39c5307d0",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Merz will Aigner als Bundespräsidentin: Hintergründe der Entscheidung",
-   "url": "https://www.youtube.com/watch?v=vxsP-RZJF7Q",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-09T14:24:11.000Z",
-   "summary": "Nun geht es plötzlich ganz fix: Bei einer Vorbesprechung des Präsidiums am Sonntagabend hatte sich Kanzler und CDU-Chef Friedrich Merz offiziell auf die bayerische Landtagspräsidentin Ilse Aigner als Kandidatin für die Bundespräsidentenwahl festgelegt. Heute Vormittag…",
-   "thumb": "https://i3.ytimg.com/vi/vxsP-RZJF7Q/hqdefault.jpg",
-   "id": "e08d904179a9",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Stephen Miller: Trump's 'fascist' chief of staff",
-   "url": "https://www.youtube.com/watch?v=JGIYLrfDL_o",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
+   "title": "Gillingham man jailed over racist Kemi Badenoch death threats",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xrupqk/gillingham_man_jailed_over_racist_kemi_badenoch/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
    "tags": [
     "politics",
-    "listen"
+    "british"
    ],
-   "published": "2026-11-09T13:53:25.000Z",
-   "summary": "James O'Brien discusses Donald Trump's latest pick to be his chief of staff with LBC's Washington correspondent Simon Marks. Trump announced on Friday that he would be replacing Susie Wiles as White House Chief of Staff after a midterms hammering, promoting Stephen Miller to…",
-   "thumb": "https://i3.ytimg.com/vi/JGIYLrfDL_o/hqdefault.jpg",
-   "id": "22507e966403",
+   "published": "2026-11-09T15:32:53.000Z",
+   "summary": "submitted by /u/EduTheRed [link] [comments]",
+   "id": "f715995f457b",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Wie bepflanzte Erdlöcher in Kenia vertrocknetes Land retten sollen",
-   "url": "https://www.youtube.com/watch?v=LFZ0Gcqist0",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
+   "title": "“Not one of Wales's 32 constituencies collects more in income tax and National Insurance than it spends on welfare. Across Wales, welfare spending is nearly double what workers pay in, a gap of £3,062 per adult. That is worse than every English region except the North East.” [Image]",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xru5do/not_one_of_waless_32_constituencies_collects_more/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
    "tags": [
-    "german",
-    "news",
-    "listen"
+    "politics",
+    "british"
    ],
-   "published": "2026-11-09T13:43:35.000Z",
-   "summary": "In der Türkei ist die Weltklimakonferenz gestartet. Dort geht es darum, wie sich die Erderwärmung noch bremsen lässt. In Kenia haben Landwirt:innen nun eine überraschend einfache Methode entwickelt, um Regenwasser zu speichern und aus trockenem Boden wieder fruchtbares Land zu…",
-   "thumb": "https://i1.ytimg.com/vi/LFZ0Gcqist0/hqdefault.jpg",
-   "id": "3b9c271030a3",
+   "published": "2026-11-09T15:11:03.000Z",
+   "summary": "submitted by /u/ITMidget [link] [comments]",
+   "id": "6e9453fdf976",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "James Bulger's killer Jon Venables will stay in prison - as Parole Board finds he's still a risk to children. The 44-year-old admitted a 'long-term sexual interest in children' and says he needs to do more work in prison before he is freed. The Parole Board decided he should kept in prison.",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xru3r6/james_bulgers_killer_jon_venables_will_stay_in/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-11-09T15:09:23.000Z",
+   "summary": "submitted by /u/ITMidget [link] [comments]",
+   "id": "85b24f8ad06a",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Hospital trust does not know who 'methodically' deleted baby death records - Those harmed by horrific failings at Nottingham's maternity services also say they remain \"suspicious\" about a more recent incident which means data showing who looked at their records has been lost.",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xrt69u/hospital_trust_does_not_know_who_methodically/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-11-09T14:32:54.000Z",
+   "summary": "submitted by /u/FormerlyPallas_ [link] [comments]",
+   "id": "7143f3fd10e5",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -924,25 +1134,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Große Emotionen in Buenos Aires: Gläubige feiern Papst Leo XIV.",
-   "url": "https://www.youtube.com/watch?v=CQpznAxg_0c",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-09T12:06:51.000Z",
-   "summary": "Der Papst ist bei seiner Südamerika-Reise in Argentinien angekommen. Zu Beginn seines Besuchs kritisierte Leo XIV. die Politik von Präsident Milei und rief zu mehr Rücksicht gegenüber schwächeren Gruppen auf. Seit fast vier Jahrzehnten war kein Papst mehr zu Gast in…",
-   "thumb": "https://i4.ytimg.com/vi/CQpznAxg_0c/hqdefault.jpg",
-   "id": "1641100a5d7a",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "PRD Collab Question",
    "url": "https://www.reddit.com/r/ProductManagement/comments/1xrpm03/prd_collab_question/",
    "source": "r/productmanagement",
@@ -954,58 +1145,6 @@
    "published": "2026-11-09T11:46:56.000Z",
    "summary": "When Claude or ChatGPT drafts a PRD or spec for you, how do engineers, design and leadership review it? Do you move it to Google Docs or Notion for comments, and how do the changes get back into the source? submitted by /u/RelevantAudience9596 [link] [comments]",
    "id": "801483e793a3",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "The $160bn scandal involving Trump, Nvidia and a suspected Chinese spy",
-   "url": "https://www.youtube.com/watch?v=l-wkUlTdCsA",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-09T09:50:02.000Z",
-   "summary": "Donald Trump has publicly defended Nvidia chief Jensen Huang as the billionaire faces questions over his relationship with a woman suspected of having links to Chinese espionage. But the story raises a bigger question: was the US government aware of the alleged operation long…",
-   "thumb": "https://i1.ytimg.com/vi/l-wkUlTdCsA/hqdefault.jpg",
-   "id": "963ff7693a6f",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Hundreds march against Labour's plans to house over 1,250 male asylum seekers near historic market town",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xrn9dx/hundreds_march_against_labours_plans_to_house/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-11-09T09:25:21.000Z",
-   "summary": "submitted by /u/Little-Attorney1287 [link] [comments]",
-   "id": "4291e6485591",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "'AI clog' on the rise as ICO rejects 45% of complaints - DecisionMarketing",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xrn5kc/ai_clog_on_the_rise_as_ico_rejects_45_of/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-11-09T09:18:40.000Z",
-   "summary": "submitted by /u/Eastern-Opposite9521 [link] [comments]",
-   "id": "4b1e6ca515ad",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1061,23 +1200,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Deportation crisis as 20,000 foreign offenders remain free in UK despite removal orders",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xrm80u/deportation_crisis_as_20000_foreign_offenders/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-11-09T08:17:41.000Z",
-   "summary": "submitted by /u/Little-Attorney1287 [link] [comments]",
-   "id": "05f9b7193213",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Pete Hegseth: Last Week Tonight with John Oliver (HBO)",
    "url": "https://www.youtube.com/watch?v=LO5iHyYa0XM",
    "source": "Last Week Tonight",
@@ -1091,40 +1213,6 @@
    "summary": "John Oliver discusses the damage that Pete Hegseth has caused both at home and abroad as the U.S. Secretary of Defense, how it could take a generation to fix, and the unexpected decorating flourishes of Mr. Kid Rock. Subscribe to the #lastweektonight YouTube channel for more…",
    "thumb": "https://i1.ytimg.com/vi/LO5iHyYa0XM/hqdefault.jpg",
    "id": "590bb915f6e9",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Andy Burnham's Goverment set to ban under-16s from Vinted, Depop and eBay",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xrktvt/andy_burnhams_goverment_set_to_ban_under16s_from/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-11-09T06:51:11.000Z",
-   "summary": "submitted by /u/dailystar_news [link] [comments]",
-   "id": "57e1985c9f49",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Society needs to act to help white working-class pupils, inquiry says",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xrk8x0/society_needs_to_act_to_help_white_workingclass/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-11-09T06:16:17.000Z",
-   "summary": "submitted by /u/gravy_baron [link] [comments]",
-   "id": "82e6cfa82dcf",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1391,24 +1479,6 @@
    "why": "0"
   },
   {
-   "title": "‘Hilarious, ridiculous people’ surround Donald Trump",
-   "url": "https://www.youtube.com/watch?v=uqazxFYR_ug",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-08T14:28:10.000Z",
-   "summary": "Lewis Goodall is joined by comedian Cody Dahler to try and make sense of the latest developments in the White House after the midterm elections. Ultimate Fighting Championship (UFC) boss Dana White says he has a meeting with Donald Trump in Washington after being offered the…",
-   "thumb": "https://i2.ytimg.com/vi/uqazxFYR_ug/hqdefault.jpg",
-   "id": "4e257dfacab6",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "Why PMs are suddenly valuable again | Tulsee Doshi (Head of Product, Gemini)",
    "url": "https://www.youtube.com/watch?v=qGf2Yvan4Wg",
    "source": "Lenny's Podcast",
@@ -1423,24 +1493,6 @@
    "summary": "Tulsee Doshi is head of product for Google’s frontier AI models, including Gemini and other multimodal models, such as Nano Banana, Genie, Veo, and Lyria. *We discuss:* 1. Why model development is not just engineering, but also like Snape’s potions class 2. Google’s full-stack…",
    "thumb": "https://i2.ytimg.com/vi/qGf2Yvan4Wg/hqdefault.jpg",
    "id": "dad56c7a2fc9",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Republican tells Trump to 'go further' after midterms defeat",
-   "url": "https://www.youtube.com/watch?v=hsAQReQpCog",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-08T13:04:20.000Z",
-   "summary": "As the Republican Party does some soul-searching, Lewis Goodall spoke to Erol Morkoç of Republicans Overseas. Ultimate Fighting Championship (UFC) boss Dana White says he has a meeting with Donald Trump in Washington after being offered the job of White House press secretary.…",
-   "thumb": "https://i1.ytimg.com/vi/hsAQReQpCog/hqdefault.jpg",
-   "id": "ab9e06ad5aa2",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1803,7 +1855,7 @@
    "why": "0"
   },
   {
-   "title": "North Korea Robbed Binance. Can Anyone Get the Money Back?",
+   "title": "The Binance Hack Isn’t Funny!",
    "url": "https://www.youtube.com/watch?v=yU8JpuK5NZs",
    "source": "Patrick Boyle",
    "feedId": "yt-patrick-boyle",
@@ -1992,42 +2044,6 @@
    "summary": "From tomorrow, Labour will crack down on porn depicting strangulation or suffocation, sexual activity between people who are related, or adults role-playing as children under 16. The legislation will bring online pornography in line with existing regulations for offline…",
    "thumb": "https://i4.ytimg.com/vi/_vk2BJ36ZtM/hqdefault.jpg",
    "id": "9d479769a55c",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "GodLogic Apologetics Vs Andrew Griffin | Trinitarian Vs Unitarian",
-   "url": "https://www.youtube.com/watch?v=fNzinTR0GIM",
-   "source": "Modern-Day Debate",
-   "feedId": "yt-modern-day-debate",
-   "type": "video",
-   "tags": [
-    "debates",
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-05T00:55:36.000Z",
-   "summary": "Huge thank you to our DEBATECON 9 sponsors including: Revival of the Anointed's Rule: https://revivingtheroar.org/ Apologetics Ark: https://www.apologeticsark.com/links @UncensoredAmerica Yonaguni International Cuisine (Aguadilla, Puerto Rico):…",
-   "thumb": "https://i3.ytimg.com/vi/fNzinTR0GIM/hqdefault.jpg",
-   "id": "e955bf36c3f5",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Godzilla: Destroy All Monsters Melee - Before You Buy",
-   "url": "https://www.youtube.com/watch?v=WVyxHb3OfwI",
-   "source": "GameRanx",
-   "feedId": "yt-gameranx",
-   "type": "video",
-   "tags": [
-    "gaming"
-   ],
-   "published": "2026-11-04T19:50:20.000Z",
-   "summary": "Godzilla: Destroy All Monsters Melee (PC, PS5, Xbox Series X/S, Switch 2) is a remake of a classic Gamecube brawler. How is it? Let's talk. Subscribe for more: http://youtube.com/gameranxtv ▼▼ Watch more 'Before You Buy': https://bit.ly/2kfdxI6",
-   "thumb": "https://i4.ytimg.com/vi/WVyxHb3OfwI/hqdefault.jpg",
-   "id": "2bde378c4fc4",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2222,24 +2238,6 @@
    "summary": "Come see me on tour! ✨ Adam Neely & Lau Noah ✨ https://www.adamneelyxlaunoah.com/tour ☀️ Sungazer ☀️ https://www.sungazermusic.com/tour 0:00 Intro 8:33 Part 1 - Democracy 16:46 Part 2 - Autocracy 21:36 Part 3 - Jazz 28:25 Part 4 - Genre 35:11 Part 5 - Money 42:03 Conclusion…",
    "thumb": "https://i4.ytimg.com/vi/kIMIlLx4DIc/hqdefault.jpg",
    "id": "e598585ebf53",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Can This App Revolutionize Valet Parking? | Shark Tank US | Shark Tank Global",
-   "url": "https://www.youtube.com/watch?v=1rZxsirPYWk",
-   "source": "Shark Tank Global",
-   "feedId": "yt-shark-tank-global",
-   "type": "video",
-   "tags": [
-    "trash",
-    "business"
-   ],
-   "published": "2026-11-02T16:59:56.000Z",
-   "summary": "Award-winning web designer Wayne Johnson enters the Tank seeking $300,000 for 20% of ValPark Mobile, an app that lets customers pay for valet parking straight from their phones. With 115 locations and $270,000 in sales, he believes he can modernize a cash-based industry. From…",
-   "thumb": "https://i2.ytimg.com/vi/1rZxsirPYWk/hqdefault.jpg",
-   "id": "e3b894e69c5f",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2939,25 +2937,7 @@
    "score": 0,
    "matched": [],
    "why": "0"
-  },
-  {
-   "title": "Will AI cause utopia or disaster? | The Economist",
-   "url": "https://www.youtube.com/watch?v=AoKo6EujpW8",
-   "source": "The Economist",
-   "feedId": "yt-the-economist",
-   "type": "video",
-   "tags": [
-    "finance",
-    "business"
-   ],
-   "published": "2026-10-26T17:00:25.000Z",
-   "summary": "Artificial intelligence could make the world richer than ever—or it may cause a catastrophe. It's something that even the tech bros can't agree on. Sam Altman, CEO of OpenAI, thinks AI is going to be hugely positive, and Demis Hassabis, CEO of DeepMind Technologies, believes…",
-   "thumb": "https://i2.ytimg.com/vi/AoKo6EujpW8/hqdefault.jpg",
-   "id": "b3514a42b683",
-   "score": 0,
-   "matched": [],
-   "why": "0"
   }
  ],
- "contentHash": "21e186fd7d97"
+ "contentHash": "c2fdf0aedbbd"
 }
