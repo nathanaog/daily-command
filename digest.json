@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-09T10:16:11.947Z",
+ "generated": "2026-11-09T13:34:17.807Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
@@ -7,7 +7,7 @@
   "items": 121,
   "duplicatesMerged": 0,
   "lengthsKnown": 2,
-  "lengthLookups": 106,
+  "lengthLookups": 104,
   "lengthFailures": 104,
   "lengthVia": "video pages",
   "lengthFailReasons": {
@@ -657,9 +657,10 @@
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
+   "lastOk": "2026-11-09T10:16:11.947Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-xbox",
@@ -668,7 +669,7 @@
    "status": "cached",
    "count": 5,
    "lastOk": "2026-11-07T21:52:57.028Z",
-   "note": "rate-limited (429)"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-slaythespire",
@@ -677,25 +678,26 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-11-09T04:19:11.005Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
   },
   {
    "id": "rd-germany",
    "name": "r/germany",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": "2026-10-31T01:21:53.748Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-unitedkingdom",
@@ -704,12 +706,141 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   }
  ],
  "items": [
   {
-   "title": "Why is Trump defending the Nvidia boss caught up in a suspected spy scandal?",
+   "title": "Rubio sees little hope of diplomatic breakthrough to Mideast deadlock amid 'outrageous' Iranian demands",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xrq866/rubio_sees_little_hope_of_diplomatic_breakthrough/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-11-09T12:19:02.000Z",
+   "summary": "submitted by /u/One-Emu-1103 [link] [comments]",
+   "id": "d8f4786ccd4e",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "tagesschau 20:00 Uhr, 07.11.2026",
+   "url": "https://www.youtube.com/watch?v=pJO0AEtOs2E",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-09T12:18:47.000Z",
+   "summary": "tagesschau 20:00 Uhr US-Präsident Trump ernennt Steven Miller als neuen Stabschef, Russland setzt Angriffe auf Energieversorgung in der Ukraine fort, Ilse Aigner soll zur Wahl als Bundespräsidentin nominiert werden, Tote und Verletzte nach Schüssen in Krakau,…",
+   "thumb": "https://i1.ytimg.com/vi/pJO0AEtOs2E/hqdefault.jpg",
+   "id": "367837a568aa",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Rosstat hack: data suggests over 390,000 Russian deaths in Ukraine war",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xrq0s3/rosstat_hack_data_suggests_over_390000_russian/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-11-09T12:08:33.000Z",
+   "summary": "Excerpt: The hacker groups Kiberpartizany BY and Silent Crow claim to have carried out a large-scale breach of Russia's Federal State Statistics Service (Rosstat). According to the hackers, they managed to steal about 23 terabytes of data, including internal documents,…",
+   "id": "24c3f6d2b6cb",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Große Emotionen in Buenos Aires: Gläubige feiern Papst Leo XIV.",
+   "url": "https://www.youtube.com/watch?v=CQpznAxg_0c",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-09T12:06:51.000Z",
+   "summary": "Der Papst ist bei seiner Südamerika-Reise in Argentinien angekommen. Zu Beginn seines Besuchs kritisierte Leo XIV. die Politik von Präsident Milei und rief zu mehr Rücksicht gegenüber schwächeren Gruppen auf. Seit fast vier Jahrzehnten war kein Papst mehr zu Gast in…",
+   "thumb": "https://i4.ytimg.com/vi/CQpznAxg_0c/hqdefault.jpg",
+   "id": "1641100a5d7a",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "CSU-Politikerin Ilse Aigner soll Bundespräsidentin werden",
+   "url": "https://www.youtube.com/watch?v=HVOz8HbyKHE",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-09T11:30:16.000Z",
+   "summary": "Heute soll es offiziell werden: Auf Vorschlag von Kanzler Merz wollen die CDU-Führungsgremien Ilse Aigner für das Amt der Bundespräsidentin nominieren. Gestern hatte der Kanzler die CSU-Politikerin bereits dem Präsidium der Partei vorgeschlagen. Sollte Aigner am 30. Januar von…",
+   "thumb": "https://i1.ytimg.com/vi/HVOz8HbyKHE/hqdefault.jpg",
+   "id": "0aa614b27f9a",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Großes Entsetzen nach tödlichem Anschlag in Polen",
+   "url": "https://www.youtube.com/watch?v=LK6FoHzEEJ8",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-09T11:10:03.000Z",
+   "summary": "Der Angreifer von Krakau ist tot. Er sei am Morgen im Krankenhaus seinen Verletzungen erlegen, teilte das Polizeipräsidium der Woiwodschaft Kleinpolen bei X mit. Der 24-Jährige war verletzt worden, als die Polizei ihn in der zweitgrößten Stadt Polens überwältigte. Die Behörden…",
+   "thumb": "https://i1.ytimg.com/vi/LK6FoHzEEJ8/hqdefault.jpg",
+   "id": "46821c712d7d",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Türkei vor Weltklimakonferenz: Dorfbewohner kämpfen gegen Braunkohletagebau",
+   "url": "https://www.youtube.com/watch?v=b4IeJ6qAS4A",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-09T11:05:02.000Z",
+   "summary": "Im türkischen Antalya beginnt die Weltklimakonferenz. Ziel ist weiterhin, die Erderwärmung auf 1,5 Grad zu begrenzen – nach jüngsten Berechnungen des EU-Klimadienstes Kopernikus, wird das Ziel dieses Jahr wieder überschritten. Gastgeber Türkei rückt sich mit einer Kampagne zum…",
+   "thumb": "https://i3.ytimg.com/vi/b4IeJ6qAS4A/hqdefault.jpg",
+   "id": "12308518ad66",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "The $160bn scandal involving Trump, Nvidia and a suspected Chinese spy",
    "url": "https://www.youtube.com/watch?v=l-wkUlTdCsA",
    "source": "LBC",
    "feedId": "yt-lbc",
@@ -756,6 +887,40 @@
    "published": "2026-11-09T09:18:40.000Z",
    "summary": "submitted by /u/Eastern-Opposite9521 [link] [comments]",
    "id": "4b1e6ca515ad",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "U.S., Armenia and Azerbaijan move forward with for Trump transport corridor",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xrmpfm/us_armenia_and_azerbaijan_move_forward_with_for/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-11-09T08:50:03.000Z",
+   "summary": "The United States, Armenia and Azerbaijan have agreed to launch a series of trilateral meetings to continue their work on the Trump Route for International Peace and Prosperity (TRIPP) and will start by discussing transportation and electricity transmission. TRIPP is a planned…",
+   "id": "5f3dd4e5bc5e",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "‘A global political awakening’: how gen Z protests are sweeping the world",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xrmdi5/a_global_political_awakening_how_gen_z_protests/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-11-09T08:27:51.000Z",
+   "summary": "submitted by /u/guardian [link] [comments]",
+   "id": "ca55950fb56b",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -850,81 +1015,6 @@
    "duration": "43:31"
   },
   {
-   "title": "Melania Issues MAJOR Announcement after Midterm DISASTER!",
-   "url": "https://www.youtube.com/watch?v=Ic-1azVZRz0",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-09T00:30:05.000Z",
-   "summary": "Luke discusses the announcement of Melania's new documentary. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
-   "thumb": "https://i2.ytimg.com/vi/Ic-1azVZRz0/hqdefault.jpg",
-   "id": "364b03851686",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "KT #793 - BIG JAY OAKERSON + ZAC BROWN + MIKE FINOIA",
-   "url": "https://www.youtube.com/watch?v=BWZjZuzY0CA",
-   "source": "Kill Tony",
-   "feedId": "yt-kill-tony",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "standup",
-    "listen"
-   ],
-   "published": "2026-11-08T23:53:51.000Z",
-   "summary": "Big Jay Oakerson, Zac Brown, Mike Finoia, Pat O'Neill, Myles Johnson, Martin Phillips, D Madness, Michael A. Gonzales, Jon Deas, Matthew Muehling, Grooveline Horns, Joe White, Troy Conrad, Monica Parciak, Colt Mcneely, Nathan Poling, Steve Glass, Tony Hinchcliffe, Brian Redban…",
-   "thumb": "https://i3.ytimg.com/vi/BWZjZuzY0CA/hqdefault.jpg",
-   "id": "4635a8fc9d8b",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Trumps Niederlage – Chance oder Risiko für uns? Mit Sigmar Gabriel | Caren Miosga",
-   "url": "https://www.youtube.com/watch?v=Eo-gzTDn0kg",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-08T23:46:09.000Z",
-   "summary": "Die Demokraten haben bei den Zwischenwahlen in den USA in beiden Kammern des Kongresses deutliche Siege errungen. Donald Trump ist innenpolitisch geschwächt. Aber der republikanische US-Präsident hat schon in den ersten beiden Jahren dieser Amtszeit Kongress, Gerichte und…",
-   "thumb": "https://i2.ytimg.com/vi/Eo-gzTDn0kg/hqdefault.jpg",
-   "id": "f12abc6e02d1",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "tagesthemen 22:45 Uhr, 08.11.2026",
-   "url": "https://www.youtube.com/watch?v=SauCOIWb82Y",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-08T22:24:35.000Z",
-   "summary": "tagesthemen 22:45 Uhr Kanzler Merz wird Aigner als Bundespräsidentschaftskandidatin vorschlagen, Staatsanwaltschaft in Polen ermittelt nach Schüssen in Krakau wegen Terrorismus, Israels Präsident Herzog erteilt Oppositionspolitiker Eisenkot Auftrag zur Regierungsbildung,…",
-   "thumb": "https://i4.ytimg.com/vi/SauCOIWb82Y/hqdefault.jpg",
-   "id": "7a3199ce83f3",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "The best $5 I spent this weekend. Rouge Flight",
    "url": "https://www.reddit.com/r/xbox/comments/1xqgfa4/the_best_5_i_spent_this_weekend_rouge_flight/",
    "source": "r/xbox",
@@ -1005,6 +1095,43 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
+   "title": "Melania Issues MAJOR Announcement after Midterm DISASTER!",
+   "url": "https://www.youtube.com/watch?v=Ic-1azVZRz0",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-09T00:30:05.000Z",
+   "summary": "Luke discusses the announcement of Melania's new documentary. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
+   "thumb": "https://i2.ytimg.com/vi/Ic-1azVZRz0/hqdefault.jpg",
+   "id": "364b03851686",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "KT #793 - BIG JAY OAKERSON + ZAC BROWN + MIKE FINOIA",
+   "url": "https://www.youtube.com/watch?v=BWZjZuzY0CA",
+   "source": "Kill Tony",
+   "feedId": "yt-kill-tony",
+   "type": "video",
+   "tags": [
+    "comedy",
+    "standup",
+    "listen"
+   ],
+   "published": "2026-11-08T23:53:51.000Z",
+   "summary": "Big Jay Oakerson, Zac Brown, Mike Finoia, Pat O'Neill, Myles Johnson, Martin Phillips, D Madness, Michael A. Gonzales, Jon Deas, Matthew Muehling, Grooveline Horns, Joe White, Troy Conrad, Monica Parciak, Colt Mcneely, Nathan Poling, Steve Glass, Tony Hinchcliffe, Brian Redban…",
+   "thumb": "https://i3.ytimg.com/vi/BWZjZuzY0CA/hqdefault.jpg",
+   "id": "4635a8fc9d8b",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
    "title": "Visibly Depressed Don Jr. Realizes He’s F***ED Live On Air!",
    "url": "https://www.youtube.com/watch?v=9Kur9UVvgAw",
    "source": "Luke Beasley",
@@ -1018,25 +1145,6 @@
    "summary": "Luke discusses Don Jr.'s latest podcast reflecting on the midterm blowout. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
    "thumb": "https://i2.ytimg.com/vi/9Kur9UVvgAw/hqdefault.jpg",
    "id": "f1466dc2fbdc",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "tagesschau 20:00 Uhr, 08.11.2026",
-   "url": "https://www.youtube.com/watch?v=XemZmZ4AqUU",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-08T19:28:08.000Z",
-   "summary": "Die 20-Uhr-Ausgabe im Livestream und früher auf Abruf: https://ardmediathek.de/tagesschau und https://tagesschau.de Themen der Sendung: 00:00 Guten Abend 00:21 Staatsanwaltschaft in Polen ermittelt nach Schüssen in Krakau wegen Terrorismus 02:30 Diskussion in der Regierung vor…",
-   "thumb": "https://i1.ytimg.com/vi/XemZmZ4AqUU/hqdefault.jpg",
-   "id": "e566966f46c1",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1073,25 +1181,6 @@
    "summary": "Become a member now and take part in our Beginner Challenge: https://easygerman.link/membership_eg686 --- LEARN MORE GERMAN WITH US: 🎧 LISTEN TO OUR PODCAST: http://www.easygerman.fm 📬 SUBSCRIBE TO OUR NEWSLETTER: https://www.easygerman.org/newsletter WATCH MORE: ➕ INSTAGRAM:…",
    "thumb": "https://i1.ytimg.com/vi/l15FIo3a1jk/hqdefault.jpg",
    "id": "64ed6644e191",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "tagesthemen 21:45 Uhr, 06.11.2026",
-   "url": "https://www.youtube.com/watch?v=ArC74Xc2GdE",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-08T17:43:47.000Z",
-   "summary": "tagesthemen 21:45 Uhr Union legt sich bei Bundespräsidenten-Kandidatur auf Aigner fest, Porträt der möglichen neuen Bundespräsidentin Ilse Aigner, UN-Klimakonferenz: Ist Elektrifizierung der Heilsbringer für ein besseres Klima?, Einsatz von K.o.-Tropfen soll härter bestraft…",
-   "thumb": "https://i2.ytimg.com/vi/ArC74Xc2GdE/hqdefault.jpg",
-   "id": "4bd80a54ef6d",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1167,25 +1256,6 @@
    "why": "0"
   },
   {
-   "title": "„Gefährlichste Migrationsroute der Welt“: Kanaren melden immer mehr Flüchtlingsankünfte",
-   "url": "https://www.youtube.com/watch?v=kHS0_IbmLOg",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-08T15:25:45.000Z",
-   "summary": "Spanien schlägt Alarm. Die Zahl der ankommenden Flüchtlinge auf El Hierro, einer kleinen kanarischen Insel, steigt seit Anfang November wieder stark an. Die Behörden warnen vor Ausnahmezuständen wie 2024. Die spanische Seenotrettung und das Rote Kreuz sind im Dauereinsatz. Mehr…",
-   "thumb": "https://i4.ytimg.com/vi/kHS0_IbmLOg/hqdefault.jpg",
-   "id": "07f4381f521d",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "‘Hilarious, ridiculous people’ surround Donald Trump",
    "url": "https://www.youtube.com/watch?v=uqazxFYR_ug",
    "source": "LBC",
@@ -1199,23 +1269,6 @@
    "summary": "Lewis Goodall is joined by comedian Cody Dahler to try and make sense of the latest developments in the White House after the midterm elections. Ultimate Fighting Championship (UFC) boss Dana White says he has a meeting with Donald Trump in Washington after being offered the…",
    "thumb": "https://i2.ytimg.com/vi/uqazxFYR_ug/hqdefault.jpg",
    "id": "4e257dfacab6",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Situation Report: The US Midterms As Seen from Beijing, Moscow, and Tehran",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xqz6lp/situation_report_the_us_midterms_as_seen_from/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-11-08T14:05:14.000Z",
-   "summary": "submitted by /u/Adept_Grand_6523 [link] [comments]",
-   "id": "cb7a4727fcb6",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1258,23 +1311,6 @@
    "why": "0"
   },
   {
-   "title": "Europe must stockpile critical raw materials, Germany's Merz says",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xqxtee/europe_must_stockpile_critical_raw_materials/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-11-08T12:56:45.000Z",
-   "summary": "submitted by /u/paneuropeanism_ [link] [comments]",
-   "id": "de8e9b4d9971",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "How the military still plays a role in James Blunt’s life",
    "url": "https://www.youtube.com/watch?v=9sDggmRPeLw",
    "source": "LBC",
@@ -1288,40 +1324,6 @@
    "summary": "James Blunt joins Nick Ferrari to talk all things Celebrity Traitors, his new album 'Airplane Mode', and how his six years in the army still shape his life today. Listen to the full show on the all-new LBC App: https://app.af.lbc.co.uk/btnc/thenewlbcapp #nickferrari #jamesblunt…",
    "thumb": "https://i2.ytimg.com/vi/9sDggmRPeLw/hqdefault.jpg",
    "id": "27741021d415",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "To Cross the Red Sea, Shippers Email Houthi Rebels. Read Their Inbox.",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xqtzsu/to_cross_the_red_sea_shippers_email_houthi_rebels/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-11-08T08:54:00.000Z",
-   "summary": "submitted by /u/Bulky_Traffic2229 [link] [comments]",
-   "id": "f6b7a2af74b5",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Russia using own version of Starlink for military comms over Ukraine, Kyiv says",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xqtcci/russia_using_own_version_of_starlink_for_military/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-11-08T08:09:46.000Z",
-   "summary": "Mykola Zientsev, a Kyiv-based security expert, said there were some signs that Rassvet was already having an impact on precision strikes by Russian jet-powered drones. “In practical terms, Russia already possesses at least two high-quality satellite communications windows every…",
-   "id": "5d52dddf803f",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2875,5 +2877,5 @@
    "why": "0"
   }
  ],
- "contentHash": "e75765404092"
+ "contentHash": "76fcbcee66d4"
 }
