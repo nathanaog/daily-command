@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-09T19:15:23.612Z",
+ "generated": "2026-11-09T22:02:10.316Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
@@ -657,9 +657,10 @@
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
+   "lastOk": "2026-11-09T19:15:23.612Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-xbox",
@@ -668,7 +669,7 @@
    "status": "cached",
    "count": 5,
    "lastOk": "2026-11-07T21:52:57.028Z",
-   "note": "rate-limited (429)"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-slaythespire",
@@ -677,25 +678,26 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-11-09T13:34:17.807Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
   },
   {
    "id": "rd-germany",
    "name": "r/germany",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": "2026-10-31T01:21:53.748Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-unitedkingdom",
@@ -704,13 +706,31 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   }
  ],
  "items": [
   {
-   "title": "Weltklimakonferenz COP31 beginnt: Lange Schlangen in Antalya",
-   "url": "https://www.youtube.com/watch?v=6keBfMr_jeM",
+   "title": "How predators like Russell Brand operate' | James O’Brien - The Whole Show",
+   "url": "https://www.youtube.com/watch?v=D_39m7ggbCY",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-09T22:00:11.000Z",
+   "summary": "As Russell Brand is sentenced for rape and sexual assault, James explores why individuals who report sexual abuse and misconduct can face such a long and difficult battle to be heard. Why are institutions so often slow to act on allegations of sexual violence? From protecting…",
+   "thumb": "https://i1.ytimg.com/vi/D_39m7ggbCY/hqdefault.jpg",
+   "id": "fc766f0f204a",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "„Kennen Sie das überhaupt?“: Verkehrsminister Bilger antwortet auf User-Fragen | Die Arena",
+   "url": "https://www.youtube.com/watch?v=SbGFiQdRRM4",
    "source": "Tagesschau",
    "feedId": "yt-tagesschau",
    "type": "video",
@@ -719,16 +739,162 @@
     "news",
     "listen"
    ],
-   "published": "2026-11-09T19:00:53.000Z",
-   "summary": "Riesiger Andrang auf der COP31 in Antalya: Am Morgen müssen viele in langen Schlangen warten, um überhaupt hineinzukommen. Delegierte aus gut 190 Ländern kommen zum Gipfel, etwa 80.000 Menschen werden erwartet. Es könnte die zweitgrößte COP aller Zeiten werden. Hier mehr dazu:…",
-   "thumb": "https://i3.ytimg.com/vi/6keBfMr_jeM/hqdefault.jpg",
-   "id": "a97006b320a6",
+   "published": "2026-11-09T21:23:24.000Z",
+   "summary": "Die ARD-Arena mit dem neuen Bundesverkehrsminister Steffen Bilger. Hohe Preise an der Zapfsäule, Staus und Dauerbaustellen, eine Bahn, die ihre Fahrgäste immer wieder im Stich lässt, junge Menschen, die sich den Führerschein nicht leisten können. Und eine Infrastruktur, die…",
+   "thumb": "https://i4.ytimg.com/vi/SbGFiQdRRM4/hqdefault.jpg",
+   "id": "e6e0456ac983",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Simon Marks breaks down the MAGA civil war",
+   "title": "Nach langem Zögern: Merz nominiert Aigner als Bundespräsidenten-Kandidatin | tagesthemen-Interview",
+   "url": "https://www.youtube.com/watch?v=7DFXzXoUHMg",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-09T21:21:40.000Z",
+   "summary": "Ilse Aigner soll als erste Frau Staatsoberhaupt der Bundesrepublik Deutschland werden. Bundeskanzler Merz hat die CSU-Politikerin heute für die Union offiziell als Kandidatin nominiert. Jörg Schönenborn fragt den Kanzler, warum er so lange gezögert hat, und was Ilse Aigner zur…",
+   "thumb": "https://i4.ytimg.com/vi/7DFXzXoUHMg/hqdefault.jpg",
+   "id": "b80da40a0a7f",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "The New Epicenter of Global Terror: How Africa’s Weak States and Rare Earths Drive Transnational Extremism",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xs3n7a/the_new_epicenter_of_global_terror_how_africas/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-11-09T21:01:51.000Z",
+   "summary": "submitted by /u/ForeignAffairsMag [link] [comments]",
+   "id": "dfc622f406f2",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "A Recipe for Disaster in Taiwan: Why the Risk of a Crisis Is Growing",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xs3m3x/a_recipe_for_disaster_in_taiwan_why_the_risk_of_a/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-11-09T21:00:45.000Z",
+   "summary": "submitted by /u/ForeignAffairsMag [link] [comments]",
+   "id": "bce56906c919",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Republican to force vote on impeaching Pete Hegseth | Simon Marks",
+   "url": "https://www.youtube.com/watch?v=8cvVqsNOvMQ",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-09T21:00:08.000Z",
+   "summary": "Republican Congressman Thomas Massie has moved to force a vote to impeach US defence secretary Pete Hegseth. The Kentucky representative has introduced eight articles of impeachment against Hegseth, accusing him of illegally waging war without congressional authorisation and…",
+   "thumb": "https://i1.ytimg.com/vi/8cvVqsNOvMQ/hqdefault.jpg",
+   "id": "47bd0fd311c2",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Warum haben wir kein Tempolimit? Verkehrsminister Bilger reagiert auf User-Fragen | Die Arena",
+   "url": "https://www.youtube.com/watch?v=ufAxaqBE1jQ",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-09T20:28:20.000Z",
+   "summary": "User:innen fragen, der Bundesverkehrsminister antwortet – darum geht es im ARD-Format \"Arena\". Gleich die erste Frage hatte es in sich: Warum gibt es in Deutschland immer noch kein Tempolimit, Herr Bilger? Die ARD-Townhall-Sendung \"Arena\" widmet sich in ihrer nächsten Ausgabe…",
+   "thumb": "https://i2.ytimg.com/vi/ufAxaqBE1jQ/hqdefault.jpg",
+   "id": "6be8e502c63b",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Nvidia stock plunges almost $400bn after Chinese spy scandal",
+   "url": "https://www.youtube.com/watch?v=Rt2FJIPYi4s",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-09T20:00:14.000Z",
+   "summary": "Nvidia shares plunge after boss embroiled in alleged Chinese spy scandal. The chipmaker announced an investigation on Sunday after chief executive Jensen Huang admitted having an affair with a business executive accused of being a Chinese spy. Hundreds of billions of dollars…",
+   "thumb": "https://i3.ytimg.com/vi/Rt2FJIPYi4s/hqdefault.jpg",
+   "id": "5eeca45df0d2",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "„Alle sind frustriert“ – Was Deutsche über Demokratie denken",
+   "url": "https://www.youtube.com/watch?v=ZW2UMJaVzqw",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-09T19:34:15.000Z",
+   "summary": "Die Demokratie genießt breiten Rückhalt. Aber nur jede:r Dritte ist der Meinung, dass sie in Deutschland gut funktioniert. Warum das so ist und was helfen kann, zeigt die ARD-Aktion „Deine Meinung zählt!“. Mehr darüber:…",
+   "thumb": "https://i3.ytimg.com/vi/ZW2UMJaVzqw/hqdefault.jpg",
+   "id": "4cfd2dece1b4",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "tagesschau 20:00 Uhr, 09.11.2026",
+   "url": "https://www.youtube.com/watch?v=sqNV-C54MWI",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-09T19:30:29.000Z",
+   "summary": "Die 20-Uhr-Ausgabe im Livestream und früher auf Abruf: https://ardmediathek.de/tagesschau und https://tagesschau.de 0:00 Guten Abend! 0:22 CSU-Politikerin Ilse Aigner wird Kandidatin der Union für die Wahl der nächsten Bundespräsidentin 3:00 Frankreich macht Iran für…",
+   "thumb": "https://i4.ytimg.com/vi/sqNV-C54MWI/hqdefault.jpg",
+   "id": "eeade4b35e59",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Republicans turn on each other after midterms defeat",
    "url": "https://www.youtube.com/watch?v=8yrqlUZ64QA",
    "source": "LBC",
    "feedId": "yt-lbc",
@@ -741,25 +907,6 @@
    "summary": "Simon Marks takes a look at the civil war brewing within MAGA after Republican politicians look to recover from the midterms drubbing. 00:00 - Ron De Santis hits out 03:05 - Is JD Vance still Trump’s heir? 07:48 - Is Rubio going to run? 10:12 - The Middle East will decide…",
    "thumb": "https://i1.ytimg.com/vi/8yrqlUZ64QA/hqdefault.jpg",
    "id": "cde212f053c9",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Frankreich macht Iran für Cyberangriffe verantwortlich",
-   "url": "https://www.youtube.com/watch?v=p50DnycYmUA",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-09T18:36:07.000Z",
-   "summary": "Die französische Regierung hat die iranische Revolutionsgarde für die Cyberangriffe auf Kühlanlagen in Frankreich verantwortlich gemacht. Dank des Einsatzes staatlicher Behörden könne er bestätigen, „dass die Verantwortung für diesen Angriff bei der Revolutionsgarde der…",
-   "thumb": "https://i1.ytimg.com/vi/p50DnycYmUA/hqdefault.jpg",
-   "id": "98a901abf3c8",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -783,39 +930,18 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Wie sich Jüdinnen und Juden in Deutschland zu schützen versuchen",
-   "url": "https://www.youtube.com/watch?v=JzSOhi2IAwo",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
+   "title": "The Montreal Summit: Canada Becomes the Driver of a New Geopolitical Dynamic Among “Middle Powers”",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xryshz/the_montreal_summit_canada_becomes_the_driver_of/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
    "tags": [
-    "german",
-    "news",
-    "listen"
+    "politics",
+    "news"
    ],
-   "published": "2026-11-09T18:08:23.000Z",
-   "summary": "88 Jahre nach der NS-Pogromnacht sehen sich viele jüdische Menschen in Deutschland erneut bedroht. Im Rahmen der jüdischen Kulturwoche in Stuttgart berichten Jüdinnen und Juden darüber, wie sie die wachsende Zahl antisemitischer Angriffe erleben - und wie sie sich künftig…",
-   "thumb": "https://i3.ytimg.com/vi/JzSOhi2IAwo/hqdefault.jpg",
-   "id": "da573e5b929f",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Wurde der Nvidia-Chef ausspioniert? Experte beantwortet Fragen",
-   "url": "https://www.youtube.com/watch?v=XhEUjRCahT0",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-09T18:03:50.000Z",
-   "summary": "Der KI-Chip-Gigant Nvidia hat nach Berichten über einen Spionageverdacht eine Untersuchung gegen seinen Gründer und Konzernchef Jensen Huang eingeleitet. Er soll eine Affäre mit einer mutmaßlichen chinesischen Spionin gehabt haben. Im tagesschau-Interview beantwortet ein…",
-   "thumb": "https://i1.ytimg.com/vi/XhEUjRCahT0/hqdefault.jpg",
-   "id": "6b21105be4fb",
+   "published": "2026-11-09T18:02:03.000Z",
+   "summary": "Again a intriguing, lenghty article from solidinfo. submitted by /u/Visual_Ingenuity3258 [link] [comments]",
+   "id": "8b3702171205",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -838,19 +964,18 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "How predators like Russell Brand operate' | James O’Brien - The Whole Show",
-   "url": "https://www.youtube.com/watch?v=D_39m7ggbCY",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
+   "title": "France says Iran's Guards behind cyberattacks on fridges | France on Monday said Iran's Revolutionary Guards were behind \"unprecedented\" cyberattacks on supermarket fridges in the country last month, vowing sanctions on a European level against Tehran.",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xryj9z/france_says_irans_guards_behind_cyberattacks_on/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
    "tags": [
     "politics",
-    "listen"
+    "news"
    ],
-   "published": "2026-11-09T17:47:52.000Z",
-   "summary": "As Russell Brand is sentenced for rape and sexual assault, James explores why individuals who report sexual abuse and misconduct can face such a long and difficult battle to be heard. Why are institutions so often slow to act on allegations of sexual violence? From protecting…",
-   "thumb": "https://i1.ytimg.com/vi/D_39m7ggbCY/hqdefault.jpg",
-   "id": "fc766f0f204a",
+   "published": "2026-11-09T17:52:50.000Z",
+   "summary": "submitted by /u/NotSoSaneExile [link] [comments]",
+   "id": "f69805f1c6d0",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -888,43 +1013,6 @@
    "summary": "Huge thank you to our DEBATECON 9 sponsors including: Revival of the Anointed's Rule: https://revivingtheroar.org/ Apologetics Ark: https://www.apologeticsark.com/links @UncensoredAmerica Yonaguni International Cuisine (Aguadilla, Puerto Rico):…",
    "thumb": "https://i3.ytimg.com/vi/fuViJKnmqRc/hqdefault.jpg",
    "id": "7f76fa8ec167",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "tagesschau in Einfacher Sprache 19:00 Uhr, 09.11.2026",
-   "url": "https://www.youtube.com/watch?v=KOK7-SkdORg",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-09T16:41:14.000Z",
-   "summary": "tagesschau in Einfacher Sprache 19:00 Uhr Die \"tagesschau in Einfacher Sprache\" – immer Montag bis Freitag um 19:00 Uhr bei tagesschau24 und rund um die Uhr in der Mediathek. Nachrichten in Einfacher Sprache richten sich vor allem an Menschen mit Lese-, Lern- und/oder…",
-   "thumb": "https://i4.ytimg.com/vi/KOK7-SkdORg/hqdefault.jpg",
-   "id": "211149850e60",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "LBC callers react to Russell Brand's jail sentence",
-   "url": "https://www.youtube.com/watch?v=ptOuQhSrn0o",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-09T16:30:17.000Z",
-   "summary": "Russell Brand has been jailed for 10 years and six months for rape and sexual assaults. The disgraced star appeared at Southwark Crown Court today watched by his wife Laura, and his father sitting in the public gallery. Brand’s wife said “oh God” as her husband walked into the…",
-   "thumb": "https://i1.ytimg.com/vi/ptOuQhSrn0o/hqdefault.jpg",
-   "id": "88808d480d00",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -998,24 +1086,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Russell Brand jailed for 10 years",
-   "url": "https://www.youtube.com/watch?v=Uyi348zLpew",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-09T15:54:59.000Z",
-   "summary": "Russell Brand has been found guilty and jailed for 10-and-a-half years for raping a woman and sexually assaulting three others during his showbiz career. The disgraced star appeared at Southwark Crown Court today watched by his wife Laura, and his father sitting in the public…",
-   "thumb": "https://i2.ytimg.com/vi/Uyi348zLpew/hqdefault.jpg",
-   "id": "3bfa37c0be85",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Gillingham man jailed over racist Kemi Badenoch death threats",
    "url": "https://www.reddit.com/r/ukpolitics/comments/1xrupqk/gillingham_man_jailed_over_racist_kemi_badenoch/",
    "source": "r/ukpolitics",
@@ -1067,6 +1137,23 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
+   "title": "Israel’s Foreign Funding Inquiry is Not Evidence of a Stolen Election",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xrtrmy/israels_foreign_funding_inquiry_is_not_evidence/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-11-09T14:56:36.000Z",
+   "summary": "submitted by /u/RUSIOfficial [link] [comments]",
+   "id": "c0ed0bce2113",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
    "title": "Hospital trust does not know who 'methodically' deleted baby death records - Those harmed by horrific failings at Nottingham's maternity services also say they remain \"suspicious\" about a more recent incident which means data showing who looked at their records has been lost.",
    "url": "https://www.reddit.com/r/ukpolitics/comments/1xrt69u/hospital_trust_does_not_know_who_methodically/",
    "source": "r/ukpolitics",
@@ -1100,40 +1187,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Rubio sees little hope of diplomatic breakthrough to Mideast deadlock amid 'outrageous' Iranian demands",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xrq866/rubio_sees_little_hope_of_diplomatic_breakthrough/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-11-09T12:19:02.000Z",
-   "summary": "submitted by /u/One-Emu-1103 [link] [comments]",
-   "id": "d8f4786ccd4e",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Rosstat hack: data suggests over 390,000 Russian deaths in Ukraine war",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xrq0s3/rosstat_hack_data_suggests_over_390000_russian/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-11-09T12:08:33.000Z",
-   "summary": "Excerpt: The hacker groups Kiberpartizany BY and Silent Crow claim to have carried out a large-scale breach of Russia's Federal State Statistics Service (Rosstat). According to the hackers, they managed to steal about 23 terabytes of data, including internal documents,…",
-   "id": "24c3f6d2b6cb",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "PRD Collab Question",
    "url": "https://www.reddit.com/r/ProductManagement/comments/1xrpm03/prd_collab_question/",
    "source": "r/productmanagement",
@@ -1161,58 +1214,6 @@
    "published": "2026-11-09T09:12:18.000Z",
    "summary": "Hey, I’m a neurodiverse PM. I’ve been mid level for 7/8 years. Does anybody have any tips for neurodiverse PM’s? I am Autistic. I find PM work very hard because it’s so ambiguous and it probably holds me back, but it would be good to see how other people work and cope with it…",
    "id": "98ac296184ad",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "U.S., Armenia and Azerbaijan move forward with for Trump transport corridor",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xrmpfm/us_armenia_and_azerbaijan_move_forward_with_for/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-11-09T08:50:03.000Z",
-   "summary": "The United States, Armenia and Azerbaijan have agreed to launch a series of trilateral meetings to continue their work on the Trump Route for International Peace and Prosperity (TRIPP) and will start by discussing transportation and electricity transmission. TRIPP is a planned…",
-   "id": "5f3dd4e5bc5e",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "‘A global political awakening’: how gen Z protests are sweeping the world",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xrmdi5/a_global_political_awakening_how_gen_z_protests/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-11-09T08:27:51.000Z",
-   "summary": "submitted by /u/guardian [link] [comments]",
-   "id": "ca55950fb56b",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Pete Hegseth: Last Week Tonight with John Oliver (HBO)",
-   "url": "https://www.youtube.com/watch?v=LO5iHyYa0XM",
-   "source": "Last Week Tonight",
-   "feedId": "yt-last-week-tonight",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "politics"
-   ],
-   "published": "2026-11-09T07:30:32.000Z",
-   "summary": "John Oliver discusses the damage that Pete Hegseth has caused both at home and abroad as the U.S. Secretary of Defense, how it could take a generation to fix, and the unexpected decorating flourishes of Mr. Kid Rock. Subscribe to the #lastweektonight YouTube channel for more…",
-   "thumb": "https://i1.ytimg.com/vi/LO5iHyYa0XM/hqdefault.jpg",
-   "id": "590bb915f6e9",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1296,6 +1297,24 @@
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Pete Hegseth: Last Week Tonight with John Oliver (HBO)",
+   "url": "https://www.youtube.com/watch?v=LO5iHyYa0XM",
+   "source": "Last Week Tonight",
+   "feedId": "yt-last-week-tonight",
+   "type": "video",
+   "tags": [
+    "comedy",
+    "politics"
+   ],
+   "published": "2026-11-09T07:30:32.000Z",
+   "summary": "John Oliver discusses the damage that Pete Hegseth has caused both at home and abroad as the U.S. Secretary of Defense, how it could take a generation to fix, and the unexpected decorating flourishes of Mr. Kid Rock. Subscribe to the #lastweektonight YouTube channel for more…",
+   "thumb": "https://i1.ytimg.com/vi/LO5iHyYa0XM/hqdefault.jpg",
+   "id": "590bb915f6e9",
+   "score": 0,
+   "matched": [],
+   "why": "0"
   },
   {
    "title": "S13 E29: Midterm Results & Pete Hegseth: 11/8/26: Last Week Tonight with John Oliver",
@@ -1457,23 +1476,6 @@
    "summary": "Kimberly Cayce enters the Tank seeking $125,000 for 20% of Kalyx Technologies, a premium sports bra brand designed to reduce breast movement and exercise-related pain without sacrificing style. From Season 1 Episode 6 Watch Shark Tank US Now:…",
    "thumb": "https://i2.ytimg.com/vi/euo2W0lEw7s/hqdefault.jpg",
    "id": "76057fab3c31",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "An ‘America First’ Approach to Famine",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xr19j8/an_america_first_approach_to_famine/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-11-08T15:40:13.000Z",
-   "summary": "submitted by /u/theatlantic [link] [comments]",
-   "id": "333cf9ea6dee",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2939,5 +2941,5 @@
    "why": "0"
   }
  ],
- "contentHash": "c2fdf0aedbbd"
+ "contentHash": "d152b525da97"
 }
