@@ -1,10 +1,10 @@
 {
- "generated": "2026-11-10T19:17:17.952Z",
+ "generated": "2026-11-10T21:57:38.590Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
-  "ok": 51,
-  "items": 121,
+  "ok": 50,
+  "items": 118,
   "duplicatesMerged": 0,
   "lengthsKnown": 2,
   "lengthLookups": 105,
@@ -630,20 +630,19 @@
    "id": "rd-productmanagement",
    "name": "r/productmanagement",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 1,
-   "url": "https://www.reddit.com/r/productmanagement/top/.rss?t=day"
+   "lastOk": "2026-11-10T19:17:17.952Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-tech",
    "name": "r/tech",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": "2026-11-07T19:04:52.310Z",
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-gaming",
@@ -652,25 +651,26 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-11-10T13:26:17.586Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
   },
   {
    "id": "rd-xbox",
    "name": "r/xbox",
    "type": "reddit",
-   "status": "cached",
-   "count": 3,
+   "status": "error",
+   "count": 0,
    "lastOk": "2026-11-07T21:52:57.028Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-slaythespire",
@@ -679,7 +679,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-geopolitics",
@@ -711,7 +711,112 @@
  ],
  "items": [
   {
-   "title": "LBC callers react to Pete Hegseth's possible impeachment",
+   "title": "Webcamming must be banned say MPs in warning over 'e-pimps' exploitation",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xsywtr/webcamming_must_be_banned_say_mps_in_warning_over/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-11-10T21:14:34.000Z",
+   "summary": "submitted by /u/PM_ME_BEEF_CURTAINS [link] [comments]",
+   "id": "c548404e4734",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "UK court overturns Trinidad and Tobago law criminalising homosexual sex",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xsyji0/uk_court_overturns_trinidad_and_tobago_law/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-11-10T21:00:25.000Z",
+   "summary": "submitted by /u/Eastern-Opposite9521 [link] [comments]",
+   "id": "e5771d9b5d08",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Why do people born on 1st January seem to commit so much more crime?",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xsxbfa/why_do_people_born_on_1st_january_seem_to_commit/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-11-10T20:12:07.000Z",
+   "summary": "submitted by /u/beejiu [link] [comments]",
+   "id": "78b69301fb72",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "US Army member arrested in UK over suspected Russia espionage",
+   "url": "https://www.youtube.com/watch?v=X6KLaF1Aquk",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-10T20:00:36.000Z",
+   "summary": "A member of the US Army has been arrested in Gloucestershire as part of a Counter Terrorism Policing investigation into alleged espionage linked to Russia. The 41-year-old man was detained near Gloucester on Tuesday on suspicion of offences under the National Security Act 2023.…",
+   "thumb": "https://i1.ytimg.com/vi/X6KLaF1Aquk/hqdefault.jpg",
+   "id": "818f56644e34",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "tagesschau 20:00 Uhr, 10.11.2026",
+   "url": "https://www.youtube.com/watch?v=avP998hCvzo",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-10T19:51:31.000Z",
+   "summary": "tagesschau 20:00 Uhr Die 20-Uhr-Ausgabe der tagesschau im Livestream und früher auf Abruf: https://ardmediathek.de/tagesschau und https://tagesschau.de Themen der tagesschau-Sendung: 00:00 Guten Abend 00:22 Präsident des Maschinenbauverbandes macht Bundesregierung für die Krise…",
+   "thumb": "https://i2.ytimg.com/vi/avP998hCvzo/hqdefault.jpg",
+   "id": "2032b6876a50",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Member of US Army arrested by UK counter-terror police",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xsvpk1/member_of_us_army_arrested_by_uk_counterterror/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-11-10T19:09:53.000Z",
+   "summary": "submitted by /u/bendubberley_ [link] [comments]",
+   "id": "a0f1085fc236",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "'He's deranged': Hegseth at risk of impeachment",
    "url": "https://www.youtube.com/watch?v=K_AE3UlCJbY",
    "source": "LBC",
    "feedId": "yt-lbc",
@@ -778,6 +883,23 @@
    "published": "2026-11-10T18:52:04.000Z",
    "summary": "Hi all, was a SWE for 1 year post-grad and didnt like the company at all or the work. I began applying at random places and was reached out for an entry level (0-1 YOE) product associate role. I was initially excited bc it seemed like they’d train you and weren’t asking for…",
    "id": "cea295b7e92d",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "UK social media ban expansion for under-16s could cover YouTube Kids, LegoPlay, Spotify, eBay",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xsuesw/uk_social_media_ban_expansion_for_under16s_could/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-11-10T18:21:33.000Z",
+   "summary": "submitted by /u/PerfidiousHedgehog [link] [comments]",
+   "id": "12562c7630fe",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -981,43 +1103,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "GTA 6: Download gestartet – Gaming-Experte John Braun sieht „globales Ereignis“",
-   "url": "https://www.youtube.com/watch?v=u3Zul7R_gus",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-10T14:55:36.000Z",
-   "summary": "In fast zwei Wochen ist es so weit: Der sechste Teil der erfolgreichen Videospiel-Reihe Grand Theft Auto (GTA) erscheint am 19. November – das wohl meisterwartete Videospiel der vergangenen Jahre. Seit heute steht das Spiel zum Download bereit. Einordnungen von Gaming-Experte…",
-   "thumb": "https://i2.ytimg.com/vi/u3Zul7R_gus/hqdefault.jpg",
-   "id": "14809a9c528a",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Russell Brand lead detective: More alleged victims to come forward",
-   "url": "https://www.youtube.com/watch?v=FuxvJuU00W4",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-10T14:30:32.000Z",
-   "summary": "Russell Brand has been jailed for 10 and a half years for rape and sexual assault. 00:00 | Detective Superintendent Andy Furphy provides more details and says more alleged victims are expected to come forward. 02:35 | Rape survivor and campaigner Morwenna Loughman shares how…",
-   "thumb": "https://i3.ytimg.com/vi/FuxvJuU00W4/hqdefault.jpg",
-   "id": "a1c2b7ce7e57",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Judge EXPOSES MAGA Star’s VILE CRIMES TO HIS FACE!",
    "url": "https://www.youtube.com/watch?v=_si2AxALiYk",
    "source": "Luke Beasley",
@@ -1070,23 +1155,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "'Double amputees run marathons': Kemi says having ADHD does not justify disability benefits as she unveils plan to cut £36billion from welfare bill",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xsltlf/double_amputees_run_marathons_kemi_says_having/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-11-10T12:37:25.000Z",
-   "summary": "submitted by /u/dailymail [link] [comments]",
-   "id": "a70d7f9a163c",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Is The AI Bubble (finally) Popping?",
    "url": "https://www.youtube.com/watch?v=WXV9emaUeo0",
    "source": "How Money Works",
@@ -1106,23 +1174,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Rachel Cunliffe: No, the \"porn law row\" does not risk trivialising VAWG. The *terrible wording* of the porn law risks trivialising VAWG. If your law is so badly written it bans harmless acts by mistake, that's a problem with YOU as legislators, not with the people pointing that out",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xsky6u/rachel_cunliffe_no_the_porn_law_row_does_not_risk/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-11-10T11:53:05.000Z",
-   "summary": "submitted by /u/m1ndwipe [link] [comments]",
-   "id": "b10283539c85",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "CANCEL Dave Chappelle For Charlie Kirk Jokes",
    "url": "https://www.youtube.com/watch?v=xVIY8XSMVDc",
    "source": "Aberrant preach",
@@ -1135,57 +1186,6 @@
    "summary": "Asmongold criticized comedian Dave Chappelle after a leaked stand-up set him joking about Charlie Kirk. Joe Rogan & many more are upset. ———————————— Spotify: https://open.spotify.com/artist/6QJIJ6AugqPEFASp1V6zgH Merchandise ---…",
    "thumb": "https://i1.ytimg.com/vi/xVIY8XSMVDc/hqdefault.jpg",
    "id": "3eb1b8649d97",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Ben Hopkinson on X: \"Government imposed policy costs make up 57% of the clearing price of a new flat in London and 42% of a new home in the Home Counties...\"",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xsk55h/ben_hopkinson_on_x_government_imposed_policy/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-11-10T11:05:56.000Z",
-   "summary": "submitted by /u/silent-schmick [link] [comments]",
-   "id": "699399bf9f59",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Why Britain might win if the AI bubble bursts",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xsjyja/why_britain_might_win_if_the_ai_bubble_bursts/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-11-10T10:55:19.000Z",
-   "summary": "submitted by /u/Free-Middle820 [link] [comments]",
-   "id": "be3a58e25476",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "The far-right Gen Z agitators vying to be Britain’s Charlie Kirk",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xsj24r/the_farright_gen_z_agitators_vying_to_be_britains/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-11-10T10:00:48.000Z",
-   "summary": "submitted by /u/TheObserverUK [link] [comments]",
-   "id": "04b4e2633fff",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1239,54 +1239,6 @@
    "published": "2026-11-10T05:59:39.000Z",
    "summary": "submitted by /u/threshhookme [link] [comments]",
    "id": "bf9989b2f188",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "The best $5 I spent this weekend. Rouge Flight",
-   "url": "https://www.reddit.com/r/xbox/comments/1xqgfa4/the_best_5_i_spent_this_weekend_rouge_flight/",
-   "source": "r/xbox",
-   "feedId": "rd-xbox",
-   "type": "post",
-   "tags": [
-    "gaming"
-   ],
-   "published": "2026-11-07T20:43:30.000Z",
-   "summary": "I’ve had this game sitting in my wishlist for quite some time and seen it was on sale for $5 today and purchased it because it had 5 stars and it’s the best $5 I spent all week. Nice shump. submitted by /u/Big-Reporter3498 [link] [comments]",
-   "id": "6fba3f2ae1ff",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "LG C6 Oled 65 with Xbox series X",
-   "url": "https://www.reddit.com/r/xbox/comments/1xqg44v/lg_c6_oled_65_with_xbox_series_x/",
-   "source": "r/xbox",
-   "feedId": "rd-xbox",
-   "type": "post",
-   "tags": [
-    "gaming"
-   ],
-   "published": "2026-11-07T20:29:40.000Z",
-   "summary": "It look insane on my LG C6 Oled with Xbox series x it blow my I can’t wait to play for GTA 6🔥and I’m so excited for FSR 4.1 What the best settings for Xbox series x ? submitted by /u/Ronte97 [link] [comments]",
-   "id": "509e34a88060",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Stealth wood controller",
-   "url": "https://www.reddit.com/r/xbox/comments/1xqfipa/stealth_wood_controller/",
-   "source": "r/xbox",
-   "feedId": "rd-xbox",
-   "type": "post",
-   "tags": [
-    "gaming"
-   ],
-   "published": "2026-11-07T20:03:23.000Z",
-   "summary": "Put together a sleek looking controller with a black and wood theme that came out looking amazing ! The side grips have built in trigger stops that add a nice texture and a shorter trigger pull for faster paced game Edit: parts list extremerate woodgrain face shell ,…",
-   "id": "e0fe183e5bc4",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -2880,5 +2832,5 @@
    "why": "0"
   }
  ],
- "contentHash": "43c8539e1a54"
+ "contentHash": "2de9c615c0ad"
 }
