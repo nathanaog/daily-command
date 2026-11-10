@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-10T04:10:23.747Z",
+ "generated": "2026-11-10T07:32:29.899Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
@@ -702,9 +702,10 @@
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
+   "lastOk": "2026-11-10T04:10:23.747Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-xbox",
@@ -713,7 +714,7 @@
    "status": "cached",
    "count": 5,
    "lastOk": "2026-11-07T21:52:57.028Z",
-   "note": "rate-limited (429)"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-slaythespire",
@@ -722,25 +723,26 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-11-09T22:02:10.316Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
   },
   {
    "id": "rd-germany",
    "name": "r/germany",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": "2026-10-31T01:21:53.748Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-unitedkingdom",
@@ -749,10 +751,44 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   }
  ],
  "items": [
+  {
+   "title": "Exclusive | U.S. Aircraft Evacuated From Second U.K. Base Due to Iran Threat",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xsf9jq/exclusive_us_aircraft_evacuated_from_second_uk/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-11-10T05:59:39.000Z",
+   "summary": "submitted by /u/threshhookme [link] [comments]",
+   "id": "bf9989b2f188",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Netanyahu said calling Trump 'every day' to push him to resume Iran war",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xsa9mc/netanyahu_said_calling_trump_every_day_to_push/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-11-10T01:41:13.000Z",
+   "summary": "submitted by /u/kai_vt [link] [comments]",
+   "id": "252a620b85c1",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
   {
    "title": "Elon Musk defends convicted rapist Russell Brand over 'unjust' sentencing",
    "url": "https://www.reddit.com/r/ukpolitics/comments/1xs8yfp/elon_musk_defends_convicted_rapist_russell_brand/",
@@ -783,6 +819,23 @@
    "published": "2026-11-09T23:43:12.000Z",
    "summary": "submitted by /u/Kagedeah [link] [comments]",
    "id": "dddf8a86b83a",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Exclusive | U.S. Balks at China’s Demand for Tightly Scripted Trump-Xi-Putin Summit",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xs6h51/exclusive_us_balks_at_chinas_demand_for_tightly/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-11-09T22:53:29.000Z",
+   "summary": "submitted by /u/Unfair-Ticket9474 [link] [comments]",
+   "id": "af869b9634a2",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -868,57 +921,6 @@
    "published": "2026-11-09T20:12:08.000Z",
    "summary": "submitted by /u/TantumErgo [link] [comments]",
    "id": "160c3feb28a9",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "The Montreal Summit: Canada Becomes the Driver of a New Geopolitical Dynamic Among “Middle Powers”",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xryshz/the_montreal_summit_canada_becomes_the_driver_of/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-11-09T18:02:03.000Z",
-   "summary": "Again a intriguing, lenghty article from solidinfo. submitted by /u/Visual_Ingenuity3258 [link] [comments]",
-   "id": "8b3702171205",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "France says Iran's Guards behind cyberattacks on fridges | France on Monday said Iran's Revolutionary Guards were behind \"unprecedented\" cyberattacks on supermarket fridges in the country last month, vowing sanctions on a European level against Tehran.",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xryj9z/france_says_irans_guards_behind_cyberattacks_on/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-11-09T17:52:50.000Z",
-   "summary": "submitted by /u/NotSoSaneExile [link] [comments]",
-   "id": "f69805f1c6d0",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Israel’s Foreign Funding Inquiry is Not Evidence of a Stolen Election",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xrtrmy/israels_foreign_funding_inquiry_is_not_evidence/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-11-09T14:56:36.000Z",
-   "summary": "submitted by /u/RUSIOfficial [link] [comments]",
-   "id": "c0ed0bce2113",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1052,5 +1054,5 @@
    "why": "0"
   }
  ],
- "contentHash": "26ea23fbd612"
+ "contentHash": "4375ce5f540a"
 }
