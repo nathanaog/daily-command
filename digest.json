@@ -1,17 +1,17 @@
 {
- "generated": "2026-11-10T10:12:28.183Z",
+ "generated": "2026-11-10T13:26:17.586Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
   "ok": 51,
-  "items": 124,
+  "items": 125,
   "duplicatesMerged": 0,
   "lengthsKnown": 2,
-  "lengthLookups": 106,
-  "lengthFailures": 104,
+  "lengthLookups": 105,
+  "lengthFailures": 105,
   "lengthVia": "video pages",
   "lengthFailReasons": {
-   "no length on page": 104
+   "no length on page": 105
   }
  },
  "feeds": [
@@ -514,7 +514,7 @@
    "name": "How Money Works",
    "type": "youtube",
    "status": "ok",
-   "count": 1,
+   "count": 2,
    "resolved": {
     "channelId": "UCkCGANrihzExmu9QiqZpPlQ",
     "title": "How Money Works",
@@ -630,20 +630,19 @@
    "id": "rd-productmanagement",
    "name": "r/productmanagement",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 3,
-   "url": "https://www.reddit.com/r/productmanagement/top/.rss?t=day"
+   "lastOk": "2026-11-10T10:12:28.183Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-tech",
    "name": "r/tech",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": "2026-11-07T19:04:52.310Z",
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-gaming",
@@ -652,16 +651,15 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-11-10T04:10:23.747Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
   },
   {
    "id": "rd-xbox",
@@ -670,7 +668,7 @@
    "status": "cached",
    "count": 5,
    "lastOk": "2026-11-07T21:52:57.028Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)"
   },
   {
    "id": "rd-slaythespire",
@@ -679,7 +677,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-geopolitics",
@@ -711,7 +709,184 @@
  ],
  "items": [
   {
-   "title": "The Two Reasons Energy Is Getting More Expensive (It’s Not Just the Iran War)",
+   "title": "David Walliams identified as celeb who lost High Court injunction battle",
+   "url": "https://www.youtube.com/watch?v=N4LPjme5Vsk",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-10T13:17:56.000Z",
+   "summary": "The high profile individual who failed to get an injunction against two media organisations to prevent them from reporting allegations against him can now be named as David Walliams. Walliams, 55, brought legal action against Independent Television News (ITN) and Guardian News…",
+   "thumb": "https://i3.ytimg.com/vi/N4LPjme5Vsk/hqdefault.jpg",
+   "id": "79db95fdca3e",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Das fordern Kiew und Moskau in den Verhandlungen",
+   "url": "https://www.youtube.com/watch?v=K2zVhsoUSkM",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-10T12:44:38.000Z",
+   "summary": "Erstmals seit acht Monaten verhandeln die Ukraine und Russland wieder direkt über ein Ende des Krieges. In Abu Dhabi in den Vereinigten Arabischen Emiraten haben von den USA vermittelte Gespräche zwischen Russland und der Ukraine begonnen. Sie sollen zwei Tage dauern.…",
+   "thumb": "https://i4.ytimg.com/vi/K2zVhsoUSkM/hqdefault.jpg",
+   "id": "b72ddfbf5bfe",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "'Double amputees run marathons': Kemi says having ADHD does not justify disability benefits as she unveils plan to cut £36billion from welfare bill",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xsltlf/double_amputees_run_marathons_kemi_says_having/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-11-10T12:37:25.000Z",
+   "summary": "submitted by /u/dailymail [link] [comments]",
+   "id": "a70d7f9a163c",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Schüsse in Hamburg: SEK-Einsatz an der Elbphilharmonie",
+   "url": "https://www.youtube.com/watch?v=bUQND_W_fRk",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-10T12:25:26.000Z",
+   "summary": "In der Nähe der Hamburger Elbphilharmonie sind am Vormittag Schüsse gefallen, zwei Menschen sollen dabei verletzt worden sein. Die Hintergründe sind unklar, zahlreiche Einsatzkräfte sind vor Ort. Der Täter ist noch nicht gefasst.…",
+   "thumb": "https://i3.ytimg.com/vi/bUQND_W_fRk/hqdefault.jpg",
+   "id": "b1e7fecf0eb2",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Is The AI Bubble (finally) Popping?",
+   "url": "https://www.youtube.com/watch?v=WXV9emaUeo0",
+   "source": "How Money Works",
+   "feedId": "yt-how-money-works",
+   "type": "video",
+   "tags": [
+    "finance",
+    "business",
+    "listen"
+   ],
+   "published": "2026-11-10T11:54:35.000Z",
+   "summary": "They can't harm you, if they can't find you! Use code HOWMONEYWORKS at the link below and get 60% off an annual plan: http://incogni.com/howmoneyworks ----- Sign up for our FREE newsletter! - https://thiscouldhavebeenan.email/ Books we recommend -…",
+   "thumb": "https://i4.ytimg.com/vi/WXV9emaUeo0/hqdefault.jpg",
+   "id": "496bb3e4f260",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Rachel Cunliffe: No, the \"porn law row\" does not risk trivialising VAWG. The *terrible wording* of the porn law risks trivialising VAWG. If your law is so badly written it bans harmless acts by mistake, that's a problem with YOU as legislators, not with the people pointing that out",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xsky6u/rachel_cunliffe_no_the_porn_law_row_does_not_risk/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-11-10T11:53:05.000Z",
+   "summary": "submitted by /u/m1ndwipe [link] [comments]",
+   "id": "b10283539c85",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "CANCEL Dave Chappelle For Charlie Kirk Jokes",
+   "url": "https://www.youtube.com/watch?v=xVIY8XSMVDc",
+   "source": "Aberrant preach",
+   "feedId": "yt-aberrant-preach",
+   "type": "video",
+   "tags": [
+    "trash"
+   ],
+   "published": "2026-11-10T11:50:15.000Z",
+   "summary": "Asmongold criticized comedian Dave Chappelle after a leaked stand-up set him joking about Charlie Kirk. Joe Rogan & many more are upset. ———————————— Spotify: https://open.spotify.com/artist/6QJIJ6AugqPEFASp1V6zgH Merchandise ---…",
+   "thumb": "https://i1.ytimg.com/vi/xVIY8XSMVDc/hqdefault.jpg",
+   "id": "3eb1b8649d97",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Ben Hopkinson on X: \"Government imposed policy costs make up 57% of the clearing price of a new flat in London and 42% of a new home in the Home Counties...\"",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xsk55h/ben_hopkinson_on_x_government_imposed_policy/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-11-10T11:05:56.000Z",
+   "summary": "submitted by /u/silent-schmick [link] [comments]",
+   "id": "699399bf9f59",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Why Britain might win if the AI bubble bursts",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xsjyja/why_britain_might_win_if_the_ai_bubble_bursts/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-11-10T10:55:19.000Z",
+   "summary": "submitted by /u/Free-Middle820 [link] [comments]",
+   "id": "be3a58e25476",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "The far-right Gen Z agitators vying to be Britain’s Charlie Kirk",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xsj24r/the_farright_gen_z_agitators_vying_to_be_britains/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-11-10T10:00:48.000Z",
+   "summary": "submitted by /u/TheObserverUK [link] [comments]",
+   "id": "04b4e2633fff",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Why Balancing the Grid is Becoming Increasingly Expensive",
    "url": "https://www.youtube.com/watch?v=N-GpSX2HRoE",
    "source": "TLDR News",
    "feedId": "yt-tldr-news",
@@ -722,7 +897,7 @@
     "listen"
    ],
    "published": "2026-11-10T10:00:28.000Z",
-   "summary": "Take back control of your online experience with ProtonVPN, and get 75% off VPN plans using our link: protonvpn.com/tldr Andymonium podcast: youtube.com/@TLDRpodcasts In this video, we’re going to go through two of the other factors (other than the war in Iran) that are causing…",
+   "summary": "Take back control of your online experience with ProtonVPN, and get 75% off VPN plans using our link: https://protonvpn.com/tldr Andymonium podcast: youtube.com/@TLDRpodcasts In this video, we’re going to go through two of the other factors (other than the war in Iran) that are…",
    "thumb": "https://i3.ytimg.com/vi/N-GpSX2HRoE/hqdefault.jpg",
    "id": "1b092dd37c17",
    "score": 1,
@@ -891,58 +1066,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Elon Musk defends convicted rapist Russell Brand over 'unjust' sentencing",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xs8yfp/elon_musk_defends_convicted_rapist_russell_brand/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-11-10T00:38:50.000Z",
-   "summary": "submitted by /u/esporx [link] [comments]",
-   "id": "256fb9617a10",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "WATCH MCCONNELL REALIZE He F***ED UP Big Time after DISASTER Night!",
-   "url": "https://www.youtube.com/watch?v=SMFRkoP1b9w",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-10T00:15:08.000Z",
-   "summary": "Luke discusses Mitch McConnell's response, or lack thereof, to the midterm blowout. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
-   "thumb": "https://i4.ytimg.com/vi/SMFRkoP1b9w/hqdefault.jpg",
-   "id": "7a08c6b46382",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Phones to be banned from pupils' bags or pockets under stricter rules for schools in England",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xs7o3q/phones_to_be_banned_from_pupils_bags_or_pockets/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-11-09T23:43:12.000Z",
-   "summary": "submitted by /u/Kagedeah [link] [comments]",
-   "id": "dddf8a86b83a",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Exclusive | U.S. Balks at China’s Demand for Tightly Scripted Trump-Xi-Putin Summit",
    "url": "https://www.reddit.com/r/geopolitics/comments/1xs6h51/exclusive_us_balks_at_chinas_demand_for_tightly/",
    "source": "r/geopolitics",
@@ -955,60 +1078,6 @@
    "published": "2026-11-09T22:53:29.000Z",
    "summary": "submitted by /u/Unfair-Ticket9474 [link] [comments]",
    "id": "af869b9634a2",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "tagesthemen 22:15 Uhr, 09.11.2026",
-   "url": "https://www.youtube.com/watch?v=ZnlD-UPpo6M",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-09T22:30:41.000Z",
-   "summary": "tagesthemen 22:15 Uhr Kanzler Merz nominiert Ilse Aigner offiziell für das Amt der Bundespräsidentin, ARD-Umfrage \"Deine Meinung zählt\" zur Sorge um Demokratie, COP31: Australiens Umgang mit dem Klimawandel, Weitere Meldungen im Überblick, Papst Leo XIV. hält Messe in Buenos…",
-   "thumb": "https://i3.ytimg.com/vi/ZnlD-UPpo6M/hqdefault.jpg",
-   "id": "5dbac31d60a8",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "OH NO. He’s f***ing doing it AGAIN.",
-   "url": "https://www.youtube.com/watch?v=WjsDQOElqhI",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-09T22:15:19.000Z",
-   "summary": "Luke discusses Trump's recent rhetoric on the midterms. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
-   "thumb": "https://i4.ytimg.com/vi/WjsDQOElqhI/hqdefault.jpg",
-   "id": "2c75497dd19d",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Exclusive: Green councillor said Muslims who condemn October 7 attack ‘bear shame of supporting Jews’",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xs4zbm/exclusive_green_councillor_said_muslims_who/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-11-09T21:53:45.000Z",
-   "summary": "submitted by /u/Alti-Ok [link] [comments]",
-   "id": "a4d42fd52bae",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1043,40 +1112,6 @@
    "published": "2026-11-09T21:00:45.000Z",
    "summary": "submitted by /u/ForeignAffairsMag [link] [comments]",
    "id": "bce56906c919",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Westminster Voting Intention: LAB: 31% (+1) RFM: 24% (-1) CON: 20% (-3) LDM: 9% (+2) GRN: 8% (=) SNP: 3% (=) Via @deltapoll.bsky.social, 6-9 Nov. Changes w/ 30 Oct - 2 Nov.",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xs3jpl/westminster_voting_intention_lab_31_1_rfm_24_1/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-11-09T20:58:18.000Z",
-   "summary": "submitted by /u/LargeCatInASmallBox [link] [comments]",
-   "id": "16992887f960",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "King who unified England deserves a bank holiday, historians say",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xs2ckn/king_who_unified_england_deserves_a_bank_holiday/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-11-09T20:12:08.000Z",
-   "summary": "submitted by /u/TantumErgo [link] [comments]",
-   "id": "160c3feb28a9",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1162,6 +1197,61 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
+   "title": "WATCH MCCONNELL REALIZE He F***ED UP Big Time after DISASTER Night!",
+   "url": "https://www.youtube.com/watch?v=SMFRkoP1b9w",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-10T00:15:08.000Z",
+   "summary": "Luke discusses Mitch McConnell's response, or lack thereof, to the midterm blowout. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
+   "thumb": "https://i4.ytimg.com/vi/SMFRkoP1b9w/hqdefault.jpg",
+   "id": "7a08c6b46382",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "tagesthemen 22:15 Uhr, 09.11.2026",
+   "url": "https://www.youtube.com/watch?v=ZnlD-UPpo6M",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-09T22:30:41.000Z",
+   "summary": "tagesthemen 22:15 Uhr Kanzler Merz nominiert Ilse Aigner offiziell für das Amt der Bundespräsidentin, ARD-Umfrage \"Deine Meinung zählt\" zur Sorge um Demokratie, COP31: Australiens Umgang mit dem Klimawandel, Weitere Meldungen im Überblick, Papst Leo XIV. hält Messe in Buenos…",
+   "thumb": "https://i3.ytimg.com/vi/ZnlD-UPpo6M/hqdefault.jpg",
+   "id": "5dbac31d60a8",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "OH NO. He’s f***ing doing it AGAIN.",
+   "url": "https://www.youtube.com/watch?v=WjsDQOElqhI",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-09T22:15:19.000Z",
+   "summary": "Luke discusses Trump's recent rhetoric on the midterms. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
+   "thumb": "https://i4.ytimg.com/vi/WjsDQOElqhI/hqdefault.jpg",
+   "id": "2c75497dd19d",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
    "title": "‘How predators like Russell Brand operate' | James O’Brien - The Whole Show",
    "url": "https://www.youtube.com/watch?v=D_39m7ggbCY",
    "source": "LBC",
@@ -1175,44 +1265,6 @@
    "summary": "As Russell Brand is sentenced for rape and sexual assault, James explores why individuals who report sexual abuse and misconduct can face such a long and difficult battle to be heard. Why are institutions so often slow to act on allegations of sexual violence? From protecting…",
    "thumb": "https://i1.ytimg.com/vi/D_39m7ggbCY/hqdefault.jpg",
    "id": "fc766f0f204a",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "„Kennen Sie das überhaupt?“: Verkehrsminister Bilger antwortet auf User-Fragen | Die Arena",
-   "url": "https://www.youtube.com/watch?v=SbGFiQdRRM4",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-09T21:23:24.000Z",
-   "summary": "Die ARD-Arena mit dem neuen Bundesverkehrsminister Steffen Bilger. Hohe Preise an der Zapfsäule, Staus und Dauerbaustellen, eine Bahn, die ihre Fahrgäste immer wieder im Stich lässt, junge Menschen, die sich den Führerschein nicht leisten können. Und eine Infrastruktur, die…",
-   "thumb": "https://i4.ytimg.com/vi/SbGFiQdRRM4/hqdefault.jpg",
-   "id": "e6e0456ac983",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Nach langem Zögern: Merz nominiert Aigner als Bundespräsidenten-Kandidatin | tagesthemen-Interview",
-   "url": "https://www.youtube.com/watch?v=7DFXzXoUHMg",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-09T21:21:40.000Z",
-   "summary": "Ilse Aigner soll als erste Frau Staatsoberhaupt der Bundesrepublik Deutschland werden. Bundeskanzler Merz hat die CSU-Politikerin heute für die Union offiziell als Kandidatin nominiert. Jörg Schönenborn fragt den Kanzler, warum er so lange gezögert hat, und was Ilse Aigner zur…",
-   "thumb": "https://i4.ytimg.com/vi/7DFXzXoUHMg/hqdefault.jpg",
-   "id": "b80da40a0a7f",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1249,24 +1301,6 @@
    "summary": "Nvidia shares plunge after boss embroiled in alleged Chinese spy scandal. The chipmaker announced an investigation on Sunday after chief executive Jensen Huang admitted having an affair with a business executive accused of being a Chinese spy. Hundreds of billions of dollars…",
    "thumb": "https://i3.ytimg.com/vi/Rt2FJIPYi4s/hqdefault.jpg",
    "id": "5eeca45df0d2",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Republicans turn on each other after midterms defeat",
-   "url": "https://www.youtube.com/watch?v=8yrqlUZ64QA",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-09T18:50:08.000Z",
-   "summary": "Simon Marks takes a look at the civil war brewing within MAGA after Republican politicians look to recover from the midterms drubbing. 00:00 - Ron De Santis hits out 03:05 - Is JD Vance still Trump’s heir? 07:48 - Is Rubio going to run? 10:12 - The Middle East will decide…",
-   "thumb": "https://i1.ytimg.com/vi/8yrqlUZ64QA/hqdefault.jpg",
-   "id": "cde212f053c9",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2195,23 +2229,6 @@
    "why": "0"
   },
   {
-   "title": "Hila Files For Divorce... Ethan Klein Losing EVERYTHING",
-   "url": "https://www.youtube.com/watch?v=jSnx69VBP1A",
-   "source": "Aberrant preach",
-   "feedId": "yt-aberrant-preach",
-   "type": "video",
-   "tags": [
-    "trash"
-   ],
-   "published": "2026-11-02T23:43:41.000Z",
-   "summary": "After cheating on on Hila with his intern Tamara, Ethan Klein ended his podcast H3H3. Credit To WillyMac for this video! - https://youtu.be/v6wgYZLbpJ8 ———————————— Spotify: https://open.spotify.com/artist/6QJIJ6AugqPEFASp1V6zgH Merchandise ---…",
-   "thumb": "https://i3.ytimg.com/vi/jSnx69VBP1A/hqdefault.jpg",
-   "id": "d96fc26b594e",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "DAYTONA BEACH TRUMP RALLY",
    "url": "https://www.youtube.com/watch?v=ncvy2LRGoMw",
    "source": "The Good Liars",
@@ -2925,5 +2942,5 @@
    "why": "0"
   }
  ],
- "contentHash": "4412711ed2ba"
+ "contentHash": "be3ead2d5172"
 }
