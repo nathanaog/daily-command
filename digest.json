@@ -1,17 +1,17 @@
 {
- "generated": "2026-11-10T16:08:10.985Z",
+ "generated": "2026-11-10T19:17:17.952Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
   "ok": 51,
-  "items": 126,
+  "items": 121,
   "duplicatesMerged": 0,
   "lengthsKnown": 2,
-  "lengthLookups": 106,
-  "lengthFailures": 106,
+  "lengthLookups": 105,
+  "lengthFailures": 105,
   "lengthVia": "video pages",
   "lengthFailReasons": {
-   "no length on page": 106
+   "no length on page": 105
   }
  },
  "feeds": [
@@ -98,7 +98,7 @@
    "name": "Easy German",
    "type": "youtube",
    "status": "ok",
-   "count": 4,
+   "count": 3,
    "resolved": {
     "channelId": "UCbxb2fqe9oNgglAoYqsYOtQ",
     "title": "Easy German",
@@ -630,19 +630,20 @@
    "id": "rd-productmanagement",
    "name": "r/productmanagement",
    "type": "reddit",
-   "status": "cached",
-   "count": 3,
-   "lastOk": "2026-11-10T10:12:28.183Z",
-   "note": "not its turn this run"
+   "status": "ok",
+   "count": 1,
+   "url": "https://www.reddit.com/r/productmanagement/top/.rss?t=day"
   },
   {
    "id": "rd-tech",
    "name": "r/tech",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": "2026-11-07T19:04:52.310Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-gaming",
@@ -651,7 +652,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-ukpolitics",
@@ -667,7 +668,7 @@
    "name": "r/xbox",
    "type": "reddit",
    "status": "cached",
-   "count": 5,
+   "count": 3,
    "lastOk": "2026-11-07T21:52:57.028Z",
    "note": "not its turn this run"
   },
@@ -684,20 +685,19 @@
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
+   "lastOk": "2026-11-10T16:08:10.985Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-germany",
    "name": "r/germany",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": "2026-10-31T01:21:53.748Z",
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-unitedkingdom",
@@ -706,10 +706,189 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   }
  ],
  "items": [
+  {
+   "title": "LBC callers react to Pete Hegseth's possible impeachment",
+   "url": "https://www.youtube.com/watch?v=K_AE3UlCJbY",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-10T19:00:18.000Z",
+   "summary": "Is Trump about to break with his Pete Hegseth over his dealing of the Iran war? With the Secretary of War facing a vote for possible impeachment, LBC callers weigh in on his fate. 07:18 | Caller Sean thinks Pete Hegseth’s days as Secretary of War are numbered, predicting that…",
+   "thumb": "https://i4.ytimg.com/vi/K_AE3UlCJbY/hqdefault.jpg",
+   "id": "df621fa5e6fb",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Handy-Blitzer: Bundesverkehrsminister Bilger plant Ausweitung",
+   "url": "https://www.youtube.com/watch?v=A2j7op200LU",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-10T18:55:18.000Z",
+   "summary": "Bundesverkehrsminister Steffen Bilger (CDU) will sich für die bundesweite Einführung von sogenannten Handy-Blitzern einsetzen. Bilger verwies auf die steigende Tendenz bei den Unfallzahlen: Es passierten demnach mehr als tausend Unfälle pro Jahr, bei denen die Fahrer…",
+   "thumb": "https://i2.ytimg.com/vi/A2j7op200LU/hqdefault.jpg",
+   "id": "32694c5aca4a",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Islam or Christianity: Which Makes Sense of Reality? | Fearless Truth vs Waleed Naeem",
+   "url": "https://www.youtube.com/watch?v=_YkJAdYNCSc",
+   "source": "Modern-Day Debate",
+   "feedId": "yt-modern-day-debate",
+   "type": "video",
+   "tags": [
+    "debates",
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-10T18:52:05.000Z",
+   "summary": "Huge thank you to our DEBATECON 9 sponsors including: Revival of the Anointed's Rule: https://revivingtheroar.org/ Apologetics Ark: https://www.apologeticsark.com/links @UncensoredAmerica Yonaguni International Cuisine (Aguadilla, Puerto Rico):…",
+   "thumb": "https://i4.ytimg.com/vi/_YkJAdYNCSc/hqdefault.jpg",
+   "id": "07eb809928ef",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Is this a red flag for a company?",
+   "url": "https://www.reddit.com/r/ProductManagement/comments/1xsv8hp/is_this_a_red_flag_for_a_company/",
+   "source": "r/productmanagement",
+   "feedId": "rd-productmanagement",
+   "type": "post",
+   "tags": [
+    "product"
+   ],
+   "published": "2026-11-10T18:52:04.000Z",
+   "summary": "Hi all, was a SWE for 1 year post-grad and didnt like the company at all or the work. I began applying at random places and was reached out for an entry level (0-1 YOE) product associate role. I was initially excited bc it seemed like they’d train you and weren’t asking for…",
+   "id": "cea295b7e92d",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Is Violence Becoming Too Political?",
+   "url": "https://www.youtube.com/watch?v=VTL-DmXH_bw",
+   "source": "The Onion",
+   "feedId": "yt-the-onion",
+   "type": "video",
+   "tags": [
+    "comedy"
+   ],
+   "published": "2026-11-10T18:00:22.000Z",
+   "summary": "Do politics have a place in our violence, or is it ruining one of our favorite pastimes? Our In The Know panel debates. Become an Onion member while it's still optional: https://membership.theonion.com/?campaign=701a500001geULHAA2 Powered By Forge Virtual Studios",
+   "thumb": "https://i3.ytimg.com/vi/VTL-DmXH_bw/hqdefault.jpg",
+   "id": "14b295bd390a",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Why was David Walliams named?",
+   "url": "https://www.youtube.com/watch?v=doNckG6SDiE",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-10T18:00:00.000Z",
+   "summary": "Tom Swarbrick is joined by media lawyer Steve Kuncewicz to outline why David Walliams lost the High Court injunction battle against ITN and the Guardian. Multiple women have accused David Walliams of sexual misconduct as the TV star and author was accused of abusing his power…",
+   "thumb": "https://i1.ytimg.com/vi/doNckG6SDiE/hqdefault.jpg",
+   "id": "ccb8ccb20bbc",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "'Do I sound like an addict to you?' | James O'Brien - The Whole Show",
+   "url": "https://www.youtube.com/watch?v=yeMIjhyYyQI",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-10T17:47:10.000Z",
+   "summary": "We're glued to our phones. And it's getting out of hand. As the government moves to ban mobile phones in schools, James turns the conversation away from children and asks whether adults have a problem of their own. James speaks to callers about the psychology of smartphone…",
+   "thumb": "https://i2.ytimg.com/vi/yeMIjhyYyQI/hqdefault.jpg",
+   "id": "a7724e4124ef",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "20 Game Franchises That DIED For Dumbest Reasons",
+   "url": "https://www.youtube.com/watch?v=3Wr72H2pnfM",
+   "source": "GameRanx",
+   "feedId": "yt-gameranx",
+   "type": "video",
+   "tags": [
+    "gaming"
+   ],
+   "published": "2026-11-10T17:32:47.000Z",
+   "summary": "Sometimes a great gaming franchise is ruined by foolish decisions. Subscribe for more: https://www.youtube.com/gameranxTV?sub_confirmation=1 0:00 Intro 0:54 Number 20 3:50 Number 19 8:13 Number 18 10:47 Number 17 12:13 Number 16 14:51 Number 15 16:55 Number 14 18:31 Number 13…",
+   "thumb": "https://i4.ytimg.com/vi/3Wr72H2pnfM/hqdefault.jpg",
+   "id": "ff325e05a6b1",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "tagesschau in Einfacher Sprache 19:00 Uhr, 10.11.2026",
+   "url": "https://www.youtube.com/watch?v=Xrh-ahmpRy4",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-10T16:43:45.000Z",
+   "summary": "tagesschau in Einfacher Sprache 19:00 Uhr Ukraine-Krieg: Gespräche für Frieden, Mord an Fabian: Urteil gesprochen, 9. November: Erinnerung an Gewalt gegen Juden, Plan: Preisdeckel für Tickets, Das Wetter Die \"tagesschau in Einfacher Sprache\" – immer Montag bis Freitag um 19:00…",
+   "thumb": "https://i1.ytimg.com/vi/Xrh-ahmpRy4/hqdefault.jpg",
+   "id": "16898fd85f1f",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Trump should 'absolutely ditch' Pete Hegseth | Lewis Goodall",
+   "url": "https://www.youtube.com/watch?v=CKTbwkZeOxk",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-10T16:42:31.000Z",
+   "summary": "Lewis Goodall joins Shelagh Fogarty as Pete Hegseth brushes off an attempt to impeach him. In a rare news conference from the Pentagon on Tuesday, the self-styled 'secretary of war' slammed the efforts to impeach him as an act of \"sabotage\". He rejected that claim that he has…",
+   "thumb": "https://i4.ytimg.com/vi/CKTbwkZeOxk/hqdefault.jpg",
+   "id": "5f2ec4e4bc40",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
   {
    "title": "Audience GASPS as MAGA Governor FREEZES UP On The View!",
    "url": "https://www.youtube.com/watch?v=_AKIYaIeTUs",
@@ -784,7 +963,7 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "The 2026 Nobel Prize in Economics Explained",
+   "title": "The Psychology of Inflation",
    "url": "https://www.youtube.com/watch?v=Qk6AuhfjvTk",
    "source": "Economics Explained",
    "feedId": "yt-economics-explained",
@@ -802,7 +981,7 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "GTA 6: Download gestartet – Warum es 13 Jahre gedauert hat",
+   "title": "GTA 6: Download gestartet – Gaming-Experte John Braun sieht „globales Ereignis“",
    "url": "https://www.youtube.com/watch?v=u3Zul7R_gus",
    "source": "Tagesschau",
    "feedId": "yt-tagesschau",
@@ -839,44 +1018,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "ARD-Reporterin erklärt, warum die deutschen Maschinenbauer trotz Aufträgen unzufrieden sind",
-   "url": "https://www.youtube.com/watch?v=3onIpShzs-o",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-10T14:30:28.000Z",
-   "summary": "Der deutsche Maschinenbau kämpft seit Jahren mit einer schwachen Konjunktur, hohen Kosten und wachsender Konkurrenz aus dem Ausland. Immerhin: Zuletzt sind die Aufträge wieder deutlich gestiegen. Ob das schon die erhoffte Trendwende ist, darüber wird heute beim 16. Deutschen…",
-   "thumb": "https://i4.ytimg.com/vi/3onIpShzs-o/hqdefault.jpg",
-   "id": "631873a89ca0",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "So fließt trotzdem Öl durch die Straße von Hormus | rabbit hole",
-   "url": "https://www.youtube.com/watch?v=ORKbpmUpJ5A",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-10T14:30:18.000Z",
-   "summary": "Die Straße von Hormus ist noch immer blockiert, es werden vermehrt Tanker, Pipelines und Energieanlagen angegriffen und vielerorts sind auch die Notreserven fast aufgebraucht. Manche Expertinnen und Experten sprechen sogar von der \"größten Ölkrise\" überhaupt. Und trotz alldem…",
-   "thumb": "https://i4.ytimg.com/vi/ORKbpmUpJ5A/hqdefault.jpg",
-   "id": "de1581e3b84c",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Judge EXPOSES MAGA Star’s VILE CRIMES TO HIS FACE!",
    "url": "https://www.youtube.com/watch?v=_si2AxALiYk",
    "source": "Luke Beasley",
@@ -907,24 +1048,6 @@
    "published": "2026-11-10T13:58:36.000Z",
    "summary": "submitted by /u/Woundsmyheart [link] [comments]",
    "id": "6fd8841696c3",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "David Walliams accused of preying on girls as young as 15 as he loses injunction battle",
-   "url": "https://www.youtube.com/watch?v=N4LPjme5Vsk",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-10T13:17:56.000Z",
-   "summary": "The high profile individual who failed to get an injunction against two media organisations to prevent them from reporting allegations against him can now be named as David Walliams. Walliams, 55, brought legal action against Independent Television News (ITN) and Guardian News…",
-   "thumb": "https://i3.ytimg.com/vi/N4LPjme5Vsk/hqdefault.jpg",
-   "id": "79db95fdca3e",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1104,24 +1227,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "'We have a 20% chance of extinction' | The 'Godfather of AI'",
-   "url": "https://www.youtube.com/watch?v=ZfC98aM9C8Y",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-10T07:00:15.000Z",
-   "summary": "The so-called 'Godfather of AI' has warned that the technology has achieved consciousness and companies are not thinking about the \"social consequences\" of a future where their tech will have taken most jobs. Geoffrey Hinton, who left his role working on AI at Google due to…",
-   "thumb": "https://i3.ytimg.com/vi/ZfC98aM9C8Y/hqdefault.jpg",
-   "id": "0aab1024ecb1",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Exclusive | U.S. Aircraft Evacuated From Second U.K. Base Due to Iran Threat",
    "url": "https://www.reddit.com/r/geopolitics/comments/1xsf9jq/exclusive_us_aircraft_evacuated_from_second_uk/",
    "source": "r/geopolitics",
@@ -1134,40 +1239,6 @@
    "published": "2026-11-10T05:59:39.000Z",
    "summary": "submitted by /u/threshhookme [link] [comments]",
    "id": "bf9989b2f188",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "OH SH*T: Trump EXPOSED by Host MID-INTERVIEW, VISIBLY PANICS!",
-   "url": "https://www.youtube.com/watch?v=hsN9BBX5rR0",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-10T04:15:35.000Z",
-   "summary": "Luke discusses Trump's latest 60 Minutes interview. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley Instagram -…",
-   "thumb": "https://i1.ytimg.com/vi/hsN9BBX5rR0/hqdefault.jpg",
-   "id": "79525077e5bf",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Changelog pages for products that deploy continuously: has anyone seen version ranges in the URL (/changelog/v1.50..v1.54)?",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1xsbaxw/changelog_pages_for_products_that_deploy/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-11-10T02:31:18.000Z",
-   "summary": "We deploy continuously, so our changelog gets a lot of small releases with no regular rhythm. A long single page works for browsing, and in-app “what’s new since you last visited” covers people who are already in the product. Neither helps when I want to send someone a link to…",
-   "id": "4b0123c59531",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1221,36 +1292,22 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Vice City wallpaper for the Homepage 🤩",
-   "url": "https://www.reddit.com/r/xbox/comments/1xqdv2o/vice_city_wallpaper_for_the_homepage/",
-   "source": "r/xbox",
-   "feedId": "rd-xbox",
-   "type": "post",
+   "title": "OH SH*T: Trump EXPOSED by Host MID-INTERVIEW, VISIBLY PANICS!",
+   "url": "https://www.youtube.com/watch?v=hsN9BBX5rR0",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
    "tags": [
-    "gaming"
+    "politics",
+    "listen"
    ],
-   "published": "2026-11-07T18:52:53.000Z",
-   "summary": "submitted by /u/sweettoothGupy [link] [comments]",
-   "id": "e56d71f93604",
-   "score": 1,
+   "published": "2026-11-10T04:15:35.000Z",
+   "summary": "Luke discusses Trump's latest 60 Minutes interview. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley Instagram -…",
+   "thumb": "https://i1.ytimg.com/vi/hsN9BBX5rR0/hqdefault.jpg",
+   "id": "79525077e5bf",
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Building My Collection",
-   "url": "https://www.reddit.com/r/xbox/comments/1xqdm0q/building_my_collection/",
-   "source": "r/xbox",
-   "feedId": "rd-xbox",
-   "type": "post",
-   "tags": [
-    "gaming"
-   ],
-   "published": "2026-11-07T18:42:10.000Z",
-   "summary": "I wish Xbox released more of these controllers. I’d buy each one submitted by /u/Limp-Dinner-4999 [link] [comments]",
-   "id": "50da004e6184",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
+   "why": "0"
   },
   {
    "title": "This BROKE the Internet…",
@@ -1320,42 +1377,6 @@
    "summary": "Luke discusses Mitch McConnell's response, or lack thereof, to the midterm blowout. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
    "thumb": "https://i4.ytimg.com/vi/SMFRkoP1b9w/hqdefault.jpg",
    "id": "7a08c6b46382",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "‘How predators like Russell Brand operate' | James O’Brien - The Whole Show",
-   "url": "https://www.youtube.com/watch?v=D_39m7ggbCY",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-09T22:00:11.000Z",
-   "summary": "As Russell Brand is sentenced for rape and sexual assault, James explores why individuals who report sexual abuse and misconduct can face such a long and difficult battle to be heard. Why are institutions so often slow to act on allegations of sexual violence? From protecting…",
-   "thumb": "https://i1.ytimg.com/vi/D_39m7ggbCY/hqdefault.jpg",
-   "id": "fc766f0f204a",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Pete Hegseth faces impeachment threat | Simon Marks",
-   "url": "https://www.youtube.com/watch?v=8cvVqsNOvMQ",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-09T21:00:08.000Z",
-   "summary": "Republican Congressman Thomas Massie has moved to force a vote to impeach US defence secretary Pete Hegseth. The Kentucky representative has introduced eight articles of impeachment against Hegseth, accusing him of illegally waging war without congressional authorisation and…",
-   "thumb": "https://i1.ytimg.com/vi/8cvVqsNOvMQ/hqdefault.jpg",
-   "id": "47bd0fd311c2",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1445,38 +1466,6 @@
    "summary": "Sign up to PLUM today and deposit £1 to claim your £10 welcome bonus. Start letting your money work for you! T&Cs apply: https://link.withplum.com/UGzt/chrisspargo T&Cs: https://docs.google.com/document/d/1H9BfNkXnCIsofn-kWq944C- P9uMJnadqFluSqcY_Erk/edit?tab=t.0 Patreon:…",
    "thumb": "https://i1.ytimg.com/vi/Px8y799hr6A/hqdefault.jpg",
    "id": "541b78e2c592",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Best way to maintain an idea/hypothesis repo?",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1xrqhsa/best_way_to_maintain_an_ideahypothesis_repo/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-11-09T12:32:42.000Z",
-   "summary": "Hello, PM for B2C app here. Over the past years I've had multiple different ways of keeping track of ideas/hypotheses for coming iterations but ultimately it just ends up becoming stale and then forgotten about. Excel, Trello, in a separate backlog, Figma - you name it. Does…",
-   "id": "5b206b34fb44",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "PRD Collab Question",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1xrpm03/prd_collab_question/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-11-09T11:46:56.000Z",
-   "summary": "When Claude or ChatGPT drafts a PRD or spec for you, how do engineers, design and leadership review it? Do you move it to Google Docs or Notion for comments, and how do the changes get back into the source? submitted by /u/RelevantAudience9596 [link] [comments]",
-   "id": "801483e793a3",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1950,23 +1939,6 @@
    "why": "0"
   },
   {
-   "title": "The Legend of Zelda: Ocarina of Time Remake - Before You Buy",
-   "url": "https://www.youtube.com/watch?v=HuF6-efVdyI",
-   "source": "GameRanx",
-   "feedId": "yt-gameranx",
-   "type": "video",
-   "tags": [
-    "gaming"
-   ],
-   "published": "2026-11-05T23:38:35.000Z",
-   "summary": "The Ocarina of Time remake for Nintendo Switch 2 is here at long last. How is it? Let's talk. Subscribe for more: http://youtube.com/gameranxtv ▼▼ Buy Zelda: https://link.amazon/B0fW70j5E Watch more 'Before You Buy': https://bit.ly/2kfdxI6",
-   "thumb": "https://i1.ytimg.com/vi/HuF6-efVdyI/hqdefault.jpg",
-   "id": "9875b019f78c",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "Christianity Vs Secular Humanism, Which Is Best for Society? | Jay Dyer Vs 1stAmender",
    "url": "https://www.youtube.com/watch?v=xRjsslA_sfY",
    "source": "Modern-Day Debate",
@@ -2049,25 +2021,6 @@
    "summary": "The official music video for Courtside by King Torrent (Lou Wilson) Visit https://watch.dropout.tv/mp3 for full episodes of MP3 Stream \"Courtside\" 🟢Spotify: https://open.spotify.com/track/2h5vlLAvdJgGXUxUCUkcqR?si=ecaf27c8aaa04d13 🍎Apple Music:…",
    "thumb": "https://i3.ytimg.com/vi/nrFpDYXXObQ/hqdefault.jpg",
    "id": "14d3be668d3f",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "\"You Are a Protestant Who Argues Like A Muslim\" — Jay Dyer vs David Wood",
-   "url": "https://www.youtube.com/watch?v=5-_d64UzBKw",
-   "source": "Modern-Day Debate",
-   "feedId": "yt-modern-day-debate",
-   "type": "video",
-   "tags": [
-    "debates",
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-05T18:30:02.000Z",
-   "summary": "Huge thank you to our DEBATECON 9 sponsors including: Revival of the Anointed's Rule: https://revivingtheroar.org/ Apologetics Ark: https://www.apologeticsark.com/links @UncensoredAmerica Yonaguni International Cuisine (Aguadilla, Puerto Rico):…",
-   "thumb": "https://i2.ytimg.com/vi/5-_d64UzBKw/hqdefault.jpg",
-   "id": "a257e577fd76",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2925,42 +2878,7 @@
    "score": 0,
    "matched": [],
    "why": "0"
-  },
-  {
-   "title": "A Podcast to Learn German",
-   "url": "https://www.youtube.com/watch?v=-WbwNgcUT2o",
-   "source": "Easy German",
-   "feedId": "yt-easy-german",
-   "type": "video",
-   "tags": [
-    "german",
-    "listen"
-   ],
-   "published": "2026-10-27T18:00:37.000Z",
-   "summary": "💬 Thanks to our sponsor italki! Use code EASY10 to get €10 off your first lesson (minimum spend €20): https://go.italki.com/easy10 (Ad) 🎧 FOLLOW OUR PODCAST: https://www.easygerman.fm 💡 MEMBERS-ONLY AFTERSHOW: https://easygerman.link/membership_egp705 🧡 Marit ist nicht nur…",
-   "thumb": "https://i2.ytimg.com/vi/-WbwNgcUT2o/hqdefault.jpg",
-   "id": "fc57b1bccba5",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Should Food Cost More?",
-   "url": "https://www.youtube.com/watch?v=LtvPbNf7dPM",
-   "source": "The Onion",
-   "feedId": "yt-the-onion",
-   "type": "video",
-   "tags": [
-    "comedy"
-   ],
-   "published": "2026-10-27T17:00:36.000Z",
-   "summary": "More Americans are struggling to afford basic food essentials than ever before. But are food prices high enough? Our In The Know panel debates. Become an Onion member while it's still optional: https://membership.theonion.com/?campaign=701a500001geULHAA2 Powered By Forge…",
-   "thumb": "https://i1.ytimg.com/vi/LtvPbNf7dPM/hqdefault.jpg",
-   "id": "4216268533b0",
-   "score": 0,
-   "matched": [],
-   "why": "0"
   }
  ],
- "contentHash": "0e48f509f223"
+ "contentHash": "43c8539e1a54"
 }
