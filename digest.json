@@ -1,17 +1,17 @@
 {
- "generated": "2026-11-10T13:26:17.586Z",
+ "generated": "2026-11-10T16:08:10.985Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
   "ok": 51,
-  "items": 125,
+  "items": 126,
   "duplicatesMerged": 0,
   "lengthsKnown": 2,
-  "lengthLookups": 105,
-  "lengthFailures": 105,
+  "lengthLookups": 106,
+  "lengthFailures": 106,
   "lengthVia": "video pages",
   "lengthFailReasons": {
-   "no length on page": 105
+   "no length on page": 106
   }
  },
  "feeds": [
@@ -592,7 +592,7 @@
    "name": "Economics Explained",
    "type": "youtube",
    "status": "ok",
-   "count": 2,
+   "count": 3,
    "resolved": {
     "channelId": "UCZ4AMrDcNrfy3X6nsU8-rPg",
     "title": "Economics Explained",
@@ -657,9 +657,10 @@
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
+   "lastOk": "2026-11-10T13:26:17.586Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-xbox",
@@ -668,7 +669,7 @@
    "status": "cached",
    "count": 5,
    "lastOk": "2026-11-07T21:52:57.028Z",
-   "note": "rate-limited (429)"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-slaythespire",
@@ -677,25 +678,26 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-11-10T07:32:29.899Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
   },
   {
    "id": "rd-germany",
    "name": "r/germany",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": "2026-10-31T01:21:53.748Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-unitedkingdom",
@@ -704,12 +706,213 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   }
  ],
  "items": [
   {
-   "title": "David Walliams identified as celeb who lost High Court injunction battle",
+   "title": "Audience GASPS as MAGA Governor FREEZES UP On The View!",
+   "url": "https://www.youtube.com/watch?v=_AKIYaIeTUs",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-10T16:00:29.000Z",
+   "summary": "Luke discusses Sarah Huckabee Sanders on The View. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley Instagram -…",
+   "thumb": "https://i4.ytimg.com/vi/_AKIYaIeTUs/hqdefault.jpg",
+   "id": "25b1164ca50e",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Wie pro-russische Fake News KI-Chatbots beeinflussen",
+   "url": "https://www.youtube.com/watch?v=6pXCY7gq7-c",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-10T15:38:07.000Z",
+   "summary": "Pro-russische Fakenews, die nicht für Menschen, sondern für Chatbots erstellt werden: In dieser 11KM-Folge analysiert NDR-Datenjournalistin Katharina Bews, wie das Desinformationsnetzwerk Pravda funktioniert. Im Gespräch mit 11KM-Host Elena Kuch erzählt sie, wie mit massenhaft…",
+   "thumb": "https://i3.ytimg.com/vi/6pXCY7gq7-c/hqdefault.jpg",
+   "id": "5a5f91a23bf0",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "20 Stunden Luftalarm am Tag: Wie leben Kinder in Sumy?",
+   "url": "https://www.youtube.com/watch?v=8knK3jsVh1A",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-10T15:23:18.000Z",
+   "summary": "Ein zerstörter Kindergarten in der ukrainischen Hauptstadt Kiew. Der Krieg trifft auch die Kleinsten, eine unbeschwerte Kindheit inmitten der Zerstörung nicht denkbar. Dennoch versuchen die Kindergärten alles, um soviel Normalität wie möglich zu schaffen. So auch in unserem…",
+   "thumb": "https://i1.ytimg.com/vi/8knK3jsVh1A/hqdefault.jpg",
+   "id": "5d48e35a47c8",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "\"My Events Are Filled With Women... WHERE ARE THE MEN???\"",
+   "url": "https://www.youtube.com/watch?v=PShoTrI8ZHs",
+   "source": "Aberrant preach",
+   "feedId": "yt-aberrant-preach",
+   "type": "video",
+   "tags": [
+    "trash"
+   ],
+   "published": "2026-11-10T15:03:06.000Z",
+   "summary": "Woman is puzzled about why men don't go out to meet women anymore. Answer is simpler than she thinks ———————————— Spotify: https://open.spotify.com/artist/6QJIJ6AugqPEFASp1V6zgH Merchandise --- https://www.enkreprinte.com/collections/aba-and-preach INSTAGRAM @aba.atlas…",
+   "thumb": "https://i1.ytimg.com/vi/PShoTrI8ZHs/hqdefault.jpg",
+   "id": "3ad703290f25",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "The 2026 Nobel Prize in Economics Explained",
+   "url": "https://www.youtube.com/watch?v=Qk6AuhfjvTk",
+   "source": "Economics Explained",
+   "feedId": "yt-economics-explained",
+   "type": "video",
+   "tags": [
+    "finance",
+    "listen"
+   ],
+   "published": "2026-11-10T15:00:36.000Z",
+   "summary": "Enjoy 1 month of Wispr Flow Pro using my link: https://ref.wisprflow.ai/economics-explained-yt 📫 95,000+ read our free newsletter that has weekly original stories Sign up: → https://economicsexplained.substack.com/subscribe This video was made possible by our Patreon…",
+   "thumb": "https://i2.ytimg.com/vi/Qk6AuhfjvTk/hqdefault.jpg",
+   "id": "33f4cc6a0ced",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "GTA 6: Download gestartet – Warum es 13 Jahre gedauert hat",
+   "url": "https://www.youtube.com/watch?v=u3Zul7R_gus",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-10T14:55:36.000Z",
+   "summary": "In fast zwei Wochen ist es so weit: Der sechste Teil der erfolgreichen Videospiel-Reihe Grand Theft Auto (GTA) erscheint am 19. November – das wohl meisterwartete Videospiel der vergangenen Jahre. Seit heute steht das Spiel zum Download bereit. Einordnungen von Gaming-Experte…",
+   "thumb": "https://i2.ytimg.com/vi/u3Zul7R_gus/hqdefault.jpg",
+   "id": "14809a9c528a",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Russell Brand lead detective: More alleged victims to come forward",
+   "url": "https://www.youtube.com/watch?v=FuxvJuU00W4",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-10T14:30:32.000Z",
+   "summary": "Russell Brand has been jailed for 10 and a half years for rape and sexual assault. 00:00 | Detective Superintendent Andy Furphy provides more details and says more alleged victims are expected to come forward. 02:35 | Rape survivor and campaigner Morwenna Loughman shares how…",
+   "thumb": "https://i3.ytimg.com/vi/FuxvJuU00W4/hqdefault.jpg",
+   "id": "a1c2b7ce7e57",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "ARD-Reporterin erklärt, warum die deutschen Maschinenbauer trotz Aufträgen unzufrieden sind",
+   "url": "https://www.youtube.com/watch?v=3onIpShzs-o",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-10T14:30:28.000Z",
+   "summary": "Der deutsche Maschinenbau kämpft seit Jahren mit einer schwachen Konjunktur, hohen Kosten und wachsender Konkurrenz aus dem Ausland. Immerhin: Zuletzt sind die Aufträge wieder deutlich gestiegen. Ob das schon die erhoffte Trendwende ist, darüber wird heute beim 16. Deutschen…",
+   "thumb": "https://i4.ytimg.com/vi/3onIpShzs-o/hqdefault.jpg",
+   "id": "631873a89ca0",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "So fließt trotzdem Öl durch die Straße von Hormus | rabbit hole",
+   "url": "https://www.youtube.com/watch?v=ORKbpmUpJ5A",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-10T14:30:18.000Z",
+   "summary": "Die Straße von Hormus ist noch immer blockiert, es werden vermehrt Tanker, Pipelines und Energieanlagen angegriffen und vielerorts sind auch die Notreserven fast aufgebraucht. Manche Expertinnen und Experten sprechen sogar von der \"größten Ölkrise\" überhaupt. Und trotz alldem…",
+   "thumb": "https://i4.ytimg.com/vi/ORKbpmUpJ5A/hqdefault.jpg",
+   "id": "de1581e3b84c",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Judge EXPOSES MAGA Star’s VILE CRIMES TO HIS FACE!",
+   "url": "https://www.youtube.com/watch?v=_si2AxALiYk",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-10T14:00:20.000Z",
+   "summary": "Luke discusses Russell Brand's sentencing. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley Instagram -…",
+   "thumb": "https://i4.ytimg.com/vi/_si2AxALiYk/hqdefault.jpg",
+   "id": "043257fa446d",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "US demands a seat for Europe at Ukraine peace talks – POLITICO",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xsnkq9/us_demands_a_seat_for_europe_at_ukraine_peace/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-11-10T13:58:36.000Z",
+   "summary": "submitted by /u/Woundsmyheart [link] [comments]",
+   "id": "6fd8841696c3",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "David Walliams accused of preying on girls as young as 15 as he loses injunction battle",
    "url": "https://www.youtube.com/watch?v=N4LPjme5Vsk",
    "source": "LBC",
    "feedId": "yt-lbc",
@@ -727,20 +930,18 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Das fordern Kiew und Moskau in den Verhandlungen",
-   "url": "https://www.youtube.com/watch?v=K2zVhsoUSkM",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
+   "title": "Swiss government to involve energy suppliers in drone defence",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xsltu1/swiss_government_to_involve_energy_suppliers_in/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
    "tags": [
-    "german",
-    "news",
-    "listen"
+    "politics",
+    "news"
    ],
-   "published": "2026-11-10T12:44:38.000Z",
-   "summary": "Erstmals seit acht Monaten verhandeln die Ukraine und Russland wieder direkt über ein Ende des Krieges. In Abu Dhabi in den Vereinigten Arabischen Emiraten haben von den USA vermittelte Gespräche zwischen Russland und der Ukraine begonnen. Sie sollen zwei Tage dauern.…",
-   "thumb": "https://i4.ytimg.com/vi/K2zVhsoUSkM/hqdefault.jpg",
-   "id": "b72ddfbf5bfe",
+   "published": "2026-11-10T12:37:45.000Z",
+   "summary": "submitted by /u/Sudden-Ad-4281 [link] [comments]",
+   "id": "f62e8e5a9634",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -758,25 +959,6 @@
    "published": "2026-11-10T12:37:25.000Z",
    "summary": "submitted by /u/dailymail [link] [comments]",
    "id": "a70d7f9a163c",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Schüsse in Hamburg: SEK-Einsatz an der Elbphilharmonie",
-   "url": "https://www.youtube.com/watch?v=bUQND_W_fRk",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-10T12:25:26.000Z",
-   "summary": "In der Nähe der Hamburger Elbphilharmonie sind am Vormittag Schüsse gefallen, zwei Menschen sollen dabei verletzt worden sein. Die Hintergründe sind unklar, zahlreiche Einsatzkräfte sind vor Ort. Der Täter ist noch nicht gefasst.…",
-   "thumb": "https://i3.ytimg.com/vi/bUQND_W_fRk/hqdefault.jpg",
-   "id": "b1e7fecf0eb2",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -905,39 +1087,18 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Nvidia-Chef Huang: Kontakt mit möglicher China-Spionin erschüttert KI-Konzern",
-   "url": "https://www.youtube.com/watch?v=8bPhD7c_p-M",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
+   "title": "Putin won't back down until Trump gets tough, warns U.S. defense expert",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xshq8q/putin_wont_back_down_until_trump_gets_tough_warns/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
    "tags": [
-    "german",
-    "news",
-    "listen"
+    "politics",
+    "news"
    ],
-   "published": "2026-11-10T09:53:26.000Z",
-   "summary": "Künstliche Intelligenz ist ohne KI-Chips nicht denkbar. Der führende Anbieter solcher Chips, das US-Unternehmen Nvidia, ist aktuell in eine Spionageaffäre verwickelt. Im Raum steht der Verdacht, dass Firmenchef Huang ausspioniert wurde. Eine interne Untersuchung gegen ihn läuft…",
-   "thumb": "https://i1.ytimg.com/vi/8bPhD7c_p-M/hqdefault.jpg",
-   "id": "e85820bc4729",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Warum der Inselstaat im Pazifik ums Überleben kämpft",
-   "url": "https://www.youtube.com/watch?v=IcEvgfPg1iI",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-10T08:41:05.000Z",
-   "summary": "Australien gehört zu den Ländern, die das Weltklima besonders schädigen. Pro Kopf gerechnet stößt kein anderes der großen Industrieländer mehr Kohlendioxid aus – gut doppelt so viel wie Deutschland. Das hat vor allem mit dem Abbau und dem hohen Verbrauch von Kohle zu tun. Bei…",
-   "thumb": "https://i2.ytimg.com/vi/IcEvgfPg1iI/hqdefault.jpg",
-   "id": "3c850846e9c0",
+   "published": "2026-11-10T08:34:00.000Z",
+   "summary": "Mark Montgomery of the Foundation for Defense of Democracies says the upcoming Abu Dhabi peace talks are likely to fail because Vladimir Putin has no reason to back down from his demands. Despite the Democrats' gains in the US midterms, Montgomery sees little sign that Donald…",
+   "id": "159d141feadf",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1007,111 +1168,6 @@
    "published": "2026-11-10T02:31:18.000Z",
    "summary": "We deploy continuously, so our changelog gets a lot of small releases with no regular rhythm. A long single page works for browsing, and in-app “what’s new since you last visited” covers people who are already in the product. Neither helps when I want to send someone a link to…",
    "id": "4b0123c59531",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "This BROKE the Internet…",
-   "url": "https://www.youtube.com/watch?v=PlV1mulNc1s",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-10T02:15:27.000Z",
-   "summary": "Luke discusses the recent controversy surrounding Dave Chappelle and IHIP. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
-   "thumb": "https://i1.ytimg.com/vi/PlV1mulNc1s/hqdefault.jpg",
-   "id": "250ab15bb568",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "KT #793 - BIG JAY OAKERSON + ZAC BROWN + MIKE FINOIA",
-   "url": "https://www.youtube.com/watch?v=BWZjZuzY0CA",
-   "source": "Kill Tony",
-   "feedId": "yt-kill-tony",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "standup",
-    "listen"
-   ],
-   "published": "2026-11-10T02:00:11.000Z",
-   "summary": "Big Jay Oakerson, Zac Brown, Mike Finoia, Pat O'Neill, Myles Johnson, Martin Phillips, D Madness, Michael A. Gonzales, Jon Deas, Matthew Muehling, Grooveline Horns, Joe White, Troy Conrad, Monica Parciak, Colt Mcneely, Nathan Poling, Steve Glass, Tony Hinchcliffe, Brian Redban…",
-   "thumb": "https://i3.ytimg.com/vi/BWZjZuzY0CA/hqdefault.jpg",
-   "id": "4635a8fc9d8b",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Netanyahu said calling Trump 'every day' to push him to resume Iran war",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xsa9mc/netanyahu_said_calling_trump_every_day_to_push/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-11-10T01:41:13.000Z",
-   "summary": "submitted by /u/kai_vt [link] [comments]",
-   "id": "252a620b85c1",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Exclusive | U.S. Balks at China’s Demand for Tightly Scripted Trump-Xi-Putin Summit",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xs6h51/exclusive_us_balks_at_chinas_demand_for_tightly/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-11-09T22:53:29.000Z",
-   "summary": "submitted by /u/Unfair-Ticket9474 [link] [comments]",
-   "id": "af869b9634a2",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "The New Epicenter of Global Terror: How Africa’s Weak States and Rare Earths Drive Transnational Extremism",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xs3n7a/the_new_epicenter_of_global_terror_how_africas/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-11-09T21:01:51.000Z",
-   "summary": "submitted by /u/ForeignAffairsMag [link] [comments]",
-   "id": "dfc622f406f2",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "A Recipe for Disaster in Taiwan: Why the Risk of a Crisis Is Growing",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xs3m3x/a_recipe_for_disaster_in_taiwan_why_the_risk_of_a/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-11-09T21:00:45.000Z",
-   "summary": "submitted by /u/ForeignAffairsMag [link] [comments]",
-   "id": "bce56906c919",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1197,6 +1253,60 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
+   "title": "This BROKE the Internet…",
+   "url": "https://www.youtube.com/watch?v=PlV1mulNc1s",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-10T02:15:27.000Z",
+   "summary": "Luke discusses the recent controversy surrounding Dave Chappelle and IHIP. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
+   "thumb": "https://i1.ytimg.com/vi/PlV1mulNc1s/hqdefault.jpg",
+   "id": "250ab15bb568",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "KT #793 - BIG JAY OAKERSON + ZAC BROWN + MIKE FINOIA",
+   "url": "https://www.youtube.com/watch?v=BWZjZuzY0CA",
+   "source": "Kill Tony",
+   "feedId": "yt-kill-tony",
+   "type": "video",
+   "tags": [
+    "comedy",
+    "standup",
+    "listen"
+   ],
+   "published": "2026-11-10T02:00:11.000Z",
+   "summary": "Big Jay Oakerson, Zac Brown, Mike Finoia, Pat O'Neill, Myles Johnson, Martin Phillips, D Madness, Michael A. Gonzales, Jon Deas, Matthew Muehling, Grooveline Horns, Joe White, Troy Conrad, Monica Parciak, Colt Mcneely, Nathan Poling, Steve Glass, Tony Hinchcliffe, Brian Redban…",
+   "thumb": "https://i3.ytimg.com/vi/BWZjZuzY0CA/hqdefault.jpg",
+   "id": "4635a8fc9d8b",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Netanyahu said calling Trump 'every day' to push him to resume Iran war",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xsa9mc/netanyahu_said_calling_trump_every_day_to_push/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-11-10T01:41:13.000Z",
+   "summary": "submitted by /u/kai_vt [link] [comments]",
+   "id": "252a620b85c1",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
    "title": "WATCH MCCONNELL REALIZE He F***ED UP Big Time after DISASTER Night!",
    "url": "https://www.youtube.com/watch?v=SMFRkoP1b9w",
    "source": "Luke Beasley",
@@ -1210,43 +1320,6 @@
    "summary": "Luke discusses Mitch McConnell's response, or lack thereof, to the midterm blowout. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
    "thumb": "https://i4.ytimg.com/vi/SMFRkoP1b9w/hqdefault.jpg",
    "id": "7a08c6b46382",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "tagesthemen 22:15 Uhr, 09.11.2026",
-   "url": "https://www.youtube.com/watch?v=ZnlD-UPpo6M",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-09T22:30:41.000Z",
-   "summary": "tagesthemen 22:15 Uhr Kanzler Merz nominiert Ilse Aigner offiziell für das Amt der Bundespräsidentin, ARD-Umfrage \"Deine Meinung zählt\" zur Sorge um Demokratie, COP31: Australiens Umgang mit dem Klimawandel, Weitere Meldungen im Überblick, Papst Leo XIV. hält Messe in Buenos…",
-   "thumb": "https://i3.ytimg.com/vi/ZnlD-UPpo6M/hqdefault.jpg",
-   "id": "5dbac31d60a8",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "OH NO. He’s f***ing doing it AGAIN.",
-   "url": "https://www.youtube.com/watch?v=WjsDQOElqhI",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-09T22:15:19.000Z",
-   "summary": "Luke discusses Trump's recent rhetoric on the midterms. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
-   "thumb": "https://i4.ytimg.com/vi/WjsDQOElqhI/hqdefault.jpg",
-   "id": "2c75497dd19d",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1283,24 +1356,6 @@
    "summary": "Republican Congressman Thomas Massie has moved to force a vote to impeach US defence secretary Pete Hegseth. The Kentucky representative has introduced eight articles of impeachment against Hegseth, accusing him of illegally waging war without congressional authorisation and…",
    "thumb": "https://i1.ytimg.com/vi/8cvVqsNOvMQ/hqdefault.jpg",
    "id": "47bd0fd311c2",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Nvidia stock plunges almost $400bn after Chinese spy scandal",
-   "url": "https://www.youtube.com/watch?v=Rt2FJIPYi4s",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-09T20:00:14.000Z",
-   "summary": "Nvidia shares plunge after boss embroiled in alleged Chinese spy scandal. The chipmaker announced an investigation on Sunday after chief executive Jensen Huang admitted having an affair with a business executive accused of being a Chinese spy. Hundreds of billions of dollars…",
-   "thumb": "https://i3.ytimg.com/vi/Rt2FJIPYi4s/hqdefault.jpg",
-   "id": "5eeca45df0d2",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1463,24 +1518,6 @@
    "why": "0",
    "durationSec": 2611,
    "duration": "43:31"
-  },
-  {
-   "title": "Melania Issues MAJOR Announcement after Midterm DISASTER!",
-   "url": "https://www.youtube.com/watch?v=Ic-1azVZRz0",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-09T00:30:05.000Z",
-   "summary": "Luke discusses the announcement of Melania's new documentary. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
-   "thumb": "https://i2.ytimg.com/vi/Ic-1azVZRz0/hqdefault.jpg",
-   "id": "364b03851686",
-   "score": 0,
-   "matched": [],
-   "why": "0"
   },
   {
    "title": "Learn Everyday German in Chemnitz",
@@ -2170,23 +2207,6 @@
    "summary": "In The Know's Midterm 2026 Election Panel debates if El-Sayed's string of broken campaign promises over the last half-minute could mean the end of the progressive movement in America. Become an Onion member while it's still optional:…",
    "thumb": "https://i1.ytimg.com/vi/4vkqSigZeDI/hqdefault.jpg",
    "id": "92498650dda1",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Enough Is Enough",
-   "url": "https://www.youtube.com/watch?v=2965PkndV2c",
-   "source": "Aberrant preach",
-   "feedId": "yt-aberrant-preach",
-   "type": "video",
-   "tags": [
-    "trash"
-   ],
-   "published": "2026-11-03T20:05:00.000Z",
-   "summary": "After the whole debacle with Atrioc being caught with deepfake spicy content on a computer tab featuring Pokimane and his now best friend's wife QT Cinderella, him attending the wedding got Pokimane feeling some type of way about her friends attending said wedding. ————————————…",
-   "thumb": "https://i3.ytimg.com/vi/2965PkndV2c/hqdefault.jpg",
-   "id": "9d07fc958848",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2942,5 +2962,5 @@
    "why": "0"
   }
  ],
- "contentHash": "be3ead2d5172"
+ "contentHash": "0e48f509f223"
 }
