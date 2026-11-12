@@ -1,13 +1,13 @@
 {
- "generated": "2026-11-11T19:41:34.640Z",
+ "generated": "2026-11-12T02:17:58.406Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
-  "ok": 50,
-  "items": 119,
+  "ok": 51,
+  "items": 125,
   "duplicatesMerged": 0,
-  "lengthsKnown": 2,
-  "lengthLookups": 102,
+  "lengthsKnown": 3,
+  "lengthLookups": 103,
   "lengthFailures": 102,
   "lengthVia": "video pages",
   "lengthFailReasons": {
@@ -267,7 +267,7 @@
    "name": "ProZD",
    "type": "youtube",
    "status": "ok",
-   "count": 1,
+   "count": 2,
    "resolved": {
     "channelId": "UC6MFZAOHXlKK1FI7V0XQVeA",
     "title": "ProZD",
@@ -657,20 +657,19 @@
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
+   "lastOk": "2026-11-11T19:41:34.640Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-xbox",
    "name": "r/xbox",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": "2026-11-07T21:52:57.028Z",
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-slaythespire",
@@ -679,37 +678,304 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-11-11T01:25:43.262Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
   },
   {
    "id": "rd-germany",
    "name": "r/germany",
    "type": "reddit",
-   "status": "waiting",
-   "count": 0,
-   "lastOk": "2026-10-31T01:21:53.748Z",
-   "note": "not its turn this run"
+   "status": "ok",
+   "count": 5,
+   "url": "https://www.reddit.com/r/germany/top/.rss?t=day"
   },
   {
    "id": "rd-unitedkingdom",
    "name": "r/unitedkingdom",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   }
  ],
  "items": [
+  {
+   "title": "OMG: Watch RATTLED Katie Zacharia Suffer BRAIN GLITCH in LIVE INTERVIEW!",
+   "url": "https://www.youtube.com/watch?v=TMp4mo9o5YM",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-12T01:15:16.000Z",
+   "summary": "Luke discusses Katie Zacharia's interview on News Night. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
+   "thumb": "https://i1.ytimg.com/vi/TMp4mo9o5YM/hqdefault.jpg",
+   "id": "2a6788956e96",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "How does a remote schnuppertag actually goes?",
+   "url": "https://www.reddit.com/r/germany/comments/1xtza5u/how_does_a_remote_schnuppertag_actually_goes/",
+   "source": "r/germany",
+   "feedId": "rd-germany",
+   "type": "post",
+   "tags": [
+    "germany",
+    "news"
+   ],
+   "published": "2026-11-12T01:06:27.000Z",
+   "summary": "Hi I have done an interview for ausbildung fisi (Fachinformatiker für Systemintegration) and they seemed interested and offered me to join in a remote schnuppertag. I never encountered this type of offer so I am a bit confused and what it is and should I prepare for the…",
+   "id": "80b1868b1447",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Vance Considers Direct Talks With Iran Hard-Liner in Push to End War",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xtz9tv/vance_considers_direct_talks_with_iran_hardliner/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-11-12T01:06:01.000Z",
+   "summary": "submitted by /u/Unfair-Ticket9474 [link] [comments]",
+   "id": "0d803b608041",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "the grand finale of an anime about tic-tac-toe",
+   "url": "https://www.youtube.com/watch?v=lLI1ub0OYoQ",
+   "source": "ProZD",
+   "feedId": "yt-prozd",
+   "type": "video",
+   "tags": [
+    "comedy",
+    "gaming"
+   ],
+   "published": "2026-11-11T23:31:07.000Z",
+   "summary": "my magnum opus",
+   "thumb": "https://i1.ytimg.com/vi/lLI1ub0OYoQ/hqdefault.jpg",
+   "id": "3076a3e39b7a",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "What the F*** Just Happened?!",
+   "url": "https://www.youtube.com/watch?v=qLy3tYPTwYw",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-11T23:15:01.000Z",
+   "summary": "Luke discusses House Republicans blocking Hegseth's impeachment. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
+   "thumb": "https://i2.ytimg.com/vi/qLy3tYPTwYw/hqdefault.jpg",
+   "id": "fda0fa69d4e7",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "I had racist things yelled at me in Dresden",
+   "url": "https://www.reddit.com/r/germany/comments/1xtwqkg/i_had_racist_things_yelled_at_me_in_dresden/",
+   "source": "r/germany",
+   "feedId": "rd-germany",
+   "type": "post",
+   "tags": [
+    "germany",
+    "news"
+   ],
+   "published": "2026-11-11T23:12:00.000Z",
+   "summary": "Apologies for the English – I'm a tourist and I don't speak German. My childhood best friend and I grew up together in Canada, but she later moved back to Germany. I am visiting her in Dresden right now, and I'm a Canadian who is ethnically Indian. I had someone yell at me…",
+   "id": "c7eec6950739",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Nvidia CEO on brink of being fired after second affair claim",
+   "url": "https://www.youtube.com/watch?v=qjpchVYM8Zk",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-11T23:09:04.000Z",
+   "summary": "Simon Marks joins Ben Kentish as Nvidia moves to oust CEO Jensen Huang amid new affair allegations. AI chipmaker Nvidia's board is preparing to fire its CEO, Jensen Huang, after reports emerged of a second affair he had engaged in after he confirmed to have had a relationship…",
+   "thumb": "https://i2.ytimg.com/vi/qjpchVYM8Zk/hqdefault.jpg",
+   "id": "09532f7e184f",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "31M, turning 32 next month. I've achieved things I worked hard for, but I feel completely empty. I'm not sad.",
+   "url": "https://www.reddit.com/r/germany/comments/1xtw8ks/31m_turning_32_next_month_ive_achieved_things_i/",
+   "source": "r/germany",
+   "feedId": "rd-germany",
+   "type": "post",
+   "tags": [
+    "germany",
+    "news"
+   ],
+   "published": "2026-11-11T22:50:45.000Z",
+   "summary": "I’m an Indian living in Germany, and I’m turning 32 next month. I’m writing this because I don’t really know how to explain what I’m feeling anymore. On paper, I’ve done a lot of things I thought would make me feel happy or fulfilled. I graduated with excellent grades in…",
+   "id": "6fc5d880b1ca",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "tagesthemen 22:15 Uhr, 11.11.2026",
+   "url": "https://www.youtube.com/watch?v=sZpvjvo7Lzg",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-11T22:26:05.000Z",
+   "summary": "tagesthemen 22:15 Uhr Dunkelfeldstudie deckt mehr Fälle sexualisierter Gewalt in der Bundeswehr auf, Planungen des Bundeshaushalts 2027, Digital Fairness Act: Wie die EU den Verbraucherschutz stärken will, Weitere Meldungen im Überblick, Austausch von Kriegsgefangenen bei…",
+   "thumb": "https://i4.ytimg.com/vi/sZpvjvo7Lzg/hqdefault.jpg",
+   "id": "b46c4f30a281",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Novita Diamonds Frankfurt",
+   "url": "https://www.reddit.com/r/germany/comments/1xtvkmr/novita_diamonds_frankfurt/",
+   "source": "r/germany",
+   "feedId": "rd-germany",
+   "type": "post",
+   "tags": [
+    "germany",
+    "news"
+   ],
+   "published": "2026-11-11T22:22:39.000Z",
+   "summary": "Has anyone here bought any jewellery from Novita Diamonds Frankfurt? Could you please share your experience. Their google reviews seem to be full of Bot/fake 5 star reviews. submitted by /u/Short_Kangaroo4914 [link] [comments]",
+   "id": "9879c0595ae7",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "A Quiet beautiful evening in Landshut, Bavaria",
+   "url": "https://www.reddit.com/r/germany/comments/1xtv7rj/a_quiet_beautiful_evening_in_landshut_bavaria/",
+   "source": "r/germany",
+   "feedId": "rd-germany",
+   "type": "post",
+   "tags": [
+    "germany",
+    "news"
+   ],
+   "published": "2026-11-11T22:08:22.000Z",
+   "summary": "submitted by /u/Casualframesjpg [link] [comments]",
+   "id": "5fd45ba56979",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "David Walliams allegations: the predatory nature of an 'age gap'",
+   "url": "https://www.youtube.com/watch?v=vATKOF3a_y0",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-11T22:00:10.000Z",
+   "summary": "After the Russell Brand verdict and the allegations about David Walliams, James asks what the response says about how society treated these men. He also asks whether society is too comfortable with older men pursuing much younger women, and whether we should be more suspicious.…",
+   "thumb": "https://i3.ytimg.com/vi/vATKOF3a_y0/hqdefault.jpg",
+   "id": "dc8bb48656cd",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "🚨 HE’S GOING TO DO IT!",
+   "url": "https://www.youtube.com/watch?v=UjyYq1TW1V8",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-11T21:15:29.000Z",
+   "summary": "Luke discusses the Mississippi Senate race. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley Instagram -…",
+   "thumb": "https://i2.ytimg.com/vi/UjyYq1TW1V8/hqdefault.jpg",
+   "id": "9c53bdc9b73d",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Sexuelle Übergriffe in der Bundeswehr | tagesthemen-Interview",
+   "url": "https://www.youtube.com/watch?v=0kUcDD3JSQY",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-11T20:54:24.000Z",
+   "summary": "In der Bundeswehr ist sexuelles Fehlverhalten weiter verbreitet als bisher bekannt. Eine sogenannte Dunkelfeldstudie ergab: Drei Viertel der Soldatinnen und ein Drittel der Soldaten wurden bereits mindestens einmal verbal belästigt. Viele Vorfälle, die bis hin zu schweren…",
+   "thumb": "https://i1.ytimg.com/vi/0kUcDD3JSQY/hqdefault.jpg",
+   "id": "0064a325ef70",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Klimaschutz-Index: Deutschland rutscht erneut ab",
+   "url": "https://www.youtube.com/watch?v=YDXY8WBHg5E",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-11T19:55:14.000Z",
+   "summary": "UN-Generalsekretär Guterres hat erneut eindringlich gewarnt: Die Klimakrise läuft uns davon, sagte er auf der internationalen Konferenz COP 31 im türkischen Antalya. Gleichzeitig zeigt der neue Klimaschutz-Index deutlich: Auch Deutschland ist längst nur noch Mittelmaß. Weitere…",
+   "thumb": "https://i2.ytimg.com/vi/YDXY8WBHg5E/hqdefault.jpg",
+   "id": "049d34ba7a8e",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
   {
    "title": "tagesschau 20:00 Uhr, 11.11.2026",
    "url": "https://www.youtube.com/watch?v=-80edadbcAs",
@@ -722,9 +988,26 @@
     "listen"
    ],
    "published": "2026-11-11T19:29:16.000Z",
-   "summary": "tagesschau 20:00 Uhr Dunkelfeldstudie bei der Bundeswehr berichtet von hoher Zahl an Fällen von sexualisiertem Fehlverhalten, Wirtschaftsweise korrigieren Konjunkturprognose für dieses und das kommende Jahr deutlich nach oben, Zahl der arbeitslosen Akademiker auf Höchststand,…",
+   "summary": "Die 20-Uhr-Ausgabe im Livestream und früher auf Abruf: https://ardmediathek.de/tagesschau und https://tagesschau.de Themen der Sendung: 00:00 Guten Abend 00:22 Dunkelfeldstudie bei der Bundeswehr berichtet von hoher Zahl an Fällen von sexualisiertem Fehlverhalten 03:01…",
    "thumb": "https://i2.ytimg.com/vi/-80edadbcAs/hqdefault.jpg",
    "id": "93d11dcdc225",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Europe’s strategic bet on US technology for air superiority is unravelling",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xtqxuk/europes_strategic_bet_on_us_technology_for_air/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-11-11T19:20:38.000Z",
+   "summary": "submitted by /u/paneuropeanism_ [link] [comments]",
+   "id": "7fe0b6133547",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -800,20 +1083,18 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Polnischer Unabhängigkeitstag: Rechter Marsch gegen Regierung von Donald Tusk",
-   "url": "https://www.youtube.com/watch?v=oldXya6YBCw",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
+   "title": "U.S. Efforts to Tighten Blockade of Iran Rely on Reluctant Neighbors",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xtp35q/us_efforts_to_tighten_blockade_of_iran_rely_on/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
    "tags": [
-    "german",
-    "news",
-    "listen"
+    "politics",
+    "news"
    ],
-   "published": "2026-11-11T18:07:46.000Z",
-   "summary": "In Polens Hauptstadt Warschau haben sich mehrere zehntausend rechtsgerichtete Demonstranten versammelt. Sie begehen den polnischen Unabhängigkeitstag mit einem Marsch. Damit erinnern sie an den elften November 1918, als Polen nach Jahren der Besetzung durch Russland, Preußen…",
-   "thumb": "https://i4.ytimg.com/vi/oldXya6YBCw/hqdefault.jpg",
-   "id": "67f984a6da48",
+   "published": "2026-11-11T18:11:58.000Z",
+   "summary": "The first step in the United States’ campaign to economically strangle Iran was a naval blockade of its ports, cutting off Iranian trade by sea. Next came a raft of new sanctions, grounding much of the country’s air transport network. Now, the United States is going after…",
+   "id": "1f15eccdbfc4",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -838,6 +1119,40 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
+   "title": "A New Kind of Foreign Agent: How AI Is Reshaping Influence Operations in America",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xtnqm1/a_new_kind_of_foreign_agent_how_ai_is_reshaping/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-11-11T17:22:44.000Z",
+   "summary": "submitted by /u/ForeignAffairsMag [link] [comments]",
+   "id": "49fa21b878b9",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Trump Is Facing a Very Different North Korea—And Now He Needs a New Strategy",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xtnp1g/trump_is_facing_a_very_different_north_koreaand/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-11-11T17:21:09.000Z",
+   "summary": "submitted by /u/ForeignAffairsMag [link] [comments]",
+   "id": "c5f82850d2c8",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
    "title": "Self-Improvement or Self-Hatred? | Middle Ground",
    "url": "https://www.youtube.com/watch?v=o05-SkstlbU",
    "source": "Jubilee",
@@ -851,44 +1166,6 @@
    "summary": "Hey you 👈 Wanna be in a Jubilee video? https://bit.ly/be-in-a-video LET’S BE FRIENDS Instagram: https://www.instagram.com/jubileemedia/ TikTok: https://www.tiktok.com/@jubilee?lang=en Website: https://www.jubileemedia.com OUR LOVE + DATING CHANNEL 🍑 YouTube:…",
    "thumb": "https://i4.ytimg.com/vi/o05-SkstlbU/hqdefault.jpg",
    "id": "c37253124af9",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Schwieriger Berufseinstieg: Studiert, aber arbeitslos",
-   "url": "https://www.youtube.com/watch?v=wLei56y0Mq8",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-11T16:52:55.000Z",
-   "summary": "Gute Bildung gilt meist als Grundvoraussetzung für ein erfolgreiches Berufsleben. Doch auch für Akademiker:innen scheint es zunehmend schwieriger zu sein, einen Job zu finden. Das zeigen Daten der Bundesagentur für Arbeit. Demnach hat die Zahl der arbeitslosen…",
-   "thumb": "https://i4.ytimg.com/vi/wLei56y0Mq8/hqdefault.jpg",
-   "id": "6cd949f32f2d",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "tagesschau in Einfacher Sprache 19:00 Uhr, 11.11.2026",
-   "url": "https://www.youtube.com/watch?v=5g9LECz0efs",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-11T16:45:07.000Z",
-   "summary": "tagesschau in Einfacher Sprache 19:00 Uhr Bundeswehr: Studie zu sexualisierter Gewalt, Experten: Deutsche Wirtschaft wächst stark, Ukraine-Krieg: Gespräche über Frieden zu Ende, Buntes Fest: Karneval beginnt, Das Wetter Die \"tagesschau in Einfacher Sprache\" – immer Montag bis…",
-   "thumb": "https://i2.ytimg.com/vi/5g9LECz0efs/hqdefault.jpg",
-   "id": "cd5ad4eb9458",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -999,24 +1276,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "David Walliams allegations: the predatory nature of an 'age gap'",
-   "url": "https://www.youtube.com/watch?v=vATKOF3a_y0",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-11T14:59:30.000Z",
-   "summary": "After the Russell Brand verdict and the allegations about David Walliams, James asks what the response says about how society treated these men. He also asks whether society is too comfortable with older men pursuing much younger women, and whether we should be more suspicious.…",
-   "thumb": "https://i3.ytimg.com/vi/vATKOF3a_y0/hqdefault.jpg",
-   "id": "dc8bb48656cd",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Reform boycotts Senedd after member banned for saying white people being replaced",
    "url": "https://www.reddit.com/r/ukpolitics/comments/1xtj98k/reform_boycotts_senedd_after_member_banned_for/",
    "source": "r/ukpolitics",
@@ -1029,96 +1288,6 @@
    "published": "2026-11-11T14:33:14.000Z",
    "summary": "submitted by /u/yu3 [link] [comments]",
    "id": "c2e16d578b8c",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "SHOUTING ERUPTS as Visibly SHAKEN Pete Hegseth PANICS in Public!",
-   "url": "https://www.youtube.com/watch?v=wqslJ2jLi-U",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-11T14:00:04.000Z",
-   "summary": "Luke discusses Pete Hegseth's latest press conference. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
-   "thumb": "https://i4.ytimg.com/vi/wqslJ2jLi-U/hqdefault.jpg",
-   "id": "6e457a0a412c",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "The Man Who Refused to be a Trillionaire",
-   "url": "https://www.youtube.com/watch?v=FsEbLPqeo7k",
-   "source": "ColdFusion",
-   "feedId": "yt-coldfusion",
-   "type": "video",
-   "tags": [
-    "finance",
-    "tech",
-    "listen"
-   ],
-   "published": "2026-11-11T13:49:23.000Z",
-   "summary": "Go to https://buyraycon.com/coldfusionBC to get up to 50% off! Thanks to Raycon for sponsoring! When a person invents something so pivotal that it changes the course of human history and trillion dollar companies are build on top of your creation, you'd probably be shocked when…",
-   "thumb": "https://i3.ytimg.com/vi/FsEbLPqeo7k/hqdefault.jpg",
-   "id": "8beda6bc4d03",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Kemi Badenoch: ‘Double amputees run marathons’ | James O’Brien reacts",
-   "url": "https://www.youtube.com/watch?v=NxbTttchOEI",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-11T13:45:35.000Z",
-   "summary": "Kemi Badenoch has said that having ADHD should not justify disability benefits as she unveils her plan to cut £36 billion from the welfare bill. James O’Brien thinks her argument is ‘horribly crass’ and ‘dangerous.’ She argued that: ‘Double amputees run marathons. People who…",
-   "thumb": "https://i3.ytimg.com/vi/NxbTttchOEI/hqdefault.jpg",
-   "id": "d6705ee440bf",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "HIGHLIGHTS: Andy Burnham makes Kemi Badenoch look silly at PMQs",
-   "url": "https://www.youtube.com/watch?v=57MWYDefFuo",
-   "source": "PoliticsJOE",
-   "feedId": "yt-politicsjoe",
-   "type": "video",
-   "tags": [
-    "comedy"
-   ],
-   "published": "2026-11-11T13:15:33.000Z",
-   "summary": "Andy Burnham and Kemi Badenoch return to the despatch box to face off at another session of PMQs. Like PoliticsJOE? We need your support: https://www.patreon.com/PoliticsJOE",
-   "thumb": "https://i2.ytimg.com/vi/57MWYDefFuo/hqdefault.jpg",
-   "id": "02c717e69ca8",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "‘It's not a laughable moment...’ | PMQs analysed",
-   "url": "https://www.youtube.com/watch?v=rAWSJO0FQLI",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-11T12:43:41.000Z",
-   "summary": "James O’Brien and LBC’s political editor Natasha Clark react to PM Andy Burnham and Conservative Kemi Badenoch’s performance in today’s Prime Minister’s Questions. Listen to the full show on the all-new LBC App: https://app.af.lbc.co.uk/btnc/thenewlbcapp #jamesobrien #pmqs…",
-   "thumb": "https://i3.ytimg.com/vi/rAWSJO0FQLI/hqdefault.jpg",
-   "id": "3ea7feea8321",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1156,89 +1325,114 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Strategic Narcissism Is Making a Comeback: The Optimism of the 1990s and Implications for Today’s Competition with Russia and China",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xt3fjw/strategic_narcissism_is_making_a_comeback_the/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
+   "title": "SHOUTING ERUPTS as Visibly SHAKEN Pete Hegseth PANICS in Public!",
+   "url": "https://www.youtube.com/watch?v=wqslJ2jLi-U",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
    "tags": [
     "politics",
-    "news"
+    "listen"
    ],
-   "published": "2026-11-11T00:25:14.000Z",
-   "summary": "submitted by /u/HooverInstitution [link] [comments]",
-   "id": "99b5499f84fa",
-   "score": 1,
+   "published": "2026-11-11T14:00:04.000Z",
+   "summary": "Luke discusses Pete Hegseth's latest press conference. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
+   "thumb": "https://i4.ytimg.com/vi/wqslJ2jLi-U/hqdefault.jpg",
+   "id": "6e457a0a412c",
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
+   "why": "0"
   },
   {
-   "title": "Trump swung between war and diplomacy — then chose a third way",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xt2lpk/trump_swung_between_war_and_diplomacy_then_chose/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
+   "title": "The Man Who Refused to be a Trillionaire",
+   "url": "https://www.youtube.com/watch?v=FsEbLPqeo7k",
+   "source": "ColdFusion",
+   "feedId": "yt-coldfusion",
+   "type": "video",
    "tags": [
-    "politics",
-    "news"
+    "finance",
+    "tech",
+    "listen"
    ],
-   "published": "2026-11-10T23:49:52.000Z",
-   "summary": "submitted by /u/threshhookme [link] [comments]",
-   "id": "b981986c4654",
-   "score": 1,
+   "published": "2026-11-11T13:49:23.000Z",
+   "summary": "Go to https://buyraycon.com/coldfusionBC to get up to 50% off! Thanks to Raycon for sponsoring! When a person invents something so pivotal that it changes the course of human history and trillion dollar companies are build on top of your creation, you'd probably be shocked when…",
+   "thumb": "https://i3.ytimg.com/vi/FsEbLPqeo7k/hqdefault.jpg",
+   "id": "8beda6bc4d03",
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
+   "why": "0"
   },
   {
-   "title": "Soviet Nostalgia Is a Geopolitical Dead End",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xsvc0y/soviet_nostalgia_is_a_geopolitical_dead_end/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
+   "title": "Kemi Badenoch: ‘Double amputees run marathons’ | James O’Brien reacts",
+   "url": "https://www.youtube.com/watch?v=NxbTttchOEI",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
    "tags": [
     "politics",
-    "news"
+    "listen"
    ],
-   "published": "2026-11-10T18:55:46.000Z",
-   "summary": "submitted by /u/foreignpolicymag [link] [comments]",
-   "id": "bb892d555c14",
-   "score": 1,
+   "published": "2026-11-11T13:45:35.000Z",
+   "summary": "Kemi Badenoch has said that having ADHD should not justify disability benefits as she unveils her plan to cut £36 billion from the welfare bill. James O’Brien thinks her argument is ‘horribly crass’ and ‘dangerous.’ She argued that: ‘Double amputees run marathons. People who…",
+   "thumb": "https://i3.ytimg.com/vi/NxbTttchOEI/hqdefault.jpg",
+   "id": "d6705ee440bf",
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
+   "why": "0"
   },
   {
-   "title": "From Punchline To Power: The Rise Of Iran's Security Chief Mohsen Rezaei",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xssj6u/from_punchline_to_power_the_rise_of_irans/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
+   "title": "HIGHLIGHTS: Andy Burnham makes Kemi Badenoch look silly at PMQs",
+   "url": "https://www.youtube.com/watch?v=57MWYDefFuo",
+   "source": "PoliticsJOE",
+   "feedId": "yt-politicsjoe",
+   "type": "video",
    "tags": [
-    "politics",
-    "news"
+    "comedy"
    ],
-   "published": "2026-11-10T17:11:16.000Z",
-   "summary": "submitted by /u/RFERL_ReadsReddit [link] [comments]",
-   "id": "a28c7a3387eb",
-   "score": 1,
+   "published": "2026-11-11T13:15:33.000Z",
+   "summary": "Andy Burnham and Kemi Badenoch return to the despatch box to face off at another session of PMQs. Like PoliticsJOE? We need your support: https://www.patreon.com/PoliticsJOE",
+   "thumb": "https://i2.ytimg.com/vi/57MWYDefFuo/hqdefault.jpg",
+   "id": "02c717e69ca8",
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
+   "why": "0"
   },
   {
-   "title": "Zelensky’s ex-chief of staff Yermak ran 'troubling' back-channel with Trump's Susie Wiles",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xss67g/zelenskys_exchief_of_staff_yermak_ran_troubling/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
+   "title": "‘It's not a laughable moment...’ | PMQs analysed",
+   "url": "https://www.youtube.com/watch?v=rAWSJO0FQLI",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
    "tags": [
     "politics",
-    "news"
+    "listen"
    ],
-   "published": "2026-11-10T16:58:02.000Z",
-   "summary": "submitted by /u/KI_official [link] [comments]",
-   "id": "9b992d3f6ace",
-   "score": 1,
+   "published": "2026-11-11T12:43:41.000Z",
+   "summary": "James O’Brien and LBC’s political editor Natasha Clark react to PM Andy Burnham and Conservative Kemi Badenoch’s performance in today’s Prime Minister’s Questions. Listen to the full show on the all-new LBC App: https://app.af.lbc.co.uk/btnc/thenewlbcapp #jamesobrien #pmqs…",
+   "thumb": "https://i3.ytimg.com/vi/rAWSJO0FQLI/hqdefault.jpg",
+   "id": "3ea7feea8321",
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
+   "why": "0"
+  },
+  {
+   "title": "1 Millionaire Boss vs 20 Gen Z Workers (ft. Kevin O’Leary) | Surrounded",
+   "url": "https://www.youtube.com/watch?v=2c81cbv0SKk",
+   "source": "Jubilee",
+   "feedId": "yt-jubilee",
+   "type": "video",
+   "tags": [
+    "politics",
+    "debates"
+   ],
+   "published": "2026-11-11T05:16:24.000Z",
+   "summary": "Hey you 👈 Wanna be in a Jubilee video? https://bit.ly/be-in-a-video LET’S BE FRIENDS Instagram: https://www.instagram.com/jubileemedia/ TikTok: https://www.tiktok.com/@jubilee?lang=en Website: https://www.jubileemedia.com OUR LOVE + DATING CHANNEL 🍑 YouTube:…",
+   "thumb": "https://i3.ytimg.com/vi/2c81cbv0SKk/hqdefault.jpg",
+   "id": "93ff6a65a5bd",
+   "score": 0,
+   "matched": [],
+   "why": "0",
+   "durationSec": 87,
+   "duration": "1:27"
   },
   {
    "title": "Lauren Boebert LOSES, CRUMBLES in Interview!",
@@ -1259,42 +1453,6 @@
    "why": "0"
   },
   {
-   "title": "Visibly DEPRESSED Mike Johnson QUITS, GIVES UP On Video!",
-   "url": "https://www.youtube.com/watch?v=k36ZCFKKyMI",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-11T02:15:07.000Z",
-   "summary": "Luke discusses Mike Johnson's future following the midterm blowout. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
-   "thumb": "https://i4.ytimg.com/vi/k36ZCFKKyMI/hqdefault.jpg",
-   "id": "3d191d06c484",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "CRISIS: Trump PANICS IN PUBLIC as Presser DESCENDS into Madness!",
-   "url": "https://www.youtube.com/watch?v=6WCK-D_tzwk",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-11T00:15:40.000Z",
-   "summary": "Luke discusses Trump's latest press conference. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley Instagram -…",
-   "thumb": "https://i3.ytimg.com/vi/6WCK-D_tzwk/hqdefault.jpg",
-   "id": "a802628700df",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "Become a member, get the paper",
    "url": "https://www.youtube.com/shorts/iymtB_0U9SA",
    "source": "The Onion",
@@ -1307,42 +1465,6 @@
    "summary": "Become an Onion member while it's still optional: https://membership.theonion.com/?campaign=701a500001geULHAA2",
    "thumb": "https://i2.ytimg.com/vi/iymtB_0U9SA/hqdefault.jpg",
    "id": "3a8a2f881bc0",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Trump’s LOVE LETTER To BIDEN Just Leaked, It’s WILD!",
-   "url": "https://www.youtube.com/watch?v=Px5baNinY60",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-10T22:15:10.000Z",
-   "summary": "Luke discusses new excerpts from Joe Biden's book. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley Instagram -…",
-   "thumb": "https://i1.ytimg.com/vi/Px5baNinY60/hqdefault.jpg",
-   "id": "22e8628bd4ff",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "'Do I sound like an addict to you?' | James O'Brien - The Whole Show",
-   "url": "https://www.youtube.com/watch?v=yeMIjhyYyQI",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-10T22:00:09.000Z",
-   "summary": "We're glued to our phones. And it's getting out of hand. As the government moves to ban mobile phones in schools, James turns the conversation away from children and asks whether adults have a problem of their own. James speaks to callers about the psychology of smartphone…",
-   "thumb": "https://i2.ytimg.com/vi/yeMIjhyYyQI/hqdefault.jpg",
-   "id": "a7724e4124ef",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2330,7 +2452,7 @@
    "why": "0"
   },
   {
-   "title": "Remedial Civics for Musicians",
+   "title": "Music is Inherently Political",
    "url": "https://www.youtube.com/watch?v=kIMIlLx4DIc",
    "source": "Adam Neely",
    "feedId": "yt-adam-neely",
@@ -2471,24 +2593,6 @@
    "summary": "📺 Learn German the fun way with Lingopie! Get your 7-day free trial + up to 73% OFF the yearly plan: https://learn.lingopie.com/easygerman_nov (Ad) --- LEARN MORE GERMAN WITH US: 💡 JOIN OUR COMMUNITY: https://easygerman.link/membership_eg685 🎧 LISTEN TO OUR PODCAST:…",
    "thumb": "https://i4.ytimg.com/vi/WninNBkt6MI/hqdefault.jpg",
    "id": "9c572c4f4619",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "1 Liberal Man vs 20 MAGA Conservatives (ft. Harry Sisson) | Surrounded",
-   "url": "https://www.youtube.com/watch?v=xTY0y2wX8WE",
-   "source": "Jubilee",
-   "feedId": "yt-jubilee",
-   "type": "video",
-   "tags": [
-    "politics",
-    "debates"
-   ],
-   "published": "2026-11-01T17:00:13.000Z",
-   "summary": "Hey you 👈 Wanna be in a Jubilee video? https://bit.ly/be-in-a-video LET’S BE FRIENDS Instagram: https://www.instagram.com/jubileemedia/ TikTok: https://www.tiktok.com/@jubilee?lang=en Website: https://www.jubileemedia.com OUR LOVE + DATING CHANNEL 🍑 YouTube:…",
-   "thumb": "https://i1.ytimg.com/vi/xTY0y2wX8WE/hqdefault.jpg",
-   "id": "fc05009095c8",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2843,5 +2947,5 @@
    "why": "0"
   }
  ],
- "contentHash": "4391012d7761"
+ "contentHash": "07d529294ba8"
 }
