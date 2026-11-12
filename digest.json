@@ -1,17 +1,17 @@
 {
- "generated": "2026-11-12T11:27:30.345Z",
+ "generated": "2026-11-12T20:04:00.241Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
   "ok": 51,
-  "items": 126,
+  "items": 127,
   "duplicatesMerged": 0,
   "lengthsKnown": 3,
-  "lengthLookups": 101,
-  "lengthFailures": 101,
+  "lengthLookups": 103,
+  "lengthFailures": 103,
   "lengthVia": "video pages",
   "lengthFailReasons": {
-   "no length on page": 101
+   "no length on page": 103
   }
  },
  "feeds": [
@@ -72,7 +72,7 @@
    "name": "Flashgitz",
    "type": "youtube",
    "status": "ok",
-   "count": 0,
+   "count": 1,
    "resolved": {
     "channelId": "UCNnKprAG-MWLsk-GsbsC2BA",
     "title": "Flashgitz",
@@ -85,7 +85,7 @@
    "name": "The Good Liars",
    "type": "youtube",
    "status": "ok",
-   "count": 4,
+   "count": 3,
    "resolved": {
     "channelId": "UCUNOwz9KTDIhhTTN3_ptUDA",
     "title": "The Good Liars",
@@ -98,7 +98,7 @@
    "name": "Easy German",
    "type": "youtube",
    "status": "ok",
-   "count": 4,
+   "count": 3,
    "resolved": {
     "channelId": "UCbxb2fqe9oNgglAoYqsYOtQ",
     "title": "Easy German",
@@ -371,7 +371,7 @@
    "name": "Dropout",
    "type": "youtube",
    "status": "ok",
-   "count": 4,
+   "count": 5,
    "resolved": {
     "channelId": "UCPDXXXJj9nax0fr0Wfc048g",
     "title": "Dropout",
@@ -384,7 +384,7 @@
    "name": "The Onion",
    "type": "youtube",
    "status": "ok",
-   "count": 3,
+   "count": 2,
    "resolved": {
     "channelId": "UCfAOh2t5DpxVrgS9NQKjC7A",
     "title": "The Onion",
@@ -397,7 +397,7 @@
    "name": "The Economist",
    "type": "youtube",
    "status": "ok",
-   "count": 4,
+   "count": 5,
    "resolved": {
     "channelId": "UC0p5jTq6Xx_DosDFxVXnWaQ",
     "title": "The Economist",
@@ -436,7 +436,7 @@
    "name": "Coffeezilla",
    "type": "youtube",
    "status": "ok",
-   "count": 0,
+   "count": 1,
    "resolved": {
     "channelId": "UCFQMnBA3CS502aghlcr0_aw",
     "title": "Coffeezilla",
@@ -630,20 +630,19 @@
    "id": "rd-productmanagement",
    "name": "r/productmanagement",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/productmanagement/top/.rss?t=day"
+   "lastOk": "2026-11-12T11:27:30.345Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-tech",
    "name": "r/tech",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": "2026-11-07T19:04:52.310Z",
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-gaming",
@@ -652,25 +651,26 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-11-11T19:41:34.640Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
   },
   {
    "id": "rd-xbox",
    "name": "r/xbox",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": "2026-11-07T21:52:57.028Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-slaythespire",
@@ -679,7 +679,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-geopolitics",
@@ -711,8 +711,43 @@
  ],
  "items": [
   {
-   "title": "Spanien: Generalstreik und Proteste gegen Wohnungsnot enden mit Ausschreitungen",
-   "url": "https://www.youtube.com/watch?v=WCtObPW5fAI",
+   "title": "He’s Betting Against Uber’s Entire Business Model",
+   "url": "https://www.youtube.com/watch?v=t_YB2txQRFQ",
+   "source": "The Hustle",
+   "feedId": "yt-the-hustle",
+   "type": "video",
+   "tags": [
+    "business"
+   ],
+   "published": "2026-11-12T20:00:07.000Z",
+   "summary": "Uber rides have gotten expensive, but on some trips drivers take home less than half the fare. Throo, Uber's newest competitor, charges drivers no commission, just a flat $1 fee per ride. *Spot the next industries ripe for disruption:* https://clickhubspot.com/diea Behind the…",
+   "thumb": "https://i1.ytimg.com/vi/t_YB2txQRFQ/hqdefault.jpg",
+   "id": "9d1df400d5ff",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Jensen Huang resigns as Nvidia CEO | The Economist",
+   "url": "https://www.youtube.com/watch?v=_4aXTGiiCp0",
+   "source": "The Economist",
+   "feedId": "yt-the-economist",
+   "type": "video",
+   "tags": [
+    "finance",
+    "business"
+   ],
+   "published": "2026-11-12T19:42:02.000Z",
+   "summary": "Nvidia CEO Jensen Huang has resigned, after being embroiled in a sex-and-spying scandal. The AI company built around just one man must now learn to run without him. Subscribe: https://www.youtube.com/@TheEconomist?sub_confirmation=1 The Economist’s editor-in-chief, Zanny Minton…",
+   "thumb": "https://i4.ytimg.com/vi/_4aXTGiiCp0/hqdefault.jpg",
+   "id": "b146209bfdb1",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "tagesschau 20:00 Uhr, 12.11.2026",
+   "url": "https://www.youtube.com/watch?v=jKPPF7q30AM",
    "source": "Tagesschau",
    "feedId": "yt-tagesschau",
    "type": "video",
@@ -721,17 +756,17 @@
     "news",
     "listen"
    ],
-   "published": "2026-11-12T11:23:21.000Z",
-   "summary": "Zehntausende Menschen haben in zahlreichen spanischen Städten gegen die Wohnungskrise demonstriert. In Madrid zählten die Behörden rund 120.000 Demonstranten. Die Proteste fanden zum Abschluss des ersten ganztägigen Generalstreiks seit 14 Jahren statt. Die Demonstrationen…",
-   "thumb": "https://i4.ytimg.com/vi/WCtObPW5fAI/hqdefault.jpg",
-   "id": "ba0926b5fa51",
+   "published": "2026-11-12T19:29:30.000Z",
+   "summary": "tagesschau 20:00 Uhr Union und SPD ringen über den Bundeshaushalt 2027, Gipfel der Europäischen Politischen Gemeinschaft in Dublin, Nvidia-Chef Huang tritt nach Spionageaffäre zurück, Mercedes-Benz will Investitionen in deutsche Standorte stoppen, In Deutschland verschulden…",
+   "thumb": "https://i3.ytimg.com/vi/jKPPF7q30AM/hqdefault.jpg",
+   "id": "2f472635aa79",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Kushner and Witkoff are 'unqualified' to solve Russia-Ukraine war",
-   "url": "https://www.youtube.com/watch?v=nZRg1RKIrj8",
+   "title": "UK economy grows at fastest rate in over two years",
+   "url": "https://www.youtube.com/watch?v=466cXB5rPzk",
    "source": "LBC",
    "feedId": "yt-lbc",
    "type": "video",
@@ -739,10 +774,454 @@
     "politics",
     "listen"
    ],
-   "published": "2026-11-12T10:44:44.000Z",
-   "summary": "Iain Dale is joined by the editor of UkraineAlert blog Peter Dickinson to discuss the failed peace talks between Russia and Ukraine. Russian and Ukrainian negotiators agreed to a prisoner exchange during two days of peace talks in Abu Dhabi that ended on Wednesday, but Jared…",
-   "thumb": "https://i3.ytimg.com/vi/nZRg1RKIrj8/hqdefault.jpg",
-   "id": "ea96fc6f946e",
+   "published": "2026-11-12T19:13:46.000Z",
+   "summary": "The UK economy grew by 0.7% between July and September, the Office for National Statistics said. The AI spending boom was a contributor to higher GDP in July, with the ONS revealing that many of the businesses reporting the largest turnover were involved in activities related…",
+   "thumb": "https://i1.ytimg.com/vi/466cXB5rPzk/hqdefault.jpg",
+   "id": "b57be1c85215",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "UK on cusp of historic Brexit deal as hopes grow last obstacle can be overcome",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xul2ve/uk_on_cusp_of_historic_brexit_deal_as_hopes_grow/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-11-12T18:48:13.000Z",
+   "summary": "submitted by /u/theipaper [link] [comments]",
+   "id": "b3a90c4eb6d9",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "The End.",
+   "url": "https://www.youtube.com/watch?v=ALV-2uGdgN4",
+   "source": "Aberrant preach",
+   "feedId": "yt-aberrant-preach",
+   "type": "video",
+   "tags": [
+    "trash"
+   ],
+   "published": "2026-11-12T18:39:07.000Z",
+   "summary": "All that self snitching with Chris Hansen & Jidion finall ends this mans career. €dp445 is done ———————————— Spotify: https://open.spotify.com/artist/6QJIJ6AugqPEFASp1V6zgH Merchandise --- https://www.enkreprinte.com/collections/aba-and-preach INSTAGRAM @aba.atlas @abanpreach…",
+   "thumb": "https://i2.ytimg.com/vi/ALV-2uGdgN4/hqdefault.jpg",
+   "id": "8932a225bd31",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Jobsuche im Wandel: Wie Unternehmen auf KI-Bewerbungen reagieren",
+   "url": "https://www.youtube.com/watch?v=38rRIYS1uAg",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-12T18:37:51.000Z",
+   "summary": "Wer sich um einen neuen Job bemüht, kommt meistens nicht um sie herum: die Bewerbungsmappe. Mit Anschreiben und Lebenslauf soll der potentielle Arbeitgeber überzeugt werden. Generationen von Bewerber:innen haben sich viele Gedanken gemacht, was sie dort reinschreiben.…",
+   "thumb": "https://i4.ytimg.com/vi/38rRIYS1uAg/hqdefault.jpg",
+   "id": "84049654c10f",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Very Important People Season 4 Teaser",
+   "url": "https://www.youtube.com/watch?v=clMkVczkgww",
+   "source": "Dropout",
+   "feedId": "yt-dropout",
+   "type": "video",
+   "tags": [
+    "comedy"
+   ],
+   "published": "2026-11-12T18:30:33.000Z",
+   "summary": "New season. New look. New Vic. Very Important People season 4 coming soon, only on Dropout. Welcome to the Dropout channel! You can support us by signing up for Dropout.tv, our subscription video platform that features a ton of exclusive content and series for only $7/month…",
+   "thumb": "https://i4.ytimg.com/vi/clMkVczkgww/hqdefault.jpg",
+   "id": "9e79735c5d30",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "David Wood Calls Nicaea II a DISASTER — Jay Dyer Responds",
+   "url": "https://www.youtube.com/watch?v=9P6omxQceJM",
+   "source": "Modern-Day Debate",
+   "feedId": "yt-modern-day-debate",
+   "type": "video",
+   "tags": [
+    "debates",
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-12T18:30:27.000Z",
+   "summary": "Huge thank you to our DEBATECON 9 sponsors including: Revival of the Anointed's Rule: https://revivingtheroar.org/ Apologetics Ark: https://www.apologeticsark.com/links @UncensoredAmerica Yonaguni International Cuisine (Aguadilla, Puerto Rico):…",
+   "thumb": "https://i2.ytimg.com/vi/9P6omxQceJM/hqdefault.jpg",
+   "id": "7d96dd3f25d4",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "OH DAMN: Biden LEAKS IT On Trump, Then THIS HAPPENS!",
+   "url": "https://www.youtube.com/watch?v=fgN1WA9dax4",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-12T18:30:13.000Z",
+   "summary": "Luke discusses Jake Tapper and Alex Thompson's updated book on Biden's decline, as well as Biden's new book. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below!…",
+   "thumb": "https://i3.ytimg.com/vi/fgN1WA9dax4/hqdefault.jpg",
+   "id": "bc61824a0c6f",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "20 NEW Zombie Games That Are Trying Something DIFFERENT",
+   "url": "https://www.youtube.com/watch?v=5EPTABel2Eg",
+   "source": "GameRanx",
+   "feedId": "yt-gameranx",
+   "type": "video",
+   "tags": [
+    "gaming"
+   ],
+   "published": "2026-11-12T17:56:04.000Z",
+   "summary": "'Zombie Games' is saturated genre, but we've got some new and upcoming releases that are trying some different things. Here are some new zombie games worth keeping an eye on. Subscribe for more: https://www.youtube.com/gameranxTV?sub_confirmation=1 0:00 Intro 0:36 God Save…",
+   "thumb": "https://i2.ytimg.com/vi/5EPTABel2Eg/hqdefault.jpg",
+   "id": "e69958b96cdb",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Pete Hegseth 'gets a proper telling off'",
+   "url": "https://www.youtube.com/watch?v=McGY7QDYxwg",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-12T17:49:00.000Z",
+   "summary": "Shelagh Fogarty is joined by Lewis Goodall to discuss the latest in the world of US politics. 00:00 | Mississippi have officially turned blue for the first time since the 1980s. The state have elected Scott Colom, who makes history as their first black senator since the 19th…",
+   "thumb": "https://i2.ytimg.com/vi/McGY7QDYxwg/hqdefault.jpg",
+   "id": "f4b7ad41cd97",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "ARD-Jugendmedientag: Wie Schüler journalistisches Arbeiten lernen",
+   "url": "https://www.youtube.com/watch?v=PEL_bbF3RuE",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-12T17:43:07.000Z",
+   "summary": "Tiktok und Instagram statt klassischem Fernsehen oder Radio: Junge Menschen konsumieren Medien vor allem in den sozialen Netzwerken. Wie Journalismus dort funktioniert, das war Thema beim Jugendmedientag von ARD, ZDF und Deutschlandfunk. Schüler:innen besuchten heute…",
+   "thumb": "https://i1.ytimg.com/vi/PEL_bbF3RuE/hqdefault.jpg",
+   "id": "7d6ab49ae211",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Green Party confirms intent to strengthen hunting law if Government ban falls short.",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xui5w8/green_party_confirms_intent_to_strengthen_hunting/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-11-12T17:01:02.000Z",
+   "summary": "submitted by /u/TheNewHuntingBan [link] [comments]",
+   "id": "c2c2df7119ec",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "\"Little Treat Culture\" is OUT OF CONTROL",
+   "url": "https://www.youtube.com/watch?v=nQVF4pgEgiw",
+   "source": "Levi Hildebrand",
+   "feedId": "yt-levi-hildebrand",
+   "type": "video",
+   "tags": [
+    "comedy",
+    "business"
+   ],
+   "published": "2026-11-12T17:00:07.000Z",
+   "summary": "Go to https://www.odoo.com/r/08C5 to get started on your free 15 day trial or book a consulting session with an Odoo expert (no credit card required)! Consider supporting our channel and get a little something in the process here: https://www.levihildebrand.com Subscribe!…",
+   "thumb": "https://i3.ytimg.com/vi/nQVF4pgEgiw/hqdefault.jpg",
+   "id": "a3777fd444d9",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Will the Sharks Shoot Their Shot at Hoop Trailer? | Shark Tank US | Shark Tank Global",
+   "url": "https://www.youtube.com/watch?v=a_-lYnbHTPs",
+   "source": "Shark Tank Global",
+   "feedId": "yt-shark-tank-global",
+   "type": "video",
+   "tags": [
+    "trash",
+    "business"
+   ],
+   "published": "2026-11-12T16:59:51.000Z",
+   "summary": "Scott & Gabriella Mosteller enter the Tank seeking $250K for a 5% stake in their company, Hoop Trailer. From Season 18 Episode 7 Watch Shark Tank US Now: http://AAN.SonyPictures.com/SharkTankUSHulu Watch Shark Tank Australia Now: http://aan.sonypictures.com/SharkTankAustralia…",
+   "thumb": "https://i2.ytimg.com/vi/a_-lYnbHTPs/hqdefault.jpg",
+   "id": "5c70e8c6662f",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "tagesschau in Einfacher Sprache 19:00 Uhr, 12.11.2026",
+   "url": "https://www.youtube.com/watch?v=Vn-lQ5-Ofuw",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-12T16:45:10.000Z",
+   "summary": "tagesschau in Einfacher Sprache 19:00 Uhr Die \"tagesschau in Einfacher Sprache\" – immer Montag bis Freitag um 19:00 Uhr bei tagesschau24 und rund um die Uhr in der Mediathek. Nachrichten in Einfacher Sprache richten sich vor allem an Menschen mit Lese-, Lern- und/oder…",
+   "thumb": "https://i3.ytimg.com/vi/Vn-lQ5-Ofuw/hqdefault.jpg",
+   "id": "fb43129997f7",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Investigating The President",
+   "url": "https://www.youtube.com/watch?v=W4PIkmjwGsQ",
+   "source": "Coffeezilla",
+   "feedId": "yt-coffeezilla",
+   "type": "video",
+   "tags": [
+    "finance"
+   ],
+   "published": "2026-11-12T16:34:42.000Z",
+   "summary": "Support Investigative Journalism: ► https://patreon.com/coffeezilla REQUESTS FOR COMMENT: World Liberty Financial and DRW / Don Wilson both denied the allegations. Read their full responses here:…",
+   "thumb": "https://i4.ytimg.com/vi/W4PIkmjwGsQ/hqdefault.jpg",
+   "id": "0ae6e2684517",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Will AI Take Your Job? | How Power Works with John Burn-Murdoch",
+   "url": "https://www.youtube.com/watch?v=fBHNcUE10l8",
+   "source": "PoliticsJOE",
+   "feedId": "yt-politicsjoe",
+   "type": "video",
+   "tags": [
+    "comedy"
+   ],
+   "published": "2026-11-12T16:25:28.000Z",
+   "summary": "There's a lot of noise around artificial intelligence and its inevitability. But as the tech becomes increasingly capable, the workforce is growing insecure. Who is at risk? Who does this serve? We were joined by John Burn-Murdoch, Chief Data Reporter at the Financial Times, to…",
+   "thumb": "https://i3.ytimg.com/vi/fBHNcUE10l8/hqdefault.jpg",
+   "id": "e11a4eab313d",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Klarna, PayPal und Co.: So schnell gerät man in die Schuldenfalle",
+   "url": "https://www.youtube.com/watch?v=uP2MF269C9E",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-12T16:20:20.000Z",
+   "summary": "Hohe Lebenshaltungskosen und die unsichere Lage auf dem Arbeitsmarkt: In Deutschland sind mehr als sieben Millionen Menschen überschuldet. Jeder zehnte Erwachsene kann derzeit seine finanziellen Verpflichtungen langfristig nicht erfüllen – das ergibt der neue Schuldneratlas der…",
+   "thumb": "https://i2.ytimg.com/vi/uP2MF269C9E/hqdefault.jpg",
+   "id": "0a96b17c81eb",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "UK agrees to Iran sitting on UN committee overseeing women’s rights and disarmament",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xugjmn/uk_agrees_to_iran_sitting_on_un_committee/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-11-12T16:00:42.000Z",
+   "summary": "submitted by /u/radiant_0wl [link] [comments]",
+   "id": "8a1333e91677",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "UK and Norway seal Royal Navy mine-hunting mothership deal",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xugenh/uk_and_norway_seal_royal_navy_minehunting/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-11-12T15:55:44.000Z",
+   "summary": "submitted by /u/gravy_baron [link] [comments]",
+   "id": "a94a452926e0",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "One dead and four injured after shooting in Washington DC",
+   "url": "https://www.youtube.com/watch?v=fewyqMj_wAc",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-12T15:41:47.000Z",
+   "summary": "At least one person has been killed and four left injured after a gunman opened fire near the White House. The active shooter is being hunted by police after opening fire in Logan Circle, less than a mile from the White House, on Thursday morning, according to local media. Five…",
+   "thumb": "https://i3.ytimg.com/vi/fewyqMj_wAc/hqdefault.jpg",
+   "id": "5f10ec293596",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Two illegal migrants found guilty of spying on journalists in Britain for Iran",
+   "url": "https://www.reddit.com/r/ukpolitics/comments/1xufm2l/two_illegal_migrants_found_guilty_of_spying_on/",
+   "source": "r/ukpolitics",
+   "feedId": "rd-ukpolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "british"
+   ],
+   "published": "2026-11-12T15:25:06.000Z",
+   "summary": "submitted by /u/Little-Attorney1287 [link] [comments]",
+   "id": "60823f3ecedc",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Nvidia boss resigns after reports of second affair",
+   "url": "https://www.youtube.com/watch?v=vTbwlCGu9kI",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-12T14:50:43.000Z",
+   "summary": "Tech boss Jensen Huang has announced his resignation as CEO, President and board member of Nvidia, effective immediately. The tech titan quit on Thursday following revelations that he had two extramarital affairs, plunging the chipmaker at the heart of the global AI boom into…",
+   "thumb": "https://i3.ytimg.com/vi/vTbwlCGu9kI/hqdefault.jpg",
+   "id": "742de743395e",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "OMG: Fox Host SNAPS at Trump Official as Interview GETS TENSE!",
+   "url": "https://www.youtube.com/watch?v=xDgrBpsmT6o",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-12T14:00:08.000Z",
+   "summary": "Luke discusses Markwayne Mullin's appearance on Fox News. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
+   "thumb": "https://i1.ytimg.com/vi/xDgrBpsmT6o/hqdefault.jpg",
+   "id": "722e181c4bcb",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "James O’Brien grapples with Reform's latest 'philosophical dilemma'",
+   "url": "https://www.youtube.com/watch?v=7z5AGuVt9AY",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-12T13:41:45.000Z",
+   "summary": "Henry Riley joins James O'Brien to run through the latest happenings in the Reform party. Listen to the full show on the all-new LBC App: https://app.af.lbc.co.uk/btnc/thenewlbcapp #jamesobrien #henryriley #reformuk #reform #nigelfarage #ukpolitics #uknews #LBC LBC is the home…",
+   "thumb": "https://i4.ytimg.com/vi/7z5AGuVt9AY/hqdefault.jpg",
+   "id": "a907b3591bcb",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "WATCH: Chancellor Grilled on Andy Burnham’s First Budget in Select Committee",
+   "url": "https://www.youtube.com/watch?v=SIFYKBTDoiE",
+   "source": "PoliticsJOE",
+   "feedId": "yt-politicsjoe",
+   "type": "video",
+   "tags": [
+    "comedy"
+   ],
+   "published": "2026-11-12T13:15:52.000Z",
+   "summary": "The Chancellor John Healey faces questions from MPs on the Treasury Select Committee about the Budget, the economy and the pressure facing households across Britain. Like PoliticsJOE? We need your support: https://www.patreon.com/PoliticsJOE Chapters 00:00 Budget leak: “I think…",
+   "thumb": "https://i4.ytimg.com/vi/SIFYKBTDoiE/hqdefault.jpg",
+   "id": "79243d96487f",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "How Ukraine blinded Russia’s drones: Operation Vivaldi explained | The Economist",
+   "url": "https://www.youtube.com/watch?v=vluYrFuJ6zY",
+   "source": "The Economist",
+   "feedId": "yt-the-economist",
+   "type": "video",
+   "tags": [
+    "finance",
+    "business"
+   ],
+   "published": "2026-11-12T11:18:08.000Z",
+   "summary": "The Russia-Ukraine war is airborne. With Operation Vivaldi, Ukraine found a way to advance by blinding their enemy’s drones—but risked geopolitical fallout. Subscribe: https://www.youtube.com/@TheEconomist?sub_confirmation=1 Ukraine spent months mapping where Russia’s drone…",
+   "thumb": "https://i3.ytimg.com/vi/vluYrFuJ6zY/hqdefault.jpg",
+   "id": "edc62cee7713",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -764,81 +1243,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Schwieriger Berufseinstieg: Studiert aber arbeitslos",
-   "url": "https://www.youtube.com/watch?v=XGEPiQK1xQk",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-12T09:36:32.000Z",
-   "summary": "Ein abgeschlossenes Studium, aber keinen Job: So geht es derzeit vielen. Die Zahl der arbeitslosen Akademiker:innen ist in Deutschland laut der Bundesagentur für Arbeit in den vergangenen fünf Jahren kontinuierlich gestiegen. Im August dieses Jahres erreichte sie mit 372.000…",
-   "thumb": "https://i1.ytimg.com/vi/XGEPiQK1xQk/hqdefault.jpg",
-   "id": "4be199abb15a",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Ukraine: US-Verhandler wollen Europa einbeziehen – Gipfel in Dublin",
-   "url": "https://www.youtube.com/watch?v=GqF0_jEYcXY",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-12T09:21:02.000Z",
-   "summary": "Bei den Gesprächen über die Zukunft der Ukraine in Abu Dhabi saßen die Europäer nicht mit am Tisch. Nun besuchen die US-Gesandten Kushner und Witkoff Moskau – nach eigenen Worten, um Putin von einer Beteiligung Europas zu überzeugen. Anschließend werden die US-Vertreter zum…",
-   "thumb": "https://i4.ytimg.com/vi/GqF0_jEYcXY/hqdefault.jpg",
-   "id": "55db052fde07",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "München: Wo Ukrainerinnen und Russinnen zusammenkommen | tagesthemen mittendrin",
-   "url": "https://www.youtube.com/watch?v=ZKnzTlxxg6E",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-12T08:05:21.000Z",
-   "summary": "Mehr als tausend Kilometer entfernt führen ihre Heimatländer Krieg - in der Tolstoi-Bibliothek schaffen es Frauen aus den beiden und weiteren osteuropäischen Ländern friedlich zusammenzusitzen - mit einer klaren Regel.. Mehr tagesthemen mittendrin Reportagen hier:…",
-   "thumb": "https://i3.ytimg.com/vi/ZKnzTlxxg6E/hqdefault.jpg",
-   "id": "c0f0d1973a55",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "AI will wipe out 50% of all jobs, claims former Google chief",
-   "url": "https://www.youtube.com/watch?v=GBjWcUL77UQ",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-12T07:00:16.000Z",
-   "summary": "Tom Swarbrick is joined by former president of Google China Dr Kai-Fu Lee to discuss the impact of AI on white collar jobs and predict who will win the AI race. Listen to the full show on the all-new LBC App: https://app.af.lbc.co.uk/btnc/thenewlbcapp #tomswarbrick #ai…",
-   "thumb": "https://i4.ytimg.com/vi/GBjWcUL77UQ/hqdefault.jpg",
-   "id": "b8f06c228eda",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Has the PM job become solution-oriented lately?",
    "url": "https://www.reddit.com/r/ProductManagement/comments/1xu4grp/has_the_pm_job_become_solutionoriented_lately/",
    "source": "r/productmanagement",
@@ -850,79 +1254,6 @@
    "published": "2026-11-12T05:27:29.000Z",
    "summary": "For the longest time, PM craft was all about problem definition, first principles thinking etc. It was never about the solutions though execution mattered. Even interviews were centered around product thinking which is the ability to break down the problem statement, develop…",
    "id": "7d02fa5fec4a",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "OH SH*T: Jim Jordan’s Most HUMILIATING INTERVIEW EVER!",
-   "url": "https://www.youtube.com/watch?v=pyqL_1wpG0k",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-12T05:15:09.000Z",
-   "summary": "Luke discusses the newly elected House Minority Leader, Jim Jordan. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
-   "thumb": "https://i1.ytimg.com/vi/pyqL_1wpG0k/hqdefault.jpg",
-   "id": "0a45223003f8",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Israel und die Westbank: Weitere Gewalt oder neue Hoffnung? I 11KM - der tagesschau-Podcast",
-   "url": "https://www.youtube.com/watch?v=fUqSpHkYj4w",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-12T05:09:34.000Z",
-   "summary": "Nach der Parlamentswahl in #Israel nimmt uns ARD-Korrespondent Jan-Christoph Kitzler in dieser 11KM-Folge mit ins Westjordanland, wo die Menschen weiter unter israelischer Gewalt leiden. Was er dort erlebt hat, erzählt er im Gespräch mit 11KM-Host Nadja Mitzkat. Kurz vor der…",
-   "thumb": "https://i3.ytimg.com/vi/fUqSpHkYj4w/hqdefault.jpg",
-   "id": "41768d9d7521",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "DAMN: MAGA Goon Steve Bannon’s EPSTEIN SECRET EXPOSED TO HIS FACE!",
-   "url": "https://www.youtube.com/watch?v=xnZgBo9O7g0",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-12T03:15:17.000Z",
-   "summary": "Luke discusses Steve Bannon's interview with The News Agents. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
-   "thumb": "https://i1.ytimg.com/vi/xnZgBo9O7g0/hqdefault.jpg",
-   "id": "488283240cac",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "OMG: Watch RATTLED Katie Zacharia Suffer BRAIN GLITCH in LIVE INTERVIEW!",
-   "url": "https://www.youtube.com/watch?v=TMp4mo9o5YM",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-12T01:15:16.000Z",
-   "summary": "Luke discusses Katie Zacharia's interview on News Night. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
-   "thumb": "https://i1.ytimg.com/vi/TMp4mo9o5YM/hqdefault.jpg",
-   "id": "2a6788956e96",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -973,24 +1304,6 @@
    "published": "2026-11-12T00:32:11.000Z",
    "summary": "This one is for the folks who are Principal and above, leading complex products that require cross-domain alignment (i.e. aligning with another product team). Our roadmaps and headcount requests are decided once a year, but the execution is phased quarterly. In the past couple…",
    "id": "6bd3a5ea29c0",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "the grand finale of an anime about tic-tac-toe",
-   "url": "https://www.youtube.com/watch?v=lLI1ub0OYoQ",
-   "source": "ProZD",
-   "feedId": "yt-prozd",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "gaming"
-   ],
-   "published": "2026-11-11T23:31:07.000Z",
-   "summary": "my magnum opus",
-   "thumb": "https://i1.ytimg.com/vi/lLI1ub0OYoQ/hqdefault.jpg",
-   "id": "3076a3e39b7a",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -1081,40 +1394,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Under-25s with ADHD or anxiety set to see £217 a month disability benefits axed",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xtq8us/under25s_with_adhd_or_anxiety_set_to_see_217_a/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-11-11T18:55:12.000Z",
-   "summary": "submitted by /u/theipaper [link] [comments]",
-   "id": "b5a60177bdca",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Rupert Lowe MP on X: \"If the Welsh Parliament is going to shut down legitimate debate around demographic security and immigration, the Restore Britain answer is quite straightforward... Roll back devolution and shut down the Welsh parliament.\"",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xtpzph/rupert_lowe_mp_on_x_if_the_welsh_parliament_is/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-11-11T18:45:36.000Z",
-   "summary": "submitted by /u/ITMidget [link] [comments]",
-   "id": "3625e4559ed8",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "U.S. Efforts to Tighten Blockade of Iran Rely on Reluctant Neighbors",
    "url": "https://www.reddit.com/r/geopolitics/comments/1xtp35q/us_efforts_to_tighten_blockade_of_iran_rely_on/",
    "source": "r/geopolitics",
@@ -1166,59 +1445,8 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Burnham signals support for bill to make ‘Black English’ and ‘Asian English’ census options",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xtm42i/burnham_signals_support_for_bill_to_make_black/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-11-11T16:23:48.000Z",
-   "summary": "submitted by /u/Paul277 [link] [comments]",
-   "id": "666f40c14ad3",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "David Cameron Warns Andy Burnham Against Rejoining EU Decade After Brexit",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xtlu53/david_cameron_warns_andy_burnham_against/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-11-11T16:13:23.000Z",
-   "summary": "submitted by /u/bloomberg [link] [comments]",
-   "id": "8396cc7b5676",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Reform boycotts Senedd after member banned for saying white people being replaced",
-   "url": "https://www.reddit.com/r/ukpolitics/comments/1xtj98k/reform_boycotts_senedd_after_member_banned_for/",
-   "source": "r/ukpolitics",
-   "feedId": "rd-ukpolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "british"
-   ],
-   "published": "2026-11-11T14:33:14.000Z",
-   "summary": "submitted by /u/yu3 [link] [comments]",
-   "id": "c2e16d578b8c",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "What the F*** Just Happened?!",
-   "url": "https://www.youtube.com/watch?v=qLy3tYPTwYw",
+   "title": "OH SH*T: Jim Jordan’s Most HUMILIATING INTERVIEW EVER!",
+   "url": "https://www.youtube.com/watch?v=pyqL_1wpG0k",
    "source": "Luke Beasley",
    "feedId": "yt-luke-beasley",
    "type": "video",
@@ -1226,53 +1454,17 @@
     "politics",
     "listen"
    ],
-   "published": "2026-11-11T23:15:01.000Z",
-   "summary": "Luke discusses House Republicans blocking Hegseth's impeachment. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
-   "thumb": "https://i2.ytimg.com/vi/qLy3tYPTwYw/hqdefault.jpg",
-   "id": "fda0fa69d4e7",
+   "published": "2026-11-12T05:15:09.000Z",
+   "summary": "Luke discusses the newly elected House Minority Leader, Jim Jordan. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
+   "thumb": "https://i1.ytimg.com/vi/pyqL_1wpG0k/hqdefault.jpg",
+   "id": "0a45223003f8",
    "score": 0,
    "matched": [],
    "why": "0"
   },
   {
-   "title": "Nvidia CEO on brink of being fired after second affair claim",
-   "url": "https://www.youtube.com/watch?v=qjpchVYM8Zk",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-11T23:09:04.000Z",
-   "summary": "Simon Marks joins Ben Kentish as Nvidia moves to oust CEO Jensen Huang amid new affair allegations. AI chipmaker Nvidia's board is preparing to fire its CEO, Jensen Huang, after reports emerged of a second affair he had engaged in after he confirmed to have had a relationship…",
-   "thumb": "https://i2.ytimg.com/vi/qjpchVYM8Zk/hqdefault.jpg",
-   "id": "09532f7e184f",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "David Walliams allegations: the predatory nature of an 'age gap' | James O'Brien - The Whole Show",
-   "url": "https://www.youtube.com/watch?v=vATKOF3a_y0",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-11T22:00:10.000Z",
-   "summary": "After the Russell Brand verdict and the allegations about David Walliams, James asks what the response says about how society treated these men. He also asks whether society is too comfortable with older men pursuing much younger women, and whether we should be more suspicious.…",
-   "thumb": "https://i3.ytimg.com/vi/vATKOF3a_y0/hqdefault.jpg",
-   "id": "dc8bb48656cd",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "🚨 HE’S GOING TO DO IT!",
-   "url": "https://www.youtube.com/watch?v=UjyYq1TW1V8",
+   "title": "DAMN: MAGA Goon Steve Bannon’s EPSTEIN SECRET EXPOSED TO HIS FACE!",
+   "url": "https://www.youtube.com/watch?v=xnZgBo9O7g0",
    "source": "Luke Beasley",
    "feedId": "yt-luke-beasley",
    "type": "video",
@@ -1280,10 +1472,64 @@
     "politics",
     "listen"
    ],
-   "published": "2026-11-11T21:15:29.000Z",
-   "summary": "Luke discusses the Mississippi Senate race. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley Instagram -…",
-   "thumb": "https://i2.ytimg.com/vi/UjyYq1TW1V8/hqdefault.jpg",
-   "id": "9c53bdc9b73d",
+   "published": "2026-11-12T03:15:17.000Z",
+   "summary": "Luke discusses Steve Bannon's interview with The News Agents. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
+   "thumb": "https://i1.ytimg.com/vi/xnZgBo9O7g0/hqdefault.jpg",
+   "id": "488283240cac",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "OMG: Watch RATTLED Katie Zacharia Suffer BRAIN GLITCH in LIVE INTERVIEW!",
+   "url": "https://www.youtube.com/watch?v=TMp4mo9o5YM",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-12T01:15:16.000Z",
+   "summary": "Luke discusses Katie Zacharia's interview on News Night. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
+   "thumb": "https://i1.ytimg.com/vi/TMp4mo9o5YM/hqdefault.jpg",
+   "id": "2a6788956e96",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "the grand finale of an anime about tic-tac-toe",
+   "url": "https://www.youtube.com/watch?v=lLI1ub0OYoQ",
+   "source": "ProZD",
+   "feedId": "yt-prozd",
+   "type": "video",
+   "tags": [
+    "comedy",
+    "gaming"
+   ],
+   "published": "2026-11-11T23:31:07.000Z",
+   "summary": "my magnum opus",
+   "thumb": "https://i1.ytimg.com/vi/lLI1ub0OYoQ/hqdefault.jpg",
+   "id": "3076a3e39b7a",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Hatemonger The Beholder",
+   "url": "https://www.youtube.com/shorts/VIczdxQeEdk",
+   "source": "Flashgitz",
+   "feedId": "yt-flashgitz",
+   "type": "video",
+   "tags": [
+    "comedy",
+    "cartoon"
+   ],
+   "published": "2026-11-11T21:14:54.000Z",
+   "summary": "#SpaceKing #Hatemonger",
+   "thumb": "https://i3.ytimg.com/vi/VIczdxQeEdk/hqdefault.jpg",
+   "id": "da0caa26cf48",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1410,24 +1656,6 @@
    "why": "0"
   },
   {
-   "title": "How UK laws are used by the 'rich and powerful' to suppress ordinary people",
-   "url": "https://www.youtube.com/watch?v=r98lnNDcfGs",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-11T16:09:30.000Z",
-   "summary": "The Government is \"concerned\" about the increased use of privacy injunctions and is looking at what more it can do, justice minister Alex Davis-Jones has said. Ms Davis-Jones made the comments in the House of Commons after David Walliams was unmasked as the celebrity at the…",
-   "thumb": "https://i3.ytimg.com/vi/r98lnNDcfGs/hqdefault.jpg",
-   "id": "cb1c8bec7d9c",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "Investigating Gen Z's Sex Recession",
    "url": "https://www.youtube.com/watch?v=CjwUzZ0TOhg",
    "source": "Channel 5 with Andrew Callaghan",
@@ -1502,23 +1730,6 @@
    "duration": "1:27"
   },
   {
-   "title": "Become a member, get the paper",
-   "url": "https://www.youtube.com/shorts/iymtB_0U9SA",
-   "source": "The Onion",
-   "feedId": "yt-the-onion",
-   "type": "video",
-   "tags": [
-    "comedy"
-   ],
-   "published": "2026-11-10T22:30:30.000Z",
-   "summary": "Become an Onion member while it's still optional: https://membership.theonion.com/?campaign=701a500001geULHAA2",
-   "thumb": "https://i2.ytimg.com/vi/iymtB_0U9SA/hqdefault.jpg",
-   "id": "3a8a2f881bc0",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "Islam or Christianity: Which Makes Sense of Reality? | Fearless Truth vs Waleed Naeem",
    "url": "https://www.youtube.com/watch?v=_YkJAdYNCSc",
    "source": "Modern-Day Debate",
@@ -1550,24 +1761,6 @@
    "summary": "Do politics have a place in our violence, or is it ruining one of our favorite pastimes? Our In The Know panel debates. Become an Onion member while it's still optional: https://membership.theonion.com/?campaign=701a500001geULHAA2 Powered By Forge Virtual Studios",
    "thumb": "https://i3.ytimg.com/vi/VTL-DmXH_bw/hqdefault.jpg",
    "id": "14b295bd390a",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Easy German Beginner Challenge",
-   "url": "https://www.youtube.com/shorts/9KRVbcqRY1M",
-   "source": "Easy German",
-   "feedId": "yt-easy-german",
-   "type": "video",
-   "tags": [
-    "german",
-    "listen"
-   ],
-   "published": "2026-11-10T17:33:06.000Z",
-   "summary": "Du bist Deutsch-Anfänger und weißt nicht, wo du anfangen sollst? 🤔 Dann mach mit bei unserer 10-Day Beginner Challenge! 🎉 Ab dem 23. November erwarten dich 10 Tage voller abwechslungsreicher Aufgaben, mit denen du Lesen, Hören, Schreiben und Sprechen übst. 👉 Alle Infos und…",
-   "thumb": "https://i2.ytimg.com/vi/9KRVbcqRY1M/hqdefault.jpg",
-   "id": "46cdf0e1290d",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2023,23 +2216,6 @@
    "why": "0"
   },
   {
-   "title": "25 UPCOMING Games We're MOST EXCITED ABOUT",
-   "url": "https://www.youtube.com/watch?v=rk20dVV-AH0",
-   "source": "GameRanx",
-   "feedId": "yt-gameranx",
-   "type": "video",
-   "tags": [
-    "gaming"
-   ],
-   "published": "2026-11-07T14:35:21.000Z",
-   "summary": "Which game are you looking forward to the most? Subscribe for more: https://www.youtube.com/gameranxTV?sub_confirmation=1 0:00 intro 1:00 Light No Fire 2:05 Total War: WARHAMMER 40,000 3:34 The Expanse: Osiris Reborn 5:11 Metro 2039 6:00 Fable 7:26 Resident Evil Veronica 8:50…",
-   "thumb": "https://i3.ytimg.com/vi/rk20dVV-AH0/hqdefault.jpg",
-   "id": "e7c07d3ff411",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "KT: Behind the Tape (Ep: 792 Jimmy Carr + Luis J. Gomez + Steve Rannazzisi)",
    "url": "https://www.youtube.com/watch?v=g_sevSzQBlM",
    "source": "Kill Tony",
@@ -2054,25 +2230,6 @@
    "summary": "An exclusive, behind-the-scenes look from KT Episode 792 KT guest Jimmy Carr + Luis J. Gomez Jimmy Carr, Luis J. Gomez, Steve Rannazzisi, Pat O'Neill, Dedrick Flynn, Martin Phillips, D Madness, Michael A. Gonzales, Jon Deas, Matthew Muehling, Grooveline Horns, Joe White, Troy…",
    "thumb": "https://i4.ytimg.com/vi/g_sevSzQBlM/hqdefault.jpg",
    "id": "ccb0d857f99c",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Nick Matau Vs Nadir Ahmed - Israel Or Palestine, Which Is More Moral?",
-   "url": "https://www.youtube.com/watch?v=2yIQrA_d8s4",
-   "source": "Modern-Day Debate",
-   "feedId": "yt-modern-day-debate",
-   "type": "video",
-   "tags": [
-    "debates",
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-06T18:50:12.000Z",
-   "summary": "Huge thank you to our DEBATECON 9 sponsors including: Revival of the Anointed's Rule: https://revivingtheroar.org/ Apologetics Ark: https://www.apologeticsark.com/links @UncensoredAmerica Yonaguni International Cuisine (Aguadilla, Puerto Rico):…",
-   "thumb": "https://i3.ytimg.com/vi/2yIQrA_d8s4/hqdefault.jpg",
-   "id": "720bac752952",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2162,23 +2319,6 @@
    "summary": "ex-North Korean Tank Commander Jung Min-Woo & His Son Jung Tae-Min Try American Snacks for the First Time ex-North Korean Tank Commander Kwon Hyo-jin and his son, Kwon Jin-woo, share the story of the eight years they spent apart while Hyo-jin was imprisoned in North Korea. 0:00…",
    "thumb": "https://i1.ytimg.com/vi/LJRhmd8_jl0/hqdefault.jpg",
    "id": "3ae346c6926d",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "This Animal @buser Also Falsely Accused 3 Men For Fun",
-   "url": "https://www.youtube.com/watch?v=_kZdGVGAK2U",
-   "source": "Aberrant preach",
-   "feedId": "yt-aberrant-preach",
-   "type": "video",
-   "tags": [
-    "trash"
-   ],
-   "published": "2026-11-06T13:28:50.000Z",
-   "summary": "Penguinz0 aka MoistCritikal covered a streamer who thinks pets are akin to ragdolls and funnily enough, we have covered this same streamer before for her compulsive lying. ———————————— Spotify: https://open.spotify.com/artist/6QJIJ6AugqPEFASp1V6zgH Merchandise ---…",
-   "thumb": "https://i4.ytimg.com/vi/_kZdGVGAK2U/hqdefault.jpg",
-   "id": "71f2b06f7693",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2302,58 +2442,6 @@
    "summary": "The official music video for Courtside by King Torrent (Lou Wilson) Visit https://watch.dropout.tv/mp3 for full episodes of MP3 Stream \"Courtside\" 🟢Spotify: https://open.spotify.com/track/2h5vlLAvdJgGXUxUCUkcqR?si=ecaf27c8aaa04d13 🍎Apple Music:…",
    "thumb": "https://i3.ytimg.com/vi/nrFpDYXXObQ/hqdefault.jpg",
    "id": "14d3be668d3f",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "WWE Legend Bill Goldberg Puts Kevin O’Leary in a Headlock! | Shark Tank US | Shark Tank Global",
-   "url": "https://www.youtube.com/watch?v=Efpe1MnKHVk",
-   "source": "Shark Tank Global",
-   "feedId": "yt-shark-tank-global",
-   "type": "video",
-   "tags": [
-    "trash",
-    "business"
-   ],
-   "published": "2026-11-05T17:00:04.000Z",
-   "summary": "Cody J. Brdar, Jordan Rubin, and Bill Goldberg enter the Tank seeking $250K for a 5% stake in their premium automotive brand, HeroCovers. From Season 18 Episode 6 Watch Shark Tank US Now: http://AAN.SonyPictures.com/SharkTankUSHulu Watch Shark Tank Australia Now:…",
-   "thumb": "https://i2.ytimg.com/vi/Efpe1MnKHVk/hqdefault.jpg",
-   "id": "ce1559f6bd20",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "WATCH: Russell Brand's Police Interviews Before Rape Charge",
-   "url": "https://www.youtube.com/watch?v=RCWY4Zlnz2o",
-   "source": "PoliticsJOE",
-   "feedId": "yt-politicsjoe",
-   "type": "video",
-   "tags": [
-    "comedy"
-   ],
-   "published": "2026-11-05T16:26:58.000Z",
-   "summary": "Today Russell Brand was found guilty of rape and three counts of sexual assault at Southwark Crown Court. He is being held in custody until he is handed a sentence on Monday, which, according to the Judge, will likely be custodial sentence. Here are some of Brand's interactions…",
-   "thumb": "https://i3.ytimg.com/vi/RCWY4Zlnz2o/hqdefault.jpg",
-   "id": "1eb36541937b",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Why are Labour banning porn?",
-   "url": "https://www.youtube.com/watch?v=_vk2BJ36ZtM",
-   "source": "PoliticsJOE",
-   "feedId": "yt-politicsjoe",
-   "type": "video",
-   "tags": [
-    "comedy"
-   ],
-   "published": "2026-11-05T15:52:49.000Z",
-   "summary": "From tomorrow, Labour will crack down on porn depicting strangulation or suffocation, sexual activity between people who are related, or adults role-playing as children under 16. The legislation will bring online pornography in line with existing regulations for offline…",
-   "thumb": "https://i4.ytimg.com/vi/_vk2BJ36ZtM/hqdefault.jpg",
-   "id": "9d479769a55c",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2887,79 +2975,7 @@
    "score": 0,
    "matched": [],
    "why": "0"
-  },
-  {
-   "title": "Chillicothe, Ohio Trump Rally",
-   "url": "https://www.youtube.com/watch?v=kEyB1qg9sSo",
-   "source": "The Good Liars",
-   "feedId": "yt-the-good-liars",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "politics",
-    "debates"
-   ],
-   "published": "2026-10-29T19:30:08.000Z",
-   "summary": "Jason visits Chillicothe, Ohio to talk to Trump supporters about socialism, Trump and Jesus (in that order), and much more! Join this channel to get access to perks: https://www.youtube.com/channel/UCUNOwz9KTDIhhTTN3_ptUDA/join https://linktr.ee/thegoodliars",
-   "thumb": "https://i4.ytimg.com/vi/kEyB1qg9sSo/hqdefault.jpg",
-   "id": "b0cf75c3daba",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Why Everybody Is Going To The Cheesecake Factory",
-   "url": "https://www.youtube.com/watch?v=jvmEXxNM-rU",
-   "source": "The Hustle",
-   "feedId": "yt-the-hustle",
-   "type": "video",
-   "tags": [
-    "business"
-   ],
-   "published": "2026-10-29T19:00:37.000Z",
-   "summary": "The Cheesecake Factory breaks nearly every rule in the chain restaurant playbook. So why did its stock more than double this summer? *How do iconic brands like this keep winning? The 9 lessons you need to know:* https://clickhubspot.com/olpl A 21-page menu. Mall locations.…",
-   "thumb": "https://i3.ytimg.com/vi/jvmEXxNM-rU/hqdefault.jpg",
-   "id": "01f44958e25d",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Should the world fear Trump-Putin-Xi collusion? | The Economist",
-   "url": "https://www.youtube.com/watch?v=2y4u-6i6pyQ",
-   "source": "The Economist",
-   "feedId": "yt-the-economist",
-   "type": "video",
-   "tags": [
-    "finance",
-    "business"
-   ],
-   "published": "2026-10-29T18:58:22.000Z",
-   "summary": "Donald Trump, Vladimir Putin and Xi Jinping could sit down together as soon as next month, after America’s president declared himself open to a three-way meeting with his Russian and Chinese counterparts. It would be a summit for the ages. Chumminess between Mr Putin and Mr Xi…",
-   "thumb": "https://i3.ytimg.com/vi/2y4u-6i6pyQ/hqdefault.jpg",
-   "id": "e5f02bf4342a",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Rich VS Poor Consumerism",
-   "url": "https://www.youtube.com/watch?v=5KP8gugE2Xw",
-   "source": "Levi Hildebrand",
-   "feedId": "yt-levi-hildebrand",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "business"
-   ],
-   "published": "2026-10-29T15:00:07.000Z",
-   "summary": "Spread the word about how we can meaningfully impact climate change and use our link https://clmtpwr.us/Levi to check your voter registration and make a voting plan. Get out to vote before or on Election Day, November 3rd! Subscribe!…",
-   "thumb": "https://i2.ytimg.com/vi/5KP8gugE2Xw/hqdefault.jpg",
-   "id": "7d3461c099d7",
-   "score": 0,
-   "matched": [],
-   "why": "0"
   }
  ],
- "contentHash": "d4a6ba699b0c"
+ "contentHash": "8a016a67d30b"
 }
