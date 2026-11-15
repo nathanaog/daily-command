@@ -1,17 +1,17 @@
 {
- "generated": "2026-11-15T16:26:03.068Z",
+ "generated": "2026-11-15T22:56:28.195Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
   "ok": 50,
-  "items": 114,
+  "items": 115,
   "duplicatesMerged": 0,
   "lengthsKnown": 3,
-  "lengthLookups": 103,
-  "lengthFailures": 100,
+  "lengthLookups": 99,
+  "lengthFailures": 99,
   "lengthVia": "video pages",
   "lengthFailReasons": {
-   "no length on page": 100
+   "no length on page": 99
   }
  },
  "feeds": [
@@ -85,7 +85,7 @@
    "name": "The Good Liars",
    "type": "youtube",
    "status": "ok",
-   "count": 2,
+   "count": 1,
    "resolved": {
     "channelId": "UCUNOwz9KTDIhhTTN3_ptUDA",
     "title": "The Good Liars",
@@ -657,20 +657,19 @@
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
+   "lastOk": "2026-11-15T16:26:03.068Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-xbox",
    "name": "r/xbox",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": "2026-11-07T21:52:57.028Z",
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-slaythespire",
@@ -679,25 +678,26 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "cached",
-   "count": 3,
-   "lastOk": "2026-11-14T22:35:16.877Z",
-   "note": "not its turn this run"
+   "status": "ok",
+   "count": 5,
+   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
   },
   {
    "id": "rd-germany",
    "name": "r/germany",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": "2026-11-12T02:17:58.406Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-unitedkingdom",
@@ -706,12 +706,233 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   }
  ],
  "items": [
   {
-   "title": "Two Huangs Don't Make a Right",
+   "title": "Verstehen Sie die Wut der Jugend, Herr Kretschmann? | Caren Miosga",
+   "url": "https://www.youtube.com/watch?v=poxQNZBtLKQ",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-15T22:54:34.000Z",
+   "summary": "Die Jungen in Deutschland haben genug: von Zukunftsängsten, steigenden Lebenshaltungskosten, dem Gefühl, nicht gehört zu werden. Laut ARD-DeutschlandTrend spüren 77 Prozent der Deutschen immer stärkere Belastungen, junge Erwachsene tragen mit 25,5 Prozent das höchste…",
+   "thumb": "https://i1.ytimg.com/vi/poxQNZBtLKQ/hqdefault.jpg",
+   "id": "6b99b0378409",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "JD Vance Finally Realizes He’s F***ED!",
+   "url": "https://www.youtube.com/watch?v=Ij-5sDfBkto",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-15T22:30:11.000Z",
+   "summary": "Luke discusses behind-the-scenes reporting of JD Vance's 2028 ambitions. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
+   "thumb": "https://i2.ytimg.com/vi/Ij-5sDfBkto/hqdefault.jpg",
+   "id": "14701b52ee1a",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "tagesthemen 22:45 Uhr, 15.11.2026",
+   "url": "https://www.youtube.com/watch?v=6RK2KC_dbmY",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-15T22:22:17.000Z",
+   "summary": "tagesthemen 22:45 Uhr SPD auf der Suche nach neuer Führung: Unterstützer von Parteichef Klingbeil melden sich zu Wort, Großdemo gegen umstrittene Medienreform in Tschechien, Textilindustrie in Bangladesch unter Druck, Volkstrauertag: Soldaten erinnern an ihre gefallenen…",
+   "thumb": "https://i3.ytimg.com/vi/6RK2KC_dbmY/hqdefault.jpg",
+   "id": "7cf0ec09f806",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Hürtgenwald: Wie es nach der Brandkatastrophe weitergeht | tagesthemen mittendrin",
+   "url": "https://www.youtube.com/watch?v=OqK-u8Nh7RU",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-15T20:42:30.000Z",
+   "summary": "Im August 2026 hat der Hürtgenwald in der Eifel gebrannt. Es war einer der größten Waldbrände in Nordrhein-Westfalen in den vergangenen Jahrzehnten. Wie die Wiederaufforstung gelingen kann und warum es Hoffnung gibt - wir waren vor Ort. Mehr tagesthemen mittendrin Reportagen…",
+   "thumb": "https://i4.ytimg.com/vi/OqK-u8Nh7RU/hqdefault.jpg",
+   "id": "0f1fef27d410",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Tschechien: Massenprotest gegen Abschaffung der Rundfunkgebühren",
+   "url": "https://www.youtube.com/watch?v=pt4XwTlrHY4",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-15T20:17:55.000Z",
+   "summary": "Mehrere Hunderttausend Menschen sind in Prag auf die Straße gegangen, um gegen Pläne zur Finanzierung der öffentlich-rechtlichen Medien zu protestieren. Sie befürchten, die Regierung könnte die Sender mit der Reform unter ihre Kontrolle bringen. Mehr zum Thema:…",
+   "thumb": "https://i1.ytimg.com/vi/pt4XwTlrHY4/hqdefault.jpg",
+   "id": "accd9f88e82c",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "tagesschau 20:00 Uhr, 15.11.2026",
+   "url": "https://www.youtube.com/watch?v=FyyHqnQzqkA",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-15T19:28:50.000Z",
+   "summary": "tagesschau 20:00 Uhr Hunderttausende demonstrieren gegen Rundfunkreform von Tschechiens rechter Regierung, Gedenken zum Volkstrauertag im Bundestag, Ex-Arbeitsminister Heil will als SPD-Parteichef kandidieren, Russland und Ukraine melden gegenseitige Angriffe, Extrem…",
+   "thumb": "https://i3.ytimg.com/vi/FyyHqnQzqkA/hqdefault.jpg",
+   "id": "828ea6951859",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "The Pentagon Ignored a Warning About the Danger of Iran’s Drones",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xx3wre/the_pentagon_ignored_a_warning_about_the_danger/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-11-15T19:10:42.000Z",
+   "summary": "submitted by /u/theatlantic [link] [comments]",
+   "id": "bba9968258d0",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Visibly F***ED UP Don Jr. Posts CONCERNING VIDEO after Total HUMILIATION!",
+   "url": "https://www.youtube.com/watch?v=XVZrlGsmgKU",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-15T18:30:08.000Z",
+   "summary": "Luke discusses Donald Trump Jr.'s latest podcast. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley Instagram -…",
+   "thumb": "https://i1.ytimg.com/vi/XVZrlGsmgKU/hqdefault.jpg",
+   "id": "6e4ccf82c421",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Bregenz: Lake Life, Austrian Dialect & Local Food",
+   "url": "https://www.youtube.com/watch?v=MN5GQvHMA5Y",
+   "source": "Easy German",
+   "feedId": "yt-easy-german",
+   "type": "video",
+   "tags": [
+    "german",
+    "listen"
+   ],
+   "published": "2026-11-15T18:00:01.000Z",
+   "summary": "Practice your spoken German with us as an Easy German Conversation Member: https://easygerman.link/membership_eg687 --- LEARN MORE GERMAN WITH US: 🎧 LISTEN TO OUR PODCAST: http://www.easygerman.fm 📬 SUBSCRIBE TO OUR NEWSLETTER: https://www.easygerman.org/newsletter WATCH…",
+   "thumb": "https://i2.ytimg.com/vi/MN5GQvHMA5Y/hqdefault.jpg",
+   "id": "d95961aae507",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "20 Worst Video Game Adaptations EVER",
+   "url": "https://www.youtube.com/watch?v=0oEZJqtM5xc",
+   "source": "GameRanx",
+   "feedId": "yt-gameranx",
+   "type": "video",
+   "tags": [
+    "gaming"
+   ],
+   "published": "2026-11-15T17:37:05.000Z",
+   "summary": "Video game movies and shows often crash and burn, but a select few are considered the worst of the worst. Subscribe for more: https://www.youtube.com/gameranxTV?sub_confirmation=1 0:00 Intro 0:43 Number 20 2:57 Number 19 5:07 Number 18 7:12 Number 17 9:07 Number 16 10:56 Number…",
+   "thumb": "https://i1.ytimg.com/vi/0oEZJqtM5xc/hqdefault.jpg",
+   "id": "24dfffabe635",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "1 Millionaire Boss vs 20 Gen Z Workers (ft. Kevin O’Leary) | Surrounded",
+   "url": "https://www.youtube.com/watch?v=2c81cbv0SKk",
+   "source": "Jubilee",
+   "feedId": "yt-jubilee",
+   "type": "video",
+   "tags": [
+    "politics",
+    "debates"
+   ],
+   "published": "2026-11-15T17:00:08.000Z",
+   "summary": "Hey you 👈 Wanna be in a Jubilee video? https://bit.ly/be-in-a-video LET’S BE FRIENDS Instagram: https://www.instagram.com/jubileemedia/ TikTok: https://www.tiktok.com/@jubilee?lang=en Website: https://www.jubileemedia.com OUR LOVE + DATING CHANNEL 🍑 YouTube:…",
+   "thumb": "https://i3.ytimg.com/vi/2c81cbv0SKk/hqdefault.jpg",
+   "id": "93ff6a65a5bd",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 87,
+   "duration": "1:27"
+  },
+  {
+   "title": "This Wildfire-Proof Home Has the Sharks Stunned | Shark Tank US | Shark Tank Global",
+   "url": "https://www.youtube.com/watch?v=yBHdloImAj8",
+   "source": "Shark Tank Global",
+   "feedId": "yt-shark-tank-global",
+   "type": "video",
+   "tags": [
+    "trash",
+    "business"
+   ],
+   "published": "2026-11-15T17:00:00.000Z",
+   "summary": "Holden Forrest entered the Tank seeking $1 million for 8% equity in HyberTech Homes, a company developing homes designed to lower underground to protect against wildfires and extreme weather. From Season 17, Episode 17 Watch Shark Tank US Now:…",
+   "thumb": "https://i2.ytimg.com/vi/yBHdloImAj8/hqdefault.jpg",
+   "id": "f0083a29ace5",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "The NVIDIA Scandal Goes Deeper than You Think",
    "url": "https://www.youtube.com/watch?v=PptRrzYY61w",
    "source": "ColdFusion",
    "feedId": "yt-coldfusion",
@@ -889,25 +1110,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Erfolg für SpaceX: „Starship“-Rakete kehrt zur Startrampe zurück",
-   "url": "https://www.youtube.com/watch?v=dvq3Gn1xdKA",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-15T10:51:27.000Z",
-   "summary": "Dem Raumfahrtunternehmen SpaceX ist es erstmals gelungen, eine Rakete nach dem Flug wieder sicher zur Erde zurückkehren zu lassen. Vor dem Wiedereintritt in die Erdatmosphäre hatte das Starship am Freitagabend in einer Höhe von rund 260 Kilometern mehrere Starlink-Satelliten im…",
-   "thumb": "https://i1.ytimg.com/vi/dvq3Gn1xdKA/hqdefault.jpg",
-   "id": "cbc325102a5f",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "The No AI Slop Manifesto",
    "url": "https://www.reddit.com/r/ProductManagement/comments/1xwngln/the_no_ai_slop_manifesto/",
    "source": "r/productmanagement",
@@ -924,8 +1126,8 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Europe’s banking union advances: what comes next?",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xw5pfb/europes_banking_union_advances_what_comes_next/",
+   "title": "Weekly Significant Activity Report - November 14, 2026",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xwnsos/weekly_significant_activity_report_november_14/",
    "source": "r/geopolitics",
    "feedId": "rd-geopolitics",
    "type": "post",
@@ -933,16 +1135,16 @@
     "politics",
     "news"
    ],
-   "published": "2026-11-14T15:53:31.000Z",
-   "summary": "submitted by /u/paneuropeanism_ [link] [comments]",
-   "id": "3b7c02fc5772",
-   "score": 1,
+   "published": "2026-11-15T05:52:09.000Z",
+   "summary": "submitted by /u/Adept_Grand_6523 [link] [comments]",
+   "id": "81228ce86407",
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
+   "why": "0"
   },
   {
-   "title": "Trump tells advisers he may hold off on Iran attacks barring new provocations, sources say",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xw21qo/trump_tells_advisers_he_may_hold_off_on_iran/",
+   "title": "Iran Attacks Bahrain as Conflict Escalates",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xwn6p9/iran_attacks_bahrain_as_conflict_escalates/",
    "source": "r/geopolitics",
    "feedId": "rd-geopolitics",
    "type": "post",
@@ -950,16 +1152,16 @@
     "politics",
     "news"
    ],
-   "published": "2026-11-14T13:10:01.000Z",
-   "summary": "President Donald Trump has told senior advisers in recent days that he may hold off on attacking Iran if the US faces no new provocations from Tehran or the Iran-backed Houthis in Yemen, according to three people familiar with the matter. Trump has alternated between threats of…",
-   "id": "b0ff1a6c7ca9",
-   "score": 1,
+   "published": "2026-11-15T05:16:19.000Z",
+   "summary": "submitted by /u/threshhookme [link] [comments]",
+   "id": "a40e991031a6",
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
+   "why": "0"
   },
   {
-   "title": "US has floated Ukraine ceding Donbas for Nato membership, Zelensky says",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xw060e/us_has_floated_ukraine_ceding_donbas_for_nato/",
+   "title": "Macron says limiting Ukraine aid would pave way to 'another war'",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xwmsbi/macron_says_limiting_ukraine_aid_would_pave_way/",
    "source": "r/geopolitics",
    "feedId": "rd-geopolitics",
    "type": "post",
@@ -967,12 +1169,29 @@
     "politics",
     "news"
    ],
-   "published": "2026-11-14T11:26:53.000Z",
-   "summary": "Is this something we should take seriously? submitted by /u/AffectionateRub1857 [link] [comments]",
-   "id": "dfa4d118f176",
-   "score": 1,
+   "published": "2026-11-15T04:54:40.000Z",
+   "summary": "Those who want to ration aid to Ukraine wish underneath it all to force an unjust peace on it\" and, by extension, all of Europe , Macron said. \"That is the spirit of defeat. That is a recipe for another war. That cannot be France's position.\" \" That means we must keep up our…",
+   "id": "7f687bef2f96",
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
+   "why": "0"
+  },
+  {
+   "title": "U.S. Figures Iran Still Has up to 2,500 Missiles, Countering Trump Assertions",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xwlev6/us_figures_iran_still_has_up_to_2500_missiles/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-11-15T03:38:55.000Z",
+   "summary": "The U.S. intelligence community assesses that Iran has between 1,500 and 2,500 missiles in its arsenal, U.S. officials said, leaving Tehran with significant capacity to attack U.S. and allied targets if all-out war resumes. That is a low-confidence assessment, the officials…",
+   "id": "6f29d8c29e88",
+   "score": 0,
+   "matched": [],
+   "why": "0"
   },
   {
    "title": "What Zero Accountability Looks Like...",
@@ -1024,63 +1243,6 @@
    "summary": "Luke discusses what's next for the Democratic Party. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley Instagram…",
    "thumb": "https://i2.ytimg.com/vi/yAPdS_o-qg0/hqdefault.jpg",
    "id": "35f3ba94d98c",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "tagesthemen 21:45 Uhr, 14.11.2026",
-   "url": "https://www.youtube.com/watch?v=1mtpa7sUwxY",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-14T21:52:10.000Z",
-   "summary": "tagesthemen 21:45 Uhr Ehemaliger Arbeitsminister Hubertus Heil kandidiert für den SPD-Parteivorsitz, Startverbot für Flugzeuge legt US-Luftverkehr für mehrere Stunden lahm, USA schlägt Ukraine NATO-Beitritt für Gebietsverzicht vor, Ein Ende der Krise in Kuba ist nicht in Sicht,…",
-   "thumb": "https://i2.ytimg.com/vi/1mtpa7sUwxY/hqdefault.jpg",
-   "id": "c14d265c6ef7",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "ARD-Korrespondentin ordnet ein: Heil will für SPD-Vorsitz kandidieren",
-   "url": "https://www.youtube.com/watch?v=NtnFTNgEmDA",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-14T19:35:30.000Z",
-   "summary": "Der frühere Arbeitsminister Hubertus Heil will nach Informationen des ARD-Hauptstadtstudios neuer SPD-Vorsitzender werden. Beim Parteitag mitte Januar in Bremen wird die neue Führungsspitze der Sozialdemokraten gewählt. Hintergrund ist der Rücktritt von Co-Parteichefin Bas. Ob…",
-   "thumb": "https://i3.ytimg.com/vi/NtnFTNgEmDA/hqdefault.jpg",
-   "id": "fd5de9ef9e66",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "tagesschau 20:00 Uhr, 14.11.2026",
-   "url": "https://www.youtube.com/watch?v=N_vxQl7lFRA",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-14T19:33:27.000Z",
-   "summary": "Die 20-Uhr-Ausgabe der tagesschau im Livestream und auf Abruf findet ihr auch hier: https://ardmediathek.de/tagesschau und https://tagesschau.de Themen der tagesschau-Sendung: 00:00 Guten Abend 00:21 Früherer Arbeitsminister Heil will für SPD-Vorsitz kandidieren 02:08…",
-   "thumb": "https://i3.ytimg.com/vi/N_vxQl7lFRA/hqdefault.jpg",
-   "id": "685ca3e62bbb",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1170,25 +1332,6 @@
    "summary": "GTA6 is almost upon us. Here’s all the revealed information that you need to know. Subscribe for more: https://www.youtube.com/gameranxTV?sub_confirmation=1 0:00 Intro 0:43 Number 25 1:35 Number 24 3:07 Number 23 4:08 Number 22 5:15 Number 21 6:24 Number 20 7:35 Number 19 8:28…",
    "thumb": "https://i2.ytimg.com/vi/A9fifS608C8/hqdefault.jpg",
    "id": "fc79f4500327",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Einordnung ARD-Korrespondentin: BSW in Sachsen-Anhalt will mit allen Parteien zusammenarbeiten",
-   "url": "https://www.youtube.com/watch?v=XPl4e7fRGLE",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-14T17:02:36.000Z",
-   "summary": "Das BSW ist im September in den Landtag von Sachsen-Anhalt eingezogen. Heute hat sich die Partei in Magdeburg neu aufgestellt. Die bisherige Doppelspitze wurde abgeschafft und John Lucas Dittrich zum alleinigen Vorsitzenden gewählt. Der bisherige Co-Landeschef Thomas Schulze…",
-   "thumb": "https://i1.ytimg.com/vi/XPl4e7fRGLE/hqdefault.jpg",
-   "id": "ecc89d8a41fc",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1330,24 +1473,6 @@
    "summary": "An exclusive, behind-the-scenes look from KT Episode 793 KT guest Big Jay Oakerson + Zac Brown + Mike Finoia Big Jay Oakerson, Zac Brown, Mike Finoia, Pat O'Neill, Myles Johnson, Martin Phillips, D Madness, Michael A. Gonzales, Jon Deas, Matthew Muehling, Grooveline Horns, Joe…",
    "thumb": "https://i4.ytimg.com/vi/KfIu3qgcjX8/hqdefault.jpg",
    "id": "3d8786f2fd3b",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Decomposing Trump VISIBLY STUNS Stephen A. Smith as Interview SPIRALS!",
-   "url": "https://www.youtube.com/watch?v=PpduRQZ7cWg",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-14T00:45:36.000Z",
-   "summary": "Luke discusses Trump's interview with Stephen A. Smith. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
-   "thumb": "https://i1.ytimg.com/vi/PpduRQZ7cWg/hqdefault.jpg",
-   "id": "6d9eaeca1662",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1510,24 +1635,6 @@
    "summary": "Take back control of your online experience with ProtonVPN, and get 75% off VPN plans using our link: https://protonvpn.com/tldr Grab a \"How Laws Pass\" Poster: https://toolong.news/products/how-a-b... In this video, we’ll go through the ways in which Farage is hurting Reform,…",
    "thumb": "https://i3.ytimg.com/vi/Vdvxskr6eLo/hqdefault.jpg",
    "id": "59330efc39b2",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Watch Mike Lindell on VERGE OF CRISES as He SHOUTS MID-INTERVIEW!",
-   "url": "https://www.youtube.com/watch?v=hdAYWXCUBPE",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-13T00:30:16.000Z",
-   "summary": "Luke discusses Mike Lindell's new conspiracy. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley Instagram -…",
-   "thumb": "https://i1.ytimg.com/vi/hdAYWXCUBPE/hqdefault.jpg",
-   "id": "38331b33691e",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1922,26 +2029,6 @@
    "why": "0"
   },
   {
-   "title": "1 Millionaire Boss vs 20 Gen Z Workers (ft. Kevin O’Leary) | Surrounded",
-   "url": "https://www.youtube.com/watch?v=2c81cbv0SKk",
-   "source": "Jubilee",
-   "feedId": "yt-jubilee",
-   "type": "video",
-   "tags": [
-    "politics",
-    "debates"
-   ],
-   "published": "2026-11-11T05:16:24.000Z",
-   "summary": "Hey you 👈 Wanna be in a Jubilee video? https://bit.ly/be-in-a-video LET’S BE FRIENDS Instagram: https://www.instagram.com/jubileemedia/ TikTok: https://www.tiktok.com/@jubilee?lang=en Website: https://www.jubileemedia.com OUR LOVE + DATING CHANNEL 🍑 YouTube:…",
-   "thumb": "https://i3.ytimg.com/vi/2c81cbv0SKk/hqdefault.jpg",
-   "id": "93ff6a65a5bd",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 87,
-   "duration": "1:27"
-  },
-  {
    "title": "Islam or Christianity: Which Makes Sense of Reality? | Fearless Truth vs Waleed Naeem",
    "url": "https://www.youtube.com/watch?v=_YkJAdYNCSc",
    "source": "Modern-Day Debate",
@@ -1973,23 +2060,6 @@
    "summary": "Do politics have a place in our violence, or is it ruining one of our favorite pastimes? Our In The Know panel debates. Become an Onion member while it's still optional: https://membership.theonion.com/?campaign=701a500001geULHAA2 Powered By Forge Virtual Studios",
    "thumb": "https://i3.ytimg.com/vi/VTL-DmXH_bw/hqdefault.jpg",
    "id": "14b295bd390a",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "20 Game Franchises That DIED For Dumbest Reasons",
-   "url": "https://www.youtube.com/watch?v=3Wr72H2pnfM",
-   "source": "GameRanx",
-   "feedId": "yt-gameranx",
-   "type": "video",
-   "tags": [
-    "gaming"
-   ],
-   "published": "2026-11-10T17:32:47.000Z",
-   "summary": "Sometimes a great gaming franchise is ruined by foolish decisions. Subscribe for more: https://www.youtube.com/gameranxTV?sub_confirmation=1 0:00 Intro 0:54 Number 20 3:50 Number 19 8:13 Number 18 10:47 Number 17 12:13 Number 16 14:51 Number 15 16:55 Number 14 18:31 Number 13…",
-   "thumb": "https://i4.ytimg.com/vi/3Wr72H2pnfM/hqdefault.jpg",
-   "id": "ff325e05a6b1",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2226,24 +2296,6 @@
    "summary": "Hey you 👈 Wanna be in a Jubilee video? https://bit.ly/be-in-a-video LET’S BE FRIENDS Instagram: https://www.instagram.com/jubileemedia/ TikTok: https://www.tiktok.com/@jubilee?lang=en Website: https://www.jubileemedia.com OUR LOVE + DATING CHANNEL 🍑 YouTube:…",
    "thumb": "https://i3.ytimg.com/vi/bMCBuZxc4vE/hqdefault.jpg",
    "id": "fad9460ea4e8",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Can This Sports Bra Stop Breast Pain During Exercise? | Shark Tank US | Shark Tank Global",
-   "url": "https://www.youtube.com/watch?v=euo2W0lEw7s",
-   "source": "Shark Tank Global",
-   "feedId": "yt-shark-tank-global",
-   "type": "video",
-   "tags": [
-    "trash",
-    "business"
-   ],
-   "published": "2026-11-08T16:59:49.000Z",
-   "summary": "Kimberly Cayce enters the Tank seeking $125,000 for 20% of Kalyx Technologies, a premium sports bra brand designed to reduce breast movement and exercise-related pain without sacrificing style. From Season 1 Episode 6 Watch Shark Tank US Now:…",
-   "thumb": "https://i2.ytimg.com/vi/euo2W0lEw7s/hqdefault.jpg",
-   "id": "76057fab3c31",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2715,44 +2767,7 @@
    "why": "0",
    "durationSec": 2385,
    "duration": "39:45"
-  },
-  {
-   "title": "ROCK HILL TRUMP RALLY",
-   "url": "https://www.youtube.com/watch?v=ARmxv6JYjRc",
-   "source": "The Good Liars",
-   "feedId": "yt-the-good-liars",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "politics",
-    "debates"
-   ],
-   "published": "2026-11-01T22:44:56.000Z",
-   "summary": "The Good Liars visit South Carolina for the Trump Rally https://www.youtube.com/channel/UCUNOwz9KTDIhhTTN3_ptUDA/join https://linktr.ee/thegoodliars",
-   "thumb": "https://i2.ytimg.com/vi/ARmxv6JYjRc/hqdefault.jpg",
-   "id": "89b9424b79b0",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "What 🇩🇪 Germans Think About 🇹🇷 Turks (Street Interviews)",
-   "url": "https://www.youtube.com/watch?v=WninNBkt6MI",
-   "source": "Easy German",
-   "feedId": "yt-easy-german",
-   "type": "video",
-   "tags": [
-    "german",
-    "listen"
-   ],
-   "published": "2026-11-01T18:00:23.000Z",
-   "summary": "📺 Learn German the fun way with Lingopie! Get your 7-day free trial + up to 73% OFF the yearly plan: https://learn.lingopie.com/easygerman_nov (Ad) --- LEARN MORE GERMAN WITH US: 💡 JOIN OUR COMMUNITY: https://easygerman.link/membership_eg685 🎧 LISTEN TO OUR PODCAST:…",
-   "thumb": "https://i4.ytimg.com/vi/WninNBkt6MI/hqdefault.jpg",
-   "id": "9c572c4f4619",
-   "score": 0,
-   "matched": [],
-   "why": "0"
   }
  ],
- "contentHash": "bd83243925a8"
+ "contentHash": "bad887060596"
 }
