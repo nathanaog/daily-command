@@ -222,9 +222,48 @@ body.docked-normal .fab{bottom:calc(300px + env(safe-area-inset-bottom))}body.do
 .hrow.hot{border-color:var(--accent)}.hicon{font-size:1.15rem;width:26px;text-align:center;flex:0 0 26px}
 .hdots{display:inline-flex;gap:3px;flex:0 0 auto}.hdots i{width:7px;height:7px;border-radius:50%;background:var(--surface2);border:1px solid var(--border)}.hdots i.on{background:var(--accent);border-color:var(--accent)}
 .linkish{background:none;border:0;padding:4px 2px;cursor:pointer;min-height:32px}
+.linkish.dgt{color:var(--text);font:inherit;font-weight:600;text-align:left;padding:0;min-height:0;line-height:1.35}
 .gchip{font-size:.75rem;padding:4px 10px;border-radius:999px;border:1px solid var(--border);background:transparent;color:var(--muted);white-space:nowrap;min-height:28px}
 .gchip.ok{color:var(--accent)} button.gchip{cursor:pointer} .gchip.warn{color:var(--warn);border-color:var(--warn)}
 .card.listen .math{margin-top:6px}
+.math.over{color:var(--danger)}.math.last{color:var(--warn)}
+/* ---- Stand mode (PART 5b): black background, so an OLED screen leaves those pixels off; softer text;
+   the content drifts a few pixels every minute so nothing sits in exactly the same place all day. ---- */
+.stand{position:fixed;inset:0;z-index:6;background:#000;color:#c9d1d7;display:flex;flex-direction:column;
+  padding:calc(env(safe-area-inset-top) + 18px) 22px calc(env(safe-area-inset-bottom) + 16px);overflow:hidden}
+.stand.hidden{display:none}
+.stand.dim{color:#8d969d}.stand.dim .st-title{color:#a9b1b7}
+.st-in{flex:1;display:flex;flex-direction:column;gap:14px;min-height:0;transition:transform 1.5s ease}
+.st-clock{font-size:clamp(3.4rem,17vw,7.5rem);font-weight:250;line-height:1;letter-spacing:-.02em}
+.st-date{color:#6f7a83;font-size:1rem;margin-top:6px}
+.st-label{font-size:.8rem;text-transform:uppercase;letter-spacing:.09em;color:var(--mode-c)}
+.st-title{font-size:clamp(1.7rem,8vw,3rem);font-weight:600;line-height:1.1;color:#e6ebee;margin-top:4px}
+.st-task{font-size:1.15rem;color:#9ea9b1;margin-top:6px}
+.st-bar{height:5px;background:#161b20;border-radius:3px;overflow:hidden;margin-top:14px}.st-bar i{display:block;height:100%;background:var(--mode-c);opacity:.8}
+.st-left{font-size:1.25rem;margin-top:8px}
+.st-timer{font-size:clamp(2.4rem,12vw,4.5rem);font-weight:250;margin-top:10px;color:var(--mode-c)}
+.st-line{color:#86919a;font-size:1rem;border-top:1px solid #161b20;padding-top:12px}
+.st-line b{color:#b9c2c8;font-weight:600}
+.st-foot{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.st-foot .btn{background:#0d1013;border-color:#1d2328;color:#a3adb4}
+.st-foot .btn.primary{background:var(--mode-c);color:#0b0f12;border-color:transparent}
+body.standing .dock.size-mini{bottom:calc(84px + env(safe-area-inset-bottom))}
+.st-foot .btn{flex:0 0 auto;width:auto}.st-foot .btn.primary{min-width:150px}
+/* sideways phone: ~400 px tall, so sizes follow the height and the buttons tuck into the corner */
+@media (orientation:landscape) and (min-width:560px){
+  .stand{padding:calc(env(safe-area-inset-top) + 12px) calc(env(safe-area-inset-right) + 22px) calc(env(safe-area-inset-bottom) + 10px) calc(env(safe-area-inset-left) + 22px)}
+  .st-in{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.35fr);column-gap:40px;align-content:center}
+  .st-col2{display:flex;flex-direction:column;gap:8px}
+  .st-clock{font-size:min(15vw,34vh)}
+  .st-title{font-size:min(6vw,11vh)}.st-task{font-size:min(1.1rem,5vh);margin-top:2px}
+  .st-bar{margin-top:8px}.st-left{font-size:min(1.2rem,5.5vh);margin-top:4px}
+  .st-timer{font-size:min(9vw,14vh);margin-top:2px}
+  .st-line{padding-top:8px;font-size:min(1rem,4.6vh)}
+  .st-foot{position:absolute;left:calc(env(safe-area-inset-left) + 22px);bottom:calc(env(safe-area-inset-bottom) + 12px)}
+  .st-foot .btn{min-height:40px;padding:6px 14px}.st-foot .btn.primary{min-width:0;margin-left:0!important}
+  /* audio playing: the mini player gets the right-hand strip, the text the rest */
+  body.standing .dock.size-mini{bottom:calc(env(safe-area-inset-bottom) + 12px)}
+  .stand.docked .st-in{margin-right:220px;column-gap:28px}.stand.docked .st-clock{font-size:min(10vw,30vh)}}
 
 /* ---------- floating capture button + bottom nav ---------- */
 .fab{position:fixed;right:18px;bottom:calc(82px + env(safe-area-inset-bottom));z-index:6;
@@ -274,7 +313,9 @@ dialog::backdrop{background:rgba(0,0,0,.5)}
   <div class="top-row">
     <div class="clock num" id="clock">—</div>
     <span id="gchip"></span>
-    <div class="mode-note" id="modeNote">auto</div>
+    <span class="row" style="gap:4px"><span class="mode-note" id="modeNote">auto</span>
+      <button class="icon" data-act="standOpen" aria-label="Stand mode" title="Stand mode — a glanceable desk display" style="width:36px;height:36px;flex-basis:36px">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="7" y="2" width="10" height="15" rx="2"/><path d="M5 22h14M12 17v5"/></svg></button></span>
   </div>
   <div class="modes" id="modes" role="group" aria-label="Mode"></div>
 </header>
@@ -308,6 +349,8 @@ dialog::backdrop{background:rgba(0,0,0,.5)}
   <button data-view="more" aria-label="More">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="5" cy="12" r="1.5"/><circle cx="12" cy="12" r="1.5"/><circle cx="19" cy="12" r="1.5"/></svg>More</button>
 </nav>
+<!-- STAND MODE: the phone on its desk stand becomes a glanceable display (PART 5b). Above the nav, below the player dock. -->
+<section id="stand" class="stand hidden" aria-label="Stand mode"></section>
 
 <!-- Stage 2: the guided morning sequence (and stand-alone digest sessions) -->
 <section class="overlay hidden" id="morning" aria-label="Morning sequence" role="dialog" aria-modal="true"></section>
@@ -893,6 +936,83 @@ const QuickAdd = (() => {
   return { parse };
 })();
 // ==QUICKADD END==
+
+/* =====================================================================
+   PART 1f — BLOCK-END STOP (pure; tests/stop.test.cjs)
+   YouTube's job is to play one more. This one's job is the opposite:
+   a video or episode may start only if it fits in what's left of the
+   current block, and every answer shows the subtraction behind it.
+     after(…) — "may the next one start?"   (end of a video / auto-next)
+     live(…)  — the line shown while something plays ("last one", "over")
+   GRACE: running up to 2 min over still counts as fitting.
+   ===================================================================== */
+// ==STOP START==
+const BlockStop = (() => {
+  const GRACE = 120, LAST = 10 * 60;   // seconds: allowed overrun · "spare" below which it's the last one
+  const p2 = n => String(n).padStart(2, '0');
+  const hm = t => { const d = new Date(t); return `${p2(d.getHours())}:${p2(d.getMinutes())}`; };
+  const ms = s => { s = Math.max(0, Math.round(s)); return `${Math.floor(s / 60)}:${p2(s % 60)}`; };
+  const mins = s => `${Math.round(s / 60)} min`;
+  /** May another item start now? end = when the block ends (ms) or null; dur = its length in s or null. */
+  function after({ now, end, label, nextTitle, dur }) {
+    if (!end) return { go: true, why: '' };
+    // whole clock minutes, so the comparison uses exactly the subtraction it shows (22:00 − 21:45 = 15 min)
+    const left = (Math.floor(end / 60000) - Math.floor(now / 60000)) * 60, then = nextTitle ? ` → next: ${nextTitle}` : '';
+    if (left <= 60) return { go: false, why: `${label} ${left <= 0 ? 'ended' : 'ends'} ${hm(end)}${then}` };
+    const sub = `${hm(end)} − ${hm(now)} = ${mins(left)} left`;
+    if (dur == null) return left >= LAST ? { go: true, why: `${sub} · length unknown` }
+      : { go: false, why: `${sub} · length unknown, too close to the end → stop here${then}` };
+    if (dur <= left + GRACE) return { go: true, why: `${sub} · ${ms(dur)} ≤ ${ms(left)} ✓ fits` };
+    return { go: false, why: `${sub} · next is ${ms(dur)} > ${ms(left)} → stop here${then}` };
+  }
+  /** While playing: when will it end, and how does that sit against the block's end? rem = seconds still to play. */
+  function live({ now, end, label, rem }) {
+    if (!end || rem == null || rem <= 0) return null;
+    const stops = now + rem * 1000, diff = (end - stops) / 1000;
+    const sum = `${hm(now)} + ${ms(rem)} = ~${hm(stops)}`;
+    if (diff < -GRACE) return { tone: 'over', short: `${mins(-diff)} over`, text: `${sum} · ${label} ends ${hm(end)} → ${mins(-diff)} over` };
+    if (diff < LAST) return { tone: 'last', short: 'last one', text: `${sum} ${diff >= 0 ? '≤' : '≈'} ${hm(end)} ✓ · ${diff >= 60 ? mins(diff) + ' spare' : 'right on time'} → last one before ${label} ends` };
+    return { tone: 'ok', short: '', text: `${sum} ≤ ${hm(end)} ✓ · ${mins(diff)} spare` };
+  }
+  return { after, live, GRACE, LAST };
+})();
+// ==STOP END==
+
+/* =====================================================================
+   PART 1g — SLEEP QUEUE (pure; tests/sleep.test.cjs)
+   fromTitle: "10 Hours of …", "3 hrs", "8h", "2.5 hours", "1 hour 30 min",
+              "10 Stunden" → seconds (lengths are often missing, titles say it).
+   pick:      tonight's sleep videos for a theme — least recently played first
+              (never played before anything), skipping ones you swapped out.
+   total:     "24:00 + 3:10:00 + 8:00:00 = 11:34:00" (unknowns shown as ?).
+   ===================================================================== */
+// ==SLEEP START==
+const SleepQ = (() => {
+  const p2 = n => String(n).padStart(2, '0');
+  const hms = s => { s = Math.round(s); const h = Math.floor(s / 3600), m = Math.floor(s % 3600 / 60), x = s % 60; return h ? `${h}:${p2(m)}:${p2(x)}` : `${m}:${p2(x)}`; };
+  const RE = /(\d+(?:[.,]\d+)?)\s*-?\s*(hours?|hrs?|h|stunden|std)\b(?:\s*(?:and\s*|&\s*)?(\d{1,2})\s*(?:minutes?|mins?|m|minuten)\b)?/i;
+  function fromTitle(t) {
+    const m = String(t || '').match(RE); if (!m) return null;
+    const h = parseFloat(m[1].replace(',', '.')), mm = m[3] ? Number(m[3]) : 0;
+    if (!(h > 0) || h > 24) return null;
+    return Math.round(h * 3600 + mm * 60);
+  }
+  function pick(lib, theme, n, skip = []) {
+    const order = (lib || []).filter(v => v.theme === theme)
+      .sort((a, b) => (a.lastPlayed || '').localeCompare(b.lastPlayed || '') || (a.added || '').localeCompare(b.added || ''));
+    const out = order.filter(v => !skip.includes(v.id)).slice(0, n);
+    for (const v of order) { if (out.length >= n) break; if (!out.includes(v)) out.push(v); }   // all swapped out → wrap round
+    return out;
+  }
+  function total(items) {
+    const known = items.filter(i => i.durationSec > 0), unknown = items.length - known.length;
+    const sec = known.reduce((a, i) => a + i.durationSec, 0);
+    const text = items.length < 2 ? '' : `${items.map(i => (i.durationSec > 0 ? hms(i.durationSec) : '?')).join(' + ')} = ${hms(sec)}${unknown ? ' + ?' : ''}`;
+    return { sec, unknown, text };
+  }
+  return { fromTitle, pick, total, hms };
+})();
+// ==SLEEP END==
 </script>
 
 
@@ -904,7 +1024,7 @@ const QuickAdd = (() => {
    survives offline). Export/import is the same JSON. Later stages sync
    this same object to Google Drive's appDataFolder.
    ===================================================================== */
-const APP_BUILD = '1.10.0';   // shown in More; keep in step with VERSION in sw.js
+const APP_BUILD = '1.12.0';   // shown in More; keep in step with VERSION in sw.js
 const STORE_KEY = 'dailycommand.v1';
 const uid = () => Date.now().toString(36) + Math.random().toString(36).slice(2, 7);
 
@@ -960,7 +1080,7 @@ function defaultState() {
       audioPlan: { deep: 'focus', admin: 'talk', lunch: 'talk' },   // per block kind: talk / focus / off
       focusAudio: null,        // {label, url} e.g. an instrumental YouTube playlist
       // Stage 4 — Google (PART 4e). clientId can also come from config.json in the repo.
-      google: { clientId: '', on: { calendar: true, calwrite: true, reminders: true, gmail: true, sync: true, youtube: false },
+      google: { clientId: '', on: { calendar: true, calwrite: true, reminders: true, sync: true, youtube: false },
         calOff: [], appCalId: null, focusAlarm: true, blockAlarms: false, ytPlaylistId: null, ytCount: 8 },
       // Stage 4.5 — Spotify (PART 4g). clientId can also come from config.json.
       spotify: { clientId: '', showTags: {}, hiddenShows: [], extraShows: [], playlistTags: {} } },
@@ -983,6 +1103,7 @@ function defaultState() {
     skips: {},             // {"YYYY-MM-DD": [taskId]}  "not now" for today
     inbox: [],             // {id,text,created}
     watch: [],             // watch-later / Leisure queue {id,title,url,source,category,type,duration,created}
+    sleep: { lib: [], dismissed: {}, n: 2, theme: '', last: true, seenAt: '' },   // 💤 sleep library {id (YouTube id),title,url,source,theme,durationSec,durSrc,added,lastPlayed,plays}
     morning: {},           // {"YYYY-MM-DD": {startedAt, step, doneAt, skipped}}
     digestRead: {},        // {itemId: timestamp} — read or saved digest items
     digestSession: null,   // {day, lens, types, ids:[...], startedAt, endsAt, built} — the frozen, finite list being read
@@ -1016,6 +1137,7 @@ function migrate(d) {
   out.settings = { ...def.settings, ...(d.settings || {}) };
   out.ui = { ...def.ui, ...(d.ui || {}) };
   out.pomo = { ...def.pomo, ...(d.pomo || {}) };
+  out.sleep = { ...def.sleep, ...(d.sleep || {}) };
   const dg = (d.settings || {}).google || {};
   out.settings.google = { ...def.settings.google, ...dg, on: { ...def.settings.google.on, ...(dg.on || {}) } };
   out.settings.spotify = { ...def.settings.spotify, ...((d.settings || {}).spotify || {}) };
@@ -1350,6 +1472,8 @@ const Digest = {
   },
   /** digest.json items + new Spotify podcast episodes (Stage 4.5), all in one list. */
   allItems() { return [...(C.digest?.data.items || []), ...spotifyItems()]; },
+  /** Everything except sleep-channel uploads (those only appear in 💤 Bedtime). */
+  awakeItems() { return this.allItems().filter(it => !isSleepItem(it)); },
   byId(id) { return this.allItems().find(i => i.id === id); },
   groups() { return (S.watchlist && S.watchlist.tagGroups) || {}; },
   lensDef(lens) { return !lens || lens === ALL ? null : this.lenses()[lens] || null; },
@@ -1371,7 +1495,7 @@ const Digest = {
     const maxAge = it => (it.type === 'video' || it.type === 'episode' ? (S.settings.digestVideoDays || 14) * 864e5 : S.settings.digestHours * 3600e3);
     const def = this.lensDef(lens), groups = this.groups();
     const how = (types || []).filter(t => Lens.HOW.includes(t));      // older sessions stored source types; ignore those
-    const list = this.allItems().filter(it => !S.digestRead[it.id] && (!it.published || Math.max(gen, Date.now() - 864e5) - new Date(it.published) <= maxAge(it))
+    const list = this.awakeItems().filter(it => !S.digestRead[it.id] && (!it.published || Math.max(gen, Date.now() - 864e5) - new Date(it.published) <= maxAge(it))
         && Lens.matches({ ...it, tags: this.tagsOf(it) }, def, groups, how))
       .sort((a, b) => ((b.matched || []).length - (a.matched || []).length) || ((b.score || 0) - (a.score || 0)) || (new Date(b.published) - new Date(a.published)));
     return cap ? list.slice(0, S.settings.digestMax) : list;
@@ -1468,11 +1592,10 @@ function digestHtml(context = 'morning') {
     for (const it of list) {
       const age = it.published ? ago(new Date(it.published).getTime()) : '';
       h += `<li><div class="grow" style="cursor:default">
-          <a href="${esc(it.url)}" target="_blank" rel="noopener" data-act="digestOpen" data-id="${esc(it.id)}">${it.type === 'video' ? '▶ ' : ''}${esc(it.title)}</a>
+          ${digestTitleHtml(it)}
           <div class="small muted">${esc(it.source || '')}${it.alsoIn ? ' +' + it.alsoIn.length : ''}${age ? ' · ' + age : ''}${it.duration ? ' · ' + esc(it.duration) : ''}${it.score ? ` · <span title="${esc(it.why || '')}">score ${it.score}</span>` : ''}</div>
           ${(it.matched || []).map(k => `<span class="kw">${esc(k)}</span>`).join('')}
           ${it.summary ? `<div class="sum">${esc(it.summary)}</div>` : ''}</div>
-        ${it.type === 'video' ? `<button class="icon" data-act="watchHere" data-id="${esc(it.id)}" title="Watch here" aria-label="Watch here">▶</button>` : ''}
         <button class="icon" data-act="digestSave" data-id="${esc(it.id)}" title="Save for later" aria-label="Save for later"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M6 3h12v18l-6-4-6 4z"/></svg></button>
         <button class="icon" data-act="digestRead" data-id="${esc(it.id)}" title="Mark read" aria-label="Mark read">✓</button></li>`;
     }
@@ -1541,7 +1664,6 @@ function renderMorning() {
       <h2>Calendar</h2><div class="card">${evs.length ? `<ul class="list">${evs.map(e => `<li><span class="num muted" style="width:96px">${e.allDay ? 'all day' : fmtT(new Date(e.start)) + '–' + fmtT(new Date(e.end))}</span><span class="grow">${e.color ? `<span style="display:inline-block;width:8px;height:8px;border-radius:2px;background:${esc(e.color)};margin-right:6px"></span>` : ''}${esc(e.title)}${e.info ? ' <span class="tag">free</span>' : ''}${e.location ? ` <span class="small muted">· ${esc(e.location)}</span>` : ''}</span></li>`).join('')}</ul>`
         : '<div class="empty">No events today.</div>'}
         ${calNoteHtml()}</div>
-      ${Google.on('gmail') && C.gmail ? `<h2>Gmail</h2><div class="card">${mailHtml(true)}</div>` : ''}
       <h2>The plan</h2><div class="card"><ul class="list">${[R.current, ...plan].filter(x => x && x.type !== 'gap').map(a => `<li><span class="num muted" style="width:96px">${a.at ? fmtT(a.at) : 'now'}</span><span class="grow">${esc(a.title)}${a.type === 'event' ? ' <span class="tag">event</span>' : ''}</span></li>`).join('')}</ul></div>`;
   } else if (step === 2) {
     body = `<div class="hello">Today’s top 3</div><p class="muted">If only three things happen today, which ones?</p>${top3Html(false)}
@@ -1664,6 +1786,8 @@ const slug = s => String(s).toLowerCase().normalize('NFKD').replace(/[^a-z0-9]+/
 const FEED_TYPES = { youtube: 'YouTube channel', reddit: 'Subreddit', googlenews: 'Google News search', rss: 'RSS / blog URL' };
 const FEED_ICON = { youtube: '▶', reddit: 'r/', googlenews: 'N', rss: '✎' };
 
+/** Uploads from channels tagged "sleep" in the watchlist (see 💤 Bedtime, PART 4h). */
+function isSleepItem(it) { return (it.tags || []).includes('sleep'); }
 const Watchlist = {
   remote: null, error: '',
   /** Load feeds.json from the site; adopt it unless we have unpublished local edits. */
@@ -1843,6 +1967,7 @@ async function editFeed(f) {
   if (v.type === 'rss') { if (!/^https?:\/\//.test(s)) return toast('RSS needs a full feed URL (https://…).'); nf.url = s; }
   if (v.paused) nf.paused = true; else delete nf.paused;
   if (!nf.boost) delete nf.boost;
+  if (nf.tags.includes('sleep')) { nf.max = nf.max || 15; nf.maxAgeHours = nf.maxAgeHours || 8760; }   // sleep channel: its latest 15 uploads, up to a year old
   if (isNew) {
     nf.id = (v.type === 'youtube' ? 'yt' : v.type === 'reddit' ? 'rd' : v.type === 'googlenews' ? 'gn' : 'rss') + '-' + slug(nf.name);
     while (W.feeds.some(x => x.id === nf.id)) nf.id += '-2';
@@ -2016,6 +2141,12 @@ function ytOpenUrl(url) {
     return `intent://${path}#Intent;scheme=https;package=com.google.android.youtube;S.browser_fallback_url=${encodeURIComponent(url)};end`;
   } catch (e) { return url; }
 }
+/** A digest title: videos and podcast episodes play INSIDE the app (player / dock); only reading opens a tab. */
+function digestTitleHtml(it) {
+  if (it.type === 'video' && ytId(it.url)) return `<button class="linkish dgt" data-act="watchHere" data-id="${esc(it.id)}">▶ ${esc(it.title)}</button>`;
+  if (it.type === 'episode' && playHere()) return `<button class="linkish dgt" data-act="listenHere" data-key="d:${esc(it.id)}">🎧 ${esc(it.title)}</button>`;
+  return `<a href="${esc(it.url)}" target="_blank" rel="noopener" data-act="digestOpen" data-id="${esc(it.id)}">${esc(it.title)}</a>`;
+}
 const playAttrs = url => { const h = ytOpenUrl(url); return `href="${esc(h)}"${h.startsWith('intent:') ? '' : ' target="_blank" rel="noopener"'}`; };
 const mmss = sec => { const t = Math.round(sec); return `${Math.floor(t / 60)}:${String(t % 60).padStart(2, '0')}`; };   // never "37:60"
 
@@ -2028,7 +2159,7 @@ const Listen = {
       .map(w => ({ key: 'w:' + w.id, shelfId: w.id, digestId: w.digestId, title: w.title, url: w.url, source: w.source, durationSec: w.durationSec, from: 'shelf' }));
     const onShelf = new Set(shelf.map(x => x.digestId).filter(Boolean));
     // Anything you can listen to (Lens.howOf): listen-friendly YouTube videos + Spotify podcast episodes
-    const canListen = Digest.allItems().filter(it => Lens.howOf({ ...it, tags: Digest.tagsOf(it) }).includes('listen') && !S.digestRead[it.id] && !onShelf.has(it.id))
+    const canListen = Digest.awakeItems().filter(it => Lens.howOf({ ...it, tags: Digest.tagsOf(it) }).includes('listen') && !S.digestRead[it.id] && !onShelf.has(it.id))
       .sort((a, b) => ((b.score || 0) - (a.score || 0)) || (new Date(b.published) - new Date(a.published)))
       .map(it => ({ key: 'd:' + it.id, digestId: it.id, title: it.title, url: it.url, source: it.source, durationSec: it.durationSec,
         from: it.type === 'episode' ? 'spotify' : 'digest', uri: it.uri }));
@@ -2077,6 +2208,7 @@ const listenPos = L => Math.max(0, Math.round(((L.pausedAt || Date.now()) - L.st
 const withT = (url, sec) => { try { const u = new URL(url); if (!/youtu/.test(u.hostname)) return url; u.searchParams.set('t', Math.max(0, sec - 10) + 's'); return u.toString(); } catch (e) { return url; } };
 /** One link that plays many YouTube videos in a row (YouTube builds a temporary playlist): no coming back between items. */
 function playAllLink(q) {
+  if (playHere()) return '';                 // the dock already plays the queue one after another — no need to leave
   const vids = q.filter(x => x.from !== 'spotify' && ytId(x.url)).slice(0, 50);
   if (vids.length < 2) return '';
   const url = `https://www.youtube.com/watch_videos?video_ids=${vids.map(x => ytId(x.url)).join(',')}`;
@@ -2133,6 +2265,17 @@ const spUri = it => it.uri || (() => { const m = String(it.url || '').match(/ope
 const ytList = url => (String(url).match(/[?&]list=([\w-]+)/) || [])[1] || null;
 /** Can this item play in the dock? (a YouTube video/playlist, or anything Spotify) */
 const dockable = it => !!(it && (ytId(it.url) || ytList(it.url) || spUri(it)));
+/* ---- Block-end stop (rule + maths: PART 1f). Both players measure against the Now item you're in. ---- */
+let stopCache = null, lastStop = null;   // lastStop = {at, title, why}: shown on Now after the dock stopped at a block's end
+function stopCtx() {
+  if (S.settings.blockStop === false) return null;
+  if (!stopCache || Date.now() - stopCache.t > 15000) {
+    const r = Engine.resolve(new Date(), engineState()), c = r.current;
+    stopCache = { t: Date.now(), v: c.end ? { end: +c.end, label: c.type === 'gap' ? 'Free time' : c.title, kind: c.kind, nextTitle: r.next?.title || '', nextKind: r.next?.kind || '' } : null };
+  }
+  return stopCache.v ? { ...stopCache.v, now: Date.now() } : null;
+}
+const stopSecLeft = ctx => (ctx ? Math.max(0, (ctx.end - ctx.now) / 1000) : null);
 const Dock = {
   item: null, yt: null, sp: null, wake: null, tick: null, state: 'idle', err: '', kind: 'yt', spPos: 0, spDur: 0, ending: false,
   async play(item, startSec = 0) {
@@ -2204,12 +2347,28 @@ const Dock = {
     if (this.sp) { this.sp.seek(to); this.spPos = to; } else if (this.yt) this.yt.seekTo(to, true);
     setTimeout(() => this.status(), 200);
   },
-  nextItem(curKey) { return Listen.queue().find(x => x.key !== curKey && dockable(x)); },
+  /** The next thing to play: one that fits the time left in this block (PART 4f pickFit), else the queue's first. */
+  nextItem(curKey) {
+    const q = Listen.queue().filter(x => x.key !== curKey && dockable(x)), ctx = stopCtx();
+    return ctx ? (pickFit(q, stopSecLeft(ctx), ctx.label)?.item || null) : (q[0] || null);
+  },
+  /** Stop here instead of auto-playing `next`? Talk carries on when the next block also wants talk (Admin → Lunch). */
+  stopCheck(next) {
+    const ctx = stopCtx(); if (!ctx) return null;
+    if (ctx.nextKind && Listen.plan(ctx.kind) === 'talk' && Listen.plan(ctx.nextKind) === 'talk') return null;
+    const r = BlockStop.after({ ...ctx, dur: next?.durationSec ?? null });
+    return r.go ? null : r;
+  },
   ended() {
     const done = this.item; if (done.focus) return;               // focus audio loops / playlists continue on their own
     Listen.done(done.key);
     const next = this.nextItem(done.key);
-    if (next && S.settings.listenAutoNext !== false) { toast(`Next: ${next.title}`); return this.play(next); }
+    if (next && S.settings.listenAutoNext !== false) {
+      const stop = this.stopCheck(next);
+      if (!stop) { toast(`Next: ${next.title}`); return this.play(next); }
+      lastStop = { at: Date.now(), title: done.title, why: stop.why };    // the Now screen explains why it stopped
+      S.listening = null; save(); return this.close();
+    }
     S.listening = null; save(); this.close(); toast('Finished ✓ — queue is empty.');
   },
   next() { const cur = this.item; if (!cur || cur.focus) return; Listen.done(cur.key); const nx = this.nextItem(cur.key); if (nx) this.play(nx); else { S.listening = null; save(); this.close(); } },
@@ -2251,6 +2410,7 @@ const Dock = {
         <div class="row only-full" style="justify-content:space-between;gap:6px;align-items:flex-start"><b class="docktitle">${esc(it.title)}</b>
           <span class="row" style="gap:2px"><button class="icon" data-act="dockSize" data-d="down" aria-label="Smaller" title="Smaller">▾</button><button class="icon only-normal" data-act="dockSize" data-d="up" aria-label="Bigger" title="Bigger">▴</button><button class="icon" data-act="dockClose" aria-label="Close player">✕</button></span></div>
         <div class="small muted only-full" id="dockStatus">Loading…</div>
+        <div class="math only-max hidden" id="dockStop"></div>
         <div class="dockbtns"><button class="icon only-full" data-act="dockSeek" data-d="-15" aria-label="Back 15 seconds">↺15</button>
           <button class="btn sm primary" data-act="dockToggle" id="dockPP" aria-label="Play or pause">Pause</button>
           <button class="icon only-full" data-act="dockSeek" data-d="30" aria-label="Forward 30 seconds">30↻</button>
@@ -2266,6 +2426,9 @@ const Dock = {
     st.innerHTML = this.state === 'error' ? `⚠ ${esc(this.err)}`
       : this.state === 'ready' ? 'Tap ▶ to start'
       : `${this.state === 'paused' ? '⏸ ' : this.state === 'buffering' || this.state === 'loading' ? '… ' : ''}<span class="num">${mmss(p)}${d ? ' / ' + mmss(d) : ''}</span>${this.state === 'playing' && this.wake ? ' · screen stays on' : ''}`;
+    const ctx = this.item.focus || this.state === 'error' ? null : stopCtx(), L = ctx && d ? BlockStop.live({ ...ctx, rem: d - p }) : null;
+    if (L?.short) st.innerHTML += ` · <b style="font-weight:600;color:var(--${L.tone === 'over' ? 'danger' : 'warn'})">${esc(L.short)}</b>`;
+    const sl = $('#dockStop'); if (sl) { sl.textContent = L ? L.text : ''; sl.className = `math only-max ${L ? L.tone : 'hidden'}`; }
     const pp = $('#dockPP'); if (pp) pp.textContent = this.state === 'playing' ? 'Pause' : '▶ Play';
     const out = $('#dockOut'); if (out) { const h = this.handoffUrl(); out.setAttribute('href', h); if (!h.startsWith('intent:')) { out.target = '_blank'; out.rel = 'noopener'; } }
   },
@@ -2412,6 +2575,8 @@ function audioSettingsHtml() {
   return `<label class="f">Play talk &amp; podcasts</label><div class="seg"><button class="${playHere() ? 'on' : ''}" data-act="listenWhere" data-v="app">Here in the app</button><button class="${playHere() ? '' : 'on'}" data-act="listenWhere" data-v="youtube">In the YouTube app</button></div>
     <p class="small muted">${playHere() ? 'Plays in a player docked at the bottom, on every tab; your screen stays on while it plays. Web pages can’t play with the screen off, so use “⤴ YouTube” in the player when you want to lock your phone — it continues at the same second.' : 'Opens the YouTube app (plays with the screen off with Premium). The app keeps a resume card.'}</p>
     <label class="row" style="min-height:44px"><input type="checkbox" data-setting="listenAutoNext" ${S.settings.listenAutoNext !== false ? 'checked' : ''} style="width:22px;height:22px"> Play the next one automatically</label>
+    <label class="row" style="min-height:44px"><input type="checkbox" data-setting="blockStop" ${S.settings.blockStop !== false ? 'checked' : ''} style="width:22px;height:22px"> Stop at the end of a block</label>
+    <p class="small muted">The next video or episode only starts if it fits what’s left of the block (2 min grace), and the players show when this one ends against when the block ends. Talk keeps going between two blocks that both want talk.</p>
     <p class="small muted">What the Now screen suggests in each kind of block. Talk = your Listen queue; Focus = your focus-audio link.</p>
     ${kinds.map(k => `<div class="row" style="min-height:48px"><span style="flex:1">${KIND_LABEL[k]}</span>
       <div class="seg" style="flex:2">${['talk', 'focus', 'off'].map(p => `<button class="${Listen.plan(k) === p ? 'on' : ''}" data-act="audioPlanSet" data-kind="${k}" data-plan="${p}">${p[0].toUpperCase() + p.slice(1)}</button>`).join('')}</div></div>`).join('')}
@@ -2458,7 +2623,7 @@ const ACT4 = {
 
 <script>
 /* =====================================================================
-   PART 4e — STAGE 4: GOOGLE (sign-in, Calendar, Gmail, reminders,
+   PART 4e — STAGE 4: GOOGLE (sign-in, Calendar, reminders,
    Drive sync, optional YouTube Listen playlist)
 
    HOW SIGN-IN WORKS (no server):
@@ -2473,20 +2638,18 @@ const ACT4 = {
      calendar  → calendar.events.readonly + calendar.calendarlist.readonly  (read your calendars)
      reminders → calendar.app.created  (the app makes ONE calendar called "The Natto App"
                  and can only touch that one — it never edits your real calendars)
-     gmail     → gmail.metadata  (labels and headers: unread count, sender, subject — never bodies)
      sync      → drive.appdata  (a hidden app folder in your Drive; can't see your files)
      youtube   → youtube  (optional: keep a private "Natto – Listen" playlist)
    ===================================================================== */
 const G_SCOPES = {
   calendar: ['https://www.googleapis.com/auth/calendar.events.readonly', 'https://www.googleapis.com/auth/calendar.calendarlist.readonly'],
   reminders: ['https://www.googleapis.com/auth/calendar.app.created'],
-  gmail: ['https://www.googleapis.com/auth/gmail.metadata'],
   sync: ['https://www.googleapis.com/auth/drive.appdata'],
   youtube: ['https://www.googleapis.com/auth/youtube'],
   calwrite: ['https://www.googleapis.com/auth/calendar.events'],   // quick-add: create events in your main calendar
 };
-const G_LABEL = { calwrite: 'Quick-add events to your calendar', calendar: 'Calendar', reminders: 'Reminders & alarms', gmail: 'Gmail', sync: 'Sync phone ↔ desktop', youtube: 'YouTube Listen playlist' };
-const GAPI = { cal: 'https://www.googleapis.com/calendar/v3', gmail: 'https://gmail.googleapis.com/gmail/v1/users/me', drive: 'https://www.googleapis.com/drive/v3', upload: 'https://www.googleapis.com/upload/drive/v3', yt: 'https://www.googleapis.com/youtube/v3' };
+const G_LABEL = { calwrite: 'Quick-add events to your calendar', calendar: 'Calendar', reminders: 'Reminders & alarms', sync: 'Sync phone ↔ desktop', youtube: 'YouTube Listen playlist' };
+const GAPI = { cal: 'https://www.googleapis.com/calendar/v3', drive: 'https://www.googleapis.com/drive/v3', upload: 'https://www.googleapis.com/upload/drive/v3', yt: 'https://www.googleapis.com/youtube/v3' };
 const gset = () => S.settings.google;
 const gstat = (f, v) => { C.gstat = { ...(C.gstat || {}), [f]: { ...((C.gstat || {})[f] || {}), ...v } }; saveCache(); };
 
@@ -2570,7 +2733,7 @@ const Google = {
       try { await fn(); gstat(f, { at: Date.now(), error: '' }); }
       catch (e) { gstat(f, { error: e.needAuth ? 'needs refresh' : e.message }); }
     };
-    await Promise.all([run('calendar', () => Cal.refresh()), run('gmail', () => Mail.refresh())]);
+    await run('calendar', () => Cal.refresh());
     await run('sync', () => DriveSync.sync());
     await run('reminders', () => Remind.cleanup());
     await run('reminders', () => HabitAlarms.sync());
@@ -2613,35 +2776,6 @@ function allEvents() {
   return [...S.events, ...((C.gcal?.events) || []).filter(e => !off.has(e.calId)), ...habitEvents()];
 }
 const engineState = () => ({ ...S, events: allEvents() });
-
-/* ---------------- Gmail (unread count + latest subjects) ---------------- */
-const cleanFrom = f => (String(f || '').match(/^\s*"?([^"<]+?)"?\s*</) || [, String(f || '').replace(/<.*>/, '')])[1].trim() || f;
-const Mail = {
-  async refresh() {
-    // gmail.metadata can't use search queries, so unread mail is found by label (INBOX + UNREAD)
-    const [inbox, list, profile] = await Promise.all([
-      Google.api(`${GAPI.gmail}/labels/INBOX`),
-      Google.api(`${GAPI.gmail}/messages?labelIds=INBOX&labelIds=UNREAD&maxResults=5`),
-      Google.api(`${GAPI.gmail}/profile`),
-    ]);
-    const msgs = await Promise.all((list.messages || []).map(m =>
-      Google.api(`${GAPI.gmail}/messages/${m.id}?format=metadata&metadataHeaders=Subject&metadataHeaders=From&fields=id,threadId,internalDate,payload/headers`)));
-    const hdr = (m, n) => (m.payload?.headers || []).find(h => h.name.toLowerCase() === n)?.value || '';
-    C.gmail = { fetchedAt: Date.now(), email: profile.emailAddress || '', unread: inbox.messagesUnread ?? 0,
-      latest: msgs.map(m => ({ id: m.id, thread: m.threadId, at: Number(m.internalDate) || 0, subject: hdr(m, 'subject') || '(no subject)', from: cleanFrom(hdr(m, 'from')) })) };
-    saveCache();
-  },
-};
-function mailHtml(compact = false) {
-  const g = C.gmail;
-  if (!g) return Google.everSignedIn() ? '<div class="empty">No mail fetched yet.</div>' : '';
-  const stale = !navigator.onLine || !Google.token();
-  return `<div class="row" style="justify-content:space-between"><b class="num" style="font-size:1.3rem">${g.unread} unread</b>
-      <a class="btn sm" href="https://mail.google.com/mail/u/0/#inbox" target="_blank" rel="noopener">Open Gmail</a></div>
-    ${g.latest.length ? `<ul class="list">${g.latest.slice(0, compact ? 3 : 5).map(m => `<li><a class="grow" href="https://mail.google.com/mail/u/0/#inbox/${esc(m.thread)}" target="_blank" rel="noopener">
-      <b>${esc(m.from)}</b> <span class="small muted">${m.at ? ago(m.at) : ''}</span><br><span class="small">${esc(m.subject)}</span></a></li>`).join('')}</ul>` : '<div class="empty">Inbox zero.</div>'}
-    <div class="small muted">${stale ? '⚠ ' : ''}Updated ${ago(g.fetchedAt)}${stale && navigator.onLine ? ' · <a href="#" data-act="gConnect" style="color:inherit">refresh</a>' : ''}</div>`;
-}
 
 /* ---------------- Day calendar cards (Today during the day, Tomorrow in the evening) ----------------
    Calendar days here are real midnights (00:00–24:00), anchored on the app's logical day, so at
@@ -2877,7 +3011,7 @@ const YTList = {
 /** Small status chip in the header. */
 function gChipHtml() {
   if (!Google.clientId() || !Google.everSignedIn()) return '';
-  const last = Math.max(C.gcal?.fetchedAt || 0, C.gmail?.fetchedAt || 0, C.gstat?.sync?.at || 0);
+  const last = Math.max(C.gcal?.fetchedAt || 0, C.gstat?.sync?.at || 0);
   if (!navigator.onLine) return `<span class="gchip">offline${last ? ' · ' + ago(last) : ''}</span>`;
   if (!Google.token()) return `<button class="gchip warn" data-act="gConnect" title="Google sign-in expired — tap to refresh" aria-label="Refresh Google">↻ Google</button>`;
   if (Google.missing().length) return `<button class="gchip warn" data-act="gConnect" title="Allow the Google features you switched on">↻ Allow</button>`;
@@ -2902,7 +3036,6 @@ function googleSectionHtml() {
       ${Google.everSignedIn() ? '<button class="btn" data-act="gSyncNow">Sync now</button><button class="btn ghost danger" data-act="gSignOut">Sign out</button>' : ''}</div>`;
   if (Google.on('youtube') && Google.everSignedIn()) h += `<div class="row" style="gap:8px;flex-wrap:wrap;margin:6px 0"><span class="small muted" style="flex:1">YouTube: ${st.youtube?.dupes ? `<b>${st.youtube.dupes} duplicate “Listen” playlist${st.youtube.dupes > 1 ? 's' : ''}</b> found` : 'one “Natto – Listen” playlist'}.</span>
       <button class="btn sm" data-act="ytTidy">${st.youtube?.dupes ? 'Delete duplicates' : 'Check for duplicates'}</button></div>`;
-  if (C.gmail?.email) h += `<p class="small muted">Signed in as ${esc(C.gmail.email)}.</p>`;
   if (st.sync?.at) h += `<p class="small muted">Last sync ${ago(st.sync.at)}${st.sync.pulled ? ' · pulled changes' : ''}${st.sync.pushed ? ' · pushed changes' : ''}${st.sync.conflicts ? ` · ${st.sync.conflicts} clash${st.sync.conflicts > 1 ? 'es' : ''} (newest save won)` : ''}.</p>`;
   if (C.gcal?.calendars?.length) {
     const off = new Set(gs.calOff || []);
@@ -2991,7 +3124,7 @@ const Watch = {
     const shelf = S.watch.filter(w => ytId(w.url) && (!def || Lens.matches({ type: 'video', tags: w.tags || [] }, def, groups, ['watch'])))
       .map(w => ({ key: 'w:' + w.id, shelfId: w.id, digestId: w.digestId, title: w.title, url: w.url, source: w.source, durationSec: w.durationSec, from: 'shelf' }));
     const onShelf = new Set(shelf.map(x => x.digestId).filter(Boolean));
-    const vids = Digest.allItems().filter(it => it.type === 'video' && !S.digestRead[it.id] && !onShelf.has(it.id)
+    const vids = Digest.awakeItems().filter(it => it.type === 'video' && !S.digestRead[it.id] && !onShelf.has(it.id)
         && Lens.matches({ ...it, tags: Digest.tagsOf(it) }, def, groups, ['watch']))
       .sort((a, b) => ((b.score || 0) - (a.score || 0)) || (new Date(b.published) - new Date(a.published)))
       .map(it => ({ key: 'd:' + it.id, digestId: it.id, title: it.title, url: it.url, source: it.source, durationSec: it.durationSec, from: 'digest' }));
@@ -3015,9 +3148,9 @@ function watchCardHtml() {
     <div style="font-weight:600;margin:4px 0">${esc(it.title)}</div>
     <div class="small muted">${esc(it.source || '')}${it.durationSec ? ' · ' + mmss(it.durationSec) : ''} · ${q.length} in this lens</div>
     ${p.why ? `<div class="math">${esc(p.why)}</div>` : ''}
-    <div class="actions"><button class="btn sm primary" data-act="watchHere" data-key="${esc(it.key)}">▶ Watch here</button>
-      <a class="btn sm" ${playAttrs(it.url)} data-act="watchApp" data-key="${esc(it.key)}">Open in YouTube</a>
-      <button class="btn sm ghost" data-act="watchSkip" data-key="${esc(it.key)}">Skip</button></div></div>`;
+    <div class="actions"><button class="btn sm primary" data-act="watchHere" data-key="${esc(it.key)}">▶ Watch</button>
+      <button class="btn sm ghost" data-act="watchSkip" data-key="${esc(it.key)}">Skip</button>
+      <a class="small muted" style="margin-left:auto;align-self:center" ${playAttrs(it.url)} data-act="watchApp" data-key="${esc(it.key)}">YouTube app ↗</a></div></div>`;
 }
 
 /* ---------------- the in-app player ---------------- */
@@ -3056,6 +3189,13 @@ const Player = {
     });
   },
   ended() { this.state = 'ended'; Watch.done(this.item.key); save(); this.paint(); },
+  /** Live line under the video: when it ends vs when the block ends (PART 1f). Called by the 1-s tick. */
+  note() {
+    const el = $('#ytStop'); if (!el || !this.yt || this.state !== 'playing') return;
+    let rem = null; try { rem = this.yt.getDuration() - this.yt.getCurrentTime(); } catch (e) {}
+    const ctx = stopCtx(), L = ctx && rem > 0 ? BlockStop.live({ ...ctx, rem }) : null;
+    el.textContent = L ? L.text : ''; el.className = `math ${L ? L.tone : 'hidden'}`;
+  },
   close(silent) {
     try { this.yt?.destroy?.(); } catch (e) {}
     this.yt = null; this.item = null; this.state = 'idle';
@@ -3068,20 +3208,33 @@ const Player = {
     const el = $('#player');
     const status = this.state === 'loading' ? '<div class="empty">Loading the player…</div>'
       : this.state === 'error' ? `<div class="banner warn">${esc(this.err)} <a class="btn sm" ${playAttrs(it.url)} data-act="watchApp" data-key="${esc(it.key)}">Open in YouTube</a></div>`
-      : this.state === 'ended' ? `<div class="caught" style="padding:14px 0"><div class="hello">Finished ✓</div><p class="muted">Marked as watched. One video stays one video.</p></div>` : '';
-    const next = this.state === 'ended' ? pickFit(Watch.queue(), null, '')?.item : null;
-    const foot = `<div class="actions">${this.state === 'ended'
-        ? `${next ? `<button class="btn primary" data-act="watchHere" data-key="${esc(next.key)}">▶ Watch another: ${esc(next.title.slice(0, 40))}${next.title.length > 40 ? '…' : ''}</button>` : ''}<button class="btn" data-act="playerClose">Back to Now</button>`
-        : `<button class="btn" data-act="playerDone">✓ Done</button><button class="btn ghost" data-act="playerClose">Close</button>`}</div>`;
+      : '';
+    // Ended: offer another only if it fits what's left of the block (PART 1f) — with the maths either way.
+    let next = null, stop = null, why = '', ctx = null;
+    if (this.state === 'ended') {
+      ctx = stopCtx();
+      const p = pickFit(Watch.queue(), stopSecLeft(ctx), ctx?.label || '');
+      next = p?.item || null;
+      if (ctx) { const r = BlockStop.after({ ...ctx, dur: next?.durationSec ?? null }); if (r.go) why = p?.why || r.why; else stop = r; }
+    }
+    const short = t => esc(t.slice(0, 40)) + (t.length > 40 ? '…' : '');
+    const endHtml = stop
+      ? `<div class="caught" style="padding:14px 0"><div class="hello">That’s it for ${esc(ctx.label)} ✓</div><p class="muted">Finished and marked as watched.</p><div class="math last">${esc(stop.why)}</div></div>`
+      : `<div class="caught" style="padding:14px 0"><div class="hello">Finished ✓</div><p class="muted">Marked as watched. One video stays one video.</p>${why && next ? `<div class="math">${esc(why)}</div>` : ''}</div>`;
+    const foot = `<div class="actions">${this.state !== 'ended'
+        ? `<button class="btn" data-act="playerDone">✓ Done</button><button class="btn ghost" data-act="playerClose">Close</button>`
+        : stop ? `<button class="btn primary" data-act="playerClose">Back to Now${ctx.nextTitle ? ' · ' + esc(ctx.nextTitle) : ''}</button>${next ? `<button class="btn ghost" data-act="watchHere" data-key="${esc(next.key)}">One more anyway</button>` : ''}`
+        : `${next ? `<button class="btn primary" data-act="watchHere" data-key="${esc(next.key)}">▶ Watch another: ${short(next.title)}</button>` : ''}<button class="btn" data-act="playerClose">Back to Now</button>`}</div>`;
     if (full || !$('#ytBox')) {
       el.innerHTML = `<div class="ov-head"><div><b style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${esc(it.title)}</b>
           <button class="icon" data-act="playerClose" aria-label="Close player">✕</button></div></div>
         <div class="ov-body" style="padding-bottom:30px">
           <div id="ytBox" class="ytbox ${this.state === 'ended' || this.state === 'error' ? 'hidden' : ''}"><div id="ytFrame"></div></div>
-          <div id="ytStatus">${status}</div><div class="small muted" style="margin:6px 0">${esc(it.source || '')}${it.durationSec ? ' · ' + mmss(it.durationSec) : ''}</div>
+          <div id="ytStatus">${status}${this.state === 'ended' ? endHtml : ''}</div><div id="ytStop" class="math hidden"></div><div class="small muted" style="margin:6px 0">${esc(it.source || '')}${it.durationSec ? ' · ' + mmss(it.durationSec) : ''}</div>
           <div id="ytFoot">${foot}</div></div>`;
     } else {
-      $('#ytStatus').innerHTML = status; $('#ytFoot').innerHTML = foot;
+      $('#ytStatus').innerHTML = status + (this.state === 'ended' ? endHtml : ''); $('#ytFoot').innerHTML = foot;
+      if (this.state === 'ended') $('#ytStop').classList.add('hidden');
       $('#ytBox').classList.toggle('hidden', this.state === 'ended' || this.state === 'error');
     }
   },
@@ -3100,6 +3253,7 @@ const ACT6 = {
   watchSkip(el) { (S.watchSkip ||= {}); (S.watchSkip[today()] ||= []).push(el.dataset.key); save(); render(); },
   playerDone() { if (Player.item) Watch.done(Player.item.key); Player.close(); },
   playerClose() { Player.close(); },
+  stopDismiss() { lastStop = null; render(); },
 };
 </script>
 
@@ -3616,7 +3770,7 @@ function whatNowCandidates(min, energy) {
   const open = top3Ids().map(taskById).filter(t => t && !t.done);
   if (open.length && min >= 15) add({ key: 't:' + open[0].id, icon: '☐', title: open[0].title, why: `top 3 · ${min} min of focus`, go: 'wnFocus', data: open[0].id }, E(0, 2, 4));
   // 6. The digest (skim, low effort)
-  const unread = Digest.allItems().filter(it => !S.digestRead[it.id]).length;
+  const unread = Digest.awakeItems().filter(it => !S.digestRead[it.id]).length;
   if (unread && min >= 10) add({ key: 'digest', icon: '📰', title: `Skim the digest · ${unread} new`, why: `${S.settings.digestMin} min time-box`, go: 'digestStart' }, E(2, 1.5, 0.5));
   // 7. Sort the inbox
   if (S.inbox.length >= 3) add({ key: 'inbox', icon: '📥', title: `Sort the inbox · ${S.inbox.length}`, why: '~1 min per item', go: 'wnInbox' }, E(1, 2, 1.5));
@@ -3886,6 +4040,9 @@ function renderNow() {
       <span class="num muted">${whenLabel(n.at)} · in ${fmtDur(n.at - now)}</span></div>`;
   }
   h += `</article>`;
+  if (lastStop && Date.now() - lastStop.at < 15 * 60000)
+    h += `<div class="card listen"><div class="row" style="justify-content:space-between"><span class="small muted">⏹ Stopped at the end of the block</span><button class="icon" data-act="stopDismiss" aria-label="Dismiss">✕</button></div>
+      <div style="margin:4px 0"><b>${esc(lastStop.title)}</b> finished.</div><div class="math last">${esc(lastStop.why)}</div></div>`;
   h += S.listening ? listenBarHtml() : listenCardHtml();   // 🎧 mini player when something's on, else the listen suggestion (PART 4d)
 
   // ---- secondary sections: content changes with the mode ----
@@ -3894,6 +4051,207 @@ function renderNow() {
 }
 
 /** Which secondary cards to show, per mode. Keep it short — the hero is the point. */
+/* =====================================================================
+   PART 4h — 💤 BEDTIME (sleep queue)
+   Your usual sleep videos (2–12 h) live in a small library, each with a
+   theme (Video games, Card games, German…). At bedtime you tap tonight's
+   theme and get: one last video from Watch next, then 1–4 sleep videos,
+   least recently played first, with the total length added up. One tap
+   opens them in the YouTube app as a single playlist — the one hand-off on
+   purpose: YouTube Premium keeps playing with the screen off, a web page
+   can't. New uploads come from channels tagged "sleep" in the watchlist
+   (latest 15 per channel, up to a year old) and wait under Library → New.
+   Sleep listening doesn't count towards any habit.
+   ===================================================================== */
+const SLEEP_THEMES_DEFAULT = [{ name: 'Video games', tag: 'gaming' }, { name: 'Card games', tag: 'tcg' }, { name: 'German', tag: 'german' }];
+const Sleep = {
+  managing: false, addTheme: '',
+  themes() { const t = S.settings.sleepThemes; return Array.isArray(t) && t.length ? t : SLEEP_THEMES_DEFAULT; },
+  theme() { const t = this.themes(); return (t.find(x => x.name === S.sleep.theme) || t[0] || {}).name || ''; },
+  /** Which theme a sleep channel's uploads belong to: the first theme whose tag the channel has. */
+  themeOfTags(tags = []) { return (this.themes().find(t => tags.includes(t.tag)) || {}).name || ''; },
+  ofTheme(name) { return S.sleep.lib.filter(v => v.theme === name); },
+  skip() { const s = S.ui.sleepSkip; if (s && s.day === today()) return s; return (S.ui.sleepSkip = { day: today(), ids: [], last: [] }); },
+  /** Uploads from sleep channels that aren't in the library and weren't dismissed — newest first. */
+  candidates() {
+    const have = new Set(S.sleep.lib.map(v => v.id));
+    return (C.digest?.data.items || []).filter(it => isSleepItem(it) && ytId(it.url) && !have.has(ytId(it.url)) && !S.sleep.dismissed[ytId(it.url)])
+      .sort((a, b) => (b.published || '').localeCompare(a.published || ''));
+  },
+  isNew(it) { const p = it.published || ''; return p > (S.sleep.seenAt || '') && Date.now() - new Date(p) < 14 * 864e5; },
+  newCount() { return this.candidates().filter(it => this.isNew(it)).length; },
+  /** The last video before sleeping: Watch next's queue, under an hour (or unknown), swappable. */
+  lastPick() {
+    if (!S.sleep.last) return null;
+    const sk = this.skip().last, q = Watch.queue().filter(x => ytId(x.url) && !(x.durationSec > 3600));
+    return q.find(x => !sk.includes(x.key)) || q[0] || null;
+  },
+  queue() { return { last: this.lastPick(), sleepers: SleepQ.pick(S.sleep.lib, this.theme(), S.sleep.n || 2, this.skip().ids) }; },
+  /** Length from the digest (YouTube API), else read from the title ("10 hours …"). */
+  lengthOf(it) {
+    if (it.durationSec > 0) return { durationSec: it.durationSec, durSrc: 'meta' };
+    const t = SleepQ.fromTitle(it.title); return t ? { durationSec: t, durSrc: 'title' } : { durationSec: null, durSrc: '' };
+  },
+  add(it, theme) {
+    const id = ytId(it.url); if (!id || S.sleep.lib.some(v => v.id === id)) return;
+    S.sleep.lib.push({ id, title: it.title || 'Sleep video', url: `https://www.youtube.com/watch?v=${id}`, source: it.source || '', theme, ...this.lengthOf(it), added: new Date().toISOString(), lastPlayed: '', plays: 0 });
+    save();
+  },
+  url(ids) { return ids.length === 1 ? `https://www.youtube.com/watch?v=${ids[0]}` : `https://www.youtube.com/watch_videos?video_ids=${ids.join(',')}`; },
+};
+const lenTxt = v => (v.durationSec > 0 ? (v.durSrc === 'title' ? '≈' : '') + SleepQ.hms(v.durationSec) : '?');
+const agoTxt = iso => { if (!iso) return 'never played'; const d = Math.round((Date.now() - new Date(iso)) / 864e5); return d <= 0 ? 'played today' : d === 1 ? 'played yesterday' : `played ${d} days ago`; };
+
+/** The Bedtime card body (wind-down: open card; leisure: a collapsed section). */
+function sleepHtml() {
+  const cur = Sleep.theme(), { last, sleepers } = Sleep.queue(), n = S.sleep.n || 2, pool = Sleep.ofTheme(cur), nNew = Sleep.newCount();
+  let h = `<div class="row" style="justify-content:space-between;margin-bottom:8px"><span class="small muted">What do you feel like tonight?</span>
+      <button class="btn sm ghost" style="white-space:nowrap;flex:0 0 auto" data-act="sleepManage">Library${nNew ? ` <span class="tag num">${nNew} new</span>` : ''}</button></div>
+    <div class="modes" style="flex-wrap:wrap;margin:0 0 10px">${Sleep.themes().map(t => `<button class="chip ${t.name === cur ? 'on' : ''}" data-act="sleepTheme" data-name="${esc(t.name)}">${esc(t.name)} <span class="num" style="opacity:.7">${Sleep.ofTheme(t.name).length}</span></button>`).join('')}</div>`;
+  const rows = [];
+  if (last) rows.push(`<li><span class="grow"><span class="small muted">First · one last video</span><br>▶ ${esc(last.title)}</span><span class="num small muted">${last.durationSec ? SleepQ.hms(last.durationSec) : '?'}</span>
+      <button class="icon" data-act="sleepSwapLast" title="Another one" aria-label="Another last video">↻</button><button class="icon" data-act="sleepLast" data-on="0" title="No last video" aria-label="No last video">✕</button></li>`);
+  sleepers.forEach(v => rows.push(`<li><span class="grow"><span class="small muted">💤 ${esc(v.source || cur)} · ${agoTxt(v.lastPlayed)}</span><br>${esc(v.title)}</span><span class="num small muted">${lenTxt(v)}</span>
+      ${pool.length > n ? `<button class="icon" data-act="sleepSwap" data-id="${esc(v.id)}" title="A different one" aria-label="Swap">↻</button>` : ''}</li>`));
+  h += rows.length ? `<ul class="list">${rows.join('')}</ul>` : '';
+  if (!pool.length) h += `<div class="empty">No ${esc(cur)} sleep videos yet. <button class="linkish" data-act="sleepManage">Add some →</button></div>`;
+  if (!last) h += `<button class="linkish small" data-act="sleepLast" data-on="1">+ one last video first</button>`;
+  const items = [...(last ? [last] : []), ...sleepers], tot = SleepQ.total(items);
+  if (tot.text) h += `<div class="math">${tot.text}${tot.unknown ? ' — ? = length unknown' : ''}</div>`;
+  if (pool.length) h += `<div class="row" style="margin-top:8px"><span class="grow small muted">Sleep videos tonight</span>
+      <button class="btn sm" data-act="sleepN" data-d="-1" ${n <= 1 ? 'disabled' : ''} aria-label="Fewer">−</button><b class="num" style="min-width:24px;text-align:center">${n}</b><button class="btn sm" data-act="sleepN" data-d="1" ${n >= 4 ? 'disabled' : ''} aria-label="More">+</button></div>`;
+  const ids = items.map(x => ytId(x.url)).filter(Boolean);
+  if (sleepers.length) h += `<div class="actions"><a class="btn primary" ${playAttrs(Sleep.url(ids))} data-act="sleepGo">💤 Sleep · play in YouTube</a></div>
+      <p class="small muted" style="margin:6px 0 0">Opens as one playlist in the YouTube app, so it keeps playing with the screen off (Premium).</p>`;
+  return h;
+}
+
+/* ---- Library sheet: your sleep videos per theme, new uploads from sleep channels, the channels themselves ---- */
+function sleepManagePaint() {
+  const cand = Sleep.candidates();
+  const feeds = (S.watchlist?.feeds || []).filter(f => (f.tags || []).includes('sleep'));
+  let h = `<div class="row" style="justify-content:space-between"><h3 style="margin:0">💤 Sleep library</h3><button class="icon" data-act="sleepManageClose" aria-label="Close">✕</button></div>`;
+  // New uploads
+  h += `<h4 style="margin:16px 0 6px">From your sleep channels ${cand.length ? `<span class="tag num">${cand.length}</span>` : ''}</h4>`;
+  if (!feeds.length) h += `<p class="small muted">No sleep channels yet. Add the channels your sleep videos come from, and their new uploads show up here.</p>`;
+  else if (!cand.length) h += `<p class="small muted">Nothing new — everything from ${feeds.length} channel${feeds.length > 1 ? 's' : ''} is in your library or dismissed.</p>`;
+  h += cand.length ? `<ul class="list">${cand.slice(0, 30).map(it => {
+    const id = ytId(it.url), guess = Sleep.themeOfTags(it.tags) || Sleep.theme(), L = Sleep.lengthOf(it);
+    return `<li style="flex-wrap:wrap"><span class="grow" style="min-width:60%"><span class="small muted">${esc(it.source)} · ${it.published ? ago(new Date(it.published).getTime()) : ''}${Sleep.isNew(it) ? ' · <b style="color:var(--accent)">new</b>' : ''} · ${lenTxt(L)}</span><br>
+        <button class="linkish dgt" data-act="watchHere" data-id="${esc(it.id)}">▶ ${esc(it.title)}</button></span>
+      <span class="row" style="gap:6px;flex-wrap:wrap;width:100%;margin-top:6px"><button class="btn sm primary" style="flex:0 0 auto" data-act="sleepAdd" data-id="${esc(it.id)}" data-theme="${esc(guess)}">+ ${esc(guess)}</button>
+        <button class="linkish small" data-act="sleepAddOther" data-id="${esc(it.id)}">other theme…</button>
+        <button class="btn sm ghost" style="margin-left:auto" data-act="sleepDismiss" data-yt="${esc(id)}">Not for me</button></span></li>`; }).join('')}</ul>` : '';
+  // Library per theme
+  for (const t of Sleep.themes()) {
+    const lib = Sleep.ofTheme(t.name).sort((a, b) => (a.lastPlayed || '').localeCompare(b.lastPlayed || ''));
+    h += `<h4 style="margin:16px 0 6px">${esc(t.name)} <span class="tag num">${lib.length}</span></h4>`;
+    h += lib.length ? `<ul class="list">${lib.map(v => `<li><span class="grow"><span class="small muted">${esc(v.source || '')}${v.source ? ' · ' : ''}${agoTxt(v.lastPlayed)}${v.plays ? ` · ${v.plays}×` : ''}</span><br>${esc(v.title)}</span>
+        <button class="btn sm ghost num" data-act="sleepLen" data-id="${esc(v.id)}" title="Set the length">${lenTxt(v)}</button>
+        <button class="icon" data-act="sleepRemove" data-id="${esc(v.id)}" aria-label="Remove">✕</button></li>`).join('')}</ul>` : `<p class="small muted">None yet.</p>`;
+  }
+  h += `<div class="actions"><button class="btn" data-act="sleepAddLink">+ Add by link</button><button class="btn" data-act="sleepChannel">+ Sleep channel</button></div>`;
+  // Channels + themes
+  h += `<h4 style="margin:16px 0 6px">Sleep channels</h4>`;
+  h += feeds.length ? `<ul class="list">${feeds.map(f => { const hl = Watchlist.health(f.id); return `<li><span class="grow">${esc(f.name)} <span class="small muted">· ${esc(Sleep.themeOfTags(f.tags) || 'no theme tag')}${hl ? ' · ' + esc(hl.status) : ' · waiting for the next digest build'}</span></span>
+      <button class="btn sm ghost" data-act="feedEdit" data-id="${esc(f.id)}">Edit</button></li>`; }).join('')}</ul>` : '';
+  if (S.watchlistDirty) h += `<p class="small" style="color:var(--warn)">Watchlist has unpublished changes — publish it (More → Watchlist) so the digest starts fetching new channels.</p>`;
+  h += `<p class="small muted">Themes: ${Sleep.themes().map(t => `<b>${esc(t.name)}</b> = tag <code>${esc(t.tag)}</code>`).join(', ')}. A sleep channel is a watchlist feed tagged <code>sleep</code> plus its theme’s tag. <button class="linkish small" data-act="sleepThemes">Edit themes</button></p>`;
+  $('#dlgBody').innerHTML = h;
+}
+function sleepManageOpen() {
+  const dlg = $('#dlg'); Sleep.managing = true; sleepManagePaint();
+  dlg.onclose = () => { Sleep.managing = false; S.sleep.seenAt = new Date().toISOString(); save(); render(); };
+  if (!dlg.open) dlg.showModal();
+}
+/** Reopen the library after a form sheet (form sheets reuse the same dialog). */
+const sleepBack = () => setTimeout(sleepManageOpen, 0);
+
+const ACT13 = {
+  sleepTheme(el) { S.sleep.theme = el.dataset.name; save(); render(); },
+  sleepN(el) { S.sleep.n = Math.min(4, Math.max(1, (S.sleep.n || 2) + Number(el.dataset.d))); save(); render(); },
+  sleepSwap(el) { Sleep.skip().ids.push(el.dataset.id); render(); },
+  sleepSwapLast() { const l = Sleep.lastPick(); if (l) Sleep.skip().last.push(l.key); render(); },
+  sleepLast(el) { S.sleep.last = el.dataset.on === '1'; save(); render(); },
+  /** The link opens YouTube; here we just note what was played (for "least recently played first"). */
+  sleepGo() {
+    const { last, sleepers } = Sleep.queue(), now = new Date().toISOString();
+    sleepers.forEach(v => { v.lastPlayed = now; v.plays = (v.plays || 0) + 1; });
+    if (last) Watch.done(last.key);
+    S.ui.sleepSkip = null; save(); setTimeout(render, 300);
+  },
+  sleepManage() { sleepManageOpen(); },
+  sleepManageClose() { $('#dlg').close(); },
+  sleepAdd(el) { const it = Digest.byId(el.dataset.id); if (it) { Sleep.add(it, el.dataset.theme); toast(`Added to ${el.dataset.theme}.`); } sleepManagePaint(); render(); },
+  async sleepAddOther(el) {
+    const it = Digest.byId(el.dataset.id); if (!it) return;
+    const r = await formSheet('Which theme?', [{ name: 'theme', label: 'Theme', type: 'select', value: Sleep.theme(), options: Sleep.themes().map(t => ({ value: t.name, label: t.name })) }], { okLabel: 'Add', note: esc(it.title) });
+    if (r) { Sleep.add(it, r.theme); toast(`Added to ${r.theme}.`); render(); }
+    sleepBack();
+  },
+  sleepDismiss(el) { S.sleep.dismissed[el.dataset.yt] = true; save(); sleepManagePaint(); },
+  sleepRemove(el) {
+    const v = S.sleep.lib.find(x => x.id === el.dataset.id); if (!v) return;
+    S.sleep.lib = S.sleep.lib.filter(x => x !== v); save(); sleepManagePaint(); render();
+    toast(`Removed “${v.title.slice(0, 40)}”.`, 'Undo', () => { S.sleep.lib.push(v); save(); if (Sleep.managing) sleepManagePaint(); render(); });
+  },
+  async sleepLen(el) {
+    const v = S.sleep.lib.find(x => x.id === el.dataset.id); if (!v) return;
+    const r = await formSheet('How long is it?', [{ name: 'h', label: 'Hours', type: 'number', value: v.durationSec ? Math.floor(v.durationSec / 3600) : '', min: 0, max: 24 },
+      { name: 'm', label: 'Minutes', type: 'number', value: v.durationSec ? Math.round(v.durationSec % 3600 / 60) : '', min: 0, max: 59 }], { okLabel: 'Save', note: esc(v.title) });
+    if (r) { const sec = (r.h || 0) * 3600 + (r.m || 0) * 60; v.durationSec = sec || null; v.durSrc = sec ? 'manual' : ''; save(); render(); }
+    sleepBack();
+  },
+  async sleepAddLink() {
+    const r = await formSheet('Add a sleep video', [{ name: 'url', label: 'YouTube link', value: '' }, { name: 'title', label: 'Title (optional — fetched if left blank)', value: '' },
+      { name: 'theme', label: 'Theme', type: 'select', value: Sleep.theme(), options: Sleep.themes().map(t => ({ value: t.name, label: t.name })) }], { okLabel: 'Add' });
+    if (r) {
+      const id = ytId(r.url);
+      if (!id) toast('That doesn’t look like a YouTube video link.');
+      else {
+        let title = r.title, source = '';
+        if (!title) try {   // YouTube's public oEmbed: title + channel, no key needed
+          const j = await (await fetch(`https://www.youtube.com/oembed?format=json&url=${encodeURIComponent('https://www.youtube.com/watch?v=' + id)}`)).json();
+          title = j.title; source = j.author_name || '';
+        } catch (e) { /* offline or blocked — keep the fallback title */ }
+        Sleep.add({ url: r.url, title: title || 'Sleep video ' + id, source }, r.theme);
+        const v = S.sleep.lib.find(x => x.id === id);
+        toast(v && !v.durationSec ? 'Added. Tap its “?” to set the length.' : 'Added.');
+        render();
+      }
+    }
+    sleepBack();
+  },
+  async sleepChannel() {
+    if (!S.watchlist) { toast('Watchlist not loaded yet.'); return sleepBack(); }
+    const r = await formSheet('Add a sleep channel', [{ name: 'name', label: 'Channel name', value: '' }, { name: 'src', label: '@handle or channel link (best) — or leave blank to search by name', value: '' },
+      { name: 'theme', label: 'Theme', type: 'select', value: Sleep.theme(), options: Sleep.themes().map(t => ({ value: t.name, label: t.name })) }],
+      { okLabel: 'Add', note: 'Its uploads go to 💤 Bedtime only — never into the digest or Watch next. The digest keeps its latest 15 uploads, up to a year old.' });
+    if (r && (r.name || r.src)) {
+      const W = S.watchlist, s = r.src.trim(), tag = (Sleep.themes().find(t => t.name === r.theme) || {}).tag;
+      const nf = { type: 'youtube', name: r.name || s, tags: ['sleep', ...(tag ? [tag] : [])], max: 15, maxAgeHours: 8760, added: Engine.dateKey(new Date()) };
+      if (/UC[\w-]{22}/.test(s)) nf.channelId = s.match(/UC[\w-]{22}/)[0]; else if (/^@|youtube\.com\/@/.test(s)) nf.handle = '@' + s.replace(/.*youtube\.com\/@/, '').replace(/^@/, '').split(/[/?#]/)[0]; else if (s) nf.url = s;
+      nf.id = 'yt-' + slug(nf.name); while (W.feeds.some(x => x.id === nf.id)) nf.id += '-2';
+      W.feeds.push(nf); Watchlist.touch(); render();
+      toast(GH.ready() ? `Added ${nf.name}. Publish the watchlist to start fetching.` : `Added ${nf.name}. Publish (or download) the watchlist to start fetching.`);
+    }
+    sleepBack();
+  },
+  async sleepThemes() {
+    const r = await formSheet('Sleep themes', [{ name: 'lines', label: 'One per line: Name = watchlist tag', type: 'textarea', value: Sleep.themes().map(t => `${t.name} = ${t.tag}`).join('\n') }],
+      { note: 'The tag links a sleep channel to its theme (a channel tagged <code>sleep, gaming</code> → Video games). Renaming a theme moves its videos with it.' });
+    if (r) {
+      const next = r.lines.split('\n').map(l => l.split('=')).filter(p => p[0].trim()).map(([n, t]) => ({ name: n.trim(), tag: slug(t || n).replace(/-/g, '') }));
+      if (next.length) {
+        const old = Sleep.themes();
+        old.forEach((o, i) => { if (next[i] && next[i].name !== o.name && !next.some(x => x.name === o.name)) S.sleep.lib.forEach(v => { if (v.theme === o.name) v.theme = next[i].name; }); });
+        S.settings.sleepThemes = next; save(); render();
+      }
+    }
+    sleepBack();
+  },
+};
+
 function modeSections(mode) {
   const parts = [habitStripHtml(mode)];
   if (showGerman()) parts.push(germanCardHtml());
@@ -3912,26 +4270,26 @@ function modeSections(mode) {
     parts.push(sec('now-top3', 'Today’s top 3', top3, true));
     parts.push(todayCal); if (evening) parts.push(tomCal);
     parts.push(sec('now-next', 'Next action per project', nextActionsHtml(), false));
-    if (Google.on('gmail') && C.gmail) parts.push(sec('now-mail', 'Gmail', mailHtml(true), false, `<span class="tag num">${C.gmail.unread} unread</span>`));
     parts.push(sec('now-focus', 'Focus today', `<div class="kpi"><div><b class="num">${minsToday}</b>minutes</div><div><b class="num">${todaysSessions().length}</b>sessions</div></div>`, false, `<span class="tag num">${minsToday}m</span>`));
   } else if (mode === 'life') {
     parts.push(sec('now-weather', 'Weather', Weather.html(), false, `<span class="tag">${Weather.short() || '—'}</span>`));
     parts.push(todayCal); if (evening) parts.push(tomCal);
     parts.push(sec('now-top3', 'Today’s top 3', top3, false));
     parts.push(sec('now-inbox', `Inbox`, inboxHtml(true), S.inbox.length > 0, `<span class="tag">${S.inbox.length}</span>`));
-    if (Google.on('gmail') && C.gmail) parts.push(sec('now-mail', 'Gmail', mailHtml(true), false, `<span class="tag num">${C.gmail.unread} unread</span>`));
     parts.push(showWeekend() ? sec('now-weekend', 'This weekend', weekendHtml(), true) : sec('now-week', 'Week ahead', weekAheadHtml(today(), 7), false));
   } else if (mode === 'leisure') {
     parts.push(watchCardHtml());                    // ▶ Watch next (PART 4f)
     if (showWeekend()) parts.push(sec('now-weekend', 'This weekend', weekendHtml(), false));
     parts.push(evening ? tomCal : todayCal);
     parts.push(sec('now-watch', 'Watch-later shelf', watchHtml(), true, `<span class="tag">${S.watch.length}</span>`));
+    parts.push(sec('now-sleep', '💤 Bedtime', sleepHtml(), false, Sleep.newCount() ? `<span class="tag num">${Sleep.newCount()} new</span>` : ''));
     parts.push(digestCard());
     parts.push(freshPromptHtml());
   } else if (mode === 'winddown') {
     const w = S.wrapups[today()];
+    parts.push(`<div class="card"><h3>💤 Bedtime</h3>${sleepHtml()}</div>`);
     parts.push(`<div class="card"><h3>Evening wrap-up</h3><p class="muted small">${w ? 'Done at ' + fmtT(new Date(w.at)) + '. You can run it again.' : 'Two minutes: what got done, what rolls over, tomorrow’s top 3.'}</p>
-      <div class="actions"><button class="btn primary" data-act="wrapup">${w ? 'Redo wrap-up' : 'Start wrap-up'}</button></div></div>`);
+      <div class="actions"><button class="btn ${w ? '' : 'primary'}" data-act="wrapup">${w ? 'Redo wrap-up' : 'Start wrap-up'}</button></div></div>`);
     parts.push(tomCal);
     parts.push(sec('now-tom', 'Tomorrow’s top 3', listTop3(tomorrow()), true));
     parts.push(freshPromptHtml());
@@ -3979,7 +4337,8 @@ function inboxHtml(compact = false) {
 }
 function watchHtml() {
   if (!S.watch.length) return '<div class="empty">Empty. Tap the bookmark in the digest, or ⏵ on an inbox item, to save something here.</div>';
-  return `<ul class="list">${[...S.watch].reverse().map(w => `<li><span class="grow">${w.url ? `<a href="${esc(w.url)}" target="_blank" rel="noopener">${w.type === 'video' ? '▶ ' : ''}${esc(w.title)}</a>` : esc(w.title)}
+  return `<ul class="list">${[...S.watch].reverse().map(w => `<li><span class="grow">${w.url && ytId(w.url) ? `<button class="linkish dgt" data-act="watchHere" data-key="w:${esc(w.id)}">▶ ${esc(w.title)}</button>`
+      : w.url ? `<a href="${esc(w.url)}" target="_blank" rel="noopener">${esc(w.title)}</a>` : esc(w.title)}
       <br><span class="small muted">${[w.source, w.category, w.duration].filter(Boolean).map(esc).join(' · ') || 'from inbox'}</span></span>
     <button class="icon" data-act="watchDone" data-id="${w.id}" title="Watched / done" aria-label="Done">✓</button></li>`).join('')}</ul>`;
 }
@@ -4128,6 +4487,8 @@ function renderMore() {
   h += sec('more-settings', 'Settings', `<label class="f">Theme</label><div class="seg">${['auto', 'dark', 'light', 'sepia'].map(t => `<button class="${st.theme === t ? 'on' : ''}" data-act="theme" data-theme="${t}">${t[0].toUpperCase() + t.slice(1)}</button>`).join('')}</div>
     <div class="row"><label class="f" style="flex:1">Overrun nudge after (min)<input type="number" min="5" max="90" value="${st.overrunMin}" data-setting="overrunMin"></label>
     <label class="f" style="flex:1">Day ends at (hour)<input type="number" min="0" max="8" value="${st.dayCutoff}" data-setting="dayCutoff"></label></div>
+    <label class="f">Stand mode</label><div class="row"><span class="grow small muted">For the phone on its desk stand: clock, now, time left, what’s playing and what’s next, with the screen kept on.</span><button class="btn sm" data-act="standOpen">Open</button></div>
+    <label class="row" style="min-height:44px"><input type="checkbox" data-setting="standLandscape" ${st.standLandscape ? 'checked' : ''} style="width:22px;height:22px"> Open it when I turn the phone sideways</label>
     <label class="f">Voice capture language</label><select data-setting="speechLang">${[['en-GB', 'English (UK)'], ['en-US', 'English (US)'], ['de-DE', 'Deutsch']].map(([v, l]) => `<option value="${v}" ${st.speechLang === v ? 'selected' : ''}>${l}</option>`).join('')}</select>
     <label class="row" style="min-height:44px;margin-top:8px"><input type="checkbox" data-setting="sound" ${st.sound ? 'checked' : ''} style="width:22px;height:22px"> Chime when timers end</label>
     <div class="actions"><button class="btn" data-act="notifPerm">${'Notification' in window && Notification.permission === 'granted' ? 'Notifications on ✓' : 'Enable notifications'}</button><button class="btn ghost" data-act="welcome">Show welcome</button></div>`);
@@ -4209,18 +4570,17 @@ function helpHtml() {
   <h3>Stage 4 setup — Google (one-off, ~15 min, free)</h3>
   <ol>
     <li>Go to <b>console.cloud.google.com</b> → project picker → <b>New project</b> (e.g. “The Natto App”).</li>
-    <li><b>APIs &amp; Services → Library</b>: enable <b>Google Calendar API</b>, <b>Gmail API</b>, <b>Google Drive API</b> (and <b>YouTube Data API v3</b> for the Listen playlist / video lengths).</li>
+    <li><b>APIs &amp; Services → Library</b>: enable <b>Google Calendar API</b>, <b>Google Drive API</b> (and <b>YouTube Data API v3</b> for the Listen playlist / video lengths).</li>
     <li><b>Google Auth Platform</b> (was “OAuth consent screen”) → Get started: app name, your email, audience <b>External</b>. Under <b>Audience → Test users</b>, add your own Gmail address. Leave it in <b>Testing</b>.</li>
     <li><b>Clients → Create client → Web application</b>. Under <b>Authorised JavaScript origins</b> add <code>https://nathanaog.github.io</code> (no path, no trailing slash). No redirect URIs needed.</li>
     <li>Copy the <b>Client ID</b> (ends in <code>.apps.googleusercontent.com</code>) into More → Google account → Save, then <b>Connect Google</b>. Google will warn the app is unverified — it’s yours, so choose <b>Continue</b> and tick the permissions you want.</li>
     <li><i>Optional, for video lengths:</i> Credentials → <b>Create API key</b> → restrict it to YouTube Data API v3 → add it in GitHub as the repo secret <code>YT_API_KEY</code>.</li>
   </ol>
   <h3>Google: what to expect</h3>
-  <ul><li class="limit"><b>Tokens last an hour.</b> A browser-only app gets no long-lived login, so after an hour the header shows “↻ Google”. One tap usually reconnects without asking anything. Calendar and Gmail stay visible from the last fetch meanwhile (with “updated … ago”).</li>
-  <li class="limit"><b>Testing mode ≈ weekly re-approval.</b> While your Google project is in Testing, Google expires approvals after about 7 days, so roughly once a week the refresh will show the consent screen again. Publishing the app would avoid that but needs Google’s verification for Gmail access — not worth it for a personal app.</li>
+  <ul><li class="limit"><b>Tokens last an hour.</b> A browser-only app gets no long-lived login, so after an hour the header shows “↻ Google”. One tap usually reconnects without asking anything. Calendar stays visible from the last fetch meanwhile (with “updated … ago”).</li>
+  <li class="limit"><b>Testing mode ≈ weekly re-approval.</b> While your Google project is in Testing, Google expires approvals after about 7 days, so roughly once a week the refresh will show the consent screen again. Publishing the app would avoid that but needs Google’s verification for the calendar permissions — not worth it for a personal app.</li>
   <li class="limit"><b>Reminders ring through your calendar app.</b> They’re events in a separate “The Natto App” calendar. Make sure that calendar is visible and has notifications on in Google Calendar (or Samsung Calendar). <b>Samsung battery tip:</b> Settings → Apps → Calendar (and Google Calendar if installed) → Battery → <b>Unrestricted</b>; and Settings → Battery → Background usage limits → make sure Calendar isn’t in “Sleeping apps”. Otherwise Samsung can delay the alerts.</li>
-  <li class="limit"><b>Sync merges, it doesn’t just overwrite.</b> Changes on phone and desktop are combined item by item; if the same thing was changed on both, the most recent save wins. Sync runs a few seconds after a change and when you open the app — but only while you’re signed in, so after an hour away it waits for your tap.</li>
-  <li class="limit"><b>Gmail shows headers only</b> (sender, subject, unread count) — the app never reads message bodies.</li></ul>
+  <li class="limit"><b>Sync merges, it doesn’t just overwrite.</b> Changes on phone and desktop are combined item by item; if the same thing was changed on both, the most recent save wins. Sync runs a few seconds after a change and when you open the app — but only while you’re signed in, so after an hour away it waits for your tap.</li></ul>
   <h3>Topics, genres, activities — and how</h3>
   <p>Tags come in groups: <b>topics</b> (what it’s about), <b>genres</b> (what kind of thing — debates, standup, documentary, lo-fi…) and <b>activities</b> (focus, chill…). Set which tags are genres/activities under More → Watchlist → Tag groups. A lens combines them: inside a field it’s “any of”, across fields it’s “and”. The digest’s <b>▶ Watch / 🎧 Listen / 📰 Read</b> chips filter by how you’ll consume it: videos are Watch (and Listen if the feed is marked “fine to just listen to”), Spotify podcasts are Listen only, articles/news/Reddit are Read.</p>
   <h3>Watch next &amp; watching here</h3>
@@ -4248,11 +4608,114 @@ function helpHtml() {
 function render(full = true) {
   R = Engine.resolve(new Date(), engineState());
   renderHeader();
+  if (Stand.on) Stand.paint();
   if (currentView === 'now') renderNow();
   if (morningOpen()) renderMorning();
   if (!full) return;
   ({ tasks: renderTasks, focus: renderFocus, inbox: renderInbox, more: renderMore })[currentView]?.();
 }
+/* =====================================================================
+   PART 5b — STAND MODE
+   For the phone on its desk stand: one screen you can read from across
+   the desk — the clock, what's now and how long is left, the focus timer,
+   what's playing (with the block-end maths) and what's next. The screen
+   stays on while it's open. It's an overlay, so the player dock keeps
+   playing above it. Open: the stand icon in the header, More → Settings,
+   the home-screen shortcut (#stand) or, optionally, turning the phone
+   sideways. Close: ✕, or the phone's back gesture.
+   ===================================================================== */
+const Stand = {
+  on: false, auto: false, wake: null,
+  open(auto = false) {
+    if (this.on) return;
+    this.on = true; this.auto = auto;
+    if (Dock.item && Dock.size() === 'max') Dock.setSize('mini');
+    document.body.classList.add('standing'); $('#stand').classList.remove('hidden');
+    if (location.hash !== '#stand') history.pushState({ stand: 1 }, '', '#stand');   // back gesture closes it
+    this.paint(); this.keepAwake(true);
+  },
+  close(fromBack = false) {
+    if (!this.on) return;
+    if (!fromBack && history.state?.stand) return history.back();   // popstate below finishes the close
+    this.on = false; this.auto = false; this.keepAwake(false);
+    document.body.classList.remove('standing'); const el = $('#stand'); el.classList.add('hidden'); el.innerHTML = '';
+    if (location.hash === '#stand') history.replaceState(null, '', '#' + currentView);
+    render();
+  },
+  async keepAwake(on) {
+    try {
+      if (on && !this.wake && navigator.wakeLock && document.visibilityState === 'visible') { this.wake = await navigator.wakeLock.request('screen'); this.wake.addEventListener('release', () => { this.wake = null; }); }
+      if (!on && this.wake) { await this.wake.release(); this.wake = null; }
+    } catch (e) { /* not supported / denied: the screen just follows the phone's own timeout */ }
+  },
+  /** What's playing, as one line (dock, or a hand-off to the YouTube/Spotify app). */
+  playingHtml() {
+    if (Dock.item) {
+      const p = Dock.pos(), d = Dock.dur(), ctx = Dock.item.focus ? null : stopCtx(), L = ctx && d ? BlockStop.live({ ...ctx, rem: d - p }) : null;
+      return `<div class="st-line">${Dock.state === 'playing' ? '🎧' : '⏸'} <b>${esc(Dock.item.title)}</b> · <span class="num" id="stPlayPos">${mmss(p)}${d ? ' / ' + mmss(d) : ''}</span>
+        ${L ? `<div class="math ${L.tone}" style="background:#0d1013;margin-top:6px">${esc(L.text)}</div>` : ''}</div>`;
+    }
+    const L = S.listening;
+    return L && !L.here ? `<div class="st-line">🎧 <b>${esc(L.title)}</b> · in the ${L.spotify ? 'Spotify' : 'YouTube'} app</div>` : '';
+  },
+  paint() {
+    if (!this.on || !R) return;
+    const now = new Date(), c = R.current, p = S.pomo;
+    const label = c.type === 'event' ? 'Calendar' : c.type === 'gap' ? 'Free' : (KIND_LABEL[c.kind] || 'Block');
+    const left = c.end ? c.end - now : null, pct = c.start && c.end ? Math.min(100, Math.max(0, (now - c.start) / (c.end - c.start) * 100)) : null;
+    const dim = R.mode === 'winddown';
+    let col2 = `<div><div class="st-label">Now · ${esc(label)}</div><div class="st-title">${esc(c.title)}</div>
+      ${c.pick ? `<div class="st-task">☐ ${esc(c.pick.task.title)}</div>` : ''}
+      ${pct != null ? `<div class="st-bar"><i id="stBar" style="width:${pct.toFixed(1)}%"></i></div>` : ''}
+      ${left != null ? `<div class="st-left num" id="stLeft">${fmtDur(left)} left · until ${fmtT(c.end)}</div>` : ''}
+      ${p.phase !== 'idle' ? `<div class="st-timer num" id="stTimer">${fmtClock(Pomo.remaining())}</div><div class="small" style="color:#6f7a83">${p.phase === 'work' ? 'Focus' : 'Break'}${p.paused ? ' · paused' : ''}</div>` : ''}</div>`;
+    col2 += this.playingHtml();
+    if (R.next) col2 += `<div class="st-line">Next · <b>${esc(R.next.title)}</b> at ${fmtT(R.next.at)} · <span class="num" id="stNextIn">in ${fmtDur(R.next.at - now)}</span></div>`;
+    // one main action, the one you'd reach for from your chair
+    const act = p.phase !== 'idle' ? (p.paused ? ['pomoResume', '▶ Resume'] : ['pomoPause', '⏸ Pause'])
+      : c.pick ? ['startFocus', `▶ Focus · ${S.settings.pomoWork}m`] : null;
+    $('#stand').className = 'stand' + (dim ? ' dim' : '') + (Dock.item ? ' docked' : '');
+    $('#stand').innerHTML = `<div class="st-in" id="stIn">
+        <div class="st-col1"><div class="st-clock num" id="stClock">${fmtT(now)}</div>
+          <div class="st-date">${now.toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long' })}${R.allDay.length ? ' · ' + R.allDay.map(esc).join(' · ') : ''}</div></div>
+        <div class="st-col2">${col2}</div></div>
+      <div class="st-foot"><button class="btn" data-act="standClose" aria-label="Exit stand mode">✕ Exit</button>
+        ${act ? `<button class="btn primary" data-act="${act[0]}" style="margin-left:auto">${act[1]}</button>` : ''}</div>`;
+    this.drift();
+  },
+  /** Every second: just the numbers. */
+  tick() {
+    if (!this.on) return;
+    const now = new Date(), c = R?.current;
+    const set = (id, t) => { const el = $(id); if (el) el.textContent = t; };
+    set('#stClock', fmtT(now));
+    if (c?.end) set('#stLeft', `${fmtDur(c.end - now)} left · until ${fmtT(c.end)}`);
+    if (c?.start && c?.end) { const b = $('#stBar'); if (b) b.style.width = Math.min(100, Math.max(0, (now - c.start) / (c.end - c.start) * 100)).toFixed(1) + '%'; }
+    if (S.pomo.phase !== 'idle') set('#stTimer', fmtClock(Pomo.remaining()));
+    if (R?.next) set('#stNextIn', 'in ' + fmtDur(R.next.at - now));
+    if (Dock.item) { const d = Dock.dur(); set('#stPlayPos', mmss(Dock.pos()) + (d ? ' / ' + mmss(d) : '')); }
+    if (now.getSeconds() === 0) this.drift();
+  },
+  /** Shift everything by up to ±6 px, a new spot each minute (25 spots), against screen burn-in. */
+  drift() {
+    const el = $('#stIn'); if (!el) return;
+    const m = new Date().getMinutes(), dx = (m % 5 - 2) * 3, dy = (Math.floor(m / 5) % 5 - 2) * 3;
+    el.style.transform = `translate(${dx}px, ${dy}px)`;
+  },
+};
+addEventListener('popstate', () => { if (Stand.on && location.hash !== '#stand') Stand.close(true); });
+document.addEventListener('visibilitychange', () => { if (Stand.on && document.visibilityState === 'visible') Stand.keepAwake(true); });
+// Optional: turning the phone sideways opens stand mode (only from a plain screen — never over a video, sheet or the morning flow).
+matchMedia('(orientation: landscape)').addEventListener?.('change', e => {
+  if (!S.settings.standLandscape) return;
+  if (e.matches && !Stand.on && !Player.item && !$('#dlg').open && !morningOpen() && Dock.size() !== 'max') Stand.open(true);
+  else if (!e.matches && Stand.on && Stand.auto) Stand.close();
+});
+const ACT12 = {
+  standOpen() { Stand.open(); },
+  standClose() { Stand.close(); },
+};
+
 function go(view) {
   currentView = view;
   document.querySelectorAll('.view').forEach(v => v.classList.toggle('on', v.id === 'view-' + view));
@@ -4429,7 +4892,7 @@ const ACT = {
   resetAll() { if (confirm('Erase ALL data in this browser? Export first if unsure.')) { localStorage.removeItem(STORE_KEY); S = defaultState(); S.settings.welcomed = true; save(); render(); } },
 };
 
-Object.assign(ACT, ACT2, ACT3, ACT4, ACT5, ACT6, ACT7, ACT8, ACT9, ACT10, ACT11);   // + Watch next & player, Spotify (Stage 4.5)   // + Google (Stage 4)   // + listen while working   // Stage 2 (morning, digest, weather) and Stage 3 (lenses, watchlist) actions
+Object.assign(ACT, ACT2, ACT3, ACT4, ACT5, ACT6, ACT7, ACT8, ACT9, ACT10, ACT11, ACT12, ACT13);   // + Watch next & player, Spotify (Stage 4.5)   // + Google (Stage 4)   // + listen while working   // Stage 2 (morning, digest, weather) and Stage 3 (lenses, watchlist) actions
 
 function setActive(item) {
   if (!item || !item.end) { S.active = null; return save(); }
@@ -4717,6 +5180,7 @@ matchMedia('(prefers-color-scheme: light)').addEventListener?.('change', applyTh
 Pomo.tick();                                   // catch up on anything that ended while closed
 const startView = (location.hash || '#now').slice(1);
 go(['now', 'tasks', 'focus', 'inbox', 'more'].includes(startView) ? startView : 'now');
+if (startView === 'stand') { history.replaceState(null, '', '#now'); Stand.open(); }   // home-screen shortcut
 Spotify.handleRedirect();                       // finishes a Spotify sign-in if we were just sent back (?code=…)
 if (!S.settings.welcomed) openWelcome();
 else maybeAutoMorning();                       // first open of the day → guided morning
@@ -4752,6 +5216,8 @@ setInterval(() => {
     dc.textContent = left > 0 ? fmtClock(left) : '0:00';
     if (left <= 0 && !dc.classList.contains('over')) render();   // show the "Time's up" banner once
   }
+  if (Player.item) Player.note();
+  Stand.tick();
   const gc = $('#germanClock'), ge = (S.ui.german || {}).endsAt; if (gc && ge) gc.textContent = Date.now() < ge ? fmtClock(ge - Date.now()) : 'time! ✓';
   const wc = $('#wrapClock'); if (wc && wrap) wc.textContent = Date.now() < wrap.endsAt ? fmtClock(wrap.endsAt - Date.now()) : 'time’s up — finish when ready';
   if (Date.now() - lastFull > 20000) {

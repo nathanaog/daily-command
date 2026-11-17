@@ -4,7 +4,7 @@
 
 A personal "what should I be doing right now?" app. Static site, installable PWA, works offline. No backend, no paid services. Your data stays in your browser (localStorage) with JSON export/import.
 
-**Status: Stage 5 in progress.** Done so far: habits, quick calendar add, the week-ahead view, "What now?", German 5-min and the PM recap. Earlier stages: core loop, morning sequence, your own feeds, Google + sync, tag groups, Watch next, Spotify. Still to come in Stage 5: the "I have 30 minutes" picker, German daily, renewals, birthdays, Vietnam countdown and quick-launch.
+**Status: Stage 5 in progress.** Done so far: habits, quick calendar add, the week-ahead view, "What now?", German 5-min, the PM recap and **staying in the app** (play here by default, stand mode, stop at the block's end; Gmail removed) and **💤 Bedtime**. Earlier stages: core loop, morning sequence, your own feeds, Google + sync, tag groups, Watch next, Spotify. Still to come in Stage 5: the "I have 30 minutes" picker, German daily, renewals, birthdays, Vietnam countdown and quick-launch.
 
 ## Files
 
@@ -18,7 +18,7 @@ A personal "what should I be doing right now?" app. Static site, installable PWA
 | `feeds.resolved.json`, `video-meta.json` | Caches maintained by the workflow: YouTube name and handle lookups, and video lengths for the Listen queue. |
 | `.github/workflows/digest.yml` | Every 3 hours: tests, builds the digest, commits it if it changed, then deploys the site. |
 | `scripts/` | The digest builder: `digest-lib.mjs` (logic) and `build-digest.mjs` (runner). |
-| `tests/` | `engine.test.cjs` (37 Now/Next edge cases), `sync.test.cjs` (16 phone ↔ desktop merge cases), `lens.test.cjs` (9 tag-group/lens cases), `habit.test.cjs` (31 habit cases), `quickadd.test.cjs` (20 quick-add phrasings), `digest.test.mjs` (24 builder tests on recorded feed samples) and `e2e-build.mjs` (a full builder run over your real watchlist with a simulated network). Run all with `npm test`. |
+| `tests/` | `engine.test.cjs` (37 Now/Next edge cases), `sync.test.cjs` (16 phone ↔ desktop merge cases), `lens.test.cjs` (9 tag-group/lens cases), `habit.test.cjs` (31 habit cases), `quickadd.test.cjs` (20 quick-add phrasings), `stop.test.cjs` (14 block-end stop cases), `sleep.test.cjs` (9 sleep-queue cases), `digest.test.mjs` (24 builder tests on recorded feed samples) and `e2e-build.mjs` (a full builder run over your real watchlist with a simulated network). Run all with `npm test`. |
 | `config.json` | *Optional.* `{"googleClientId": "…", "spotifyClientId": "…"}`, so every device picks up your client IDs automatically. Client IDs are public by design. |
 | `package.json`, `package-lock.json` | One dependency (`fast-xml-parser`), used only by the workflow and not by the app. |
 
@@ -77,7 +77,7 @@ Feeds tagged **listen**, such as podcasts and talking-head channels, form a **Li
 
 **Video lengths:** YouTube's feeds don't include lengths, and YouTube usually blocks GitHub's servers from reading video pages. For reliable lengths, add a free **YouTube Data API key** as a repo secret named `YT_API_KEY` (**Settings → Secrets and variables → Actions → New repository secret**). It comes from the same Google Cloud project as Stage 4's sign-in. It uses about 3 units per run out of a free 10,000 a day. Without a key, the workflow still tries the video pages, and the digest's stats say why any lookup failed. Items without a length are picked in queue order. With sync on, marking something done on one device hides it on the other after the next sync.
 
-## Stage 4 — Google sign-in, Calendar, Gmail, reminders, sync
+## Stage 4 — Google sign-in, Calendar, reminders, sync
 
 All of this runs in your browser against your own Google Cloud project, with no server involved. Each feature asks only for its own permission:
 
@@ -85,14 +85,13 @@ All of this runs in your browser against your own Google Cloud project, with no 
 |---|---|---|
 | Calendar | `calendar.events.readonly`, `calendar.calendarlist.readonly` | Read your events. Timed events take over the Now card; all-day events and events marked **free** (and working-location entries) show as context only. Declined and cancelled events are ignored. |
 | Reminders & alarms | `calendar.app.created` | Creates **one** calendar called "Daily Command" and only touches that one. Reminders, an alarm when a focus session ends, and optional alarms at each block change are events there, so your phone's calendar app rings **even when this app is closed**. |
-| Gmail | `gmail.metadata` | Unread count plus sender and subject of the latest unread mail. Never message bodies. |
 | Sync | `drive.appdata` | A hidden app folder in your Drive. It can't see your other files. |
 | YouTube Listen playlist (optional, off by default) | `youtube` | Keeps a private "Daily Command – Listen" playlist filled with the top of your Listen queue. You press play once on your phone. |
 
 ### Setup (one-off, about 15 minutes, free)
 
 1. **Create a project:** go to [console.cloud.google.com](https://console.cloud.google.com), open the project picker and choose **New project**.
-2. **Enable the APIs:** in **APIs & Services → Library**, enable the **Google Calendar API**, **Gmail API**, **Google Drive API** and **YouTube Data API v3**. The YouTube one is only needed for the playlist and video lengths.
+2. **Enable the APIs:** in **APIs & Services → Library**, enable the **Google Calendar API**, **Google Drive API** and **YouTube Data API v3**. The YouTube one is only needed for the playlist and video lengths.
 3. **Set up sign-in:** in **Google Auth Platform** (formerly "OAuth consent screen"), choose **Get started**.
    - Enter an app name and your email, and pick **External**.
    - Under **Audience → Test users**, add your own Gmail address.
@@ -103,8 +102,8 @@ All of this runs in your browser against your own Google Cloud project, with no 
 
 ### What to expect
 
-- **Tokens last an hour.** A browser-only app gets no long-lived login. After an hour the header shows **↻ Google**, and one tap reconnects, usually without asking anything. Calendar and Gmail stay visible from the last fetch, with "updated … ago". The same applies offline.
-- **Testing mode means roughly weekly re-approval.** Google expires approvals for apps in Testing after about 7 days, so about once a week the refresh shows the consent screen again. Publishing the app would avoid that, but it needs Google's verification for Gmail access.
+- **Tokens last an hour.** A browser-only app gets no long-lived login. After an hour the header shows **↻ Google**, and one tap reconnects, usually without asking anything. Calendar stays visible from the last fetch, with "updated … ago". The same applies offline.
+- **Testing mode means roughly weekly re-approval.** Google expires approvals for apps in Testing after about 7 days, so about once a week the refresh shows the consent screen again. Publishing the app would avoid that, but it needs Google's verification for the calendar permissions.
 - **Sync merges instead of overwriting.** Phone and desktop changes are combined item by item. When the same field changed on both, the most recent save wins. A device's first sync takes the settings already in Drive, so a fresh desktop doesn't overwrite your phone's settings. Sync runs a few seconds after a change and when you open the app, while you're signed in.
 - **Samsung alerts:** make sure the "Daily Command" calendar is visible with notifications on. Then set **Settings → Apps → Calendar** (and Google Calendar, if installed) **→ Battery → Unrestricted**, and check that Calendar isn't listed under **Settings → Battery → Background usage limits**. Otherwise alerts can arrive late.
 
@@ -218,3 +217,36 @@ Habits stay out of the way. A habit only appears when it's due, and only in the 
 - **What now?:** in Life and Leisure. Pick 15/30/60 min and your energy, and it suggests one thing with the reason, e.g. `21:00 ≤ 30:00 ✓ fits · from your shelf`. It chooses from shelf and digest videos, the Listen queue, due habits, German, today's top 3, the digest and the inbox. Low energy leans to watching and listening; high energy leans to tasks and German. **Something else** shows the next option.
 - **German 5-min:** one prompt a day (speaking or writing, A2–B1, with an English hint), a 5-minute timer and **Done**, which also ticks a habit named German or Deutsch. It appears in the routine's German block, or from What now. Add links to your trainer files with **+ trainer link**.
 - **PM daily recap:** on workdays, the wrap-up asks for one thing you learned at work. Find past entries in **More → PM learnings**, and **Export** them as dated Markdown for your PM second brain.
+
+## Stage 5 — Staying in the app
+
+The goal: the app shouldn't push you into YouTube, where nothing brings you back.
+
+- **Play here by default.** Tapping a video anywhere (the digest, the watch-later shelf, Watch next, What now) plays it in the app's own player. Podcast episodes in the digest play in the docked player. Only articles still open a browser tab. **YouTube app ↗** remains as a small link for when you want to lock the phone, since web pages stop playing when the screen goes off. "Play all in a row" now only shows when listening is set to the YouTube app; in the app, the dock already plays the queue one after another.
+- **Stop at the end of a block** (More → Listening while working, on by default).
+  - *While playing*, the player shows when this one ends against when the block ends, e.g. `21:12 + 12:00 = ~21:24 ≤ 21:30 ✓ · 6 min spare → last one before Leisure ends`, or `… → 11 min over`.
+  - *When a video ends*, another is only offered if it fits: `22:00 − 21:45 = 15 min left · next is 24:00 > 15:00 → stop here → next: Wind-down`. Then the screen says **That's it for Leisure** with **Back to Now**, plus a quiet **One more anyway**.
+  - *In the docked player*, the next episode only starts automatically if it fits. If it stops, the Now screen says why. Talk keeps going between two blocks that both want talk (Admin → Lunch).
+  - Running up to 2 minutes over still counts as fitting. With an unknown length, it starts only if at least 10 minutes are left.
+- **Stand mode**, for the phone on its desk stand: the stand icon in the header, More → Settings, or long-press the app icon → **Stand mode**. It shows a large clock, what's now and how long is left, the focus timer, what's playing (with the block-end maths) and what's next, plus one button (Focus / Pause). The screen stays on.
+  - Black background, so the S24's OLED leaves those pixels off. Everything drifts a few pixels each minute so nothing burns in. Dimmer in wind-down.
+  - Turned sideways it becomes two columns. Optional: **Open it when I turn the phone sideways** (Settings).
+  - Close with ✕ or the back gesture. The docked player keeps playing on top of it.
+- **Gmail removed.** Without work mail it wasn't useful. The app no longer asks for or uses the Gmail permission. To withdraw the one granted earlier, go to your Google Account → Security → Third-party connections → your app.
+
+## Stage 5 — 💤 Bedtime (sleep queue)
+
+For the long videos (2–12 hours) you fall asleep to, usually after one last normal video.
+
+- **The card:** it opens at the top of Wind-down, and sits as a collapsed **💤 Bedtime** section in Leisure. Tap tonight's theme (*Video games*, *Card games*, *German*); the app remembers the last one. You get:
+  1. **one last video** from Watch next (under an hour). Tap ↻ for another or ✕ for none;
+  2. **1–4 sleep videos** from that theme (− / +). Never-played ones come first, then the one you heard longest ago, so the same one doesn't play every night. ↻ swaps one out for tonight;
+  3. **the total**, e.g. `24:00 + 3:10:00 + 8:00:00 = 11:34:00`. `≈` means the length was read from the title ("10 Hours of…", "8 Stunden"); `?` means unknown. Tap a length in the library to set it.
+- **💤 Sleep · play in YouTube** opens everything as **one playlist in the YouTube app**. This is the one hand-off on purpose: YouTube Premium keeps playing with the screen off, and a web page can't. The app notes what was played (for the rotation) and marks the last video as watched. It uses YouTube's unofficial `watch_videos` link (the same one as "Play all"); if YouTube ever drops it, only the first video would play.
+- **Library** (button on the card): your sleep videos per theme, with plays and when last played. Add them by link (the title is fetched automatically) or from your sleep channels.
+- **Finding new ones:** add the channels your sleep videos come from with **Library → + Sleep channel**. That's a watchlist feed tagged `sleep` plus the theme's tag (`gaming`, `tcg`, `german`). Then **publish the watchlist**.
+  - For these channels the digest keeps the **latest 15 uploads, up to a year old** (`max: 15`, `maxAgeHours: 8760` on the feed), so the first run also shows a channel's back catalogue.
+  - Their uploads appear **only** under **Library → From your sleep channels**, never in the digest, Watch next, the Listen queue or What now. Each has **+ theme** and **Not for me**. Uploads from the last 14 days that you haven't seen yet show as **new** on the card.
+- **Themes** are editable (Library → Edit themes: `Name = tag`). Sleep listening counts towards no habit.
+- The library syncs between devices like everything else.
+
