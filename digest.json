@@ -1,17 +1,17 @@
 {
- "generated": "2026-11-16T19:40:46.781Z",
+ "generated": "2026-11-17T03:58:17.859Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
   "ok": 48,
-  "items": 107,
+  "items": 106,
   "duplicatesMerged": 0,
   "lengthsKnown": 2,
-  "lengthLookups": 102,
-  "lengthFailures": 100,
+  "lengthLookups": 99,
+  "lengthFailures": 99,
   "lengthVia": "video pages",
   "lengthFailReasons": {
-   "no length on page": 100
+   "no length on page": 99
   }
  },
  "feeds": [
@@ -85,7 +85,7 @@
    "name": "The Good Liars",
    "type": "youtube",
    "status": "ok",
-   "count": 1,
+   "count": 0,
    "resolved": {
     "channelId": "UCUNOwz9KTDIhhTTN3_ptUDA",
     "title": "The Good Liars",
@@ -657,20 +657,19 @@
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "empty",
+   "status": "waiting",
    "count": 0,
-   "url": "https://www.reddit.com/r/ukpolitics/top/.rss?t=day"
+   "lastOk": "2026-11-16T19:40:46.781Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-xbox",
    "name": "r/xbox",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": "2026-11-07T21:52:57.028Z",
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-slaythespire",
@@ -679,25 +678,26 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "cached",
+   "status": "ok",
    "count": 5,
-   "lastOk": "2026-11-15T22:56:28.195Z",
-   "note": "not its turn this run"
+   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
   },
   {
    "id": "rd-germany",
    "name": "r/germany",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": "2026-11-12T02:17:58.406Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-unitedkingdom",
@@ -706,10 +706,223 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   }
  ],
  "items": [
+  {
+   "title": "Audience GASPS as MAGA Governor F***S UP On National TV!",
+   "url": "https://www.youtube.com/watch?v=yhwHU57GMX0",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-17T03:55:02.000Z",
+   "summary": "Luke discusses Sarah Huckabee Sanders o n Bill Maher's show. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
+   "thumb": "https://i2.ytimg.com/vi/yhwHU57GMX0/hqdefault.jpg",
+   "id": "3d00c7e27350",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Trump says Kim Jong Un may join him, Putin and Xi for first-ever super summit",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xy9ok5/trump_says_kim_jong_un_may_join_him_putin_and_xi/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-11-17T03:17:25.000Z",
+   "summary": "submitted by /u/One-Emu-1103 [link] [comments]",
+   "id": "f2a92a2deae4",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Why Hold Back in War?",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xy9foe/why_hold_back_in_war/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-11-17T03:05:10.000Z",
+   "summary": "Trump and Putin have brought great destruction in Iran and Ukraine, but they have threatened even worse. What, if anything, has held them back? submitted by /u/tscherer [link] [comments]",
+   "id": "eb839eb5f481",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "KT #794 - CHRIS O'CONNOR + TOMMY POPE (DALLAS)",
+   "url": "https://www.youtube.com/watch?v=1rJeSuXEiBk",
+   "source": "Kill Tony",
+   "feedId": "yt-kill-tony",
+   "type": "video",
+   "tags": [
+    "comedy",
+    "standup",
+    "listen"
+   ],
+   "published": "2026-11-17T02:00:07.000Z",
+   "summary": "Chris O'Connor, Tommy Pope, Pat O'Neill, Myles Johnson, Martin Phillips, D Madness, Michael A. Gonzales, Jon Deas, Matthew Muehling, Grooveline Horns, Joe White, Troy Conrad, Monica Parciak, Colt Mcneely, Nathan Poling, Steve Glass, Tony Hinchcliffe, Brian Redban - RECORDED–…",
+   "thumb": "https://i2.ytimg.com/vi/1rJeSuXEiBk/hqdefault.jpg",
+   "id": "6d5facb8e925",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Boebert On VERGE OF TEARS, Posts THIS VIDEO after ELECTION LOSS!",
+   "url": "https://www.youtube.com/watch?v=ryZgPG8CvnU",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-17T01:55:32.000Z",
+   "summary": "Luke discusses Lauren Boebert reflecting on her tenure in Congress. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
+   "thumb": "https://i3.ytimg.com/vi/ryZgPG8CvnU/hqdefault.jpg",
+   "id": "d36e473856a0",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Fed Up MAGA Host SNAPS at Trump Admin",
+   "url": "https://www.youtube.com/watch?v=8bgRDJyyl04",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-16T23:55:08.000Z",
+   "summary": "Luke discusses JD Vance being confronted over the FAA mishap. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
+   "thumb": "https://i1.ytimg.com/vi/8bgRDJyyl04/hqdefault.jpg",
+   "id": "eb808974351d",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Exclusive: US intel indicates Iran developing plans to potentially detonate a dirty bomb in Washington, sources say",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xy52wv/exclusive_us_intel_indicates_iran_developing/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-11-16T23:42:46.000Z",
+   "summary": "New US intelligence indicates that Iran is developing plans to target senior Trump administration officials by detonating a so-called dirty bomb or a chemical weapon in Washington, DC, even as officials continue to debate whether Iran can or will attempt to execute such a plot,…",
+   "id": "41c3bc91bdf8",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "OMG: BOMBSHELL ON EPSTEIN’S DEATH!",
+   "url": "https://www.youtube.com/watch?v=jQwrHuicbnY",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-16T21:55:24.000Z",
+   "summary": "Luke discusses a recent NYT piece on Epstein. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley Instagram -…",
+   "thumb": "https://i3.ytimg.com/vi/jQwrHuicbnY/hqdefault.jpg",
+   "id": "0a67bc137304",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Venezuela’s Collaborator-in-Chief",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xy22qt/venezuelas_collaboratorinchief/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-11-16T21:37:32.000Z",
+   "summary": "submitted by /u/newyorker [link] [comments]",
+   "id": "d7be48e2aeb5",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Bodycam Zombie Game is INSANE",
+   "url": "https://www.youtube.com/watch?v=qa3vZLNrmU0",
+   "source": "GameRanx",
+   "feedId": "yt-gameranx",
+   "type": "video",
+   "tags": [
+    "gaming"
+   ],
+   "published": "2026-11-16T21:18:24.000Z",
+   "summary": "Bodycam's newest update finally brings the zombie mode into the full game. How is it? Let's talk.",
+   "thumb": "https://i2.ytimg.com/vi/qa3vZLNrmU0/hqdefault.jpg",
+   "id": "76147c77860e",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "tagesthemen 21:32 Uhr, 16.11.2026",
+   "url": "https://www.youtube.com/watch?v=kUt58HzOe8A",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-16T21:01:05.000Z",
+   "summary": "tagesthemen 21:32 Uhr Deutschland und vier weitere europäische Länder planen Abschiebezentrum in Ruanda, Branche in Schwierigkeiten: Welche Zukunft für Stahl aus Deutschland?, Weitere Meldungen im Überblick https://www.tagesschau.de",
+   "thumb": "https://i4.ytimg.com/vi/kUt58HzOe8A/hqdefault.jpg",
+   "id": "39ac57c2010b",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "How the UK ended up leaving the EU | James O’Brien - The Whole Show",
+   "url": "https://www.youtube.com/watch?v=9dSYIHPY0wg",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-16T20:00:22.000Z",
+   "summary": "This is a catch-up version of James O'Brien's live, daily show on LBC Radio from the 16th of November 2026. Listen to the full show on the all-new LBC App: https://app.af.lbc.co.uk/btnc/thenewlbcapp #jamesobrien #politics #LBC LBC is the home of live debate around news and…",
+   "thumb": "https://i2.ytimg.com/vi/9dSYIHPY0wg/hqdefault.jpg",
+   "id": "d7ef967e6ce0",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
   {
    "title": "Vom Vampir zum Agenten: Robert Pattinson beerbt Daniel Craig",
    "url": "https://www.youtube.com/watch?v=tX5X8qcdtTg",
@@ -730,6 +943,23 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
+   "title": "Britain could face Ireland genocide claim under new definition",
+   "url": "https://www.reddit.com/r/geopolitics/comments/1xxyuxt/britain_could_face_ireland_genocide_claim_under/",
+   "source": "r/geopolitics",
+   "feedId": "rd-geopolitics",
+   "type": "post",
+   "tags": [
+    "politics",
+    "news"
+   ],
+   "published": "2026-11-16T19:35:58.000Z",
+   "summary": "submitted by /u/Human_Concern263 [link] [comments]",
+   "id": "2d0a3ba4d498",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
    "title": "tagesschau 20:00 Uhr, 16.11.2026",
    "url": "https://www.youtube.com/watch?v=IghaA_ROuDQ",
    "source": "Tagesschau",
@@ -741,7 +971,7 @@
     "listen"
    ],
    "published": "2026-11-16T19:33:32.000Z",
-   "summary": "tagesschau 20:00 Uhr Deutschland und vier andere EU-Staaten planen Abschiebezentrum in Ruanda, Gegenseitige Angriffe zwischen Russland und der Ukraine auf die Energieinfrastruktur, Schwesig erneut zur Ministerpräsidentin von Mecklenburg-Vorpommern gewählt, Beratungen über die…",
+   "summary": "Die 20-Uhr-Ausgabe der tagesschau im Livestream und alle Videos der tagesschau auf https://tagesschau.de Themen der tagesschau-Sendung: 00:00 Guten Abend 00:21 Deutschland und vier andere EU-Staaten planen Abschiebezentrum in Ruanda 04:01 Gegenseitige Angriffe zwischen Russland…",
    "thumb": "https://i2.ytimg.com/vi/IghaA_ROuDQ/hqdefault.jpg",
    "id": "a9bb323b5ef8",
    "score": 1,
@@ -763,6 +993,25 @@
    "summary": "Die Expert:innen der WHO warnen vor einem gefährlichen Trend: Immer mehr Medikamente verlieren aufgrund von Resistenzen ihre Wirkkraft. Zudem sieht die Weltgesundheitsorganisation Nachholbedarf beim Infektionsschutz. Eine Entbindung oder eine Routine-OP können lebensgefährlich…",
    "thumb": "https://i4.ytimg.com/vi/_GFdLuYUPyQ/hqdefault.jpg",
    "id": "8f3ac7a4b350",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Is Muhammad Ethical? | Apostate Prophet Vs Nadir Ahmed",
+   "url": "https://www.youtube.com/watch?v=qWKt-X1lhEc",
+   "source": "Modern-Day Debate",
+   "feedId": "yt-modern-day-debate",
+   "type": "video",
+   "tags": [
+    "debates",
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-16T17:57:57.000Z",
+   "summary": "Huge thank you to our DEBATECON 9 sponsors including: Revival of the Anointed's Rule: https://revivingtheroar.org/ Apologetics Ark: https://www.apologeticsark.com/links @UncensoredAmerica Yonaguni International Cuisine (Aguadilla, Puerto Rico):…",
+   "thumb": "https://i2.ytimg.com/vi/qWKt-X1lhEc/hqdefault.jpg",
+   "id": "a9d9267126ce",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -839,25 +1088,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "tagesschau in Einfacher Sprache 19:00 Uhr, 16.11.2026",
-   "url": "https://www.youtube.com/watch?v=C0Kqmj6KJis",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-16T16:59:02.000Z",
-   "summary": "tagesschau in Einfacher Sprache 19:00 Uhr Schwesig erneut zur Ministerpräsidentin in Mecklenburg-Vorpommern gewählt, Winter im Krieg: Alltag der Menschen in der Ukraine, Papst Leo XIV. reist nach Südamerika, UEFA Nations League: Deutschland tritt gegen Niederlande an, Das…",
-   "thumb": "https://i4.ytimg.com/vi/C0Kqmj6KJis/hqdefault.jpg",
-   "id": "1f98f9745ea5",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "'This is unacceptable': LBC callers react to Russell Brand's prison message",
    "url": "https://www.youtube.com/watch?v=Squ6NwJjxg4",
    "source": "LBC",
@@ -924,12 +1154,12 @@
    "summary": "Laura Gallacher has shared a message from her husband Russell Brand, who has served the first week of his 10-and-a-half-year prison sentence for rape and sexual assault. The News Agents' Emily Maitlis joins Shelagh Fogarty to discuss - describing it as 'so excruciating to…",
    "thumb": "https://i2.ytimg.com/vi/EhNGEgYeOBk/hqdefault.jpg",
    "id": "3f8814bedc6a",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
+   "why": "0"
   },
   {
-   "title": "Admit To Scamming, Get $500",
+   "title": "Confess to Scamming, Get My Money",
    "url": "https://www.youtube.com/watch?v=Qd_EABZKcBI",
    "source": "Pleasant Green",
    "feedId": "yt-pleasant-green",
@@ -942,9 +1172,9 @@
    "summary": "Will they take my offer? Go to https://surfshark.com/pleasantgreen or use code PLEASANTGREEN at checkout to get 4 extra months of Surfshark VPN!",
    "thumb": "https://i2.ytimg.com/vi/Qd_EABZKcBI/hqdefault.jpg",
    "id": "2f7753c93794",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
+   "why": "0"
   },
   {
    "title": "Another alleged Russell Brand victim speaks out",
@@ -960,26 +1190,9 @@
    "summary": "Russell Brand has been moved to a category C prison known to host a large variety of extra-curricular activities, according to reports. Nick Ferrari is joined by Mia Latter, another alleged victim of Russell Brand, who condemns his move to a 'cushy' prison. She brands it 'a…",
    "thumb": "https://i4.ytimg.com/vi/wTYonfh9Pmg/hqdefault.jpg",
    "id": "d9bf5f7a0d56",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "The Pentagon Ignored a Warning About the Danger of Iran’s Drones",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xx3wre/the_pentagon_ignored_a_warning_about_the_danger/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-11-15T19:10:42.000Z",
-   "summary": "submitted by /u/theatlantic [link] [comments]",
-   "id": "bba9968258d0",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
+   "why": "0"
   },
   {
    "title": "Alligator Alcatraz: Last Week Tonight with John Oliver (HBO)",
@@ -995,25 +1208,6 @@
    "summary": "John Oliver discusses the former detention center in the Everglades that somehow wasn’t named by Lin-Manuel Miranda: Alligator Alcatraz. Oliver covers what it was like inside, why the people who built it should be held to account, and why it’s probably not a place that should…",
    "thumb": "https://i1.ytimg.com/vi/dtKt6BiTfFk/hqdefault.jpg",
    "id": "48f7b6bbc784",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "KT #794 - CHRIS O'CONNOR + TOMMY POPE (DALLAS)",
-   "url": "https://www.youtube.com/watch?v=1rJeSuXEiBk",
-   "source": "Kill Tony",
-   "feedId": "yt-kill-tony",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "standup",
-    "listen"
-   ],
-   "published": "2026-11-16T05:41:37.000Z",
-   "summary": "Chris O'Connor, Tommy Pope, Pat O'Neill, Myles Johnson, Martin Phillips, D Madness, Michael A. Gonzales, Jon Deas, Matthew Muehling, Grooveline Horns, Joe White, Troy Conrad, Monica Parciak, Colt Mcneely, Nathan Poling, Steve Glass, Tony Hinchcliffe, Brian Redban - RECORDED–…",
-   "thumb": "https://i2.ytimg.com/vi/1rJeSuXEiBk/hqdefault.jpg",
-   "id": "6d5facb8e925",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1069,42 +1263,6 @@
    "summary": "NVIDIA's former CEO Jensen Huang waqs caught in the middle of a cheating affair that seems to be distracting us from the more pressing corruption concern... ———————————— Spotify: https://open.spotify.com/artist/6QJIJ6AugqPEFASp1V6zgH Merchandise ---…",
    "thumb": "https://i1.ytimg.com/vi/PB3-0dOJq6c/hqdefault.jpg",
    "id": "f915b709a16d",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "JD Vance Finally Realizes He’s F***ED!",
-   "url": "https://www.youtube.com/watch?v=Ij-5sDfBkto",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-15T22:30:11.000Z",
-   "summary": "Luke discusses behind-the-scenes reporting of JD Vance's 2028 ambitions. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
-   "thumb": "https://i2.ytimg.com/vi/Ij-5sDfBkto/hqdefault.jpg",
-   "id": "14701b52ee1a",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Visibly F***ED UP Don Jr. Posts CONCERNING VIDEO after Total HUMILIATION!",
-   "url": "https://www.youtube.com/watch?v=XVZrlGsmgKU",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-15T18:30:08.000Z",
-   "summary": "Luke discusses Donald Trump Jr.'s latest podcast. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley Instagram -…",
-   "thumb": "https://i1.ytimg.com/vi/XVZrlGsmgKU/hqdefault.jpg",
-   "id": "6e4ccf82c421",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1237,24 +1395,6 @@
    "why": "0"
   },
   {
-   "title": "USA: 'Give up Donbas in exchange for NATO'",
-   "url": "https://www.youtube.com/watch?v=C_IOZCHgUWQ",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-15T12:59:07.000Z",
-   "summary": "Ukrainian President Volodymyr Zelenskyy has said US negotiators have floated the possibility of Ukraine withdrawing its troops from parts of the Donbas in exchange for NATO membership. Lewis Goodall is joined by Senior Data Analyst at Razom We Stand Olha Kondratyuk to analyse…",
-   "thumb": "https://i4.ytimg.com/vi/C_IOZCHgUWQ/hqdefault.jpg",
-   "id": "7d8d388795de",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "Nvidia Had No Plan B",
    "url": "https://www.youtube.com/watch?v=6dOFQHTVzEg",
    "source": "Patrick Boyle",
@@ -1269,74 +1409,6 @@
    "summary": "Note Pro：https://bit.ly/4c9s3bC NotePin S：https://bit.ly/46IANlt 22% discount code: PBOYLE Plaud AMZ: https://amzn.to/4xFP79Q 22% discount code: PBOYLE22 Jensen Huang, the only boss Nvidia has ever had, resigned last week after reports that US intelligence suspected Alice…",
    "thumb": "https://i3.ytimg.com/vi/6dOFQHTVzEg/hqdefault.jpg",
    "id": "ba07522ecb0e",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Weekly Significant Activity Report - November 14, 2026",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xwnsos/weekly_significant_activity_report_november_14/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-11-15T05:52:09.000Z",
-   "summary": "submitted by /u/Adept_Grand_6523 [link] [comments]",
-   "id": "81228ce86407",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Iran Attacks Bahrain as Conflict Escalates",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xwn6p9/iran_attacks_bahrain_as_conflict_escalates/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-11-15T05:16:19.000Z",
-   "summary": "submitted by /u/threshhookme [link] [comments]",
-   "id": "a40e991031a6",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Macron says limiting Ukraine aid would pave way to 'another war'",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xwmsbi/macron_says_limiting_ukraine_aid_would_pave_way/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-11-15T04:54:40.000Z",
-   "summary": "Those who want to ration aid to Ukraine wish underneath it all to force an unjust peace on it\" and, by extension, all of Europe , Macron said. \"That is the spirit of defeat. That is a recipe for another war. That cannot be France's position.\" \" That means we must keep up our…",
-   "id": "7f687bef2f96",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "U.S. Figures Iran Still Has up to 2,500 Missiles, Countering Trump Assertions",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xwlev6/us_figures_iran_still_has_up_to_2500_missiles/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-11-15T03:38:55.000Z",
-   "summary": "The U.S. intelligence community assesses that Iran has between 1,500 and 2,500 missiles in its arsenal, U.S. officials said, leaving Tehran with significant capacity to attack U.S. and allied targets if all-out war resumes. That is a low-confidence assessment, the officials…",
-   "id": "6f29d8c29e88",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1378,24 +1450,6 @@
    "why": "0"
   },
   {
-   "title": "Watch MAGA Host Visibly DIE INSIDE as He Announces TRUMP HUMILIATION!",
-   "url": "https://www.youtube.com/watch?v=yAPdS_o-qg0",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-14T23:30:00.000Z",
-   "summary": "Luke discusses what's next for the Democratic Party. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley Instagram…",
-   "thumb": "https://i2.ytimg.com/vi/yAPdS_o-qg0/hqdefault.jpg",
-   "id": "35f3ba94d98c",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "Sean Duffy: Last Week Tonight with John Oliver (HBO)",
    "url": "https://www.youtube.com/watch?v=GC0dAsRl0ao",
    "source": "Last Week Tonight",
@@ -1409,24 +1463,6 @@
    "summary": "August 23rd, 2026. John Oliver discusses Transportation Secretary Sean Duffy’s latest and strangest attempt at becoming a reality TV star. Subscribe to the #lastweektonight YouTube channel for more almost news as it almost happens: www.youtube.com/lastweektonight Or find us on…",
    "thumb": "https://i4.ytimg.com/vi/GC0dAsRl0ao/hqdefault.jpg",
    "id": "43285ed314cd",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "S*X LEAK Rocks WHITE HOUSE, Calls for RESIGNATION!",
-   "url": "https://www.youtube.com/watch?v=Gnx85LnaYDI",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-14T18:30:34.000Z",
-   "summary": "Luke discusses Jensen Huang's controversy. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley Instagram -…",
-   "thumb": "https://i4.ytimg.com/vi/Gnx85LnaYDI/hqdefault.jpg",
-   "id": "d08e27e3ed2c",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1984,23 +2020,6 @@
    "why": "0"
   },
   {
-   "title": "10 MORE Games That AGED LIKE FINE WINE",
-   "url": "https://www.youtube.com/watch?v=sgoqq6LJ1FY",
-   "source": "GameRanx",
-   "feedId": "yt-gameranx",
-   "type": "video",
-   "tags": [
-    "gaming"
-   ],
-   "published": "2026-11-11T16:32:42.000Z",
-   "summary": "Some games truly age like a fine wine. Here are some brilliant ones we think are still worth replaying. Subscribe for more: https://www.youtube.com/gameranxTV?sub_confirmation=1 0:00 Intro 1:13 Bloodborne 3:54 BioShock Series 6:47 Burnout Series 8:44 Borderlands 2 11:02…",
-   "thumb": "https://i4.ytimg.com/vi/sgoqq6LJ1FY/hqdefault.jpg",
-   "id": "b72b7d50f745",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "Deutschlands verbotene Insel",
    "url": "https://www.youtube.com/watch?v=NFHGtAS8Su4",
    "source": "Simplicissimus",
@@ -2068,25 +2087,6 @@
    "summary": "Andy Burnham and Kemi Badenoch return to the despatch box to face off at another session of PMQs. Like PoliticsJOE? We need your support: https://www.patreon.com/PoliticsJOE",
    "thumb": "https://i2.ytimg.com/vi/57MWYDefFuo/hqdefault.jpg",
    "id": "02c717e69ca8",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Islam or Christianity: Which Makes Sense of Reality? | Fearless Truth vs Waleed Naeem",
-   "url": "https://www.youtube.com/watch?v=_YkJAdYNCSc",
-   "source": "Modern-Day Debate",
-   "feedId": "yt-modern-day-debate",
-   "type": "video",
-   "tags": [
-    "debates",
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-10T18:52:05.000Z",
-   "summary": "Huge thank you to our DEBATECON 9 sponsors including: Revival of the Anointed's Rule: https://revivingtheroar.org/ Apologetics Ark: https://www.apologeticsark.com/links @UncensoredAmerica Yonaguni International Cuisine (Aguadilla, Puerto Rico):…",
-   "thumb": "https://i4.ytimg.com/vi/_YkJAdYNCSc/hqdefault.jpg",
-   "id": "07eb809928ef",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2614,26 +2614,7 @@
    "score": 0,
    "matched": [],
    "why": "0"
-  },
-  {
-   "title": "DAYTONA BEACH TRUMP RALLY",
-   "url": "https://www.youtube.com/watch?v=ncvy2LRGoMw",
-   "source": "The Good Liars",
-   "feedId": "yt-the-good-liars",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "politics",
-    "debates"
-   ],
-   "published": "2026-11-02T21:15:07.000Z",
-   "summary": "The Good Liars Talk Show! Featuring interviews from the Daytona Beach Trump rally featuring not one, but TWO Good Liars. Join this channel to get access to perks: https://www.youtube.com/channel/UCUNOwz9KTDIhhTTN3_ptUDA/join https://linktr.ee/thegoodliars",
-   "thumb": "https://i3.ytimg.com/vi/ncvy2LRGoMw/hqdefault.jpg",
-   "id": "8c911b21571c",
-   "score": 0,
-   "matched": [],
-   "why": "0"
   }
  ],
- "contentHash": "c127634da57a"
+ "contentHash": "4bb4ad7d476d"
 }
