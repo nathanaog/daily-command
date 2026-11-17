@@ -1,17 +1,17 @@
 {
- "generated": "2026-11-17T03:58:17.859Z",
+ "generated": "2026-11-17T16:12:01.447Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
-  "ok": 48,
-  "items": 106,
+  "ok": 49,
+  "items": 110,
   "duplicatesMerged": 0,
   "lengthsKnown": 2,
-  "lengthLookups": 99,
-  "lengthFailures": 99,
+  "lengthLookups": 100,
+  "lengthFailures": 100,
   "lengthVia": "video pages",
   "lengthFailReasons": {
-   "no length on page": 99
+   "no length on page": 100
   }
  },
  "feeds": [
@@ -215,7 +215,7 @@
    "name": "TLDR News",
    "type": "youtube",
    "status": "ok",
-   "count": 3,
+   "count": 4,
    "resolved": {
     "channelId": "UCSMqateX8OA2s1wsOR2EgJA",
     "title": "TLDR News",
@@ -423,7 +423,7 @@
    "name": "Kill Tony",
    "type": "youtube",
    "status": "ok",
-   "count": 5,
+   "count": 4,
    "resolved": {
     "channelId": "UCwzCMiicL-hBUzyjWiJaseg",
     "title": "Kill Tony",
@@ -514,7 +514,7 @@
    "name": "How Money Works",
    "type": "youtube",
    "status": "ok",
-   "count": 1,
+   "count": 2,
    "resolved": {
     "channelId": "UCkCGANrihzExmu9QiqZpPlQ",
     "title": "How Money Works",
@@ -630,19 +630,20 @@
    "id": "rd-productmanagement",
    "name": "r/productmanagement",
    "type": "reddit",
-   "status": "waiting",
-   "count": 0,
-   "lastOk": "2026-11-16T06:44:20.927Z",
-   "note": "not its turn this run"
+   "status": "ok",
+   "count": 3,
+   "url": "https://www.reddit.com/r/productmanagement/top/.rss?t=day"
   },
   {
    "id": "rd-tech",
    "name": "r/tech",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": "2026-11-07T19:04:52.310Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-gaming",
@@ -651,7 +652,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-ukpolitics",
@@ -684,20 +685,19 @@
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "ok",
+   "status": "cached",
    "count": 5,
-   "url": "https://www.reddit.com/r/geopolitics/top/.rss?t=day"
+   "lastOk": "2026-11-17T03:58:17.859Z",
+   "note": "not its turn this run"
   },
   {
    "id": "rd-germany",
    "name": "r/germany",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": "2026-11-12T02:17:58.406Z",
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-unitedkingdom",
@@ -706,13 +706,139 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   }
  ],
  "items": [
   {
-   "title": "Audience GASPS as MAGA Governor F***S UP On National TV!",
-   "url": "https://www.youtube.com/watch?v=yhwHU57GMX0",
+   "title": "Russell Brand faces ban on communicating with wife",
+   "url": "https://www.youtube.com/watch?v=6vNT-qZIdiQ",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-17T16:08:24.000Z",
+   "summary": "Shelagh Fogarty is joined by LBC's crime correspondent Andy Hughes as Russell Brand faces a ban on communications with his wife, Laura, while officials investigate his 'appalling' statement from jail. The disgraced comedian is serving a 10-and-a-half year prison sentence after…",
+   "thumb": "https://i3.ytimg.com/vi/6vNT-qZIdiQ/hqdefault.jpg",
+   "id": "0f434d76b77a",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Why Britain Can't Stop Talking About Class with Ipsos",
+   "url": "https://www.youtube.com/watch?v=u0oLy_38-f4",
+   "source": "PoliticsJOE",
+   "feedId": "yt-politicsjoe",
+   "type": "video",
+   "tags": [
+    "comedy"
+   ],
+   "published": "2026-11-17T15:27:54.000Z",
+   "summary": "What does it actually mean to be working class in Britain today? And can you ever really change your class? Richie Jones, Chief Client Officer at Ipsos, joins us to unpack the findings of new research into Britain's relationship with social class, drawing on four decades of…",
+   "thumb": "https://i2.ytimg.com/vi/u0oLy_38-f4/hqdefault.jpg",
+   "id": "f101433ba4ba",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "'Zero chance' Epstein died by suicide, says forensic expert",
+   "url": "https://www.youtube.com/watch?v=ee4EGaQZX-Q",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-17T15:05:46.000Z",
+   "summary": "Lewis Goodall joins Shelagh Fogarty as forensic expert Michael Freeman suggests that the death of Jeffrey Epstein was homicide, not suicide. The convicted sex offender was found dead in his cell at the Metropolitan Correctional Center in New York on 10 August 2019, while…",
+   "thumb": "https://i2.ytimg.com/vi/ee4EGaQZX-Q/hqdefault.jpg",
+   "id": "2ae95cb2c3a8",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Controller Made Of Stone?",
+   "url": "https://www.reddit.com/r/ProductManagement/comments/1xym33l/controller_made_of_stone/",
+   "source": "r/productmanagement",
+   "feedId": "rd-productmanagement",
+   "type": "post",
+   "tags": [
+    "product"
+   ],
+   "published": "2026-11-17T14:38:36.000Z",
+   "summary": "I've been thinking a lot about how to make a controller truly premium, but this idea really caught my attention—the image is just a concept art (not AI). The plan is to use a full stone-resin composite for the casing and all the buttons. Do you think there would be a demand for…",
+   "id": "7e0974746533",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Wie die AfD versucht, Druck auf Schulen zu machen | rabbit hole",
+   "url": "https://www.youtube.com/watch?v=a4pBg9erais",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-17T14:30:29.000Z",
+   "summary": "Pinke Haare, Regenbogenflagge und Ikkimel im Unterricht – auf Social Media gibt es viel Aufregung über vermeintlich „linke Lehrer“. In den Kommentarspalten liest man immer wieder den gleichen Vorwurf: „Lehrer müssen neutral sein!“ Aber stimmt das überhaupt? Wer den Begriff…",
+   "thumb": "https://i2.ytimg.com/vi/a4pBg9erais/hqdefault.jpg",
+   "id": "29c3c97c5988",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Serbiens neues Parlament kommt erstmals zusammen – wie geht es jetzt weiter?",
+   "url": "https://www.youtube.com/watch?v=RIZvM9amSyg",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-17T14:29:21.000Z",
+   "summary": "140 Politik-Neulinge sind heute in die serbische Nationalversammlung eingezogen. Die Vertreter:innen der Studentischen Liste bilden die größte Fraktion im neuen Parlament, das insgesamt 250 Sitze hat. Sie haben also eine große Mehrheit. Mehr zum Thema:…",
+   "thumb": "https://i3.ytimg.com/vi/RIZvM9amSyg/hqdefault.jpg",
+   "id": "e705bda2e7d7",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Why is Anthropic's Business Model So... Strange?",
+   "url": "https://www.youtube.com/watch?v=FhVbxweMaWM",
+   "source": "How Money Works",
+   "feedId": "yt-how-money-works",
+   "type": "video",
+   "tags": [
+    "finance",
+    "business",
+    "listen"
+   ],
+   "published": "2026-11-17T14:09:12.000Z",
+   "summary": "Thanks to Monarch for partnering with me! Start your free trial and get 50% off your first year of total money clarity using my link https://monarchmoney.yt.link/VomI7sD or code hmw50 for 50% Off Monarch Core tier. ----- Plain Bagel's Analysis of Anthropic S1:…",
+   "thumb": "https://i3.ytimg.com/vi/FhVbxweMaWM/hqdefault.jpg",
+   "id": "51e4364b3be5",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "MAGA Star’s MOST HUMILIATING INTERVIEW Ever!",
+   "url": "https://www.youtube.com/watch?v=3PVml8L-vJw",
    "source": "Luke Beasley",
    "feedId": "yt-luke-beasley",
    "type": "video",
@@ -720,10 +846,86 @@
     "politics",
     "listen"
    ],
-   "published": "2026-11-17T03:55:02.000Z",
-   "summary": "Luke discusses Sarah Huckabee Sanders o n Bill Maher's show. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
-   "thumb": "https://i2.ytimg.com/vi/yhwHU57GMX0/hqdefault.jpg",
-   "id": "3d00c7e27350",
+   "published": "2026-11-17T14:00:34.000Z",
+   "summary": "Luke discusses Benny Johnson's brutally wrong prediction. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
+   "thumb": "https://i4.ytimg.com/vi/3PVml8L-vJw/hqdefault.jpg",
+   "id": "def26dbdf666",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Angriff auf die Krim-Brücke: Warum diese Verbindung für Russland so wichtig ist",
+   "url": "https://www.youtube.com/watch?v=Y4agJMp9uDA",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-17T13:43:20.000Z",
+   "summary": "Das ukrainische Militär hat offenbar einen Teil der Krim-Brücke zerstört. Fotos und Videos zeigen, dass einer der beiden Brückenbögen eingestürzt ist. Die Verbindung auf die Krim war stets ein Prestigeprojekt Putins. Mehr Informationen zu diesem Thema:…",
+   "thumb": "https://i2.ytimg.com/vi/Y4agJMp9uDA/hqdefault.jpg",
+   "id": "f9e6b5df4fbb",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Verfassungskrise in Polen: Machtkampf der politischen Lager um die Justiz",
+   "url": "https://www.youtube.com/watch?v=oSXb--nHhgQ",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-17T12:24:59.000Z",
+   "summary": "Im Streit um das Verfassungsgericht in Polen will die Generalversammlung der Richter darüber entscheiden, ob der Schutz vor Strafverfolgung für den suspendierten Gerichtspräsidenten aufgehoben wird. Entsprechende Anträge hat Generalstaatsanwalt und Justizminister Waldemar Jurek…",
+   "thumb": "https://i4.ytimg.com/vi/oSXb--nHhgQ/hqdefault.jpg",
+   "id": "1ed5ee6de88b",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Koalitionsausschuss: Warum es heute für Schwarz-Rot um viel geht",
+   "url": "https://www.youtube.com/watch?v=dtt8S379PF4",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-17T11:49:12.000Z",
+   "summary": "Mit jedem Tag, den das Jahresende näher rückt, wächst der Druck auf die Bundesregierung. Und diesen Druck hat sich Schwarz-Rot selbst eingebrockt, denn bis zum Jahresende hatte die Koalition noch viel vor. Die Stromsteuer soll gesenkt, wenn möglich auch die Kalte Progression…",
+   "thumb": "https://i1.ytimg.com/vi/dtt8S379PF4/hqdefault.jpg",
+   "id": "99d1464bd201",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Is Burnham A Radical PM?",
+   "url": "https://www.youtube.com/watch?v=XaLeXBge9Ks",
+   "source": "TLDR News",
+   "feedId": "yt-tldr-news",
+   "type": "video",
+   "tags": [
+    "news",
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-17T10:00:05.000Z",
+   "summary": "Take back your privacy - start using Proton Mail for free: http://proton.me/tldr Andymonium podcast: youtube.com/@TLDRpodcasts In this video, we’re going to explore the case that Burnham is a radical, before moving onto the counter point that he might actually fall down the…",
+   "thumb": "https://i1.ytimg.com/vi/XaLeXBge9Ks/hqdefault.jpg",
+   "id": "30c50e97f8f9",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -763,61 +965,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "KT #794 - CHRIS O'CONNOR + TOMMY POPE (DALLAS)",
-   "url": "https://www.youtube.com/watch?v=1rJeSuXEiBk",
-   "source": "Kill Tony",
-   "feedId": "yt-kill-tony",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "standup",
-    "listen"
-   ],
-   "published": "2026-11-17T02:00:07.000Z",
-   "summary": "Chris O'Connor, Tommy Pope, Pat O'Neill, Myles Johnson, Martin Phillips, D Madness, Michael A. Gonzales, Jon Deas, Matthew Muehling, Grooveline Horns, Joe White, Troy Conrad, Monica Parciak, Colt Mcneely, Nathan Poling, Steve Glass, Tony Hinchcliffe, Brian Redban - RECORDED–…",
-   "thumb": "https://i2.ytimg.com/vi/1rJeSuXEiBk/hqdefault.jpg",
-   "id": "6d5facb8e925",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Boebert On VERGE OF TEARS, Posts THIS VIDEO after ELECTION LOSS!",
-   "url": "https://www.youtube.com/watch?v=ryZgPG8CvnU",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-17T01:55:32.000Z",
-   "summary": "Luke discusses Lauren Boebert reflecting on her tenure in Congress. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
-   "thumb": "https://i3.ytimg.com/vi/ryZgPG8CvnU/hqdefault.jpg",
-   "id": "d36e473856a0",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Fed Up MAGA Host SNAPS at Trump Admin",
-   "url": "https://www.youtube.com/watch?v=8bgRDJyyl04",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-16T23:55:08.000Z",
-   "summary": "Luke discusses JD Vance being confronted over the FAA mishap. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
-   "thumb": "https://i1.ytimg.com/vi/8bgRDJyyl04/hqdefault.jpg",
-   "id": "eb808974351d",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Exclusive: US intel indicates Iran developing plans to potentially detonate a dirty bomb in Washington, sources say",
    "url": "https://www.reddit.com/r/geopolitics/comments/1xy52wv/exclusive_us_intel_indicates_iran_developing/",
    "source": "r/geopolitics",
@@ -830,24 +977,6 @@
    "published": "2026-11-16T23:42:46.000Z",
    "summary": "New US intelligence indicates that Iran is developing plans to target senior Trump administration officials by detonating a so-called dirty bomb or a chemical weapon in Washington, DC, even as officials continue to debate whether Iran can or will attempt to execute such a plot,…",
    "id": "41c3bc91bdf8",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "OMG: BOMBSHELL ON EPSTEIN’S DEATH!",
-   "url": "https://www.youtube.com/watch?v=jQwrHuicbnY",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-16T21:55:24.000Z",
-   "summary": "Luke discusses a recent NYT piece on Epstein. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley Instagram -…",
-   "thumb": "https://i3.ytimg.com/vi/jQwrHuicbnY/hqdefault.jpg",
-   "id": "0a67bc137304",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
@@ -870,79 +999,6 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Bodycam Zombie Game is INSANE",
-   "url": "https://www.youtube.com/watch?v=qa3vZLNrmU0",
-   "source": "GameRanx",
-   "feedId": "yt-gameranx",
-   "type": "video",
-   "tags": [
-    "gaming"
-   ],
-   "published": "2026-11-16T21:18:24.000Z",
-   "summary": "Bodycam's newest update finally brings the zombie mode into the full game. How is it? Let's talk.",
-   "thumb": "https://i2.ytimg.com/vi/qa3vZLNrmU0/hqdefault.jpg",
-   "id": "76147c77860e",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "tagesthemen 21:32 Uhr, 16.11.2026",
-   "url": "https://www.youtube.com/watch?v=kUt58HzOe8A",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-16T21:01:05.000Z",
-   "summary": "tagesthemen 21:32 Uhr Deutschland und vier weitere europäische Länder planen Abschiebezentrum in Ruanda, Branche in Schwierigkeiten: Welche Zukunft für Stahl aus Deutschland?, Weitere Meldungen im Überblick https://www.tagesschau.de",
-   "thumb": "https://i4.ytimg.com/vi/kUt58HzOe8A/hqdefault.jpg",
-   "id": "39ac57c2010b",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "How the UK ended up leaving the EU | James O’Brien - The Whole Show",
-   "url": "https://www.youtube.com/watch?v=9dSYIHPY0wg",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-16T20:00:22.000Z",
-   "summary": "This is a catch-up version of James O'Brien's live, daily show on LBC Radio from the 16th of November 2026. Listen to the full show on the all-new LBC App: https://app.af.lbc.co.uk/btnc/thenewlbcapp #jamesobrien #politics #LBC LBC is the home of live debate around news and…",
-   "thumb": "https://i2.ytimg.com/vi/9dSYIHPY0wg/hqdefault.jpg",
-   "id": "d7ef967e6ce0",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Vom Vampir zum Agenten: Robert Pattinson beerbt Daniel Craig",
-   "url": "https://www.youtube.com/watch?v=tX5X8qcdtTg",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-16T19:37:20.000Z",
-   "summary": "Unter Expert:innen war er als heißer Favorit gehandelt worden. Nun steht es auch offiziell fest: Robert Pattinson wird neuer 007. Der nächste James-Bond-Film wird der erste unter der Federführung von Amazon. Mehr dazu:…",
-   "thumb": "https://i1.ytimg.com/vi/tX5X8qcdtTg/hqdefault.jpg",
-   "id": "3237399784e9",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Britain could face Ireland genocide claim under new definition",
    "url": "https://www.reddit.com/r/geopolitics/comments/1xxyuxt/britain_could_face_ireland_genocide_claim_under/",
    "source": "r/geopolitics",
@@ -960,42 +1016,162 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "tagesschau 20:00 Uhr, 16.11.2026",
-   "url": "https://www.youtube.com/watch?v=IghaA_ROuDQ",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
+   "title": "Audience GASPS as MAGA Governor F***S UP On National TV!",
+   "url": "https://www.youtube.com/watch?v=yhwHU57GMX0",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
    "type": "video",
    "tags": [
-    "german",
-    "news",
+    "politics",
     "listen"
    ],
-   "published": "2026-11-16T19:33:32.000Z",
-   "summary": "Die 20-Uhr-Ausgabe der tagesschau im Livestream und alle Videos der tagesschau auf https://tagesschau.de Themen der tagesschau-Sendung: 00:00 Guten Abend 00:21 Deutschland und vier andere EU-Staaten planen Abschiebezentrum in Ruanda 04:01 Gegenseitige Angriffe zwischen Russland…",
-   "thumb": "https://i2.ytimg.com/vi/IghaA_ROuDQ/hqdefault.jpg",
-   "id": "a9bb323b5ef8",
-   "score": 1,
+   "published": "2026-11-17T03:55:02.000Z",
+   "summary": "Luke discusses Sarah Huckabee Sanders o n Bill Maher's show. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
+   "thumb": "https://i2.ytimg.com/vi/yhwHU57GMX0/hqdefault.jpg",
+   "id": "3d00c7e27350",
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
+   "why": "0"
   },
   {
-   "title": "Wenn Antibiotika versagen: Verliert die Medizin den Kampf gegen Keime?",
-   "url": "https://www.youtube.com/watch?v=_GFdLuYUPyQ",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
+   "title": "KT #794 - CHRIS O'CONNOR + TOMMY POPE (DALLAS)",
+   "url": "https://www.youtube.com/watch?v=1rJeSuXEiBk",
+   "source": "Kill Tony",
+   "feedId": "yt-kill-tony",
    "type": "video",
    "tags": [
-    "german",
-    "news",
+    "comedy",
+    "standup",
     "listen"
    ],
-   "published": "2026-11-16T18:38:49.000Z",
-   "summary": "Die Expert:innen der WHO warnen vor einem gefährlichen Trend: Immer mehr Medikamente verlieren aufgrund von Resistenzen ihre Wirkkraft. Zudem sieht die Weltgesundheitsorganisation Nachholbedarf beim Infektionsschutz. Eine Entbindung oder eine Routine-OP können lebensgefährlich…",
-   "thumb": "https://i4.ytimg.com/vi/_GFdLuYUPyQ/hqdefault.jpg",
-   "id": "8f3ac7a4b350",
-   "score": 1,
+   "published": "2026-11-17T02:00:07.000Z",
+   "summary": "Chris O'Connor, Tommy Pope, Pat O'Neill, Myles Johnson, Martin Phillips, D Madness, Michael A. Gonzales, Jon Deas, Matthew Muehling, Grooveline Horns, Joe White, Troy Conrad, Monica Parciak, Colt Mcneely, Nathan Poling, Steve Glass, Tony Hinchcliffe, Brian Redban - RECORDED–…",
+   "thumb": "https://i2.ytimg.com/vi/1rJeSuXEiBk/hqdefault.jpg",
+   "id": "6d5facb8e925",
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
+   "why": "0"
+  },
+  {
+   "title": "Boebert On VERGE OF TEARS, Posts THIS VIDEO after ELECTION LOSS!",
+   "url": "https://www.youtube.com/watch?v=ryZgPG8CvnU",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-17T01:55:32.000Z",
+   "summary": "Luke discusses Lauren Boebert reflecting on her tenure in Congress. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
+   "thumb": "https://i3.ytimg.com/vi/ryZgPG8CvnU/hqdefault.jpg",
+   "id": "d36e473856a0",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Fed Up MAGA Host SNAPS at Trump Admin",
+   "url": "https://www.youtube.com/watch?v=8bgRDJyyl04",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-16T23:55:08.000Z",
+   "summary": "Luke discusses JD Vance being confronted over the FAA mishap. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
+   "thumb": "https://i1.ytimg.com/vi/8bgRDJyyl04/hqdefault.jpg",
+   "id": "eb808974351d",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "OMG: BOMBSHELL ON EPSTEIN’S DEATH!",
+   "url": "https://www.youtube.com/watch?v=jQwrHuicbnY",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-16T21:55:24.000Z",
+   "summary": "Luke discusses a recent NYT piece on Epstein. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley Instagram -…",
+   "thumb": "https://i3.ytimg.com/vi/jQwrHuicbnY/hqdefault.jpg",
+   "id": "0a67bc137304",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Only PM at a market leader, effectively CPO without the title. How do I get the most out of it before it burns me out?",
+   "url": "https://www.reddit.com/r/ProductManagement/comments/1xy2fgf/only_pm_at_a_market_leader_effectively_cpo/",
+   "source": "r/productmanagement",
+   "feedId": "rd-productmanagement",
+   "type": "post",
+   "tags": [
+    "product"
+   ],
+   "published": "2026-11-16T21:51:30.000Z",
+   "summary": "Hey all, I’m looking for advice from anyone who’s been the only PM at a legacy company. Situation I have ~2.5 years of PM experience and recently joined a local company that’s the clear leader in its market (a few million MAU). I’m the only PM there, and I own: The website iOS…",
+   "id": "09fca8f394dc",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Bodycam Zombie Game is INSANE",
+   "url": "https://www.youtube.com/watch?v=qa3vZLNrmU0",
+   "source": "GameRanx",
+   "feedId": "yt-gameranx",
+   "type": "video",
+   "tags": [
+    "gaming"
+   ],
+   "published": "2026-11-16T21:18:24.000Z",
+   "summary": "Bodycam's newest update finally brings the zombie mode into the full game. How is it? Let's talk.",
+   "thumb": "https://i2.ytimg.com/vi/qa3vZLNrmU0/hqdefault.jpg",
+   "id": "76147c77860e",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "Display Roadmap Internally",
+   "url": "https://www.reddit.com/r/ProductManagement/comments/1xxzjx6/display_roadmap_internally/",
+   "source": "r/productmanagement",
+   "feedId": "rd-productmanagement",
+   "type": "post",
+   "tags": [
+    "product"
+   ],
+   "published": "2026-11-16T20:01:09.000Z",
+   "summary": "We want to display our roadmap internally, but not really finding a great way to do it. We really want to do whatever possible to make it harder for someone to share it, copy it, screenshot it, etc. Knowing these are not 100% preventable, but we don't want to make it easy. Our…",
+   "id": "22268b849e5f",
+   "score": 0,
+   "matched": [],
+   "why": "0"
+  },
+  {
+   "title": "How the UK ended up leaving the EU | James O’Brien - The Whole Show",
+   "url": "https://www.youtube.com/watch?v=9dSYIHPY0wg",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-16T20:00:22.000Z",
+   "summary": "This is a catch-up version of James O'Brien's live, daily show on LBC Radio from the 16th of November 2026. Listen to the full show on the all-new LBC App: https://app.af.lbc.co.uk/btnc/thenewlbcapp #jamesobrien #politics #LBC LBC is the home of live debate around news and…",
+   "thumb": "https://i2.ytimg.com/vi/9dSYIHPY0wg/hqdefault.jpg",
+   "id": "d7ef967e6ce0",
+   "score": 0,
+   "matched": [],
+   "why": "0"
   },
   {
    "title": "Is Muhammad Ethical? | Apostate Prophet Vs Nadir Ahmed",
@@ -1012,9 +1188,9 @@
    "summary": "Huge thank you to our DEBATECON 9 sponsors including: Revival of the Anointed's Rule: https://revivingtheroar.org/ Apologetics Ark: https://www.apologeticsark.com/links @UncensoredAmerica Yonaguni International Cuisine (Aguadilla, Puerto Rico):…",
    "thumb": "https://i2.ytimg.com/vi/qWKt-X1lhEc/hqdefault.jpg",
    "id": "a9d9267126ce",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
+   "why": "0"
   },
   {
    "title": "They Got Her!",
@@ -1029,9 +1205,9 @@
    "summary": "Internet was collectively shocked when Sarah Smalls, a South Carolina caregiver not only failed to tell the man's daughter that he has pass away but has also took over his house before his dismiss for 5 US dollars. We have since gotten an update to this crazy story.…",
    "thumb": "https://i2.ytimg.com/vi/-8GTSWN53FU/hqdefault.jpg",
    "id": "bfc65a8fe98f",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
+   "why": "0"
   },
   {
    "title": "Why is Reform's Zia Yusuf fighting a Tory in Piddington?",
@@ -1046,28 +1222,9 @@
    "summary": "Zia Yusuf and Chris Philp found themselves at the same press conference in the village of Piddington on Friday. They were meant to join villagers in protest of plans to house 1200 asylum seekers at the nearby MoD Bicester, but spectacle unfolded after Yusuf, unable to resist a…",
    "thumb": "https://i4.ytimg.com/vi/oerHiZLKPj8/hqdefault.jpg",
    "id": "ed5bfcc808fd",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Asyl-Deal mit Ruanda: Wohin schickt Europa künftig Geflüchtete?",
-   "url": "https://www.youtube.com/watch?v=zZm4uSZpKTY",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-16T17:16:44.000Z",
-   "summary": "Fünf EU-Staaten, darunter Deutschland, planen für das kommende Jahr die Eröffnung des ersten Abschiebezentrums in Ruanda. Dorthin sollen Asylbewerber:innen gebracht werden, die nicht in ihre Herkunftsländer abgeschoben werden können. Mehr Informationen:…",
-   "thumb": "https://i3.ytimg.com/vi/zZm4uSZpKTY/hqdefault.jpg",
-   "id": "60619ce9848d",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
+   "why": "0"
   },
   {
    "title": "Megan Turns DIY Crafts Into a Million-Dollar Business | Shark Tank US | Shark Tank Global",
@@ -1083,9 +1240,9 @@
    "summary": "Megan Pando enters the Tank seeking $150,000 for 10% of Makers Social, an innovative DIY project bar where guests can enjoy cocktails while creating everything from leather wallets to concrete planters. From Season 17, Episode 9 Watch Shark Tank US Now:…",
    "thumb": "https://i1.ytimg.com/vi/tDaFwWitCFo/hqdefault.jpg",
    "id": "21adade973d9",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
+   "why": "0"
   },
   {
    "title": "'This is unacceptable': LBC callers react to Russell Brand's prison message",
@@ -1101,9 +1258,9 @@
    "summary": "Russell Brand has claimed his innocence in a message prison, delivered by his wife Laura. Laura Gallacher shared a message from the rapist on their weekly YouTube podcast called Sunday Service. Brand has just served the first week of his 10-and-a-half-year prison sentence for…",
    "thumb": "https://i4.ytimg.com/vi/Squ6NwJjxg4/hqdefault.jpg",
    "id": "50fff1e97da0",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
+   "why": "0"
   },
   {
    "title": "This hot dog is legally required to exist",
@@ -1119,9 +1276,9 @@
    "summary": "Click here to check out Huel: https://uk.huel.com/CHRIS10 and use code CHRIS10 for £10 off £60+. Minimum spend required. Offer valid for 30 days. New customers only. #ad Patreon: https://www.patreon.com/c/ChrisSpargo Ko-fi: https://ko-fi.com/chrisspargo 1992 motorway services…",
    "thumb": "https://i4.ytimg.com/vi/GTanC-v1J-c/hqdefault.jpg",
    "id": "2b605a1eb35a",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
+   "why": "0"
   },
   {
    "title": "The chances of being surprised by a giant are low, but not zero.",
@@ -1136,9 +1293,9 @@
    "summary": "Carrying English processional giants is more difficult (and more painful) than I thought.| 🔐 AD: Keep your personal data safe with Incogni: https://incogni.com/tomscott | 🗺️ England series map: https://www.tomscott.com/england/ 🟥 MORE FROM TOM: https://www.tomscott.com/ (you…",
    "thumb": "https://i4.ytimg.com/vi/sdORrH7d2ug/hqdefault.jpg",
    "id": "185d5eb417f6",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
+   "why": "0"
   },
   {
    "title": "Russell Brand insists he is innocent: Wife Laura reads statement",
@@ -1172,24 +1329,6 @@
    "summary": "Will they take my offer? Go to https://surfshark.com/pleasantgreen or use code PLEASANTGREEN at checkout to get 4 extra months of Surfshark VPN!",
    "thumb": "https://i2.ytimg.com/vi/Qd_EABZKcBI/hqdefault.jpg",
    "id": "2f7753c93794",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Another alleged Russell Brand victim speaks out",
-   "url": "https://www.youtube.com/watch?v=wTYonfh9Pmg",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-16T10:00:53.000Z",
-   "summary": "Russell Brand has been moved to a category C prison known to host a large variety of extra-curricular activities, according to reports. Nick Ferrari is joined by Mia Latter, another alleged victim of Russell Brand, who condemns his move to a 'cushy' prison. She brands it 'a…",
-   "thumb": "https://i4.ytimg.com/vi/wTYonfh9Pmg/hqdefault.jpg",
-   "id": "d9bf5f7a0d56",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1231,24 +1370,6 @@
    "why": "0",
    "durationSec": 2610,
    "duration": "43:30"
-  },
-  {
-   "title": "Zelenskyy’s Face SAYS IT ALL Next to Kushner",
-   "url": "https://www.youtube.com/watch?v=tO5JwHDd4ms",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-16T02:30:08.000Z",
-   "summary": "Luke discusses the latest update on the Russia/Ukraine war. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
-   "thumb": "https://i1.ytimg.com/vi/tO5JwHDd4ms/hqdefault.jpg",
-   "id": "72e804293f11",
-   "score": 0,
-   "matched": [],
-   "why": "0"
   },
   {
    "title": "This Is Corruption & You're Paying For It",
@@ -1353,24 +1474,6 @@
    "summary": "Jensen Huang took Nvidia from a GPU company to one of the largest companies on the planet, only to have everything crash and burn overnight. What's been reported in the news may not be the full story. In this episode we explore the Nvidia saga from top to bottom. ColdFusion…",
    "thumb": "https://i1.ytimg.com/vi/PptRrzYY61w/hqdefault.jpg",
    "id": "fe57481a788a",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "Reform UK told to become ‘more normal’",
-   "url": "https://www.youtube.com/watch?v=VHjKgLWJHCo",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-15T14:00:33.000Z",
-   "summary": "Lewis Goodall takes on Reform's Danny Kruger over the behaviour of Zia Yusuf, and the finances of Nigel Farage, as a party insider said they needed to become 'more normal'. Listen to the full show on the all-new LBC App: https://app.af.lbc.co.uk/btnc/thenewlbcapp #lewisgoodall…",
-   "thumb": "https://i3.ytimg.com/vi/VHjKgLWJHCo/hqdefault.jpg",
-   "id": "d2a2e27c874c",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -1896,7 +1999,7 @@
    "why": "0"
   },
   {
-   "title": "Why AI Can't Take Your Job | How Power Works with John Burn-Murdoch",
+   "title": "Can AI Take Your Job? | How Power Works with John Burn-Murdoch",
    "url": "https://www.youtube.com/watch?v=fBHNcUE10l8",
    "source": "PoliticsJOE",
    "feedId": "yt-politicsjoe",
@@ -2070,23 +2173,6 @@
    "summary": "Go to https://buyraycon.com/coldfusionBC to get up to 50% off! Thanks to Raycon for sponsoring! When a person invents something so pivotal that it changes the course of human history and trillion dollar companies are build on top of your creation, you'd probably be shocked when…",
    "thumb": "https://i3.ytimg.com/vi/FsEbLPqeo7k/hqdefault.jpg",
    "id": "8beda6bc4d03",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
-   "title": "HIGHLIGHTS: Andy Burnham makes Kemi Badenoch look silly at PMQs",
-   "url": "https://www.youtube.com/watch?v=57MWYDefFuo",
-   "source": "PoliticsJOE",
-   "feedId": "yt-politicsjoe",
-   "type": "video",
-   "tags": [
-    "comedy"
-   ],
-   "published": "2026-11-11T13:15:33.000Z",
-   "summary": "Andy Burnham and Kemi Badenoch return to the despatch box to face off at another session of PMQs. Like PoliticsJOE? We need your support: https://www.patreon.com/PoliticsJOE",
-   "thumb": "https://i2.ytimg.com/vi/57MWYDefFuo/hqdefault.jpg",
-   "id": "02c717e69ca8",
    "score": 0,
    "matched": [],
    "why": "0"
@@ -2595,26 +2681,7 @@
    "score": 0,
    "matched": [],
    "why": "0"
-  },
-  {
-   "title": "KT #792 - JIMMY CARR + LUIS J GOMEZ + STEVE RANNAZZISI",
-   "url": "https://www.youtube.com/watch?v=Gm1JAZ1dPTM",
-   "source": "Kill Tony",
-   "feedId": "yt-kill-tony",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "standup",
-    "listen"
-   ],
-   "published": "2026-11-03T06:09:46.000Z",
-   "summary": "Jimmy Carr, Luis J Gomez, Steve Rannazzisi, Pat O'Neill, Dedrick Flynn, Martin Phillips, D Madness, Michael A. Gonzales, Jon Deas, Matthew Muehling, Grooveline Horns, Joe White, Troy Conrad, Monica Colt, Steve Glass, Tony Hinchcliffe, Brian Redban - RECORDED– 10/26/2026 TONY…",
-   "thumb": "https://i4.ytimg.com/vi/Gm1JAZ1dPTM/hqdefault.jpg",
-   "id": "f84f2c6ceba7",
-   "score": 0,
-   "matched": [],
-   "why": "0"
   }
  ],
- "contentHash": "4bb4ad7d476d"
+ "contentHash": "7f14f1932724"
 }
