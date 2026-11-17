@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-17T21:04:23.368Z",
+ "generated": "2026-11-17T21:18:24.368Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
@@ -7,7 +7,7 @@
   "items": 112,
   "duplicatesMerged": 0,
   "lengthsKnown": 103,
-  "lengthLookups": 102,
+  "lengthLookups": 1,
   "lengthFailures": 1,
   "lengthVia": "YouTube Data API",
   "lengthFailReasons": {
@@ -660,18 +660,16 @@
    "status": "waiting",
    "count": 0,
    "lastOk": "2026-11-16T19:40:46.781Z",
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-xbox",
    "name": "r/xbox",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": "2026-11-07T21:52:57.028Z",
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-slaythespire",
@@ -680,7 +678,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-geopolitics",
@@ -689,16 +687,18 @@
    "status": "cached",
    "count": 5,
    "lastOk": "2026-11-17T03:58:17.859Z",
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-germany",
    "name": "r/germany",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": "2026-11-12T02:17:58.406Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-unitedkingdom",
@@ -707,7 +707,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   }
  ],
  "items": [
@@ -733,7 +733,7 @@
    "duration": "5:25"
   },
   {
-   "title": "10 BIGGEST MOMENTS from GTA6's Development",
+   "title": "10 HUGE Moments That Shaped GTA 6",
    "url": "https://www.youtube.com/watch?v=IEtv9pqKcyk",
    "source": "GameRanx",
    "feedId": "yt-gameranx",
@@ -2921,5 +2921,5 @@
    "duration": "2:46"
   }
  ],
- "contentHash": "ee289b6c2e99"
+ "contentHash": "362eb6f533fa"
 }
