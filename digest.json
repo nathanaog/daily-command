@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-18T11:54:30.272Z",
+ "generated": "2026-11-18T20:39:54.169Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
@@ -7,7 +7,7 @@
   "items": 112,
   "duplicatesMerged": 0,
   "lengthsKnown": 103,
-  "lengthLookups": 6,
+  "lengthLookups": 17,
   "lengthFailures": 1,
   "lengthVia": "YouTube Data API",
   "lengthFailReasons": {
@@ -633,7 +633,7 @@
    "status": "cached",
    "count": 3,
    "lastOk": "2026-11-17T16:12:01.447Z",
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-tech",
@@ -642,16 +642,18 @@
    "status": "waiting",
    "count": 0,
    "lastOk": "2026-11-07T19:04:52.310Z",
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-gaming",
    "name": "r/gaming",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-ukpolitics",
@@ -687,18 +689,16 @@
    "status": "cached",
    "count": 5,
    "lastOk": "2026-11-17T03:58:17.859Z",
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-germany",
    "name": "r/germany",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": "2026-11-12T02:17:58.406Z",
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-unitedkingdom",
@@ -707,13 +707,13 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   }
  ],
  "items": [
   {
-   "title": "Warum der digitale Kassenbon kommt",
-   "url": "https://www.youtube.com/watch?v=SR7s_SBTQfY",
+   "title": "Überfordert mit Geld und Aktien: Warum Schüler sich allein gelassen fühlen",
+   "url": "https://www.youtube.com/watch?v=1usAA35fNpg",
    "source": "Tagesschau",
    "feedId": "yt-tagesschau",
    "type": "video",
@@ -722,19 +722,38 @@
     "news",
     "listen"
    ],
-   "published": "2026-11-18T11:09:56.000Z",
-   "summary": "Ende September hat die Bundesregierung entschieden, die Papier-Bon-Pflicht abschaffen zu wollen. Nun wird der Gesetzesentwurf auch im Bundesrat besprochen. Im Einzelhandel stößt das Vorhaben sowohl auf Lob als auch Kritik. Mehr zum Thema:…",
-   "thumb": "https://i4.ytimg.com/vi/SR7s_SBTQfY/hqdefault.jpg",
-   "id": "eacc2d6377ad",
+   "published": "2026-11-18T19:53:46.000Z",
+   "summary": "Was ist ein Zinseszins? Was unterscheidet Aktien und ETFs? Finanzwissen wird im Alltag immer wichtiger. Trotzdem lernen viele Jugendliche in der Schule kaum etwas über Sparen, Schulden und Geldanlagen. Vielmehr zeigen Studien, dass die Verschuldung bei jungen Menschen in…",
+   "thumb": "https://i2.ytimg.com/vi/1usAA35fNpg/hqdefault.jpg",
+   "id": "41a30a4699ac",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 119,
-   "duration": "1:59"
+   "durationSec": 86,
+   "duration": "1:26"
   },
   {
-   "title": "Landkreis Mansfeld-Südharz: Wie der Staat verlassene Häuser verwertet | tagesthemen mittendrin",
-   "url": "https://www.youtube.com/watch?v=qCrZXr0Fwt4",
+   "title": "Not Idris Elba? New James Bond Announced",
+   "url": "https://www.youtube.com/watch?v=4yFVyMuSpDo",
+   "source": "Aberrant preach",
+   "feedId": "yt-aberrant-preach",
+   "type": "video",
+   "tags": [
+    "trash"
+   ],
+   "published": "2026-11-18T19:43:42.000Z",
+   "summary": "Robert Patterson is officially the new 007. But is he made for this? ———————————— Spotify: https://open.spotify.com/artist/6QJIJ6AugqPEFASp1V6zgH Merchandise --- https://www.enkreprinte.com/collections/aba-and-preach INSTAGRAM @aba.atlas @abanpreach Discord:…",
+   "thumb": "https://i1.ytimg.com/vi/4yFVyMuSpDo/hqdefault.jpg",
+   "id": "4d62df2978d3",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 823,
+   "duration": "13:43"
+  },
+  {
+   "title": "tagesschau 20:00 Uhr, 18.11.2026",
+   "url": "https://www.youtube.com/watch?v=qQmFqnqdoEQ",
    "source": "Tagesschau",
    "feedId": "yt-tagesschau",
    "type": "video",
@@ -743,19 +762,19 @@
     "news",
     "listen"
    ],
-   "published": "2026-11-18T11:09:14.000Z",
-   "summary": "Wenn es für Liegenschaften keine Erben gibt oder diese das Erbe ausschlagen, muss der Staat einspringen. Allein in Sachsen-Anhalt passiert das rund 200 Mal im Jahr. Was dann passiert - wir waren bei solch einer Hausbesichtigung dabei. Mehr tagesthemen mittendrin Reportagen…",
-   "thumb": "https://i2.ytimg.com/vi/qCrZXr0Fwt4/hqdefault.jpg",
-   "id": "7339cec80d2a",
+   "published": "2026-11-18T19:31:34.000Z",
+   "summary": "Die 20-Uhr-Ausgabe der tagesschau im Livestream und alle Videos der tagesschau auf https://tagesschau.de Themen der tagesschau-Sendung: 00:00 Guten Abend 00:23 Union und SPD einigen sich auf Kompromiss bei der Stromsteuer 04:19 Bundesverfassungsgericht weist Beschwerde des BSW…",
+   "thumb": "https://i2.ytimg.com/vi/qQmFqnqdoEQ/hqdefault.jpg",
+   "id": "c07a899797e4",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 255,
-   "duration": "4:15"
+   "durationSec": 1014,
+   "duration": "16:54"
   },
   {
-   "title": "Koalition einig bei Stromsteuersenkung – aber wie wird das finanziert?",
-   "url": "https://www.youtube.com/watch?v=pKh0oVQd4Ro",
+   "title": "Voyager 1: Wie lange fliegt die Raumsonde noch durchs Weltall?",
+   "url": "https://www.youtube.com/watch?v=uUy4BBACeGU",
    "source": "Tagesschau",
    "feedId": "yt-tagesschau",
    "type": "video",
@@ -764,19 +783,19 @@
     "news",
     "listen"
    ],
-   "published": "2026-11-18T10:12:27.000Z",
-   "summary": "Einigung im Koalitionsausschuss: Nachdem wochenlang über die Finanzierung diskutiert worden war, haben sich die Spitzen der schwarz-roten Koalition auf die Senkung der Stromsteuer für alle Verbraucherinnen und Verbraucher geeinigt. Doch die Entlastung soll zunächst für ein Jahr…",
-   "thumb": "https://i1.ytimg.com/vi/pKh0oVQd4Ro/hqdefault.jpg",
-   "id": "b65044a57982",
+   "published": "2026-11-18T19:12:33.000Z",
+   "summary": "Seit fast 50 Jahren erkunden die \"Voyager\"-Sonden die Tiefen des Weltraums. Mit einer solchen Lebensdauer hatte niemand gerechnet. Und heute ist \"Voyager 1\" genau einen Lichttag von der Erde entfernt. Große Distanzen vergleicht man in der Astronomie gerne mit der…",
+   "thumb": "https://i2.ytimg.com/vi/uUy4BBACeGU/hqdefault.jpg",
+   "id": "b989ca96597d",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 383,
-   "duration": "6:23"
+   "durationSec": 463,
+   "duration": "7:43"
   },
   {
-   "title": "Andy Burnham speaks to LBC about the EU, NEETs and Russell Brand",
-   "url": "https://www.youtube.com/watch?v=v16z1ezIdYE",
+   "title": "David Lammy's bleak diagnosis for the UK",
+   "url": "https://www.youtube.com/watch?v=DFurJHXLXlc",
    "source": "LBC",
    "feedId": "yt-lbc",
    "type": "video",
@@ -784,19 +803,115 @@
     "politics",
     "listen"
    ],
-   "published": "2026-11-18T08:36:14.000Z",
-   "summary": "Andy Burnham joins LBC'S political editor Natasha Clark to discuss the Milburn report, Russell Brand's latest statement and David Lammy's comments on rejoining the EU. Listen to the full show on the all-new LBC App: https://app.af.lbc.co.uk/btnc/thenewlbcapp #natashaclark…",
-   "thumb": "https://i3.ytimg.com/vi/v16z1ezIdYE/hqdefault.jpg",
-   "id": "1b32b86e4b8c",
+   "published": "2026-11-18T18:46:45.000Z",
+   "summary": "Andrew Marr is joined by Foreign Secretary David Lammy as he calls on Andy Burnham to take the UK back into the EU. Listen to the full show on the all-new LBC App: https://app.af.lbc.co.uk/btnc/thenewlbcapp #andrewmarr #davidlammy #europe #europeanunion #politics #trump…",
+   "thumb": "https://i1.ytimg.com/vi/DFurJHXLXlc/hqdefault.jpg",
+   "id": "a842c74a9c5d",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 575,
-   "duration": "9:35"
+   "durationSec": 662,
+   "duration": "11:02"
   },
   {
-   "title": "MOMA-Reporter: Ein Dorf kümmert sich um seine Alten | ARD Morgenmagazin",
-   "url": "https://www.youtube.com/watch?v=0C2wYZC4_tA",
+   "title": "Fluent in Your Love Language by Boys Who Read (Official Music Video) | MP3 [New Dropout Series]",
+   "url": "https://www.youtube.com/watch?v=74QNqyXUh_c",
+   "source": "Dropout",
+   "feedId": "yt-dropout",
+   "type": "video",
+   "tags": [
+    "comedy"
+   ],
+   "published": "2026-11-18T18:30:10.000Z",
+   "summary": "Here's the official music video for Fluent in Your Love Language by Boys Who Read (Zach Reino, James Tolbert, Jon Matteson, Angela Giarratana, and Paul Robalino) Visit https://watch.dropout.tv/mp3 for full episodes of MP3 Get ready for MP3- Music Presentation 3! Your new…",
+   "thumb": "https://i4.ytimg.com/vi/74QNqyXUh_c/hqdefault.jpg",
+   "id": "5e04a8304c30",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 203,
+   "duration": "3:23"
+  },
+  {
+   "title": "Driving Lesson in Slow German",
+   "url": "https://www.youtube.com/watch?v=svtSFmcX9fo",
+   "source": "Easy German",
+   "feedId": "yt-easy-german",
+   "type": "video",
+   "tags": [
+    "german",
+    "listen"
+   ],
+   "published": "2026-11-18T18:00:06.000Z",
+   "summary": "Practice vocab more effectively with our partner app Seedlang: https://seedlang.com/promotion/seg-320 --- Vielen Dank an Tolga und die Fahrschule Mobil werden in Spandau für die Unterstützung beim Dreh dieses Videos! Tolga könnt ihr hier folgen:…",
+   "thumb": "https://i4.ytimg.com/vi/svtSFmcX9fo/hqdefault.jpg",
+   "id": "8e34827eff6d",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 1069,
+   "duration": "17:49"
+  },
+  {
+   "title": "Labour’s Plan to Get You a Job | Going Deep on the Milburn Report",
+   "url": "https://www.youtube.com/watch?v=Wa2FnZ-RlyA",
+   "source": "PoliticsJOE",
+   "feedId": "yt-politicsjoe",
+   "type": "video",
+   "tags": [
+    "comedy"
+   ],
+   "published": "2026-11-18T17:49:02.000Z",
+   "summary": "The government has promised a major shake-up of how Britain tackles youth unemployment. But will Alan Milburn’s review actually improve the lives of young people or is Labour missing the bigger picture? There are serious questions about whether the plan tackles the causes of…",
+   "thumb": "https://i4.ytimg.com/vi/Wa2FnZ-RlyA/hqdefault.jpg",
+   "id": "02abd520696a",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 2705,
+   "duration": "45:05"
+  },
+  {
+   "title": "Is this a stroke of genius from David Lammy? | James O'Brien - The Whole Show",
+   "url": "https://www.youtube.com/watch?v=9OXwoBg9d84",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-18T17:36:42.000Z",
+   "summary": "David Lammy wants Andy Burnham to put rejoining the European Union in Labour’s next manifesto. James asks whether it could be a vote winner, as callers discuss the political case for rejoining and reflect on the promises made during the Brexit campaign. Plus, after Wayne Rooney…",
+   "thumb": "https://i2.ytimg.com/vi/9OXwoBg9d84/hqdefault.jpg",
+   "id": "86254a60a9a0",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Andrew Yang Reacts to His Viral Debates on Artificial Intelligence | Surrounded Follow-Up",
+   "url": "https://www.youtube.com/watch?v=nbscGy5jcc0",
+   "source": "Jubilee",
+   "feedId": "yt-jubilee",
+   "type": "video",
+   "tags": [
+    "politics",
+    "debates"
+   ],
+   "published": "2026-11-18T17:00:25.000Z",
+   "summary": "Hey you 👈 Wanna be in a Jubilee video? https://bit.ly/be-in-a-video LET’S BE FRIENDS Instagram: https://www.instagram.com/jubileemedia/ TikTok: https://www.tiktok.com/@jubilee?lang=en Website: https://www.jubileemedia.com OUR LOVE + DATING CHANNEL 🍑 YouTube:…",
+   "thumb": "https://i3.ytimg.com/vi/nbscGy5jcc0/hqdefault.jpg",
+   "id": "b45169e06c52",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 1911,
+   "duration": "31:51"
+  },
+  {
+   "title": "tagesschau in Einfacher Sprache 19:00 Uhr, 18.11.2026",
+   "url": "https://www.youtube.com/watch?v=HO4g-FFUSF8",
    "source": "Tagesschau",
    "feedId": "yt-tagesschau",
    "type": "video",
@@ -805,19 +920,58 @@
     "news",
     "listen"
    ],
-   "published": "2026-11-18T08:33:37.000Z",
-   "summary": "In Vrees, in Niedersachsen, sorgt das ganze Dorf dafür, dass seine Alten bleiben können. Niemand soll seine Heimat verlassen müssen, weil er auf Hilfe angewiesen ist. Deswegen gibt es in der 2.000 Einwohner Gemeinde ein eigenes Pflegehaus, eine Tagespflege, Wohnungen mit…",
-   "thumb": "https://i1.ytimg.com/vi/0C2wYZC4_tA/hqdefault.jpg",
-   "id": "8102b8729761",
+   "published": "2026-11-18T16:38:07.000Z",
+   "summary": "tagesschau in Einfacher Sprache 19:00 Uhr Regierung plant weniger Steuern für Strom, Bundestagswahl: BSW scheitert vor Gericht, Wichtiges Treffen von Politikern in China, Jubiläum von Petersdom in Rom, Das Wetter https://www.tagesschau.de",
+   "thumb": "https://i1.ytimg.com/vi/HO4g-FFUSF8/hqdefault.jpg",
+   "id": "5a04136780a1",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 299,
-   "duration": "4:59"
+   "durationSec": 468,
+   "duration": "7:48"
   },
   {
-   "title": "Wer wird neuer FIFA-Boss? /Teure Weihnachtszeit/ KI bei Bewerbungen | \"15 Minuten\"",
-   "url": "https://www.youtube.com/watch?v=GWS1ojifnuw",
+   "title": "Trump-Xi-Putin meeting: Actual business or just a photo-op?",
+   "url": "https://www.youtube.com/watch?v=HUdu3oGIBlg",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-18T16:00:26.000Z",
+   "summary": "Simon Marks joins Shelagh Fogarty to react to Trump, Xi, and Putin's initial meeting at the airport and looks ahead to what the meeting will entail. Listen to the full show on the all-new LBC App: https://app.af.lbc.co.uk/btnc/thenewlbcapp #simonmarks #shelaghfogarty…",
+   "thumb": "https://i1.ytimg.com/vi/HUdu3oGIBlg/hqdefault.jpg",
+   "id": "844dd764f510",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 973,
+   "duration": "16:13"
+  },
+  {
+   "title": "GTA 6 - Before You Buy",
+   "url": "https://www.youtube.com/watch?v=vVVIWEGciKk",
+   "source": "GameRanx",
+   "feedId": "yt-gameranx",
+   "type": "video",
+   "tags": [
+    "gaming"
+   ],
+   "published": "2026-11-18T15:47:51.000Z",
+   "summary": "Grand Theft Auto VI (PS5, Xbox Series X/S) is here. Let's talk about this long awaited game and whether or not it's worth the hype. Subscribe for more: http://youtube.com/gameranxtv ▼▼ Buy GTA6: https://link.amazon/B01cRTYq3 ---follow Jake: https://www.instagram.com/jakebaldino…",
+   "thumb": "https://i3.ytimg.com/vi/vVVIWEGciKk/hqdefault.jpg",
+   "id": "6ad8f4715688",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 1542,
+   "duration": "25:42"
+  },
+  {
+   "title": "400 Jahre Petersdom: Sakralbau feiert Jubiläum",
+   "url": "https://www.youtube.com/watch?v=UjhEGpvC5zg",
    "source": "Tagesschau",
    "feedId": "yt-tagesschau",
    "type": "video",
@@ -826,55 +980,74 @@
     "news",
     "listen"
    ],
-   "published": "2026-11-18T05:22:43.000Z",
-   "summary": "(00:00:41) Themenübersicht (00:01:16) Wahl des neuen FIFA-Präsidenten Wer zieht künftig die Fäden im Weltfußball? Kurz vor der FIFA-Wahl tritt mit Philippe Diallo ein Herausforderer gegen Amtsinhaber Gianni Infantino an. Warum der FIFA-Präsident zu den mächtigsten Personen im…",
-   "thumb": "https://i4.ytimg.com/vi/GWS1ojifnuw/hqdefault.jpg",
-   "id": "eb1f867657b1",
+   "published": "2026-11-18T15:15:12.000Z",
+   "summary": "Heute vor 400 Jahren wurde er geweiht: der Petersdom in Rom. Die Basilika ist noch heute eine der wichtigsten Kirchen der katholischen Christen. Am 18. November 1626 weihte Papst Urban der Achte den Petersdom ein. 120 Jahre war an dem Gotteshaus gebaut worden. Jeden Tag…",
+   "thumb": "https://i2.ytimg.com/vi/UjhEGpvC5zg/hqdefault.jpg",
+   "id": "4f74121ff6e1",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 896,
-   "duration": "14:56"
+   "durationSec": 102,
+   "duration": "1:42"
   },
   {
-   "title": "Vance VISIBLY STUNNED as Host CORNERS HIM!",
-   "url": "https://www.youtube.com/watch?v=zLF2asAFo2I",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
+   "title": "How widespread is support and sympathy for Russell Brand?",
+   "url": "https://www.youtube.com/watch?v=BjTdgMnvW0I",
+   "source": "LBC",
+   "feedId": "yt-lbc",
    "type": "video",
    "tags": [
     "politics",
     "listen"
    ],
-   "published": "2026-11-18T03:50:39.000Z",
-   "summary": "Luke discusses more moments from JD Vance's Fox News interview. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
-   "thumb": "https://i3.ytimg.com/vi/zLF2asAFo2I/hqdefault.jpg",
-   "id": "5f318a0db56b",
+   "published": "2026-11-18T15:00:20.000Z",
+   "summary": "Andy Burnham has condemned Russell Brand's message from jail where he proclaimed his innocence, telling LBC \"we've heard enough from him\". The PM said there must be a \"wider response\" to the Brand case, which saw the disgraced comedian and actor sentenced to 10-and-a-half years…",
+   "thumb": "https://i3.ytimg.com/vi/BjTdgMnvW0I/hqdefault.jpg",
+   "id": "c434b64ebfef",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 1286,
-   "duration": "21:26"
+   "durationSec": 728,
+   "duration": "12:08"
   },
   {
-   "title": "OH SH*T: Leavitt Accidentally EXPOSES TRUMP On National TV!",
-   "url": "https://www.youtube.com/watch?v=6gNXWroZUeA",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
+   "title": "'The White House has questions to answer' | Simon Marks",
+   "url": "https://www.youtube.com/watch?v=rO1-8mwkikw",
+   "source": "LBC",
+   "feedId": "yt-lbc",
    "type": "video",
    "tags": [
     "politics",
     "listen"
    ],
-   "published": "2026-11-18T01:50:09.000Z",
-   "summary": "Luke discusses Karoline Leavitt's latest apperance on Fox News. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
-   "thumb": "https://i3.ytimg.com/vi/6gNXWroZUeA/hqdefault.jpg",
-   "id": "7ebe8bf1a39d",
+   "published": "2026-11-18T14:04:47.000Z",
+   "summary": "Simon Marks joins James O'Brien to discuss the Trump-Xi-Putin summit, the ongoing Nvidia scandal, and the FBI investigation into America's ground stop. 0:00 | Trump-Xi-Putin summit gets underway 9:45 | Trump trades millions in Nvidia shares 17:07 | FBI investigates FAA ground…",
+   "thumb": "https://i3.ytimg.com/vi/rO1-8mwkikw/hqdefault.jpg",
+   "id": "5854d65ff35b",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 1017,
-   "duration": "16:57"
+   "durationSec": 1151,
+   "duration": "19:11"
+  },
+  {
+   "title": "HIGHLIGHTS: Andy Burnham SCHOOLS Kemi Badenoch on Milburn Report at PMQs",
+   "url": "https://www.youtube.com/watch?v=fV4qBDaypeU",
+   "source": "PoliticsJOE",
+   "feedId": "yt-politicsjoe",
+   "type": "video",
+   "tags": [
+    "comedy"
+   ],
+   "published": "2026-11-18T13:13:05.000Z",
+   "summary": "After Tuesday's release of the long-awaited Milburn report, the Prime Minster went head-to-head at the despatch box with the Tory leader. Like PoliticsJOE? We need your support: https://www.patreon.com/PoliticsJOE",
+   "thumb": "https://i3.ytimg.com/vi/fV4qBDaypeU/hqdefault.jpg",
+   "id": "a89d1e9e625d",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 884,
+   "duration": "14:44"
   },
   {
    "title": "Controller Made Of Stone?",
@@ -976,6 +1149,46 @@
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Vance VISIBLY STUNNED as Host CORNERS HIM!",
+   "url": "https://www.youtube.com/watch?v=zLF2asAFo2I",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-18T03:50:39.000Z",
+   "summary": "Luke discusses more moments from JD Vance's Fox News interview. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
+   "thumb": "https://i3.ytimg.com/vi/zLF2asAFo2I/hqdefault.jpg",
+   "id": "5f318a0db56b",
+   "score": 0,
+   "matched": [],
+   "why": "0",
+   "durationSec": 1286,
+   "duration": "21:26"
+  },
+  {
+   "title": "OH SH*T: Leavitt Accidentally EXPOSES TRUMP On National TV!",
+   "url": "https://www.youtube.com/watch?v=6gNXWroZUeA",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-18T01:50:09.000Z",
+   "summary": "Luke discusses Karoline Leavitt's latest apperance on Fox News. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
+   "thumb": "https://i3.ytimg.com/vi/6gNXWroZUeA/hqdefault.jpg",
+   "id": "7ebe8bf1a39d",
+   "score": 0,
+   "matched": [],
+   "why": "0",
+   "durationSec": 1017,
+   "duration": "16:57"
   },
   {
    "title": "MAGA Hosts Go DEAD SILENT as Co-Host EXPOSES THEM On Live TV!",
@@ -1096,26 +1309,6 @@
    "duration": "34:49"
   },
   {
-   "title": "Prison bosses want to ban Russell Brand from communicating with his wife",
-   "url": "https://www.youtube.com/watch?v=LEh7t4MRAAY",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-17T18:00:13.000Z",
-   "summary": "LBC callers react to Russell Brand facing a ban from communicating with his wife Laura while officials investigate his 'appalling' statement from jail. The disgraced comedian is serving a 10-and-a-half year prison sentence after being convicted of rape and three counts of…",
-   "thumb": "https://i1.ytimg.com/vi/LEh7t4MRAAY/hqdefault.jpg",
-   "id": "809e69316574",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 1580,
-   "duration": "26:20"
-  },
-  {
    "title": "Is Anyone Watching This?",
    "url": "https://www.youtube.com/watch?v=82l9C6miBq0",
    "source": "The Onion",
@@ -1155,26 +1348,6 @@
    "duration": "1:35:39"
   },
   {
-   "title": "How GTA 6 is crashing out the world",
-   "url": "https://www.youtube.com/watch?v=O1cILPm20GY",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-17T17:00:04.000Z",
-   "summary": "LBC's Alan Zycinski is in Scotland, the home of Rockstar and Grand Theft Auto, to find out how people are preparing for 'the most anticipated game release in history'. Game experts have estimated that the upcoming Grand Theft Auto 6 could take players an average of 50 hours to…",
-   "thumb": "https://i4.ytimg.com/vi/O1cILPm20GY/hqdefault.jpg",
-   "id": "9c622aef229c",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 479,
-   "duration": "7:59"
-  },
-  {
    "title": "Warum sind japanische Züge so überlegen?",
    "url": "https://www.youtube.com/watch?v=0bYOsIvRGAs",
    "source": "Simplicissimus",
@@ -1193,26 +1366,6 @@
    "why": "0",
    "durationSec": 1694,
    "duration": "28:14"
-  },
-  {
-   "title": "Russell Brand faces ban on communicating with wife",
-   "url": "https://www.youtube.com/watch?v=6vNT-qZIdiQ",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-17T16:08:24.000Z",
-   "summary": "Shelagh Fogarty is joined by LBC's crime correspondent Andy Hughes as Russell Brand faces a ban on communications with his wife, Laura, while officials investigate his 'appalling' statement from jail. The disgraced comedian is serving a 10-and-a-half year prison sentence after…",
-   "thumb": "https://i3.ytimg.com/vi/6vNT-qZIdiQ/hqdefault.jpg",
-   "id": "0f434d76b77a",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 616,
-   "duration": "10:16"
   },
   {
    "title": "Why Britain Can't Stop Talking About Class with Ipsos",
@@ -1234,26 +1387,6 @@
    "duration": "1:14:50"
   },
   {
-   "title": "'Zero chance' Epstein died by suicide, says forensic expert",
-   "url": "https://www.youtube.com/watch?v=ee4EGaQZX-Q",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-17T15:05:46.000Z",
-   "summary": "Lewis Goodall joins Shelagh Fogarty as forensic expert Michael Freeman suggests that the death of Jeffrey Epstein was homicide, not suicide. The convicted sex offender was found dead in his cell at the Metropolitan Correctional Center in New York on 10 August 2019, while…",
-   "thumb": "https://i2.ytimg.com/vi/ee4EGaQZX-Q/hqdefault.jpg",
-   "id": "2ae95cb2c3a8",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 597,
-   "duration": "9:57"
-  },
-  {
    "title": "Why is Anthropic's Business Model So... Strange?",
    "url": "https://www.youtube.com/watch?v=FhVbxweMaWM",
    "source": "How Money Works",
@@ -1265,7 +1398,7 @@
     "listen"
    ],
    "published": "2026-11-17T14:09:12.000Z",
-   "summary": "Thanks to Monarch for partnering with me! Start your free trial and get 50% off your first year of total money clarity using my link https://monarchmoney.yt.link/VomI7sD or code hmw50 for 50% Off Monarch Core tier. ----- Plain Bagel's Analysis of Anthropic S1:…",
+   "summary": "Thanks to Monarch for partnering with me! Start your free trial and get 50% off your first year of total money clarity using my link https://monarchmoney.yt.link/PsGtQbk or code hmw50 for 50% Off Monarch Core tier. ----- Plain Bagel's Analysis of Anthropic S1:…",
    "thumb": "https://i3.ytimg.com/vi/FhVbxweMaWM/hqdefault.jpg",
    "id": "51e4364b3be5",
    "score": 0,
@@ -1506,7 +1639,7 @@
    "duration": "22:09"
   },
   {
-   "title": "Confess to Scamming, Get My Money",
+   "title": "Offering Scammers $100 to Confess!",
    "url": "https://www.youtube.com/watch?v=Qd_EABZKcBI",
    "source": "Pleasant Green",
    "feedId": "yt-pleasant-green",
@@ -1887,44 +2020,6 @@
    "duration": "1:07:23"
   },
   {
-   "title": "NEW GTA6 GAMEPLAY, TWO NEW ASSASSIN'S CREED GAMES LEAKED? & MORE",
-   "url": "https://www.youtube.com/watch?v=1nrTXTkItjk",
-   "source": "GameRanx",
-   "feedId": "yt-gameranx",
-   "type": "video",
-   "tags": [
-    "gaming"
-   ],
-   "published": "2026-11-13T21:22:46.000Z",
-   "summary": "Go to https://buyraycon.com/gameranxBC to get up to 50% off! Thanks to Raycon for sponsoring! ~~SOURCES~~ **Jake’s video on GTA3, San Andreas, GTAIV, and GTAV: https://youtu.be/tOZ_20w8OSM?si=EyXU5-QGqgPxL76e GTA6 30fps…",
-   "thumb": "https://i2.ytimg.com/vi/1nrTXTkItjk/hqdefault.jpg",
-   "id": "a9ae089d5bde",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 912,
-   "duration": "15:12"
-  },
-  {
-   "title": "AirbnPee Guest Pees Everywhere For Content... Gets Arrested",
-   "url": "https://www.youtube.com/watch?v=hFH0EUhVxG8",
-   "source": "Aberrant preach",
-   "feedId": "yt-aberrant-preach",
-   "type": "video",
-   "tags": [
-    "trash"
-   ],
-   "published": "2026-11-13T18:48:20.000Z",
-   "summary": "This AirBnB might have a reason to charge an insane cleaning fee after what this guest did to her things... ———————————— Spotify: https://open.spotify.com/artist/6QJIJ6AugqPEFASp1V6zgH Merchandise --- https://www.enkreprinte.com/collections/aba-and-preach INSTAGRAM @aba.atlas…",
-   "thumb": "https://i1.ytimg.com/vi/hFH0EUhVxG8/hqdefault.jpg",
-   "id": "42ccc0c095d3",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 970,
-   "duration": "16:10"
-  },
-  {
    "title": "Is The Trinity ACTUALLY In The Old Testament? — GodLogicApologetics vs Dr. Javad Hashmi",
    "url": "https://www.youtube.com/watch?v=BJC-QiEN4do",
    "source": "Modern-Day Debate",
@@ -2225,44 +2320,6 @@
    "duration": "51:01"
   },
   {
-   "title": "Can AI Take Your Job? | How Power Works with John Burn-Murdoch",
-   "url": "https://www.youtube.com/watch?v=fBHNcUE10l8",
-   "source": "PoliticsJOE",
-   "feedId": "yt-politicsjoe",
-   "type": "video",
-   "tags": [
-    "comedy"
-   ],
-   "published": "2026-11-12T16:25:28.000Z",
-   "summary": "There's a lot of noise around artificial intelligence and its inevitability. But as the tech becomes increasingly capable, the workforce is growing insecure. Who is at risk? Who does this serve? We were joined by John Burn-Murdoch, Chief Data Reporter at the Financial Times, to…",
-   "thumb": "https://i3.ytimg.com/vi/fBHNcUE10l8/hqdefault.jpg",
-   "id": "e11a4eab313d",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 1720,
-   "duration": "28:40"
-  },
-  {
-   "title": "WATCH: Chancellor Grilled on Andy Burnham’s First Budget in Select Committee",
-   "url": "https://www.youtube.com/watch?v=SIFYKBTDoiE",
-   "source": "PoliticsJOE",
-   "feedId": "yt-politicsjoe",
-   "type": "video",
-   "tags": [
-    "comedy"
-   ],
-   "published": "2026-11-12T13:15:52.000Z",
-   "summary": "The Chancellor John Healey faces questions from MPs on the Treasury Select Committee about the Budget, the economy and the pressure facing households across Britain. Like PoliticsJOE? We need your support: https://www.patreon.com/PoliticsJOE Chapters 00:00 Budget leak: “I think…",
-   "thumb": "https://i4.ytimg.com/vi/SIFYKBTDoiE/hqdefault.jpg",
-   "id": "79243d96487f",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 706,
-   "duration": "11:46"
-  },
-  {
    "title": "How Ukraine blinded Russia’s drones: Operation Vivaldi explained | The Economist",
    "url": "https://www.youtube.com/watch?v=vluYrFuJ6zY",
    "source": "The Economist",
@@ -2301,23 +2358,6 @@
    "why": "0",
    "durationSec": 157,
    "duration": "2:37"
-  },
-  {
-   "title": "Fluent in Your Love Language by Boys Who Read (Official Music Video) | MP3 [New Dropout Series]",
-   "url": "https://www.youtube.com/watch?v=74QNqyXUh_c",
-   "source": "Dropout",
-   "feedId": "yt-dropout",
-   "type": "video",
-   "tags": [
-    "comedy"
-   ],
-   "published": "2026-11-11T22:01:57.000Z",
-   "summary": "Here's the official music video for Fluent in Your Love Language by Boys Who Read (Zach Reino, James Tolbert, Jon Matteson, Angela Giarratana, and Paul Robalino) Visit https://watch.dropout.tv/mp3 for full episodes of MP3 Get ready for MP3- Music Presentation 3! Your new…",
-   "thumb": "https://i4.ytimg.com/vi/74QNqyXUh_c/hqdefault.jpg",
-   "id": "5e04a8304c30",
-   "score": 0,
-   "matched": [],
-   "why": "0"
   },
   {
    "title": "The Pickle | Toonout [Animated Shorts]",
@@ -2744,26 +2784,6 @@
    "duration": "56:24"
   },
   {
-   "title": "“Was Israel Involved in 9/11?” Ask a CIA Spy Anything (ft. Andrew Bustamante)",
-   "url": "https://www.youtube.com/watch?v=LEZOo2x4dHA",
-   "source": "Jubilee",
-   "feedId": "yt-jubilee",
-   "type": "video",
-   "tags": [
-    "politics",
-    "debates"
-   ],
-   "published": "2026-11-06T17:00:20.000Z",
-   "summary": "Hey you 👈 Wanna be in a Jubilee video? https://bit.ly/be-in-a-video LET’S BE FRIENDS Instagram: https://www.instagram.com/jubileemedia/ TikTok: https://www.tiktok.com/@jubilee?lang=en Website: https://www.jubileemedia.com OUR LOVE + DATING CHANNEL 🍑 YouTube:…",
-   "thumb": "https://i1.ytimg.com/vi/LEZOo2x4dHA/hqdefault.jpg",
-   "id": "4da57d4d1463",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 4074,
-   "duration": "1:07:54"
-  },
-  {
    "title": "Grimes Interview (Ft. Ivy Wolk)",
    "url": "https://www.youtube.com/watch?v=RzHlHrz58oA",
    "source": "Channel 5 with Andrew Callaghan",
@@ -2901,27 +2921,7 @@
    "why": "0",
    "durationSec": 274,
    "duration": "4:34"
-  },
-  {
-   "title": "Everything You Need to Know About the German Drivers License",
-   "url": "https://www.youtube.com/watch?v=aiFJ11GY7sE",
-   "source": "Easy German",
-   "feedId": "yt-easy-german",
-   "type": "video",
-   "tags": [
-    "german",
-    "listen"
-   ],
-   "published": "2026-11-04T18:00:17.000Z",
-   "summary": "Download our free guide on getting a driving license in Germany here: https://easygerman.link/lm-pdf-005-fhrerschein-in-deutschland --- Vielen Dank an Tolga und die Fahrschule Mobil werden in Spandau für die Unterstützung beim Dreh dieses Videos! Tolga könnt ihr hier folgen:…",
-   "thumb": "https://i2.ytimg.com/vi/aiFJ11GY7sE/hqdefault.jpg",
-   "id": "d0c79fb50c86",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 984,
-   "duration": "16:24"
   }
  ],
- "contentHash": "197cb8bfb2ad"
+ "contentHash": "dd1538bd1c7c"
 }
