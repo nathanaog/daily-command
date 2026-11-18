@@ -1,13 +1,13 @@
 {
- "generated": "2026-11-18T07:27:49.903Z",
+ "generated": "2026-11-18T11:54:30.272Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
   "ok": 49,
-  "items": 113,
+  "items": 112,
   "duplicatesMerged": 0,
-  "lengthsKnown": 104,
-  "lengthLookups": 7,
+  "lengthsKnown": 103,
+  "lengthLookups": 6,
   "lengthFailures": 1,
   "lengthVia": "YouTube Data API",
   "lengthFailReasons": {
@@ -384,7 +384,7 @@
    "name": "The Onion",
    "type": "youtube",
    "status": "ok",
-   "count": 3,
+   "count": 2,
    "resolved": {
     "channelId": "UCfAOh2t5DpxVrgS9NQKjC7A",
     "title": "The Onion",
@@ -657,12 +657,10 @@
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": "2026-11-16T19:40:46.781Z",
-   "note": "rate-limited by Reddit (sent a web page, not a feed)",
-   "error": "rate-limited by Reddit (sent a web page, not a feed)",
-   "http": 404
+   "note": "not its turn this run"
   },
   {
    "id": "rd-xbox",
@@ -671,7 +669,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": "2026-11-07T21:52:57.028Z",
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-slaythespire",
@@ -680,7 +678,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-geopolitics",
@@ -689,16 +687,18 @@
    "status": "cached",
    "count": 5,
    "lastOk": "2026-11-17T03:58:17.859Z",
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-germany",
    "name": "r/germany",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": "2026-11-12T02:17:58.406Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-unitedkingdom",
@@ -707,10 +707,114 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   }
  ],
  "items": [
+  {
+   "title": "Warum der digitale Kassenbon kommt",
+   "url": "https://www.youtube.com/watch?v=SR7s_SBTQfY",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-18T11:09:56.000Z",
+   "summary": "Ende September hat die Bundesregierung entschieden, die Papier-Bon-Pflicht abschaffen zu wollen. Nun wird der Gesetzesentwurf auch im Bundesrat besprochen. Im Einzelhandel stößt das Vorhaben sowohl auf Lob als auch Kritik. Mehr zum Thema:…",
+   "thumb": "https://i4.ytimg.com/vi/SR7s_SBTQfY/hqdefault.jpg",
+   "id": "eacc2d6377ad",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 119,
+   "duration": "1:59"
+  },
+  {
+   "title": "Landkreis Mansfeld-Südharz: Wie der Staat verlassene Häuser verwertet | tagesthemen mittendrin",
+   "url": "https://www.youtube.com/watch?v=qCrZXr0Fwt4",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-18T11:09:14.000Z",
+   "summary": "Wenn es für Liegenschaften keine Erben gibt oder diese das Erbe ausschlagen, muss der Staat einspringen. Allein in Sachsen-Anhalt passiert das rund 200 Mal im Jahr. Was dann passiert - wir waren bei solch einer Hausbesichtigung dabei. Mehr tagesthemen mittendrin Reportagen…",
+   "thumb": "https://i2.ytimg.com/vi/qCrZXr0Fwt4/hqdefault.jpg",
+   "id": "7339cec80d2a",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 255,
+   "duration": "4:15"
+  },
+  {
+   "title": "Koalition einig bei Stromsteuersenkung – aber wie wird das finanziert?",
+   "url": "https://www.youtube.com/watch?v=pKh0oVQd4Ro",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-18T10:12:27.000Z",
+   "summary": "Einigung im Koalitionsausschuss: Nachdem wochenlang über die Finanzierung diskutiert worden war, haben sich die Spitzen der schwarz-roten Koalition auf die Senkung der Stromsteuer für alle Verbraucherinnen und Verbraucher geeinigt. Doch die Entlastung soll zunächst für ein Jahr…",
+   "thumb": "https://i1.ytimg.com/vi/pKh0oVQd4Ro/hqdefault.jpg",
+   "id": "b65044a57982",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 383,
+   "duration": "6:23"
+  },
+  {
+   "title": "Andy Burnham speaks to LBC about the EU, NEETs and Russell Brand",
+   "url": "https://www.youtube.com/watch?v=v16z1ezIdYE",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-18T08:36:14.000Z",
+   "summary": "Andy Burnham joins LBC'S political editor Natasha Clark to discuss the Milburn report, Russell Brand's latest statement and David Lammy's comments on rejoining the EU. Listen to the full show on the all-new LBC App: https://app.af.lbc.co.uk/btnc/thenewlbcapp #natashaclark…",
+   "thumb": "https://i3.ytimg.com/vi/v16z1ezIdYE/hqdefault.jpg",
+   "id": "1b32b86e4b8c",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 575,
+   "duration": "9:35"
+  },
+  {
+   "title": "MOMA-Reporter: Ein Dorf kümmert sich um seine Alten | ARD Morgenmagazin",
+   "url": "https://www.youtube.com/watch?v=0C2wYZC4_tA",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-18T08:33:37.000Z",
+   "summary": "In Vrees, in Niedersachsen, sorgt das ganze Dorf dafür, dass seine Alten bleiben können. Niemand soll seine Heimat verlassen müssen, weil er auf Hilfe angewiesen ist. Deswegen gibt es in der 2.000 Einwohner Gemeinde ein eigenes Pflegehaus, eine Tagespflege, Wohnungen mit…",
+   "thumb": "https://i1.ytimg.com/vi/0C2wYZC4_tA/hqdefault.jpg",
+   "id": "8102b8729761",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 299,
+   "duration": "4:59"
+  },
   {
    "title": "Wer wird neuer FIFA-Boss? /Teure Weihnachtszeit/ KI bei Bewerbungen | \"15 Minuten\"",
    "url": "https://www.youtube.com/watch?v=GWS1ojifnuw",
@@ -731,69 +835,6 @@
    "why": "fresh (<12 h) +1 = 1",
    "durationSec": 896,
    "duration": "14:56"
-  },
-  {
-   "title": "Torfabbau im Moor: Profit vor Klimaschutz?",
-   "url": "https://www.youtube.com/watch?v=rN0k1lE3LbM",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-18T05:13:22.000Z",
-   "summary": "Als Co2-Speicher sind Moore wichtig fürs Klima. Journalist Nathan Niedermeier erzählt im Gespräch mit 11KM-Host Kevin Ebert über seine NDR-Recherche, denn in niedersächsischen Moorgebieten haben einige Unternehmen offenbar über Jahre hinweg mehr Torf abgebaut und teils tiefer…",
-   "thumb": "https://i3.ytimg.com/vi/rN0k1lE3LbM/hqdefault.jpg",
-   "id": "6b9d003d5c36",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 1710,
-   "duration": "28:30"
-  },
-  {
-   "title": "Mieten runter durch Enteignungen? Ines Schwerdtner und Martin Huber diskutieren | maischberger",
-   "url": "https://www.youtube.com/watch?v=AsNFQL2NiVs",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-18T04:50:39.000Z",
-   "summary": "Kann die Linke mit Vergesellschaftungen und sozialem Wohnungsbau tatsächlich für bezahlbaren Wohnraum sorgen? Und sollte der Länderfinanzausgleich abgeschafft werden? 💻 maischberger in der ARD-Mediathek:…",
-   "thumb": "https://i2.ytimg.com/vi/AsNFQL2NiVs/hqdefault.jpg",
-   "id": "86bd27f4157f",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 1542,
-   "duration": "25:42"
-  },
-  {
-   "title": "Hat Europa bei KI noch eine Chance? SAP-Manager René Obermann im Gespräch | maischberger",
-   "url": "https://www.youtube.com/watch?v=S25Q4JaA5jc",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-18T04:45:22.000Z",
-   "summary": "Wie steht es um den Wirtschaftsstandort Deutschland? Und droht Europa bei Künstlicher Intelligenz und neuen Technologien den Anschluss zu verlieren? 💻 maischberger in der ARD-Mediathek:…",
-   "thumb": "https://i4.ytimg.com/vi/S25Q4JaA5jc/hqdefault.jpg",
-   "id": "aafeac32f72c",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 1033,
-   "duration": "17:13"
   },
   {
    "title": "Vance VISIBLY STUNNED as Host CORNERS HIM!",
@@ -834,127 +875,6 @@
    "why": "fresh (<12 h) +1 = 1",
    "durationSec": 1017,
    "duration": "16:57"
-  },
-  {
-   "title": "MAGA Hosts Go DEAD SILENT as Co-Host EXPOSES THEM On Live TV!",
-   "url": "https://www.youtube.com/watch?v=2trmz6Wu308",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-17T23:50:05.000Z",
-   "summary": "Luke discusses Jessica Tarlov's latest appearance on The Five. Check out Jessica Tarlov's new book below! https://sites.prh.com/idisagree Want to support the show and gain access to a daily bonus show? Become a member here:…",
-   "thumb": "https://i3.ytimg.com/vi/2trmz6Wu308/hqdefault.jpg",
-   "id": "f57e706973b9",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 562,
-   "duration": "9:22"
-  },
-  {
-   "title": "The history of video games and politics, from the '70s to now",
-   "url": "https://www.youtube.com/watch?v=ncmx5Pmn-4I",
-   "source": "J.J. McCullough",
-   "feedId": "yt-j-j-mccullough",
-   "type": "video",
-   "tags": [
-    "politics",
-    "culture",
-    "entertainment"
-   ],
-   "published": "2026-11-17T22:46:10.000Z",
-   "summary": "The controversial full story of video games and American politics. Thank you Helix Sleep for sponsoring! Visit https://helixsleep.com/jjmc to take advantage of their Black Friday Sale and save up to 30% off on select mattresses! SUBSCRIBE:…",
-   "thumb": "https://i3.ytimg.com/vi/ncmx5Pmn-4I/hqdefault.jpg",
-   "id": "5706156109d9",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 1766,
-   "duration": "29:26"
-  },
-  {
-   "title": "tagesthemen 22:15 Uhr, 17.11.2026",
-   "url": "https://www.youtube.com/watch?v=iQbd9o39DRk",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-17T22:29:24.000Z",
-   "summary": "tagesthemen 22:15 Uhr Koalitionsausschuss ringt um Senkung der Stromsteuer, Schwere Schäden an der Krim-Brücke durch ukrainische Angriffe, Studentenbewegung zieht bei konstituierender Sitzung ins Parlament ein, #mittendrin aus Mansfeld-Südharz: Wenn das Land Immobilien erbt,…",
-   "thumb": "https://i2.ytimg.com/vi/iQbd9o39DRk/hqdefault.jpg",
-   "id": "7198cbd2f320",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 2126,
-   "duration": "35:26"
-  },
-  {
-   "title": "WATCH TRUMP’S FACE as Everything Goes To SH*T!",
-   "url": "https://www.youtube.com/watch?v=xQpCeaGy62I",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-17T21:50:03.000Z",
-   "summary": "Luke discusses the cybersecurity issues that have emerged over the past couple of days. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
-   "thumb": "https://i1.ytimg.com/vi/xQpCeaGy62I/hqdefault.jpg",
-   "id": "944b5e9443eb",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 1409,
-   "duration": "23:29"
-  },
-  {
-   "title": "10 HUGE Moments That Shaped GTA 6",
-   "url": "https://www.youtube.com/watch?v=IEtv9pqKcyk",
-   "source": "GameRanx",
-   "feedId": "yt-gameranx",
-   "type": "video",
-   "tags": [
-    "gaming"
-   ],
-   "published": "2026-11-17T20:10:36.000Z",
-   "summary": "With Grand Theft Auto 6 almost here, we wanted to take a look back at the history of the game, from the start of development to leaks and rumors, all the way up to its final release. Subscribe for more: https://www.youtube.com/gameranxTV?sub_confirmation=1 0:00 Intro 0:32…",
-   "thumb": "https://i2.ytimg.com/vi/IEtv9pqKcyk/hqdefault.jpg",
-   "id": "0120c43ac521",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 972,
-   "duration": "16:12"
-  },
-  {
-   "title": "My life was turned upside down by cannabis - now it's in Boots | James O’Brien - The Whole Show",
-   "url": "https://www.youtube.com/watch?v=6-85y33Rb_4",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-17T20:00:09.000Z",
-   "summary": "This is a catch-up version of James O'Brien's live, daily show on LBC Radio from the 17th of November 2026. Listen to the full show on the all-new LBC App: https://app.af.lbc.co.uk/btnc/thenewlbcapp #jamesobrien #politics #LBC LBC is the home of live debate around news and…",
-   "thumb": "https://i3.ytimg.com/vi/6-85y33Rb_4/hqdefault.jpg",
-   "id": "56613ef11cfe",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 8638,
-   "duration": "2:23:58"
   },
   {
    "title": "Controller Made Of Stone?",
@@ -1056,6 +976,86 @@
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "MAGA Hosts Go DEAD SILENT as Co-Host EXPOSES THEM On Live TV!",
+   "url": "https://www.youtube.com/watch?v=2trmz6Wu308",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-17T23:50:05.000Z",
+   "summary": "Luke discusses Jessica Tarlov's latest appearance on The Five. Check out Jessica Tarlov's new book below! https://sites.prh.com/idisagree Want to support the show and gain access to a daily bonus show? Become a member here:…",
+   "thumb": "https://i3.ytimg.com/vi/2trmz6Wu308/hqdefault.jpg",
+   "id": "f57e706973b9",
+   "score": 0,
+   "matched": [],
+   "why": "0",
+   "durationSec": 562,
+   "duration": "9:22"
+  },
+  {
+   "title": "The history of video games and politics, from the '70s to now",
+   "url": "https://www.youtube.com/watch?v=ncmx5Pmn-4I",
+   "source": "J.J. McCullough",
+   "feedId": "yt-j-j-mccullough",
+   "type": "video",
+   "tags": [
+    "politics",
+    "culture",
+    "entertainment"
+   ],
+   "published": "2026-11-17T22:46:10.000Z",
+   "summary": "The controversial full story of video games and American politics. Thank you Helix Sleep for sponsoring! Visit https://helixsleep.com/jjmc to take advantage of their Black Friday Sale and save up to 30% off on select mattresses! SUBSCRIBE:…",
+   "thumb": "https://i3.ytimg.com/vi/ncmx5Pmn-4I/hqdefault.jpg",
+   "id": "5706156109d9",
+   "score": 0,
+   "matched": [],
+   "why": "0",
+   "durationSec": 1766,
+   "duration": "29:26"
+  },
+  {
+   "title": "WATCH TRUMP’S FACE as Everything Goes To SH*T!",
+   "url": "https://www.youtube.com/watch?v=xQpCeaGy62I",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-17T21:50:03.000Z",
+   "summary": "Luke discusses the cybersecurity issues that have emerged over the past couple of days. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
+   "thumb": "https://i1.ytimg.com/vi/xQpCeaGy62I/hqdefault.jpg",
+   "id": "944b5e9443eb",
+   "score": 0,
+   "matched": [],
+   "why": "0",
+   "durationSec": 1409,
+   "duration": "23:29"
+  },
+  {
+   "title": "10 HUGE Moments That Shaped GTA 6",
+   "url": "https://www.youtube.com/watch?v=IEtv9pqKcyk",
+   "source": "GameRanx",
+   "feedId": "yt-gameranx",
+   "type": "video",
+   "tags": [
+    "gaming"
+   ],
+   "published": "2026-11-17T20:10:36.000Z",
+   "summary": "With Grand Theft Auto 6 almost here, we wanted to take a look back at the history of the game, from the start of development to leaks and rumors, all the way up to its final release. Subscribe for more: https://www.youtube.com/gameranxTV?sub_confirmation=1 0:00 Intro 0:32…",
+   "thumb": "https://i2.ytimg.com/vi/IEtv9pqKcyk/hqdefault.jpg",
+   "id": "0120c43ac521",
+   "score": 0,
+   "matched": [],
+   "why": "0",
+   "durationSec": 972,
+   "duration": "16:12"
   },
   {
    "title": "H3 Employee Gets Fired Live... Starts Exposing Everybody!",
@@ -2921,26 +2921,7 @@
    "why": "0",
    "durationSec": 984,
    "duration": "16:24"
-  },
-  {
-   "title": "Why Hasn’t Abdul El-Sayed Accomplished Any Of His Campaign Goals Since Winning 2 Minutes Ago?",
-   "url": "https://www.youtube.com/watch?v=4vkqSigZeDI",
-   "source": "The Onion",
-   "feedId": "yt-the-onion",
-   "type": "video",
-   "tags": [
-    "comedy"
-   ],
-   "published": "2026-11-04T07:28:58.000Z",
-   "summary": "In The Know's Midterm 2026 Election Panel debates if El-Sayed's string of broken campaign promises over the last half-minute could mean the end of the progressive movement in America. Become an Onion member while it's still optional:…",
-   "thumb": "https://i1.ytimg.com/vi/4vkqSigZeDI/hqdefault.jpg",
-   "id": "92498650dda1",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 166,
-   "duration": "2:46"
   }
  ],
- "contentHash": "2b8831995886"
+ "contentHash": "197cb8bfb2ad"
 }
