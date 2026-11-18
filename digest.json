@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-18T01:00:04.917Z",
+ "generated": "2026-11-18T07:27:49.903Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
@@ -7,7 +7,7 @@
   "items": 113,
   "duplicatesMerged": 0,
   "lengthsKnown": 104,
-  "lengthLookups": 5,
+  "lengthLookups": 7,
   "lengthFailures": 1,
   "lengthVia": "YouTube Data API",
   "lengthFailReasons": {
@@ -633,18 +633,16 @@
    "status": "cached",
    "count": 3,
    "lastOk": "2026-11-17T16:12:01.447Z",
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-tech",
    "name": "r/tech",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": "2026-11-07T19:04:52.310Z",
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-gaming",
@@ -653,16 +651,18 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": "2026-11-16T19:40:46.781Z",
-   "note": "not its turn this run"
+   "note": "rate-limited by Reddit (sent a web page, not a feed)",
+   "error": "rate-limited by Reddit (sent a web page, not a feed)",
+   "http": 404
   },
   {
    "id": "rd-xbox",
@@ -671,7 +671,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": "2026-11-07T21:52:57.028Z",
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-slaythespire",
@@ -680,7 +680,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-geopolitics",
@@ -711,6 +711,130 @@
   }
  ],
  "items": [
+  {
+   "title": "Wer wird neuer FIFA-Boss? /Teure Weihnachtszeit/ KI bei Bewerbungen | \"15 Minuten\"",
+   "url": "https://www.youtube.com/watch?v=GWS1ojifnuw",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-18T05:22:43.000Z",
+   "summary": "(00:00:41) Themenübersicht (00:01:16) Wahl des neuen FIFA-Präsidenten Wer zieht künftig die Fäden im Weltfußball? Kurz vor der FIFA-Wahl tritt mit Philippe Diallo ein Herausforderer gegen Amtsinhaber Gianni Infantino an. Warum der FIFA-Präsident zu den mächtigsten Personen im…",
+   "thumb": "https://i4.ytimg.com/vi/GWS1ojifnuw/hqdefault.jpg",
+   "id": "eb1f867657b1",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 896,
+   "duration": "14:56"
+  },
+  {
+   "title": "Torfabbau im Moor: Profit vor Klimaschutz?",
+   "url": "https://www.youtube.com/watch?v=rN0k1lE3LbM",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-18T05:13:22.000Z",
+   "summary": "Als Co2-Speicher sind Moore wichtig fürs Klima. Journalist Nathan Niedermeier erzählt im Gespräch mit 11KM-Host Kevin Ebert über seine NDR-Recherche, denn in niedersächsischen Moorgebieten haben einige Unternehmen offenbar über Jahre hinweg mehr Torf abgebaut und teils tiefer…",
+   "thumb": "https://i3.ytimg.com/vi/rN0k1lE3LbM/hqdefault.jpg",
+   "id": "6b9d003d5c36",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 1710,
+   "duration": "28:30"
+  },
+  {
+   "title": "Mieten runter durch Enteignungen? Ines Schwerdtner und Martin Huber diskutieren | maischberger",
+   "url": "https://www.youtube.com/watch?v=AsNFQL2NiVs",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-18T04:50:39.000Z",
+   "summary": "Kann die Linke mit Vergesellschaftungen und sozialem Wohnungsbau tatsächlich für bezahlbaren Wohnraum sorgen? Und sollte der Länderfinanzausgleich abgeschafft werden? 💻 maischberger in der ARD-Mediathek:…",
+   "thumb": "https://i2.ytimg.com/vi/AsNFQL2NiVs/hqdefault.jpg",
+   "id": "86bd27f4157f",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 1542,
+   "duration": "25:42"
+  },
+  {
+   "title": "Hat Europa bei KI noch eine Chance? SAP-Manager René Obermann im Gespräch | maischberger",
+   "url": "https://www.youtube.com/watch?v=S25Q4JaA5jc",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-18T04:45:22.000Z",
+   "summary": "Wie steht es um den Wirtschaftsstandort Deutschland? Und droht Europa bei Künstlicher Intelligenz und neuen Technologien den Anschluss zu verlieren? 💻 maischberger in der ARD-Mediathek:…",
+   "thumb": "https://i4.ytimg.com/vi/S25Q4JaA5jc/hqdefault.jpg",
+   "id": "aafeac32f72c",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 1033,
+   "duration": "17:13"
+  },
+  {
+   "title": "Vance VISIBLY STUNNED as Host CORNERS HIM!",
+   "url": "https://www.youtube.com/watch?v=zLF2asAFo2I",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-18T03:50:39.000Z",
+   "summary": "Luke discusses more moments from JD Vance's Fox News interview. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
+   "thumb": "https://i3.ytimg.com/vi/zLF2asAFo2I/hqdefault.jpg",
+   "id": "5f318a0db56b",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 1286,
+   "duration": "21:26"
+  },
+  {
+   "title": "OH SH*T: Leavitt Accidentally EXPOSES TRUMP On National TV!",
+   "url": "https://www.youtube.com/watch?v=6gNXWroZUeA",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-18T01:50:09.000Z",
+   "summary": "Luke discusses Karoline Leavitt's latest apperance on Fox News. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
+   "thumb": "https://i3.ytimg.com/vi/6gNXWroZUeA/hqdefault.jpg",
+   "id": "7ebe8bf1a39d",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 1017,
+   "duration": "16:57"
+  },
   {
    "title": "MAGA Hosts Go DEAD SILENT as Co-Host EXPOSES THEM On Live TV!",
    "url": "https://www.youtube.com/watch?v=2trmz6Wu308",
@@ -794,27 +918,6 @@
    "duration": "23:29"
   },
   {
-   "title": "Ukrainischer Angriff auf Krim-Brücke | tagesthemen-Interview",
-   "url": "https://www.youtube.com/watch?v=kdktIXD_zZQ",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-17T20:54:07.000Z",
-   "summary": "Die Ukraine hat die Brücke zur von Russland besetzten Krim mit eigenen Waffen angegriffen und eine Fahrbahn zerstört. Dieser Angriff wird den Krieg nicht entscheiden, aber er passiert zu einem Zeitpunkt, als die diplomatischen Bemühungen zur Beendigung des Krieges gegen die…",
-   "thumb": "https://i4.ytimg.com/vi/kdktIXD_zZQ/hqdefault.jpg",
-   "id": "86234877ffae",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 325,
-   "duration": "5:25"
-  },
-  {
    "title": "10 HUGE Moments That Shaped GTA 6",
    "url": "https://www.youtube.com/watch?v=IEtv9pqKcyk",
    "source": "GameRanx",
@@ -854,265 +957,6 @@
    "duration": "2:23:58"
   },
   {
-   "title": "tagesschau 20:00 Uhr, 17.11.2026",
-   "url": "https://www.youtube.com/watch?v=T1WP71DUmK8",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-17T19:47:23.000Z",
-   "summary": "tagesschau 20:00 Uhr Koalitionsausschuss berät über mögliche Senkung der Stromsteuer, Umfangreiches Datenleck bei der Deutschen Bank, Krim-Brücke durch ukrainische Luftangriffe schwer beschädigt, Studentenliste zieht bei konstituierender Sitzung ins serbische Parlament ein,…",
-   "thumb": "https://i1.ytimg.com/vi/T1WP71DUmK8/hqdefault.jpg",
-   "id": "b32a02c39694",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 914,
-   "duration": "15:14"
-  },
-  {
-   "title": "H3 Employee Gets Fired Live... Starts Exposing Everybody!",
-   "url": "https://www.youtube.com/watch?v=WNn860w3Tms",
-   "source": "Aberrant preach",
-   "feedId": "yt-aberrant-preach",
-   "type": "video",
-   "tags": [
-    "trash"
-   ],
-   "published": "2026-11-17T18:51:04.000Z",
-   "summary": "Harley Morenstein went live to discuss his future at H3H3 Podcast when Hila Klein decided to publicly announce his firing in an unprofessional manner publicly. This resulted in a insane crash out where harley unleashed details about Tamara & Ethan Klein. ———————————— Spotify:…",
-   "thumb": "https://i4.ytimg.com/vi/WNn860w3Tms/hqdefault.jpg",
-   "id": "04e98dc77638",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 1002,
-   "duration": "16:42"
-  },
-  {
-   "title": "The Sneaky Girl Shuffle | Make Some Noise [Full Episode]",
-   "url": "https://www.youtube.com/watch?v=yw51S3_WLKo",
-   "source": "Dropout",
-   "feedId": "yt-dropout",
-   "type": "video",
-   "tags": [
-    "comedy"
-   ],
-   "published": "2026-11-17T18:30:02.000Z",
-   "summary": "Angela Giarratana, Lisa Gilroy, and Izzy Roland search the dark web and make up titles for Sam Reich’s memoir. Content Warning: Comedic Bit Referencing Parent Death - [7:10-7:40 Emetophobia (Retching) - [33:09-33:15] You can watch more episodes of Make Some Noise by signing up…",
-   "thumb": "https://i2.ytimg.com/vi/yw51S3_WLKo/hqdefault.jpg",
-   "id": "eecb58b7b051",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 2089,
-   "duration": "34:49"
-  },
-  {
-   "title": "Geplante Senkung der Stromsteuer: Wer wirklich von den Entlastungen profitiert",
-   "url": "https://www.youtube.com/watch?v=cWTqBtW46_s",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-17T18:25:31.000Z",
-   "summary": "Bei einem Koalitionsausschuss wird zurzeit nach Milliarden gesucht, um die Stromsteuer senken zu können. Zuvor hatte sich Kanzler Merz weit aus dem Fenster gelehnt. Setzt er sein Versprechen durch? Mehr Informationen zu diesem Thema:…",
-   "thumb": "https://i4.ytimg.com/vi/cWTqBtW46_s/hqdefault.jpg",
-   "id": "5cc385c21f87",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 95,
-   "duration": "1:35"
-  },
-  {
-   "title": "Grauer Star: Haben Patienten oft zu viel für ihre Linsen gezahlt?",
-   "url": "https://www.youtube.com/watch?v=9HNMsZyF8OU",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-17T18:23:52.000Z",
-   "summary": "Laut Recherchen des NDR drängen insbesondere große Augenarztketten zum Kauf von überteuerten Sonderlinsen bei Grauer-Star-Operationen. Augenärzt:innen haben demnach geschätzt Hunderte Millionen Euro zu viel von ihren Patient:innen kassiert. Mehr Informationen:…",
-   "thumb": "https://i2.ytimg.com/vi/9HNMsZyF8OU/hqdefault.jpg",
-   "id": "20b49e9b4971",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 101,
-   "duration": "1:41"
-  },
-  {
-   "title": "Prison bosses want to ban Russell Brand from communicating with his wife",
-   "url": "https://www.youtube.com/watch?v=LEh7t4MRAAY",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-17T18:00:13.000Z",
-   "summary": "LBC callers react to Russell Brand facing a ban from communicating with his wife Laura while officials investigate his 'appalling' statement from jail. The disgraced comedian is serving a 10-and-a-half year prison sentence after being convicted of rape and three counts of…",
-   "thumb": "https://i1.ytimg.com/vi/LEh7t4MRAAY/hqdefault.jpg",
-   "id": "809e69316574",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 1580,
-   "duration": "26:20"
-  },
-  {
-   "title": "Is Anyone Watching This?",
-   "url": "https://www.youtube.com/watch?v=82l9C6miBq0",
-   "source": "The Onion",
-   "feedId": "yt-the-onion",
-   "type": "video",
-   "tags": [
-    "comedy"
-   ],
-   "published": "2026-11-17T18:00:06.000Z",
-   "summary": "With cable news viewership at an all-time low, our In The Know panelists debate: Is anyone still watching this? Become an Onion member while it's still optional: https://membership.theonion.com/?campaign=701a500001geULHAA2 Powered By Forge Virtual Studios",
-   "thumb": "https://i1.ytimg.com/vi/82l9C6miBq0/hqdefault.jpg",
-   "id": "86b025e265ea",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 221,
-   "duration": "3:41"
-  },
-  {
-   "title": "The State of Living in the Richest Country in the World",
-   "url": "https://www.youtube.com/watch?v=Brh3jhy04TQ",
-   "source": "Economics Explained",
-   "feedId": "yt-economics-explained",
-   "type": "video",
-   "tags": [
-    "finance",
-    "listen"
-   ],
-   "published": "2026-11-17T17:20:41.000Z",
-   "summary": "Get 22% off Plaud with code Economics22: https://bit.ly/4AnmjnI | Shopping on Amazon? Here’s your link: https://amzn.to/3X1e6Hw #Plaud 📫 95,000+ read our free newsletter that has weekly original stories Sign up: → https://economicsexplained.substack.com/subscribe This video…",
-   "thumb": "https://i3.ytimg.com/vi/Brh3jhy04TQ/hqdefault.jpg",
-   "id": "c299eafb20fd",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 5739,
-   "duration": "1:35:39"
-  },
-  {
-   "title": "How GTA 6 is crashing out the world",
-   "url": "https://www.youtube.com/watch?v=O1cILPm20GY",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-17T17:00:04.000Z",
-   "summary": "LBC's Alan Zycinski is in Scotland, the home of Rockstar and Grand Theft Auto, to find out how people are preparing for 'the most anticipated game release in history'. Game experts have estimated that the upcoming Grand Theft Auto 6 could take players an average of 50 hours to…",
-   "thumb": "https://i4.ytimg.com/vi/O1cILPm20GY/hqdefault.jpg",
-   "id": "9c622aef229c",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 479,
-   "duration": "7:59"
-  },
-  {
-   "title": "Warum sind japanische Züge so überlegen?",
-   "url": "https://www.youtube.com/watch?v=0bYOsIvRGAs",
-   "source": "Simplicissimus",
-   "feedId": "yt-simplicissimus",
-   "type": "video",
-   "tags": [
-    "german",
-    "education"
-   ],
-   "published": "2026-11-17T16:19:35.000Z",
-   "summary": "Mit den Sprachduschen von Jicki könnt ihr Sprachen ganz nebenbei lernen, ohne viel extra Zeit einzuplanen. Bis zum 30.11.26 bekommst du mit dem Code BLACK50 satte 50% Rabatt auf deine erste Buchung: https://simpli.deals/jicki116 (Werbung) Incogni hilft dir dabei, die Kontrolle…",
-   "thumb": "https://i1.ytimg.com/vi/0bYOsIvRGAs/hqdefault.jpg",
-   "id": "f6e00018ba46",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 1694,
-   "duration": "28:14"
-  },
-  {
-   "title": "Russell Brand faces ban on communicating with wife",
-   "url": "https://www.youtube.com/watch?v=6vNT-qZIdiQ",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-17T16:08:24.000Z",
-   "summary": "Shelagh Fogarty is joined by LBC's crime correspondent Andy Hughes as Russell Brand faces a ban on communications with his wife, Laura, while officials investigate his 'appalling' statement from jail. The disgraced comedian is serving a 10-and-a-half year prison sentence after…",
-   "thumb": "https://i3.ytimg.com/vi/6vNT-qZIdiQ/hqdefault.jpg",
-   "id": "0f434d76b77a",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 616,
-   "duration": "10:16"
-  },
-  {
-   "title": "Why Britain Can't Stop Talking About Class with Ipsos",
-   "url": "https://www.youtube.com/watch?v=u0oLy_38-f4",
-   "source": "PoliticsJOE",
-   "feedId": "yt-politicsjoe",
-   "type": "video",
-   "tags": [
-    "comedy"
-   ],
-   "published": "2026-11-17T15:27:54.000Z",
-   "summary": "What does it actually mean to be working class in Britain today? And can you ever really change your class? Richie Jones, Chief Client Officer at Ipsos, joins us to unpack the findings of new research into Britain's relationship with social class, drawing on four decades of…",
-   "thumb": "https://i2.ytimg.com/vi/u0oLy_38-f4/hqdefault.jpg",
-   "id": "f101433ba4ba",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 4490,
-   "duration": "1:14:50"
-  },
-  {
-   "title": "'Zero chance' Epstein died by suicide, says forensic expert",
-   "url": "https://www.youtube.com/watch?v=ee4EGaQZX-Q",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-17T15:05:46.000Z",
-   "summary": "Lewis Goodall joins Shelagh Fogarty as forensic expert Michael Freeman suggests that the death of Jeffrey Epstein was homicide, not suicide. The convicted sex offender was found dead in his cell at the Metropolitan Correctional Center in New York on 10 August 2019, while…",
-   "thumb": "https://i2.ytimg.com/vi/ee4EGaQZX-Q/hqdefault.jpg",
-   "id": "2ae95cb2c3a8",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 597,
-   "duration": "9:57"
-  },
-  {
    "title": "Controller Made Of Stone?",
    "url": "https://www.reddit.com/r/ProductManagement/comments/1xym33l/controller_made_of_stone/",
    "source": "r/productmanagement",
@@ -1127,47 +971,6 @@
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Why is Anthropic's Business Model So... Strange?",
-   "url": "https://www.youtube.com/watch?v=FhVbxweMaWM",
-   "source": "How Money Works",
-   "feedId": "yt-how-money-works",
-   "type": "video",
-   "tags": [
-    "finance",
-    "business",
-    "listen"
-   ],
-   "published": "2026-11-17T14:09:12.000Z",
-   "summary": "Thanks to Monarch for partnering with me! Start your free trial and get 50% off your first year of total money clarity using my link https://monarchmoney.yt.link/VomI7sD or code hmw50 for 50% Off Monarch Core tier. ----- Plain Bagel's Analysis of Anthropic S1:…",
-   "thumb": "https://i3.ytimg.com/vi/FhVbxweMaWM/hqdefault.jpg",
-   "id": "51e4364b3be5",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 1764,
-   "duration": "29:24"
-  },
-  {
-   "title": "MAGA Star’s MOST HUMILIATING INTERVIEW Ever!",
-   "url": "https://www.youtube.com/watch?v=3PVml8L-vJw",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-17T14:00:34.000Z",
-   "summary": "Luke discusses Benny Johnson's brutally wrong prediction. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
-   "thumb": "https://i4.ytimg.com/vi/3PVml8L-vJw/hqdefault.jpg",
-   "id": "def26dbdf666",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 520,
-   "duration": "8:40"
   },
   {
    "title": "Trump says Kim Jong Un may join him, Putin and Xi for first-ever super summit",
@@ -1255,6 +1058,243 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
+   "title": "H3 Employee Gets Fired Live... Starts Exposing Everybody!",
+   "url": "https://www.youtube.com/watch?v=WNn860w3Tms",
+   "source": "Aberrant preach",
+   "feedId": "yt-aberrant-preach",
+   "type": "video",
+   "tags": [
+    "trash"
+   ],
+   "published": "2026-11-17T18:51:04.000Z",
+   "summary": "Harley Morenstein went live to discuss his future at H3H3 Podcast when Hila Klein decided to publicly announce his firing in an unprofessional manner publicly. This resulted in a insane crash out where harley unleashed details about Tamara & Ethan Klein. ———————————— Spotify:…",
+   "thumb": "https://i4.ytimg.com/vi/WNn860w3Tms/hqdefault.jpg",
+   "id": "04e98dc77638",
+   "score": 0,
+   "matched": [],
+   "why": "0",
+   "durationSec": 1002,
+   "duration": "16:42"
+  },
+  {
+   "title": "The Sneaky Girl Shuffle | Make Some Noise [Full Episode]",
+   "url": "https://www.youtube.com/watch?v=yw51S3_WLKo",
+   "source": "Dropout",
+   "feedId": "yt-dropout",
+   "type": "video",
+   "tags": [
+    "comedy"
+   ],
+   "published": "2026-11-17T18:30:02.000Z",
+   "summary": "Angela Giarratana, Lisa Gilroy, and Izzy Roland search the dark web and make up titles for Sam Reich’s memoir. Content Warning: Comedic Bit Referencing Parent Death - [7:10-7:40 Emetophobia (Retching) - [33:09-33:15] You can watch more episodes of Make Some Noise by signing up…",
+   "thumb": "https://i2.ytimg.com/vi/yw51S3_WLKo/hqdefault.jpg",
+   "id": "eecb58b7b051",
+   "score": 0,
+   "matched": [],
+   "why": "0",
+   "durationSec": 2089,
+   "duration": "34:49"
+  },
+  {
+   "title": "Prison bosses want to ban Russell Brand from communicating with his wife",
+   "url": "https://www.youtube.com/watch?v=LEh7t4MRAAY",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-17T18:00:13.000Z",
+   "summary": "LBC callers react to Russell Brand facing a ban from communicating with his wife Laura while officials investigate his 'appalling' statement from jail. The disgraced comedian is serving a 10-and-a-half year prison sentence after being convicted of rape and three counts of…",
+   "thumb": "https://i1.ytimg.com/vi/LEh7t4MRAAY/hqdefault.jpg",
+   "id": "809e69316574",
+   "score": 0,
+   "matched": [],
+   "why": "0",
+   "durationSec": 1580,
+   "duration": "26:20"
+  },
+  {
+   "title": "Is Anyone Watching This?",
+   "url": "https://www.youtube.com/watch?v=82l9C6miBq0",
+   "source": "The Onion",
+   "feedId": "yt-the-onion",
+   "type": "video",
+   "tags": [
+    "comedy"
+   ],
+   "published": "2026-11-17T18:00:06.000Z",
+   "summary": "With cable news viewership at an all-time low, our In The Know panelists debate: Is anyone still watching this? Become an Onion member while it's still optional: https://membership.theonion.com/?campaign=701a500001geULHAA2 Powered By Forge Virtual Studios",
+   "thumb": "https://i1.ytimg.com/vi/82l9C6miBq0/hqdefault.jpg",
+   "id": "86b025e265ea",
+   "score": 0,
+   "matched": [],
+   "why": "0",
+   "durationSec": 221,
+   "duration": "3:41"
+  },
+  {
+   "title": "The Truth About The American Economy",
+   "url": "https://www.youtube.com/watch?v=Brh3jhy04TQ",
+   "source": "Economics Explained",
+   "feedId": "yt-economics-explained",
+   "type": "video",
+   "tags": [
+    "finance",
+    "listen"
+   ],
+   "published": "2026-11-17T17:20:41.000Z",
+   "summary": "Get 22% off Plaud with code Economics22: https://bit.ly/4AnmjnI | Shopping on Amazon? Here’s your link: https://amzn.to/3X1e6Hw #Plaud 📫 95,000+ read our free newsletter that has weekly original stories Sign up: → https://economicsexplained.substack.com/subscribe This video…",
+   "thumb": "https://i3.ytimg.com/vi/Brh3jhy04TQ/hqdefault.jpg",
+   "id": "c299eafb20fd",
+   "score": 0,
+   "matched": [],
+   "why": "0",
+   "durationSec": 5739,
+   "duration": "1:35:39"
+  },
+  {
+   "title": "How GTA 6 is crashing out the world",
+   "url": "https://www.youtube.com/watch?v=O1cILPm20GY",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-17T17:00:04.000Z",
+   "summary": "LBC's Alan Zycinski is in Scotland, the home of Rockstar and Grand Theft Auto, to find out how people are preparing for 'the most anticipated game release in history'. Game experts have estimated that the upcoming Grand Theft Auto 6 could take players an average of 50 hours to…",
+   "thumb": "https://i4.ytimg.com/vi/O1cILPm20GY/hqdefault.jpg",
+   "id": "9c622aef229c",
+   "score": 0,
+   "matched": [],
+   "why": "0",
+   "durationSec": 479,
+   "duration": "7:59"
+  },
+  {
+   "title": "Warum sind japanische Züge so überlegen?",
+   "url": "https://www.youtube.com/watch?v=0bYOsIvRGAs",
+   "source": "Simplicissimus",
+   "feedId": "yt-simplicissimus",
+   "type": "video",
+   "tags": [
+    "german",
+    "education"
+   ],
+   "published": "2026-11-17T16:19:35.000Z",
+   "summary": "Mit den Sprachduschen von Jicki könnt ihr Sprachen ganz nebenbei lernen, ohne viel extra Zeit einzuplanen. Bis zum 30.11.26 bekommst du mit dem Code BLACK50 satte 50% Rabatt auf deine erste Buchung: https://simpli.deals/jicki116 (Werbung) Incogni hilft dir dabei, die Kontrolle…",
+   "thumb": "https://i1.ytimg.com/vi/0bYOsIvRGAs/hqdefault.jpg",
+   "id": "f6e00018ba46",
+   "score": 0,
+   "matched": [],
+   "why": "0",
+   "durationSec": 1694,
+   "duration": "28:14"
+  },
+  {
+   "title": "Russell Brand faces ban on communicating with wife",
+   "url": "https://www.youtube.com/watch?v=6vNT-qZIdiQ",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-17T16:08:24.000Z",
+   "summary": "Shelagh Fogarty is joined by LBC's crime correspondent Andy Hughes as Russell Brand faces a ban on communications with his wife, Laura, while officials investigate his 'appalling' statement from jail. The disgraced comedian is serving a 10-and-a-half year prison sentence after…",
+   "thumb": "https://i3.ytimg.com/vi/6vNT-qZIdiQ/hqdefault.jpg",
+   "id": "0f434d76b77a",
+   "score": 0,
+   "matched": [],
+   "why": "0",
+   "durationSec": 616,
+   "duration": "10:16"
+  },
+  {
+   "title": "Why Britain Can't Stop Talking About Class with Ipsos",
+   "url": "https://www.youtube.com/watch?v=u0oLy_38-f4",
+   "source": "PoliticsJOE",
+   "feedId": "yt-politicsjoe",
+   "type": "video",
+   "tags": [
+    "comedy"
+   ],
+   "published": "2026-11-17T15:27:54.000Z",
+   "summary": "What does it actually mean to be working class in Britain today? And can you ever really change your class? Richie Jones, Chief Client Officer at Ipsos, joins us to unpack the findings of new research into Britain's relationship with social class, drawing on four decades of…",
+   "thumb": "https://i2.ytimg.com/vi/u0oLy_38-f4/hqdefault.jpg",
+   "id": "f101433ba4ba",
+   "score": 0,
+   "matched": [],
+   "why": "0",
+   "durationSec": 4490,
+   "duration": "1:14:50"
+  },
+  {
+   "title": "'Zero chance' Epstein died by suicide, says forensic expert",
+   "url": "https://www.youtube.com/watch?v=ee4EGaQZX-Q",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-17T15:05:46.000Z",
+   "summary": "Lewis Goodall joins Shelagh Fogarty as forensic expert Michael Freeman suggests that the death of Jeffrey Epstein was homicide, not suicide. The convicted sex offender was found dead in his cell at the Metropolitan Correctional Center in New York on 10 August 2019, while…",
+   "thumb": "https://i2.ytimg.com/vi/ee4EGaQZX-Q/hqdefault.jpg",
+   "id": "2ae95cb2c3a8",
+   "score": 0,
+   "matched": [],
+   "why": "0",
+   "durationSec": 597,
+   "duration": "9:57"
+  },
+  {
+   "title": "Why is Anthropic's Business Model So... Strange?",
+   "url": "https://www.youtube.com/watch?v=FhVbxweMaWM",
+   "source": "How Money Works",
+   "feedId": "yt-how-money-works",
+   "type": "video",
+   "tags": [
+    "finance",
+    "business",
+    "listen"
+   ],
+   "published": "2026-11-17T14:09:12.000Z",
+   "summary": "Thanks to Monarch for partnering with me! Start your free trial and get 50% off your first year of total money clarity using my link https://monarchmoney.yt.link/VomI7sD or code hmw50 for 50% Off Monarch Core tier. ----- Plain Bagel's Analysis of Anthropic S1:…",
+   "thumb": "https://i3.ytimg.com/vi/FhVbxweMaWM/hqdefault.jpg",
+   "id": "51e4364b3be5",
+   "score": 0,
+   "matched": [],
+   "why": "0",
+   "durationSec": 1764,
+   "duration": "29:24"
+  },
+  {
+   "title": "MAGA Star’s MOST HUMILIATING INTERVIEW Ever!",
+   "url": "https://www.youtube.com/watch?v=3PVml8L-vJw",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-17T14:00:34.000Z",
+   "summary": "Luke discusses Benny Johnson's brutally wrong prediction. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
+   "thumb": "https://i4.ytimg.com/vi/3PVml8L-vJw/hqdefault.jpg",
+   "id": "def26dbdf666",
+   "score": 0,
+   "matched": [],
+   "why": "0",
+   "durationSec": 520,
+   "duration": "8:40"
+  },
+  {
    "title": "Is Burnham A Radical PM?",
    "url": "https://www.youtube.com/watch?v=XaLeXBge9Ks",
    "source": "TLDR News",
@@ -1276,26 +1316,6 @@
    "duration": "8:02"
   },
   {
-   "title": "Audience GASPS as MAGA Governor F***S UP On National TV!",
-   "url": "https://www.youtube.com/watch?v=yhwHU57GMX0",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-17T03:55:02.000Z",
-   "summary": "Luke discusses Sarah Huckabee Sanders o n Bill Maher's show. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
-   "thumb": "https://i2.ytimg.com/vi/yhwHU57GMX0/hqdefault.jpg",
-   "id": "3d00c7e27350",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 728,
-   "duration": "12:08"
-  },
-  {
    "title": "KT #794 - CHRIS O'CONNOR + TOMMY POPE (DALLAS)",
    "url": "https://www.youtube.com/watch?v=1rJeSuXEiBk",
    "source": "Kill Tony",
@@ -1315,26 +1335,6 @@
    "why": "0",
    "durationSec": 9773,
    "duration": "2:42:53"
-  },
-  {
-   "title": "Boebert On VERGE OF TEARS, Posts THIS VIDEO after ELECTION LOSS!",
-   "url": "https://www.youtube.com/watch?v=ryZgPG8CvnU",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-17T01:55:32.000Z",
-   "summary": "Luke discusses Lauren Boebert reflecting on her tenure in Congress. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
-   "thumb": "https://i3.ytimg.com/vi/ryZgPG8CvnU/hqdefault.jpg",
-   "id": "d36e473856a0",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 502,
-   "duration": "8:22"
   },
   {
    "title": "Only PM at a market leader, effectively CPO without the title. How do I get the most out of it before it burns me out?",
@@ -2942,5 +2942,5 @@
    "duration": "2:46"
   }
  ],
- "contentHash": "c1d4ee54b56b"
+ "contentHash": "2b8831995886"
 }
