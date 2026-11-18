@@ -1024,7 +1024,7 @@ const SleepQ = (() => {
    survives offline). Export/import is the same JSON. Later stages sync
    this same object to Google Drive's appDataFolder.
    ===================================================================== */
-const APP_BUILD = '1.12.0';   // shown in More; keep in step with VERSION in sw.js
+const APP_BUILD = '1.12.1';   // shown in More; keep in step with VERSION in sw.js
 const STORE_KEY = 'dailycommand.v1';
 const uid = () => Date.now().toString(36) + Math.random().toString(36).slice(2, 7);
 
@@ -1224,6 +1224,13 @@ function formSheet(title, fields, { okLabel = 'Save', deletable = false, note = 
         <button class="btn ghost" data-r="cancel">Cancel</button>
         <button class="btn primary" data-r="ok">${esc(okLabel)}</button></div>`;
     const done = val => { dlg.close(); resolve(val); };
+    // Enter (the keyboard's ✓) in a one-line field = the main button; textareas keep Enter for new lines
+    // (only where this sheet's OK button exists and the field isn't in a form of its own — e.g. the wrap-up's task box)
+    $('#dlgBody').onkeydown = e => {
+      const ok = $('#dlgBody [data-r=ok]');
+      if (e.key !== 'Enter' || !ok || !e.target.matches('input:not([type=checkbox])') || e.target.closest('form')) return;
+      e.preventDefault(); ok.click();
+    };
     $('#dlgBody').onclick = e => {
       const r = e.target.closest('[data-r]')?.dataset.r; if (!r) return;
       if (r === 'cancel') return done(null);
@@ -1667,7 +1674,7 @@ function renderMorning() {
       <h2>The plan</h2><div class="card"><ul class="list">${[R.current, ...plan].filter(x => x && x.type !== 'gap').map(a => `<li><span class="num muted" style="width:96px">${a.at ? fmtT(a.at) : 'now'}</span><span class="grow">${esc(a.title)}${a.type === 'event' ? ' <span class="tag">event</span>' : ''}</span></li>`).join('')}</ul></div>`;
   } else if (step === 2) {
     body = `<div class="hello">Today’s top 3</div><p class="muted">If only three things happen today, which ones?</p>${top3Html(false)}
-      <p class="small muted">Tap an empty slot to pick from your tasks. Add new tasks in the Tasks tab or with + later.</p>`;
+      <p class="small muted">Tap an empty slot to pick from your tasks, or type a new one: with ★ Today ticked it goes straight into a free slot; untick it to just jot an idea down for later.</p>`;
   } else if (step === 3) {
     Digest.ensureSession(false, { context: 'morning' }); Digest.startClock();
     body = `<div class="hello">Digest</div><p class="muted">${S.settings.digestMin} minutes, then it stops.</p>${digestHtml('morning')}`;
@@ -4311,12 +4318,31 @@ function top3Html(compact = false) {
         <button class="icon" data-act="top3Remove" data-id="${t.id}" aria-label="Remove from top 3">✕</button></div>`
       : `<div class="slot" data-act="top3Pick"><span class="n">${i + 1}</span><span class="muted">Pick a task…</span></div>`;
   }
+  if (!compact) h += top3NewHtml(ids.length);
   if (!compact && !ids.length) {
     const y = Engine.dateKey(Engine.atDay(new Date(today()), -1));
     const carry = top3Ids(y).filter(id => !taskById(id).done);
     if (carry.length) h += `<button class="btn sm" data-act="carryYesterday">Carry over ${carry.length} from yesterday</button>`;
   }
   return h;
+}
+/** "New task" box under the top-3 slots: ideas in the morning, or nothing left to pick. Goes straight into a free slot (★ Today) or just onto the list. */
+const newTaskProj = () => (S.projects.find(p => p.id === S.ui.lastProj) || S.projects.find(p => p.id === 'p-admin') || S.projects[0])?.id || '';
+function top3NewHtml(filled) {
+  const pid = newTaskProj(), room = filled < 3;
+  return `<form class="newtask" data-form="top3New" style="margin-top:10px">
+    <div class="row"><input type="text" name="task" placeholder="New task…" aria-label="New task" autocomplete="off" enterkeyhint="done"><button class="btn sm primary" style="flex:0 0 auto">Add</button></div>
+    <div class="row small muted" style="margin-top:6px;gap:10px;flex-wrap:wrap">
+      <select name="proj" aria-label="Project" style="flex:1;min-width:120px">${S.projects.map(p => `<option value="${esc(p.id)}" ${p.id === pid ? 'selected' : ''}>${esc(p.name)}</option>`).join('')}</select>
+      <label class="row" style="gap:6px;min-height:36px"><input type="checkbox" name="top" ${room ? 'checked' : 'disabled'} style="width:20px;height:20px"> ★ Today${room ? '' : ' (full)'}</label></div></form>`;
+}
+/** Create a task; into today's top 3 if asked and there's room. Returns where it went. */
+function addTaskQuick(title, projectId, intoTop3) {
+  const t = { id: uid(), title, projectId, done: false, created: Date.now() };
+  S.tasks.push(t); S.ui.lastProj = projectId;
+  const ids = top3Ids(), put = intoTop3 && ids.length < 3;
+  if (put) S.top3[today()] = [...ids, t.id];
+  save(); return put;
 }
 function listTop3(dk) {
   const ids = top3Ids(dk);
@@ -4785,9 +4811,16 @@ const ACT = {
   top3Remove(el) { S.top3[today()] = top3Ids().filter(id => id !== el.dataset.id); save(); render(); },
   async top3Pick() {
     const chosen = top3Ids();
-    const id = await choose('Pick for today', S.tasks.filter(t => !t.done && !chosen.includes(t.id))
-      .map(t => ({ value: t.id, label: t.title, tag: projById(t.projectId)?.name })));
-    if (!id) return; S.top3[today()] = [...chosen, id].slice(0, 3); save(); render();
+    const id = await choose('Pick for today', [{ value: '__new', label: '+ New task…' }, ...S.tasks.filter(t => !t.done && !chosen.includes(t.id))
+      .map(t => ({ value: t.id, label: t.title, tag: projById(t.projectId)?.name }))]);
+    if (!id) return;
+    if (id === '__new') {
+      const r = await formSheet('New task for today', [{ name: 'title', label: 'Task', value: '' },
+        { name: 'proj', label: 'Project', type: 'select', value: newTaskProj(), options: S.projects.map(p => ({ value: p.id, label: p.name })) }], { okLabel: 'Add to top 3' });
+      if (r?.title?.trim()) { addTaskQuick(r.title.trim(), r.proj, true); toast('Added to today’s top 3.'); }
+      return render();
+    }
+    S.top3[today()] = [...chosen, id].slice(0, 3); save(); render();
   },
   carryYesterday() {
     const y = Engine.dateKey(Engine.atDay(new Date(today()), -1));
@@ -4915,6 +4948,16 @@ document.addEventListener('click', e => {
 document.addEventListener('toggle', e => {
   const d = e.target; if (d.matches?.('details[data-sec]')) { S.ui.open[d.dataset.sec] = d.open; save(); }
 }, true);
+// top-3 "new task" box (morning sequence, Tasks)
+document.addEventListener('submit', e => {
+  const f = e.target.closest('[data-form=top3New]'); if (!f) return;
+  e.preventDefault();
+  const el = f.elements, title = el.task.value.trim(); if (!title) return el.task.focus();
+  const put = addTaskQuick(title, el.proj.value, el.top.checked);
+  toast(put ? `★ Today: ${title}` : `Added to ${projById(el.proj.value)?.name || 'tasks'}.`);
+  render();
+  setTimeout(() => document.querySelector('[data-form=top3New] input[name=task]')?.focus(), 0);   // ready for the next idea
+});
 // inline "add task" forms
 document.addEventListener('submit', e => {
   const f = e.target.closest('[data-form=addTask]'); if (!f) return;

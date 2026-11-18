@@ -169,7 +169,7 @@ Open the URL in Chrome, then **⋮ → Add to home screen / Install app**. It op
 The first time you open the app each day, if that's before 12:00 (configurable), it walks you through four steps:
 
 1. **Today**: weather (Open-Meteo, free, no key), today's events and the plan for the day.
-2. **Top 3**: carry over yesterday's unfinished ones, or pick new ones.
+2. **Top 3**: carry over yesterday's unfinished ones, or pick new ones. Type a new task in the box under the slots: with **★ Today** ticked it goes straight into a free slot; unticked, it's just saved to its project. The picker also starts with **+ New task…**, for mornings when there's nothing left to pick.
 3. **Digest**: a fixed list with a 15-minute countdown. Keyword matches come first. ✓ marks an item read, the bookmark saves it to the **watch-later shelf** (shown in Leisure mode and the Inbox tab), and tapping a title opens it in a new tab. When the list is empty you see **"You're caught up"**, and nothing more loads.
 4. **Start work**: switches to Work mode and starts the first focus session on your top task. Before your first work block, Work mode is set manually until that block begins.
 
