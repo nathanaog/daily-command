@@ -1,13 +1,13 @@
 {
- "generated": "2026-11-17T21:18:24.368Z",
+ "generated": "2026-11-18T01:00:04.917Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
   "ok": 49,
-  "items": 112,
+  "items": 113,
   "duplicatesMerged": 0,
-  "lengthsKnown": 103,
-  "lengthLookups": 1,
+  "lengthsKnown": 104,
+  "lengthLookups": 5,
   "lengthFailures": 1,
   "lengthVia": "YouTube Data API",
   "lengthFailReasons": {
@@ -605,7 +605,7 @@
    "name": "J.J. McCullough",
    "type": "youtube",
    "status": "ok",
-   "count": 0,
+   "count": 1,
    "resolved": {
     "channelId": "UCyhOl6uRlxryALlT5yifldw",
     "title": "J.J. McCullough",
@@ -633,16 +633,18 @@
    "status": "cached",
    "count": 3,
    "lastOk": "2026-11-17T16:12:01.447Z",
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-tech",
    "name": "r/tech",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": "2026-11-07T19:04:52.310Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-gaming",
@@ -651,7 +653,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-ukpolitics",
@@ -687,18 +689,16 @@
    "status": "cached",
    "count": 5,
    "lastOk": "2026-11-17T03:58:17.859Z",
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-germany",
    "name": "r/germany",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": "2026-11-12T02:17:58.406Z",
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-unitedkingdom",
@@ -707,10 +707,92 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   }
  ],
  "items": [
+  {
+   "title": "MAGA Hosts Go DEAD SILENT as Co-Host EXPOSES THEM On Live TV!",
+   "url": "https://www.youtube.com/watch?v=2trmz6Wu308",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-17T23:50:05.000Z",
+   "summary": "Luke discusses Jessica Tarlov's latest appearance on The Five. Check out Jessica Tarlov's new book below! https://sites.prh.com/idisagree Want to support the show and gain access to a daily bonus show? Become a member here:…",
+   "thumb": "https://i3.ytimg.com/vi/2trmz6Wu308/hqdefault.jpg",
+   "id": "f57e706973b9",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 562,
+   "duration": "9:22"
+  },
+  {
+   "title": "The history of video games and politics, from the '70s to now",
+   "url": "https://www.youtube.com/watch?v=ncmx5Pmn-4I",
+   "source": "J.J. McCullough",
+   "feedId": "yt-j-j-mccullough",
+   "type": "video",
+   "tags": [
+    "politics",
+    "culture",
+    "entertainment"
+   ],
+   "published": "2026-11-17T22:46:10.000Z",
+   "summary": "The controversial full story of video games and American politics. Thank you Helix Sleep for sponsoring! Visit https://helixsleep.com/jjmc to take advantage of their Black Friday Sale and save up to 30% off on select mattresses! SUBSCRIBE:…",
+   "thumb": "https://i3.ytimg.com/vi/ncmx5Pmn-4I/hqdefault.jpg",
+   "id": "5706156109d9",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 1766,
+   "duration": "29:26"
+  },
+  {
+   "title": "tagesthemen 22:15 Uhr, 17.11.2026",
+   "url": "https://www.youtube.com/watch?v=iQbd9o39DRk",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-17T22:29:24.000Z",
+   "summary": "tagesthemen 22:15 Uhr Koalitionsausschuss ringt um Senkung der Stromsteuer, Schwere Schäden an der Krim-Brücke durch ukrainische Angriffe, Studentenbewegung zieht bei konstituierender Sitzung ins Parlament ein, #mittendrin aus Mansfeld-Südharz: Wenn das Land Immobilien erbt,…",
+   "thumb": "https://i2.ytimg.com/vi/iQbd9o39DRk/hqdefault.jpg",
+   "id": "7198cbd2f320",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 2126,
+   "duration": "35:26"
+  },
+  {
+   "title": "WATCH TRUMP’S FACE as Everything Goes To SH*T!",
+   "url": "https://www.youtube.com/watch?v=xQpCeaGy62I",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-17T21:50:03.000Z",
+   "summary": "Luke discusses the cybersecurity issues that have emerged over the past couple of days. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
+   "thumb": "https://i1.ytimg.com/vi/xQpCeaGy62I/hqdefault.jpg",
+   "id": "944b5e9443eb",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 1409,
+   "duration": "23:29"
+  },
   {
    "title": "Ukrainischer Angriff auf Krim-Brücke | tagesthemen-Interview",
    "url": "https://www.youtube.com/watch?v=kdktIXD_zZQ",
@@ -952,27 +1034,6 @@
    "duration": "7:59"
   },
   {
-   "title": "Millionen Dokumente enthüllen fragwürdige Geschäfte der Deutschen Bank",
-   "url": "https://www.youtube.com/watch?v=rI6hDBvyFPM",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-17T16:58:34.000Z",
-   "summary": "Die Schatten der Vergangenheit holen die Deutsche Bank erneut ein. Informationen aus einem Datenleck offenbaren fragwürdige Geschäftspraktiken und mutmaßliche Probleme bei den Kontrollen beim größten deutschen Geldhaus. Mehr Informationen:…",
-   "thumb": "https://i3.ytimg.com/vi/rI6hDBvyFPM/hqdefault.jpg",
-   "id": "4ac1d30c6587",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 91,
-   "duration": "1:31"
-  },
-  {
    "title": "Warum sind japanische Züge so überlegen?",
    "url": "https://www.youtube.com/watch?v=0bYOsIvRGAs",
    "source": "Simplicissimus",
@@ -1109,27 +1170,6 @@
    "duration": "8:40"
   },
   {
-   "title": "Is Burnham A Radical PM?",
-   "url": "https://www.youtube.com/watch?v=XaLeXBge9Ks",
-   "source": "TLDR News",
-   "feedId": "yt-tldr-news",
-   "type": "video",
-   "tags": [
-    "news",
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-17T10:00:05.000Z",
-   "summary": "Take back your privacy - start using Proton Mail for free: http://proton.me/tldr Andymonium podcast: youtube.com/@TLDRpodcasts In this video, we’re going to explore the case that Burnham is a radical, before moving onto the counter point that he might actually fall down the…",
-   "thumb": "https://i1.ytimg.com/vi/XaLeXBge9Ks/hqdefault.jpg",
-   "id": "30c50e97f8f9",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 482,
-   "duration": "8:02"
-  },
-  {
    "title": "Trump says Kim Jong Un may join him, Putin and Xi for first-ever super summit",
    "url": "https://www.reddit.com/r/geopolitics/comments/1xy9ok5/trump_says_kim_jong_un_may_join_him_putin_and_xi/",
    "source": "r/geopolitics",
@@ -1215,6 +1255,27 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
+   "title": "Is Burnham A Radical PM?",
+   "url": "https://www.youtube.com/watch?v=XaLeXBge9Ks",
+   "source": "TLDR News",
+   "feedId": "yt-tldr-news",
+   "type": "video",
+   "tags": [
+    "news",
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-17T10:00:05.000Z",
+   "summary": "Take back your privacy - start using Proton Mail for free: http://proton.me/tldr Andymonium podcast: youtube.com/@TLDRpodcasts In this video, we’re going to explore the case that Burnham is a radical, before moving onto the counter point that he might actually fall down the…",
+   "thumb": "https://i1.ytimg.com/vi/XaLeXBge9Ks/hqdefault.jpg",
+   "id": "30c50e97f8f9",
+   "score": 0,
+   "matched": [],
+   "why": "0",
+   "durationSec": 482,
+   "duration": "8:02"
+  },
+  {
    "title": "Audience GASPS as MAGA Governor F***S UP On National TV!",
    "url": "https://www.youtube.com/watch?v=yhwHU57GMX0",
    "source": "Luke Beasley",
@@ -1274,46 +1335,6 @@
    "why": "0",
    "durationSec": 502,
    "duration": "8:22"
-  },
-  {
-   "title": "Fed Up MAGA Host SNAPS at Trump Admin",
-   "url": "https://www.youtube.com/watch?v=8bgRDJyyl04",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-16T23:55:08.000Z",
-   "summary": "Luke discusses JD Vance being confronted over the FAA mishap. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
-   "thumb": "https://i1.ytimg.com/vi/8bgRDJyyl04/hqdefault.jpg",
-   "id": "eb808974351d",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 1197,
-   "duration": "19:57"
-  },
-  {
-   "title": "OMG: BOMBSHELL ON EPSTEIN’S DEATH!",
-   "url": "https://www.youtube.com/watch?v=jQwrHuicbnY",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-16T21:55:24.000Z",
-   "summary": "Luke discusses a recent NYT piece on Epstein. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley Instagram -…",
-   "thumb": "https://i3.ytimg.com/vi/jQwrHuicbnY/hqdefault.jpg",
-   "id": "0a67bc137304",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 576,
-   "duration": "9:36"
   },
   {
    "title": "Only PM at a market leader, effectively CPO without the title. How do I get the most out of it before it burns me out?",
@@ -2921,5 +2942,5 @@
    "duration": "2:46"
   }
  ],
- "contentHash": "362eb6f533fa"
+ "contentHash": "c1d4ee54b56b"
 }
