@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-19T02:38:40.424Z",
+ "generated": "2026-11-19T11:50:54.510Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
@@ -7,7 +7,7 @@
   "items": 113,
   "duplicatesMerged": 0,
   "lengthsKnown": 105,
-  "lengthLookups": 8,
+  "lengthLookups": 9,
   "lengthFailures": 0,
   "lengthVia": "YouTube Data API",
   "lengthFailReasons": {}
@@ -658,18 +658,16 @@
    "status": "waiting",
    "count": 0,
    "lastOk": "2026-11-16T19:40:46.781Z",
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-xbox",
    "name": "r/xbox",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": "2026-11-07T21:52:57.028Z",
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-slaythespire",
@@ -678,7 +676,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-geopolitics",
@@ -687,7 +685,7 @@
    "status": "cached",
    "count": 5,
    "lastOk": "2026-11-17T03:58:17.859Z",
-   "note": "not its turn this run"
+   "note": "rate-limited by Reddit (sent a web page, not a feed)"
   },
   {
    "id": "rd-germany",
@@ -696,7 +694,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": "2026-11-12T02:17:58.406Z",
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-unitedkingdom",
@@ -705,10 +703,195 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   }
  ],
  "items": [
+  {
+   "title": "James O'Brien reacts as Trump calls Putin his 'friend'",
+   "url": "https://www.youtube.com/watch?v=5Tg_JnMG8po",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-19T11:43:45.000Z",
+   "summary": "James O'Brien reacts as Trump calls Putin his 'friend' during the historic meeting between the US, Russia, and China. US President Donald Trump and his Chinese and Russian counterparts Xi Jinping and Vladimir Putin concluded an unprecedented trilateral meeting where they…",
+   "thumb": "https://i2.ytimg.com/vi/5Tg_JnMG8po/hqdefault.jpg",
+   "id": "8d30cc9698a2",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 956,
+   "duration": "15:56"
+  },
+  {
+   "title": "Nick Ferrari reacts as Trump appears to doze off during Xi speech",
+   "url": "https://www.youtube.com/watch?v=rLvg36f7oBA",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-19T10:15:31.000Z",
+   "summary": "Nick Ferrari reacts as Trump appears to fall asleep during his first meeting with President Xi. Presidents Donald Trump, Xi Jinping and Vladimir Putin have started their historic meeting in the Chinese city of Shenzen. The unprecedented meeting is taking place on the side-lines…",
+   "thumb": "https://i3.ytimg.com/vi/rLvg36f7oBA/hqdefault.jpg",
+   "id": "50877919d254",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 485,
+   "duration": "8:05"
+  },
+  {
+   "title": "MOMA-Reporter: Rocky-Film wird 50 Jahre | ARD Morgenmagazin",
+   "url": "https://www.youtube.com/watch?v=whWmyinjE_w",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-19T09:36:18.000Z",
+   "summary": "Vor 50 Jahren kam der erste Rocky-Film in die Kinos und übertraf alle Erwartungen. Der Boxer Rocky Balboa, der sich immer wieder aufrappelt, Niederlagen trotzt und nicht aufgibt, wurde für viele zum Vorbild. Für Sylvester Stallone, der nicht nur die Hauptrolle spielte, sondern…",
+   "thumb": "https://i4.ytimg.com/vi/whWmyinjE_w/hqdefault.jpg",
+   "id": "68696138cda1",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 294,
+   "duration": "4:54"
+  },
+  {
+   "title": "Wenn Maschinen entscheiden zu töten: UN beraten über Regeln für autonome KI-Waffen",
+   "url": "https://www.youtube.com/watch?v=WVXqN6D2VKc",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-19T09:34:32.000Z",
+   "summary": "Forscher:innen und Entwickler:innen reizen im Wettbewerb aus, was möglich ist. Das erleben wir gerade bei Kampfdrohnen. Da hat Künstliche Intelligenz für einen Entwicklungsschub gesorgt. Sie fliegen nicht mehr einfach so wie programmiert zu ihrem Ziel, sondern können…",
+   "thumb": "https://i4.ytimg.com/vi/WVXqN6D2VKc/hqdefault.jpg",
+   "id": "e999001e4ed8",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 202,
+   "duration": "3:22"
+  },
+  {
+   "title": "YouTube refuse to delete Russell Brand's account",
+   "url": "https://www.youtube.com/watch?v=UZF1UZ_grms",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-19T09:05:46.000Z",
+   "summary": "Natasha Clark joins Iain Dale and Nick Ferrari as Google declines to take down Russell Brand's YouTube 'jail message' video. Last week, Brand's wife Laura posted a pre-recorded episode of their podcast, including a message from the jailed comic protesting his innocence.…",
+   "thumb": "https://i2.ytimg.com/vi/UZF1UZ_grms/hqdefault.jpg",
+   "id": "3ee5d1fa3f63",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 591,
+   "duration": "9:51"
+  },
+  {
+   "title": "Historisches Dreiertreffen: Wie einig sind sich Xi, Trump und Putin?",
+   "url": "https://www.youtube.com/watch?v=_XctBRa1FTY",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-19T08:23:49.000Z",
+   "summary": "Es ist ein historisches Treffen: Die Staatschefs aus China, Russland und den USA, der mächtigsten Atommächte der Welt, haben sich erstmals zu einem Dreiergipfel verabredet. Geredet wird heute - am Rande des Treffens der Asiatisch-Pazifischen Wirtschaftsgemeinschaft (APEC) im…",
+   "thumb": "https://i4.ytimg.com/vi/_XctBRa1FTY/hqdefault.jpg",
+   "id": "39cd6680504f",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 88,
+   "duration": "1:28"
+  },
+  {
+   "title": "Stromsteuersenkung kommt doch / GTA 6 ist da / Mit Herbstlaub Geld verdienen | \"15 Minuten\"",
+   "url": "https://www.youtube.com/watch?v=vilZYp0EZzo",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-19T05:36:54.000Z",
+   "summary": "(00:00:07) Themenübersicht (00:00:42) Stromsteuer wird gesenkt Die Koalition hat sich darauf geeinigt, dass ab kommendem Jahr weniger Steuern auf Strom gezahlt werden müssen. Das soll für alle gelten: Privathaushalte, Handwerker, die Industrie. Lange hatten die Politiker von…",
+   "thumb": "https://i3.ytimg.com/vi/vilZYp0EZzo/hqdefault.jpg",
+   "id": "d49bc1c5e19b",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 896,
+   "duration": "14:56"
+  },
+  {
+   "title": "Superintelligenz: Was hinter der KI-Vision steckt I 11KM - der tagesschau-Podcast",
+   "url": "https://www.youtube.com/watch?v=Sn26D4qYrzA",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-19T05:09:23.000Z",
+   "summary": "Eine allmächtige KI als \"Superintelligenz”, die irgendwann die Menschen beherrschen könnte – in dieser 11KM-Folge blickt die Journalistin Jaya Mirani hinter diese Zukunftsvision aus dem Silicon Valley, die auch US-Präsident Trump befeuert. Im Gespräch mit Host Nadja Mitzkat…",
+   "thumb": "https://i4.ytimg.com/vi/Sn26D4qYrzA/hqdefault.jpg",
+   "id": "8d331e3e6017",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 1610,
+   "duration": "26:50"
+  },
+  {
+   "title": "Buttigieg HUMILIATES Trump Official in an INSANT!",
+   "url": "https://www.youtube.com/watch?v=4V8rYZWeFg0",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-19T03:55:26.000Z",
+   "summary": "Luke discusses Pete Buttigieg's response to the recent FAA issues. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
+   "thumb": "https://i1.ytimg.com/vi/4V8rYZWeFg0/hqdefault.jpg",
+   "id": "37a9c959e191",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 800,
+   "duration": "13:20"
+  },
   {
    "title": "Fed Up Fox Host Finally SNAPS, Goes SCORCHED EARTH on Vance!",
    "url": "https://www.youtube.com/watch?v=XG5BLjLISbQ",
@@ -748,367 +931,6 @@
    "why": "fresh (<12 h) +1 = 1",
    "durationSec": 620,
    "duration": "10:20"
-  },
-  {
-   "title": "The Loophole That Makes Kalshi Legal",
-   "url": "https://www.youtube.com/watch?v=lixwB5gYDbA",
-   "source": "Half as Interesting",
-   "feedId": "yt-half-as-interesting",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "education"
-   ],
-   "published": "2026-11-18T22:45:38.000Z",
-   "summary": "Get $30 off your first Wildgrain box, plus free croissants for life, when you visit https://wildgrain.com/HAI and use code HAI at checkout. Follow Sam from Half as Interesting on Instagram: http://Instagram.com/Sam.From.Wendover Follow Half as Interesting on Twitter:…",
-   "thumb": "https://i1.ytimg.com/vi/lixwB5gYDbA/hqdefault.jpg",
-   "id": "701074de67b5",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 495,
-   "duration": "8:15"
-  },
-  {
-   "title": "tagesthemen 22:15 Uhr, 18.11.2026",
-   "url": "https://www.youtube.com/watch?v=bRlV8x4s2kI",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-18T22:14:22.000Z",
-   "summary": "tagesthemen 22:15 Uhr Koalition einigt sich nach achtstündiger Beratung auf Senkung der Stromsteuer, Die Meinung, Gipfel der Asiatisch-Pazifischen Wirtschaftsgemeinschaft im chinesischen Shenzhen, Estland plant Schließung der Grenze zu Russland, Beratungen über KI-gestützte…",
-   "thumb": "https://i3.ytimg.com/vi/bRlV8x4s2kI/hqdefault.jpg",
-   "id": "cd24f2830ed5",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 2098,
-   "duration": "34:58"
-  },
-  {
-   "title": "Is this a stroke of genius from David Lammy? | James O'Brien - The Whole Show",
-   "url": "https://www.youtube.com/watch?v=9OXwoBg9d84",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-18T22:00:08.000Z",
-   "summary": "David Lammy wants Andy Burnham to put rejoining the European Union in Labour’s next manifesto. James asks whether it could be a vote winner, as callers discuss the political case for rejoining and reflect on the promises made during the Brexit campaign. Plus, after Wayne Rooney…",
-   "thumb": "https://i2.ytimg.com/vi/9OXwoBg9d84/hqdefault.jpg",
-   "id": "86254a60a9a0",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 8834,
-   "duration": "2:27:14"
-  },
-  {
-   "title": "Trump Official SCREAMED AT In His Face as CHAOS ERUPTS!",
-   "url": "https://www.youtube.com/watch?v=EKWZX81-hmE",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-18T21:55:04.000Z",
-   "summary": "Luke discusses Markwayne Mullin's recent congressional hearing. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
-   "thumb": "https://i2.ytimg.com/vi/EKWZX81-hmE/hqdefault.jpg",
-   "id": "f7e6376b7d88",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 1153,
-   "duration": "19:13"
-  },
-  {
-   "title": "Is Trump helping Putin reshape Europe's borders?",
-   "url": "https://www.youtube.com/watch?v=2T33TILy5uY",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-18T21:51:23.000Z",
-   "summary": "Vladimir Putin is hoping to use his relationship with Donald Trump to secure Russia's demands over Ukraine, as the Russian president joins Trump and China's Xi Jinping for a major summit in Shenzhen. But with Ukraine reportedly absent from the agenda, could the three leaders…",
-   "thumb": "https://i3.ytimg.com/vi/2T33TILy5uY/hqdefault.jpg",
-   "id": "a0cdfe676ee0",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 668,
-   "duration": "11:08"
-  },
-  {
-   "title": "Fauler Kompromiss? Kritik an befristeter Senkung der Stromsteuer | tagesthemen-Interview",
-   "url": "https://www.youtube.com/watch?v=eMPXQNLa1ZU",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-18T21:16:47.000Z",
-   "summary": "Union und SPD haben sich nach langem Ringen auf eine Senkung der Stromsteuer geeinigt. Die ist aber vorerst auf ein Jahr befristet. Schwerer Prozess, gutes Ergebnis? Was bringt diese Steuer wirklich an Entlastung für kleinere Betriebe und Familien? Das fragt Jörg Schönenborn im…",
-   "thumb": "https://i2.ytimg.com/vi/eMPXQNLa1ZU/hqdefault.jpg",
-   "id": "39efb947d68a",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 325,
-   "duration": "5:25"
-  },
-  {
-   "title": "Einstieg in Aktien oder ETFs: Warum vielen jungen Menschen Wissen fehlt",
-   "url": "https://www.youtube.com/watch?v=1usAA35fNpg",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-18T19:53:46.000Z",
-   "summary": "Was ist ein Zinseszins? Was unterscheidet Aktien und ETFs? Finanzwissen wird im Alltag immer wichtiger. Trotzdem lernen viele Jugendliche in der Schule kaum etwas über Sparen, Schulden und Geldanlagen. Vielmehr zeigen Studien, dass die Verschuldung bei jungen Menschen in…",
-   "thumb": "https://i2.ytimg.com/vi/1usAA35fNpg/hqdefault.jpg",
-   "id": "41a30a4699ac",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 86,
-   "duration": "1:26"
-  },
-  {
-   "title": "Not Idris Elba? New James Bond Announced",
-   "url": "https://www.youtube.com/watch?v=4yFVyMuSpDo",
-   "source": "Aberrant preach",
-   "feedId": "yt-aberrant-preach",
-   "type": "video",
-   "tags": [
-    "trash"
-   ],
-   "published": "2026-11-18T19:43:42.000Z",
-   "summary": "Robert Patterson is officially the new 007. But is he made for this? ———————————— Spotify: https://open.spotify.com/artist/6QJIJ6AugqPEFASp1V6zgH Merchandise --- https://www.enkreprinte.com/collections/aba-and-preach INSTAGRAM @aba.atlas @abanpreach Discord:…",
-   "thumb": "https://i1.ytimg.com/vi/4yFVyMuSpDo/hqdefault.jpg",
-   "id": "4d62df2978d3",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 823,
-   "duration": "13:43"
-  },
-  {
-   "title": "tagesschau 20:00 Uhr, 18.11.2026",
-   "url": "https://www.youtube.com/watch?v=qQmFqnqdoEQ",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-18T19:31:34.000Z",
-   "summary": "Die 20-Uhr-Ausgabe der tagesschau im Livestream und alle Videos der tagesschau auf https://tagesschau.de Themen der tagesschau-Sendung: 00:00 Guten Abend 00:23 Union und SPD einigen sich auf Kompromiss bei der Stromsteuer 04:19 Bundesverfassungsgericht weist Beschwerde des BSW…",
-   "thumb": "https://i2.ytimg.com/vi/qQmFqnqdoEQ/hqdefault.jpg",
-   "id": "c07a899797e4",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 1014,
-   "duration": "16:54"
-  },
-  {
-   "title": "Voyager 1: Wie lange fliegt die Raumsonde noch durchs Weltall?",
-   "url": "https://www.youtube.com/watch?v=uUy4BBACeGU",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-18T19:12:33.000Z",
-   "summary": "Seit fast 50 Jahren erkunden die \"Voyager\"-Sonden die Tiefen des Weltraums. Mit einer solchen Lebensdauer hatte niemand gerechnet. Und heute ist \"Voyager 1\" genau einen Lichttag von der Erde entfernt. Große Distanzen vergleicht man in der Astronomie gerne mit der…",
-   "thumb": "https://i2.ytimg.com/vi/uUy4BBACeGU/hqdefault.jpg",
-   "id": "b989ca96597d",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 463,
-   "duration": "7:43"
-  },
-  {
-   "title": "David Lammy's bleak diagnosis for the UK",
-   "url": "https://www.youtube.com/watch?v=DFurJHXLXlc",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-18T18:46:45.000Z",
-   "summary": "Andrew Marr is joined by Foreign Secretary David Lammy as he calls on Andy Burnham to take the UK back into the EU. Listen to the full show on the all-new LBC App: https://app.af.lbc.co.uk/btnc/thenewlbcapp #andrewmarr #davidlammy #europe #europeanunion #politics #trump…",
-   "thumb": "https://i1.ytimg.com/vi/DFurJHXLXlc/hqdefault.jpg",
-   "id": "a842c74a9c5d",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 662,
-   "duration": "11:02"
-  },
-  {
-   "title": "Fluent in Your Love Language by Boys Who Read (Official Music Video) | MP3 [New Dropout Series]",
-   "url": "https://www.youtube.com/watch?v=74QNqyXUh_c",
-   "source": "Dropout",
-   "feedId": "yt-dropout",
-   "type": "video",
-   "tags": [
-    "comedy"
-   ],
-   "published": "2026-11-18T18:30:10.000Z",
-   "summary": "Here's the official music video for Fluent in Your Love Language by Boys Who Read (Zach Reino, James Tolbert, Jon Matteson, Angela Giarratana, and Paul Robalino) Visit https://watch.dropout.tv/mp3 for full episodes of MP3 Get ready for MP3- Music Presentation 3! Your new…",
-   "thumb": "https://i4.ytimg.com/vi/74QNqyXUh_c/hqdefault.jpg",
-   "id": "5e04a8304c30",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 203,
-   "duration": "3:23"
-  },
-  {
-   "title": "Driving Lesson in Slow German",
-   "url": "https://www.youtube.com/watch?v=svtSFmcX9fo",
-   "source": "Easy German",
-   "feedId": "yt-easy-german",
-   "type": "video",
-   "tags": [
-    "german",
-    "listen"
-   ],
-   "published": "2026-11-18T18:00:06.000Z",
-   "summary": "Practice vocab more effectively with our partner app Seedlang: https://seedlang.com/promotion/seg-320 --- Vielen Dank an Tolga und die Fahrschule Mobil werden in Spandau für die Unterstützung beim Dreh dieses Videos! Tolga könnt ihr hier folgen:…",
-   "thumb": "https://i4.ytimg.com/vi/svtSFmcX9fo/hqdefault.jpg",
-   "id": "8e34827eff6d",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 1069,
-   "duration": "17:49"
-  },
-  {
-   "title": "Labour’s Plan to Get You a Job | Going Deep on the Milburn Report",
-   "url": "https://www.youtube.com/watch?v=Wa2FnZ-RlyA",
-   "source": "PoliticsJOE",
-   "feedId": "yt-politicsjoe",
-   "type": "video",
-   "tags": [
-    "comedy"
-   ],
-   "published": "2026-11-18T17:49:02.000Z",
-   "summary": "The government has promised a major shake-up of how Britain tackles youth unemployment. But will Alan Milburn’s review actually improve the lives of young people or is Labour missing the bigger picture? There are serious questions about whether the plan tackles the causes of…",
-   "thumb": "https://i4.ytimg.com/vi/Wa2FnZ-RlyA/hqdefault.jpg",
-   "id": "02abd520696a",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 2705,
-   "duration": "45:05"
-  },
-  {
-   "title": "Andrew Yang Reacts to His Viral Debates on Artificial Intelligence | Surrounded Follow-Up",
-   "url": "https://www.youtube.com/watch?v=nbscGy5jcc0",
-   "source": "Jubilee",
-   "feedId": "yt-jubilee",
-   "type": "video",
-   "tags": [
-    "politics",
-    "debates"
-   ],
-   "published": "2026-11-18T17:00:25.000Z",
-   "summary": "Hey you 👈 Wanna be in a Jubilee video? https://bit.ly/be-in-a-video LET’S BE FRIENDS Instagram: https://www.instagram.com/jubileemedia/ TikTok: https://www.tiktok.com/@jubilee?lang=en Website: https://www.jubileemedia.com OUR LOVE + DATING CHANNEL 🍑 YouTube:…",
-   "thumb": "https://i3.ytimg.com/vi/nbscGy5jcc0/hqdefault.jpg",
-   "id": "b45169e06c52",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 1911,
-   "duration": "31:51"
-  },
-  {
-   "title": "Trump-Xi-Putin meeting: Actual business or just a photo-op?",
-   "url": "https://www.youtube.com/watch?v=HUdu3oGIBlg",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-18T16:00:26.000Z",
-   "summary": "Simon Marks joins Shelagh Fogarty to react to Trump, Xi, and Putin's initial meeting at the airport and looks ahead to what the meeting will entail. Listen to the full show on the all-new LBC App: https://app.af.lbc.co.uk/btnc/thenewlbcapp #simonmarks #shelaghfogarty…",
-   "thumb": "https://i1.ytimg.com/vi/HUdu3oGIBlg/hqdefault.jpg",
-   "id": "844dd764f510",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 973,
-   "duration": "16:13"
-  },
-  {
-   "title": "GTA 6 - Before You Buy",
-   "url": "https://www.youtube.com/watch?v=vVVIWEGciKk",
-   "source": "GameRanx",
-   "feedId": "yt-gameranx",
-   "type": "video",
-   "tags": [
-    "gaming"
-   ],
-   "published": "2026-11-18T15:47:51.000Z",
-   "summary": "Grand Theft Auto VI (PS5, Xbox Series X/S) is here. Let's talk about this long awaited game and whether or not it's worth the hype. Subscribe for more: http://youtube.com/gameranxtv ▼▼ Buy GTA6: https://link.amazon/B01cRTYq3 ---follow Jake: https://www.instagram.com/jakebaldino…",
-   "thumb": "https://i3.ytimg.com/vi/vVVIWEGciKk/hqdefault.jpg",
-   "id": "6ad8f4715688",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 1542,
-   "duration": "25:42"
-  },
-  {
-   "title": "How widespread is support and sympathy for Russell Brand?",
-   "url": "https://www.youtube.com/watch?v=BjTdgMnvW0I",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-18T15:00:20.000Z",
-   "summary": "Andy Burnham has condemned Russell Brand's message from jail where he proclaimed his innocence, telling LBC \"we've heard enough from him\". The PM said there must be a \"wider response\" to the Brand case, which saw the disgraced comedian and actor sentenced to 10-and-a-half years…",
-   "thumb": "https://i3.ytimg.com/vi/BjTdgMnvW0I/hqdefault.jpg",
-   "id": "c434b64ebfef",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 728,
-   "duration": "12:08"
   },
   {
    "title": "Controller Made Of Stone?",
@@ -1212,6 +1034,202 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
+   "title": "The Loophole That Makes Kalshi Legal",
+   "url": "https://www.youtube.com/watch?v=lixwB5gYDbA",
+   "source": "Half as Interesting",
+   "feedId": "yt-half-as-interesting",
+   "type": "video",
+   "tags": [
+    "comedy",
+    "education"
+   ],
+   "published": "2026-11-18T22:45:38.000Z",
+   "summary": "Get $30 off your first Wildgrain box, plus free croissants for life, when you visit https://wildgrain.com/HAI and use code HAI at checkout. Follow Sam from Half as Interesting on Instagram: http://Instagram.com/Sam.From.Wendover Follow Half as Interesting on Twitter:…",
+   "thumb": "https://i1.ytimg.com/vi/lixwB5gYDbA/hqdefault.jpg",
+   "id": "701074de67b5",
+   "score": 0,
+   "matched": [],
+   "why": "0",
+   "durationSec": 495,
+   "duration": "8:15"
+  },
+  {
+   "title": "Is this a stroke of genius from David Lammy? | James O'Brien - The Whole Show",
+   "url": "https://www.youtube.com/watch?v=9OXwoBg9d84",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-18T22:00:08.000Z",
+   "summary": "David Lammy wants Andy Burnham to put rejoining the European Union in Labour’s next manifesto. James asks whether it could be a vote winner, as callers discuss the political case for rejoining and reflect on the promises made during the Brexit campaign. Plus, after Wayne Rooney…",
+   "thumb": "https://i2.ytimg.com/vi/9OXwoBg9d84/hqdefault.jpg",
+   "id": "86254a60a9a0",
+   "score": 0,
+   "matched": [],
+   "why": "0",
+   "durationSec": 8834,
+   "duration": "2:27:14"
+  },
+  {
+   "title": "Trump Official SCREAMED AT In His Face as CHAOS ERUPTS!",
+   "url": "https://www.youtube.com/watch?v=EKWZX81-hmE",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-18T21:55:04.000Z",
+   "summary": "Luke discusses Markwayne Mullin's recent congressional hearing. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
+   "thumb": "https://i2.ytimg.com/vi/EKWZX81-hmE/hqdefault.jpg",
+   "id": "f7e6376b7d88",
+   "score": 0,
+   "matched": [],
+   "why": "0",
+   "durationSec": 1153,
+   "duration": "19:13"
+  },
+  {
+   "title": "Is Trump helping Putin reshape Europe's borders?",
+   "url": "https://www.youtube.com/watch?v=2T33TILy5uY",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-18T21:51:23.000Z",
+   "summary": "Vladimir Putin is hoping to use his relationship with Donald Trump to secure Russia's demands over Ukraine, as the Russian president joins Trump and China's Xi Jinping for a major summit in Shenzhen. But with Ukraine reportedly absent from the agenda, could the three leaders…",
+   "thumb": "https://i3.ytimg.com/vi/2T33TILy5uY/hqdefault.jpg",
+   "id": "a0cdfe676ee0",
+   "score": 0,
+   "matched": [],
+   "why": "0",
+   "durationSec": 668,
+   "duration": "11:08"
+  },
+  {
+   "title": "Not Idris Elba? New James Bond Announced",
+   "url": "https://www.youtube.com/watch?v=4yFVyMuSpDo",
+   "source": "Aberrant preach",
+   "feedId": "yt-aberrant-preach",
+   "type": "video",
+   "tags": [
+    "trash"
+   ],
+   "published": "2026-11-18T19:43:42.000Z",
+   "summary": "Robert Patterson is officially the new 007. But is he made for this? ———————————— Spotify: https://open.spotify.com/artist/6QJIJ6AugqPEFASp1V6zgH Merchandise --- https://www.enkreprinte.com/collections/aba-and-preach INSTAGRAM @aba.atlas @abanpreach Discord:…",
+   "thumb": "https://i1.ytimg.com/vi/4yFVyMuSpDo/hqdefault.jpg",
+   "id": "4d62df2978d3",
+   "score": 0,
+   "matched": [],
+   "why": "0",
+   "durationSec": 823,
+   "duration": "13:43"
+  },
+  {
+   "title": "Fluent in Your Love Language by Boys Who Read (Official Music Video) | MP3 [New Dropout Series]",
+   "url": "https://www.youtube.com/watch?v=74QNqyXUh_c",
+   "source": "Dropout",
+   "feedId": "yt-dropout",
+   "type": "video",
+   "tags": [
+    "comedy"
+   ],
+   "published": "2026-11-18T18:30:10.000Z",
+   "summary": "Here's the official music video for Fluent in Your Love Language by Boys Who Read (Zach Reino, James Tolbert, Jon Matteson, Angela Giarratana, and Paul Robalino) Visit https://watch.dropout.tv/mp3 for full episodes of MP3 Get ready for MP3- Music Presentation 3! Your new…",
+   "thumb": "https://i4.ytimg.com/vi/74QNqyXUh_c/hqdefault.jpg",
+   "id": "5e04a8304c30",
+   "score": 0,
+   "matched": [],
+   "why": "0",
+   "durationSec": 203,
+   "duration": "3:23"
+  },
+  {
+   "title": "Driving Lesson in Slow German",
+   "url": "https://www.youtube.com/watch?v=svtSFmcX9fo",
+   "source": "Easy German",
+   "feedId": "yt-easy-german",
+   "type": "video",
+   "tags": [
+    "german",
+    "listen"
+   ],
+   "published": "2026-11-18T18:00:06.000Z",
+   "summary": "Practice vocab more effectively with our partner app Seedlang: https://seedlang.com/promotion/seg-320 --- Vielen Dank an Tolga und die Fahrschule Mobil werden in Spandau für die Unterstützung beim Dreh dieses Videos! Tolga könnt ihr hier folgen:…",
+   "thumb": "https://i4.ytimg.com/vi/svtSFmcX9fo/hqdefault.jpg",
+   "id": "8e34827eff6d",
+   "score": 0,
+   "matched": [],
+   "why": "0",
+   "durationSec": 1069,
+   "duration": "17:49"
+  },
+  {
+   "title": "Labour’s Plan to Get You a Job | Going Deep on the Milburn Report",
+   "url": "https://www.youtube.com/watch?v=Wa2FnZ-RlyA",
+   "source": "PoliticsJOE",
+   "feedId": "yt-politicsjoe",
+   "type": "video",
+   "tags": [
+    "comedy"
+   ],
+   "published": "2026-11-18T17:49:02.000Z",
+   "summary": "The government has promised a major shake-up of how Britain tackles youth unemployment. But will Alan Milburn’s review actually improve the lives of young people or is Labour missing the bigger picture? There are serious questions about whether the plan tackles the causes of…",
+   "thumb": "https://i4.ytimg.com/vi/Wa2FnZ-RlyA/hqdefault.jpg",
+   "id": "02abd520696a",
+   "score": 0,
+   "matched": [],
+   "why": "0",
+   "durationSec": 2705,
+   "duration": "45:05"
+  },
+  {
+   "title": "Andrew Yang Reacts to His Viral Debates on Artificial Intelligence | Surrounded Follow-Up",
+   "url": "https://www.youtube.com/watch?v=nbscGy5jcc0",
+   "source": "Jubilee",
+   "feedId": "yt-jubilee",
+   "type": "video",
+   "tags": [
+    "politics",
+    "debates"
+   ],
+   "published": "2026-11-18T17:00:25.000Z",
+   "summary": "Hey you 👈 Wanna be in a Jubilee video? https://bit.ly/be-in-a-video LET’S BE FRIENDS Instagram: https://www.instagram.com/jubileemedia/ TikTok: https://www.tiktok.com/@jubilee?lang=en Website: https://www.jubileemedia.com OUR LOVE + DATING CHANNEL 🍑 YouTube:…",
+   "thumb": "https://i3.ytimg.com/vi/nbscGy5jcc0/hqdefault.jpg",
+   "id": "b45169e06c52",
+   "score": 0,
+   "matched": [],
+   "why": "0",
+   "durationSec": 1911,
+   "duration": "31:51"
+  },
+  {
+   "title": "GTA 6 - Before You Buy",
+   "url": "https://www.youtube.com/watch?v=vVVIWEGciKk",
+   "source": "GameRanx",
+   "feedId": "yt-gameranx",
+   "type": "video",
+   "tags": [
+    "gaming"
+   ],
+   "published": "2026-11-18T15:47:51.000Z",
+   "summary": "Grand Theft Auto VI (PS5, Xbox Series X/S) is here. Let's talk about this long awaited game and whether or not it's worth the hype. Subscribe for more: http://youtube.com/gameranxtv ▼▼ Buy GTA6: https://link.amazon/B01cRTYq3 ---follow Jake: https://www.instagram.com/jakebaldino…",
+   "thumb": "https://i3.ytimg.com/vi/vVVIWEGciKk/hqdefault.jpg",
+   "id": "6ad8f4715688",
+   "score": 0,
+   "matched": [],
+   "why": "0",
+   "durationSec": 1542,
+   "duration": "25:42"
+  },
+  {
    "title": "HIGHLIGHTS: Andy Burnham SCHOOLS Kemi Badenoch on Milburn Report at PMQs",
    "url": "https://www.youtube.com/watch?v=fV4qBDaypeU",
    "source": "PoliticsJOE",
@@ -1249,26 +1267,6 @@
    "why": "0",
    "durationSec": 1286,
    "duration": "21:26"
-  },
-  {
-   "title": "OH SH*T: Leavitt Accidentally EXPOSES TRUMP On National TV!",
-   "url": "https://www.youtube.com/watch?v=6gNXWroZUeA",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-18T01:50:09.000Z",
-   "summary": "Luke discusses Karoline Leavitt's latest apperance on Fox News. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
-   "thumb": "https://i3.ytimg.com/vi/6gNXWroZUeA/hqdefault.jpg",
-   "id": "7ebe8bf1a39d",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 1017,
-   "duration": "16:57"
   },
   {
    "title": "The history of video games and politics, from the '70s to now",
@@ -2943,5 +2941,5 @@
    "duration": "4:34"
   }
  ],
- "contentHash": "769a93833e9b"
+ "contentHash": "c70779ca82f8"
 }
