@@ -1,18 +1,16 @@
 {
- "generated": "2026-11-18T20:39:54.169Z",
+ "generated": "2026-11-19T02:38:40.424Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
   "ok": 49,
-  "items": 112,
+  "items": 113,
   "duplicatesMerged": 0,
-  "lengthsKnown": 103,
-  "lengthLookups": 17,
-  "lengthFailures": 1,
+  "lengthsKnown": 105,
+  "lengthLookups": 8,
+  "lengthFailures": 0,
   "lengthVia": "YouTube Data API",
-  "lengthFailReasons": {
-   "not returned by API (live/private?)": 1
-  }
+  "lengthFailReasons": {}
  },
  "feeds": [
   {
@@ -176,7 +174,7 @@
    "name": "Half as Interesting",
    "type": "youtube",
    "status": "ok",
-   "count": 1,
+   "count": 2,
    "resolved": {
     "channelId": "UCuCkxoKLYO_EQ2GeFtbM_bw",
     "title": "Half as Interesting",
@@ -633,7 +631,7 @@
    "status": "cached",
    "count": 3,
    "lastOk": "2026-11-17T16:12:01.447Z",
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-tech",
@@ -642,18 +640,16 @@
    "status": "waiting",
    "count": 0,
    "lastOk": "2026-11-07T19:04:52.310Z",
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-gaming",
    "name": "r/gaming",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-ukpolitics",
@@ -662,16 +658,18 @@
    "status": "waiting",
    "count": 0,
    "lastOk": "2026-11-16T19:40:46.781Z",
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-xbox",
    "name": "r/xbox",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": "2026-11-07T21:52:57.028Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-slaythespire",
@@ -680,7 +678,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-geopolitics",
@@ -712,7 +710,169 @@
  ],
  "items": [
   {
-   "title": "Überfordert mit Geld und Aktien: Warum Schüler sich allein gelassen fühlen",
+   "title": "Fed Up Fox Host Finally SNAPS, Goes SCORCHED EARTH on Vance!",
+   "url": "https://www.youtube.com/watch?v=XG5BLjLISbQ",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-19T01:55:24.000Z",
+   "summary": "Luke discusses Brian Kilmeade's latest take on JD Vance. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
+   "thumb": "https://i1.ytimg.com/vi/XG5BLjLISbQ/hqdefault.jpg",
+   "id": "f21207b4dbc4",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 1026,
+   "duration": "17:06"
+  },
+  {
+   "title": "This is embarrassing",
+   "url": "https://www.youtube.com/watch?v=Kjc-HxFX-CM",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-18T23:55:11.000Z",
+   "summary": "Luke discusses Trump's Asia trip. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley Instagram -…",
+   "thumb": "https://i4.ytimg.com/vi/Kjc-HxFX-CM/hqdefault.jpg",
+   "id": "f769b027d646",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 620,
+   "duration": "10:20"
+  },
+  {
+   "title": "The Loophole That Makes Kalshi Legal",
+   "url": "https://www.youtube.com/watch?v=lixwB5gYDbA",
+   "source": "Half as Interesting",
+   "feedId": "yt-half-as-interesting",
+   "type": "video",
+   "tags": [
+    "comedy",
+    "education"
+   ],
+   "published": "2026-11-18T22:45:38.000Z",
+   "summary": "Get $30 off your first Wildgrain box, plus free croissants for life, when you visit https://wildgrain.com/HAI and use code HAI at checkout. Follow Sam from Half as Interesting on Instagram: http://Instagram.com/Sam.From.Wendover Follow Half as Interesting on Twitter:…",
+   "thumb": "https://i1.ytimg.com/vi/lixwB5gYDbA/hqdefault.jpg",
+   "id": "701074de67b5",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 495,
+   "duration": "8:15"
+  },
+  {
+   "title": "tagesthemen 22:15 Uhr, 18.11.2026",
+   "url": "https://www.youtube.com/watch?v=bRlV8x4s2kI",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-18T22:14:22.000Z",
+   "summary": "tagesthemen 22:15 Uhr Koalition einigt sich nach achtstündiger Beratung auf Senkung der Stromsteuer, Die Meinung, Gipfel der Asiatisch-Pazifischen Wirtschaftsgemeinschaft im chinesischen Shenzhen, Estland plant Schließung der Grenze zu Russland, Beratungen über KI-gestützte…",
+   "thumb": "https://i3.ytimg.com/vi/bRlV8x4s2kI/hqdefault.jpg",
+   "id": "cd24f2830ed5",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 2098,
+   "duration": "34:58"
+  },
+  {
+   "title": "Is this a stroke of genius from David Lammy? | James O'Brien - The Whole Show",
+   "url": "https://www.youtube.com/watch?v=9OXwoBg9d84",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-18T22:00:08.000Z",
+   "summary": "David Lammy wants Andy Burnham to put rejoining the European Union in Labour’s next manifesto. James asks whether it could be a vote winner, as callers discuss the political case for rejoining and reflect on the promises made during the Brexit campaign. Plus, after Wayne Rooney…",
+   "thumb": "https://i2.ytimg.com/vi/9OXwoBg9d84/hqdefault.jpg",
+   "id": "86254a60a9a0",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 8834,
+   "duration": "2:27:14"
+  },
+  {
+   "title": "Trump Official SCREAMED AT In His Face as CHAOS ERUPTS!",
+   "url": "https://www.youtube.com/watch?v=EKWZX81-hmE",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-18T21:55:04.000Z",
+   "summary": "Luke discusses Markwayne Mullin's recent congressional hearing. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
+   "thumb": "https://i2.ytimg.com/vi/EKWZX81-hmE/hqdefault.jpg",
+   "id": "f7e6376b7d88",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 1153,
+   "duration": "19:13"
+  },
+  {
+   "title": "Is Trump helping Putin reshape Europe's borders?",
+   "url": "https://www.youtube.com/watch?v=2T33TILy5uY",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-18T21:51:23.000Z",
+   "summary": "Vladimir Putin is hoping to use his relationship with Donald Trump to secure Russia's demands over Ukraine, as the Russian president joins Trump and China's Xi Jinping for a major summit in Shenzhen. But with Ukraine reportedly absent from the agenda, could the three leaders…",
+   "thumb": "https://i3.ytimg.com/vi/2T33TILy5uY/hqdefault.jpg",
+   "id": "a0cdfe676ee0",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 668,
+   "duration": "11:08"
+  },
+  {
+   "title": "Fauler Kompromiss? Kritik an befristeter Senkung der Stromsteuer | tagesthemen-Interview",
+   "url": "https://www.youtube.com/watch?v=eMPXQNLa1ZU",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-18T21:16:47.000Z",
+   "summary": "Union und SPD haben sich nach langem Ringen auf eine Senkung der Stromsteuer geeinigt. Die ist aber vorerst auf ein Jahr befristet. Schwerer Prozess, gutes Ergebnis? Was bringt diese Steuer wirklich an Entlastung für kleinere Betriebe und Familien? Das fragt Jörg Schönenborn im…",
+   "thumb": "https://i2.ytimg.com/vi/eMPXQNLa1ZU/hqdefault.jpg",
+   "id": "39efb947d68a",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 325,
+   "duration": "5:25"
+  },
+  {
+   "title": "Einstieg in Aktien oder ETFs: Warum vielen jungen Menschen Wissen fehlt",
    "url": "https://www.youtube.com/watch?v=1usAA35fNpg",
    "source": "Tagesschau",
    "feedId": "yt-tagesschau",
@@ -872,24 +1032,6 @@
    "duration": "45:05"
   },
   {
-   "title": "Is this a stroke of genius from David Lammy? | James O'Brien - The Whole Show",
-   "url": "https://www.youtube.com/watch?v=9OXwoBg9d84",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-18T17:36:42.000Z",
-   "summary": "David Lammy wants Andy Burnham to put rejoining the European Union in Labour’s next manifesto. James asks whether it could be a vote winner, as callers discuss the political case for rejoining and reflect on the promises made during the Brexit campaign. Plus, after Wayne Rooney…",
-   "thumb": "https://i2.ytimg.com/vi/9OXwoBg9d84/hqdefault.jpg",
-   "id": "86254a60a9a0",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Andrew Yang Reacts to His Viral Debates on Artificial Intelligence | Surrounded Follow-Up",
    "url": "https://www.youtube.com/watch?v=nbscGy5jcc0",
    "source": "Jubilee",
@@ -908,27 +1050,6 @@
    "why": "fresh (<12 h) +1 = 1",
    "durationSec": 1911,
    "duration": "31:51"
-  },
-  {
-   "title": "tagesschau in Einfacher Sprache 19:00 Uhr, 18.11.2026",
-   "url": "https://www.youtube.com/watch?v=HO4g-FFUSF8",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-18T16:38:07.000Z",
-   "summary": "tagesschau in Einfacher Sprache 19:00 Uhr Regierung plant weniger Steuern für Strom, Bundestagswahl: BSW scheitert vor Gericht, Wichtiges Treffen von Politikern in China, Jubiläum von Petersdom in Rom, Das Wetter https://www.tagesschau.de",
-   "thumb": "https://i1.ytimg.com/vi/HO4g-FFUSF8/hqdefault.jpg",
-   "id": "5a04136780a1",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 468,
-   "duration": "7:48"
   },
   {
    "title": "Trump-Xi-Putin meeting: Actual business or just a photo-op?",
@@ -970,27 +1091,6 @@
    "duration": "25:42"
   },
   {
-   "title": "400 Jahre Petersdom: Sakralbau feiert Jubiläum",
-   "url": "https://www.youtube.com/watch?v=UjhEGpvC5zg",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-18T15:15:12.000Z",
-   "summary": "Heute vor 400 Jahren wurde er geweiht: der Petersdom in Rom. Die Basilika ist noch heute eine der wichtigsten Kirchen der katholischen Christen. Am 18. November 1626 weihte Papst Urban der Achte den Petersdom ein. 120 Jahre war an dem Gotteshaus gebaut worden. Jeden Tag…",
-   "thumb": "https://i2.ytimg.com/vi/UjhEGpvC5zg/hqdefault.jpg",
-   "id": "4f74121ff6e1",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 102,
-   "duration": "1:42"
-  },
-  {
    "title": "How widespread is support and sympathy for Russell Brand?",
    "url": "https://www.youtube.com/watch?v=BjTdgMnvW0I",
    "source": "LBC",
@@ -1009,45 +1109,6 @@
    "why": "fresh (<12 h) +1 = 1",
    "durationSec": 728,
    "duration": "12:08"
-  },
-  {
-   "title": "'The White House has questions to answer' | Simon Marks",
-   "url": "https://www.youtube.com/watch?v=rO1-8mwkikw",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-18T14:04:47.000Z",
-   "summary": "Simon Marks joins James O'Brien to discuss the Trump-Xi-Putin summit, the ongoing Nvidia scandal, and the FBI investigation into America's ground stop. 0:00 | Trump-Xi-Putin summit gets underway 9:45 | Trump trades millions in Nvidia shares 17:07 | FBI investigates FAA ground…",
-   "thumb": "https://i3.ytimg.com/vi/rO1-8mwkikw/hqdefault.jpg",
-   "id": "5854d65ff35b",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 1151,
-   "duration": "19:11"
-  },
-  {
-   "title": "HIGHLIGHTS: Andy Burnham SCHOOLS Kemi Badenoch on Milburn Report at PMQs",
-   "url": "https://www.youtube.com/watch?v=fV4qBDaypeU",
-   "source": "PoliticsJOE",
-   "feedId": "yt-politicsjoe",
-   "type": "video",
-   "tags": [
-    "comedy"
-   ],
-   "published": "2026-11-18T13:13:05.000Z",
-   "summary": "After Tuesday's release of the long-awaited Milburn report, the Prime Minster went head-to-head at the despatch box with the Tory leader. Like PoliticsJOE? We need your support: https://www.patreon.com/PoliticsJOE",
-   "thumb": "https://i3.ytimg.com/vi/fV4qBDaypeU/hqdefault.jpg",
-   "id": "a89d1e9e625d",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 884,
-   "duration": "14:44"
   },
   {
    "title": "Controller Made Of Stone?",
@@ -1151,6 +1212,25 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
+   "title": "HIGHLIGHTS: Andy Burnham SCHOOLS Kemi Badenoch on Milburn Report at PMQs",
+   "url": "https://www.youtube.com/watch?v=fV4qBDaypeU",
+   "source": "PoliticsJOE",
+   "feedId": "yt-politicsjoe",
+   "type": "video",
+   "tags": [
+    "comedy"
+   ],
+   "published": "2026-11-18T13:13:05.000Z",
+   "summary": "After Tuesday's release of the long-awaited Milburn report, the Prime Minster went head-to-head at the despatch box with the Tory leader. Like PoliticsJOE? We need your support: https://www.patreon.com/PoliticsJOE",
+   "thumb": "https://i3.ytimg.com/vi/fV4qBDaypeU/hqdefault.jpg",
+   "id": "a89d1e9e625d",
+   "score": 0,
+   "matched": [],
+   "why": "0",
+   "durationSec": 884,
+   "duration": "14:44"
+  },
+  {
    "title": "Vance VISIBLY STUNNED as Host CORNERS HIM!",
    "url": "https://www.youtube.com/watch?v=zLF2asAFo2I",
    "source": "Luke Beasley",
@@ -1191,26 +1271,6 @@
    "duration": "16:57"
   },
   {
-   "title": "MAGA Hosts Go DEAD SILENT as Co-Host EXPOSES THEM On Live TV!",
-   "url": "https://www.youtube.com/watch?v=2trmz6Wu308",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-17T23:50:05.000Z",
-   "summary": "Luke discusses Jessica Tarlov's latest appearance on The Five. Check out Jessica Tarlov's new book below! https://sites.prh.com/idisagree Want to support the show and gain access to a daily bonus show? Become a member here:…",
-   "thumb": "https://i3.ytimg.com/vi/2trmz6Wu308/hqdefault.jpg",
-   "id": "f57e706973b9",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 562,
-   "duration": "9:22"
-  },
-  {
    "title": "The history of video games and politics, from the '70s to now",
    "url": "https://www.youtube.com/watch?v=ncmx5Pmn-4I",
    "source": "J.J. McCullough",
@@ -1230,26 +1290,6 @@
    "why": "0",
    "durationSec": 1766,
    "duration": "29:26"
-  },
-  {
-   "title": "WATCH TRUMP’S FACE as Everything Goes To SH*T!",
-   "url": "https://www.youtube.com/watch?v=xQpCeaGy62I",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-17T21:50:03.000Z",
-   "summary": "Luke discusses the cybersecurity issues that have emerged over the past couple of days. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
-   "thumb": "https://i1.ytimg.com/vi/xQpCeaGy62I/hqdefault.jpg",
-   "id": "944b5e9443eb",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 1409,
-   "duration": "23:29"
   },
   {
    "title": "10 HUGE Moments That Shaped GTA 6",
@@ -1406,26 +1446,6 @@
    "why": "0",
    "durationSec": 1764,
    "duration": "29:24"
-  },
-  {
-   "title": "MAGA Star’s MOST HUMILIATING INTERVIEW Ever!",
-   "url": "https://www.youtube.com/watch?v=3PVml8L-vJw",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-17T14:00:34.000Z",
-   "summary": "Luke discusses Benny Johnson's brutally wrong prediction. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
-   "thumb": "https://i4.ytimg.com/vi/3PVml8L-vJw/hqdefault.jpg",
-   "id": "def26dbdf666",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 520,
-   "duration": "8:40"
   },
   {
    "title": "Is Burnham A Radical PM?",
@@ -2923,5 +2943,5 @@
    "duration": "4:34"
   }
  ],
- "contentHash": "dd1538bd1c7c"
+ "contentHash": "769a93833e9b"
 }
