@@ -1,13 +1,13 @@
 {
- "generated": "2026-11-20T02:23:22.978Z",
+ "generated": "2026-11-20T11:52:39.597Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
-  "ok": 49,
-  "items": 111,
+  "ok": 48,
+  "items": 107,
   "duplicatesMerged": 0,
-  "lengthsKnown": 108,
-  "lengthLookups": 7,
+  "lengthsKnown": 106,
+  "lengthLookups": 8,
   "lengthFailures": 0,
   "lengthVia": "YouTube Data API",
   "lengthFailReasons": {}
@@ -122,7 +122,7 @@
    "name": "Patrick Boyle",
    "type": "youtube",
    "status": "ok",
-   "count": 2,
+   "count": 1,
    "resolved": {
     "channelId": "UCASM0cgfkJxQ1ICmRilfHLw",
     "title": "Patrick Boyle",
@@ -213,7 +213,7 @@
    "name": "TLDR News",
    "type": "youtube",
    "status": "ok",
-   "count": 4,
+   "count": 3,
    "resolved": {
     "channelId": "UCSMqateX8OA2s1wsOR2EgJA",
     "title": "TLDR News",
@@ -658,18 +658,16 @@
    "status": "waiting",
    "count": 0,
    "lastOk": "2026-11-16T19:40:46.781Z",
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-xbox",
    "name": "r/xbox",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": "2026-11-07T21:52:57.028Z",
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-slaythespire",
@@ -678,25 +676,27 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
-   "status": "cached",
-   "count": 2,
+   "status": "waiting",
+   "count": 0,
    "lastOk": "2026-11-17T03:58:17.859Z",
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-germany",
    "name": "r/germany",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": "2026-11-12T02:17:58.406Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-unitedkingdom",
@@ -705,10 +705,175 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   }
  ],
  "items": [
+  {
+   "title": "Zwickau: Pilot-Projekt in VW-Werk | tagesthemen mittendrin",
+   "url": "https://www.youtube.com/watch?v=DqrR5Pgl81A",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-20T10:18:41.000Z",
+   "summary": "In Zwickau werden Autos nicht mehr nur zusammen-, sondern jetzt auch auseinandergebaut. Kann das den Standort und Arbeitsplätze retten? Mehr tagesthemen mittendrin Reportagen hier: https://www.tagesschau.de/inland/mittendrin Alle aktuellen Informationen, weitere Nachrichten und…",
+   "thumb": "https://i1.ytimg.com/vi/DqrR5Pgl81A/hqdefault.jpg",
+   "id": "48ce64a070bf",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 209,
+   "duration": "3:29"
+  },
+  {
+   "title": "Nigel Farage issues warning amid Andy Burnham's UK-EU talks",
+   "url": "https://www.youtube.com/watch?v=4si-BdzpmRA",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-20T09:59:34.000Z",
+   "summary": "Andy Burnham's new UK-EU deal was held up this morning with European officials threatening to pull the plug in a row over tuition fees. The Prime Minister is in Brussels to finalise agreements covering food and agriculture exports, emissions trading and a youth mobility scheme…",
+   "thumb": "https://i1.ytimg.com/vi/4si-BdzpmRA/hqdefault.jpg",
+   "id": "eb51d4b87e1d",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 769,
+   "duration": "12:49"
+  },
+  {
+   "title": "Klimakonferenz in Antalya: Türkei fordert Ziel für Elektrifizierung",
+   "url": "https://www.youtube.com/watch?v=bJN2gpahAEs",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-20T09:45:13.000Z",
+   "summary": "Bei der Weltklimakonferenz in Antalya wird auch am offiziell letzten Tag über Finanzierung und den Ausstieg aus fossilen Energien gestritten. Die Zeit drängt – und viele kleinere Länder wünschen sich mehr Engagement aus Deutschland. Mehr Informationen:…",
+   "thumb": "https://i3.ytimg.com/vi/bJN2gpahAEs/hqdefault.jpg",
+   "id": "f24a6252a445",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 158,
+   "duration": "2:38"
+  },
+  {
+   "title": "Bundeswehr und Polen: Was die neue Militär-Kooperation bringt",
+   "url": "https://www.youtube.com/watch?v=dtYCOJ2o9w4",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-20T09:34:43.000Z",
+   "summary": "Patriot-Systeme und Eurofighter-Kampfjets sowie eine Zusammenarbeit der Armeen beim Aufbau von gemeinsamen Verteidigungsstellungen: Polen und Deutschland arbeiten bereits militärisch zusammen. Das möchten beide Länder nun intensivieren. Mehr Informationen:…",
+   "thumb": "https://i1.ytimg.com/vi/dtYCOJ2o9w4/hqdefault.jpg",
+   "id": "1a8102ec3bd6",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 417,
+   "duration": "6:57"
+  },
+  {
+   "title": "MOMA-Reporter: Der lang ersehnte Start von Grand Theft Auto 6 | ARD Morgenmagazin",
+   "url": "https://www.youtube.com/watch?v=YchgWF0y6Cw",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-20T08:46:56.000Z",
+   "summary": "Mehr als ein Jahrzehnt mussten die Fans auf die Fortsetzung der Grand Theft-Reihe warten. Es ist das wohl größte Videospiel aller Zeiten. Millionen Vorbestellungen und ungewöhnliche viele Urlaubsanträge zeigen, wie groß der Hype ist. Schauplatz von GTA 6 ist der fiktive…",
+   "thumb": "https://i2.ytimg.com/vi/YchgWF0y6Cw/hqdefault.jpg",
+   "id": "812d393ba8b8",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 289,
+   "duration": "4:49"
+  },
+  {
+   "title": "Erneut Gen Z Proteste / Strenge Regeln beim Ratenkauf / No-Show-Gebühr im Restaurant | „15 Minuten“",
+   "url": "https://www.youtube.com/watch?v=_uQQEKuwqUQ",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-20T05:14:40.000Z",
+   "summary": "Unsere Infos heute: (00:00:00) Themenübersicht (00:01:05) Erneut Proteste der Gen Z In vielen Städten wird gibt es heute wieder Demonstrationen der Initiative „Gen Z regelt“. Die ersten bundesweiten Proteste Ende Oktober verliefen größtenteils friedlich, vereinzelt kam es aber…",
+   "thumb": "https://i4.ytimg.com/vi/_uQQEKuwqUQ/hqdefault.jpg",
+   "id": "89232283aaa0",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 928,
+   "duration": "15:28"
+  },
+  {
+   "title": "This is INSANE",
+   "url": "https://www.youtube.com/watch?v=m39UiEc5sBs",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-20T04:55:16.000Z",
+   "summary": "Luke discusses Trump's Fox News interview in China. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley Instagram -…",
+   "thumb": "https://i2.ytimg.com/vi/m39UiEc5sBs/hqdefault.jpg",
+   "id": "475ba77eeeef",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 507,
+   "duration": "8:27"
+  },
+  {
+   "title": "MITCH MCCONNELL MITCH MCCONNELL MITCH MCCONNELL",
+   "url": "https://www.youtube.com/watch?v=ZTSIbYIhe8E",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-20T02:55:20.000Z",
+   "summary": "Luke discusses all the headlines surrounding Mitch McConnell. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
+   "thumb": "https://i3.ytimg.com/vi/ZTSIbYIhe8E/hqdefault.jpg",
+   "id": "a5a1653b1bd1",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 342,
+   "duration": "5:42"
+  },
   {
    "title": "Mike Lindell’s MENTAL BREAKDOWN Just Got SO MUCH WORSE!",
    "url": "https://www.youtube.com/watch?v=jUGsPSB4Nh4",
@@ -730,6 +895,22 @@
    "duration": "11:01"
   },
   {
+   "title": "Controller Made Of Stone?",
+   "url": "https://www.reddit.com/r/ProductManagement/comments/1xym33l/controller_made_of_stone/",
+   "source": "r/productmanagement",
+   "feedId": "rd-productmanagement",
+   "type": "post",
+   "tags": [
+    "product"
+   ],
+   "published": "2026-11-17T14:38:36.000Z",
+   "summary": "I've been thinking a lot about how to make a controller truly premium, but this idea really caught my attention—the image is just a concept art (not AI). The plan is to use a full stone-resin composite for the casing and all the buttons. Do you think there would be a demand for…",
+   "id": "7e0974746533",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
    "title": "Ive Been Disrespecting My Husband All These Years",
    "url": "https://www.youtube.com/watch?v=49GAQG13A6E",
    "source": "Aberrant preach",
@@ -742,9 +923,9 @@
    "summary": "Woman has an interesting realization of her past treatment to her husband. ———————————— Spotify: https://open.spotify.com/artist/6QJIJ6AugqPEFASp1V6zgH Merchandise --- https://www.enkreprinte.com/collections/aba-and-preach INSTAGRAM @aba.atlas @abanpreach Discord:…",
    "thumb": "https://i1.ytimg.com/vi/49GAQG13A6E/hqdefault.jpg",
    "id": "da9320effbf0",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 727,
    "duration": "12:07"
   },
@@ -762,9 +943,9 @@
    "summary": "Luke discusses more on Trump's trip to Asia. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley Instagram -…",
    "thumb": "https://i4.ytimg.com/vi/S60q3Y-lU44/hqdefault.jpg",
    "id": "964fa90de778",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 776,
    "duration": "12:56"
   },
@@ -782,53 +963,11 @@
    "summary": "Donald Trump has called Vladimir Putin his friend as the two leaders meet China's Xi Jinping for historic talks. But what does Trump hope to gain from getting so close to two of the world's most powerful authoritarian leaders? James asks whether there's a political strategy…",
    "thumb": "https://i3.ytimg.com/vi/jYCJM0q7HPM/hqdefault.jpg",
    "id": "cdd234d831fa",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 8756,
    "duration": "2:25:56"
-  },
-  {
-   "title": "tagesthemen 22:15 Uhr, 19.11.2026",
-   "url": "https://www.youtube.com/watch?v=7EJmOl8Uv4M",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-19T22:21:02.000Z",
-   "summary": "tagesthemen 22:15 Uhr Erstmals gemeinsames Treffen von Putin und Trump sowie Xi im Rahmen eines Gipfels in Shenzhen, \"Koalition der Willigen\" berät in Berlin über Unterstützung der Ukraine, Johann Wadephul, CDU/Bundesaußenminister, zur Europas Rolle bei Friedensbemühungen für…",
-   "thumb": "https://i4.ytimg.com/vi/7EJmOl8Uv4M/hqdefault.jpg",
-   "id": "a423ae71992b",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 2139,
-   "duration": "35:39"
-  },
-  {
-   "title": "Anthropic: Was bleibt vom Rekord-Börsengang des KI-Unternehmens? | tagesthemen-Interview",
-   "url": "https://www.youtube.com/watch?v=s_OfG8OoCSA",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-19T22:08:34.000Z",
-   "summary": "Der lange erwartete Start an der Börse wurde zum Triumph für Anthropic: Mehr als 80 Milliarden Euro hat das KI-Unternehmen damit eingesammelt, das Interesse der Investoren und Anleger war enorm. Die Zweifel am Geschäftsmodell Künstliche Intelligenz sind damit aber noch nicht…",
-   "thumb": "https://i4.ytimg.com/vi/s_OfG8OoCSA/hqdefault.jpg",
-   "id": "deb156474cca",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 205,
-   "duration": "3:25"
   },
   {
    "title": "Five MAGA Fox Hosts MELTDOWN ALL AT ONCE!",
@@ -844,9 +983,9 @@
    "summary": "Luke discusses what Fox News is up to as GTA VI releases. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
    "thumb": "https://i1.ytimg.com/vi/PYvX7Jedf-s/hqdefault.jpg",
    "id": "094eab427d31",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 732,
    "duration": "12:12"
   },
@@ -863,9 +1002,9 @@
    "summary": "With China hosting its second AI Robotic Olympics, it is fair to say the future looks very bleak future for us humans. ———————————— Spotify: https://open.spotify.com/artist/6QJIJ6AugqPEFASp1V6zgH Merchandise --- https://www.enkreprinte.com/collections/aba-and-preach INSTAGRAM…",
    "thumb": "https://i4.ytimg.com/vi/cbpmfC5LYs8/hqdefault.jpg",
    "id": "516c8a0244dd",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 782,
    "duration": "13:02"
   },
@@ -882,9 +1021,9 @@
    "summary": "Xiaomi competes in more than 200 product categories, from smartphones and rice cookers to smart toilets and electric cars. SharkNinja’s roughly 40 categories look small next to that, so how does one company pull it off? Learn the smartest moves from nine iconic brands:…",
    "thumb": "https://i3.ytimg.com/vi/j4fw-n7xxc4/hqdefault.jpg",
    "id": "efef01aa1919",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 880,
    "duration": "14:40"
   },
@@ -902,32 +1041,11 @@
    "summary": "Sir James Cleverly is the Conservatives' candidate for the Mayor of London race in 2028. He invited LBC onto a boat on the Thames to discuss his ambitions. Henry Riley quizzed Sir James on a range of policy issues relating to the capital, from its infrastructure woes to 'the…",
    "thumb": "https://i3.ytimg.com/vi/RkBJCqeIJkg/hqdefault.jpg",
    "id": "82051bdc53f8",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 593,
    "duration": "9:53"
-  },
-  {
-   "title": "tagesschau 20:00 Uhr, 19.11.2026",
-   "url": "https://www.youtube.com/watch?v=LlCRpv2jeXg",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-19T19:31:46.000Z",
-   "summary": "Die 20-Uhr-Ausgabe der tagesschau im Livestream und auf Abruf findet ihr auch hier: https://ardmediathek.de/tagesschau und https://tagesschau.de Themen der tagesschau-Sendung: 00:00 Guten Abend 00:21 Trump und Xi sowie Putin beenden Dreiergipfel in Shenzhen mit…",
-   "thumb": "https://i1.ytimg.com/vi/LlCRpv2jeXg/hqdefault.jpg",
-   "id": "d4d3851154b8",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 1056,
-   "duration": "17:36"
   },
   {
    "title": "“Unprepared” Trump achieved little with Putin and Xi meeting | The Economist",
@@ -943,53 +1061,11 @@
    "summary": "Donald Trump, Xi Jinping and Vladimir Putin have met in Shenzhen for the first trilateral summit between the leaders of America, China and Russia. The meeting was high on symbolism but offered few diplomatic breakthroughs. So, what did it achieve? Subscribe:…",
    "thumb": "https://i1.ytimg.com/vi/HXhZb8uFH9M/hqdefault.jpg",
    "id": "d4e297e31060",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 467,
    "duration": "7:47"
-  },
-  {
-   "title": "Gipfel Trump, Xi und Putin – ist ein Frieden in der Ukraine näher gerückt? | tagesthemen-Interview",
-   "url": "https://www.youtube.com/watch?v=9GYn6DoA_sg",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-19T19:03:34.000Z",
-   "summary": "80 Minuten Gespräch an einem riesigen runden Tisch. Zum ersten Mal überhaupt saßen US-Präsident Donald Trump, Chinas Staatschef Xi Jinping und Russlands Wladimir Putin in dieser Runde zusammen. Themen gab es viele – Iran, nukleare Abrüstung, Künstliche Intelligenz, Ukraine,…",
-   "thumb": "https://i2.ytimg.com/vi/9GYn6DoA_sg/hqdefault.jpg",
-   "id": "3f1ea35ae961",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 393,
-   "duration": "6:33"
-  },
-  {
-   "title": "Anthropic gelingt der größte Börsengang aller Zeiten",
-   "url": "https://www.youtube.com/watch?v=aX6ulKI-iqY",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-19T19:00:46.000Z",
-   "summary": "Es ist der größte Börsengang der Geschichte: Mit einem Gesamtvolumen von 107,3 Milliarden Dollar hat der KI-Entwickler Anthropic selbst den Börsengang von Elon Musks Weltraumkonzern SpaceX übertroffen. Mit einer Bewertung zum Börsenstart von rund 2 Billionen Dollar zählt der…",
-   "thumb": "https://i2.ytimg.com/vi/aX6ulKI-iqY/hqdefault.jpg",
-   "id": "d10ce5cd4cb3",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 100,
-   "duration": "1:40"
   },
   {
    "title": "LBC caller says mothers are responsible for raising rapists",
@@ -1005,9 +1081,9 @@
    "summary": "Four men have been found guilty of sexual offences against a woman who was drugged and advertised for sex by her husband. Philip Young previously pleaded guilty to multiple charges of abuse against his former spouse, Joanne Young, who has waived her right to anonymity. Now,…",
    "thumb": "https://i3.ytimg.com/vi/BZXyNfDavu0/hqdefault.jpg",
    "id": "efbcf7f15343",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 527,
    "duration": "8:47"
   },
@@ -1024,9 +1100,9 @@
    "summary": "Here's the official music video for ASMR by Sheepish (Gianmarco Soresi) Visit https://watch.dropout.tv/mp3 for full episodes of MP3 Stream \"ASMR\" 🟢Spotify: https://open.spotify.com/track/70Egvod09G3ZNOn9YfoYhj?si=6e724e72bc6e484f 🍎Apple Music:…",
    "thumb": "https://i4.ytimg.com/vi/gH7TCvC5hHw/hqdefault.jpg",
    "id": "cb825b081d99",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 181,
    "duration": "3:01"
   },
@@ -1044,9 +1120,9 @@
    "summary": "Shelagh Fogarty is joined by Lewis Goodall to discuss the 'historic' APEC meeting between Trump, XI and Putin. They also react to Elon Musk's admission that he feels 'foolish' over midterms spending. Elon Musk has distanced himself from MAGA as he admitted feeling \"foolish\"…",
    "thumb": "https://i4.ytimg.com/vi/cCDQ6c5o2QI/hqdefault.jpg",
    "id": "b01bf658b910",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 615,
    "duration": "10:15"
   },
@@ -1064,9 +1140,9 @@
    "summary": "Melissa Clayton enters the Tank seeking $100,000 for 20% of The Matte, a foldable makeup organizer that transforms any bathroom sink into an instant countertop. From Season 12 Episode 20 Watch Shark Tank US Now: http://AAN.SonyPictures.com/SharkTankUSHulu Watch Shark Tank…",
    "thumb": "https://i4.ytimg.com/vi/KyQDFWnk8Kw/hqdefault.jpg",
    "id": "132957f218dd",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 443,
    "duration": "7:23"
   },
@@ -1083,9 +1159,9 @@
    "summary": "Jumping into Grand Theft Auto VI (PS5, Xbox Series X/S)? We've got you covered with these tips and tricks. Subscribe for more: https://www.youtube.com/gameranxTV?sub_confirmation=1 0:00 Intro 0:33 Number 10 2:44 Number 9 5:39 Number 8 7:26 Number 7 9:24 Number 6 10:19 Number 5…",
    "thumb": "https://i2.ytimg.com/vi/1yBSK22csvI/hqdefault.jpg",
    "id": "517bbc63dd96",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 1258,
    "duration": "20:58"
   },
@@ -1103,9 +1179,9 @@
    "summary": "Next year AI could start building its own successors, with no human in the loop. Subscribe: https://www.youtube.com/@TheEconomist?sub_confirmation=1 Alex Hern, The Economist’s AI writer, is joined by Tom Standage, deputy editor, and Alok Jha, science and technology editor, to…",
    "thumb": "https://i3.ytimg.com/vi/rE-sazAVQVU/hqdefault.jpg",
    "id": "81b5e46fa961",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 601,
    "duration": "10:01"
   },
@@ -1123,31 +1199,11 @@
    "summary": "Get every side of every story https://ground.news/c5. Subscribe for 40% off the Vantage plan through my link. To see 'Everyone Is Lying to You for Money' or any of the other documentaries currently streaming on C5.NOW while knowing that you are directly supporting independent…",
    "thumb": "https://i4.ytimg.com/vi/wWidJf6XNlc/hqdefault.jpg",
    "id": "ac377b2e06fe",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 4682,
    "duration": "1:18:02"
-  },
-  {
-   "title": "‘Do the right thing’: Downing Street’s message to Google over Russell Brand’s YouTube",
-   "url": "https://www.youtube.com/watch?v=Msw_OKndCzw",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-19T16:45:02.000Z",
-   "summary": "Google has 'refused to take down' Russell Brand's YouTube channel, rejecting the request from the government. In a video shared to his Sunday Service channel, the disgraced comedian protested his innocence through a message delivered by his wife Laura. The rapist was sentence…",
-   "thumb": "https://i2.ytimg.com/vi/Msw_OKndCzw/hqdefault.jpg",
-   "id": "f9ac6539e89c",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 774,
-   "duration": "12:54"
   },
   {
    "title": "The Insane World of Waffle House",
@@ -1163,81 +1219,11 @@
    "summary": "Check out Air Dog's air purifiers with reusable, washable filters here: https://airdogusa.com/products/airdog-x8-home-air-purifier-1000-sq-ft?utm_source=ig&utm_medium=influencer&utm_campaign=levi Subscribe!…",
    "thumb": "https://i4.ytimg.com/vi/gZ5FENXQCi8/hqdefault.jpg",
    "id": "cc51d70115c7",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 1474,
-   "duration": "24:34"
-  },
-  {
-   "title": "Controller Made Of Stone?",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1xym33l/controller_made_of_stone/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-11-17T14:38:36.000Z",
-   "summary": "I've been thinking a lot about how to make a controller truly premium, but this idea really caught my attention—the image is just a concept art (not AI). The plan is to use a full stone-resin composite for the casing and all the buttons. Do you think there would be a demand for…",
-   "id": "7e0974746533",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Trump says Kim Jong Un may join him, Putin and Xi for first-ever super summit",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xy9ok5/trump_says_kim_jong_un_may_join_him_putin_and_xi/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-11-17T03:17:25.000Z",
-   "summary": "submitted by /u/One-Emu-1103 [link] [comments]",
-   "id": "f2a92a2deae4",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Why Hold Back in War?",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xy9foe/why_hold_back_in_war/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
-   "tags": [
-    "politics",
-    "news"
-   ],
-   "published": "2026-11-17T03:05:10.000Z",
-   "summary": "Trump and Putin have brought great destruction in Iran and Ukraine, but they have threatened even worse. What, if anything, has held them back? submitted by /u/tscherer [link] [comments]",
-   "id": "eb839eb5f481",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
-   "title": "Stephen A. Smith SNAPS after Trump Interview NIGHTMARE!",
-   "url": "https://www.youtube.com/watch?v=Vv-yKMWF_N4",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-19T14:00:02.000Z",
-   "summary": "Luke discusses Stephen A. Smith addressing the criticism he received following his Trump interview. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below!…",
-   "thumb": "https://i3.ytimg.com/vi/Vv-yKMWF_N4/hqdefault.jpg",
-   "id": "cdbfab3cbcdd",
    "score": 0,
    "matched": [],
    "why": "0",
-   "durationSec": 1362,
-   "duration": "22:42"
+   "durationSec": 1474,
+   "duration": "24:34"
   },
   {
    "title": "The Prime Minister that haunts Britain | How Power Works",
@@ -1257,26 +1243,6 @@
    "why": "0",
    "durationSec": 2015,
    "duration": "33:35"
-  },
-  {
-   "title": "Buttigieg HUMILIATES Trump Official in an INSANT!",
-   "url": "https://www.youtube.com/watch?v=4V8rYZWeFg0",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-19T03:55:26.000Z",
-   "summary": "Luke discusses Pete Buttigieg's response to the recent FAA issues. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
-   "thumb": "https://i1.ytimg.com/vi/4V8rYZWeFg0/hqdefault.jpg",
-   "id": "37a9c959e191",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 800,
-   "duration": "13:20"
   },
   {
    "title": "The Loophole That Makes Kalshi Legal",
@@ -2876,49 +2842,7 @@
    "why": "0",
    "durationSec": 3889,
    "duration": "1:04:49"
-  },
-  {
-   "title": "The Green Party Split Explained",
-   "url": "https://www.youtube.com/watch?v=T-LtFNpz-aE",
-   "source": "TLDR News",
-   "feedId": "yt-tldr-news",
-   "type": "video",
-   "tags": [
-    "news",
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-06T09:30:25.000Z",
-   "summary": "Pre-order a copy of Too Long: toolong.news/TL010 In this video, we’re going to explain this green split in a little more detail and go through how it’s come about, where Zack Polanski sits on the issue, and which direction the Green Party is likely to head in. Why the Greens…",
-   "thumb": "https://i1.ytimg.com/vi/T-LtFNpz-aE/hqdefault.jpg",
-   "id": "4183f2162fe2",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 510,
-   "duration": "8:30"
-  },
-  {
-   "title": "The Binance Hack Isn’t Funny!",
-   "url": "https://www.youtube.com/watch?v=yU8JpuK5NZs",
-   "source": "Patrick Boyle",
-   "feedId": "yt-patrick-boyle",
-   "type": "video",
-   "tags": [
-    "finance",
-    "education",
-    "listen"
-   ],
-   "published": "2026-11-06T06:41:48.000Z",
-   "summary": "Go to http://ground.news/pb for a better way to stay informed. Subscribe for 40% off unlimited access to worldwide coverage through my link. Last week, hackers drained $6.3 billion from Binance, the world’s largest crypto exchange, in what blockchain analysts call the largest…",
-   "thumb": "https://i2.ytimg.com/vi/yU8JpuK5NZs/hqdefault.jpg",
-   "id": "3d8797a8d007",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 2437,
-   "duration": "40:37"
   }
  ],
- "contentHash": "89dd925a5b7b"
+ "contentHash": "f1177f08d908"
 }
