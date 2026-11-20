@@ -1,13 +1,13 @@
 {
- "generated": "2026-11-19T20:46:20.529Z",
+ "generated": "2026-11-20T02:23:22.978Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
   "ok": 49,
-  "items": 114,
+  "items": 111,
   "duplicatesMerged": 0,
   "lengthsKnown": 108,
-  "lengthLookups": 21,
+  "lengthLookups": 7,
   "lengthFailures": 0,
   "lengthVia": "YouTube Data API",
   "lengthFailReasons": {}
@@ -629,20 +629,18 @@
    "name": "r/productmanagement",
    "type": "reddit",
    "status": "cached",
-   "count": 2,
+   "count": 1,
    "lastOk": "2026-11-17T16:12:01.447Z",
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-tech",
    "name": "r/tech",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": "2026-11-07T19:04:52.310Z",
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-gaming",
@@ -651,7 +649,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-ukpolitics",
@@ -660,16 +658,18 @@
    "status": "waiting",
    "count": 0,
    "lastOk": "2026-11-16T19:40:46.781Z",
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-xbox",
    "name": "r/xbox",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": "2026-11-07T21:52:57.028Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-slaythespire",
@@ -678,14 +678,14 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-geopolitics",
    "name": "r/geopolitics",
    "type": "reddit",
    "status": "cached",
-   "count": 4,
+   "count": 2,
    "lastOk": "2026-11-17T03:58:17.859Z",
    "note": "not its turn this run"
   },
@@ -710,7 +710,148 @@
  ],
  "items": [
   {
-   "title": "These Robots Are Terrifying.",
+   "title": "Mike Lindell’s MENTAL BREAKDOWN Just Got SO MUCH WORSE!",
+   "url": "https://www.youtube.com/watch?v=jUGsPSB4Nh4",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-20T00:55:24.000Z",
+   "summary": "Luke discusses the latest update on Mike Lindell's meltdown. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
+   "thumb": "https://i3.ytimg.com/vi/jUGsPSB4Nh4/hqdefault.jpg",
+   "id": "a65b8d0c2576",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 661,
+   "duration": "11:01"
+  },
+  {
+   "title": "Ive Been Disrespecting My Husband All These Years",
+   "url": "https://www.youtube.com/watch?v=49GAQG13A6E",
+   "source": "Aberrant preach",
+   "feedId": "yt-aberrant-preach",
+   "type": "video",
+   "tags": [
+    "trash"
+   ],
+   "published": "2026-11-19T23:48:30.000Z",
+   "summary": "Woman has an interesting realization of her past treatment to her husband. ———————————— Spotify: https://open.spotify.com/artist/6QJIJ6AugqPEFASp1V6zgH Merchandise --- https://www.enkreprinte.com/collections/aba-and-preach INSTAGRAM @aba.atlas @abanpreach Discord:…",
+   "thumb": "https://i1.ytimg.com/vi/49GAQG13A6E/hqdefault.jpg",
+   "id": "da9320effbf0",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 727,
+   "duration": "12:07"
+  },
+  {
+   "title": "GET OUT: DRAMA at Trump’s Xi Meeting as Reporter KICKED OUT OF THE ROOM!",
+   "url": "https://www.youtube.com/watch?v=S60q3Y-lU44",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-19T22:55:12.000Z",
+   "summary": "Luke discusses more on Trump's trip to Asia. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley Instagram -…",
+   "thumb": "https://i4.ytimg.com/vi/S60q3Y-lU44/hqdefault.jpg",
+   "id": "964fa90de778",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 776,
+   "duration": "12:56"
+  },
+  {
+   "title": "Trump calls Putin his friend as world leaders meet | James O'Brien - The Whole Show",
+   "url": "https://www.youtube.com/watch?v=jYCJM0q7HPM",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-19T22:30:08.000Z",
+   "summary": "Donald Trump has called Vladimir Putin his friend as the two leaders meet China's Xi Jinping for historic talks. But what does Trump hope to gain from getting so close to two of the world's most powerful authoritarian leaders? James asks whether there's a political strategy…",
+   "thumb": "https://i3.ytimg.com/vi/jYCJM0q7HPM/hqdefault.jpg",
+   "id": "cdd234d831fa",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 8756,
+   "duration": "2:25:56"
+  },
+  {
+   "title": "tagesthemen 22:15 Uhr, 19.11.2026",
+   "url": "https://www.youtube.com/watch?v=7EJmOl8Uv4M",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-19T22:21:02.000Z",
+   "summary": "tagesthemen 22:15 Uhr Erstmals gemeinsames Treffen von Putin und Trump sowie Xi im Rahmen eines Gipfels in Shenzhen, \"Koalition der Willigen\" berät in Berlin über Unterstützung der Ukraine, Johann Wadephul, CDU/Bundesaußenminister, zur Europas Rolle bei Friedensbemühungen für…",
+   "thumb": "https://i4.ytimg.com/vi/7EJmOl8Uv4M/hqdefault.jpg",
+   "id": "a423ae71992b",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 2139,
+   "duration": "35:39"
+  },
+  {
+   "title": "Anthropic: Was bleibt vom Rekord-Börsengang des KI-Unternehmens? | tagesthemen-Interview",
+   "url": "https://www.youtube.com/watch?v=s_OfG8OoCSA",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-19T22:08:34.000Z",
+   "summary": "Der lange erwartete Start an der Börse wurde zum Triumph für Anthropic: Mehr als 80 Milliarden Euro hat das KI-Unternehmen damit eingesammelt, das Interesse der Investoren und Anleger war enorm. Die Zweifel am Geschäftsmodell Künstliche Intelligenz sind damit aber noch nicht…",
+   "thumb": "https://i4.ytimg.com/vi/s_OfG8OoCSA/hqdefault.jpg",
+   "id": "deb156474cca",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 205,
+   "duration": "3:25"
+  },
+  {
+   "title": "Five MAGA Fox Hosts MELTDOWN ALL AT ONCE!",
+   "url": "https://www.youtube.com/watch?v=PYvX7Jedf-s",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-19T20:55:29.000Z",
+   "summary": "Luke discusses what Fox News is up to as GTA VI releases. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
+   "thumb": "https://i1.ytimg.com/vi/PYvX7Jedf-s/hqdefault.jpg",
+   "id": "094eab427d31",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 732,
+   "duration": "12:12"
+  },
+  {
+   "title": "We're Sooooo Done",
    "url": "https://www.youtube.com/watch?v=cbpmfC5LYs8",
    "source": "Aberrant preach",
    "feedId": "yt-aberrant-preach",
@@ -779,7 +920,7 @@
     "listen"
    ],
    "published": "2026-11-19T19:31:46.000Z",
-   "summary": "tagesschau 20:00 Uhr Trump und Xi sowie Putin beenden Dreiergipfel in Shenzhen mit \"Friedenserklärung\", Kanzler Merz begrüßt \"Koalition der Willingen\" für Beratungen zur Ukraine-Unterstützung in Berlin, Internationaler Gerichtshof stuft Verbrechen gegen die Rohingya in Myanmar…",
+   "summary": "Die 20-Uhr-Ausgabe der tagesschau im Livestream und auf Abruf findet ihr auch hier: https://ardmediathek.de/tagesschau und https://tagesschau.de Themen der tagesschau-Sendung: 00:00 Guten Abend 00:21 Trump und Xi sowie Putin beenden Dreiergipfel in Shenzhen mit…",
    "thumb": "https://i1.ytimg.com/vi/LlCRpv2jeXg/hqdefault.jpg",
    "id": "d4d3851154b8",
    "score": 1,
@@ -880,7 +1021,7 @@
     "comedy"
    ],
    "published": "2026-11-19T18:30:05.000Z",
-   "summary": "Here's the official music video for ASMR by Sheepish (Gianmarco Soresi) Visit https://watch.dropout.tv/mp3 for full episodes of MP3 Get ready for MP3- Music Presentation 3! Your new favorite music video countdown show where every episode brings new outrageous music videos,…",
+   "summary": "Here's the official music video for ASMR by Sheepish (Gianmarco Soresi) Visit https://watch.dropout.tv/mp3 for full episodes of MP3 Stream \"ASMR\" 🟢Spotify: https://open.spotify.com/track/70Egvod09G3ZNOn9YfoYhj?si=6e724e72bc6e484f 🍎Apple Music:…",
    "thumb": "https://i4.ytimg.com/vi/gH7TCvC5hHw/hqdefault.jpg",
    "id": "cb825b081d99",
    "score": 1,
@@ -949,27 +1090,6 @@
    "duration": "20:58"
   },
   {
-   "title": "Mit einem AfD-POLITIKER und dem CHEF der GRÜNEN JUGEND an einer UNI...",
-   "url": "https://www.youtube.com/watch?v=FyJ7S1EuMoE",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-19T17:00:35.000Z",
-   "summary": "Die Jugend protestiert: Schülerinnen, Schüler und Studis gehen in Europa auf die Straße, auch in Deutschland. Ein Anliegen: Die Situation an Schulen und Unis. Wie sieht's dort aus? Wie geht gute Bildungspolitik? Bei Draußenpolitik diskutiert Louis Klamroth mit Luis Bobga von…",
-   "thumb": "https://i3.ytimg.com/vi/FyJ7S1EuMoE/hqdefault.jpg",
-   "id": "66143a5c0ceb",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 1906,
-   "duration": "31:46"
-  },
-  {
    "title": "Why AI engineers are scared of self-building artificial intelligence | The Economist",
    "url": "https://www.youtube.com/watch?v=rE-sazAVQVU",
    "source": "The Economist",
@@ -1030,27 +1150,6 @@
    "duration": "12:54"
   },
   {
-   "title": "tagesschau in Einfacher Sprache 19:00 Uhr, 19.11.2026",
-   "url": "https://www.youtube.com/watch?v=U2VxGffAxEQ",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-19T16:40:52.000Z",
-   "summary": "tagesschau in Einfacher Sprache 19:00 Uhr Trump und Xi sowie Putin beenden Dreiergipfel in Shenzhen mit \"Friedenserklärung\", \"Koalition der Willigen\" treffen sich in Berlin zu einem Gipfel zur Unterstützung der Ukraine, BSI warnt vor Cyberangriffen, Riesen Hype um das…",
-   "thumb": "https://i2.ytimg.com/vi/U2VxGffAxEQ/hqdefault.jpg",
-   "id": "ed573cfc145e",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 523,
-   "duration": "8:43"
-  },
-  {
    "title": "The Insane World of Waffle House",
    "url": "https://www.youtube.com/watch?v=gZ5FENXQCi8",
    "source": "Levi Hildebrand",
@@ -1069,65 +1168,6 @@
    "why": "fresh (<12 h) +1 = 1",
    "durationSec": 1474,
    "duration": "24:34"
-  },
-  {
-   "title": "LBC callers react to Trump's 'embarrassing' meeting with Xi and Putin",
-   "url": "https://www.youtube.com/watch?v=FyWYo4oTsLA",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-19T15:45:20.000Z",
-   "summary": "Shelagh Fogarty and her callers analyse the 'historic' meeting between Trump, Putin, and Xi and consider what this means for the world at large. The three countries have deep differences over Ukraine, Iran, nuclear weapons and trade, casting doubts about a durable outcome. But…",
-   "thumb": "https://i3.ytimg.com/vi/FyWYo4oTsLA/hqdefault.jpg",
-   "id": "b65151794092",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 1362,
-   "duration": "22:42"
-  },
-  {
-   "title": "Stephen A. Smith SNAPS after Trump Interview NIGHTMARE!",
-   "url": "https://www.youtube.com/watch?v=Vv-yKMWF_N4",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-19T14:00:02.000Z",
-   "summary": "Luke discusses Stephen A. Smith addressing the criticism he received following his Trump interview. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below!…",
-   "thumb": "https://i3.ytimg.com/vi/Vv-yKMWF_N4/hqdefault.jpg",
-   "id": "cdbfab3cbcdd",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 1362,
-   "duration": "22:42"
-  },
-  {
-   "title": "The Prime Minister that haunts Britain | How Power Works",
-   "url": "https://www.youtube.com/watch?v=E9WSyDzdMhE",
-   "source": "PoliticsJOE",
-   "feedId": "yt-politicsjoe",
-   "type": "video",
-   "tags": [
-    "comedy"
-   ],
-   "published": "2026-11-19T13:00:09.000Z",
-   "summary": "Why has the British working class been broken, and how has that transformed our politics? Writer, researcher and campaigner Jonas Marvin discusses his new book, The Breaking of the English Working Class, exploring how decades of deindustrialisation, Thatcherism and political…",
-   "thumb": "https://i2.ytimg.com/vi/E9WSyDzdMhE/hqdefault.jpg",
-   "id": "088e87a3824d",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 2015,
-   "duration": "33:35"
   },
   {
    "title": "Controller Made Of Stone?",
@@ -1180,38 +1220,43 @@
    "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Exclusive: US intel indicates Iran developing plans to potentially detonate a dirty bomb in Washington, sources say",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xy52wv/exclusive_us_intel_indicates_iran_developing/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
+   "title": "Stephen A. Smith SNAPS after Trump Interview NIGHTMARE!",
+   "url": "https://www.youtube.com/watch?v=Vv-yKMWF_N4",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
    "tags": [
     "politics",
-    "news"
+    "listen"
    ],
-   "published": "2026-11-16T23:42:46.000Z",
-   "summary": "New US intelligence indicates that Iran is developing plans to target senior Trump administration officials by detonating a so-called dirty bomb or a chemical weapon in Washington, DC, even as officials continue to debate whether Iran can or will attempt to execute such a plot,…",
-   "id": "41c3bc91bdf8",
-   "score": 1,
+   "published": "2026-11-19T14:00:02.000Z",
+   "summary": "Luke discusses Stephen A. Smith addressing the criticism he received following his Trump interview. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below!…",
+   "thumb": "https://i3.ytimg.com/vi/Vv-yKMWF_N4/hqdefault.jpg",
+   "id": "cdbfab3cbcdd",
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
+   "why": "0",
+   "durationSec": 1362,
+   "duration": "22:42"
   },
   {
-   "title": "Venezuela’s Collaborator-in-Chief",
-   "url": "https://www.reddit.com/r/geopolitics/comments/1xy22qt/venezuelas_collaboratorinchief/",
-   "source": "r/geopolitics",
-   "feedId": "rd-geopolitics",
-   "type": "post",
+   "title": "The Prime Minister that haunts Britain | How Power Works",
+   "url": "https://www.youtube.com/watch?v=E9WSyDzdMhE",
+   "source": "PoliticsJOE",
+   "feedId": "yt-politicsjoe",
+   "type": "video",
    "tags": [
-    "politics",
-    "news"
+    "comedy"
    ],
-   "published": "2026-11-16T21:37:32.000Z",
-   "summary": "submitted by /u/newyorker [link] [comments]",
-   "id": "d7be48e2aeb5",
-   "score": 1,
+   "published": "2026-11-19T13:00:09.000Z",
+   "summary": "Why has the British working class been broken, and how has that transformed our politics? Writer, researcher and campaigner Jonas Marvin discusses his new book, The Breaking of the English Working Class, exploring how decades of deindustrialisation, Thatcherism and political…",
+   "thumb": "https://i2.ytimg.com/vi/E9WSyDzdMhE/hqdefault.jpg",
+   "id": "088e87a3824d",
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
+   "why": "0",
+   "durationSec": 2015,
+   "duration": "33:35"
   },
   {
    "title": "Buttigieg HUMILIATES Trump Official in an INSANT!",
@@ -1234,46 +1279,6 @@
    "duration": "13:20"
   },
   {
-   "title": "Fed Up Fox Host Finally SNAPS, Goes SCORCHED EARTH on Vance!",
-   "url": "https://www.youtube.com/watch?v=XG5BLjLISbQ",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-19T01:55:24.000Z",
-   "summary": "Luke discusses Brian Kilmeade's latest take on JD Vance. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
-   "thumb": "https://i1.ytimg.com/vi/XG5BLjLISbQ/hqdefault.jpg",
-   "id": "f21207b4dbc4",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 1026,
-   "duration": "17:06"
-  },
-  {
-   "title": "This is embarrassing",
-   "url": "https://www.youtube.com/watch?v=Kjc-HxFX-CM",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-18T23:55:11.000Z",
-   "summary": "Luke discusses Trump's Asia trip. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley Instagram -…",
-   "thumb": "https://i4.ytimg.com/vi/Kjc-HxFX-CM/hqdefault.jpg",
-   "id": "f769b027d646",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 620,
-   "duration": "10:20"
-  },
-  {
    "title": "The Loophole That Makes Kalshi Legal",
    "url": "https://www.youtube.com/watch?v=lixwB5gYDbA",
    "source": "Half as Interesting",
@@ -1292,26 +1297,6 @@
    "why": "0",
    "durationSec": 495,
    "duration": "8:15"
-  },
-  {
-   "title": "Trump Official SCREAMED AT In His Face as CHAOS ERUPTS!",
-   "url": "https://www.youtube.com/watch?v=EKWZX81-hmE",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-18T21:55:04.000Z",
-   "summary": "Luke discusses Markwayne Mullin's recent congressional hearing. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
-   "thumb": "https://i2.ytimg.com/vi/EKWZX81-hmE/hqdefault.jpg",
-   "id": "f7e6376b7d88",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 1153,
-   "duration": "19:13"
   },
   {
    "title": "Not Idris Elba? New James Bond Announced",
@@ -1342,7 +1327,7 @@
     "comedy"
    ],
    "published": "2026-11-18T18:30:10.000Z",
-   "summary": "Here's the official music video for Fluent in Your Love Language by Boys Who Read (Zach Reino, James Tolbert, Jon Matteson, Angela Giarratana, and Paul Robalino) Visit https://watch.dropout.tv/mp3 for full episodes of MP3 Get ready for MP3- Music Presentation 3! Your new…",
+   "summary": "Here's the official music video for Fluent in Your Love Language by Boys Who Read (Zach Reino, James Tolbert, Jon Matteson, Angela Giarratana, and Paul Robalino) Visit https://watch.dropout.tv/mp3 for full episodes of MP3 Stream \"Fluent in Your Love Language\" 🟢Spotify:…",
    "thumb": "https://i4.ytimg.com/vi/74QNqyXUh_c/hqdefault.jpg",
    "id": "5e04a8304c30",
    "score": 0,
@@ -1668,22 +1653,6 @@
    "duration": "2:42:53"
   },
   {
-   "title": "Only PM at a market leader, effectively CPO without the title. How do I get the most out of it before it burns me out?",
-   "url": "https://www.reddit.com/r/ProductManagement/comments/1xy2fgf/only_pm_at_a_market_leader_effectively_cpo/",
-   "source": "r/productmanagement",
-   "feedId": "rd-productmanagement",
-   "type": "post",
-   "tags": [
-    "product"
-   ],
-   "published": "2026-11-16T21:51:30.000Z",
-   "summary": "Hey all, I’m looking for advice from anyone who’s been the only PM at a legacy company. Situation I have ~2.5 years of PM experience and recently joined a local company that’s the clear leader in its market (a few million MAU). I’m the only PM there, and I own: The website iOS…",
-   "id": "09fca8f394dc",
-   "score": 0,
-   "matched": [],
-   "why": "0"
-  },
-  {
    "title": "Bodycam Zombie Game is INSANE",
    "url": "https://www.youtube.com/watch?v=qa3vZLNrmU0",
    "source": "GameRanx",
@@ -1879,25 +1848,6 @@
    "why": "0",
    "durationSec": 2610,
    "duration": "43:30"
-  },
-  {
-   "title": "This Is Corruption & You're Paying For It",
-   "url": "https://www.youtube.com/watch?v=PB3-0dOJq6c",
-   "source": "Aberrant preach",
-   "feedId": "yt-aberrant-preach",
-   "type": "video",
-   "tags": [
-    "trash"
-   ],
-   "published": "2026-11-16T00:25:06.000Z",
-   "summary": "NVIDIA's former CEO Jensen Huang waqs caught in the middle of a cheating affair that seems to be distracting us from the more pressing corruption concern... ———————————— Spotify: https://open.spotify.com/artist/6QJIJ6AugqPEFASp1V6zgH Merchandise ---…",
-   "thumb": "https://i1.ytimg.com/vi/PB3-0dOJq6c/hqdefault.jpg",
-   "id": "f915b709a16d",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 1274,
-   "duration": "21:14"
   },
   {
    "title": "Bregenz: Lake Life, Austrian Dialect & Local Food",
@@ -2970,5 +2920,5 @@
    "duration": "40:37"
   }
  ],
- "contentHash": "09b32d7543a9"
+ "contentHash": "89dd925a5b7b"
 }
