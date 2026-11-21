@@ -1,16 +1,18 @@
 {
- "generated": "2026-11-20T20:29:45.547Z",
+ "generated": "2026-11-21T02:26:39.777Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
   "ok": 47,
   "items": 106,
   "duplicatesMerged": 0,
-  "lengthsKnown": 106,
-  "lengthLookups": 18,
-  "lengthFailures": 0,
+  "lengthsKnown": 103,
+  "lengthLookups": 5,
+  "lengthFailures": 3,
   "lengthVia": "YouTube Data API",
-  "lengthFailReasons": {}
+  "lengthFailReasons": {
+   "not returned by API (live/private?)": 3
+  }
  },
  "feeds": [
   {
@@ -631,18 +633,16 @@
    "status": "waiting",
    "count": 0,
    "lastOk": "2026-11-17T16:12:01.447Z",
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-tech",
    "name": "r/tech",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": "2026-11-07T19:04:52.310Z",
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-gaming",
@@ -651,7 +651,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-ukpolitics",
@@ -660,16 +660,18 @@
    "status": "waiting",
    "count": 0,
    "lastOk": "2026-11-16T19:40:46.781Z",
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-xbox",
    "name": "r/xbox",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": "2026-11-07T21:52:57.028Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-slaythespire",
@@ -678,7 +680,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-geopolitics",
@@ -710,6 +712,83 @@
  ],
  "items": [
   {
+   "title": "KT: Behind the Tape (Ep: 794 Chris O'Connor + Tommy Pope)",
+   "url": "https://www.youtube.com/watch?v=mZZW-Ol2DyU",
+   "source": "Kill Tony",
+   "feedId": "yt-kill-tony",
+   "type": "video",
+   "tags": [
+    "comedy",
+    "standup",
+    "listen"
+   ],
+   "published": "2026-11-21T02:00:07.000Z",
+   "summary": "An exclusive, behind-the-scenes look from KT Episode 794 KT guest Chris O'Connor + Tommy Pope Chris O'Connor, Tommy Pope, Pat O'Neill, Myles Johnson, Martin Phillips, D Madness, Michael A. Gonzales, Jon Deas, Matthew Muehling, Grooveline Horns, Joe White, Troy Conrad, Monica…",
+   "thumb": "https://i2.ytimg.com/vi/mZZW-Ol2DyU/hqdefault.jpg",
+   "id": "710176b63038",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "'A low point for the presidency' | Simon Marks' American Week",
+   "url": "https://www.youtube.com/watch?v=9m3YFtxGvv4",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-21T00:57:11.000Z",
+   "summary": "Trump has managed to upset Ukrainians, Americans, and his own Republican party after greeting Putin as his 'friend' at the historic trilateral meeting in China. Simon Marks runs through the biggest moments from the summit and delves into the FAA ground stop which completely…",
+   "thumb": "https://i2.ytimg.com/vi/9m3YFtxGvv4/hqdefault.jpg",
+   "id": "4be650f0faed",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "GTA6 LEAKER GUILTY, UBISOFT IN BIG TROUBLE? & MORE",
+   "url": "https://www.youtube.com/watch?v=Xqd3KSBYvn8",
+   "source": "GameRanx",
+   "feedId": "yt-gameranx",
+   "type": "video",
+   "tags": [
+    "gaming"
+   ],
+   "published": "2026-11-20T22:27:41.000Z",
+   "summary": "Use our link https://displate.com/gameranx or discount code: GAMERANX to get up to 42% off during Displate's Black Friday sales. Offer only runs through November 30th. Thanks to Displate for sponsoring this video! (Not valid on Limited Edition and Shards) ~~SOURCES~~ Caught…",
+   "thumb": "https://i1.ytimg.com/vi/Xqd3KSBYvn8/hqdefault.jpg",
+   "id": "352035dbe278",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 864,
+   "duration": "14:24"
+  },
+  {
+   "title": "tagesthemen 21:45 Uhr, 20.11.2026",
+   "url": "https://www.youtube.com/watch?v=ifV3nKLDVmw",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-20T21:43:15.000Z",
+   "summary": "tagesthemen 21:45 Uhr Bundesweite Schüler- und Studentendemos, Annäherung zwischen Großbritannien und EU, Übungsmanöver der \"Koalition der Willigen\" in Polen, Verlängerung der Klimakonferenz: Woran hakt es bei der COP?, KI-Boom in China: Rechenzentren und grüne Energie, Weitere…",
+   "thumb": "https://i2.ytimg.com/vi/ifV3nKLDVmw/hqdefault.jpg",
+   "id": "ec044cb544e2",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 2110,
+   "duration": "35:10"
+  },
+  {
    "title": "One Conservative Takes on Two Liberals | Roundtable",
    "url": "https://www.youtube.com/watch?v=vLlCWCYARFM",
    "source": "Jubilee",
@@ -730,7 +809,7 @@
    "duration": "1:30:43"
   },
   {
-   "title": "Polen wirft Russland gezielte Provokation durch Raketen vor",
+   "title": "Raketeneinschläge nahe Militärübung: Polens Angst vor Eskalation",
    "url": "https://www.youtube.com/watch?v=LMZkgD1l9zs",
    "source": "Tagesschau",
    "feedId": "yt-tagesschau",
@@ -911,25 +990,22 @@
    "duration": "14:59"
   },
   {
-   "title": "tagesschau in Einfacher Sprache 19:00 Uhr, 20.11.2026",
-   "url": "https://www.youtube.com/watch?v=HJVOR937ydU",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
+   "title": "Joanne Young: Breaking the silence on sexual abuse | James O'Brien - The Whole Show",
+   "url": "https://www.youtube.com/watch?v=zZrzKiBTT-M",
+   "source": "LBC",
+   "feedId": "yt-lbc",
    "type": "video",
    "tags": [
-    "german",
-    "news",
+    "politics",
     "listen"
    ],
-   "published": "2026-11-20T16:33:52.000Z",
-   "summary": "tagesschau in Einfacher Sprache 19:00 Uhr Leider gibt es heute keine neue tagesschau in Einfacher Sprache. Am Montag gibt es aber wieder eine neue Sendung. https://www.tagesschau.de",
-   "thumb": "https://i1.ytimg.com/vi/HJVOR937ydU/hqdefault.jpg",
-   "id": "09be27a18c78",
+   "published": "2026-11-20T16:51:06.000Z",
+   "summary": "Content warning: This episode contains discussion of sexual abuse, including childhood sexual abuse, and references to suicide. Joanne Young has waived her anonymity after four men were convicted of sexually abusing her while she was drugged by her then-husband. Why has she…",
+   "thumb": "https://i3.ytimg.com/vi/zZrzKiBTT-M/hqdefault.jpg",
+   "id": "2c6e1ac6fa6e",
    "score": 1,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 10,
-   "duration": "0:10"
+   "why": "fresh (<12 h) +1 = 1"
   },
   {
    "title": "Trump 'tells Europe to defund Ukraine' in 'tirade' phone call",
@@ -991,26 +1067,6 @@
    "duration": "15:37"
   },
   {
-   "title": "Reform councillor quits party due to racism",
-   "url": "https://www.youtube.com/watch?v=uZJMz4ZGkCQ",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-20T14:00:30.000Z",
-   "summary": "James O'Brien is joined by LBC's reporter Henry Riley to break down the latest developments within Reform UK. Listen to the full show on the all-new LBC App: https://app.af.lbc.co.uk/btnc/thenewlbcapp #jamesobrien #henryriley #LBC #reformuk #nigelfarage LBC is the home of live…",
-   "thumb": "https://i2.ytimg.com/vi/uZJMz4ZGkCQ/hqdefault.jpg",
-   "id": "b51c77e35d32",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 471,
-   "duration": "7:51"
-  },
-  {
    "title": "Elon VISIBLY SHAKEN as He Realizes He F***ED UP in Interview!",
    "url": "https://www.youtube.com/watch?v=vUzTo9ZiVWI",
    "source": "Luke Beasley",
@@ -1024,9 +1080,9 @@
    "summary": "Luke discusses Elon Musk's recent NYT interview. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley Instagram -…",
    "thumb": "https://i3.ytimg.com/vi/vUzTo9ZiVWI/hqdefault.jpg",
    "id": "05e217b94ce9",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 758,
    "duration": "12:38"
   },
@@ -1043,31 +1099,11 @@
    "summary": "Comedian and political activist Alexei Sayle joins us to discuss the disappearance of working-class culture in Britain, the decline of the trade union movement and why the establishment is so hostile to radical political ideas. He also discusses the decline of trade unions, the…",
    "thumb": "https://i3.ytimg.com/vi/ZJZIymUOdkA/hqdefault.jpg",
    "id": "bb9fa3312e4d",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 1961,
    "duration": "32:41"
-  },
-  {
-   "title": "From Brexit to Breturn? | Nick Ferrari's big story",
-   "url": "https://www.youtube.com/watch?v=xdIEKY17TxA",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-20T12:50:46.000Z",
-   "summary": "Cheat the week with Nick Ferrari as he runs you through the biggest story from the last five days: A potential Brexit reversal. The Prime Minister is in Brussels to finalise agreements covering food and agriculture exports, emissions trading and a youth mobility scheme which…",
-   "thumb": "https://i1.ytimg.com/vi/xdIEKY17TxA/hqdefault.jpg",
-   "id": "76f4d6967f69",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 761,
-   "duration": "12:41"
   },
   {
    "title": "This is INSANE",
@@ -1519,7 +1555,7 @@
    "duration": "14:44"
   },
   {
-   "title": "The history of video games and politics, from the '70s to now",
+   "title": "A history of video games & politics, from the '70s to now",
    "url": "https://www.youtube.com/watch?v=ncmx5Pmn-4I",
    "source": "J.J. McCullough",
    "feedId": "yt-j-j-mccullough",
@@ -1736,25 +1772,6 @@
    "why": "0",
    "durationSec": 9773,
    "duration": "2:42:53"
-  },
-  {
-   "title": "Bodycam Zombie Game is INSANE",
-   "url": "https://www.youtube.com/watch?v=qa3vZLNrmU0",
-   "source": "GameRanx",
-   "feedId": "yt-gameranx",
-   "type": "video",
-   "tags": [
-    "gaming"
-   ],
-   "published": "2026-11-16T21:18:24.000Z",
-   "summary": "Bodycam's newest update finally brings the zombie mode into the full game. How is it? Let's talk.",
-   "thumb": "https://i2.ytimg.com/vi/qa3vZLNrmU0/hqdefault.jpg",
-   "id": "76147c77860e",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 651,
-   "duration": "10:51"
   },
   {
    "title": "Is Muhammad Ethical? | Apostate Prophet Vs Nadir Ahmed",
@@ -2804,28 +2821,7 @@
    "why": "0",
    "durationSec": 443,
    "duration": "7:23"
-  },
-  {
-   "title": "KT: Behind the Tape (Ep: 792 Jimmy Carr + Luis J. Gomez + Steve Rannazzisi)",
-   "url": "https://www.youtube.com/watch?v=g_sevSzQBlM",
-   "source": "Kill Tony",
-   "feedId": "yt-kill-tony",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "standup",
-    "listen"
-   ],
-   "published": "2026-11-07T02:00:07.000Z",
-   "summary": "An exclusive, behind-the-scenes look from KT Episode 792 KT guest Jimmy Carr + Luis J. Gomez Jimmy Carr, Luis J. Gomez, Steve Rannazzisi, Pat O'Neill, Dedrick Flynn, Martin Phillips, D Madness, Michael A. Gonzales, Jon Deas, Matthew Muehling, Grooveline Horns, Joe White, Troy…",
-   "thumb": "https://i4.ytimg.com/vi/g_sevSzQBlM/hqdefault.jpg",
-   "id": "ccb0d857f99c",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 3384,
-   "duration": "56:24"
   }
  ],
- "contentHash": "3b910522818d"
+ "contentHash": "27e432f82ca0"
 }
