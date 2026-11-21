@@ -1,17 +1,17 @@
 {
- "generated": "2026-11-21T02:26:39.777Z",
+ "generated": "2026-11-21T11:20:48.432Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
   "ok": 47,
-  "items": 106,
+  "items": 107,
   "duplicatesMerged": 0,
-  "lengthsKnown": 103,
-  "lengthLookups": 5,
-  "lengthFailures": 3,
+  "lengthsKnown": 106,
+  "lengthLookups": 6,
+  "lengthFailures": 1,
   "lengthVia": "YouTube Data API",
   "lengthFailReasons": {
-   "not returned by API (live/private?)": 3
+   "not returned by API (live/private?)": 1
   }
  },
  "feeds": [
@@ -215,7 +215,7 @@
    "name": "TLDR News",
    "type": "youtube",
    "status": "ok",
-   "count": 3,
+   "count": 4,
    "resolved": {
     "channelId": "UCSMqateX8OA2s1wsOR2EgJA",
     "title": "TLDR News",
@@ -660,18 +660,16 @@
    "status": "waiting",
    "count": 0,
    "lastOk": "2026-11-16T19:40:46.781Z",
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-xbox",
    "name": "r/xbox",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": "2026-11-07T21:52:57.028Z",
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-slaythespire",
@@ -680,7 +678,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-geopolitics",
@@ -689,16 +687,18 @@
    "status": "waiting",
    "count": 0,
    "lastOk": "2026-11-17T03:58:17.859Z",
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-germany",
    "name": "r/germany",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": "2026-11-12T02:17:58.406Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-unitedkingdom",
@@ -707,10 +707,92 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   }
  ],
  "items": [
+  {
+   "title": "KI: Wie China seinen gigantischen Server-Ausbau vorantreibt",
+   "url": "https://www.youtube.com/watch?v=hSsKLqxAz1c",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-21T11:07:46.000Z",
+   "summary": "Weltweit wird der Strombedarf in den nächsten Jahren weiter wachsen – nicht zuletzt durch die Ausbreitung gewaltiger KI-Rechenzentren. Auch China will im Wettbewerb der künstlichen Intelligenz mithalten und baut riesige Datenzentren. Allerdings setzt die Volksrepublik dabei…",
+   "thumb": "https://i1.ytimg.com/vi/hSsKLqxAz1c/hqdefault.jpg",
+   "id": "4ece4839bc8e",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 227,
+   "duration": "3:47"
+  },
+  {
+   "title": "The New UK-EU Deal Explained",
+   "url": "https://www.youtube.com/watch?v=P78a76ZVuoc",
+   "source": "TLDR News",
+   "feedId": "yt-tldr-news",
+   "type": "video",
+   "tags": [
+    "news",
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-21T10:00:31.000Z",
+   "summary": "Take back your privacy - start using Proton Mail for free: https://proton.me/tldr Order the Too Long 2026 Bundle: https://toolong.news/products/too-long-2026-bundle On Friday, Andy Burnham met with the EU representatives to negotiate yet another deal. In this video, we're…",
+   "thumb": "https://i1.ytimg.com/vi/P78a76ZVuoc/hqdefault.jpg",
+   "id": "27b347f2f2f8",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 522,
+   "duration": "8:42"
+  },
+  {
+   "title": "The decline of Reform UK? James Hanson reacts to Nigel Farage’s latest series of interviews",
+   "url": "https://www.youtube.com/watch?v=bt_geA9I3kE",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-21T09:00:24.000Z",
+   "summary": "James Hanson doubles down on his prediction that Nigel Farage will step down as leader of Reform UK by next summer. The influential MP went on the media round yesterday and made a series of comments that reinforce James' view that he longer wants to lead the party. Has he had…",
+   "thumb": "https://i3.ytimg.com/vi/bt_geA9I3kE/hqdefault.jpg",
+   "id": "6436d9e5c110",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 570,
+   "duration": "9:30"
+  },
+  {
+   "title": "Joanne Young: Breaking the silence on sexual abuse | James O'Brien - The Whole Show",
+   "url": "https://www.youtube.com/watch?v=zZrzKiBTT-M",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-21T07:00:09.000Z",
+   "summary": "Content warning: This episode contains discussion of sexual abuse, including childhood sexual abuse, and references to suicide. Joanne Young has waived her anonymity after four men were convicted of sexually abusing her while she was drugged by her then-husband. Why has she…",
+   "thumb": "https://i3.ytimg.com/vi/zZrzKiBTT-M/hqdefault.jpg",
+   "id": "2c6e1ac6fa6e",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 8714,
+   "duration": "2:25:14"
+  },
   {
    "title": "KT: Behind the Tape (Ep: 794 Chris O'Connor + Tommy Pope)",
    "url": "https://www.youtube.com/watch?v=mZZW-Ol2DyU",
@@ -728,7 +810,9 @@
    "id": "710176b63038",
    "score": 1,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 3088,
+   "duration": "51:28"
   },
   {
    "title": "'A low point for the presidency' | Simon Marks' American Week",
@@ -761,9 +845,9 @@
    "summary": "Use our link https://displate.com/gameranx or discount code: GAMERANX to get up to 42% off during Displate's Black Friday sales. Offer only runs through November 30th. Thanks to Displate for sponsoring this video! (Not valid on Limited Edition and Shards) ~~SOURCES~~ Caught…",
    "thumb": "https://i1.ytimg.com/vi/Xqd3KSBYvn8/hqdefault.jpg",
    "id": "352035dbe278",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 864,
    "duration": "14:24"
   },
@@ -782,9 +866,9 @@
    "summary": "tagesthemen 21:45 Uhr Bundesweite Schüler- und Studentendemos, Annäherung zwischen Großbritannien und EU, Übungsmanöver der \"Koalition der Willigen\" in Polen, Verlängerung der Klimakonferenz: Woran hakt es bei der COP?, KI-Boom in China: Rechenzentren und grüne Energie, Weitere…",
    "thumb": "https://i2.ytimg.com/vi/ifV3nKLDVmw/hqdefault.jpg",
    "id": "ec044cb544e2",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 2110,
    "duration": "35:10"
   },
@@ -802,9 +886,9 @@
    "summary": "Hey you 👈 Wanna be in a Jubilee video? https://bit.ly/be-in-a-video LET’S BE FRIENDS Instagram: https://www.instagram.com/jubileemedia/ TikTok: https://www.tiktok.com/@jubilee?lang=en Website: https://www.jubileemedia.com OUR LOVE + DATING CHANNEL 🍑 YouTube:…",
    "thumb": "https://i3.ytimg.com/vi/vLlCWCYARFM/hqdefault.jpg",
    "id": "83a9e2da8fc3",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 5443,
    "duration": "1:30:43"
   },
@@ -823,9 +907,9 @@
    "summary": "Mehrere Flugkörper sind in den polnischen Luftraum eingedrungen – nach Einschätzung der Regierung eine gezielte Provokation Russlands. Sie könnte in Zusammenhang mit einer Übung der Ukraine-Unterstützer stehen, die derzeit in Polen stattfindet. Weitere Informationen:…",
    "thumb": "https://i1.ytimg.com/vi/LMZkgD1l9zs/hqdefault.jpg",
    "id": "a167e58ccfce",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 105,
    "duration": "1:45"
   },
@@ -842,9 +926,9 @@
    "summary": "Subscribe to The Onion by December 7 and receive free wrapping paper with your first issue. membership.theonion.com",
    "thumb": "https://i4.ytimg.com/vi/KgYjnv7V3r4/hqdefault.jpg",
    "id": "4e1fd74f7731",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 21,
    "duration": "0:21"
   },
@@ -863,9 +947,9 @@
    "summary": "Die Generation Z demonstriert wieder: Junge Menschen sind heute bundesweit für bessere Bildung, mehr Klimaschutz und gegen eine mögliche Wehrpflicht auf die Straßen gegangen. Diesmal sind es viele unterschiedliche Initiativen und Organisationen, die zu den Protesten aufgerufen…",
    "thumb": "https://i1.ytimg.com/vi/ty-v1RD0CrU/hqdefault.jpg",
    "id": "9e203d2a35e1",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 338,
    "duration": "5:38"
   },
@@ -884,9 +968,9 @@
    "summary": "tagesschau 20:00 Uhr Warnstreiks bei der Gewerkschaft IG Metall, Verlängerung der Weltklimakonferenz COP31 wegen ungelöster Streitfragen, EU und Großbritannien beschließen engere Zusammenarbeit auf drei Gebieten, Erneut massiver russischer Beschuss auf die Ukraine, Zwei…",
    "thumb": "https://i3.ytimg.com/vi/fhL-K8MmIQM/hqdefault.jpg",
    "id": "8b1406339e45",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 937,
    "duration": "15:37"
   },
@@ -904,9 +988,9 @@
    "summary": "Simon Marks joins Tom Swarbrick to break down Trump's first press conference back after his meeting with Putin and Xi. Amongst the 'rambling', Simon picks up on one bit of 'genuinely big news', not mentioned in Trump's post-meeting statement. In the unprecedented three-way…",
    "thumb": "https://i3.ytimg.com/vi/2SDvmh6aJng/hqdefault.jpg",
    "id": "30c0e53c10d0",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 414,
    "duration": "6:54"
   },
@@ -923,9 +1007,9 @@
    "summary": "Here's the official music video for No Thank You, The Ocean by Roop and Callahan (Sam Reich and Elaine Carroll) Visit https://watch.dropout.tv/mp3 for full episodes of MP3 Stream \"No Thank You, The Ocean\" 🟢Spotify:…",
    "thumb": "https://i1.ytimg.com/vi/0A6SJqAwswU/hqdefault.jpg",
    "id": "8f25b19d361b",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 204,
    "duration": "3:24"
   },
@@ -942,9 +1026,9 @@
    "summary": "In Grand Theft Auto VI, it's easy to make mistakes throughout Leonida. Here are some tips. Subscribe for more: https://www.youtube.com/gameranxTV?sub_confirmation=1 0:00 Intro 0:34 Number 20 2:09 Number 19 3:52 Number 18 5:30 Number 17 6:49 Number 16 8:06 Number 15 9:44 Number…",
    "thumb": "https://i3.ytimg.com/vi/rDJVx4dw848/hqdefault.jpg",
    "id": "90d30c3d1758",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 1767,
    "duration": "29:27"
   },
@@ -962,50 +1046,11 @@
    "summary": "The new season of Shark Tank US brings fresh entrepreneurs, innovative products and unforgettable moments to the Tank. 00:00 - Ball 2 08:26 - Nutcase 17:09 - Polygons 27:21 - Vulcan Pest 36:45 - HeroCovers 46:50 - Hoop Trailer Watch Shark Tank US Now:…",
    "thumb": "https://i1.ytimg.com/vi/8sJSpsWStZw/hqdefault.jpg",
    "id": "f8d0bc52d08d",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 3388,
    "duration": "56:28"
-  },
-  {
-   "title": "Warum klemmt es beim Ausbau der Offshore-Energie? | KlimaZeit vom 20.11.2026",
-   "url": "https://www.youtube.com/watch?v=Pj5jOXMGH-8",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-20T16:58:52.000Z",
-   "summary": "KlimaZeit 19:45 Uhr \"KlimaZeit\" bietet wöchentlich Hintergrundberichte, ordnet Ergebnisse der Klimaforschung ein, erklärt in aufwändigen Grafiken und Animationen alles Wissenswerte rund ums Klima, hinterfragt Entscheidungen der Politik und zeigt konstruktive Beispiele für die…",
-   "thumb": "https://i1.ytimg.com/vi/Pj5jOXMGH-8/hqdefault.jpg",
-   "id": "892bf4c66f40",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 899,
-   "duration": "14:59"
-  },
-  {
-   "title": "Joanne Young: Breaking the silence on sexual abuse | James O'Brien - The Whole Show",
-   "url": "https://www.youtube.com/watch?v=zZrzKiBTT-M",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-20T16:51:06.000Z",
-   "summary": "Content warning: This episode contains discussion of sexual abuse, including childhood sexual abuse, and references to suicide. Joanne Young has waived her anonymity after four men were convicted of sexually abusing her while she was drugged by her then-husband. Why has she…",
-   "thumb": "https://i3.ytimg.com/vi/zZrzKiBTT-M/hqdefault.jpg",
-   "id": "2c6e1ac6fa6e",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
   },
   {
    "title": "Trump 'tells Europe to defund Ukraine' in 'tirade' phone call",
@@ -1021,31 +1066,11 @@
    "summary": "Shelagh Fogarty is joined by Hadley Gamble to react as Trump 'tells Europe to defund Ukraine' in 'tirade' phone call after summit with his 'friend' Putin. Mr Trump is said to have dialled into a meeting of the coalition of the willing from aboard Air Force One where he angrily…",
    "thumb": "https://i2.ytimg.com/vi/mu8_CMwcRuQ/hqdefault.jpg",
    "id": "19bbc6ce43fb",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 641,
    "duration": "10:41"
-  },
-  {
-   "title": "LBC callers commend Joanne Young's bravery after she waived anonymity in rape case",
-   "url": "https://www.youtube.com/watch?v=f4Txz-jyfiw",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-20T15:26:34.000Z",
-   "summary": "James O'Brien and his callers commend Joanne Young's bravery after she waived anonymity in rape case. Joanne Young was abused by her husband, Philip Young, a councillor, who invited other men online to have sex with her. Today, four men who Young recruited to abuse his wife at…",
-   "thumb": "https://i3.ytimg.com/vi/f4Txz-jyfiw/hqdefault.jpg",
-   "id": "c4361ce14433",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 1717,
-   "duration": "28:37"
   },
   {
    "title": "North Korean Tank Commanders React to USA vs North Korea Military Comparison",
@@ -1060,9 +1085,9 @@
    "summary": "ex-North Korean Tank Commander Kwon Hyo-jin & ex-North Korean Tank Commander Jung Min-Woo eact to USA vs North Korea Military Comparison 00:00 Intro 00:30 Aircraft carriers 01:01 Submarines 01:40 Navy fleet 02:15 Fighter aircrafts 03:56 Towed artillery 04:35 Helicopters 05:28…",
    "thumb": "https://i3.ytimg.com/vi/Vzq8FHBne1E/hqdefault.jpg",
    "id": "483b57dd5b3c",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 937,
    "duration": "15:37"
   },
@@ -2823,5 +2848,5 @@
    "duration": "7:23"
   }
  ],
- "contentHash": "27e432f82ca0"
+ "contentHash": "a3bf80846ac9"
 }
