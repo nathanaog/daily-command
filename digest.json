@@ -1,18 +1,16 @@
 {
- "generated": "2026-11-21T11:20:48.432Z",
+ "generated": "2026-11-21T19:26:13.128Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
   "ok": 47,
-  "items": 107,
+  "items": 108,
   "duplicatesMerged": 0,
-  "lengthsKnown": 106,
-  "lengthLookups": 6,
-  "lengthFailures": 1,
+  "lengthsKnown": 108,
+  "lengthLookups": 14,
+  "lengthFailures": 0,
   "lengthVia": "YouTube Data API",
-  "lengthFailReasons": {
-   "not returned by API (live/private?)": 1
-  }
+  "lengthFailReasons": {}
  },
  "feeds": [
   {
@@ -124,7 +122,7 @@
    "name": "Patrick Boyle",
    "type": "youtube",
    "status": "ok",
-   "count": 1,
+   "count": 2,
    "resolved": {
     "channelId": "UCASM0cgfkJxQ1ICmRilfHLw",
     "title": "Patrick Boyle",
@@ -202,7 +200,7 @@
    "name": "Levi Hildebrand",
    "type": "youtube",
    "status": "ok",
-   "count": 3,
+   "count": 2,
    "resolved": {
     "channelId": "UC-OJ-24roEfQ_-PCnLJSckg",
     "title": "Levi Hildebrand",
@@ -397,7 +395,7 @@
    "name": "The Economist",
    "type": "youtube",
    "status": "ok",
-   "count": 5,
+   "count": 4,
    "resolved": {
     "channelId": "UC0p5jTq6Xx_DosDFxVXnWaQ",
     "title": "The Economist",
@@ -501,7 +499,7 @@
    "name": "RadicalSoda",
    "type": "youtube",
    "status": "ok",
-   "count": 0,
+   "count": 1,
    "resolved": {
     "channelId": "UCK045mDx8Pf9DpPG-kX8YUg",
     "title": "RadicalSoda",
@@ -592,7 +590,7 @@
    "name": "Economics Explained",
    "type": "youtube",
    "status": "ok",
-   "count": 3,
+   "count": 4,
    "resolved": {
     "channelId": "UCZ4AMrDcNrfy3X6nsU8-rPg",
     "title": "Economics Explained",
@@ -633,16 +631,18 @@
    "status": "waiting",
    "count": 0,
    "lastOk": "2026-11-17T16:12:01.447Z",
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-tech",
    "name": "r/tech",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": "2026-11-07T19:04:52.310Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-gaming",
@@ -651,7 +651,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-ukpolitics",
@@ -687,18 +687,16 @@
    "status": "waiting",
    "count": 0,
    "lastOk": "2026-11-17T03:58:17.859Z",
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-germany",
    "name": "r/germany",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": "2026-11-12T02:17:58.406Z",
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-unitedkingdom",
@@ -707,10 +705,292 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   }
  ],
  "items": [
+  {
+   "title": "Are Trump and Putin going to ‘carve up Ukraine’?",
+   "url": "https://www.youtube.com/watch?v=oLjhxtivftQ",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-21T18:49:36.000Z",
+   "summary": "Donald Trump has defended calling ‘wanted war criminal’ Vladimir Putin his ‘friend.’ Simon Marks tells Vanessa Feltz it was an ‘astonishing thing for any US president to say.’ In a press conference following the trilateral meeting, Trump said his ‘fantastic relationship’ with…",
+   "thumb": "https://i4.ytimg.com/vi/oLjhxtivftQ/hqdefault.jpg",
+   "id": "4566cf284a6d",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 686,
+   "duration": "11:26"
+  },
+  {
+   "title": "MAGA Star POSTS VIDEO On Me after CUSSING ME OUT!",
+   "url": "https://www.youtube.com/watch?v=ETX_M2na6K8",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-21T18:30:11.000Z",
+   "summary": "Luke discusses Gavin McInnes' response to his midterm-night crashout. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
+   "thumb": "https://i2.ytimg.com/vi/ETX_M2na6K8/hqdefault.jpg",
+   "id": "39678b1bc64e",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 1765,
+   "duration": "29:25"
+  },
+  {
+   "title": "Top 10 NEW Games of December 2026",
+   "url": "https://www.youtube.com/watch?v=gucDbIbsOAc",
+   "source": "GameRanx",
+   "feedId": "yt-gameranx",
+   "type": "video",
+   "tags": [
+    "gaming"
+   ],
+   "published": "2026-11-21T18:03:31.000Z",
+   "summary": "Looking for something to play in December to round out 2026? We’ve got you covered with these new game release dates for PC, PS5, Xbox Series, and Nintendo Switch 2. Subscribe for more: https://www.youtube.com/gameranxTV?sub_confirmation=1 0:00 Intro 0:45 Rayman Legends Retold…",
+   "thumb": "https://i4.ytimg.com/vi/gucDbIbsOAc/hqdefault.jpg",
+   "id": "a322511f0285",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 1196,
+   "duration": "19:56"
+  },
+  {
+   "title": "Joe Chay Wants to Turn Custom Suits Into a $100M Business | Shark Tank US | Shark Tank Global",
+   "url": "https://www.youtube.com/watch?v=CwsOxMYtLZI",
+   "source": "Shark Tank Global",
+   "feedId": "yt-shark-tank-global",
+   "type": "video",
+   "tags": [
+    "trash",
+    "business"
+   ],
+   "published": "2026-11-21T16:59:53.000Z",
+   "summary": "Joe Chay enters the Tank seeking $360,000 for 6% of Bello Verde, his luxury custom clothing brand, joined by actor Dean Cain and MMA fighter Urijah Faber. From Season 6 Episode 15 Watch Shark Tank US Now: http://AAN.SonyPictures.com/SharkTankUSHulu Watch Shark Tank Australia…",
+   "thumb": "https://i4.ytimg.com/vi/CwsOxMYtLZI/hqdefault.jpg",
+   "id": "67a1e5b926f4",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 634,
+   "duration": "10:34"
+  },
+  {
+   "title": "Breeding YouTuber Trauma with my 🍕FNAF QUIZ🍕",
+   "url": "https://www.youtube.com/watch?v=CrIJh2n1po8",
+   "source": "RadicalSoda",
+   "feedId": "yt-radicalsoda",
+   "type": "video",
+   "tags": [
+    "gaming"
+   ],
+   "published": "2026-11-21T16:45:22.000Z",
+   "summary": "I've created another Five Nights at Freddy's Quiz, this time based on FNAF 2! @Saltydkdan , @Dawko , @AstralSpiff, and Sopping Wet Freddy return to see who can take home the KING OF FNAF crown! Only one person wins, but everybody loses if you're counting their minds! Let us…",
+   "thumb": "https://i4.ytimg.com/vi/CrIJh2n1po8/hqdefault.jpg",
+   "id": "7332fb1beaae",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 4244,
+   "duration": "1:10:44"
+  },
+  {
+   "title": "Is America now Britain's 'enemy'? | LBC callers react",
+   "url": "https://www.youtube.com/watch?v=CvKn53e2pls",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-21T16:00:39.000Z",
+   "summary": "Ali Miraj and LBC callers react to Donald Trump's declaration that Vladimir Putin is his 'friend'. Ali ruminates on the old adage: 'My enemy's enemy is my friend'. If we accept that to be true - and we consider Russia an enemy - then what relationship do you have with your…",
+   "thumb": "https://i4.ytimg.com/vi/CvKn53e2pls/hqdefault.jpg",
+   "id": "e4b9e74ee91e",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 1754,
+   "duration": "29:14"
+  },
+  {
+   "title": "Every Crisis Everywhere All At Once",
+   "url": "https://www.youtube.com/watch?v=pIK8dB5BiHY",
+   "source": "Economics Explained",
+   "feedId": "yt-economics-explained",
+   "type": "video",
+   "tags": [
+    "finance",
+    "listen"
+   ],
+   "published": "2026-11-21T16:00:16.000Z",
+   "summary": "Read Shopify's latest data on the rising global impact of entrepreneurship: https://www.shopify.com/entrepreneur 📫 95,000+ read our free newsletter that has weekly original stories Sign up: → https://economicsexplained.substack.com/subscribe This video was made possible by our…",
+   "thumb": "https://i1.ytimg.com/vi/pIK8dB5BiHY/hqdefault.jpg",
+   "id": "e2d81015af8d",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 992,
+   "duration": "16:32"
+  },
+  {
+   "title": "Jugend auf dem Land: Warum sich viele von der Politik vergessen fühlen",
+   "url": "https://www.youtube.com/watch?v=18FP3t4qt-M",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-21T15:29:44.000Z",
+   "summary": "Aktuell protestieren Jugendliche in vielen Städten. Doch abseits der Großstadtproteste haben auch junge Menschen auf dem Land zum Teil gleiche, aber auch ganz andere Probleme. Alle aktuellen Informationen, weitere Nachrichten und tagesschau24 im Livestream:…",
+   "thumb": "https://i2.ytimg.com/vi/18FP3t4qt-M/hqdefault.jpg",
+   "id": "4d4601104454",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 169,
+   "duration": "2:49"
+  },
+  {
+   "title": "Trump teases creation of a 'G3'",
+   "url": "https://www.youtube.com/watch?v=3Z3Iah4LARk",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-21T15:03:47.000Z",
+   "summary": "LBC's Washington Correspondent Simon Marks joins Matt Frei for a round-up of what's happened this week in the world of US President Donald Trump. Trump met with the leaders of Russia and China for 90 minutes in China's south-eastern city of Shenzhen, on the sidelines of the…",
+   "thumb": "https://i4.ytimg.com/vi/3Z3Iah4LARk/hqdefault.jpg",
+   "id": "37aa1a061a49",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 494,
+   "duration": "8:14"
+  },
+  {
+   "title": "Australien: Jugendliche umgehen Social-Media-Verbot",
+   "url": "https://www.youtube.com/watch?v=5SYz30oNiH4",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-21T14:04:47.000Z",
+   "summary": "Seit fast einem Jahr gilt in Australien ein Social-Media-Verbot für Jugendliche unter 16 Jahren. Sie dürfen auf Plattformen wie Instagram, TikTok oder YouTube eigentlich keine Konten mehr haben. In der Praxis funktioniert das jedoch nur teilweise. Erste Auswertungen zeigen:…",
+   "thumb": "https://i2.ytimg.com/vi/5SYz30oNiH4/hqdefault.jpg",
+   "id": "a492fdd38307",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 97,
+   "duration": "1:37"
+  },
+  {
+   "title": "How is Anthropic worth a trillion dollars?",
+   "url": "https://www.youtube.com/watch?v=wyhSIOn4Dq8",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-21T14:00:34.000Z",
+   "summary": "Matt Frei is joined by Benevolent AI's Chairman, Ken Mulvany, to explain the transformative technology behind Anthropic, which went public this week and has been valued at over a trillion dollars. It eclipsed Elon Musk’s bumper SpaceX float in June as the biggest stock market…",
+   "thumb": "https://i4.ytimg.com/vi/wyhSIOn4Dq8/hqdefault.jpg",
+   "id": "b1d27d1531e3",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 751,
+   "duration": "12:31"
+  },
+  {
+   "title": "Why Would Anyone Spend $1 Billion on GTA 6?",
+   "url": "https://www.youtube.com/watch?v=7MYXy0ROFM8",
+   "source": "Patrick Boyle",
+   "feedId": "yt-patrick-boyle",
+   "type": "video",
+   "tags": [
+    "finance",
+    "education",
+    "listen"
+   ],
+   "published": "2026-11-21T13:56:15.000Z",
+   "summary": "Go to https://surfshark.com/boyle or use code BOYLE at checkout to get 4 extra months of Surfshark! Grand Theft Auto 6 is finally here, and with a budget estimated at one to one and a half billion dollars, it’s the most expensive video game ever made. In this video, Patrick…",
+   "thumb": "https://i4.ytimg.com/vi/7MYXy0ROFM8/hqdefault.jpg",
+   "id": "0cc5c67350f3",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 2232,
+   "duration": "37:12"
+  },
+  {
+   "title": "‘Europe was on the menu’ at Trump’s meeting with Putin and Xi",
+   "url": "https://www.youtube.com/watch?v=dbjS7rxLorg",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-21T13:02:43.000Z",
+   "summary": "Donald Trump's meeting with Vladimir Putin and Xi Jinping was 'the most important geopolitical image of the week,' says Matt Frei. But what was actually achieved? Mikhail Kasyanov, former prime minister of Russia under Vladimir Putin, who is now exiled in Latvia, says that the…",
+   "thumb": "https://i1.ytimg.com/vi/dbjS7rxLorg/hqdefault.jpg",
+   "id": "4b250bcf2484",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 762,
+   "duration": "12:42"
+  },
+  {
+   "title": "Klimakonferenz in der Verlängerung: Streit um fossile Energien",
+   "url": "https://www.youtube.com/watch?v=fEPfomxytyI",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-21T11:38:29.000Z",
+   "summary": "Die Weltklimakonferenz COP31 in Antalya in der Türkei geht in die Verlängerung. Wie so oft bei den UN-Klimakonferenzen, gibt es ungelöste Fragen. Strittig ist etwa, ob der Ausstieg aus Kohle, Gas und Öl in der Abschlusserklärung auftauchen soll oder nicht. Weitere…",
+   "thumb": "https://i3.ytimg.com/vi/fEPfomxytyI/hqdefault.jpg",
+   "id": "0f1c49a2acd7",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 401,
+   "duration": "6:41"
+  },
   {
    "title": "KI: Wie China seinen gigantischen Server-Ausbau vorantreibt",
    "url": "https://www.youtube.com/watch?v=hSsKLqxAz1c",
@@ -754,46 +1034,6 @@
    "duration": "8:42"
   },
   {
-   "title": "The decline of Reform UK? James Hanson reacts to Nigel Farage’s latest series of interviews",
-   "url": "https://www.youtube.com/watch?v=bt_geA9I3kE",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-21T09:00:24.000Z",
-   "summary": "James Hanson doubles down on his prediction that Nigel Farage will step down as leader of Reform UK by next summer. The influential MP went on the media round yesterday and made a series of comments that reinforce James' view that he longer wants to lead the party. Has he had…",
-   "thumb": "https://i3.ytimg.com/vi/bt_geA9I3kE/hqdefault.jpg",
-   "id": "6436d9e5c110",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 570,
-   "duration": "9:30"
-  },
-  {
-   "title": "Joanne Young: Breaking the silence on sexual abuse | James O'Brien - The Whole Show",
-   "url": "https://www.youtube.com/watch?v=zZrzKiBTT-M",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-21T07:00:09.000Z",
-   "summary": "Content warning: This episode contains discussion of sexual abuse, including childhood sexual abuse, and references to suicide. Joanne Young has waived her anonymity after four men were convicted of sexually abusing her while she was drugged by her then-husband. Why has she…",
-   "thumb": "https://i3.ytimg.com/vi/zZrzKiBTT-M/hqdefault.jpg",
-   "id": "2c6e1ac6fa6e",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 8714,
-   "duration": "2:25:14"
-  },
-  {
    "title": "KT: Behind the Tape (Ep: 794 Chris O'Connor + Tommy Pope)",
    "url": "https://www.youtube.com/watch?v=mZZW-Ol2DyU",
    "source": "Kill Tony",
@@ -808,29 +1048,11 @@
    "summary": "An exclusive, behind-the-scenes look from KT Episode 794 KT guest Chris O'Connor + Tommy Pope Chris O'Connor, Tommy Pope, Pat O'Neill, Myles Johnson, Martin Phillips, D Madness, Michael A. Gonzales, Jon Deas, Matthew Muehling, Grooveline Horns, Joe White, Troy Conrad, Monica…",
    "thumb": "https://i2.ytimg.com/vi/mZZW-Ol2DyU/hqdefault.jpg",
    "id": "710176b63038",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 3088,
    "duration": "51:28"
-  },
-  {
-   "title": "'A low point for the presidency' | Simon Marks' American Week",
-   "url": "https://www.youtube.com/watch?v=9m3YFtxGvv4",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-21T00:57:11.000Z",
-   "summary": "Trump has managed to upset Ukrainians, Americans, and his own Republican party after greeting Putin as his 'friend' at the historic trilateral meeting in China. Simon Marks runs through the biggest moments from the summit and delves into the FAA ground stop which completely…",
-   "thumb": "https://i2.ytimg.com/vi/9m3YFtxGvv4/hqdefault.jpg",
-   "id": "4be650f0faed",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
   },
   {
    "title": "GTA6 LEAKER GUILTY, UBISOFT IN BIG TROUBLE? & MORE",
@@ -893,27 +1115,6 @@
    "duration": "1:30:43"
   },
   {
-   "title": "Raketeneinschläge nahe Militärübung: Polens Angst vor Eskalation",
-   "url": "https://www.youtube.com/watch?v=LMZkgD1l9zs",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-20T20:01:39.000Z",
-   "summary": "Mehrere Flugkörper sind in den polnischen Luftraum eingedrungen – nach Einschätzung der Regierung eine gezielte Provokation Russlands. Sie könnte in Zusammenhang mit einer Übung der Ukraine-Unterstützer stehen, die derzeit in Polen stattfindet. Weitere Informationen:…",
-   "thumb": "https://i1.ytimg.com/vi/LMZkgD1l9zs/hqdefault.jpg",
-   "id": "a167e58ccfce",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 105,
-   "duration": "1:45"
-  },
-  {
    "title": "Free Wrapping Paper, Courtesy Of The Onion",
    "url": "https://www.youtube.com/watch?v=KgYjnv7V3r4",
    "source": "The Onion",
@@ -931,68 +1132,6 @@
    "why": "0",
    "durationSec": 21,
    "duration": "0:21"
-  },
-  {
-   "title": "Expertin: „Die Ziele sind extrem unterschiedlich“",
-   "url": "https://www.youtube.com/watch?v=ty-v1RD0CrU",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-20T19:30:03.000Z",
-   "summary": "Die Generation Z demonstriert wieder: Junge Menschen sind heute bundesweit für bessere Bildung, mehr Klimaschutz und gegen eine mögliche Wehrpflicht auf die Straßen gegangen. Diesmal sind es viele unterschiedliche Initiativen und Organisationen, die zu den Protesten aufgerufen…",
-   "thumb": "https://i1.ytimg.com/vi/ty-v1RD0CrU/hqdefault.jpg",
-   "id": "9e203d2a35e1",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 338,
-   "duration": "5:38"
-  },
-  {
-   "title": "tagesschau 20:00 Uhr, 20.11.2026",
-   "url": "https://www.youtube.com/watch?v=fhL-K8MmIQM",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-20T19:29:42.000Z",
-   "summary": "tagesschau 20:00 Uhr Warnstreiks bei der Gewerkschaft IG Metall, Verlängerung der Weltklimakonferenz COP31 wegen ungelöster Streitfragen, EU und Großbritannien beschließen engere Zusammenarbeit auf drei Gebieten, Erneut massiver russischer Beschuss auf die Ukraine, Zwei…",
-   "thumb": "https://i3.ytimg.com/vi/fhL-K8MmIQM/hqdefault.jpg",
-   "id": "8b1406339e45",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 937,
-   "duration": "15:37"
-  },
-  {
-   "title": "Trump’s first press briefing after meeting with Xi and Putin | Instant reaction",
-   "url": "https://www.youtube.com/watch?v=2SDvmh6aJng",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-20T19:15:09.000Z",
-   "summary": "Simon Marks joins Tom Swarbrick to break down Trump's first press conference back after his meeting with Putin and Xi. Amongst the 'rambling', Simon picks up on one bit of 'genuinely big news', not mentioned in Trump's post-meeting statement. In the unprecedented three-way…",
-   "thumb": "https://i3.ytimg.com/vi/2SDvmh6aJng/hqdefault.jpg",
-   "id": "30c0e53c10d0",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 414,
-   "duration": "6:54"
   },
   {
    "title": "No Thank You, The Ocean by Roop and Callahan (Official Music Video) | MP3 [New Dropout Series]",
@@ -1051,26 +1190,6 @@
    "why": "0",
    "durationSec": 3388,
    "duration": "56:28"
-  },
-  {
-   "title": "Trump 'tells Europe to defund Ukraine' in 'tirade' phone call",
-   "url": "https://www.youtube.com/watch?v=mu8_CMwcRuQ",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-20T16:30:23.000Z",
-   "summary": "Shelagh Fogarty is joined by Hadley Gamble to react as Trump 'tells Europe to defund Ukraine' in 'tirade' phone call after summit with his 'friend' Putin. Mr Trump is said to have dialled into a meeting of the coalition of the willing from aboard Air Force One where he angrily…",
-   "thumb": "https://i2.ytimg.com/vi/mu8_CMwcRuQ/hqdefault.jpg",
-   "id": "19bbc6ce43fb",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 641,
-   "duration": "10:41"
   },
   {
    "title": "North Korean Tank Commanders React to USA vs North Korea Military Comparison",
@@ -1208,26 +1327,6 @@
    "why": "0",
    "durationSec": 727,
    "duration": "12:07"
-  },
-  {
-   "title": "GET OUT: DRAMA at Trump’s Xi Meeting as Reporter KICKED OUT OF THE ROOM!",
-   "url": "https://www.youtube.com/watch?v=S60q3Y-lU44",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-19T22:55:12.000Z",
-   "summary": "Luke discusses more on Trump's trip to Asia. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley Instagram -…",
-   "thumb": "https://i4.ytimg.com/vi/S60q3Y-lU44/hqdefault.jpg",
-   "id": "964fa90de778",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 776,
-   "duration": "12:56"
   },
   {
    "title": "We're Sooooo Done",
@@ -1601,25 +1700,6 @@
    "duration": "29:26"
   },
   {
-   "title": "10 HUGE Moments That Shaped GTA 6",
-   "url": "https://www.youtube.com/watch?v=IEtv9pqKcyk",
-   "source": "GameRanx",
-   "feedId": "yt-gameranx",
-   "type": "video",
-   "tags": [
-    "gaming"
-   ],
-   "published": "2026-11-17T20:10:36.000Z",
-   "summary": "With Grand Theft Auto 6 almost here, we wanted to take a look back at the history of the game, from the start of development to leaks and rumors, all the way up to its final release. Subscribe for more: https://www.youtube.com/gameranxTV?sub_confirmation=1 0:00 Intro 0:32…",
-   "thumb": "https://i2.ytimg.com/vi/IEtv9pqKcyk/hqdefault.jpg",
-   "id": "0120c43ac521",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 972,
-   "duration": "16:12"
-  },
-  {
    "title": "H3 Employee Gets Fired Live... Starts Exposing Everybody!",
    "url": "https://www.youtube.com/watch?v=WNn860w3Tms",
    "source": "Aberrant preach",
@@ -1677,7 +1757,7 @@
    "duration": "3:41"
   },
   {
-   "title": "The Truth About The American Economy",
+   "title": "Something Strange Is Happening In America",
    "url": "https://www.youtube.com/watch?v=Brh3jhy04TQ",
    "source": "Economics Explained",
    "feedId": "yt-economics-explained",
@@ -2160,26 +2240,6 @@
    "why": "0",
    "durationSec": 397,
    "duration": "6:37"
-  },
-  {
-   "title": "Dad Invents a Toilet Seat That Makes Potty Training Easier | Shark Tank US | Shark Tank Global",
-   "url": "https://www.youtube.com/watch?v=IvfVZg8Tp_Q",
-   "source": "Shark Tank Global",
-   "feedId": "yt-shark-tank-global",
-   "type": "video",
-   "tags": [
-    "trash",
-    "business"
-   ],
-   "published": "2026-11-14T16:59:55.000Z",
-   "summary": "Brian Kleinschmidt enters the Tank seeking $50,000 for 15% of EZPeeZ, an all-in-one toilet seat that flips from an adult-sized seat into a smaller seat for potty-training children. From Season 7, Episode 4 Watch Shark Tank US Now: http://AAN.SonyPictures.com/SharkTankUSHulu…",
-   "thumb": "https://i2.ytimg.com/vi/IvfVZg8Tp_Q/hqdefault.jpg",
-   "id": "37580bbab806",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 435,
-   "duration": "7:15"
   },
   {
    "title": "KT: Behind the Tape (Ep: 793 Big Jay Oakerson + Zac Brown + Mike Finoia)",
@@ -2806,47 +2866,7 @@
    "why": "0",
    "durationSec": 3513,
    "duration": "58:33"
-  },
-  {
-   "title": "The TRUTH about YouTuber Products",
-   "url": "https://www.youtube.com/watch?v=eQanqCGaD74",
-   "source": "Levi Hildebrand",
-   "feedId": "yt-levi-hildebrand",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "business"
-   ],
-   "published": "2026-11-07T16:00:03.000Z",
-   "summary": "Consider supporting our channel and get a little something in the process here: https://www.levihildebrand.com Subscribe! https://www.youtube.com/channel/UC-OJ-24roEfQ_-PCnLJSckg?sub_confirmation=1 Join our Patreon: https://www.patreon.com/c/LeviHildebrand For further reading,…",
-   "thumb": "https://i2.ytimg.com/vi/eQanqCGaD74/hqdefault.jpg",
-   "id": "51ecf5f83580",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 2969,
-   "duration": "49:29"
-  },
-  {
-   "title": "Trump economist: tariffs are “a success” | The Economist",
-   "url": "https://www.youtube.com/watch?v=RSxXHunYyiw",
-   "source": "The Economist",
-   "feedId": "yt-the-economist",
-   "type": "video",
-   "tags": [
-    "finance",
-    "business"
-   ],
-   "published": "2026-11-07T15:00:39.000Z",
-   "summary": "Donald Trump’s tariffs have severely impacted consumer prices in the United States. However Pierre Yared, the economist President Trump called “a star”, maintains that “Liberation Day” was a success. Subscribe: http://youtube.com/@TheEconomist?sub_confirmation=1 Pierre Yared…",
-   "thumb": "https://i3.ytimg.com/vi/RSxXHunYyiw/hqdefault.jpg",
-   "id": "d6de063c0900",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 443,
-   "duration": "7:23"
   }
  ],
- "contentHash": "a3bf80846ac9"
+ "contentHash": "9595aa69ee4f"
 }
