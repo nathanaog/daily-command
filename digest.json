@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-21T19:26:13.128Z",
+ "generated": "2026-11-22T01:24:37.903Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
@@ -7,7 +7,7 @@
   "items": 108,
   "duplicatesMerged": 0,
   "lengthsKnown": 108,
-  "lengthLookups": 14,
+  "lengthLookups": 7,
   "lengthFailures": 0,
   "lengthVia": "YouTube Data API",
   "lengthFailReasons": {}
@@ -631,18 +631,16 @@
    "status": "waiting",
    "count": 0,
    "lastOk": "2026-11-17T16:12:01.447Z",
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-tech",
    "name": "r/tech",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": "2026-11-07T19:04:52.310Z",
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-gaming",
@@ -651,7 +649,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-ukpolitics",
@@ -660,16 +658,18 @@
    "status": "waiting",
    "count": 0,
    "lastOk": "2026-11-16T19:40:46.781Z",
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-xbox",
    "name": "r/xbox",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": "2026-11-07T21:52:57.028Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-slaythespire",
@@ -678,7 +678,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-geopolitics",
@@ -710,7 +710,150 @@
  ],
  "items": [
   {
-   "title": "Are Trump and Putin going to ‘carve up Ukraine’?",
+   "title": "It Might Actually Happen",
+   "url": "https://www.youtube.com/watch?v=eMFF_aHmNX8",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-22T00:30:14.000Z",
+   "summary": "Luke discusses the Senate Democratic leadership race. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley Instagram…",
+   "thumb": "https://i2.ytimg.com/vi/eMFF_aHmNX8/hqdefault.jpg",
+   "id": "cb67c3e45e9e",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 702,
+   "duration": "11:42"
+  },
+  {
+   "title": "OMG: Melania Just ROASTED NATALIE?!",
+   "url": "https://www.youtube.com/watch?v=mHCeZpFyV2s",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-21T23:30:33.000Z",
+   "summary": "Luke discusses Melania's press tour for her new documentary. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
+   "thumb": "https://i2.ytimg.com/vi/mHCeZpFyV2s/hqdefault.jpg",
+   "id": "632cde2226a8",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 626,
+   "duration": "10:26"
+  },
+  {
+   "title": "tagesthemen 23:10 Uhr, 21.11.2026",
+   "url": "https://www.youtube.com/watch?v=2mcB5cgCQQw",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-21T22:58:02.000Z",
+   "summary": "tagesthemen 23:10 Uhr Verlängerung der Weltklimakonferenz COP31, Sperrung der A99 bei München wegen Brückenabriss, Kampf gegen Guerilla-Gruppen in Kolumbien: Wie Organisationen gegen Rekrutierung von Kindersoldaten vorgehen, Der Sport, Das Wetter Hinweis: Die Beiträge zum Thema…",
+   "thumb": "https://i3.ytimg.com/vi/2mcB5cgCQQw/hqdefault.jpg",
+   "id": "8c11d45aecbf",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 1194,
+   "duration": "19:54"
+  },
+  {
+   "title": "When Trump D!es...",
+   "url": "https://www.youtube.com/watch?v=gAPCC19uaMA",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-21T22:30:14.000Z",
+   "summary": "Luke discusses what to expect when Trump passes to the next dimension. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
+   "thumb": "https://i4.ytimg.com/vi/gAPCC19uaMA/hqdefault.jpg",
+   "id": "91e824b591e4",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 357,
+   "duration": "5:57"
+  },
+  {
+   "title": "OMG: Vance Accidentally KNIFES TRUMP, Trump is P*SSED!",
+   "url": "https://www.youtube.com/watch?v=DeoC2gVedP4",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-21T20:30:20.000Z",
+   "summary": "Luke discusses Trump and Vance's secret beef. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley Instagram -…",
+   "thumb": "https://i1.ytimg.com/vi/DeoC2gVedP4/hqdefault.jpg",
+   "id": "bf2328da18c1",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 550,
+   "duration": "9:10"
+  },
+  {
+   "title": "Klimaminister von Tuvalu warnt auf UN-Klimakonferenz COP31",
+   "url": "https://www.youtube.com/watch?v=HiMSI6_qXGA",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-21T19:45:41.000Z",
+   "summary": "Bei der Weltklimakonferenz COP31 im türkischen Antalya zeichnet sich weiter keine Einigung ab. Ursprünglich war das Ende des Gipfels für gestern geplant. Dem vorliegenden Entwurf für eine Abschlusserklärung wollen jedoch nicht alle Länder zustimmen. Bei der Klimakonferenz…",
+   "thumb": "https://i1.ytimg.com/vi/HiMSI6_qXGA/hqdefault.jpg",
+   "id": "bcb61d89cb0f",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 186,
+   "duration": "3:06"
+  },
+  {
+   "title": "tagesschau 20:00 Uhr, 21.11.2026",
+   "url": "https://www.youtube.com/watch?v=9tDQ0E1FUEg",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-21T19:28:56.000Z",
+   "summary": "tagesschau 20:00 Uhr Weiter keine Einigung auf der Weltklimakonferenz COP31, Zahl der Schweinehalter in Deutschland sinkt, Altersvorsorgedepot als Nachfolge für Riesterrente, Medienbericht: Gutachten für das Verkehrsministerium hält streckenbasierte Maut für alle für sinnvoll,…",
+   "thumb": "https://i2.ytimg.com/vi/9tDQ0E1FUEg/hqdefault.jpg",
+   "id": "eb5b3f1fa36e",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 930,
+   "duration": "15:30"
+  },
+  {
+   "title": "Trump defends ‘friendship’ with Vladimir Putin",
    "url": "https://www.youtube.com/watch?v=oLjhxtivftQ",
    "source": "LBC",
    "feedId": "yt-lbc",
@@ -964,53 +1107,11 @@
    "summary": "Donald Trump's meeting with Vladimir Putin and Xi Jinping was 'the most important geopolitical image of the week,' says Matt Frei. But what was actually achieved? Mikhail Kasyanov, former prime minister of Russia under Vladimir Putin, who is now exiled in Latvia, says that the…",
    "thumb": "https://i1.ytimg.com/vi/dbjS7rxLorg/hqdefault.jpg",
    "id": "4b250bcf2484",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 762,
    "duration": "12:42"
-  },
-  {
-   "title": "Klimakonferenz in der Verlängerung: Streit um fossile Energien",
-   "url": "https://www.youtube.com/watch?v=fEPfomxytyI",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-21T11:38:29.000Z",
-   "summary": "Die Weltklimakonferenz COP31 in Antalya in der Türkei geht in die Verlängerung. Wie so oft bei den UN-Klimakonferenzen, gibt es ungelöste Fragen. Strittig ist etwa, ob der Ausstieg aus Kohle, Gas und Öl in der Abschlusserklärung auftauchen soll oder nicht. Weitere…",
-   "thumb": "https://i3.ytimg.com/vi/fEPfomxytyI/hqdefault.jpg",
-   "id": "0f1c49a2acd7",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 401,
-   "duration": "6:41"
-  },
-  {
-   "title": "KI: Wie China seinen gigantischen Server-Ausbau vorantreibt",
-   "url": "https://www.youtube.com/watch?v=hSsKLqxAz1c",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-21T11:07:46.000Z",
-   "summary": "Weltweit wird der Strombedarf in den nächsten Jahren weiter wachsen – nicht zuletzt durch die Ausbreitung gewaltiger KI-Rechenzentren. Auch China will im Wettbewerb der künstlichen Intelligenz mithalten und baut riesige Datenzentren. Allerdings setzt die Volksrepublik dabei…",
-   "thumb": "https://i1.ytimg.com/vi/hSsKLqxAz1c/hqdefault.jpg",
-   "id": "4ece4839bc8e",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 227,
-   "duration": "3:47"
   },
   {
    "title": "The New UK-EU Deal Explained",
@@ -1027,9 +1128,9 @@
    "summary": "Take back your privacy - start using Proton Mail for free: https://proton.me/tldr Order the Too Long 2026 Bundle: https://toolong.news/products/too-long-2026-bundle On Friday, Andy Burnham met with the EU representatives to negotiate yet another deal. In this video, we're…",
    "thumb": "https://i1.ytimg.com/vi/P78a76ZVuoc/hqdefault.jpg",
    "id": "27b347f2f2f8",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 522,
    "duration": "8:42"
   },
@@ -1072,27 +1173,6 @@
    "why": "0",
    "durationSec": 864,
    "duration": "14:24"
-  },
-  {
-   "title": "tagesthemen 21:45 Uhr, 20.11.2026",
-   "url": "https://www.youtube.com/watch?v=ifV3nKLDVmw",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-20T21:43:15.000Z",
-   "summary": "tagesthemen 21:45 Uhr Bundesweite Schüler- und Studentendemos, Annäherung zwischen Großbritannien und EU, Übungsmanöver der \"Koalition der Willigen\" in Polen, Verlängerung der Klimakonferenz: Woran hakt es bei der COP?, KI-Boom in China: Rechenzentren und grüne Energie, Weitere…",
-   "thumb": "https://i2.ytimg.com/vi/ifV3nKLDVmw/hqdefault.jpg",
-   "id": "ec044cb544e2",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 2110,
-   "duration": "35:10"
   },
   {
    "title": "One Conservative Takes on Two Liberals | Roundtable",
@@ -1211,26 +1291,6 @@
    "duration": "15:37"
   },
   {
-   "title": "Elon VISIBLY SHAKEN as He Realizes He F***ED UP in Interview!",
-   "url": "https://www.youtube.com/watch?v=vUzTo9ZiVWI",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-20T14:00:27.000Z",
-   "summary": "Luke discusses Elon Musk's recent NYT interview. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley Instagram -…",
-   "thumb": "https://i3.ytimg.com/vi/vUzTo9ZiVWI/hqdefault.jpg",
-   "id": "05e217b94ce9",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 758,
-   "duration": "12:38"
-  },
-  {
    "title": "Britain’s Working Class Has Been Erased | Alexei Sayle interview",
    "url": "https://www.youtube.com/watch?v=ZJZIymUOdkA",
    "source": "PoliticsJOE",
@@ -1248,66 +1308,6 @@
    "why": "0",
    "durationSec": 1961,
    "duration": "32:41"
-  },
-  {
-   "title": "This is INSANE",
-   "url": "https://www.youtube.com/watch?v=m39UiEc5sBs",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-20T04:55:16.000Z",
-   "summary": "Luke discusses Trump's Fox News interview in China. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley Instagram -…",
-   "thumb": "https://i2.ytimg.com/vi/m39UiEc5sBs/hqdefault.jpg",
-   "id": "475ba77eeeef",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 507,
-   "duration": "8:27"
-  },
-  {
-   "title": "MITCH MCCONNELL MITCH MCCONNELL MITCH MCCONNELL",
-   "url": "https://www.youtube.com/watch?v=ZTSIbYIhe8E",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-20T02:55:20.000Z",
-   "summary": "Luke discusses all the headlines surrounding Mitch McConnell. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
-   "thumb": "https://i3.ytimg.com/vi/ZTSIbYIhe8E/hqdefault.jpg",
-   "id": "a5a1653b1bd1",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 342,
-   "duration": "5:42"
-  },
-  {
-   "title": "Mike Lindell’s MENTAL BREAKDOWN Just Got SO MUCH WORSE!",
-   "url": "https://www.youtube.com/watch?v=jUGsPSB4Nh4",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-20T00:55:24.000Z",
-   "summary": "Luke discusses the latest update on Mike Lindell's meltdown. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
-   "thumb": "https://i3.ytimg.com/vi/jUGsPSB4Nh4/hqdefault.jpg",
-   "id": "a65b8d0c2576",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 661,
-   "duration": "11:01"
   },
   {
    "title": "Ive Been Disrespecting My Husband All These Years",
@@ -2868,5 +2868,5 @@
    "duration": "58:33"
   }
  ],
- "contentHash": "9595aa69ee4f"
+ "contentHash": "e64fcbf8c100"
 }
