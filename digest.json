@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-22T01:24:37.903Z",
+ "generated": "2026-11-22T11:37:59.349Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
@@ -7,7 +7,7 @@
   "items": 108,
   "duplicatesMerged": 0,
   "lengthsKnown": 108,
-  "lengthLookups": 7,
+  "lengthLookups": 5,
   "lengthFailures": 0,
   "lengthVia": "YouTube Data API",
   "lengthFailReasons": {}
@@ -658,18 +658,16 @@
    "status": "waiting",
    "count": 0,
    "lastOk": "2026-11-16T19:40:46.781Z",
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-xbox",
    "name": "r/xbox",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": "2026-11-07T21:52:57.028Z",
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-slaythespire",
@@ -678,7 +676,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-geopolitics",
@@ -687,16 +685,18 @@
    "status": "waiting",
    "count": 0,
    "lastOk": "2026-11-17T03:58:17.859Z",
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-germany",
    "name": "r/germany",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": "2026-11-12T02:17:58.406Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-unitedkingdom",
@@ -705,10 +705,110 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   }
  ],
  "items": [
+  {
+   "title": "Second village votes to leave UK | Barnham referendum",
+   "url": "https://www.youtube.com/watch?v=vHDU3KyOlgw",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-22T09:08:38.000Z",
+   "summary": "Residents of a Suffolk village have symbolically voted to leave the UK over plans to house asylum seekers at a nearby former military base. Barnham residents are unhappy with the proposal, which would result in over 900 asylum seekers living in the area. The move was inspired…",
+   "thumb": "https://i3.ytimg.com/vi/vHDU3KyOlgw/hqdefault.jpg",
+   "id": "d50b9ed59c14",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 657,
+   "duration": "10:57"
+  },
+  {
+   "title": "This is f***ing creepy",
+   "url": "https://www.youtube.com/watch?v=yG7yiIl3ZRg",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-22T04:30:28.000Z",
+   "summary": "Luke discusses a recent moment from Dr. Phil's podcast. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
+   "thumb": "https://i2.ytimg.com/vi/yG7yiIl3ZRg/hqdefault.jpg",
+   "id": "4c3ae68950c6",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 878,
+   "duration": "14:38"
+  },
+  {
+   "title": "Lauren Boebert SNAPS at Trump after LOSING ELECTION!",
+   "url": "https://www.youtube.com/watch?v=9fw1e-7fq8A",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-22T03:30:38.000Z",
+   "summary": "Luke discusses Lauren Boebert in her recent AP interview. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
+   "thumb": "https://i2.ytimg.com/vi/9fw1e-7fq8A/hqdefault.jpg",
+   "id": "e5e9d3d46850",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 340,
+   "duration": "5:40"
+  },
+  {
+   "title": "WHAT THE F***??",
+   "url": "https://www.youtube.com/watch?v=xYm4MMCWXgs",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-22T02:30:04.000Z",
+   "summary": "Luke discusses Trump's latest press conference. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley Instagram -…",
+   "thumb": "https://i1.ytimg.com/vi/xYm4MMCWXgs/hqdefault.jpg",
+   "id": "228dd3035702",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 735,
+   "duration": "12:15"
+  },
+  {
+   "title": "Katie Zacharia BLINDSIDED by SHOCKING SH*T!",
+   "url": "https://www.youtube.com/watch?v=yLqjwq7X760",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-22T01:30:17.000Z",
+   "summary": "Luke discusses The State Bar of California potentially investigating Katie Zacharia. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
+   "thumb": "https://i2.ytimg.com/vi/yLqjwq7X760/hqdefault.jpg",
+   "id": "70c2fa10cf15",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 481,
+   "duration": "8:01"
+  },
   {
    "title": "It Might Actually Happen",
    "url": "https://www.youtube.com/watch?v=eMFF_aHmNX8",
@@ -730,26 +830,6 @@
    "duration": "11:42"
   },
   {
-   "title": "OMG: Melania Just ROASTED NATALIE?!",
-   "url": "https://www.youtube.com/watch?v=mHCeZpFyV2s",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-21T23:30:33.000Z",
-   "summary": "Luke discusses Melania's press tour for her new documentary. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
-   "thumb": "https://i2.ytimg.com/vi/mHCeZpFyV2s/hqdefault.jpg",
-   "id": "632cde2226a8",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 626,
-   "duration": "10:26"
-  },
-  {
    "title": "tagesthemen 23:10 Uhr, 21.11.2026",
    "url": "https://www.youtube.com/watch?v=2mcB5cgCQQw",
    "source": "Tagesschau",
@@ -764,51 +844,11 @@
    "summary": "tagesthemen 23:10 Uhr Verlängerung der Weltklimakonferenz COP31, Sperrung der A99 bei München wegen Brückenabriss, Kampf gegen Guerilla-Gruppen in Kolumbien: Wie Organisationen gegen Rekrutierung von Kindersoldaten vorgehen, Der Sport, Das Wetter Hinweis: Die Beiträge zum Thema…",
    "thumb": "https://i3.ytimg.com/vi/2mcB5cgCQQw/hqdefault.jpg",
    "id": "8c11d45aecbf",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 1194,
    "duration": "19:54"
-  },
-  {
-   "title": "When Trump D!es...",
-   "url": "https://www.youtube.com/watch?v=gAPCC19uaMA",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-21T22:30:14.000Z",
-   "summary": "Luke discusses what to expect when Trump passes to the next dimension. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
-   "thumb": "https://i4.ytimg.com/vi/gAPCC19uaMA/hqdefault.jpg",
-   "id": "91e824b591e4",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 357,
-   "duration": "5:57"
-  },
-  {
-   "title": "OMG: Vance Accidentally KNIFES TRUMP, Trump is P*SSED!",
-   "url": "https://www.youtube.com/watch?v=DeoC2gVedP4",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-21T20:30:20.000Z",
-   "summary": "Luke discusses Trump and Vance's secret beef. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley Instagram -…",
-   "thumb": "https://i1.ytimg.com/vi/DeoC2gVedP4/hqdefault.jpg",
-   "id": "bf2328da18c1",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 550,
-   "duration": "9:10"
   },
   {
    "title": "Klimaminister von Tuvalu warnt auf UN-Klimakonferenz COP31",
@@ -825,9 +865,9 @@
    "summary": "Bei der Weltklimakonferenz COP31 im türkischen Antalya zeichnet sich weiter keine Einigung ab. Ursprünglich war das Ende des Gipfels für gestern geplant. Dem vorliegenden Entwurf für eine Abschlusserklärung wollen jedoch nicht alle Länder zustimmen. Bei der Klimakonferenz…",
    "thumb": "https://i1.ytimg.com/vi/HiMSI6_qXGA/hqdefault.jpg",
    "id": "bcb61d89cb0f",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 186,
    "duration": "3:06"
   },
@@ -846,9 +886,9 @@
    "summary": "tagesschau 20:00 Uhr Weiter keine Einigung auf der Weltklimakonferenz COP31, Zahl der Schweinehalter in Deutschland sinkt, Altersvorsorgedepot als Nachfolge für Riesterrente, Medienbericht: Gutachten für das Verkehrsministerium hält streckenbasierte Maut für alle für sinnvoll,…",
    "thumb": "https://i2.ytimg.com/vi/9tDQ0E1FUEg/hqdefault.jpg",
    "id": "eb5b3f1fa36e",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 930,
    "duration": "15:30"
   },
@@ -866,31 +906,11 @@
    "summary": "Donald Trump has defended calling ‘wanted war criminal’ Vladimir Putin his ‘friend.’ Simon Marks tells Vanessa Feltz it was an ‘astonishing thing for any US president to say.’ In a press conference following the trilateral meeting, Trump said his ‘fantastic relationship’ with…",
    "thumb": "https://i4.ytimg.com/vi/oLjhxtivftQ/hqdefault.jpg",
    "id": "4566cf284a6d",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 686,
    "duration": "11:26"
-  },
-  {
-   "title": "MAGA Star POSTS VIDEO On Me after CUSSING ME OUT!",
-   "url": "https://www.youtube.com/watch?v=ETX_M2na6K8",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-21T18:30:11.000Z",
-   "summary": "Luke discusses Gavin McInnes' response to his midterm-night crashout. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
-   "thumb": "https://i2.ytimg.com/vi/ETX_M2na6K8/hqdefault.jpg",
-   "id": "39678b1bc64e",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 1765,
-   "duration": "29:25"
   },
   {
    "title": "Top 10 NEW Games of December 2026",
@@ -905,9 +925,9 @@
    "summary": "Looking for something to play in December to round out 2026? We’ve got you covered with these new game release dates for PC, PS5, Xbox Series, and Nintendo Switch 2. Subscribe for more: https://www.youtube.com/gameranxTV?sub_confirmation=1 0:00 Intro 0:45 Rayman Legends Retold…",
    "thumb": "https://i4.ytimg.com/vi/gucDbIbsOAc/hqdefault.jpg",
    "id": "a322511f0285",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 1196,
    "duration": "19:56"
   },
@@ -925,9 +945,9 @@
    "summary": "Joe Chay enters the Tank seeking $360,000 for 6% of Bello Verde, his luxury custom clothing brand, joined by actor Dean Cain and MMA fighter Urijah Faber. From Season 6 Episode 15 Watch Shark Tank US Now: http://AAN.SonyPictures.com/SharkTankUSHulu Watch Shark Tank Australia…",
    "thumb": "https://i4.ytimg.com/vi/CwsOxMYtLZI/hqdefault.jpg",
    "id": "67a1e5b926f4",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 634,
    "duration": "10:34"
   },
@@ -944,9 +964,9 @@
    "summary": "I've created another Five Nights at Freddy's Quiz, this time based on FNAF 2! @Saltydkdan , @Dawko , @AstralSpiff, and Sopping Wet Freddy return to see who can take home the KING OF FNAF crown! Only one person wins, but everybody loses if you're counting their minds! Let us…",
    "thumb": "https://i4.ytimg.com/vi/CrIJh2n1po8/hqdefault.jpg",
    "id": "7332fb1beaae",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 4244,
    "duration": "1:10:44"
   },
@@ -964,9 +984,9 @@
    "summary": "Ali Miraj and LBC callers react to Donald Trump's declaration that Vladimir Putin is his 'friend'. Ali ruminates on the old adage: 'My enemy's enemy is my friend'. If we accept that to be true - and we consider Russia an enemy - then what relationship do you have with your…",
    "thumb": "https://i4.ytimg.com/vi/CvKn53e2pls/hqdefault.jpg",
    "id": "e4b9e74ee91e",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 1754,
    "duration": "29:14"
   },
@@ -984,9 +1004,9 @@
    "summary": "Read Shopify's latest data on the rising global impact of entrepreneurship: https://www.shopify.com/entrepreneur 📫 95,000+ read our free newsletter that has weekly original stories Sign up: → https://economicsexplained.substack.com/subscribe This video was made possible by our…",
    "thumb": "https://i1.ytimg.com/vi/pIK8dB5BiHY/hqdefault.jpg",
    "id": "e2d81015af8d",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 992,
    "duration": "16:32"
   },
@@ -1005,9 +1025,9 @@
    "summary": "Aktuell protestieren Jugendliche in vielen Städten. Doch abseits der Großstadtproteste haben auch junge Menschen auf dem Land zum Teil gleiche, aber auch ganz andere Probleme. Alle aktuellen Informationen, weitere Nachrichten und tagesschau24 im Livestream:…",
    "thumb": "https://i2.ytimg.com/vi/18FP3t4qt-M/hqdefault.jpg",
    "id": "4d4601104454",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 169,
    "duration": "2:49"
   },
@@ -1025,9 +1045,9 @@
    "summary": "LBC's Washington Correspondent Simon Marks joins Matt Frei for a round-up of what's happened this week in the world of US President Donald Trump. Trump met with the leaders of Russia and China for 90 minutes in China's south-eastern city of Shenzhen, on the sidelines of the…",
    "thumb": "https://i4.ytimg.com/vi/3Z3Iah4LARk/hqdefault.jpg",
    "id": "37aa1a061a49",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 494,
    "duration": "8:14"
   },
@@ -1046,9 +1066,9 @@
    "summary": "Seit fast einem Jahr gilt in Australien ein Social-Media-Verbot für Jugendliche unter 16 Jahren. Sie dürfen auf Plattformen wie Instagram, TikTok oder YouTube eigentlich keine Konten mehr haben. In der Praxis funktioniert das jedoch nur teilweise. Erste Auswertungen zeigen:…",
    "thumb": "https://i2.ytimg.com/vi/5SYz30oNiH4/hqdefault.jpg",
    "id": "a492fdd38307",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 97,
    "duration": "1:37"
   },
@@ -1066,9 +1086,9 @@
    "summary": "Matt Frei is joined by Benevolent AI's Chairman, Ken Mulvany, to explain the transformative technology behind Anthropic, which went public this week and has been valued at over a trillion dollars. It eclipsed Elon Musk’s bumper SpaceX float in June as the biggest stock market…",
    "thumb": "https://i4.ytimg.com/vi/wyhSIOn4Dq8/hqdefault.jpg",
    "id": "b1d27d1531e3",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 751,
    "duration": "12:31"
   },
@@ -1087,31 +1107,11 @@
    "summary": "Go to https://surfshark.com/boyle or use code BOYLE at checkout to get 4 extra months of Surfshark! Grand Theft Auto 6 is finally here, and with a budget estimated at one to one and a half billion dollars, it’s the most expensive video game ever made. In this video, Patrick…",
    "thumb": "https://i4.ytimg.com/vi/7MYXy0ROFM8/hqdefault.jpg",
    "id": "0cc5c67350f3",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 2232,
-   "duration": "37:12"
-  },
-  {
-   "title": "‘Europe was on the menu’ at Trump’s meeting with Putin and Xi",
-   "url": "https://www.youtube.com/watch?v=dbjS7rxLorg",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-21T13:02:43.000Z",
-   "summary": "Donald Trump's meeting with Vladimir Putin and Xi Jinping was 'the most important geopolitical image of the week,' says Matt Frei. But what was actually achieved? Mikhail Kasyanov, former prime minister of Russia under Vladimir Putin, who is now exiled in Latvia, says that the…",
-   "thumb": "https://i1.ytimg.com/vi/dbjS7rxLorg/hqdefault.jpg",
-   "id": "4b250bcf2484",
    "score": 0,
    "matched": [],
    "why": "0",
-   "durationSec": 762,
-   "duration": "12:42"
+   "durationSec": 2232,
+   "duration": "37:12"
   },
   {
    "title": "The New UK-EU Deal Explained",
@@ -2868,5 +2868,5 @@
    "duration": "58:33"
   }
  ],
- "contentHash": "e64fcbf8c100"
+ "contentHash": "74e0483fa208"
 }
