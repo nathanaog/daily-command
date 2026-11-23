@@ -1,16 +1,18 @@
 {
- "generated": "2026-11-23T01:49:25.492Z",
+ "generated": "2026-11-23T13:07:35.645Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
   "ok": 47,
   "items": 108,
   "duplicatesMerged": 0,
-  "lengthsKnown": 108,
-  "lengthLookups": 5,
-  "lengthFailures": 0,
+  "lengthsKnown": 107,
+  "lengthLookups": 8,
+  "lengthFailures": 1,
   "lengthVia": "YouTube Data API",
-  "lengthFailReasons": {}
+  "lengthFailReasons": {
+   "not returned by API (live/private?)": 1
+  }
  },
  "feeds": [
   {
@@ -135,7 +137,7 @@
    "name": "Last Week Tonight",
    "type": "youtube",
    "status": "ok",
-   "count": 5,
+   "count": 3,
    "resolved": {
     "channelId": "UC3XTzVzaHQEd30rQbuvCtTQ",
     "title": "LastWeekTonight",
@@ -213,7 +215,7 @@
    "name": "TLDR News",
    "type": "youtube",
    "status": "ok",
-   "count": 4,
+   "count": 5,
    "resolved": {
     "channelId": "UCSMqateX8OA2s1wsOR2EgJA",
     "title": "TLDR News",
@@ -421,7 +423,7 @@
    "name": "Kill Tony",
    "type": "youtube",
    "status": "ok",
-   "count": 4,
+   "count": 5,
    "resolved": {
     "channelId": "UCwzCMiicL-hBUzyjWiJaseg",
     "title": "Kill Tony",
@@ -658,18 +660,16 @@
    "status": "waiting",
    "count": 0,
    "lastOk": "2026-11-16T19:40:46.781Z",
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-xbox",
    "name": "r/xbox",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": "2026-11-07T21:52:57.028Z",
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-slaythespire",
@@ -678,7 +678,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-geopolitics",
@@ -687,16 +687,18 @@
    "status": "waiting",
    "count": 0,
    "lastOk": "2026-11-17T03:58:17.859Z",
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-germany",
    "name": "r/germany",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": "2026-11-12T02:17:58.406Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-unitedkingdom",
@@ -705,13 +707,13 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   }
  ],
  "items": [
   {
-   "title": "Ein Krieg, zwei Gipfel – hat die Ukraine eine Chance auf Frieden? | Caren Miosga",
-   "url": "https://www.youtube.com/watch?v=_hSQrPxytNY",
+   "title": "Klimakonferenz COP31 ohne Abschluss: Journalistin Claudia Reiser erklärt die Hintergründe",
+   "url": "https://www.youtube.com/watch?v=inTUdP6KC6E",
    "source": "Tagesschau",
    "feedId": "yt-tagesschau",
    "type": "video",
@@ -720,19 +722,19 @@
     "news",
     "listen"
    ],
-   "published": "2026-11-22T23:55:26.000Z",
-   "summary": "Die Gegensätze könnten kaum größer sein: Während in Berlin rund 40 Nationen im Rahmen der „Koalition der Willigen“ gemeinsam mit dem ukrainischen Präsidenten Selenskyj um die weitere Unterstützung für Kiew ringen, treffen sich US-Präsident Trump, Russlands Präsident Putin und…",
-   "thumb": "https://i4.ytimg.com/vi/_hSQrPxytNY/hqdefault.jpg",
-   "id": "fa0fbf26f8ba",
+   "published": "2026-11-23T11:22:07.000Z",
+   "summary": "Die Klimakonferenz in Antalya ist nach zwei Wochen zäher Verhandlungen ohne Abschlusserklärung zu Ende gegangen. Woran lag das? Bei der Suche nach möglichen Schuldigen richtet sich der Blick auch auf die Doppelpräsidentschaft. Claudia Reiser, MDR, ordnet die Geschehnisse ein.…",
+   "thumb": "https://i2.ytimg.com/vi/inTUdP6KC6E/hqdefault.jpg",
+   "id": "bcf2bc300abb",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 3670,
-   "duration": "1:01:10"
+   "durationSec": 442,
+   "duration": "7:22"
   },
   {
-   "title": "tagesthemen 22:45 Uhr, 22.11.2026",
-   "url": "https://www.youtube.com/watch?v=1hbyj2VectA",
+   "title": "Geheimdienste warnen: Zündet Russland bald eine Atomwaffe im Weltraum?",
+   "url": "https://www.youtube.com/watch?v=fQi31mhnGpg",
    "source": "Tagesschau",
    "feedId": "yt-tagesschau",
    "type": "video",
@@ -741,15 +743,138 @@
     "news",
     "listen"
    ],
-   "published": "2026-11-22T22:26:26.000Z",
-   "summary": "tagesthemen 22:45 Uhr Klimakonferenz COP31 im türkischen Antalye endet ohne gemeinsame Abschlusserklärung, Die Meinung, Regierungskoalitions diskutiert weiter über Rentenreform, Totensonntag: Schüler in Lingen sammeln alte Kruzifixe für ein Kunstprojekt, Der Sport, Das Wetter…",
-   "thumb": "https://i2.ytimg.com/vi/1hbyj2VectA/hqdefault.jpg",
-   "id": "1df6e7d292bc",
+   "published": "2026-11-23T11:16:24.000Z",
+   "summary": "Westliche Geheimdienste gehen nach Recherchen von WDR, NDR und SZ davon aus, dass Russland noch dieses Jahr einen Satelliten mit einem Atomsprengkopf in den Weltraum bringen will. Die Bundeswehr schlägt intern bereits Alarm. Mehr Informationen:…",
+   "thumb": "https://i3.ytimg.com/vi/fQi31mhnGpg/hqdefault.jpg",
+   "id": "e59920d8432d",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 1281,
-   "duration": "21:21"
+   "durationSec": 350,
+   "duration": "5:50"
+  },
+  {
+   "title": "Six former PMs warn Andy Burnham against rejoining EU",
+   "url": "https://www.youtube.com/watch?v=J3IQzEgQ4zE",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-23T11:06:22.000Z",
+   "summary": "In a moment of rare unity, six former prime ministers have come out to warn Andy Burnham against rejoining the EU. Tony Blair, David Cameron, Theresa May, Boris Johnson, Liz Truss and Rishi Sunak have all publicly stated their opinion against rejoining after Burnham agreed to…",
+   "thumb": "https://i3.ytimg.com/vi/J3IQzEgQ4zE/hqdefault.jpg",
+   "id": "2bc8e79cee29",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 1115,
+   "duration": "18:35"
+  },
+  {
+   "title": "The UK Economy is Genuinely Booming: Why?",
+   "url": "https://www.youtube.com/watch?v=9R_rvQbJvzQ",
+   "source": "TLDR News",
+   "feedId": "yt-tldr-news",
+   "type": "video",
+   "tags": [
+    "news",
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-23T10:00:11.000Z",
+   "summary": "Take back your privacy - start using Proton Mail for free: https://proton.me/tldr Pre-order a copy of Too Long: toolong.news/TL010 This month, the Office for National Statistics released two bits of data that reflect really quite well on the UK economy. In this video, we sort…",
+   "thumb": "https://i2.ytimg.com/vi/9R_rvQbJvzQ/hqdefault.jpg",
+   "id": "db46db0547ca",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 489,
+   "duration": "8:09"
+  },
+  {
+   "title": "„Paywall-Medizin“: Opposition warnt vor Bezahlschranken bei Facharzt-Terminen",
+   "url": "https://www.youtube.com/watch?v=QEj4HPWC9TQ",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-23T09:54:56.000Z",
+   "summary": "Schneller zum Facharzt gegen Bezahlung? Die Einschätzung von Kassenärzte-Chef Gassen hat Kritik ausgelöst. Mehr Geld löse das Problem nicht, sagt TK-Chef Baas im Bericht aus Berlin und fordert stattdessen ein grundlegend neues System. Das löste auch Kritik aus. Mehr…",
+   "thumb": "https://i2.ytimg.com/vi/QEj4HPWC9TQ/hqdefault.jpg",
+   "id": "3db37b543f64",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 100,
+   "duration": "1:40"
+  },
+  {
+   "title": "Klimakrise trifft die Ärmsten: Warum Hilfen für arme Länder blockiert werden",
+   "url": "https://www.youtube.com/watch?v=YP_5dbDIkyw",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-23T09:53:33.000Z",
+   "summary": "Der XXL-Klimagipfel ist vorbei und ein Bekenntnis der fast 200 Staaten zum Klimaschutz gibt es nicht. Sabine Minninger, von der Hilfsorganisation Brot für die Welt, kritisiert fehlende Unterstützung für Ärmere Staaten. Mehr Informationen:…",
+   "thumb": "https://i2.ytimg.com/vi/YP_5dbDIkyw/hqdefault.jpg",
+   "id": "b14887b3ea03",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 250,
+   "duration": "4:10"
+  },
+  {
+   "title": "Angst vor Altersarmut: Warum die Gen Z um ihre Rente bangt",
+   "url": "https://www.youtube.com/watch?v=5VkNybO3uR0",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-23T09:36:49.000Z",
+   "summary": "Die Union möchte die Rente mit 63 am liebsten abschaffen, die SPD will sie behalten. Doch es deutet sich ein Abrücken von diesen Maximalforderungen an. Noch verhandelt Arbeitsminister Schweitzer mit der Union über die Knackpunkte. Das Thema beschäftigt auch junge Menschen: In…",
+   "thumb": "https://i2.ytimg.com/vi/5VkNybO3uR0/hqdefault.jpg",
+   "id": "308a91e73c98",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 131,
+   "duration": "2:11"
+  },
+  {
+   "title": "KT #795 - Roseanne Barr + Christina Pazsitzky",
+   "url": "https://www.youtube.com/watch?v=-SHT3ebi_rk",
+   "source": "Kill Tony",
+   "feedId": "yt-kill-tony",
+   "type": "video",
+   "tags": [
+    "comedy",
+    "standup",
+    "listen"
+   ],
+   "published": "2026-11-23T06:35:20.000Z",
+   "summary": "Roseanne Barr, Christina Pazsitzky, Pat O'Neill, Myles Johnson, Martin Phillips, D Madness, Michael A. Gonzales, Jon Deas, Matthew Muehling, Grooveline Horns, Joe White, Troy Conrad, Monica Parciak, Colt Mcneely, Nathan Poling, Steve Glass, Tony Hinchcliffe, Brian Redban -…",
+   "thumb": "https://i2.ytimg.com/vi/-SHT3ebi_rk/hqdefault.jpg",
+   "id": "e000a6dac6a3",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
   },
   {
    "title": "The Man Erasing Gangs In Haiti",
@@ -764,32 +889,11 @@
    "summary": "El Salvador has initiated military intervention against haitian gangs after 4 salvadorians were seemingly ambushed. Haiti's people seem to be praising this intervention as godsent. Will this be a turning point for the country? Nayib Bukele In Haiti ———————————— Spotify:…",
    "thumb": "https://i4.ytimg.com/vi/W5fAv2p5GV4/hqdefault.jpg",
    "id": "27fed708d789",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 1334,
    "duration": "22:14"
-  },
-  {
-   "title": "tagesschau 20:00 Uhr, 22.11.2026",
-   "url": "https://www.youtube.com/watch?v=oFyHoBdpYj8",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-22T20:03:31.000Z",
-   "summary": "Die 20-Uhr-Ausgabe der tagesschau im Livestream und früher auf Abruf: https://ardmediathek.de/tagesschau und https://tagesschau.de Themen der tagesschau-Sendung: 00:00 Guten Abend 00:24 Klimakonferenz COP31 im türkischen Antalya endet ohne Einigung auf gemeinsame…",
-   "thumb": "https://i4.ytimg.com/vi/oFyHoBdpYj8/hqdefault.jpg",
-   "id": "17faf2b5a98b",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 945,
-   "duration": "15:45"
   },
   {
    "title": "LUKE BEASLEY VS NICK FUENTES",
@@ -805,9 +909,9 @@
    "summary": "Luke Beasley confronts Nick Fuentes on race, democracy, and more! Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
    "thumb": "https://i4.ytimg.com/vi/3zBxNCgG3c0/hqdefault.jpg",
    "id": "598eea2ea981",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 3468,
    "duration": "57:48"
   },
@@ -824,9 +928,9 @@
    "summary": "GTA 6 does the impossible, but the way it embraces fun can teach the whole video game industry a lesson. Subscribe for more: https://www.youtube.com/gameranxTV?sub_confirmation=1",
    "thumb": "https://i1.ytimg.com/vi/H3DQNv21hmk/hqdefault.jpg",
    "id": "15828d3e92ff",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 1017,
    "duration": "16:57"
   },
@@ -844,32 +948,11 @@
    "summary": "Thanks to our sponsor italki! Use code EASYGERMAN9 to get €5 off your first lesson (minimum spend €10): https://go.italki.com/easygerman9 (Ad) --- LEARN MORE GERMAN WITH US: 💡 JOIN OUR COMMUNITY: https://easygerman.link/membership_eg688 🎧 LISTEN TO OUR PODCAST:…",
    "thumb": "https://i3.ytimg.com/vi/VlACZMlkWCo/hqdefault.jpg",
    "id": "8ced1cdff8e3",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 897,
    "duration": "14:57"
-  },
-  {
-   "title": "Klimakonferenz in Antalya gescheitert: Kein Beschluss zu fossilen Energien",
-   "url": "https://www.youtube.com/watch?v=z1tXXxR0QZg",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-22T17:12:02.000Z",
-   "summary": "Die teilnehmenden Staaten der Weltklimakonferenz im türkischen Antalya haben sich nicht auf eine gemeinsame Abschlusserklärung einigen können. An dem Papier gab es unter anderem von Deutschland und der EU scharfe Kritik. In dem Text wird auf Druck von Ölförderländern wie…",
-   "thumb": "https://i3.ytimg.com/vi/z1tXXxR0QZg/hqdefault.jpg",
-   "id": "2c2d942417c4",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 250,
-   "duration": "4:10"
   },
   {
    "title": "1 Conservative Trans Woman vs 20 Trans Activists (ft. Blaire White) | Surrounded",
@@ -885,9 +968,9 @@
    "summary": "Hey you 👈 Wanna be in a Jubilee video? https://bit.ly/be-in-a-video LET’S BE FRIENDS Instagram: https://www.instagram.com/jubileemedia/ TikTok: https://www.tiktok.com/@jubilee?lang=en Website: https://www.jubileemedia.com OUR LOVE + DATING CHANNEL 🍑 YouTube:…",
    "thumb": "https://i3.ytimg.com/vi/fcVVJxv4M00/hqdefault.jpg",
    "id": "45349f342691",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 6308,
    "duration": "1:45:08"
   },
@@ -905,32 +988,11 @@
    "summary": "Harry, an 11-year-old entrepreneur, and inventor Michael Swigert enter the Tank seeking $600,000 for 10% of FurZapper, a reusable pet hair remover designed to tackle stubborn fur in both washing machines and dryers. From Season 12 Episode 20 Watch Shark Tank US Now:…",
    "thumb": "https://i1.ytimg.com/vi/tDqwB0KKZZU/hqdefault.jpg",
    "id": "d62030f0616e",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 646,
    "duration": "10:46"
-  },
-  {
-   "title": "Pressefreiheit in der Türkei: Tausende demonstrieren in Istanbul gegen Zensur",
-   "url": "https://www.youtube.com/watch?v=lh-B868xrHM",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-22T16:04:03.000Z",
-   "summary": "In der Türkei hat die oppositionelle Yeni-Partei nach der Zwangsverwaltung eines weiteren regierungskritischen Fernsehsenders zu Protesten für Pressefreiheit aufgerufen. Auslöser ist das Vorgehen der Justiz gegen den Sender \"Sözcü TV\". Die Polizei hatte Führungskräfte…",
-   "thumb": "https://i1.ytimg.com/vi/lh-B868xrHM/hqdefault.jpg",
-   "id": "52e75773182f",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 390,
-   "duration": "6:30"
   },
   {
    "title": "Why “everyone’s a builder” isn’t working | A reality check with Sherif Mansour",
@@ -1190,26 +1252,6 @@
    "why": "0",
    "durationSec": 494,
    "duration": "8:14"
-  },
-  {
-   "title": "How is Anthropic worth a trillion dollars?",
-   "url": "https://www.youtube.com/watch?v=wyhSIOn4Dq8",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-21T14:00:34.000Z",
-   "summary": "Matt Frei is joined by Benevolent AI's Chairman, Ken Mulvany, to explain the transformative technology behind Anthropic, which went public this week and has been valued at over a trillion dollars. It eclipsed Elon Musk’s bumper SpaceX float in June as the biggest stock market…",
-   "thumb": "https://i4.ytimg.com/vi/wyhSIOn4Dq8/hqdefault.jpg",
-   "id": "b1d27d1531e3",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 751,
-   "duration": "12:31"
   },
   {
    "title": "Why Would Anyone Spend $1 Billion on GTA 6?",
@@ -2826,47 +2868,7 @@
    "why": "0",
    "durationSec": 547,
    "duration": "9:07"
-  },
-  {
-   "title": "Pete Hegseth: Last Week Tonight with John Oliver (HBO)",
-   "url": "https://www.youtube.com/watch?v=LO5iHyYa0XM",
-   "source": "Last Week Tonight",
-   "feedId": "yt-last-week-tonight",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "politics"
-   ],
-   "published": "2026-11-09T07:30:32.000Z",
-   "summary": "John Oliver discusses the damage that Pete Hegseth has caused both at home and abroad as the U.S. Secretary of Defense, how it could take a generation to fix, and the unexpected decorating flourishes of Mr. Kid Rock. Subscribe to the #lastweektonight YouTube channel for more…",
-   "thumb": "https://i1.ytimg.com/vi/LO5iHyYa0XM/hqdefault.jpg",
-   "id": "590bb915f6e9",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 2124,
-   "duration": "35:24"
-  },
-  {
-   "title": "S13 E29: Midterm Results & Pete Hegseth: 11/8/26: Last Week Tonight with John Oliver",
-   "url": "https://www.youtube.com/watch?v=UlW28SlFO8k",
-   "source": "Last Week Tonight",
-   "feedId": "yt-last-week-tonight",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "politics"
-   ],
-   "published": "2026-11-09T04:00:01.000Z",
-   "summary": "John Oliver discusses the wave of historic wins for Democrats in the midterm elections, the mounting pressure to impeach U.S. Secretary of Defense Pete Hegseth, and what it all has to do with Kid Rock. Subscribe to the #lastweektonight YouTube channel for more almost news as it…",
-   "thumb": "https://i2.ytimg.com/vi/UlW28SlFO8k/hqdefault.jpg",
-   "id": "093f1daf3994",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 2611,
-   "duration": "43:31"
   }
  ],
- "contentHash": "6c2c9d932428"
+ "contentHash": "43b8078fa93e"
 }
