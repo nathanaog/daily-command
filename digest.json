@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-22T19:48:48.223Z",
+ "generated": "2026-11-23T01:49:25.492Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
@@ -7,7 +7,7 @@
   "items": 108,
   "duplicatesMerged": 0,
   "lengthsKnown": 108,
-  "lengthLookups": 10,
+  "lengthLookups": 5,
   "lengthFailures": 0,
   "lengthVia": "YouTube Data API",
   "lengthFailReasons": {}
@@ -631,18 +631,16 @@
    "status": "waiting",
    "count": 0,
    "lastOk": "2026-11-17T16:12:01.447Z",
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-tech",
    "name": "r/tech",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": "2026-11-07T19:04:52.310Z",
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-gaming",
@@ -651,7 +649,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-ukpolitics",
@@ -660,16 +658,18 @@
    "status": "waiting",
    "count": 0,
    "lastOk": "2026-11-16T19:40:46.781Z",
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-xbox",
    "name": "r/xbox",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": "2026-11-07T21:52:57.028Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-slaythespire",
@@ -678,7 +678,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-geopolitics",
@@ -709,6 +709,108 @@
   }
  ],
  "items": [
+  {
+   "title": "Ein Krieg, zwei Gipfel – hat die Ukraine eine Chance auf Frieden? | Caren Miosga",
+   "url": "https://www.youtube.com/watch?v=_hSQrPxytNY",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-22T23:55:26.000Z",
+   "summary": "Die Gegensätze könnten kaum größer sein: Während in Berlin rund 40 Nationen im Rahmen der „Koalition der Willigen“ gemeinsam mit dem ukrainischen Präsidenten Selenskyj um die weitere Unterstützung für Kiew ringen, treffen sich US-Präsident Trump, Russlands Präsident Putin und…",
+   "thumb": "https://i4.ytimg.com/vi/_hSQrPxytNY/hqdefault.jpg",
+   "id": "fa0fbf26f8ba",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 3670,
+   "duration": "1:01:10"
+  },
+  {
+   "title": "tagesthemen 22:45 Uhr, 22.11.2026",
+   "url": "https://www.youtube.com/watch?v=1hbyj2VectA",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-22T22:26:26.000Z",
+   "summary": "tagesthemen 22:45 Uhr Klimakonferenz COP31 im türkischen Antalye endet ohne gemeinsame Abschlusserklärung, Die Meinung, Regierungskoalitions diskutiert weiter über Rentenreform, Totensonntag: Schüler in Lingen sammeln alte Kruzifixe für ein Kunstprojekt, Der Sport, Das Wetter…",
+   "thumb": "https://i2.ytimg.com/vi/1hbyj2VectA/hqdefault.jpg",
+   "id": "1df6e7d292bc",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 1281,
+   "duration": "21:21"
+  },
+  {
+   "title": "The Man Erasing Gangs In Haiti",
+   "url": "https://www.youtube.com/watch?v=W5fAv2p5GV4",
+   "source": "Aberrant preach",
+   "feedId": "yt-aberrant-preach",
+   "type": "video",
+   "tags": [
+    "trash"
+   ],
+   "published": "2026-11-22T20:42:09.000Z",
+   "summary": "El Salvador has initiated military intervention against haitian gangs after 4 salvadorians were seemingly ambushed. Haiti's people seem to be praising this intervention as godsent. Will this be a turning point for the country? Nayib Bukele In Haiti ———————————— Spotify:…",
+   "thumb": "https://i4.ytimg.com/vi/W5fAv2p5GV4/hqdefault.jpg",
+   "id": "27fed708d789",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 1334,
+   "duration": "22:14"
+  },
+  {
+   "title": "tagesschau 20:00 Uhr, 22.11.2026",
+   "url": "https://www.youtube.com/watch?v=oFyHoBdpYj8",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-22T20:03:31.000Z",
+   "summary": "Die 20-Uhr-Ausgabe der tagesschau im Livestream und früher auf Abruf: https://ardmediathek.de/tagesschau und https://tagesschau.de Themen der tagesschau-Sendung: 00:00 Guten Abend 00:24 Klimakonferenz COP31 im türkischen Antalya endet ohne Einigung auf gemeinsame…",
+   "thumb": "https://i4.ytimg.com/vi/oFyHoBdpYj8/hqdefault.jpg",
+   "id": "17faf2b5a98b",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 945,
+   "duration": "15:45"
+  },
+  {
+   "title": "LUKE BEASLEY VS NICK FUENTES",
+   "url": "https://www.youtube.com/watch?v=3zBxNCgG3c0",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-22T20:00:16.000Z",
+   "summary": "Luke Beasley confronts Nick Fuentes on race, democracy, and more! Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
+   "thumb": "https://i4.ytimg.com/vi/3zBxNCgG3c0/hqdefault.jpg",
+   "id": "598eea2ea981",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 3468,
+   "duration": "57:48"
+  },
   {
    "title": "GTA 6 Has Exposed a BIG Problem With AAA Games",
    "url": "https://www.youtube.com/watch?v=H3DQNv21hmk",
@@ -831,49 +933,7 @@
    "duration": "6:30"
   },
   {
-   "title": "Brennender Frachter in der Ostsee: Sorge vor Ausweitung des Ukraine-Kriegs",
-   "url": "https://www.youtube.com/watch?v=oQ2Jl7pM1Lw",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-22T16:03:43.000Z",
-   "summary": "Nach dem Drohnenangriff auf ein russisches Frachtschiff in der Ostsee ist das Feuer an Bord noch nicht vollständig gelöscht. Bilder und Videos der finnischen Küstenwache zeigen mehrere Rettungsschiffe, die in der Nacht versuchten, den Frachter zu löschen. Was das Schiff geladen…",
-   "thumb": "https://i4.ytimg.com/vi/oQ2Jl7pM1Lw/hqdefault.jpg",
-   "id": "081b28681850",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 352,
-   "duration": "5:52"
-  },
-  {
-   "title": "Kolumbien: Wie die Indigenen Kinder vor Rebellen schützen",
-   "url": "https://www.youtube.com/watch?v=06aQ2yZS8wE",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-22T15:05:14.000Z",
-   "summary": "In Kolumbien werden Kinder von Guerillakämpfern angelockt und entführt, um sie zu Soldaten zu machen. Vor zehn Jahren hatten die Regierung und die damals kämpfenden Rebellen eigentlich Frieden geschlossen. Sie sollten ihre Waffen abgeben, der Staat die Kontrolle übernehmen.…",
-   "thumb": "https://i1.ytimg.com/vi/06aQ2yZS8wE/hqdefault.jpg",
-   "id": "9cdb78e16d0c",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 182,
-   "duration": "3:02"
-  },
-  {
-   "title": "The new rules of product management in the AI era | Sherif Mansour (Head of AI, Atlassian)",
+   "title": "Why “everyone’s a builder” isn’t working | A reality check with Sherif Mansour",
    "url": "https://www.youtube.com/watch?v=hRtmV1mCBSE",
    "source": "Lenny's Podcast",
    "feedId": "yt-lenny-s-podcast",
@@ -887,32 +947,11 @@
    "summary": "Sherif Mansour is Head of AI and Product Craft at Atlassian (the company behind Jira and Confluence), where he has spent 17 years building and scaling some of the most successful enterprise products in history. He joined Atlassian as its first PM on Confluence, eventually…",
    "thumb": "https://i1.ytimg.com/vi/hRtmV1mCBSE/hqdefault.jpg",
    "id": "fe8441529b63",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 4898,
    "duration": "1:21:38"
-  },
-  {
-   "title": "UN-Weltklimakonferenz: Warum Deutschland den Abschlussentwurf ablehnt",
-   "url": "https://www.youtube.com/watch?v=aukMdu5PBgY",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-22T11:45:45.000Z",
-   "summary": "Die Weltklimakonferenz in Antalya ist schon in der Verlängerung, um ein Beschlusspapier wird heftig gerungen. Nun hat Umweltminister Schneider den Entwurf scharf zurückgewiesen – und erhebt Vorwürfe gegen einige Staaten. Weitere Informationen:…",
-   "thumb": "https://i2.ytimg.com/vi/aukMdu5PBgY/hqdefault.jpg",
-   "id": "bc30d64ce7f5",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 451,
-   "duration": "7:31"
   },
   {
    "title": "Second village votes to leave UK | Barnham referendum",
@@ -928,9 +967,9 @@
    "summary": "Residents of a Suffolk village have symbolically voted to leave the UK over plans to house asylum seekers at a nearby former military base. Barnham residents are unhappy with the proposal, which would result in over 900 asylum seekers living in the area. The move was inspired…",
    "thumb": "https://i3.ytimg.com/vi/vHDU3KyOlgw/hqdefault.jpg",
    "id": "d50b9ed59c14",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 657,
    "duration": "10:57"
   },
@@ -1013,26 +1052,6 @@
    "why": "0",
    "durationSec": 481,
    "duration": "8:01"
-  },
-  {
-   "title": "It Might Actually Happen",
-   "url": "https://www.youtube.com/watch?v=eMFF_aHmNX8",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-22T00:30:14.000Z",
-   "summary": "Luke discusses the Senate Democratic leadership race. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley Instagram…",
-   "thumb": "https://i2.ytimg.com/vi/eMFF_aHmNX8/hqdefault.jpg",
-   "id": "cb67c3e45e9e",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 702,
-   "duration": "11:42"
   },
   {
    "title": "Trump defends ‘friendship’ with Vladimir Putin",
@@ -1981,25 +2000,6 @@
    "duration": "1:31:52"
   },
   {
-   "title": "They Got Her!",
-   "url": "https://www.youtube.com/watch?v=-8GTSWN53FU",
-   "source": "Aberrant preach",
-   "feedId": "yt-aberrant-preach",
-   "type": "video",
-   "tags": [
-    "trash"
-   ],
-   "published": "2026-11-16T17:55:28.000Z",
-   "summary": "Internet was collectively shocked when Sarah Smalls, a South Carolina caregiver not only failed to tell the man's daughter that he has pass away but has also took over his house before his dismiss for 5 US dollars. We have since gotten an update to this crazy story.…",
-   "thumb": "https://i2.ytimg.com/vi/-8GTSWN53FU/hqdefault.jpg",
-   "id": "bfc65a8fe98f",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 771,
-   "duration": "12:51"
-  },
-  {
    "title": "Megan Turns DIY Crafts Into a Million-Dollar Business | Shark Tank US | Shark Tank Global",
    "url": "https://www.youtube.com/watch?v=tDaFwWitCFo",
    "source": "Shark Tank Global",
@@ -2868,5 +2868,5 @@
    "duration": "43:31"
   }
  ],
- "contentHash": "2e0fd098163e"
+ "contentHash": "6c2c9d932428"
 }
