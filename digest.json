@@ -1,16 +1,18 @@
 {
- "generated": "2026-11-24T13:54:37.724Z",
+ "generated": "2026-11-24T23:56:24.141Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
   "ok": 47,
-  "items": 106,
+  "items": 105,
   "duplicatesMerged": 0,
-  "lengthsKnown": 106,
-  "lengthLookups": 9,
-  "lengthFailures": 0,
+  "lengthsKnown": 104,
+  "lengthLookups": 17,
+  "lengthFailures": 1,
   "lengthVia": "YouTube Data API",
-  "lengthFailReasons": {}
+  "lengthFailReasons": {
+   "not returned by API (live/private?)": 1
+  }
  },
  "feeds": [
   {
@@ -590,7 +592,7 @@
    "name": "Economics Explained",
    "type": "youtube",
    "status": "ok",
-   "count": 4,
+   "count": 3,
    "resolved": {
     "channelId": "UCZ4AMrDcNrfy3X6nsU8-rPg",
     "title": "Economics Explained",
@@ -655,12 +657,10 @@
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": "2026-11-16T19:40:46.781Z",
-   "note": "rate-limited by Reddit (sent a web page, not a feed)",
-   "error": "rate-limited by Reddit (sent a web page, not a feed)",
-   "http": 404
+   "note": "not its turn this run"
   },
   {
    "id": "rd-xbox",
@@ -669,7 +669,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": "2026-11-07T21:52:57.028Z",
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-slaythespire",
@@ -678,7 +678,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-geopolitics",
@@ -687,16 +687,18 @@
    "status": "waiting",
    "count": 0,
    "lastOk": "2026-11-17T03:58:17.859Z",
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-germany",
    "name": "r/germany",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": "2026-11-12T02:17:58.406Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-unitedkingdom",
@@ -705,13 +707,33 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   }
  ],
  "items": [
   {
-   "title": "ARD-Korrespondent erklärt: Wofür die Regierung Geld ausgeben will",
-   "url": "https://www.youtube.com/watch?v=BWKwYW7Xbl4",
+   "title": "What just f***ing happened? Is Katie Zacharia okay?!",
+   "url": "https://www.youtube.com/watch?v=96zJt34OjbQ",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-24T22:35:26.000Z",
+   "summary": "Luke discusses Katie Zacharia's latest appearance on Real America's Voice. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
+   "thumb": "https://i2.ytimg.com/vi/96zJt34OjbQ/hqdefault.jpg",
+   "id": "11f3b23ca780",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 545,
+   "duration": "9:05"
+  },
+  {
+   "title": "tagesthemen 22:15 Uhr, 24.11.2026",
+   "url": "https://www.youtube.com/watch?v=vUSwtXg9seE",
    "source": "Tagesschau",
    "feedId": "yt-tagesschau",
    "type": "video",
@@ -720,19 +742,19 @@
     "news",
     "listen"
    ],
-   "published": "2026-11-24T13:09:21.000Z",
-   "summary": "2027 will die Bundesregierung in ihrem Haushalt 560 Milliarden Euro ausgeben. Doch dafür muss der Bundestag dem Etat zustimmen. Deshalb geht es in dieser Woche noch einmal ums Ganze. Erst wenn der Bundestag das grüne Licht gegeben hat, darf die Regierung Geld ausgeben. Deswegen…",
-   "thumb": "https://i3.ytimg.com/vi/BWKwYW7Xbl4/hqdefault.jpg",
-   "id": "85e5fe65d350",
+   "published": "2026-11-24T22:21:06.000Z",
+   "summary": "tagesthemen 22:15 Uhr Berliner Linke stimmt für Fraktionsausschluss der umstrittenen Abgeordneten Emde, Lagebild häusliche Gewalt verzeichnet erneute Zunahme bei erfassten Straftaten gegen Frauen, Auch Männer von häuslicher Gewalt betroffen, Die Meinung, Deutsch-afrikanischer…",
+   "thumb": "https://i3.ytimg.com/vi/vUSwtXg9seE/hqdefault.jpg",
+   "id": "239c30cce910",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 272,
-   "duration": "4:32"
+   "durationSec": 2110,
+   "duration": "35:10"
   },
   {
-   "title": "Andy Burnham criticised for 'cringe' influencer interviews",
-   "url": "https://www.youtube.com/watch?v=fhZ5Ggzl2mU",
+   "title": "We want less tax and more to show for it | James O’Brien - The Whole Show",
+   "url": "https://www.youtube.com/watch?v=aM6x6p8vOtY",
    "source": "LBC",
    "feedId": "yt-lbc",
    "type": "video",
@@ -740,61 +762,17 @@
     "politics",
     "listen"
    ],
-   "published": "2026-11-24T12:57:39.000Z",
-   "summary": "Number 10 has come under fire for reportedly spending £2 million on influencers, and 'cringe' interviews. Nick Ferrari asks what we can learn from the Prime Minister being asked if the NHS is 'slay', as seen in a clip with him and A&E doctor Maddy Lucy Dann. Nick Ferrari is…",
-   "thumb": "https://i3.ytimg.com/vi/fhZ5Ggzl2mU/hqdefault.jpg",
-   "id": "7da6dcfa25dc",
+   "published": "2026-11-24T22:00:07.000Z",
+   "summary": "This is a catch-up version of James O'Brien's live, daily show on LBC Radio from the 24th of November 2026. Listen to the full show on the all-new LBC App: https://app.af.lbc.co.uk/btnc/thenewlbcapp #jamesobrien #politics #LBC LBC is the home of live debate around news and…",
+   "thumb": "https://i2.ytimg.com/vi/aM6x6p8vOtY/hqdefault.jpg",
+   "id": "7ad3b6d5d32d",
    "score": 1,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 698,
-   "duration": "11:38"
+   "why": "fresh (<12 h) +1 = 1"
   },
   {
-   "title": "Grenzübertritte von Migranten: Dürfen Menschen zurückgewiesen werden?",
-   "url": "https://www.youtube.com/watch?v=57fDX340dkI",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-24T11:40:00.000Z",
-   "summary": "Der Europäische Gerichtshof für Menschenrechte in Straßburg verkündet am Dienstag drei Urteile wegen mutmaßlich illegaler Pushbacks. Klageführer sind Migrant:innen mit afghanischer, irakischer und kubanischer Staatsangehörigkeit. Sie waren 2021 bzw. 2022 von den Grenzbehörden…",
-   "thumb": "https://i2.ytimg.com/vi/57fDX340dkI/hqdefault.jpg",
-   "id": "cca5d2423252",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 297,
-   "duration": "4:57"
-  },
-  {
-   "title": "Sorge um deutsche Wälder: Warum der Fichtenwald keine Zukunft mehr hat",
-   "url": "https://www.youtube.com/watch?v=sqBAvlKyAr0",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-24T08:40:53.000Z",
-   "summary": "Wenn es im Sommer heiß wird, kühlen sie die Umgebung: Deutschlands Wälder. Eine Auswertung der Wald-Allianz zeigt: Je höher die Temperaturen, desto stärker ist dieser Effekt. An heißen Tagen mit 29 Grad waren die Wälder im Schnitt 3,7 Grad kühler. Doch sie sind in Gefahr. Die…",
-   "thumb": "https://i4.ytimg.com/vi/sqBAvlKyAr0/hqdefault.jpg",
-   "id": "2a35c5da83f1",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 105,
-   "duration": "1:45"
-  },
-  {
-   "title": "Wall Street stocks soar after Jensen Huang returns as Nvidia CEO",
-   "url": "https://www.youtube.com/watch?v=jC5TUOjmZAA",
+   "title": "'Shocking' Gaza documentary reveals scale of Israeli destruction",
+   "url": "https://www.youtube.com/watch?v=iwU-eMc9Zdo",
    "source": "LBC",
    "feedId": "yt-lbc",
    "type": "video",
@@ -802,19 +780,38 @@
     "politics",
     "listen"
    ],
-   "published": "2026-11-24T08:08:46.000Z",
-   "summary": "Nvidia shares surged by 31% on Monday as Jensen Huang's return as chief executive sparked a rally on Wall Street, following a week of turmoil for technology stocks. The chipmaker reinstated its co-founder after President Donald Trump intervened to press the company's board to…",
-   "thumb": "https://i3.ytimg.com/vi/jC5TUOjmZAA/hqdefault.jpg",
-   "id": "aedbff23fd48",
+   "published": "2026-11-24T20:00:34.000Z",
+   "summary": "Andrew Marr was joined by filmmaker Poh Si Teng, and physicians Dr Thaer Ahmad and Dr Feroze Sidwha on their new documentary 'American Doctor'. It details the 'shocking' scenes these volunteer physicians witnessed in Gaza, which has been under Israeli strikes since a Hamas…",
+   "thumb": "https://i2.ytimg.com/vi/iwU-eMc9Zdo/hqdefault.jpg",
+   "id": "385b4daa1190",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 583,
-   "duration": "9:43"
+   "durationSec": 870,
+   "duration": "14:30"
   },
   {
-   "title": "Bombendrohungen / Bahn zufrieden mit Sicherheitskonzept / Heizen mit dem Fußballplatz | „15 Minuten“",
-   "url": "https://www.youtube.com/watch?v=05eRekZNzLI",
+   "title": "I Was Wrong.",
+   "url": "https://www.youtube.com/watch?v=vF4VSb78l3k",
+   "source": "Aberrant preach",
+   "feedId": "yt-aberrant-preach",
+   "type": "video",
+   "tags": [
+    "trash"
+   ],
+   "published": "2026-11-24T19:55:31.000Z",
+   "summary": "We've previously covered the story of Javits Frimpong, a ghanian teen living in NY for about a year who was tragically taken away too soon from this world. But we discussed it in a perhaps rushed way. ———————————— Spotify: https://open.spotify.com/artist/6QJIJ6AugqPEFASp1V6zgH…",
+   "thumb": "https://i3.ytimg.com/vi/vF4VSb78l3k/hqdefault.jpg",
+   "id": "901b554fca5a",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 643,
+   "duration": "10:43"
+  },
+  {
+   "title": "Linke schließt Emde aus: ARD-Reporterin Anke Hahn über die Folgen für Rot-Grün-Rot",
+   "url": "https://www.youtube.com/watch?v=7jeiwlTzHpQ",
    "source": "Tagesschau",
    "feedId": "yt-tagesschau",
    "type": "video",
@@ -823,19 +820,38 @@
     "news",
     "listen"
    ],
-   "published": "2026-11-24T06:39:38.000Z",
-   "summary": "Unsere Infos heute: (00:00:06) Themenübersicht (00:00:53) Bombendrohungen an hunderten Schulen Einige werden ihre Kinder heute vielleicht mit mulmigem Gefühl in die Schule schicken, denn gestern gab es Bombendrohungen gegen hunderte Schulen in ganz Deutschland. Unklar ist, wer…",
-   "thumb": "https://i1.ytimg.com/vi/05eRekZNzLI/hqdefault.jpg",
-   "id": "ef533f37d575",
+   "published": "2026-11-24T19:42:45.000Z",
+   "summary": "Wochenlang diskutierten Grüne, SPD und Linke in Berlin über die Personalie Emde. Die Abgeordnete steht wegen ihrer Positionen zu Israel in der Kritik. Nun hat die Fraktion mit der nötigen Mehrheit für ihren Ausschluss gestimmt. Emde ist wegen ihrer Positionen zu Israel und zum…",
+   "thumb": "https://i4.ytimg.com/vi/7jeiwlTzHpQ/hqdefault.jpg",
+   "id": "d87e0a484b7d",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 924,
-   "duration": "15:24"
+   "durationSec": 56,
+   "duration": "0:56"
   },
   {
-   "title": "Machtmissbrauch an Musikhochschulen: Zwischen Traum und Trauma",
-   "url": "https://www.youtube.com/watch?v=yaPOGFkbneY",
+   "title": "Ethan Slime Accused Of SA... H3 Announces Its End",
+   "url": "https://www.youtube.com/watch?v=QHdwbBZrEUE",
+   "source": "Aberrant preach",
+   "feedId": "yt-aberrant-preach",
+   "type": "video",
+   "tags": [
+    "trash"
+   ],
+   "published": "2026-11-24T19:30:40.000Z",
+   "summary": "Ethan Klein's life keeps going in a downwards spiral after cheating on his wife Hila but the suspected affair partner Tamara Josephs seems to be adding a serious twist to this already convulated story. ———————————— Spotify: https://open.spotify.com/artist/6QJIJ6AugqPEFASp1V6zgH…",
+   "thumb": "https://i2.ytimg.com/vi/QHdwbBZrEUE/hqdefault.jpg",
+   "id": "9554f52a060c",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 1363,
+   "duration": "22:43"
+  },
+  {
+   "title": "tagesschau 20:00 Uhr, 24.11.2026",
+   "url": "https://www.youtube.com/watch?v=vN5yPrwVNtQ",
    "source": "Tagesschau",
    "feedId": "yt-tagesschau",
    "type": "video",
@@ -844,15 +860,194 @@
     "news",
     "listen"
    ],
-   "published": "2026-11-24T05:09:55.000Z",
-   "summary": "Studierende an Musikhochschulen berichten von sexuellen Übergriffen durch ihre Dozenten. SWR-Journalistin Claudia Kaffanke hat recherchiert, warum diese Institutionen besonders anfällig für Machtmissbrauch sind. Im Gespräch mit Host Kevin Ebert erzählt sie in dieser 11KM-Folge,…",
-   "thumb": "https://i2.ytimg.com/vi/yaPOGFkbneY/hqdefault.jpg",
-   "id": "6a9147840054",
+   "published": "2026-11-24T19:29:41.000Z",
+   "summary": "tagesschau 20:00 Uhr Die 20-Uhr-Ausgabe der tagesschau im Livestream und früher auf Abruf: https://ardmediathek.de/tagesschau und https://tagesschau.de Themen der tagesschau-Sendung: 00:00 Guten Abend 00:22 Zahl der erfassten Straftaten gegen Frauen erneut gestiegen 02:28…",
+   "thumb": "https://i3.ytimg.com/vi/vN5yPrwVNtQ/hqdefault.jpg",
+   "id": "ee00e162d8be",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 1792,
-   "duration": "29:52"
+   "durationSec": 932,
+   "duration": "15:32"
+  },
+  {
+   "title": "Erneut Anstieg bei häuslicher Gewalt | tagesthemen-Interview",
+   "url": "https://www.youtube.com/watch?v=lqjnC0c-bmk",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-24T19:10:37.000Z",
+   "summary": "Die Fälle häuslicher Gewalt haben einen neuen Höchststand erreicht. Mehr als 280.000 Opfer wurden im vergangenen Jahr registriert, 292 Menschen – in Mehrzahl Frauen – kamen ums Leben. Es sind schockierende Zahlen, die Justizministerin Hubig, Familienministerin Prien und…",
+   "thumb": "https://i1.ytimg.com/vi/lqjnC0c-bmk/hqdefault.jpg",
+   "id": "09f0729afe78",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 375,
+   "duration": "6:15"
+  },
+  {
+   "title": "Jensen Huang is now 'untouchable'",
+   "url": "https://www.youtube.com/watch?v=p9k-WqjUi58",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-24T19:10:33.000Z",
+   "summary": "00:30 Financial expert Haley Sacks (AKA Mrs Dow Jones) 06:12 LBC's Washington correspondent Simon Marks President Trump's holdings of Nvidia stock could have increased as much as $15 million after a surge in share price caused by the shock return of former CEO Jensen Huang on…",
+   "thumb": "https://i1.ytimg.com/vi/p9k-WqjUi58/hqdefault.jpg",
+   "id": "8a53d7910053",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 598,
+   "duration": "9:58"
+  },
+  {
+   "title": "Young Spencer Goes to School | Toonout [Animated Shorts]",
+   "url": "https://www.youtube.com/watch?v=OUr6EyIQXok",
+   "source": "Dropout",
+   "feedId": "yt-dropout",
+   "type": "video",
+   "tags": [
+    "comedy"
+   ],
+   "published": "2026-11-24T18:30:17.000Z",
+   "summary": "A day in the life of everyone's favorite demon from Very Important People. He's just a baby! To watch more episode of Toonout and other animated series, sign up for Dropout: https://www.dropout.tv/plans Welcome to the Dropout channel! You can support us by signing up for…",
+   "thumb": "https://i4.ytimg.com/vi/OUr6EyIQXok/hqdefault.jpg",
+   "id": "c5725c18ea64",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 206,
+   "duration": "3:26"
+  },
+  {
+   "title": "Are Men Consuming Too Much Porn At Full Volume On The Bus?",
+   "url": "https://www.youtube.com/watch?v=r4sw06_o12Y",
+   "source": "The Onion",
+   "feedId": "yt-the-onion",
+   "type": "video",
+   "tags": [
+    "comedy"
+   ],
+   "published": "2026-11-24T18:00:35.000Z",
+   "summary": "Is this an epidemic, or is regular porn consumption simply a natural part of one's daily commute? Our In The Know panel debates. Become an Onion member while it's still optional: http://membership.theonion.com/?campaign=701cx000013VpTpAAK Powered By Forge Virtual Studios",
+   "thumb": "https://i3.ytimg.com/vi/r4sw06_o12Y/hqdefault.jpg",
+   "id": "4891e339ff23",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 255,
+   "duration": "4:15"
+  },
+  {
+   "title": "GTA 6: 10 Secret Locations You NEED TO VISIT",
+   "url": "https://www.youtube.com/watch?v=as4GFUWe9cs",
+   "source": "GameRanx",
+   "feedId": "yt-gameranx",
+   "type": "video",
+   "tags": [
+    "gaming"
+   ],
+   "published": "2026-11-24T17:47:48.000Z",
+   "summary": "GTA6 has lots of hidden secrets within areas you'd completely miss. Here are some cool places to get started. Subscribe for more: https://www.youtube.com/gameranxTV?sub_confirmation=1 0:00 Intro 0:39 Number 10 2:53 Number 9 5:47 Number 8 7:51 Number 7 9:39 Number 6 11:18 Number…",
+   "thumb": "https://i2.ytimg.com/vi/as4GFUWe9cs/hqdefault.jpg",
+   "id": "98dd51240e1d",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 1430,
+   "duration": "23:50"
+  },
+  {
+   "title": "Trump posts bizarre AI image of Nvidia boss Jenson Huang",
+   "url": "https://www.youtube.com/watch?v=M5vT9Gjdtag",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-24T17:05:37.000Z",
+   "summary": "Lewis Goodall joins Shelagh Fogarty to react as Nvidia boss Jensen Huang is reinstated after he briefly stepped down following a series of affairs. Stocks in the chipmaking giant surged by 31% on Monday after Huang's return sparked a rally on Wall Street, with around $1trillion…",
+   "thumb": "https://i2.ytimg.com/vi/M5vT9Gjdtag/hqdefault.jpg",
+   "id": "9b97ab3f25b1",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 1000,
+   "duration": "16:40"
+  },
+  {
+   "title": "Sparkurs bei VW: IG Metall kämpft um 5 Prozent mehr Lohn",
+   "url": "https://www.youtube.com/watch?v=9oAFzqjoyDY",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-24T16:52:34.000Z",
+   "summary": "Mitten in der tiefsten Krise der Konzerngeschichte startet heute die Tarifrunde für rund 120.000 Volkswagen-Beschäftigte. Das Management will Kosten senken, die IG Metall wehrt sich gegen weitere Einbußen. Mit einer schnellen Einigung rechnet niemand. Zu groß ist die Krise, zu…",
+   "thumb": "https://i2.ytimg.com/vi/9oAFzqjoyDY/hqdefault.jpg",
+   "id": "fa2f04f4f177",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 102,
+   "duration": "1:42"
+  },
+  {
+   "title": "The long-term implications of Trump's influence over Nvidia",
+   "url": "https://www.youtube.com/watch?v=GISuwjsDyeE",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-24T15:00:08.000Z",
+   "summary": "Donald Trump has come under fire for pressing Nvidia's board of directors to reinstate CEO Jensen Huang, after the businessman was forced to step down over his affair with an alleged Chinese 'spy'. Stocks in the chipmaking giant surged by 31% on Monday after Huang's return…",
+   "thumb": "https://i4.ytimg.com/vi/GISuwjsDyeE/hqdefault.jpg",
+   "id": "3a73e06248fb",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 689,
+   "duration": "11:29"
+  },
+  {
+   "title": "MAGA Lady FAKES ANTI-TRUMP ATTACK on Herself, CARVES THIS in Skin!",
+   "url": "https://www.youtube.com/watch?v=layyJ8_SeM0",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-24T15:00:02.000Z",
+   "summary": "Luke discusses the latest update on Natalie Greene. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley Instagram -…",
+   "thumb": "https://i1.ytimg.com/vi/layyJ8_SeM0/hqdefault.jpg",
+   "id": "c64e4111cc23",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 426,
+   "duration": "7:06"
   },
   {
    "title": "DAMN: Jesse Watters SHOUTS AT CO-HOST as He EXPOSES TRUMP!",
@@ -868,9 +1063,9 @@
    "summary": "Luke discusses a recent moment from Fox News' The Five. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
    "thumb": "https://i4.ytimg.com/vi/gPvEOzn4mDI/hqdefault.jpg",
    "id": "6c732025e30a",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 551,
    "duration": "9:11"
   },
@@ -889,9 +1084,9 @@
    "summary": "Roseanne Barr, Christina Pazsitzky, Pat O'Neill, Myles Johnson, Martin Phillips, D Madness, Michael A. Gonzales, Jon Deas, Matthew Muehling, Grooveline Horns, Joe White, Troy Conrad, Monica Parciak, Colt Mcneely, Nathan Poling, Steve Glass, Tony Hinchcliffe, Brian Redban -…",
    "thumb": "https://i2.ytimg.com/vi/-SHT3ebi_rk/hqdefault.jpg",
    "id": "e000a6dac6a3",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 8102,
    "duration": "2:15:02"
   },
@@ -934,46 +1129,6 @@
    "why": "0",
    "durationSec": 983,
    "duration": "16:23"
-  },
-  {
-   "title": "Should we ignore SIX former British Prime Ministers? | James O’Brien - The Whole Show",
-   "url": "https://www.youtube.com/watch?v=tVaAQ307B3I",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-23T20:00:11.000Z",
-   "summary": "This is a catch-up version of James O'Brien's live, daily show on LBC Radio from the 23rd of November 2026. Listen to the full show on the all-new LBC App: https://app.af.lbc.co.uk/btnc/thenewlbcapp #jamesobrien #politics #LBC LBC is the home of live debate around news and…",
-   "thumb": "https://i1.ytimg.com/vi/tVaAQ307B3I/hqdefault.jpg",
-   "id": "916f35247d31",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 8703,
-   "duration": "2:25:03"
-  },
-  {
-   "title": "Is Burnham’s Brexit deal ‘living in the past’?",
-   "url": "https://www.youtube.com/watch?v=hsHj9KX2xqs",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-23T19:39:21.000Z",
-   "summary": "Andy Burnham has dismissed advice from several ‘stuck in the past’ former PMs, who have urged him not to reignite the Brexit debate. Mr Burnham said he would dismiss the advice of former leaders including Rishi Sunak and Theresa May who “put us here in the first place”. The…",
-   "thumb": "https://i1.ytimg.com/vi/hsHj9KX2xqs/hqdefault.jpg",
-   "id": "9a7c7847709d",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 1124,
-   "duration": "18:44"
   },
   {
    "title": "Elder Scrolls 6 Sentinel: 10 Things We DON'T WANT",
@@ -1033,26 +1188,6 @@
    "why": "0",
    "durationSec": 568,
    "duration": "9:28"
-  },
-  {
-   "title": "Jensen Huang reinstated as Nvidia CEO",
-   "url": "https://www.youtube.com/watch?v=FQpCG1swtPs",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-23T16:19:35.000Z",
-   "summary": "Donald Trump, who holds ‘millions of dollars’ of Nvidia stocks, has said Nvidia made the ‘correct and proper decision’ by reinstating Jensen Huang as CEO. Simon Marks says this is proof that ‘crony capitalism has found a home’ in the United States, as well as of the ‘collapse…",
-   "thumb": "https://i3.ytimg.com/vi/FQpCG1swtPs/hqdefault.jpg",
-   "id": "f60e6aeaffad",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 706,
-   "duration": "11:46"
   },
   {
    "title": "Old trams waste power on purpose. Here's why (*this is mostly an excuse for a tram driving contest)",
@@ -1132,26 +1267,6 @@
    "why": "0",
    "durationSec": 1334,
    "duration": "22:14"
-  },
-  {
-   "title": "LUKE BEASLEY VS NICK FUENTES",
-   "url": "https://www.youtube.com/watch?v=3zBxNCgG3c0",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-22T20:00:16.000Z",
-   "summary": "Luke Beasley confronts Nick Fuentes on race, democracy, and more! Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
-   "thumb": "https://i4.ytimg.com/vi/3zBxNCgG3c0/hqdefault.jpg",
-   "id": "598eea2ea981",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 3468,
-   "duration": "57:48"
   },
   {
    "title": "GTA 6 Has Exposed a BIG Problem With AAA Games",
@@ -1252,26 +1367,6 @@
    "why": "0",
    "durationSec": 4898,
    "duration": "1:21:38"
-  },
-  {
-   "title": "This is f***ing creepy",
-   "url": "https://www.youtube.com/watch?v=yG7yiIl3ZRg",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-22T04:30:28.000Z",
-   "summary": "Luke discusses a recent moment from Dr. Phil's podcast. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
-   "thumb": "https://i2.ytimg.com/vi/yG7yiIl3ZRg/hqdefault.jpg",
-   "id": "4c3ae68950c6",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 878,
-   "duration": "14:38"
   },
   {
    "title": "Top 10 NEW Games of December 2026",
@@ -1492,25 +1587,6 @@
    "duration": "3:24"
   },
   {
-   "title": "GTA 6: 20 MISTAKES YOU SHOULDN'T MAKE",
-   "url": "https://www.youtube.com/watch?v=rDJVx4dw848",
-   "source": "GameRanx",
-   "feedId": "yt-gameranx",
-   "type": "video",
-   "tags": [
-    "gaming"
-   ],
-   "published": "2026-11-20T17:05:07.000Z",
-   "summary": "In Grand Theft Auto VI, it's easy to make mistakes throughout Leonida. Here are some tips. Subscribe for more: https://www.youtube.com/gameranxTV?sub_confirmation=1 0:00 Intro 0:34 Number 20 2:09 Number 19 3:52 Number 18 5:30 Number 17 6:49 Number 16 8:06 Number 15 9:44 Number…",
-   "thumb": "https://i3.ytimg.com/vi/rDJVx4dw848/hqdefault.jpg",
-   "id": "90d30c3d1758",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 1767,
-   "duration": "29:27"
-  },
-  {
    "title": "Best of The New Season! | Shark Tank US | Shark Tank Global",
    "url": "https://www.youtube.com/watch?v=8sJSpsWStZw",
    "source": "Shark Tank Global",
@@ -1607,7 +1683,7 @@
    "duration": "13:02"
   },
   {
-   "title": "Why Xiaomi Products Are Everywhere",
+   "title": "How One Brand Quietly Conquered Everything We Use",
    "url": "https://www.youtube.com/watch?v=j4fw-n7xxc4",
    "source": "The Hustle",
    "feedId": "yt-the-hustle",
@@ -1784,25 +1860,6 @@
    "duration": "8:15"
   },
   {
-   "title": "Not Idris Elba? New James Bond Announced",
-   "url": "https://www.youtube.com/watch?v=4yFVyMuSpDo",
-   "source": "Aberrant preach",
-   "feedId": "yt-aberrant-preach",
-   "type": "video",
-   "tags": [
-    "trash"
-   ],
-   "published": "2026-11-18T19:43:42.000Z",
-   "summary": "Robert Patterson is officially the new 007. But is he made for this? ———————————— Spotify: https://open.spotify.com/artist/6QJIJ6AugqPEFASp1V6zgH Merchandise --- https://www.enkreprinte.com/collections/aba-and-preach INSTAGRAM @aba.atlas @abanpreach Discord:…",
-   "thumb": "https://i1.ytimg.com/vi/4yFVyMuSpDo/hqdefault.jpg",
-   "id": "4d62df2978d3",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 823,
-   "duration": "13:43"
-  },
-  {
    "title": "Fluent in Your Love Language by Boys Who Read (Official Music Video) | MP3 [New Dropout Series]",
    "url": "https://www.youtube.com/watch?v=74QNqyXUh_c",
    "source": "Dropout",
@@ -1919,25 +1976,6 @@
    "why": "0",
    "durationSec": 1766,
    "duration": "29:26"
-  },
-  {
-   "title": "H3 Employee Gets Fired Live... Starts Exposing Everybody!",
-   "url": "https://www.youtube.com/watch?v=WNn860w3Tms",
-   "source": "Aberrant preach",
-   "feedId": "yt-aberrant-preach",
-   "type": "video",
-   "tags": [
-    "trash"
-   ],
-   "published": "2026-11-17T18:51:04.000Z",
-   "summary": "Harley Morenstein went live to discuss his future at H3H3 Podcast when Hila Klein decided to publicly announce his firing in an unprofessional manner publicly. This resulted in a insane crash out where harley unleashed details about Tamara & Ethan Klein. ———————————— Spotify:…",
-   "thumb": "https://i4.ytimg.com/vi/WNn860w3Tms/hqdefault.jpg",
-   "id": "04e98dc77638",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 1002,
-   "duration": "16:42"
   },
   {
    "title": "The Sneaky Girl Shuffle | Make Some Noise [Full Episode]",
@@ -2220,7 +2258,7 @@
    "duration": "43:30"
   },
   {
-   "title": "Bregenz: Lake Life, Austrian Dialect & Local Food",
+   "title": "Learn German from the Streets of 🇦🇹 Bregenz",
    "url": "https://www.youtube.com/watch?v=MN5GQvHMA5Y",
    "source": "Easy German",
    "feedId": "yt-easy-german",
@@ -2587,25 +2625,6 @@
    "duration": "9:02"
   },
   {
-   "title": "Very Important People Season 4 Teaser",
-   "url": "https://www.youtube.com/watch?v=clMkVczkgww",
-   "source": "Dropout",
-   "feedId": "yt-dropout",
-   "type": "video",
-   "tags": [
-    "comedy"
-   ],
-   "published": "2026-11-12T18:30:33.000Z",
-   "summary": "New season. New look. New Vic. Very Important People season 4 coming soon, only on Dropout: https://www.dropout.tv/shows/very-important-people Welcome to the Dropout channel! You can support us by signing up for Dropout.tv, our subscription video platform that features a ton of…",
-   "thumb": "https://i4.ytimg.com/vi/clMkVczkgww/hqdefault.jpg",
-   "id": "9e79735c5d30",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 54,
-   "duration": "0:54"
-  },
-  {
    "title": "David Wood Calls Nicaea II a DISASTER — Jay Dyer Responds",
    "url": "https://www.youtube.com/watch?v=9P6omxQceJM",
    "source": "Modern-Day Debate",
@@ -2786,46 +2805,7 @@
    "why": "0",
    "durationSec": 1540,
    "duration": "25:40"
-  },
-  {
-   "title": "Is Violence Becoming Too Political?",
-   "url": "https://www.youtube.com/watch?v=VTL-DmXH_bw",
-   "source": "The Onion",
-   "feedId": "yt-the-onion",
-   "type": "video",
-   "tags": [
-    "comedy"
-   ],
-   "published": "2026-11-10T18:00:22.000Z",
-   "summary": "Do politics have a place in our violence, or is it ruining one of our favorite pastimes? Our In The Know panel debates. Become an Onion member while it's still optional: https://membership.theonion.com/?campaign=701a500001geULHAA2 Powered By Forge Virtual Studios",
-   "thumb": "https://i3.ytimg.com/vi/VTL-DmXH_bw/hqdefault.jpg",
-   "id": "14b295bd390a",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 223,
-   "duration": "3:43"
-  },
-  {
-   "title": "The Psychology of Inflation",
-   "url": "https://www.youtube.com/watch?v=Qk6AuhfjvTk",
-   "source": "Economics Explained",
-   "feedId": "yt-economics-explained",
-   "type": "video",
-   "tags": [
-    "finance",
-    "listen"
-   ],
-   "published": "2026-11-10T15:00:36.000Z",
-   "summary": "Enjoy 1 month of Wispr Flow Pro using my link: https://ref.wisprflow.ai/economics-explained-yt 📫 95,000+ read our free newsletter that has weekly original stories Sign up: → https://economicsexplained.substack.com/subscribe This video was made possible by our Patreon…",
-   "thumb": "https://i2.ytimg.com/vi/Qk6AuhfjvTk/hqdefault.jpg",
-   "id": "33f4cc6a0ced",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 959,
-   "duration": "15:59"
   }
  ],
- "contentHash": "145fee95f7e8"
+ "contentHash": "75a4303466eb"
 }
