@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-23T13:07:35.645Z",
+ "generated": "2026-11-24T02:18:15.316Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
@@ -7,7 +7,7 @@
   "items": 108,
   "duplicatesMerged": 0,
   "lengthsKnown": 107,
-  "lengthLookups": 8,
+  "lengthLookups": 18,
   "lengthFailures": 1,
   "lengthVia": "YouTube Data API",
   "lengthFailReasons": {
@@ -59,7 +59,7 @@
    "name": "Chris Spargo",
    "type": "youtube",
    "status": "ok",
-   "count": 2,
+   "count": 1,
    "resolved": {
     "channelId": "UCTzkxNEnbdvbBlgYl_W9daw",
     "title": "Chris Spargo",
@@ -228,7 +228,7 @@
    "name": "Simplicissimus",
    "type": "youtube",
    "status": "ok",
-   "count": 2,
+   "count": 3,
    "resolved": {
     "channelId": "UCKGMHVipEvuZudhHD05FOYA",
     "title": "Simplicissimus",
@@ -397,7 +397,7 @@
    "name": "The Economist",
    "type": "youtube",
    "status": "ok",
-   "count": 4,
+   "count": 5,
    "resolved": {
     "channelId": "UC0p5jTq6Xx_DosDFxVXnWaQ",
     "title": "The Economist",
@@ -423,7 +423,7 @@
    "name": "Kill Tony",
    "type": "youtube",
    "status": "ok",
-   "count": 5,
+   "count": 4,
    "resolved": {
     "channelId": "UCwzCMiicL-hBUzyjWiJaseg",
     "title": "Kill Tony",
@@ -633,16 +633,18 @@
    "status": "waiting",
    "count": 0,
    "lastOk": "2026-11-17T16:12:01.447Z",
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-tech",
    "name": "r/tech",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": "2026-11-07T19:04:52.310Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-gaming",
@@ -651,7 +653,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-ukpolitics",
@@ -687,18 +689,16 @@
    "status": "waiting",
    "count": 0,
    "lastOk": "2026-11-17T03:58:17.859Z",
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-germany",
    "name": "r/germany",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": "2026-11-12T02:17:58.406Z",
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-unitedkingdom",
@@ -707,13 +707,72 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   }
  ],
  "items": [
   {
-   "title": "Klimakonferenz COP31 ohne Abschluss: Journalistin Claudia Reiser erklärt die Hintergründe",
-   "url": "https://www.youtube.com/watch?v=inTUdP6KC6E",
+   "title": "KT #795 - ROSEANNE BARR + CHRISTINA PAZSITZKY",
+   "url": "https://www.youtube.com/watch?v=-SHT3ebi_rk",
+   "source": "Kill Tony",
+   "feedId": "yt-kill-tony",
+   "type": "video",
+   "tags": [
+    "comedy",
+    "standup",
+    "listen"
+   ],
+   "published": "2026-11-24T02:00:09.000Z",
+   "summary": "Roseanne Barr, Christina Pazsitzky, Pat O'Neill, Myles Johnson, Martin Phillips, D Madness, Michael A. Gonzales, Jon Deas, Matthew Muehling, Grooveline Horns, Joe White, Troy Conrad, Monica Parciak, Colt Mcneely, Nathan Poling, Steve Glass, Tony Hinchcliffe, Brian Redban -…",
+   "thumb": "https://i2.ytimg.com/vi/-SHT3ebi_rk/hqdefault.jpg",
+   "id": "e000a6dac6a3",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Nick Fuentes Fans Are Gay for Me?",
+   "url": "https://www.youtube.com/watch?v=bLIX3ceA538",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-24T00:30:30.000Z",
+   "summary": "Luke discusses the online discourse surrounding his debate with Nick Fuentes. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
+   "thumb": "https://i3.ytimg.com/vi/bLIX3ceA538/hqdefault.jpg",
+   "id": "3019aea8f4c7",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 1055,
+   "duration": "17:35"
+  },
+  {
+   "title": "WHAT JUST F***ING HAPPENED in This Trump Interview, It’s INSANE!",
+   "url": "https://www.youtube.com/watch?v=bX-RyLDrxoA",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-23T22:30:27.000Z",
+   "summary": "Luke discusses Trump's CNBC interview. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley Instagram -…",
+   "thumb": "https://i3.ytimg.com/vi/bX-RyLDrxoA/hqdefault.jpg",
+   "id": "26043cca92c5",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 983,
+   "duration": "16:23"
+  },
+  {
+   "title": "tagesthemen 22:15 Uhr, 23.11.2026",
+   "url": "https://www.youtube.com/watch?v=0zxHXmaUR58",
    "source": "Tagesschau",
    "feedId": "yt-tagesschau",
    "type": "video",
@@ -722,19 +781,19 @@
     "news",
     "listen"
    ],
-   "published": "2026-11-23T11:22:07.000Z",
-   "summary": "Die Klimakonferenz in Antalya ist nach zwei Wochen zäher Verhandlungen ohne Abschlusserklärung zu Ende gegangen. Woran lag das? Bei der Suche nach möglichen Schuldigen richtet sich der Blick auch auf die Doppelpräsidentschaft. Claudia Reiser, MDR, ordnet die Geschehnisse ein.…",
-   "thumb": "https://i2.ytimg.com/vi/inTUdP6KC6E/hqdefault.jpg",
-   "id": "bcf2bc300abb",
+   "published": "2026-11-23T22:15:07.000Z",
+   "summary": "tagesthemen 22:15 Uhr Nach Spionageskandal: Nvidia setzt Jensen Huang wieder als Chef ein, Geheimdienste warnen: Russland soll Atomwaffe im Weltraum vorbereiten, Russische Atomwaffe im Weltall: Wie reagiert die NATO?, UN-Klimakonferenz: Warum die Erdölländer eine…",
+   "thumb": "https://i1.ytimg.com/vi/0zxHXmaUR58/hqdefault.jpg",
+   "id": "26af526a5a25",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 442,
-   "duration": "7:22"
+   "durationSec": 2086,
+   "duration": "34:46"
   },
   {
-   "title": "Geheimdienste warnen: Zündet Russland bald eine Atomwaffe im Weltraum?",
-   "url": "https://www.youtube.com/watch?v=fQi31mhnGpg",
+   "title": "Russland soll Atomwaffe im Weltall vorbereiten | tagesthemen-Interview",
+   "url": "https://www.youtube.com/watch?v=wWMMLDBMfQg",
    "source": "Tagesschau",
    "feedId": "yt-tagesschau",
    "type": "video",
@@ -743,19 +802,19 @@
     "news",
     "listen"
    ],
-   "published": "2026-11-23T11:16:24.000Z",
-   "summary": "Westliche Geheimdienste gehen nach Recherchen von WDR, NDR und SZ davon aus, dass Russland noch dieses Jahr einen Satelliten mit einem Atomsprengkopf in den Weltraum bringen will. Die Bundeswehr schlägt intern bereits Alarm. Mehr Informationen:…",
-   "thumb": "https://i3.ytimg.com/vi/fQi31mhnGpg/hqdefault.jpg",
-   "id": "e59920d8432d",
+   "published": "2026-11-23T22:07:21.000Z",
+   "summary": "Der Angriffskrieg Russlands in der Ukraine führt zu immer neuen Eskalationen. Nach der Verletzung des polnischen Luftraums, bei der russische Marschflugkörper abstürzten, griff die Ukraine russische Schiffe in der Ostsee und vor der libyschen Küste im Mittelmeer an. Heute lässt…",
+   "thumb": "https://i4.ytimg.com/vi/wWMMLDBMfQg/hqdefault.jpg",
+   "id": "d6806a5f7efa",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 350,
-   "duration": "5:50"
+   "durationSec": 326,
+   "duration": "5:26"
   },
   {
-   "title": "Six former PMs warn Andy Burnham against rejoining EU",
-   "url": "https://www.youtube.com/watch?v=J3IQzEgQ4zE",
+   "title": "Should we ignore SIX former British Prime Ministers? | James O’Brien - The Whole Show",
+   "url": "https://www.youtube.com/watch?v=tVaAQ307B3I",
    "source": "LBC",
    "feedId": "yt-lbc",
    "type": "video",
@@ -763,15 +822,256 @@
     "politics",
     "listen"
    ],
-   "published": "2026-11-23T11:06:22.000Z",
-   "summary": "In a moment of rare unity, six former prime ministers have come out to warn Andy Burnham against rejoining the EU. Tony Blair, David Cameron, Theresa May, Boris Johnson, Liz Truss and Rishi Sunak have all publicly stated their opinion against rejoining after Burnham agreed to…",
-   "thumb": "https://i3.ytimg.com/vi/J3IQzEgQ4zE/hqdefault.jpg",
-   "id": "2bc8e79cee29",
+   "published": "2026-11-23T20:00:11.000Z",
+   "summary": "This is a catch-up version of James O'Brien's live, daily show on LBC Radio from the 23rd of November 2026. Listen to the full show on the all-new LBC App: https://app.af.lbc.co.uk/btnc/thenewlbcapp #jamesobrien #politics #LBC LBC is the home of live debate around news and…",
+   "thumb": "https://i1.ytimg.com/vi/tVaAQ307B3I/hqdefault.jpg",
+   "id": "916f35247d31",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 1115,
-   "duration": "18:35"
+   "durationSec": 8703,
+   "duration": "2:25:03"
+  },
+  {
+   "title": "tagesschau 20:00 Uhr, 23.11.2026",
+   "url": "https://www.youtube.com/watch?v=vWf_o5t8Vgw",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-23T19:45:46.000Z",
+   "summary": "Die 20-Uhr-Ausgabe der tagesschau im Livestream und früher auf Abruf: https://ardmediathek.de/tagesschau und https://tagesschau.de 00:00 Guten Abend 00:21 Nvidia holt Jensen Huang zurück an die Firmenspitze 04:28 NATO verstärkt Kontrolle von Polens Luftraum nach…",
+   "thumb": "https://i3.ytimg.com/vi/vWf_o5t8Vgw/hqdefault.jpg",
+   "id": "2628340f1ef2",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 998,
+   "duration": "16:38"
+  },
+  {
+   "title": "Trump rühmt sich für Rückkehr von Nvidia-Chef Huang",
+   "url": "https://www.youtube.com/watch?v=OGI9gUAlLPU",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-23T19:40:28.000Z",
+   "summary": "Es ist eine überraschende Wendung in einem ohnehin ungewöhnlichen Fall. Der erst vor wenigen Tagen wegen einer Spionageaffäre zurückgetretene Nvidia-Chef Jensen Huang soll wieder Chef des Konzerns werden. Offenbar nicht ganz unbeteiligt an der Entwicklung: Donald Trump. Der…",
+   "thumb": "https://i4.ytimg.com/vi/OGI9gUAlLPU/hqdefault.jpg",
+   "id": "6830dfbf0e67",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 95,
+   "duration": "1:35"
+  },
+  {
+   "title": "Is Burnham’s Brexit deal ‘living in the past’?",
+   "url": "https://www.youtube.com/watch?v=hsHj9KX2xqs",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-23T19:39:21.000Z",
+   "summary": "Andy Burnham has dismissed advice from several ‘stuck in the past’ former PMs, who have urged him not to reignite the Brexit debate. Mr Burnham said he would dismiss the advice of former leaders including Rishi Sunak and Theresa May who “put us here in the first place”. The…",
+   "thumb": "https://i1.ytimg.com/vi/hsHj9KX2xqs/hqdefault.jpg",
+   "id": "9a7c7847709d",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 1124,
+   "duration": "18:44"
+  },
+  {
+   "title": "Bedrohung durch Russland: Wie die NATO jetzt das Bündnisgebiet schützt",
+   "url": "https://www.youtube.com/watch?v=VIHTw3p7RzY",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-23T19:07:02.000Z",
+   "summary": "In Berlin endet die NATO-Jahrestagung mit einer deutlichen Warnung an Russland: Man sei bereit, jeden Fuß des NATO-Gebiets zu verteidigen. Auch zu den Berichten über russische Pläne von Atomwaffen im Weltraum äußerte sich Kanzler Merz. Mehr zum Thema:…",
+   "thumb": "https://i3.ytimg.com/vi/VIHTw3p7RzY/hqdefault.jpg",
+   "id": "b39f825d7e8a",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 96,
+   "duration": "1:36"
+  },
+  {
+   "title": "Elder Scrolls 6 Sentinel: 10 Things We DON'T WANT",
+   "url": "https://www.youtube.com/watch?v=FTchJ8Swn8Q",
+   "source": "GameRanx",
+   "feedId": "yt-gameranx",
+   "type": "video",
+   "tags": [
+    "gaming"
+   ],
+   "published": "2026-11-23T17:47:39.000Z",
+   "summary": "Elder Scrolls 6: Sentinel is still years away, but players already have strong opinions. Subscribe for more: https://www.youtube.com/gameranxTV?sub_confirmation=1 0:00 Intro 0:55 Number 10 3:59 Number 9 5:57 Number 8 7:17 Number 7 9:08 Number 6 10:19 Number 5 11:46 Number 4…",
+   "thumb": "https://i3.ytimg.com/vi/FTchJ8Swn8Q/hqdefault.jpg",
+   "id": "ad9a03ea27a8",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 1062,
+   "duration": "17:42"
+  },
+  {
+   "title": "Does taxing the rich actually work? | The Economist",
+   "url": "https://www.youtube.com/watch?v=TBMxRk4ateI",
+   "source": "The Economist",
+   "feedId": "yt-the-economist",
+   "type": "video",
+   "tags": [
+    "finance",
+    "business"
+   ],
+   "published": "2026-11-23T17:00:59.000Z",
+   "summary": "Does taxing the rich work? From California’s billionaire tax to Zohran Mamdani’s plan for New York, calls for a wealth tax are growing. But are they the answer? At first glance the global economy looks more uneven than ever, but this might not be the case. Billionaires’…",
+   "thumb": "https://i1.ytimg.com/vi/TBMxRk4ateI/hqdefault.jpg",
+   "id": "160cfe195e57",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 335,
+   "duration": "5:35"
+  },
+  {
+   "title": "Sharks Fall In Love With This Guilt-Free Chocolate | Shark Tank US | Shark Tank Global",
+   "url": "https://www.youtube.com/watch?v=v6781KIxsTQ",
+   "source": "Shark Tank Global",
+   "feedId": "yt-shark-tank-global",
+   "type": "video",
+   "tags": [
+    "trash",
+    "business"
+   ],
+   "published": "2026-11-23T16:59:54.000Z",
+   "summary": "Thereasa Black enters the Tank seeking $75,000 for 10% of Bon AppéSweet, her brand of organic, dairy-free chocolate made with superfoods and sweetened naturally with dates. From Season 17 Episode 9 Watch Shark Tank US Now: http://AAN.SonyPictures.com/SharkTankUSHulu Watch Shark…",
+   "thumb": "https://i3.ytimg.com/vi/v6781KIxsTQ/hqdefault.jpg",
+   "id": "24faaaf59427",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 568,
+   "duration": "9:28"
+  },
+  {
+   "title": "Jensen Huang reinstated as Nvidia CEO",
+   "url": "https://www.youtube.com/watch?v=FQpCG1swtPs",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-23T16:19:35.000Z",
+   "summary": "Donald Trump, who holds ‘millions of dollars’ of Nvidia stocks, has said Nvidia made the ‘correct and proper decision’ by reinstating Jensen Huang as CEO. Simon Marks says this is proof that ‘crony capitalism has found a home’ in the United States, as well as of the ‘collapse…",
+   "thumb": "https://i3.ytimg.com/vi/FQpCG1swtPs/hqdefault.jpg",
+   "id": "f60e6aeaffad",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 706,
+   "duration": "11:46"
+  },
+  {
+   "title": "Old trams waste power on purpose. Here's why (*this is mostly an excuse for a tram driving contest)",
+   "url": "https://www.youtube.com/watch?v=of60wacXiTQ",
+   "source": "Tom Scott",
+   "feedId": "yt-tom-scott",
+   "type": "video",
+   "tags": [
+    "education"
+   ],
+   "published": "2026-11-23T16:00:11.000Z",
+   "summary": "The World Tram Driving Championships aren't something that an average, non-tram-driver can enter. But... what if I held my own? (Thanks to the @Seaton-Tramway team!) | 🗺️ England series map: https://www.tomscott.com/england/ 🟥 MORE FROM TOM: https://www.tomscott.com/ (you can…",
+   "thumb": "https://i4.ytimg.com/vi/of60wacXiTQ/hqdefault.jpg",
+   "id": "0d5ff56d7ab5",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 1631,
+   "duration": "27:11"
+  },
+  {
+   "title": "'Nowhere is safe' : Ukraine sink Russian warship docked in Libya",
+   "url": "https://www.youtube.com/watch?v=ZpQ-heii2fk",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-23T15:19:08.000Z",
+   "summary": "Ukrainian drones sank a Russian warship while it was docked in eastern Libya, as footage of the strike showed the dramatic moment of the huge blast. Shelagh Fogarty is joined by Former Warship Commander who served for over 25 years in the Royal Navy Tom Sharpe, who now works as…",
+   "thumb": "https://i3.ytimg.com/vi/ZpQ-heii2fk/hqdefault.jpg",
+   "id": "74530e546508",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 743,
+   "duration": "12:23"
+  },
+  {
+   "title": "Der berühmteste Mord der Geschichte",
+   "url": "https://www.youtube.com/watch?v=LFyc2CsuQCA",
+   "source": "Simplicissimus",
+   "feedId": "yt-simplicissimus",
+   "type": "video",
+   "tags": [
+    "german",
+    "education"
+   ],
+   "published": "2026-11-23T15:00:30.000Z",
+   "summary": "Mit Naturstrom hast du einen Stromanbieter, der dir 100% Ökostrom aus Solar-, Wind- und Wasserkraftwerken in Deutschland liefert. Mit dem Code “Simpli” kannst du dir 30€ Wechselbonus für Neukunden sichern. Bei vielen Tarifen sogar mit Preisgarantie bis zum 31.12.2027. Einfach…",
+   "thumb": "https://i1.ytimg.com/vi/LFyc2CsuQCA/hqdefault.jpg",
+   "id": "57ae4e119084",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 716,
+   "duration": "11:56"
+  },
+  {
+   "title": "Wife drugged and raped by husband and strangers in another Gisèle Pelicot-esque case",
+   "url": "https://www.youtube.com/watch?v=MsRGbjf6MlU",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-23T13:34:24.000Z",
+   "summary": "James O'Brien speaks to Dr Laura Bishop about her experience of being drugged and raped by her husband and strangers he invited into their home. Daniel, Laura's ex-husband, is currently serving a sentence of 14 years and eight months for the crime, but an unknown number of men…",
+   "thumb": "https://i2.ytimg.com/vi/MsRGbjf6MlU/hqdefault.jpg",
+   "id": "a0ec66cc47fa",
+   "score": 0,
+   "matched": [],
+   "why": "0",
+   "durationSec": 1100,
+   "duration": "18:20"
   },
   {
    "title": "The UK Economy is Genuinely Booming: Why?",
@@ -788,93 +1088,11 @@
    "summary": "Take back your privacy - start using Proton Mail for free: https://proton.me/tldr Pre-order a copy of Too Long: toolong.news/TL010 This month, the Office for National Statistics released two bits of data that reflect really quite well on the UK economy. In this video, we sort…",
    "thumb": "https://i2.ytimg.com/vi/9R_rvQbJvzQ/hqdefault.jpg",
    "id": "db46db0547ca",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 489,
    "duration": "8:09"
-  },
-  {
-   "title": "„Paywall-Medizin“: Opposition warnt vor Bezahlschranken bei Facharzt-Terminen",
-   "url": "https://www.youtube.com/watch?v=QEj4HPWC9TQ",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-23T09:54:56.000Z",
-   "summary": "Schneller zum Facharzt gegen Bezahlung? Die Einschätzung von Kassenärzte-Chef Gassen hat Kritik ausgelöst. Mehr Geld löse das Problem nicht, sagt TK-Chef Baas im Bericht aus Berlin und fordert stattdessen ein grundlegend neues System. Das löste auch Kritik aus. Mehr…",
-   "thumb": "https://i2.ytimg.com/vi/QEj4HPWC9TQ/hqdefault.jpg",
-   "id": "3db37b543f64",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 100,
-   "duration": "1:40"
-  },
-  {
-   "title": "Klimakrise trifft die Ärmsten: Warum Hilfen für arme Länder blockiert werden",
-   "url": "https://www.youtube.com/watch?v=YP_5dbDIkyw",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-23T09:53:33.000Z",
-   "summary": "Der XXL-Klimagipfel ist vorbei und ein Bekenntnis der fast 200 Staaten zum Klimaschutz gibt es nicht. Sabine Minninger, von der Hilfsorganisation Brot für die Welt, kritisiert fehlende Unterstützung für Ärmere Staaten. Mehr Informationen:…",
-   "thumb": "https://i2.ytimg.com/vi/YP_5dbDIkyw/hqdefault.jpg",
-   "id": "b14887b3ea03",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 250,
-   "duration": "4:10"
-  },
-  {
-   "title": "Angst vor Altersarmut: Warum die Gen Z um ihre Rente bangt",
-   "url": "https://www.youtube.com/watch?v=5VkNybO3uR0",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-23T09:36:49.000Z",
-   "summary": "Die Union möchte die Rente mit 63 am liebsten abschaffen, die SPD will sie behalten. Doch es deutet sich ein Abrücken von diesen Maximalforderungen an. Noch verhandelt Arbeitsminister Schweitzer mit der Union über die Knackpunkte. Das Thema beschäftigt auch junge Menschen: In…",
-   "thumb": "https://i2.ytimg.com/vi/5VkNybO3uR0/hqdefault.jpg",
-   "id": "308a91e73c98",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 131,
-   "duration": "2:11"
-  },
-  {
-   "title": "KT #795 - Roseanne Barr + Christina Pazsitzky",
-   "url": "https://www.youtube.com/watch?v=-SHT3ebi_rk",
-   "source": "Kill Tony",
-   "feedId": "yt-kill-tony",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "standup",
-    "listen"
-   ],
-   "published": "2026-11-23T06:35:20.000Z",
-   "summary": "Roseanne Barr, Christina Pazsitzky, Pat O'Neill, Myles Johnson, Martin Phillips, D Madness, Michael A. Gonzales, Jon Deas, Matthew Muehling, Grooveline Horns, Joe White, Troy Conrad, Monica Parciak, Colt Mcneely, Nathan Poling, Steve Glass, Tony Hinchcliffe, Brian Redban -…",
-   "thumb": "https://i2.ytimg.com/vi/-SHT3ebi_rk/hqdefault.jpg",
-   "id": "e000a6dac6a3",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
   },
   {
    "title": "The Man Erasing Gangs In Haiti",
@@ -935,7 +1153,7 @@
    "duration": "16:57"
   },
   {
-   "title": "The Pro’s and Con’s of Living in Stuttgart",
+   "title": "Is Stuttgart a Good Place to Live?",
    "url": "https://www.youtube.com/watch?v=VlACZMlkWCo",
    "source": "Easy German",
    "feedId": "yt-easy-german",
@@ -965,7 +1183,7 @@
     "debates"
    ],
    "published": "2026-11-22T17:00:10.000Z",
-   "summary": "Hey you 👈 Wanna be in a Jubilee video? https://bit.ly/be-in-a-video LET’S BE FRIENDS Instagram: https://www.instagram.com/jubileemedia/ TikTok: https://www.tiktok.com/@jubilee?lang=en Website: https://www.jubileemedia.com OUR LOVE + DATING CHANNEL 🍑 YouTube:…",
+   "summary": "Injured in an accident? You may be owed serious money. You can start your claim with Morgan & Morgan: https://forthepeople.com/jubilee — no fees unless you win! Hey you 👈 Wanna be in a Jubilee video? https://bit.ly/be-in-a-video LET’S BE FRIENDS Instagram:…",
    "thumb": "https://i3.ytimg.com/vi/fcVVJxv4M00/hqdefault.jpg",
    "id": "45349f342691",
    "score": 0,
@@ -995,7 +1213,7 @@
    "duration": "10:46"
   },
   {
-   "title": "Why “everyone’s a builder” isn’t working | A reality check with Sherif Mansour",
+   "title": "Why “everyone becoming a builder” isn't working",
    "url": "https://www.youtube.com/watch?v=hRtmV1mCBSE",
    "source": "Lenny's Podcast",
    "feedId": "yt-lenny-s-podcast",
@@ -1014,26 +1232,6 @@
    "why": "0",
    "durationSec": 4898,
    "duration": "1:21:38"
-  },
-  {
-   "title": "Second village votes to leave UK | Barnham referendum",
-   "url": "https://www.youtube.com/watch?v=vHDU3KyOlgw",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-22T09:08:38.000Z",
-   "summary": "Residents of a Suffolk village have symbolically voted to leave the UK over plans to house asylum seekers at a nearby former military base. Barnham residents are unhappy with the proposal, which would result in over 900 asylum seekers living in the area. The move was inspired…",
-   "thumb": "https://i3.ytimg.com/vi/vHDU3KyOlgw/hqdefault.jpg",
-   "id": "d50b9ed59c14",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 657,
-   "duration": "10:57"
   },
   {
    "title": "This is f***ing creepy",
@@ -1074,66 +1272,6 @@
    "why": "0",
    "durationSec": 340,
    "duration": "5:40"
-  },
-  {
-   "title": "WHAT THE F***??",
-   "url": "https://www.youtube.com/watch?v=xYm4MMCWXgs",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-22T02:30:04.000Z",
-   "summary": "Luke discusses Trump's latest press conference. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley Instagram -…",
-   "thumb": "https://i1.ytimg.com/vi/xYm4MMCWXgs/hqdefault.jpg",
-   "id": "228dd3035702",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 735,
-   "duration": "12:15"
-  },
-  {
-   "title": "Katie Zacharia BLINDSIDED by SHOCKING SH*T!",
-   "url": "https://www.youtube.com/watch?v=yLqjwq7X760",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-22T01:30:17.000Z",
-   "summary": "Luke discusses The State Bar of California potentially investigating Katie Zacharia. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
-   "thumb": "https://i2.ytimg.com/vi/yLqjwq7X760/hqdefault.jpg",
-   "id": "70c2fa10cf15",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 481,
-   "duration": "8:01"
-  },
-  {
-   "title": "Trump defends ‘friendship’ with Vladimir Putin",
-   "url": "https://www.youtube.com/watch?v=oLjhxtivftQ",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-21T18:49:36.000Z",
-   "summary": "Donald Trump has defended calling ‘wanted war criminal’ Vladimir Putin his ‘friend.’ Simon Marks tells Vanessa Feltz it was an ‘astonishing thing for any US president to say.’ In a press conference following the trilateral meeting, Trump said his ‘fantastic relationship’ with…",
-   "thumb": "https://i4.ytimg.com/vi/oLjhxtivftQ/hqdefault.jpg",
-   "id": "4566cf284a6d",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 686,
-   "duration": "11:26"
   },
   {
    "title": "Top 10 NEW Games of December 2026",
@@ -1194,26 +1332,6 @@
    "duration": "1:10:44"
   },
   {
-   "title": "Is America now Britain's 'enemy'? | LBC callers react",
-   "url": "https://www.youtube.com/watch?v=CvKn53e2pls",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-21T16:00:39.000Z",
-   "summary": "Ali Miraj and LBC callers react to Donald Trump's declaration that Vladimir Putin is his 'friend'. Ali ruminates on the old adage: 'My enemy's enemy is my friend'. If we accept that to be true - and we consider Russia an enemy - then what relationship do you have with your…",
-   "thumb": "https://i4.ytimg.com/vi/CvKn53e2pls/hqdefault.jpg",
-   "id": "e4b9e74ee91e",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 1754,
-   "duration": "29:14"
-  },
-  {
    "title": "Every Crisis Everywhere All At Once",
    "url": "https://www.youtube.com/watch?v=pIK8dB5BiHY",
    "source": "Economics Explained",
@@ -1232,26 +1350,6 @@
    "why": "0",
    "durationSec": 992,
    "duration": "16:32"
-  },
-  {
-   "title": "Trump teases creation of a 'G3'",
-   "url": "https://www.youtube.com/watch?v=3Z3Iah4LARk",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-21T15:03:47.000Z",
-   "summary": "LBC's Washington Correspondent Simon Marks joins Matt Frei for a round-up of what's happened this week in the world of US President Donald Trump. Trump met with the leaders of Russia and China for 90 minutes in China's south-eastern city of Shenzhen, on the sidelines of the…",
-   "thumb": "https://i4.ytimg.com/vi/3Z3Iah4LARk/hqdefault.jpg",
-   "id": "37aa1a061a49",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 494,
-   "duration": "8:14"
   },
   {
    "title": "Why Would Anyone Spend $1 Billion on GTA 6?",
@@ -1326,7 +1424,7 @@
     "gaming"
    ],
    "published": "2026-11-20T22:27:41.000Z",
-   "summary": "Use our link https://displate.com/gameranx or discount code: GAMERANX to get up to 42% off during Displate's Black Friday sales. Offer only runs through November 30th. Thanks to Displate for sponsoring this video! (Not valid on Limited Edition and Shards) ~~SOURCES~~ Caught…",
+   "summary": "Use our link https://displate.com/l/gameranx or discount code: GAMERANX to get up to 42% off during Displate's Black Friday sales. Offer only runs through November 30th. Thanks to Displate for sponsoring this video! (Not valid on Limited Edition and Shards) ~~SOURCES~~ Caught…",
    "thumb": "https://i1.ytimg.com/vi/Xqd3KSBYvn8/hqdefault.jpg",
    "id": "352035dbe278",
    "score": 0,
@@ -1509,7 +1607,7 @@
    "duration": "13:02"
   },
   {
-   "title": "Why This One Company Is So Good At Making Everything",
+   "title": "Why Xiaomi Products Are Everywhere",
    "url": "https://www.youtube.com/watch?v=j4fw-n7xxc4",
    "source": "The Hustle",
    "feedId": "yt-the-hustle",
@@ -1585,25 +1683,6 @@
    "why": "0",
    "durationSec": 443,
    "duration": "7:23"
-  },
-  {
-   "title": "GTA 6: 10 Things The Game DOESN'T TELL YOU",
-   "url": "https://www.youtube.com/watch?v=1yBSK22csvI",
-   "source": "GameRanx",
-   "feedId": "yt-gameranx",
-   "type": "video",
-   "tags": [
-    "gaming"
-   ],
-   "published": "2026-11-19T17:13:18.000Z",
-   "summary": "Jumping into Grand Theft Auto VI (PS5, Xbox Series X/S)? We've got you covered with these tips and tricks. Subscribe for more: https://www.youtube.com/gameranxTV?sub_confirmation=1 0:00 Intro 0:33 Number 10 2:44 Number 9 5:39 Number 8 7:26 Number 7 9:24 Number 6 10:19 Number 5…",
-   "thumb": "https://i2.ytimg.com/vi/1yBSK22csvI/hqdefault.jpg",
-   "id": "517bbc63dd96",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 1258,
-   "duration": "20:58"
   },
   {
    "title": "Why AI engineers are scared of self-building artificial intelligence | The Economist",
@@ -1685,7 +1764,7 @@
    "duration": "33:35"
   },
   {
-   "title": "The Loophole That Makes Kalshi Legal",
+   "title": "The Loophole That Makes Prediction Markets Legal",
    "url": "https://www.youtube.com/watch?v=lixwB5gYDbA",
    "source": "Half as Interesting",
    "feedId": "yt-half-as-interesting",
@@ -2040,26 +2119,6 @@
    "why": "0",
    "durationSec": 5512,
    "duration": "1:31:52"
-  },
-  {
-   "title": "Megan Turns DIY Crafts Into a Million-Dollar Business | Shark Tank US | Shark Tank Global",
-   "url": "https://www.youtube.com/watch?v=tDaFwWitCFo",
-   "source": "Shark Tank Global",
-   "feedId": "yt-shark-tank-global",
-   "type": "video",
-   "tags": [
-    "trash",
-    "business"
-   ],
-   "published": "2026-11-16T16:59:52.000Z",
-   "summary": "Megan Pando enters the Tank seeking $150,000 for 10% of Makers Social, an innovative DIY project bar where guests can enjoy cocktails while creating everything from leather wallets to concrete planters. From Season 17, Episode 9 Watch Shark Tank US Now:…",
-   "thumb": "https://i1.ytimg.com/vi/tDaFwWitCFo/hqdefault.jpg",
-   "id": "21adade973d9",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 631,
-   "duration": "10:31"
   },
   {
    "title": "This hot dog is legally required to exist",
@@ -2808,67 +2867,7 @@
    "why": "0",
    "durationSec": 563,
    "duration": "9:23"
-  },
-  {
-   "title": "KT #793 - BIG JAY OAKERSON + ZAC BROWN + MIKE FINOIA",
-   "url": "https://www.youtube.com/watch?v=BWZjZuzY0CA",
-   "source": "Kill Tony",
-   "feedId": "yt-kill-tony",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "standup",
-    "listen"
-   ],
-   "published": "2026-11-10T02:00:11.000Z",
-   "summary": "Big Jay Oakerson, Zac Brown, Mike Finoia, Pat O'Neill, Myles Johnson, Martin Phillips, D Madness, Michael A. Gonzales, Jon Deas, Matthew Muehling, Grooveline Horns, Joe White, Troy Conrad, Monica Parciak, Colt Mcneely, Nathan Poling, Steve Glass, Tony Hinchcliffe, Brian Redban…",
-   "thumb": "https://i3.ytimg.com/vi/BWZjZuzY0CA/hqdefault.jpg",
-   "id": "4635a8fc9d8b",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 7394,
-   "duration": "2:03:14"
-  },
-  {
-   "title": "Why you can't touch Stonehenge any more",
-   "url": "https://www.youtube.com/watch?v=0V-4lQYNugA",
-   "source": "Tom Scott",
-   "feedId": "yt-tom-scott",
-   "type": "video",
-   "tags": [
-    "education"
-   ],
-   "published": "2026-11-09T16:00:27.000Z",
-   "summary": "1.4 million visitors a year is the short answer: but the long answer is fascinating. | AD: 🌎 Get an exclusive discount on Saily data plans! Use code TOMSCOTT at checkout. Download Saily app or go to https://saily.com/tomscott ⛵ | 🗺️ England series map:…",
-   "thumb": "https://i1.ytimg.com/vi/0V-4lQYNugA/hqdefault.jpg",
-   "id": "2b0c09265f29",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 1585,
-   "duration": "26:25"
-  },
-  {
-   "title": "Why are UK bottle caps like this now?",
-   "url": "https://www.youtube.com/watch?v=Px8y799hr6A",
-   "source": "Chris Spargo",
-   "feedId": "yt-chris-spargo",
-   "type": "video",
-   "tags": [
-    "british",
-    "education"
-   ],
-   "published": "2026-11-09T16:00:18.000Z",
-   "summary": "Sign up to PLUM today and deposit £1 to claim your £10 welcome bonus. Start letting your money work for you! T&Cs apply: https://link.withplum.com/UGzt/chrisspargo T&Cs: https://docs.google.com/document/d/1H9BfNkXnCIsofn-kWq944C- P9uMJnadqFluSqcY_Erk/edit?tab=t.0 Patreon:…",
-   "thumb": "https://i1.ytimg.com/vi/Px8y799hr6A/hqdefault.jpg",
-   "id": "541b78e2c592",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 547,
-   "duration": "9:07"
   }
  ],
- "contentHash": "43b8078fa93e"
+ "contentHash": "a4726516f728"
 }
