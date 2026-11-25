@@ -1,16 +1,18 @@
 {
- "generated": "2026-11-25T08:47:55.709Z",
+ "generated": "2026-11-25T19:23:54.629Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
   "ok": 47,
   "items": 105,
   "duplicatesMerged": 0,
-  "lengthsKnown": 105,
-  "lengthLookups": 8,
-  "lengthFailures": 0,
+  "lengthsKnown": 104,
+  "lengthLookups": 20,
+  "lengthFailures": 1,
   "lengthVia": "YouTube Data API",
-  "lengthFailReasons": {}
+  "lengthFailReasons": {
+   "not returned by API (live/private?)": 1
+  }
  },
  "feeds": [
   {
@@ -96,7 +98,7 @@
    "name": "Easy German",
    "type": "youtube",
    "status": "ok",
-   "count": 3,
+   "count": 4,
    "resolved": {
     "channelId": "UCbxb2fqe9oNgglAoYqsYOtQ",
     "title": "Easy German",
@@ -213,7 +215,7 @@
    "name": "TLDR News",
    "type": "youtube",
    "status": "ok",
-   "count": 4,
+   "count": 5,
    "resolved": {
     "channelId": "UCSMqateX8OA2s1wsOR2EgJA",
     "title": "TLDR News",
@@ -226,7 +228,7 @@
    "name": "Simplicissimus",
    "type": "youtube",
    "status": "ok",
-   "count": 3,
+   "count": 2,
    "resolved": {
     "channelId": "UCKGMHVipEvuZudhHD05FOYA",
     "title": "Simplicissimus",
@@ -252,7 +254,7 @@
    "name": "Channel 5 with Andrew Callaghan",
    "type": "youtube",
    "status": "ok",
-   "count": 3,
+   "count": 2,
    "resolved": {
     "channelId": "UC-AQKm7HUNMmxjdS371MSwg",
     "title": "Channel 5 with Andrew Callaghan",
@@ -356,7 +358,7 @@
    "name": "Modern-Day Debate",
    "type": "youtube",
    "status": "ok",
-   "count": 5,
+   "count": 4,
    "resolved": {
     "channelId": "UC_cd4oF2phaIBD3WsU3f7Xg",
     "title": "Modern-Day Debate",
@@ -590,7 +592,7 @@
    "name": "Economics Explained",
    "type": "youtube",
    "status": "ok",
-   "count": 3,
+   "count": 4,
    "resolved": {
     "channelId": "UCZ4AMrDcNrfy3X6nsU8-rPg",
     "title": "Economics Explained",
@@ -628,12 +630,10 @@
    "id": "rd-productmanagement",
    "name": "r/productmanagement",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": "2026-11-17T16:12:01.447Z",
-   "note": "rate-limited by Reddit (sent a web page, not a feed)",
-   "error": "rate-limited by Reddit (sent a web page, not a feed)",
-   "http": 404
+   "note": "not its turn this run"
   },
   {
    "id": "rd-tech",
@@ -642,7 +642,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": "2026-11-07T19:04:52.310Z",
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-gaming",
@@ -651,16 +651,18 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": "2026-11-16T19:40:46.781Z",
-   "note": "not its turn this run"
+   "note": "rate-limited by Reddit (sent a web page, not a feed)",
+   "error": "rate-limited by Reddit (sent a web page, not a feed)",
+   "http": 404
   },
   {
    "id": "rd-xbox",
@@ -669,7 +671,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": "2026-11-07T21:52:57.028Z",
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-slaythespire",
@@ -678,7 +680,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-geopolitics",
@@ -710,8 +712,8 @@
  ],
  "items": [
   {
-   "title": "Abschiebezentren in Ruanda: Die nächste Stufe der EU-Asylpolitik",
-   "url": "https://www.youtube.com/watch?v=G99skq4Ak0c",
+   "title": "Rechtsextreme Gruppe „Terror 18“: Jugendliche planten Anschlag auf Asylheim",
+   "url": "https://www.youtube.com/watch?v=_3GBAIi_kXc",
    "source": "Tagesschau",
    "feedId": "yt-tagesschau",
    "type": "video",
@@ -720,61 +722,155 @@
     "news",
     "listen"
    ],
-   "published": "2026-11-25T05:08:17.000Z",
-   "summary": "Deutschland und vier weitere EU-Staaten planen Abschiebezentren in Ruanda. Was sie sich davon versprechen und wieso die EU-Migrationspolitik mit den sogenannten Return Hubs die nächste Stufe erreicht, erzählt in dieser 11KM-Folge Kathrin Schmid. Sie ist ARD-Korrespondentin in…",
-   "thumb": "https://i4.ytimg.com/vi/G99skq4Ak0c/hqdefault.jpg",
-   "id": "340bab15745f",
+   "published": "2026-11-25T18:47:50.000Z",
+   "summary": "Die Bundesanwaltschaft hat drei mutmaßliche Mitglieder einer rechtsextremistischen Vereinigung festnehmen lassen. Die Jugendlichen im Alter von 14 bis 15 Jahren sollen als Teil der Gruppe „Terror 18“ schwerste Straftaten geplant haben. Ermittler:innen zufolge wollten sie…",
+   "thumb": "https://i4.ytimg.com/vi/_3GBAIi_kXc/hqdefault.jpg",
+   "id": "15b81c7d1ac0",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 1553,
-   "duration": "25:53"
+   "durationSec": 105,
+   "duration": "1:45"
   },
   {
-   "title": "„Das wichtigste russische Exportgut ist Angst.\" Rüdiger von Fritsch im Gespräch | maischberger",
-   "url": "https://www.youtube.com/watch?v=iVGGMs8rny0",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
+   "title": "Very Important People Season 4 Trailer [Dropout Exclusive Series]",
+   "url": "https://www.youtube.com/watch?v=gOB45dCDJ3Y",
+   "source": "Dropout",
+   "feedId": "yt-dropout",
    "type": "video",
    "tags": [
-    "german",
-    "news",
-    "listen"
+    "comedy"
    ],
-   "published": "2026-11-25T05:00:05.000Z",
-   "summary": "Was will Wladimir Putin mit seinen Drohungen erreichen? Und wie sollte sich Deutschland verhalten? 💻 maischberger in der ARD-Mediathek:…",
-   "thumb": "https://i2.ytimg.com/vi/iVGGMs8rny0/hqdefault.jpg",
-   "id": "08f231012710",
+   "published": "2026-11-25T18:30:34.000Z",
+   "summary": "Get ready for more fun, hard-hitting questions, wild interviews, and of course more Vic. Very Important season 4 premieres December 10th, only on Dropout. Catch up on past seasons of Very Important People by signing up for Dropout:…",
+   "thumb": "https://i4.ytimg.com/vi/gOB45dCDJ3Y/hqdefault.jpg",
+   "id": "c012157426ef",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 1116,
-   "duration": "18:36"
+   "durationSec": 77,
+   "duration": "1:17"
   },
   {
-   "title": "Abschiebungen nach Ruanda? Felix Banaszak und Markus Blume diskutieren | maischberger",
-   "url": "https://www.youtube.com/watch?v=kfJoTCz9O1o",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
+   "title": "Theresa May's warning to Andy Burnham",
+   "url": "https://www.youtube.com/watch?v=Y-BJISwnQvE",
+   "source": "LBC",
+   "feedId": "yt-lbc",
    "type": "video",
    "tags": [
-    "german",
-    "news",
+    "politics",
     "listen"
    ],
-   "published": "2026-11-25T04:45:02.000Z",
-   "summary": "Wie handwerklich gut arbeitet die Bundesregierung? Und was steckt hinter den Ruanda-Plänen der Bundesregierung? 💻 maischberger in der ARD-Mediathek:…",
-   "thumb": "https://i4.ytimg.com/vi/kfJoTCz9O1o/hqdefault.jpg",
-   "id": "101c19fe51be",
+   "published": "2026-11-25T18:20:05.000Z",
+   "summary": "Theresa May has warned of \"years of negotiations and uncertainty\" if Andy Burnham tries to rejoin the EU. The former Prime Minister told Tonight with Andrew Marr that attempting to reverse Brexit would undermine people's faith in democracy. Last week, Burnham secured a \"reset…",
+   "thumb": "https://i2.ytimg.com/vi/Y-BJISwnQvE/hqdefault.jpg",
+   "id": "bacd6875d917",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 1739,
-   "duration": "28:59"
+   "durationSec": 893,
+   "duration": "14:53"
   },
   {
-   "title": "Mehr Gewalt gegen Frauen / Retouren-Flut wegen Black Week und Weihnachten / P+R-Angebote im Test",
-   "url": "https://www.youtube.com/watch?v=kKcayJwCpP0",
+   "title": "China’s economy explained: why Beijing needs a new growth model | The Economist",
+   "url": "https://www.youtube.com/watch?v=1fmKwvhvLWY",
+   "source": "The Economist",
+   "feedId": "yt-the-economist",
+   "type": "video",
+   "tags": [
+    "finance",
+    "business"
+   ],
+   "published": "2026-11-25T18:03:36.000Z",
+   "summary": "China’s economic rise is stalling. With the Chinese Communist Party relying on a thriving economy to maintain its grip, could a slump undermine the party’s legitimacy? Subscribe: https://www.youtube.com/@TheEconomist?sub_confirmation=1 Keyu Jin tells David Rennie, The…",
+   "thumb": "https://i2.ytimg.com/vi/1fmKwvhvLWY/hqdefault.jpg",
+   "id": "30b09da669aa",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 522,
+   "duration": "8:42"
+  },
+  {
+   "title": "Best BLACK FRIDAY Gaming Deals You SHOULDN'T Miss (2026)",
+   "url": "https://www.youtube.com/watch?v=si9AyooZ6y8",
+   "source": "GameRanx",
+   "feedId": "yt-gameranx",
+   "type": "video",
+   "tags": [
+    "gaming"
+   ],
+   "published": "2026-11-25T18:02:28.000Z",
+   "summary": "Looking for some gaming tech and new games on the cheap? We've got you covered with a roundup of some good Black Friday 2206 gaming deals. :LINKS (some may contain affiliate links): RE9 -$30 https://www.walmart.com/ip/Resident-Evil-Requiem-PlayStation-5/18359918125 Castlevania…",
+   "thumb": "https://i4.ytimg.com/vi/si9AyooZ6y8/hqdefault.jpg",
+   "id": "3797bd4fef42",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 780,
+   "duration": "13:00"
+  },
+  {
+   "title": "German Small Talk for Beginners",
+   "url": "https://www.youtube.com/watch?v=Pb7N0IAGHvk",
+   "source": "Easy German",
+   "feedId": "yt-easy-german",
+   "type": "video",
+   "tags": [
+    "german",
+    "listen"
+   ],
+   "published": "2026-11-25T18:00:10.000Z",
+   "summary": "Practice the smalltalk phrases from this episode with our free worksheet: https://easygerman.link/seg321-free-worksheet --- LEARN MORE GERMAN WITH US: 💡 JOIN OUR COMMUNITY: https://easygerman.link/membership_seg321 🎧 LISTEN TO OUR PODCAST: http://www.easygerman.fm 📬…",
+   "thumb": "https://i1.ytimg.com/vi/Pb7N0IAGHvk/hqdefault.jpg",
+   "id": "50b44f9e6d7c",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 658,
+   "duration": "10:58"
+  },
+  {
+   "title": "The Met is still institutionally racist, misogynistic and homophobic| James O’Brien - The Whole Show",
+   "url": "https://www.youtube.com/watch?v=eXv1cwZhCWY",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-25T17:52:48.000Z",
+   "summary": "This is a catch-up version of James O'Brien's live, daily show on LBC Radio from the 25th of November 2026. Listen to the full show on the all-new LBC App: https://app.af.lbc.co.uk/btnc/thenewlbcapp #jamesobrien #politics #LBC LBC is the home of live debate around news and…",
+   "thumb": "https://i2.ytimg.com/vi/eXv1cwZhCWY/hqdefault.jpg",
+   "id": "2da421d5b810",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1"
+  },
+  {
+   "title": "Blaire White Breaks Down Her Viral Debates | Surrounded Follow Up",
+   "url": "https://www.youtube.com/watch?v=AxYdiwsuqCo",
+   "source": "Jubilee",
+   "feedId": "yt-jubilee",
+   "type": "video",
+   "tags": [
+    "politics",
+    "debates"
+   ],
+   "published": "2026-11-25T17:00:01.000Z",
+   "summary": "Hey you 👈 Wanna be in a Jubilee video? https://bit.ly/be-in-a-video LET’S BE FRIENDS Instagram: https://www.instagram.com/jubileemedia/ TikTok: https://www.tiktok.com/@jubilee?lang=en Website: https://www.jubileemedia.com OUR LOVE + DATING CHANNEL 🍑 YouTube:…",
+   "thumb": "https://i2.ytimg.com/vi/AxYdiwsuqCo/hqdefault.jpg",
+   "id": "a52ceb570936",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 3435,
+   "duration": "57:15"
+  },
+  {
+   "title": "Psychische und körperliche Gewalt: Was Frauen jetzt stärken soll",
+   "url": "https://www.youtube.com/watch?v=ByjRcSCoYU8",
    "source": "Tagesschau",
    "feedId": "yt-tagesschau",
    "type": "video",
@@ -783,15 +879,239 @@
     "news",
     "listen"
    ],
-   "published": "2026-11-25T04:42:49.000Z",
-   "summary": "Unsere Infos heute: (00:00:07) Themenübersicht (00:00:36) Gewalt gegen Frauen Heute ist der Internationale Tag zur Beseitigung von Gewalt gegen Frauen, auch bekannt unter dem Namen \"Orange Day\". Die Bundesregierung hat jetzt aktuelle Zahlen des Bundeskriminalamts zum Thema…",
-   "thumb": "https://i4.ytimg.com/vi/kKcayJwCpP0/hqdefault.jpg",
-   "id": "8f22595cea01",
+   "published": "2026-11-25T16:58:50.000Z",
+   "summary": "Ausgerechnet das eigene Zuhause ist für viele Frauen und Mädchen der gefährlichste Ort. Daran erinnert der heutige Orange Day der Vereinten Nationen. Schätzungen zufolge wurden im vergangenen Jahr weltweit etwa 78.000 Frauen und Mädchen getötet, die meisten von ihren Partnern…",
+   "thumb": "https://i3.ytimg.com/vi/ByjRcSCoYU8/hqdefault.jpg",
+   "id": "2c99576c57bc",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 930,
-   "duration": "15:30"
+   "durationSec": 113,
+   "duration": "1:53"
+  },
+  {
+   "title": "tagesschau in Einfacher Sprache 19:00 Uhr, 25.11.2026",
+   "url": "https://www.youtube.com/watch?v=5yc6S_YfRYc",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-25T16:43:19.000Z",
+   "summary": "tagesschau in Einfacher Sprache 19:00 Uhr tagesschau in Einfacher Sprache: Auf Whatsapp, Bundestag: Streit über Geld, Fehlende Medikamente: EU will helfen, Finnland: Erstes Lager für Atommüll, China: Rakete ins All gestartet, Das Wetter https://www.tagesschau.de",
+   "thumb": "https://i2.ytimg.com/vi/5yc6S_YfRYc/hqdefault.jpg",
+   "id": "83b7412731b8",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 550,
+   "duration": "9:10"
+  },
+  {
+   "title": "Sexuelle Gewalt im Bistum Trier: Mehr als 250 Geistliche beschuldigt",
+   "url": "https://www.youtube.com/watch?v=IMlll6jHMgA",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-25T16:28:16.000Z",
+   "summary": "In Trier haben Wissenschaftler:innen ihren Abschlussbericht zu sexualisierter Gewalt und Missbrauch im Bereich des Bistums vorgestellt. Demnach wurden in der Zeit zwischen 1946 und 2021 fast 800 Fälle dokumentiert. Mehr als 250 Täter und Beschuldigte wurden identifiziert –…",
+   "thumb": "https://i2.ytimg.com/vi/IMlll6jHMgA/hqdefault.jpg",
+   "id": "4a40a8f2257c",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 110,
+   "duration": "1:50"
+  },
+  {
+   "title": "Something Strange is Going on With NVIDIA",
+   "url": "https://www.youtube.com/watch?v=UWvObtGg6Rk",
+   "source": "ColdFusion",
+   "feedId": "yt-coldfusion",
+   "type": "video",
+   "tags": [
+    "finance",
+    "tech",
+    "listen"
+   ],
+   "published": "2026-11-25T16:27:29.000Z",
+   "summary": "https://brilliant.org/coldfusion — Try Brilliant's tutor for free and get 20% off an annual subscription, including gift subscriptions this holiday season! It's 3am and I'm tired. Thanks for watching! ColdFusion Music: https://www.youtube.com/@coldfusionmusic…",
+   "thumb": "https://i2.ytimg.com/vi/UWvObtGg6Rk/hqdefault.jpg",
+   "id": "74913c332a79",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 1133,
+   "duration": "18:53"
+  },
+  {
+   "title": "Energy price cap will rise by 26% in 2027 | LBC callers react",
+   "url": "https://www.youtube.com/watch?v=3PsU1FT4iEg",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-25T16:01:00.000Z",
+   "summary": "Energy bills will surge by more than £400 in a 26% hike from the start of next year, Ofgem has confirmed. The regulator said the price cap will rise by £443 per year – or £36.91 per month – to £2,166 for the average household using both electricity and gas if this level was…",
+   "thumb": "https://i4.ytimg.com/vi/3PsU1FT4iEg/hqdefault.jpg",
+   "id": "f5ed09309488",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 1048,
+   "duration": "17:28"
+  },
+  {
+   "title": "OH DAMN: Chris Cuomo DESTROYS Right Wing Caller Live On Air!",
+   "url": "https://www.youtube.com/watch?v=4NIV-uhdOQI",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-25T16:00:27.000Z",
+   "summary": "Luke discusses the recent ICE incident in Seattle. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley Instagram -…",
+   "thumb": "https://i1.ytimg.com/vi/4NIV-uhdOQI/hqdefault.jpg",
+   "id": "139c96539445",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 572,
+   "duration": "9:32"
+  },
+  {
+   "title": "Generaldebatte im Bundestag: Opposition kritisiert Haushalt scharf",
+   "url": "https://www.youtube.com/watch?v=Fgu83W2yokk",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-25T15:15:17.000Z",
+   "summary": "Die Aufstellung des Haushalts habe \"keinen Schönheitspreis verdient“, räumte der Kanzler ein. Doch er sei in der gegenwärtigen Lage vertretbar. Zuvor war er von AfD-Chef Chrupalla scharf kritisiert worden - auch in Sachen Ukraine. Linksfraktionschefin Heidi Reichinnek nannte…",
+   "thumb": "https://i3.ytimg.com/vi/Fgu83W2yokk/hqdefault.jpg",
+   "id": "5e3a5f87e4a7",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 117,
+   "duration": "1:57"
+  },
+  {
+   "title": "AI Is Speedrunning India's Economic Demise",
+   "url": "https://www.youtube.com/watch?v=4hPRHFTY08I",
+   "source": "Economics Explained",
+   "feedId": "yt-economics-explained",
+   "type": "video",
+   "tags": [
+    "finance",
+    "listen"
+   ],
+   "published": "2026-11-25T14:09:59.000Z",
+   "summary": "Position yourself for the AI revolution, for free: https://80000hours.org/economicsexplained 📫 95,000+ read our free newsletter that has weekly original stories Sign up: → https://economicsexplained.substack.com/subscribe This video was made possible by our Patreon community!…",
+   "thumb": "https://i1.ytimg.com/vi/4hPRHFTY08I/hqdefault.jpg",
+   "id": "c1cf332c1b32",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 1056,
+   "duration": "17:36"
+  },
+  {
+   "title": "'She hasn’t taken the advice' | PMQs analysed",
+   "url": "https://www.youtube.com/watch?v=lcF_Ut8dZ9U",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-25T12:52:47.000Z",
+   "summary": "James O’Brien and LBC’s political editor Natasha Clark react to PM Andy Burnham and Conservative Kemi Badenoch’s performance in today’s Prime Minister’s Questions. Listen to the full show on the all-new LBC App: https://app.af.lbc.co.uk/btnc/thenewlbcapp #jamesobrien…",
+   "thumb": "https://i1.ytimg.com/vi/lcF_Ut8dZ9U/hqdefault.jpg",
+   "id": "eacd161b2b38",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 634,
+   "duration": "10:34"
+  },
+  {
+   "title": "Andy Burnham utterly embarrasses Kemi Badenoch on Brexit deal at PMQs",
+   "url": "https://www.youtube.com/watch?v=PkJctF8LQII",
+   "source": "PoliticsJOE",
+   "feedId": "yt-politicsjoe",
+   "type": "video",
+   "tags": [
+    "comedy"
+   ],
+   "published": "2026-11-25T12:47:57.000Z",
+   "summary": "Another week of Kemi Badenoch making PMQs look incredibly difficult, when it's not... Like PoliticsJOE? We need your support: https://www.patreon.com/PoliticsJOE",
+   "thumb": "https://i1.ytimg.com/vi/PkJctF8LQII/hqdefault.jpg",
+   "id": "0d42ba8ddcb6",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 821,
+   "duration": "13:41"
+  },
+  {
+   "title": "What will happen to energy prices over the next year? | Martin Lewis",
+   "url": "https://www.youtube.com/watch?v=M5F7fyz48Mg",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-25T11:04:20.000Z",
+   "summary": "Energy bills will surge by more than £400 in a 26% hike from the start of next year, the regulator has confirmed. Ofgem said the price cap will rise by £443 per year – or £36.91 per month – to £2,166 for the average household using both electricity and gas if this level was…",
+   "thumb": "https://i2.ytimg.com/vi/M5F7fyz48Mg/hqdefault.jpg",
+   "id": "288f17dda74a",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 577,
+   "duration": "9:37"
+  },
+  {
+   "title": "Why a Reform/Restore Pact is Looking Increasingly Likely",
+   "url": "https://www.youtube.com/watch?v=NTdEHuB60Y4",
+   "source": "TLDR News",
+   "feedId": "yt-tldr-news",
+   "type": "video",
+   "tags": [
+    "news",
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-25T09:30:26.000Z",
+   "summary": "Compare news coverage. Spot media bias. Avoid algorithms. Try Ground News today and get 40% off your subscription by going to https://ground.news/tldr Pick up a copy of Assembly Required: https://toolong.news/products/assembly-required-hardback Learn more about the book:…",
+   "thumb": "https://i3.ytimg.com/vi/NTdEHuB60Y4/hqdefault.jpg",
+   "id": "1c6325d7a157",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 483,
+   "duration": "8:03"
   },
   {
    "title": "OH SH*T: Elon Completely FORGETS HOW TO TALK, PANICS in Front of LIVE AUDIENCE!",
@@ -807,9 +1127,9 @@
    "summary": "Luke discusses Elon's disastrous call into Tesla's Argentina launch. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
    "thumb": "https://i4.ytimg.com/vi/kDaGVTB5Kpk/hqdefault.jpg",
    "id": "8e2ec673efe4",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 775,
    "duration": "12:55"
   },
@@ -827,9 +1147,9 @@
    "summary": "Luke discusses Nick Fuentes' reaction to his appearance on Luke's show. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
    "thumb": "https://i2.ytimg.com/vi/50sbMBw3CsU/hqdefault.jpg",
    "id": "9bf86dc897a9",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 1780,
    "duration": "29:40"
   },
@@ -847,9 +1167,9 @@
    "summary": "Luke discusses Republican US rep Anthony Constantino. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley Instagram…",
    "thumb": "https://i1.ytimg.com/vi/XNB7B9tlwag/hqdefault.jpg",
    "id": "584fbceea34d",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 620,
    "duration": "10:20"
   },
@@ -867,72 +1187,11 @@
    "summary": "Luke discusses Katie Zacharia's latest appearance on Real America's Voice. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
    "thumb": "https://i2.ytimg.com/vi/96zJt34OjbQ/hqdefault.jpg",
    "id": "11f3b23ca780",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 545,
-   "duration": "9:05"
-  },
-  {
-   "title": "tagesthemen 22:15 Uhr, 24.11.2026",
-   "url": "https://www.youtube.com/watch?v=vUSwtXg9seE",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-24T22:21:06.000Z",
-   "summary": "tagesthemen 22:15 Uhr Berliner Linke stimmt für Fraktionsausschluss der umstrittenen Abgeordneten Emde, Lagebild häusliche Gewalt verzeichnet erneute Zunahme bei erfassten Straftaten gegen Frauen, Auch Männer von häuslicher Gewalt betroffen, Die Meinung, Deutsch-afrikanischer…",
-   "thumb": "https://i3.ytimg.com/vi/vUSwtXg9seE/hqdefault.jpg",
-   "id": "239c30cce910",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 2110,
-   "duration": "35:10"
-  },
-  {
-   "title": "We want less tax and more to show for it | James O’Brien - The Whole Show",
-   "url": "https://www.youtube.com/watch?v=aM6x6p8vOtY",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-24T22:00:07.000Z",
-   "summary": "This is a catch-up version of James O'Brien's live, daily show on LBC Radio from the 24th of November 2026. Listen to the full show on the all-new LBC App: https://app.af.lbc.co.uk/btnc/thenewlbcapp #jamesobrien #politics #LBC LBC is the home of live debate around news and…",
-   "thumb": "https://i2.ytimg.com/vi/aM6x6p8vOtY/hqdefault.jpg",
-   "id": "7ad3b6d5d32d",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 8674,
-   "duration": "2:24:34"
-  },
-  {
-   "title": "'Shocking' Gaza documentary reveals scale of Israeli destruction",
-   "url": "https://www.youtube.com/watch?v=iwU-eMc9Zdo",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-24T20:00:34.000Z",
-   "summary": "Andrew Marr was joined by filmmaker Poh Si Teng, and physicians Dr Thaer Ahmad and Dr Feroze Sidwha on their new documentary 'American Doctor'. It details the 'shocking' scenes these volunteer physicians witnessed in Gaza, which has been under Israeli strikes since a Hamas…",
-   "thumb": "https://i2.ytimg.com/vi/iwU-eMc9Zdo/hqdefault.jpg",
-   "id": "385b4daa1190",
    "score": 0,
    "matched": [],
    "why": "0",
-   "durationSec": 870,
-   "duration": "14:30"
+   "durationSec": 545,
+   "duration": "9:05"
   },
   {
    "title": "I Was Wrong.",
@@ -971,26 +1230,6 @@
    "why": "0",
    "durationSec": 1363,
    "duration": "22:43"
-  },
-  {
-   "title": "Jensen Huang is now 'untouchable'",
-   "url": "https://www.youtube.com/watch?v=p9k-WqjUi58",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-24T19:10:33.000Z",
-   "summary": "00:30 Financial expert Haley Sacks (AKA Mrs Dow Jones) 06:12 LBC's Washington correspondent Simon Marks President Trump's holdings of Nvidia stock could have increased as much as $15 million after a surge in share price caused by the shock return of former CEO Jensen Huang on…",
-   "thumb": "https://i1.ytimg.com/vi/p9k-WqjUi58/hqdefault.jpg",
-   "id": "8a53d7910053",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 598,
-   "duration": "9:58"
   },
   {
    "title": "Young Spencer Goes to School | Toonout [Animated Shorts]",
@@ -1048,66 +1287,6 @@
    "why": "0",
    "durationSec": 1430,
    "duration": "23:50"
-  },
-  {
-   "title": "Trump posts bizarre AI image of Nvidia boss Jenson Huang",
-   "url": "https://www.youtube.com/watch?v=M5vT9Gjdtag",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-24T17:05:37.000Z",
-   "summary": "Lewis Goodall joins Shelagh Fogarty to react as Nvidia boss Jensen Huang is reinstated after he briefly stepped down following a series of affairs. Stocks in the chipmaking giant surged by 31% on Monday after Huang's return sparked a rally on Wall Street, with around $1trillion…",
-   "thumb": "https://i2.ytimg.com/vi/M5vT9Gjdtag/hqdefault.jpg",
-   "id": "9b97ab3f25b1",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 1000,
-   "duration": "16:40"
-  },
-  {
-   "title": "The long-term implications of Trump's influence over Nvidia",
-   "url": "https://www.youtube.com/watch?v=GISuwjsDyeE",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-24T15:00:08.000Z",
-   "summary": "Donald Trump has come under fire for pressing Nvidia's board of directors to reinstate CEO Jensen Huang, after the businessman was forced to step down over his affair with an alleged Chinese 'spy'. Stocks in the chipmaking giant surged by 31% on Monday after Huang's return…",
-   "thumb": "https://i4.ytimg.com/vi/GISuwjsDyeE/hqdefault.jpg",
-   "id": "3a73e06248fb",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 689,
-   "duration": "11:29"
-  },
-  {
-   "title": "MAGA Lady FAKES ANTI-TRUMP ATTACK on Herself, CARVES THIS in Skin!",
-   "url": "https://www.youtube.com/watch?v=layyJ8_SeM0",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-24T15:00:02.000Z",
-   "summary": "Luke discusses the latest update on Natalie Greene. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley Instagram -…",
-   "thumb": "https://i1.ytimg.com/vi/layyJ8_SeM0/hqdefault.jpg",
-   "id": "c64e4111cc23",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 426,
-   "duration": "7:06"
   },
   {
    "title": "KT #795 - ROSEANNE BARR + CHRISTINA PAZSITZKY",
@@ -1508,25 +1687,6 @@
    "why": "0",
    "durationSec": 3088,
    "duration": "51:28"
-  },
-  {
-   "title": "GTA6 LEAKER GUILTY, UBISOFT IN BIG TROUBLE? & MORE",
-   "url": "https://www.youtube.com/watch?v=Xqd3KSBYvn8",
-   "source": "GameRanx",
-   "feedId": "yt-gameranx",
-   "type": "video",
-   "tags": [
-    "gaming"
-   ],
-   "published": "2026-11-20T22:27:41.000Z",
-   "summary": "Use our link https://displate.com/l/gameranx or discount code: GAMERANX to get up to 42% off during Displate's Black Friday sales. Offer only runs through November 30th. Thanks to Displate for sponsoring this video! (Not valid on Limited Edition and Shards) ~~SOURCES~~ Caught…",
-   "thumb": "https://i1.ytimg.com/vi/Xqd3KSBYvn8/hqdefault.jpg",
-   "id": "352035dbe278",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 864,
-   "duration": "14:24"
   },
   {
    "title": "One Conservative Takes on Two Liberals | Roundtable",
@@ -1978,25 +2138,6 @@
    "duration": "29:26"
   },
   {
-   "title": "The Sneaky Girl Shuffle | Make Some Noise [Full Episode]",
-   "url": "https://www.youtube.com/watch?v=yw51S3_WLKo",
-   "source": "Dropout",
-   "feedId": "yt-dropout",
-   "type": "video",
-   "tags": [
-    "comedy"
-   ],
-   "published": "2026-11-17T18:30:02.000Z",
-   "summary": "Angela Giarratana, Lisa Gilroy, and Izzy Roland search the dark web and make up titles for Sam Reich’s memoir. Content Warning: Comedic Bit Referencing Parent Death - [7:10-7:40 Emetophobia (Retching) - [33:09-33:15] You can watch more episodes of Make Some Noise by signing up…",
-   "thumb": "https://i2.ytimg.com/vi/yw51S3_WLKo/hqdefault.jpg",
-   "id": "eecb58b7b051",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 2089,
-   "duration": "34:49"
-  },
-  {
    "title": "Is Anyone Watching This?",
    "url": "https://www.youtube.com/watch?v=82l9C6miBq0",
    "source": "The Onion",
@@ -2054,25 +2195,6 @@
    "why": "0",
    "durationSec": 1694,
    "duration": "28:14"
-  },
-  {
-   "title": "Why Britain Can't Stop Talking About Class with Ipsos",
-   "url": "https://www.youtube.com/watch?v=u0oLy_38-f4",
-   "source": "PoliticsJOE",
-   "feedId": "yt-politicsjoe",
-   "type": "video",
-   "tags": [
-    "comedy"
-   ],
-   "published": "2026-11-17T15:27:54.000Z",
-   "summary": "What does it actually mean to be working class in Britain today? And can you ever really change your class? Richie Jones, Chief Client Officer at Ipsos, joins us to unpack the findings of new research into Britain's relationship with social class, drawing on four decades of…",
-   "thumb": "https://i2.ytimg.com/vi/u0oLy_38-f4/hqdefault.jpg",
-   "id": "f101433ba4ba",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 4490,
-   "duration": "1:14:50"
   },
   {
    "title": "Why is Anthropic's Business Model So... Strange?",
@@ -2484,26 +2606,6 @@
    "duration": "10:04"
   },
   {
-   "title": "5 Straight vs 1 Gay | Odd One Out",
-   "url": "https://www.youtube.com/watch?v=cJZnniD0vYI",
-   "source": "Jubilee",
-   "feedId": "yt-jubilee",
-   "type": "video",
-   "tags": [
-    "politics",
-    "debates"
-   ],
-   "published": "2026-11-13T17:00:32.000Z",
-   "summary": "Hey you 👈 Wanna be in a Jubilee video? https://bit.ly/be-in-a-video LET’S BE FRIENDS Instagram: https://www.instagram.com/jubileemedia/ TikTok: https://www.tiktok.com/@jubilee?lang=en Website: https://www.jubileemedia.com OUR LOVE + DATING CHANNEL 🍑 YouTube:…",
-   "thumb": "https://i4.ytimg.com/vi/cJZnniD0vYI/hqdefault.jpg",
-   "id": "dcfc48568b22",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 1198,
-   "duration": "19:58"
-  },
-  {
    "title": "Did Canada Just Win the Midterms?",
    "url": "https://www.youtube.com/watch?v=VQ8zbtz_Asg",
    "source": "Economics Explained",
@@ -2685,26 +2787,6 @@
    "duration": "51:01"
   },
   {
-   "title": "How Ukraine blinded Russia’s drones: Operation Vivaldi explained | The Economist",
-   "url": "https://www.youtube.com/watch?v=vluYrFuJ6zY",
-   "source": "The Economist",
-   "feedId": "yt-the-economist",
-   "type": "video",
-   "tags": [
-    "finance",
-    "business"
-   ],
-   "published": "2026-11-12T11:18:08.000Z",
-   "summary": "The Russia-Ukraine war is airborne. With Operation Vivaldi, Ukraine found a way to advance by blinding their enemy’s drones—but risked geopolitical fallout. Subscribe: https://www.youtube.com/@TheEconomist?sub_confirmation=1 Ukraine spent months mapping where Russia’s drone…",
-   "thumb": "https://i3.ytimg.com/vi/vluYrFuJ6zY/hqdefault.jpg",
-   "id": "edc62cee7713",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 652,
-   "duration": "10:52"
-  },
-  {
    "title": "the grand finale of an anime about tic-tac-toe",
    "url": "https://www.youtube.com/watch?v=lLI1ub0OYoQ",
    "source": "ProZD",
@@ -2723,89 +2805,7 @@
    "why": "0",
    "durationSec": 157,
    "duration": "2:37"
-  },
-  {
-   "title": "How Do You Even Find \"The One True Church\"? — Jay Dyer vs David Wood",
-   "url": "https://www.youtube.com/watch?v=GR1flq46a40",
-   "source": "Modern-Day Debate",
-   "feedId": "yt-modern-day-debate",
-   "type": "video",
-   "tags": [
-    "debates",
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-11T18:00:22.000Z",
-   "summary": "Huge thank you to our DEBATECON 9 sponsors including: Revival of the Anointed's Rule: https://revivingtheroar.org/ Apologetics Ark: https://www.apologeticsark.com/links @UncensoredAmerica Yonaguni International Cuisine (Aguadilla, Puerto Rico):…",
-   "thumb": "https://i4.ytimg.com/vi/GR1flq46a40/hqdefault.jpg",
-   "id": "f50dffe98555",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 793,
-   "duration": "13:13"
-  },
-  {
-   "title": "Deutschlands verbotene Insel",
-   "url": "https://www.youtube.com/watch?v=NFHGtAS8Su4",
-   "source": "Simplicissimus",
-   "feedId": "yt-simplicissimus",
-   "type": "video",
-   "tags": [
-    "german",
-    "education"
-   ],
-   "published": "2026-11-11T16:19:07.000Z",
-   "summary": "Bei Emma bekommst du während der Black Weeks bis zum 03.12. bis zu 55% Rabatt auf ausgewählte Produkte. Mit dem Code SIMPLICISSIMUS gibt's nochmal 5% Rabatt on Top: https://simpli.deals/emma116 (Werbung) Bei KoRo findest du neben leckeren Snacks auch eine große Auswahl an…",
-   "thumb": "https://i3.ytimg.com/vi/NFHGtAS8Su4/hqdefault.jpg",
-   "id": "41ffe21e877c",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 1880,
-   "duration": "31:20"
-  },
-  {
-   "title": "Investigating Gen Z's Sex Recession",
-   "url": "https://www.youtube.com/watch?v=CjwUzZ0TOhg",
-   "source": "Channel 5 with Andrew Callaghan",
-   "feedId": "yt-channel-5-with-andrew-callaghan",
-   "type": "video",
-   "tags": [
-    "education",
-    "politics"
-   ],
-   "published": "2026-11-11T16:07:42.000Z",
-   "summary": "FREE TOYS OR GIFT CARDS FOR TOYS! Everyone who signs up to my giveaway with BBoutique wins something! https://www.shopbboutique.co/vibe/andrewcallaghan-yt #bbpartner",
-   "thumb": "https://i4.ytimg.com/vi/CjwUzZ0TOhg/hqdefault.jpg",
-   "id": "1a0c0faac269",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 2916,
-   "duration": "48:36"
-  },
-  {
-   "title": "The Man Who Refused to be a Trillionaire",
-   "url": "https://www.youtube.com/watch?v=FsEbLPqeo7k",
-   "source": "ColdFusion",
-   "feedId": "yt-coldfusion",
-   "type": "video",
-   "tags": [
-    "finance",
-    "tech",
-    "listen"
-   ],
-   "published": "2026-11-11T13:49:23.000Z",
-   "summary": "Go to https://buyraycon.com/coldfusionBC to get up to 50% off! Thanks to Raycon for sponsoring! When a person invents something so pivotal that it changes the course of human history and trillion dollar companies are build on top of your creation, you'd probably be shocked when…",
-   "thumb": "https://i3.ytimg.com/vi/FsEbLPqeo7k/hqdefault.jpg",
-   "id": "8beda6bc4d03",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 1540,
-   "duration": "25:40"
   }
  ],
- "contentHash": "9ed1434a7872"
+ "contentHash": "e0ef896f221a"
 }
