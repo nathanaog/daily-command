@@ -1,18 +1,16 @@
 {
- "generated": "2026-11-24T23:56:24.141Z",
+ "generated": "2026-11-25T08:47:55.709Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
   "ok": 47,
   "items": 105,
   "duplicatesMerged": 0,
-  "lengthsKnown": 104,
-  "lengthLookups": 17,
-  "lengthFailures": 1,
+  "lengthsKnown": 105,
+  "lengthLookups": 8,
+  "lengthFailures": 0,
   "lengthVia": "YouTube Data API",
-  "lengthFailReasons": {
-   "not returned by API (live/private?)": 1
-  }
+  "lengthFailReasons": {}
  },
  "feeds": [
   {
@@ -630,10 +628,12 @@
    "id": "rd-productmanagement",
    "name": "r/productmanagement",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": "2026-11-17T16:12:01.447Z",
-   "note": "not its turn this run"
+   "note": "rate-limited by Reddit (sent a web page, not a feed)",
+   "error": "rate-limited by Reddit (sent a web page, not a feed)",
+   "http": 404
   },
   {
    "id": "rd-tech",
@@ -642,7 +642,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": "2026-11-07T19:04:52.310Z",
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-gaming",
@@ -651,7 +651,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-ukpolitics",
@@ -687,18 +687,16 @@
    "status": "waiting",
    "count": 0,
    "lastOk": "2026-11-17T03:58:17.859Z",
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-germany",
    "name": "r/germany",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": "2026-11-12T02:17:58.406Z",
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-unitedkingdom",
@@ -707,10 +705,154 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   }
  ],
  "items": [
+  {
+   "title": "Abschiebezentren in Ruanda: Die nächste Stufe der EU-Asylpolitik",
+   "url": "https://www.youtube.com/watch?v=G99skq4Ak0c",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-25T05:08:17.000Z",
+   "summary": "Deutschland und vier weitere EU-Staaten planen Abschiebezentren in Ruanda. Was sie sich davon versprechen und wieso die EU-Migrationspolitik mit den sogenannten Return Hubs die nächste Stufe erreicht, erzählt in dieser 11KM-Folge Kathrin Schmid. Sie ist ARD-Korrespondentin in…",
+   "thumb": "https://i4.ytimg.com/vi/G99skq4Ak0c/hqdefault.jpg",
+   "id": "340bab15745f",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 1553,
+   "duration": "25:53"
+  },
+  {
+   "title": "„Das wichtigste russische Exportgut ist Angst.\" Rüdiger von Fritsch im Gespräch | maischberger",
+   "url": "https://www.youtube.com/watch?v=iVGGMs8rny0",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-25T05:00:05.000Z",
+   "summary": "Was will Wladimir Putin mit seinen Drohungen erreichen? Und wie sollte sich Deutschland verhalten? 💻 maischberger in der ARD-Mediathek:…",
+   "thumb": "https://i2.ytimg.com/vi/iVGGMs8rny0/hqdefault.jpg",
+   "id": "08f231012710",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 1116,
+   "duration": "18:36"
+  },
+  {
+   "title": "Abschiebungen nach Ruanda? Felix Banaszak und Markus Blume diskutieren | maischberger",
+   "url": "https://www.youtube.com/watch?v=kfJoTCz9O1o",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-25T04:45:02.000Z",
+   "summary": "Wie handwerklich gut arbeitet die Bundesregierung? Und was steckt hinter den Ruanda-Plänen der Bundesregierung? 💻 maischberger in der ARD-Mediathek:…",
+   "thumb": "https://i4.ytimg.com/vi/kfJoTCz9O1o/hqdefault.jpg",
+   "id": "101c19fe51be",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 1739,
+   "duration": "28:59"
+  },
+  {
+   "title": "Mehr Gewalt gegen Frauen / Retouren-Flut wegen Black Week und Weihnachten / P+R-Angebote im Test",
+   "url": "https://www.youtube.com/watch?v=kKcayJwCpP0",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-25T04:42:49.000Z",
+   "summary": "Unsere Infos heute: (00:00:07) Themenübersicht (00:00:36) Gewalt gegen Frauen Heute ist der Internationale Tag zur Beseitigung von Gewalt gegen Frauen, auch bekannt unter dem Namen \"Orange Day\". Die Bundesregierung hat jetzt aktuelle Zahlen des Bundeskriminalamts zum Thema…",
+   "thumb": "https://i4.ytimg.com/vi/kKcayJwCpP0/hqdefault.jpg",
+   "id": "8f22595cea01",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 930,
+   "duration": "15:30"
+  },
+  {
+   "title": "OH SH*T: Elon Completely FORGETS HOW TO TALK, PANICS in Front of LIVE AUDIENCE!",
+   "url": "https://www.youtube.com/watch?v=kDaGVTB5Kpk",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-25T04:35:35.000Z",
+   "summary": "Luke discusses Elon's disastrous call into Tesla's Argentina launch. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
+   "thumb": "https://i4.ytimg.com/vi/kDaGVTB5Kpk/hqdefault.jpg",
+   "id": "8e2ec673efe4",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 775,
+   "duration": "12:55"
+  },
+  {
+   "title": "He knows he f***ed up",
+   "url": "https://www.youtube.com/watch?v=50sbMBw3CsU",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-25T02:35:38.000Z",
+   "summary": "Luke discusses Nick Fuentes' reaction to his appearance on Luke's show. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
+   "thumb": "https://i2.ytimg.com/vi/50sbMBw3CsU/hqdefault.jpg",
+   "id": "9bf86dc897a9",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 1780,
+   "duration": "29:40"
+  },
+  {
+   "title": "Republican CUSSES at Reporters, LOSES IT at INSANE Victory Speech!",
+   "url": "https://www.youtube.com/watch?v=XNB7B9tlwag",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-25T00:35:36.000Z",
+   "summary": "Luke discusses Republican US rep Anthony Constantino. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley Instagram…",
+   "thumb": "https://i1.ytimg.com/vi/XNB7B9tlwag/hqdefault.jpg",
+   "id": "584fbceea34d",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 620,
+   "duration": "10:20"
+  },
   {
    "title": "What just f***ing happened? Is Katie Zacharia okay?!",
    "url": "https://www.youtube.com/watch?v=96zJt34OjbQ",
@@ -768,7 +910,9 @@
    "id": "7ad3b6d5d32d",
    "score": 1,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 8674,
+   "duration": "2:24:34"
   },
   {
    "title": "'Shocking' Gaza documentary reveals scale of Israeli destruction",
@@ -784,9 +928,9 @@
    "summary": "Andrew Marr was joined by filmmaker Poh Si Teng, and physicians Dr Thaer Ahmad and Dr Feroze Sidwha on their new documentary 'American Doctor'. It details the 'shocking' scenes these volunteer physicians witnessed in Gaza, which has been under Israeli strikes since a Hamas…",
    "thumb": "https://i2.ytimg.com/vi/iwU-eMc9Zdo/hqdefault.jpg",
    "id": "385b4daa1190",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 870,
    "duration": "14:30"
   },
@@ -803,32 +947,11 @@
    "summary": "We've previously covered the story of Javits Frimpong, a ghanian teen living in NY for about a year who was tragically taken away too soon from this world. But we discussed it in a perhaps rushed way. ———————————— Spotify: https://open.spotify.com/artist/6QJIJ6AugqPEFASp1V6zgH…",
    "thumb": "https://i3.ytimg.com/vi/vF4VSb78l3k/hqdefault.jpg",
    "id": "901b554fca5a",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 643,
    "duration": "10:43"
-  },
-  {
-   "title": "Linke schließt Emde aus: ARD-Reporterin Anke Hahn über die Folgen für Rot-Grün-Rot",
-   "url": "https://www.youtube.com/watch?v=7jeiwlTzHpQ",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-24T19:42:45.000Z",
-   "summary": "Wochenlang diskutierten Grüne, SPD und Linke in Berlin über die Personalie Emde. Die Abgeordnete steht wegen ihrer Positionen zu Israel in der Kritik. Nun hat die Fraktion mit der nötigen Mehrheit für ihren Ausschluss gestimmt. Emde ist wegen ihrer Positionen zu Israel und zum…",
-   "thumb": "https://i4.ytimg.com/vi/7jeiwlTzHpQ/hqdefault.jpg",
-   "id": "d87e0a484b7d",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 56,
-   "duration": "0:56"
   },
   {
    "title": "Ethan Slime Accused Of SA... H3 Announces Its End",
@@ -843,53 +966,11 @@
    "summary": "Ethan Klein's life keeps going in a downwards spiral after cheating on his wife Hila but the suspected affair partner Tamara Josephs seems to be adding a serious twist to this already convulated story. ———————————— Spotify: https://open.spotify.com/artist/6QJIJ6AugqPEFASp1V6zgH…",
    "thumb": "https://i2.ytimg.com/vi/QHdwbBZrEUE/hqdefault.jpg",
    "id": "9554f52a060c",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 1363,
    "duration": "22:43"
-  },
-  {
-   "title": "tagesschau 20:00 Uhr, 24.11.2026",
-   "url": "https://www.youtube.com/watch?v=vN5yPrwVNtQ",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-24T19:29:41.000Z",
-   "summary": "tagesschau 20:00 Uhr Die 20-Uhr-Ausgabe der tagesschau im Livestream und früher auf Abruf: https://ardmediathek.de/tagesschau und https://tagesschau.de Themen der tagesschau-Sendung: 00:00 Guten Abend 00:22 Zahl der erfassten Straftaten gegen Frauen erneut gestiegen 02:28…",
-   "thumb": "https://i3.ytimg.com/vi/vN5yPrwVNtQ/hqdefault.jpg",
-   "id": "ee00e162d8be",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 932,
-   "duration": "15:32"
-  },
-  {
-   "title": "Erneut Anstieg bei häuslicher Gewalt | tagesthemen-Interview",
-   "url": "https://www.youtube.com/watch?v=lqjnC0c-bmk",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-24T19:10:37.000Z",
-   "summary": "Die Fälle häuslicher Gewalt haben einen neuen Höchststand erreicht. Mehr als 280.000 Opfer wurden im vergangenen Jahr registriert, 292 Menschen – in Mehrzahl Frauen – kamen ums Leben. Es sind schockierende Zahlen, die Justizministerin Hubig, Familienministerin Prien und…",
-   "thumb": "https://i1.ytimg.com/vi/lqjnC0c-bmk/hqdefault.jpg",
-   "id": "09f0729afe78",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 375,
-   "duration": "6:15"
   },
   {
    "title": "Jensen Huang is now 'untouchable'",
@@ -905,9 +986,9 @@
    "summary": "00:30 Financial expert Haley Sacks (AKA Mrs Dow Jones) 06:12 LBC's Washington correspondent Simon Marks President Trump's holdings of Nvidia stock could have increased as much as $15 million after a surge in share price caused by the shock return of former CEO Jensen Huang on…",
    "thumb": "https://i1.ytimg.com/vi/p9k-WqjUi58/hqdefault.jpg",
    "id": "8a53d7910053",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 598,
    "duration": "9:58"
   },
@@ -924,9 +1005,9 @@
    "summary": "A day in the life of everyone's favorite demon from Very Important People. He's just a baby! To watch more episode of Toonout and other animated series, sign up for Dropout: https://www.dropout.tv/plans Welcome to the Dropout channel! You can support us by signing up for…",
    "thumb": "https://i4.ytimg.com/vi/OUr6EyIQXok/hqdefault.jpg",
    "id": "c5725c18ea64",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 206,
    "duration": "3:26"
   },
@@ -943,9 +1024,9 @@
    "summary": "Is this an epidemic, or is regular porn consumption simply a natural part of one's daily commute? Our In The Know panel debates. Become an Onion member while it's still optional: http://membership.theonion.com/?campaign=701cx000013VpTpAAK Powered By Forge Virtual Studios",
    "thumb": "https://i3.ytimg.com/vi/r4sw06_o12Y/hqdefault.jpg",
    "id": "4891e339ff23",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 255,
    "duration": "4:15"
   },
@@ -962,9 +1043,9 @@
    "summary": "GTA6 has lots of hidden secrets within areas you'd completely miss. Here are some cool places to get started. Subscribe for more: https://www.youtube.com/gameranxTV?sub_confirmation=1 0:00 Intro 0:39 Number 10 2:53 Number 9 5:47 Number 8 7:51 Number 7 9:39 Number 6 11:18 Number…",
    "thumb": "https://i2.ytimg.com/vi/as4GFUWe9cs/hqdefault.jpg",
    "id": "98dd51240e1d",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 1430,
    "duration": "23:50"
   },
@@ -982,32 +1063,11 @@
    "summary": "Lewis Goodall joins Shelagh Fogarty to react as Nvidia boss Jensen Huang is reinstated after he briefly stepped down following a series of affairs. Stocks in the chipmaking giant surged by 31% on Monday after Huang's return sparked a rally on Wall Street, with around $1trillion…",
    "thumb": "https://i2.ytimg.com/vi/M5vT9Gjdtag/hqdefault.jpg",
    "id": "9b97ab3f25b1",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 1000,
    "duration": "16:40"
-  },
-  {
-   "title": "Sparkurs bei VW: IG Metall kämpft um 5 Prozent mehr Lohn",
-   "url": "https://www.youtube.com/watch?v=9oAFzqjoyDY",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-24T16:52:34.000Z",
-   "summary": "Mitten in der tiefsten Krise der Konzerngeschichte startet heute die Tarifrunde für rund 120.000 Volkswagen-Beschäftigte. Das Management will Kosten senken, die IG Metall wehrt sich gegen weitere Einbußen. Mit einer schnellen Einigung rechnet niemand. Zu groß ist die Krise, zu…",
-   "thumb": "https://i2.ytimg.com/vi/9oAFzqjoyDY/hqdefault.jpg",
-   "id": "fa2f04f4f177",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 102,
-   "duration": "1:42"
   },
   {
    "title": "The long-term implications of Trump's influence over Nvidia",
@@ -1023,9 +1083,9 @@
    "summary": "Donald Trump has come under fire for pressing Nvidia's board of directors to reinstate CEO Jensen Huang, after the businessman was forced to step down over his affair with an alleged Chinese 'spy'. Stocks in the chipmaking giant surged by 31% on Monday after Huang's return…",
    "thumb": "https://i4.ytimg.com/vi/GISuwjsDyeE/hqdefault.jpg",
    "id": "3a73e06248fb",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 689,
    "duration": "11:29"
   },
@@ -1043,31 +1103,11 @@
    "summary": "Luke discusses the latest update on Natalie Greene. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley Instagram -…",
    "thumb": "https://i1.ytimg.com/vi/layyJ8_SeM0/hqdefault.jpg",
    "id": "c64e4111cc23",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 426,
-   "duration": "7:06"
-  },
-  {
-   "title": "DAMN: Jesse Watters SHOUTS AT CO-HOST as He EXPOSES TRUMP!",
-   "url": "https://www.youtube.com/watch?v=gPvEOzn4mDI",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-24T02:30:11.000Z",
-   "summary": "Luke discusses a recent moment from Fox News' The Five. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
-   "thumb": "https://i4.ytimg.com/vi/gPvEOzn4mDI/hqdefault.jpg",
-   "id": "6c732025e30a",
    "score": 0,
    "matched": [],
    "why": "0",
-   "durationSec": 551,
-   "duration": "9:11"
+   "durationSec": 426,
+   "duration": "7:06"
   },
   {
    "title": "KT #795 - ROSEANNE BARR + CHRISTINA PAZSITZKY",
@@ -1089,46 +1129,6 @@
    "why": "0",
    "durationSec": 8102,
    "duration": "2:15:02"
-  },
-  {
-   "title": "Nick Fuentes Fans Are Gay for Me?",
-   "url": "https://www.youtube.com/watch?v=bLIX3ceA538",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-24T00:30:30.000Z",
-   "summary": "Luke discusses the online discourse surrounding his debate with Nick Fuentes. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
-   "thumb": "https://i3.ytimg.com/vi/bLIX3ceA538/hqdefault.jpg",
-   "id": "3019aea8f4c7",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 1055,
-   "duration": "17:35"
-  },
-  {
-   "title": "WHAT JUST F***ING HAPPENED in This Trump Interview, It’s INSANE!",
-   "url": "https://www.youtube.com/watch?v=bX-RyLDrxoA",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-23T22:30:27.000Z",
-   "summary": "Luke discusses Trump's CNBC interview. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley Instagram -…",
-   "thumb": "https://i3.ytimg.com/vi/bX-RyLDrxoA/hqdefault.jpg",
-   "id": "26043cca92c5",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 983,
-   "duration": "16:23"
   },
   {
    "title": "Elder Scrolls 6 Sentinel: 10 Things We DON'T WANT",
@@ -2807,5 +2807,5 @@
    "duration": "25:40"
   }
  ],
- "contentHash": "75a4303466eb"
+ "contentHash": "9ed1434a7872"
 }
