@@ -1,13 +1,13 @@
 {
- "generated": "2026-11-26T03:38:00.013Z",
+ "generated": "2026-11-26T17:03:00.182Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
   "ok": 47,
-  "items": 104,
+  "items": 105,
   "duplicatesMerged": 0,
-  "lengthsKnown": 104,
-  "lengthLookups": 9,
+  "lengthsKnown": 105,
+  "lengthLookups": 14,
   "lengthFailures": 0,
   "lengthVia": "YouTube Data API",
   "lengthFailReasons": {}
@@ -226,7 +226,7 @@
    "name": "Simplicissimus",
    "type": "youtube",
    "status": "ok",
-   "count": 2,
+   "count": 3,
    "resolved": {
     "channelId": "UCKGMHVipEvuZudhHD05FOYA",
     "title": "Simplicissimus",
@@ -434,7 +434,7 @@
    "name": "Coffeezilla",
    "type": "youtube",
    "status": "ok",
-   "count": 1,
+   "count": 0,
    "resolved": {
     "channelId": "UCFQMnBA3CS502aghlcr0_aw",
     "title": "Coffeezilla",
@@ -525,7 +525,7 @@
    "name": "Joel Haver",
    "type": "youtube",
    "status": "ok",
-   "count": 0,
+   "count": 1,
    "resolved": {
     "channelId": "UCVIFCOJwv3emlVmBbPCZrvw",
     "title": "Joel Haver",
@@ -631,16 +631,18 @@
    "status": "waiting",
    "count": 0,
    "lastOk": "2026-11-17T16:12:01.447Z",
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-tech",
    "name": "r/tech",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": "2026-11-07T19:04:52.310Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-gaming",
@@ -649,7 +651,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-ukpolitics",
@@ -685,18 +687,16 @@
    "status": "waiting",
    "count": 0,
    "lastOk": "2026-11-17T03:58:17.859Z",
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-germany",
    "name": "r/germany",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": "2026-11-12T02:17:58.406Z",
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-unitedkingdom",
@@ -705,10 +705,293 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   }
  ],
  "items": [
+  {
+   "title": "iFork Wants To Make Eating And Drinking Easier | Shark Tank US | Shark Tank Global",
+   "url": "https://www.youtube.com/watch?v=7lCgfb-KM9c",
+   "source": "Shark Tank Global",
+   "feedId": "yt-shark-tank-global",
+   "type": "video",
+   "tags": [
+    "trash",
+    "business"
+   ],
+   "published": "2026-11-26T16:59:46.000Z",
+   "summary": "Kyle Donovan enters the Tank seeking $100,000 for 5% of iFork, an innovative party accessory designed to make eating and drinking easier. From Season 9 Episode 15 Watch Shark Tank US Now: http://AAN.SonyPictures.com/SharkTankUSHulu Watch Shark Tank Australia Now:…",
+   "thumb": "https://i4.ytimg.com/vi/7lCgfb-KM9c/hqdefault.jpg",
+   "id": "7d064221e7e2",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 599,
+   "duration": "9:59"
+  },
+  {
+   "title": "Die gefährlichsten Hacker Chinas",
+   "url": "https://www.youtube.com/watch?v=1YBf36c77aA",
+   "source": "Simplicissimus",
+   "feedId": "yt-simplicissimus",
+   "type": "video",
+   "tags": [
+    "german",
+    "education"
+   ],
+   "published": "2026-11-26T16:52:31.000Z",
+   "summary": "Sichere dir bei Flexispot ab dem 27.11.26, während der Black Friday Deals, Rabatte auf: - Das Tischgestell des E7 Plus: https://simpli.deals/flexispot_e7plus - Mit dem Code SIMPLI bekommst du 300€ Rabatt auf das Stuhlmodell Apollo: https://simpli.deals/flexispot_apollo - Und…",
+   "thumb": "https://i2.ytimg.com/vi/1YBf36c77aA/hqdefault.jpg",
+   "id": "4c90adac7169",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 2642,
+   "duration": "44:02"
+  },
+  {
+   "title": "tagesschau in Einfacher Sprache 19:00 Uhr, 26.11.2026",
+   "url": "https://www.youtube.com/watch?v=bnZhkiv1qsU",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-26T16:43:04.000Z",
+   "summary": "tagesschau in Einfacher Sprache 19:00 Uhr Missbrauch: Kirche muss Frau viel Geld zahlen, USA: Unwetter vor Thanksgiving, Champions League: Deutsche Clubs verlieren, Musiala: Weniger Geld wegen Krankheit?, Das Wetter https://www.tagesschau.de",
+   "thumb": "https://i3.ytimg.com/vi/bnZhkiv1qsU/hqdefault.jpg",
+   "id": "8cd01afc8e7c",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 474,
+   "duration": "7:54"
+  },
+  {
+   "title": "Merz fordert weitere Kürzung der EU-Finanzen",
+   "url": "https://www.youtube.com/watch?v=0685LnDLT0s",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-26T16:36:51.000Z",
+   "summary": "Auf dem EU-Haushaltsgipfel hat Bundeskanzler Friedrich Merz eine weitere Kürzung des gemeinsamen Budgets gefordert. Einen Kompromissvorschlag der EU-Ratspräsidentschaft lehnte Merz ab. Es geht bei den Beratungen um die Jahre 2028 bis 2034. EU-Ratspräsident António Costa hatte…",
+   "thumb": "https://i1.ytimg.com/vi/0685LnDLT0s/hqdefault.jpg",
+   "id": "a89ec2d3c66e",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 110,
+   "duration": "1:50"
+  },
+  {
+   "title": "Putin showed ‘restraint’ by not using nuclear weapons, says Kushner",
+   "url": "https://www.youtube.com/watch?v=3CwHCdfleh4",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-26T16:25:18.000Z",
+   "summary": "Lewis Goodall joins Shelagh Fogarty to react as Jared Kushner comes under fire for praising 'political grandmaster' Putin. In a podcast interview, he argued that negotiators should focus on the post-war relationship to help secure a lasting peace. \"We've asked the Europeans or…",
+   "thumb": "https://i4.ytimg.com/vi/3CwHCdfleh4/hqdefault.jpg",
+   "id": "691c273e5e56",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 707,
+   "duration": "11:47"
+  },
+  {
+   "title": "Neuer EU-Haushalt: Landwirte fürchten Kürzungen bei Fördergeldern",
+   "url": "https://www.youtube.com/watch?v=PBoZK2eqdr8",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-26T16:13:25.000Z",
+   "summary": "Es geht um fast 1,8 Billionen Euro – so viel Geld fordert die EU-Kommission für den nächsten Sieben-Jahres-Haushalt. Zu viel, findet die Bundesregierung. Andere Länder wiederum fürchten, dass ausgerechnet bei ihnen gespart wird. Bei einem zweitägigen Sondergipfel wollen die…",
+   "thumb": "https://i1.ytimg.com/vi/PBoZK2eqdr8/hqdefault.jpg",
+   "id": "070f657073ee",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 156,
+   "duration": "2:36"
+  },
+  {
+   "title": "Reform UK's money problem | How Power Works",
+   "url": "https://www.youtube.com/watch?v=8Kc1PC7K9eQ",
+   "source": "PoliticsJOE",
+   "feedId": "yt-politicsjoe",
+   "type": "video",
+   "tags": [
+    "comedy"
+   ],
+   "published": "2026-11-26T16:05:12.000Z",
+   "summary": "Nigel Farage and Reform UK deny any wrongdoing. Britain's political system is increasingly dependent on wealthy donors. But what happens when a handful of billionaires have the financial power to shape the parties, politicians and policies that govern the country? Duncan Hames,…",
+   "thumb": "https://i1.ytimg.com/vi/8Kc1PC7K9eQ/hqdefault.jpg",
+   "id": "e38459a46f2f",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 976,
+   "duration": "16:16"
+  },
+  {
+   "title": "DIARRHEA UPDATE",
+   "url": "https://www.youtube.com/watch?v=OBLOgitYbXg",
+   "source": "Joel Haver",
+   "feedId": "yt-joel-haver",
+   "type": "video",
+   "tags": [
+    "entertainment"
+   ],
+   "published": "2026-11-26T16:00:07.000Z",
+   "summary": "Order Your Hubert Plushie Here -https://www.makeship.com/products/hubert-plush-1 Watch \"The Diarrhea Brothers Save the Day\" - https://youtu.be/h3UA8yfKRFY?si=ljtwok4eQuLlqX_v starring @TrentLenkarski @alexmartens @Sethward and @paul_maland with help from @nartharie Original…",
+   "thumb": "https://i4.ytimg.com/vi/OBLOgitYbXg/hqdefault.jpg",
+   "id": "0133ca28b0fd",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 363,
+   "duration": "6:03"
+  },
+  {
+   "title": "Klarna, Paypal & Co: So gefährlich ist \"Buy Now, Pay Later\" wirklich I akkurat",
+   "url": "https://www.youtube.com/watch?v=t1HNu3_qq6I",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-26T15:30:33.000Z",
+   "summary": "Mit #Klarna, PayPal und anderen Zahlungsanbietern ist Einkaufen auf Pump so einfach wie nie. Doch gerade bei jungen Menschen können sich offene Rechnungen schnell stapeln. Wie wird aus kleinen Einkäufen ein großer Berg an #Schulden? In dieser Folge begleiten wir Meike und…",
+   "thumb": "https://i1.ytimg.com/vi/t1HNu3_qq6I/hqdefault.jpg",
+   "id": "828fb1d9a542",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 504,
+   "duration": "8:24"
+  },
+  {
+   "title": "„Unverschämtheit“: Warum ein Unternehmer die IG Metall ablehnt",
+   "url": "https://www.youtube.com/watch?v=uifMZrozvYQ",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-26T15:04:47.000Z",
+   "summary": "Die Tarifverhandlungen für die 3,7 Millionen Beschäftigten der Metall- und Elektroindustrie sind festgefahren: Die IG Metall fordert 5 Prozent mehr Geld – während Teile der Branche in einer tiefen Krise stecken, etwa die Autoindustrie. Die Arbeitgeber bieten dagegen 1,3 Prozent…",
+   "thumb": "https://i2.ytimg.com/vi/uifMZrozvYQ/hqdefault.jpg",
+   "id": "da1c94f5d702",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 189,
+   "duration": "3:09"
+  },
+  {
+   "title": "The “I hope your small business fails” Trend is So Sad",
+   "url": "https://www.youtube.com/watch?v=koEzwWog6tw",
+   "source": "Levi Hildebrand",
+   "feedId": "yt-levi-hildebrand",
+   "type": "video",
+   "tags": [
+    "comedy",
+    "business"
+   ],
+   "published": "2026-11-26T15:00:32.000Z",
+   "summary": "🔒 Get 20% off DeleteMe by going to my sponsor link https://joindeleteme.com/LEVI and use code LEVI to protect your privacy! 🙌 Subscribe! https://www.youtube.com/channel/UC-OJ-24roEfQ_-PCnLJSckg?sub_confirmation=1 Join our Patreon: https://www.patreon.com/c/LeviHildebrand…",
+   "thumb": "https://i4.ytimg.com/vi/koEzwWog6tw/hqdefault.jpg",
+   "id": "e8f6dc654a3b",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 1284,
+   "duration": "21:24"
+  },
+  {
+   "title": "Huntingdon train attacker found guilty of attempted murder",
+   "url": "https://www.youtube.com/watch?v=63YbFnfJ1mk",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-26T15:00:05.000Z",
+   "summary": "Anthony Williams, the knifeman who terrorised an LNER train journey, has been found guilty of fourteen counts of attempted murder. The train made an unscheduled stop in Huntingdon, Cambridgeshire, just over a year ago. Shivani Sharma, LBC's East of England Correspondent,…",
+   "thumb": "https://i3.ytimg.com/vi/63YbFnfJ1mk/hqdefault.jpg",
+   "id": "9110cbb4b281",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 535,
+   "duration": "8:55"
+  },
+  {
+   "title": "'All you do is complain!': Shelagh Fogarty takes on Suella Braverman in heated debate",
+   "url": "https://www.youtube.com/watch?v=fJImSu9BO_M",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-26T14:24:24.000Z",
+   "summary": "Shelagh Fogarty goes head-to-head with Reform MP Suella Braverman as she rubbishes the UK's net migration figures. Net migration to the UK was an estimated 77,000 in the 12 months to June 2026, the lowest annual total since 1997, excluding the years of the Covid-19 pandemic,…",
+   "thumb": "https://i3.ytimg.com/vi/fJImSu9BO_M/hqdefault.jpg",
+   "id": "a4b01edc6187",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 799,
+   "duration": "13:19"
+  },
+  {
+   "title": "'The racists won't like this': James O'Brien reacts as net migration drops",
+   "url": "https://www.youtube.com/watch?v=UfyVcfGN0DE",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-26T11:09:01.000Z",
+   "summary": "James O'Brien reacts as net migration drops to the lowest level since 1997, excluding the years of the Covid pandemic. The figure– the difference between the number of people moving long-term to the country and the number leaving – has been falling for the past three years. Net…",
+   "thumb": "https://i2.ytimg.com/vi/UfyVcfGN0DE/hqdefault.jpg",
+   "id": "85fb29e592c4",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 1057,
+   "duration": "17:37"
+  },
   {
    "title": "I’m sorry. I f***ed up on this.",
    "url": "https://www.youtube.com/watch?v=RUWcH-Np5X0",
@@ -723,32 +1006,11 @@
    "summary": "Luke discusses the lead azide detonation in Iowa. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley Instagram -…",
    "thumb": "https://i3.ytimg.com/vi/RUWcH-Np5X0/hqdefault.jpg",
    "id": "478ffb475cd7",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 1095,
    "duration": "18:15"
-  },
-  {
-   "title": "tagesthemen 22:15 Uhr, 25.11.2026",
-   "url": "https://www.youtube.com/watch?v=sudmpnoTj54",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-25T22:44:19.000Z",
-   "summary": "tagesthemen 22:15 Uhr Scharfe Oppositionskritik an Haushalt für 2027 bei Generaldebatte im Bundestag, Union schlägt Kompromiss im Streit um \"Rente mit 63\" vor, Die Meinung, Vierte Verhandlungsrunde im Tarifkonflikt der Metall- und Elektroindustrie, Generalbundesanwaltschaft…",
-   "thumb": "https://i4.ytimg.com/vi/sudmpnoTj54/hqdefault.jpg",
-   "id": "81a813dd22e3",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 2149,
-   "duration": "35:49"
   },
   {
    "title": "Raheem Sterling avoids jail after dangerous driving conviction",
@@ -764,52 +1026,11 @@
    "summary": "Following Raheem Sterling's suspended sentence for dangerous driving while under the influence of nitrous oxide, Iain Dale discusses the risks of drug-driving and whether more needs to be done to raise public awareness. 00:00 | Iain's monologue 00:39 | LBC Reporter Benji Hyer…",
    "thumb": "https://i1.ytimg.com/vi/hIO9Oi-MgVA/hqdefault.jpg",
    "id": "2b6a8675b5e7",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 1018,
    "duration": "16:58"
-  },
-  {
-   "title": "The Met is still institutionally racist, misogynistic & homophobic | James O’Brien - The Whole Show",
-   "url": "https://www.youtube.com/watch?v=eXv1cwZhCWY",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-25T22:00:22.000Z",
-   "summary": "This is a catch-up version of James O'Brien's live, daily show on LBC Radio from the 25th of November 2026. Listen to the full show on the all-new LBC App: https://app.af.lbc.co.uk/btnc/thenewlbcapp #jamesobrien #politics #LBC LBC is the home of live debate around news and…",
-   "thumb": "https://i2.ytimg.com/vi/eXv1cwZhCWY/hqdefault.jpg",
-   "id": "2da421d5b810",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 9087,
-   "duration": "2:31:27"
-  },
-  {
-   "title": "Tarifstreit in der Metallbranche: Verhandlungen in Mannheim fortgesetzt",
-   "url": "https://www.youtube.com/watch?v=zTzaNUsiMts",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-25T20:21:43.000Z",
-   "summary": "Sie verhandeln wieder: In Mannheim versuchen IG Metall und Arbeitgeber:innen, einen Tarifabschluss für 3,7 Millionen Beschäftigte zu finden. Die Gewerkschaft fordert fünf Prozent mehr Lohn bei einer Laufzeit von zwölf Monaten. Die Arbeitgeberangebote liegen bislang deutlich…",
-   "thumb": "https://i3.ytimg.com/vi/zTzaNUsiMts/hqdefault.jpg",
-   "id": "b229d38bccc3",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 110,
-   "duration": "1:50"
   },
   {
    "title": "GTA Has Broken Brains",
@@ -824,94 +1045,11 @@
    "summary": "GTA 6 not only triggered the hell out of the manosphere but amazingly it has also not sit well with the gamers' girlfriends and wives ———————————— Spotify: https://open.spotify.com/artist/6QJIJ6AugqPEFASp1V6zgH Merchandise ---…",
    "thumb": "https://i1.ytimg.com/vi/lZVI9iDP7oQ/hqdefault.jpg",
    "id": "fd647588612d",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 1544,
    "duration": "25:44"
-  },
-  {
-   "title": "ESA-Sonde „Hera“ sendet erste Bilder nach Asteroiden-Einschlag",
-   "url": "https://www.youtube.com/watch?v=5uZwLf7DI_s",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-25T20:02:14.000Z",
-   "summary": "Wie können Asteroiden gezielt abgelenkt werden und wie kann man so möglicherweise verheerende Einschläge auf der Erde verhindern? Diese Fragen stellen sich nicht nur Hollywood-Regisseur:innen, sondern auch Wissenschaftler:innen. Zu Objekten der Wissenschaft wurden die…",
-   "thumb": "https://i2.ytimg.com/vi/5uZwLf7DI_s/hqdefault.jpg",
-   "id": "97cc7468f4c0",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 320,
-   "duration": "5:20"
-  },
-  {
-   "title": "Trump imposes fresh tariffs on major trading partners",
-   "url": "https://www.youtube.com/watch?v=fNtTXPe_t-s",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-25T19:55:55.000Z",
-   "summary": "Simon Marks joins Andrew Marr as Trump announces a wave of new tariffs on 14 major trading partners. China, which Washington blames most for flooding world markets with cheap exports, is expected to be hit with the highest rate. The new duties follow an eight-month…",
-   "thumb": "https://i3.ytimg.com/vi/fNtTXPe_t-s/hqdefault.jpg",
-   "id": "729a47652ff8",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 541,
-   "duration": "9:01"
-  },
-  {
-   "title": "tagesschau 20:00 Uhr, 25.11.2026",
-   "url": "https://www.youtube.com/watch?v=xRsgqF-0LHk",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-25T19:29:57.000Z",
-   "summary": "📣 NEU: Die tagesschau in Einfacher Sprache jetzt bei WhatsApp! Direkt folgen: https://whatsapp.com/channel/0029Vb8o1Xn6RGJFN7cxPj0a Die 20 Uhr-Ausgabe der tagesschau mit den Nachrichten des Tages. Themen der tagesschau-Sendung: 00:00 Guten Abend 00:21 Bundeskanzler Merz…",
-   "thumb": "https://i1.ytimg.com/vi/xRsgqF-0LHk/hqdefault.jpg",
-   "id": "dae64262dbf6",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 967,
-   "duration": "16:07"
-  },
-  {
-   "title": "Rechtsextreme Gruppe „Terror 18“: Jugendliche planten Anschlag auf Asylheim",
-   "url": "https://www.youtube.com/watch?v=_3GBAIi_kXc",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-25T18:47:50.000Z",
-   "summary": "Die Bundesanwaltschaft hat drei mutmaßliche Mitglieder einer rechtsextremistischen Vereinigung festnehmen lassen. Die Jugendlichen im Alter von 14 bis 15 Jahren sollen als Teil der Gruppe „Terror 18“ schwerste Straftaten geplant haben. Ermittler:innen zufolge wollten sie…",
-   "thumb": "https://i4.ytimg.com/vi/_3GBAIi_kXc/hqdefault.jpg",
-   "id": "15b81c7d1ac0",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 105,
-   "duration": "1:45"
   },
   {
    "title": "Very Important People Season 4 Trailer [Dropout Exclusive Series]",
@@ -926,31 +1064,11 @@
    "summary": "Get ready for more fun, hard-hitting questions, wild interviews, and of course more Vic. Very Important season 4 premieres December 10th, only on Dropout. Catch up on past seasons of Very Important People by signing up for Dropout:…",
    "thumb": "https://i4.ytimg.com/vi/gOB45dCDJ3Y/hqdefault.jpg",
    "id": "c012157426ef",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 77,
    "duration": "1:17"
-  },
-  {
-   "title": "Theresa May's warning to Andy Burnham",
-   "url": "https://www.youtube.com/watch?v=Y-BJISwnQvE",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-25T18:20:05.000Z",
-   "summary": "Theresa May has warned of \"years of negotiations and uncertainty\" if Andy Burnham tries to rejoin the EU. The former Prime Minister told Tonight with Andrew Marr that attempting to reverse Brexit would undermine people's faith in democracy. Last week, Burnham secured a \"reset…",
-   "thumb": "https://i2.ytimg.com/vi/Y-BJISwnQvE/hqdefault.jpg",
-   "id": "bacd6875d917",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 893,
-   "duration": "14:53"
   },
   {
    "title": "China’s economy explained: why Beijing needs a new growth model | The Economist",
@@ -966,9 +1084,9 @@
    "summary": "China’s economic rise is stalling. With the Chinese Communist Party relying on a thriving economy to maintain its grip, could a slump undermine the party’s legitimacy? Subscribe: https://www.youtube.com/@TheEconomist?sub_confirmation=1 Keyu Jin tells David Rennie, The…",
    "thumb": "https://i2.ytimg.com/vi/1fmKwvhvLWY/hqdefault.jpg",
    "id": "30b09da669aa",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 522,
    "duration": "8:42"
   },
@@ -985,9 +1103,9 @@
    "summary": "Looking for some gaming tech and new games on the cheap? We've got you covered with a roundup of some good Black Friday 2206 gaming deals. :LINKS (some may contain affiliate links): RE9 -$30 https://www.walmart.com/ip/Resident-Evil-Requiem-PlayStation-5/18359918125 Castlevania…",
    "thumb": "https://i4.ytimg.com/vi/si9AyooZ6y8/hqdefault.jpg",
    "id": "3797bd4fef42",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 780,
    "duration": "13:00"
   },
@@ -1005,9 +1123,9 @@
    "summary": "Practice the smalltalk phrases from this episode with our free worksheet: https://easygerman.link/seg321-free-worksheet --- LEARN MORE GERMAN WITH US: 💡 JOIN OUR COMMUNITY: https://easygerman.link/membership_seg321 🎧 LISTEN TO OUR PODCAST: http://www.easygerman.fm 📬…",
    "thumb": "https://i1.ytimg.com/vi/Pb7N0IAGHvk/hqdefault.jpg",
    "id": "50b44f9e6d7c",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 658,
    "duration": "10:58"
   },
@@ -1025,9 +1143,9 @@
    "summary": "Hey you 👈 Wanna be in a Jubilee video? https://bit.ly/be-in-a-video LET’S BE FRIENDS Instagram: https://www.instagram.com/jubileemedia/ TikTok: https://www.tiktok.com/@jubilee?lang=en Website: https://www.jubileemedia.com OUR LOVE + DATING CHANNEL 🍑 YouTube:…",
    "thumb": "https://i2.ytimg.com/vi/AxYdiwsuqCo/hqdefault.jpg",
    "id": "a52ceb570936",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 3435,
    "duration": "57:15"
   },
@@ -1046,31 +1164,11 @@
    "summary": "https://brilliant.org/coldfusion — Try Brilliant's tutor for free and get 20% off an annual subscription, including gift subscriptions this holiday season! It's 3am and I'm tired. Thanks for watching! ColdFusion Music: https://www.youtube.com/@coldfusionmusic…",
    "thumb": "https://i2.ytimg.com/vi/UWvObtGg6Rk/hqdefault.jpg",
    "id": "74913c332a79",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 1133,
    "duration": "18:53"
-  },
-  {
-   "title": "Energy price cap will rise by 26% in 2027 | LBC callers react",
-   "url": "https://www.youtube.com/watch?v=3PsU1FT4iEg",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-25T16:01:00.000Z",
-   "summary": "Energy bills will surge by more than £400 in a 26% hike from the start of next year, Ofgem has confirmed. The regulator said the price cap will rise by £443 per year – or £36.91 per month – to £2,166 for the average household using both electricity and gas if this level was…",
-   "thumb": "https://i4.ytimg.com/vi/3PsU1FT4iEg/hqdefault.jpg",
-   "id": "f5ed09309488",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 1048,
-   "duration": "17:28"
   },
   {
    "title": "OH DAMN: Chris Cuomo DESTROYS Right Wing Caller Live On Air!",
@@ -1086,9 +1184,9 @@
    "summary": "Luke discusses the recent ICE incident in Seattle. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley Instagram -…",
    "thumb": "https://i1.ytimg.com/vi/4NIV-uhdOQI/hqdefault.jpg",
    "id": "139c96539445",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 572,
    "duration": "9:32"
   },
@@ -1901,26 +1999,6 @@
    "duration": "3:01"
   },
   {
-   "title": "The Matte Solves The Bathroom Makeup Mess | Shark Tank US | Shark Tank Global",
-   "url": "https://www.youtube.com/watch?v=KyQDFWnk8Kw",
-   "source": "Shark Tank Global",
-   "feedId": "yt-shark-tank-global",
-   "type": "video",
-   "tags": [
-    "trash",
-    "business"
-   ],
-   "published": "2026-11-19T17:39:54.000Z",
-   "summary": "Melissa Clayton enters the Tank seeking $100,000 for 20% of The Matte, a foldable makeup organizer that transforms any bathroom sink into an instant countertop. From Season 12 Episode 20 Watch Shark Tank US Now: http://AAN.SonyPictures.com/SharkTankUSHulu Watch Shark Tank…",
-   "thumb": "https://i4.ytimg.com/vi/KyQDFWnk8Kw/hqdefault.jpg",
-   "id": "132957f218dd",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 443,
-   "duration": "7:23"
-  },
-  {
    "title": "Why AI engineers are scared of self-building artificial intelligence | The Economist",
    "url": "https://www.youtube.com/watch?v=rE-sazAVQVU",
    "source": "The Economist",
@@ -2096,25 +2174,6 @@
    "why": "0",
    "durationSec": 1911,
    "duration": "31:51"
-  },
-  {
-   "title": "HIGHLIGHTS: Andy Burnham SCHOOLS Kemi Badenoch on Milburn Report at PMQs",
-   "url": "https://www.youtube.com/watch?v=fV4qBDaypeU",
-   "source": "PoliticsJOE",
-   "feedId": "yt-politicsjoe",
-   "type": "video",
-   "tags": [
-    "comedy"
-   ],
-   "published": "2026-11-18T13:13:05.000Z",
-   "summary": "After Tuesday's release of the long-awaited Milburn report, the Prime Minster went head-to-head at the despatch box with the Tory leader. Like PoliticsJOE? We need your support: https://www.patreon.com/PoliticsJOE",
-   "thumb": "https://i3.ytimg.com/vi/fV4qBDaypeU/hqdefault.jpg",
-   "id": "a89d1e9e625d",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 884,
-   "duration": "14:44"
   },
   {
    "title": "The complete history of video games & politics, '70s to present",
@@ -2746,46 +2805,7 @@
    "why": "0",
    "durationSec": 485,
    "duration": "8:05"
-  },
-  {
-   "title": "\"Little Treat Culture\" is OUT OF CONTROL",
-   "url": "https://www.youtube.com/watch?v=nQVF4pgEgiw",
-   "source": "Levi Hildebrand",
-   "feedId": "yt-levi-hildebrand",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "business"
-   ],
-   "published": "2026-11-12T17:00:07.000Z",
-   "summary": "Go to https://www.odoo.com/r/08C5 to get started on your free 15 day trial or book a consulting session with an Odoo expert (no credit card required)! Consider supporting our channel and get a little something in the process here: https://www.levihildebrand.com Subscribe!…",
-   "thumb": "https://i3.ytimg.com/vi/nQVF4pgEgiw/hqdefault.jpg",
-   "id": "a3777fd444d9",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 1060,
-   "duration": "17:40"
-  },
-  {
-   "title": "Investigating The President",
-   "url": "https://www.youtube.com/watch?v=W4PIkmjwGsQ",
-   "source": "Coffeezilla",
-   "feedId": "yt-coffeezilla",
-   "type": "video",
-   "tags": [
-    "finance"
-   ],
-   "published": "2026-11-12T16:34:42.000Z",
-   "summary": "Support Investigative Journalism: ► https://patreon.com/coffeezilla REQUESTS FOR COMMENT: World Liberty Financial and DRW / Don Wilson both denied the allegations. Read their full responses here:…",
-   "thumb": "https://i4.ytimg.com/vi/W4PIkmjwGsQ/hqdefault.jpg",
-   "id": "0ae6e2684517",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 3061,
-   "duration": "51:01"
   }
  ],
- "contentHash": "77b54d378800"
+ "contentHash": "bfa061b11d33"
 }
