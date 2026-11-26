@@ -1,18 +1,16 @@
 {
- "generated": "2026-11-25T19:23:54.629Z",
+ "generated": "2026-11-26T03:38:00.013Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
   "ok": 47,
-  "items": 105,
+  "items": 104,
   "duplicatesMerged": 0,
   "lengthsKnown": 104,
-  "lengthLookups": 20,
-  "lengthFailures": 1,
+  "lengthLookups": 9,
+  "lengthFailures": 0,
   "lengthVia": "YouTube Data API",
-  "lengthFailReasons": {
-   "not returned by API (live/private?)": 1
-  }
+  "lengthFailReasons": {}
  },
  "feeds": [
   {
@@ -267,7 +265,7 @@
    "name": "ProZD",
    "type": "youtube",
    "status": "ok",
-   "count": 1,
+   "count": 0,
    "resolved": {
     "channelId": "UC6MFZAOHXlKK1FI7V0XQVeA",
     "title": "ProZD",
@@ -657,12 +655,10 @@
    "id": "rd-ukpolitics",
    "name": "r/ukpolitics",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": "2026-11-16T19:40:46.781Z",
-   "note": "rate-limited by Reddit (sent a web page, not a feed)",
-   "error": "rate-limited by Reddit (sent a web page, not a feed)",
-   "http": 404
+   "note": "not its turn this run"
   },
   {
    "id": "rd-xbox",
@@ -671,7 +667,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": "2026-11-07T21:52:57.028Z",
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-slaythespire",
@@ -680,7 +676,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-geopolitics",
@@ -689,16 +685,18 @@
    "status": "waiting",
    "count": 0,
    "lastOk": "2026-11-17T03:58:17.859Z",
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-germany",
    "name": "r/germany",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": "2026-11-12T02:17:58.406Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-unitedkingdom",
@@ -707,10 +705,193 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   }
  ],
  "items": [
+  {
+   "title": "I’m sorry. I f***ed up on this.",
+   "url": "https://www.youtube.com/watch?v=RUWcH-Np5X0",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-26T02:00:00.000Z",
+   "summary": "Luke discusses the lead azide detonation in Iowa. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley Instagram -…",
+   "thumb": "https://i3.ytimg.com/vi/RUWcH-Np5X0/hqdefault.jpg",
+   "id": "478ffb475cd7",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 1095,
+   "duration": "18:15"
+  },
+  {
+   "title": "tagesthemen 22:15 Uhr, 25.11.2026",
+   "url": "https://www.youtube.com/watch?v=sudmpnoTj54",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-25T22:44:19.000Z",
+   "summary": "tagesthemen 22:15 Uhr Scharfe Oppositionskritik an Haushalt für 2027 bei Generaldebatte im Bundestag, Union schlägt Kompromiss im Streit um \"Rente mit 63\" vor, Die Meinung, Vierte Verhandlungsrunde im Tarifkonflikt der Metall- und Elektroindustrie, Generalbundesanwaltschaft…",
+   "thumb": "https://i4.ytimg.com/vi/sudmpnoTj54/hqdefault.jpg",
+   "id": "81a813dd22e3",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 2149,
+   "duration": "35:49"
+  },
+  {
+   "title": "Raheem Sterling avoids jail after dangerous driving conviction",
+   "url": "https://www.youtube.com/watch?v=hIO9Oi-MgVA",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-25T22:30:05.000Z",
+   "summary": "Following Raheem Sterling's suspended sentence for dangerous driving while under the influence of nitrous oxide, Iain Dale discusses the risks of drug-driving and whether more needs to be done to raise public awareness. 00:00 | Iain's monologue 00:39 | LBC Reporter Benji Hyer…",
+   "thumb": "https://i1.ytimg.com/vi/hIO9Oi-MgVA/hqdefault.jpg",
+   "id": "2b6a8675b5e7",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 1018,
+   "duration": "16:58"
+  },
+  {
+   "title": "The Met is still institutionally racist, misogynistic & homophobic | James O’Brien - The Whole Show",
+   "url": "https://www.youtube.com/watch?v=eXv1cwZhCWY",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-25T22:00:22.000Z",
+   "summary": "This is a catch-up version of James O'Brien's live, daily show on LBC Radio from the 25th of November 2026. Listen to the full show on the all-new LBC App: https://app.af.lbc.co.uk/btnc/thenewlbcapp #jamesobrien #politics #LBC LBC is the home of live debate around news and…",
+   "thumb": "https://i2.ytimg.com/vi/eXv1cwZhCWY/hqdefault.jpg",
+   "id": "2da421d5b810",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 9087,
+   "duration": "2:31:27"
+  },
+  {
+   "title": "Tarifstreit in der Metallbranche: Verhandlungen in Mannheim fortgesetzt",
+   "url": "https://www.youtube.com/watch?v=zTzaNUsiMts",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-25T20:21:43.000Z",
+   "summary": "Sie verhandeln wieder: In Mannheim versuchen IG Metall und Arbeitgeber:innen, einen Tarifabschluss für 3,7 Millionen Beschäftigte zu finden. Die Gewerkschaft fordert fünf Prozent mehr Lohn bei einer Laufzeit von zwölf Monaten. Die Arbeitgeberangebote liegen bislang deutlich…",
+   "thumb": "https://i3.ytimg.com/vi/zTzaNUsiMts/hqdefault.jpg",
+   "id": "b229d38bccc3",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 110,
+   "duration": "1:50"
+  },
+  {
+   "title": "GTA Has Broken Brains",
+   "url": "https://www.youtube.com/watch?v=lZVI9iDP7oQ",
+   "source": "Aberrant preach",
+   "feedId": "yt-aberrant-preach",
+   "type": "video",
+   "tags": [
+    "trash"
+   ],
+   "published": "2026-11-25T20:12:29.000Z",
+   "summary": "GTA 6 not only triggered the hell out of the manosphere but amazingly it has also not sit well with the gamers' girlfriends and wives ———————————— Spotify: https://open.spotify.com/artist/6QJIJ6AugqPEFASp1V6zgH Merchandise ---…",
+   "thumb": "https://i1.ytimg.com/vi/lZVI9iDP7oQ/hqdefault.jpg",
+   "id": "fd647588612d",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 1544,
+   "duration": "25:44"
+  },
+  {
+   "title": "ESA-Sonde „Hera“ sendet erste Bilder nach Asteroiden-Einschlag",
+   "url": "https://www.youtube.com/watch?v=5uZwLf7DI_s",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-25T20:02:14.000Z",
+   "summary": "Wie können Asteroiden gezielt abgelenkt werden und wie kann man so möglicherweise verheerende Einschläge auf der Erde verhindern? Diese Fragen stellen sich nicht nur Hollywood-Regisseur:innen, sondern auch Wissenschaftler:innen. Zu Objekten der Wissenschaft wurden die…",
+   "thumb": "https://i2.ytimg.com/vi/5uZwLf7DI_s/hqdefault.jpg",
+   "id": "97cc7468f4c0",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 320,
+   "duration": "5:20"
+  },
+  {
+   "title": "Trump imposes fresh tariffs on major trading partners",
+   "url": "https://www.youtube.com/watch?v=fNtTXPe_t-s",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-25T19:55:55.000Z",
+   "summary": "Simon Marks joins Andrew Marr as Trump announces a wave of new tariffs on 14 major trading partners. China, which Washington blames most for flooding world markets with cheap exports, is expected to be hit with the highest rate. The new duties follow an eight-month…",
+   "thumb": "https://i3.ytimg.com/vi/fNtTXPe_t-s/hqdefault.jpg",
+   "id": "729a47652ff8",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 541,
+   "duration": "9:01"
+  },
+  {
+   "title": "tagesschau 20:00 Uhr, 25.11.2026",
+   "url": "https://www.youtube.com/watch?v=xRsgqF-0LHk",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-25T19:29:57.000Z",
+   "summary": "📣 NEU: Die tagesschau in Einfacher Sprache jetzt bei WhatsApp! Direkt folgen: https://whatsapp.com/channel/0029Vb8o1Xn6RGJFN7cxPj0a Die 20 Uhr-Ausgabe der tagesschau mit den Nachrichten des Tages. Themen der tagesschau-Sendung: 00:00 Guten Abend 00:21 Bundeskanzler Merz…",
+   "thumb": "https://i1.ytimg.com/vi/xRsgqF-0LHk/hqdefault.jpg",
+   "id": "dae64262dbf6",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 967,
+   "duration": "16:07"
+  },
   {
    "title": "Rechtsextreme Gruppe „Terror 18“: Jugendliche planten Anschlag auf Asylheim",
    "url": "https://www.youtube.com/watch?v=_3GBAIi_kXc",
@@ -831,24 +1012,6 @@
    "duration": "10:58"
   },
   {
-   "title": "The Met is still institutionally racist, misogynistic and homophobic| James O’Brien - The Whole Show",
-   "url": "https://www.youtube.com/watch?v=eXv1cwZhCWY",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-25T17:52:48.000Z",
-   "summary": "This is a catch-up version of James O'Brien's live, daily show on LBC Radio from the 25th of November 2026. Listen to the full show on the all-new LBC App: https://app.af.lbc.co.uk/btnc/thenewlbcapp #jamesobrien #politics #LBC LBC is the home of live debate around news and…",
-   "thumb": "https://i2.ytimg.com/vi/eXv1cwZhCWY/hqdefault.jpg",
-   "id": "2da421d5b810",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1"
-  },
-  {
    "title": "Blaire White Breaks Down Her Viral Debates | Surrounded Follow Up",
    "url": "https://www.youtube.com/watch?v=AxYdiwsuqCo",
    "source": "Jubilee",
@@ -867,69 +1030,6 @@
    "why": "fresh (<12 h) +1 = 1",
    "durationSec": 3435,
    "duration": "57:15"
-  },
-  {
-   "title": "Psychische und körperliche Gewalt: Was Frauen jetzt stärken soll",
-   "url": "https://www.youtube.com/watch?v=ByjRcSCoYU8",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-25T16:58:50.000Z",
-   "summary": "Ausgerechnet das eigene Zuhause ist für viele Frauen und Mädchen der gefährlichste Ort. Daran erinnert der heutige Orange Day der Vereinten Nationen. Schätzungen zufolge wurden im vergangenen Jahr weltweit etwa 78.000 Frauen und Mädchen getötet, die meisten von ihren Partnern…",
-   "thumb": "https://i3.ytimg.com/vi/ByjRcSCoYU8/hqdefault.jpg",
-   "id": "2c99576c57bc",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 113,
-   "duration": "1:53"
-  },
-  {
-   "title": "tagesschau in Einfacher Sprache 19:00 Uhr, 25.11.2026",
-   "url": "https://www.youtube.com/watch?v=5yc6S_YfRYc",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-25T16:43:19.000Z",
-   "summary": "tagesschau in Einfacher Sprache 19:00 Uhr tagesschau in Einfacher Sprache: Auf Whatsapp, Bundestag: Streit über Geld, Fehlende Medikamente: EU will helfen, Finnland: Erstes Lager für Atommüll, China: Rakete ins All gestartet, Das Wetter https://www.tagesschau.de",
-   "thumb": "https://i2.ytimg.com/vi/5yc6S_YfRYc/hqdefault.jpg",
-   "id": "83b7412731b8",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 550,
-   "duration": "9:10"
-  },
-  {
-   "title": "Sexuelle Gewalt im Bistum Trier: Mehr als 250 Geistliche beschuldigt",
-   "url": "https://www.youtube.com/watch?v=IMlll6jHMgA",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-25T16:28:16.000Z",
-   "summary": "In Trier haben Wissenschaftler:innen ihren Abschlussbericht zu sexualisierter Gewalt und Missbrauch im Bereich des Bistums vorgestellt. Demnach wurden in der Zeit zwischen 1946 und 2021 fast 800 Fälle dokumentiert. Mehr als 250 Täter und Beschuldigte wurden identifiziert –…",
-   "thumb": "https://i2.ytimg.com/vi/IMlll6jHMgA/hqdefault.jpg",
-   "id": "4a40a8f2257c",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 110,
-   "duration": "1:50"
   },
   {
    "title": "Something Strange is Going on With NVIDIA",
@@ -993,27 +1093,6 @@
    "duration": "9:32"
   },
   {
-   "title": "Generaldebatte im Bundestag: Opposition kritisiert Haushalt scharf",
-   "url": "https://www.youtube.com/watch?v=Fgu83W2yokk",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-25T15:15:17.000Z",
-   "summary": "Die Aufstellung des Haushalts habe \"keinen Schönheitspreis verdient“, räumte der Kanzler ein. Doch er sei in der gegenwärtigen Lage vertretbar. Zuvor war er von AfD-Chef Chrupalla scharf kritisiert worden - auch in Sachen Ukraine. Linksfraktionschefin Heidi Reichinnek nannte…",
-   "thumb": "https://i3.ytimg.com/vi/Fgu83W2yokk/hqdefault.jpg",
-   "id": "5e3a5f87e4a7",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 117,
-   "duration": "1:57"
-  },
-  {
    "title": "AI Is Speedrunning India's Economic Demise",
    "url": "https://www.youtube.com/watch?v=4hPRHFTY08I",
    "source": "Economics Explained",
@@ -1027,31 +1106,11 @@
    "summary": "Position yourself for the AI revolution, for free: https://80000hours.org/economicsexplained 📫 95,000+ read our free newsletter that has weekly original stories Sign up: → https://economicsexplained.substack.com/subscribe This video was made possible by our Patreon community!…",
    "thumb": "https://i1.ytimg.com/vi/4hPRHFTY08I/hqdefault.jpg",
    "id": "c1cf332c1b32",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 1056,
    "duration": "17:36"
-  },
-  {
-   "title": "'She hasn’t taken the advice' | PMQs analysed",
-   "url": "https://www.youtube.com/watch?v=lcF_Ut8dZ9U",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-25T12:52:47.000Z",
-   "summary": "James O’Brien and LBC’s political editor Natasha Clark react to PM Andy Burnham and Conservative Kemi Badenoch’s performance in today’s Prime Minister’s Questions. Listen to the full show on the all-new LBC App: https://app.af.lbc.co.uk/btnc/thenewlbcapp #jamesobrien…",
-   "thumb": "https://i1.ytimg.com/vi/lcF_Ut8dZ9U/hqdefault.jpg",
-   "id": "eacd161b2b38",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 634,
-   "duration": "10:34"
   },
   {
    "title": "Andy Burnham utterly embarrasses Kemi Badenoch on Brexit deal at PMQs",
@@ -1066,31 +1125,11 @@
    "summary": "Another week of Kemi Badenoch making PMQs look incredibly difficult, when it's not... Like PoliticsJOE? We need your support: https://www.patreon.com/PoliticsJOE",
    "thumb": "https://i1.ytimg.com/vi/PkJctF8LQII/hqdefault.jpg",
    "id": "0d42ba8ddcb6",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 821,
    "duration": "13:41"
-  },
-  {
-   "title": "What will happen to energy prices over the next year? | Martin Lewis",
-   "url": "https://www.youtube.com/watch?v=M5F7fyz48Mg",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-25T11:04:20.000Z",
-   "summary": "Energy bills will surge by more than £400 in a 26% hike from the start of next year, the regulator has confirmed. Ofgem said the price cap will rise by £443 per year – or £36.91 per month – to £2,166 for the average household using both electricity and gas if this level was…",
-   "thumb": "https://i2.ytimg.com/vi/M5F7fyz48Mg/hqdefault.jpg",
-   "id": "288f17dda74a",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 577,
-   "duration": "9:37"
   },
   {
    "title": "Why a Reform/Restore Pact is Looking Increasingly Likely",
@@ -1107,9 +1146,9 @@
    "summary": "Compare news coverage. Spot media bias. Avoid algorithms. Try Ground News today and get 40% off your subscription by going to https://ground.news/tldr Pick up a copy of Assembly Required: https://toolong.news/products/assembly-required-hardback Learn more about the book:…",
    "thumb": "https://i3.ytimg.com/vi/NTdEHuB60Y4/hqdefault.jpg",
    "id": "1c6325d7a157",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 483,
    "duration": "8:03"
   },
@@ -1172,26 +1211,6 @@
    "why": "0",
    "durationSec": 620,
    "duration": "10:20"
-  },
-  {
-   "title": "What just f***ing happened? Is Katie Zacharia okay?!",
-   "url": "https://www.youtube.com/watch?v=96zJt34OjbQ",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-24T22:35:26.000Z",
-   "summary": "Luke discusses Katie Zacharia's latest appearance on Real America's Voice. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
-   "thumb": "https://i2.ytimg.com/vi/96zJt34OjbQ/hqdefault.jpg",
-   "id": "11f3b23ca780",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 545,
-   "duration": "9:05"
   },
   {
    "title": "I Was Wrong.",
@@ -1824,25 +1843,6 @@
    "duration": "12:07"
   },
   {
-   "title": "We're Sooooo Done",
-   "url": "https://www.youtube.com/watch?v=cbpmfC5LYs8",
-   "source": "Aberrant preach",
-   "feedId": "yt-aberrant-preach",
-   "type": "video",
-   "tags": [
-    "trash"
-   ],
-   "published": "2026-11-19T20:40:40.000Z",
-   "summary": "With China hosting its second AI Robotic Olympics, it is fair to say the future looks very bleak future for us humans. ———————————— Spotify: https://open.spotify.com/artist/6QJIJ6AugqPEFASp1V6zgH Merchandise --- https://www.enkreprinte.com/collections/aba-and-preach INSTAGRAM…",
-   "thumb": "https://i4.ytimg.com/vi/cbpmfC5LYs8/hqdefault.jpg",
-   "id": "516c8a0244dd",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 782,
-   "duration": "13:02"
-  },
-  {
    "title": "How One Brand Quietly Conquered Everything We Use",
    "url": "https://www.youtube.com/watch?v=j4fw-n7xxc4",
    "source": "The Hustle",
@@ -2117,7 +2117,7 @@
    "duration": "14:44"
   },
   {
-   "title": "A history of video games & politics, from the '70s to now",
+   "title": "The complete history of video games & politics, '70s to present",
    "url": "https://www.youtube.com/watch?v=ncmx5Pmn-4I",
    "source": "J.J. McCullough",
    "feedId": "yt-j-j-mccullough",
@@ -2785,27 +2785,7 @@
    "why": "0",
    "durationSec": 3061,
    "duration": "51:01"
-  },
-  {
-   "title": "the grand finale of an anime about tic-tac-toe",
-   "url": "https://www.youtube.com/watch?v=lLI1ub0OYoQ",
-   "source": "ProZD",
-   "feedId": "yt-prozd",
-   "type": "video",
-   "tags": [
-    "comedy",
-    "gaming"
-   ],
-   "published": "2026-11-11T23:31:07.000Z",
-   "summary": "my magnum opus",
-   "thumb": "https://i1.ytimg.com/vi/lLI1ub0OYoQ/hqdefault.jpg",
-   "id": "3076a3e39b7a",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 157,
-   "duration": "2:37"
   }
  ],
- "contentHash": "e0ef896f221a"
+ "contentHash": "77b54d378800"
 }
