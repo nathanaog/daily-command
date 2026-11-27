@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-27T01:46:47.722Z",
+ "generated": "2026-11-27T12:42:11.624Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
@@ -7,7 +7,7 @@
   "items": 102,
   "duplicatesMerged": 0,
   "lengthsKnown": 102,
-  "lengthLookups": 12,
+  "lengthLookups": 7,
   "lengthFailures": 0,
   "lengthVia": "YouTube Data API",
   "lengthFailReasons": {}
@@ -658,18 +658,16 @@
    "status": "waiting",
    "count": 0,
    "lastOk": "2026-11-16T19:40:46.781Z",
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-xbox",
    "name": "r/xbox",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": "2026-11-07T21:52:57.028Z",
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-slaythespire",
@@ -678,7 +676,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-geopolitics",
@@ -687,16 +685,18 @@
    "status": "waiting",
    "count": 0,
    "lastOk": "2026-11-17T03:58:17.859Z",
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-germany",
    "name": "r/germany",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": "2026-11-12T02:17:58.406Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-unitedkingdom",
@@ -705,13 +705,33 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   }
  ],
  "items": [
   {
-   "title": "tagesthemen 22:15 Uhr, 26.11.2026",
-   "url": "https://www.youtube.com/watch?v=W1xwYk1uaHw",
+   "title": "'Should we give Huw Edwards a public platform again?' | LBC debate",
+   "url": "https://www.youtube.com/watch?v=3dKRpFIjCpI",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-27T11:31:29.000Z",
+   "summary": "A new documentary following disgraced former BBC newsreader Huw Edwards has sparked fury ahead of its release. The Channel 4 film, due to air on December 1, follows Edwards at his home in rural Wales as he attempts to rebuild his life after his conviction for making indecent…",
+   "thumb": "https://i4.ytimg.com/vi/3dKRpFIjCpI/hqdefault.jpg",
+   "id": "4da27216b08c",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 1760,
+   "duration": "29:20"
+  },
+  {
+   "title": "EU-Haushaltsstreit: Warum sich Merz und Macron nicht einigen können",
+   "url": "https://www.youtube.com/watch?v=URH5FiTQdTM",
    "source": "Tagesschau",
    "feedId": "yt-tagesschau",
    "type": "video",
@@ -720,15 +740,120 @@
     "news",
     "listen"
    ],
-   "published": "2026-11-26T22:19:46.000Z",
-   "summary": "tagesthemen 22:15 Uhr Festnahmen wegen mutmaßlichen Anschlagsplänen auf Synagoge in Köln: Welche Rolle spielt der Iran?, Diskussion nach Erkrankung von Musiala, EU-Mitgliedstaaten ringen um Kompromiss für künftigen Haushalt, Diskussion in der AfD über Abschiebungen und…",
-   "thumb": "https://i4.ytimg.com/vi/W1xwYk1uaHw/hqdefault.jpg",
-   "id": "05a02491de49",
+   "published": "2026-11-27T10:05:38.000Z",
+   "summary": "Die Vorstellungen unter den 27 Staats- und Regierungschefs lagen weit auseinander. So weit, dass sie laut Merz den zweiten angesetzten Tag des Gipfels ausfallen lassen. Es geht um viele Milliarden für den EU-Haushalt. ARD-Korrespondent Feld ordnet die Lage ein. Mehr…",
+   "thumb": "https://i2.ytimg.com/vi/URH5FiTQdTM/hqdefault.jpg",
+   "id": "aeafc337d5df",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 2119,
-   "duration": "35:19"
+   "durationSec": 402,
+   "duration": "6:42"
+  },
+  {
+   "title": "Why Net Migration has Plummeted",
+   "url": "https://www.youtube.com/watch?v=KFHIefCGvx4",
+   "source": "TLDR News",
+   "feedId": "yt-tldr-news",
+   "type": "video",
+   "tags": [
+    "news",
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-27T10:00:28.000Z",
+   "summary": "Compare news coverage. Spot media bias. Avoid algorithms. Try Ground News today and get 40% off your subscription by going to https://ground.news/tldr Pre-order a copy of Too Long: https://toolong.news/TL010 According to new data, net migration has more than halved since 2025…",
+   "thumb": "https://i4.ytimg.com/vi/KFHIefCGvx4/hqdefault.jpg",
+   "id": "21bafcd5b78c",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 482,
+   "duration": "8:02"
+  },
+  {
+   "title": "„Vorgeschmack auf das, was kommt“: Rekordfluten versetzen Anwohner in Sorge",
+   "url": "https://www.youtube.com/watch?v=rVISR2uOz-s",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-27T09:42:30.000Z",
+   "summary": "Im Westen der USA - wie in Kalifornien - türmen sich die Wellen in Höhe von dreigeschossigen Häusern und nicht nur Uferstraßen werden überflutet. Hervorgerufen durch schwere Stürme weit draußen auf dem Pazifik, deren Ursache auch das natürliche Klimaphänomen El Niño ist. Die…",
+   "thumb": "https://i3.ytimg.com/vi/rVISR2uOz-s/hqdefault.jpg",
+   "id": "39986cd9e967",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 121,
+   "duration": "2:01"
+  },
+  {
+   "title": "Alltag in Kabul: Wie Frauen im Dienst der Taliban arbeiten",
+   "url": "https://www.youtube.com/watch?v=9JWnlhft7rc",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-27T09:38:04.000Z",
+   "summary": "In Afghanistan sind seit 5 Jahren die Taliban erneut an der Macht. Für die allermeisten Frauen bedeutet das ein Leben im Verborgenen. In der Öffentlichkeit muss das Gesicht verhüllt sein. Sport zu treiben, ist verboten und auch Bildung ist kaum möglich. Zusammenarbeit mit…",
+   "thumb": "https://i2.ytimg.com/vi/9JWnlhft7rc/hqdefault.jpg",
+   "id": "0d95f851ad64",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 202,
+   "duration": "3:22"
+  },
+  {
+   "title": "Verantwortung wie für ein Kind: Bäckerei pflegt uralten Sauerteig",
+   "url": "https://www.youtube.com/watch?v=t-ED7GFi3ng",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-27T09:33:18.000Z",
+   "summary": "Der Sauerteig bildet die unerlässliche Grundlage für das Sauerteigbrot. Das Gute an so einem Teig: Er wird immer mehr, wenn man ihn richtig füttert. Dann kann die blasse Masse zu einem dankbaren Partner werden, den man teilen und immer weiter verwenden kann und der – wie in…",
+   "thumb": "https://i1.ytimg.com/vi/t-ED7GFi3ng/hqdefault.jpg",
+   "id": "7ae4c67240c5",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 156,
+   "duration": "2:36"
+  },
+  {
+   "title": "tagesschau in Einfacher Sprache 19:00 Uhr, 26.11.2026",
+   "url": "https://www.youtube.com/watch?v=EzmCe-bJ-mA",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-27T08:57:15.000Z",
+   "summary": "tagesschau in Einfacher Sprache 19:00 Uhr Missbrauch: Kirche muss Frau viel Geld zahlen, USA: Unwetter vor Thanksgiving, Champions League: Deutsche Clubs verlieren, Musiala: Weniger Geld wegen Krankheit?, Das Wetter Die \"tagesschau in Einfacher Sprache\" – immer Montag bis…",
+   "thumb": "https://i2.ytimg.com/vi/EzmCe-bJ-mA/hqdefault.jpg",
+   "id": "2250eb776f8c",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 477,
+   "duration": "7:57"
   },
   {
    "title": "US envoy Jared Kushner says Putin has 'showed restraint' by not using nuclear weapons",
@@ -744,9 +869,9 @@
    "summary": "Former British soldier Shaun Pinner, who served with Ukraine's marines before being captured by Russian forces, tortured and sentenced to death, has reacted to Jared Kushner's comments praising Vladimir Putin. Speaking to Andrew Marr from Ukraine, Pinner describes the impact of…",
    "thumb": "https://i1.ytimg.com/vi/lo_rfHuYRX8/hqdefault.jpg",
    "id": "e9ff8b13add5",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 525,
    "duration": "8:45"
   },
@@ -764,14 +889,14 @@
    "summary": "This is a catch-up version of James O'Brien's live, daily show on LBC Radio from the 26th of November 2026. Listen to the full show on the all-new LBC App: https://app.af.lbc.co.uk/btnc/thenewlbcapp #jamesobrien #politics #LBC LBC is the home of live debate around news and…",
    "thumb": "https://i1.ytimg.com/vi/tc15zvOy5GA/hqdefault.jpg",
    "id": "2ff5dd8dc47d",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 8833,
    "duration": "2:27:13"
   },
   {
-   "title": "How to Survive the Civil War (Union Edition)",
+   "title": "How to Survive the Civil War: Union Edition",
    "url": "https://www.youtube.com/watch?v=enjXQSOgEqs",
    "source": "Bluejay",
    "feedId": "yt-bluejay",
@@ -783,9 +908,9 @@
    "summary": "Go to https://buyraycon.com/BLUEJAYBC to get up to 50% off sitewide. Thanks to Raycon for sponsoring! Big thanks to @iammrbeat for joining the show! (RIP) Join my Patreon to Support my Content! https://www.patreon.com/bluejayyt Check me out! RedJay ➤…",
    "thumb": "https://i2.ytimg.com/vi/enjXQSOgEqs/hqdefault.jpg",
    "id": "8f8bb5a73668",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 1627,
    "duration": "27:07"
   },
@@ -803,95 +928,11 @@
    "summary": "Luke discusses Don Jr. during a recent Axios panel. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley Instagram -…",
    "thumb": "https://i4.ytimg.com/vi/c6i2KceWhzE/hqdefault.jpg",
    "id": "1b95b3181610",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 915,
    "duration": "15:15"
-  },
-  {
-   "title": "Metall- und Elektroindustrie: Mehr Geld für bis zu 3,7 Millionen Beschäftigte",
-   "url": "https://www.youtube.com/watch?v=GUh14dOrlwA",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-26T19:52:51.000Z",
-   "summary": "Im Tarifstreit der Metall- und Elektroindustrie haben sich die Gewerkschaft IG Metall und die Arbeitgeber geeinigt. Die Beschäftigten sollen insgesamt 4,3 Prozent mehr Lohn bekommen. Die Einigung gilt als sogenannter Pilotabschluss, der für insgesamt 3,7 Millionen Beschäftigte…",
-   "thumb": "https://i4.ytimg.com/vi/GUh14dOrlwA/hqdefault.jpg",
-   "id": "4516bfd85a64",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 120,
-   "duration": "2:00"
-  },
-  {
-   "title": "Fall Musiala: „Rummenigge muss sich entschuldigen!“ | tagesthemen-Interview",
-   "url": "https://www.youtube.com/watch?v=2LufU3N3qQY",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-26T19:48:04.000Z",
-   "summary": "Der Umgang des FC Bayern mit seinem erkrankten Spieler Jamal Musiala bewegt nicht nur Fußball-Fans. Funktionäre des Vereins hatten nach dem krankheitsbedingten Ausfall des Top-Spielers öffentlich eine Debatte über Gehaltskürzungen und Vertragsänderungen angestoßen. Im…",
-   "thumb": "https://i3.ytimg.com/vi/2LufU3N3qQY/hqdefault.jpg",
-   "id": "96c2b5807dfe",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 259,
-   "duration": "4:19"
-  },
-  {
-   "title": "tagesschau 20:00 Uhr, 26.11.2026",
-   "url": "https://www.youtube.com/watch?v=XgD4FXBoVko",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-26T19:30:36.000Z",
-   "summary": "tagesschau 20:00 Uhr Die 20-Uhr-Ausgabe der tagesschau im Livestream und früher auf Abruf: https://ardmediathek.de/tagesschau und https://tagesschau.de Themen der tagesschau-Sendung: 00:00 Guten Abend 00:21 Einigung im Tarifstreit der Metall- und Elektroindustrie 02:42 Staats-…",
-   "thumb": "https://i1.ytimg.com/vi/XgD4FXBoVko/hqdefault.jpg",
-   "id": "890c90573f6a",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 949,
-   "duration": "15:49"
-  },
-  {
-   "title": "Umgang mit Musiala: Kimmich greift Bayern-Bosse an",
-   "url": "https://www.youtube.com/watch?v=H38GkkDUwgg",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-26T19:10:44.000Z",
-   "summary": "Die Diskussion über den Gesundheitszustand von Bayern-Spieler Jamal Musiala hat weite Kreise gezogen. Die Debatte war zuletzt von den Aufsichtsräten Hoeneß und Rummenigge angeheizt worden. Sie bezweifelten öffentlich, dass Musiala wegen seiner neurologischen Probleme wieder…",
-   "thumb": "https://i1.ytimg.com/vi/H38GkkDUwgg/hqdefault.jpg",
-   "id": "e3b667024c9c",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 98,
-   "duration": "1:38"
   },
   {
    "title": "GTA 6: 20 Things We NEVER Expected to Do",
@@ -906,9 +947,9 @@
    "summary": "GTA 6 is a massive game world and there's a lot of crazy stuff you can do. Subscribe for more: https://www.youtube.com/gameranxTV?sub_confirmation=1 0:00 Intro 0:55 Number 20 2:22 Number 19 3:47 Number 18 5:47 Number 17 6:44 Number 16 8:05 Number 15 8:46 Number 14 10:25 Number…",
    "thumb": "https://i3.ytimg.com/vi/2TX-P0OVzV4/hqdefault.jpg",
    "id": "a3372268709f",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 1643,
    "duration": "27:23"
   },
@@ -926,9 +967,9 @@
    "summary": "Henry Riley stepped into the world of premium properties to find out why there's nearly 1,500 unsold homes in Zone 1. To help Henry, Edward Osborne of Tuckerman Residential gave him a tour of a £2 million, five-story home in Westminster that's not found a buyer. Dr Maya Singer…",
    "thumb": "https://i4.ytimg.com/vi/3YjmtOgDrqc/hqdefault.jpg",
    "id": "4c33bda44e18",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 514,
    "duration": "8:34"
   },
@@ -945,9 +986,9 @@
    "summary": "Gen Z is facing a serious reading skill decline as schools are now pushing for passing kids instead of making sure they learn basic reading skills before reaching college and adulthood. ———————————— Spotify: https://open.spotify.com/artist/6QJIJ6AugqPEFASp1V6zgH Merchandise ---…",
    "thumb": "https://i2.ytimg.com/vi/yv4oZCtYlBc/hqdefault.jpg",
    "id": "3c3012c9b8e7",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 1276,
    "duration": "21:16"
   },
@@ -965,9 +1006,9 @@
    "summary": "Kyle Donovan enters the Tank seeking $100,000 for 5% of iFork, an innovative party accessory designed to make eating and drinking easier. From Season 9 Episode 15 Watch Shark Tank US Now: http://AAN.SonyPictures.com/SharkTankUSHulu Watch Shark Tank Australia Now:…",
    "thumb": "https://i4.ytimg.com/vi/7lCgfb-KM9c/hqdefault.jpg",
    "id": "7d064221e7e2",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 599,
    "duration": "9:59"
   },
@@ -985,9 +1026,9 @@
    "summary": "Sichere dir bei Flexispot ab dem 27.11.26, während der Black Friday Deals, Rabatte auf: - Das Tischgestell des E7 Plus: https://simpli.deals/flexispot_e7plus - Mit dem Code SIMPLI bekommst du 300€ Rabatt auf das Stuhlmodell Apollo: https://simpli.deals/flexispot_apollo - Und…",
    "thumb": "https://i2.ytimg.com/vi/1YBf36c77aA/hqdefault.jpg",
    "id": "4c90adac7169",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 2642,
    "duration": "44:02"
   },
@@ -1005,9 +1046,9 @@
    "summary": "Lewis Goodall joins Shelagh Fogarty to react as Jared Kushner comes under fire for praising 'political grandmaster' Putin. In a podcast interview, he argued that negotiators should focus on the post-war relationship to help secure a lasting peace. \"We've asked the Europeans or…",
    "thumb": "https://i4.ytimg.com/vi/3CwHCdfleh4/hqdefault.jpg",
    "id": "691c273e5e56",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 707,
    "duration": "11:47"
   },
@@ -1024,9 +1065,9 @@
    "summary": "Nigel Farage and Reform UK deny any wrongdoing. Britain's political system is increasingly dependent on wealthy donors. But what happens when a handful of billionaires have the financial power to shape the parties, politicians and policies that govern the country? Duncan Hames,…",
    "thumb": "https://i1.ytimg.com/vi/8Kc1PC7K9eQ/hqdefault.jpg",
    "id": "e38459a46f2f",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 976,
    "duration": "16:16"
   },
@@ -1043,9 +1084,9 @@
    "summary": "Order Your Hubert Plushie Here -https://www.makeship.com/products/hubert-plush-1 Watch \"The Diarrhea Brothers Save the Day\" - https://youtu.be/h3UA8yfKRFY?si=ljtwok4eQuLlqX_v starring @TrentLenkarski @alexmartens @Sethward and @paul_maland with help from @nartharie Original…",
    "thumb": "https://i4.ytimg.com/vi/OBLOgitYbXg/hqdefault.jpg",
    "id": "0133ca28b0fd",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 363,
    "duration": "6:03"
   },
@@ -1063,31 +1104,11 @@
    "summary": "🔒 Get 20% off DeleteMe by going to my sponsor link https://joindeleteme.com/LEVI and use code LEVI to protect your privacy! 🙌 Subscribe! https://www.youtube.com/channel/UC-OJ-24roEfQ_-PCnLJSckg?sub_confirmation=1 Join our Patreon: https://www.patreon.com/c/LeviHildebrand…",
    "thumb": "https://i4.ytimg.com/vi/koEzwWog6tw/hqdefault.jpg",
    "id": "e8f6dc654a3b",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 1284,
    "duration": "21:24"
-  },
-  {
-   "title": "Huntingdon train attacker found guilty of attempted murder",
-   "url": "https://www.youtube.com/watch?v=63YbFnfJ1mk",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-26T15:00:05.000Z",
-   "summary": "Anthony Williams, the knifeman who terrorised an LNER train journey, has been found guilty of fourteen counts of attempted murder. The train made an unscheduled stop in Huntingdon, Cambridgeshire, just over a year ago. Shivani Sharma, LBC's East of England Correspondent,…",
-   "thumb": "https://i3.ytimg.com/vi/63YbFnfJ1mk/hqdefault.jpg",
-   "id": "9110cbb4b281",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 535,
-   "duration": "8:55"
   },
   {
    "title": "I’m sorry. I f***ed up on this.",
@@ -1227,7 +1248,7 @@
    "duration": "57:15"
   },
   {
-   "title": "Something Strange is Going on With NVIDIA",
+   "title": "The Real Reason NVIDIA’s Board Folded",
    "url": "https://www.youtube.com/watch?v=UWvObtGg6Rk",
    "source": "ColdFusion",
    "feedId": "yt-coldfusion",
@@ -2723,28 +2744,7 @@
    "why": "0",
    "durationSec": 984,
    "duration": "16:24"
-  },
-  {
-   "title": "Is Farage Bringing Reform Down?",
-   "url": "https://www.youtube.com/watch?v=Vdvxskr6eLo",
-   "source": "TLDR News",
-   "feedId": "yt-tldr-news",
-   "type": "video",
-   "tags": [
-    "news",
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-13T10:00:07.000Z",
-   "summary": "Take back control of your online experience with ProtonVPN, and get 75% off VPN plans using our link: https://protonvpn.com/tldr Grab a \"How Laws Pass\" Poster: https://toolong.news/products/how-a-b... In this video, we’ll go through the ways in which Farage is hurting Reform,…",
-   "thumb": "https://i3.ytimg.com/vi/Vdvxskr6eLo/hqdefault.jpg",
-   "id": "59330efc39b2",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 526,
-   "duration": "8:46"
   }
  ],
- "contentHash": "09c2d57c99fd"
+ "contentHash": "89ed3d55d7cd"
 }
