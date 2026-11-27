@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-27T12:42:11.624Z",
+ "generated": "2026-11-27T23:31:20.895Z",
  "watchlistUpdatedAt": "2026-10-14T17:00:00Z",
  "stats": {
   "feeds": 56,
@@ -7,7 +7,7 @@
   "items": 102,
   "duplicatesMerged": 0,
   "lengthsKnown": 102,
-  "lengthLookups": 7,
+  "lengthLookups": 18,
   "lengthFailures": 0,
   "lengthVia": "YouTube Data API",
   "lengthFailReasons": {}
@@ -187,7 +187,7 @@
    "name": "ColdFusion",
    "type": "youtube",
    "status": "ok",
-   "count": 3,
+   "count": 2,
    "resolved": {
     "channelId": "UC4QZ_LsYcvcq7qOsOhpAX4A",
     "title": "ColdFusion",
@@ -330,7 +330,7 @@
    "name": "The NK guys",
    "type": "youtube",
    "status": "ok",
-   "count": 1,
+   "count": 2,
    "resolved": {
     "channelId": "UCTi5i5m-Xm-o7sALcVKiKjg",
     "title": "The NK Guys",
@@ -356,7 +356,7 @@
    "name": "Modern-Day Debate",
    "type": "youtube",
    "status": "ok",
-   "count": 3,
+   "count": 2,
    "resolved": {
     "channelId": "UC_cd4oF2phaIBD3WsU3f7Xg",
     "title": "Modern-Day Debate",
@@ -395,7 +395,7 @@
    "name": "The Economist",
    "type": "youtube",
    "status": "ok",
-   "count": 4,
+   "count": 5,
    "resolved": {
     "channelId": "UC0p5jTq6Xx_DosDFxVXnWaQ",
     "title": "The Economist",
@@ -512,7 +512,7 @@
    "name": "How Money Works",
    "type": "youtube",
    "status": "ok",
-   "count": 1,
+   "count": 2,
    "resolved": {
     "channelId": "UCkCGANrihzExmu9QiqZpPlQ",
     "title": "How Money Works",
@@ -590,7 +590,7 @@
    "name": "Economics Explained",
    "type": "youtube",
    "status": "ok",
-   "count": 4,
+   "count": 3,
    "resolved": {
     "channelId": "UCZ4AMrDcNrfy3X6nsU8-rPg",
     "title": "Economics Explained",
@@ -631,16 +631,18 @@
    "status": "waiting",
    "count": 0,
    "lastOk": "2026-11-17T16:12:01.447Z",
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-tech",
    "name": "r/tech",
    "type": "reddit",
-   "status": "waiting",
+   "status": "error",
    "count": 0,
    "lastOk": "2026-11-07T19:04:52.310Z",
-   "note": "not its turn this run"
+   "note": "rate-limited (429)",
+   "error": "rate-limited (429)",
+   "http": 429
   },
   {
    "id": "rd-gaming",
@@ -649,7 +651,7 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "not its turn this run"
+   "note": "Reddit rate-limited earlier in this run"
   },
   {
    "id": "rd-ukpolitics",
@@ -685,18 +687,16 @@
    "status": "waiting",
    "count": 0,
    "lastOk": "2026-11-17T03:58:17.859Z",
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   },
   {
    "id": "rd-germany",
    "name": "r/germany",
    "type": "reddit",
-   "status": "error",
+   "status": "waiting",
    "count": 0,
    "lastOk": "2026-11-12T02:17:58.406Z",
-   "note": "rate-limited (429)",
-   "error": "rate-limited (429)",
-   "http": 429
+   "note": "not its turn this run"
   },
   {
    "id": "rd-unitedkingdom",
@@ -705,33 +705,34 @@
    "status": "waiting",
    "count": 0,
    "lastOk": null,
-   "note": "Reddit rate-limited earlier in this run"
+   "note": "not its turn this run"
   }
  ],
  "items": [
   {
-   "title": "'Should we give Huw Edwards a public platform again?' | LBC debate",
-   "url": "https://www.youtube.com/watch?v=3dKRpFIjCpI",
-   "source": "LBC",
-   "feedId": "yt-lbc",
+   "title": "Was Jensen Just The First AI Bailout?",
+   "url": "https://www.youtube.com/watch?v=Twk1VhXwxRI",
+   "source": "How Money Works",
+   "feedId": "yt-how-money-works",
    "type": "video",
    "tags": [
-    "politics",
+    "finance",
+    "business",
     "listen"
    ],
-   "published": "2026-11-27T11:31:29.000Z",
-   "summary": "A new documentary following disgraced former BBC newsreader Huw Edwards has sparked fury ahead of its release. The Channel 4 film, due to air on December 1, follows Edwards at his home in rural Wales as he attempts to rebuild his life after his conviction for making indecent…",
-   "thumb": "https://i4.ytimg.com/vi/3dKRpFIjCpI/hqdefault.jpg",
-   "id": "4da27216b08c",
+   "published": "2026-11-27T22:54:55.000Z",
+   "summary": "Check out Build Your Store and AutoDS below! ⬇️ BYS Link: https://www.buildyourstore.ai/how-money-works AutoDS Link: https://platform.autods.com/register?ref=NjE1MDg4Mw== ----- Founder CEOs video: https://youtu.be/1k88LDCnAWM?si=wvn2980x70EJ2rrr Research Paper:…",
+   "thumb": "https://i1.ytimg.com/vi/Twk1VhXwxRI/hqdefault.jpg",
+   "id": "e786acf5ca77",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 1760,
-   "duration": "29:20"
+   "durationSec": 874,
+   "duration": "14:34"
   },
   {
-   "title": "EU-Haushaltsstreit: Warum sich Merz und Macron nicht einigen können",
-   "url": "https://www.youtube.com/watch?v=URH5FiTQdTM",
+   "title": "tagesthemen 21:45 Uhr, 27.11.2026",
+   "url": "https://www.youtube.com/watch?v=H4tIUpNDScs",
    "source": "Tagesschau",
    "feedId": "yt-tagesschau",
    "type": "video",
@@ -740,15 +741,336 @@
     "news",
     "listen"
    ],
-   "published": "2026-11-27T10:05:38.000Z",
-   "summary": "Die Vorstellungen unter den 27 Staats- und Regierungschefs lagen weit auseinander. So weit, dass sie laut Merz den zweiten angesetzten Tag des Gipfels ausfallen lassen. Es geht um viele Milliarden für den EU-Haushalt. ARD-Korrespondent Feld ordnet die Lage ein. Mehr…",
-   "thumb": "https://i2.ytimg.com/vi/URH5FiTQdTM/hqdefault.jpg",
-   "id": "aeafc337d5df",
+   "published": "2026-11-27T21:53:17.000Z",
+   "summary": "tagesthemen 21:45 Uhr Bundesarbeitsministerium legt Entwurf zur Rentenreform vor, Reaktionen auf Kompromiss zur vorgeschlagenen Rentenreform, Die Meinung, Spanien vor der Parlamentswahl, Weitere Meldungen im Überblick, akkurat: Jung und verschuldet?, „Kanal“-Museum in Brüssel…",
+   "thumb": "https://i1.ytimg.com/vi/H4tIUpNDScs/hqdefault.jpg",
+   "id": "eccb6b5a6f34",
    "score": 1,
    "matched": [],
    "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 402,
-   "duration": "6:42"
+   "durationSec": 2062,
+   "duration": "34:22"
+  },
+  {
+   "title": "Arbeitsminister zur Rentenreform: „Gemeinsamkeiten größer als Unterschiede“ | tagesthemen-Interview",
+   "url": "https://www.youtube.com/watch?v=0DPhYGy6p2o",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-27T21:53:07.000Z",
+   "summary": "Im Interview mit tagesthemen-Moderatorin Susanne Stichler erläutert Arbeitsminister Alexander Schweitzer (SPD), warum sein Vorschlag für eine Rentenreform konsensfähig ist. Und er verteidigt den Vorschlag, dass weniger Menschen nach 45 Beitragsjahren abschlagsfrei in Rente…",
+   "thumb": "https://i1.ytimg.com/vi/0DPhYGy6p2o/hqdefault.jpg",
+   "id": "4501b8d129cf",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 403,
+   "duration": "6:43"
+  },
+  {
+   "title": "Speaking to people who can't stop thinking about climate change | James O’Brien - The Whole Show",
+   "url": "https://www.youtube.com/watch?v=cqtJwD19wc4",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-27T21:00:19.000Z",
+   "summary": "This is a catch-up version of James O'Brien's live, daily show on LBC Radio from the 27th of November 2026. Listen to the full show on the all-new LBC App: https://app.af.lbc.co.uk/btnc/thenewlbcapp #jamesobrien #politics #LBC LBC is the home of live debate around news and…",
+   "thumb": "https://i4.ytimg.com/vi/cqtJwD19wc4/hqdefault.jpg",
+   "id": "101a06f334f2",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 8732,
+   "duration": "2:25:32"
+  },
+  {
+   "title": "MP questions MoD over £26m explosives deal",
+   "url": "https://www.youtube.com/watch?v=A6ftRX3akcI",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-27T20:30:30.000Z",
+   "summary": "Did the Ministry of Defence knowingly pay millions of pounds for explosives that weren't what it had ordered? Liberal Democrat MP Mike Martin, chair of the All-Party Parliamentary Group on Rearmament and a member of the Defence Select Committee, joins Tom Swarbrick to discuss…",
+   "thumb": "https://i2.ytimg.com/vi/A6ftRX3akcI/hqdefault.jpg",
+   "id": "2eb60a190f7d",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 654,
+   "duration": "10:54"
+  },
+  {
+   "title": "It’s happening",
+   "url": "https://www.youtube.com/watch?v=PFmbkQJNJE8",
+   "source": "Luke Beasley",
+   "feedId": "yt-luke-beasley",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-27T20:30:26.000Z",
+   "summary": "Luke discusses Abdul El-Sayed's recent proposal to Trump. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) - https://twitter.com/lukepbeasley…",
+   "thumb": "https://i1.ytimg.com/vi/PFmbkQJNJE8/hqdefault.jpg",
+   "id": "135affe11bf0",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 641,
+   "duration": "10:41"
+  },
+  {
+   "title": "tagesschau 20:00 Uhr, 27.11.2026",
+   "url": "https://www.youtube.com/watch?v=rxpDRNHKeQY",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-27T19:30:30.000Z",
+   "summary": "tagesschau 20:00 Uhr Kompromissvorschlag zur Rentenreform aus dem Arbeits- und Sozialministerium, Reaktionen auf den Entwurf über Rentenreform von Arbeitsminister Schweitzer, Bundestag verabschiedet Haushalt für 2027, Keine Einigung auf EU-Haushalt, Black Friday lockt mit…",
+   "thumb": "https://i3.ytimg.com/vi/rxpDRNHKeQY/hqdefault.jpg",
+   "id": "46714c07a942",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 962,
+   "duration": "16:02"
+  },
+  {
+   "title": "ROCKSTAR'S NEXT GAME LEAKED? WITCHER 4 AIMS AT GTA6 & MORE",
+   "url": "https://www.youtube.com/watch?v=k6SGaeTUy5o",
+   "source": "GameRanx",
+   "feedId": "yt-gameranx",
+   "type": "video",
+   "tags": [
+    "gaming"
+   ],
+   "published": "2026-11-27T19:10:53.000Z",
+   "summary": "Thanks to boot.dev for sponsoring. Click this link https://boot.dev/?promo=GAMERANXBFCM and use my code GAMERANXBFCM to get 45% off your first payment for boot.dev. ~~SOURCES~~ BLACK FRIDAY https://youtu.be/si9AyooZ6y8?si=9_2V7JySzqXoSr6z Rockstar’s next game…",
+   "thumb": "https://i4.ytimg.com/vi/k6SGaeTUy5o/hqdefault.jpg",
+   "id": "5072fee7cb25",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 954,
+   "duration": "15:54"
+  },
+  {
+   "title": "Argument erupts over immigration figures | LBC Debate",
+   "url": "https://www.youtube.com/watch?v=Y9voDiirJGM",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-27T19:00:29.000Z",
+   "summary": "Shelagh Fogarty speaks to Brexit campaigner Femi Oluwole, ‘Based and Bougie’, Restore UK’s Charlie Downes, and Labour’s Jovan Owusu-Nepaul to debate the ‘most important issue of our age’: identity and immigration. Listen to the full show on the all-new LBC App:…",
+   "thumb": "https://i2.ytimg.com/vi/Y9voDiirJGM/hqdefault.jpg",
+   "id": "e578203d0741",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 722,
+   "duration": "12:02"
+  },
+  {
+   "title": "What President Marine Le Pen would mean for Europe | The Economist",
+   "url": "https://www.youtube.com/watch?v=XVRy-tDWBA8",
+   "source": "The Economist",
+   "feedId": "yt-the-economist",
+   "type": "video",
+   "tags": [
+    "finance",
+    "business"
+   ],
+   "published": "2026-11-27T18:47:12.000Z",
+   "summary": "Marine Le Pen is the favourite to win France’s presidential election in 2027, at her fourth attempt. Subscribe: https://www.youtube.com/@TheEconomist?sub_confirmation=1 French voters may, for the first time, elect a Eurosceptic nationalist who distrusts Germany and the EU as…",
+   "thumb": "https://i1.ytimg.com/vi/XVRy-tDWBA8/hqdefault.jpg",
+   "id": "0bf7dbee1598",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 489,
+   "duration": "8:09"
+  },
+  {
+   "title": "Saisonstart auf der Zugspitze: Neuschnee und höhere Preise",
+   "url": "https://www.youtube.com/watch?v=jPwT9G6_38o",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-27T18:45:45.000Z",
+   "summary": "Schnee und Glatteis haben vor allem in Bayern für Chaos gesorgt. Die dortige Polizei registrierte am Morgen Hunderte Unfälle. Einige Menschen wurden verletzt. Weiter oben auf der Zugspitze herrschten dagegen perfekte Bedingungen. Pünktlich zum offiziellen Saisonstart hieß es:…",
+   "thumb": "https://i3.ytimg.com/vi/jPwT9G6_38o/hqdefault.jpg",
+   "id": "9881bdba6bb4",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 81,
+   "duration": "1:21"
+  },
+  {
+   "title": "Spanien vor der Wahl: Wohnungsmangel wird zum Wahlkampfthema",
+   "url": "https://www.youtube.com/watch?v=Xdrtl3YR9Rc",
+   "source": "Tagesschau",
+   "feedId": "yt-tagesschau",
+   "type": "video",
+   "tags": [
+    "german",
+    "news",
+    "listen"
+   ],
+   "published": "2026-11-27T18:43:47.000Z",
+   "summary": "Am Sonntag wird in Spanien gewählt, der Wahlkampf geht heute zu Ende. Spaniens sozialdemokratischer Regierungschef Pedro Sánchez hat in seiner Amtszeit mehrere Reformen umgesetzt. Der Mindestlohn wurde erhöht, prekäre Arbeitsverhältnisse strenger reguliert und der Ausbau…",
+   "thumb": "https://i1.ytimg.com/vi/Xdrtl3YR9Rc/hqdefault.jpg",
+   "id": "c744d4861f69",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 95,
+   "duration": "1:35"
+  },
+  {
+   "title": "'This is a paedophile's dream': LBC caller condemns Huw Edwards documentary",
+   "url": "https://www.youtube.com/watch?v=dZAZW8cuDFE",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-27T18:00:30.000Z",
+   "summary": "Should Huw Edwards be allowed back on television to tell his story after being convicted of receiving indecent images of children? Shelagh Fogarty discusses the former BBC presenter's forthcoming Channel 4 documentary and asks whether there is anything to be learned from…",
+   "thumb": "https://i1.ytimg.com/vi/dZAZW8cuDFE/hqdefault.jpg",
+   "id": "888d3468d146",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 1714,
+   "duration": "28:34"
+  },
+  {
+   "title": "Socialists vs Capitalists: Who Lies More? | Checkmate",
+   "url": "https://www.youtube.com/watch?v=tnhloaFbZjI",
+   "source": "Jubilee",
+   "feedId": "yt-jubilee",
+   "type": "video",
+   "tags": [
+    "politics",
+    "debates"
+   ],
+   "published": "2026-11-27T17:00:34.000Z",
+   "summary": "Injured in an accident? You may be owed serious money. You can start your claim with Morgan & Morgan: https://forthepeople.com/jubilee - no fees unless you win! Hey you 👈 Wanna be in a Jubilee video? https://bit.ly/be-in-a-video LET’S BE FRIENDS Instagram:…",
+   "thumb": "https://i1.ytimg.com/vi/tnhloaFbZjI/hqdefault.jpg",
+   "id": "513cfddfd221",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 4403,
+   "duration": "1:13:23"
+  },
+  {
+   "title": "Thanksgiving Products That Really Roast Our Turkeys | Shark Tank US | Shark Tank Global",
+   "url": "https://www.youtube.com/watch?v=8Z0GRAr2RT4",
+   "source": "Shark Tank Global",
+   "feedId": "yt-shark-tank-global",
+   "type": "video",
+   "tags": [
+    "trash",
+    "business"
+   ],
+   "published": "2026-11-27T16:59:47.000Z",
+   "summary": "From clever kitchen inventions to products designed to make holiday cooking easier, these entrepreneurs bring their unique ideas into the Tank! 00:00 - The Mighty Carver 07:15 - Wine Balloon 17:29 - The Smart Baker 25:32 - Frywall 32:59 - Cup Board Pro 41:37 - Turbo Trusser…",
+   "thumb": "https://i1.ytimg.com/vi/8Z0GRAr2RT4/hqdefault.jpg",
+   "id": "1acf54cf077e",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 4136,
+   "duration": "1:08:56"
+  },
+  {
+   "title": "'Weaponising influencers' | Fury over Burnham's social media strategy",
+   "url": "https://www.youtube.com/watch?v=8xJ6IURglt0",
+   "source": "LBC",
+   "feedId": "yt-lbc",
+   "type": "video",
+   "tags": [
+    "politics",
+    "listen"
+   ],
+   "published": "2026-11-27T16:58:58.000Z",
+   "summary": "The Prime Minister has been under fire for inviting influencers into No.10. Influencer Max Balegde, 27, whose real name is Max Trobe, was forced to take down an earlier video from the event in No.10 with the Prime Minister last week in which he mimed to a song with the lyrics…",
+   "thumb": "https://i1.ytimg.com/vi/8xJ6IURglt0/hqdefault.jpg",
+   "id": "645dbaf815b6",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 944,
+   "duration": "15:44"
+  },
+  {
+   "title": "Why North Korean Tank Commanders Love US Military Food (Marathon)",
+   "url": "https://www.youtube.com/watch?v=XnSVTDfTA_0",
+   "source": "The NK guys",
+   "feedId": "yt-the-nk-guys",
+   "type": "video",
+   "tags": [
+    "culture"
+   ],
+   "published": "2026-11-27T15:00:32.000Z",
+   "summary": "ex-North Korean Tank Commander Kwon Hyo-jin & ex-North Korean Tank Commander Jung Min-Woo & ex-North Korean Navy Diver Go Hong-chul & North Korean Navy Sailor Chae Seol-hyang Love US Military Food 00:00 Try US Military MRE 17:00 Try 100 Years of US Military Food 31:03 Try Real…",
+   "thumb": "https://i1.ytimg.com/vi/XnSVTDfTA_0/hqdefault.jpg",
+   "id": "aeb58d63d4e8",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 3884,
+   "duration": "1:04:44"
+  },
+  {
+   "title": "Save the NHS from Palantir | Martin Wrigley interview",
+   "url": "https://www.youtube.com/watch?v=YK1FJ9-asBA",
+   "source": "PoliticsJOE",
+   "feedId": "yt-politicsjoe",
+   "type": "video",
+   "tags": [
+    "comedy"
+   ],
+   "published": "2026-11-27T13:00:12.000Z",
+   "summary": "Is Palantir failing to deliver on its promises to the NHS and police, and why is the UK government so determined to keep using the controversial American tech company? Martin Wrigley, Lib Dem MP and a long-standing campaigner against Palantir, joins PoliticsJOE to examine the…",
+   "thumb": "https://i2.ytimg.com/vi/YK1FJ9-asBA/hqdefault.jpg",
+   "id": "212718462bcd",
+   "score": 1,
+   "matched": [],
+   "why": "fresh (<12 h) +1 = 1",
+   "durationSec": 1597,
+   "duration": "26:37"
   },
   {
    "title": "Why Net Migration has Plummeted",
@@ -765,135 +1087,11 @@
    "summary": "Compare news coverage. Spot media bias. Avoid algorithms. Try Ground News today and get 40% off your subscription by going to https://ground.news/tldr Pre-order a copy of Too Long: https://toolong.news/TL010 According to new data, net migration has more than halved since 2025…",
    "thumb": "https://i4.ytimg.com/vi/KFHIefCGvx4/hqdefault.jpg",
    "id": "21bafcd5b78c",
-   "score": 1,
+   "score": 0,
    "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
+   "why": "0",
    "durationSec": 482,
    "duration": "8:02"
-  },
-  {
-   "title": "„Vorgeschmack auf das, was kommt“: Rekordfluten versetzen Anwohner in Sorge",
-   "url": "https://www.youtube.com/watch?v=rVISR2uOz-s",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-27T09:42:30.000Z",
-   "summary": "Im Westen der USA - wie in Kalifornien - türmen sich die Wellen in Höhe von dreigeschossigen Häusern und nicht nur Uferstraßen werden überflutet. Hervorgerufen durch schwere Stürme weit draußen auf dem Pazifik, deren Ursache auch das natürliche Klimaphänomen El Niño ist. Die…",
-   "thumb": "https://i3.ytimg.com/vi/rVISR2uOz-s/hqdefault.jpg",
-   "id": "39986cd9e967",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 121,
-   "duration": "2:01"
-  },
-  {
-   "title": "Alltag in Kabul: Wie Frauen im Dienst der Taliban arbeiten",
-   "url": "https://www.youtube.com/watch?v=9JWnlhft7rc",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-27T09:38:04.000Z",
-   "summary": "In Afghanistan sind seit 5 Jahren die Taliban erneut an der Macht. Für die allermeisten Frauen bedeutet das ein Leben im Verborgenen. In der Öffentlichkeit muss das Gesicht verhüllt sein. Sport zu treiben, ist verboten und auch Bildung ist kaum möglich. Zusammenarbeit mit…",
-   "thumb": "https://i2.ytimg.com/vi/9JWnlhft7rc/hqdefault.jpg",
-   "id": "0d95f851ad64",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 202,
-   "duration": "3:22"
-  },
-  {
-   "title": "Verantwortung wie für ein Kind: Bäckerei pflegt uralten Sauerteig",
-   "url": "https://www.youtube.com/watch?v=t-ED7GFi3ng",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-27T09:33:18.000Z",
-   "summary": "Der Sauerteig bildet die unerlässliche Grundlage für das Sauerteigbrot. Das Gute an so einem Teig: Er wird immer mehr, wenn man ihn richtig füttert. Dann kann die blasse Masse zu einem dankbaren Partner werden, den man teilen und immer weiter verwenden kann und der – wie in…",
-   "thumb": "https://i1.ytimg.com/vi/t-ED7GFi3ng/hqdefault.jpg",
-   "id": "7ae4c67240c5",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 156,
-   "duration": "2:36"
-  },
-  {
-   "title": "tagesschau in Einfacher Sprache 19:00 Uhr, 26.11.2026",
-   "url": "https://www.youtube.com/watch?v=EzmCe-bJ-mA",
-   "source": "Tagesschau",
-   "feedId": "yt-tagesschau",
-   "type": "video",
-   "tags": [
-    "german",
-    "news",
-    "listen"
-   ],
-   "published": "2026-11-27T08:57:15.000Z",
-   "summary": "tagesschau in Einfacher Sprache 19:00 Uhr Missbrauch: Kirche muss Frau viel Geld zahlen, USA: Unwetter vor Thanksgiving, Champions League: Deutsche Clubs verlieren, Musiala: Weniger Geld wegen Krankheit?, Das Wetter Die \"tagesschau in Einfacher Sprache\" – immer Montag bis…",
-   "thumb": "https://i2.ytimg.com/vi/EzmCe-bJ-mA/hqdefault.jpg",
-   "id": "2250eb776f8c",
-   "score": 1,
-   "matched": [],
-   "why": "fresh (<12 h) +1 = 1",
-   "durationSec": 477,
-   "duration": "7:57"
-  },
-  {
-   "title": "US envoy Jared Kushner says Putin has 'showed restraint' by not using nuclear weapons",
-   "url": "https://www.youtube.com/watch?v=lo_rfHuYRX8",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-26T21:40:46.000Z",
-   "summary": "Former British soldier Shaun Pinner, who served with Ukraine's marines before being captured by Russian forces, tortured and sentenced to death, has reacted to Jared Kushner's comments praising Vladimir Putin. Speaking to Andrew Marr from Ukraine, Pinner describes the impact of…",
-   "thumb": "https://i1.ytimg.com/vi/lo_rfHuYRX8/hqdefault.jpg",
-   "id": "e9ff8b13add5",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 525,
-   "duration": "8:45"
-  },
-  {
-   "title": "Who's celebrating the lowest net migration in decades? | James O’Brien - The Whole Show",
-   "url": "https://www.youtube.com/watch?v=tc15zvOy5GA",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-26T21:00:26.000Z",
-   "summary": "This is a catch-up version of James O'Brien's live, daily show on LBC Radio from the 26th of November 2026. Listen to the full show on the all-new LBC App: https://app.af.lbc.co.uk/btnc/thenewlbcapp #jamesobrien #politics #LBC LBC is the home of live debate around news and…",
-   "thumb": "https://i1.ytimg.com/vi/tc15zvOy5GA/hqdefault.jpg",
-   "id": "2ff5dd8dc47d",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 8833,
-   "duration": "2:27:13"
   },
   {
    "title": "How to Survive the Civil War: Union Edition",
@@ -952,26 +1150,6 @@
    "why": "0",
    "durationSec": 1643,
    "duration": "27:23"
-  },
-  {
-   "title": "The latest warning for the UK housing market",
-   "url": "https://www.youtube.com/watch?v=3YjmtOgDrqc",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-26T17:30:19.000Z",
-   "summary": "Henry Riley stepped into the world of premium properties to find out why there's nearly 1,500 unsold homes in Zone 1. To help Henry, Edward Osborne of Tuckerman Residential gave him a tour of a £2 million, five-story home in Westminster that's not found a buyer. Dr Maya Singer…",
-   "thumb": "https://i4.ytimg.com/vi/3YjmtOgDrqc/hqdefault.jpg",
-   "id": "4c33bda44e18",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 514,
-   "duration": "8:34"
   },
   {
    "title": "They Can't Read.",
@@ -1033,26 +1211,6 @@
    "duration": "44:02"
   },
   {
-   "title": "Putin showed ‘restraint’ by not using nuclear weapons, says Kushner",
-   "url": "https://www.youtube.com/watch?v=3CwHCdfleh4",
-   "source": "LBC",
-   "feedId": "yt-lbc",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-26T16:25:18.000Z",
-   "summary": "Lewis Goodall joins Shelagh Fogarty to react as Jared Kushner comes under fire for praising 'political grandmaster' Putin. In a podcast interview, he argued that negotiators should focus on the post-war relationship to help secure a lasting peace. \"We've asked the Europeans or…",
-   "thumb": "https://i4.ytimg.com/vi/3CwHCdfleh4/hqdefault.jpg",
-   "id": "691c273e5e56",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 707,
-   "duration": "11:47"
-  },
-  {
    "title": "Reform UK's money problem | How Power Works",
    "url": "https://www.youtube.com/watch?v=8Kc1PC7K9eQ",
    "source": "PoliticsJOE",
@@ -1091,7 +1249,7 @@
    "duration": "6:03"
   },
   {
-   "title": "The “I hope your small business fails” Trend is So Sad",
+   "title": "“I hope your small business fails”",
    "url": "https://www.youtube.com/watch?v=koEzwWog6tw",
    "source": "Levi Hildebrand",
    "feedId": "yt-levi-hildebrand",
@@ -1299,7 +1457,7 @@
     "listen"
    ],
    "published": "2026-11-25T14:09:59.000Z",
-   "summary": "Position yourself for the AI revolution, for free: https://80000hours.org/economicsexplained 📫 95,000+ read our free newsletter that has weekly original stories Sign up: → https://economicsexplained.substack.com/subscribe This video was made possible by our Patreon community!…",
+   "summary": "Position yourself for the AI revolution, for free: https://80000hours.org/economicsexplained 📫 95,000+ read our free newsletter that has weekly original stories Sign up: → https://economicsexplained.substack.com/subscribe This video was partly supported by a grant from the…",
    "thumb": "https://i1.ytimg.com/vi/4hPRHFTY08I/hqdefault.jpg",
    "id": "c1cf332c1b32",
    "score": 0,
@@ -1367,26 +1525,6 @@
    "why": "0",
    "durationSec": 775,
    "duration": "12:55"
-  },
-  {
-   "title": "He knows he f***ed up",
-   "url": "https://www.youtube.com/watch?v=50sbMBw3CsU",
-   "source": "Luke Beasley",
-   "feedId": "yt-luke-beasley",
-   "type": "video",
-   "tags": [
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-25T02:35:38.000Z",
-   "summary": "Luke discusses Nick Fuentes' reaction to his appearance on Luke's show. Want to support the show and gain access to a daily bonus show? Become a member here: https://www.youtube.com/channel/UCM05jgFNwoeXvWfO9GuExzA/join Get connected below! Twitter(X) -…",
-   "thumb": "https://i2.ytimg.com/vi/50sbMBw3CsU/hqdefault.jpg",
-   "id": "9bf86dc897a9",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 1780,
-   "duration": "29:40"
   },
   {
    "title": "I Was Wrong.",
@@ -1641,25 +1779,6 @@
    "why": "0",
    "durationSec": 1334,
    "duration": "22:14"
-  },
-  {
-   "title": "GTA 6 Has Exposed a BIG Problem With AAA Games",
-   "url": "https://www.youtube.com/watch?v=H3DQNv21hmk",
-   "source": "GameRanx",
-   "feedId": "yt-gameranx",
-   "type": "video",
-   "tags": [
-    "gaming"
-   ],
-   "published": "2026-11-22T18:28:22.000Z",
-   "summary": "GTA 6 does the impossible, but the way it embraces fun can teach the whole video game industry a lesson. Subscribe for more: https://www.youtube.com/gameranxTV?sub_confirmation=1",
-   "thumb": "https://i1.ytimg.com/vi/H3DQNv21hmk/hqdefault.jpg",
-   "id": "15828d3e92ff",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 1017,
-   "duration": "16:57"
   },
   {
    "title": "Is Stuttgart a Good Place to Live?",
@@ -1923,26 +2042,6 @@
    "duration": "3:24"
   },
   {
-   "title": "Best of The New Season! | Shark Tank US | Shark Tank Global",
-   "url": "https://www.youtube.com/watch?v=8sJSpsWStZw",
-   "source": "Shark Tank Global",
-   "feedId": "yt-shark-tank-global",
-   "type": "video",
-   "tags": [
-    "trash",
-    "business"
-   ],
-   "published": "2026-11-20T17:00:01.000Z",
-   "summary": "The new season of Shark Tank US brings fresh entrepreneurs, innovative products and unforgettable moments to the Tank. 00:00 - Ball 2 08:26 - Nutcase 17:09 - Polygons 27:21 - Vulcan Pest 36:45 - HeroCovers 46:50 - Hoop Trailer Watch Shark Tank US Now:…",
-   "thumb": "https://i1.ytimg.com/vi/8sJSpsWStZw/hqdefault.jpg",
-   "id": "f8d0bc52d08d",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 3388,
-   "duration": "56:28"
-  },
-  {
    "title": "North Korean Tank Commanders React to USA vs North Korea Military Comparison",
    "url": "https://www.youtube.com/watch?v=Vzq8FHBne1E",
    "source": "The NK guys",
@@ -2175,25 +2274,6 @@
    "why": "0",
    "durationSec": 1069,
    "duration": "17:49"
-  },
-  {
-   "title": "Labour’s Plan to Get You a Job | Going Deep on the Milburn Report",
-   "url": "https://www.youtube.com/watch?v=Wa2FnZ-RlyA",
-   "source": "PoliticsJOE",
-   "feedId": "yt-politicsjoe",
-   "type": "video",
-   "tags": [
-    "comedy"
-   ],
-   "published": "2026-11-18T17:49:02.000Z",
-   "summary": "The government has promised a major shake-up of how Britain tackles youth unemployment. But will Alan Milburn’s review actually improve the lives of young people or is Labour missing the bigger picture? There are serious questions about whether the plan tackles the causes of…",
-   "thumb": "https://i4.ytimg.com/vi/Wa2FnZ-RlyA/hqdefault.jpg",
-   "id": "02abd520696a",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 2705,
-   "duration": "45:05"
   },
   {
    "title": "Andrew Yang Reacts to His Viral Debates on Artificial Intelligence | Surrounded Follow-Up",
@@ -2499,26 +2579,6 @@
    "duration": "15:29"
   },
   {
-   "title": "1 Millionaire Boss vs 20 Gen Z Workers (ft. Kevin O’Leary) | Surrounded",
-   "url": "https://www.youtube.com/watch?v=2c81cbv0SKk",
-   "source": "Jubilee",
-   "feedId": "yt-jubilee",
-   "type": "video",
-   "tags": [
-    "politics",
-    "debates"
-   ],
-   "published": "2026-11-15T17:00:08.000Z",
-   "summary": "Hey you 👈 Wanna be in a Jubilee video? https://bit.ly/be-in-a-video LET’S BE FRIENDS Instagram: https://www.instagram.com/jubileemedia/ TikTok: https://www.tiktok.com/@jubilee?lang=en Website: https://www.jubileemedia.com OUR LOVE + DATING CHANNEL 🍑 YouTube:…",
-   "thumb": "https://i3.ytimg.com/vi/2c81cbv0SKk/hqdefault.jpg",
-   "id": "93ff6a65a5bd",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 6797,
-   "duration": "1:53:17"
-  },
-  {
    "title": "The NVIDIA Scandal Goes Deeper than You Think",
    "url": "https://www.youtube.com/watch?v=PptRrzYY61w",
    "source": "ColdFusion",
@@ -2682,69 +2742,7 @@
    "why": "0",
    "durationSec": 4043,
    "duration": "1:07:23"
-  },
-  {
-   "title": "Is The Trinity ACTUALLY In The Old Testament? — GodLogicApologetics vs Dr. Javad Hashmi",
-   "url": "https://www.youtube.com/watch?v=BJC-QiEN4do",
-   "source": "Modern-Day Debate",
-   "feedId": "yt-modern-day-debate",
-   "type": "video",
-   "tags": [
-    "debates",
-    "politics",
-    "listen"
-   ],
-   "published": "2026-11-13T18:00:05.000Z",
-   "summary": "Huge thank you to our DEBATECON 9 sponsors including: Revival of the Anointed's Rule: https://revivingtheroar.org/ Apologetics Ark: https://www.apologeticsark.com/links @UncensoredAmerica Yonaguni International Cuisine (Aguadilla, Puerto Rico):…",
-   "thumb": "https://i3.ytimg.com/vi/BJC-QiEN4do/hqdefault.jpg",
-   "id": "77e0b27b8bd0",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 604,
-   "duration": "10:04"
-  },
-  {
-   "title": "Did Canada Just Win the Midterms?",
-   "url": "https://www.youtube.com/watch?v=VQ8zbtz_Asg",
-   "source": "Economics Explained",
-   "feedId": "yt-economics-explained",
-   "type": "video",
-   "tags": [
-    "finance",
-    "listen"
-   ],
-   "published": "2026-11-13T15:57:17.000Z",
-   "summary": "Go to https://buyraycon.com/economicsexplained to get up to 50% off! Thanks to Raycon for sponsoring! 📫 95,000+ read our free newsletter that has weekly original stories Sign up: → https://economicsexplained.substack.com/subscribe This video was made possible by our Patreon…",
-   "thumb": "https://i3.ytimg.com/vi/VQ8zbtz_Asg/hqdefault.jpg",
-   "id": "fe2bec2e6570",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 1169,
-   "duration": "19:29"
-  },
-  {
-   "title": "How 3 Million People Got Locked Out of their Bank",
-   "url": "https://www.youtube.com/watch?v=pjNnDQgAvOw",
-   "source": "ColdFusion",
-   "feedId": "yt-coldfusion",
-   "type": "video",
-   "tags": [
-    "finance",
-    "tech",
-    "listen"
-   ],
-   "published": "2026-11-13T14:17:26.000Z",
-   "summary": "Get 22% off on PLAUD products by using code: COLDFUSION22 Website: https://bit.ly/4ApFKN0 Amazon: https://amzn.to/4jbNfAf #Plaud Imagine if one day your bank account app said that you couldn't access your own money. What would you do? This is exactly what happened to millions…",
-   "thumb": "https://i1.ytimg.com/vi/pjNnDQgAvOw/hqdefault.jpg",
-   "id": "73c639fc30d2",
-   "score": 0,
-   "matched": [],
-   "why": "0",
-   "durationSec": 984,
-   "duration": "16:24"
   }
  ],
- "contentHash": "89ed3d55d7cd"
+ "contentHash": "dfb52fe7b93b"
 }
